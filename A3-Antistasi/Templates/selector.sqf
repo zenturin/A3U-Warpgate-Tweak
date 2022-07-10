@@ -43,7 +43,7 @@ A3A_Reb_template = switch(true) do {
     };
     case (A3A_hasVN): {
         ["Templates\NewTemplates\VN\VN_Reb_POF.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-        Info("Using Pissed off Farmers Template");
+        Info("Using POF Template");
         "VN"
     };
     /* disabled until imtegrated
@@ -135,6 +135,12 @@ A3A_Occ_template = switch(true) do {
                 Info("Using 3CB AAF Template");
                 ["Templates\NewTemplates\3CB\3CB_AI_AAF.sqf", west] call A3A_fnc_compatibilityLoadFaction;
             };
+            case (toLower worldName == "vt7");
+            case (toLower worldName == "enoch"): {
+                Info("Using 3CB LDF Template");
+                ["Templates\NewTemplates\3CB\3CB_AI_LDF.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+            };
+            case (toLower worldName == "tembelan");
             case (toLower worldName == "malden"): {
                 Info("Using 3CB MDF Template");
                 ["Templates\NewTemplates\3CB\3CB_AI_MDF.sqf", west] call A3A_fnc_compatibilityLoadFaction;
@@ -143,13 +149,18 @@ A3A_Occ_template = switch(true) do {
                 Info("Using 3CB HIDF Template");
                 ["Templates\NewTemplates\3CB\3CB_AI_HIDF.sqf", west] call A3A_fnc_compatibilityLoadFaction;
             };
+            case (toLower worldName == "tem_anizay");
             case (toLower worldName == "kunduz"): {
                 Info("Using 3CB ANA Template");
                 ["Templates\NewTemplates\3CB\3CB_AI_ANA.sqf", west] call A3A_fnc_compatibilityLoadFaction;
             };
-            case (toLower worldName in aridmaps): {
-                ["Templates\NewTemplates\3CB\3CB_AI_TKA_West.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+            case (toLower worldName == "sara"): {
+                Info("Using 3CB KRG Template");
+                ["Templates\NewTemplates\3CB\3CB_AI_KRG.sqf", west] call A3A_fnc_compatibilityLoadFaction;
             };
+            case (toLower worldName in aridmaps): {
+                Info("Using 3CB TKA_West Template");
+                ["Templates\NewTemplates\3CB\3CB_AI_TKA_West.sqf", west] call A3A_fnc_compatibilityLoadFaction;
             };
             case (toLower worldName in tropicalmaps): {
                 Info("Using Coldwar US Template");
@@ -185,7 +196,7 @@ A3A_Occ_template = switch(true) do {
         "RHS"
     };
     case (A3A_hasVN): {
-        ["Templates\NewTemplates\VN\VN_PAVN.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        ["Templates\NewTemplates\VN\VN_AI_PAVN.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         Info("Using VN PAVN Template");
         "VN"
     };
@@ -218,6 +229,10 @@ A3A_Occ_template = switch(true) do {
                 Info("Using Enoch LDF Template");
                 ["Templates\NewTemplates\Vanilla\Vanilla_AI_LDF.sqf", west] call A3A_fnc_compatibilityLoadFaction;
             };
+            case (toLower worldName == "altis"): {
+                Info("Using AAF Template");
+                ["Templates\NewTemplates\Vanilla\Vanilla_AI_AAF.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+            };
             case (toLower worldName == "tanoa"): {
                 Info("Using tropical NATO Template");
                 ["Templates\NewTemplates\Vanilla\Vanilla_AI_NATO_Apex.sqf", west] call A3A_fnc_compatibilityLoadFaction;
@@ -230,10 +245,6 @@ A3A_Occ_template = switch(true) do {
                 Info("Using temperate NATO Template");
                 ["Templates\NewTemplates\Vanilla\Vanilla_AI_NATO_Tropical.sqf", west] call A3A_fnc_compatibilityLoadFaction;
             };
-            case (toLower worldName == "altis"): {
-                Info("Using AAF Template");
-                ["Templates\NewTemplates\Vanilla\Vanilla_AI_AAF.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-            };
             default {
                 Info("Using arid NATO Template");
                 ["Templates\NewTemplates\Vanilla\Vanilla_AI_NATO_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
@@ -241,10 +252,28 @@ A3A_Occ_template = switch(true) do {
         };
         "Vanilla"
     };
+};
 //Inv Templates
 A3A_Inv_template = switch(true) do {
     case (A3A_has3CBFactions): {
         switch(true) do {
+            case (toLower worldName == "altis"): {
+                Info("Using ADA Template");
+                ["Templates\NewTemplates\3CB\3CB_AI_ADA.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+            };
+            case (toLower worldName == "malden"): {
+                Info("Using ANA Template");
+                ["Templates\NewTemplates\3CB\3CB_AI_ANA.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+            };
+            case (toLower worldName == "tem_anizay"): {
+                Info("Using KRG Template");
+                ["Templates\NewTemplates\3CB\3CB_AI_KRG.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+            };
+            case (toLower worldName == "vt7");
+            case (toLower worldName == "sara"): {
+                Info("Using KRG Template");
+                ["Templates\NewTemplates\3CB\3CB_AI_HIDF.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+            };
             case (toLower worldName in aridmaps): {
                 Info("Using TKA_East Template");
                 ["Templates\NewTemplates\3CB\3CB_AI_TKA_East.sqf", east] call A3A_fnc_compatibilityLoadFaction;
@@ -274,7 +303,7 @@ A3A_Inv_template = switch(true) do {
         "RHS"
     };
     case (A3A_hasVN): {
-        ["Templates\NewTemplates\VN\VN_MACV.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+        ["Templates\NewTemplates\VN\VN_AI_MACV.sqf", east] call A3A_fnc_compatibilityLoadFaction;
         Info("Using VN MACV Template");
         "VN"
     };
