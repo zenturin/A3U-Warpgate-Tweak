@@ -680,6 +680,7 @@ private _marksmanTemplate = {
     ["sniHats"] call _fnc_setHelmet;
     [["sniVests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
+    ["backpacks"] call _fnc_setBackpack;
 
     ["marksmanRifles"] call _fnc_setPrimary;
     ["primary", 4] call _fnc_addMagazines;
@@ -705,6 +706,7 @@ private _sniperTemplate = {
     ["sniHats"] call _fnc_setHelmet;
     [["sniVests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
+    ["backpacks"] call _fnc_setBackpack;
 
     ["sniperRifles"] call _fnc_setPrimary;
     ["primary", 4] call _fnc_addMagazines;
