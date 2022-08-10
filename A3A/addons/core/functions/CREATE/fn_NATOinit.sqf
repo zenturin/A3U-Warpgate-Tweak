@@ -255,4 +255,4 @@ if (_reveal) then
         _unit reveal [_x,1.5];
     } forEach allUnits select {(vehicle _x isKindOf "Air") and (_x distance _unit <= distanceSPWN)}
 };
-["AIInit", [_unit, _side, _marker, _isSpawner]] call EFUNC(Events,triggerEvent);
+["AIInit", [_unit, _side, _marker, _unit getVariable "spawner"]] call EFUNC(Events,triggerEvent);
