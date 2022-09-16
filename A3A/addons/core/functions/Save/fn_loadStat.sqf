@@ -36,13 +36,13 @@ private _translateMarker = {
 };
 
 private _specialVarLoads = [
-    "outpostsFIA","minesX","staticsX","attackCountdownOccupants","antennas","mrkNATO","mrkSDK","prestigeNATO",
+    "outpostsFIA","minesX","staticsX","antennas","mrkNATO","mrkSDK","prestigeNATO",
     "prestigeCSAT","posHQ","hr","armas","items","backpcks","ammunition","dateX","prestigeOPFOR",
     "prestigeBLUFOR","resourcesFIA","skillFIA","destroyedSites",
-    "garrison","tasks","smallCAmrk","membersX","vehInGarage","destroyedBuildings","idlebases",
-    "idleassets","chopForest","weather","killZones","jna_dataList","controlsSDK","mrkCSAT","nextTick",
-    "bombRuns","wurzelGarrison","aggressionOccupants", "aggressionInvaders",
-    "countCA", "attackCountdownInvaders", "testingTimerIsActive", "version", "HR_Garage","A3A_fuelAmountleftArray"
+    "garrison","tasks","membersX","vehInGarage","destroyedBuildings","idlebases",
+    "chopForest","weather","killZones","jna_dataList","controlsSDK","mrkCSAT","nextTick",
+    "bombRuns","wurzelGarrison","aggressionOccupants", "aggressionInvaders", "enemyResources", "HQKnowledge",
+    "testingTimerIsActive", "version", "HR_Garage", "A3A_fuelAmountleftArray"
 ];
 
 private _varName = _this select 0;
@@ -57,14 +57,9 @@ if (_varName in _specialVarLoads) then {
         };
         A3A_saveVersion = 10000*parsenumber(_s#0) + 100*parseNumber(_s#1) + parseNumber(_s#2);
     };
-    if (_varName == 'attackCountdownOccupants') then {attackCountdownOccupants = _varValue; publicVariable "attackCountdownOccupants"};
-    if (_varName == 'attackCountdownInvaders') then {attackCountdownInvaders = _varValue; publicVariable "attackCountdownInvaders"};
-    //Keep this for backwards compatiblity
-    if (_varName == 'countCA') then {attackCountdownOccupants = _varValue; publicVariable "attackCountdownOccupants"};
     if (_varName == 'bombRuns') then {bombRuns = _varValue; publicVariable "bombRuns"};
     if (_varName == 'nextTick') then {nextTick = time + _varValue};
     if (_varName == 'membersX') then {membersX = +_varValue; publicVariable "membersX"};
-    if (_varName == 'smallCAmrk') then {};      // Ignore. These are not persistent.
     if (_varName == 'mrkNATO') then {{sidesX setVariable [[_x] call _translateMarker,Occupants,true]} forEach _varValue;};
     if (_varName == 'mrkCSAT') then {{sidesX setVariable [[_x] call _translateMarker,Invaders,true]} forEach _varValue;};
     if (_varName == 'mrkSDK') then {{sidesX setVariable [[_x] call _translateMarker,teamPlayer,true]} forEach _varValue;};
@@ -262,14 +257,21 @@ if (_varName in _specialVarLoads) then {
             server setVariable [_city,_dataX,true];
         };
     };
+    if (_varname == 'enemyResources') then {
+        A3A_resourcesDefenceOcc = _varValue#0;
+        A3A_resourcesDefenceInv = _varValue#1;
+        A3A_resourcesAttackOcc = _varValue#2;
+        A3A_resourcesAttackInv = _varValue#3;
+    };
+    if (_varname == 'HQKnowledge') then {
+        A3A_curHQInfoOcc = _varValue#0;
+        A3A_curHQInfoInv = _varValue#1;
+        A3A_oldHQInfoOcc = _varValue#2;
+        A3A_oldHQInfoInv = _varValue#3;
+    };
     if (_varname == 'idlebases') then {
         {
             server setVariable [(_x select 0),(_x select 1),true];
-        } forEach _varValue;
-    };
-    if (_varname == 'idleassets') then {
-        {
-            timer setVariable [(_x select 0),(_x select 1),true];
         } forEach _varValue;
     };
     if (_varname == 'killZones') then {
@@ -332,6 +334,9 @@ if (_varName in _specialVarLoads) then {
         publicVariable "staticsToSave";
     };
     if (_varname == 'tasks') then {
+/*
+    // These are really dangerous. Disable for now.
+    // Should be done after all the other init is completed if we really want it
         {
             if (_x == "rebelAttack") then {
                 if(attackCountdownInvaders > attackCountdownOccupants) then
@@ -350,6 +355,7 @@ if (_varName in _specialVarLoads) then {
                 };
             };
         } forEach _varvalue;
+*/
     };
 
     if(_varname == 'A3A_fuelAmountleftArray') then {

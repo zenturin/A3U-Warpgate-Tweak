@@ -37,7 +37,11 @@ if (_type == "CAS") then
         //Vanilla IND CAS
         case "I_Plane_Fighter_03_dynamicLoadout_F":
         {
-            _loadout = ["PylonRack_1Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_1Rnd_LG_scalpel"];
+//            _loadout = ["PylonRack_1Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_1Rnd_LG_scalpel"];
+            _loadout = ["PylonRack_7Rnd_Rocket_04_AP_F","PylonRack_3Rnd_LG_scalpel","PylonRack_1Rnd_Missile_AGM_02_F","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_Missile_AGM_02_F","PylonRack_3Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_AP_F"];
+            _plane setVariable ["mainGun", "Twin_Cannon_20mm"];
+            _plane setVariable ["rocketLauncher", ["Rocket_04_AP_Plane_CAS_01_F"]];
+            _plane setVariable ["missileLauncher", ["Missile_AGM_02_Plane_CAS_01_F", "missiles_SCALPEL"]];
         };
         //RHS US CAS (A-10)
         case "RHS_A10";
@@ -96,6 +100,7 @@ if (_type == "CAS") then
             _plane setVariable ["rocketLauncher", ["rhs_weap_FFARLauncher"]];
             _plane setVariable ["missileLauncher", ["rhs_weap_AGM114K_Launcher", "RHS_weap_AGM114N_Launcher"]];
         };
+        case "UK3CB_B_Mystere_HIDF_CAS1";
         case "UK3CB_MDF_B_Mystere_CAS1":
         {
             _loadout = ["PylonRack_3Rnd_Missile_AGM_02_F","PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles","PylonRack_3Rnd_Missile_AGM_02_F"];
@@ -167,8 +172,8 @@ if (_type == "CAS") then
         };
         case "uns_A1J_CAS":
         {
-            _loadout = ["uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Bomb_MK82","uns_pylonRack_1Rnd_Bomb_MK82","uns_pylonRack_1Rnd_Bomb_MK82","uns_pylonRack_1Rnd_Bomb_MK82","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_1Rnd_fuel_A1"];
-            _plane setVariable ["mainGun", "uns_Uns_M2_4x20mmNR30"];
+            _loadout = ["uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_1Rnd_Rocket_HVAR_AT","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_19Rnd_Rocket_FFAR_HEAT","uns_pylonRack_1Rnd_fuel_A1"];
+            _plane setVariable ["mainGun", "uns_Uns_M2_4x20mm"];
             _plane setVariable ["rocketLauncher", ["Uns_FFAR_HEAT_Launcher_dl", "Uns_HVARLauncher_dl"]];
         };
         case "uns_A7_CAS":
@@ -244,7 +249,7 @@ if (_type == "AA") then
         case "UK3CB_KRG_B_L39_PYLON";
         case "UK3CB_LDF_B_L39_PYLON":
         {
-            _loadout = ["PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_AAA_missiles","PylonRack_1Rnd_AAA_missiles","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_AAA_missiles","PylonRack_1Rnd_AAA_missiles","PylonRack_1Rnd_Missile_AA_04_F"];
+            _loadout = ["PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_AAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_AAA_missiles","PylonRack_1Rnd_Missile_AA_04_F"];
         };
         case "UK3CB_LDF_B_MIG21_AA";
         case "UK3CB_TKA_B_MIG21_AA":
