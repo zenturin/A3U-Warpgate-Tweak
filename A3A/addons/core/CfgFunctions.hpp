@@ -558,7 +558,6 @@ class CfgFunctions
             class reDress {};
             class reinfPlayer {};
             class spawnHCGroup {};
-            class stealStatic {};
             class vehiclePrice {};
             class vehStats {};
         };
