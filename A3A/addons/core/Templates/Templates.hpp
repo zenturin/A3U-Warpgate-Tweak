@@ -658,7 +658,7 @@ class Templates
     {
         requiredAddons[] = {"gm_weapons_items","CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core"};
         basepath = QPATHTOFOLDER(Templates\Templates\GM);
-        logo = "";
+        logo = "\gm\gm_core\data\logos\gm_logo_ca.paa";
         priority = 80;
         Nodes[] = {"GM_Logistics_Nodes.sqf"};
         equipFlags[] = {"specialGM"};
