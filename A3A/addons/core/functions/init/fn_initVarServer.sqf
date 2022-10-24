@@ -54,6 +54,9 @@ DECLARE_SERVER_VAR(distanceForLandAttack, 3000);			// now faction-adjusted  - if
 //Disabled DLC according to server parameters
 //DECLARE_SERVER_VAR(disabledMods, call A3A_fnc_initDisabledMods);
 
+// Used by headless clients for crate scaling
+DECLARE_SERVER_VAR(A3A_activePlayerCount, 1);
+
 //Legacy tool for scaling AI difficulty. Should die.
 DECLARE_SERVER_VAR(difficultyCoef, 0);
 
@@ -121,7 +124,6 @@ A3A_recentDamageOcc = [];
 A3A_recentDamageInv = [];
 
 // Balance params updated by aggressionUpdateLoop
-A3A_activePlayerCount = 1;
 A3A_balancePlayerScale = 1;					// Important due to load/save scaling to 1 playerScale
 A3A_balanceVehicleCost = 110;
 A3A_balanceResourceRate = A3A_balancePlayerScale * A3A_balanceVehicleCost;
