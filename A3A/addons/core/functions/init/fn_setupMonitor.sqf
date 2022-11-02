@@ -18,7 +18,7 @@ call {
 
 // Ignore DLC without equipment and vehicles
 // Need the true names from here, so pass it all in
-private _loadedDLC = getLoadedModsInfo select {_x#3 and !(_x#1 in ["A3","curator","argo","tacops"])};
+private _loadedDLC = getLoadedModsInfo select {(_x#3 or {_x#1 isEqualTo "ws"}) and {!(_x#1 in ["A3","curator","argo","tacops"])}};
 
 
 private _autoLoadTime = "autoLoadLastGame" call BIS_fnc_getParamValue;
