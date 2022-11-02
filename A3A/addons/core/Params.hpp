@@ -38,7 +38,7 @@ class Params
     class civTraffic
     {
         title = "Quantity of civilan traffic and parked vehicles";
-        values[] = {0,1,2,4,};
+        values[] = {0,1,2,4};
         texts[] = {"None","Low","Medium","High"};
         default = 2;
     };
@@ -84,7 +84,13 @@ class Params
         texts[] = {"0","1000","2500","5000","10000"};
         default = 1000;
     };
-
+    class A3A_idleTimeout
+    {
+        title = "Time before a player is considered AFK";
+        values[] = {0,180,300,900,1800};
+        texts[] = {"disabled","2min","5min","15min","30min"};
+        default = 300;
+    };
 
     class SpacerMembership
     {
