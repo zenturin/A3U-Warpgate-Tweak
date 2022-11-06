@@ -320,7 +320,7 @@ private _logisticsFiles = [QPATHTOFOLDER(Templates\Templates\Vanilla\Vanilla_Log
 } forEach (_saveData get "factions");
 
 {
-	private _cfg = configFile/"A3A"/"Templates"/_x;
+	private _cfg = configFile/"A3A"/"AddonVics"/_x;
 	private _basepath = getText (_cfg/"path") + "\";
 	{
 		Info_2("Loading addon file %1 for side %2", _x#1, _x#0);
