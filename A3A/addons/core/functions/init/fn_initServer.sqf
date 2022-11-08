@@ -89,9 +89,6 @@ boxX call jn_fnc_arsenal_init;
 // This does the actual template loading in the middle somewhere
 [A3A_saveData] call A3A_fnc_initVarServer;
 
-// Init that needs factions loaded
-call A3A_fnc_logistics_initNodes;
-
 // Parameter-dependent vars. Could be moved to initVarServer...
 if (gameMode != 1) then {
     Occupants setFriend [Invaders,1];
