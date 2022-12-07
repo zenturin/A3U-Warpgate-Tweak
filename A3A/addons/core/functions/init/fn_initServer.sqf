@@ -224,7 +224,12 @@ addMissionEventHandler ["EntityKilled", {
     params ["_victim", "_killer", "_instigator"];
     if (typeof _victim == "") exitWith {};
     private _killerSide = side group (if (isNull _instigator) then {_killer} else {_instigator});
-    Debug_2("%1 killed by %2", typeof _victim, _killerSide);
+    if (isPlayer _killer) then {
+        private _killerUID = getPlayerUID _killer;
+        Debug_3("%1 killed by %2. Killer UID: %3", typeof _victim, _killerSide, _killerUID);
+    } else {
+        Debug_2("%1 killed by %2", typeof _victim, _killerSide);
+    };
 
     if !(isNil {_victim getVariable "ownerSide"}) then {
         // Antistasi-created vehicle
