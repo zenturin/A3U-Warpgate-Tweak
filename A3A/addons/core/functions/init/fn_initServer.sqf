@@ -109,6 +109,8 @@ if (_startType != "new") then
     A3A_saveTarget = [A3A_saveData get "serverID", A3A_saveData get "gameID", worldName];
     // Sanity checks? hmm
 
+    Info_1("Loading campaign with ID %1", A3A_saveData get "gameID");
+
     // Do the actual game loading
     call A3A_fnc_loadServer;
 }
@@ -129,7 +131,7 @@ else
     call A3A_fnc_checkRadiosUnlocked;
 
     // HQ placement setup
-    _posHQ = A3A_saveData get "startPos";
+    private _posHQ = A3A_saveData get "startPos";
     // Disable all nearby roadblocks/specops
     {
         if (markerPos _x distance _posHQ < distanceSPWN) then {
@@ -146,8 +148,12 @@ if (_startType != "load") then {
     private _serverID = profileNamespace getVariable ["ss_serverID", ""];
     _serverID = [_serverID, false] select (A3A_saveData get "useNewNamespace");
 
-    // TODO: check collisions or build into UI
+    // Create new campaign ID, avoiding collisions
+    private _allIDs = call A3A_fnc_collectSaveData apply { _x get "gameID" };
     private _newID = str(floor(random(90000) + 10000));
+    while { _newID in _allIDs } do { _newID = str(floor(random(90000) + 10000)) };
+
+    Info_1("Creating new campaign with ID %1", _newID);
 
     A3A_saveTarget = [_serverID, _newID, worldName];
 };
