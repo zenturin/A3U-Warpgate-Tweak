@@ -1,9 +1,12 @@
 .vscode/
 .github/
+build
+*.biprivatekey
 *.log
 *.pbo
 *.pbo.bak
 *.bat
+AntistasiBuilder.cfg
 
 #Ignore mission files that have been copied to A3-Antistasi
 A3-Antistasi/description.ext
@@ -19,3 +22,8 @@ PreparedMissions/
 
 #Ignore test templates
 Map-Templates/Antistasi-TEST-**
+
+
+#Ignore Python bytecode files and bytecode-cache folder
+__pycache__/
+*.py[cod]
