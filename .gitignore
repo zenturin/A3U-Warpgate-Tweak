@@ -1,9 +1,14 @@
 .vscode/
+.idea/
 .github/
+*.biprivatekey
 *.log
 *.pbo
 *.pbo.bak
 *.bat
+AntistasiBuilder.cfg
+
+build/@A3A-Plus
 
 #Ignore mission files that have been copied to A3-Antistasi
 A3-Antistasi/description.ext
@@ -14,8 +19,12 @@ A3-Antistasi/ak.jpg
 A3-Antistasi/Navigation/
 A3-Antistasi/Pictures/Mission/
 
-#Ignore packaged missions
-PreparedMissions/
+#Arma Script Compiler
+ASC/
 
-#Ignore test templates
-Map-Templates/Antistasi-TEST-**
+#Keys
+Antistasi-Plus.biprivatekey
+
+#Ignore Python bytecode files and bytecode-cache folder
+__pycache__/
+*.py[cod]
