@@ -21,6 +21,6 @@ server setvariable ["resourcesFIA", _resourcesFIA - MONEY_AMOUNT, true];
 [
     localize "STR_notifiers_success_type",
     format [localize "STR_notifiers_boss_steal_header", A3A_faction_reb get "name"],
-    parseText format [localize "STR_notifiers_boss_steal_success", str MONEY_AMOUNT, A3A_faction_reb get "name", currencySymbol],
+    parseText format [localize "STR_notifiers_boss_steal_success", str MONEY_AMOUNT, A3A_faction_reb get "name", A3A_faction_civ get "currencySymbol"],
     15
 ] spawn SCRT_fnc_ui_showMessage;

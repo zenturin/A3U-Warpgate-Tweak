@@ -44,16 +44,16 @@
         <Polish>Zamknij</Polish>
       </Key>
       <Key ID="STR_antistasi_dialogs_hq_button_withdraw_text">
-        <Original>Grab 100€ from Pool</Original>
-        <French>Prendre 100€ de la cagnotte</French>
-        <Russian>Взять 100$ из фонда</Russian>
-        <German>Entnehme 100€ aus der Kasse</German>
-        <Czech>Vzít 100€ ze společného fondu</Czech>
-        <Chinesesimp>从资金池中拿取100€</Chinesesimp>
-        <Korean>팩션 자금에서 100€ 가져가기</Korean>
-        <Italian>Prendi 100€ dal conto</Italian>
-        <Spanish>Coger 100€ de la caja</Spanish>
-        <Polish>Weź 100€ z Puli</Polish>
+        <Original>Grab 500 money from faction funds</Original>
+        <French>Prendre 500 de la cagnotte</French>
+        <Russian>Взять 500 денег из фонда фракции</Russian>
+        <German>Entnehme 500 aus der Kasse</German>
+        <Czech>Vzít 500 ze společného fondu</Czech>
+        <Chinesesimp>从资金池中拿取500</Chinesesimp>
+        <Korean>팩션 자금에서 500 가져가기</Korean>
+        <Italian>Prendi 500 dal conto</Italian>
+        <Spanish>Coger 500 de la caja</Spanish>
+        <Polish>Weź 500 z Puli</Polish>
       </Key>
       <Key ID="STR_antistasi_dialogs_hq_button_withdraw_tooltip">
         <Original>Take 100€ from faction pool and add it to your personal account. It will damage your position among the faction in the commander career</Original>
