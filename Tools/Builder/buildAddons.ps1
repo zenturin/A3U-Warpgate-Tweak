@@ -23,12 +23,12 @@ if (Test-Path "..\build") {
     Remove-Item -Path "..\build" -Recurse -Force
 }
 New-Item -Path "..\build" -ItemType Directory -Force > $null
-New-Item -Path "..\build\A3A" -ItemType Directory -Force > $null
-New-Item -Path "..\build\A3A\addons" -ItemType Directory -Force > $null
-New-Item -Path "..\build\A3A\Keys" -ItemType Directory -Force > $null
+New-Item -Path "..\build\A3A-Plus" -ItemType Directory -Force > $null
+New-Item -Path "..\build\A3A-Plus\addons" -ItemType Directory -Force > $null
+New-Item -Path "..\build\A3A-Plus\Keys" -ItemType Directory -Force > $null
 
 $addonLocation = "." # We are here already
-$addonOutLocation = "$PSScriptRoot\..\..\build\A3A"
+$addonOutLocation = "$PSScriptRoot\..\..\build\A3A-Plus"
 $addonsOutLocation = "$addonOutLocation\addons"
 
 "`nBuild addons..."
@@ -67,7 +67,7 @@ Set-Location $addonsOutLocation
 $pboFiles = Get-ChildItem -Path $addonsOutLocation -Name "*.pbo"
 forEach ($file in $pboFiles) {
     "Signing file $file ..."
-    .$PSScriptRoot\..\DSSignFile\DSSignFile "..\..\Antistasi $version.biprivatekey" $file
+    .$PSScriptRoot\..\DSSignFile\DSSignFile "..\..\Antistasi-Plus $version.biprivatekey" $file
 }
 
 Remove-Item "..\..\Antistasi-Plus $version.biprivatekey"
