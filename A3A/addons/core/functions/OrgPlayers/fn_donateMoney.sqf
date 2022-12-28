@@ -12,7 +12,7 @@ if (count _this == 0) exitWith {
 	[localize "STR_A3A_OrgPlayers_donateMoney_header", format [localize "STR_A3A_OrgPlayers_donateMoney_success", A3A_faction_civ get "currencySymbol"]] call A3A_fnc_customHint;
 	playSound "A3AP_UiSuccess";
 };
-_target = cursortarget;
+_target = cursorTarget;
 
 if (!isPlayer _target) exitWith {
 	[localize "STR_A3A_OrgPlayers_donateMoney_header",localize "STR_A3A_OrgPlayers_donateMoney_no_player"] call SCRT_fnc_misc_deniedHint;
@@ -22,4 +22,3 @@ if (!isPlayer _target) exitWith {
 [100] remoteExec ["A3A_fnc_resourcesPlayer", _target];
 
 [localize "STR_A3A_OrgPlayers_donateMoney_header", format [localize "STR_A3A_OrgPlayers_donateMoney_player", name _target, A3A_faction_civ get "currencySymbol"]] call A3A_fnc_customHint;
-playSound "A3AP_UiSuccess";

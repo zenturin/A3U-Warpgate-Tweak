@@ -362,8 +362,9 @@ SA_Attach_Tow_Ropes = {
 
 			[_vehicle,_player] call SA_Drop_Tow_Ropes;
 			
-			if (newCarTowing && {(_cargo call A3A_Logistics_fnc_getCargo) isEqualTo [] && {
-				toLowerANSI getText(configFile >> "CfgVehicles" >> typeOf _cargo >> "simulation") isEqualTo "carx" && 
+			if (newCarTowing && 
+				{(_cargo call A3A_Logistics_fnc_getCargo) isEqualTo [] && 
+				{toLowerANSI getText(configFile >> "CfgVehicles" >> typeOf _cargo >> "simulation") isEqualTo "carx" && 
 				{toLowerANSI getText(configFile >> "CfgVehicles" >> typeOf _vehicle >> "simulation") in ["carx", "tankx"]}}}
 			) then {
 				_cargo setTowParent _vehicle;

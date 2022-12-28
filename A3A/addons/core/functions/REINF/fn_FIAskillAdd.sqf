@@ -26,7 +26,7 @@ if (_resourcesFIA < _costs) exitWith {
     [
         localize "STR_notifiers_fail_type",
         format [localize "STR_notifiers_skill_header", FactionGet(reb, "name")],
-        parseText format [localize "STR_notifiers_skill_add_no_money", FactionGet(reb, "name"), _costs, currencySymbol],
+        parseText format [localize "STR_notifiers_skill_add_no_money", FactionGet(reb, "name"), _costs, A3A_faction_civ get "currencySymbol"],
         30
     ] spawn SCRT_fnc_ui_showMessage;
 };
