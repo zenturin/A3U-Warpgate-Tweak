@@ -1,103 +1,55 @@
-<div>
-<p align="center">
-    <img src="https://avatars0.githubusercontent.com/u/53788409?s=200&v=4" width="240">
-</p>
-
-<p align="center">
-    <a href="https://github.com/official-antistasi-community/A3-Antistasi/releases/latest">
-        <img src="https://img.shields.io/badge/Latest_Version-2.4-blue.svg?style=flat-square" alt="Antistasi Version">
+<div align="center">
+  <img alt="Antistasi Plus" width="200" heigth="200" src="https://user-images.githubusercontent.com/6746043/206381805-43f2a69a-2754-49f3-95e2-aeaad8a4cee3.png">
+  <h1>Antistasi Plus</h1>
+  <p>
+    <i>An Arma 3 persistent multiplayer scenario about guerilla warfare tactics.</i>
+    <br/>
+    <i>Fork of Antistasi Community Version focused on expanding player's capabilities and introducing new gameplay features.</i>
+  </p>
+  <p>
+    <a href="https://github.com/igorkis-scrts/A3-Antistasi-Plus/releases/latest">
+        <img src="https://img.shields.io/badge/Current_Stable_Version-2.0-red" alt="Antistasi Version">
     </a>
-    <a href="https://github.com/official-antistasi-community/A3-Antistasi/issues">
-        <img src="https://img.shields.io/github/issues/official-antistasi-community/A3-Antistasi?style=flat-square" alt="Issues">
-    </a>
-    <a href="https://github.com/official-antistasi-community/A3-Antistasi/releases">
-        <img src="https://img.shields.io/github/downloads/official-antistasi-community/A3-Antistasi/total.svg?style=flat-square&label=Downloads" alt="Antistasi Downloads">
-    </a>
-    <a href="https://github.com/official-antistasi-community/A3-Antistasi/blob/unstable/LICENSE">
-        <img src="https://img.shields.io/badge/License-MiT-blue.svg?style=flat-square" alt="Antistasi License">
-    </a>
-</p>
-
-
-<p align="center">
-    <a href="https://discord.gg/TYDwCRKnKX">Discord</a> | <a href="https://antistasi.net/">Forums</a> | <a href="https://docs.google.com/document/d/1cCptf8Uo-mBHRhIqx1BPznECzgRqwJuj70AGjiI6KOI/">Guide (outdated)</a> | <a href="https://www.youtube.com/watch?v=nebLG3Jhrbk">Video Tutorial (outdated)</a>
-</p>
+  </p>
 </div>
 
-## About
-A Persistent Whole Map Mission for MP co-op, focused on Resistance, Infantry and Guerrilla Tactics.
+## Features 
+- Arms Dealer vendor with the ability to directly buy and sell weapons, items and gear
+- Vehicle Black Market - possibility to spend money on vehicles, aircrafts et cetera
+- Commander Menu (CTRL+T shortcut) with various new abilities which commander can use to support his troops
+- Rebel Loadouts - ability to customize AI rebels weapons and equipment for each infantry class
+- Special crate and commander ability provides capabilities to automatically loot bodies, surrender crates and weapons on ground to reduce tediousness of looting
+- New marker types - military administrations and military bases
+- 8 random event types (Civilian Helicopter Flyby, Vehicle Drone Strike, Roving Mortar and others)
+- 9 new mission types (Find the Arms Dealer, Salvage Helicrash, Prevent Artillery Strike, Ambush Officer, Seize Airdrop, Rescue Smugglers, Rescue Rebel Informer, Investigate the Battleground, Kill Cell Leader)
+- Ability to build persistent roadblocks, watchposts, AA, AT emplacements
+- Civilian Presence Module - more performance-friendly and alive footmobile civilians
+- Rally Point - temporary spawn point that can be placed by commander
+- Persistent save for constructions
+- Additional commander abilities - Smoke Barrage, Flare Barrage, Light Vehicle Airdrop, Recon Plane Run, Supply Crate Airdrop, Chemical Airstrike
+- Special commander ability - Paradrop (commander can move player paratroopers to airplane for HALO jump on desired location)
+- Rivals - OPFOR-backed guerilla faction that has different views on country's future, they will try to disrupt your insurgency movement with dirty methods, covert operations and blunt force
+- Infantry unit tiers based on current war level, the bigger war level - the better enemy's infantry units equipment
+- Discord Rich Presence support
+- Chemical airstrike - new airstirke variant which can be used by rebel commander and invader faction
+- Projectile Camera
+- Howitzer and Mechanized Airborne QRF support types
+- Integrated Mag Repack script
+- Various additional settings and small abilities - vehicle unflip, server time multiplier et cetera
+- Various QoL fixes, tweaks, enhancements, UI improvements (Similar weapons counted as one entity on infinite unlock, Zeus persistent constructions and many more! see changelog to get full details)
 
-## Project Status
-Master Branch: [![Build Status](https://travis-ci.com/official-antistasi-community/A3-Antistasi.svg?branch=master)](https://travis-ci.com/official-antistasi-community/A3-Antistasi)  
-Unstable Branch: [![Build Status](https://travis-ci.com/official-antistasi-community/A3-Antistasi.svg?branch=unstable)](https://travis-ci.com/official-antistasi-community/A3-Antistasi)
+## Credits
+- Original Mission by barbolani
+- Antistasi Community Edition by Official Antistasi Community
+- Magrepack by Outlawled, R3vo and OOster
+- HALs_Store by HallyG, R3vo and barman75
+- DRO by mbrdmn
+- Discord Rich Presence by ConnorAU 
+- Antistasi Plus fork by Socrates
 
-## Grab our latest release on Steam!
-### [Mission Files](https://steamcommunity.com/id/OfficialAntiStasiCommunity/myworkshopfiles/)
-- Altis
-    - [Steam Workshop: 1832638103](https://steamcommunity.com/sharedfiles/filedetails/?id=1832638103)
-- Tanoa
-    - [Steam Workshop: 1832685459](https://steamcommunity.com/sharedfiles/filedetails/?id=1832685459)
-- Malden
-    - [Steam Workshop: 1850103246](https://steamcommunity.com/sharedfiles/filedetails/?id=1850103246)
-- Livonia
-    - [Steam Workshop: 1850107049](https://steamcommunity.com/sharedfiles/filedetails/?id=1850107049)
-- Chernarus Summer
-    - [Steam Workshop: 1833035777](https://steamcommunity.com/sharedfiles/filedetails/?id=1833035777)
-- Chernarus Winter
-    - [Steam Workshop: 1959942769](https://steamcommunity.com/sharedfiles/filedetails/?id=1959942769)
-- Anizay
-    - [Steam Workshop: 1959965492](https://steamcommunity.com/sharedfiles/filedetails/?id=1959965492)
-- Kunduz
-    - [Steam Workshop: 1959971214](https://steamcommunity.com/sharedfiles/filedetails/?id=1959971214)
-- Tembelan Island
-    - [Steam Workshop: 1959976706](https://steamcommunity.com/sharedfiles/filedetails/?id=1959976706)
-- Virolahti
-    - [Steam Workshop: 2178424367](https://steamcommunity.com/sharedfiles/filedetails/?id=2178424367)
-- Sahrani
-    - [Steam Workshop: 2431325805](https://steamcommunity.com/sharedfiles/filedetails/?id=2431325805)
-- Takistan
-    - [Steam Workshop: 2431332218](https://steamcommunity.com/sharedfiles/filedetails/?id=2431332218)
-- Altis Blufor (discontinued)
-    - [Steam Workshop: 1832665647](https://steamcommunity.com/sharedfiles/filedetails/?id=1832665647)
-- Altis 1.9 Community Version (discontinued)
-    - [Steam Workshop: 1832910657](https://steamcommunity.com/sharedfiles/filedetails/?id=1832910657)
-
-### [Suggested Modlists](https://steamcommunity.com/id/OfficialAntiStasiCommunity/myworkshopfiles/?section=collections)
-- Vanilla
-    - [Steam Workshop: 1833674441](https://steamcommunity.com/sharedfiles/filedetails/?id=1833674441)
-- RHS Collection
-    - [Steam Workshop: 1833668872](https://steamcommunity.com/sharedfiles/filedetails/?id=1833668872)
-- 3CB Collection
-    - [Steam Workshop: 1834976313](https://steamcommunity.com/sharedfiles/filedetails/?id=1834976313)
-
-## Features:
-
-- Playable in MP and persistent open server MP.
-- Capture an island in a war against either one or two enemies at the same time, which might even fight each other.
-- Dynamic agression system which is changing enemy reactions based on your actions. The system is influenced by basically everything you do like kills, completing missions, taking flags and even shooting civilians and POWs. So take care regarding what you do and who you kill!
-- Persistant war in all aspects, destruction stays the same way as well as your vehicles and garrisons.
-- Compatible with not only the original Arma 3 maps but also others from the steam workshop like Anizay and Chernarus. More to follow!
-- Advanced AI system, the enemy and your friends will heal wounded or downed units, cover themselves and use multiple other tactics to win against their foes.
-- Currently 15 different side missions: Assassination, Logistics, Destroy Assets, Rescue POWS, Conquer Missions with a wide variety for each type.
-- Possibility of Undercovered approaches - utilize that to position yourself for the perfect attack.
-- Persistent Stat Save System: You won't lose game or server progress upon a game update.
-- Enhanced AI Squadmate control.
-- AI friendlies and enemy can drag/carry and heal injured soldiers, not working with ACE3 mod.
-- AI Garrisons that use static weapon you add.
-- Supports up to 3 Headless Clients.
-- Integrated Mods: [TFAR](https://steamcommunity.com/sharedfiles/filedetails/?id=620019431), [ACRE](https://steamcommunity.com/sharedfiles/filedetails/?id=751965892), [RHS: AFRF, USAF and GREF](https://steamcommunity.com/workshop/filedetails/?id=843770737), [3CB](https://steamcommunity.com/sharedfiles/filedetails/?id=1834976313), [GRAD Trenches](https://steamcommunity.com/sharedfiles/filedetails/?id=1224892496&searchtext=grad+trenches), [ACE](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057) or, to keep the unique features of AI that would be disabled with ACE medical system: [ACE no medical](https://steamcommunity.com/sharedfiles/filedetails/?id=2158809703). None of them mandatory.
-
-### How to build from GIT -PowerShell
-- Download ZIP file
-- Extract ZIP
-- Right click on `PrepareMissionsForPacking.ps1` and select 'Open with PowerShell'
-- The script will create a new folder called `PreparedMissions/`
-- Inside this folder you will find multiple subfolders, labeled `Antistasi-VersionNumber.MapName`
-- Use a PBO Packager to pack the any of these mission folders
-
-### Alternative: Build with Antistasi Dev Deploy
-- Download & Extract the ZIP file or Clone Repository.
-- Follow [Getting Started](https://github.com/official-antistasi-community/A3-Antistasi/wiki/Build-With-ADD)
-
-### Known Issues:
-For a list of known issues, please see the [Issues on Github](https://github.com/official-antistasi-community/A3-Antistasi/issues).
+## Additional Icons Credits
+<div>
+<a target="_blank" href="https://icons8.com/icon/12212/hdd">HDD</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/17932/walkie-talkie">Walkie Talkie</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>
