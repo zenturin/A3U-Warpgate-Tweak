@@ -136,7 +136,7 @@ if (_type in FactionGet(all,"SquadLeaders")) then {
     _unit setskill ["courage",_skill + 0.2];
     _unit setskill ["commanding",_skill + 0.2];
 
-    [_unit, 25] call SCRT_fnc_common_addRandomMoneyMagazine;
+    [_unit, 10] call SCRT_fnc_common_addRandomMoneyMagazine;
     [_unit, _type, _isRival] call SCRT_fnc_common_selectAndApplyLeaderIntel;
 };
 
