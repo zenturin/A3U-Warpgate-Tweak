@@ -24,13 +24,9 @@ FIX_LINE_NUMBERS()
 private _players = call SCRT_fnc_misc_getRebelPlayers;
 if (count _players == 0) exitWith {[]};
 
-if (debug) exitWith {
-	position (selectRandom _players);
-};
-
 private _radiusOfOperations = (sqrt 2 / 2 * worldSize) / 8;
 
-private _rivalsLocations = [] call SCRT_fnc_getLocations;
+private _rivalsLocations = [] call SCRT_fnc_rivals_getLocations;
 private _encounterPosition = [];
 
 switch (inactivityLevelRivals) do {

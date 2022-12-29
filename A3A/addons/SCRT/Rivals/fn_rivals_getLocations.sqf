@@ -15,7 +15,7 @@ Dependencies:
     <HASHMAP> rivalsLocationsMap
 
 Example:
-[] call SCRT_fnc_getLocations;
+[] call SCRT_fnc_rivals__getLocations;
 */
 
 #include "..\defines.inc"

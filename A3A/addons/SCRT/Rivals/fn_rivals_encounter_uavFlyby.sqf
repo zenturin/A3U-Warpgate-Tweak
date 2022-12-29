@@ -87,7 +87,7 @@ for "_i" from 0 to _uavQuantity - 1 do {
 	private _angle =  [_spawnPosition,_originPosition] call BIS_fnc_dirTo;
 	_uav setDir _angle;
 
-	if (debug) then {
+#if __A3_DEBUG__
 		_uav spawn {
 			while {alive _this} do {
 				sleep 1;
@@ -106,7 +106,7 @@ for "_i" from 0 to _uavQuantity - 1 do {
 				_localMarker setMarkerColorLocal "ColorRed";	
 			};
 		};
-	};
+#endif
 
 	private _velocity = velocity _uav;
 	private _direction = direction _uav;
@@ -189,7 +189,9 @@ for "_i" from 0 to _uavQuantity - 1 do {
 						_uav removeEventHandler ['Hit', (_uav getVariable ['ehId', 0])];
 					} else {
 						private _uavPos = position _uav; 
-						private _grenade = (selectRandom (A3A_faction_riv get "handGrenadeAmmo")) createVehicle [_uavPos select 0, _uavPos select 1, (_uavPos select 2) - 4]; 
+						private _grenadeAmmoClass = selectRandom (A3A_faction_riv get "handGrenadeAmmo");
+						Info_1("Grenade Ammo Class: %1", _grenadeAmmoClass);
+						private _grenade = _grenadeAmmoClass createVehicle [_uavPos select 0, _uavPos select 1, (_uavPos select 2) - 4]; 
 						[_uav, _grenade] remoteExecCall ['disableCollisionWith', 0, _grenade]; 
 						_uav removeEventHandler ['Hit', (_uav getVariable ['ehId', 0])];
 					};
