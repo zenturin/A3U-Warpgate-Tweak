@@ -215,7 +215,9 @@ while {true} do {
 	sleep 4;
 
 	if (areRivalsEnabled && {tierWar > 2 && {!areRivalsDiscovered && {!isRivalsDiscoveryQuestAssigned}}}) then {
+		Info_1("Rivals roll: %1", _rivalsTaskChance);
 		if (random 100 < _rivalsTaskChance) then {
+			Info("Assigning Rivals Discovery Task...");
 			[] call SCRT_fnc_rivals_prepareQuest;
 		} else {
 			_rivalsTaskChance = [
