@@ -18,7 +18,7 @@ private _chance = if ("cellleader" in (toLowerANSI (_unit getVariable "unitType"
 sleep 2;
 
 if (random 100 < _chance) exitWith {
-	_caller globalChat (selectRandom [
+	_unit globalChat (selectRandom [
 		localize "STR_imprison_action_response_failure_one_text",
 		localize "STR_imprison_action_response_failure_two_text",
 		format [localize "STR_imprison_action_response_failure_three_text", A3A_faction_riv get "name"]
@@ -32,7 +32,7 @@ if (random 100 < _chance) exitWith {
 	deleteGroup _group;
 };
 
-_caller globalChat (selectRandom [
+_unit globalChat (selectRandom [
 	localize "STR_imprison_action_response_success_one_text",
 	localize "STR_imprison_action_response_success_two_text",
 	localize "STR_imprison_action_response_success_three_text",
