@@ -7,7 +7,7 @@
 //	Nothing.
 //
 // 	How to use: 
-// 	[_traderX] call SCRT_fnc_trader_setTraderStock;
+// 	[_traderX] call SCRT_fnc_trader_setStockType;
 #include "..\script_component.hpp"
 FIX_LINE_NUMBERS()
 
