@@ -10,7 +10,6 @@ if (count _this == 0) exitWith {
 	player setVariable ["score",_pointsXJ,true];
 	[-100] call A3A_fnc_resourcesPlayer;
 	[localize "STR_A3A_OrgPlayers_donateMoney_header", format [localize "STR_A3A_OrgPlayers_donateMoney_success", A3A_faction_civ get "currencySymbol"]] call A3A_fnc_customHint;
-	playSound "A3AP_UiSuccess";
 };
 _target = cursorTarget;
 
