@@ -209,6 +209,7 @@ class Templates
         basepath = QPATHTOFOLDER(Templates\Templates\RHS);
         logo = "\rhsusf\addons\rhsusf_main\data\rhs_logo_ca.paa";
         priority = 30;
+        equipFlags[] = {"specialRHS"};
     };
 
     class RHS_NAPA : RHS_Base
@@ -300,6 +301,7 @@ class Templates
         logo = "UK3CB_Factions\addons\UK3CB_Factions_Common\editor\logo_3cb_ca.paa";
         basepath = QPATHTOFOLDER(Templates\Templates\3CBF);
         priority = 30;
+        equipFlags[] = {"specialRHS"};
     };
 
     class 3CBF_FIA : 3CBF_Base

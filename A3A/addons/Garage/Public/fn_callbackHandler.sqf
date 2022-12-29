@@ -137,6 +137,8 @@ switch _callBackName do {
 
                 [_vehicle] call SCRT_fnc_loot_addLootCrateActions;
 
+                _vehicle addEventHandler ["Killed", { [_this#0] spawn { sleep 10; deleteVehicle (_this#0) } }];
+
                 clearItemCargoGlobal _vehicle;
                 clearMagazineCargoGlobal _vehicle;
                 clearWeaponCargoGlobal _vehicle;

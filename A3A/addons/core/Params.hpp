@@ -52,9 +52,9 @@ class Params
     class distanceMission
     {
         title = $STR_params_distanceMission;
-        values[] = {2000,4000,6000,8000,10000,12000};
-        texts[] = {"2000","4000","6000","8000","10000","12000"};
-        default = 4000;
+        values[] = {2000,3000,4000,6000,8000,10000,12000};
+        texts[] = {"2000","3000","4000","6000","8000","10000","12000"};
+        default = 3000;
     };
     class distanceSPWN
     {
