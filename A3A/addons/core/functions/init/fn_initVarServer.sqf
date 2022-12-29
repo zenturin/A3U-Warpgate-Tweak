@@ -607,7 +607,7 @@ server setVariable [FactionGet(reb,"vehicleAT"),1450,true];
 if (FactionGet(reb,"vehicleAA") isNotEqualTo "") then {
     server setVariable [FactionGet(reb,"vehicleAA"), 1600, true]; // should be vehSDKTruck + staticAAteamPlayer otherwise things will break
 };
-{server setVariable [_x,400,true]} forEach [FactionGet(reb,"staticMG"),FactionGet(reb,"vehicleBoat"),FactionGet(reb,"vehicleRepair")];
+{server setVariable [_x,400,true]} forEach [FactionGet(reb,"vehicleBoat"),FactionGet(reb,"vehicleRepair")];
 
 server setVariable [FactionGet(reb,"staticMG"),800,true];
 server setVariable [FactionGet(reb,"staticAA"),1500,true];

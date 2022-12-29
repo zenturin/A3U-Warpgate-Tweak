@@ -197,7 +197,7 @@ if (_markerX in seaports) then {
 			_vehiclesX pushBack _bunker;
 			_bunker setDir _dirveh;
 			private _pos = getPosATL _bunker;
-			private _typeVehX = selectRandom (_faction get "staticAT");
+			private _typeVehX = selectRandom (_faction get "staticATs");
 			private _veh = _typeVehX createVehicle _positionX;
 			_vehiclesX pushBack _veh;
 			_veh setPos _pos;
