@@ -46,4 +46,6 @@ while {true} do {
     } else {
         Info("Event doesn't rolled - low rivals activity.");
     };
+
+    sleep 600;
 };
