@@ -327,7 +327,7 @@ private _cellLeaderTemplate = {
 	["primary", 6] call _fnc_addMagazines;
 	["primary", 5] call _fnc_addAdditionalMuzzleMagazines;
 
-	if (random 1 < 0.25) then {
+	if (random 1 < 0.15) then {
 		["lightATLaunchers"] call _fnc_setLauncher;
 		["launcher", 1] call _fnc_addMagazines;
 	} else {
@@ -398,7 +398,7 @@ private _enforcerTemplate = {
 	[["enforcerRifles", "rifles"] call _fnc_fallback] call _fnc_setPrimary;
 	["primary", 4] call _fnc_addMagazines;
 
-	if (random 1 < 0.25) then {
+	if (random 1 < 0.15) then {
 		["lightHELaunchers"] call _fnc_setLauncher;
 		["launcher", 1] call _fnc_addMagazines;
 	} else {
@@ -433,7 +433,7 @@ private _partisanTemplate = {
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
 
-	if (random 1 < 0.25) then {
+	if (random 1 < 0.15) then {
 		["lightHELaunchers"] call _fnc_setLauncher;
 		["launcher", 1] call _fnc_addMagazines;
 	} else {
@@ -468,7 +468,7 @@ private _minutemanTemplate = {
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
 
-	if (random 1 < 0.25) then {
+	if (random 1 < 0.15) then {
 		["lightATLaunchers"] call _fnc_setLauncher;
 		["launcher", 1] call _fnc_addMagazines;
 	} else {
@@ -539,7 +539,7 @@ private _saboteurTemplate = {
 	["primary", 6] call _fnc_addMagazines;
 	["primary", 10] call _fnc_addAdditionalMuzzleMagazines;
 
-	if (random 1 < 0.25) then {
+	if (random 1 < 0.15) then {
 		["lightHELaunchers"] call _fnc_setLauncher;
 		["launcher", 1] call _fnc_addMagazines;
 	} else {

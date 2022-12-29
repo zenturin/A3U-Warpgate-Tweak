@@ -687,7 +687,7 @@ private _riflemanTemplate = {
     [selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
     ["primary", 6] call _fnc_addMagazines;
 
-    if (random 1 < 0.25) then {
+    if (random 1 < 0.15) then {
 		[["lightHELaunchers", "lightATLaunchers"] call _fnc_fallback] call _fnc_setLauncher;
         ["backpacks"] call _fnc_setBackpack;
 		["launcher", 2] call _fnc_addMagazines;
