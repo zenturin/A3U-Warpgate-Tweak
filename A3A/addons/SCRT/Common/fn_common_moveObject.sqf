@@ -5,6 +5,8 @@ private _playerX = player;
 _playerX allowSprint false;
 
 _thingX setVariable ["objectBeingMoved", true];
+_thingX enableSimulationGlobal false;
+
 if (captive _playerX) then {
 	_playerX setVariable ["carryUndercoverBreak", true];
 };
@@ -56,6 +58,7 @@ waitUntil {
 };
 
 _playerX allowSprint true;
+_thingX enableSimulationGlobal true;
 
 [_thingX, _playerX, _actionX] call _fnc_placeObject;
 

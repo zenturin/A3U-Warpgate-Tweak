@@ -39,7 +39,7 @@ if (tierWar > 3) then {
 		A3A_faction_reb get "staticAT", 
 		A3A_faction_reb get "staticAA"
 	] select {_x isNotEqualTo ""};
-	_militaryVehicles append _avaialbleVehs;
+	_militaryVehicles append _availableVehs;
 };
 
 if (tierWar > 4) then {
