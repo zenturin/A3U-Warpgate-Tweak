@@ -56,8 +56,7 @@
 ["staticAAs", ["rhsgref_ins_Igla_AA_pod", "rhsgref_ins_ZU23"]] call _fnc_saveToTemplate;
 ["staticMortars", ["rhsgref_ins_2b14"]] call _fnc_saveToTemplate;
 
-["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
-["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
+["mortarMagazineHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 
 ["handGrenadeAmmo", ["rhs_ammo_rgd5", "rhs_ammo_rgn", "rhs_ammo_rgo", "rhs_ammo_f1"]] call _fnc_saveToTemplate;
 ["mortarAmmo", ["rhs_ammo_3vo18"]] call _fnc_saveToTemplate;
