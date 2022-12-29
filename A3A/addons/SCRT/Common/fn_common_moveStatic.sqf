@@ -46,6 +46,8 @@ if (captive _playerX) then {
 
 _thingX setVariable ["objectBeingMoved", true];
 
+_thingX enableSimulationGlobal false;
+
 private _spacing = 2 max (1 - (boundingBoxReal _thingX select 0 select 1));
 private _height = 0.1 - (boundingBoxReal _thingX select 0 select 2);
 _thingX attachTo [_playerX, [0, _spacing, _height]];
@@ -91,6 +93,7 @@ waitUntil {
 };
 
 _playerX allowSprint true;
+_thingX enableSimulationGlobal true;
 
 [_thingX, _playerX, _actionX] call _fnc_placeObject;
 
