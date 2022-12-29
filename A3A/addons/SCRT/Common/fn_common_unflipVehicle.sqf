@@ -50,6 +50,7 @@ if (([_vx,_vy] findIf {_x > 80 || _x < -80}) != -1) then {
         _unflippableVehicle setPosATL [(getPosATL _unflippableVehicle) select 0, (getPosATL _unflippableVehicle) select 1, 0];
         sleep 1;
         _unflippableVehicle allowDamage true;
+        terminate _thisScript;
 	};
 };
 
