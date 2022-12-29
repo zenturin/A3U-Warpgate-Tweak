@@ -58,8 +58,8 @@
 
 ["mortarMagazineHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 
-["handGrenadeAmmo", ["rhs_ammo_rgd5", "rhs_ammo_rgn", "rhs_ammo_rgo", "rhs_ammo_f1"]] call _fnc_saveToTemplate;
-["mortarAmmo", ["rhs_ammo_3vo18"]] call _fnc_saveToTemplate;
+["handGrenadeAmmo", ["rhs_ammo_rgd5", "rhs_ammo_f1"]] call _fnc_saveToTemplate;
+["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
