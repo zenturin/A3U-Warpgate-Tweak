@@ -156,7 +156,7 @@ private _initialRebelEquipment = [
     "rhsgref_chicom","V_BandollierB_oli"
 ];
 
-private _civilianBackpacks =  ["UK3CB_CHC_C_B_MED", "UK3CB_LFR_B_B_MESSENGER_MED"];
+private _civilianBackpacks =  ["UK3CB_CHC_C_B_MED", "B_AssaultPack_blk"];
 if (_hasLawsOfWar) then {
     _civilianBackpacks append [
         "B_Messenger_Black_F", 
@@ -167,8 +167,6 @@ if (_hasLawsOfWar) then {
         "B_LegStrapBag_coyote_F", 
         "B_LegStrapBag_olive_F"
     ];
-} else {
-    _civilianBackpacks append ["B_AssaultPack_blk"];
 };
 
 ["civilianBackpacks", _civilianBackpacks createHashMapFromArray []] call _fnc_saveToTemplate;

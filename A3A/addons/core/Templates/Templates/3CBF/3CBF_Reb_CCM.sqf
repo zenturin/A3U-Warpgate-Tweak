@@ -142,8 +142,8 @@ private _initialRebelEquipment = [
     "rhs_weap_m38", "rhsgref_5Rnd_762x54_m38",
     "rhsgref_mag_rkg3em", "rhs_grenade_khattabka_vog17_mag", "rhs_grenade_khattabka_vog25_mag", "rhsgref_mag_rkg3em", "rhs_mag_rdg2_black", "rhs_mag_rdg2_white",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
-    "rhs_sidor",
     "Binocular",
+    "B_FieldPack_oli",
     "rhs_weap_rsp30_white","rhs_mag_rsp30_white",
     "rhs_weap_rsp30_green","rhs_mag_rsp30_green",
     "rhs_weap_rsp30_red", "rhs_mag_rsp30_red",
@@ -151,7 +151,7 @@ private _initialRebelEquipment = [
     "rhs_vest_pistol_holster","rhs_vest_commander","rhs_6sh46"
 ];
 
-private _civilianBackpacks =  ["UK3CB_CHC_C_B_MED", "UK3CB_LFR_B_B_MESSENGER_MED"];
+private _civilianBackpacks =  ["UK3CB_CHC_C_B_MED", "B_AssaultPack_blk"];
 if (_hasLawsOfWar) then {
     _civilianBackpacks append [
         "B_Messenger_Black_F", 
@@ -162,8 +162,6 @@ if (_hasLawsOfWar) then {
         "B_LegStrapBag_coyote_F", 
         "B_LegStrapBag_olive_F"
     ];
-} else {
-    _civilianBackpacks pushBack "B_AssaultPack_blk";
 };
 
 ["civilianBackpacks", _civilianBackpacks createHashMapFromArray []] call _fnc_saveToTemplate;
