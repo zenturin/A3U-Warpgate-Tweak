@@ -492,7 +492,7 @@ if (_varName in _specialVarLoads) then {
 			if(count _varvalue > 0) then {
 				traderX = [_varvalue] call SCRT_fnc_trader_createTrader; 
 				publicVariable "traderX";
-				[traderX] call SCRT_fnc_trader_setTraderStock;
+				[traderX] call SCRT_fnc_trader_setStockType;
 				[traderX] remoteExecCall ["SCRT_fnc_trader_addVehicleMarketAction", 0, true];
 				traderPosition = _varvalue; publicVariable "traderPosition";
 			};
