@@ -585,7 +585,8 @@ _policeLoadoutData set ["sidearms", [
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _militiaLoadoutData set ["uniforms", ["rhs_uniform_acu_oefcp"]];
 _militiaLoadoutData set ["vests", ["V_TacVest_brn", "V_Chestrig_khk"]];
-_militiaLoadoutData set ["backpacks", ["rhsusf_assault_eagleaiii_ocp", "B_Kitbag_mcamo", "B_Carryall_mcamo", "rhsusf_falconii_mc"]];
+_militiaLoadoutData set ["backpacks", ["rhsusf_assault_eagleaiii_ocp", "B_Kitbag_mcamo", "rhsusf_falconii_mc"]];
+_militiaLoadoutData set ["atBackpacks", ["B_Kitbag_mcamo"]];
 _militiaLoadoutData set ["helmets", ["rhsusf_mich_bare_tan", "rhsusf_mich_bare_norotos_arc_tan", "rhsusf_mich_bare_norotos_tan", "rhsusf_patrolcap_ocp"]];
 _militiaLoadoutData set ["slHat", ["rhsusf_mich_bare_tan_headset", "rhsusf_mich_bare_norotos_alt_tan", "rhsusf_patrolcap_ocp", "H_Bandanna_sand"]];
 
