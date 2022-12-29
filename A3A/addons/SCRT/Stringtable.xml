@@ -5466,8 +5466,8 @@
                 <Russian>Поиск информации</Russian>
             </Key>
             <Key ID="STR_rivals_intel">
-                <Original>We are receiving vague reports about a intensive firefight between %1 and unknown party in one of the cities. Something's not right there...</Original>
-                <Russian>Мы получаем расплывчатые сообщения об интенсивной перестрелке в одном из городов между %1 и неизвестной стороной. Здесь что-то не так...</Russian>
+                <Original>We are receiving vague reports about an intensive firefight between %1 and unknown party in one of the cities.</Original>
+                <Russian>Мы получаем расплывчатые сообщения об интенсивной перестрелке в одном из городов между %1 и неизвестной стороной.</Russian>
             </Key>
             <Key ID="STR_rivals_intel_first_task">
                 <Original>Our communications has been compromised by unknown signal across all the %1, it's everywhere now. We deciphered the signal's content, it contains a message to us. It's a unknown faction manifesto - they're calling themselves &lt;t color='#800000'&gt;%2&lt;/t&gt;, they're well armed and prepared, and their leader, %3, has declared war on us.</Original>
