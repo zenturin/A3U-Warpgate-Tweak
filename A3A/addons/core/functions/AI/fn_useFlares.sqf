@@ -18,7 +18,7 @@ if (_flares <= 0) exitWith {};
 _unit setVariable ["smokeUsed", time + 60];
 _unit setVariable ["remainingFlares", (_flares - 1)];
 
-private _target = [_unit, _enemy] select (!isNil "_enemy");
+private _target = if (!isNil "_enemy") then {_enemy} else {_unit};
 
 private _initialFlarePosition = _target getPos [random 25,random 360];
 _initialFlarePosition set [2, (((getPosATL _target) select 2) + (random [150,175,200]))]; 
