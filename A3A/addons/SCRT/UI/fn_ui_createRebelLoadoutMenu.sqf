@@ -9,43 +9,43 @@ private _addLoadoutMark = {
 private _display = findDisplay 120000;
 
 if (str (_display) != "no display") then {
-    if ("loadouts_reb_militia_Rifleman" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitRifle") in rebelLoadouts) then {
         [(_display displayCtrl 120001)] call _addLoadoutMark;
     };
 
-    if ("loadouts_reb_militia_MachineGunner" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitMG") in rebelLoadouts) then {
         [(_display displayCtrl 120002)] call _addLoadoutMark;
     };
 
-    if ("loadouts_reb_militia_medic" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitMedic") in rebelLoadouts) then {
        [(_display displayCtrl 120003)] call _addLoadoutMark;
     };
 
-    if ("loadouts_reb_militia_Engineer" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitEng") in rebelLoadouts) then {
         [(_display displayCtrl 120004)] call _addLoadoutMark;
     };
 
-    if ("loadouts_reb_militia_Grenadier" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitGL") in rebelLoadouts) then {
         [(_display displayCtrl 120005)] call _addLoadoutMark;
     };
 
-    if ("loadouts_reb_militia_sniper" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitSniper") in rebelLoadouts) then {
         [(_display displayCtrl 120006)] call _addLoadoutMark;
     };
 
-    if ("loadouts_reb_militia_lat" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitLAT") in rebelLoadouts) then {
         [(_display displayCtrl 120007)] call _addLoadoutMark;
     };
 
-    if ("loadouts_reb_militia_staticCrew" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitCrew") in rebelLoadouts) then {
         [(_display displayCtrl 120008)] call _addLoadoutMark;
     };
 
-    if ("loadouts_reb_militia_SquadLeader" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitSL") in rebelLoadouts) then {
         [(_display displayCtrl 120009)] call _addLoadoutMark;
     };
 
-    if ("loadouts_reb_militia_ExplosivesExpert" in rebelLoadouts) then {
+    if ((A3A_faction_reb get "unitExp") in rebelLoadouts) then {
         [(_display displayCtrl 120010)] call _addLoadoutMark;
     };
 };

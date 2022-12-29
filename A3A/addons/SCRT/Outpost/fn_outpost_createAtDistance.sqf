@@ -52,7 +52,7 @@ private _groupX = [_positionX, teamPlayer, _garrison, true, false] call A3A_fnc_
 private _groupXUnits = units _groupX;
 _groupXUnits apply { [_x,_markerX] spawn A3A_fnc_FIAinitBases; };
 
-private _crewManIndex = _groupXUnits findIf  {(_x getVariable "unitType") == "loadouts_reb_militia_Rifleman"};
+private _crewManIndex = _groupXUnits findIf  {(_x getVariable "unitType") == (A3A_faction_reb get "unitRifle")};
 if (_crewManIndex != -1) then {
     private _crewMan = _groupXUnits select _crewManIndex;
     _crewMan moveInGunner _veh;
