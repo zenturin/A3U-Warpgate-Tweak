@@ -39,7 +39,8 @@ if ((_thingX select 0) isEqualType grpNull) then {
 
 
 private _limit = [_nearX] call SCRT_fnc_common_getGarrisonLimit;
-if (((count _unitsX) + _limit) > _limit) exitWith {
+private _newGarrison = (count (units _groupX)) + (count (garrison getVariable [_nearX, []]));
+if (_newGarrison > _limit) exitWith {
 	[localize "STR_garrison_garrison_header", localize "STR_garrison_error_exceed_limit"] call SCRT_fnc_misc_deniedHint;
 };
 
@@ -50,7 +51,7 @@ private _alreadyInGarrison = false;
 	if !(isNil "_garrisondIn") then {_alreadyInGarrison = true};
 } forEach _unitsX;
 if _alreadyInGarrison exitWith {
-	[localize "STR_garrison_garrison_header", localize "STR_garrison_error_already_in_garrison"] call SCRT_fnc_misc_deniedHint
+	[localize "STR_garrison_garrison_header", localize "STR_garrison_error_already_in_garrison"] call SCRT_fnc_misc_deniedHint;
 };
 
 if ((groupID _groupX in ["MineF", "Watch", "Post", "Road"]) or {(isPlayer(leader _groupX))}) exitWith {
