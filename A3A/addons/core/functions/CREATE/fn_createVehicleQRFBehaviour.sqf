@@ -78,6 +78,8 @@ else            // ground vehicle
 {
     private _typeName = call {
         if (_vehType in FactionGet(all,"vehiclesTanks")) exitWith {"Tank"};
+        if (_vehType in FactionGet(all,"vehiclesLightTanks")) exitWith {"Light Tank"};
+        if (_vehType in FactionGet(all,"vehiclesLightAPCs")) exitWith {"Light APC"};
         if (_vehType in FactionGet(all,"vehiclesAA")) exitWith {"AA"};
         if (_vehType in FactionGet(all,"vehiclesArmor"))  exitWith {"APC"};
         if (_vehType in FactionGet(all,"vehiclesTrucks")) exitWith {"Truck"};
