@@ -127,7 +127,7 @@ if ((dateToNumber date > _dateLimitNum) or {isNull _truckX}) then {
 		if (_countX < 1) exitWith {};
 	};
 	if ((dateToNumber date < _dateLimitNum) and !(isNull _truckX)) then {
-		[petros,"hint", format ["STR_A3A_Missions_SUPP_Supplies_success", _nameDest], localize "STR_A3A_Missions_SUPP_Supplies_tip_header"] remoteExec ["A3A_fnc_commsMP",[teamPlayer,civilian]];
+		[petros,"hint", format [localize "STR_A3A_Missions_SUPP_Supplies_success", _nameDest], localize "STR_A3A_Missions_SUPP_Supplies_tip_header"] remoteExec ["A3A_fnc_commsMP",[teamPlayer,civilian]];
 		[_taskId, "SUPP", "SUCCEEDED"] call A3A_fnc_taskSetState;
 		{ 
 			[15*_bonus,_x] call A3A_fnc_addScorePlayer;
