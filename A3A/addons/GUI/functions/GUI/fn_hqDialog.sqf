@@ -197,12 +197,12 @@ switch (_mode) do
         _occupantsFlag ctrlSetText NATOFlagTexture;
         _occupantsAggroText ctrlSetText ([aggressionLevelOccupants] call A3A_fnc_getAggroLevelString);
         _aggressionStr = localize "STR_antistasi_dialogs_generic_aggression";
-        _occupantsFlag ctrlSetToolTip (nameOccupants + " " + _aggressionStr);
-        _occupantsAggroText ctrlSetTooltip (nameOccupants + " " + _aggressionStr);
+        _occupantsFlag ctrlSetToolTip (A3A_faction_occ get "name" + " " + _aggressionStr);
+        _occupantsAggroText ctrlSetTooltip (A3A_faction_occ get "name" + " " + _aggressionStr);
         _invadersFlag ctrlSetText CSATFlagTexture;
         _invadersAggroText ctrlSetText ([aggressionLevelInvaders] call A3A_fnc_getAggroLevelString);
-        _invadersFlag ctrlSetToolTip (nameInvaders + " " + _aggressionStr);
-        _invadersAggroText ctrlSetTooltip (nameInvaders + " " + _aggressionStr);
+        _invadersFlag ctrlSetToolTip (A3A_faction_inv get "name" + " " + _aggressionStr);
+        _invadersAggroText ctrlSetTooltip (A3A_faction_inv + " " + _aggressionStr);
 
         // Get location data
         private _controlledCities = {sidesX getVariable [_x, sideUnknown] == teamPlayer} count citiesX;
