@@ -428,7 +428,7 @@ private _partisanTemplate = {
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
 
-	if (random 1 < 0.25) then {
+	if (random 1 < 0.15) then {
 		["backpacks"] call _fnc_setBackpack;
 		["lightHELaunchers"] call _fnc_setLauncher;
 		["launcher", 3] call _fnc_addMagazines;
@@ -530,7 +530,7 @@ private _saboteurTemplate = {
 	["primary", 6] call _fnc_addMagazines;
 	["primary", 10] call _fnc_addAdditionalMuzzleMagazines;
 
-	if (random 1 < 0.25) then {
+	if (random 1 < 0.15) then {
 		["lightHELaunchers"] call _fnc_setLauncher;
 		["launcher", 2] call _fnc_addMagazines;
 	} else {
