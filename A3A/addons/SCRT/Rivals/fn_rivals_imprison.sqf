@@ -39,7 +39,7 @@ _unit globalChat (selectRandom [
 	localize "STR_imprison_action_response_success_four_text"
 ]);
 
-_unit playMoveNow "amovpsitmstpsnonwnondnon_ground";
+[_unit, "amovpsitmstpsnonwnondnon_ground"] remoteExecCall ["playMoveNow", _unit];
 
 private _timeOut = time + 120;
 waitUntil {

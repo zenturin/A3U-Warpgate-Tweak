@@ -33,7 +33,7 @@ class Params
         title = $STR_params_allowFT;
         values[] = {0,1};
         texts[] = {$STR_params_allowFT_0, $STR_params_allowFT_1};
-        default = 1;
+        default = 0;
     };
     class civTraffic
     {

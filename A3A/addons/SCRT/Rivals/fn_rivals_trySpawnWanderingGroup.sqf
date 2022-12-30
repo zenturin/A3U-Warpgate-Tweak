@@ -23,10 +23,18 @@ FIX_LINE_NUMBERS()
 
 params ["_marker"];
 
-if (areRivalsDefeated) exitWith {};
-if (!areRivalsDiscovered) exitWith {};
-if (!(_marker in ([] call SCRT_fnc_rivals_getLocations))) exitWith{};
-if (!([] call SCRT_fnc_rivals_rollProbability)) exitWith {};
+if (areRivalsDefeated) exitWith {
+	Info("Rivals was defeated before, exiting.");
+};
+if (!areRivalsDiscovered) exitWith {
+	Info("Rivals are not yet discovered, exiting.");
+};
+if (!(_marker in ([] call SCRT_fnc_rivals_getLocations))) exitWith {
+	Info("Location is not in the rivals network, exiting.");
+};
+if (!([] call SCRT_fnc_rivals_rollProbability)) exitWith {
+	Info("Low probability, exiting.");
+};
 
 Info_1("Creating rivals patrol on %1 marker...", _marker);
 

@@ -248,13 +248,13 @@ for "_i" from 0 to (count _cardinalDirections) - 1 do {
 
     _barricade setVectorUp surfaceNormal position _barricade;
 
-    if (debug) then {
-        private _localMarker = createMarkerLocal [format ["%1barr%2", random 10000, random 10000], (position _barricade)];
-        _localMarker setMarkerSizeLocal [1,1];
-        _localMarker setMarkerAlpha 1; 
-        _localMarker setMarkerTypeLocal "hd_dot";
-        _localMarker setMarkerColorLocal "ColorRed";
-    };
+#if __A3_DEBUG__
+    private _localMarker = createMarkerLocal [format ["%1barr%2", random 10000, random 10000], (position _barricade)];
+    _localMarker setMarkerSizeLocal [1,1];
+    _localMarker setMarkerAlpha 1; 
+    _localMarker setMarkerTypeLocal "hd_dot";
+    _localMarker setMarkerColorLocal "ColorRed";
+#endif
     
     _vehicles append [_canOpener, _barricade];
 };
@@ -374,7 +374,7 @@ if (_isDifficult) then {
 //  Patrol vehicle 	                        //
 //////////////////////////////////////////////
 private _vehicleClass = if (_isDifficult) then {
-    selectRandom (A3A_faction_riv get "vehiclesRivalsLightArmed" + A3A_faction_riv get "vehiclesRivalsAPCs" + A3A_faction_riv get "vehiclesRivalsTanks");
+    selectRandom ((A3A_faction_riv get "vehiclesRivalsLightArmed") + (A3A_faction_riv get "vehiclesRivalsAPCs") + (A3A_faction_riv get "vehiclesRivalsTanks"));
 } else {
     selectRandom (A3A_faction_riv get "vehiclesRivalsLightArmed");
 };

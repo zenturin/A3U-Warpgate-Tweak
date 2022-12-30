@@ -107,6 +107,9 @@ if (_prefix in ["occ", "inv"]) exitWith {
     _faction set ["groupsTierSmall", [
         _faction get "groupTierSniper",
         _smallGroupSentry,
+        _smallGroupSentry,
+        _smallGroupSentry,
+        _smallGroupSentry,
         _smallGroupMG,
         _smallGroupLAT, 
         _smallGroupMarksman
@@ -153,7 +156,7 @@ if (_prefix in ["occ", "inv"]) exitWith {
                 selectRandomWeighted [unit(militia, "LAT"), 2, unit(militia, "MachineGunner"), 1],
                 selectRandomWeighted [unit(militia, "Rifleman"), 1.25, unit(militia, "Grenadier"), 1],
                 selectRandomWeighted [unit(militia, "MachineGunner"), 2, unit(militia, "Marksman"), 1],
-                selectRandomWeighted [unit(militia, "LAT"), 3, unit(militia, "AT"), 1],
+                selectRandomWeighted [unit(militia, "LAT"), 2, unit(militia, "AT"), 1],
                 selectRandomWeighted [unit(militia, "AA"), 1, unit(militia, "Rifleman"), 3],
                 selectRandomWeighted [unit(militia, "Rifleman"), 2, unit(militia, "Radioman"), 1],
                 unit(militia, "Medic")

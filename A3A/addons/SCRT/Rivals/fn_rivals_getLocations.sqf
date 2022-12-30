@@ -15,7 +15,7 @@ Dependencies:
     <HASHMAP> rivalsLocationsMap
 
 Example:
-[] call SCRT_fnc_rivals__getLocations;
+[] call SCRT_fnc_rivals_getLocations;
 */
 
 #include "..\defines.inc"
@@ -23,7 +23,7 @@ FIX_LINE_NUMBERS()
 
 params [["_mode", ""]];
 
-if (!(_mode in ["KNOWN", "UNKNOWN"])) exitWith {
+if (!(_mode in ["KNOWN", "UNKNOWN", ""])) exitWith {
 	Error("Wrong value: %1", _mode);
 };
 

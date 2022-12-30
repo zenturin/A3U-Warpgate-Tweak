@@ -70,13 +70,13 @@ _chargedVehicle setDir _dirveh;
 private _vehiclePosition = position _chargedVehicle;
 _chargedVehicle setPos [(_vehiclePosition select 0) - 1, (_vehiclePosition select 1) - 1, _vehiclePosition select 2];
 
-if (debug) then {
+#if __A3_DEBUG__
     private _localMarker = createMarkerLocal [format ["%1exp%2", random 10000, random 10000], (position _chargedVehicle)];
     _localMarker setMarkerSizeLocal [1,1];
     _localMarker setMarkerAlpha 1; 
     _localMarker setMarkerTypeLocal "KIA";
     _localMarker setMarkerColorLocal "ColorEAST";
-};
+#endif
 
 private _timeOut = time + 1800;
 waitUntil { sleep 5; (time > _timeOut) || isNull _chargedVehicle || {_allPlayers findIf {_x distance2D (position _chargedVehicle) < distanceSPWN} == -1}};
