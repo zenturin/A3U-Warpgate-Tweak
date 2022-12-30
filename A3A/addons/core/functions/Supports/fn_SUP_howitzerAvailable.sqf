@@ -17,7 +17,7 @@ params ["_target", "_side", "_maxSpend", "_availTypes"];
 
 if (_target isKindOf "Air") exitWith { 0 };     // can't hit air
 
-if ({sidesX getVariable [_x, sideUnknown] == _side} count (airports + milbases) == 0) exitWith { 0 }; //howitzers are stationed and big outposts
+if ({sidesX getVariable [_x, sideUnknown] == _side} count (airportsX + milbases) == 0) exitWith { 0 }; //howitzers are stationed and big outposts
 
 // balance this one against artillery
 if (tierWar < 4) exitWith { 0 };
