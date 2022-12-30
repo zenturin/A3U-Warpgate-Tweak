@@ -29,9 +29,10 @@ if (player != theBoss) then {
 if (_resourcesFIA < vehiclePurchase_cost) exitWith {
 	[localize "STR_A3A_addFiaVeh_header", format [localize "STR_A3AP_error_veh_not_enough_money_generic", vehiclePurchase_cost, A3A_faction_civ get "currencySymbol"]] call A3A_fnc_customHint;
 };
-vehiclePurchase_nearestMarker = [markersX select {sidesX getVariable [_x,sideUnknown] == teamPlayer},player] call BIS_fnc_nearestPosition;
+ 
+private _vehiclePurchase_nearestMarker = [markersX select {sidesX getVariable [_x,sideUnknown] == teamPlayer},player] call BIS_fnc_nearestPosition;
 
-if (!(player inArea vehiclePurchase_nearestMarker)) exitWith {
+if (_callbackHandlerKey isNotEqualTo "BUYBLACKMARKET" && {!(player inArea _vehiclePurchase_nearestMarker)}) exitWith {
 	[localize "STR_A3A_addFiaVeh_header", localize "STR_A3AP_error_veh_close_to_flag_generic"] call A3A_fnc_customHint;
 };
 

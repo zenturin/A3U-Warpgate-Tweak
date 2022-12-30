@@ -102,8 +102,10 @@ switch (_mode) do
             _button ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_button_tooltip", _displayName, _price, "€"];
             _button setVariable ["className", _className];
             _button setVariable ["model", _model];
+            _button setVariable ["callbackHandlerKey", _callbackHandlerKey];
             _button ctrlAddEventHandler ["ButtonClick", {
-                closeDialog 2; [(_this # 0) getVariable "className", _callbackHandlerKey] spawn A3A_fnc_addFIAveh;
+                closeDialog 2; 
+                [(_this # 0) getVariable "className", (_this # 0) getVariable "callbackHandlerKey"] spawn A3A_fnc_addFIAveh;
             }];
             _button ctrlCommit 0;
 
