@@ -2,7 +2,7 @@ class malden {
 	population[] = {}; //automated data is fine and needs no adaptation
 	disabledTowns[] = {"Malden_C_Airport","Malden_L_Moray", "Malden_V_Lolisse"};
 	antennas[] = {
-		{9635.38,3309.47,0},{6272.45,4754.12,0},{5183.3,1189.01,0},{7058.79,9933.09,0},{4744,7156.13,3.05176e-005},{7556.63,10560.4,0}
+		{11607.4,4483.77,0},{6272.45,4754.12,0},{5183.3,1189.01,0},{7058.79,9933.09,0},{4744,7156.13,3.05176e-005},{7556.63,10560.4,0}
 	};
 	antennasBlacklistIndex[] = {};
 	banks[] = {
@@ -13,7 +13,7 @@ class malden {
 		"Land_FuelStation_Feed_F","Land_fs_feed_F","Land_FuelStation_01_pump_malevil_F","Land_FuelStation_01_pump_F","Land_FuelStation_02_pump_F","Land_FuelStation_03_pump_F"
 	};
 	milAdministrations[] = {
-		{8368.15,3117.62,0}, {5841.13,3682.52,0}, {6145.07,8550.52,0}, {7141.02,8054.9,0}
+		{5841.13,3682.52,0}, {6145.07,8550.52,0}, {7141.02,8054.9,0}
 	};
 	climate = "arid";
 };
