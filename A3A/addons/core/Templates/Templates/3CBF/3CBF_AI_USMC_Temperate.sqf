@@ -56,7 +56,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ]] call _fnc_saveToTemplate;
 
 ["uavsAttack", ["B_UAV_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["uavsPortable", ["B_UAV_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
+["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate;
 
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
 ["vehiclesMilitiaLightArmed", ["rhsusf_m1025_w_s_m2", "rhsusf_m1025_w_s_m2", "rhsusf_m1043_w_s_m2", "rhsusf_m1043_w_s_m2", "rhsusf_m1045_w_s"]] call _fnc_saveToTemplate;
