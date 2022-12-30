@@ -5760,8 +5760,8 @@
                 <Russian>Захватите администрацию</Russian>
             </Key>
             <Key ID="STR_CON_MilAdmin_desc">
-                <Original>A Military Administration of Kavala asserts their rule and force on our population, we should deal with it so people will breathe freely. Kill military administrator and/or eliminate it's garrison to nullify the threat. Do it before %2.</Original>
-                <Russian>Оккупационная администрация населенного пункта %1 утверждает свое господство и применяет силу к нашему населению, мы должны разобраться с этим, чтобы люди смогли вздохнуть спокойно. Убейте военного администратора или/и устраните гарнизон, чтобы обнулить угрозу. Сделайте это до %2.</Russian>
+                <Original>A Military Administration of Kavala asserts their rule and force on our population, we should deal with it so people will breathe freely. Kill military administrator to seize it. Do it before %2.</Original>
+                <Russian>Оккупационная администрация населенного пункта %1 утверждает свое господство и применяет силу к нашему населению, мы должны разобраться с этим, чтобы люди смогли вздохнуть спокойно. Убейте военного администратора для захвата. Сделайте это до %2.</Russian>
             </Key>
             <Key ID="STR_wavedattack_task">
                 <Original>%1 Attack</Original>

@@ -1,5 +1,5 @@
-#define RIVALS_CITY_PART 0.6
-#define RIVALS_CONTROL_PART 0.5
+#define RIVALS_CITY_PART 0.3
+#define RIVALS_CONTROL_PART 0.3
 
 //events
 #define CARDEMO 100

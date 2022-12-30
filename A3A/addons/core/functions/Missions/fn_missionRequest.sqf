@@ -84,7 +84,8 @@ switch (_type) do {
 				[petros,"hint",format [localize "STR_chats_mission_request_no_CON_hint_text", str distanceMission], localize "STR_chats_mission_request_header"] remoteExec ["A3A_fnc_commsMP",_requester];
 			};
 		} else {
-			private _site = selectRandom _possibleMarkers;
+			private _milAdmins = _possibleMarkers select {_x in milAdministrationsX };
+			private _site = if (_milAdmins isNotEqualTo []) then {selectRandom _milAdmins} else {selectRandom _possibleMarkers};
 
 			if (_site in milAdministrationsX) then {
 				[[_site],"A3A_fnc_CON_MilAdmin"] remoteExec ["A3A_fnc_scheduler",2]

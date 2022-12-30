@@ -255,7 +255,7 @@ if (dateToNumber date < _dateLimitNum) then {
     //  Patrol vehicle 	                        //
     //////////////////////////////////////////////
     private _vehicleClass = if (_isDifficult) then {
-        selectRandom (A3A_faction_riv get "vehiclesRivalsLightArmed" + A3A_faction_riv get "vehiclesRivalsAPCs" + A3A_faction_riv get "vehiclesRivalsTanks");
+        selectRandom ((A3A_faction_riv get "vehiclesRivalsLightArmed") + (A3A_faction_riv get "vehiclesRivalsAPCs") + (A3A_faction_riv get "vehiclesRivalsTanks"));
     } else {
         selectRandom (A3A_faction_riv get "vehiclesRivalsLightArmed");
     };

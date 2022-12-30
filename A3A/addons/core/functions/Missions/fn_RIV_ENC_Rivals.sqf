@@ -45,12 +45,12 @@ while {true} do {
 };
 
 private _roadcon = roadsConnectedto (selectRandom _road);
-private _dirveh = if(count _roadcon > 0) then {[_road select 0, _roadcon select 0] call BIS_fnc_DirTo} else {random 360};
+private _dirveh = if(count _roadcon > 0) then {[_road select 0, _roadcon select 0] call BIS_fnc_dirTo} else {random 360};
 private _roadPosition = getPos (_road select 0);
 
 private _crater = createVehicle ["Crater", _roadPosition, [], 0, "NONE"];
 
-private _vehicleClass = selectRandom (A3A_faction_riv get "vehiclesRivalsCars" + A3A_faction_riv get "vehiclesRivalsLightArmed");
+private _vehicleClass = selectRandom ((A3A_faction_riv get "vehiclesRivalsCars") + (A3A_faction_riv get "vehiclesRivalsLightArmed"));
 private _crashedVehicle = createVehicle [_vehicleClass, [_roadPosition select 0, _roadPosition select 1, 0.2], [], 0, "CAN_COLLIDE"];
 _crashedVehicle setDir _dirveh;
 _crashedVehicle setDamage 0.7;
@@ -203,36 +203,29 @@ for "_i" from 0 to count _rivalsClasses - 1 do {
     private _soldier = [_rivalsGroup, (_rivalsClasses select _i), _bodyPosition, [], 0, "NONE"] call A3A_fnc_createUnit;
     [_soldier] call A3A_fnc_NATOinit;
 
-	if ((random 100) < 20) then {
-		private _anim = selectRandom [
-			"Acts_StaticDeath_01",
-			"Acts_StaticDeath_02",
-			"Acts_StaticDeath_03",
-			"Acts_StaticDeath_04", 
-			"Acts_StaticDeath_05",
-			"Acts_StaticDeath_05", 
-			"Acts_StaticDeath_06",
-			"Acts_StaticDeath_07",
-			"Acts_StaticDeath_08",
-			"Acts_StaticDeath_09",
-			"Acts_StaticDeath_10"
-		];
-		_soldier switchMove _anim;
-		sleep 0.2;
-		_soldier setDamage 1;
-		private _dir = [_soldier, _crashedVehicle] call BIS_fnc_dirTo;
-		_soldier setDir (_dir - 180);
-		_soldier removeItems "FirstAidKit";
-	} else {
-		{_soldier disableAI _x} forEach ["ANIM", "AUTOTARGET", "FSM", "MOVE", "TARGET", "AUTOCOMBAT", "COVER", "CHECKVISIBLE", "WEAPONAIM", "SUPPRESSION"];
-		_soldier enableSimulationGlobal false;
-		_soldier setCaptive true;
-	};	
+	private _anim = selectRandom [
+		"Acts_StaticDeath_01",
+		"Acts_StaticDeath_02",
+		"Acts_StaticDeath_03",
+		"Acts_StaticDeath_04", 
+		"Acts_StaticDeath_05",
+		"Acts_StaticDeath_06",
+		"Acts_StaticDeath_07",
+		"Acts_StaticDeath_08",
+		"Acts_StaticDeath_09",
+		"Acts_StaticDeath_10"
+	];
+	_soldier switchMove _anim;
+	sleep 0.5;
+	_soldier setDamage 1;
+	private _dir = [_soldier, _crashedVehicle] call BIS_fnc_dirTo;
+	_soldier setDir (_dir - 180);
+	_soldier removeItems "FirstAidKit";	
 };
 
 _groups pushBack _rivalsGroup;
 
-[format [(localize "STR_rivals_intel"), nameOccupants], true] remoteExec ["A3A_fnc_showIntel", [teamPlayer, civilian]];
+[format [(localize "STR_rivals_intel"), A3A_faction_occ get "name"], true] remoteExec ["A3A_fnc_showIntel", [teamPlayer, civilian]];
 
 sleep 2;
 
@@ -244,7 +237,7 @@ private _taskId = "RIV_ENC" + str A3A_taskCount;
     [teamPlayer,civilian],
     _taskId,
     [
-        format [(localize "STR_rivals_quest_description"),nameOccupants],
+        format [(localize "STR_rivals_quest_description"),A3A_faction_occ get "name"],
         (localize "STR_rivals_quest_header"),
         _marker
     ],
@@ -261,17 +254,6 @@ waitUntil {
     sleep 2;
     (call SCRT_fnc_misc_getRebelPlayers) findIf {_x distance2D _roadPosition <= distanceSPWN} != -1
 };
-
-{
-	private _soldier = _x;
-	{_soldier enableAI _x} forEach ["ANIM", "AUTOTARGET", "FSM", "MOVE", "TARGET", "AUTOCOMBAT", "COVER", "CHECKVISIBLE", "WEAPONAIM", "SUPPRESSION"];
-	_soldier enableSimulationGlobal true;
-	_soldier setCaptive false;
-	_soldier setCombatMode "RED";
-	_soldier setBehaviour "Combat";
-} forEach units _rivalsGroup;
-
-[_rivalsGroup, _roadPosition, 150] call bis_fnc_taskPatrol;
 
 waitUntil {sleep 2;!isNil "rivalsLaptop"};
 
@@ -290,7 +272,12 @@ sleep 2.5;
 
 sleep 8;
 
-[format [(localize "STR_rivals_intel_first_task"), ([] call SCRT_fnc_misc_getWorldName), A3A_faction_riv get "name", A3A_faction_riv get "nameLeader"], true] remoteExec ["A3A_fnc_showIntel", [teamPlayer, civilian]];
+_nul = [] spawn {
+	sleep 60;
+	[
+		format [(localize "STR_rivals_intel_first_task"), ([] call SCRT_fnc_misc_getWorldName), A3A_faction_riv get "name", A3A_faction_riv get "nameLeader"], true
+	] remoteExec ["A3A_fnc_showIntel", [teamPlayer, civilian]];
+};
 
 //laptop may be changed in the rivals_searchData thus why global var is used there
 [_intelLeader, _marker] spawn {
@@ -298,9 +285,7 @@ sleep 8;
 
 	sleep 4;
 
-	private _soundPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;  
-	private _soundToPlay = _soundPath + "Sounds\BombCountdown.ogg"; 
-	playSound3D [_soundToPlay, rivalsLaptop, false, getPosASL rivalsLaptop, 2.5, 1, 100]; 
+	playSound3D ["x\A3A\addons\core\Sounds\Misc\BombCountdown.ogg", rivalsLaptop, false, getPosASL rivalsLaptop, 2.5, 1, 100]; 
 
 	sleep 2;
 
@@ -325,7 +310,8 @@ private _displayTime = [_dateLimit] call A3A_fnc_dateToTimeString;//Converts the
 
 sleep 2;
 
-[[_markerPosition], "SCRT_fnc_rivals_encounter_rovingMortar"] call A3A_fnc_scheduler;
+[_markerPosition, true] spawn SCRT_fnc_rivals_encounter_rovingMortar;
+
 
 [
     [teamPlayer,civilian],
@@ -339,7 +325,7 @@ sleep 2;
     false,
     0,
     true,
-    "map",
+    "navigate",
     true
 ] call BIS_fnc_taskCreate;
 [_taskId, "RIV_ENC", "ASSIGNED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
@@ -347,8 +333,8 @@ _taskId call BIS_fnc_taskSetCurrent;
 
 private _group1Position = [
 		_roadPosition, //center
-		500, //minimal distance
-		800, //maximumDistance
+		400, //minimal distance
+		700, //maximumDistance
 		2, //object distance
 		0, //water mode
 		0, //maximum terrain gradient
@@ -356,7 +342,7 @@ private _group1Position = [
 		[], //blacklist positions
 		[_roadPosition, _roadPosition] //default position
 	] call BIS_fnc_findSafePos;
-private _group1 = [_group1Position, Rivals, (selectRandom groupsRivalsFireteam)] call A3A_fnc_spawnGroup;
+private _group1 = [_group1Position, Rivals, selectRandom (A3A_faction_riv get "groupsFireteam")] call A3A_fnc_spawnGroup;
 _groups pushBack _group1;
 private _group1Wp = _group1 addWaypoint [(position _intelLeader), 5];
 _group1Wp setWaypointType "MOVE";
@@ -365,8 +351,8 @@ _group1Wp setWaypointSpeed "FULL";
 
 private _group2Position = [
 		_roadPosition, //center
-		500, //minimal distance
-		800, //maximumDistance
+		400, //minimal distance
+		700, //maximumDistance
 		2, //object distance
 		0, //water mode
 		0, //maximum terrain gradient
@@ -435,13 +421,11 @@ sleep 10;
 [] remoteExecCall ["SCRT_fnc_rivals_activate", 2];
 [_taskId, "RIV_ENC", "SUCCEEDED"] call A3A_fnc_taskSetState;
 
-{
-    [_x] spawn A3A_fnc_vehDespawner
-} forEach (_effects + _vehicles);
+sleep 30;
 
-{
-    [_x] spawn A3A_fnc_groupDespawner
-} forEach _groups;
+{deleteVehicle _x} forEach _effects;
+{[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
+{[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
 
 [_taskId, "RIV_ENC", 1200] spawn A3A_fnc_taskDelete;
 
