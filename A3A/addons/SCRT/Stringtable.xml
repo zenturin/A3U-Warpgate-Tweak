@@ -2705,7 +2705,7 @@
                 <Russian>Не логгировать никого</Russian>
             </Key>
             <Key ID="STR_params_A3A_logDebugConsole_allnondev">
-                <Original>Логгировать не-разработчиков</Original>
+                <Original>Log Non-Developers</Original>
                 <Russian>Логгировать не-разработчиков</Russian>
             </Key>
             <Key ID="STR_params_A3A_logDebugConsole_all">
