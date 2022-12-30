@@ -45,9 +45,7 @@ if (!isNil "A3A_FFPun_Jailed" && {(getPlayerUID player) in A3A_FFPun_Jailed}) ex
 private _units = units _groupX;
 
 if (_units findIf {
-	vehicle _x != _x and 
-	{{(isNull (driver vehicle _x) or !canMove vehicle _x or vehicle _x isKindOf "Boat")} and
-	!(vehicle _x isKindOf "StaticWeapon")}
+	(vehicle _x!= _x) and ((isNull (driver vehicle _x)) or (!canMove vehicle _x) or (vehicle _x isKindOf "Boat"))
 } != -1) exitWith {
 	[localize "STR_A3A_Dialogs_fast_travel_header", localize "STR_A3A_Dialogs_fast_travel_no_multiple"] call SCRT_fnc_misc_deniedHint;
 };
@@ -66,7 +64,7 @@ private _positionTel = positionTel;
 private _earlyEscape = false;
 
 if (count _positionTel > 0) then {
-	private _base = [_markersX, _positionTel] call BIS_Fnc_nearestPosition;
+	private _base = [_markersX, _positionTel] call BIS_fnc_nearestPosition;
 	if (!isNil "rallyPointMarker" && {_base == rallyPointMarker}) then {
 		[] spawn SCRT_fnc_rally_travelToRallyPoint;
 		openMap false;
@@ -94,12 +92,11 @@ if (_positionTel isEqualTo []) exitWith {
 	[localize "STR_A3A_Dialogs_fast_travel_header", localize "STR_A3A_Dialogs_fast_travel_missclick"] call SCRT_fnc_misc_deniedHint;
 };
 
-
 private _base = [_markersX, _positionTel] call BIS_Fnc_nearestPosition;
+
 private _rebelMarkers = if (!isNil "traderMarker") then {["Synd_HQ", traderMarker]} else {["Synd_HQ"]};
 if (_checkForPlayer && {!(_base in (_rebelMarkers + airportsX + milbases))}) exitWith {
 	[localize "STR_A3A_Dialogs_fast_travel_header", localize "STR_A3A_Dialogs_fast_travel_limited"] call SCRT_fnc_misc_deniedHint;
-	openMap [false,false];
 };
 
 if ((sidesX getVariable [_base,sideUnknown]) in [Occupants, Invaders]) exitWith {
@@ -198,6 +195,8 @@ if (_positionTel distance getMarkerPos _base < 50) then {
 	
 	sleep 5;
 	{_x allowDamage true} forEach units _groupX;
+} else {
+	[localize "STR_A3A_Dialogs_fast_travel_header", localize "STR_A3A_Dialogs_fast_travel_missclick"] call SCRT_fnc_misc_deniedHint;
 };
 
 if (!_esHC) then { openMap false };
