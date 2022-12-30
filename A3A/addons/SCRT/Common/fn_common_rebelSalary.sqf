@@ -31,20 +31,28 @@ if(_rebels isEqualTo []) exitWith {
 private _rebelsCount = count _rebels;
 private _totalSalary = _resAdd / 4;
 
-private _incomePerPlayer = round(_totalSalary / _rebelsCount);
-{
-	private _playerMoney = round (((_x getVariable ["moneyX", 0]) + _incomePerPlayer) max 0);
-	_x setVariable ["moneyX", _playerMoney, (owner _x)];
-	private _paycheckText = format [
-		localize "STR_comms_mp_paycheck",
-		name _x,
-		_incomePerPlayer, 
-		A3A_faction_civ get "currencySymbol",
-		call SCRT_fnc_misc_getWorldName
-	];
+_nul = [_totalSalary, _rebelsCount, _rebels] spawn {
+	params ["_totalSalary", "_rebelsCount", "_rebels"];
+	private _incomePerPlayer = round(_totalSalary / _rebelsCount);
+	
+	{
+		private _playerMoney = round (((_x getVariable ["moneyX", 0]) + _incomePerPlayer) max 0);
+		_x setVariable ["moneyX", _playerMoney, (owner _x)];
+		private _paycheckText = format [
+			localize "STR_comms_mp_paycheck",
+			name _x,
+			_incomePerPlayer, 
+			A3A_faction_civ get "currencySymbol",
+			call SCRT_fnc_misc_getWorldName
+		];
 
-	[petros, "income", _paycheckText] remoteExec ["A3A_fnc_commsMP", _x];
-} forEach _rebels;
+		sleep 10;
+		
+		[petros, "income", _paycheckText] remoteExec ["A3A_fnc_commsMP", _x];
+	} forEach _rebels;
+
+	terminate _thisScript;
+};
 
 _resAdd = _resAdd - _totalSalary;
 
