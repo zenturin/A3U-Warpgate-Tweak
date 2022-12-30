@@ -13,6 +13,8 @@ if ("specialGM" in A3A_factionEquipFlags) exitWith {
 	false;
 };
 
+if (_itemMod in A3A_vanillaMods && {"specialRHS" in A3A_factionEquipFlags}) exitWith {false};
+
 // Allow all faction mod & enabled CDLC gear. If CDLC and mods are loaded unnecessarily then assume that's what the user wants.
 if !(_itemMod in A3A_vanillaMods or {_itemMod in A3A_extraEquipMods}) exitWith {true};
 

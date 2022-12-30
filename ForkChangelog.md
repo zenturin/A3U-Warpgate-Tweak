@@ -82,7 +82,7 @@
 - Fixed non-working despawn checks for Police Patrol, Post Ambush, Utility Truck Movement, Vehicle Patrol random events
 - Fixed marker position in Ambush Officer task
 - Destroy Artillery task easy variant will have patrolling medium group instead of full squad, mortars will be used instead of howitzers if the latter is not available in the modset, minor spawning and event handlers exploit fixes
-- Reduced Deliver Supplies supply sacks defend time for easy/difficult mission variants to 90/180 seconds (was 120/240), fixed non-fully initialized units in reinforcement group, reinforcement group be militia squad in difficult mission variant
+- Reduced Deliver Supplies supply sacks defend time for easy/difficult mission variants to 90/180 seconds (was 120/240), fixed non-fully initialized units in reinforcement group, reinforcement group be militia squad in difficult mission variant,  mission can't be rolled for already captured cities anymore
 - Reduced max number of prisoners in Rescue Prisoners and Rescue Refugees task to reduce tediousness of breaking them free and putting into transport
 - Reduced delay between airdrops in Catch Airdrop task from 2 seconds to 1, added final notification when all crates have been dropped, reduced total quantity of crates to 2 (ammobox will be dropped if it's difficult mission variant), minor optimizations
 - Ambush Officer site search will check if origin and destination are connected by roads
