@@ -371,7 +371,7 @@ SA_Attach_Tow_Ropes = {
 				private _driver = driver _cargo;
 				moveOut _driver;
 				if (isPlayer _driver) then {
-					[(localize "STR_antistasi_actions_towing_hint_header"), (localize "STR_antistasi_actions_driver_towing_notification_hint")] remoteExecCall ["A3A_fnc_customHint", _x];
+					[localize "STR_antistasi_actions_towing_hint_header", localize "STR_antistasi_actions_driver_towing_notification_hint"] remoteExec ["A3A_fnc_customHint", _driver];
 				};
 				_cargo lockDriver true;
 				[_cargo, _cargoHitch, [0,0,-1]] ropeAttachTo (_towRopes select 0);
