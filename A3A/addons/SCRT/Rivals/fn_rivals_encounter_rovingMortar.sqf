@@ -4,7 +4,10 @@ FIX_LINE_NUMBERS()
 #include "Constants.inc"
 
 
-params [["_overridePosition", []]];
+params [
+    ["_overridePosition", []],
+    ["_isInstant", false]
+];
 
 Info("Roving  Mortar random event init.");
 
@@ -89,7 +92,7 @@ private _mortar = [selectRandom (A3A_faction_riv get "staticMortars"), _spawnPos
 [_mortar, Rivals] call A3A_fnc_AIVEHinit;
 _vehicles pushBack _mortar;
 
-Info_2("Roving mortar has been created at %1 position.", str _spawnPosition);
+Info_1("Roving mortar has been created at %1 position.", str _spawnPosition);
 
 private _mortarGroup = [Rivals, _mortar, A3A_faction_riv get "unitRifle"] call A3A_fnc_createVehicleCrew;
 _groups pushBack _mortarGroup;
@@ -172,7 +175,7 @@ _mortarGroup setVariable ["Mortar", _mortar, true];
     ];
 } forEach (units _mortarGroup);
 
-private _setupTime = 60 - (((5 - inactivityLevelRivals) + 1) * 5);
+private _setupTime = if (_isInstant) then {10} else {60 - (((5 - inactivityLevelRivals) + 1) * 5)};
 private _minSleepTime = (1 - ((5 - inactivityLevelRivals) + 1) * 0.1) * _setupTime;
 private _sleepTime = _minSleepTime + random (_setupTime - _minSleepTime);
 
