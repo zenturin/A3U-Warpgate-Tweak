@@ -35,23 +35,20 @@ private _infantrySquadArray = [
     selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)
 ] select _difficult;
 
-
-if(_sideX == Occupants) then { 
-    if ((_faction get "staticHowitzers") isEqualTo []) then {
-        _artilleryClass = selectRandom (_faction get "staticMortars");
-        _artilleryShellClass = _faction get "mortarMagazineHE";
-    } else {
-        _artilleryClass = selectRandom (_faction get "staticHowitzers");
-        _artilleryShellClass = _faction get "howitzerMagazineHE";
-    };
-
-    _mgClass = selectRandom (_faction get "staticMGs");
-    _mgCrewClass = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTiered;
+if ((_faction get "staticHowitzers") isEqualTo []) then {
+    _artilleryClass = selectRandom (_faction get "staticMortars");
+    _artilleryShellClass = _faction get "mortarMagazineHE";
+} else {
+    _artilleryClass = selectRandom (_faction get "staticHowitzers");
+    _artilleryShellClass = _faction get "howitzerMagazineHE";
 };
+
+_mgClass = selectRandom (_faction get "staticMGs");
+_mgCrewClass = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTiered;
 
 if (isNil "_artilleryClass" || {isNil "_artilleryShellClass" || {isNil "_mgClass" || {isNil "_mgCrewClass"}}}) exitWith {
 	["DES"] remoteExec ["A3A_fnc_missionRequest",2];
-    Error("Problems with faction template, rerequesting new destroy mission.");
+    Error_4("Problems with faction template classes(%1, %2, %3, %4), rerequesting new destroy mission.", _artilleryClass, _artilleryShellClass, _mgClass, _mgCrewClass);
 };
 
 Info_5("Artillery: %1, Artillery Shell: %2, Static: %3, Squad: %4, MG Crew: %5", _artilleryClass, _artilleryShellClass, _mgClass, str _infantrySquadArray, _mgCrewClass);
@@ -130,6 +127,8 @@ _artilleryVeh allowDamage true;
 
 waitUntil {sleep 1; dateToNumber date > _dateLimitNum or {!alive _artilleryVeh or {(spawner getVariable _markerX != 2 and !(sidesX getVariable [_markerX,sideUnknown] == teamPlayer))}}};
 
+private _firedEh = nil;
+
 if (alive _artilleryVeh) then {
     //////////////////////
     //Artillery vehicle preparations
@@ -162,7 +161,7 @@ if (alive _artilleryVeh) then {
     //////////////////////
     //Artillery fake fire
     /////////////////////
-    private _firedEh = _artilleryVeh addEventHandler ["Fired", {
+    _firedEh = _artilleryVeh addEventHandler ["Fired", {
         params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
         deleteVehicle _projectile;
 

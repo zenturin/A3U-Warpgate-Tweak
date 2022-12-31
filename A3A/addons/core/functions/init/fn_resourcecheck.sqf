@@ -235,4 +235,8 @@ while {true} do {
 			] select (sunOrMoon < 1);
 		};
 	};
+
+	if (areRivalsDiscovered && {!areRivalsDefeated}) then{
+		[random [5,10,15]] call SCRT_fnc_rivals_addProgressToRivalsLocationReveal;
+	};
 };

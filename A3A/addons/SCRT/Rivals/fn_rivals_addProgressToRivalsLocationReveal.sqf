@@ -15,7 +15,7 @@ Dependencies:
     <NUMBER> nextRivalsLocationReveal
 
 Example:
-[60] call SCRT_fnc_rivals_addProgressToNextRivalsAttack;
+[60] call SCRT_fnc_rivals_addProgressToRivalsLocationReveal;
 */
 
 #include "..\defines.inc"
