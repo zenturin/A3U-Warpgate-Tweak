@@ -149,7 +149,7 @@ switch (true) do {
             case (RIVALS):
             {
                 _text = format [(localize "STR_intel_rivals"), A3A_faction_riv get "name", _sideName];
-                [15] remoteExecCall ["SCRT_fnc_rivals_addProgressToNextRivalsAttack", 2];
+                [15] remoteExecCall ["SCRT_fnc_rivals_addProgressToRivalsLocationReveal", 2];
             };
             case (DISCOUNT):
             {

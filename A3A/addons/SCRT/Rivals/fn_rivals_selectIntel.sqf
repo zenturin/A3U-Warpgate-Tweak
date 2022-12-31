@@ -75,7 +75,7 @@ switch (_intelContent) do {
 	};
 };
 
-[15] remoteExecCall ["SCRT_fnc_rivals_addProgressToNextRivalsAttack", 2];
+[15] remoteExecCall ["SCRT_fnc_rivals_addProgressToRivalsLocationReveal", 2];
 
 if (_text isNotEqualTo "") then {
     [_text, true] remoteExec ["A3A_fnc_showIntel", [civilian, teamPlayer]];

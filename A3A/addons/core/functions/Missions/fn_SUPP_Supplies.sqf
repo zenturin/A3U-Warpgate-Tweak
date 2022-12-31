@@ -47,7 +47,7 @@ _truckX setVariable ["destinationX",_nameDest,true];
 
 [_truckX,localize "STR_marker_supply_box"] spawn A3A_fnc_inmuneConvoy;
 
-waitUntil {sleep 1; dateToNumber date > _dateLimitNum or {(spawner getVariable _markerX != 2 and !(sidesX getVariable [_markerX,sideUnknown] == teamPlayer))}};
+waitUntil {sleep 1; dateToNumber date > _dateLimitNum or {spawner getVariable _markerX != 2}};
 
 private _mrk = nil;
 
