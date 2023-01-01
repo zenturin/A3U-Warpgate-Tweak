@@ -394,6 +394,7 @@ private _processCityCivMarker = {
             if !(_marker in destroyedSites) then
             {
                 [[_marker], "A3A_fnc_createCIV"] call A3A_fnc_scheduler;
+                [[_marker], "SCRT_fnc_rivals_trySpawnWanderingGroup"] call A3A_fnc_scheduler;
             };
         };
     };
