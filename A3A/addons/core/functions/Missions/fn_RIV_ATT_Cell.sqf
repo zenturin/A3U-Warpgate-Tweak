@@ -600,7 +600,7 @@ switch(true) do {
 
 sleep 30;
 
-[_taskId, "RIV_ATT", 1200] spawn A3A_fnc_taskDelete;
+[_taskId, "RIV_ATT", 60] spawn A3A_fnc_taskDelete;
 
 {deleteVehicle _x} forEach _effects;
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
