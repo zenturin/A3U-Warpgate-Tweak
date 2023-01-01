@@ -29,14 +29,15 @@ if(_mode == "ADD") then {
             };
 
 			if (_location in citiesX) then {
-				[[_site],"A3A_fnc_RIV_ATT_Cell"] remoteExec ["A3A_fnc_scheduler",2];
+				[[_location],"A3A_fnc_RIV_ATT_Cell"] remoteExec ["A3A_fnc_scheduler",2];
             } else {
-				[[_site],"A3A_fnc_RIV_ATT_Hideout"] remoteExec ["A3A_fnc_scheduler",2];
+				[[_location],"A3A_fnc_RIV_ATT_Hideout"] remoteExec ["A3A_fnc_scheduler",2];
 			};
 
 			["REMOVE"] call SCRT_fnc_ui_assignRivalsAttackLocationEventHandler;
 			closeDialog 0;
 			closeDialog 0;
+            [] call SCRT_fnc_ui_clearRivals;
         },
         []
 	] call BIS_fnc_addStackedEventHandler;

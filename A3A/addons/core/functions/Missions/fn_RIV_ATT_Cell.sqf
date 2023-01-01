@@ -5,7 +5,6 @@ params ["_marker"];
 
 //Mission: Kill Cell Leader
 if (!isServer and hasInterface) exitWith {};
-if (!areRivalsEnabled || {areRivalsDiscovered || {areRivalsDefeated}}) exitWith {};
 
 private _fnc_createLight = {
     params [["_position", []]];

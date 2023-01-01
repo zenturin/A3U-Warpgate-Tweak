@@ -28,7 +28,7 @@ if (isNil "_locations") exitWith {
     Error("Empty locations");
 };
 
-private _closeLocations = _locations select { _x distance2D (getMarkerPos _location) <= _radiusOfOperations };
+private _closeLocations = _locations select { (getMarkerPos _x) distance2D (getMarkerPos _location) <= _radiusOfOperations };
 (_closeLocations + [_location]) apply {
     rivalsLocationsMap deleteAt _x;
 };
@@ -45,13 +45,13 @@ private _text = if (_source isEqualTo "CELL") then {
     format [
         localize "STR_rivals_destroyed_city", 
         A3A_faction_riv get "name",
-        _location
+        _name
     ];
 } else {
     format [
         localize "STR_rivals_destroyed_hideout", 
         A3A_faction_riv get "name",
-        _location
+        _name
     ];
 };
 [petros, "announce", _text] remoteExec ["A3A_fnc_commsMP", 0];

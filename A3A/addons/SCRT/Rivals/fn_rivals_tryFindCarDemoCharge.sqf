@@ -45,8 +45,14 @@ private _hasPlantChance = [] call SCRT_fnc_rivals_rollProbability;
 if (!_hasPlantChance) exitWith {};
 
 private _civVehicles = vehicles select {
-    (typeOf _x) in arrayCivVeh && {_x distance2D _position <= 750 && {alive _x && {speed _x < 1 && {count (crew _x) == 0 && {side _x != teamPlayer}}}}}
-};
+    (typeOf _x) in arrayCivVeh && 
+    {_x distance2D _position <= 750 && 
+    {alive _x && 
+    {speed _x < 1 && 
+    {count (crew _x) == 0 && 
+    {side _x != teamPlayer && 
+    {!(_x getVariable ["carDemoBlock", false])
+}}}}}}};
 
 if (count _civVehicles == 0) exitWith {
     Info("No civilian vehicles found, aborting.");

@@ -225,7 +225,7 @@ waitUntil { sleep 5;
 isRivalEventInProgress = false;
 publicVariableServer "isRivalEventInProgress";
 
-rivalEventCooldown = 1800;
+rivalEventCooldown = 400 + 200 * inactivityLevelRivals;
 publicVariableServer "rivalEventCooldown";
 
 Info("UAV Flyby random event cleanup.");

@@ -40,7 +40,7 @@ if (side group _injurer == teamPlayer) then
 			private _lastAttackTime = garrison getVariable [_marker + "_lastAttack", -30];
 			if (_lastAttackTime + 30 < serverTime) then {
 				garrison setVariable [_marker + "_lastAttack", serverTime, true];
-				[_marker, teamPlayer, side group _unit] remoteExec ["A3A_fnc_underAttack", 2];
+				[_marker, teamPlayer, side group _unit, false, (_injurer getVariable ["_isRival", false])] remoteExec ["A3A_fnc_underAttack", 2];
 			};
 		};
 	};
