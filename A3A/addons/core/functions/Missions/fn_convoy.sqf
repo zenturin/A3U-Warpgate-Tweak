@@ -75,7 +75,7 @@ switch (toLowerANSI _convoyType) do
 		_textX = format [localize "STR_A3A_Missions_AS_Convoy_task_dest_fuel",_nameOrigin,_displayTime,_nameDest];
 		_taskTitle = localize "STR_A3A_Missions_AS_Convoy_task_header_fuel";
 		_taskIcon = "refuel";
-		_typeVehObj = if (_sideX == Occupants) then {vehNATOFuelTruck} else {vehCSATFuelTruck};
+		_typeVehObj = selectRandom (_faction get "vehiclesFuelTrucks");
 	};
     case "armor":
     {

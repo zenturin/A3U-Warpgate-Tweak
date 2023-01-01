@@ -128,7 +128,7 @@ private _taskId = "RES" + str A3A_taskCount;
 ] call BIS_fnc_taskCreate;
 [_taskId, "RES", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 
-waitUntil {sleep 1;dateToNumber date > _dateLimitNum or {spawner getVariable _markerX != 2}};
+waitUntil {sleep 1;dateToNumber date > _dateLimitNum or {(call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_shorePosition, distanceSPWN1, distanceSPWN1] isNotEqualTo []}};
 
 private _grpPOW = createGroup teamPlayer;
 private _smugglerCount = random [3, 5, 6];
@@ -328,7 +328,7 @@ waitUntil {
 };
 
 if (dateToNumber date > _dateLimitNum) then {
-	if (spawner getVariable _markerX == 2) then {
+	if ((call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_shorePosition, distanceSPWN1, distanceSPWN1] isEqualTo []) then {
 		{
             if (group _x == _grpPOW) then {
                 _x setDamage 1;
