@@ -246,12 +246,13 @@ if (_prefix in ["occ", "inv"]) exitWith {
         _militiaMid pushBack [
             unit(militia, "SquadLeader"),
             unit(militia, "Grenadier"),
-            unit(militia, "MachineGunner"),
             selectRandom [
-                unit(militia, "LAT"),
+                unit(militia, "MachineGunner"),
                 unit(militia, "Marksman"),
+                unit(militia, "Medic"),
                 unit(militia, "Engineer")
-            ]
+            ],
+            selectRandom [unit(militia, "LAT"),unit(militia, "Rifleman")]
         ];
     };
     _faction set ["groupsMilitiaMedium", _militiaMid];
@@ -263,7 +264,7 @@ if (_prefix in ["occ", "inv"]) exitWith {
             unit(militia, "MachineGunner"),
             unit(militia, "Grenadier"),
             unit(militia, "Rifleman"),
-            selectRandom [unit(militia, "Rifleman"), unit(militia, "Marksman")],
+            selectRandom [unit(militia, "Rifleman"), unit(militia, "AT")],
             selectRandomWeighted [unit(militia, "Rifleman"), 2, unit(militia, "Marksman"), 1],
             selectRandom [unit(militia, "Rifleman"), unit(militia, "ExplosivesExpert")],
             unit(militia, "LAT"),

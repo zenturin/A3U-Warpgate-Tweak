@@ -58,8 +58,6 @@ while {(spawner getVariable _markerX != 2) and {_countX < _num}} do {
 	_countX = _countX + 1;
 };
 
-[_markerX] spawn SCRT_fnc_rivals_trySpawnWanderingGroup;
-
 ["locationSpawned", [_markerX, "City", true]] call EFUNC(Events,triggerEvent);
 
 waitUntil {sleep 1;(spawner getVariable _markerX == 2)};

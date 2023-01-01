@@ -6,6 +6,7 @@ private _garrison = garrison getVariable [_siteX,[]];
 private _size = [_siteX] call A3A_fnc_sizeMarker;
 private _positionX = getMarkerPos _siteX;
 private _estatic = if (_siteX in roadblocksFIA) then {localize "STR_garrison_info_technicals"} else {localize "STR_garrison_info_statics"};
+private _limit = [_siteX] call SCRT_fnc_common_getGarrisonLimit;
 
 //sort garrison into unit types
 private _units = [ [],[],[],[],[],[],[],[] ];
@@ -35,6 +36,7 @@ _textX = format [
     , count (_units#7)
     , {_x distance _positionX < _size} count staticsToSave
     , _estatic
+    , _limit
 ];
 
 _textX
