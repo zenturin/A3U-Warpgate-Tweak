@@ -25,7 +25,9 @@ rivalEventCooldown = 0;
 while {true} do {
     waitUntil {!isNil "A3A_activePlayerCount"};
 
-    sleep 600;
+    sleep 300;
+
+    Info("Rivals event loop tick.");
 
 	//if rivals are already defeated, we may exit the loop entirely as it makes no sense to work
 	if (areRivalsDefeated) exitWith {
@@ -40,6 +42,7 @@ while {true} do {
 
     //cooldown is needed so players won't be flooded with events
     sleep rivalEventCooldown;
+    rivalEventCooldown = 0;
 
     private _isEventProcced = [] call SCRT_fnc_rivals_rollProbability;
 

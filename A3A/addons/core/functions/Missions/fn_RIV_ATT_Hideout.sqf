@@ -5,7 +5,6 @@ params ["_marker"];
 
 //Mission: Seize Hideout Cache
 if (!isServer and hasInterface) exitWith {};
-if (!areRivalsEnabled || {areRivalsDiscovered || {areRivalsDefeated}}) exitWith {};
 
 Info_1("Seize Hideout task initialization started, marker: %1.", _marker);
 

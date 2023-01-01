@@ -86,7 +86,7 @@ waitUntil { sleep 5; (time > _timeOut) || isNull _chargedVehicle || {_allPlayers
 isRivalEventInProgress = false;
 publicVariableServer "isRivalEventInProgress";
 
-rivalEventCooldown = 1200;
+rivalEventCooldown = 400 + 200 * inactivityLevelRivals;
 publicVariableServer "rivalEventCooldown";
 
 Info("Civ Car Demo Charge Rival Event clean up complete.");

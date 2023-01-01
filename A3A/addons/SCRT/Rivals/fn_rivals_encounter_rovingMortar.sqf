@@ -195,7 +195,7 @@ if (isNil "_overridePosition") then {
     isRivalEventInProgress = false;
     publicVariableServer "isRivalEventInProgress";
 
-    rivalEventCooldown = 2400;
+    rivalEventCooldown = 400 + 200 * inactivityLevelRivals;
     publicVariableServer "rivalEventCooldown";
 };
 
