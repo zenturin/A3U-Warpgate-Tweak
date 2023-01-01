@@ -34,25 +34,34 @@ private _nameOrigin = [_mrkOrigin] call A3A_fnc_localizar;
 // Determine convoy type from destination
 
 private _convoyTypes = [];
-if ((_mrkDest in airportsX) or {_mrkDest in outposts or {_mrkDest in milbases}}) then
-{
-    _convoyTypes = ["Ammunition","Armor"];
-    if (_mrkDest in outposts) then {if (((count (garrison getVariable [_mrkDest, []]))/2) >= [_mrkDest] call A3A_fnc_garrisonSize) then {_convoyTypes pushBack "Reinforcements"}};
-}
-else
-{
-    if (_mrkDest in citiesX) then
-    {
-        _convoyTypes = ["Supplies"];
-    }
-    else
-    {
-        if (_mrkDest in (resourcesX + factories)) then {_convoyTypes = ["Money", "Fuel"]} else {_convoyTypes = ["Prisoners"]};
-        if (((count (garrison getVariable [_mrkDest, []]))/2) >= [_mrkDest] call A3A_fnc_garrisonSize) then {_convoyTypes pushBack "Reinforcements"};
+
+switch (true) do {
+    case ((_mrkDest in airportsX) or {_mrkDest in outposts or {_mrkDest in milbases}}): {
+        _convoyTypes append ["Ammunition", "Armor"];
+        if (_mrkDest in outposts && {((count (garrison getVariable [_mrkDest, []])) / 2) >= [_mrkDest] call A3A_fnc_garrisonSize}) then {
+            _convoyTypes pushBack "Reinforcements";
+        };
+    };
+    case (_mrkDest in citiesX): {
+        _convoyTypes pushBack "Supplies";
+    };
+    case (_mrkDest in resourcesX or {_mrkDest in factories}): {
+        _convoyTypes append ["Money", "Fuel"];
+        if (((count (garrison getVariable [_mrkDest, []]))/2) >= [_mrkDest] call A3A_fnc_garrisonSize) then {
+            _convoyTypes pushBack "Reinforcements";
+        };
+    };
+    default {
+        _convoyTypes pushBack "Prisoners";
+        if (((count (garrison getVariable [_mrkDest, []]))/2) >= [_mrkDest] call A3A_fnc_garrisonSize) then {
+            _convoyTypes pushBack "Reinforcements";
+        };
     };
 };
 
-if (_convoyType == "") then { _convoyType = selectRandom _convoyTypes };
+if (_convoyType isEqualTo "") then { 
+    _convoyType = selectRandom _convoyTypes 
+};
 
 private _textX = "";
 private _taskState = "CREATED";
@@ -205,7 +214,7 @@ sleep 2;
 private _objText = if (_difficult) then {localize "STR_marker_convoy_objective_space"} else {localize "STR_marker_convoy_objective"};
 private _vehObj = [_typeVehObj, _objText] call _fnc_spawnConvoyVehicle;
 
-if (_convoyType == "Prisoners") then
+if (_convoyType isEqualTo "Prisoners") then
 {
     private _grpPOW = createGroup teamPlayer;
     for "_i" from 1 to (1+ round (random 11)) do
@@ -225,7 +234,7 @@ if (_convoyType == "Prisoners") then
         [_unit] call A3A_fnc_reDress;
     };
 };
-if (_convoyType == "Reinforcements") then
+if (_convoyType isEqualTo "Reinforcements") then
 {
     private _typeGroup = [_typeVehObj,_sideX] call A3A_fnc_cargoSeats;
     private _groupEsc = [_posSpawn,_sideX,_typeGroup] call A3A_fnc_spawnGroup;
@@ -237,7 +246,7 @@ if (_convoyType in ["Money", "Supplies"]) then
 {
     _vehObj setVariable ["A3A_reported", true, true];
 };
-if (_convoyType == "Ammunition") then
+if (_convoyType isEqualTo "Ammunition") then
 {
     [_vehObj] spawn A3A_fnc_fillLootCrate;
 };
@@ -331,6 +340,24 @@ if (_convoyType isEqualTo "Ammunition") then
     else
     {
         [true, false, 1800*_bonus, 5*_bonus, 25, 120, "ammo"] call _fnc_applyResults;
+        [0,300*_bonus] remoteExec ["A3A_fnc_resourcesFIA",2];
+        {
+            [10*_bonus,_x] call A3A_fnc_addScorePlayer;
+            [(25*_bonus * 10),_x] call A3A_fnc_addMoneyPlayer;
+        } forEach (call SCRT_fnc_misc_getRebelPlayers);
+    };
+};
+
+if (_convoyType isEqualTo "Fuel") then
+{
+    waitUntil {sleep 1; (time > _timeout) or (_vehObj distance _posDest < _arrivalDist) or (not alive _vehObj) or (side group driver _vehObj != _sideX)};
+    if ((_vehObj distance _posDest < _arrivalDist) or (time > _timeout)) then
+    {
+        [false, true, -1200*_bonus, -10*_bonus, -5, 60, "fuel"] call _fnc_applyResults;
+    }
+    else
+    {
+        [true, false, 1800*_bonus, 5*_bonus, 25, 120, "fuel"] call _fnc_applyResults;
         [0,300*_bonus] remoteExec ["A3A_fnc_resourcesFIA",2];
         {
             [10*_bonus,_x] call A3A_fnc_addScorePlayer;

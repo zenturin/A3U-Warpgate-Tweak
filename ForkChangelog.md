@@ -68,6 +68,7 @@
 - Fixed no text prompt when POW recruitment fails
 - Fixed wrong tooltip on money button
 - Fixed broken napalm bombing
+- Fixed fuel convoy despawn issue
 - Fixed some cases when players unintentionally get promotional scores when they shouldn't, tweaked rank promotion system to be much less rapid
 - Fixed typo about Support Points gain War Level in support tab
 - Fixed unintentional ability to buy civilian helicopters when rebels have no captured airports

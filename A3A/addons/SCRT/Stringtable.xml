@@ -893,8 +893,8 @@
                 <Russian>Конвой (цель)</Russian>
             </Key>
             <Key ID="STR_marker_convoy_objective_space">
-                <Original> Convoy Objective</Original>
-                <Russian> Конвой (цель)</Russian>
+                <Original>&#160;Convoy Objective</Original>
+                <Russian>&#160;Конвой (цель)</Russian>
             </Key>
             <Key ID="STR_marker_mission_vehicle">
                 <Original>Mission Vehicle</Original>

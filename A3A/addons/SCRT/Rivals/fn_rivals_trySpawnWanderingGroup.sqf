@@ -74,7 +74,7 @@ if (_spawnableVehicle != "") then {
 
 	while {true} do {
 		_roads = _originPosition nearRoads _radiusX;
-		if (count _roads > 0 && {_roads findIf {!([_x,500] call A3A_fnc_enemyNearCheck)} != -1}) exitWith {};
+		if (count _roads > 0 && {_roads findIf {!([position _x] call A3A_fnc_enemyNearCheck)} != -1}) exitWith {};
 		if (_iterations > 30) exitWith {};
 		_iterations = _iterations + 1;
 		_radiusX = _radiusX + 50;
