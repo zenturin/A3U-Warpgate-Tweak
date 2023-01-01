@@ -59,7 +59,7 @@ waitUntil {
 };
 
 switch (true) do {
-	case (cancelEstabTask): {
+	case (!isNil "cancelEstabTask" && {cancelEstabTask}): {
 		[_hrCost,_moneyCost] remoteExec ["A3A_fnc_resourcesFIA",2];
 		[_taskId, "outpostTask", "CANCELED"] call A3A_fnc_taskSetState;
 		sleep 3;
