@@ -73,7 +73,7 @@ private _groupAndVehicleToSpawn = switch (inactivityLevelRivals) do {
 		[_group, _vehicle]
 	};
 	case 1: {
-		private _group = selectRandom groupsRivalsSquad;
+		private _group = selectRandom (A3A_faction_riv get "groupsSquad");
 		private _vehicle = switch (true) do {
 			case ((random 100) < 35): {
 				selectRandom (A3A_faction_riv get "vehiclesRivalsLightArmed");

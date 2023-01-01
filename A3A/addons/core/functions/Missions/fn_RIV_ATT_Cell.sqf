@@ -358,7 +358,7 @@ if (_isDifficult) then {
         [], //blacklist positions
         [_targetPos, _targetPos] //default position
     ] call BIS_fnc_findSafePos;
-    private _sentry = [_position, Rivals, (selectRandom groupsRivalsSentry)] call A3A_fnc_spawnGroup;
+    private _sentry = [_position, Rivals, (selectRandom (A3A_faction_riv get "groupsSentry"))] call A3A_fnc_spawnGroup;
     (units _sentry) apply {
         private _unit = _x;
         {_unit disableAI _x} forEach ["CHECKVISIBLE", "COVER", "SUPPRESSION", "FSM", "TARGET", "AUTOTARGET"];
