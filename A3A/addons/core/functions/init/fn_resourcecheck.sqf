@@ -237,6 +237,6 @@ while {true} do {
 	};
 
 	if (areRivalsDiscovered && {!areRivalsDefeated}) then{
-		[random [5,10,15]] call SCRT_fnc_rivals_addProgressToRivalsLocationReveal;
+		[random [5,7,10]] call SCRT_fnc_rivals_addProgressToRivalsLocationReveal;
 	};
 };
