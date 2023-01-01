@@ -29,7 +29,7 @@ if (theBoss distance2D _hqMarkerPos < 50) then {
 	};
 } else {
 	menuSliderArray = [
-		[localize "STR_commander_menu_abilities_header", 1140],
+		[localize "STR_commander_menu_abilities_header_upper", 1140],
 		[localize "STR_commander_menu_garrison_header_upper", 2000],
 		[localize "STR_commander_menu_game_options_header_upper", 5000]
 	];

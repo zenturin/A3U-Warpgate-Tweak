@@ -292,10 +292,6 @@
                 <Original>Target can't be full!</Original>
                 <Russian>Цель не может быть полной!</Russian>
             </Key>
-            <Key ID="STR_magRepack_target_belt">
-                <Original>This magazine requires belts, not individual bullets!</Original>
-                <Russian>Этот магазин требует ленты, а не индивидуальные пули!</Russian>
-            </Key>
             <Key ID="STR_magRepack_ammo">
                 <Original>Ammo:</Original>
                 <Russian>Боеприпасы:</Russian>
@@ -418,7 +414,7 @@
             </Key>
             <Key ID="STR_generic_commander_none">
                 <Original>None</Original>
-                <Russian>Никто</Russian><
+                <Russian>Никто</Russian>
             </Key>  
             <Key ID="STR_generic_commander_only">
                 <Original>Only Commander has access to this function.</Original>
@@ -1544,10 +1540,6 @@
                 <Original>Mortar Support Destroyed</Original>
                 <Russian>Миномёт поддержки уничтожен</Russian>
             </Key>
-            <Key ID="STR_notifiers_mortar_destroyed">
-                <Original>Mortar Support Destroyed</Original>
-                <Russian>Миномёт поддержки уничтожен</Russian>
-            </Key>
             <Key ID="STR_notifiers_mortar_crew_killed">
                 <Original>Mortar Support crew killed</Original>
                 <Russian>Экипаж миномёта поддержки учичтожен</Russian>
@@ -1584,10 +1576,6 @@
                 <Original>Airstrike Vessel Destroyed</Original>
                 <Russian>Самолёт авиаудара уничтожен</Russian>
             </Key>
-            <Key ID="STR_notifiers_airstrike_vessel_crew_killed">
-                <Original>Airstrike vessel crew killed</Original>
-                <Russian>Экипаж самолёта авиаудара уничтожен</Russian>
-            </Key>
             <Key ID="STR_notifiers_airdrop_killed">
                 <Original>Airdrop Plane Destroyed</Original>
                 <Russian>Парашютно-десантный самолёт уничтожен</Russian>
@@ -1599,10 +1587,6 @@
             <Key ID="STR_notifiers_SUP_execute_marker">
                 <Original>%1. Target marked on map!</Original>
                 <Russian>%1. Цель отмечена на карте!</Russian>
-            </Key>
-            <Key ID="STR_notifiers_SUP_execute_unknown">
-                <Original>%1 is executing up an unknown support now</Original>
-                <Russian>%1 оказывают поддержку</Russian>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_QRF">
                 <Original>A land %1 QRF just arrived</Original>
@@ -1964,10 +1948,6 @@
                 <Original>Roadblock destroyed</Original>
                 <Russian>Блокпост уничтожен</Russian>
             </Key>
-            <Key ID="STR_notifiers_roadblock_lost">
-                <Original>Roadblock has been lost</Original>
-                <Russian>Блокпост потерян</Russian>
-            </Key>
             <Key ID="STR_notifiers_miladmin_destroyed">
                 <Original>Military Administration Destroyed</Original>
                 <Russian>Администрация уничтожена</Russian>
@@ -2240,10 +2220,6 @@
                 <Original>Skip Time / Rest</Original>
                 <Russian>Пропуск времени / Отдых</Russian>
             </Key>
-            <Key ID="STR_params_rest_header">
-                <Original>REST FOR 8 HOURS</Original>
-                <Russian>ОТДОХНУТЬ 8 ЧАСОВ</Russian>
-            </Key>
             <Key ID="STR_params_rest_commander_only">
                 <Original>Only commander can order to rest.</Original>
                 <Russian>Только командир может приказать отдохнуть.</Russian>
@@ -2283,8 +2259,8 @@
         </Container>
         <Container name="garrison">
             <Key ID="STR_garrison_info">
-                <Original>&lt;br/&gt;&lt;br/&gt;Garrison men: %1&lt;br/&gt;&lt;br/&gt;Squad Leaders: %2&lt;br/&gt;%11: %3&lt;br/&gt;Riflemen: %4&lt;br/&gt;Autoriflemen: %5&lt;br/&gt;Medics: %6&lt;br/&gt;Grenadiers: %7&lt;br/&gt;Marksmen: %8&lt;br/&gt;AT Men: %9&lt;br/&gt;Static Weap: %10</Original>
-                <Russian>&lt;br/&gt;&lt;br/&gt;Гарнизон: %1&lt;br/&gt;&lt;br/&gt;Командиры отделений: %2&lt;br/&gt;%11: %3&lt;br/&gt;Стрелки: %4&lt;br/&gt;Пулеметчики: %5&lt;br/&gt;Медики: %6&lt;br/&gt;Гренадёры: %7&lt;br/&gt;Снайперы: %8&lt;br/&gt;Гранатомётчики: %9&lt;br/&gt;Стац. орудия: %10</Russian>
+                <Original>&lt;br/&gt;&lt;br/&gt;Garrison men: %1/%12&lt;br/&gt;&lt;br/&gt;Squad Leaders: %2&lt;br/&gt;%11: %3&lt;br/&gt;Riflemen: %4&lt;br/&gt;Autoriflemen: %5&lt;br/&gt;Medics: %6&lt;br/&gt;Grenadiers: %7&lt;br/&gt;Marksmen: %8&lt;br/&gt;AT Men: %9&lt;br/&gt;Static Weap: %10</Original>
+                <Russian>&lt;br/&gt;&lt;br/&gt;Гарнизон: %1/%12&lt;br/&gt;&lt;br/&gt;Командиры отделений: %2&lt;br/&gt;%11: %3&lt;br/&gt;Стрелки: %4&lt;br/&gt;Пулеметчики: %5&lt;br/&gt;Медики: %6&lt;br/&gt;Гренадёры: %7&lt;br/&gt;Снайперы: %8&lt;br/&gt;Гранатомётчики: %9&lt;br/&gt;Стац. орудия: %10</Russian>
             </Key>
             <Key ID="STR_garrison_info_technicals">
                 <Original>Technicals</Original>
@@ -2317,10 +2293,6 @@
             <Key ID="STR_garrison_error_no_specific_squads">
                 <Original>You can't add units to player led, Watchpost, Roadblocks or Minefield building squads.</Original>
                 <Russian>Вы не можете добавлять юниты в ведомые игроком отряды, сторожевые посты, блокпосты и отряды строителей минных полей.</Russian>
-            </Key>
-            <Key ID="STR_garrison_error_dead_units">
-                <Original>Dead or player-controlled units can't be added to any garrison.</Original>
-                <Russian>Мертвые или контролируемые игроком юниты не могут быть добавлены ни в один гарнизон.</Russian>
             </Key>
             <Key ID="STR_garrison_error_dead_units">
                 <Original>Dead or player-controlled units can't be added to any garrison.</Original>
@@ -3890,14 +3862,6 @@
                 <Original>AT Emplacement</Original>
                 <Russian>Противотанковая огневая точка</Russian>
             </Key>
-            <Key ID="STR_commander_menu_me_title">
-                <Original>Mortar Emplacement</Original>
-                <Russian>Миномётная огневая точка</Russian>
-            </Key>
-            <Key ID="STR_commander_menu_ate_title">
-                <Original>AT Emplacement</Original>
-                <Russian>Противотанковая огневая точка</Russian>
-            </Key>
             <Key ID="STR_commander_menu_apersminefield_title">
                 <Original>APERS Mines</Original>
                 <Russian>Противопехотные мины</Russian>
@@ -4062,7 +4026,7 @@
                 <Original>PARADROP</Original>
                 <Russian>ДЕСАНТИРОВАНИЕ</Russian>
             </Key>
-            <Key ID="STR_commander_menu_paradrop_tooltip">
+            <Key ID="STR_commander_menu_paradrop_tooltip_noncomm">
                 <Original>To attend in paradrop, you must be at rebel HQ and turn on this switch button to be able to be transfered to aircraft.</Original>
                 <Russian>Чтобы принять участие в парашютном десантировании, вы должны находиться в штаб-квартире повстанцев и включить эту кнопку-переключатель, чтобы иметь возможность переместиться на самолет.</Russian>
             </Key>
@@ -4311,10 +4275,6 @@
             </Key>
         </Container>
         <Container name="dialog_headquarters">
-            <Key ID="STR_antistasi_dialogs_hq_frame_text">
-                <Original>HQ Options: Commander Only</Original>
-                <Russian>Опции Штаба: Только для Командира</Russian>
-            </Key>
             <Key ID="STR_antistasi_dialogs_hq_button_close_text">
                 <Original>Close</Original>
                 <Russian>Закрыть</Russian>
@@ -4816,580 +4776,6 @@
                 <Russian>Вертолёт</Russian>
             </Key>
         </Container>
-        <Container name="journal_entries">
-            <Key ID="STR_antistasi_journal_entry_header_tutorial_1">
-                <Original>Early Beginning</Original>
-                <Russian>В самом начале</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_tutorial_1">
-                <Original>Don't expect to be able to conquer anything in the early stages. First you have to gather enough resources (HR and Money) in order to be able to conquer and hold your positions. This mission tries to simulate real life guerilla situations. If in doubt, ask yourself what would you do in real life. Don't expect to win every time. Hit and Run is the basic manoeuvre here. Earn every resource, weapon and ammunition to gather enough assets in order to be a real challenge for the enemy. In the meantime, disturb its operations and gain support from the population.</Original>
-                <Russian>Не ожидайте, что сможете что-либо победить на ранних стадиях. Сначала вам нужно собрать достаточно ресурсов (HR и Деньги), чтобы иметь возможность завоевать и удерживать свои позиции. Эта миссия пытается смоделировать реальные партизанские ситуации. Если сомневаетесь, спросите себя, что бы вы делали в реальной жизни. Не надейтесь на победу каждый раз. Hit and Run - основной маневр здесь. Зарабатывайте все ресурсы, оружие и боеприпасы, чтобы собрать достаточно активов, чтобы стать настоящим испытанием для врага. А пока помешайте его работе и заручитесь поддержкой населения.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_tutorial_2">
-                <Original>Aggro Effects</Original>
-                <Russian>Агрессия</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_tutorial_2">
-                <Original>Keep an eye on those. If it's too high, you will have to face more attacks with better troops.</Original>
-                <Russian>Следите за уровнем агрессии. Если он слишком высок, вам придется встретить больше атак с лучшими войсками.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_tutorial_3">
-                <Original>Strategy</Original>
-                <Russian>Стратегия</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_tutorial_3">
-                <Original>Once you have a nice amount of resources, focus on enemy communications. If you disturb them enough, you won't have to face big counter-attacks.</Original>
-                <Russian>Как только у вас будет достаточно ресурсов, сосредоточьтесь на коммуникациях с противником. Если вы их достаточно потревожите, вам не придется сталкиваться с большими контратаками.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_tutorial_4">
-                <Original>Conquer and Hold</Original>
-                <Russian>Завоевать и удержать</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_tutorial_4">
-                <Original>Don't expect a light counter-attack when you conquer strategic zones such as resources or airports. The enemy will send everything they can, if available. If you conquer a zone and expect a counter-attack, fleeing is a nice option.</Original>
-                <Russian>Не ожидайте легкой контратаки при захвате стратегических зон, таких как ресурсы или аэропорты. Враг пошлет все, что сможет, если возможно. Если вы захватываете зону и ожидаете контратаки, бегство - хороший вариант.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_tutorial_5">
-                <Original>Resources</Original>
-                <Russian>Ресурсы</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_tutorial_5">
-                <Original>Having a good amount of resources for bigger operations is mandatory, especially weapons and ammo. In the initial stages, your main source of resources is accomplishing side-missions.</Original>
-                <Russian>Обязательно наличие большого количества ресурсов для крупных операций, особенно оружия и боеприпасов. На начальных этапах ваш основной источник ресурсов - выполнение побочных миссий.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_tutorial_6">
-                <Original>Starting Position</Original>
-                <Russian>Начальная позиция</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_tutorial_6">
-                <Original>Find a good spot to begin the mission. Your experience is very different from one start spot to another. Study the surrounding markers and roads between them well. If you start near a road between enemy zones, a patrol may appear and kill Petros.</Original>
-                <Russian>Найдите хорошее место для начала миссии. Ваш опыт сильно отличается от одной стартовой точки к другой. Хорошо изучите окружающие указатели и дороги между ними. Если вы начнете возле дороги между вражескими зонами, может появиться патруль и убить Петроса.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_tutorial_7">
-                <Original>Undercover</Original>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_tutorial_7">
-                <Original>In the early stages, especially when accomplishing certain missions, being undercover can be extremely helpful. Just as for real resistance fighters, your ability to disappear is something the enemy can't counter. See Features section for a deep explanation of Undercover Mode.</Original>
-                <Russian>На ранних стадиях, особенно при выполнении определенных миссий, работа под прикрытием может быть чрезвычайно полезной. Как и в случае с настоящими бойцами сопротивления, ваша способность исчезнуть - это то, чему противник не может противостоять. См. Раздел «Возможности» для более подробного описания режима под прикрытием.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_1">
-                <Original>General</Original>
-                <Russian>Командующий</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_1">
-                <Original>Having a commander is necessary because he is the commander of the Faction attacking ground forces. Many options are available only to the commander and, depending on your settings, if you play MP, the most experienced player will usually occupy this position.</Original>
-                <Russian>Наличие командира необходимо, потому что он является командующим Фракцией, атакующей наземные силы. Многие параметры доступны только командиру, и, в зависимости от ваших настроек, если вы играете в MP, наиболее опытный игрок обычно занимает эту позицию.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_2">
-                <Original>Garrisons</Original>
-                <Russian>Гарнизон</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_2">
-                <Original>The Commander is responsible for assigning units as garrisons in conquered areas. Use the Garrison Management option in the HQ flag in order to add or remove garrison troops at each zone. Check Map Info screen for a quick overview of how many soldiers are assigned to each zone.</Original>
-                <Russian>Командующий отвечает за назначение подразделений в качестве гарнизонов на завоеванных территориях. Используйте опцию «Управление гарнизоном» на флаге штаба, чтобы добавлять или удалять войска гарнизона в каждой зоне. Проверьте экран «Информация о карте», чтобы получить быстрый обзор того, сколько солдат назначено на каждую зону.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_3">
-                <Original>Faction Skill Upgrade</Original>
-                <Russian>Улучшение навыков ИИ</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_3">
-                <Original>For a price, you can upgrade Faction training so that future recruits will have better skills.</Original>
-                <Russian>За определенную плату вы можете улучшить ИИ фракции, чтобы у будущих рекрутов были лучшие навыки.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_4">
-                <Original>Side Missions - Petros</Original>
-                <Russian>Побочные миссии - Петрос</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_4">
-                <Original>Ask Petros for any type of mission you want. Mission availability is subject to HQ positioning, current allocated tasks and ownership of the surrounding areas.</Original>
-                <Russian>Спрашивайте у Петроса любую миссию, какую захотите. Доступность миссии зависит от расположения штаб-квартиры, текущих назначенных задач и владения прилегающими территориями.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_5">
-                <Original>Move HQ</Original>
-                <Russian>Перемещение штаба</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_5">
-                <Original>The Commander may select this option on the HQ Flag in order to move the HQ emplacement to another spot. This will allow you to move your HQ to a safer location or move closer to the front-lines. The closer your HQ is to the enemy, the greater the number of possibile side-missions you will have available. Remember! Keep Petros Safe or you will lose the game!</Original>
-                <Russian>Командующий может выбрать эту опцию у Петроса, чтобы переместить расположение штаба в другое место. Это позволит вам переместить свой штаб в более безопасное место или приблизиться к линии фронта. Чем ближе ваш штаб к противнику, тем большее количество возможных побочных миссий у вас будет. Помнить! Держите Петроса в безопасности, или вы проиграете игру</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_7">
-                <Original>Bomb Run</Original>
-                <Russian>Авиаудар</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_7">
-                <Original>Use your Airstrike points to perform a bombing run of the specified type.</Original>
-                <Russian>Используйте свои очки авиаудара, чтобы выполнить бомбардировку указанного типа.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_9">
-                <Original>Recruit Squad</Original>
-                <Russian>Найм отряда</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_9">
-                <Original>The Commander may recruit an AI manned squad at base camp flags. Use the High Command module (CTRL + SPACE) to give orders to your squads. Also you may temporally control and dismiss the squad leader in the same way you do with squad-mates.</Original>
-                <Russian>Командующий может нанять отряд ИИ у флага штаба. Используйте модуль высшего командования (CTRL + SPACE), чтобы отдавать приказы своим отрядам. Также вы можете временно контролировать и увольнять лидера отряда так же, как и с товарищами по отряду.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_10">
-                <Original>Minefields</Original>
-                <Russian>Минные поля</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_10">
-                <Original>Take the engineers truck to the desired position to build a minefield. Cover them while they deploy mines. From then on, no one will be able to pass the area safely (even your own units - so use with caution). Mines (AT and AP) are taken from your Ammobox. The quantity of mines in the field will depend on the contents of your ammobox, up to a max. number depending on the type of minefield. Delete those minefields to recover the mines.</Original>
-                <Russian>Отведите грузовик инженеров в нужное место, чтобы построить минное поле. Прикрывайте их, пока они устанавливают мины. С этого момента никто не сможет безопасно пройти через территорию (даже ваши собственные отряды, поэтому используйте их с осторожностью). Мины (ПТ и ПП) берутся из вашего боеприпаса. Количество мин в поле будет зависеть от содержимого вашего ящика с боеприпасами, вплоть до макс. количество в зависимости от типа минного поля. Удалите эти минные поля, чтобы восстановить мины</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_11">
-                <Original>Sell Vehicle</Original>
-                <Russian>Продажа техники</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_11">
-                <Original>Use this option to sell captured vehicles and increase Faction funds.</Original>
-                <Russian>Используйте эту опцию, чтобы продавать захваченную технику и увеличивать средства фракции.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_12">
-                <Original>Observation Post</Original>
-                <Russian>Пункт наблюдения</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_12">
-                <Original>Use the radio and select a spot on the map with good field of vision. A group of snipers will join you. Send them to the selected place and they will spot for you, attempting to remain hidden and not engaging enemies upon contact.</Original>
-                <Russian>Используйте радио и выберите на карте место с хорошим обзором. К вам присоединится группа снайперов. Отправьте их в выбранное место, и они заметят вас, стараясь оставаться скрытыми и не вступая в бой с врагами при контакте.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_13">
-                <Original>Roadblocks</Original>
-                <Russian>Блокпост</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_13">
-                <Original>Use the menu and select a spot on the map. Click where a road is. A group of AT soldiers will join you. Send them to the selected place and they will establish a roadblock there.</Original>
-                <Russian>Воспользуйтесь меню и выберите место на карте. Щелкните, где находится дорога. К вам присоединится группа солдат. Отправьте их в выбранное место, и они установят там блокпост</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_14">
-                <Original>Grab Faction Funds</Original>
-                <Russian>Присвоение средств фракции</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_14">
-                <Original>Use this option to grab money from the Faction pool to your personal account. Please note this will have an impact on your score and future promotion chances. Corrupt Commanders may find themselves loosing their command.</Original>
-                <Russian>Используйте эту опцию, чтобы переводить деньги из фонда фракции на свой личный счет. Учтите, что это повлияет на ваш счет и шансы на повышение в будущем. Коррумпированные командиры могут потерять командование</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_commander_15">
-                <Original>In-game Members</Original>
-                <Russian>Игроки</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_commander_15">
-                <Original>In the HQ Flag, if the Server Member feature is enabled, you may check which of the Server Members are in game and the total number of non members.</Original>
-                <Russian>В флаге HQ, если функция «Участник сервера» включена, вы можете проверить, кто из участников сервера находится в игре.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_SpecialK_1">
-                <Original>Battle Options</Original>
-                <Russian>Управление</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_SpecialK_1">
-                <Original>Press Y in-game to have access any time to several options. Most of them are explained in the Commander or Features sections.</Original>
-                <Russian>Нажмите Y в игре, чтобы в любой момент получить доступ к нескольким параметрам. Большинство из них описаны в разделах "Командир" или "Функции".</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_SpecialK_2">
-                <Original>High Command</Original>
-                <Russian>Командование отрядами</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_SpecialK_2">
-                <Original>When you are the Commander, hit CTRL + SPACE to give way-points and other orders to your AI squads using the HC mode. Non commanders may use it to check enemy contacts reported by the Faction communications network.</Original>
-                <Russian>Когда вы являетесь командиром, нажмите CTRL + ПРОБЕЛ, чтобы отдать команды вашим отрядам ИИ, используя режим HC. Некомандующие могут использовать его для проверки контактов с противником, сообщаемых сетью связи фракции.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_SpecialK_4">
-                <Original>Group Manager</Original>
-                <Russian>Менеджер отряда</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_SpecialK_4">
-                <Original>MP Only: Press U in-game to join another player's group</Original>
-                <Russian>MP Only: Нажмите U в игре, чтобы присоединиться к группе другого игрока</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_SpecialK_5">
-                <Original>Earplugs</Original>
-                <Russian>Беруши</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_SpecialK_5">
-                <Original>Press END to enable / disable earplugs. Disabled with ACE.</Original>
-                <Russian>Нажмите END, чтобы включить/отключить беруши. Отключено при использовании ACE.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_SpecialK_6">
-                <Original>Commander Menu</Original>
-                <Russian>Меню командира</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_SpecialK_6">
-                <Original>Press TAB to enter Commander Menu. Hotkey can be changed via general controls menu.</Original>
-                <Russian>Нажмите TAB, чтобы попасть в меню командира стороны. Клавиша может быть изменена в обычных настройках игры.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_SpecialK_3">
-                <Original>Toggle Information String Visibility</Original>
-                <Russian>Переключить видимость информационной строки</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_SpecialK_3">
-                <Original>Press INSERT to show/hide information string at top of the screen.</Original>
-                <Russian>Нажмите INSERT, чтобы показать / скрыть информационную строку вверху экрана.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_SpecialK_7">
-                <Original>Toggle Info Bar Visibility</Original>
-                <Russian>Переключить видимость информ. строки</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_SpecialK_7">
-                <Original>Press CTRL+HOME to show / hide information bar at the top of the screen.</Original>
-                <Russian>Нажмите CTRL+HOME, чтобы отобразить/скрыть информационную строку в верхней части экрана.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_1">
-                <Original>Faction Leader</Original>
-                <Russian>Лидер фракции</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_1">
-                <Original>Just as with any resistance movement, leadership is not as stable as in organised states. Any player can take the role of Faction Force Commander if the current one is not very popular... Demonstrate your skill while accomplishing missions and killing enemies and maybe you will become the next leader.</Original>
-                <Russian>Как и в случае с любым движением сопротивления, руководство не так стабильно, как в организованных государствах. Любой игрок может взять на себя роль командующего силами фракции, если текущий не очень популярен... Продемонстрируйте свое мастерство, выполняя миссии и убивая врагов, и, возможно, вы станете следующим лидером</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_2">
-                <Original>Garage</Original>
-                <Russian>Гараж</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_2">
-                <Original>Add any vehicle near your personal Virtual Garage (or factions garage if you are the commander) and keep it safe for future use. Vehicle add option is under the Y menu. Garage management is in HQ options (Flag). Garage recovery capacities may depend on where you are: Air Units can be recovered only near Airbases, boats, near the shore etc.</Original>
-                <Russian>Добавьте любую технику рядом с вашим личным виртуальным гаражом (или гаражом фракций, если вы командир) и сохраните его для будущего использования. Опция добавления транспортного средства находится в меню Y. Возможности восстановления гаража могут зависеть от того, где вы находитесь: авиационные юниты могут быть восстановлены только возле авиабаз, лодок у берега и т.д.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_3">
-                <Original>Undercover</Original>
-                <Russian>Маскировка</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_3">
-                <Original>Click on this button to go undercover. If you meet the requirements, the enemy won't attack you on sight. On foot, to go undercover you must have no weapons or military equipment visible.&lt;br/&gt;You will lose undercover status when you change load-out, get spotted by enemy guard-dogs, plant mines, and can also be reported by some civilians to the enemy. If you are discovered you won't be able to go undercover on foot again for 30 minutes. You can also go undercover by getting into any civilian vehicle. You will lose undercover status by firing any weapon or being spotted far from a road. If you are discovered you won't be able to go undercover in that vehicle again. Getting close to enemy Airbases, outposts and roadblocks will also make you lose undercover status.</Original>
-                <Russian>Нажмите на эту кнопку, чтобы перейти под прикрытие. Если вы соответствуете требованиям, противник не нападет на вас сразу же. Пешком, чтобы идти под прикрытием, у вас не должно быть видимого оружия или военной техники. &lt;br/&gt; Вы теряете статус секретного прикрытия, когда меняете расстановку сил, вас заметят вражеские сторожевые собаки, устанавливают мины, а также о вас можно сообщить некоторые мирные жители врагу. Если вас обнаружат, вы не сможете снова ходить под прикрытием в течение 30 минут. Вы также можете под прикрытием сесть в любой гражданский автомобиль. Вы потеряете статус под прикрытием, если выстрелите из любого оружия или вас заметят далеко от дороги. Если вас обнаружат, вы больше не сможете ехать под прикрытием в этом транспортном средстве. Приближение к вражеским авиабазам, заставам и блокпостам также приведет к потере статуса секретного прикрытия.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_4">
-                <Original>Arsenal</Original>
-                <Russian>Арсенал</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_4">
-                <Original>Scavenge for items, weapons and magazines and put them in your HQ Ammobox. Once you have a specific amount of an them, they will be unlocked and added to the Arsenal for personal use (and for your Faction squads).&lt;br/&gt;The amount required to unlock depends on how many assets the Faction has unlocked and the number of factories owned. Unlocked weapons, optics and night-vision Googles may also change AI load-out. Basic militiamen are especially affected by this: their load-out will start from small SMGs and progress to having an extra AA / AT launcher. Please note this will not affect their dress, which will depend on the current Faction Skill Level (helmets and uniform). Arsenal is the standard BIS Arsenal, check their documentation for interaction and use.&lt;br/&gt;&lt;br/&gt;To see the amounts required to unlock each group of items, open the HQ Ammobox and you will receive a detailed report on the right.</Original>
-                <Russian>Найдите предметы, оружие и журналы и положите их в ящик для боеприпасов в штаб-квартире. Как только у вас будет определенное количество их, они будут разблокированы и добавлены в Арсенал для личного использования (и для ваших отрядов фракции). &lt;br/&gt; Количество, необходимое для разблокировки, зависит от того, сколько активов разблокировала фракция. и количество принадлежащих фабрик. Разблокированное оружие, оптика и очки ночного видения также могут изменить загрузку ИИ. Это особенно касается обычных ополченцев: их снаряжение начнется с небольших пистолетов-пулеметов и перейдет к дополнительным зенитным / противотанковым гранатометам. Обратите внимание, это не повлияет на их одежду, которая будет зависеть от текущего уровня навыков фракции (шлемы и униформа). Арсенал - это стандартный арсенал BIS, проверьте его документацию для взаимодействия и использования. &lt;br/&gt;&lt;br/&gt; Чтобы увидеть суммы, необходимые для разблокировки каждой группы предметов, откройте HQ Ammobox, и вы получите подробный отчет справа</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_5">
-                <Original>Politics</Original>
-                <Russian>Политика</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_5">
-                <Original>This is a civil war. People are not conquered if you can't conquer their hearts. In game mechanics, this means you can't conquer cities. The citizens of each town support the enemy or Faction to some amount.&lt;br/&gt;The dominant faction is the one who owns the city and benefits from their support in terms of money and human resources (HR). Your actions may lower enemy Support or raise yours, or both. Killing enemies, accomplishing missions, conquering resources, and power-stations, affect the amount of citizen support.</Original>
-                <Russian>Это гражданская война. Вам не победить, если вы не можете завоевать их сердца. В игровой механике это означает, что вы не можете завоевывать города. Жители каждого города в определенной степени поддерживают врага или фракцию. &lt;br/&gt; Доминирующая фракция - это тот, кто владеет городом и получает от их поддержки деньги и человеческие ресурсы (HR). Ваши действия могут снизить или повысить вашу поддержку противника, или и то, и другое. Убийство врагов, выполнение миссий, завоевание ресурсов и электростанций влияет на количество поддержки граждан.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_6">
-                <Original>Radio Towers</Original>
-                <Russian>Радиовышки</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_6">
-                <Original>Destroy or capture Radio Towers in order to build trust with %1 citizens.</Original>
-                <Russian>Уничтожьте или захватите Радиовышки, чтобы завоевать доверие %1 жителей</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_7">
-                <Original>Vehicles</Original>
-                <Russian>Техника</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_7">
-                <Original>You may buy vehicles for your squad at Faction flags.</Original>
-                <Russian>Вы можете покупать технику для своего отряда в штабе фракций.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_8">
-                <Original>Static Weapons</Original>
-                <Russian>Станковое орудие</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_9">
-                <Original>Conquer</Original>
-                <Russian>Захват</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_9">
-                <Original>Some zones, like airports require you to use the ""Take the Flag"" action on their respective flags in order to conquer them. Some others, like roadblocks and some outposts, simply require you to defeat the garrison.</Original>
-                <Russian>Некоторые зоны, например авиабазы, требуют от вас использования действия «Взять флаг» на соответствующих флагах, чтобы захватить их. Некоторые другие, такие как блокпосты и некоторые заставы, просто требуют, чтобы вы уничтожили гарнизон.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_10">
-                <Original>Ammobox Transfer</Original>
-                <Russian>Погрузка боеприпасов</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_10">
-                <Original>When you mount a truck, you may use the Transfer action in the action menu. It will search for nearby ammoboxes and load the contents of the nearest one into the truck's cargo space. You may then unload the truck in your ammobox at HQ for future use. Before transferring, make sure to unload backpack/vest contents into the Truck cargo space and then transfer. TIP: If your HQ Ammobox is full, use this functionality from a nearby truck to add more content to the ammobox as it will then accept everything :)</Original>
-                <Russian>Когда вы садитесь на грузовик, вы можете использовать действие «Переместить» в меню действий. Он будет искать ближайшие боеприпасы и загружать содержимое ближайшего в грузовое пространство грузовика. Затем вы можете разгрузить грузовик в свой боезапас в штаб-квартире для будущего использования. Перед перемещением убедитесь, что содержимое рюкзака / жилета выгружено в грузовое пространство грузовика, а затем перенесите его. СОВЕТ: если ваш штаб-квартира с боеприпасами заполнена, используйте эту функцию из ближайшего грузовика, чтобы добавить больше содержимого в ящик с боеприпасами, поскольку он будет принимать все</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_11">
-                <Original>Fast Travel</Original>
-                <Russian>Быстрое перемещение</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_11">
-                <Original>When there are no enemies nearby, fast travel to Faction controlled places. The Commander also has the ability to use this option on HC groups, selecting the group on HC bar and clicking on this button.</Original>
-                <Russian>Когда поблизости нет врагов, быстро перемещайтесь в места, контролируемые фракцией. У Командующего также есть возможность использовать эту опцию для групп HC, выбрав группу на панели HC и нажав эту кнопку</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_12">
-                <Original>Base Static Emplacement</Original>
-                <Russian>Станковое орудие в штабе</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_12">
-                <Original>Purchased static weapons won't despawn if you leave them in a base or zone, AI garrison will man them. Reinforce places as you desire.</Original>
-                <Russian>Купленное статическое оружие не исчезнет, если вы оставите его на базе или в зоне, им будет управлять гарнизон ИИ. Укрепляйте места по своему желанию</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_13">
-                <Original>Group Selection</Original>
-                <Russian>Выбор группы</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_13">
-                <Original>You can build groups with up to 10 human players. Commander is excluded of this function.</Original>
-                <Russian>Вы можете создавать группы до 10 игроков-людей. Командир исключен из этой функции</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_14">
-                <Original>Server Members</Original>
-                <Russian>Игроки</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_14">
-                <Original>If enabled, this feature will exclude all non-members from using the HQ Ammobox and become Commander. This feature is intended to avoid having your game ruined by the casual troll in open server environments. Commanders may add or remove players from the Server Members List if the feature is enabled.</Original>
-                <Russian>Если эта функция включена, все не-члены будут исключены из использования HQ Ammobox и станут командиром. Эта функция предназначена для того, чтобы ваша игра не испортилась случайным троллем в среде открытого сервера. Командиры могут добавлять или удалять игроков из списка участников сервера, если эта функция включена.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_15">
-                <Original>Player and Money</Original>
-                <Russian>Игрок и деньги</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_15">
-                <Original>Use this option to donate money to other players or your faction funds.</Original>
-                <Russian>Используйте эту опцию, чтобы передавать деньги другим игрокам или в фонд вашей фракции</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_16">
-                <Original>Breach Vehicles</Original>
-                <Russian>Выкуривание из техники</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_16">
-                <Original>Tanks and APC can be breached by engineers with explosives to open them and get their crew out. Check 'Breaching charges' for the charges needed. Breaching vehicles applies damage, so take care when breaching heavily damaged vehicles. To breach a vehicle, get close to it and select the breaching option!</Original>
-                <Russian>Инженеры могут взорвать танки и БТР с помощью взрывчатки, чтобы открыть их и вывести свою команду. Проверьте «Обвинения в нарушении», чтобы узнать о необходимых обвинениях. Нарушение транспортных средств наносит ущерб, поэтому будьте осторожны при наезде на сильно поврежденные автомобили. Чтобы взломать машину, подойдите к ней и выберите вариант взлома.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Features_17">
-                <Original>Breaching charges</Original>
-                <Russian>Пробитие</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Features_17">
-                <Original>To breach an APC you need %1 %2To breach a tank you need %3</Original>
-                <Russian>Чтобы пробить APC вам нужно %1 %2 Чтобы пробить танк вам нужно %3</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_AI_1">
-                <Original>Recruit</Original>
-                <Russian>Рекрутирование</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_AI_1">
-                <Original>You may recruit up to 9 AI squad-mates at some Faction flags and the HQ flag.</Original>
-                <Russian>Вы можете нанять до 9 ИИ товарищей в отряд.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_AI_2">
-                <Original>AI Control</Original>
-                <Russian>Контроль ИИ</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_AI_2">
-                <Original>Select a squad-mate or HC Group to gain direct control over them for a limited time. Selecting this option for a HC squad will give you control over the squad's leader.</Original>
-                <Russian>Выберите товарища по отряду или группу HC, чтобы получить прямой контроль над ними в течение ограниченного времени. Выбор этой опции для отряда ХК даст вам контроль над лидером отряда.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_AI_3">
-                <Original>AI Radio</Original>
-                <Russian>Радиосвязь с ИИ</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_AI_3">
-                <Original>This feature aims to simulate the lack of radio communications with AI fighters. Your AI squad-mates won't have a radio until you unlock it from the Arsenal. Without a radio, if an AI squad-mate gets too far away, they will get lost and return to the leader's position after completing the last order they received. To avoid this, you may scavenge some radios from enemy (AutoRearm feature will do) or let the AI use a military vehicle which has long range radios. If it takes too long to find their leader, they will automatically return to the HQ.</Original>
-                <Russian>Эта функция призвана имитировать отсутствие радиосвязи с бойцами ИИ. У ваших товарищей по отряду ИИ не будет радио, пока вы не разблокируете его в Арсенале. Без радио, если товарищ по отряду ИИ уйдет слишком далеко, он заблудится и вернется на позицию лидера после выполнения последнего полученного приказа. Чтобы избежать этого, вы можете убрать несколько радиостанций у врага или позволить ИИ использовать военную машину с радиостанциями дальнего действия. Если поиск лидера займет слишком много времени, они автоматически вернутся в штаб</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_AI_4">
-                <Original>Auto Heal</Original>
-                <Russian>Авто лечение</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_AI_4">
-                <Original>AI Medic squad-mates will heal other AI’s automatically without the need to give any orders. If in combat, your AI will use smoke grenades for cover. If there is no medic in the group, the AI will use their own medikits.</Original>
-                <Russian>ИИ-медики будут лечить других ИИ автоматически без необходимости отдавать приказы. В бою ваш ИИ будет использовать дымовые гранаты для укрытия. Если в группе нет медика, ИИ будет использовать свои перевязочные пакеты.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_AI_5">
-                <Original>Auto Rearm \ Loot</Original>
-                <Russian>Автоснаряжение \ Лут</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_AI_5">
-                <Original>Your AI squad-mates will automatically look for and scavenge any ammunition from nearby corpses, vehicles and ammoboxes if needed. Also they will try to renew their weapons with more powerful ones. If AI is inside a vehicle, they will loot weapons and launchers, and drop them in their truck until there is nothing in the area. Use this instead of the vanilla Rearm radio option.</Original>
-                <Russian>Ваши товарищи по отряду ИИ будут автоматически искать и собирать любые боеприпасы с ближайших трупов, транспортных средств и ящиков с боеприпасами, если это необходимо. Также они попытаются обновить свое оружие на более мощное. Если ИИ находится внутри транспортного средства, они будут собирать оружие и пусковые установки и бросать их в свой грузовик, пока в области ничего не останется.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_AI_6">
-                <Original>Vehicle Squad</Original>
-                <Russian>Техника отряда</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_AI_6">
-                <Original>Commander Only. Use this option to assign the vehicle you are looking at to any HC squad. Check vehicle status, order them to mount or disembark, and automate mounted static squads.</Original>
-                <Russian>Используйте эту опцию, чтобы назначить машину, которую вы смотрите, любому отряду. Проверяйте состояние техники, приказывайте им садиться или выходить из машины и автоматизируйте конные статические отряды.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_AI_7">
-                <Original>Dismiss Squad-mate</Original>
-                <Russian>Роспуск ИИ</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_AI_7">
-                <Original>Select the unit and use the 'Dismiss Squad-mate' option to send them back to HQ. You will recover some of the money you spent on them.</Original>
-                <Russian>Выберите отряд и используйте опцию «Роспуск ИИ», чтобы отправить его обратно в штаб. Вы вернете часть потраченных на них денег.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Options_1">
-                <Original>Map Info</Original>
-                <Russian>Карта</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Options_1">
-                <Original>Click on a city to learn the strength of their support for the enemy or Faction. Click on other zones to know relevant info about them.</Original>
-                <Russian>Нажмите на город, чтобы узнать, насколько они поддерживают нас или противника. Нажмите на другие зоны, чтобы узнать о них актуальную информацию</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Options_2">
-                <Original>AI Limiter</Original>
-                <Russian>Лимит ИИ</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Options_2">
-                <Original>Commander Only. Sets the the maximum amount of AI in map per server or HC. Up to 200 AI may behave decently.</Original>
-                <Russian>Устанавливает максимальное количество AI на карте на сервер или HC. До 200 ИИ могут вести себя прилично</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Options_3">
-                <Original>Persistent Save-game</Original>
-                <Russian>Сохранение</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Options_3">
-                <Original>Commander Only. You may save the game at your HQ Map. This will allow you to continue playing upon mission update or server restart, preserving stats, player's equipment, conquered zones, enemy asset availability and many more things. WARNING: Normal save and load runs badly in this mission. This system is your only guarantee of saving the game properly</Original>
-                <Russian>Вы можете сохранить игру на карте у штаба. Это позволит вам продолжить игру после обновления миссии или перезапуска сервера, сохраняя статистику, экипировку игрока, захваченные зоны, доступность вражеских ресурсов и многое другое. ВНИМАНИЕ: Нормальное сохранение и загрузка в этой миссии работают плохо. Эта система - ваша единственная гарантия правильного сохранения игры.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Options_5">
-                <Original>Civ Spawn</Original>
-                <Russian>Лимит Гражд.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Options_5">
-                <Original>Increase or decrease the percentage of city civilian population that spawn. At 0% only one civilian will spawn in each city.</Original>
-                <Russian>Увеличьте или уменьшите процент возрождающегося гражданского населения города. При 0% в каждом городе появится только одно гражданское лицо.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Options_6">
-                <Original>Spawn Distance</Original>
-                <Russian>Дистанция спавна</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Options_6">
-                <Original>Commander only. Increase or decrease general spawn and despawn distance. Use it carefully combined with other options.</Original>
-                <Russian>Увеличение или уменьшение общей дистанции появления и исчезновения. Используйте его осторожно в сочетании с другими вариантами</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Options_7">
-                <Original>Garbage Cleaner</Original>
-                <Russian>Удаление мусора</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Options_7">
-                <Original>Commander only. Will delete things like dropped weapons, magazines, clothing etc.&lt;br/&gt;&lt;br/&gt;Beware, it freezes the game for some time.</Original>
-                <Russian>Удаляет такие вещи, как брошенное оружие, магазины, одежду и т.д. &lt;br/&gt;&lt;br/&gt; Осторожно, игра на некоторое время зависает.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Options_8">
-                <Original>Reinit UI</Original>
-                <Russian>Рестарт интерфейса</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Options_8">
-                <Original>Select this option when the Y key or Statistics bar are not working.</Original>
-                <Russian>Выберите этот вариант, если клавиша Y или панель статистики не работают.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Diary_1">
-                <Original>%1 and %2 Aggro</Original>
-                <Russian>%1 и %2 Агр</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Diary_1">
-                <Original>There is an All vs All war in %4. %1 and %2 are constantly attacking each other, but that does not mean they don't shoot at %3 on first sight.&lt;br/&gt;&lt;br/&gt;%1 and %2 Aggro points represent how much threat they see in %3 faction.&lt;br/&gt;&lt;br/&gt;Generally speaking those points will low or raise depending on your actions against them and civilians.</Original>
-                <Russian>В %4 идет война Все против Всех. %1 и %2 постоянно атакуют друг друга, но это не значит, что они не стреляют по %3 с первого взгляда. &lt;br/&gt;&lt;br/&gt; %1 и %2 Агр-очков показывают, сколько угроза, которую они видят во фракции %3. &lt;br/&gt;&lt;br/&gt; В общем, эти очки будут уменьшаться или увеличиваться в зависимости от ваших действий против них и мирных жителей</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Diary_2">
-                <Original>HR</Original>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Diary_2">
-                <Original>HR or Manpower comes from citizen support on each city. Manpower is needed to recruit more units (1 HR Point = 1 Soldier)</Original>
-                <Russian>HR прибывают из поддержки граждан в каждом городе. Для набора большего количества юнитов требуется рабочая сила (1 очко HR = 1 солдат).</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Diary_3">
-                <Original>Money - MP</Original>
-                <Russian>Деньги - MP</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Diary_3">
-                <Original>In MP games there are two money pools. Faction Money -which is for Commander use only- and personal money. Personal money can be used by any player to recruit AI or buy vehicles. Faction earns money by taxes and accomplishing missions. Personal money comes from killing enemies and accomplishing missions. Options to transfer or donate money are found in the Y menu. Commander can grab money from the Faction Pool to his own account.</Original>
-                <Russian>В MP-играх есть два пула денег. Деньги фракции, предназначенные только для командиров, и личные деньги. Любой игрок может использовать личные деньги для найма ИИ или покупки транспортных средств. Фракция зарабатывает деньги налогами и выполнением миссий. Личные деньги поступают от убийства врагов и выполнения миссий. Варианты перевода или пожертвования денег находятся в меню Y. Командир может забрать деньги из пула фракций на свой счет.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Diary_4">
-                <Original>Money</Original>
-                <Russian>Деньги</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Diary_4">
-                <Original>Money comes from a combination of citizens support on each city, resources conquered, factories conquered (which boost the economy) and power provided to all of them with a nearby friendly power plant (you may also conquer them to cut off Money supply to the enemy). Money is used to purchase vehicles, units and squads.</Original>
-                <Russian>Деньги поступают из поддержки граждан в каждом городе, завоеванных ресурсов, завоеванных заводов (которые стимулируют экономику) и энергии, предоставляемой всем им с помощью близлежащей дружественной электростанции (вы также можете победить их, чтобы отрезать денежную массу врагу). Деньги идут на покупку техники, юнитов и отрядов.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Diary_5">
-                <Original>Resources</Original>
-                <Russian>Ресурсы</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Diary_5">
-                <Original>Every 10 minutes each faction receives Money and Manpower according to the zones they own, and the state they are in. Having a good amount of resource zones and some factories is the way of getting enough resources to win this war.</Original>
-                <Russian>Каждые 10 минут фракция получает деньги и ЛР в соответствии с зонами, которыми они владеют, и состоянием, в котором они находятся. Наличие большого количества ресурсных зон и некоторых заводов - это способ получить достаточно ресурсов, чтобы выиграть эту войну.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Diary_6">
-                <Original>HQ - Basics</Original>
-                <Russian>Штаб - Основы</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Diary_6">
-                <Original>Flag: Vehicle and Squad Unit Recruitment. Commander Options.&lt;br/&gt;Petros: Side-missions (Commander Only).&lt;br/&gt;Map: Game Options.</Original>
-                <Russian>Флаг: Найм ИИ. &lt;br/&gt; Пестрос: Побочные задания (только для командира). &lt;br/&gt; Карта: параметры игры.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_gamemode">
-                <Original>AI Rules of Engagement</Original>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_gamemode_1">
-                <Original>%2 vs %1 war.</Original>
-                <Russian>Война %2 против %1.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_gamemode_2">
-                <Original>%2 vs %1 war.</Original>
-                <Russian>Война %2 против %1.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_gamemode_3">
-                <Original>%3 vs All war.&lt;br/&gt;&lt;br/&gt;%1 and %2 will attack only %3 and act independently. Both can conquer.</Original>
-                <Russian>Война %3 против всех.&lt;br/&gt;&lt;br/&gt; %1 и %2 атакуют только %3 и действуют независимо. Оба могут победить.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_gamemode_4">
-                <Original>All vs All war.&lt;br/&gt;&lt;br/&gt;%1 and %2 will attack each other and both to %3.</Original>
-                <Russian>Все против всех.&lt;br/&gt;&lt;br/&gt;%1 и %2 будут атаковать друг друга и оба - %3.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Default_1">
-                <Original>Welcome</Original>
-                <Russian>Добро пожаловать</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Default_1">
-                <Original>Welcome to Arma 3 - %1. This mission aims to simulate guerilla combat, tactics and strategic situations. It is not a quick and easy mod, it is long term, step-by-step mission with LOTS of features and enhanced AI.</Original>
-                <Russian>Добро пожаловать в Arma 3 - %1. Эта миссия направлена на моделирование партизанского боя, тактики и стратегических ситуаций. Это не быстрый и легкий мод, это долгосрочная, пошаговая миссия с МНОЖЕСТВОМ функций и улучшенным ИИ.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Default_2">
-                <Original>Win</Original>
-                <Russian>Победа</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Default_2">
-                <Original>You will win the game when most of the population supports Faction and you have conquered all the Airbases.</Original>
-                <Russian>Вы выиграете игру, когда большая часть населения поддержит фракцию и вы захватите все авиабазы.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Default_3">
-                <Original>Lose</Original>
-                <Russian>Неудача</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Default_3">
-                <Original>You will lose the game if %1 has murdered 1/3 of the total population.</Original>
-                <Russian>Вы проиграете игру, если %1 убил 1/3 всего населения.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Credits_1">
-                <Original>Script Credits</Original>
-                <Russian>Авторы сценария</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Credits_1">
-                <Original>UPSMon by Monsada, Kronzy and Cool=Azroul13.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen&lt;br/&gt;Advanced Towing by Seth Duda.&lt;br/&gt;Antistasi Community Edition by Official Antistasi Community.&lt;br/&gt;Magrepack by Outlawled, R3vo and OOster.&lt;br/&gt;HALs_Store by HallyG, R3vo and barman75.&lt;br/&gt;Discord Rich Presence by ConnorAU.&lt;br/&gt;Antistasi Plus fork by Socrates.</Original>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Credits_2">
-                <Original>Mods</Original>
-                <Russian>Моды</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Credits_2">
-                <Original>Integrated (optional) Mods:&lt;br/&gt;TFAR: Radio integrated in Arsenal. Sound disabled when player is unconscious.&lt;br/&gt;ACE Medical: Will disable Antistasi revive system.&lt;br/&gt;&lt;br/&gt;CAUTION: The use of Persistent Save system with TFAR and any weapon mod activated will make them mandatory in future.&lt;br/&gt;&lt;br/&gt;Any client sided Mod, such as JSRS, Blastcore, UI Mod should work.&lt;br/&gt;&lt;br/&gt;Units and vehicles mods won't work. AI Mods may cause malfunctions (in any case Antistasi has heavy AI tweaking).</Original>
-                <Original>内置支持的(可选)模组: &lt;br/&gt;TFAR: 无线电已集成至军火库。玩家失去意识时将会禁用声音。&lt;br/&gt;ACE医疗: 将会禁用 Antistasi 复苏系统。&lt;br/&gt;&lt;br/&gt;注意: 进行永久性存储时使用TFAR和任何武器模组, 将使它们成为强制性模组。&lt;br/&gt;&lt;br/&gt;任何客户端模组, 如JSRS, Blastcore, 用户界面模组都应当能够正常使用。&lt;br/&gt;&lt;br/&gt;单位和载具模组不会正常工作。AI模组可能会导致任务异常(在绝大多数情况下, Antistasi 对AI逻辑进行了重度调整)。</Original>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_header_Credits_3">
-                <Original>Thanks</Original>
-                <Russian>Благодарность</Russian>
-            </Key>
-            <Key ID="STR_antistasi_journal_entry_text_Credits_3">
-                <Original>LanCommi for his artwork.&lt;br/&gt;Goon and jw custom: Part of the code for the NAPALM script.&lt;br/&gt;rebel12340: Radio Jam script&lt;br/&gt;Manko: Earplug snippet&lt;br/&gt;bobchaos: Managing the community despite all difficulties.&lt;br/&gt;And all those players who spend their time on making comments, suggestions and reports on Steam, Github and BIS forums.</Original>
-                <Original>LanCommi 的美术设计。&lt;br/&gt;Goon 和 jw custom: 部分凝固汽油弹(NAPALM)脚本。&lt;br/&gt;rebel12340: 无线电阻塞脚本。&lt;br/&gt;Manko: 耳塞脚本。&lt;br/&gt;bobchaos: 尽管困难重重, 但仍在管理社区。&lt;br/&gt;以及所有花时间在Steam、Github和BIS论坛上发表评论、建议和报告的玩家。</Original>
-            </Key>
-        </Container>
         <Container name="loot_actions">
             <Key ID="STR_antistasi_actions_loot_around_text">
                 <Original>Gather Scattered Loot</Original>
@@ -5588,10 +4974,6 @@
             <Key ID="STR_intel_select_reduce_activity">
                 <Original>We have obtained information about how %1 operates, their shadow network accross the %2, secret routes, bribed officials and many more. We took some measures to hurt their activity here.</Original>
                 <Russian>Мы получили информацию о том, как работает %1, их теневая сеть по всему %2, секретные маршруты, подкупленные чиновники и многое другое. Мы предприняли некоторые меры, чтобы подорвать их активность.</Russian>
-            </Key>
-            <Key ID="STR_intel_select_rivals_exclusion">
-                <Original>We have gathered bits and pieces of information about %1, codenames of their hideouts and cells in cities. We now know that there are no %1 in %2.</Original>
-                <Russian>Мы собрали крупицы информации о %1, кодовых названиях их укрытий и ячеек в городах. Теперь мы знаем, что %1 в %2 нет.</Russian>
             </Key>
             <Key ID="STR_intel_select_rivals_exclusion">
                 <Original>We have gathered bits and pieces of information about %1, codenames of their hideouts and cells in cities. We now know that there are no %1 in %2.</Original>
@@ -6030,10 +5412,6 @@
             <Key ID="STR_A3A_Missions_under_attack_task_header">
                 <Original>In gratitude for the rescue, smugglers shared with us part of their illegal cargo.</Original>
                 <Russian>В благодарность за спасение контрабандисты поделились с нами частью своего нелегального груза.</Russian>
-            </Key>
-            <Key ID="STR_A3A_Missions_RES_Refugees_task_desc_2">
-                <Original>A group of refugees is hiding in %1 awaiting for evacuation. We have to find them before %2 does it. If not, there will be a certain death for them. Bring them back to HQ. Do this before %3.</Original>
-                <Russian>Группа беженцев скрывается в %1, ожидая эвакуации. Мы должны найти их до того как их найдут %2. Если мы не успеем они, вероятно, умрут. Верните их в штаб. Сделайте это до %3.</Russian>
             </Key>
             <Key ID="STR_A3A_Missions_underattack_task_header">
                 <Original>%1 Contact Report</Original>

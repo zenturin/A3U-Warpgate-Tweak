@@ -289,7 +289,7 @@ class rebelMenu
 						class SwitchButton: switchButton {
 							idc = 5404;
 							action = "['MAIN', 5400, true, 'PARADROP'] call SCRT_fnc_ui_switchButton";
-							tooltip = $STR_commander_menu_paradrop_tooltip;
+							tooltip = $STR_commander_menu_paradrop_tooltip_noncomm;
 						};
 					};		
 				};
@@ -297,7 +297,7 @@ class rebelMenu
 				class paradropDescriptionText: TextBaseMT
 				{
 					idc = 6521;			
-					text = $STR_commander_menu_paradrop_tooltip;
+					text = $STR_commander_menu_paradrop_tooltip_noncomm;
 					x = "1 * pixelGridNoUIScale * pixelW";
 					y = "14.5 * pixelGridNoUIScale * pixelH";	
 					w = "22 * pixelGridNoUIScale * pixelW";	
