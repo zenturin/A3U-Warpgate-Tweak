@@ -25,6 +25,8 @@ rivalEventCooldown = 0;
 while {true} do {
     waitUntil {!isNil "A3A_activePlayerCount"};
 
+    sleep 600;
+
 	//if rivals are already defeated, we may exit the loop entirely as it makes no sense to work
 	if (areRivalsDefeated) exitWith {
         Info("Rivals are already defeated, exiting update loop.");
@@ -46,6 +48,4 @@ while {true} do {
     } else {
         Info("Event doesn't rolled - low rivals activity.");
     };
-
-    sleep 600;
 };
