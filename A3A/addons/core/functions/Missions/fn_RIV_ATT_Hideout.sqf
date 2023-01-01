@@ -245,7 +245,7 @@ if (dateToNumber date < _dateLimitNum) then {
             [], //blacklist positions
             [_hideoutPosition, _hideoutPosition] //default position
         ] call BIS_fnc_findSafePos;
-        private _sentry = [_position, Rivals, (selectRandom groupsRivalsSentry)] call A3A_fnc_spawnGroup;
+        private _sentry = [_position, Rivals, (selectRandom (A3A_faction_riv get "groupsSentry"))] call A3A_fnc_spawnGroup;
         {[_x] call A3A_fnc_NATOinit} forEach (units _sentry);
         [_sentry, _hideoutPosition, 100] call bis_fnc_taskPatrol;
         _groups pushBack _sentry;

@@ -170,4 +170,4 @@ if (_spawnableVehicle != "") then {
 waitUntil {sleep 1; (spawner getVariable _marker == 2)};
 
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
-{deleteGroup _x} forEach _groups;
+{[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
