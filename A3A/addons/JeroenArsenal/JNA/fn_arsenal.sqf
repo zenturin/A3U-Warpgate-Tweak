@@ -443,12 +443,12 @@ switch _mode do {
 
 	  private _sortByAmountIndex =  _ctrlSort lbadd (localize "STR_JNA_SORT_BY_AMOUNT");
       private _sortDefaultIndex = _ctrlSort lbadd (localize "STR_JNA_SORT_DEFAULT");
-	//   private _sortColorIndex = _ctrlSort lbadd (localize "STR_JNA_SORT_COLOR");
+	  private _sortColorIndex = _ctrlSort lbadd (localize "STR_JNA_SORT_COLOR");
 
       _ctrlSort lbSetValue [0, SORT_ALPHABETICAL];
       _ctrlSort lbSetValue [_sortByAmountIndex, SORT_AMOUNT];
       _ctrlSort lbSetValue [_sortDefaultIndex, SORT_DEFAULT];
-	//   _ctrlSort lbSetValue [_sortColorIndex, SORT_COLOR];
+	  _ctrlSort lbSetValue [_sortColorIndex, SORT_COLOR];
 
       lbSortByValue _ctrlSort;
 
@@ -526,48 +526,57 @@ switch _mode do {
         };
       };
 	  case SORT_COLOR: {
-		//TODO: for some reason it doesn't sort list the right way while it definetely should 
-		//and i'm too tired to investigate why
-		for "_i" from 0 to (_itemCount - 1) do {
-           private _dataStr = if _type then {_ctrlList lnbdata [_i,0]} else {_ctrlList lbdata _i};
+			private _displayNameArray = [];
+			private _dataArray = [];
+			
+			private _tempArr = [];
 
-          if (_dataStr != "") then {
-            private _data = call compile _dataStr;
-            private _item = _data select 0;
-            private _displayName = _data select 2;
-			private _color = if _type then {
-				_ctrlList lnbColor [_i, 1];
-			} else {
-				_ctrlList lbColor _i;
+			//Iterate in reverse order to avoid a lot of array resizes in _dataArray;
+			for "_i" from (_itemCount - 1) to 0 step -1 do {
+				private _dataStr = if _type then{_ctrlList lnbdata [_i,0]}else{_ctrlList lbdata _i};
+
+				if (_dataStr != "") then {
+					private _data = call compile _dataStr;
+					private _item = _data select 0;
+					private _displayName = _data select 2;
+
+					private _color = (if _type then {_ctrlList lnbColor [_i, 1]} else {_ctrlList lbColor _i}) apply {_x toFixed 1};
+					private _sortValue = switch (true) do {
+						case (_color isEqualTo (FORBIDDEN_ITEM_COLOR apply {_x toFixed 1})): {
+							2
+						};
+						case (_color isEqualTo (LIMITED_ITEM_COLOR apply {_x toFixed 1})): {
+							4
+						};
+						case (_color isEqualTo (INITIAL_EQUIPMENT_COLOR apply {_x toFixed 1})): {
+							8
+						};
+						default {
+							16
+						};
+					};
+
+					_displayNameArray pushBack [_displayName, _sortValue];
+					_dataArray set [_i, _data];
+				};
 			};
 
-			private _sortValue = switch (_color) do {
-				case FORBIDDEN_ITEM_COLOR: {
-					2
-				};
-				case INITIAL_EQUIPMENT_COLOR: {
-					4
-				};
-				case LIMITED_ITEM_COLOR: {
-					8
-				};
-				default {
-					16
+			_displayNameArray = ([_displayNameArray, [], {_x select 1}, "DESCEND"] call BIS_fnc_sortBy) apply {_x select 0};
+
+			for "_i" from 0 to (_itemCount - 1) do {
+				private _data = _dataArray select _i;
+				if (!isNil "_data") then {
+					private _displayName = _data select 2;
+					_ctrlList lbSetValue [_i, _displayNameArray find _displayName];
 				};
 			};
 
-            _ctrlList lbSetValue [_i, _sortValue];
-          };
-
-		  _ctrlList lbSortBy ["VALUE", false, false];
-        //   lbSortByValue _ctrlList;
+			lbSortByValue _ctrlList;
         };
       };
       case SORT_DEFAULT: {
         lbSort _ctrlList;
       };
-  };
-
   };
 
 	///////////////////////////////////////////////////////////////////////////////////////////
@@ -1655,7 +1664,7 @@ switch _mode do {
 		//check if weapon is unlocked
 		private _min = [_index, _item] call _minItemsMember;
 		if ((_amount <= _min) AND (_amount != -1) AND (_item !="") AND !(player call A3A_fnc_isMember) AND !_type) exitWith{
-			['showMessage',[_display,(localize "STR_JNA_ACT_ONLY_MEMBERS")]] call jn_fnc_arsenal;
+			['showMessage',[_display,localize "STR_JNA_ACT_ONLY_MEMBERS"]] call jn_fnc_arsenal;
 
 			//reset _cursel
 			if(missionnamespace getvariable ["jna_reselect_item",true])then{//prefent loop when unavalable item was worn and a other unavalable item was selected
@@ -2196,7 +2205,7 @@ switch _mode do {
 			if (_add > 0) then {//add
 				_min = [_index, _item] call _minItemsMember;
 				if((_amount <= _min) AND (_amount != -1) AND !(player call A3A_fnc_isMember)) exitWith{
-					['showMessage',[_display,(localize "STR_JNA_ACT_ONLY_MEMBERS")]] call jn_fnc_arsenal;
+					['showMessage',[_display, localize "STR_JNA_ACT_ONLY_MEMBERS"]] call jn_fnc_arsenal;
 				};
 				if(_index in [IDC_RSCDISPLAYARSENAL_TAB_CARGOMAG,IDC_RSCDISPLAYARSENAL_TAB_CARGOMAGALL])then{//magazines are handeld by bullet count
 					//check if full mag can be optaind
@@ -2918,7 +2927,7 @@ switch _mode do {
 			//--- Save
 			[
 				_center,
-				[missionProfileNamespace,ctrltext _ctrlTemplateName],
+				[profileNamespace,ctrltext _ctrlTemplateName],
 				[
 					_center getvariable ["BIS_fnc_arsenal_face",face _center],
 					speaker _center,
@@ -2961,7 +2970,7 @@ switch _mode do {
 		_ctrlTemplateValue = _display displayctrl IDC_RSCDISPLAYARSENAL_TEMPLATE_VALUENAME;
 		_cursel = lnbcurselrow _ctrlTemplateValue;
 		_name = _ctrlTemplateValue lnbtext [_cursel,0];
-		[_center,[missionProfileNamespace,_name],nil,true] call bis_fnc_saveInventory;
+		[_center,[profileNamespace,_name],nil,true] call bis_fnc_saveInventory;
 		['showTemplates',[_display]] call jn_fnc_arsenal;
 		_ctrlTemplateValue lnbsetcurselrow (_cursel max (lbsize _ctrlTemplateValue - 1));
 
@@ -2973,7 +2982,7 @@ switch _mode do {
 
 		_ctrlTemplateValue = _display displayctrl IDC_RSCDISPLAYARSENAL_TEMPLATE_VALUENAME;
 		lnbclear _ctrlTemplateValue;
-		_data = missionProfileNamespace getvariable ["bis_fnc_saveInventory_data",[]];
+		_data = profileNamespace getvariable ["bis_fnc_saveInventory_data",[]];
 		_center = (missionnamespace getvariable ["BIS_fnc_arsenal_center",player]);
 
 		for "_i" from 0 to (count _data - 1) step 2 do {

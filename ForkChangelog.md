@@ -43,7 +43,7 @@
 - (Western Sahara) Tura rebel faction
 - (Vanilla) NATO, CSAT, AAF factions
 - (Aegis) AUKUS, NATO, CSAT, AFRF, AAF factions
-- (RHS, 3CB Factions) AFRF, CDF, US Army, USMC factions 
+- (RHS, 3CB Factions) AAF, AFRF, CDF, LDF, US Army, USMC factions 
 - (3CB Factions) Rebel factions with different starting eqipment and vehicle black market stock - FIA, NAPA and CCM
 
 ### Changes
@@ -117,6 +117,7 @@
 - New garage-style placement for the rest of placement types (loot crate, vehicle box's vehicle shop, constructions and vehicle black market)
 - Colored rows in arsenal - red for forbidden items, yellow for limited items, grey for initial rebel equipment and white for unlocked and other types of equipment
 - Colored statuses for Occ/Inv aggression indicator in the top information bar and other notifications  
+- Sort by color in arsenal
 - Towing previously reported or military vehicle will break undercover
 - UPSMON patrols jitter (frequent switch from running to walking and vice versa) fix
 - Players will start with 500 money (new default value for initial money parameter)
