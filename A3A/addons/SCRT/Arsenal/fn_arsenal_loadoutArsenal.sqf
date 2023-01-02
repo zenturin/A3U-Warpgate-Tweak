@@ -440,10 +440,12 @@ switch _mode do {
 
 	  private _sortByAmountIndex = _ctrlSort lbadd (localize "STR_JNA_SORT_BY_AMOUNT");
       private _sortDefaultIndex = _ctrlSort lbadd (localize "STR_JNA_SORT_DEFAULT");
+	  private _sortColorIndex = _ctrlSort lbadd (localize "STR_JNA_SORT_COLOR");
 
       _ctrlSort lbSetValue [0, SORT_ALPHABETICAL];
       _ctrlSort lbSetValue [_sortByAmountIndex, SORT_AMOUNT];
       _ctrlSort lbSetValue [_sortDefaultIndex, SORT_DEFAULT];
+	  _ctrlSort lbSetValue [_sortColorIndex, SORT_COLOR];
 
       lbSortByValue _ctrlSort;
 
@@ -500,43 +502,53 @@ switch _mode do {
         lbSortByValue _ctrlList;
       };
 	  case SORT_COLOR: {
-		//TODO: for some reason it doesn't sort list the right way while it definetely should 
-		//and i'm too tired to investigate why
-		for "_i" from 0 to (_itemCount - 1) do {
-           private _dataStr = if _type then {_ctrlList lnbdata [_i,0]} else {_ctrlList lbdata _i};
+		private _displayNameArray = [];
+			private _dataArray = [];
+			
+			private _tempArr = [];
 
-          if (_dataStr != "") then {
-            private _data = call compile _dataStr;
-            private _item = _data select 0;
-            private _displayName = _data select 2;
-			private _color = if _type then {
-				_ctrlList lnbColor [_i, 1];
-			} else {
-				_ctrlList lbColor _i;
+			//Iterate in reverse order to avoid a lot of array resizes in _dataArray;
+			for "_i" from (_itemCount - 1) to 0 step -1 do {
+				private _dataStr = if _type then{_ctrlList lnbdata [_i,0]}else{_ctrlList lbdata _i};
+
+				if (_dataStr != "") then {
+					private _data = call compile _dataStr;
+					private _item = _data select 0;
+					private _displayName = _data select 2;
+
+					private _color = (if _type then {_ctrlList lnbColor [_i, 1]} else {_ctrlList lbColor _i}) apply {_x toFixed 1};
+					private _sortValue = switch (true) do {
+						case (_color isEqualTo (FORBIDDEN_ITEM_COLOR apply {_x toFixed 1})): {
+							2
+						};
+						case (_color isEqualTo (LIMITED_ITEM_COLOR apply {_x toFixed 1})): {
+							4
+						};
+						case (_color isEqualTo (INITIAL_EQUIPMENT_COLOR apply {_x toFixed 1})): {
+							8
+						};
+						default {
+							16
+						};
+					};
+
+					_displayNameArray pushBack [_displayName, _sortValue];
+					_dataArray set [_i, _data];
+				};
 			};
 
-			private _sortValue = switch (_color) do {
-				case FORBIDDEN_ITEM_COLOR: {
-					2
-				};
-				case INITIAL_EQUIPMENT_COLOR: {
-					4
-				};
-				case LIMITED_ITEM_COLOR: {
-					8
-				};
-				default {
-					16
+			_displayNameArray = ([_displayNameArray, [], {_x select 1}, "DESCEND"] call BIS_fnc_sortBy) apply {_x select 0};
+
+			for "_i" from 0 to (_itemCount - 1) do {
+				private _data = _dataArray select _i;
+				if (!isNil "_data") then {
+					private _displayName = _data select 2;
+					_ctrlList lbSetValue [_i, _displayNameArray find _displayName];
 				};
 			};
 
-            _ctrlList lbSetValue [_i, _sortValue];
-          };
-
-		  _ctrlList lbSortBy ["VALUE", false, false];
-        //   lbSortByValue _ctrlList;
-        };
-      };
+			lbSortByValue _ctrlList;
+    	};
       case SORT_AMOUNT: {
         for "_i" from 0 to (_itemCount - 1) do {
            private _dataStr = if _type then {_ctrlList lnbdata [_i,0]} else {_ctrlList lbdata _i};
