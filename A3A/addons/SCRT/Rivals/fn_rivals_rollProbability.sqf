@@ -19,18 +19,11 @@ Example:
 [] call SCRT_fnc_rivals_rollProbability;
 */
 
-#include "Constants.inc"
 
 if (!areRivalsEnabled || {!areRivalsDiscovered || {areRivalsDefeated}}) exitWith {
     false;
 };
 
-if (inactivityLevelRivals == OMNIPRESENT_ACTIVITY) exitWith {
-    true;
-};
-
-private _roll = random 100;
-
 private _gate = ((100 - 20 * inactivityLevelRivals) - 10) max 0;
 
-_roll < _gate
+(random 100) < _gate
