@@ -21,3 +21,6 @@ force ace_csw_handleExtraMagazines = false;
 
 // ACE User Interface
 force ace_ui_groupBar = true;
+
+//ACE Headless
+force acex_headless_enabled = false;
