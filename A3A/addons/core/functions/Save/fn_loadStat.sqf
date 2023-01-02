@@ -42,27 +42,31 @@ private _fnc_remoteExecObjectJIPSafe = {
 
 //===========================================================================
 //ADD VARIABLES TO THIS ARRAY THAT NEED SPECIAL SCRIPTING TO LOAD
-private _specialVarLoads = [
-    "minesX","staticsX","antennas","mrkNATO","mrkSDK",
-    "posHQ","hr","armas","items","backpcks","ammunition","dateX","prestigeOPFOR",
-    "prestigeBLUFOR","resourcesFIA","skillFIA","destroyedSites",
-    "garrison","tasks","membersX","destroyedBuildings","idlebases",
-    "chopForest","weather","killZones","jna_dataList","controlsSDK","mrkCSAT","nextTick",
-    "bombRuns","wurzelGarrison","aggressionOccupants", "aggressionInvaders", "enemyResources", "HQKnowledge",
-    "testingTimerIsActive", "version", "HR_Garage", "A3A_fuelAmountleftArray",
-    
-    "supportPoints",
-    "constructionsX",
-    "watchpostsFIA", "roadblocksFIA", "aapostsFIA", "atpostsFIA", "hmgpostsFIA",
-    "traderDiscount", "isTraderQuestCompleted", "isTraderQuestAssigned","traderPosition",
-    "areOccupantsDefeated", "areInvadersDefeated",
-    "destroyedMilAdmins",
-    "rebelLoadouts", "randomizeRebelLoadoutUniforms",
-    "areRivalsDefeated", "areRivalsDiscovered", "inactivityRivals", "rivalsLocationsMap", "rivalsExcludedLocations",
-    "nextRivalsLocationReveal", "isRivalsDiscoveryQuestAssigned"
-] createHashMapFromArray [];
 
-if (_varName in _specialVarLoads) then {
+
+if (isNil "specialVarLoads") then {
+    specialVarLoads = [
+        "minesX","staticsX","antennas","mrkNATO","mrkSDK",
+        "posHQ","hr","armas","items","backpcks","ammunition","dateX","prestigeOPFOR",
+        "prestigeBLUFOR","resourcesFIA","skillFIA","destroyedSites",
+        "garrison","tasks","membersX","destroyedBuildings","idlebases",
+        "chopForest","weather","killZones","jna_dataList","controlsSDK","mrkCSAT","nextTick",
+        "bombRuns","wurzelGarrison","aggressionOccupants", "aggressionInvaders", "enemyResources", "HQKnowledge",
+        "testingTimerIsActive", "version", "HR_Garage", "A3A_fuelAmountleftArray",
+        
+        "supportPoints",
+        "constructionsX",
+        "watchpostsFIA", "roadblocksFIA", "aapostsFIA", "atpostsFIA", "hmgpostsFIA",
+        "traderDiscount", "isTraderQuestCompleted", "isTraderQuestAssigned","traderPosition",
+        "areOccupantsDefeated", "areInvadersDefeated",
+        "destroyedMilAdmins",
+        "rebelLoadouts", "randomizeRebelLoadoutUniforms",
+        "areRivalsDefeated", "areRivalsDiscovered", "inactivityRivals", "rivalsLocationsMap", "rivalsExcludedLocations",
+        "nextRivalsLocationReveal", "isRivalsDiscoveryQuestAssigned"
+    ] createHashMapFromArray [];
+};
+
+if (_varName in specialVarLoads) then {
     switch (_varName) do {
         case 'version': {
             _s = _varValue splitString ".";

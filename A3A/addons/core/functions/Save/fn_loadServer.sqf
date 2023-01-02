@@ -195,5 +195,8 @@ if (isServer) then {
 	statsLoaded = 0; publicVariable "statsLoaded";
 	placementDone = true; publicVariable "placementDone";
 	petros allowdamage true;
+
+	{specialVarLoads deleteAt _x;} forEach (keys specialVarLoads);
+	specialVarLoads = nil;
 };
 Info("loadServer Completed.");
