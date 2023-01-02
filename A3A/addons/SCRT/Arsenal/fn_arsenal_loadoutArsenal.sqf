@@ -121,6 +121,7 @@ FIX_LINE_NUMBERS()
 #define FORBIDDEN_ITEM_COLOR [0.6901, 0, 0.1254, 0.8]
 #define LIMITED_ITEM_COLOR [1, 1, 0, 0.8]
 #define INITIAL_EQUIPMENT_COLOR [0.784,0.784,0.784,0.8]
+#define INCOMPATIBLE_ITEM_COLOR [1,1,1,0.25]
 #define DEFAULT_COLOR [1,1,1,1]
 
 disableserialization;
@@ -518,6 +519,9 @@ switch _mode do {
 
 					private _color = (if _type then {_ctrlList lnbColor [_i, 1]} else {_ctrlList lbColor _i}) apply {_x toFixed 1};
 					private _sortValue = switch (true) do {
+						case (_color isEqualTo (INCOMPATIBLE_ITEM_COLOR apply {_x toFixed 1})): {
+							0
+						};
 						case (_color isEqualTo (FORBIDDEN_ITEM_COLOR apply {_x toFixed 1})): {
 							2
 						};
@@ -1437,41 +1441,51 @@ switch _mode do {
 		_grayout = false;
 		_min = [_index, _item] call _minItemsMember;
 		_initialEquipment = FactionGet(reb,"initialRebelEquipment");
-		if ((_amount <= _min) && {_amount != -1}) then{
-			_grayout = true
+		if (_amount <= _min && {_amount != -1 && {!([player] call A3A_fnc_isMember)}}) then{_grayout = true};
+
+		//grayout attachments
+		private _isIncompatible = if (_index in [
+			IDC_RSCDISPLAYARSENAL_TAB_ITEMOPTIC,
+			IDC_RSCDISPLAYARSENAL_TAB_ITEMACC,
+			IDC_RSCDISPLAYARSENAL_TAB_ITEMMUZZLE,
+			IDC_RSCDISPLAYARSENAL_TAB_ITEMBIPOD
+		]) then {
+			_weapon = switch true do {
+				case (ctrlenabled (_display displayctrl (IDC_RSCDISPLAYARSENAL_LIST + IDC_RSCDISPLAYARSENAL_TAB_PRIMARYWEAPON))): {primaryweapon player};
+				case (ctrlenabled (_display displayctrl (IDC_RSCDISPLAYARSENAL_LIST + IDC_RSCDISPLAYARSENAL_TAB_SECONDARYWEAPON))): {secondaryweapon player};
+				case (ctrlenabled (_display displayctrl (IDC_RSCDISPLAYARSENAL_LIST + IDC_RSCDISPLAYARSENAL_TAB_HANDGUN))): {handgunweapon player};
+				default {""};
+			};
+			_compatibleItems = _weapon call bis_fnc_compatibleItems;
+
+			!({_x == _item} count _compatibleItems > 0 || _item isEqualTo "")
+		} else {
+			false
 		};
 
-		switch (true) do {
-			case (_grayout): {
-				_color = FORBIDDEN_ITEM_COLOR;
-				if _type then {
-					_ctrlList lnbSetColor [[_l,1], _color];
-					_ctrlList lnbSetColor [[_l,2], _color];
-				} else {
-					_ctrlList lbSetColor [_l, _color];
-				};
+		private _color = switch (true) do {
+			case (_isIncompatible): {
+				INCOMPATIBLE_ITEM_COLOR;
 			};
-			case (_amount <= _min && {_amount != -1}): {
-				_color = LIMITED_ITEM_COLOR;
-				if _type then {
-					_ctrlList lnbSetColor [[_l,1], _color];
-					_ctrlList lnbSetColor [[_l,2], _color];
-				} else {
-					_ctrlList lbSetColor [_l, _color];
-				};
+			case (_grayout): {
+				FORBIDDEN_ITEM_COLOR;
 			};
 			case (_item in _initialEquipment): {
-				_color = INITIAL_EQUIPMENT_COLOR;
-				if _type then {
-					_ctrlList lnbSetColor [[_l,1], _color];
-					_ctrlList lnbSetColor [[_l,2], _color];
-				} else {
-					_ctrlList lbSetColor [_l, _color];
-				};
+				INITIAL_EQUIPMENT_COLOR;
+			};
+			case (_amount <= _min && {_amount != -1}): {
+				LIMITED_ITEM_COLOR;
 			};
 			default {
-				_color = DEFAULT_COLOR;
+				DEFAULT_COLOR;
 			};
+		};
+
+		if _type then {
+			_ctrlList lnbSetColor [[_l,1], _color];
+			_ctrlList lnbSetColor [[_l,2], _color];
+		} else {
+			_ctrlList lbSetColor [_l, _color];
 		};
 
 
@@ -2719,7 +2733,12 @@ switch _mode do {
 		private _text = localize "STR_antistasi_dialogs_hq_button_rebel_set_loadout_loadout_title";
 		['showMessage',[_display, format ["%1 %2", _loadoutName,_text]]] call SCRT_fnc_arsenal_loadoutArsenal;
 
-		localNamespace setVariable ["commanderLoadout", (getUnitLoadout player)];
+		localNamespace setVariable ["commanderLoadout", getUnitLoadout player];
+
+		//prevents from dropping backpack on floor
+		if (backpack player != "") then {
+			removeBackpack player;
+		};
 
 		private _loadout = rebelLoadouts get currentRebelLoadout;
 

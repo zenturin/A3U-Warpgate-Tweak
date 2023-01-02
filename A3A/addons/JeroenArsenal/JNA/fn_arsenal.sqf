@@ -124,6 +124,7 @@ FIX_LINE_NUMBERS()
 #define FORBIDDEN_ITEM_COLOR [0.6901, 0, 0.1254, 0.8]
 #define LIMITED_ITEM_COLOR [1, 1, 0, 0.8]
 #define INITIAL_EQUIPMENT_COLOR [0.854,0.854,0.854,0.8]
+#define INCOMPATIBLE_ITEM_COLOR [1,1,1,0.25]
 #define DEFAULT_COLOR [1,1,1,1]
 
 disableserialization;
@@ -542,6 +543,9 @@ switch _mode do {
 
 					private _color = (if _type then {_ctrlList lnbColor [_i, 1]} else {_ctrlList lbColor _i}) apply {_x toFixed 1};
 					private _sortValue = switch (true) do {
+						case (_color isEqualTo (INCOMPATIBLE_ITEM_COLOR apply {_x toFixed 1})): {
+							0
+						};
 						case (_color isEqualTo (FORBIDDEN_ITEM_COLOR apply {_x toFixed 1})): {
 							2
 						};
@@ -804,8 +808,6 @@ switch _mode do {
 			IDC_RSCDISPLAYARSENAL_FRAMERIGHT,
 			IDC_RSCDISPLAYARSENAL_BACKGROUNDRIGHT
 		];
-
-		//["updateItemInfo",[_display,_ctrlList, _index]] call jn_fnc_arsenal;
 	};
 
 	///////////////////////////////////////////////////////////////////////////////////////////
@@ -1394,8 +1396,6 @@ switch _mode do {
 			};
 
 		};
-
-		//["UpdateItemGui",[_display,_index,_lbAdd]] call jn_fnc_arsenal;
 	};
 
 	///////////////////////////////////////////////////////////////////////////////////////////
@@ -1451,41 +1451,52 @@ switch _mode do {
 		_grayout = false;
 		_min = [_index, _item] call _minItemsMember;
 		_initialEquipment = FactionGet(reb,"initialRebelEquipment");
-		if ((_amount <= _min) AND (_amount != -1) AND !(player call A3A_fnc_isMember)) then{_grayout = true};
+		if (_amount <= _min && {_amount != -1 && {!([player] call A3A_fnc_isMember)}}) then{_grayout = true};
 
-		switch (true) do {
-			case (_grayout): {
-				_color = FORBIDDEN_ITEM_COLOR;
-				if _type then {
-					_ctrlList lnbSetColor [[_l,1], _color];
-					_ctrlList lnbSetColor [[_l,2], _color];
-				} else {
-					_ctrlList lbSetColor [_l, _color];
-				};
+		//grayout attachments
+		private _isIncompatible = if (_index in [
+			IDC_RSCDISPLAYARSENAL_TAB_ITEMOPTIC,
+			IDC_RSCDISPLAYARSENAL_TAB_ITEMACC,
+			IDC_RSCDISPLAYARSENAL_TAB_ITEMMUZZLE,
+			IDC_RSCDISPLAYARSENAL_TAB_ITEMBIPOD
+		]) then {
+			_weapon = switch true do {
+				case (ctrlenabled (_display displayctrl (IDC_RSCDISPLAYARSENAL_LIST + IDC_RSCDISPLAYARSENAL_TAB_PRIMARYWEAPON))): {primaryweapon player};
+				case (ctrlenabled (_display displayctrl (IDC_RSCDISPLAYARSENAL_LIST + IDC_RSCDISPLAYARSENAL_TAB_SECONDARYWEAPON))): {secondaryweapon player};
+				case (ctrlenabled (_display displayctrl (IDC_RSCDISPLAYARSENAL_LIST + IDC_RSCDISPLAYARSENAL_TAB_HANDGUN))): {handgunweapon player};
+				default {""};
 			};
-			case (_amount <= _min && {_amount != -1}): {
-				_color = LIMITED_ITEM_COLOR;
-				if _type then {
-					_ctrlList lnbSetColor [[_l,1], _color];
-					_ctrlList lnbSetColor [[_l,2], _color];
-				} else {
-					_ctrlList lbSetColor [_l, _color];
-				};
+			_compatibleItems = _weapon call bis_fnc_compatibleItems;
+
+			!({_x == _item} count _compatibleItems > 0 || _item isEqualTo "")
+		} else {
+			false
+		};
+
+		private _color = switch (true) do {
+			case (_isIncompatible): {
+				INCOMPATIBLE_ITEM_COLOR;
+			};
+			case (_grayout): {
+				FORBIDDEN_ITEM_COLOR;
 			};
 			case (_item in _initialEquipment): {
-				_color = INITIAL_EQUIPMENT_COLOR;
-				if _type then {
-					_ctrlList lnbSetColor [[_l,1], _color];
-					_ctrlList lnbSetColor [[_l,2], _color];
-				} else {
-					_ctrlList lbSetColor [_l, _color];
-				};
+				INITIAL_EQUIPMENT_COLOR;
+			};
+			case (_amount <= _min && {_amount != -1}): {
+				LIMITED_ITEM_COLOR;
 			};
 			default {
-				_color = DEFAULT_COLOR;
+				DEFAULT_COLOR;
 			};
 		};
 
+		if _type then {
+			_ctrlList lnbSetColor [[_l,1], _color];
+			_ctrlList lnbSetColor [[_l,2], _color];
+		} else {
+			_ctrlList lbSetColor [_l, _color];
+		};
 
 		//ammmo icon for weapons
 		_ammo_logo = getText(configfile >> "RscDisplayArsenal" >> "Controls" >> "TabCargoMag" >> "text");
@@ -2927,7 +2938,7 @@ switch _mode do {
 			//--- Save
 			[
 				_center,
-				[profileNamespace,ctrltext _ctrlTemplateName],
+				[missionProfileNamespace,ctrltext _ctrlTemplateName],
 				[
 					_center getvariable ["BIS_fnc_arsenal_face",face _center],
 					speaker _center,
@@ -2970,7 +2981,7 @@ switch _mode do {
 		_ctrlTemplateValue = _display displayctrl IDC_RSCDISPLAYARSENAL_TEMPLATE_VALUENAME;
 		_cursel = lnbcurselrow _ctrlTemplateValue;
 		_name = _ctrlTemplateValue lnbtext [_cursel,0];
-		[_center,[profileNamespace,_name],nil,true] call bis_fnc_saveInventory;
+		[_center,[missionProfileNamespace,_name],nil,true] call bis_fnc_saveInventory;
 		['showTemplates',[_display]] call jn_fnc_arsenal;
 		_ctrlTemplateValue lnbsetcurselrow (_cursel max (lbsize _ctrlTemplateValue - 1));
 
@@ -2982,7 +2993,7 @@ switch _mode do {
 
 		_ctrlTemplateValue = _display displayctrl IDC_RSCDISPLAYARSENAL_TEMPLATE_VALUENAME;
 		lnbclear _ctrlTemplateValue;
-		_data = profileNamespace getvariable ["bis_fnc_saveInventory_data",[]];
+		_data = missionProfileNamespace getvariable ["bis_fnc_saveInventory_data",[]];
 		_center = (missionnamespace getvariable ["BIS_fnc_arsenal_center",player]);
 
 		for "_i" from 0 to (count _data - 1) step 2 do {
