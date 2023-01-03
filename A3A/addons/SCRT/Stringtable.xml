@@ -6415,14 +6415,6 @@
                 <Original>Helmet visible</Original>
                 <Russian>Надет шлем</Russian>
             </Key>
-            <Key ID="STR_A3A_goUndercover_error_additive_helmet">
-                <Original>%1&lt;br/&gt;Wearing a helmet.</Original>
-                <Russian>%1&lt;br/&gt;Надет шлем.</Russian>
-            </Key>
-            <Key ID="STR_A3A_goUndercover_error_additive_helmet_output">
-                <Original>Helmet visible</Original>
-                <Russian>Надет шлем</Russian>
-            </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_nvg">
                 <Original>%1&lt;br/&gt;Wearing NVGs.</Original>
                 <Russian>"%1&lt;br/&gt;Надет ПНВ.</Russian>
@@ -6996,14 +6988,6 @@
             <Key ID="STR_A3A_punishment_damaged_cas">
                 <Original>You damaged a friendly as CAS support.</Original>
                 <Russian>Вы нанесли урон дружественному игроку с воздуха.</Russian>
-            </Key>
-            <Key ID="STR_A3A_punishment_damaged_arty">
-                <Original>You damaged a friendly as arty support.</Original>
-                <Russian>Вы нанесли урон дружественному игроку артиллерией.</Russian>
-            </Key>
-            <Key ID="STR_A3A_punishment_damaged_arty">
-                <Original>You damaged a friendly as arty support.</Original>
-                <Russian>Вы нанесли урон дружественному игроку артиллерией.</Russian>
             </Key>
             <Key ID="STR_A3A_punishment_damaged_arty">
                 <Original>You damaged a friendly as arty support.</Original>
