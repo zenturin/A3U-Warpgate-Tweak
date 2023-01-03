@@ -20,7 +20,7 @@ if ("invaderPunish" in A3A_activeTasks) exitWith {
     [
         localize "STR_notifiers_fail_type",
         (localize "STR_antistasi_rivals_destroy_hideoutcell_header"),  
-        parseText (localize "STR_antistasi_rivals_destroy_hideoutcell_nobigattack_text"), 
+        parseText (format [localize "STR_antistasi_rivals_destroy_hideoutcell_nobigattack_text", A3A_faction_riv get "name"]),
         10
     ] spawn SCRT_fnc_ui_showMessage;
 };
@@ -29,7 +29,7 @@ if (bigAttackInProgress) exitWith {
     [
         localize "STR_notifiers_fail_type",
         (localize "STR_antistasi_rivals_destroy_hideoutcell_header"),  
-        parseText (localize "STR_antistasi_rivals_destroy_hideoutcell_nobigattack_text"), 
+        parseText (format [localize "STR_antistasi_rivals_destroy_hideoutcell_nobigattack_text", A3A_faction_riv get "name"]),
         10
     ] spawn SCRT_fnc_ui_showMessage;
 };
