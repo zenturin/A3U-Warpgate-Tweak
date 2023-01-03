@@ -203,7 +203,7 @@ class Templates
 
     // ************************************** RHS Factions *******************************************************
 
-    class RHS_Base
+    class RHS_Base : Base
     {
         requiredAddons[] = {"rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor"};
         basepath = QPATHTOFOLDER(Templates\Templates\RHS);
