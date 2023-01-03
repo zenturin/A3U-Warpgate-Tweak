@@ -119,7 +119,6 @@ _loadoutData set ["lightHELaunchers", []];
 _loadoutData set ["ATLaunchers", [
     ["rhs_weap_maaws", "", "", "", ["rhs_mag_maaws_HEAT", "rhs_mag_maaws_HE", "rhs_mag_maaws_HEDP"], [], ""]
 ]];
-_loadoutData set ["missileATLaunchers", []];
 _loadoutData set ["AALaunchers", ["rhs_weap_fim92"]];
 _loadoutData set ["sidearms", []];
 _loadoutData set ["GLsidearms", []];
@@ -356,7 +355,8 @@ _eliteLoadoutData set ["lightATLaunchers", [
 "rhs_weap_M136_hedp",
 "rhs_weap_M136_hp"
 ]];
-_eliteLoadoutData set ["missileATLaunchers", [
+_eliteLoadoutData set ["ATLaunchers", [
+["rhs_weap_maaws", "", "", "", ["rhs_mag_maaws_HEAT", "rhs_mag_maaws_HE", "rhs_mag_maaws_HEDP"], [], ""],
 ["rhs_weap_fgm148", "", "", "", ["rhs_fgm148_magazine_AT"], [], ""]
 ]];
 
@@ -604,9 +604,6 @@ _militiaLoadoutData set ["carbines", [
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
 ["UK3CB_M16A2_UGL", "", "", "", ["rhs_mag_30Rnd_556x45_M855_Stanag", "rhs_mag_30Rnd_556x45_M855_Stanag", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red"], ["rhs_mag_M441_HE", "rhs_mag_M441_HE", "rhs_mag_M441_HE", "rhs_mag_m714_White"], ""]
-]];
-_militiaLoadoutData set ["shotguns", [
-["rhs_weap_M590_8RD", "", "", "", ["rhsusf_8Rnd_00Buck", "rhsusf_8Rnd_Slug"], [], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
 ["rhsusf_weap_MP7A2", "", "rhsusf_acc_wmx_bk", "", [], [], ""]
@@ -898,7 +895,7 @@ private _atTemplate = {
     [selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
     ["primary", 6] call _fnc_addMagazines;
 
-    [selectRandom ["ATLaunchers", "missileATLaunchers"]] call _fnc_setLauncher;
+    ["ATLaunchers"] call _fnc_setLauncher;
     //TODO - Add a check if it's disposable.
     ["launcher", 3] call _fnc_addMagazines;
 
@@ -1034,7 +1031,7 @@ private _policeTemplate = {
     ["uniforms"] call _fnc_setUniform;
 
 
-    ["SMGs"] call _fnc_setPrimary;
+    [selectRandom ["SMGs", "shotguns"]] call _fnc_setPrimary;
     ["primary", 3] call _fnc_addMagazines;
 
     ["sidearms"] call _fnc_setHandgun;

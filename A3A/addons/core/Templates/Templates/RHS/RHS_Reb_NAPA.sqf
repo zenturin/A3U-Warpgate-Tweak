@@ -164,8 +164,6 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment app
 
 private _rebUniforms = [
     "rhsgref_uniform_alpenflage",
-    "rhsgref_uniform_altis_lizard",
-    "rhsgref_uniform_altis_lizard_olive",
     "rhsgref_uniform_gorka_1_f",
     "rhsgref_uniform_3color_desert",
     "rhsgref_uniform_dpm",

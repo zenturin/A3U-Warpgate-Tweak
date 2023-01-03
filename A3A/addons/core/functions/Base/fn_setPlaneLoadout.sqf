@@ -76,6 +76,7 @@ if (_type == "CAS") then
             _plane setVariable ["rocketLauncher", ["rhs_weap_FFARLauncher"]];
             _plane setVariable ["missileLauncher", ["rhs_weap_agm65d"]];
         };
+        case "UK3CB_AAF_O_Su25SM";
         case "RHS_Su25SM_vvsc";
         case "RHS_Su25SM_CAS_vvs";
         case "rhsgref_cdf_b_su25";
@@ -255,6 +256,7 @@ if (_type == "AA") then
             _loadout = ["PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R77_x1","PylonMissile_Missile_AA_R77_x1","PylonMissile_Missile_AA_R77_INT_x1","PylonMissile_Missile_AA_R77_INT_x1","PylonMissile_Missile_AA_R77_INT_x1"];
         };
         //Vanilla IND Air superiority fighter
+        case "UK3CB_AAF_B_Gripen";
         case "Aegis_B_E_Plane_Fighter_04_F"; 
         case "Atlas_B_M_Plane_Fighter_04_F";
         case "I_Plane_Fighter_04_F":
