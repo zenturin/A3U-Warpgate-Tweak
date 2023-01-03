@@ -200,18 +200,6 @@ if (_prefix in ["occ", "inv"]) exitWith {
         unit(military, "Medic")
     ]];
 
-    //specops
-    _faction set ["groupSpecOps", [
-        unit(SF, "SquadLeader")
-        , unit(SF, "Rifleman")
-        , unit(SF, "Radioman")
-        , unit(SF, "MachineGunner")
-        , unit(SF, "ExplosivesExpert")
-        , unit(SF, "LAT")
-        , unit(SF, "Marksman")
-        , unit(SF, "Medic")
-    ]];
-
     private _specOpsRandom = [];
     for "_i" from 1 to 6 do {
         _specOpsRandom pushBack [
@@ -219,11 +207,12 @@ if (_prefix in ["occ", "inv"]) exitWith {
             unit(SF, "Rifleman"),
             unit(SF, "Radioman"),
             unit(SF, "MachineGunner"),
+            unit(SF, "LAT"),
             unit(SF, "Medic"),
             unit(SF, "Marksman"),
             selectRandom [
                 unit(SF, "ExplosivesExpert")
-                , unit(SF, "LAT")
+                , unit(SF, "AT")
                 , unit(SF, "Grenadier")
                 , unit(SF, "Sniper")
                 , unit(SF, "Engineer")
