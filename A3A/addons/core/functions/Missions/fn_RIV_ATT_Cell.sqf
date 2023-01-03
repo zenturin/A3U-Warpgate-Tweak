@@ -23,6 +23,7 @@ Info("Kill Cell Leader task initialization started, marker: %1.");
 private _vehicles = [];
 private _groups = [];
 private _effects = [];
+private _props = [];
 
 private _timeLimit = 90 * timeMultiplier;
 private _dateLimit = [date select 0, date select 1, date select 2, date select 3, (date select 4) + _timeLimit];
@@ -142,7 +143,7 @@ private _taskId = "RIV_ATT" + str A3A_taskCount;
         format [localize "STR_RIV_ATT_cell_header", A3A_faction_riv get "name"],
         _marker
     ],
-    _targetPos,
+    [_targetPos, 25],
     false,
     0,
     true,
@@ -255,7 +256,7 @@ for "_i" from 0 to (count _cardinalDirections) - 1 do {
     _localMarker setMarkerColorLocal "ColorRed";
 #endif
     
-    _vehicles append [_canOpener, _barricade];
+    _props append [_canOpener, _barricade];
 };
 
 deleteMarkerLocal _marker1;
@@ -455,7 +456,7 @@ for "_i" from 0 to _propsCount do {
     private _prop = [_propClass, (AGLToASL _propPosition)] call BIS_fnc_createSimpleObject;
     _prop setDir (random 360);
     _prop setVectorUp surfaceNormal getPos _prop;
-    _vehicles pushBack _prop;
+    _props pushBack _prop;
 };
 
 deleteVehicle _lootContainer;
@@ -598,11 +599,12 @@ switch(true) do {
     };
 };
 
-sleep 30;
-
 [_taskId, "RIV_ATT", 60] spawn A3A_fnc_taskDelete;
 
+sleep 60;
+
 {deleteVehicle _x} forEach _effects;
+{deleteVehicle _x} forEach _props;
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
 
