@@ -2211,6 +2211,7 @@ switch _mode do {
 
 		//remove or add
 		_count = 1;
+
 		if(((_amount > 0 || _amount == -1) || _add < 0) && (_add != 0))then{
 
 			if (_add > 0) then {//add
