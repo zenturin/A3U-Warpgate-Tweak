@@ -1,6 +1,5 @@
 .vscode/
 .idea/
-.github/
 *.biprivatekey
 *.log
 *.pbo
