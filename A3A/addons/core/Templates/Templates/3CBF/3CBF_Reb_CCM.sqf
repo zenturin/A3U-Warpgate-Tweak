@@ -175,11 +175,6 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment app
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "UK3CB_CHC_C_U_COACH_01",
-    "UK3CB_CHC_C_U_COACH_02",
-    "UK3CB_CHC_C_U_COACH_03",
-    "UK3CB_CHC_C_U_COACH_04",
-    "UK3CB_CHC_C_U_COACH_05",
     "U_IG_Guerilla2_1",
     "U_IG_Guerilla2_2",
     "U_IG_Guerilla2_3",
