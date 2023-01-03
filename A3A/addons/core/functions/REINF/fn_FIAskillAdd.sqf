@@ -1,3 +1,5 @@
+#define SKILL_CAP 40
+
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 
@@ -10,7 +12,7 @@ if (player != theBoss) exitWith {
     ] spawn SCRT_fnc_ui_showMessage;
 };
 
-if (skillFIA > 44) exitWith {
+if (skillFIA > SKILL_CAP) exitWith {
     [
         localize "STR_notifiers_fail_type",
         format [localize "STR_notifiers_skill_header", FactionGet(reb, "name")],

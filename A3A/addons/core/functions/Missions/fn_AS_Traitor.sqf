@@ -36,6 +36,12 @@ private _nameDest = [_markerX] call A3A_fnc_localizar;
 private _groupTraitor = createGroup Occupants;
 
 private _arrayAirports = airportsX select {sidesX getVariable [_x,sideUnknown] == Occupants};
+
+if (_arrayAirports isEqualTo []) exitWith {
+	["AS"] remoteExec ["A3A_fnc_missionRequest",2];
+    Info("No airport left, rerolling another AS mission.");
+};
+
 private _base = [_arrayAirports, _positionX] call BIS_Fnc_nearestPosition;
 private _posBase = getMarkerPos _base;
 

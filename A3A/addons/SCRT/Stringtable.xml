@@ -3959,8 +3959,8 @@
                 <Russian>Antistasi Plus - %1, Версия: %2, Кол-во орудий для разблок-ки: %3, Ограниченное быстрое перемещение по карте: %4, Инсургенты: %5, Прошло времени с момента сборки мусора: %6</Russian>
             </Key>
             <Key ID="STR_commander_menu_skill_level_title">
-                <Original>%1 Skill Level: %2</Original>
-                <Russian>Уровень навыков %1: %2</Russian>
+                <Original>%1 Skill Level: %2/%3</Original>
+                <Russian>Уровень навыков %1: %2/%3</Russian>
             </Key>
             <Key ID="STR_commander_menu_randomize_unfiroms_header">
                 <Original>RANDOMIZE UNIFORMS</Original>
@@ -5848,7 +5848,7 @@
                 <Russian>Заключить в тюрьму</Russian>
             </Key>
             <Key ID="STR_imprison_action_request_one_text">
-                <Original>You're either mercenary or criminal, illegal combatant. We will put you into the pit until your fate will be decided.</Original>
+                <Original>You're either a mercenary or criminal, illegal combatant. We will put you into the pit until your fate will be decided.</Original>
                 <Russian>Ты либо наемник, либо преступник, боевик. Мы посадим тебя в яму, пока будем решать твою судьбу.</Russian>
             </Key>
             <Key ID="STR_imprison_action_request_two_text">
