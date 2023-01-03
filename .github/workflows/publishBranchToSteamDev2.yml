@@ -1,4 +1,4 @@
-name: Publish to Main Release on Steam
+name: Publish to Dev2 on Steam
 
 on:
   workflow_dispatch:
@@ -17,13 +17,14 @@ jobs:
         node ./tools/incrementVersion.js -b ${{github.sha}}
 
     - name: Build addons
-      run: '.\tools\Builder\buildAddons.ps1 -metaFileName meta.cpp'
+      run: '.\tools\Builder\buildAddons.ps1 -metaFileName meta_dev.cpp'
 
     - name: Upload build addon artifact
       uses: actions/upload-artifact@v2
       with:
-        name: A3A-Plus
-        path: build\A3A-Plus
+        name: A3A
+        path: build\A3A
+
   upload:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -32,16 +33,16 @@ jobs:
     - name: Download addon artifact
       uses: actions/download-artifact@v2
       with:
-        name: A3A-Plus
-        path: A3A-Plus
+        name: A3A
+        path: A3A
 
     - name: Publish to Steam Workshop
       uses: arma-actions/workshop-upload@v1
       with:
         appId: '107410'      # default
-        itemId: ${{ secrets.WORKSHOPID }} # https://steamcommunity.com/sharedfiles/filedetails/?id=[...]]
-        contentPath: 'A3A-Plus'
-        changelog: '[url=https://github.com/igorkis-scrts/A3-Antistasi-Plus/blob/master/ForkChangelog.md]Changelog[/url].'
+        itemId: ${{ secrets.WORKSHOPID_DEV2 }} # https://steamcommunity.com/sharedfiles/filedetails/?id=[...]]
+        contentPath: 'A3A'
+        changelog: '[url=https://github.com/official-antistasi-community/A3-Antistasi/commit/${{github.sha}}]Update from branch: ${{github.REF_NAME}}[/url].'
       env:
         STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
         STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
