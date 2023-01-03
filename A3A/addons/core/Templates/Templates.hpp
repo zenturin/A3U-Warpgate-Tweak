@@ -368,6 +368,17 @@ class Templates
         climate[] = {"temperate"};
     };
 
+    class 3CBF_AAF : 3CBF_Base
+    {
+        side = "Occ";
+        flagTexture = "a3\data_f\flags\flag_aaf_co.paa";
+        name = "3CBF AAF";
+        file = "3CBF_AI_AAF";
+        maps[] = {"altis", "malden"};
+        climate[] = {"arid"};
+        description = $STR_A3AP_setupFactionsTab_aaf_3cbf;
+    };
+
     class 3CBF_AFRF : 3CBF_Base
     {
         side = "Inv";

@@ -655,7 +655,6 @@ if (_varName in specialVarLoads) then {
 		};
 
         case 'rebelLoadouts': {
-            Info_1("Rebel Loadouts: %1", str _varvalue);
 			rebelLoadouts = _varvalue; 
 			publicVariable "rebelLoadouts";
 		};

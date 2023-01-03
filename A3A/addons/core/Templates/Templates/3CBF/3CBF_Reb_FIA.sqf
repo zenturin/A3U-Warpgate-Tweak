@@ -186,8 +186,6 @@ private _rebUniforms = [
     "U_IG_Guerrilla_6_1",
     "U_I_G_resistanceLeader_F",
     "U_I_L_Uniform_01_deserter_F",
-    "rhsgref_uniform_altis_lizard",
-    "rhsgref_uniform_altis_lizard_olive",
     "rhsgref_uniform_3color_desert",
     "rhsgref_uniform_dpm",
     "rhsgref_uniform_dpm_olive",
