@@ -24,6 +24,6 @@ if (!areRivalsEnabled || {!areRivalsDiscovered || {areRivalsDefeated}}) exitWith
     false;
 };
 
-private _gate = ((100 - 20 * inactivityLevelRivals) - 10) max 0;
+private _gate = ((100 - 20 * inactivityLevelRivals) - 5) max 0;
 
 (random 100) < _gate

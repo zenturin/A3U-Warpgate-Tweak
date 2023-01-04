@@ -137,9 +137,11 @@ if (_spawnParameter isEqualType []) then {
 	private _typeVehX = call {
 		if (FactionGet(civ,"vehiclesCivRepair") isEqualTo [] and random 1 < 0.1) exitWith { selectRandom (_faction get "vehiclesRepairTrucks") };
 		if (FactionGet(civ,"vehiclesCivFuel") isEqualTo [] and random 1 < 0.1) exitWith { selectRandom (_faction get "vehiclesFuelTrucks") };
-		private _types = if (!_isFIA) then {(_faction get "vehiclesTrucks") + (_faction get "vehiclesCargoTrucks") + (_faction get "vehiclesMedical")} else {_faction get "vehiclesMilitiaTrucks"};
-		_types = _types select { _x in FactionGet(all,"vehiclesCargoTrucks") };
-		if (count _types == 0) then { (_faction get "vehiclesCargoTrucks") } else { _types };
+		private _types = if (!_isFIA) then {
+			(_faction get "vehiclesTrucks") + (_faction get "vehiclesCargoTrucks") + (_faction get "vehiclesMedical")
+		} else {
+			_faction get "vehiclesMilitiaTrucks"
+		};
 		selectRandom _types;
 	};
 	_veh = createVehicle [_typeVehX, (_spawnParameter select 0), [], 0, "NONE"];

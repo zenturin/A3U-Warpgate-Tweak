@@ -9,7 +9,7 @@ private _estatic = if (_siteX in roadblocksFIA) then {localize "STR_garrison_inf
 private _limit = [_siteX] call SCRT_fnc_common_getGarrisonLimit;
 
 //sort garrison into unit types
-private _units = [ [],[],[],[],[],[],[],[] ];
+private _units = [ [],[],[],[],[],[],[],[],[],[] ];
 {
     _units # (switch _x do {
     case (FactionGet(reb,"unitSL")): {0};
@@ -20,6 +20,8 @@ private _units = [ [],[],[],[],[],[],[],[] ];
     case (FactionGet(reb,"unitGL")): {5};
     case (FactionGet(reb,"unitSniper")): {6};
     case (FactionGet(reb,"unitLAT")): {7};
+    case (FactionGet(reb,"unitEng")): {8};
+    case (FactionGet(reb,"unitExp")): {9};
     }) pushBack _x;
 } forEach _garrison;
 
@@ -34,6 +36,8 @@ _textX = format [
     , count (_units#5)
     , count (_units#6)
     , count (_units#7)
+    , count (_units#8)
+    , count (_units#9)
     , {_x distance _positionX < _size} count staticsToSave
     , _estatic
     , _limit

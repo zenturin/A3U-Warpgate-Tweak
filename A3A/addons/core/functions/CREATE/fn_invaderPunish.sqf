@@ -37,11 +37,9 @@ private _taskId = "invaderPunish" + str A3A_taskCount;
 [_taskId, "invaderPunish", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 
 
-// if (isNil "_delay") then {
-//     _delay = 300 + 60 * (markerPos "Synd_HQ" distance2d _posDest) / 2000;            // +1 min per 2km
-// };
-
-_delay = 1;
+if (isNil "_delay") then {
+    _delay = 300 + 60 * (markerPos "Synd_HQ" distance2d _posDest) / 2000;            // +1 min per 2km
+};
 
 // Create the attacking force
 // probably doesn't make much sense to aggro-scale this one as it's not a response

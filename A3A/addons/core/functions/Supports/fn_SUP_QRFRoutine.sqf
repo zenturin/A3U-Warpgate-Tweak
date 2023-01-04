@@ -34,7 +34,7 @@ private _data = switch (_qrfType) do {
         [_side, _base, _targPos, _resPool, _vehCount, _attackCount] call A3A_fnc_createAttackForceAir;
     };
     case "VEHAIRDROP": {
-        [_side, _base, _targPos, _resPool, _vehCount, _attackCount] call A3A_fnc_createAttackForceAirdrop;
+        [_side, _base, _targPos, _resPool, _vehCount, _attackCount, 0, "Normal", true] call A3A_fnc_createAttackForceAir;
     };
 };
 

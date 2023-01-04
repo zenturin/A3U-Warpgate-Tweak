@@ -228,7 +228,6 @@ class CfgFunctions
             class createAttackForceAir {};
             class createAttackForceLand {};
             class createAttackForceMixed {};
-            class createAttackForceAirdrop {};
             class createAttackVehicle {};
             class createCIV {};
             class createSDKGarrisons {};

@@ -45,11 +45,13 @@ if (_expectedCargo >= 2) then
     private _groupType = call {
         if (_isAirdrop) exitWith { selectRandom  ([_faction get "groupsTierMedium"] call SCRT_fnc_unit_getTiered) };
         if (_troopType == "Normal") exitWith { [_vehicleType, _side] call A3A_fnc_cargoSeats };
-        if (_troopType == "Specops") exitWith { [_faction get "groupSpecOps"] call SCRT_fnc_unit_getTiered };
+        if (_troopType == "Specops") exitWith { selectRandom (_faction get "groupSpecOpsRandom") };
         if (_troopType == "Air") exitWith { [_faction get "groupTierAA"] call SCRT_fnc_unit_getTiered };
         if (_troopType == "Tank") exitWith { [_faction get "groupTierAT"] call SCRT_fnc_unit_getTiered };
     };
-    
+
+    Info_2("Group type: %1, vehicle type: %2", _groupType, _vehicleType);
+
     if (_expectedCargo < count _groupType) then { _groupType resize _expectedCargo };           // trim to cargo seat count
     _cargoGroup = [getMarkerPos _markerOrigin, _side, _groupType, true, false] call A3A_fnc_spawnGroup;         // force spawn, should be pre-checked
     {

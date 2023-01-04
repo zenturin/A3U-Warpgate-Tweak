@@ -39,8 +39,9 @@ _caller addEventHandler
             _caller playMoveNow selectRandom medicAnims;
 
             private _belongings = searchedSquadLeader getVariable ["belongings", []];
+            private _belongingsCount = round random [1,2,4];
 
-            if ((count _belongings) < 4) then {
+            if ((count _belongings) < _belongingsCount) then {
                 private _position = [(getPos searchedSquadLeader), 0.7, (random 360)] call SCRT_fnc_misc_extendPosition;
 
                 if (searchedSquadLeader call SCRT_fnc_misc_isInHouse) then {
