@@ -8,7 +8,7 @@ if (!([player] call A3A_fnc_hasRadio)) exitWith {[localize "STR_A3A_reinf_addFIA
 if ([getPosATL petros] call A3A_fnc_enemyNearCheck) exitWith {[localize "STR_A3A_reinf_addFIASquadHC_header", localize "STR_A3A_reinf_addFIASquadHC_error_enemynear"] call SCRT_fnc_misc_deniedHint;};
 
 if (count hcAllGroups player >= ([6,10] select (player call A3A_fnc_isMember))) exitWith {
-    [localize "STR_A3A_reinf_addFIASquadHC_header", localize STR_A3A_reinf_addFIASquadHC_error_too_many_hc] call A3A_fnc_customHint;
+    [localize "STR_A3A_reinf_addFIASquadHC_header", localize "STR_A3A_reinf_addFIASquadHC_error_too_many_hc"] call A3A_fnc_customHint;
 };
 
 private _exit = false;
