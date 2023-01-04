@@ -65,6 +65,17 @@ switch (_key) do {
     };
 
     case QGVAR(commanderRebelMenu): {
+        if (player getVariable ["incapacitated",false]) exitWith {
+            if (isMenuOpen) then {
+                closeDialog 0;closeDialog 0;
+            };
+        };
+        if (player getVariable ["owner",player] != player) exitWith {
+            if (isMenuOpen) then {
+                closeDialog 0;closeDialog 0;
+            };
+        };
+        
         [] call SCRT_fnc_ui_toggleCommanderMenu;
     };
 
