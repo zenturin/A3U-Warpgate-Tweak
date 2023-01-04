@@ -5016,8 +5016,8 @@
                 <Russian>%1 интересны не только нам - %2 также имеют ценную информацию об их тайной сети укрытий и ячеек.</Russian>
             </Key>
             <Key ID="STR_intel_discount">
-                <Original>We have found some information about undiscovered hidden smuggler routes and gave them to Arms Dealer. In return, he payed us for information and gave us a %1% discount for any weapon in his Arms Dealer store.</Original>
-                <Russian>Мы нашли ценные разведданные о подпольной сети контрабандистов, их маршрутах. Мы отдали эти данные Оружейному Торговцу. Взамен, он заплатил нам за информацию и дал перманентную скидку %1% на всё оружие в его асортименте.</Russian>
+                <Original>We have found some information about undiscovered hidden smuggler routes and gave them to Arms Dealer. In return, he payed us for information and increased discount on %1 percent for any item in his Arms Dealer store.</Original>
+                <Russian>Мы нашли ценные разведданные о подпольной сети контрабандистов, их маршрутах. Мы отдали эти данные Оружейному Торговцу. Взамен, он заплатил нам за информацию и увеличил перманентную скидку на %1 процентов на всё оружие в его асортименте.</Russian>
             </Key>
             <Key ID="STR_intel_has_access_to">
                 <Original>%1 currently has access to&lt;br/&gt;%2</Original>
