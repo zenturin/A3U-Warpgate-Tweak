@@ -36,15 +36,11 @@ while {true} do {
 
 	if (!areRivalsDiscovered || {isRivalEventInProgress || {A3A_activePlayerCount == 0 }}) then { sleep 60; continue };
 
-    if (count (allPlayers - (entities "HeadlessClient_F")) == 0) then {
-        waitUntil {sleep 30; (count (allPlayers - (entities "HeadlessClient_F")) > 0)};
-    };
-
     //cooldown is needed so players won't be flooded with events
     sleep rivalEventCooldown;
-    rivalEventCooldown = 0;
-
-    private _isEventProcced = [] call SCRT_fnc_rivals_rollProbability;
+    if (rivalEventCooldown > 0) then {
+        rivalEventCooldown = 0;
+    };
 
     if (([] call SCRT_fnc_rivals_rollProbability)) then {
         [] call SCRT_fnc_rivals_selectAndExecuteEvent;

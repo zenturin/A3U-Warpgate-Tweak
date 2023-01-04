@@ -2263,8 +2263,8 @@
         </Container>
         <Container name="garrison">
             <Key ID="STR_garrison_info">
-                <Original>&lt;br/&gt;&lt;br/&gt;Garrison men: %1/%12&lt;br/&gt;&lt;br/&gt;Squad Leaders: %2&lt;br/&gt;%11: %3&lt;br/&gt;Riflemen: %4&lt;br/&gt;Autoriflemen: %5&lt;br/&gt;Medics: %6&lt;br/&gt;Grenadiers: %7&lt;br/&gt;Marksmen: %8&lt;br/&gt;AT Men: %9&lt;br/&gt;Static Weap: %10</Original>
-                <Russian>&lt;br/&gt;&lt;br/&gt;Гарнизон: %1/%12&lt;br/&gt;&lt;br/&gt;Командиры отделений: %2&lt;br/&gt;%11: %3&lt;br/&gt;Стрелки: %4&lt;br/&gt;Пулеметчики: %5&lt;br/&gt;Медики: %6&lt;br/&gt;Гренадёры: %7&lt;br/&gt;Снайперы: %8&lt;br/&gt;Гранатомётчики: %9&lt;br/&gt;Стац. орудия: %10</Russian>
+                <Original>&lt;br/&gt;&lt;br/&gt;Garrison men: %1/%14&lt;br/&gt;&lt;br/&gt;Squad Leaders: %2&lt;br/&gt;%13: %3&lt;br/&gt;Riflemen: %4&lt;br/&gt;Autoriflemen: %5&lt;br/&gt;Medics: %6&lt;br/&gt;Grenadiers: %7&lt;br/&gt;Marksmen: %8&lt;br/&gt;AT Men: %9&lt;br/&gt;Engineers: %10&lt;br/&gt;Explosive Specialists: %11&lt;br/&gt;Static Weap: %12</Original>
+                <Russian>&lt;br/&gt;&lt;br/&gt;Гарнизон: %1/%14&lt;br/&gt;&lt;br/&gt;Командиры отделений: %2&lt;br/&gt;%13: %3&lt;br/&gt;Стрелки: %4&lt;br/&gt;Пулеметчики: %5&lt;br/&gt;Медики: %6&lt;br/&gt;Гренадёры: %7&lt;br/&gt;Снайперы: %8&lt;br/&gt;Гранатомётчики: %9&lt;br/&gt;Инженеры: %10&lt;br/&gt;Подрывники: %11&lt;br/&gt;Стац. орудия: %12</Russian>
             </Key>
             <Key ID="STR_garrison_info_technicals">
                 <Original>Technicals</Original>

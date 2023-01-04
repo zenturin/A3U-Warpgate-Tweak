@@ -321,11 +321,22 @@ belongings = [
 	"Land_Magazine_rifle_F",
 	"Land_Antimalaricum_01_F",
 	"Land_Bandage_F",
-	"MedicalGarbage_01_FirstAidKit_F",
 	"Land_Map_F",
 	"Land_Map_unfolded_Malden_F",
 	"Land_Matches_F",
-	"Land_CanOpener_F"
+	"Land_CanOpener_F",
+	"Land_MobilePhone_old_F",
+	"Land_MobilePhone_smart_F"
+];
+
+A3A_medicalProps = [
+	"Land_Bandage_F",
+	"Land_IntravenBag_01_empty_F",
+	"MedicalGarbage_01_Bandage_F",
+	"MedicalGarbage_01_Gloves_F",
+	"MedicalGarbage_01_Injector_F",
+	"MedicalGarbage_01_Packaging_F",
+	"MedicalGarbage_01_FirstAidKit_F"
 ];
 
 flareSounds = ["A3\Sounds_F\weapons\Flare_Gun\flaregun_1.wss", "A3\Sounds_F\weapons\Flare_Gun\flaregun_2.wss"];

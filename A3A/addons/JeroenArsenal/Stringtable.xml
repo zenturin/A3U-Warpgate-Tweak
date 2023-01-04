@@ -23,9 +23,9 @@
                 <German>Nichts ausgewählt</German>
             </Key>
             <Key ID="STR_JNA_SORT_COLOR">
-                <Original>Sort by color</Original>
-                <German>Nach Farbe sortieren</German>
-                <Russian>Сортировка по цвету</Russian>
+                <Original>Sort by row color</Original>
+                <German>Nach Zeilenfarbe sortieren</German>
+                <Russian>Сортировка по цвету строки</Russian>
             </Key>
             <Key ID="STR_JNA_SORT_DEFAULT">
                 <Original>Default</Original>

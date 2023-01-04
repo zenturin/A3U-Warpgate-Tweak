@@ -48,9 +48,9 @@
 
 ### Changes
 - 3.0 Community Version integration (Garage update, fuel stations, many improvements and fixes of various gameplay systems, migration to singular mod package etc)
-- Antistasi Plus codebase migration to new mod environment, general refactoring of entire AP's codebase - microoptimisations here and there, unused code cleanup, almost every Plus feature was ported and reviewed during the port, general stability and performance improvements
-- Vehicle Black Market new Community Version's UI, less strict and more dynamic approach to vehicle stock, different conditions to unlock certain vehicle types (war tiers, seaports, airbases etc), vehicle types will be registered in various gameplay systems so game will react properly, neutral vehicle skin appliance where possible, remade black market stocks from scratch 
-- Faction descriptions on hover (Factions tab in setup menu)
+- Antistasi Plus codebase migration to singular mod package environment, general refactoring of entire AP's codebase - microoptimisations here and there, unused code cleanup, almost every Plus feature was ported and reviewed during the port, general stability and performance improvements
+- Vehicle Black Market new Community Version's UI, less strict and more dynamic approach to vehicle stock, different conditions to unlock certain vehicle types (war tiers, seaports, airbases etc), neutral vehicle skin appliance where possible, remade black market stocks from scratch for each modset
+- Faction descriptions on hover (Factions tab in startup menu)
 - Сhanged Commander/Rebel menu hotkey from CTRL + T to TAB, added ability to customize it's keybind via general Configure->Controls->Antistasi Plus menu
 - Added new construction variants for each category
 - Officers and traitors may have intel (it adds them to possible intel unit pool, increases their commanding and courage skills)
@@ -87,7 +87,7 @@
 - Reduced max number of prisoners in Rescue Prisoners and Rescue Refugees task to reduce tediousness of breaking them free and putting into transport
 - Reduced delay between airdrops in Catch Airdrop task from 2 seconds to 1, added final notification when all crates have been dropped, reduced total quantity of crates to 2 (ammobox will be dropped if it's difficult mission variant), minor optimizations
 - Ambush Officer site search will check if origin and destination are connected by roads
-- SpecOps spawn on non-road controls on frontlines is no longer specops only, SpecOps task minor spawner optimization (units will spawn only when players are in proximity), fixed non-initialized SpecOps units
+- SpecOps spawns on non-road controls on frontlines are no longer specops squad type only, SpecOps task minor spawner optimization (units will spawn only when players are in proximity), fixed non-initialized SpecOps units
 - Rescue Informer task will have patrolling helicopter with search light on, minor spawner optimizations, difficulty and enemy quantity tweaks, mission can be rolled at night after War Level 3
 - Removed timer reset from Bank Robbery task
 - Removed APC/Light Armed Vehicle escort from Helicrash task to reduce complexity and tediousness of this task, minor fixes and improvements
@@ -103,17 +103,18 @@
 - Ability to cancel custom outpost establishment (cancel task button will appear near establish button in the Commander menu), refined autocancel conditions
 - Press reporter spawn is back, also he will use press helmets from Laws of War DLC if it is turned on
 - Returned intel spawn to Cargo Towers, tables and intel will have enabled physics if building was destroyed
-- There is a chance that press reporter will spawn in Civilian Helicopter Fly-by helicopter crew
+- There is a chance that press reporter will spawn in Civilian Helicopter Fly-by event helicopter crew
 - Enemy squad leaders might have flares if they have underbarrel grenade launcher
 - Officers from Kill the Officer and Ambush Officer tasks will use officer uniforms and hats to help distinguish them from the rest of soldiers
 - Traitors from Kill the Traitor task will use an SMG or carbine and will have a distinct looks to help distinguish them from the rest of soldiers
 - Machinegunners and marksmen might have nightvision optics
 - Notebook trap bomb will have beep sound when explosion is imminent
 - Medical Vehicle reduces revive time to 8/16 seconds (for medic and non-medic) and allows medic to fully heal treated soldier on revive, added medical vehicles to more outpost types spawn pool
+- Medical objects will be dropped on ground when treatable person is player or player is medic 
 - Increased cost (50->100) for trenches and obstacles contruction, increased cost of sandbag and concrete bunkers 
 - Players can't build anymore when enemies are nearby
 - Howitzer support has it's own separate support category, adaptation for new support system 
-- Mechanized Air QRF (former Vehicle Airdrop) Support minor tweaks and adaptation for new support system 
+- Mechanized Air QRF (former Vehicle Airdrop) Support minor tweaks and adaptation for new support system, airdrops will be used for waved attacks and invader punishments
 - New garage-style placement for the rest of placement types (loot crate, vehicle box's vehicle shop, constructions and vehicle black market)
 - Colored rows in arsenal - red for forbidden items, yellow for limited items, grey for initial rebel equipment and white for unlocked and other types of equipment
 - Colored statuses for Occ/Inv aggression indicator in the top information bar and other notifications  

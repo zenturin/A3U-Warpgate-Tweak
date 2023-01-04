@@ -60,9 +60,10 @@ private _timer = switch (true) do {
     };
 };
 
-_medic setVariable ["helping",true];
+_medic setVariable ["helping", true];
 _medic playMoveNow selectRandom medicAnims;
-_medic setVariable ["cancelRevive",false];
+_medic setVariable ["cancelRevive", false];
+_medic setVariable ["A3A_cured", _cured];
 
 private _actionX = 0;
 if (!_player) then
@@ -83,6 +84,29 @@ private _animHandler = _medic addEventHandler ["AnimDone",
 {
     private _medic = _this select 0;
     _medic playMoveNow selectRandom medicAnims;
+
+    private _cured = _medic getVariable ["A3A_cured", objNull];
+
+    if (isNull _cured || {(!isPlayer _cured && !isPlayer _medic)}) exitWith {};
+
+    private _props = _cured getVariable ["A3A_medProps", []];
+    private _propsCount = round random [1,2,4];
+    if ((count _props) < _propsCount) then {
+        private _position = [getPos _cured, 0.7, random 360] call SCRT_fnc_misc_extendPosition;
+        if (_cured call SCRT_fnc_misc_isInHouse) then {
+            private _height = (getPosATL _cured) select 2;
+            _position = [_position select 0, _position select 1, _height];
+        };
+
+        private _prop = [
+            (selectRandom A3A_medicalProps),
+            _position,
+            (random 360)
+        ] call SCRT_fnc_misc_createBelonging;
+
+        _props pushBack _prop; 
+        _cured setVariable ["A3A_medProps", _props];
+    };
 }];
 
 waitUntil {
@@ -93,10 +117,23 @@ waitUntil {
     or !(alive _cured)
 };
 
+private _props = _cured getVariable ["A3A_medProps", []];
+
+if (_props isNotEqualTo []) then {
+    _nil = [_props] spawn {
+        params ["_props"];
+        sleep random [30,45,60];
+        {deleteVehicle _x} forEach _props;
+        terminate _thisScript;
+    };
+};
+_cured setVariable ["A3A_medProps", nil];
+
 if (isNull _medic) exitWith { false };
 
 _medic removeEventHandler ["AnimDone", _animHandler];
 _medic setVariable ["helping",false];
+_medic setVariable ["A3A_cured", nil];
 _medic playMoveNow "AinvPknlMstpSnonWnonDnon_medicEnd";
 
 if (!_player) then

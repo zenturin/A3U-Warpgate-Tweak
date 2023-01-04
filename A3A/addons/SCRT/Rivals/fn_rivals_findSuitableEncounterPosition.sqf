@@ -35,7 +35,7 @@ switch (inactivityLevelRivals) do {
 		_encounterPosition = [];
 	};
 	case MODERATE_ACTIVITY: {
-		//situation starts heating up - players might caught in the wild, but enemy still have not enough confidence to attack players on any type of outpost
+		//situation starts heating up - players can be caught in the wild, but enemy still have not enough confidence to attack players on any type of outpost
 		private _sites = (outposts + airportsX + resourcesX + factories + seaports + milbases + ["Synd_HQ"]) select {sidesX getVariable [_x, sideUnknown] == teamPlayer};
 		private _offSitePlayers = _players select {
 			private _player = _x; 
