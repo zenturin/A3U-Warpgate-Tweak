@@ -150,7 +150,7 @@
 - (3CB Factions) Added LADA, SUV, Hilux PKM logistic nodes
 
 ### Removals
-- 3CBF, RHS, CUP, VN, GM support wasn't ported, templates will be remade from scratch among with new ones in the next versions of Antistasi Plus
+- CUP, SOGPF, GM support wasn't ported, templates will be remade from scratch among with new ones in the next versions of Antistasi Plus
 - Other terrains are not yet supported, many of them will be ported in the next versions of Antistasi Plus
 - Faction Defeat mission parameter has been removed, Occupants and Invaders can be always fully defeated
 - Removed PVP
