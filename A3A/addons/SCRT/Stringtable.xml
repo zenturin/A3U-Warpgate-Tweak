@@ -7545,6 +7545,10 @@
                 <Original>%1 is being helped or no longer needs your help.</Original>
                 <Russian>%1'у  уже кто-то помогает или ему больше не требуется помощь.</Russian>
             </Key>
+            <Key ID="STR_A3A_Logistics_unableToLoad">
+                <Original>%1 is unable to load any cargo.</Original>
+                <Russian>%1 не может принять какой-либо груз.</Russian>
+            </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_not_enough_space">
                 <Original>%1 does not have enough space to load %2.</Original>
                 <Russian>У %1 недостаточно места для того чтобы загрузить %2.</Russian>
