@@ -2939,7 +2939,7 @@ switch _mode do {
 			//--- Save
 			[
 				_center,
-				[missionProfileNamespace,ctrltext _ctrlTemplateName],
+				[profileNamespace,ctrltext _ctrlTemplateName],
 				[
 					_center getvariable ["BIS_fnc_arsenal_face",face _center],
 					speaker _center,
@@ -2982,7 +2982,7 @@ switch _mode do {
 		_ctrlTemplateValue = _display displayctrl IDC_RSCDISPLAYARSENAL_TEMPLATE_VALUENAME;
 		_cursel = lnbcurselrow _ctrlTemplateValue;
 		_name = _ctrlTemplateValue lnbtext [_cursel,0];
-		[_center,[missionProfileNamespace,_name],nil,true] call bis_fnc_saveInventory;
+		[_center,[profileNamespace,_name],nil,true] call bis_fnc_saveInventory;
 		['showTemplates',[_display]] call jn_fnc_arsenal;
 		_ctrlTemplateValue lnbsetcurselrow (_cursel max (lbsize _ctrlTemplateValue - 1));
 
@@ -2994,7 +2994,7 @@ switch _mode do {
 
 		_ctrlTemplateValue = _display displayctrl IDC_RSCDISPLAYARSENAL_TEMPLATE_VALUENAME;
 		lnbclear _ctrlTemplateValue;
-		_data = missionProfileNamespace getvariable ["bis_fnc_saveInventory_data",[]];
+		_data = profileNamespace getvariable ["bis_fnc_saveInventory_data",[]];
 		_center = (missionnamespace getvariable ["BIS_fnc_arsenal_center",player]);
 
 		for "_i" from 0 to (count _data - 1) step 2 do {
