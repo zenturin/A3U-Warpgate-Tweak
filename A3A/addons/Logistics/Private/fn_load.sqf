@@ -133,9 +133,10 @@ _vehicle setVariable ["Cargo", _loadedCargo, true];
 [_cargo] spawn {
     params["_cargo"];
     if (!isNil "_cargo" && !(isDamageAllowed _cargo)) then {
-        sleep 2;
+        sleep 10;
         _cargo allowDamage true;
     };
+    terminate _thisScript;
 };
 
 if (_weapon) then {

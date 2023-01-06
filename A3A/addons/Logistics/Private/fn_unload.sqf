@@ -139,9 +139,10 @@ if (isNull _cargo || isNull _vehicle) exitWith {};//vehicle or cargo deleted
 [_cargo] spawn {
     params["_cargo"];
     if (!isNil "_cargo" && !(isDamageAllowed _cargo)) then {
-        sleep 2;
+        sleep 10;
         _cargo allowDamage true;
     };
+    terminate _thisScript;
 };
 
 //update list
