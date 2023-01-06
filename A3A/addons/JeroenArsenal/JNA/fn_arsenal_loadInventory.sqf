@@ -65,7 +65,7 @@ _isItemBino = {
 
 //name that needed to be loaded
 _saveName = _this;
-_saveData = missionProfileNamespace getvariable ["bis_fnc_saveInventory_data",[]];
+_saveData = profileNamespace getvariable ["bis_fnc_saveInventory_data",[]];
 _inventory = [];
 {
 	if(_x isEqualType "STRING" && {_x == _saveName})exitWith{
