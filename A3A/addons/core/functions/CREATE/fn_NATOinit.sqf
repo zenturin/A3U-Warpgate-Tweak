@@ -94,9 +94,10 @@ _unit addEventHandler ["Deleted", A3A_fnc_enemyUnitDeletedEH];
 //Calculates the skill of the given unit
 //private _skill = (0.15 * skillMult) + (0.04 * difficultyCoef) + (0.02 * tierWar);
 private _skill = (0.1 * A3A_enemySkillMul) + (0.15 * A3A_balancePlayerScale) + (0.01 * tierWar);
-private _regularFaces = (_faction get "faces");
-private _regularVoices = (_faction get "voices");
-private ["_face", "_voice"];
+private _regularFaces = _faction get "faces";
+private _regularVoices = _faction get "voices";
+private _face = nil;
+private _voice = nil;
 
 switch (true) do {
     case (_isRival): {
@@ -128,7 +129,7 @@ switch (true) do {
         _voice = selectRandom _regularVoices;
     };
 };
-[_unit, _face, _voice, (random [0.9, 1, 1.1])] call BIS_fnc_setIdentity;
+[_unit, _face, _voice, (random [0.9, 1, 1.1])] remoteExecCall ["BIS_fnc_setIdentity", 2];
 _unit setSkill _skill;
 
 //Adjusts squadleaders with improved skill

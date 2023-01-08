@@ -82,7 +82,7 @@ private _eh2 = _unit addEventHandler ["HandleDamage", {
 selectPlayer _unit;
 
 //otherwise unit will lost his identity
-[_unit, _face, _speaker] remoteExecCall ["BIS_fnc_setIdentity", 0];
+[_unit, _face, _speaker] remoteExecCall ["BIS_fnc_setIdentity", 2];
 
 private _timeX = aiControlTime;
 _unit addAction [(localize "STR_antistasi_actions_return_control_to_ai"),{

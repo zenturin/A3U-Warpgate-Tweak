@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.2
+- Fixed non-applied faces and voices from tempaltes on soldiers on dedicated server
+- Seaports will be used in airspace control
+
+
 ## 2.0.1
 
 ### Changes
