@@ -119,6 +119,8 @@ private _anim = selectRandom [
 	"Acts_StaticDeath_10"
 ];
 [_intelLeader, _anim] remoteExecCall ["switchMove", _intelLeader];
+sleep 1;
+_intelLeader setDamage 1;
 
 if (!isNil "_damagedBuilding") then {
 	private _emptyPos = [];
