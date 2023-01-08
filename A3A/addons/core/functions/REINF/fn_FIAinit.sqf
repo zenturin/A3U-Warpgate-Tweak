@@ -30,7 +30,7 @@ if (!_preserveIdentity) then {
 		(selectRandom (A3A_faction_reb get "faces")), 
 		(selectRandom (A3A_faction_reb get "voices")), 
 		(random [0.9, 1, 1.1])
-	] remoteExecCall ["BIS_fnc_setIdentity", 2];
+	] remoteExecCall ["BIS_fnc_setIdentity", -2];
 };
 
 // FIAinit is called for liberated refugees/hostages. Don't equip them.
