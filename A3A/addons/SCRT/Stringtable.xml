@@ -906,7 +906,7 @@
             </Key>
             <Key ID="STR_marker_RP">
                 <Original>Rally Point (Remaining Travels: %1)</Original>
-                <Russian>Точка входа (Ост. кол-во перемещений: %1)</Russian>
+                <Russian>Точка сбора (Ост. кол-во перемещений: %1)</Russian>
             </Key>
             <Key ID="STR_support_supply_run_init">
                 <Original>Supply Run Entry Point</Original>
@@ -7086,6 +7086,10 @@
             <Key ID="STR_A3A_Dialogs_fast_travel_enemiesnear_individual">
                 <Original>You can't Fast Travel with enemies near you.</Original>
                 <Russian>Вы не можете быстро путешествовать пока рядом с вами враги.</Russian>
+            </Key>
+            <Key ID="STR_A3A_Dialogs_fast_travel_enemiesnear_group">
+                <Original>You cannot Fast Travel with enemies near the group.</Original>
+                <Russian>Вы не можете быстро путешествовать пока рядом с вашим отрядом враги.</Russian>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_no_multiple">
                 <Original>You can't Fast Travel if:&lt;br/&gt;you don't have a driver in all your vehicles or&lt;br/&gt;your vehicles are damaged and can't move or&lt;br/&gt;your group is in a boat.</Original>
