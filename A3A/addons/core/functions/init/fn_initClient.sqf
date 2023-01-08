@@ -448,6 +448,7 @@ if (isNil "placementDone") then {
     };
 };
 
+initClientDone = true;
 Info("initClient completed");
 
 if(!isMultiplayer) then
