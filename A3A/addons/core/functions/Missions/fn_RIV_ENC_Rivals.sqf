@@ -118,7 +118,7 @@ private _anim = selectRandom [
 	"Acts_StaticDeath_09",
 	"Acts_StaticDeath_10"
 ];
-_intelLeader switchMove _anim;
+[_intelLeader, _anim] remoteExecCall ["switchMove", _intelLeader];
 
 if (!isNil "_damagedBuilding") then {
 	private _emptyPos = [];
@@ -215,7 +215,7 @@ for "_i" from 0 to count _rivalsClasses - 1 do {
 		"Acts_StaticDeath_09",
 		"Acts_StaticDeath_10"
 	];
-	_soldier switchMove _anim;
+	[_soldier, _anim] remoteExecCall ["switchMove", _soldier];
 	sleep 0.5;
 	_soldier setDamage 1;
 	private _dir = [_soldier, _crashedVehicle] call BIS_fnc_dirTo;

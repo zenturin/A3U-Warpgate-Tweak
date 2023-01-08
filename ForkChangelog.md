@@ -3,12 +3,15 @@
 ## 2.0.1
 
 ### Changes
+- Fixed non-applied death animations on rivals team leaders in Investigate the Battleground task on dedicated server
+- Fixed empty hint when enemies are near your group on fast travel
 - Fixed missing RHS Arms Dealer stock
 - Fixed showing both destroyed and non-destroyed military administrations on dedicated server
 - Fixed wrong string formatting in Repair Antenna task
 - Fixed wrong price hint in building menu
 - Fixed wrong hint on vehicles with no cargo space
-- Empty vehicles from military bases and airbases will require refueling to prevent from stealing abuse
+- Fixed inability to fast travel if players are occupying 
+- Empty vehicles from military bases and airbases will require refueling
 - Increased loot crate invincibility time during load/unload from 2 to 10 seconds so crate will not break during unload
 - (TFAR Beta) Forced same SR and LR frequences for sides
 - (Western Sahara CDLC) Fixed non-working Tura faction
