@@ -316,7 +316,7 @@ private _displayTime = [_dateLimit] call A3A_fnc_dateToTimeString;//Converts the
 
 sleep 2;
 
-[_markerPosition, true] spawn SCRT_fnc_rivals_encounter_rovingMortar;
+[[_markerPosition, true], "SCRT_fnc_rivals_encounter_rovingMortar"] call A3A_fnc_scheduler;
 
 
 [
