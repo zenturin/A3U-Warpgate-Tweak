@@ -3,6 +3,7 @@
 ## 2.0.1
 
 ### Changes
+- Additional rally point spawn count parameter values - 3, 5 
 - Fixed some minor networking and/or timer issues
 - Fixed non-applied death animations on rivals team leaders in Investigate the Battleground task on dedicated server
 - Fixed empty hint when enemies are near your group on fast travel
