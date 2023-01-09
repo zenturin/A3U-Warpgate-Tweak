@@ -1,7 +1,7 @@
 # Changelog
 
-## 2.0.2
-- Fixed non-applied faces and voices from tempaltes on soldiers on dedicated server
+## 2.1
+- Increased durability of loot crate
 - Seaports will be used in airspace control
 
 

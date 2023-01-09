@@ -56,9 +56,6 @@ if (_hasWs) then {
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 
-["lootCrate", "Box_Syndicate_Ammo_F"] call _fnc_saveToTemplate;
-["rallyPoint", "B_RadioBag_01_wdl_F"] call _fnc_saveToTemplate;
-
 //classname, price, type, availability condition
 private _shopWs = if (_hasWs) then {
     [

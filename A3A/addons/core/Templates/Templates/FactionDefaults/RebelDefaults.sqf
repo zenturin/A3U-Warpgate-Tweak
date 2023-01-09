@@ -8,6 +8,9 @@
 ["toolKits", ["ToolKit"]] call _fnc_saveToTemplate;  // Relies on autodetection.
 ["itemMaps", ["ItemMap"]] call _fnc_saveToTemplate;  // Relies on autodetection.
 
+["lootCrate", "A3AP_Box_Syndicate_Ammo_F"] call _fnc_saveToTemplate;
+["rallyPoint", "B_RadioBag_01_wdl_F"] call _fnc_saveToTemplate;
+
 ["animations", []] call _fnc_saveToTemplate;
 ["variants", []] call _fnc_saveToTemplate;
 
