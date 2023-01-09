@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.2
+- (RHS) Fixed empty classes in Arms Dealer stock
+- Fixed undercover icons for vehicles in Vehicle Black Market
+
 ## 2.0.1
 
 ### Changes
