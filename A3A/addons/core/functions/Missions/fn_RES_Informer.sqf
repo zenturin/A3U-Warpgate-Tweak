@@ -291,7 +291,7 @@ private _typeGroup = [
 ] select _difficulty;
 
 private _groupX = [_positionX,_side, _typeGroup] call A3A_fnc_spawnGroup;
-[leader _groupX, _mrk, "AWARE", "SPAWNED", "NOVEH2", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+_nul = [leader _groupX, _mrk, "AWARE", "SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 {[_x] call A3A_fnc_NATOinit} forEach units _groupX;
 private _dog = [_groupX, "Fin_random_F",_positionX,[],0,"FORM"] call A3A_fnc_createUnit;
 [_dog,_groupX] spawn A3A_fnc_guardDog;

@@ -76,7 +76,7 @@ if (_additionalGarrison isNotEqualTo []) then {
 		private _group = [_positionX, _sideX, _groupTypes, false, true] call A3A_fnc_spawnGroup;
 		if !(isNull _group) then {
 			sleep 1;
-			[leader _group, _mrk, "SAFE","SPAWNED", "RANDOM", "NOVEH2"] call A3A_fnc_proxyUPSMON;//TODO need delete UPSMON link
+			_nul = [leader _group, _mrk, "SAFE","SPAWNED", "RANDOM", "NOVEH2"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
 			_groups pushBack _group;
 			{[_x] call A3A_fnc_NATOinit; _soldiers pushBack _x} forEach units _group;
 		};
@@ -128,7 +128,8 @@ if (!(_markerX in destroyedSites)) then
 				};
 			}];
 		};
-		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "SPAWNED", "NOFOLLOW", "NOSHARE", "DORELAX", "NOVEH2"] call A3A_fnc_proxyUPSMON;//TODO need delete UPSMON link
+		//_nul = [_markerX,_civs] spawn destroyCheck;
+		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "SPAWNED","NOFOLLOW", "NOSHARE","DORELAX","NOVEH2"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
 	};
 };
 
@@ -174,9 +175,10 @@ for "_i" from 0 to (count _array - 1) do {
 		_soldiers pushBack _x;
 	} forEach units _groupX;
 	if (_i == 0) then {
-		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "RANDOMUP", "SPAWNED", "NOVEH2", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+		//Can't we just precompile this and call this like every other funtion? Would save some time
+		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "RANDOMUP","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 	} else {
-		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "SPAWNED", "RANDOM", "NOVEH2", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE","SPAWNED", "RANDOM","NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 	};
 };//TODO need delete UPSMON link
 ["locationSpawned", [_markerX, "Resource", true]] call EFUNC(Events,triggerEvent);

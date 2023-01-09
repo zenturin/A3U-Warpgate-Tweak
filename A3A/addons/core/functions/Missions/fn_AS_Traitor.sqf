@@ -91,7 +91,7 @@ while {count _roads == 0} do {
 
 private _road = _roads select 0;
 private _posroad = getPos _road;
-_roadcon = roadsConnectedto _road; 
+_roadcon = roadsConnectedto _road;
 if (count _roadCon == 0) then {
     Error_1("Road has no connection :%1.",position _road);
 };
@@ -122,7 +122,7 @@ _mrk setMarkerAlphaLocal 0;
 
 private _typeGroup = if (random 10 < tierWar) then {
 	selectRandom ([(Faction(Occupants)), "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)
-} else {	
+} else {
 	FactionGet(occ,"groupPoliceSquad")
 };
 private _groupX = [_positionX,Occupants, _typeGroup] call A3A_fnc_spawnGroup;
@@ -130,15 +130,15 @@ sleep 1;
 if (random 10 < 2.5) then {
 	_dog = [_groupX, "Fin_random_F",_positionX,[],0,"FORM"] call A3A_fnc_createUnit;
 	[_dog] spawn A3A_fnc_guardDog;
-};
-[leader _groupX, _mrk, "LIMITED", "SAFE", "SPAWNED", "NOVEH2", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+	};
+_nul = [leader _groupX, _mrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 {[_x,""] call A3A_fnc_NATOinit} forEach units _groupX;
 
 waitUntil {
-	sleep 1; 
-	traitorIntel || 
-	{dateToNumber date > _dateLimitNum or 
-	{not alive _traitor or 
+	sleep 1;
+	traitorIntel ||
+	{dateToNumber date > _dateLimitNum or
+	{not alive _traitor or
 	{{_traitor knowsAbout _x > 1.4} count ([500,0,_traitor,teamPlayer] call A3A_fnc_distanceUnits) > 0
 }}}};
 
@@ -155,10 +155,10 @@ if ({_traitor knowsAbout _x > 1.4} count ([500,0,_traitor,teamPlayer] call A3A_f
 };
 
 waitUntil  {
-	sleep 1; 
-	traitorIntel || 
-	{dateToNumber date > _dateLimitNum or 
-	{!alive _traitor or 
+	sleep 1;
+	traitorIntel ||
+	{dateToNumber date > _dateLimitNum or
+	{!alive _traitor or
 	{_traitor distance _posBase < 20
 }}}};
 

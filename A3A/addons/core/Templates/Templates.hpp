@@ -1,7 +1,7 @@
 
 class Templates
 {
-    class Base 
+    class Base
     {
         description = "";
     };
@@ -110,7 +110,7 @@ class Templates
         name = "A3 Exegerménos";
         file = "Vanilla_Riv_Exegermenos";
     };
-    
+
     class Vanilla_Civ : Vanilla_Base
     {
         side = "Civ";
@@ -122,7 +122,7 @@ class Templates
 
     //TODO: Enable when Aegis will be pushed out of dev branch
     // ************************************** Aegis *******************************************************
-    
+
     // class Aegis_Base : Base
     // {
     //     requiredAddons[] = {"Weapons_1_F_lxWS","A3_Aegis_Armor_F_Aegis_APC_Tracked_02", "A3_Atlas_Armor_F_Atlas_APC_Tracked_02", "A3_Opf_Armor_F_Opf_APC_Tracked_02", "A3_Police_Soft_F_Police_Offroad_01"};

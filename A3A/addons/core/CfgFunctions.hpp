@@ -179,11 +179,6 @@ class CfgFunctions
             class setIdentity {};
         };
 
-        class Misc {
-            file = QPATHTOFOLDER(functions\Misc);
-            class proxyUPSMON {};
-        };
-
         class Collections {
             file = QPATHTOFOLDER(functions\Collections);
             class getNestedObject {};

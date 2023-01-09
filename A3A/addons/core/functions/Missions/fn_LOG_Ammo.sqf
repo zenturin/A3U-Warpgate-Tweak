@@ -49,8 +49,8 @@ if ((spawner getVariable _markerX != 2) and !(sidesX getVariable [_markerX,sideU
 	if (!debug) then {_mrk setMarkerAlphaLocal 0};
 	private _typeGroup = if (_difficultX) then {
 		selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)
-	} else { 
-		selectRandom ([_faction, "groupsTierSmall"] call SCRT_fnc_unit_flattenTier) 
+	} else {
+		selectRandom ([_faction, "groupsTierSmall"] call SCRT_fnc_unit_flattenTier)
 	};
 	_groupX = [_pos,_sideX, _typeGroup] call A3A_fnc_spawnGroup;
 	sleep 1;
@@ -60,11 +60,11 @@ if ((spawner getVariable _markerX != 2) and !(sidesX getVariable [_markerX,sideU
 		[_dog] spawn A3A_fnc_guardDog;
 		};
 
-	[leader _groupX, _mrk, "LIMITED", "SAFE", "SPAWNED", "NOVEH2"] call A3A_fnc_proxyUPSMON;
+	_nul = [leader _groupX, _mrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2"] spawn UPSMON_fnc_UPSMON;
 
 	_groupX1 = [_pos,_sideX,_typeGroup] call A3A_fnc_spawnGroup;
 	sleep 1;
-	[leader _groupX1, _mrk, "LIMITED", "SAFE", "SPAWNED", "NOVEH2"] call A3A_fnc_proxyUPSMON;
+	_nul = [leader _groupX1, _mrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2"] spawn UPSMON_fnc_UPSMON;
 
 	{[_x,""] call A3A_fnc_NATOinit} forEach units _groupX;
 	{[_x,""] call A3A_fnc_NATOinit} forEach units _groupX1;
@@ -86,7 +86,7 @@ if ((spawner getVariable _markerX != 2) and !(sidesX getVariable [_markerX,sideU
 			[_taskId, "LOG", "SUCCEEDED"] call A3A_fnc_taskSetState;
 			[0,300*_bonus] remoteExec ["A3A_fnc_resourcesFIA",2];
 			[1200*_bonus, _sideX] remoteExec ["A3A_fnc_timingCA",2];
-			{ 
+			{
 				[15 * _bonus,_x] call A3A_fnc_addScorePlayer;
     			[300 * _bonus,_x] call A3A_fnc_addMoneyPlayer;
 			} forEach (call SCRT_fnc_misc_getRebelPlayers);

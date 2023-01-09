@@ -1,9 +1,11 @@
 # Changelog
 
 ## 2.1
-- Increased durability of loot crate
-- Seaports will be used in airspace control
 
+### Changes
+- Community Version 3.1 integration
+- Increased durability of loot crate
+- Seaports will be used for airspace control
 
 ## 2.0.1
 
