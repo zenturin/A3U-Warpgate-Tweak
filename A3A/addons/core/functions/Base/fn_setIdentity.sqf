@@ -38,25 +38,13 @@ if (isNull _unit) exitWith {
 	Error("Unit is null");
 };
 
-_unit setFace _face;
-_unit setSpeaker _speaker;
+[_unit, _face] remoteExecCall ["setFace", -2, _unit];
+[_unit, _speaker] remoteExecCall ["setSpeaker", -2, _unit];
 
 if (_speakerPitch isNotEqualTo 1) then {
-	_unit setPitch _speakerPitch;
+	[_unit, _speakerPitch] remoteExecCall ["setPitch", -2, _unit];
 };
 
 if (_callsign isNotEqualTo "") then {
-	_unit setPitch _callsign;
+	[_unit, _callsign] remoteExecCall ["setNameSound", -2, _unit];
 };
-
-
-// [_unit, _face] remoteExecCall ["setFace", -2, _unit];
-// [_unit, _speaker] remoteExecCall ["setSpeaker", -2, _unit];
-
-// if (_speakerPitch isNotEqualTo 1) then {
-// 	[_unit, _speakerPitch] remoteExecCall ["setPitch", -2, _unit];
-// };
-
-// if (_callsign isNotEqualTo "") then {
-// 	[_unit, _callsign] remoteExecCall ["setNameSound", -2, _unit];
-// };
