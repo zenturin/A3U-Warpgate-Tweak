@@ -1,14 +1,15 @@
 # Changelog
 
 ## 2.1
-
 ### Changes
 - Community Version 3.1 integration
 - Increased durability of loot crate
 - Seaports will be used for airspace control
-- Fixed RHS trader stock
-- Fixed wrong Vehicle Black Market undercover icon on vehicles
 
+## 2.0.2
+### Changes
+- (RHS) Fixed empty classes in Arms Dealer stock
+- Fixed undercover icons for vehicles in Vehicle Black Market
 
 ## 2.0.1
 
