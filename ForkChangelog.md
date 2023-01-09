@@ -6,6 +6,9 @@
 - Community Version 3.1 integration
 - Increased durability of loot crate
 - Seaports will be used for airspace control
+- Fixed RHS trader stock
+- Fixed wrong Vehicle Black Market undercover icon on vehicles
+
 
 ## 2.0.1
 

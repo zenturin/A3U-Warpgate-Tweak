@@ -472,8 +472,8 @@
         <Russian>Список доступной для покупки техники будет расширяться по мере развития войны.</Russian>
       </Key>
       <Key ID="STR_antistasi_dialogs_black_market_tip">
-        <Original>Note that black market vehicle stock depends on current War Level and various achieved milestones.</Original>
-        <Russian>Список доступной техники на чёрном рынке зависит от текущего уровня войны и различных успехов повстанцев.</Russian>
+        <Original>Black market vehicle stock depends on current War Level and various achieved milestones.</Original>
+        <Russian>Список техники на чёрном рынке зависит от текущего уровня войны и успехов повстанцев.</Russian>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_vehicle_button_tooltip">
         <Original>Buy %1 for %2 %3</Original>
