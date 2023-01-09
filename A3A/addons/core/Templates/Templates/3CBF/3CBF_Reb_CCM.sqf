@@ -89,9 +89,6 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 
-["lootCrate", "Box_Syndicate_Ammo_F"] call _fnc_saveToTemplate;
-["rallyPoint", "B_RadioBag_01_wdl_F"] call _fnc_saveToTemplate;
-
 ["blackMarketStock", [
     ["rhsgref_nat_Igla_AA_pod", 3000, "STATICAA", {tierWar > 3}],
     ["UK3CB_LNM_I_Metis", 3000, "STATICAT", {tierWar > 3}],
