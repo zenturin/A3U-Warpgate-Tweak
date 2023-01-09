@@ -231,6 +231,13 @@ class Params
         texts[] = {"Not allowed", "Allowed"};
         default = 0;
     };
+    class A3A_rebelGarrisonLimit
+    {
+        title = "How many rebels can be garrisoned (1.5x for airports, 0.5x for resources and factories)?";
+        values[] = {10,20,30};
+        texts[] = {"10", "20", "30"};
+        default = 20;
+    };
 
     class SpacerEquipment
     {
