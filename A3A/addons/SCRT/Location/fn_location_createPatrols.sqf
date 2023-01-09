@@ -45,7 +45,7 @@ while {_countX < _patrolCount} do {
 			[_dog] spawn A3A_fnc_guardDog;
 			sleep 1;
 		};
-		_nul = [leader _groupX, _mrk, "LIMITED", "SAFE", "SPAWNED", "RANDOM", "NOVEH2"] call A3A_fnc_proxyUPSMON;//TODO need delete UPSMON link
+		_nul = [leader _groupX, _mrk, "LIMITED", "SAFE", "SPAWNED", "RANDOM", "NOVEH2"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
 		_groups pushBack _groupX;
 		{
 			[_x,_markerX] call A3A_fnc_NATOinit; 

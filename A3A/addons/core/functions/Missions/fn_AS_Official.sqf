@@ -45,7 +45,7 @@ if (_difficultX) then {
 
 _grp selectLeader _official;
 sleep 1;
-_nul = [leader _grp, _markerX, "LIMITED", "SAFE", "SPAWNED", "NOVEH", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+_nul = [leader _grp, _markerX, "LIMITED", "SAFE", "SPAWNED", "NOVEH", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 
 {[_x] call A3A_fnc_NATOinit; _x allowFleeing 0} forEach units _grp;
 
@@ -56,7 +56,7 @@ if (!alive _official) then {
 	if (_difficultX) then {
 		[0,600] remoteExec ["A3A_fnc_resourcesFIA",2];
 		[2400, _sideX] remoteExec ["A3A_fnc_timingCA",2];
-		{ 
+		{
 			[45,_x] call A3A_fnc_addScorePlayer;
     		[800,_x] call A3A_fnc_addMoneyPlayer;
 		} forEach (call SCRT_fnc_misc_getRebelPlayers);
@@ -66,7 +66,7 @@ if (!alive _official) then {
 	} else {
 		[0,300] remoteExec ["A3A_fnc_resourcesFIA",2];
 		[1800, _sideX] remoteExec ["A3A_fnc_timingCA",2];
-		{ 
+		{
 			[25,_x] call A3A_fnc_addScorePlayer;
     		[500,_x] call A3A_fnc_addMoneyPlayer;
 		} forEach (call SCRT_fnc_misc_getRebelPlayers);

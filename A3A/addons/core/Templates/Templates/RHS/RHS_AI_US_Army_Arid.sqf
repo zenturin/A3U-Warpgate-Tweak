@@ -216,12 +216,12 @@ _loadoutData set ["glasses", [
     "rhsusf_shemagh2_od",
     "rhsusf_shemagh_tan",
     "rhsusf_shemagh2_tan",
-    "rhs_googles_black", 
-    "rhs_googles_clear", 
+    "rhs_googles_black",
+    "rhs_googles_clear",
     "rhs_googles_orange"
 ]];
 _loadoutData set ["goggles", [
-    "rhs_ess_black", 
+    "rhs_ess_black",
     "rhs_googles_yellow",
     "rhsusf_shemagh_gogg_tan",
     "rhsusf_shemagh2_gogg_tan",
@@ -238,7 +238,7 @@ _loadoutData set ["goggles", [
 //    Special Forces Loadout Data    //
 ///////////////////////////////////////
 
-private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
+private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData set ["uniforms", ["rhs_uniform_g3_mc"]];
 _sfLoadoutData set ["vests", ["rhsusf_mbav_rifleman"]];
 _sfLoadoutData set ["MGvests", ["rhsusf_mbav_mg"]];
@@ -559,7 +559,7 @@ _militaryLoadoutData set ["sidearms", [
 //    Police Loadout Data    //
 ///////////////////////////////
 
-private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
+private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _policeLoadoutData set ["uniforms", ["U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"]];
 _policeLoadoutData set ["vests", ["V_TacVest_blk_POLICE"]];
 private _helmets = ["H_Cap_police"];
@@ -582,7 +582,7 @@ _policeLoadoutData set ["sidearms", [
 //    Militia Loadout Data    //
 ////////////////////////////////
 
-private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
+private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militiaLoadoutData set ["uniforms", ["rhs_uniform_acu_oefcp"]];
 _militiaLoadoutData set ["vests", ["V_TacVest_brn", "V_Chestrig_khk"]];
 _militiaLoadoutData set ["backpacks", ["rhsusf_assault_eagleaiii_ocp", "B_Kitbag_mcamo", "rhsusf_falconii_mc"]];
@@ -628,7 +628,7 @@ _militiaLoadoutData set ["sidearms", ["rhsusf_weap_m1911a1", "rhsusf_weap_m9"]];
 //////////////////////////
 //    Misc Loadouts     //
 //////////////////////////
-private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
+private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
 _crewLoadoutData set ["uniforms", ["rhs_uniform_cu_ocp_1stcav"]];
 _crewLoadoutData set ["vests", ["rhsusf_spcs_ocp_crewman"]];
 _crewLoadoutData set ["helmets", ["rhsusf_cvc_green_helmet", "rhsusf_cvc_green_alt_helmet", "rhsusf_cvc_helmet", "rhsusf_cvc_alt_helmet"]];
@@ -1119,7 +1119,7 @@ private _officerTemplate = {
 
     [["SMGs", "carbines"] call _fnc_fallback] call _fnc_setPrimary;
     ["primary", 3] call _fnc_addMagazines;
-    
+
     ["sidearms"] call _fnc_setHandgun;
     ["handgun", 2] call _fnc_addMagazines;
 

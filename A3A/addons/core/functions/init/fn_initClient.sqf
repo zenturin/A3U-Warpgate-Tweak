@@ -36,7 +36,7 @@ if !(isServer) then {
     // Headless client navgrid init
     if (!hasInterface) then {
         Info("Headless client UPSMON init started");
-        [] call compile preprocessFileLineNumbers QPATHTOFOLDER(Scripts\Init_UPSMON.sqf);
+        [] call UPSMON_fnc_Init_UPSMON;
         Info("Headless client UPSMON init completed");
 
         call A3A_fnc_loadNavGrid;
@@ -616,7 +616,7 @@ if (saveZeusBuildings) then {
 			params ["_curator", "_entity"];
 			if !(_entity isKindOf "Building") exitWith {};
 			[_entity] remoteExecCall ["SCRT_fnc_build_saveConstruction", 2];
-		}]; 
+		}];
 		_x addEventHandler ["CuratorObjectEdited", {
 			params ["_curator", "_entity"];
 			if !(_entity isKindOf "Building") exitWith {};
@@ -632,7 +632,7 @@ if (saveZeusBuildings) then {
 
 //players should keep their custom or profile-selected faces if they have any
 // [player, nil, selectRandom (A3A_faction_reb get "voices"), (random [0.9, 1, 1.1])] call BIS_fnc_setIdentity;
-
+initClientDone = true;
 Info("initClient completed");
 
 if (!isMultiplayer) then {

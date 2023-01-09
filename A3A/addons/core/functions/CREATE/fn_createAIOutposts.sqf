@@ -65,7 +65,7 @@ if (_additionalGarrison isNotEqualTo []) then {
 		private _group = [_positionX, _sideX, _groupTypes, false, true] call A3A_fnc_spawnGroup;
 		if !(isNull _group) then {
 			sleep 1;
-			[leader _group, _mrk, "SAFE","SPAWNED", "RANDOM", "NOVEH2"] call A3A_fnc_proxyUPSMON;//TODO need delete UPSMON link
+			_nul = [leader _group, _mrk, "SAFE","SPAWNED", "RANDOM", "NOVEH2"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
 			_groups pushBack _group;
 			{[_x] call A3A_fnc_NATOinit; _soldiers pushBack _x} forEach units _group;
 		};
@@ -96,7 +96,7 @@ if (_frontierX and {_markerX in outposts}) then {
 	if(_spawnParameter isEqualType []) then {
 		_groupX = createGroup _sideX;
 		_veh = _typeVehX createVehicle (_spawnParameter select 0);
-		_nul=[_veh] execVM QPATHTOFOLDER(scripts\UPSMON\MON_artillery_add.sqf);//TODO need delete UPSMON link
+		_nul=[_veh] spawn UPSMON_fnc_artillery_add;//TODO need delete UPSMON link
 		_unit = [_groupX, _typeUnit, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
 		[_unit,_markerX] call A3A_fnc_NATOinit;
 		_unit moveInGunner _veh;
@@ -280,9 +280,9 @@ for "_i" from 0 to (count _array - 1) do {
 	} forEach units _groupX;
 	if (_i == 0) then {
 		//Can't we just precompile this and call this like every other funtion? Would save some time
-		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "RANDOMUP", "SPAWNED", "NOVEH2", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "RANDOMUP", "SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 	} else {
-		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "SPAWNED", "RANDOM","NOVEH2", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "SPAWNED", "RANDOM","NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 	};
 };//TODO need delete UPSMON link
 ["locationSpawned", [_markerX, "Outpost", true]] call EFUNC(Events,triggerEvent);

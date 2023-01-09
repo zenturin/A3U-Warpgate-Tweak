@@ -162,7 +162,7 @@ if (_spawnableVehicle != "") then {
 	{
 		[_x] call A3A_fnc_NATOinit;
 	} forEach units _group;
-	[leader _group, _marker, "SAFE","SPAWNED","RANDOM","NOVEH2","NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+	_nul = [leader _group, _marker, "SAFE","SPAWNED","RANDOM","NOVEH2","NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 
 	_groups pushBack _group;
 };

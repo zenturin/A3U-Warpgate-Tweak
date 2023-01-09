@@ -341,7 +341,7 @@ for "_i" from 0 to _patrolCount do {
         _unit setCaptive true;
         [_unit] call A3A_fnc_NATOinit;
     };
-    [leader _patrolGroup, _marker, "SAFE","SPAWNED", "RANDOM", "NOVEH2", "LIMITED"] call A3A_fnc_proxyUPSMON;
+    _nul = [leader _patrolGroup, _marker, "SAFE","SPAWNED", "RANDOM", "NOVEH2", "LIMITED"] spawn UPSMON_fnc_UPSMON;
 
     _groups pushBack _patrolGroup;
 };
@@ -399,7 +399,6 @@ _patrolVehCrew apply {
 _groups pushBack _patrolVehGroup;
 _vehicles pushBack _patrolVeh;
 
-// [leader _patrolVehGroup, _marker, "SAFE","SPAWNED", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
 [_patrolVehGroup, _positionX, 250] call bis_fnc_taskPatrol;
 
 //////////////////////////////////////////////

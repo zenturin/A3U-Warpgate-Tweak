@@ -227,7 +227,7 @@ if (dateToNumber date < _dateLimitNum) then {
         ] call BIS_fnc_findSafePos;
         private _patrolGroup = [_position, Rivals, (selectRandom _patrolPool)] call A3A_fnc_spawnGroup;
         {[_x] call A3A_fnc_NATOinit;} forEach (units _patrolGroup);
-        [leader _patrolGroup, _marker, "SAFE","SPAWNED", "RANDOM", "NOVEH2", "LIMITED"] call A3A_fnc_proxyUPSMON;
+        _nul = [leader _patrolGroup, _marker, "SAFE","SPAWNED", "RANDOM", "NOVEH2", "LIMITED"] spawn UPSMON_fnc_UPSMON;
 
         _groups pushBack _patrolGroup;
     };
@@ -273,7 +273,6 @@ if (dateToNumber date < _dateLimitNum) then {
     _groups pushBack _patrolVehGroup;
     _vehicles pushBack _patrolVeh;
 
-    // [leader _patrolVehGroup, _marker, "SAFE","SPAWNED", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
     [_patrolVehGroup, _hideoutPosition, 250] call bis_fnc_taskPatrol;
 
     _nul = [_hideoutPosition, _lootContainer, _isDifficult] spawn {

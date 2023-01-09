@@ -47,7 +47,7 @@ if (_radarType != "" && {_samType != ""}) then {
 
 			_soldiers append (units _aaGroup);
             _groups pushBack _aaGroup;
-            _vehiclesX pushBack _aaVehicle;		
+            _vehiclesX pushBack _aaVehicle;
 
 			//radar rotation
             if(_x isEqualTo _radarType) then {
@@ -59,7 +59,7 @@ if (_radarType != "" && {_samType != ""}) then {
                         } forEach [120, 240, 0];
                     };
                 };
-            };	
+            };
 		} forEach [_radarType, _samType];
 		_spawnParameter = [_markerX, "Sam"] call A3A_fnc_findSpawnPosition;
 	};
@@ -132,7 +132,7 @@ if (_frontierX && {random 100 < (20 + tierWar * 3)}) then {
 
 	_soldiers append (units _group);
 	_groups pushBack _group;
-	_vehiclesX pushBack _heavyVehicle;		
+	_vehiclesX pushBack _heavyVehicle;
 };
 
 if (_frontierX) then {
@@ -194,7 +194,7 @@ if (_additionalGarrison isNotEqualTo []) then {
 		private _group = [_positionX, _sideX, _groupTypes, false, true] call A3A_fnc_spawnGroup;
 		if !(isNull _group) then {
 			sleep 1;
-			[leader _group, _mrk, "SAFE","SPAWNED", "RANDOM", "NOVEH2"] call A3A_fnc_proxyUPSMON;//TODO need delete UPSMON link
+			_nul = [leader _group, _mrk, "LIMITED", "SAFE", "SPAWNED", "RANDOM", "NOVEH2"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
 			_groups pushBack _group;
 			{[_x] call A3A_fnc_NATOinit; _soldiers pushBack _x} forEach units _group;
 		};
@@ -233,7 +233,8 @@ while {true} do {
 	private _typeVehX = selectRandom (_faction get "staticMortars");
 	private _veh = _typeVehX createVehicle _mortarPos;
 	_veh setDir (_spawnParameter select 1);
-	_nul=[_veh] execVM QPATHTOFOLDER(scripts\UPSMON\MON_artillery_add.sqf);//TODO need delete UPSMON link
+	//_veh setPosATL (_spawnParameter select 0);
+	_nul=[_veh] spawn UPSMON_fnc_artillery_add;//TODO need delete UPSMON link
 	private _unit = [_groupX, _typeUnit, _positionX, [], 0, "CAN_COLLIDE"] call A3A_fnc_createUnit;
 	[_unit,_markerX] call A3A_fnc_NATOinit;
 
@@ -408,7 +409,7 @@ for "_i" from 0 to (count _array - 1) do {
 	_groupX = if (_i == 0) then {[_positionX,_sideX, (_array select _i),true,false] call A3A_fnc_spawnGroup} else {[_positionX,_sideX, (_array select _i),false,true] call A3A_fnc_spawnGroup};
 	_groups pushBack _groupX;
 	{[_x,_markerX] call A3A_fnc_NATOinit; _soldiers pushBack _x} forEach units _groupX;
-	if (_i == 0) then {_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "RANDOMUP","SPAWNED", "NOVEH2", "NOFOLLOW"] call A3A_fnc_proxyUPSMON} else {_nul = [leader _groupX, _markerX, "LIMITED", "SAFE","SPAWNED", "RANDOM","NOVEH2", "NOFOLLOW"] call A3A_fnc_proxyUPSMON};
+	if (_i == 0) then {_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "RANDOMUP", "SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON} else {_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "SPAWNED", "RANDOM", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON};
 };//TODO need delete UPSMON link
 
 ["locationSpawned", [_markerX, "Airport", true]] call EFUNC(Events,triggerEvent);

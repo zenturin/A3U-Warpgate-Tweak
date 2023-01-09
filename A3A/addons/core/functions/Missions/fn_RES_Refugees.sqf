@@ -143,7 +143,7 @@ if (_sideX == Invaders) then {
 		_dog = [_groupX, "Fin_random_F",_positionX,[],0,"FORM"] call A3A_fnc_createUnit;
 		[_dog] spawn A3A_fnc_guardDog;
 		};
-	_nul = [leader _groupX, _mrk, "LIMITED", "SAFE", "SPAWNED", "NOVEH2", "RANDOM", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+	_nul = [leader _groupX, _mrk, "LIMITED", "SAFE", "SPAWNED", "NOVEH2","RANDOM", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 	{[_x,""] call A3A_fnc_NATOinit} forEach units _groupX;
 	_groupX1 = [_houseX buildingExit 0, Occupants, _faction get "groupPolice"] call A3A_fnc_spawnGroup;
 };
@@ -160,7 +160,7 @@ if (_sideX == Occupants) then {
 		_resourcesFIA = 100 * _countX;
 		[_hr,_resourcesFIA*_bonus] remoteExec ["A3A_fnc_resourcesFIA",2];
 		[Occupants, -10, 60] remoteExec ["A3A_fnc_addAggression",2];
-		{ 
+		{
 			[_countX*_bonus, _x] call A3A_fnc_addScorePlayer;
 			[_countX*_bonus*10,_x] call A3A_fnc_addMoneyPlayer;
 		} forEach (call SCRT_fnc_misc_getRebelPlayers);
@@ -184,11 +184,11 @@ if (_sideX == Occupants) then {
 		_hr = _countX;
 		_resourcesFIA = 100 * _countX;
 		[_hr,_resourcesFIA*_bonus] remoteExec ["A3A_fnc_resourcesFIA",2];
-		{ 
+		{
 			[_countX*_bonus, _x] call A3A_fnc_addScorePlayer;
 			[_countX*_bonus*10,_x] call A3A_fnc_addMoneyPlayer;
 		} forEach (call SCRT_fnc_misc_getRebelPlayers);
-		
+
 		private _bonusAmount = round (_countX*_bonus/2);
 		[_bonusAmount,theBoss] call A3A_fnc_addScorePlayer;
 		[(_bonusAmount*10),theBoss, true] call A3A_fnc_addMoneyPlayer;
