@@ -66,6 +66,7 @@ while {true} do
 			_mrkD = format ["Dum%1",_city];
 			_mrkD setMarkerColor colorTeamPlayer;
 			garrison setVariable [_city,[],true];
+			[_city] call A3A_fnc_mrkUpdate;
 			sleep 5;
 			{_nul = [_city,_x] spawn A3A_fnc_deleteControls} forEach controlsX;
 			[] call A3A_fnc_tierCheck;
@@ -78,6 +79,7 @@ while {true} do
 			_mrkD = format ["Dum%1",_city];
 			_mrkD setMarkerColor colorOccupants;
 			garrison setVariable [_city,[],true];
+			[_city] call A3A_fnc_mrkUpdate;
 			sleep 5;
 			[] call A3A_fnc_tierCheck;
 		};
