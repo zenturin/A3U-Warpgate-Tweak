@@ -13,7 +13,7 @@ Environment: Any
 Public: No
 Dependencies:
 
-Example: [_intel, objNull, _actionID] call A3A_fnc_searchEncryptedIntel;
+Example: [_marker] call A3A_fnc_getGarrisonLimit;
 
 License: MIT License
 */
@@ -31,13 +31,13 @@ if (_marker isEqualTo "") exitWith {
 
 private _limit = switch (true) do {
 	case (_marker in airportsX): {
-		floor (rebelGarrisonLimit * 1.5)
+		floor (A3A_rebelGarrisonLimit * 1.5)
 	};
 	case (_marker in factories || {_marker in resourcesX}): {
-		floor (rebelGarrisonLimit * 0.5)
+		floor (A3A_rebelGarrisonLimit * 0.5)
 	};
 	default {
-		rebelGarrisonLimit
+		A3A_rebelGarrisonLimit
 	};
 };
 
