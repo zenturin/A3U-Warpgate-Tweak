@@ -132,7 +132,7 @@ switch (true) do {
 // [str _side] remoteExecCall ["systemChat", 0];
 // [(format ["Face: %1, voice: %2", _face, _voice])] remoteExecCall ["systemChat", 0];
 
-[_unit, _face, _voice, (random [0.9, 1, 1.1])] remoteExecCall ["BIS_fnc_setIdentity", -2, _unit];
+[_unit, _face, _voice, (random [0.9, 1, 1.1])] call A3A_fnc_setIdentity;
 _unit setSkill _skill;
 
 //Adjusts squadleaders with improved skill
