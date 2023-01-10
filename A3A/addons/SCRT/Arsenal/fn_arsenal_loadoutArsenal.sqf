@@ -135,7 +135,6 @@ _arrayContains = {
 private _minItemsMember = {
 	params ["_index", "_item"];					// Arsenal tab index, item classname
 	private _min = jna_minItemMember select _index;
-	_min = A3A_arsenalLimits getOrDefault [_item, _min];
 	if (_index == IDC_RSCDISPLAYARSENAL_TAB_CARGOMAG || _index == IDC_RSCDISPLAYARSENAL_TAB_CARGOMAGALL) then {
 		_min = _min * getNumber (configfile >> "CfgMagazines" >> _item >> "count");
 	};
@@ -503,7 +502,7 @@ switch _mode do {
         lbSortByValue _ctrlList;
       };
 	  case SORT_COLOR: {
-		private _displayNameArray = [];
+			private _displayNameArray = [];
 			private _dataArray = [];
 			
 			private _tempArr = [];
@@ -1665,7 +1664,7 @@ switch _mode do {
 
 		//check if weapon is unlocked
 		private _min = [_index, _item] call _minItemsMember;
-		if ((_amount <= _min) && {_amount != -1 AND {_item !="" && {!_type}}}) exitWith{
+		if ((_amount <= _min) && {_amount != -1 AND {_item !="" && {!_type}}}) exitWith {
 			['showMessage',[_display, (localize "STR_antistasi_dialogs_hq_button_rebel_set_loadout_unlocked_items")]] call SCRT_fnc_arsenal_loadoutArsenal;
 
 			//reset _cursel
