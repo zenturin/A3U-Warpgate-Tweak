@@ -460,7 +460,7 @@ class commanderMenu
 					text = $STR_commander_menu_skill_level_title;
 					x = "1 * pixelGridNoUIScale * pixelW";
 					y = "8.5 * pixelGridNoUIScale * pixelH";	
-					w = "22 * pixelGridNoUIScale * pixelW";	
+					w = "22.5 * pixelGridNoUIScale * pixelW";	
 					h = "1.5 * pixelGridNoUIScale * pixelH";
 				};
 				
