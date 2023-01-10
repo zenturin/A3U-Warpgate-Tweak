@@ -1507,7 +1507,7 @@
                 <Russian>Сбрасываю груз.</Russian>
             </Key>
             <Key ID="STR_chats_airdrop_pilot_drop_cargo_end">
-                <Original>Cargo has been droppped, I hope it will help the resistance. Good luck, lads!</Original>
+                <Original>Cargo has been dropped, I hope it will help the resistance. Good luck, lads!</Original>
                 <Russian>Груз сброшен, надеюсь, это поможет сопротивлению. Удачи, парни!</Russian>
             </Key>
             <Key ID="STR_chats_send_back_to_base">
