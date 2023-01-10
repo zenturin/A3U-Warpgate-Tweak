@@ -13,20 +13,20 @@ private _limit = [_siteX] call A3A_fnc_getGarrisonLimit;
 private _units = [ [],[],[],[],[],[],[],[],[] ];
 {
     _units # (switch _x do {
-    case (FactionGet(reb,"unitSL")): {0};
-    case (FactionGet(reb,"unitCrew")): {1};
-    case (FactionGet(reb,"unitRifle")): {2};
-    case (FactionGet(reb,"unitMG")): {3};
-    case (FactionGet(reb,"unitMedic")): {4};
-    case (FactionGet(reb,"unitGL")): {5};
-    case (FactionGet(reb,"unitSniper")): {6};
-    case (FactionGet(reb,"unitLAT")): {7};
-    default {8};
+        case (FactionGet(reb,"unitSL")): {0};
+        case (FactionGet(reb,"unitCrew")): {1};
+        case (FactionGet(reb,"unitRifle")): {2};
+        case (FactionGet(reb,"unitMG")): {3};
+        case (FactionGet(reb,"unitMedic")): {4};
+        case (FactionGet(reb,"unitGL")): {5};
+        case (FactionGet(reb,"unitSniper")): {6};
+        case (FactionGet(reb,"unitLAT")): {7};
+        default {8};
     }) pushBack _x;
 } forEach _garrison;
 
 _textX = format [
-    "<br/><br/>Garrison men: %1/%13<br/><br/>Squad Leaders: %2<br/>%12: %3<br/>Riflemen: %4<br/>Autoriflemen: %5<br/>Medics: %6<br/>Grenadiers: %7<br/>Marksmen: %8<br/>AT Men: %9<br/>Other: %10<br/>Static Weap: %11"
+    "<br/><br/>Garrison men: %1%13<br/><br/>Squad Leaders: %2<br/>%12: %3<br/>Riflemen: %4<br/>Autoriflemen: %5<br/>Medics: %6<br/>Grenadiers: %7<br/>Marksmen: %8<br/>AT Men: %9<br/>Other: %10<br/>Static Weap: %11"
     , count _garrison
     , count (_units#0)
     , count (_units#1)
@@ -39,7 +39,7 @@ _textX = format [
     , count (_units#8)
     , {_x distance _positionX < _size} count staticsToSave
     , _estatic
-    , _limit
+    , if (_limit != -1) then {format ["/%1", _limit]} else {""}
 ];
 
 _textX

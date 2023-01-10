@@ -22,23 +22,25 @@ License: MIT License
 FIX_LINE_NUMBERS()
 
 params [
-	["_marker", "", [""]]
+    ["_marker", "", [""]]
 ];
 
 if (_marker isEqualTo "") exitWith {
-	Error("Marker name is empty.");
+    Error("Marker name is empty.");
 };
 
+if (A3A_rebelGarrisonLimit == -1) exitWith {-1};
+
 private _limit = switch (true) do {
-	case (_marker in airportsX): {
-		floor (A3A_rebelGarrisonLimit * 1.5)
-	};
-	case (_marker in factories || {_marker in resourcesX}): {
-		floor (A3A_rebelGarrisonLimit * 0.5)
-	};
-	default {
-		A3A_rebelGarrisonLimit
-	};
+    case (_marker in airportsX): {
+        floor (A3A_rebelGarrisonLimit * 1.5)
+    };
+    case (_marker in factories || {_marker in resourcesX}): {
+        floor (A3A_rebelGarrisonLimit * 0.5)
+    };
+    default {
+        A3A_rebelGarrisonLimit
+    };
 };
 
 _limit

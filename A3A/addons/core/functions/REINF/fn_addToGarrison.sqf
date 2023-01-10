@@ -42,8 +42,8 @@ else
 
 private _limit = [_nearX] call A3A_fnc_getGarrisonLimit;
 private _newGarrison = (count (units _groupX)) + (count (garrison getVariable [_nearX, []]));
-if (_newGarrison > _limit) exitWith {
-	["Garrison", "Adding this squad to garrison will exceed garrison limit."] call A3A_fnc_customHint;
+if (_limit != -1 && {_newGarrison > _limit}) exitWith {
+	[localize "STR_A3A_garrison_header", localize "STR_A3A_garrison_exceed_limit"] call A3A_fnc_customHint;
 };
 
 _leave = false;

@@ -5094,5 +5094,23 @@
         <Original>"This mission is outdated and could lack important map details that may break your game. Inform your mission maker or update the extension to the latest version."</Original>
       </Key>
     </Container>
+    <Container name="A3A_garrisons">
+      <Key ID="STR_A3A_garrison_header">
+        <Original>Garrison</Original>
+        <Russian>Гарнизон</Russian>
+      </Key>
+      <Key ID="STR_A3A_garrisons_header">
+        <Original>Garrisons</Original>
+        <Russian>Гарнизоны</Russian>
+      </Key>
+      <Key ID="STR_A3A_garrison_exceed_limit">
+        <Original>Adding this squad to garrison will exceed garrison limit.</Original>
+        <Russian>Добавление этого отряда в гарнизон превысит лимит гарнизона.</Russian>
+      </Key>
+      <Key ID="STR_A3A_garrison_reached_limit">
+        <Original>Garrison limit has reached, you can't add new units anymore.</Original>
+        <Russian>Достигнут лимит гарнизона, вы больше не можете добавлять в него новые юниты.</Russian>
+      </Key>
+    </Container>
   </Package>
 </Project>
