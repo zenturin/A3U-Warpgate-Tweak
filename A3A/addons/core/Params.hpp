@@ -234,8 +234,8 @@ class Params
     class A3A_rebelGarrisonLimit
     {
         title = "How many rebels can be garrisoned (1.5x for airports, 0.5x for resources and factories)?";
-        values[] = {10,20,30};
-        texts[] = {"10", "20", "30"};
+        values[] = {-1, 10, 20, 30, 40, 50};
+        texts[] = {"No limit", "10", "20", "30", "40", "50"};
         default = 20;
     };
 
