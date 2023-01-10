@@ -2,7 +2,7 @@
 
 ## 2.0.3
 ### Changes
-- Community Version 3.1 integration
+- Community Version 3.1 integration (important bugfixes and tweaks)
 - Increased durability of loot crate
 - Seaports will be used for airspace control
 - Fixed Rebel Loadout arsenal finite items exploit

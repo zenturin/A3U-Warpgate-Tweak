@@ -47,7 +47,7 @@ class Params
         title = $STR_params_civPedestrians;
         values[] = {0,1,3,5,7,10,15,20,25,30};
         texts[] = {"0","1","3","5","7","10","15","20","25","30"};
-        default = 5;
+        default = 10;
     };
     class distanceMission
     {
