@@ -81,21 +81,23 @@ switch (_mode) do
 
         private _selectedTabIDC = switch (_selectedTab) do
         {
-            case ("loadgame"): { A3A_IDC_SETUP_LOADGAMETAB };
-            case ("factions"): { A3A_IDC_SETUP_FACTIONSTAB };
-            case ("params"): { A3A_IDC_SETUP_PARAMSTAB };
+            case "loadgame": { A3A_IDC_SETUP_LOADGAMETAB };
+            case "factions": { A3A_IDC_SETUP_FACTIONSTAB };
+            case "params": { A3A_IDC_SETUP_PARAMSTAB };
+            case "rivals": { A3A_IDC_SETUP_RIVALSTAB };
         };
 
         {
             private _ctrl = _display displayCtrl _x;
             _ctrl ctrlShow (_x == _selectedTabIDC);
-        } forEach [A3A_IDC_SETUP_LOADGAMETAB, A3A_IDC_SETUP_FACTIONSTAB, A3A_IDC_SETUP_PARAMSTAB];
+        } forEach [A3A_IDC_SETUP_LOADGAMETAB, A3A_IDC_SETUP_FACTIONSTAB, A3A_IDC_SETUP_PARAMSTAB, A3A_IDC_SETUP_RIVALSTAB];
 
         switch (_selectedTab) do
         {
             case ("loadgame"): { ["update"] call A3A_fnc_setupLoadgameTab };
             case ("factions"): { ["update"] call A3A_fnc_setupFactionsTab };
             case ("params"): { ["update"] call A3A_fnc_setupParamsTab };
+            case ("rivals"): { ["update"] call A3A_fnc_setupRivalsTab };
         };
     };
 

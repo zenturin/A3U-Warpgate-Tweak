@@ -53,7 +53,7 @@ class A3A_SetupDialog : A3A_TabbedDialog
                 {
                     idc = A3A_IDC_SETUP_RIVALSTABBUTTON;
                     text = $STR_antistasi_dialogs_setup_rivals_tab_button;
-                    onButtonClick = "['switchTab', ['params']] call A3A_fnc_setupDialog;";
+                    onButtonClick = "['switchTab', ['rivals']] call A3A_fnc_setupDialog;";
                     x = 60 * GRID_W;
                     y = 0;
                     w = 30 * GRID_W;
