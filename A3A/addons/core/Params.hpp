@@ -234,7 +234,7 @@ class Params
     class A3A_rebelGarrisonLimit
     {
         title = "How many rebels can be garrisoned (1.5x for airports, 0.5x for resources and factories)?";
-        description = "How many troops can be in garrison. Note that No limit option may affect performance as there might be too many troops for CPU to handle.";
+        tooltip = "How many troops can be in garrison. Note that No limit option may affect performance as there might be too many troops for CPU to handle.";
         values[] = {-1, 16, 24, 32};
         texts[] = {"No limit", "16", "24", "32"};
         default = 24;
