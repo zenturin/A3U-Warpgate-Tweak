@@ -49,12 +49,23 @@ class A3A_SetupDialog : A3A_TabbedDialog
                     h = 5 * GRID_H;
                 };
 
+                class RivalsTabButton : A3A_Button
+                {
+                    idc = A3A_IDC_SETUP_RIVALSTABBUTTON;
+                    text = $STR_antistasi_dialogs_setup_rivals_tab_button;
+                    onButtonClick = "['switchTab', ['params']] call A3A_fnc_setupDialog;";
+                    x = 60 * GRID_W;
+                    y = 0;
+                    w = 30 * GRID_W;
+                    h = 5 * GRID_H;
+                };
+
                 class ParamsTabButton : A3A_Button
                 {
                     idc = A3A_IDC_SETUP_PARAMSTABBUTTON;
                     text = $STR_antistasi_dialogs_setup_params_tab_button;
                     onButtonClick = "['switchTab', ['params']] call A3A_fnc_setupDialog;";
-                    x = 60 * GRID_W;
+                    x = 90 * GRID_W;
                     y = 0;
                     w = 30 * GRID_W;
                     h = 5 * GRID_H;
