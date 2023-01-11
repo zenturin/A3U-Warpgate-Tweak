@@ -28,6 +28,7 @@ class CfgFunctions {
             class recruitDialog {};
             class recruitSquadDialog {};
             class requestMissionDialog {};
+            class hcDismissalDialog {};
         };
         class SetupGUI {
             file = QPATHTOFOLDER(functions\SetupGUI);
