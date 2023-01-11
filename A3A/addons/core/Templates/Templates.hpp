@@ -32,7 +32,7 @@ class Templates
     class WS_Exegermenos : WS_Base
     {
         side = "Riv";
-        flagTexture = "a3\data_f\flags\flag_fia_co.paa"; //TODO: FIX!
+        flagTexture = "\A3\Data_F\Flags\Flag_red_CO.paa";
         name = "WS Exegerménos";
         file = "WS_Riv_Exegermenos";
     };
@@ -106,7 +106,7 @@ class Templates
     class Vanilla_Exegermenos : Vanilla_Base
     {
         side = "Riv";
-        flagTexture = "a3\data_f\flags\flag_fia_co.paa"; //TODO: FIX!
+        flagTexture = "\A3\Data_F\Flags\Flag_red_CO.paa";
         name = "A3 Exegerménos";
         file = "Vanilla_Riv_Exegermenos";
     };
@@ -285,7 +285,7 @@ class Templates
     class RHS_CHDKZ : RHS_Base
     {
         side = "Riv";
-        flagTexture = "a3\data_f\flags\flag_fia_co.paa";
+        flagTexture = "\rhsgref\addons\rhsgref_main\data\flag_chdkz_co.paa";
         logo = "rhsgref\addons\rhsgref_main\data\rhs_logo_ca.paa";
         name = "RHS CHDKZ";
         file = "RHS_Riv_CHDKZ";
@@ -342,7 +342,7 @@ class Templates
     class 3CBF_CHDKZ : 3CBF_Base
     {
         side = "Riv";
-        flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_CCM\Flag\ccm_o_flag_co.paa";
+        flagTexture = "\rhsgref\addons\rhsgref_main\data\flag_chdkz_co.paa";
         name = "3CBF CHDKZ";
         file = "3CBF_Riv_CHDKZ";
     };
