@@ -77,13 +77,13 @@ if (_vehicle isKindOf "Air") then
 else            // ground vehicle
 {
     private _typeName = call {
-        if (_vehType in FactionGet(all,"vehiclesTanks")) exitWith {"Tank"};
-        if (_vehType in FactionGet(all,"vehiclesLightTanks")) exitWith {"Light Tank"};
-        if (_vehType in FactionGet(all,"vehiclesLightAPCs")) exitWith {"Light APC"};
-        if (_vehType in FactionGet(all,"vehiclesAA")) exitWith {"AA"};
-        if (_vehType in FactionGet(all,"vehiclesArmor"))  exitWith {"APC"};
-        if (_vehType in FactionGet(all,"vehiclesTrucks")) exitWith {"Truck"};
-        "MRAP";
+        if (_vehType in FactionGet(all,"vehiclesTanks")) exitWith {localize "STR_qrf_marker_tank"};
+        if (_vehType in FactionGet(all,"vehiclesLightTanks")) exitWith {localize "STR_qrf_marker_light_tank"};
+        if (_vehType in FactionGet(all,"vehiclesLightAPCs")) exitWith {localize "STR_qrf_marker_light_apc"};
+        if (_vehType in FactionGet(all,"vehiclesAA")) exitWith {localize "STR_qrf_marker_aa"};
+        if (_vehType in FactionGet(all,"vehiclesArmor"))  exitWith {localize "STR_qrf_marker_apc"};
+        if (_vehType in FactionGet(all,"vehiclesTrucks")) exitWith {localize "STR_qrf_marker_truck"};
+        localize "STR_qrf_marker_mrap";
     };
 
     if (isNull _cargoGroup) exitWith

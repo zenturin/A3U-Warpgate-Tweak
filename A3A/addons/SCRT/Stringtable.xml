@@ -784,6 +784,34 @@
             </Key>
         </Container>
         <Container name="markers">
+            <Key ID="STR_qrf_marker_mrap">
+                <Original>MRAP</Original>
+                <Russian>бронеавтомобиль</Russian>
+            </Key>
+            <Key ID="STR_qrf_marker_apc">
+                <Original>APC</Original>
+                <Russian>БТР</Russian>
+            </Key>
+            <Key ID="STR_qrf_marker_tank">
+                <Original>Tank</Original>
+                <Russian>танк</Russian>
+            </Key>
+            <Key ID="STR_qrf_marker_light_tank">
+                <Original>Light Tank</Original>
+                <Russian>лёгкий танк</Russian>
+            </Key>
+            <Key ID="STR_qrf_marker_light_apc">
+                <Original>Light APC</Original>
+                <Russian>лёгкий бронетранспортёр</Russian>
+            </Key>
+            <Key ID="STR_qrf_marker_aa">
+                <Original>AA</Original>
+                <Russian>самоходный зенитный комплекс</Russian>
+            </Key>
+            <Key ID="STR_qrf_marker_truck">
+                <Original>Truck</Original>
+                <Russian>грузовик</Russian>
+            </Key>
             <Key ID="STR_markers_arty_strike">
                 <Original>Artillery Strike</Original>
                 <Russian>Артиллерийский удар</Russian>
