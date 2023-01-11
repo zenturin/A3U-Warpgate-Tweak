@@ -30,7 +30,7 @@ if ([_positionX] call A3A_fnc_enemyNearCheck) exitWith {["Garrisons", "You canno
 private _garrison = garrison getVariable [_markerX,[]];
 private _limit = [_markerX] call A3A_fnc_getGarrisonLimit;
 
-if (_limit != -1 && {count _previousGarrison >= _limit}) exitWith {
+if (_limit != -1 && {count _garrison >= _limit}) exitWith {
 	[localize "STR_A3A_garrisons_header", localize "STR_A3A_garrison_reached_limit"] call A3A_fnc_customHint;
 };
 
