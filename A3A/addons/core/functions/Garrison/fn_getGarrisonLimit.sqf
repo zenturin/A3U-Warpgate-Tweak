@@ -33,10 +33,10 @@ if (A3A_rebelGarrisonLimit == -1) exitWith {-1};
 
 private _limit = switch (true) do {
     case (_marker in airportsX): {
-        floor (A3A_rebelGarrisonLimit * 1.5)
+        round (A3A_rebelGarrisonLimit * 1.5)
     };
     case (_marker in factories || {_marker in resourcesX}): {
-        floor (A3A_rebelGarrisonLimit * 0.5)
+        round (A3A_rebelGarrisonLimit * 0.5)
     };
     default {
         A3A_rebelGarrisonLimit
