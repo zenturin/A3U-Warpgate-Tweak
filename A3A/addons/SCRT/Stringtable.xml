@@ -3048,7 +3048,7 @@
             </Key>
             <Key ID="STR_milAdministration">
                 <Original>Military Administration</Original>
-                <Russian>Оккупационная администрация</Russian>
+                <Russian>Военная администрация</Russian>
             </Key>
         </Container>
         <Container name="system_chats">
@@ -5147,7 +5147,7 @@
             </Key>
             <Key ID="STR_CON_MilAdmin_desc">
                 <Original>A Military Administration of Kavala asserts their rule and force on our population, we should deal with it so people will breathe freely. Kill military administrator to seize it. Do it before %2.</Original>
-                <Russian>Оккупационная администрация населенного пункта %1 утверждает свое господство и применяет силу к нашему населению, мы должны разобраться с этим, чтобы люди смогли вздохнуть спокойно. Убейте военного администратора для захвата. Сделайте это до %2.</Russian>
+                <Russian>Военная администрация населенного пункта %1 утверждает свое господство и применяет силу к нашему населению, мы должны разобраться с этим, чтобы люди смогли вздохнуть спокойно. Убейте военного администратора для захвата. Сделайте это до %2.</Russian>
             </Key>
             <Key ID="STR_wavedattack_task">
                 <Original>%1 Attack</Original>
