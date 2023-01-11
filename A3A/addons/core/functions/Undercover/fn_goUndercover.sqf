@@ -55,6 +55,8 @@ FIX_LINE_NUMBERS()
 
 
 private _result = [] call A3A_fnc_canGoUndercover;
+private _canGoUndercoverValue = _result select 0;
+private _canGoUndercoverReason = _result select 1;
 
 private _fnc_checkBaseUndercoverBreak = {
     params ["_secureBases"];
@@ -122,12 +124,9 @@ private _fnc_checkClothesVehicle = {
     false;
 };
 
-if(!(_result select 0)) exitWith
-{
-    if((_result select 1) == "Spotted by enemies") then
-    {
-        if !(isNull (objectParent player)) then
-        {
+if(!_canGoUndercoverValue) exitWith {
+    if(_canGoUndercoverReason isEqualTo (localize "STR_A3A_goUndercover_error_spotting_output")) then {
+        if !(isNull (objectParent player)) then {
             (objectParent player) setVariable ["A3A_reported", true, true];
             {
                 if ((isPlayer _x) && (captive _x)) then
@@ -146,8 +145,7 @@ private _layer = ["A3A_infoCenter"] call BIS_fnc_rscLayer;
 [player, true] remoteExec["setCaptive", 0, player];
 player setCaptive true;
 [] spawn A3A_fnc_statistics;
-if (player == leader group player) then
-{
+if (player == leader group player) then {
     {
         if ((!isplayer _x) && (local _x) && (_x getVariable["owner", _x] == player)) then
         {
@@ -156,9 +154,8 @@ if (player == leader group player) then
     } forEach units group player;
 };
 
-private _roadblocks = controlsX select {isOnRoad(getMarkerPos _x)};
 private _secureBases = (
-    (airportsX + outposts + seaports + milbases + _roadblocks) select {sidesX getVariable [_x, sideUnknown] != teamPlayer}
+    (airportsX + outposts + seaports + milbases + (controlsX select {isOnRoad(getMarkerPos _x)})) select {sidesX getVariable [_x, sideUnknown] != teamPlayer}
 ) + (milAdministrationsX select {sidesX getVariable [_x,sideUnknown] == Occupants});
 private _reason = -1;
 ["Undercover", [""]] call EFUNC(Events,triggerEvent);
@@ -287,8 +284,7 @@ while {_reason isEqualTo -1} do
 
 Debug_1("Final undercover break reason: %1", _reason);
 
-if (captive player) then
-{
+if (captive player) then {
     [player, false] remoteExec["setCaptive"];
     player setCaptive false;
 };
