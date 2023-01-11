@@ -18,7 +18,7 @@ private _fnc_createLight = {
     _light
 };
 
-Info("Kill Cell Leader task initialization started, marker: %1.");
+Info_1("Kill Cell Leader task initialization started, marker: %1.", _marker);
 
 private _vehicles = [];
 private _groups = [];
@@ -78,30 +78,34 @@ Info_1("City size: %1.", str _size);
 private _damagedBuildings = (nearestObjects [_positionX, ["house"], _size]) select {(count ([_x] call BIS_fnc_buildingPositions)) > 0};
 private _damagedBuildingsCount = round (random [1,2,3]);
 
-for "_i" from 0 to _damagedBuildingsCount do {
-    private _damagedBuilding = selectRandom _damagedBuildings;
-	_damagedBuilding setDamage ((random 0.5)+0.4);
-	private _damagedBuildingPos = position _damagedBuilding;
-	private _damagedBuildingCollision = 2 boundingBoxReal _damagedBuilding;
-	private _p1 = _damagedBuildingCollision select 0;
-	private _p2 = _damagedBuildingCollision select 1;
-	private _maxHeight = abs ((_p2 select 2) - (_p1 select 2));
+if (_damagedBuildings isNotEqualTo []) then {
+    for "_i" from 0 to _damagedBuildingsCount do {
+        private _damagedBuilding = selectRandom _damagedBuildings;
+        _damagedBuilding setDamage ((random 0.5)+0.4);
+        private _damagedBuildingPos = position _damagedBuilding;
+        private _damagedBuildingCollision = 2 boundingBoxReal _damagedBuilding;
+        private _p1 = _damagedBuildingCollision select 0;
+        private _p2 = _damagedBuildingCollision select 1;
+        private _maxHeight = abs ((_p2 select 2) - (_p1 select 2));
 
-	private _bAtlPos = (getPosATL _damagedBuilding);
-	private _bMinHeightAsl = ATLToASL _bAtlPos;
-	private _bMaxHeightAsl = ATLToASL ([_bAtlPos select 0, _bAtlPos select 1, _maxHeight]);
+        private _bAtlPos = (getPosATL _damagedBuilding);
+        private _bMinHeightAsl = ATLToASL _bAtlPos;
+        private _bMaxHeightAsl = ATLToASL ([_bAtlPos select 0, _bAtlPos select 1, _maxHeight]);
 
-	private _realRoofHeightAsl = ((lineIntersectsSurfaces [_bMaxHeightAsl, _bMinHeightAsl]) select 0) select 0;
-	_damagedBuilding animate ["door_1A_move",1];
-	_damagedBuilding animate ["door_1B_move",1];
-	_damagedBuilding animate ["door_2_rot",1];
-	_damagedBuilding animate ["door_3_rot",1];
+        private _realRoofHeightAsl = ((lineIntersectsSurfaces [_bMaxHeightAsl, _bMinHeightAsl]) select 0) select 0;
 
-	private _fire = createVehicle ["test_EmptyObjectForFireBig", _damagedBuildingPos, [], 0 , "CAN_COLLIDE"];
-	_fire setPosASL _realRoofHeightAsl;
+        if (!isNil "_realRoofHeightAsl") then {
+            private _fire = createVehicle ["test_EmptyObjectForFireBig", _damagedBuildingPos, [], 0 , "CAN_COLLIDE"];
+            _fire setPosASL _realRoofHeightAsl;
 
-    private _light = [(position _fire)] call _fnc_createLight;
-    _effects append [_light, _fire];
+            private _light = [(position _fire)] call _fnc_createLight;
+            _effects append [_light, _fire];
+        };
+        _damagedBuilding animate ["door_1A_move",1];
+        _damagedBuilding animate ["door_1B_move",1];
+        _damagedBuilding animate ["door_2_rot",1];
+        _damagedBuilding animate ["door_3_rot",1];
+    };
 };
 
 if ((random 100) < 30) then {
@@ -143,7 +147,7 @@ private _taskId = "RIV_ATT" + str A3A_taskCount;
         format [localize "STR_RIV_ATT_cell_header", A3A_faction_riv get "name"],
         _marker
     ],
-    [_targetPos, 25],
+    _targetPos,
     false,
     0,
     true,
@@ -598,7 +602,7 @@ switch(true) do {
     };
 };
 
-[_taskId, "RIV_ATT", 60] spawn A3A_fnc_taskDelete;
+[_taskId, "RIV_ATT", 10] spawn A3A_fnc_taskDelete;
 
 sleep 60;
 
