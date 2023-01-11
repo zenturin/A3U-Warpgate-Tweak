@@ -331,9 +331,9 @@ switch(true) do {
     };
 };
 
-sleep 30;
+[_taskId, "RIV_ATT", 10] spawn A3A_fnc_taskDelete;
 
-[_taskId, "RIV_ATT", 60] spawn A3A_fnc_taskDelete;
+sleep 30;
 
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;

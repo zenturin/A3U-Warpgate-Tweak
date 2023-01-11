@@ -79,14 +79,17 @@ if (count _damagedBuildings > 0) then {
 	private _bMaxHeightAsl = ATLToASL ([_bAtlPos select 0, _bAtlPos select 1, _maxHeight]);
 
 	private _realRoofHeightAsl = ((lineIntersectsSurfaces [_bMaxHeightAsl, _bMinHeightAsl]) select 0) select 0;
+
+	if (!isNil "_realRoofHeightAsl") then {
+		private _smoke = createVehicle ["test_EmptyObjectForSmoke", _damagedBuildingPos, [], 0 , "CAN_COLLIDE"];
+		_smoke setPosASL _realRoofHeightAsl;
+		_effects pushBack _smoke;
+	};
 	_damagedBuilding animate ["door_1A_move",1];
 	_damagedBuilding animate ["door_1B_move",1];
 	_damagedBuilding animate ["door_2_rot",1];
 	_damagedBuilding animate ["door_3_rot",1];
 
-	private _smoke = createVehicle ["test_EmptyObjectForSmoke", _damagedBuildingPos, [], 0 , "CAN_COLLIDE"];
-	_smoke setPosASL _realRoofHeightAsl;
-	_effects pushBack _smoke;
 };
 
 private _leaderIntelGroup = createGroup Rivals;

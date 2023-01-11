@@ -6,7 +6,10 @@
 - Increased durability of loot crate
 - Seaports will be used for airspace control
 - Fixed Rebel Loadout arsenal finite items usage exploit
-- Fixed some missing strings and typos
+- Fixed ability to to do big attacks for factions that were defeated before
+- Fixed Destroy Artillery minor error about event handler
+- Fixed Rivals tasks inability to work if there are no buildings in town
+- Fixed some missing strings, typos, localization errors
 
 ## 2.0.2
 ### Changes
