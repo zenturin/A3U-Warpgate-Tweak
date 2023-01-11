@@ -26,7 +26,7 @@ private _units = [ [],[],[],[],[],[],[],[],[] ];
 } forEach _garrison;
 
 _textX = format [
-    "<br/><br/>Garrison men: %1%13<br/><br/>Squad Leaders: %2<br/>%12: %3<br/>Riflemen: %4<br/>Autoriflemen: %5<br/>Medics: %6<br/>Grenadiers: %7<br/>Marksmen: %8<br/>AT Men: %9<br/>Other: %10<br/>Static Weap: %11"
+    "<br/><br/>Garrison units: %1%13<br/><br/>Squad Leaders: %2<br/>%12: %3<br/>Riflemen: %4<br/>Autoriflemen: %5<br/>Medics: %6<br/>Grenadiers: %7<br/>Marksmen: %8<br/>AT Men: %9<br/>Other: %10<br/>Static Weap: %11"
     , count _garrison
     , count (_units#0)
     , count (_units#1)
