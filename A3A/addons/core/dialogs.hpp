@@ -3023,6 +3023,62 @@ class gameMode_menu 			{
 	};
 };
 
+class hcDismissalDialog			{
+	idd=500;
+	movingenable=false;
+
+	class controls {
+		class HQ_box: A3A_core_BattleMenuBOX
+		{
+			idc = 101;
+			text = $STR_antistasi_dialogs_generic_box_text;
+			x = 0.244979 * safezoneW + safezoneX;
+			y = 0.223941 * safezoneH + safezoneY;
+			w = 0.445038 * safezoneW;
+			h = 0.20 * safezoneH;//30
+		};
+		class HQ_frame: A3A_core_BattleMenuFrame
+		{
+			idc = 102;
+			text = $STR_antistasi_dialogs_vehicle_manager_veh_query;
+			x = 0.254979 * safezoneW + safezoneX;
+			y = 0.233941 * safezoneH + safezoneY;
+			w = 0.425038 * safezoneW;
+			h = 0.18 * safezoneH;//28
+		};
+		class HQ_button_back: A3A_core_BattleMenuRedButton
+		{
+			idc = 103;
+			text = $STR_antistasi_dialogs_generic_button_back_text;
+			x = 0.61 * safezoneW + safezoneX;
+			y = 0.251941 * safezoneH + safezoneY;
+			w = 0.06 * safezoneW;//0.175015
+			h = 0.05 * safezoneH;
+			action = "closeDialog 0;dismissHcSquads = nil; if (player == theBoss) then { [] spawn A3A_fnc_squadRecruit; } else {[""Recruit Squad"", ""Only Player Commander has access to this function.""] call A3A_fnc_customHint;};";
+		};
+		class HQ_button_Gsquad: A3A_core_BattleMenuRedButton
+		{
+			idc = 104;
+			text = $STR_antistasi_dialogs_generic_button_yes_text;
+			x = 0.272481 * safezoneW + safezoneX;
+			y = 0.317959 * safezoneH + safezoneY;
+			w = 0.175015 * safezoneW;
+			h = 0.0560125 * safezoneH;
+			action = "closeDialog 0; dismissHcSquads = true";
+		};
+		class HQ_button_Gstatic: A3A_core_BattleMenuRedButton
+		{
+			idc = 105;
+			text = $STR_antistasi_dialogs_generic_button_no_text;
+			x = 0.482498 * safezoneW + safezoneX;
+			y = 0.317959 * safezoneH + safezoneY;
+			w = 0.175015 * safezoneW;
+			h = 0.0560125 * safezoneH;
+			action = "closeDialog 0; dismissHcSquads = nil";
+		};
+	};
+};
+
 class RscTitles {
 	class Default {
        idd = -1;

@@ -47,6 +47,34 @@ if (_limit != -1 && {_newGarrison > _limit}) exitWith {
     [localize "STR_A3A_garrison_header", localize "STR_A3A_garrison_exceed_limit"] call A3A_fnc_customHint;
 };
 
+if (_limit != -1 && {_newGarrison > _limit}) then {
+    createDialog "A3A_hcDismissalDialog";
+    sleep 1;
+    disableSerialization;
+    waitUntil {!dialog or {!isNil "A3A_hcDismissalDialog"}};
+};
+
+// #ifdef UseDoomGUI
+//     ERROR("Disabled due to UseDoomGUI Switch.")
+// #else
+//     createDialog "hcDismissalDialog";
+// #endif
+// sleep 1;
+// disableSerialization;
+// private _display = findDisplay 500;
+
+// if (str (_display) != "no display") then {
+// 	private _childControl = _display displayCtrl 104;
+// 	(_display displayCtrl 105) ctrlSetTooltip format ["Buy a vehicle for this squad for %1 €.", _vehCost];
+// 	_childControl = _display displayCtrl 105;
+// 	(_display displayCtrl 105) ctrlSetTooltip "Barefoot Infantry";
+// };
+
+// waitUntil {(!dialog) or (!isNil "vehQuery")};
+// if ((!dialog) and (isNil "vehQuery")) exitWith { [_formatX, _idFormat, _special, objNull] spawn A3A_fnc_spawnHCGroup }; //spawn group call here
+
+
+
 private _leave = false;
 private _alreadyInGarrison = false;
 {
