@@ -58,6 +58,21 @@ private _result = [] call A3A_fnc_canGoUndercover;
 private _canGoUndercoverValue = _result select 0;
 private _canGoUndercoverReason = _result select 1;
 
+if(!_canGoUndercoverValue && {_canGoUndercoverReason isEqualTo (localize "STR_A3A_goUndercover_error_alreadyundercover_output")}) exitWith {};
+
+if(!_canGoUndercoverValue && {_canGoUndercoverReason isEqualTo (localize "STR_A3A_goUndercover_error_spotting_output")}) exitWith {
+    if !(isNull (objectParent player)) then {
+        (objectParent player) setVariable ["A3A_reported", true, true];
+        {
+            if ((isPlayer _x) && (captive _x)) then
+            {
+                [_x, false] remoteExec["setCaptive"];
+                _x setCaptive false;
+            };
+        } forEach ((crew(objectParent player)) + (assignedCargo(objectParent player)) - [player]);
+    };
+};
+
 private _fnc_checkBaseUndercoverBreak = {
     params ["_secureBases"];
     private _base = [_secureBases, player] call BIS_fnc_nearestPosition;
@@ -124,20 +139,6 @@ private _fnc_checkClothesVehicle = {
     false;
 };
 
-if(!_canGoUndercoverValue) exitWith {
-    if(_canGoUndercoverReason isEqualTo (localize "STR_A3A_goUndercover_error_spotting_output")) then {
-        if !(isNull (objectParent player)) then {
-            (objectParent player) setVariable ["A3A_reported", true, true];
-            {
-                if ((isPlayer _x) && (captive _x)) then
-                {
-                    [_x, false] remoteExec["setCaptive"];
-                    _x setCaptive false;
-                };
-            } forEach ((crew(objectParent player)) + (assignedCargo(objectParent player)) - [player]);
-        };
-    };
-};
 
 private _layer = ["A3A_infoCenter"] call BIS_fnc_rscLayer;
 [(localize "STR_info_bar_undercover_on"), 0, 0, 4, 0, 0, _layer] spawn bis_fnc_dynamicText;
@@ -282,7 +283,7 @@ while {_reason isEqualTo -1} do
     };
 };
 
-Debug_1("Final undercover break reason: %1", _reason);
+Info_1("Final undercover break reason: %1", _reason);
 
 if (captive player) then {
     [player, false] remoteExec["setCaptive"];
