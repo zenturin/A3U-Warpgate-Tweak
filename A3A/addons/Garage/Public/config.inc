@@ -72,7 +72,7 @@ HR_GRG_fnc_vehInit = {
     _this setVariable ["ownerX",getPlayerUID player,true];
     [_this, TeamPlayer] call A3A_fnc_AIVEHinit;
     if (_this in arrayCivVeh) then {
-        _this setVariable ["carDemoBlock", true, true];
+        _this setVariable ["A3A_carDemoBlock", true, true];
     };
 }; //is passed vehicle as _this
 HR_GRG_onOpenEvent = {

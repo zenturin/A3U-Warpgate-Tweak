@@ -51,7 +51,7 @@ private _civVehicles = vehicles select {
     {speed _x < 1 && 
     {count (crew _x) == 0 && 
     {side _x != teamPlayer && 
-    {!(_x getVariable ["carDemoBlock", false])
+    {!(_x getVariable ["A3A_carDemoBlock", false])
 }}}}}}};
 
 if (count _civVehicles == 0) exitWith {
