@@ -49,6 +49,12 @@ private _text = "";
 private _sideName = _faction get "name";
 private _intelContent = "";
 
+private _fnc_prepareTraderQuest = {
+    isTraderQuestAssigned = true;
+    publicVariable "isTraderQuestAssigned";
+    [] remoteExec ["SCRT_fnc_trader_prepareTraderQuest", 2];
+};
+
 switch (true) do {
     case (!isTraderQuestCompleted && {!isTraderQuestAssigned}): {
         private _thresholds = createHashMapFromArray [
@@ -58,9 +64,7 @@ switch (true) do {
         ];
 
         if (random 100 < (_thresholds get _intelType)) then {
-            isTraderQuestAssigned = true;
-            publicVariable "isTraderQuestAssigned";
-            [] remoteExec ["SCRT_fnc_trader_prepareTraderQuest", 2];
+            [] call _fnc_prepareTraderQuest;
             _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
         } else {
             [0, 100] remoteExec ["A3A_fnc_resourcesFIA",2];
@@ -154,9 +158,7 @@ switch (true) do {
             case (DISCOUNT):
             {
                 if (!isTraderQuestCompleted) then {
-                    isTraderQuestAssigned = true;
-                    publicVariable "isTraderQuestAssigned";
-                    [] remoteExec ["SCRT_fnc_trader_prepareTraderQuest", 2];
+                    [] call _fnc_prepareTraderQuest;
                     _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
                 } else {
                     private _discount = traderDiscount + 0.01;
@@ -232,9 +234,7 @@ switch (true) do {
             case (DISCOUNT):
             {
                 if (!isTraderQuestCompleted) then {
-                    isTraderQuestAssigned = true;
-                    publicVariable "isTraderQuestAssigned";
-                    [] remoteExec ["SCRT_fnc_trader_prepareTraderQuest", 2];
+                    [] call _fnc_prepareTraderQuest;
                     _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
                 } else {
                     private _discount = traderDiscount + 0.05;
@@ -300,9 +300,7 @@ switch (true) do {
             case (DISCOUNT):
             {
                 if (!isTraderQuestCompleted) then {
-                    isTraderQuestAssigned = true;
-                    publicVariable "isTraderQuestAssigned";
-                    [] remoteExec ["SCRT_fnc_trader_prepareTraderQuest", 2];
+                    [] call _fnc_prepareTraderQuest;
                     _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
                 } else {
                     private _discount = traderDiscount + 0.1;

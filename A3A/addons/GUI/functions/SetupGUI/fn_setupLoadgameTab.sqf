@@ -86,7 +86,8 @@ switch (_mode) do
         if ((cbChecked _newGameCtrl and !cbChecked _copyGameCtrl) or !_sameMap) then { _factions = [[], [], []] };
         if (_factions isNotEqualTo (_display getVariable "savedFactions")) then {
             _display setVariable ["savedFactions", _factions];
-            ["fillFactions", [true]] call A3A_fnc_setupFactionsTab;
+            ["fillFactions"] call A3A_fnc_setupFactionsTab;
+            ["fillContent"] call A3A_fnc_setupContentTab;
         };
 
         // If it's not a new game or load params or copy game is checked, load params
@@ -193,13 +194,14 @@ switch (_mode) do
         _saveData set ["useNewNamespace", true];
 
         // Factions tab: [factions, addonvics, DLC]
-        private _factionData = ["getFactions"] call A3A_fnc_setupFactionsTab;
-        _saveData set ["factions", _factionData#0];
-        _saveData set ["addonVics", _factionData#1];
-        _saveData set ["DLC", _factionData#2];
+        private _factions = ["getFactions"] call A3A_fnc_setupFactionsTab;
+        private _contentData = ["getContent"] call A3A_fnc_setupContentTab;
+        _saveData set ["factions", _factions];
+        _saveData set ["addonVics", _contentData#0];
+        _saveData set ["DLC", _contentData#1];
 
-        private _occName = getText (A3A_SETUP_CONFIGFILE/"A3A"/"Templates"/_factionData#0#0/"name");
-        private _invName = getText (A3A_SETUP_CONFIGFILE/"A3A"/"Templates"/_factionData#0#1/"name");
+        private _occName = getText (A3A_SETUP_CONFIGFILE/"A3A"/"Templates"/_factions#0/"name");
+        private _invName = getText (A3A_SETUP_CONFIGFILE/"A3A"/"Templates"/_factions#1/"name");
         _confirmText = _confirmText + endl + format [localize "STR_antistasi_dialogs_setup_confirm_occ_inv", _occName, _invName];
 
         // Params tab: Array of [name, value]

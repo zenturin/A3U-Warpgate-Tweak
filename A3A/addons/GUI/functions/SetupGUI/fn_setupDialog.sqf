@@ -54,7 +54,9 @@ switch (_mode) do
     case ("onLoad"):
     {
         if (isNil "A3A_setup_saveData") exitWith { Error("onLoad somehow called without save data") };
-        ["fillFactions", [true]] call A3A_fnc_setupFactionsTab;
+        ["fillFactions"] call A3A_fnc_setupFactionsTab;
+        ["fillContent"] call A3A_fnc_setupContentTab; 
+
         ["setSaveData"] call A3A_fnc_setupLoadgameTab;
         ["switchTab", ["loadgame"]] call A3A_fnc_setupDialog;
     };
@@ -84,20 +86,20 @@ switch (_mode) do
             case "loadgame": { A3A_IDC_SETUP_LOADGAMETAB };
             case "factions": { A3A_IDC_SETUP_FACTIONSTAB };
             case "params": { A3A_IDC_SETUP_PARAMSTAB };
-            case "rivals": { A3A_IDC_SETUP_RIVALSTAB };
+            case "content": { A3A_IDC_SETUP_CONTENTTAB };
         };
 
         {
             private _ctrl = _display displayCtrl _x;
             _ctrl ctrlShow (_x == _selectedTabIDC);
-        } forEach [A3A_IDC_SETUP_LOADGAMETAB, A3A_IDC_SETUP_FACTIONSTAB, A3A_IDC_SETUP_PARAMSTAB, A3A_IDC_SETUP_RIVALSTAB];
+        } forEach [A3A_IDC_SETUP_LOADGAMETAB, A3A_IDC_SETUP_FACTIONSTAB, A3A_IDC_SETUP_PARAMSTAB, A3A_IDC_SETUP_CONTENTTAB];
 
         switch (_selectedTab) do
         {
             case ("loadgame"): { ["update"] call A3A_fnc_setupLoadgameTab };
             case ("factions"): { ["update"] call A3A_fnc_setupFactionsTab };
             case ("params"): { ["update"] call A3A_fnc_setupParamsTab };
-            case ("rivals"): { ["update"] call A3A_fnc_setupRivalsTab };
+            case ("content"): { ["update"] call A3A_fnc_setupContentTab };
         };
     };
 
@@ -116,6 +118,7 @@ switch (_mode) do
             ,["chernarus_winter", "Chernarus (W)"]
             ,["Enoch", "Livonia"]
             ,["tem_anizay", "Anizay"]
+            ,["cup_chernarus_A3", "Chernarus 2020"]
         ];
         {
             private _realMap = _x get "map";

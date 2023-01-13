@@ -352,30 +352,24 @@ Debug_1("Extra equip mod paths: %1", A3A_extraEquipMods);
 //         TEMPLATE LOADING        ///
 //////////////////////////////////////
 Info("Reading templates");
+
 {
-    private _side = [west, east, resistance, civilian] # _forEachIndex;
+    private _side = [west, east, resistance, civilian, east] # _forEachIndex;
     Info_2("Loading template %1 for side %2", _x, _side);
 
 	private _cfg = configFile/"A3A"/"Templates"/_x;
 	private _basepath = getText (_cfg/"basepath") + "\";
 	private _file = getText (_cfg/"file") + ".sqf";
-    [_basepath + _file, _side] call A3A_fnc_compatibilityLoadFaction;
 
-    private _type = ["Occ", "Inv", "Reb", "Civ"] # _forEachIndex;
-    missionNamespace setVariable ["A3A_"+_type+"_template", _x];			// don't actually need this atm, but whatever
-
-} forEach (_saveData get "factions");
-
-if (areRivalsEnabled) then {
-	private _rivalsFile = [A3A_Reb_template] call SCRT_fnc_rivals_getTemplateName;
-	if (!isNil "_rivalsFile") then {
-		[_rivalsFile] call A3A_fnc_loadRivals;
+	if (_forEachIndex isNotEqualTo 4) then {
+		[_basepath + _file, _side] call A3A_fnc_compatibilityLoadFaction;
 	} else {
-		Error("Rivals are not loaded for some reason, this could lead to some issues during mission run.");
+		[_basepath + _file] call A3A_fnc_loadRivals;
 	};
-} else {
-	missionNamespace setVariable ["A3A_faction_riv", createHashMap];
-};
+
+    private _type = ["Occ", "Inv", "Reb", "Civ", "Riv"] # _forEachIndex;
+    missionNamespace setVariable ["A3A_"+_type+"_template", _x];			// don't actually need this atm, but whatever
+} forEach (_saveData get "factions");
 
 {
 	private _cfg = configFile/"A3A"/"AddonVics"/_x;
