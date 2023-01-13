@@ -82,8 +82,12 @@
                 <Original>Eastern European civilians.</Original>
                 <Russian>Восточноевропейские гражданские.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_takistan">
+                <Original>Takistan civilians.</Original>
+                <Russian>Такистанские гражданские.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_csat">
-                <Original>The Canton Protocol Strategic Alliance Treaty (CSAT).\nEastern alliance that relies on mix of Russian-made equipment and it's own developments.</Original>
+                <Original>Canton Protocol Strategic Alliance Treaty (CSAT).\nEastern alliance that relies on mix of Russian-made equipment and it's own developments.</Original>
                 <Russian>Стратегический Альянс по Договору Гуанчжоу (CSAT).\nВосточный альянс, делающий ставку на сочетание техники российского производства и собственных разработок.</Russian>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_nato">
@@ -91,12 +95,20 @@
                 <Russian>Организация Североатлантического договора (НАТО).\nМногонациональная западная фракция, имеющая множество унифицированных транспортных платформ и широкую номенклатуру управляемых боеприпасов.</Russian>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_aaf">
-                <Original>The Altis Armed Forces (AAF).\nSmall, but highly motivated force which effectively uses a wide range of decomissioned and outdated yet still effective Western equipment.</Original>
+                <Original>Altis Armed Forces (AAF).\nSmall, but highly motivated force which effectively uses a wide range of decomissioned and outdated yet still effective Western equipment.</Original>
                 <Russian>Вооруженные силы Алтиса (AAF).\nНебольшая, но высокомотивированная сила, эффективно использующая широкий спектр хоть и выведенной из эксплуатации и устаревшей, но все еще эффективной западной номеклатуры вооружений.</Russian>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_aaf_3cbf">
-                <Original>The Altis Armed Forces (AAF).\nSmall, but highly motivated force which effectively uses a wide range of decomissioned and outdated yet still effective equipment around the world.</Original>
+                <Original>Altis Armed Forces (AAF).\nSmall, but highly motivated force which effectively uses a wide range of decomissioned and outdated yet still effective equipment around the world.</Original>
                 <Russian>Вооруженные силы Алтиса (AAF).\nНебольшая, но высокомотивированная сила, эффективно использующая широкий спектр хоть и выведенной из эксплуатации и устаревшей, но все еще эффективной номеклатуры вооружений со всего света.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_tka">
+                <Original>Takistan Army (TKA).\nA mix of military and paramilitary forces using dated equipment all around the world.</Original>
+                <Russian>Армия Такистана (TKA).\nСочетание военных и парамилитари-сил, использующих, в основном, устаревшее вооружение со всего мира.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_ard">
+                <Original>Ardistan Army (ARD).\nArmy of former Soviet client state still using a lot of their equipment.</Original>
+                <Russian>Армия Ардистана (ARD).\nАрмия одного из бывших саттелитов Советского Союза, до сих использующая его вооружение и экипировку.</Russian>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_fia">
                 <Original>Freedom and Independence Army (FIA).\nStandard issue guerilla faction. Smoothbore rifles and a little bit of courage will pave your way to freedom.</Original>
@@ -149,6 +161,14 @@
             <Key ID="STR_A3AP_setupFactionsTab_ldf">
                 <Original>Livonian Defense Forces.\nFormer Warsaw Pact country on it's path on integration with NATO thus adopting a lot of Western equipment while still maintaing older Soviet weaponry.</Original>
                 <Russian>Силы Обороны Ливонии.\nБывшая страна Варшавского договора находится на пути к интеграции с НАТО, таким образом переняв много западного оборудования, сохраняя при этом старое советское вооружение.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_exegermenos">
+                <Original>Exegerménos.\nStandard enemy guerilla faction.</Original>
+                <Russian>Exegerménos.\nСтандартная вражеская повстанческая фракция.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_chdkz">
+                <Original>CHDKZ.\nEastern European paramilitary group of people with various background - from criminals and defectors to highly professional mercenaries and soldiers.</Original>
+                <Russian>ЧДКЗ.\nВосточноевропейская военизированная группировка людей с разнообразным прошлым - от преступников и дезертиров до высокопрофессиональных наёмников и солдат.</Russian>
             </Key>
         </Container>
         <Container name="magRepack">

@@ -2900,16 +2900,16 @@
         <Portuguese>Parametros</Portuguese>
         <Chinesesimp>参数</Chinesesimp>
       </Key>
-      <Key ID="STR_antistasi_dialogs_setup_rivals_tab_button">
-        <Original>Rivals</Original>
-        <Czech>Soupeři</Czech>
-        <French>Rivaux</French>
-        <Italian>Rivali</Italian>
-        <Korean>라이벌</Korean>
-        <Russian>Соперники</Russian>
-        <Polish>Rywale</Polish>
-        <Portuguese>Rivais</Portuguese>
-        <Chinesesimp>对手</Chinesesimp>
+      <Key ID="STR_antistasi_dialogs_setup_content_tab_button">
+        <Original>Additional Content</Original>
+        <Czech>Další obsah</Czech>
+        <French>Contenu additionnel</French>
+        <Italian>Contenuto aggiuntivo</Italian>
+        <Korean>추가 콘텐츠</Korean>
+        <Russian>Доп. контент</Russian>
+        <Polish>Dodatkowa zawartość</Polish>
+        <Portuguese>Conteúdo adicional</Portuguese>
+        <Chinesesimp>附加内容</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_setup_saved_games">
         <Original>Saved Games</Original>
@@ -3031,6 +3031,17 @@
         <Polish>Rebelianci</Polish>
         <Portuguese>Insurgentes</Portuguese>
         <Chinesesimp>叛军</Chinesesimp>
+      </Key>
+      <Key ID="STR_antistasi_dialogs_setup_rivals">
+        <Original>Rivals</Original>
+        <Czech>Soupeři</Czech>
+        <French>Rivaux</French>
+        <Italian>Rivali</Italian>
+        <Korean>라이벌</Korean>
+        <Russian>Соперники</Russian>
+        <Polish>Rywale</Polish>
+        <Portuguese>Rivais</Portuguese>
+        <Chinesesimp>对手</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_setup_civilians">
         <Original>Civilians</Original>

@@ -430,11 +430,6 @@ if (_varName in specialVarLoads) then {
             //             case "DEF_HQ": {
             //                 [] spawn A3A_fnc_attackHQ;
             //             };
-            //             case "ENC": {
-            //                 isTraderQuestAssigned = true;
-            //                 publicVariable "isTraderQuestAssigned";
-            //                 [] remoteExec ["SCRT_fnc_trader_prepareTraderQuest", 2];
-            //             };
             //             default {
             //                 [_x,clientOwner,true] call A3A_fnc_missionRequest;
             //             };
