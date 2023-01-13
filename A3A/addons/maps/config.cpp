@@ -35,6 +35,8 @@ class CfgMissions
         A3A_Mission(Napf, $STR_antistasi_mission_info_napf_mapname_text)
         A3A_Mission(blud_vidda, $STR_antistasi_mission_info_vidda_mapname_text)
         A3A_Mission(vt7, $STR_antistasi_mission_info_vt7_mapname_text)
+        A3A_Mission(takistan, $STR_antistasi_mission_info_takistan_mapname_text)
+        A3A_Mission(Tanoa, $STR_antistasi_mission_info_tanoa_mapname_text)
 #if __A3_DEBUG__
         A3A_Mission(Stratis, $STR_antistasi_mission_info_Stratis_mapname_text)
 #endif

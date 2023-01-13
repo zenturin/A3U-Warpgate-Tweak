@@ -9,4 +9,6 @@ class mapInfo {
     #include "Antistasi_Napf.Napf\mapInfo.hpp"
     #include "Antistasi_blud_vidda.blud_vidda\mapInfo.hpp"
     #include "Antistasi_vt7.vt7\mapInfo.hpp"
+    #include "Antistasi_takistan.takistan\mapInfo.hpp"
+    #include "Antistasi_Tanoa.Tanoa\mapInfo.hpp"
 };

@@ -241,6 +241,30 @@
         <German>Antistasi Plus - Nordvakt</German>
         <Russian>Antistasi Plus - Северный Дозор</Russian>
       </Key>
+      <Key ID="STR_antistasi_mission_info_takistan_mapname_text">
+        <Original>Antistasi Plus - Takistan</Original>
+        <Russian>Antistasi Plus - Такистан</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_takistan_mapname_short_text">
+        <Original>Antistasi Plus - Takistan</Original>
+        <Russian>Antistasi Plus - Такистан</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_takistan_blurb_text">
+        <Original>We are not your kind of people.</Original>
+        <Russian>Мы не похожи на вас.</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_tanoa_mapname_short_text">
+        <Original>Antistasi Plus - Horizon Islands</Original>
+        <Russian>Antistasi Plus - Острова Горизонта</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_tanoa_mapname_text">
+        <Original>Antistasi Plus - Horizon Islands</Original>
+        <Russian>Antistasi Plus - Острова Горизонта</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_tanoa_blurb_text">
+        <Original>A pack of old men in a job where people die young.</Original>
+        <Russian>Стая стариков там, где люди умирают молодыми.</Russian>
+      </Key>
     </Container>
   </Package>
 </Project>

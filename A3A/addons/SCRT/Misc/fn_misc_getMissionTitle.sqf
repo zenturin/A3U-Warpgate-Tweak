@@ -35,6 +35,14 @@ switch (toLowerANSI worldName) do {
 	{
 	    _title = localize "STR_antistasi_mission_info_sefrouramal_mapname_text";
 	};
+	case "takistan":
+	{
+	    _title = localize "STR_antistasi_mission_info_takistan_mapname_text";
+	};
+	case "tanoa":
+	{
+	    _title = localize "STR_antistasi_mission_info_tanoa_mapname_text";
+	};
 	default {
 	    _title = "Antistasi Plus";
 	};
