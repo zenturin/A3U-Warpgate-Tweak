@@ -7,6 +7,13 @@ class Params
         texts[] = {$STR_params_game_mode_1,$STR_params_game_mode_2,$STR_params_game_mode_3};
         default = 1;
     };
+    class areRivalsEnabled
+    {
+        title = $STR_params_areRivalsEnabled;
+        values[] = {0,1};
+        texts[] = {$STR_params_areRivalsEnabled_0, $STR_antistasi_dialogs_generic_button_yes_text};
+        default = 1;
+    };
     class autoSave
     {
         title = $STR_params_autosave_title;
@@ -239,13 +246,6 @@ class Params
         title = $STR_params_randomEvents;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
-        default = 1;
-    };
-    class areRivalsEnabled
-    {
-        title = $STR_params_areRivalsEnabled;
-        values[] = {0,1};
-        texts[] = {$STR_params_areRivalsEnabled_0, $STR_antistasi_dialogs_generic_button_yes_text};
         default = 1;
     };
     class rivalsDifficulty
