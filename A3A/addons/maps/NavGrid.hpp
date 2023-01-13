@@ -9,4 +9,6 @@ class NavGrid {
     Napf = QPATHTOFOLDER(Antistasi_Napf.Napf\navGrid.sqf);
     blud_vidda = QPATHTOFOLDER(Antistasi_blud_vidda.blud_vidda\navGrid.sqf);
     vt7 = QPATHTOFOLDER(Antistasi_vt7.vt7\navGrid.sqf);
+    takistan = QPATHTOFOLDER(Antistasi_takistan.takistan\navGrid.sqf);
+    Tanoa = QPATHTOFOLDER(Antistasi_Tanoa.Tanoa\navGrid.sqf);
 };
