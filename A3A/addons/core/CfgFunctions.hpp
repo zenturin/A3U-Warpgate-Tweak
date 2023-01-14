@@ -176,7 +176,6 @@ class CfgFunctions
             class unlockVehicle {};
             class updateRebelStatics {};
             class zoneCheck {};
-            class setIdentity {};
         };
 
         class Collections {

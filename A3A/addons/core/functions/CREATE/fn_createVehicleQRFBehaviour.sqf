@@ -18,7 +18,7 @@
 
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
-params ["_vehicle", "_crewGroup", "_cargoGroup", "_posDestination", "_markerOrigin", "_landPosBlacklist", ["_isAirdrop", false]];
+params ["_vehicle", "_crewGroup", "_cargoGroup", "_posDestination", "_markerOrigin", "_landPosBlacklist", ["_isAirdrop", false], "_resPool"];
 
 
 private _vehType = typeof _vehicle;
@@ -58,7 +58,7 @@ if (_vehicle isKindOf "Air") then
     if (_vehType in FactionGet(all,"vehiclesTransportAir") && {!(_vehicle isKindOf "Helicopter") && {_isAirdrop}}) exitWith 
     {
         //Dropship with para units and airdrop veh
-        [_vehicle, _cargoGroup, _posDestination, _markerOrigin] spawn SCRT_fnc_common_paradropVehicle;
+        [_vehicle, _cargoGroup, _posDestination, _markerOrigin, _resPool] spawn SCRT_fnc_common_paradropVehicle;
     };
     if (_vehType in FactionGet(all,"vehiclesTransportAir")) exitWith
     {
