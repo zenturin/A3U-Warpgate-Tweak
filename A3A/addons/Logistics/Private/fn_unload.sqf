@@ -86,8 +86,8 @@ if ((_node#0) isEqualType []) then {
     [_vehicle , _node] call _updateList;
 };
 
-//prevent from being damaged/destroyed on unload
-if (isDamageAllowed _cargo) then {
+private _isLootcrate = (typeOf _cargo) isEqualTo (A3A_faction_reb get "lootCrate");
+if (_isLootcrate) then {
     _cargo allowDamage false;
 };
 
@@ -136,14 +136,17 @@ if (isNull _cargo || isNull _vehicle) exitWith {};//vehicle or cargo deleted
 //unlock seats
 [_cargo, false] remoteExec ["A3A_Logistics_fnc_toggleLock", 0, "A3A_Logistics_toggleLock" + _objStringCargo];
 [_vehicle, false, _seats] remoteExec ["A3A_Logistics_fnc_toggleLock", 0, "A3A_Logistics_toggleLock" + _objStringVehicle];
-[_cargo] spawn {
-    params["_cargo"];
-    if (!isNil "_cargo" && !(isDamageAllowed _cargo)) then {
-        private _timeOut = time + 10;
-        waitUntil {_timeout < time};
-        _cargo allowDamage true;
+
+if (_isLootcrate) then {
+    _nil = [_cargo] spawn {
+        params["_cargo"];
+        if (!isNil "_cargo" && {alive _cargo}) then {
+            private _timeOut = time + 10;
+            waitUntil {_timeOut < time};
+            _cargo allowDamage true;
+        };
+        terminate _thisScript;
     };
-    terminate _thisScript;
 };
 
 //update list
