@@ -1,15 +1,27 @@
 # Changelog
 
-## 2.0.3
+## 2.1
+### Additions
+- Tanoa support
+- Takistan support
+- Multiple Rivals factions per modset support, UI changes to support it
+- (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
+- (3CB Factions) Takistan civilians
+- (Vanilla) NATO Tropical faction 
+- (Vanilla) Syndikat rival faction
+
 ### Changes
 - Community Version 3.1 integration (important bugfixes and tweaks)
-- Increased durability of loot crate
+- Increased durability of loot crates, slight rework of load/unload invulnerability
 - Seaports will be used for airspace control
 - Fixed Rebel Loadout arsenal finite items usage exploit
 - Fixed ability to to do big attacks for factions that were defeated before
 - Fixed Destroy Artillery minor error about event handler
 - Fixed Rivals tasks inability to work if there are no buildings in town
+- Fixed logic pitfall where player's civilian car could be bomb-planted by Rivials in their activity zone
+- Fixed rebel AA sell price exploit
 - Fixed some missing strings, typos, localization errors
+- Reduced probability of Mechanized Airborne QRF
 
 ## 2.0.2
 ### Changes
