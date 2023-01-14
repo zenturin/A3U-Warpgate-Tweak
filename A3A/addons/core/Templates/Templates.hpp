@@ -24,7 +24,7 @@ class Templates
         basepath = QPATHTOFOLDER(Templates\Templates\WS);
         name = "Tura";
         file = "WS_Reb_Tura";
-        maps[] = {"SefrouRamal"};
+        maps[] = {"SefrouRamal", "takistan"};
         forceDLC[] = {"ws"};
         description = $STR_A3AP_setupFactionsTab_ws_tura;
     };
@@ -35,6 +35,7 @@ class Templates
         flagTexture = "\A3\Data_F\Flags\Flag_red_CO.paa";
         name = "WS Exegerménos";
         file = "WS_Riv_Exegermenos";
+        description = $STR_A3AP_setupFactionsTab_exegermenos;
     };
 
     // ************************************** Vanilla *******************************************************
@@ -109,6 +110,7 @@ class Templates
         flagTexture = "\A3\Data_F\Flags\Flag_red_CO.paa";
         name = "A3 Exegerménos";
         file = "Vanilla_Riv_Exegermenos";
+        description = $STR_A3AP_setupFactionsTab_exegermenos;
     };
 
     class Vanilla_Civ : Vanilla_Base
@@ -198,6 +200,7 @@ class Templates
     //     flagTexture = "A3_Opf\Data_F_Opf\Flags\flag_ChDKZ_CO.paa";
     //     name = "A3 CHDKZ";
     //     file = "Aegis_Riv_CHDKZ";
+    //     description = $STR_A3AP_setupFactionsTab_chdkz;
     // };
 
     // class Aegis_Civ : Aegis_Base
@@ -289,6 +292,7 @@ class Templates
         logo = "rhsgref\addons\rhsgref_main\data\rhs_logo_ca.paa";
         name = "RHS CHDKZ";
         file = "RHS_Riv_CHDKZ";
+        description = $STR_A3AP_setupFactionsTab_chdkz;
     };
 
     class RHS_Civ : RHS_Base
@@ -308,7 +312,7 @@ class Templates
         requiredAddons[] = {"UK3CB_Factions_Vehicles_SUV"};
         logo = "UK3CB_Factions\addons\UK3CB_Factions_Common\editor\logo_3cb_ca.paa";
         basepath = QPATHTOFOLDER(Templates\Templates\3CBF);
-        priority = 30;
+        priority = 40;
         equipFlags[] = {"specialRHS"};
     };
 
@@ -345,6 +349,7 @@ class Templates
         flagTexture = "\rhsgref\addons\rhsgref_main\data\flag_chdkz_co.paa";
         name = "3CBF CHDKZ";
         file = "3CBF_Riv_CHDKZ";
+        description = $STR_A3AP_setupFactionsTab_chdkz;
     };
 
     class 3CBF_CHC : 3CBF_Base
@@ -354,6 +359,15 @@ class Templates
         name = "3CBF Chernarus";
         file = "3CBF_Civ_CHC";
         description = $STR_A3AP_setupFactionsTab_easterneuropean;
+    };
+
+    class 3CBF_TAK: 3CBF_Base
+    {
+        side = "Civ";
+        flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_TKA\Flag\tka_flag_co.paa";
+        name = "3CBF Takistan";
+        file = "3CBF_Civ_TAK";
+        description = $STR_A3AP_setupFactionsTab_takistan;
     };
 
     class 3CBF_LDF : 3CBF_Base
@@ -376,6 +390,17 @@ class Templates
         climate[] = {"temperate"};
     };
 
+    class 3CBF_HIDF : 3CBF_Base
+    {
+        side = "Occ";
+        flagTexture = "a3\data_f_exp\flags\flag_tanoa_co.paa";
+        name = "3CBF HIDF";
+        file = "3CBF_AI_HIDF";
+        description = $STR_A3AP_setupFactionsTab_hil;
+        maps[] = {"tanoa"};
+        climate[] = {"tropical"};
+    };
+
     class 3CBF_AAF : 3CBF_Base
     {
         side = "Occ";
@@ -385,6 +410,28 @@ class Templates
         maps[] = {"altis", "malden"};
         climate[] = {"arid"};
         description = $STR_A3AP_setupFactionsTab_aaf_3cbf;
+    };
+
+    class 3CBF_TKA : 3CBF_Base
+    {
+        side = "Occ";
+        flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_TKA\Flag\tka_flag_co.paa";
+        name = "3CBF TKA";
+        file = "3CBF_AI_TKA";
+        maps[] = {"takistan";
+        climate[] = {"arid"};
+        description = $STR_A3AP_setupFactionsTab_tka;
+    };
+
+    class 3CBF_ARD : 3CBF_Base
+    {
+        side = "Inv";
+        flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_ARD\Flag\ARD_flag_co.paa";
+        name = "3CBF ARD";
+        file = "3CBF_AI_ARD";
+        maps[] = {"takistan"};
+        climate[] = {"arid"};
+        description = $STR_A3AP_setupFactionsTab_ard;
     };
 
     class 3CBF_AFRF : 3CBF_Base
