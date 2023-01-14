@@ -162,6 +162,10 @@
                 <Original>Livonian Defense Forces.\nFormer Warsaw Pact country on it's path on integration with NATO thus adopting a lot of Western equipment while still maintaing older Soviet weaponry.</Original>
                 <Russian>Силы Обороны Ливонии.\nБывшая страна Варшавского договора находится на пути к интеграции с НАТО, таким образом переняв много западного оборудования, сохраняя при этом старое советское вооружение.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_hil">
+                <Original>Horizon Islands Defence Force (HIDF).\nArmed forces of Horizon Islands Republic, they use a lot of surplus NATO equipment.</Original>
+                <Russian>Силы Обороны Островов Горизонта (HIDF).\nВооруженные силы Республики Островов Горизонта, использующие множество бывшего в употреблении вооружения и снаряжения стран НАТО.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_exegermenos">
                 <Original>Exegerménos.\nStandard enemy guerilla faction.</Original>
                 <Russian>Exegerménos.\nСтандартная вражеская повстанческая фракция.</Russian>
