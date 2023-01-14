@@ -73,8 +73,8 @@ if ((_node#0) isEqualType []) then {
     [_vehicle , _node] call _updateList;
 };
 
-//prevent from being damaged/destroyed on unload
-if (isDamageAllowed _cargo) then {
+private _isLootcrate = (typeOf _cargo) isEqualTo (A3A_faction_reb get "lootCrate");
+if (_isLootcrate) then {
     _cargo allowDamage false;
 };
 
@@ -130,14 +130,17 @@ _vehicle setVariable ["Cargo", _loadedCargo, true];
 //misc
 [_cargo] call A3A_Logistics_fnc_toggleAceActions;
 [_vehicle, _cargo, nil, _instant] call A3A_Logistics_fnc_addOrRemoveObjectMass;
-[_cargo] spawn {
-    params["_cargo"];
-    if (!isNil "_cargo" && !(isDamageAllowed _cargo)) then {
-        private _timeOut = time + 10;
-        waitUntil {_timeout < time};
-        _cargo allowDamage true;
+
+if (_isLootcrate) then {
+    _nil = [_cargo] spawn {
+        params["_cargo"];
+        if (!isNil "_cargo" && {alive _cargo}) then {
+            private _timeOut = time + 10;
+            waitUntil {_timeOut < time};
+            _cargo allowDamage true;
+        };
+        terminate _thisScript;
     };
-    terminate _thisScript;
 };
 
 if (_weapon) then {
