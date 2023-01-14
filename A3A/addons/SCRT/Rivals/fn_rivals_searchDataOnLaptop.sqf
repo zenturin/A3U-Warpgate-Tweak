@@ -86,7 +86,7 @@ if(_wasCancelled) exitWith {
 _laptop setObjectTextureGlobal [1, QPATHTOFOLDER(Pictures\Intel\laptop_data.paa)];
 _caller setVariable ["laptopSearchDone", true];
 
-[] call SCRT_fnc_rivals_selectIntel;
+[] remoteExecCall ["SCRT_fnc_rivals_selectIntel", 2];
 
 private _timeOut = time + 120;
 
