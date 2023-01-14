@@ -26,14 +26,14 @@ FIX_LINE_NUMBERS()
 
 params
 [
-    ["_vehicle", objNull, [objNull]],
+    ["_plane", objNull, [objNull]],
     ["_groupJumper", grpNull, [grpNull]],
     ["_target", "", ["", []]],
     ["_originMarker", "", [""]],
-    ["_isReinforcement", false, [false]]
+    ["_resPool", nil, [""]]
 ];
 
-private _groupPilot = group driver _vehicle;
+private _groupPilot = group driver _plane;
 {
     _x disableAI "TARGET";
     _x disableAI "AUTOTARGET";
@@ -50,10 +50,10 @@ private _targetPosition = if(_target isEqualType "") then {getMarkerPos _target}
 private _originPosition = getMarkerPos _originMarker;
 
 private _entryDistance = 350;
-_vehicle flyInHeight 250;
-_vehicle setCollisionLight false;
-_vehicle setDir (_originPosition getDir _targetPosition);
-_vehicle setVelocityModelSpace [0, 100, 0];
+_plane flyInHeight 250;
+_plane setCollisionLight false;
+_plane setDir (_originPosition getDir _targetPosition);
+_plane setVelocityModelSpace [0, 100, 0];
 
 private _normalAngle = (_originPosition getDir _targetPosition);
 private _attackAngle = (random 120) - 60;
@@ -83,15 +83,15 @@ _wp2 setWaypointType "MOVE";
 _wp2 setWaypointSpeed "FULL";
 _wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList"];
 
-waitUntil {sleep 1; (_vehicle getVariable ["dropPosReached", false]) || (!alive _vehicle) || (!canMove _vehicle)};
+waitUntil {sleep 1; (_plane getVariable ["dropPosReached", false]) || {!alive _plane || {!canMove _plane}}};
 
-if(_vehicle getVariable ["dropPosReached", false] && {!(_vehicle getVariable ["planeDead", false])}) then {
+if(_plane getVariable ["dropPosReached", false] && {!(_plane getVariable ["planeDead", false])}) then {
     Debug("Drop pos reached");
-    _vehicle setCollisionLight true;
+    _plane setCollisionLight true;
     {
         unAssignVehicle _x;
         //Move them into alternating left/right positions, so their parachutes are less likely to kill each other
-        private _pos = if (_forEachIndex % 2 == 0) then {_vehicle modeltoWorld [7, -20, -5]} else {_vehicle modeltoWorld [-7, -20, -5]};
+        private _pos = if (_forEachIndex % 2 == 0) then {_plane modeltoWorld [7, -20, -5]} else {_plane modeltoWorld [-7, -20, -5]};
         _x setPos _pos;
         _x spawn {
             waitUntil {sleep 0.25; ((getPos _this) select 2) < 150};
@@ -105,11 +105,11 @@ if(_vehicle getVariable ["dropPosReached", false] && {!(_vehicle getVariable ["p
         sleep 0.25;
   	} forEach units _groupJumper;
     
-    private _side = side _vehicle;
+    private _side = side _plane;
     private _faction = Faction(_side);
 
-    private _dir = getDir _vehicle;
-    private _initialPos = (getPos _vehicle) vectorAdd [0, 0, -6.5];
+    private _dir = getDir _plane;
+    private _initialPos = (getPos _plane) vectorAdd [0, 0, -6.5];
     private _apcClass =  selectRandom (_faction get "vehiclesAirborne");
 
     private _apcData = [_initialPos, _dir, _apcClass, _side] call A3A_fnc_spawnVehicle;
@@ -117,17 +117,17 @@ if(_vehicle getVariable ["dropPosReached", false] && {!(_vehicle getVariable ["p
 	private _apcCrew = _apcData select 1;
 	private _apcGroup = _apcData select 2;
 
-    _vehicle setVariable ["apc", _apc, true]; //broadcast in case of HC
+    _plane setVariable ["apc", _apc, true]; //broadcast in case of HC
 
     {
         _x disableAI "TARGET";
         _x disableAI "AUTOTARGET";
     } forEach _apcCrew;
 
-    [_apc, _side] call A3A_fnc_AIVEHinit;
+    [_apc, _side, _resPool] call A3A_fnc_AIVEHinit;
 
-    [_apc, _vehicle, _groupJumper, _targetPosition, _apcCrew, _apcGroup] spawn {
-        params ["_apc", "_vehicle", "_groupJumper", "_targetPosition", "_apcCrew", "_apcGroup"];
+    [_apc, _plane, _groupJumper, _targetPosition, _apcCrew, _apcGroup] spawn {
+        params ["_apc", "_plane", "_groupJumper", "_targetPosition", "_apcCrew", "_apcGroup"];
 
         waitUntil {((getPos _apc) select 2) < 150};
 
@@ -167,6 +167,7 @@ if(_vehicle getVariable ["dropPosReached", false] && {!(_vehicle getVariable ["p
             _x enableAI "AUTOTARGET";
         } forEach _apcCrew;
 
+        [_apc] call A3A_fnc_smokeCoverAuto;
         
         {
             unassignVehicle _x;
@@ -182,11 +183,13 @@ if(_vehicle getVariable ["dropPosReached", false] && {!(_vehicle getVariable ["p
 
         private _wpRegroup = _apcGroup addWaypoint [_posLeader,0];
         _wpRegroup setWaypointType "MOVE";
+        _wpRegroup setWaypointBehaviour "AWARE";
         _wpRegroup setWaypointSpeed "FULL";
         _wpRegroup setWaypointStatements ["true", "if !(local this) exitWith {}; (group this) spawn A3A_fnc_attackDrillAI"];
         private _wpCharge = _groupJumper addWaypoint [_targetPosition, 25];
         _wpCharge setWaypointType "MOVE";
         _wpCharge setWaypointBehaviour "COMBAT";
+        _wpCharge setWaypointCombatMode "RED";
         _wpCharge setWaypointStatements ["true","if !(local this) exitWith {}; {if (side _x != side this) then {this reveal [_x,4]}} forEach allUnits"];
         private _wpClear = _groupJumper addWaypoint [_targetPosition, 2];
         _wpClear setWaypointType "SAD";
