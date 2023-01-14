@@ -22,6 +22,7 @@
 - Fixed rebel AA sell price exploit
 - Fixed some missing strings, typos, localization errors
 - Reduced probability of Mechanized Airborne QRF
+- Improved Mechanized Airborne QRF attacking behaviour
 
 ## 2.0.2
 ### Changes

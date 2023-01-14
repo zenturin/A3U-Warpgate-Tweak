@@ -181,17 +181,15 @@ if(_plane getVariable ["dropPosReached", false] && {!(_plane getVariable ["plane
         private _posLeader = position ((units _groupJumper) select 0);
         _posLeader set [2,0];
 
-        private _wpRegroup = _apcGroup addWaypoint [_posLeader,0];
-        _wpRegroup setWaypointType "MOVE";
-        _wpRegroup setWaypointBehaviour "AWARE";
-        _wpRegroup setWaypointSpeed "FULL";
-        _wpRegroup setWaypointStatements ["true", "if !(local this) exitWith {}; (group this) spawn A3A_fnc_attackDrillAI"];
-        private _wpCharge = _groupJumper addWaypoint [_targetPosition, 25];
-        _wpCharge setWaypointType "MOVE";
-        _wpCharge setWaypointBehaviour "COMBAT";
-        _wpCharge setWaypointCombatMode "RED";
-        _wpCharge setWaypointStatements ["true","if !(local this) exitWith {}; {if (side _x != side this) then {this reveal [_x,4]}} forEach allUnits"];
-        private _wpClear = _groupJumper addWaypoint [_targetPosition, 2];
-        _wpClear setWaypointType "SAD";
+        private _wp1 = _groupJumper addWaypoint [_targetPosition, 10];
+        _wp1 setWaypointType "MOVE";
+        _wp1 setWaypointBehaviour "AWARE";
+        _wp1 setWaypointSpeed "FULL";
+        private _wp2 = _groupJumper addWaypoint [_targetPosition, 50];
+        _wp2 setWaypointType "SAD";
+        _wp2 setWaypointCombatMode "RED";
+        _wp2 setWaypointSpeed "FULL";
+        _wp2 setWaypointBehaviour "COMBAT";
+        _groupJumper spawn A3A_fnc_attackDrillAI;
     };
 };
