@@ -50,5 +50,5 @@ server setVariable ["resourcesFIA",_resourcesFIA,true];
 private _display = findDisplay 60000;
 if !(str (_display) == "no display") then {
     private _title = _display displayCtrl 3102;
-    _title ctrlSetText format [localize "STR_commander_menu_skill_level_title", FactionGet(reb, "name"), skillFIA];
+    _title ctrlSetText format [localize "STR_commander_menu_skill_level_title", FactionGet(reb, "name"), skillFIA, SKILL_CAP];
 };

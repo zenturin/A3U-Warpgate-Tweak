@@ -137,7 +137,7 @@ if (isServer) then {
     [true] call A3A_fnc_calculateAggression;
 
 	["inactivityRivals"] call A3A_fnc_getStatVariable;
-	// [true] call SCRT_fnc_rivals_calculateActivity;
+	[true] call SCRT_fnc_rivals_calculateActivity;
 
 	["chopForest"] call A3A_fnc_getStatVariable;
 

@@ -14,6 +14,16 @@ if (call A3A_fnc_modBlacklist) exitWith {};
 
 player forceAddUniform "U_C_WorkerCoveralls";
 
+musicON = false;
+recruitCooldown = 0;			//Prevents units being recruited too soon after being dismissed.
+incomeRep = false;
+autoHeal = true;				//Should AI in player squad automatically heal teammates
+isPowPaycheckAnnounced = false; //Are players know about that IDAP pays for released prisoners
+isSupportAnnounced = false;     //Are support abilities announced
+isMenuOpen = false;             //is Commander/Player menu open
+isProjectileCamEnabled = false; //Projectile following camera
+isPlayerParadropable = true;    //parachute commander ability attendance
+
 //enables Discord Rich Presence if game client uses English language and mod is turned on
 private _richPresenceFunc = missionNamespace getVariable "DiscordRichPresence_fnc_update";
 private _isEnglish = ((localize "STR_antistasi_dialogs_generic_button_yes_text") isEqualTo "Yes");
@@ -83,16 +93,6 @@ player setVariable ["punish",0,true];
 
 player setVariable ["eligible",player call A3A_fnc_isMember,true];
 player setVariable ["A3A_playerUID",getPlayerUID player,true];			// Mark so that commander routines know for remote-controlling
-
-musicON = false;
-recruitCooldown = 0;			//Prevents units being recruited too soon after being dismissed.
-incomeRep = false;
-autoHeal = true;				//Should AI in player squad automatically heal teammates
-isPowPaycheckAnnounced = false; //Are players know about that IDAP pays for released prisoners
-isSupportAnnounced = false;     //Are support abilities announced
-isMenuOpen = false;             //is Commander/Player menu open
-isProjectileCamEnabled = false; //Projectile following camera
-isPlayerParadropable = true;    //parachute commander ability attendance
 
 //Move the player to HQ now they're initialised.
 private _respawnPos = (getMarkerPos respawnTeamPlayer);
