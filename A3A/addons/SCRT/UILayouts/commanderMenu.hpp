@@ -292,7 +292,7 @@ class commanderMenu
 							h = "3 * pixelGridNoUIScale * pixelH";
 							sizeEx = "((pixelH * (pixelGridNoUIScale) * 2) * 1.25) * 0.5";	
 							shadow = 2;	
-							action = "if ('outpostTask' in A3A_activeTasks) then {cancelEstabTask = true;};";			
+							action = "if ('outpostTask' in A3A_activeTasks && {!isNil 'estabNetworkId'}) then {[] remoteExecCall ['SCRT_fnc_outpost_cancelOutpostTask', estabNetworkId]};closeDialog 0;closeDialog 0;";			
 						};
 						
 						class establishButton: ButtonBase

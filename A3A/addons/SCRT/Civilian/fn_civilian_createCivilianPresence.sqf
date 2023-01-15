@@ -4,6 +4,8 @@ FIX_LINE_NUMBERS()
 if (civPedestrians == 0) exitWith {};
 
 private _marker = _this;
+if (_marker in destroyedSites) exitWith {};
+
 private _position = getMarkerPos _marker;
 
 Info_1("Starting creating Civilian Presence Modules for %1", _marker);
