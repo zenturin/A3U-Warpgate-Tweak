@@ -34,7 +34,10 @@ while {true} do {
         Info("Rivals are already defeated, exiting update loop.");
     };
 
-	if (!areRivalsDiscovered || {isRivalEventInProgress || {A3A_activePlayerCount == 0 }}) then { sleep 60; continue };
+	if (!areRivalsDiscovered || {isRivalEventInProgress || {A3A_activePlayerCount == 0 }}) then { 
+        sleep 60; 
+        continue;
+    };
 
     //cooldown is needed so players won't be flooded with events
     sleep rivalEventCooldown;

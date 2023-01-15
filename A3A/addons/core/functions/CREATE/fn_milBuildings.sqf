@@ -3,7 +3,6 @@ FIX_LINE_NUMBERS()
 
 params ["_markerX", "_size", "_sideX", "_frontierX"];
 
-private ["_groupX","_building","_typeB","_typeVehX","_veh","_pos","_ang","_unit","_return"];
 private _positionX = getMarkerPos _markerX;
 private _buildings = nearestObjects [_positionX, listMilBld, _size, true];
 _buildings = _buildings inAreaArray _markerX;
@@ -312,7 +311,7 @@ for "_i" from 0 to (count _buildings) - 1 do
 
     call {
         if (isObjectHidden _building) exitWith {};            // don't put statics on destroyed buildings
-        if     ((_typeB == "Land_vn_b_tower_01")) exitWith
+        if ((_typeB == "Land_vn_b_tower_01")) exitWith
         {
             private _type = [_faction get "unitTierGrunt"] call SCRT_fnc_unit_getTiered;
             private _dir = (getDir _building) - 180;

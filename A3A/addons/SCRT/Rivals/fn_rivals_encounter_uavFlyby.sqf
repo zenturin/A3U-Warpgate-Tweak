@@ -15,7 +15,9 @@ if (_overridePosition isEqualTo []) then {
 
 if (_originPosition isEqualTo []) exitWith {
 	Error("No suitable position for event, cooldowning...");
-    rivalEventCooldown = 600;
+    isRivalEventInProgress = false;
+    publicVariableServer "isRivalEventInProgress";
+    rivalEventCooldown = 300;
     publicVariableServer "rivalEventCooldown";
 };
 

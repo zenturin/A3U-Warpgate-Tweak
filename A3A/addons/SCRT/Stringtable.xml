@@ -4331,58 +4331,6 @@
             </Key>
         </Container>
         <Container name="dialog_headquarters">
-            <Key ID="STR_antistasi_dialogs_hq_button_close_text">
-                <Original>Close</Original>
-                <Russian>Закрыть</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_withdraw_text">
-                <Original>Grab 500 Money from Faction</Original>
-                <Russian>Взять 500 денег из казны</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_withdraw_tooltip">
-                <Original>Take money from faction pool and add it to your personal account. It will damage your position among the faction in the commander career.</Original>
-                <Russian>Перевести 500 денег из казны сопротивления себе на счёт. Это вредит вашей репутации как командира.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_garrisons_text">
-                <Original>Manage Garrisons</Original>
-                <Russian>Управление гарнизоном</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_garrisons_tooltip">
-                <Original>Add or remove units to garrisons</Original>
-                <Russian>Добавление или удаление юнитов в гарнизон</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_move_headquarters_text">
-                <Original>Move HQ to another Zone</Original>
-                <Russian>Переместить Штаб</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_move_headquarters_tooltip">
-                <Original>Petros will join your group. Ammobox must be empty. To rebuild, select the Build action near Petros.</Original>
-                <Russian>Петрос присоединится к вашей группе. Чтобы построить Штаб, выберите на нём пункт "Построить Штаб". Арсенал должен быть пуст.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_members_list_text">
-                <Original>Ingame Member List</Original>
-                <Russian>Список Игроков</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_members_list_tooltip">
-                <Original>Displays which server members are currently playing</Original>
-                <Russian>Показывает, кто из Игроков сейчас на сервере</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_rebuild_assets_text">
-                <Original>Rebuild Assets</Original>
-                <Russian>Восстановление объектов</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_rebuild_assets_tooltip">
-                <Original>Rebuilds radio towers and military buildings on selected marker.</Original>
-                <Russian>Ремонтирует радиовышки и военные здания на маркере.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_train_ai_text">
-                <Original>Train Rebel Troops</Original>
-                <Russian>Тренировать повстанцев</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_hq_button_train_ai_tooltip">
-                <Original>Upgrades the AI skill level.</Original>
-                <Russian>Улучшает боевые навыки повстанцев.</Russian>
-            </Key>
             <Key ID="STR_antistasi_dialogs_hq_button_rebel_loadouts_text">
                 <Original>Set rebel loadouts</Original>
                 <Russian>Настроить снаряжение повстанцев</Russian>
@@ -4432,103 +4380,7 @@
                 <Russian>Снаряжение повстанцев</Russian>
             </Key>
         </Container>
-        <Container name="dialog_build_menu">
-            <Key ID="STR_antistasi_dialogs_build_frame_text">
-                <Original>Building - Garrison Options</Original>
-                <Russian>Построение Обороны</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_build_button_no_text">
-                <Original>Back</Original>
-                <Russian>Назад</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_build_minefield_button_text">
-                <Original>Minefield Options</Original>
-                <Russian>Минные поля</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_build_minefield_button_tooltip">
-                <Original>AI will deploy or remove mines on desired objectives, using current arsenal mine stock</Original>
-                <Russian>Инженеры установят или удалят мины на выбранной позиции, используя мины из арсенала</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_build_recruit_units_button_text">
-                <Original>Recruit Units</Original>
-                <Russian>Добавить в гарнизон</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_build_recruit_units_button_tooltip">
-                <Original>Add units to an existing garrison.</Original>
-                <Russian>Добавить добровольца в гарнизон.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_build_disband_units_button_text">
-                <Original>Disband Units or Posts</Original>
-                <Russian>Удалить Гарнизон или Пост</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_build_disband_units_button_tooltip">
-                <Original>Remove whole garrisons or posts.</Original>
-                <Russian>Распустить весь Гарнизон или Пост.</Russian>
-            </Key>
-        </Container>
-        <Container name="dialog_garrison_recruit">
-            <Key ID="STR_antistasi_dialogs_garrison_recruit_frame_text">
-                <Original>Garrison Recruitment Options</Original>
-                <Russian>Добавить в гарнизон</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_garrison_spawn_rifleman_text">
-                <Original>Recruit Rifleman</Original>
-                <Russian>Стрелок</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_garrison_spawn_autorifleman_text">
-                <Original>Recruit Autorifleman</Original>
-                <Russian>Пулемётчик</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_garrison_spawn_medic_text">
-                <Original>Recruit Medic</Original>
-                <Russian>Медик</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_garrison_spawn_squad_lead_text">
-                <Original>Recruit Squad Leader</Original>
-                <Russian>Лидер отряда</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_garrison_spawn_grenadier_text">
-                <Original>Recruit Grenadier</Original>
-                <Russian>Стрелок с ГП</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_garrison_spawn_marksman_text">
-                <Original>Recruit Marksman</Original>
-                <Russian>Снайпер</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_garrison_spawn_at_text">
-                <Original>Recruit AT</Original>
-                <Russian>Гранатомётчик</Russian>
-            </Key>
-        </Container>
         <Container name="dialog_build_minefield">
-            <Key ID="STR_antistasi_dialogs_minefield_frame_text">
-                <Original>Build Minefield</Original>
-                <Russian>Минное Поле</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_minefield_button_anti_personel_text">
-                <Original>APERS Mines</Original>
-                <Russian>ПП Мины</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_minefield_button_anti_personel_tooltip">
-                <Original>Creates an APERS Minefield in the designated location</Original>
-                <Russian>Создаёт Минное Поле с противопехотными минами на выбранной позиции</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_minefield_button_remove_text">
-                <Original>Remove Minefield</Original>
-                <Russian>Удалить Минное Поле</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_minefield_button_remove_tooltip">
-                <Original>Spawn an AI Engineer which will clear any mine in it's surroundings</Original>
-                <Russian>Создаёт Инженера, который разминирует все мины вокруг себя.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_minefield_button_anti_tank_text">
-                <Original>AT Mines</Original>
-                <Russian>ПТ Мины</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_minefield_button_anti_tank_tooltip">
-                <Original>Creates an Anti Tank minefield at designated location</Original>
-                <Russian>Создаёт Минное Поле с противотанковыми минами на выбранной позиции</Russian>
-            </Key>
             <Key ID="STR_antistasi_rivals_tab_header">
                 <Original>%1 INCURSION</Original>
                 <Russian>ВТОРЖЕНИЕ %1</Russian>
@@ -4622,85 +4474,10 @@
                 <Russian>%1 не могут быть скомпрометированы пока наши силы находится рядом с зоной. Отойдите от местоположения дальше чем на %2м и попробуйте снова.</Russian>
             </Key>
         </Container>
-        <Container name="dialog_unit_recruit">
-            <Key ID="STR_antistasi_dialogs_unit_recruit_frame_text">
-                <Original>Recruitment Options</Original>
-                <Russian>Призвать Добровольца по специальности</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_unit_recruit_rifleman_text">
-                <Original>Recruit Rifleman</Original>
-                <Russian>Стрелок</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_unit_recruit_mg_text">
-                <Original>Recruit Autorifleman</Original>
-                <Russian>Пулемётчик</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_unit_recruit_medic_text">
-                <Original>Recruit Medic</Original>
-                <Russian>Медик</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_unit_recruit_engineer_text">
-                <Original>Recruit Engineer</Original>
-                <Russian>Инженер</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_unit_recruit_explosive_text">
-                <Original>Recruit Demolitionist</Original>
-                <Russian>Подрывник</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_unit_recruit_grenadier_text">
-                <Original>Recruit Grenadier</Original>
-                <Russian>Стрелок с ГП</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_unit_recruit_marksman_text">
-                <Original>Recruit Marksman</Original>
-                <Russian>Снайпер</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_unit_recruit_antitank_text">
-                <Original>Recruit Antitank Solider</Original>
-                <Russian>Гранатомётчик</Russian>
-            </Key>
-        </Container>
         <Container name="dialog_generic">
-            <Key ID="STR_antistasi_dialogs_generic_box_text">
-                <Original />
-            </Key>
-            <Key ID="STR_antistasi_dialogs_generic_button_back_text">
-                <Original>Back</Original>
-                <Russian>Назад</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_generic_button_back_tooltip">
-                <Original>Back</Original>
-                <Russian>Назад</Russian>
-            </Key>
             <Key ID="STR_antistasi_dialogs_generic_button_close_text">
                 <Original>Close</Original>
                 <Russian>Закрыть</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_generic_button_yes_text">
-                <Original>Yes</Original>
-                <Russian>Да</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_generic_button_no_text">
-                <Original>No</Original>
-                <Russian>Нет</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_toggle_info_bar_title">
-                <Original>Information Bar</Original>
-                <Russian>Информационная панель</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_toggle_info_bar_body_off">
-                <Original>You've turned off top information bar. To enable it, press ALT+HOME.</Original>
-                <Russian>Вы выключили отображение информационной панели. Чтобы включить её снова, нажмите ALT+HOME.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_toggle_info_bar_body_on">
-                <Original>You've turned on top information bar. To disable it, press ALT+HOME.</Original>
-                <Russian>Вы включили отображение информационной панели. Чтобы выключить её, нажмите ALT+HOME.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_generic_button_yes_tooltip">
-                <Original />
-            </Key>
-            <Key ID="STR_antistasi_dialogs_generic_button_no_tooltip">
-                <Original />
             </Key>
         </Container>
         <Container name="credits_generic">
@@ -4715,121 +4492,6 @@
             <Key ID="STR_antistasi_credits_generic_author_text">
                 <Original>Socrates</Original>
                 <Russian>Socrates</Russian>
-            </Key>
-            <Key ID="STR_antistasi_credits_generic_overview_text">
-                <Original>Build FIA Army from scratch and defeat the AAF and CSAT forces in a whole map Dynamic Mission.</Original>
-                <Russian>Создайте свою армию с нуля и заставьте силы AAF и CSAT отступить в Динамической Миссии на всей карте.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_credits_generic_missiondesc_text">
-                <Original>Be a Resistance leader, be a hero.</Original>
-                <Russian>Быть Лидером Сопротивления значит быть героем. </Russian>
-            </Key>
-        </Container>
-        <Container name="dialog_vehicle_purchase">
-            <Key ID="STR_antistasi_dialogs_vehicle_purchase_buy_text">
-                <Original>Buy Vehicle</Original>
-                <Russian>Купить Технику</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_vehicle_purchase_buy_tooltip">
-                <Original>Allows you to buy a vehicle</Original>
-                <Russian>Позволяет Вам купить технику</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_vehicle_purchase_civie_text">
-                <Original>Civilian Vehicles</Original>
-                <Russian>Гражданская техника</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_vehicle_purchase_civie_tooltip">
-                <Original>Civilian vehicles will allow you to travel in Undercover mode, while you stay close to roads and not entering bases, outposts and roadblocks.</Original>
-                <Russian>Гражданская техника позволяет Вам передвигаться как гражданскому лицу, пока Вы движетесь по дорогам вдалеке от баз, опорных пунктов и блокпостов.</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_vehicle_purchase_military_text">
-                <Original>Military Vehicles</Original>
-                <Russian>Военная техника</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_vehicle_purchase_military_tooltip">
-                <Original>Wide variety of available faction vehicles</Original>
-                <Russian>Широкий выбор доступной техники вашей стороны</Russian>
-            </Key>
-        </Container>
-        <Container name="dialog_vehicle_purchase_military">
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_quad_text">
-                <Original>ATV</Original>
-                <Russian>Квадроцикл</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_s_mg_text">
-                <Original>Machine Gun</Original>
-                <Russian>Станковый пулемёт</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_s_mg_tooltip">
-                <Original>Buy Static Machinegun Emplacement</Original>
-                <Russian>Купить станковый пулемёт</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_s_mortar_text">
-                <Original>Mortar</Original>
-                <Russian>Миномёт</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_s_mortar_tooltip">
-                <Original>Buy Static Mortar Emplacement</Original>
-                <Russian>Купить миномёт</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_s_aa_text">
-                <Original>Static AA</Original>
-                <Russian>Установка ПВО</Russian>
-                <Russian>Установка ПВО</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_looter_truck_text">
-                <Original>Truck (Looter)</Original>
-                <Russian>Грузовик (Сборщик)</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_s_aa_tooltip">
-                <Original>Buy Static Anti-Air emplacement</Original>
-                <Russian>Купить установку ПВО</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_looter_truck_tooltip">
-                <Original>Buy a truck with looter capabilites (loot bodies and supplies).</Original>
-                <Russian>Купить грузовик с способностью автолута (тела и ящики).</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_s_at_text">
-                <Original>Static AT</Original>
-                <Russian>Станковый ПТРК</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_s_at_tooltip">
-                <Original>Buy Static Anti-Tank emplacement</Original>
-                <Russian>Купить установку ПТРК</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_truck_text">
-                <Original>Pickup Truck</Original>
-                <Russian>Пикап</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_at_offroad_text">
-                <Original>AT Car</Original>
-                <Russian>Автомобиль с ПТ-орудием</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_a_offroad_text">
-                <Original>Armed Pickup Truck</Original>
-                <Russian>Вооружённый пикап</Russian>
-            </Key>
-        </Container>
-        <Container name="dialog_vehicle_purchase_civ">
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_civ_text">
-                <Original>Buy Civilian Vehicle</Original>
-                <Russian>Гражданская техника</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_civ_offroad_text">
-                <Original>Offroad</Original>
-                <Russian>Пикап</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_civ_truck_text">
-                <Original>Truck</Original>
-                <Russian>Грузовик</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_civ_boat_text">
-                <Original>Boat</Original>
-                <Russian>Лодка</Russian>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_civ_heli_text">
-                <Original>Helicopter</Original>
-                <Russian>Вертолёт</Russian>
             </Key>
         </Container>
         <Container name="loot_actions">
@@ -5816,10 +5478,6 @@
             <Key ID="STR_antistasi_actions_transfer_to_arsenal">
                 <Original>Transfer cargo to Arsenal</Original>
                 <Russian>Переместить груз в арсенал</Russian>
-            </Key>
-            <Key ID="STR_antistasi_actions_move_this_asset">
-                <Original>Transfer vehicle cargo to Arsenal</Original>
-                <Russian>Переместить</Russian>
             </Key>
             <Key ID="STR_antistasi_transfer_ammobox_to_truck">
                 <Original>Transfer ammobox to vehicle</Original>
@@ -7326,10 +6984,6 @@
             <Key ID="STR_A3A_Base_canMoveHq_only_comm">
                 <Original>Commander only</Original>
                 <Russian>Только командир</Russian>
-            </Key>
-            <Key ID="STR_A3A_Base_canMoveHq_arsenal_empty">
-                <Original>You must first empty your Arsenal inventory in order to move the HQ.</Original>
-                <Russian>Сперва вы должны очистить инвентарь ящика с арсеналом чтобы получить возможность двигать штаб.</Russian>
             </Key>
             <Key ID="STR_A3A_Base_canMoveHq_arsenal_empty">
                 <Original>You must first empty your Arsenal inventory in order to move the HQ.</Original>

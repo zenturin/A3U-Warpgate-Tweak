@@ -27,7 +27,9 @@ if (_overridePosition isEqualTo []) then {
 
 if (_originPosition isEqualTo []) exitWith {
     Info("No suitable position for event, cooldowning...");
-    rivalEventCooldown = 600;
+    isRivalEventInProgress = false;
+    publicVariableServer "isRivalEventInProgress";
+    rivalEventCooldown = 300;
     publicVariableServer "rivalEventCooldown";
 };
 
@@ -135,7 +137,7 @@ _mortar addEventHandler
     {
         params ["_mortar"];
         ["TaskSucceeded", ["", format [localize "STR_notifiers_roving_mortar_crew_destroyed", A3A_faction_riv get "name"]]] remoteExec ["BIS_fnc_showNotification", teamPlayer];
-		[10, 60] call SCRT_fnc_rivals_reduceActivity;
+        [10, 60] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
     }
 ];
 
@@ -147,7 +149,7 @@ _mortar addEventHandler
         if(side (group _unit) == teamPlayer) then
         {
 			["TaskSucceeded", ["", format [localize "STR_notifiers_roving_mortar_stolen", A3A_faction_riv get "name"]]] remoteExec ["BIS_fnc_showNotification", teamPlayer];
-			[10, 60] call SCRT_fnc_rivals_reduceActivity;
+            [10, 60] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
             _vehicle setVariable ["Stolen", true, true];
             _vehicle removeAllEventHandlers "GetIn";
         };
@@ -165,7 +167,7 @@ _mortarGroup setVariable ["Mortar", _mortar, true];
             if({alive _x} count (units _group) == 0) then
             {
                 ["TaskSucceeded", ["", format [localize "STR_notifiers_roving_mortar_crew_killed", A3A_faction_riv get "name"]]] remoteExec ["BIS_fnc_showNotification", teamPlayer];
-				[10, 60] call SCRT_fnc_rivals_reduceActivity;
+                [10, 60] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
                 private _mortar = _group getVariable "Mortar";
                 private _timerArray = _mortar getVariable "TimerArray";
                 private _timerIndex = _mortar getVariable "TimerIndex";

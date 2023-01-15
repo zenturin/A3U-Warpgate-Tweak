@@ -27,7 +27,10 @@ if (_overridePosition isEqualTo []) then {
 
 if (isNil "_originPosition") exitWith {
     Info("No suitable position for event, cooldowning...");
-    rivalEventCooldown = 600;
+
+    isRivalEventInProgress = false;
+    publicVariableServer "isRivalEventInProgress";
+    rivalEventCooldown = 300;
     publicVariableServer "rivalEventCooldown";
 };
 
@@ -59,6 +62,8 @@ if (_vehicleClass == "" || {_vehicleClass == "not_supported"}) exitWith {
     Error("No vehicle class, aborting event.");
     isRivalEventInProgress = false;
     publicVariableServer "isRivalEventInProgress";
+    rivalEventCooldown = 300;
+    publicVariableServer "rivalEventCooldown";
 };
 
 private _chargedVehicle = createVehicle [_vehicleClass, [_roadPosition select 0, _roadPosition select 1, 0.9], [], 0, "CAN_COLLIDE"];
