@@ -594,7 +594,7 @@ switch(true) do {
         [25,theBoss] call A3A_fnc_addScorePlayer;
         [400,theBoss, true] call A3A_fnc_addMoneyPlayer;
 
-        [_marker, "CELL"] call SCRT_fnc_rivals_destroyLocation;
+        [_marker, "CELL"] remoteExecCall ["SCRT_fnc_rivals_destroyLocation",2];
     };
     default {
         Error("Unexpected behaviour, cancelling mission.");
