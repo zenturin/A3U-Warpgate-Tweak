@@ -180,8 +180,11 @@ for "_i" from 0 to _uavQuantity - 1 do {
 				if (isNil "_uav") exitWith {};
 				if (!alive _uav) exitWith {};
 
-				if (_uav distance2D _player < 25) exitWith {
+				if (_uav distance2D _player < 35) then {
 					[(position _player), _vehicles, _timeOut] spawn _fnc_notifyPlayers;
+				};
+
+				if (_uav distance2D _player < 25) exitWith {
 					if (_isHeavyShell) then {
 						private _uavPos = position _uav; 
 						private _shell = (selectRandom (A3A_faction_riv get "mortarAmmo")) createVehicle [_uavPos select 0, _uavPos select 1, (_uavPos select 2) - 4]; 
