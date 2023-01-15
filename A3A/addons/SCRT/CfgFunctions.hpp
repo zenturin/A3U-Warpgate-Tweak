@@ -156,6 +156,7 @@ class CfgFunctions {
 			class outpost_createAtDistance {};
 			class outpost_createHmg {};
 			class outpost_createHmgDistance {};
+			class outpost_cancelOutpostTask {};
 		};
 
 		class UI {

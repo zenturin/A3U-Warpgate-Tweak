@@ -27,6 +27,9 @@
 - Fixed despawn issues of Post Ambush random event
 - Fixed "activityIsChanging" headless client error
 - Fixed intel tables hanging in the air on dedicated servers
+- Fixed cost-free custom outposts on dedicated server
+- Fixed inability to cancel outpost task on dedicated server
+- Civilians will no longer spawn in cities destroyed by Invaders
 - UAV Flyby Rivals event strike notification distance increased from 25 meters to 35 meters to give players a little bit more time to react
 - Reduced probability of Mechanized Airborne QRF
 - Improved Mechanized Airborne QRF attacking behaviour

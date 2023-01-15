@@ -21,7 +21,15 @@ if(_mode == "ADD") then {
             };
 
             if (outpostType == "WATCHPOST") exitWith {
-                [_pos] remoteExec ["SCRT_fnc_outpost_createWatchpost", 2];
+                [_pos, outpostCost select 0, outpostCost select 1, clientOwner] remoteExec ["SCRT_fnc_outpost_createWatchpost", 2];
+
+                ["REMOVE"] call SCRT_fnc_ui_establishOutpostEventHandler;
+                ctrlSetFocus ((findDisplay 60000) displayCtrl 2700);
+                [] spawn {
+                    sleep 0.01;
+                    closeDialog 0;
+                    closeDialog 0;
+                };
             };
 
             if (outpostType == "ROADBLOCK" && {!isOnRoad _pos}) exitWith {
@@ -34,7 +42,15 @@ if(_mode == "ADD") then {
             };
 
             if (outpostType == "ROADBLOCK") exitWith {
-                [_pos] remoteExec ["SCRT_fnc_outpost_createRoadblock", 2];
+                [_pos, outpostCost select 0, outpostCost select 1, clientOwner] remoteExec ["SCRT_fnc_outpost_createRoadblock", 2];
+
+                ["REMOVE"] call SCRT_fnc_ui_establishOutpostEventHandler;
+                ctrlSetFocus ((findDisplay 60000) displayCtrl 2700);
+                [] spawn {
+                    sleep 0.01;
+                    closeDialog 0;
+                    closeDialog 0;
+                };
             };
 
             if (isNil "outpostOrigin") then {
@@ -59,19 +75,27 @@ if(_mode == "ADD") then {
 
                 switch (outpostType) do {
                     case "AA": {
-                        [(getMarkerPos outpostOrigin), _direction] remoteExec ["SCRT_fnc_outpost_createAa", 2];
+                        [(getMarkerPos outpostOrigin), _direction, outpostCost select 0, outpostCost select 1, clientOwner] remoteExec ["SCRT_fnc_outpost_createAa", 2];
                     };
                     case "AT": {
-                        [(getMarkerPos outpostOrigin), _direction] remoteExec ["SCRT_fnc_outpost_createAt", 2];
+                        [(getMarkerPos outpostOrigin), _direction, outpostCost select 0, outpostCost select 1, clientOwner] remoteExec ["SCRT_fnc_outpost_createAt", 2];
                     };
                     case "HMG": {
-                        [(getMarkerPos outpostOrigin), _direction] remoteExec ["SCRT_fnc_outpost_createHmg", 2];
+                        [(getMarkerPos outpostOrigin), _direction, outpostCost select 0, outpostCost select 1, clientOwner] remoteExec ["SCRT_fnc_outpost_createHmg", 2];
                     };
                     default {
                         Error("Bad outpost type.");
                     };
                 };
-            }
+
+                ["REMOVE"] call SCRT_fnc_ui_establishOutpostEventHandler;
+                ctrlSetFocus ((findDisplay 60000) displayCtrl 2700);
+                [] spawn {
+                    sleep 0.01;
+                    closeDialog 0;
+                    closeDialog 0;
+                };
+            };
         },
         []
 	] call BIS_fnc_addStackedEventHandler;

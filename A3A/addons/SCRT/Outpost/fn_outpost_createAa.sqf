@@ -1,14 +1,14 @@
 #include "..\defines.inc"
 FIX_LINE_NUMBERS()
 
-params ["_position", "_direction"];
+params ["_position", "_direction", "_moneyCost", "_hrCost", "_commanderNetworkId"];
 
 if (!isServer) exitWith {};
 
-private _moneyCost = outpostCost select 0;
-private _hrCost = outpostCost select 1;
-
 [-_hrCost,-_moneyCost] remoteExec ["A3A_fnc_resourcesFIA",2];
+
+estabNetworkId = clientOwner;
+_commanderNetworkId publicVariableClient "estabNetworkId";
 
 private _textX = format [localize "STR_marker_aa_empl", FactionGet(reb,"name")];
 
@@ -39,14 +39,6 @@ _groupX addVehicle _truckX;
 leader _groupX setBehaviour "SAFE";
 (units _groupX) orderGetIn true;
 theBoss hcSetGroup [_groupX];
-
-outpostCost = nil;
-["REMOVE"] call SCRT_fnc_ui_establishOutpostEventHandler;
-ctrlSetFocus ((findDisplay 60000) displayCtrl 2700);
-sleep 0.01;
-closeDialog 0;
-closeDialog 0;
-[] call SCRT_fnc_ui_clearOutpost;
 
 private _units = units _groupX;
 
@@ -98,13 +90,14 @@ switch (true) do {
 	};
 };
 
+[_taskId, "outpostTask", 0] spawn A3A_fnc_taskDelete;
+cancelEstabTask = nil;
+estabNetworkId = nil;
+_commanderNetworkId publicVariableClient "estabNetworkId";
+
 theBoss hcRemoveGroup _groupX;
 {
     deleteVehicle _x
 } forEach units _groupX;
 deleteVehicle _truckX;
 deleteGroup _groupX;
-sleep 15;
-
-cancelEstabTask = nil;
-[_taskId, "outpostTask", 0] spawn A3A_fnc_taskDelete;
