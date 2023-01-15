@@ -179,7 +179,7 @@ while {_timeAlive > 0} do
     ) exitWith
     {
         ["TaskSucceeded", ["", format [localize "STR_notifiers_roving_mortar_crew_killed", A3A_faction_riv get "name"]]] remoteExec ["BIS_fnc_showNotification", teamPlayer];
-		[10, 60] call SCRT_fnc_rivals_reduceActivity;
+        [10, 60] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
     };
 
     if (!(_mortar getVariable "CurrentlyFiring") && (_numberOfRounds <= 0)) exitWith

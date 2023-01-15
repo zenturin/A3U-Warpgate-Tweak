@@ -96,7 +96,7 @@ _desk setVelocity [0, 0, -1];
 
 //Await until desk have hit the group, it tend to stuck in the air otherwise  // Let the desk to settle on the floor, otherwise it's likely that it will be floating.
 sleep 5;
-_desk enableSimulation false;
+_desk enableSimulationGlobal false;
 
 (
 	_faction get (["placeIntel_itemMedium","placeIntel_itemLarge"] select _isLarge)
@@ -173,7 +173,7 @@ private _ehId = _building addEventHandler ["Killed", {
 	};
 
 	if (!isNull _desk) then {
-		_desk enableSimulation true;
+		_desk enableSimulationGlobal true;
 	};
 
 	_building removeEventHandler ["Killed",_thisEventHandler];

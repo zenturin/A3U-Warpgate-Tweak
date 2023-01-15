@@ -410,7 +410,6 @@ class vehQuery: SimpleMenuSmall
 		{
 			idc = 104;
 			text = $STR_antistasi_dialogs_generic_button_yes_text;
-			tooltip = $STR_antistasi_dialogs_generic_button_yes_tooltip;
 			x = 0.257187 * safezoneW + safezoneX;
 			y = 0.304 * safezoneH + safezoneY;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.376])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.125])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.043])",0.9};
@@ -421,7 +420,6 @@ class vehQuery: SimpleMenuSmall
 		{
 			idc = 105;
 			text = $STR_antistasi_dialogs_generic_button_no_text;
-			tooltip = $STR_antistasi_dialogs_generic_button_no_tooltip;
 			x = 0.477 * safezoneW + safezoneX;
 			y = 0.304 * safezoneH + safezoneY;
 			action = "closeDialog 0; vehQuery = nil;";
@@ -447,7 +445,6 @@ class constructionRemovalConfirmation: SimpleMenuSmall
 		{
 			idc = 104;
 			text = $STR_antistasi_dialogs_generic_button_yes_text;
-			tooltip = $STR_antistasi_dialogs_generic_button_yes_tooltip;
 			x = 0.257187 * safezoneW + safezoneX;
 			y = 0.304 * safezoneH + safezoneY;
 			colorBackground[] = {"0.376","0.125","0.043",0.9};
@@ -458,7 +455,6 @@ class constructionRemovalConfirmation: SimpleMenuSmall
 		{
 			idc = 105;
 			text = $STR_antistasi_dialogs_generic_button_no_text;
-			tooltip = $STR_antistasi_dialogs_generic_button_no_tooltip;
 			x = 0.477 * safezoneW + safezoneX;
 			y = 0.304 * safezoneH + safezoneY;
 			action = "closeDialog 0; removeConstruction = nil;";

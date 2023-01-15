@@ -4,7 +4,8 @@ FIX_LINE_NUMBERS()
 Info("Post Ambush Vehicle Event Init.");
 
 private _vehicles = [];
-private _effects = [];
+private _groups = [];
+private _others = [];
 
 private _player = selectRandom (call SCRT_fnc_misc_getRebelPlayers);
 
@@ -35,7 +36,7 @@ private _roadPosition = getPos (_road select 0);
 private _crater = createVehicle ["CraterLong", _roadPosition, [], 0, "CAN_COLLIDE"];
 _crater setDir _dirveh;
 _crater setVectorUp surfaceNormal getPos _crater;
-_vehicles pushBack _crater;
+_others pushBack _crater;
 
 private _marker = [(markersX select {sidesX getVariable [_x, sideUnknown] != teamPlayer}), _originPosition] call BIS_fnc_nearestPosition;
 //probably should be a distance check, but who cares
@@ -94,7 +95,7 @@ for "_i" from 0 to (random [3,5,6]) do {
     [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightAmbient", 0, _lightEffectEmitter];
     [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightColor", 0, _lightEffectEmitter];
 
-    _effects append [_fireEffectEmitter, _lightEffectEmitter];
+    _others append [_fireEffectEmitter, _lightEffectEmitter];
 };
 
 private _groupCrew = createGroup _side;
@@ -113,20 +114,19 @@ for "_i" from 1 to 3 do {
         _crew setDamage 0.8;
     };
 };
+_groups pushBack _groupCrew;
 
 private _timeOut = time + 1200;
 waitUntil { 
     sleep 5; 
     time > _timeOut || 
-    {isNull _crashedVehicle || 
+    {!alive _crashedVehicle || 
     {(call SCRT_fnc_misc_getRebelPlayers) findIf {_x distance2D (position _crashedVehicle) < distanceSPWN} == -1
 }}};
 
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
-
-{
-    deleteVehicle _x;
-} forEach _effects;
+{[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
+{deleteVehicle _x} forEach _others;
 
 isEventInProgress = false;
 publicVariableServer "isEventInProgress";

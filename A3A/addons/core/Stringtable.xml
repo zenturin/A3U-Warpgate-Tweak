@@ -56,16 +56,16 @@
         <Polish>Weź 500 z Puli</Polish>
       </Key>
       <Key ID="STR_antistasi_dialogs_hq_button_withdraw_tooltip">
-        <Original>Take 100€ from faction pool and add it to your personal account. It will damage your position among the faction in the commander career</Original>
-        <French>Prendre 100€ de la cagnotte de la faction pour l'ajouter sur votre compte. Cela va nuire à votre réputation au sein de la faction et ralentir votre progression des rangs.</French>
-        <Russian>Перевести 100$ из фонда сопротивления себе на счёт. Это вредит вашей репутации как командира</Russian>
-        <German>Transferiere 100€ aus der Fraktionskasse zu deinem persönlichen Konto. Dies wird deiner Reputation bezüglich deiner Karriere innerhalb der Fraktion schaden.</German>
-        <Czech>Převod 100€ ze společného fondu na váš účet.Poškodí vaši pozici mezi frakcí a též vaší kariéru velitele</Czech>
+        <Original>Take 500€ from faction pool and add it to your personal account. It will damage your position among the faction in the commander career</Original>
+        <French>Prendre 500€ de la cagnotte de la faction pour l'ajouter sur votre compte. Cela va nuire à votre réputation au sein de la faction et ralentir votre progression des rangs.</French>
+        <Russian>Перевести 500 денег из казны сопротивления себе на счёт. Это вредит вашей репутации как командира.</Russian>
+        <German>Transferiere 500€ aus der Fraktionskasse zu deinem persönlichen Konto. Dies wird deiner Reputation bezüglich deiner Karriere innerhalb der Fraktion schaden.</German>
+        <Czech>Převod 500€ ze společného fondu na váš účet.Poškodí vaši pozici mezi frakcí a též vaší kariéru velitele</Czech>
         <Chinesesimp>从阵营的资金池中拿取100€并将其添加到您的个人帐户中。这会损害您在指挥官生涯中的地位</Chinesesimp>
-        <Korean>팩션 자금 100€를 당신의 계좌로 옮깁니다. 이 행동은 사령관으로서의 평판에 악영향을 줄 것입니다.</Korean>
-        <Italian>Prendi 100€ dalla cassa della fazione e inseriscili nel tuo account personale. Danneggerà la tua posizione all'interno della fazione per la tua carriera da comandante</Italian>
-        <Spanish>Coge 100€ de la caja de la facción y añadela a tu cuenta perosnal. Dañará tu posición entre la facción por la carrera de la comandancia</Spanish>
-        <Polish>Weź 100€ z puli frakcji i dodaj je do swojego konta osobistego. Zaszkodzi to twojej reputacji wśród twojej frakcji w karierze dowódcy</Polish>
+        <Korean>팩션 자금 500€를 당신의 계좌로 옮깁니다. 이 행동은 사령관으로서의 평판에 악영향을 줄 것입니다.</Korean>
+        <Italian>Prendi 500€ dalla cassa della fazione e inseriscili nel tuo account personale. Danneggerà la tua posizione all'interno della fazione per la tua carriera da comandante</Italian>
+        <Spanish>Coge 500€ de la caja de la facción y añadela a tu cuenta perosnal. Dañará tu posición entre la facción por la carrera de la comandancia</Spanish>
+        <Polish>Weź 500€ z puli frakcji i dodaj je do swojego konta osobistego. Zaszkodzi to twojej reputacji wśród twojej frakcji w karierze dowódcy</Polish>
       </Key>
       <Key ID="STR_antistasi_dialogs_hq_button_garrisons_text">
         <Original>Manage Garrisons</Original>
@@ -152,40 +152,24 @@
         <Polish>Odbuduj</Polish>
       </Key>
       <Key ID="STR_antistasi_dialogs_hq_button_rebuild_assets_tooltip">
-        <Original>Cost: €5000</Original>
-        <French>Coût : 5000€</French>
-        <Russian>Цена: 5000$</Russian>
-        <German>Kosten: 5.000€</German>
-        <Czech>Cena: 5000€</Czech>
-        <Chinesesimp>花费: 5000€</Chinesesimp>
-        <Korean>가격: 5000€</Korean>
-        <Italian>Costo: €5000</Italian>
-        <Spanish>Coste : 5000€</Spanish>
-        <Polish>Koszt: €5000</Polish>
+        <Original>Rebuilds radio towers and military buildings on selected marker. Cost 5000.</Original>
+        <French>Reconstruit les tours radio et les bâtiments militaires sur le marqueur sélectionné. Coût 5000.</French>
+        <Russian>Восстанавливает радиовышки и военные здания на выбранном маркере. Стоимость 5000.</Russian>
+        <German>Baut Funktürme und Militärgebäude auf ausgewählten Markern wieder auf. 5000 gekostet.</German>
+        <Czech>Obnovuje rádiové věže a vojenské budovy na vybrané značce. Cena 5000.</Czech>
+        <Chinesesimp>在选定的标记上重建无线电塔和军事建筑。 成本5000。</Chinesesimp>
+        <Korean>선택한 마커에 라디오 타워와 군사 건물을 재건합니다. 비용 5000.</Korean>
+        <Italian>Ricostruisce le torri radio e gli edifici militari sull'indicatore selezionato. Costo 5000.</Italian>
+        <Spanish>Reconstruye torres de radio y edificios militares en el marcador seleccionado. Costo 5000.</Spanish>
+        <Polish>Odbudowuje wieże radiowe i budynki wojskowe na wybranym znaczniku. Koszt 5000.</Polish>
       </Key>
       <Key ID="STR_antistasi_dialogs_hq_button_train_ai_text">
-        <Original>Train FIA Troops</Original>
-        <French>Entrainer les troupes de la FIA</French>
-        <Russian>Тренировать Войска</Russian>
-        <German>FIA Truppen ausbilden</German>
-        <Czech>Vycvičit jednotky FIA</Czech>
-        <Chinesesimp>训练FIA部队</Chinesesimp>
-        <Korean>FIA 부대 훈련</Korean>
-        <Italian>Addestra Truppe FIA</Italian>
-        <Spanish>Entrenar tropas FIA</Spanish>
-        <Polish>Trenuj Siły FIA</Polish>
+          <Original>Train Rebel Troops</Original>
+          <Russian>Тренировать повстанцев</Russian>
       </Key>
       <Key ID="STR_antistasi_dialogs_hq_button_train_ai_tooltip">
-        <Original>Upgrades the AI skill level</Original>
-        <French>Améliorer le niveau de l'IA</French>
-        <Russian>Увеличивает уровень готовности войск</Russian>
-        <German>Erhöht den KI Fähigkeitslevel.</German>
-        <Czech>Vylepší úroveň dovednosti AI</Czech>
-        <Chinesesimp>提升AI技能等级</Chinesesimp>
-        <Korean>AI 스킬 레벨 업그레이드</Korean>
-        <Italian>Aumenta il livello di abilità dell'IA</Italian>
-        <Spanish>Añade nivel de habilidad a la IA</Spanish>
-        <Polish>Ulepsza poziom umiejętności AI</Polish>
+        <Original>Upgrades the AI skill level.</Original>
+        <Russian>Улучшает боевые навыки повстанцев.</Russian>
       </Key>
       <Key ID="STR_antistasi_dialogs_hq_button_garage_text">
         <Original>Garage Access</Original>
@@ -300,7 +284,7 @@
       <Key ID="STR_antistasi_dialogs_build_recruit_units_button_tooltip">
         <Original>Add units to an existing garrison.</Original>
         <French>Ajouter des unités à une garnison existante</French>
-        <Russian>Добавить добровольца в гарнизон.</Russian>
+        <Russian>Добавить солдат в существующий гарнизон.</Russian>
         <German>Füge Einheiten einer existierenden Garnison hinzu.</German>
         <Czech>Přidejte jednotky do stávající posádky.</Czech>
         <Chinesesimp>将单位添加到现有的驻军。</Chinesesimp>
@@ -494,16 +478,16 @@
         <Polish>Usuń Pole Minowe</Polish>
       </Key>
       <Key ID="STR_antistasi_dialogs_minefield_button_remove_tooltip">
-        <Original>Spawn an AI Engineer which will clear any mine in it's surroundings</Original>
-        <French>Fait apparaître un Ingénieur contrôllé par l'IA qui va retirer toutes les mines dans ses alentours</French>
-        <Russian>Создаёт Инженера, который разминирует все мины вокруг себя</Russian>
+        <Original>Spawn an AI Engineer which will clear any mine in it's surroundings.</Original>
+        <French>Fait apparaître un Ingénieur contrôllé par l'IA qui va retirer toutes les mines dans ses alentours.</French>
+        <Russian>Создаёт Инженера, который разминирует все мины вокруг себя.</Russian>
         <German>Ein KI Sprengstoffspezialist wird alle Minen in der Umgebung räumen.</German>
-        <Czech>Vytvoří inženýra, který vyčistí všechny miny kolem sebe</Czech>
-        <Chinesesimp>生成一名AI工程师来清除周围的地雷</Chinesesimp>
+        <Czech>Vytvoří inženýra, který vyčistí všechny miny kolem sebe.</Czech>
+        <Chinesesimp>生成一名AI工程师来清除周围的地雷.</Chinesesimp>
         <Korean>주변 지뢰지대를 제거할 AI 공병을 소환합니다.</Korean>
-        <Italian>Spawna un Ingegnere IA che rimuoverà ogni mina nelle sue vicinanze</Italian>
-        <Spanish>Aparecerá un ingeniero de la IA que limpiará todas las minas de sus alrededores</Spanish>
-        <Polish>Stwórz Inżyniera AI, który rozbroi wszystkie miny w jego otoczeniu</Polish>
+        <Italian>Spawna un Ingegnere IA che rimuoverà ogni mina nelle sue vicinanze.</Italian>
+        <Spanish>Aparecerá un ingeniero de la IA que limpiará todas las minas de sus alrededores.</Spanish>
+        <Polish>Stwórz Inżyniera AI, który rozbroi wszystkie miny w jego otoczeniu.</Polish>
       </Key>
       <Key ID="STR_antistasi_dialogs_minefield_button_anti_tank_text">
         <Original>AT Mines</Original>
@@ -534,7 +518,7 @@
       <Key ID="STR_antistasi_dialogs_unit_recruit_frame_text">
         <Original>Recruitment Options</Original>
         <French>Options de Recrutement</French>
-        <Russian>Призвать Добровольца по специальности</Russian>
+        <Russian>Опции рекрутинга</Russian>
         <German>Rekrutierungsoptionen</German>
         <Czech>Možnosti náboru</Czech>
         <Chinesesimp>招募选项</Chinesesimp>
@@ -543,17 +527,17 @@
         <Spanish>Opciones de Reclutamiento de Guarnición</Spanish>
         <Polish>Opcje Rekrutacji</Polish>
       </Key>
-      <Key ID="STR_antistasi_dialogs_unit_recruit_militiaman_text">
-        <Original>Recruit Militiaman</Original>
-        <French>Recruter un Milicien</French>
-        <Russian>Новобранец</Russian>
-        <German>Miliz rekrutieren</German>
-        <Czech>Milicionář</Czech>
-        <Chinesesimp>招募民兵</Chinesesimp>
-        <Korean>민병대원 모집</Korean>
-        <Italian>Recluta Miliziano</Italian>
-        <Spanish>Reclutar Miliciano</Spanish>
-        <Polish>Rekrutuj Milicję</Polish>
+      <Key ID="STR_antistasi_dialogs_unit_recruit_rifleman_text">
+        <Original>Recruit Rifleman</Original>
+        <French>Recruter un carabinier</French>
+        <Russian>Стрелок</Russian>
+        <German>Schütze rekrutieren</German>
+        <Czech>Naverbujte střelce</Czech>
+        <Chinesesimp>招募步枪手</Chinesesimp>
+        <Korean>라이플맨 모집</Korean>
+        <Italian>Recluta fuciliere</Italian>
+        <Spanish>Reclutar fusilero</Spanish>
+        <Polish>Rekrutuj strzelca</Polish>
       </Key>
       <Key ID="STR_antistasi_dialogs_unit_recruit_mg_text">
         <Original>Recruit Autorifleman</Original>
@@ -691,12 +675,6 @@
         <Italian>No</Italian>
         <Spanish>No</Spanish>
         <Polish>Nie</Polish>
-      </Key>
-      <Key ID="STR_antistasi_dialogs_generic_button_yes_tooltip">
-        <Original>Yes</Original>
-      </Key>
-      <Key ID="STR_antistasi_dialogs_generic_button_no_tooltip">
-        <Original>No</Original>
       </Key>
     </Container>
     <Container name="credits_generic">
@@ -4295,7 +4273,7 @@
       <Key ID="STR_antistasi_dialogs_toggle_info_bar_title">
         <Original>Information Bar</Original>
         <French>Barre d'informations</French>
-        <Russian>Информационная строка</Russian>
+        <Russian>Информационная панель</Russian>
         <Korean>정보창</Korean>
         <Chinesesimp>信息栏</Chinesesimp>
         <Italian>Barra Informazioni</Italian>
@@ -4306,7 +4284,7 @@
       <Key ID="STR_antistasi_dialogs_toggle_info_bar_body_off">
         <Original>You've turned off top information bar. To enable it, press %1.</Original>
         <French>Vous avez désactivé la barre d'informations supérieure. Pour l'activer, appuyez sur %1.</French>
-        <Russian>Вы выключили отображение информационной строки. Чтобы включить её снова, нажмите %1.</Russian>
+        <Russian>Вы выключили отображение информационной панели. Чтобы включить её снова, нажмите %1.</Russian>
         <Korean>화면 상단의 정보창을 닫았습니다. 다시 열려면 %1를 누르세요.</Korean>
         <Chinesesimp>你关闭了顶部信息栏。 要启用它，请按%1。</Chinesesimp>
         <Italian>Hai disabilitato la Barra Informazioni. Per abilitarla, premi %1.</Italian>
@@ -4317,7 +4295,7 @@
       <Key ID="STR_antistasi_dialogs_toggle_info_bar_body_on">
         <Original>You've turned on top information bar. To disable it, press %1.</Original>
         <French>Vous avez activé la barre d'informations supérieure. Pour la désactiver, appuyez sur %1.</French>
-        <Russian>Вы включили отображение информационной строки. Чтобы выключить её, нажмите %1.</Russian>
+        <Russian>Вы включили отображение информационной панели. Чтобы выключить её, нажмите %1.</Russian>
         <Korean>화면 상단의 정보창을 열었습니다. 다시 닫을려면 %1를 누르세요.</Korean>
         <Chinesesimp>你打开了顶部信息栏。 要关闭它，请按%1。</Chinesesimp>
         <Italian>Hai abilitato la Barra Informazioni. Per disabilitarla, premi %1.</Italian>

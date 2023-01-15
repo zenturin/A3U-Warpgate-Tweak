@@ -15,12 +15,18 @@
 - Increased durability of loot crates, slight rework of load/unload invulnerability
 - Seaports will be used for airspace control
 - Fixed Rebel Loadout arsenal finite items usage exploit
-- Fixed ability to to do big attacks for factions that were defeated before
+- Fixed ability to do big attacks for factions that were defeated before
 - Fixed Destroy Artillery minor error about event handler
 - Fixed Rivals tasks inability to work if there are no buildings in town
 - Fixed logic pitfall where player's civilian car could be bomb-planted by Rivials in their activity zone
 - Fixed rebel AA sell price exploit
+- Fixed rare case when squad leader belongings weren't deleted after some time after intel search action
 - Fixed some missing strings, typos, localization errors
+- Fixed non-removable pallets from Deliver Supplies mission
+- Fixed no outcome out of enemy leader interrogation on dedicated server
+- Fixed despawn issues of Post Ambush random event
+- Fixed "activityIsChanging" headless client error
+- Fixed intel tables hanging in the air on dedicated servers
 - Reduced probability of Mechanized Airborne QRF
 - Improved Mechanized Airborne QRF attacking behaviour
 
