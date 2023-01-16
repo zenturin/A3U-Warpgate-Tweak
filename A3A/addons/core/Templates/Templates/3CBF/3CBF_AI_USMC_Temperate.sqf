@@ -130,7 +130,6 @@ _loadoutData set ["lightExplosives", ["rhsusf_m112_mag"]];
 _loadoutData set ["heavyExplosives", ["rhsusf_m112x4_mag"]];
 
 _loadoutData set ["antiInfantryGrenades", ["rhs_mag_m67"]];
-_loadoutData set ["antiTankGrenades", []];
 _loadoutData set ["smokeGrenades", ["rhs_mag_an_m8hc"]];
 _loadoutData set ["signalsmokeGrenades", ["rhs_mag_m18_green", "rhs_mag_m18_purple", "rhs_mag_m18_red", "rhs_mag_m18_yellow"]];
 
