@@ -146,6 +146,10 @@
                 <Original>Chernarus Communist Militia (CCM).\nPPsH's, Mosin-Nagants and a lot of comrades.</Original>
                 <Russian>Коммунистическое ополчение Чернаруси (CCM).\nППШ, винтовки Мосина и множество товарищей.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_tkm_3cbf">
+                <Original>Takistan Militia (TKM).\nTime to dig out the Lee Enfield in the backyard has come.</Original>
+                <Russian>Ополчение Такистана (TKM).\nПришло время откапывать Ли Энфилд.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_usaf">
                 <Original>United States Army.\nAggressive, overwhelming force.</Original>
                 <Russian>Армия США.\nАгрессивная, ошеломляющая сила.</Russian>

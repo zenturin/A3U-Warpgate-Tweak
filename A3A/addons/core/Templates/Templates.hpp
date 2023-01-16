@@ -343,6 +343,16 @@ class Templates
         description = $STR_A3AP_setupFactionsTab_ccm_3cbf;
     };
 
+    class 3CBF_TKM : 3CBF_Base
+    {
+        side = "Reb";
+        flagTexture = "uk3cb_factions\addons\uk3cb_factions_tkm\flag\tkm_b_flag_co.paa";
+        name = "3CBF TKM";
+        file = "3CBF_Reb_TKM";
+        maps[] = {"takistan"};
+        description = $STR_A3AP_setupFactionsTab_tkm_3cbf;
+    };
+
     class 3CBF_CHDKZ : 3CBF_Base
     {
         side = "Riv";
@@ -361,12 +371,12 @@ class Templates
         description = $STR_A3AP_setupFactionsTab_easterneuropean;
     };
 
-    class 3CBF_TAK: 3CBF_Base
+    class 3CBF_TKC: 3CBF_Base
     {
         side = "Civ";
         flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_TKA\Flag\tka_flag_co.paa";
         name = "3CBF Takistan";
-        file = "3CBF_Civ_TAK";
+        file = "3CBF_Civ_TKC";
         description = $STR_A3AP_setupFactionsTab_takistan;
     };
 

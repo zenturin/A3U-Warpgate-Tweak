@@ -7,6 +7,8 @@
 - Multiple Rivals factions per modset support, UI changes to support it
 - (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
 - (3CB Factions) Takistan civilians
+- (3CB Factions) TKM rebel faction
+- (3CB Factions) Tribal Fighters, Syndikat rival factions
 - (Vanilla) NATO Tropical faction 
 - (Vanilla) Syndikat rival faction
 
