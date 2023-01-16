@@ -96,7 +96,7 @@ _desk setVelocity [0, 0, -1];
 
 //Await until desk have hit the group, it tend to stuck in the air otherwise  // Let the desk to settle on the floor, otherwise it's likely that it will be floating.
 sleep 5;
-_desk enableSimulationGlobal false;
+_desk enableSimulation false;
 
 (
 	_faction get (["placeIntel_itemMedium","placeIntel_itemLarge"] select _isLarge)
@@ -172,8 +172,8 @@ private _ehId = _building addEventHandler ["Killed", {
 		deleteVehicle _intel;
 	};
 
-	if (!isNull _desk) then {
-		_desk enableSimulationGlobal true;
+	if (!isNull _desk && {!simulationEnabled _desk}) then {
+		[_desk, true] remoteExec ["enableSimulationGlobal",2];
 	};
 
 	_building removeEventHandler ["Killed",_thisEventHandler];
@@ -181,7 +181,7 @@ private _ehId = _building addEventHandler ["Killed", {
 
 _nil = [_marker, _desk, _intel, _building, _ehId] spawn {
 	params ["_marker", "_desk", "_intel", "_building", "_ehId"];
-	waitUntil{sleep 10; (spawner getVariable _marker == 2)};
+	waitUntil {sleep 10; (spawner getVariable _marker == 2)};
 	deleteVehicle _desk;
 	if(!isNil "_intel") then {
 		_bomb = _intel getVariable ["trapBomb", objNull];
@@ -189,6 +189,6 @@ _nil = [_marker, _desk, _intel, _building, _ehId] spawn {
 		deleteVehicle _intel;
 	};
 
-	_building removeEventHandler ["Killed",_ehId];
+	_building removeEventHandler ["Killed", _ehId];
 	terminate _thisScript;
 };
