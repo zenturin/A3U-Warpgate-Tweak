@@ -4,6 +4,6 @@ class CfgVehicles
 
     class A3AP_Box_Syndicate_Ammo_F : Box_Syndicate_Ammo_F 
     {
-        armor = 600;
+        armor = 1000;
     };
 };

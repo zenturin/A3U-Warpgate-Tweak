@@ -135,7 +135,6 @@ _loadoutData set ["APMines", []];
 _loadoutData set ["lightExplosives", []];
 _loadoutData set ["heavyExplosives", []];
 
-_loadoutData set ["antiTankGrenades", []];
 _loadoutData set ["antiInfantryGrenades", []];
 _loadoutData set ["smokeGrenades", []];
 _loadoutData set ["signalsmokeGrenades", []];
