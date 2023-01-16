@@ -418,7 +418,7 @@ class Templates
         flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_TKA\Flag\tka_flag_co.paa";
         name = "3CBF TKA";
         file = "3CBF_AI_TKA";
-        maps[] = {"takistan";
+        maps[] = {"takistan"};
         climate[] = {"arid"};
         description = $STR_A3AP_setupFactionsTab_tka;
     };
