@@ -65,7 +65,7 @@ switch (supportType) do {
 			params ["_pos", "_pilot"];
 			waitUntil {sleep 0.1; ((_pos distance2D _pilot) < 250) || {isNull (objectParent _pilot)}};
 			if(isNull (objectParent _pilot)) exitWith {};
-			(_pilot getVariable 'bombParams') spawn A3A_fnc_airbomb;
+			(_pilot getVariable 'bombParams') remoteExec ["A3A_fnc_airbomb", 2];
 		};
 	};
 };
