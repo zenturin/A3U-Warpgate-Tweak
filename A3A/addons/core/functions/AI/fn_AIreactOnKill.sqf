@@ -65,7 +65,7 @@ if (!fleeing leader _group and random 1 < 0.5) then
 				{
                     private _fleeChance = switch (true) do {
                         case (_x getVariable ["isRival", false]): {
-                            100 - inactivityRivals/2
+                            random 25
                         };
                         case (side _x == Occupants): {
                             aggressionOccupants/2

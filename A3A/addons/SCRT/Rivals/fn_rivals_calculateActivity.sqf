@@ -22,8 +22,9 @@ FIX_LINE_NUMBERS()
 
 params [["_silent", false]];
 
-if (!areRivalsEnabled) exitWith{};
-if (areRivalsDefeated) exitWith{};
+if (!areRivalsEnabled) exitWith {};
+if (!areRivalsDiscovered) exitWith {};
+if (areRivalsDefeated) exitWith {};
 
 //Calculate the new values from the stacks
 private _newValue = 0;
@@ -34,22 +35,19 @@ private _newValue = 0;
 //Limit them to 0 - 100
 _newValue = round ((_newValue min 100) max 0);
 
-inactivityRivals = _newValue;
-publicVariable "inactivityRivals";
-
 private _levelBounds = [((inactivityLevelRivals - 1) * 20) - 2.5, inactivityLevelRivals * 20 + 2.5];
 
 private _notificationText = "";
 private _levelsChanged = false;
 
-switch (true) do {
-    case (!areRivalsDefeated && {_newValue < (_levelBounds select 0)}): {
-        inactivityLevelRivals = ((ceil (_newValue / 20)) min 5) max 1;
-        publicVariable "inactivityLevelRivals";
-        _notificationText = format [localize  "STR_comms_riv_activity_increased", A3A_faction_riv get "name", [inactivityLevelRivals] call SCRT_fnc_rivals_getActivityLevelString];
-        _levelsChanged = true;
-    };
-    case (!areRivalsDefeated && {_newValue > (_levelBounds select 1)}): {
+
+if (_newValue < (_levelBounds select 0)) then {
+    inactivityLevelRivals = ((ceil (_newValue / 20)) min 5) max 1;
+    publicVariable "inactivityLevelRivals";
+    _notificationText = format [localize  "STR_comms_riv_activity_increased", A3A_faction_riv get "name", [inactivityLevelRivals] call SCRT_fnc_rivals_getActivityLevelString];
+    _levelsChanged = true;
+} else {
+    if(_newValue > (_levelBounds select 1)) then {
         inactivityLevelRivals = ((ceil (_newValue / 20)) min 5) max 1;
         publicVariable "inactivityLevelRivals";
         _notificationText = format [localize "STR_comms_riv_activity_reduced", A3A_faction_riv get "name", [inactivityLevelRivals] call SCRT_fnc_rivals_getActivityLevelString];
