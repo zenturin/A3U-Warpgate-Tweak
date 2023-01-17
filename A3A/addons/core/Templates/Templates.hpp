@@ -382,7 +382,7 @@ class Templates
 
     class 3CBF_LDF : 3CBF_Base
     {
-        side = "Inv";
+        side = "Occ";
         flagTexture = "a3\data_f_enoch\flags\flag_enoch_co.paa";
         name = "3CBF LDF";
         file = "3CBF_AI_LDF";
