@@ -31,6 +31,7 @@
 - Fixed cost-free custom outposts on dedicated server
 - Fixed inability to cancel outpost task on dedicated servers
 - Fixed script A3A_template_Inv error on rebel airstrike on dedicated servers
+- Fixed Rivals Activity Level broadcasting to clients on dedicated server on load
 - Fixed present "Equip on Buy" button when headless clients are active on ds/hc configuration
 - Fixed some missing strings, typos, localization errors
 - Civilians will no longer spawn in cities destroyed by Invaders
