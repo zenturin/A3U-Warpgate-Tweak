@@ -116,8 +116,6 @@ DECLARE_SERVER_VAR(areOccupantsDefeated, false);
 DECLARE_SERVER_VAR(areInvadersDefeated, false);
 //Whether the rebels know about rival rebel faction.
 DECLARE_SERVER_VAR(areRivalsDiscovered, false);
-//Initial Rivals Activity
-DECLARE_SERVER_VAR(inactivityRivals, 100);
 DECLARE_SERVER_VAR(inactivityStackRivals, []);
 DECLARE_SERVER_VAR(inactivityLevelRivals, 5);
 //Override uniforms on rebel loadouts

@@ -132,6 +132,7 @@ if (_varName in specialVarLoads) then {
 
         case 'inactivityRivals': {
 			inactivityLevelRivals = _varValue select 0;
+            publicVariable "inactivityLevelRivals";
 			inactivityStackRivals = +(_varValue select 1);
 			[true] call SCRT_fnc_rivals_calculateActivity;
 		};
