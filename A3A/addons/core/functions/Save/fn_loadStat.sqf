@@ -130,6 +130,12 @@ if (_varName in specialVarLoads) then {
             [true] spawn A3A_fnc_calculateAggression;
         };
 
+        case 'inactivityRivals': {
+			inactivityLevelRivals = _varValue select 0;
+			inactivityStackRivals = +(_varValue select 1);
+			[true] call SCRT_fnc_rivals_calculateActivity;
+		};
+
         case 'hr': {
             server setVariable ["HR",_varValue,true];
         };
@@ -657,12 +663,6 @@ if (_varName in specialVarLoads) then {
         case 'randomizeRebelLoadoutUniforms': {
 			randomizeRebelLoadoutUniforms = _varValue;
 			publicVariable "randomizeRebelLoadoutUniforms";
-		};
-
-        case 'inactivityRivals': {
-			inactivityLevelRivals = _varValue select 0;
-			inactivityStackRivals = +(_varValue select 1);
-			[true] call SCRT_fnc_rivals_calculateActivity;
 		};
 
 		case 'rivalsLocationsMap': {
