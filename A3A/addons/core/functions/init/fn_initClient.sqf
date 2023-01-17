@@ -23,6 +23,7 @@ isSupportAnnounced = false;     //Are support abilities announced
 isMenuOpen = false;             //is Commander/Player menu open
 isProjectileCamEnabled = false; //Projectile following camera
 isPlayerParadropable = true;    //parachute commander ability attendance
+hasHeadlessClients = false;     //check if has headless clients
 
 //enables Discord Rich Presence if game client uses English language and mod is turned on
 private _richPresenceFunc = missionNamespace getVariable "DiscordRichPresence_fnc_update";
