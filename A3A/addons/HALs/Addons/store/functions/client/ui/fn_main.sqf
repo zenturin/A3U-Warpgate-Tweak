@@ -103,10 +103,11 @@ switch (_mode) do {
 		["combobox", ["update", []]] call HALs_store_fnc_main;
 		
 		//button is broken when HCs around there
-		if (count hcArray > 0) then {
+		if (hasHeadlessClients) then {
 			private _checkBox = CTRLT(IDC_CHECKBOX_BUY);
     		_checkBox ctrlEnable false;
 			_checkBox ctrlShow false;
+			_checkBox ctrlCommit 0;
 		};
 		
 		call HALs_store_fnc_eachFrame;
