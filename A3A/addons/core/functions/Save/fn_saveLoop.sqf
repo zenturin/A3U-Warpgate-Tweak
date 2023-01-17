@@ -237,7 +237,7 @@ _wurzelGarrison = [];
 	];
 } forEach _markersX;
 
-["garrison",_garrison] call A3A_fnc_setStatVariable;
+["garrison", _garrison] call A3A_fnc_setStatVariable;
 ["wurzelGarrison", _wurzelGarrison] call A3A_fnc_setStatVariable;
 ["usesWurzelGarrison", true] call A3A_fnc_setStatVariable;
 

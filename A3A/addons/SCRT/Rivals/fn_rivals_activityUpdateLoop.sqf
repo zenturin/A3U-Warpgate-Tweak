@@ -23,8 +23,6 @@ if (!areRivalsEnabled) exitWith {
 };
 
 while {true} do {
-    waitUntil {!isNil "A3A_activePlayerCount"};
-
 	if (areRivalsDefeated) exitWith {
         Info("Rivals are already defeated, exiting activity update loop.");
 	};

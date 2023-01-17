@@ -23,7 +23,6 @@
 - Fixed logic pitfall where player's civilian car could be bomb-planted by Rivials in their activity zone
 - Fixed rebel AA sell price exploit
 - Fixed rare case when squad leader belongings weren't deleted after some time after intel search action
-- Fixed some missing strings, typos, localization errors
 - Fixed non-removable pallets from Deliver Supplies mission
 - Fixed no outcome out of enemy leader interrogation on dedicated server
 - Fixed despawn issues of Post Ambush random event
@@ -32,11 +31,14 @@
 - Fixed cost-free custom outposts on dedicated server
 - Fixed inability to cancel outpost task on dedicated servers
 - Fixed script A3A_template_Inv error on rebel airstrike on dedicated servers
+- Fixed present "Equip on Buy" button when headless clients are active on ds/hc configuration
+- Fixed some missing strings, typos, localization errors
 - Civilians will no longer spawn in cities destroyed by Invaders
 - Enemy squad will no longer spawn in difficult variant of Deliver Supplies mission for friendly cities
 - UAV Flyby Rivals event strike notification distance increased from 25 meters to 35 meters to give players a little bit more time to react
-- Reduced probability of Mechanized Airborne QRF
+- Reduced probability of Mechanized Airborne QRF 
 - Improved Mechanized Airborne QRF attacking behaviour
+- (3CB Factions) Switched LDF to Occupants factions section
 
 ## 2.0.2
 ### Changes
