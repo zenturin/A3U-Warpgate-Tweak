@@ -141,6 +141,13 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 1;
     };
+    class lootCrateDistance
+    {
+        title = $STR_params_lootCrateDistance;
+        values[] = {25, 50, 75, 100};
+        texts[] = {"25", "50", "75", "100"};
+        default = 50;
+    };
     class playerIcons
     {
         title = $STR_params_playerIcons;

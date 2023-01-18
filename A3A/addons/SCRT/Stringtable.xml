@@ -2864,6 +2864,10 @@
                 <Original>Enable loot gather crates and loot helicopter commander ability</Original>
                 <Russian>Включить ящики-сборщики добычи и вызов вертолёта-сборщика добычи</Russian>
             </Key>
+            <Key ID="STR_params_lootCrateDistance">
+                <Original>Loot crate gather distance</Original>
+                <Russian>Расстояние сбора предметов у ящика-сборщика добычи</Russian>
+            </Key>
             <Key ID="STR_params_spawnDistance">
                 <Original>Enemy spawn distance</Original>
                 <Russian>Радиус спавна противников, событий и.т.д.</Russian>

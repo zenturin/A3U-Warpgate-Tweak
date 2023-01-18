@@ -5,6 +5,7 @@
 - Tanoa support
 - Takistan support
 - Multiple Rivals factions per modset support, UI changes to support it
+- Loot Crate Gather Distance parameter
 - (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
 - (3CB Factions) Takistan civilians
 - (3CB Factions) TKM rebel faction
@@ -34,6 +35,7 @@
 - Fixed Rivals Activity Level broadcasting to clients on dedicated server on load
 - Fixed present "Equip on Buy" button when headless clients are active on ds/hc configuration
 - Fixed some missing strings, typos, localization errors
+- Changed Artillery Menu default keybind from Shift + Y to Shift + Q as it had conflict with Shift + Y Zeus menu call
 - Civilians will no longer spawn in cities destroyed by Invaders
 - Enemy squad will no longer spawn in difficult variant of Deliver Supplies mission for friendly cities
 - UAV Flyby Rivals event strike notification distance increased from 25 meters to 35 meters to give players a little bit more time to react

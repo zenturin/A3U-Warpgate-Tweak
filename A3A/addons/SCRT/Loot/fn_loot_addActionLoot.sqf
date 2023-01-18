@@ -23,7 +23,7 @@ _lootActionID = [_vehicle,
 	{},
 	{},
 	{
-		[_this select 0, 50] remoteExec ["SCRT_fnc_loot_gatherLoot", 2];
+		[_this select 0, lootCrateDistance] remoteExec ["SCRT_fnc_loot_gatherLoot", 2];
 	},
 	{},
 	[],
