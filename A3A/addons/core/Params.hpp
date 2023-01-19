@@ -316,9 +316,9 @@ class Params
     class A3A_enemyBalanceMul
     {
         title = $STR_params_overall_enemy_res_balance;
-        values[] = {3,5,7,10,14,20,28};
-        texts[] =  {$STR_params_difficulty_trivial,$STR_params_difficulty_veasy,$STR_params_difficulty_easy,$STR_params_difficulty_medium,$STR_params_difficulty_hard,$STR_params_difficulty_vhard,$STR_params_difficulty_extreme};
-        default = 10;
+        values[] = {3, 5, 7, 10, 12, 14, 16, 20, 28};
+        texts[] =  {$STR_params_difficulty_trivial, $STR_params_difficulty_veasy, $STR_params_difficulty_easy, $STR_params_difficulty_easymedium, $STR_params_difficulty_medium, $STR_params_difficulty_mediumhigh, $STR_params_difficulty_hard, $STR_params_difficulty_vhard, $STR_params_difficulty_extreme };
+        default = 12;
     };
     class A3A_enemyAttackMul
     {
@@ -332,8 +332,8 @@ class Params
     {
         attr[] = {"server"};
         title = $STR_params_resource_balance_inv;
-        values[] = {10,11,12,13,14,15};
-        texts[] =  {"1.0x","1.1x","1.2x","1.3x","1.4x","1.5x"};
+        values[] = {10,11,12,13,14,15,16,17,18,19,20};
+        texts[] =  {"1.0x","1.1x","1.2x","1.3x","1.4x","1.5x","1.6x","1.7x","1.8x","1.9x","2.0x"};
         default = 12;
     };
     class A3A_attackHQProximityMul

@@ -416,14 +416,14 @@ class A3A_SetupDialog : A3A_TabbedDialog
                     x = 4 * GRID_W;
                     y = 8 * GRID_H;
                     w = 34 * GRID_W;
-                    h = 62 * GRID_H;
+                    h = 48 * GRID_H;
                 };
                 class DLCBox: A3A_ControlsGroup {
                     idc = A3A_IDC_SETUP_DLCBOX;
                     x = 4 * GRID_W;
                     y = 8 * GRID_H;
                     w = 34 * GRID_W;
-                    h = 62 * GRID_H;
+                    h = 48 * GRID_H;
                 };
 
                 class AddonVicsLabel: A3A_SectionLabelRight {

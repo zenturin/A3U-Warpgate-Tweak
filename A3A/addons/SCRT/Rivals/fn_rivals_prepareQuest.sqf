@@ -6,8 +6,7 @@ _potentials = [];
 
 private _sites = citiesX select {
     private _markerPos = getMarkerPos _x; 
-    sidesX getVariable [_x,sideUnknown] != teamPlayer 
-    && {[_x] call A3A_fnc_isFrontline}
+    sidesX getVariable [_x,sideUnknown] != teamPlayer && {(getMarkerPos _x distance2D getMarkerPos respawnTeamPlayer < distanceMission)}
 };
 
 //fallback in case nothing would be found

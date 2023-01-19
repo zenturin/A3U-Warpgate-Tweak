@@ -2932,9 +2932,17 @@
                 <Original>Easy</Original>
                 <Russian>Легко</Russian>
             </Key>
+            <Key ID="STR_params_difficulty_easymedium">
+                <Original>Below Normal</Original>
+                <Russian>Ниже Обычного</Russian>
+            </Key>
             <Key ID="STR_params_difficulty_medium">
                 <Original>Normal</Original>
                 <Russian>Обычно</Russian>
+            </Key>
+            <Key ID="STR_params_difficulty_mediumhigh">
+                <Original>Above Normal</Original>
+                <Russian>Выше Обычного</Russian>
             </Key>
             <Key ID="STR_params_difficulty_hard">
                 <Original>Hard</Original>

@@ -269,6 +269,8 @@ if(random 100 < (50 + tierWar * 3)) then {
 };
 
 if (!_busy) then {
+	private _pos = nil;
+	private _ang = nil;
 	//Newer system in place
 	private _runwaySpawnLocation = [_markerX] call A3A_fnc_getRunwayTakeoffForAirportMarker;
 	private _spawnParameter = [_markerX, "Plane"] call A3A_fnc_findSpawnPosition;
@@ -355,9 +357,9 @@ private _ammoBox = if (garrison getVariable [_markerX + "_lootCD", 0] == 0) then
 
 if (!_busy) then
 {
-	for "_i" from 1 to (round (random 2)) do
+	for "_i" from 1 to (round (random [1,2,3])) do
 	{
-		private _arrayVehAAF = ((_faction get "vehiclesAPCs") + (_faction get "vehiclesTanks") + (_faction get "vehiclesLightTanks")) select {[_x] call A3A_fnc_vehAvailable};
+		private _arrayVehAAF = ((_faction get "vehiclesAPCs") + (_faction get "vehiclesLightAPCs") + (_faction get "vehiclesTanks") + (_faction get "vehiclesLightTanks")) select {[_x] call A3A_fnc_vehAvailable};
 		private _spawnParameter = [_markerX, "Vehicle"] call A3A_fnc_findSpawnPosition;
 		if (count _arrayVehAAF > 0 && {_spawnParameter isEqualType []}) then
 		{
@@ -372,7 +374,14 @@ if (!_busy) then
 	};
 };
 
-private _arrayVehAAF = (_faction get "vehiclesLightArmed") + (_faction get "vehiclesLightUnarmed") + (_faction get "vehiclesTrucks") + (_faction get "vehiclesAmmoTrucks") + (_faction get "vehiclesRepairTrucks") + (_faction get "vehiclesFuelTrucks") + (_faction get "vehiclesMedical");
+private _arrayVehAAF = 
+	(_faction get "vehiclesLightArmed") + 
+	(_faction get "vehiclesLightUnarmed") + 
+	(_faction get "vehiclesTrucks") + 
+	(_faction get "vehiclesAmmoTrucks") + 
+	(_faction get "vehiclesRepairTrucks") + 
+	(_faction get "vehiclesFuelTrucks") + 
+	(_faction get "vehiclesMedical");
 _countX = 0;
 
 while {_countX < _nVeh && {_countX < 3}} do
