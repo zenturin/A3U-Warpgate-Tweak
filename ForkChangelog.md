@@ -45,6 +45,7 @@
 - Improved Mechanized Airborne QRF attacking behaviour
 - (3CB Factions) Switched LDF to Occupants factions section
 - (Takistan) Removed resource marker, moved initial HQ position farther from Occupant airbase
+- (Sefrou Ramal) Moved Military Administration to less problematic landscape
 
 ## 2.0.2
 ### Changes
