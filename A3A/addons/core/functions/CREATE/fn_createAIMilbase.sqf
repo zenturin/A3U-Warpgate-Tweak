@@ -305,7 +305,7 @@ if (garrison getVariable [_markerX + "_lootCD", 0] == 0) then {
 };
 
 if (!_busy) then {
-	for "_i" from 1 to (round (random 2)) do {
+	for "_i" from 1 to (round (random [1,2,3])) do {
 		private _arrayVehAAF = ((_faction get "vehiclesAPCs") + (_faction get "vehiclesLightAPCs") + (_faction get "vehiclesTanks") + (_faction get "vehiclesLightTanks")) select {
 			[_x] call A3A_fnc_vehAvailable
 		};
