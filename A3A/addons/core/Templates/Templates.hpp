@@ -349,7 +349,7 @@ class Templates
         flagTexture = "uk3cb_factions\addons\uk3cb_factions_tkm\flag\tkm_b_flag_co.paa";
         name = "3CBF TKM";
         file = "3CBF_Reb_TKM";
-        maps[] = {"takistan"};
+        maps[] = {"takistan", "SefrouRamal"};
         description = $STR_A3AP_setupFactionsTab_tkm_3cbf;
     };
 
@@ -428,7 +428,7 @@ class Templates
         flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_TKA\Flag\tka_flag_co.paa";
         name = "3CBF TKA";
         file = "3CBF_AI_TKA";
-        maps[] = {"takistan"};
+        maps[] = {"takistan", "SefrouRamal"};
         climate[] = {"arid"};
         description = $STR_A3AP_setupFactionsTab_tka;
     };
@@ -439,7 +439,7 @@ class Templates
         flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_ARD\Flag\ARD_flag_co.paa";
         name = "3CBF ARD";
         file = "3CBF_AI_ARD";
-        maps[] = {"takistan"};
+        maps[] = {"takistan", "SefrouRamal"};
         climate[] = {"arid"};
         description = $STR_A3AP_setupFactionsTab_ard;
     };
