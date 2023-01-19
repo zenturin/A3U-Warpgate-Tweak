@@ -35,8 +35,8 @@
 ["vehiclesTanks", ["rhs_t72bd_tv", "rhs_t72be_tv", "rhs_t80a", "rhs_t80bv", "rhs_t80u", "rhs_t80um", "rhs_t72bb_tv", "rhs_t90sab_tv", "rhs_t90a_tv", "rhs_t90_tv"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["rhs_zsu234_aa", "rhs_zsu234_aa", "UK3CB_O_2S6M_Tunguska_VPV"]] call _fnc_saveToTemplate;
 
-["vehiclesTransportBoats", ["O_G_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["rhsgref_hidf_assault_boat", "rhsgref_hidf_rhib"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["UK3CB_MDF_B_RHIB_Gunboat"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["RHS_Su25SM_vvs", "RHS_Su25SM_vvsc"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["rhs_mig29sm_vvs", "rhs_mig29s_vvs", "RHS_T50_vvs_generic_ext"]] call _fnc_saveToTemplate;

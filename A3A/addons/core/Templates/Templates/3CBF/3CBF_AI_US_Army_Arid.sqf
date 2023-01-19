@@ -37,8 +37,8 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehiclesTanks", ["rhsusf_m1a1aimd_usarmy", "rhsusf_m1a1aim_tuski_d", "rhsusf_m1a2sep1d_usarmy", "rhsusf_m1a2sep1tuskid_usarmy", "rhsusf_m1a2sep1tuskiid_usarmy", "rhsusf_m1a2sep2d_usarmy"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["RHS_M6"]] call _fnc_saveToTemplate;
 
-["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["rhsgref_hidf_assault_boat", "rhsgref_hidf_rhib"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["UK3CB_MDF_B_RHIB_Gunboat"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["RHS_A10"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["rhsusf_f22"]] call _fnc_saveToTemplate;

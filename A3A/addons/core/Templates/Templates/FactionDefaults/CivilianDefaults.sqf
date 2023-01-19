@@ -62,11 +62,11 @@ private _faces = switch (true) do {
 ["faces", _faces] call _fnc_saveToTemplate;
 
 private _currencySymbol = switch (true) do {
-	case (toLowerANSI worldName in ["tanoa", "cam_lao_nam", "vn_khe_sanh"]): {
+	case (toLowerANSI worldName in ["cam_lao_nam", "vn_khe_sanh"]): {
 		"đ"
 	};
     case ((toLowerANSI worldName) isEqualTo "sefrouramal");
-	case ((toLowerANSI worldName) isEqualTo "takistan"): {
+	case ((toLowerANSI worldName in ["tanoa", "takistan"]): {
 		"$"
 	};
     case ((toLowerANSI worldName) isEqualTo "enoch"): {
