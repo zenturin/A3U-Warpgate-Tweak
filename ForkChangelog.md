@@ -35,6 +35,7 @@
 - Fixed script A3A_template_Inv error on rebel airstrike on dedicated servers
 - Fixed Rivals Activity Level broadcasting to clients on dedicated server on load
 - Fixed present "Equip on Buy" button when headless clients are active on ds/hc configuration
+- Fixed bug that prevented commander from placing or removing minefields
 - Fixed some missing strings, typos, localization errors
 - Investigate the Battleground mission will be rolled in mission distance radius instead of frontline cities only
 - Changed Artillery Menu default keybind from Shift + Y to Shift + U as it had conflict with Shift + Y Zeus menu call
