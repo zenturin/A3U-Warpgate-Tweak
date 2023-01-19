@@ -190,8 +190,6 @@ private _rebUniforms = [
     "rhsgref_uniform_tigerstripe",
     "rhsgref_uniform_woodland",
     "rhsgref_uniform_woodland_olive",
-    "rhsgref_uniform_TLA_1",
-    "rhsgref_uniform_TLA_2",
     "UK3CB_CHD_I_U_CombatSmock_09",
     "UK3CB_CHD_I_U_CombatSmock_12",
     "UK3CB_CHD_I_U_CombatUniform_08",

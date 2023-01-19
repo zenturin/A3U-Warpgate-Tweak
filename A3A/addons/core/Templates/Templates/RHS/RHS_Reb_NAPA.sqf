@@ -170,9 +170,7 @@ private _rebUniforms = [
     "rhsgref_uniform_og107_erdl",
     "rhsgref_uniform_tigerstripe",
     "rhsgref_uniform_woodland",
-    "rhsgref_uniform_woodland_olive",
-    "rhsgref_uniform_TLA_1",
-    "rhsgref_uniform_TLA_2"
+    "rhsgref_uniform_woodland_olive"
 ];
 
 ["uniforms", _rebUniforms] call _fnc_saveToTemplate;
