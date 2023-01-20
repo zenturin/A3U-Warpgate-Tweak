@@ -335,6 +335,7 @@ private _milAdministrationTypes = [
 	"Land_vn_barracks_01_grey_f", 
 	"Land_vn_barracks_01_camo_f", 
 	"Land_vn_i_barracks_v2_f",
+	"Land_vn_u_barracks_v2_f",
 	"land_gm_euro_office_02"
 ];
 private _milAdminPositions = getArray (_mapInfo/"milAdministrations");

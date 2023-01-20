@@ -12,7 +12,7 @@ Environment: Any
 Public: Yes
 
 Example:
-[_faction get "unitTierGrunt"] call SCRT_fnc_unit_getTiered;
+[_faction get "unitRifle"] call SCRT_fnc_unit_getTiered;
 */
 
 params [

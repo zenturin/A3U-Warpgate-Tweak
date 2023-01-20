@@ -2,6 +2,8 @@
 
 ## 2.1
 ### Additions
+- S.O.G. Prairie Fire CDLC support
+- Cam Lao Nam and Khe Sanh terrains support
 - Tanoa support
 - Takistan support
 - Multiple Rivals factions per modset support, UI changes to support it
@@ -13,11 +15,18 @@
 - (3CB Factions) Tribal Fighters, Syndikat rival factions
 - (Vanilla) NATO Tropical faction 
 - (Vanilla) Syndikat rival faction
+- (SOGPF) MACV, PAVN, ARVN enemy factions
+- (SOGPF) VM, PAVN rebel factions
+- (SOGPF) Vietnam civilian faction
+- (SOGPF) Pathet Lao, Lao Royal Army rival factions
 
 ### Changes
 - Community Version 3.1 integration (important bugfixes and tweaks)
 - Increased durability of loot crates, slight rework of load/unload invulnerability
 - Seaports will be used for airspace control
+- Expanded guard unit pool with LATs, machinegunners, grenadiers
+- Expanded tower guard unit pool with snipers and riflemen
+- Expanded guard building pool with new buildings
 - Fixed Rebel Loadout arsenal finite items usage exploit
 - Fixed ability to do big attacks for factions that were defeated before
 - Fixed Destroy Artillery minor error about event handler

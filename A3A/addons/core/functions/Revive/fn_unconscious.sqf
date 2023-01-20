@@ -64,9 +64,9 @@ if (_isPlayer) then {
 		private _locationName = [_nearestMarker] call A3A_fnc_localizar;
 
 		if(player distance2D (getMarkerPos _nearestMarker) < 300) then {
-			[["UpdateState", format ["Lies unconscious at the %1", _locationName]]] call SCRT_fnc_misc_updateRichPresence;
+			[["UpdateState", format ["Lying incapacitated at the %1", _locationName]]] call SCRT_fnc_misc_updateRichPresence;
 		} else {
-			[["UpdateState", "Lies unconscious in the middle of nowhere"]] call SCRT_fnc_misc_updateRichPresence;
+			[["UpdateState", "Lying incapacitated in the middle of nowhere"]] call SCRT_fnc_misc_updateRichPresence;
 		};
 	};
 };

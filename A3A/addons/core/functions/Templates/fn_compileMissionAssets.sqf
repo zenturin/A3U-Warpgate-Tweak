@@ -103,9 +103,9 @@ setVar("vehiclesPlanesAA", OccAndInv("vehiclesPlanesAA") );
 setVar("vehiclesPlanesCAS", OccAndInv("vehiclesPlanesCAS") );
 setVar("vehiclesPlanesTransport", OccAndInv("vehiclesPlanesTransport"));
 setVar("staticMortars", OccAndInv("staticMortars") + Riv("staticMortars") + [Reb("staticMortar")]);
-setVar("staticAA", OccAndInv("staticAAs") + Riv("staticAAs") + [Reb("staticAA")] + ("STATICAA" call _fnc_extractMarketClasses));
-setVar("staticAT", OccAndInv("staticATs") + Riv("staticATs") + [Reb("staticAT")] + ("STATICAT" call _fnc_extractMarketClasses));
-setVar("staticMG", OccAndInv("staticMGs") + Riv("staticMGs") + [Reb("staticMG")] + ("STATICMG" call _fnc_extractMarketClasses));
+setVar("staticAA", OccAndInv("staticAAs") + [Reb("staticAA")] + ("STATICAA" call _fnc_extractMarketClasses));
+setVar("staticAT", OccAndInv("staticATs") + [Reb("staticAT")] + ("STATICAT" call _fnc_extractMarketClasses));
+setVar("staticMG", OccAndInv("staticMGs") + Riv("staticLowWeapons") + [Reb("staticMG")] + ("STATICMG" call _fnc_extractMarketClasses));
 
 //Antistasi Plus stuff
 setVar("vehiclesAirborne", OccAndInv("vehiclesAirborne"));

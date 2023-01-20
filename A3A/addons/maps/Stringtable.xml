@@ -265,6 +265,31 @@
         <Original>A pack of old men in a job where people die young.</Original>
         <Russian>Стая стариков там, где люди умирают молодыми.</Russian>
       </Key>
+      <Key ID="STR_antistasi_mission_info_camlaonam_mapname_short_text">
+        <Original>Antistasi Plus - Agent Orange</Original>
+        <Russian>Antistasi Plus - Агент Оранж</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_camlaonam_mapname_text">
+        <Original>Antistasi Plus - Agent Orange</Original>
+        <Russian>Antistasi Plus - Агент Оранж</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_camlaonam_blurb_text">
+        <Original>Good morning, Vietnam.</Original>
+        <Russian>Доброе утро, Вьетнам.</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_khesanh_mapname_text">
+        <Original>Antistasi Plus - Battle of Khe Sanh</Original>
+        <Russian>Antistasi Plus - Битва при Кшешани</Russian>
+        <Czech>Antistasi Plus - Bitva u Khe Sanh</Czech>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_khesanh_mapname_short_text">
+        <Original>Antistasi Plus - Battle of KS</Original>
+        <Russian>Antistasi Plus - Битви при Кшешани</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_khesanh_blurb_text">
+        <Original>“In this world, a man himself is nothing. And there ain't no world but this one.”</Original>
+        <Russian>„В этом мире человек, сам по себе - ничто. И нет другого мира, кроме этого."</Russian>
+      </Key>
     </Container>
   </Package>
 </Project>

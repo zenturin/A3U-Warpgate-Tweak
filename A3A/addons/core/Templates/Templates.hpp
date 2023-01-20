@@ -111,6 +111,7 @@ class Templates
         name = "A3 Exegerménos";
         file = "Vanilla_Riv_Exegermenos";
         description = $STR_A3AP_setupFactionsTab_exegermenos;
+        climate[] = {"arid"};
     };
 
     class Vanilla_Civ : Vanilla_Base
@@ -240,6 +241,7 @@ class Templates
         name = "RHS CDF";
         file = "RHS_AI_CDF";
         maps[] = {"cup_chernarus_A3"};
+        climate[] = {"temperate"};
         description = $STR_A3AP_setupFactionsTab_cdf;
     };
 
@@ -360,6 +362,18 @@ class Templates
         name = "3CBF CHDKZ";
         file = "3CBF_Riv_CHDKZ";
         description = $STR_A3AP_setupFactionsTab_chdkz;
+        climate[] = {"arid", "temperate"};
+    };
+
+    class 3CBF_TI : 3CBF_Base
+    {
+        side = "Riv";
+        flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_TKC\Flag\tkc_flag_co.paa";
+        name = "3CBF TI";
+        file = "3CBF_Riv_TI";
+        maps[] = {"takistan", "SefrouRamal"};
+        climate[] = {"arid"};
+        description = $STR_A3AP_setupFactionsTab_ti;
     };
 
     class 3CBF_CHC : 3CBF_Base
@@ -369,6 +383,7 @@ class Templates
         name = "3CBF Chernarus";
         file = "3CBF_Civ_CHC";
         description = $STR_A3AP_setupFactionsTab_easterneuropean;
+        climate[] = {"arid","temperate"};
     };
 
     class 3CBF_TKC: 3CBF_Base
@@ -377,6 +392,8 @@ class Templates
         flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_TKA\Flag\tka_flag_co.paa";
         name = "3CBF Takistan";
         file = "3CBF_Civ_TKC";
+        climate[] = {"arid"};
+        maps[] = {"takistan", "SefrouRamal"};
         description = $STR_A3AP_setupFactionsTab_takistan;
     };
 
@@ -388,6 +405,7 @@ class Templates
         file = "3CBF_AI_LDF";
         description = $STR_A3AP_setupFactionsTab_ldf;
         climate[] = {"temperate"};
+        maps[] = {"Enoch"};
     };
 
     class 3CBF_CDF : 3CBF_Base
@@ -398,6 +416,7 @@ class Templates
         file = "3CBF_AI_CDF";
         description = $STR_A3AP_setupFactionsTab_cdf;
         climate[] = {"temperate"};
+        maps[] = {"cup_chernarus_A3"};
     };
 
     class 3CBF_HIDF : 3CBF_Base

@@ -366,7 +366,7 @@ Info("Reading templates");
 	};
 
     private _type = ["Occ", "Inv", "Reb", "Civ", "Riv"] # _forEachIndex;
-    missionNamespace setVariable ["A3A_"+_type+"_template", _x];			// don't actually need this atm, but whatever
+    missionNamespace setVariable ["A3A_"+_type+"_template", _x, true];			// don't actually need this atm, but whatever
 } forEach (_saveData get "factions");
 
 {
