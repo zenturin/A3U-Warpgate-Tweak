@@ -45,7 +45,7 @@ if (_arrayAirports isEqualTo []) exitWith {
 private _base = [_arrayAirports, _positionX] call BIS_Fnc_nearestPosition;
 private _posBase = getMarkerPos _base;
 
-private _bodyguardClass = [FactionGet(occ,"unitTierBodyguard")] call SCRT_fnc_unit_getTiered;
+private _bodyguardClass = [FactionGet(occ,"unitRifle")] call SCRT_fnc_unit_getTiered;
 private _traitor = [_groupTraitor, FactionGet(occ,"unitTraitor"), _posTraitor, [], 0, "NONE"] call A3A_fnc_createUnit;
 _traitor allowDamage false;
 _traitor setPos _posTraitor;

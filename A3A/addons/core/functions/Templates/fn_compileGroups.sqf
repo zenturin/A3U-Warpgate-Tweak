@@ -32,30 +32,26 @@ params ["_faction", "_prefix"];
 //---------------|
 if (_prefix in ["occ", "inv"]) exitWith {
     //singular tiered units
-    _faction set ["unitTierGrunt", [
-        unit(militia, "Rifleman"),
-        unit(military, "Rifleman"),
-        unit(elite, "Rifleman")
-    ]];
-
-    _faction set ["unitTierMarksman", [
-        unit(militia, "Marksman"),
-        unit(military, "Marksman"),
-        unit(elite, "Marksman")
-    ]];
-
     _faction set ["unitTierStaticCrew", [
         unit(militia, "Rifleman"),
         unit(military, "Rifleman"),
         unit(elite, "Rifleman")
     ]];
 
-    _faction set ["unitTierBodyguard", [
-        unit(militia, "Rifleman"),
-        unit(military, "Rifleman"),
-        unit(elite, "Rifleman")
+    _faction set ["unitRifle", [unit(militia, "Rifleman"),unit(military, "Rifleman"),unit(elite, "Rifleman")]];
+
+    _faction set ["unitTierGuard", [
+        [unit(militia, "Rifleman"),unit(military, "Rifleman"),unit(elite, "Rifleman")],
+        [unit(militia, "Grenadier"), unit(military, "Grenadier"),unit(elite, "Grenadier")],
+        [unit(militia, "LAT"), unit(military, "LAT"),unit(elite, "LAT")],
+        [unit(militia, "MachineGunner"), unit(military, "MachineGunner"),unit(elite, "MachineGunner")]
     ]];
-    _faction set ["unitRifle", _faction get "unitTierBodyguard"];
+
+    _faction set ["unitTierTower", [
+        [unit(militia, "Rifleman"),unit(military, "Rifleman"),unit(elite, "Rifleman")],
+        [unit(militia, "Marksman"),unit(military, "Marksman"),unit(elite, "Marksman")],
+        [unit(militia, "Sniper"), unit(military, "Sniper"),unit(elite, "Sniper")]
+    ]];
 
     //singular units
     _faction set ["unitOfficial", unit(other, "Official")];

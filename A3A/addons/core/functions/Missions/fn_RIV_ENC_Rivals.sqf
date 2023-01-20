@@ -357,6 +357,7 @@ private _group1Wp = _group1 addWaypoint [(position _intelLeader), 5];
 _group1Wp setWaypointType "MOVE";
 _group1Wp setWaypointCombatMode "YELLOW";
 _group1Wp setWaypointSpeed "FULL";
+// _group1 spawn A3A_fnc_attackDrillAI;
 
 private _group2Position = [
 		_roadPosition, //center
@@ -375,6 +376,7 @@ private _group2Wp = _group2 addWaypoint [(position _intelLeader), 5];
 _group2Wp setWaypointType "MOVE";
 _group2Wp setWaypointCombatMode "YELLOW";
 _group2Wp setWaypointSpeed "FULL";
+// _group2 spawn A3A_fnc_attackDrillAI;
 
 {
 	[_x] call A3A_fnc_NATOinit;
