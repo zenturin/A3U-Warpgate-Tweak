@@ -244,7 +244,11 @@ if (!isNull _antenna) then {
 			_posF = _pos getPos [1,_dir];
 			_posF set [2,24.3];
 		};
-        private _typeUnit = if (_isFIA) then {_faction get ("unitMilitiaMarksman")} else {([_faction get "unitTierMarksman"] call SCRT_fnc_unit_getTiered)};
+        private _typeUnit = if (_isFIA) then {
+			_faction get ("unitMilitiaMarksman")
+		} else {
+			selectRandom ([_faction, "unitTierTower"] call SCRT_fnc_unit_flattenTier)
+		};
 		private _unit = [_groupX, _typeUnit, _positionX, [], _dir, "NONE"] call A3A_fnc_createUnit;
 		_unit setPosATL _posF;
 		_unit forceSpeed 0;

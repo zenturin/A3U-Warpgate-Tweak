@@ -66,11 +66,7 @@ if (_hasWs) then {
 ["vehiclesRivalsHelis", ["O_Raven_Heli_Light_02_unarmed_F"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
-["staticMGs", ["O_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
-["staticGMGs", []] call _fnc_saveToTemplate;
-
-["staticATs", ["O_static_AT_F"]] call _fnc_saveToTemplate;
-["staticAAs", ["O_static_AA_F"]] call _fnc_saveToTemplate;
+["staticLowWeapons", ["O_G_HMG_02_F", "O_GMG_01_F", "O_HMG_01_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["O_Mortar_01_F"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;

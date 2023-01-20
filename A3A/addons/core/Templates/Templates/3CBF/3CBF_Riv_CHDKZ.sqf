@@ -49,11 +49,7 @@
 ["vehiclesRivalsHelis", ["rhsgref_ins_Mi8amt"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
-["staticMGs", ["rhsgref_ins_DSHKM"]] call _fnc_saveToTemplate;
-["staticGMGs", ["rhsgref_ins_DSHKM_Mini_TriPod", "rhsgref_ins_AGS30_TriPod"]] call _fnc_saveToTemplate;
-
-["staticATs", ["O_static_AT_F"]] call _fnc_saveToTemplate;
-["staticAAs", ["rhsgref_ins_Igla_AA_pod", "rhsgref_ins_ZU23"]] call _fnc_saveToTemplate;
+["staticLowWeapons", ["rhsgref_ins_DSHKM_Mini_TriPod", "rhsgref_ins_AGS30_TriPod"]] call _fnc_saveToTemplate;
 ["staticMortars", ["rhsgref_ins_2b14"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
