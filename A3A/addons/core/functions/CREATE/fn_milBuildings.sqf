@@ -328,7 +328,7 @@ for "_i" from 0 to (count _buildings) - 1 do
             _pos = ASLToATL ([_pos select 0, _pos select 1, _zpos select 2]);
             private _unit = [_type, _pos, _dir] call _fnc_spawnStaticUnit;
         };
-        if (_typeB isEqualTo "Land_GuardTower_01_F" || {_typeB isEqualTo "Land_MobileRadar_01_radar_F"}) exitWith
+        if (_typeB isEqualTo "Land_GuardTower_01_F" || {_typeB isEqualTo "Land_vn_guardtower_01_f" || {_typeB isEqualTo "Land_MobileRadar_01_radar_F"}}) exitWith
         {
             private _type = selectRandom ([_faction, "unitTierTower"] call SCRT_fnc_unit_flattenTier);
             private _dir = (getDir _building) - 180;
@@ -337,7 +337,7 @@ for "_i" from 0 to (count _buildings) - 1 do
             _pos = ASLToATL ([_pos select 0, _pos select 1, _zpos select 2]);
             private _unit = [_type, _pos, _dir] call _fnc_spawnStaticUnit;
         };
-        if (_typeB isEqualTo "Land_GuardTower_02_F") exitWith
+        if (_typeB isEqualTo "Land_GuardTower_02_F" || {_typeB isEqualTo "Land_vn_guardtower_02_f" || {_typeB isEqualTo "Land_vn_guardtower_03_f" || {_typeB isEqualTo "Land_vn_guardtower_04_f"}}}) exitWith
         {
             private _type = selectRandom ([_faction, "unitTierGuard"] call SCRT_fnc_unit_flattenTier);
             private _dir = getDir _building;

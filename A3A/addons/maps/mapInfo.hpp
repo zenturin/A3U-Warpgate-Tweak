@@ -11,4 +11,6 @@ class mapInfo {
     #include "Antistasi_vt7.vt7\mapInfo.hpp"
     #include "Antistasi_takistan.takistan\mapInfo.hpp"
     #include "Antistasi_Tanoa.Tanoa\mapInfo.hpp"
+    #include "Antistasi_cam_lao_nam.cam_lao_nam\mapInfo.hpp"
+    #include "Antistasi_vn_khe_sanh.vn_khe_sanh\mapInfo.hpp"
 };

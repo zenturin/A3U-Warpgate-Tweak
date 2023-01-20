@@ -22,15 +22,13 @@ traderMarker setMarkerAlpha 1;
 sidesX setVariable [traderMarker,teamPlayer,true];
 publicVariable "traderMarker";
 
-private _isVn = A3A_Occ_template isEqualTo "VN" || {A3A_Inv_template isEqualTo "VN"};
-
 //clear point
 {  
 	[_x, true] remoteExec ["hideObject", 0, true];
 } forEach nearestTerrainObjects [_position, [], 50, false, true];
 
 //trader prop objects
-_traderTent = if (_isVn) then { 
+_traderTent = if (A3A_Reb_template isEqualTo "VN") then { 
 	createVehicle ["Land_MedicalTent_01_wdl_generic_inner_F", _position]; 
 } else {
 	createVehicle ["Land_MedicalTent_01_wdl_generic_open_F", _position];
