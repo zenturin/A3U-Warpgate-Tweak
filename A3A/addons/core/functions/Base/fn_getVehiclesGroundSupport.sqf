@@ -36,7 +36,7 @@ if (_side == Occupants) then {
 };
 [_faction get "vehiclesLightArmed", _carWeight] call _fnc_addArrayToWeights;
 [_faction get "vehiclesTanks", _tankWeight] call _fnc_addArrayToWeights;
-[_faction get "vehiclesLightTanks", _tankWeight] call _fnc_addArrayToWeights;
+[_faction get "vehiclesLightTanks", _ltankWeight] call _fnc_addArrayToWeights;
 [_vehAA, _aaWeight] call _fnc_addArrayToWeights;
 
 _vehWeights;

@@ -234,7 +234,7 @@ while {true} do {
 	private _typeVehX = selectRandom (_faction get "staticMortars");
 	private _veh = _typeVehX createVehicle _mortarPos;
 	_veh setDir (_spawnParameter select 1);
-	_nul=[_veh] execVM QPATHTOFOLDER(scripts\UPSMON\MON_artillery_add.sqf);//TODO need delete UPSMON link
+	_nul=[_veh] spawn UPSMON_fnc_artillery_add;//TODO need delete UPSMON link
 	private _unit = [_groupX, _typeUnit, _positionX, [], 0, "CAN_COLLIDE"] call A3A_fnc_createUnit;
 	[_unit,_markerX] call A3A_fnc_NATOinit;
 
