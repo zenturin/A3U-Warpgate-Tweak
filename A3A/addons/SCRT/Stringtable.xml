@@ -178,6 +178,18 @@
                 <Original>CHDKZ.\nEastern European paramilitary group of people with various background - from criminals and defectors to highly professional mercenaries and soldiers.</Original>
                 <Russian>ЧДКЗ.\nВосточноевропейская военизированная группировка людей с разнообразным прошлым - от преступников и дезертиров до высокопрофессиональных наёмников и солдат.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_ti">
+                <Original>Takistan Insurgents (TI).\nMembers of various militant movements across the Middle East.</Original>
+                <Russian>Повстанцы Таксистана (TI).\nЧлены различных военизированных движений на Ближнем Востоке.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_macv">
+                <Original>U.S. Military Assistance Command, Vietnam (MACV).\nUS military group in Vietnam.</Original>
+                <Russian>Командование по оказанию военной помощи Вьетнаму (MACV).\nВоенная группировка США во Вьетнаме.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_arvn">
+                <Original>Army of the Republic of Vietnam(ARVN).\nSouth Vietnam military force.</Original>
+                <Russian>Армия Республики Вьетнам (ARVN).\nВооруженные силы Южного Вьетнама.</Russian>
+            </Key>
         </Container>
         <Container name="magRepack">
             <Key ID="STR_magRepack_init">

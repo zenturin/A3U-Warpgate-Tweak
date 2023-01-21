@@ -18,7 +18,22 @@ private _typeUnit = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTi
 
 //New system to place helis, does not care about heli types currently
 private _helicopterTypes = [];
-_helicopterTypes append (_faction get "vehiclesHelisLight");
+
+switch (true) do {
+    case (_markerX in milbases): {
+        _helicopter append (_faction get "vehiclesHelisTransport");
+        _helicopterTypes append (_faction get "vehiclesHelisLightAttack");
+    };
+    case (_markerX in airportsX): {
+        _helicopterTypes append (_faction get "vehiclesHelisTransport");
+        _helicopterTypes append (_faction get "vehiclesHelisLight");
+        _helicopterTypes append (_faction get "vehiclesHelisLightAttack");
+        _helicopterTypes append (_faction get "vehiclesHelisAttack");
+    };
+    default {
+        _helicopterTypes append (_faction get "vehiclesHelisLight");
+    };
+};
 private _spawnParameter = [_markerX, "Heli"] call A3A_fnc_findSpawnPosition;
 private _count = 1 + round (random 3); //Change these numbers as you want, first number is minimum, max is first plus second number
 while {_spawnParameter isEqualType [] && {_count > 0}} do {
