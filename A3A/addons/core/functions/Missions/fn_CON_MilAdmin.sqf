@@ -34,42 +34,6 @@ if (_milAdministrationIndex isEqualTo -1) exitWith {
 private _milAdministration = A3A_milAdministrations select _milAdministrationIndex;
 private _positionsTuple = _milAdministration call SCRT_fnc_common_getMilAdminGarrisonPositions;
 private _buildingPositions = _positionsTuple select 0;
-private _powPositions = _positionsTuple select 4;
-
-/////////////
-//  POWs  //
-///////////
-private _POWs = [];
-
-private _grpPOW = createGroup teamPlayer;
-private _powCount = random [1, 3, 5];
-
-for "_i" from 0 to _powCount do {
-    private _buildingPosIndex = selectRandom _powPositions;
-    private _buildingPosition = _buildingPositions select _buildingPosIndex;
-
-	_unit = [_grpPOW, FactionGet(reb,"unitUnarmed"), _buildingPosition, [], 0, "NONE"] call A3A_fnc_createUnit;
-	_unit allowDamage false;
-	[_unit,true] remoteExec ["setCaptive",0,_unit];
-	_unit setCaptive true;
-	_unit disableAI "MOVE";
-	_unit disableAI "AUTOTARGET";
-	_unit disableAI "TARGET";
-	_unit setUnitPos "UP";
-	_unit setBehaviour "CARELESS";
-	_unit allowFleeing 0;
-	removeAllWeapons _unit;
-	removeAllAssignedItems _unit;
-	_POWS pushBack _unit;
-	[_unit,"prisonerFlee"] remoteExec ["A3A_fnc_flagaction",[teamPlayer,civilian],_unit];
-	[_unit] call A3A_fnc_reDress;
-};
-
-_grpPOW deleteGroupWhenEmpty true;
-
-{
-    _x allowDamage true;
-} forEach _POWS;
 
 waitUntil {sleep 1; dateToNumber date > _dateLimitNum or {sidesX getVariable [_marker,sideUnknown] == teamPlayer}};
 
@@ -111,7 +75,3 @@ if (dateToNumber date > _dateLimitNum) then {
 };
 
 [_taskId, "CON", 1200] spawn A3A_fnc_taskDelete;
-
-sleep 600;
-{deleteVehicle _x} forEach _POWs;
-deleteGroup _grpPOW;
