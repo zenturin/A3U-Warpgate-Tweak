@@ -11,7 +11,14 @@
 /////////////////////
 
 private _faces = switch (true) do {
-	case (toLowerANSI worldName in ["tanoa", "cam_lao_nam", "vn_khe_sanh"]): {
+	case (toLowerANSI worldName in ["cam_lao_nam", "vn_khe_sanh"]): {
+		[
+			"AsianHead_A3_01","AsianHead_A3_02","AsianHead_A3_03",
+			"AsianHead_A3_04","AsianHead_A3_05","AsianHead_A3_06",
+			"AsianHead_A3_07"
+		];
+	};
+	case ((toLowerANSI worldName) isEqualTo "tanoa"): {
 		[
 			"AsianHead_A3_01", "AsianHead_A3_02", "AsianHead_A3_03", "AsianHead_A3_04", "AsianHead_A3_06", "AsianHead_A3_07",
 			"TanoanHead_A3_01", "TanoanHead_A3_02", "TanoanHead_A3_03", "TanoanHead_A3_04", "TanoanHead_A3_05", "TanoanHead_A3_06",

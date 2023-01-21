@@ -281,24 +281,13 @@ for "_i" from 0 to (count _buildings) - 1 do {
     };
 };
 
-//Spawning Marksmen on fixed buildingPos of chosen buildings
-for "_i" from 0 to (count _buildings) - 1 do
-{
-    if (spawner getVariable _markerX == 2) exitWith {};
-    private _building = _buildings select _i;
-    private _typeB = typeOf _building;
-
-    call {
-        if (isObjectHidden _building) exitWith {};            // don't put statics on destroyed buildings
-    
-};
-
 //Spawning Riflemen on fixed buildingPos of chosen buildings
 for "_i" from 0 to (count _buildings) - 1 do
 {
     if (spawner getVariable _markerX == 2) exitWith {};
     private _building = _buildings select _i;
     private _typeB = typeOf _building;
+
 
     call {
         if (isObjectHidden _building) exitWith {};            // don't put statics on destroyed buildings
@@ -317,7 +306,6 @@ for "_i" from 0 to (count _buildings) - 1 do
                 private _pos = _zpos getPos [0, _dir];            // zeroes Z value because BIS
                 _pos = ASLToATL ([_pos select 0, _pos select 1, _zpos select 2]);
                 private _unit = [_type, _pos, _dir] call _fnc_spawnStaticUnit;
-            };
         };
         if (_typeB == "Land_vn_b_tower_01") exitWith
         {
