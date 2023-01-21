@@ -219,7 +219,7 @@ class CfgFunctions
             class createAIOutposts {};
             class createAIResources {};
             class createAIMilbase {};
-            class createAIMilAdmins {};
+            class createAIMilAdmin {};
             class createAttackForceAir {};
             class createAttackForceLand {};
             class createAttackForceMixed {};

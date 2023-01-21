@@ -335,13 +335,12 @@ private _milAdministrationTypes = [
 	"Land_vn_barracks_01_grey_f", 
 	"Land_vn_barracks_01_camo_f", 
 	"Land_vn_i_barracks_v2_f",
-	"Land_vn_u_barracks_v2_f",
 	"land_gm_euro_office_02"
 ];
 private _milAdminPositions = getArray (_mapInfo/"milAdministrations");
 
 {
-	private _milAdmins = nearestObjects [_x, _milAdministrationTypes, 30];
+	private _milAdmins = (nearestObjects [_x, _milAdministrationTypes, 30]) select {!isObjectHidden _x && {alive _x}};
 	if (_milAdmins isEqualTo []) then {
 		continue;
 	};

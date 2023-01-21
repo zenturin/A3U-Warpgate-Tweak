@@ -31,6 +31,7 @@ Info_2("Spawning military administration personel for %1 marker on %2 position."
 private _vehicles = [];
 private _groups = [];
 private _soldiers = [];
+private _POWs = [];
 
 private _isDifficult = [_marker] call A3A_fnc_isFrontline || {random 10 < tierWar + aggressionOccupants/10};
 private _faction = Faction(_side);
@@ -90,6 +91,7 @@ private _buildingPositions = _positionsTuple select 0;
 private _soldierPositions = _positionsTuple select 1;
 private _cratePositions = _positionsTuple select 2;
 private _leaderPositions = _positionsTuple select 3;
+private _powPositions = _positionsTuple select 4;
 
 private _soilderCount = if (_isDifficult) then {round (random [4, 6, 8])} else {round (random [3, 5, 7])};
 private _garrisonGroup = createGroup _side;
@@ -117,6 +119,47 @@ for "_i" from 0 to _soilderCount do {
 	_soldiers pushBack _soldier;
 };
 _groups pushBack _garrisonGroup;
+
+/////////////
+//  POWs  //
+///////////
+
+private _grpPOW = nil;
+
+private _powCd = garrison getVariable [_marker + "_powCD", 0];
+if (_powCd == 0) then {
+	_grpPOW = createGroup teamPlayer;
+	private _powCount = random [1, 3, 5];
+
+	for "_i" from 0 to _powCount do {
+		private _buildingPosIndex = selectRandom _powPositions;
+		private _buildingPosition = _buildingPositions select _buildingPosIndex;
+
+		_unit = [_grpPOW, FactionGet(reb,"unitUnarmed"), _buildingPosition, [], 0, "NONE"] call A3A_fnc_createUnit;
+		_unit allowDamage false;
+		[_unit,true] remoteExec ["setCaptive",0,_unit];
+		_unit setCaptive true;
+		_unit disableAI "MOVE";
+		_unit disableAI "AUTOTARGET";
+		_unit disableAI "TARGET";
+		_unit setUnitPos "UP";
+		_unit setBehaviour "CARELESS";
+		_unit allowFleeing 0;
+		removeAllWeapons _unit;
+		removeAllAssignedItems _unit;
+		_POWS pushBack _unit;
+		[_unit,"prisonerFlee"] remoteExec ["A3A_fnc_flagaction",[teamPlayer,civilian],_unit];
+		[_unit] call A3A_fnc_reDress;
+	};
+
+	{
+		_x allowDamage true;
+	} forEach _POWS;
+} else {
+	private _newValue = _powCd - time;
+	if (_newValue < 0) then {_newValue = 0};
+	garrison setVariable [_marker + "_powCD", _newValue];
+};
 
 
 ///////////////////////
@@ -167,8 +210,6 @@ _collaborant setPosATL _buildingPosition;
 _collaborant setunitpos "UP";
 _collaborant disableAI "PATH";
 [_collaborant] call A3A_fnc_NATOinit;
-
-//учитывать в переменной подсчёта только гарнизон
 
 _soldiers pushBack _collaborant;
 _groups pushBack _groupCollaborant;
@@ -221,7 +262,7 @@ switch (true) do {
 
 waitUntil {sleep 1; (spawner getVariable _marker == 2)};
 
-{if (alive _x) then {deleteVehicle _x}} forEach _soldiers;
+{deleteVehicle _x} forEach (_soldiers select {alive _x});
 {deleteGroup _x} forEach _groups;
 
 {
@@ -238,6 +279,17 @@ if (!isNil "_ammoBox") then {
 	if (alive _ammoBox) then { [_ammoBox] spawn A3A_fnc_VEHdespawner };
 	private _lootCD = 120*16 / ([_marker] call A3A_fnc_garrisonSize);
 	garrison setVariable [_marker + "_lootCD", _lootCD, true];
+};
+
+if (count (units _grpPOW) != count _POWs) then {
+	private _powCD = 120*16 / ([_marker] call A3A_fnc_garrisonSize);
+	garrison setVariable [_marker + "_powCD", time + 3600, true];
+};
+
+// {deleteVehicle _x} forEach _POWs;
+// deleteGroup _grpPOW;
+if (!isNil "_grpPOW") then {
+	[_grpPOW] spawn A3A_fnc_groupDespawner;
 };
 
 ["locationSpawned", [_marker, "MilAdmin", false]] call EFUNC(Events,triggerEvent);
