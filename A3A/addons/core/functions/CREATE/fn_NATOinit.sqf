@@ -129,7 +129,7 @@ switch (true) do {
         _voice = selectRandom _regularVoices;
     };
 };
-[_unit, _face, _voice, (random [0.9, 1, 1.1])] call BIS_fnc_setIdentity;
+[_unit, _face, _voice, (random [0.9, 1, 1.1])] call A3A_fnc_setIdentity;
 _unit setSkill _skill;
 
 //Adjusts squadleaders with improved skill
