@@ -8,7 +8,7 @@ class CfgFunctions {
 			class common_removeActionCancel {};
 			class common_getActionCanceled {};
 		};
-		
+
 		class Common_Vehicle {
 			file = QPATHTOFOLDER(Common\vehicle);
 			class common_vehicle_getSeatNames {};
