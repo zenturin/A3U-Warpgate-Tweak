@@ -52,7 +52,7 @@ switch _callBackName do {
                 vehiclePurchase_cost = 0;
 
                 if (!HR_GRG_hasFuelSource) then { 
-                    _vehicle setFuel random [0.35, 0.5, 0.75];
+                    _vehicle setFuel random [0.15, 0.3, 0.45];
                 }; 
             };
 
