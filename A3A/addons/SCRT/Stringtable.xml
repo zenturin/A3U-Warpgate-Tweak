@@ -187,8 +187,24 @@
                 <Russian>Командование по оказанию военной помощи Вьетнаму (MACV).\nВоенная группировка США во Вьетнаме.</Russian>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_arvn">
-                <Original>Army of the Republic of Vietnam(ARVN).\nSouth Vietnam military force.</Original>
+                <Original>Army of the Republic of Vietnam (ARVN).\nSouth Vietnam military force.</Original>
                 <Russian>Армия Республики Вьетнам (ARVN).\nВооруженные силы Южного Вьетнама.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_pavn">
+                <Original>People's Army of Vietnam (PAVN).\nMilitary force of North Vietnam.</Original>
+                <Russian>Народная Армия Вьетнама (PAVN).\nВооруженные силы Северного Вьетнама.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_vc">
+                <Original>Viet Cong (VC).\nVietnamese armed communist organization.</Original>
+                <Russian>Вьетконг (VC).\nВооруженная организация коммунистов Вьетнама.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_vm">
+                <Original>Vietnam Militia (VM).\nA bunch of people with common goal - liberate their country from interventionists.</Original>
+                <Russian>Ополчение Вьетнама (VM).\nОбъединение людей с общей целью - освободить свою страну от интервентов.</Russian>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_vietcivs">
+                <Original>Vietnamese civilians.</Original>
+                <Russian>Вьетнамцы.</Russian>
             </Key>
         </Container>
         <Container name="magRepack">
