@@ -12,9 +12,9 @@ class vn_khe_sanh {
 		{"Cukty",30},{"HoaThanh",100},{"CuYang",100},{"Ploy",100},{"Thongxa",60},{"Kang",43},{"Lapoung",100},{"Lukdong",70},
 		{"Pakpong",20},{"Donxat",35},{"Vangkoy",100},{"Xeku",20},{"Nalao",14},{"Kengkep",100},
 		{"Nasano",43},{"Naxuak",47},{"Dantete",60},{"Donvay",56},{"Nonghano",10},{"Nongno",40},{"Tansoum",65},{"Hindam",50},
-		{"Phailom",30},{"Saoven",100},{"Prao",140},{"Talu",60}
+		{"Phailom",30},{"Saoven",100},{"Prao",140},{"Talu",60},{"Paca",35}
 	};
-	disabledTowns[] = {"KoNo", "Paca", "MuTa", "Kouthi", "Kate", "Hinlap", "Avian", "That", "XomBau","Paxia", "Chanulangchanh", "Xomcon", "Xombatu", "Xombolou", "Bolieu", "VinhTu", "SonGiang", "SonXuan"};
+	disabledTowns[] = {"KoNo", "MuTa", "Kouthi", "Kate", "Hinlap", "Avian", "That", "XomBau","Paxia", "Chanulangchanh", "Xomcon", "Xombatu", "Xombolou", "Bolieu", "VinhTu", "SonGiang", "SonXuan"};
 	antennas[] = {
 		{2603.31,10086,-0.0195313},{13435.9,11139.5,0},{5107.86,11336.4,0},{11235.7,14857.9,0},{13216.8,13966.6,0.118774},{11127.5,9870.3,0.118835},{5026.98,5361.25,0.719513},{9634.73,351.082,0},{9051.56,6547.55,0}
 	};
