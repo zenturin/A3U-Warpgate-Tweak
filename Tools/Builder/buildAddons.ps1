@@ -71,8 +71,8 @@ Pop-Location
 Push-Location
 Set-Location "$PSScriptRoot\..\..\build"
 
-.$PSScriptRoot\..\DSSignFile\DSCreateKey "Antistasi_$version"
-Copy-Item "Antistasi_$version.bikey" "$addonOutLocation\Keys\Antistasi_$version.bikey" -Force
+.$PSScriptRoot\..\DSSignFile\DSCreateKey "antistasi_$version"
+Copy-Item "antistasi_$version.bikey" "$addonOutLocation\Keys\antistasi_$version.bikey" -Force
 
 "`nSign PBO files..."
 Push-Location
@@ -80,11 +80,11 @@ Set-Location $addonsOutLocation
 $pboFiles = Get-ChildItem -Path $addonsOutLocation -Name "*.pbo"
 forEach ($file in $pboFiles) {
     "Signing file $file ..."
-    .$PSScriptRoot\..\DSSignFile\DSSignFile "..\..\Antistasi_$version.biprivatekey" $file
+    .$PSScriptRoot\..\DSSignFile\DSSignFile "..\..\antistasi_$version.biprivatekey" $file
 }
 
-Remove-Item "..\..\Antistasi_$version.biprivatekey"
-Remove-Item "..\..\Antistasi_$version.bikey"
+Remove-Item "..\..\antistasi_$version.biprivatekey"
+Remove-Item "..\..\antistasi_$version.bikey"
 
 Pop-Location
 
