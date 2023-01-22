@@ -102,7 +102,7 @@ setVar("vehiclesHelisTransport", OccAndInv("vehiclesHelisTransport") );
 setVar("vehiclesPlanesAA", OccAndInv("vehiclesPlanesAA") );
 setVar("vehiclesPlanesCAS", OccAndInv("vehiclesPlanesCAS") );
 setVar("vehiclesPlanesTransport", OccAndInv("vehiclesPlanesTransport"));
-setVar("staticMortars", OccAndInv("staticMortars") + Riv("staticMortars") + [Reb("staticMortar")]);
+setVar("staticMortars", OccAndInv("staticMortars") + Riv("staticMortars") + [Reb("staticMortar")] + ("STATICMORTAR" call _fnc_extractMarketClasses));
 setVar("staticAA", OccAndInv("staticAAs") + [Reb("staticAA")] + ("STATICAA" call _fnc_extractMarketClasses));
 setVar("staticAT", OccAndInv("staticATs") + [Reb("staticAT")] + ("STATICAT" call _fnc_extractMarketClasses));
 setVar("staticMG", OccAndInv("staticMGs") + Riv("staticLowWeapons") + [Reb("staticMG")] + ("STATICMG" call _fnc_extractMarketClasses));

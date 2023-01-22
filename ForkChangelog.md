@@ -3,10 +3,11 @@
 ## 2.1
 ### Additions
 - S.O.G. Prairie Fire CDLC support
-- Cam Lao Nam and Khe Sanh terrains support
+- Cam Lao Nam support
+- Khe Sanh support
 - Tanoa support
 - Takistan support
-- Multiple Rivals factions per modset support, UI changes to support it
+- Multiple Rivals factions per modset support, startup menu changes due to this
 - Loot Crate Gather Distance parameter
 - Overall Enemy Balance parameter changes - new Below Normal (former pre-2.1 Normal value) and Above Normal (sligtly harder than Normal, former pre-2.1 High value) values,  Normal and High parameter values will be slightly harder
 - (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
@@ -15,9 +16,10 @@
 - (3CB Factions) Tribal Fighters, Syndikat rival factions
 - (Vanilla) NATO Tropical faction 
 - (Vanilla) Syndikat rival faction
-- (SOGPF) MACV, PAVN, ARVN enemy factions
-- (SOGPF) VM, PAVN rebel factions
+- (SOGPF) MACV, PAVN enemy factions
+- (SOGPF) VM rebel faction
 - (SOGPF) Vietnam civilian faction
+- (SOGPF) ARVN enemy faction and VC rebel factions for authentic experience (select MACV and ARVN as factions for invaders and occupants, then set Reb vs Occ AND Inv mode)
 - (SOGPF) Pathet Lao, Lao Royal Army rival factions
 
 ### Changes
@@ -46,6 +48,9 @@
 - Fixed present "Equip on Buy" button when headless clients are active on ds/hc configuration
 - Fixed bug that prevented commander from placing or removing minefields
 - Fixed some missing strings, typos, localization errors
+- Military Administration capture/destruction will increase support in it's city
+- Transport, light attack and attack helicopters may spawn at helipads on airbases, transport helicopters and light attack helicopters may spawn at milbases
+- Prisoners will spawn in military administration in all cases (not only Capture The Military Administration task as it was before), they will have spawn cooldown to prevent HR farming
 - Investigate the Battleground mission will be rolled in mission distance radius instead of frontline cities only
 - Changed Artillery Menu default keybind from Shift + Y to Shift + U as it had conflict with Shift + Y Zeus menu call
 - Civilians will no longer spawn in cities destroyed by Invaders
