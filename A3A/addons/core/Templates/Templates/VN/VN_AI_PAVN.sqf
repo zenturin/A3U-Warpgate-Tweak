@@ -10,10 +10,15 @@
 ["flagMarkerType", "vn_flag_pavn"] call _fnc_saveToTemplate;
 
 //////////////////////////
-//       Vehicles       //
+//       Attributes     //
 //////////////////////////
 
+["noSandbag", true] call _fnc_saveToTemplate;                   // Faction will not use AT sandbags on frontiline roadblocks
 ["attributeLowAir", true] call _fnc_saveToTemplate;             // Use fewer air units in general
+
+//////////////////////////
+//       Vehicles       //
+//////////////////////////
 
 ["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate;     //Don't touch or you die a sad and lonely death!
 ["surrenderCrate", "vn_o_ammobox_04"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
