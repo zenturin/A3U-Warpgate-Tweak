@@ -495,41 +495,21 @@ _flagLight setLightAttenuation [7, 0, 0.5, 0.5];
 
 vehicleBox allowDamage false;
 vehicleBox addAction [format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\use_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_A3A_actions_restore_units"], A3A_fnc_vehicleBoxRestore,nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (side (group _this) == teamPlayer)", 4];
-if (lootCratesEnabled) then {
-    vehicleBox addAction [format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\box_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_buy_loot_crate"], {[] call SCRT_fnc_loot_createLootCrate},nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (side (group _this) == teamPlayer)",4];
-};
 [vehicleBox] call HR_GRG_fnc_initGarage;
 if (A3A_hasACE) then { [vehicleBox, VehicleBox] call ace_common_fnc_claim;};	//Disables ALL Ace Interactions
-vehicleBox addAction [format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\car_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_buy_vehicle"], {
+vehicleBox addAction [format ["<img image='a3\ui_f\data\igui\cfg\simpletasks\types\truck_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_buy_vehicle"], {
     if ([getPosATL player] call A3A_fnc_enemyNearCheck) then {
         [localize "STR_A3A_initClient_purchase_vehicle", localize "STR_antistasi_actions_buy_vehicle_distance_check_failure"] call A3A_fnc_customHint;
     } else {
         createDialog "A3A_BuyVehicleDialog";
     }
 },nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (side (group _this) == teamPlayer)", 4];
-
-vehicleBox addAction [format [localize "STR_A3A_initClient_purchase_light", str 25, A3A_faction_civ get "currencySymbol"], {[player, FactionGet(reb,"vehicleLightSource"), 25, [['A3A_fnc_initMovableObject', false]]] call A3A_fnc_buyItem},nil,0,false,true,"","true",4];
-private _fuelDrum = FactionGet(reb,"vehicleFuelDrum");
-private _fuelTank = FactionGet(reb,"vehicleFuelTank");
-if (isClass (configFile/"CfgVehicles"/_fuelDrum # 0)) then {
-    private _dispName = getText (configFile/"CfgVehicles"/_fuelDrum # 0/"displayName");
-    vehicleBox addAction [format[localize "STR_A3A_initClient_purchase_generic",_dispName, _fuelDrum # 1, A3A_faction_civ get "currencySymbol"], {[player, _this # 3 # 0, _this # 3 # 1, [['A3A_fnc_initMovableObject', true], ['A3A_Logistics_fnc_addLoadAction', false]]] call A3A_fnc_buyItem},_fuelDrum,0,false,true,"","true",4];
-};
-if (isClass (configFile/"CfgVehicles"/_fuelTank # 0)) then {
-    private _dispName = getText (configFile/"CfgVehicles"/_fuelTank # 0/"displayName");
-    vehicleBox addAction [format[localize "STR_A3A_initClient_purchase_generic",_dispName, _fuelTank # 1, A3A_faction_civ get "currencySymbol"], {[player, _this # 3 # 0, _this # 3 # 1, [['A3A_fnc_initMovableObject', true], ['A3A_Logistics_fnc_addLoadAction', false]]] call A3A_fnc_buyItem},_fuelTank,0,false,true,"","_this == theBoss",4];
-};
 vehicleBox addAction [localize "STR_antistasi_actions_move_this_asset", A3A_fnc_moveHQObject,nil,0,false,true,"","(_this == theBoss)", 4];
 
 call A3A_fnc_dropObject;
 mapX allowDamage false;
 mapX addAction [format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\map_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_map_info"], A3A_fnc_cityinfo,nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull]) && (side (group _this) == teamPlayer)", 4];
 
-// #ifdef UseDoomGUI
-//     ERROR("Disabled due to UseDoomGUI Switch.")
-// #else
-//     CreateDialog "game_options";
-// #endif
 mapX addAction [
 	(localize "STR_antistasi_actions_game_options"),
 	{
@@ -637,8 +617,6 @@ if (saveZeusBuildings) then {
 	} forEach (allCurators);
 };
 
-//players should keep their custom or profile-selected faces if they have any
-// [player, nil, selectRandom (A3A_faction_reb get "voices"), (random [0.9, 1, 1.1])] call BIS_fnc_setIdentity;
 initClientDone = true;
 Info("initClient completed");
 

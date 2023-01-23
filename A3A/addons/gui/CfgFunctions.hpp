@@ -9,6 +9,8 @@ class CfgFunctions {
             class arsenalLimitsDialog {};
             class buyVehicleDialog {};
             class buyVehicleTabs {};
+            class blackMarketDialog {};
+            class blackMarketTabs {};
             class commanderTab {};
             class configColorToArray {};
             class constructTab {};

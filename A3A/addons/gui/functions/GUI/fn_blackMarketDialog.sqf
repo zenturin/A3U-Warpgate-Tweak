@@ -1,7 +1,7 @@
 /*
 Maintainer: DoomMetal
-    Handles the initialization and updating of the Buy Vehicle dialog.
-    This function should only be called from BuyVehicle onLoad and control activation EHs.
+    Handles the initialization and updating of the Black Market dialog.
+    This function should only be called from BlackMarket onLoad and control activation EHs.
 
 Arguments:
     <STRING> Mode, only possible value for this dialog is "onLoad"
@@ -17,7 +17,7 @@ Dependencies:
     None
 
 Example:
-    ["onLoad"] spawn A3A_fnc_buyVehicleDialog; // initialization
+    ["onLoad"] spawn A3A_fnc_blackMarketDialog; // initialization
 */
 
 #include "..\..\dialogues\ids.inc"
@@ -28,13 +28,17 @@ FIX_LINE_NUMBERS()
 
 params[
     ["_mode","onLoad"], 
-    ["_params",[]]
+    ["_params",[]],
+    ["_fnc_populateMenu", {[]}],
+    ["_callbackHandlerKey", "BUYFIA"]
 ];
 
 switch (_mode) do
 {
     case ("switchTab"):
-    {       
+    {
+        ['on'] call SCRT_fnc_ui_toggleMenuBlur;
+
         private _display = findDisplay A3A_IDD_BUYVEHICLEDIALOG;
         private _selectedTab = _params select 0;
 
@@ -46,9 +50,6 @@ switch (_mode) do
             case ("vehicles"): {
                 _selectedTabIDC = A3A_IDC_BUYVEHICLEMAIN;
             };
-            case("other"): {
-                _selectedTabIDC = A3A_IDC_BUYOTHERMAIN;
-            };
         };
 
         if (_selectedTabIDC == -1) exitWith {
@@ -57,7 +58,6 @@ switch (_mode) do
 
         private _allTabs = [
             A3A_IDC_BUYVEHICLEMAIN,
-            A3A_IDC_BUYOTHERMAIN,
             A3A_IDC_BUYVEHICLEPREVIEW
         ];
 
@@ -78,8 +78,7 @@ switch (_mode) do
     case ("onLoad"):
     {
         ['on'] call SCRT_fnc_ui_toggleMenuBlur;
-        ["vehicles"] call A3A_fnc_buyVehicleTabs;
-        ["other"] call A3A_fnc_buyVehicleTabs;
+        ["vehicles"] call A3A_fnc_blackMarketTabs;
     };
 
     case ("onUnload"): 
@@ -90,6 +89,6 @@ switch (_mode) do
     default
     {
         // Log error if attempting to call a mode that doesn't exist
-        Error_1("BuyVehicleDialog mode does not exist: %1", _mode);
+        Error_1("BlackMarketDialog mode does not exist: %1", _mode);
     };
 };

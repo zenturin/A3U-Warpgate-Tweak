@@ -1,15 +1,15 @@
-class A3A_BuyVehicleDialog : A3A_TabbedDialog
+class A3A_BlackMarketDialog : A3A_TabbedDialog
 {
   idd = A3A_IDD_BUYVEHICLEDIALOG;
-  onLoad = "['onLoad'] spawn A3A_fnc_buyVehicleDialog";
-  onUnload = "['onUnload'] spawn A3A_fnc_buyVehicleDialog";
+  onLoad = "['onLoad'] spawn A3A_fnc_blackMarketDialog";
+  onUnload = "['onUnload'] spawn A3A_fnc_blackMarketDialog";
 
     class Controls
     {
         class TitlebarText : A3A_TitlebarText
         {
             idc = -1;
-            text = $STR_antistasi_dialogs_buy_vehicle_titlebar;
+            text = $STR_trader_black_market_title;
             x = DIALOG_X;
             y = DIALOG_Y - 10 * GRID_H;
             w = DIALOG_W * GRID_W;
@@ -19,7 +19,7 @@ class A3A_BuyVehicleDialog : A3A_TabbedDialog
         class TipText : A3A_TitlebarText
         {
           idc = -1;
-          text = $STR_antistasi_dialogs_war_level_tip;
+          text = $STR_antistasi_dialogs_black_market_tip;
           font = A3A_NOTIFICATION_FONT;
           x = DIALOG_X;
           y = DIALOG_Y - 1 * GRID_H;
@@ -47,17 +47,6 @@ class A3A_BuyVehicleDialog : A3A_TabbedDialog
                     w = 30 * GRID_W;
                     h = 5 * GRID_H;
                 };
-
-                class OthersTabButton : A3A_Button
-                {
-                    idc = A3A_IDC_OTHERTABBUTTON;
-                    text = $STR_antistasi_dialogs_vehicle_tab_other;
-                    onButtonClick = "[""switchTab"", [""other""]] call A3A_fnc_buyVehicleDialog";
-                    x = 30 * GRID_W;
-                    y = 0;
-                    w = 30 * GRID_W;
-                    h = 5 * GRID_H;
-                };
             };
         };
 
@@ -72,24 +61,6 @@ class A3A_BuyVehicleDialog : A3A_TabbedDialog
                 class VehiclesControlsGroup : A3A_ControlsGroupNoHScrollbars
                 {
                     idc = A3A_IDC_VEHICLESGROUP;
-                    x = 0;
-                    y = 4 * GRID_H;
-                    w = PX_W(DIALOG_W);
-                    h = PX_H(DIALOG_H) - 8 * GRID_H;
-                };
-            };
-        };
-
-        class OtherTab : A3A_DefaultControlsGroup
-        {
-            idc = A3A_IDC_BUYOTHERMAIN;
-            show = false;
-
-            class Controls
-            {
-                class VehiclesControlsGroup : A3A_ControlsGroupNoHScrollbars
-                {
-                    idc = A3A_IDC_OTHERGROUP;
                     x = 0;
                     y = 4 * GRID_H;
                     w = PX_W(DIALOG_W);

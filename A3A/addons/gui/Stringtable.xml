@@ -612,10 +612,13 @@
         <Original>Other</Original>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_vehicle_refuel_tooltip">
-        <Original>This item can refuel others\n%1 max fuel is %2</Original>
+        <Original>This item can refuel others.\n%1 max fuel is %2.</Original>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_vehicle_loot_tooltip">
-        <Original>This item can collect loot\n%1 max load is %2</Original>
+        <Original>This item can collect loot.\n%1 max load is %2.</Original>
+      </Key>
+      <Key ID="STR_antistasi_dialogs_buy_vehicle_light_tooltip">
+        <Original>This item provides light source.</Original>
       </Key>
     </Container>
     <Container name="dialog_main_player">

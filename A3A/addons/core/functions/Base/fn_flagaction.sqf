@@ -29,7 +29,7 @@ switch _typeX do
     case "vehicle":
     {
         _flag addAction [
-            format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\car_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_buy_vehicle"], 
+            format ["<img image='a3\ui_f\data\igui\cfg\simpletasks\types\truck_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_buy_vehicle"], 
             {
                 if ([getPosATL player] call A3A_fnc_enemyNearCheck) then {
                     [localize "STR_antistasi_actions_buy_vehicle", localize "STR_antistasi_actions_buy_vehicle_distance_check_failure"] call A3A_fnc_customHint
@@ -175,7 +175,7 @@ switch _typeX do
             },nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull])",4
         ];
         _flag addAction [
-            format ["<img image='\a3\ui_f\data\igui\cfg\simpletasks\types\car_ca.paa' size='1.6' shadow=2 /> <t>%1</t>",  localize "STR_antistasi_actions_buy_vehicle"], 
+            format ["<img image='a3\ui_f\data\igui\cfg\simpletasks\types\truck_ca.paa' size='1.6' shadow=2 /> <t>%1</t>",  localize "STR_antistasi_actions_buy_vehicle"], 
             {
                 if ([getPosATL player] call A3A_fnc_enemyNearCheck) then {
                     [localize "STR_antistasi_dialogs_buy_vehicle_frame_text", localize "STR_antistasi_actions_buy_vehicle_distance_check_failure"] call A3A_fnc_customHint;
