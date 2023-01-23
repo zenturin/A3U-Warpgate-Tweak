@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="A3-Antistasi-Plus">
     <Package name="A3-Antistasi-Plus-Mission">
+        <Container name="buyvehdialog">
+            <Key ID="STR_A3AP_buyvehdialog_loot_crate">
+                <Original>Loot Crate</Original>
+                <Russian>Ящик-сборщик добычи</Russian>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_fuel_tank">
+                <Original>Fuel Tank</Original>
+                <Russian>Топливный бак</Russian>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_light">
+                <Original>Light</Original>
+                <Russian>Уличный фонарь</Russian>
+            </Key>
+        </Container>
         <Container name="arsenal">
             <Key ID="STR_A3AP_vehArsenal_desc">
                 <Original>Select vehicle to open arsenal for it allowing to fill it with it's cargo with any items from arsenal.</Original>
@@ -2873,8 +2887,8 @@
                 <Russian>Постоянное сохранение для построек, размещенных Зевсом</Russian>
             </Key>
             <Key ID="STR_params_unconsciousAiPossess">
-                <Original>[Temporarily Disabled] Allow players to take control on AI units while laying unconscious</Original>
-                <Russian>[Временно Выключено] Разрешить игрокам управлять ИИ-соотрядниками находясь в бессознательном состоянии</Russian>
+                <Original>[Experimental] Allow players to take control on AI units while laying unconscious</Original>
+                <Russian>[Экспериментально] Разрешить игрокам управлять ИИ-соотрядниками находясь в бессознательном состоянии</Russian>
             </Key>
             <Key ID="STR_params_maxConstructions">
                 <Original>Maximum quantity of Persistent Constructions</Original>
@@ -5400,8 +5414,8 @@
                 <Russian>Вы не можете набирать юнитов пока рядом с вами враги.</Russian>
             </Key>
             <Key ID="STR_antistasi_actions_buy_vehicle">
-                <Original>Buy vehicle</Original>
-                <Russian>Купить технику</Russian>
+                <Original>Buy Vehicles and Items</Original>
+                <Russian>Купить технику и предметы</Russian>
             </Key>
             <Key ID="STR_antistasi_actions_buy_loot_crate">
                 <Original>Buy loot crate</Original>
