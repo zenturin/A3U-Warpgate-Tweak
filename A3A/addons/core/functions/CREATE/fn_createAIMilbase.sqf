@@ -150,29 +150,50 @@ if (_frontierX) then {
 		private _roadcon = objNull;
 		{if ((position _x) distance _positionX > _dist) then {_roadcon = _x}} forEach _roadscon;
 
-		private _dirveh = [_roadcon, _road] call BIS_fnc_dirTo;
-		private _pos = [getPos _road, 7, _dirveh + 270] call BIS_Fnc_relPos;
-		private _bunker = (_faction get "sandbag") createVehicle _pos;
 
-		_vehiclesX pushBack _bunker;
+		if (_faction getOrDefault ["noSandbag", false]) then {
+			private _dirveh = [_roadcon, _road] call BIS_fnc_dirTo;
+			private _pos = [getPos _road, 7, _dirveh + 270] call BIS_Fnc_relPos;
 
-		_bunker setDir _dirveh;
-		_pos = getPosATL _bunker;
+			private _typeVehX = selectRandom (_faction get "staticATs");
+			private _veh = _typeVehX createVehicle _positionX;
 
-		private _typeVehX = selectRandom (_faction get "staticATs");
-		private _veh = _typeVehX createVehicle _positionX;
+			_vehiclesX pushBack _veh;
 
-		_vehiclesX pushBack _veh;
+			_veh setDir _dirVeh + 180;
+			_veh setPos _pos;
 
-		_veh setDir _dirVeh + 180;
-		_veh setPos _pos;
+			private _typeUnit = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTiered;
+			private _unit = [_groupX, _typeUnit, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
+			[_unit,_markerX] call A3A_fnc_NATOinit;
+			[_veh, _sideX] call A3A_fnc_AIVEHinit;
+			_unit moveInGunner _veh;
+			_soldiers pushBack _unit;
+		} else {
+			private _dirveh = [_roadcon, _road] call BIS_fnc_dirTo;
+			private _pos = [getPos _road, 7, _dirveh + 270] call BIS_Fnc_relPos;
+			private _bunker = (_faction get "sandbag") createVehicle _pos;
 
-		private _typeUnit = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTiered;
-		private _unit = [_groupX, _typeUnit, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
-		[_unit,_markerX] call A3A_fnc_NATOinit;
-		[_veh, _sideX] call A3A_fnc_AIVEHinit;
-		_unit moveInGunner _veh;
-		_soldiers pushBack _unit;
+			_vehiclesX pushBack _bunker;
+
+			_bunker setDir _dirveh;
+			_pos = getPosATL _bunker;
+
+			private _typeVehX = selectRandom (_faction get "staticATs");
+			private _veh = _typeVehX createVehicle _positionX;
+
+			_vehiclesX pushBack _veh;
+
+			_veh setDir _dirVeh + 180;
+			_veh setPos _pos;
+
+			private _typeUnit = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTiered;
+			private _unit = [_groupX, _typeUnit, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
+			[_unit,_markerX] call A3A_fnc_NATOinit;
+			[_veh, _sideX] call A3A_fnc_AIVEHinit;
+			_unit moveInGunner _veh;
+			_soldiers pushBack _unit;
+		};
 	};
 };
 
