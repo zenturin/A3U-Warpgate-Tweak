@@ -27,8 +27,10 @@ publicVariable "traderMarker";
 	[_x, true] remoteExec ["hideObject", 0, true];
 } forEach nearestTerrainObjects [_position, [], 50, false, true];
 
+private _isVn = A3A_Reb_template isEqualTo "VN";
+
 //trader prop objects
-_traderTent = if (A3A_Reb_template isEqualTo "VN") then { 
+_traderTent = if (_isVn) then { 
 	createVehicle ["Land_MedicalTent_01_wdl_generic_inner_F", _position]; 
 } else {
 	createVehicle ["Land_MedicalTent_01_wdl_generic_open_F", _position];
