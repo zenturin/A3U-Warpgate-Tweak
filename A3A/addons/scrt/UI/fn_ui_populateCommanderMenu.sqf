@@ -123,13 +123,13 @@ if (napalmEnabled) then {
 	};
 } else {
 	lbAdd [1750, localize "STR_commander_menu_paradrop_title"];
-	lbSetData [1750, 11, "PARADROP"];
-	lbSetTooltip [1750, 11, localize "STR_commander_menu_paradrop_tooltip"];
+	lbSetData [1750, 8, "PARADROP"];
+	lbSetTooltip [1750, 8, localize "STR_commander_menu_paradrop_tooltip"];
 
 	if (lootCratesEnabled) then {
 		lbAdd [1750, localize "STR_commander_menu_loot_heli_title"];
-		lbSetData [1750, 12, "LOOTHELI"];
-		lbSetTooltip [1750, 12, localize "STR_commander_menu_loot_heli_tooltip"];
+		lbSetData [1750, 9, "LOOTHELI"];
+		lbSetTooltip [1750, 9, localize "STR_commander_menu_loot_heli_tooltip"];
 	};
 };
 
