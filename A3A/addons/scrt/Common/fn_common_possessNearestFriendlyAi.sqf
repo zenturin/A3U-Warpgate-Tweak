@@ -40,83 +40,87 @@ if (_owner!=player) exitWith {
 	[localize "STR_control_unit_hint_header", localize "STR_control_unit_error_ai_recursion"] call A3A_fnc_customHint;
 };
 
-_unit setVariable ["owner",player,true];
-
 private _face = face _unit;
 private _speaker = speaker _unit;
 
-private _originalBody = player;
-player setVariable ["originalBody", _originalBody];
-player setVariable ["destinationBody", _unit];
-_unit setVariable ["originalBodyRef", _originalBody];
+player setVariable ["originalBody", player];
+player setVariable ["A3A_blockRevive", true, true];
 
-private _eh1 = player addEventHandler ["HandleDamage", {
+_unit setVariable ["owner",player,true];
+private _originalBody = player;
+
+private _playerEh = player addEventHandler ["HandleDamage", {
 	params ["_unit"];
-	systemChat "EH1";
-	diag_log "EH1";
 	_unit removeEventHandler ["HandleDamage",_thisEventHandler];
 	selectPlayer _unit;
 	(units group player) joinsilent group player;
 	group player selectLeader player;
+	_unit setVariable ["controlReturned", true];
+
 	[localize "STR_control_unit_hint_header", localize "STR_control_unit_damage_control_return_player"] call A3A_fnc_customHint;
-	private _destinationBody  = _unit getVariable ["destinationBody", objNull];
-	if (!isNull _destinationBody) then {
-		_destinationBody setVariable ["controlReturned", true];
-	};
+
 	nil;
 }];
-private _eh2 = _unit addEventHandler ["HandleDamage", {
+private _unitEh = _unit addEventHandler ["HandleDamage", {
 	params ["_unit"];
-	systemChat "EH2";
-	diag_log "EH2";
 	_unit removeEventHandler ["HandleDamage",_thisEventHandler];
-	// removeAllActions _unit;
-	private _originalBody = _unit getVariable ["originalBodyRef", (_unit getVariable "owner")];
-	_unit setVariable ["controlReturned", true];
-	selectPlayer _originalBody;
+	selectPlayer (_unit getVariable "owner");
 	(units group player) joinsilent group player;
 	group player selectLeader player;
+	_unit setVariable ["controlReturned", true];
+
 	[localize "STR_control_unit_hint_header",localize "STR_control_unit_damage_control_return_ai"] call A3A_fnc_customHint;
+
 	nil;
 }];
-selectPlayer _unit;
 
-//otherwise unit will lost his identity
-[_unit, _face, _speaker] remoteExecCall ["BIS_fnc_setIdentity", 2];
+selectPlayer _unit;
+//otherwise unit will lose his identity
+[_unit, _face, _speaker] call A3A_fnc_setIdentity;
 
 private _timeX = aiControlTime;
-_unit addAction [(localize "STR_antistasi_actions_return_control_to_ai"),{
-	params ["_unit"];
-	private _originalBody = _unit getVariable ["originalBodyRef", (leader (group (_this select 0)))];
-	_unit setVariable ["controlReturned", true];
-	selectPlayer _originalBody;
-}];
-[_originalBody,"heal1"] call A3A_fnc_flagaction; 
 
-[localize "STR_antistasi_actions_unconscious_action_possessed",0,0,3,0,0,4] spawn bis_fnc_dynamicText;
+private _returnActionId = _unit addAction [(localize "STR_antistasi_actions_return_control_to_ai"),{
+	params ["_unit"];
+	private _owner = _unit getVariable ["owner", (leader (group (_this select 0)))];
+	_unit setVariable ["controlReturned", true];
+	selectPlayer _owner;
+}];
+private _healActionId = [_originalBody, "heal2"] call A3A_fnc_flagaction; 
+
+private _layer = ["A3A_infoCenter"] call BIS_fnc_rscLayer;
+[localize "STR_antistasi_actions_unconscious_action_possessed",0,0,3,0,0,_layer] spawn bis_fnc_dynamicText;
 
 waitUntil {
 	sleep 1; 
 	[localize "STR_control_unit_hint_header", format [localize "STR_control_unit_time_to_return_to_original_body", _timeX]] call A3A_fnc_customHint; 
 	_timeX = _timeX - 1; 
 
-	_timeX == -1 || {!([_unit] call A3A_fnc_canFight) || {!(_originalBody getVariable ["incapacitated",false]) || {_unit getVariable ["controlReturned", false]}}}
+	_timeX == -1 || 
+	{!([_unit] call A3A_fnc_canFight) || 
+	{!(_originalBody getVariable ["incapacitated",false]) || 
+	{_unit getVariable ["controlReturned", false] ||
+	{_originalBody getVariable ["controlReturned", false]
+}}}}};
+
+_unit removeAction _returnActionId;
+if (_healActionId != -1) then {
+	_originalBody removeAction _healActionId;
 };
 
-removeAllActions _unit;
 selectPlayer _originalBody;
 (units group player) joinsilent group player;
 group player selectLeader player;
-player setVariable ["owner",player,true];
+player setVariable ["A3A_blockRevive", nil, true];
+player setVariable ["originalBody", nil];
+player removeEventHandler ["HandleDamage",_playerEh];
+player setVariable ["controlReturned", nil];
+
 _unit setVariable ["owner",nil,true];
 _unit setVariable ["controlReturned", nil];
-_unit removeEventHandler ["HandleDamage",_eh2];
-player removeEventHandler ["HandleDamage",_eh1];
-_originalBody setVariable ["originalBody", nil];
-_unit setVariable ["originalBodyRef", nil];
+_unit removeEventHandler ["HandleDamage",_unitEh];
 
 [localize "STR_control_unit_hint_header", localize "STR_control_unit_return_to_original_body"] call A3A_fnc_customHint;
-playSound "A3AP_UiSuccess";
 
 sleep 1;
 

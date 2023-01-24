@@ -2887,8 +2887,8 @@
                 <Russian>Постоянное сохранение для построек, размещенных Зевсом</Russian>
             </Key>
             <Key ID="STR_params_unconsciousAiPossess">
-                <Original>[Experimental] Allow players to take control on AI units while laying unconscious</Original>
-                <Russian>[Экспериментально] Разрешить игрокам управлять ИИ-соотрядниками находясь в бессознательном состоянии</Russian>
+                <Original>Allow players to take control on AI units while laying unconscious</Original>
+                <Russian>Разрешить игрокам управлять ИИ-соотрядниками находясь в бессознательном состоянии</Russian>
             </Key>
             <Key ID="STR_params_maxConstructions">
                 <Original>Maximum quantity of Persistent Constructions</Original>
