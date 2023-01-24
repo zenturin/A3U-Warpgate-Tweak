@@ -10,6 +10,7 @@
 - Multiple Rivals factions per modset support, startup menu changes due to this
 - Loot Crate Gather Distance parameter
 - Overall Enemy Balance parameter changes - new Below Normal (former pre-2.1 Normal value) and Above Normal (sligtly harder than Normal, former pre-2.1 High value) values,  Normal and High parameter values will be slightly harder
+- Ability to possess any near friendly AI squadmate while laying incapacitated to help your original body (press T while being incapacitated, could be turned off via params menu)
 - (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
 - (3CB Factions) Takistan civilians
 - (3CB Factions) TKM rebel faction
@@ -19,11 +20,11 @@
 - (SOGPF) MACV, PAVN enemy factions
 - (SOGPF) VM rebel faction
 - (SOGPF) Vietnam civilian faction
-- (SOGPF) ARVN enemy faction and VC rebel factions for authentic experience (select MACV and ARVN as factions for invaders and occupants, then set Reb vs Occ AND Inv mode)
+- (SOGPF) ARVN enemy faction and VC rebel faction for authentic experience (select MACV and ARVN as factions for invaders and occupants, then set Reb vs Occ AND Inv mode)
 - (SOGPF) Pathet Lao, Lao Royal Army rival factions
 
 ### Changes
-- Community Version 3.1 integration (important bugfixes and tweaks)
+- Community Version 3.1 integration
 - Increased durability of loot crates, slight rework of load/unload invulnerability
 - Seaports will be used for airspace control
 - Expanded guard unit pool with LATs, machinegunners, grenadiers
@@ -33,7 +34,7 @@
 - Fixed ability to do big attacks for factions that were defeated before
 - Fixed Destroy Artillery minor error about event handler
 - Fixed Rivals tasks inability to work if there are no buildings in town
-- Fixed logic pitfall where player's civilian car could be bomb-planted by Rivials in their activity zone
+- Fixed logic pitfall where player's civilian car could be sould be charged with explosive by Rivials in their activity zone
 - Fixed rebel AA sell price exploit
 - Fixed rare case when squad leader belongings weren't deleted after some time after intel search action
 - Fixed non-removable pallets from Deliver Supplies mission
@@ -48,6 +49,7 @@
 - Fixed present "Equip on Buy" button when headless clients are active on ds/hc configuration
 - Fixed bug that prevented commander from placing or removing minefields
 - Fixed some missing strings, typos, localization errors
+- Fixed non-working paradrop and loot helicopters if napalm was disabled
 - Military Administration capture/destruction will increase support in it's city
 - Transport, light attack and attack helicopters may spawn at helipads on airbases, transport helicopters and light attack helicopters may spawn at milbases
 - Prisoners will spawn in military administration in all cases (not only Capture The Military Administration task as it was before), they will have spawn cooldown to prevent HR farming
@@ -56,11 +58,21 @@
 - Civilians will no longer spawn in cities destroyed by Invaders
 - Enemy squad will no longer spawn in difficult variant of Deliver Supplies mission for friendly cities
 - UAV Flyby Rivals event strike notification distance increased from 25 meters to 35 meters to give players a little bit more time to react
-- Reduced probability of Mechanized Airborne QRF 
+- Reduced probability of Mechanized Airborne QRF
+- Rivals random event cooldown will depend on Rivals Difficulty parameter and current level of rivals activity (more active -> less cooldown)
 - Improved Mechanized Airborne QRF attacking behaviour
+- Increased probability of rival event happening on 5% on each activity level
+- Slightly reduced default accuracy cap from 0.5 to 0.45
+- (RHS) Fixed wrong classnames for AFRF surrender and equipment boxes
 - (3CB Factions) Switched LDF to Occupants factions section
 - (Takistan) Removed resource marker, moved initial HQ position farther from Occupant airbase
 - (Sefrou Ramal) Moved Military Administration to less problematic landscape
+- (Cam Lao Nam) Fixed some problematic outposts without vehicles, removed outposts without roads, disabled simulation on some dynamic objects
+- (Khe Sanh) Added PaCa to populated villages list
+
+### Removals
+- Removed "Buy Loot Crate" action on vehicle box as loot crate was moved to general store to "Other" tab
+
 
 ## 2.0.2
 ### Changes
@@ -253,10 +265,9 @@
 - Removed enemy intel search money drop probability (they may carry money in their inventory instead)
 
 ## 1.9 
-*unreleased, discontinued and unavailable for public access version, most of it's changes were ported to 2.0 thus moved from 1.9 section to section above, this changelog represents leftover unported changes by various reasons*
+*unreleased, discontinued and unavailable for public access version (final version before migrating from mission to mod), most of it's changes were ported to 2.0 thus moved from 1.9 section to section above, this changelog represents leftover unported changes by various reasons*
 ### Additions
 - New convoy type - Food Convoy
-- [Experimental] Ability to possess any near friendly AI squadmate while laying wounded to help yourself
 - Iron Man Mode mission parameter - one life for Petros. If he dies, save file will be erased and mission will be ended (one-time, irreversible action for current save after full mission loading)
 
 ### Changes

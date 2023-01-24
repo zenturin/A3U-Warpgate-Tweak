@@ -94,16 +94,24 @@ _unit addEventHandler ["Deleted", A3A_fnc_enemyUnitDeletedEH];
 //Calculates the skill of the given unit
 //private _skill = (0.15 * skillMult) + (0.04 * difficultyCoef) + (0.02 * tierWar);
 private _skill = (0.1 * A3A_enemySkillMul) + (0.15 * A3A_balancePlayerScale) + (0.01 * tierWar);
-private _regularFaces = _faction get "faces";
-private _regularVoices = _faction get "voices";
+private _regularFaces = nil;
+private _regularVoices = nil;
 private _face = nil;
 private _voice = nil;
+
+if (_isRival) then {
+    _regularFaces = A3A_faction_riv get "faces";
+    _regularVoices = A3A_faction_riv get "voices";
+} else {
+    _regularFaces = _faction get "faces";
+    _regularVoices = _faction get "voices";
+};
 
 switch (true) do {
     case (_isRival): {
         _skill = _skill * 0.8;
-        _face = selectRandom (A3A_faction_riv get "faces");
-        _voice = selectRandom (A3A_faction_riv get "voices");
+        _face = selectRandom (_faction get "faces");
+        _voice = selectRandom (_faction get "voices");
     };
     case (_unitPrefix isEqualTo "militia"): {
         _skill = _skill * 0.7;

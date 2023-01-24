@@ -180,7 +180,7 @@ for "_i" from 0 to _uavQuantity - 1 do {
 				if (isNil "_uav") exitWith {};
 				if (!alive _uav) exitWith {};
 
-				if (_uav distance2D _player < 35) then {
+				if (_uav distance2D _player < 45) then {
 					[(position _player), _vehicles, _timeOut] spawn _fnc_notifyPlayers;
 				};
 
@@ -230,7 +230,7 @@ waitUntil { sleep 5;
 isRivalEventInProgress = false;
 publicVariableServer "isRivalEventInProgress";
 
-rivalEventCooldown = 400 + 200 * inactivityLevelRivals;
+rivalEventCooldown = [] call SCRT_fnc_rivals_getEventCooldown;
 publicVariableServer "rivalEventCooldown";
 
 Info("UAV Flyby random event cleanup.");

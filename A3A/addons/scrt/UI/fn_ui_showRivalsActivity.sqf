@@ -3,7 +3,7 @@
 visibleRivalsMarkers = [];
 
 private _knownLocations = ["KNOWN"] call SCRT_fnc_rivals_getLocations;
-private _radiusOfOperations = (sqrt 2 / 2 * worldSize) / 8;
+private _radiusOfOperations = call SCRT_fnc_rivals_getOperationRadius;
 
 {
 	private _localMarkerArea = createMarkerLocal [format ["%1rivalsradius%2", random 10000, random 10000], getMarkerPos _x]; 

@@ -21,10 +21,13 @@ FIX_LINE_NUMBERS()
 
 #include "Constants.inc"
 
-private _players = call SCRT_fnc_misc_getRebelPlayers;
-if (count _players == 0) exitWith {[]};
+private _players = (call SCRT_fnc_misc_getRebelPlayers) select {
+	private _playerVeh = vehicle _x;
+	alive _x && {!(_playerVeh isKindOf "Helicopter") && {!(_playerVeh isKindOf "Plane")}}
+};
+if (_players isEqualTo []) exitWith {[]};
 
-private _radiusOfOperations = (sqrt 2 / 2 * worldSize) / 8;
+private _radius = call SCRT_fnc_rivals_getOperationRadius;
 
 private _rivalsLocations = [] call SCRT_fnc_rivals_getLocations;
 private _encounterPosition = [];
@@ -39,7 +42,7 @@ switch (inactivityLevelRivals) do {
 		private _sites = (outposts + airportsX + resourcesX + factories + seaports + milbases + ["Synd_HQ"]) select {sidesX getVariable [_x, sideUnknown] == teamPlayer};
 		private _offSitePlayers = _players select {
 			private _player = _x; 
-			_sites findIf {_player inArea _x} == -1 && {_rivalsLocations findIf {_player distance2D (getMarkerPos _x) < _radiusOfOperations} != -1} 
+			_sites findIf {_player inArea _x} == -1 && {_rivalsLocations findIf {_player distance2D (getMarkerPos _x) < _radius} != -1} 
 		};
 		if (count _offSitePlayers > 0) then {
 			_encounterPosition = position (selectRandom _offSitePlayers);
@@ -50,7 +53,7 @@ switch (inactivityLevelRivals) do {
 		private _blacklistedSites = (airportsX + milbases + ["Synd_HQ"]) select {sidesX getVariable [_x, sideUnknown] == teamPlayer};
 		private _offSitePlayers = _players select {
 			private _player = _x; 
-			_blacklistedSites findIf {_player inArea _x} == -1 && {_rivalsLocations findIf {_player distance2D (getMarkerPos _x) < _radiusOfOperations} != -1} 
+			_blacklistedSites findIf {_player inArea _x} == -1 && {_rivalsLocations findIf {_player distance2D (getMarkerPos _x) < _radius} != -1} 
 		};
 		if (count _offSitePlayers > 0) then {
 			_encounterPosition = position (selectRandom _offSitePlayers);
@@ -61,7 +64,7 @@ switch (inactivityLevelRivals) do {
 		private _blacklistedSites = ["Synd_HQ"];
 		private _offSitePlayers = _players select {
 			private _player = _x; 
-			_blacklistedSites findIf {_player inArea _x} == -1 && {_rivalsLocations findIf {_player distance2D (getMarkerPos _x) < _radiusOfOperations} != -1} 
+			_blacklistedSites findIf {_player inArea _x} == -1 && {_rivalsLocations findIf {_player distance2D (getMarkerPos _x) < _radius} != -1} 
 		};
 		if (count _offSitePlayers > 0) then {
 			_encounterPosition = position (selectRandom _offSitePlayers);
