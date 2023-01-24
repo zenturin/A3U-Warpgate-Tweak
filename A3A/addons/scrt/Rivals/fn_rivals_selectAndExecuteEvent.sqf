@@ -26,6 +26,11 @@ private _events = [
 	([CARDEMO, UAVGRENADE, ROVINGMORTAR] select { _x != _excludeId })
 ] select (_excludeId isNotEqualTo 0);
 
+//no UAVs in the 60s, obviously
+if (A3A_Riv_template isEqualTo "VN") then {
+	_events deleteAt (_events find UAVGRENADE); 
+};
+
 private _weight = 1 / (count _events); 
 private _eventsWithWeights = flatten (_events apply { [_x, _weight] });
 private _eventType = selectRandomWeighted _eventsWithWeights;
