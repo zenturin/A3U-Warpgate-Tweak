@@ -21,7 +21,7 @@ private _helicopterTypes = [];
 
 switch (true) do {
     case (_markerX in milbases): {
-        _helicopter append (_faction get "vehiclesHelisTransport");
+        _helicopterTypes append (_faction get "vehiclesHelisTransport");
         _helicopterTypes append (_faction get "vehiclesHelisLightAttack");
     };
     case (_markerX in airportsX): {
@@ -340,7 +340,12 @@ for "_i" from 0 to (count _buildings) - 1 do
             _pos = ASLToATL ([_pos select 0, _pos select 1, _zpos select 2]);
             private _unit = [_type, _pos, _dir] call _fnc_spawnStaticUnit;
         };
-        if (_typeB isEqualTo "Land_GuardTower_02_F" || {_typeB isEqualTo "Land_vn_guardtower_02_f" || {_typeB isEqualTo "Land_vn_guardtower_03_f" || {_typeB isEqualTo "Land_vn_guardtower_04_f"}}}) exitWith
+        if (_typeB isEqualTo "Land_GuardTower_02_F" || 
+            {_typeB isEqualTo "Land_vn_guardtower_02_f" || 
+            {_typeB isEqualTo "Land_vn_guardtower_03_f" || 
+            {_typeB isEqualTo "Land_vn_guardtower_04_f" ||
+            {_typeB isEqualTo "Land_Vez"
+        }}}}) exitWith
         {
             private _type = selectRandom ([_faction, "unitTierGuard"] call SCRT_fnc_unit_flattenTier);
             private _dir = getDir _building;
