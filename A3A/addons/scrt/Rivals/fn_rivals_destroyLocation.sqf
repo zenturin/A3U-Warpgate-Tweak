@@ -21,14 +21,14 @@ FIX_LINE_NUMBERS()
 
 params ["_location", "_source"];
 
-private _radiusOfOperations = (sqrt 2 / 2 * worldSize) / 8;
+private _radius = (sqrt 2 / 2 * worldSize) / (3 + 2);
 private _locations = ["UNKNOWN"] call SCRT_fnc_rivals_getLocations;
 
 if (isNil "_locations") exitWith {
     Error("Empty locations");
 };
 
-private _closeLocations = _locations select { (getMarkerPos _x) distance2D (getMarkerPos _location) <= _radiusOfOperations };
+private _closeLocations = _locations select { (getMarkerPos _x) distance2D (getMarkerPos _location) <= _radius };
 (_closeLocations + [_location]) apply {
     rivalsLocationsMap deleteAt _x;
 };

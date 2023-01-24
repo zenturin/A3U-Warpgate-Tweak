@@ -36,14 +36,14 @@ private _nearSites = outposts + milbases + airportsX + resourcesX + factories + 
 
 private _locations = [];
 
-private _radiusOfOperations = (sqrt 2 / 2 * worldSize) / 8;
+private _radius = (sqrt 2 / 2 * worldSize) / (3 + 2);
 
 private _frontLineCities = citiesX select {([_x] call A3A_fnc_isFrontline && {sidesX getVariable [_x,sideUnknown] != teamPlayer})};
 private _cities = (citiesX select {!(_x in _frontLineCities) && {sidesX getVariable [_x,sideUnknown] != teamPlayer}}) call BIS_fnc_arrayShuffle;
 private _controls = (controlsX select {
     private _control = _x;
     private _controlPos = getMarkerPos _control;
-    !(isOnRoad _controlPos) && {!((_controlPos) distance2D (getMarkerPos respawnTeamPlayer) < 1000) && {_nearSites findIf {(getMarkerPos _x) distance2D _controlPos < _radiusOfOperations} != -1}}
+    !(isOnRoad _controlPos) && {!((_controlPos) distance2D (getMarkerPos respawnTeamPlayer) < 1000) && {_nearSites findIf {(getMarkerPos _x) distance2D _controlPos < _radius} != -1}}
 }) call BIS_fnc_arrayShuffle;
 
 Info_4("Overall count for possible %1 locations. Frontilne cities: %2, other cities: %3, controls: %4", A3A_faction_riv get "name", str (count _frontLineCities), str (count _cities), str (count _controls));

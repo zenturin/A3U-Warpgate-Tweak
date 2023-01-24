@@ -510,7 +510,7 @@ if  (_tab in ["other"]) then
             private _ltcIcon = _display ctrlCreate ["A3A_PictureStroke", -1, _itemControlsGroup];
             _ltcIcon ctrlSetPosition [1 * GRID_W, 1 * GRID_H, 3 * GRID_W, 3 * GRID_H];
             _ltcIcon ctrlSetText A3A_Icon_Box;
-            _ltcIcon ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_loot_tooltip", _displayName, getNumber(_configClass >> "maximumLoad")];
+            _ltcIcon ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_loot_tooltip", _displayName];
             _ltcIcon ctrlCommit 0;
         };
 

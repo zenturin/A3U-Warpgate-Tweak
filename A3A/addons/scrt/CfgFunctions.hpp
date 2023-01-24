@@ -272,6 +272,7 @@ class CfgFunctions {
 			class rivals_trySpawnWanderingGroup {};
 
 			class rivals_eventLoop {};
+			class rivals_getEventCooldown {};
 			class rivals_selectAndExecuteEvent {};
 			class rivals_findSuitableEncounterPosition {};
 
