@@ -252,6 +252,7 @@ class CfgFunctions {
 			class rivals_reduceActivity {};
         	class rivals_activityUpdateLoop {};
 			class rivals_rollProbability {};
+			class rivals_getOperationRadius {};
 			class rivals_getActivityLevelString {}; 
 
 			class rivals_imprison {};
