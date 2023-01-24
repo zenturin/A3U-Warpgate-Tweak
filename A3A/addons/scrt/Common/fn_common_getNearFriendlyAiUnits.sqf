@@ -14,17 +14,16 @@ Example:
 [] call SCRT_fnc_common_getNearFriendlyAiUnits
 */
 
-if (!unconsciousPossessAi) exitWith {
-    []
-};
+if (!unconsciousPossessAi) exitWith {[]};
 
 private _units = (units group player) select {
     !(isPlayer _x) 
-    && {player distance _x < 200 
+    && _x isNotEqualTo petros
+    && {_x inArea [player, 200, 200, 0, false]
+    && {!((animationState _x) in medicAnims) //already being healed, player shouldn't be able to interrupt the process
+    && {[_x] call A3A_fnc_canFight
     //players might find FAKs anywhere on battlefield to heal their unconscious original body?
     // && {(([_x, "FirstAidKit"] call BIS_fnc_hasItem) || ([_x, "Medikit"] call BIS_fnc_hasItem))
-    && {[_x] call A3A_fnc_canFight}}
-};
-_units = [_units, [], { _x getUnitTrait "Medic" }, "ASCEND"] call BIS_fnc_sortBy;
+}}}};
 
-_units
+[_units, [], { _x getUnitTrait "Medic" }, "DESCEND"] call BIS_fnc_sortBy

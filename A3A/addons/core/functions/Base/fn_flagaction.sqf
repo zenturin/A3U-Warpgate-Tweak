@@ -5,6 +5,8 @@ if (!hasInterface) exitWith {};
 
 params ["_flag","_typeX"];
 
+private _actionX = -1;
+
 switch _typeX do
 {
     case "take":
@@ -94,6 +96,15 @@ switch _typeX do
             _flag setUserActionText [_actionX,format [localize "STR_antistasi_actions_carry", name _flag],"<t size='2'><img image='\a3\ui_f\data\igui\cfg\actions\take_ca.paa'/></t>"];
             [_flag] call A3A_Logistics_fnc_addLoadAction;
         };
+    };
+    case "heal2":
+    {
+        _actionX = _flag addAction [
+            format [
+                (format ["<img size='1.8' <img image='\a3\ui_f\data\igui\cfg\simpletasks\types\help_ca.paa' /> <t>%1</t>", localize "STR_antistasi_actions_revive"]), 
+                name _flag
+            ], A3A_fnc_actionRevive,nil,6,true,false,"","!(_this getVariable [""helping"",false]) and (isNull attachedTo _target)",4];
+        _flag setUserActionText [_actionX,format [(localize "STR_antistasi_actions_revive"),name _flag],"<t size='2'><img image='\a3\ui_f\data\igui\cfg\simpletasks\types\help_ca.paa'/></t>"];
     };
     case "remove":
     {
@@ -274,3 +285,5 @@ switch _typeX do
         ];
     };
 };
+
+_actionX

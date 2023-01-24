@@ -190,13 +190,6 @@ class Params
         texts[] = {"60","120","300","900", "1800"};
         default = 60;
     };
-    class aiAccuracyCeiling
-    {
-        title = $STR_params_aiAccuracyCeiling;
-        values[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-        texts[] = {"0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1"};
-        default = 50;
-    };
     class deathPenalty
     {
         title = $STR_params_deathPenalty;
@@ -218,14 +211,6 @@ class Params
         texts[] = {"10", "20", "30"};
         default = 20;
     };
-    //TODO: make this feature production-ready
-    // class unconsciousPossessAi
-    // {
-    //     title = $STR_params_unconsciousAiPossess;
-    //     values[] = {0};
-    //     texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
-    //     default = 0;
-    // };
     class maxConstructions
     {
         title = $STR_params_maxConstructions;
@@ -237,16 +222,16 @@ class Params
     {
         title = $STR_params_maxSupportPoints;
         values[] = {1,2,3,4,5,6};
-        texts[] = {"1","2","3","4","5","6","7","8","9"};
+        texts[] = {"1","2","3","4","5","6"};
         default = 3;
     };
-    // class maxUnits
-    // {
-    //     title = $STR_params_maxUnits;
-    //     values[] = {70,80,100,120,140,160,180,200,225,250};
-    //     texts[] = {"70","80","100","120","140","160","180","200","225","250"};
-    //     default = 140;
-    // };
+    class unconsciousPossessAi
+    {
+        title = $STR_params_unconsciousAiPossess;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
+        default = 1;
+    };
     class areRandomEventsEnabled
     {
         attr[] = {"server"};
@@ -357,6 +342,13 @@ class Params
         values[] = {0,1,2,3,4};
         texts[] = {$STR_params_A3A_enemySkillMul_veasy,$STR_params_A3A_enemySkillMul_easy,$STR_params_A3A_enemySkillMul_medium,$STR_params_A3A_enemySkillMul_hard,$STR_params_A3A_enemySkillMul_vhard};
         default = 2;
+    };
+    class aiAccuracyCeiling
+    {
+        title = $STR_params_aiAccuracyCeiling;
+        values[] = {10, 20, 30, 40, 45, 50, 60, 70, 80, 90, 100};
+        texts[] = {"0.1", "0.2", "0.3", "0.4", "0.45", "0.5", "0.6", "0.7", "0.8", "0.9", "1"};
+        default = 45;
     };
     class napalmEnabled
     {
