@@ -47,7 +47,7 @@ private _fnc_remoteExecObjectJIPSafe = {
 if (isNil "specialVarLoads") then {
     specialVarLoads = [
         "minesX","staticsX","antennas","mrkNATO","mrkSDK",
-        "posHQ","hr","armas","items","backpcks","ammunition","dateX","prestigeOPFOR",
+        "posHQ","hr","dateX","prestigeOPFOR",
         "prestigeBLUFOR","resourcesFIA","skillFIA","destroyedSites",
         "garrison","tasks","membersX","destroyedBuildings","idlebases",
         "chopForest","weather","killZones","jna_dataList","controlsSDK","mrkCSAT","nextTick",
