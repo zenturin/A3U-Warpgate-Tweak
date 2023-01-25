@@ -177,3 +177,10 @@ class A3_Supplies_F_Heli_CargoNets_CargoNet_01_barrels_F_p3d : TRIPLES(ADDON,Car
     rotation[] = {1,0,0};
     size = 2;
 };
+
+class A3_weapons_F_AmmoBoxes_AmmoBox_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0.27};
+    rotation[] = {1,0,0};
+    size = 1;
+};
