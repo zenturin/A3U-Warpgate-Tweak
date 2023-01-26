@@ -58,7 +58,7 @@ private _fnc_prepareTraderQuest = {
 switch (true) do {
     case (!isTraderQuestCompleted && {!isTraderQuestAssigned}): {
         private _thresholds = createHashMapFromArray [
-            ["Small", 15],
+            ["Small", 20],
             ["Medium", 75],
             ["Large", 100]
         ];
