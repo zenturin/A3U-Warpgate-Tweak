@@ -48,7 +48,7 @@ if(hasInterface)then{
 
     //add vehicle/box filling button
     _object addAction [
-		("<img image='" + QPATHTOFOLDER(Pictures\unloadvehicle.paa) + "' size='1.6' shadow=2/>" + format["<t size='1'> %1</t>", (localize "STR_JNA_ACT_CONTAINER_OPEN")]),
+		("<img image='" + QPATHTOFOLDER(Pictures\unloadvehicle.paa) + "' size='1.6' shadow=2/>" + format["<t size='1'> %1</t>", localize "STR_JNA_ACT_CONTAINER_OPEN"]),
         {
 			private _object = _this select 0;
 			
