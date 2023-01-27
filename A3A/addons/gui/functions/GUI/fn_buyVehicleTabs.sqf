@@ -354,7 +354,18 @@ if  (_tab in ["other"]) then
                 localize "STR_A3AP_buyvehdialog_loot_crate"
             ];
         };
-        
+
+        if (reviveKitsEnabled) then {
+            _buyableItemList pushBack [
+                A3A_faction_reb get 'reviveKitBox',
+                server getVariable (A3A_faction_reb get "reviveKitBox"),
+                "SCRT_fnc_common_buyReviveKitBox", 
+                [player],
+                false,
+                localize "STR_A3AP_buyvehdialog_revive_kit_box"
+            ];
+        };
+    
         _buyableItemList pushBack [
             A3A_faction_reb get 'vehicleLightSource',
             25,
@@ -511,6 +522,15 @@ if  (_tab in ["other"]) then
             _ltcIcon ctrlSetPosition [1 * GRID_W, 1 * GRID_H, 3 * GRID_W, 3 * GRID_H];
             _ltcIcon ctrlSetText A3A_Icon_Box;
             _ltcIcon ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_loot_tooltip", _displayName];
+            _ltcIcon ctrlCommit 0;
+        };
+
+        if (_className isEqualTo (A3A_faction_reb get 'reviveKitBox')) then
+        {
+            private _ltcIcon = _display ctrlCreate ["A3A_PictureStroke", -1, _itemControlsGroup];
+            _ltcIcon ctrlSetPosition [1 * GRID_W, 1 * GRID_H, 3 * GRID_W, 3 * GRID_H];
+            _ltcIcon ctrlSetText A3A_Icon_HealKit;
+            _ltcIcon ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_revivekitbox_tooltip", _displayName];
             _ltcIcon ctrlCommit 0;
         };
 

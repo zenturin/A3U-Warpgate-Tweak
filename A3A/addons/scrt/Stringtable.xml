@@ -14,6 +14,10 @@
                 <Original>Light</Original>
                 <Russian>Уличный фонарь</Russian>
             </Key>
+            <Key ID="STR_A3AP_buyvehdialog_revive_kit_box">
+                <Original>Box with Combat Readiness Recovery Kits</Original>
+                <Russian>Ящик c наборами восстановления боеспособности</Russian>
+            </Key>
         </Container>
         <Container name="arsenal">
             <Key ID="STR_A3AP_vehArsenal_desc">
@@ -448,9 +452,13 @@
             </Key>
         </Container>
         <Container name="scrt_stores">
-            <Key ID="STR_scrt_stores_buy_loot_crate_not_enough">
-                <Original>You have not enough money to buy loot crate. %1%2 needed.</Original>
-                <Russian>У вас недостаточно денег для покупки ящика-сборщика добычи. Необходимо %1%2.</Russian>
+            <Key ID="STR_scrt_stores_buy_item_not_enough_header">
+                <Original>Insufficient Funds</Original>
+                <Russian>Недостаточно средств</Russian>
+            </Key>
+            <Key ID="STR_scrt_stores_buy_item_not_enough">
+                <Original>You have not enough money to buy this item. %1%2 needed.</Original>
+                <Russian>У вас недостаточно денег для покупки этого предмета. Необходимо %1%2.</Russian>
             </Key>
         </Container>
         <Container name="scrt_generic">
@@ -620,9 +628,17 @@
                 <Original>Light and heavy fortifications can only be built off roads, in friendly areas.</Original>
                 <Russian>Лёгкие и тяжелые фортификации могут быть построены только вне дорог, а также в дружественных зонах.</Russian>
             </Key>
-            <Key ID="STR_veh_callback_lootcrate_text">
-                <Original>&lt;t size='0.6'&gt;Select loot crate position.&lt;br/&gt;Price: %1%2&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;Выберите позицию для ящика-сборщика добычи.&lt;br/&gt;Цена: %1%2&lt;/t&gt;</Russian>
+            <Key ID="STR_veh_callback_placement_text">
+                <Original>&lt;t size='0.6'&gt;Select %1 position.&lt;br/&gt;Price: %2%3&lt;/t&gt;</Original>
+                <Russian>&lt;t size='0.6'&gt;Выберите позицию для %1.&lt;br/&gt;Цена: %2%3&lt;/t&gt;</Russian>
+            </Key>
+            <Key ID="STR_veh_callback_placement_text_additive_lootcrate">
+                <Original>loot crate</Original>
+                <Russian>ящика-сборщика добычи</Russian>
+            </Key>
+            <Key ID="STR_veh_callback_placement_text_additive_revivekitbox">
+                <Original>box with Combat Readiness Recovery kits</Original>
+                <Russian>ящика c наборами восстановления боеспособности</Russian>
             </Key>
             <Key ID="STR_dialogs_RP_select_pos">
                 <Original>&lt;t size='0.6'&gt;Select &lt;t size='0.6' color='#008000'&gt;rally point&lt;/t&gt; position.&lt;br/&gt;Cost: %1%2&lt;/t&gt;</Original>
@@ -2901,6 +2917,10 @@
             <Key ID="STR_params_maxUnits">
                 <Original>Maximum quantity of simultaneosly spawnable units</Original>
                 <Russian>Максимальное количество одновременно спавнящихся юнитов</Russian>
+            </Key>
+            <Key ID="STR_params_reviveKitsEnabled">
+                <Original>Enable Combat Readiness Recovery kits</Original>
+                <Russian>Включить наборы восстановления боеспособности</Russian>
             </Key>
             <Key ID="STR_params_lootCrateHeli">
                 <Original>Enable loot gather crates and loot helicopter commander ability</Original>
@@ -5253,6 +5273,18 @@
             </Key>
         </Container>
         <Container name="common_actions">
+            <Key ID="STR_antistasi_actions_crk_used">
+                <Original>You have successfully used Combat Readiness Recovery Kit.</Original>
+                <Russian>Вы успешно использовали набор восстановления боеспособности.</Russian>
+            </Key>
+            <Key ID="STR_antistasi_actions_crk_use">
+                <Original>Use Combat Readiness Recovery Kit on %1</Original>
+                <Russian>Использовать набор восстановления боеспособности на %1</Russian>
+            </Key>
+            <Key ID="STR_antistasi_actions_unconscious_revive_holdKey">
+                <Original>To Stand Up</Original>
+                <Russian>чтобы встать</Russian>
+            </Key>
             <Key ID="STR_antistasi_respawn">
                 <Original>Respawning...</Original>
                 <Russian>Возрождение...</Russian>
@@ -5261,29 +5293,25 @@
                 <Original>&lt;t size='0.6'&gt;You are controlling AI unit. Help yourself or return to your original body.&lt;t size='0.5'&gt;&lt;/t&gt;&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Вы управляете ИИ-юнитом. Помогите себе или вернитесь в свое изначальное тело.&lt;t size='0.5'&gt;&lt;/t&gt;&lt;/t&gt;</Russian>
             </Key>
-            <Key ID="STR_antistasi_actions_unconscious_action_prompt0">
-                <Original>&lt;t size='0.6'&gt;There is no near AI unit to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;Поблизости нет дружественных ИИ-юнитов, которые могли бы вам помочь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.&lt;/t&gt;&lt;/t&gt;</Russian>
+            <Key ID="STR_antistasi_actions_unconscious_action_prompt0_base">
+                <Original>&lt;t size='0.6'&gt;There is no near AI unit to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%1%2&lt;/t&gt;&lt;/t&gt;</Original>
+                <Russian>&lt;t size='0.6'&gt;Поблизости нет дружественных ИИ-юнитов, которые могли бы вам помочь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%1%2&lt;/t&gt;&lt;/t&gt;</Russian>
             </Key>
-            <Key ID="STR_antistasi_actions_unconscious_action_prompt0_possess">
-                <Original>&lt;t size='0.6'&gt;There is no near AI unit to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.&lt;br/&gt;Press T to possess friendly AI unit to help yourself.&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;Поблизости нет дружественных ИИ-юнитов, которые могли бы вам помочь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.&lt;br/&gt;Нажмите T, чтобы вселиться в дружественный ИИ-юнит, чтобы помочь себе.&lt;/t&gt;&lt;/t&gt;</Russian>
+            <Key ID="STR_antistasi_actions_unconscious_action_prompt1_base">
+                <Original>&lt;t size='0.6'&gt;%1 is on the way to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%2%3&lt;/t&gt;&lt;/t&gt;</Original>
+                <Russian>&lt;t size='0.6'&gt;%1 спешит вам помочь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%2%3&lt;/t&gt;&lt;/t&gt;</Russian>
             </Key>
-            <Key ID="STR_antistasi_actions_unconscious_action_prompt1">
-                <Original>&lt;t size='0.6'&gt;%1 is on the way to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;%1 спешит вам помочь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.&lt;/t&gt;&lt;/t&gt;</Russian>
+            <Key ID="STR_antistasi_actions_unconscious_action_prompt2_base">
+                <Original>&lt;t size='0.6'&gt;Wait until you get assistance or&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%1%2&lt;/t&gt;&lt;/t&gt;</Original>
+                <Russian>&lt;t size='0.6'&gt;Подождите, пока вам не помогут или&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%1%2&lt;/t&gt;&lt;/t&gt;</Russian>
             </Key>
-            <Key ID="STR_antistasi_actions_unconscious_action_prompt1_possess">
-                <Original>&lt;t size='0.6'&gt;%1 is on the way to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.&lt;br/&gt;Press T to possess friendly AI unit to help yourself.&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;%1 спешит вам помочь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.&lt;br/&gt;Нажмите T, чтобы вселиться в дружественный ИИ-юнит, чтобы помочь себе.&lt;/t&gt;&lt;/t&gt;</Russian>
+            <Key ID="STR_antistasi_actions_unconscious_action_prompt_possess">
+                <Original>&lt;br/&gt;Press T to possess friendly AI unit to help yourself.</Original>
+                <Russian>&lt;br/&gt;Нажмите T, чтобы вселиться в дружественный ИИ-юнит, чтобы помочь себе.</Russian>
             </Key>
-            <Key ID="STR_antistasi_actions_unconscious_action_prompt2">
-                <Original>&lt;t size='0.6'&gt;Wait until you get assistance or&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;Подождите, пока вам не помогут или&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.&lt;/t&gt;&lt;/t&gt;</Russian>
-            </Key>
-            <Key ID="STR_antistasi_actions_unconscious_action_prompt2_possess">
-                <Original>&lt;t size='0.6'&gt;Wait until you get assistance or&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.&lt;br/&gt;Press T to possess friendly AI unit to help yourself.&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;Подождите, пока вам не помогут или&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.&lt;br/&gt;Нажмите T, чтобы вселиться в дружественный ИИ-юнит, чтобы помочь себе.&lt;/t&gt;&lt;/t&gt;</Russian>
+            <Key ID="STR_antistasi_actions_unconscious_action_prompt_selfrevive">
+                <Original>&lt;br/&gt;Press Q to use Combat Readiness Recovery Kit.</Original>
+                <Russian>&lt;br/&gt;Нажмите Q, чтобы использовать набор восстановления боеспособности.</Russian>
             </Key>
             <Key ID="STR_antistasi_actions_common_access_vehicle_marker_text">
                 <Original>Access Vehicle Market</Original>

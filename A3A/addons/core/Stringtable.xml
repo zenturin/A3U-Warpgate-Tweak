@@ -4890,5 +4890,15 @@
         <Original>"This mission is outdated and could lack important map details that may break your game. Inform your mission maker or update the extension to the latest version."</Original>
       </Key>
     </Container>
+    <Container name="A3AP_items">
+      <Key ID="STR_A3AP_items_crrk_name">
+        <Original>Combat Readiness Recovery Kit</Original>
+        <Russian>Набор восстановления боеспособности</Russian>
+      </Key>
+      <Key ID="STR_A3AP_items_crrk_desc">
+        <Original>Allows owner of such kit to treat incapacitated soldiers for emergency recovery of their combat capabilities right on the battlefield. Could be self-applied. One-time use.</Original>
+        <Russian>Позволяет владельцу такого комплекта лечить выведенных из строя солдат для экстренного восстановления их боеспособности прямо на поле боя. Может быть применён на самом себе. Одноразовое использование.</Russian>
+      </Key>
+    </Container>
   </Package>
 </Project>

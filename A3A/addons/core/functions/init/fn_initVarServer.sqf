@@ -611,6 +611,7 @@ server setVariable [FactionGet(reb,"staticMortar"),2000,true];
 
 server setVariable [FactionGet(reb,"lootCrate"), 100, true];
 server setVariable [FactionGet(reb,"rallyPoint"), 100, true];
+server setVariable [FactionGet(reb,"reviveKitBox"), 3000, true];
 
 ///////////////////////
 //     GARRISONS    ///

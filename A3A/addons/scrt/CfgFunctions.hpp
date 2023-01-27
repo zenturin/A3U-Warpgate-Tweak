@@ -45,6 +45,8 @@ class CfgFunctions {
 			class common_unconsciousEventHandler {};
 			class common_airdropCargo {};
 			class common_triggerArtilleryResponseEH {};
+			class common_buyReviveKitBox {};
+			class common_revive {};
 		};
 
 		class Effect {
