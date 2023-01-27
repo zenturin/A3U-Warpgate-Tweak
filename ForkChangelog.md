@@ -10,6 +10,7 @@
 - Multiple Rivals factions per modset support, startup menu changes due to this
 - Loot Crate Gather Distance parameter
 - Overall Enemy Balance parameter changes - new Below Normal (former pre-2.1 Normal value) and Above Normal (sligtly harder than Normal, former pre-2.1 High value) values,  Normal and High parameter values will be slightly harder
+- Special item for SP or low-population MP - Combat Readiness Recovery Kit, allows owner of such kit instantly revive someone including user of such kit, one-time use, could be bought in Vehicle Box store in "Other" tab, could be turned on via startup parameter
 - Ability to possess any near friendly AI squadmate while laying incapacitated to help your original body (press T while being incapacitated, could be turned off via params menu)
 - (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
 - (3CB Factions) Takistan civilians
@@ -51,6 +52,7 @@
 - Fixed some missing strings, typos, localization errors
 - Fixed non-working paradrop and loot helicopters if napalm was disabled
 - Military Administration capture/destruction will increase support in it's city
+- Post-effect will be applied while laying in wounded state
 - Transport, light attack and attack helicopters may spawn at helipads on airbases, transport helicopters and light attack helicopters may spawn at milbases
 - Prisoners will spawn in military administration in all cases (not only Capture The Military Administration task as it was before), they will have spawn cooldown to prevent HR farming
 - Investigate the Battleground mission will be rolled in mission distance radius instead of frontline cities only
@@ -61,6 +63,7 @@
 - Reduced probability of Mechanized Airborne QRF
 - Rivals random event cooldown will depend on Rivals Difficulty parameter and current level of rivals activity (more active -> less cooldown)
 - Improved Mechanized Airborne QRF attacking behaviour
+- Increased chance to learn about Arms Dealer from interrogations and intel searches from 15% to 20%
 - Increased probability of rival event happening on 5% on each activity level
 - Slightly reduced default accuracy cap from 0.5 to 0.45
 - (RHS) Fixed wrong classnames for AFRF surrender and equipment boxes
@@ -71,6 +74,7 @@
 - (Khe Sanh) Added PaCa to populated villages list
 
 ### Removals
+- Removed Truely Random Crates parameter
 - Removed "Buy Loot Crate" action on vehicle box as loot crate was moved to general store to "Other" tab
 
 

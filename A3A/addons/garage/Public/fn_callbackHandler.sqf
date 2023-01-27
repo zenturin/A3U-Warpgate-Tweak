@@ -150,6 +150,36 @@ switch _callBackName do {
         };
     };
 
+    case "CREATEREVIVEKITBOX": {
+        switch _action do {
+            case "Placed": {
+				//Handle Money
+				private _factionMoney = server getVariable "resourcesFIA";
+
+                if (player == theBoss && {vehiclePurchase_cost <= _factionMoney}) then {
+					[0,(-1 * vehiclePurchase_cost)] remoteExec ["A3A_fnc_resourcesFIA",2];
+				}
+				else {
+					[-1 * vehiclePurchase_cost] call A3A_fnc_resourcesPlayer;
+					_vehicle setVariable ["ownerX",getPlayerUID player,true];
+				};
+
+                _vehicle addEventHandler ["Killed", { [_this#0] spawn { sleep 10; deleteVehicle (_this#0) } }];
+
+                clearItemCargoGlobal _vehicle;
+                clearMagazineCargoGlobal _vehicle;
+                clearWeaponCargoGlobal _vehicle;
+                clearBackpackCargoGlobal _vehicle;
+                vehiclePurchase_cost = 0;
+
+                _vehicle addItemCargoGlobal ["A3AP_SelfReviveKit", 3];
+                [_vehicle] call A3A_Logistics_fnc_addLoadAction;
+            };
+
+            default {false};
+        };
+    };
+
     case "CREATERALLYPOINT": {
         switch _action do {
             case "invalidPlacement": {

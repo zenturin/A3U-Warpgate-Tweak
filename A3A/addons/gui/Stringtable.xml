@@ -620,6 +620,10 @@
       <Key ID="STR_antistasi_dialogs_buy_vehicle_light_tooltip">
         <Original>This item provides light source.</Original>
       </Key>
+      <Key ID="STR_antistasi_dialogs_buy_vehicle_revivekitbox_tooltip">
+        <Original>This item contains certain amount of Combat Readiness Recovery kits.</Original>
+        <Russian>Этот предмет содержит в себе некоторое количество наборов восстановления боеспособности.</Russian>
+      </Key>
     </Container>
     <Container name="dialog_main_player">
       <Key ID="STR_antistasi_dialogs_main_fast_travel">

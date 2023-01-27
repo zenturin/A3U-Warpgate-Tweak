@@ -20,7 +20,7 @@ addMissionEventHandler [
 			_position set [2, (_position select 2) + 1 + (_distance * 0.05)];
 
 			drawIcon3D [
-				"\a3\ui_f\data\IGUI\Cfg\HoldActions\holdAction_reviveMedic_ca.paa",
+				"a3\ui_f\data\igui\cfg\revive\overlayiconsgroup\u100_ca.paa",
 				[1,0,0,1 - (_distance / 100)], 
 				_position, 
 				1, 
