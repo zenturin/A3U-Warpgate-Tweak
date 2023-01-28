@@ -11,4 +11,3 @@ Maintainer: DoomMetal
 #include "buyVehicleDialog.hpp"
 #include "arsenalLimitsDialog.hpp"
 #include "setupDialog.hpp"
-#include "hcDismissalDialog.hpp"
