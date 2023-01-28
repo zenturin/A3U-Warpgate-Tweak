@@ -19,11 +19,11 @@ if (!visibleMap) exitWith {};
 private _positionTel = positionTel;
 private _nearX = [markersX,_positionTel] call BIS_fnc_nearestPosition;
 
-if !(_positionTel inArea _nearX) exitWith {
+if (_positionTel distance2D (getMarkerPos _nearX) > 50) exitWith {
     [localize "STR_A3A_garrison_header", format [localize "STR_A3A_garrison_fail_not_markerzone",FactionGet(reb,"name")]] call A3A_fnc_customHint;
 };
 
-if (not(sidesX getVariable [_nearX,sideUnknown] == teamPlayer)) exitWith {
+if (!(sidesX getVariable [_nearX,sideUnknown] == teamPlayer)) exitWith {
     [localize "STR_A3A_garrison_header", format [localize "STR_A3A_garrison_fail_not_teamplayer",FactionGet(reb,"name")]] call A3A_fnc_customHint;
 };
 
@@ -41,41 +41,7 @@ if ((_incomingUnits select 0) isEqualType grpNull) then {
     _unitsX = _incomingUnits;
 };
 
-private _limit = [_nearX] call A3A_fnc_getGarrisonLimit;
-private _newGarrison = (count (units _groupX)) + (count (garrison getVariable [_nearX, []]));
-if (_limit != -1 && {_newGarrison > _limit}) exitWith {
-    [localize "STR_A3A_garrison_header", localize "STR_A3A_garrison_exceed_limit"] call A3A_fnc_customHint;
-};
-
-if (_limit != -1 && {_newGarrison > _limit}) then {
-    createDialog "A3A_hcDismissalDialog";
-    sleep 1;
-    disableSerialization;
-    waitUntil {!dialog or {!isNil "A3A_hcDismissalDialog"}};
-};
-
-// #ifdef UseDoomGUI
-//     ERROR("Disabled due to UseDoomGUI Switch.")
-// #else
-//     createDialog "hcDismissalDialog";
-// #endif
-// sleep 1;
-// disableSerialization;
-// private _display = findDisplay 500;
-
-// if (str (_display) != "no display") then {
-// 	private _childControl = _display displayCtrl 104;
-// 	(_display displayCtrl 105) ctrlSetTooltip format ["Buy a vehicle for this squad for %1 €.", _vehCost];
-// 	_childControl = _display displayCtrl 105;
-// 	(_display displayCtrl 105) ctrlSetTooltip "Barefoot Infantry";
-// };
-
-// waitUntil {(!dialog) or (!isNil "vehQuery")};
-// if ((!dialog) and (isNil "vehQuery")) exitWith { [_formatX, _idFormat, _special, objNull] spawn A3A_fnc_spawnHCGroup }; //spawn group call here
-
-
-
-private _leave = false;
+private _earlyEscape = false;
 private _alreadyInGarrison = false;
 {
     private _garrisondIn = _x getVariable "markerX";
@@ -90,9 +56,10 @@ if (groupID _groupX == "MineF" or groupID _groupX == "Post" or (isPlayer(leader 
 };
 
 {
-    if (isPlayer _x or !alive _x) exitWith {_leave = true};
+    if (isPlayer _x or !alive _x) exitWith {_earlyEscape = true};
 } forEach _unitsX;
-if (_leave) exitWith {
+
+if (_earlyEscape) exitWith {
     [localize "STR_A3A_garrison_header", localize "STR_garrison_fail_dead_units"] call A3A_fnc_customHint;
 };
 
@@ -105,10 +72,47 @@ private _bannedTypes = FactionGet(civ, "unitMan") +
 
 {
     private _unitType = _x getVariable "unitType";
-    if (_unitType in _bannedTypes) exitWith {_leave = true};
+    if (_unitType in _bannedTypes) exitWith {_earlyEscape = true};
 } forEach _unitsX;
-if (_leave) exitWith {
+if (_earlyEscape) exitWith {
     [localize "STR_A3A_garrison_header", localize "STR_garrison_fail_no_specific_units"] call A3A_fnc_customHint;
+};
+
+private _limit = [_nearX] call A3A_fnc_getGarrisonLimit;
+private _oldGarrison = garrison getVariable [_nearX, []];
+private _unitsToRefundCount = -1;
+
+if (_limit != -1) then {
+    private _newGarrisonCount = count _unitsX + count _oldGarrison;
+
+    switch (true) do {
+        case (count _oldGarrison == _limit): {
+            [localize "STR_A3A_garrison_header", localize "STR_A3A_garrison_full_limit"] call A3A_fnc_customHint;
+            _earlyEscape = true;
+        };
+        case (_newGarrisonCount >= _limit): {
+            private _unitsToRefundCount = _newGarrisonCount - _limit;
+            _unitsToRefund = (reverse (+_unitsX)) resize _unitsToRefundCount;
+
+            private _refundMoney = 0;
+            {
+                private _unitType = _x getVariable "unitType";
+                _refundMoney = _refundMoney + (server getVariable _unitType);  
+                deleteVehicle _x;
+            } forEach _unitsToRefund;
+
+            [count _unitsToRefund,_refundMoney] remoteExec ["A3A_fnc_resourcesFIA",2];
+            [localize "STR_A3A_garrison_header", localize "STR_A3A_garrison_exceed_limit"] call A3A_fnc_customHint;
+        };
+        default {
+            //proceed as usual
+        };
+    };
+};
+if (_earlyEscape) exitWith {};
+
+if (_unitsToRefundCount != -1) then {
+    _unitsX resize (count _unitsX - _unitsToRefundCount);
 };
 
 if (isNull _groupX) then {
