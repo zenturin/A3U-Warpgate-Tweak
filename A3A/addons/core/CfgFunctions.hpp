@@ -740,6 +740,8 @@ class CfgFunctions
             class getAdmin {};
             class localLog {};
             class log {};
+            class setIdentity {};
+            class setIdentityLocal {};
             class setPos {};
             class vehicleTextureSync {};
             class vehicleWillCollideAtPosition {};
