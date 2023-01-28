@@ -80,7 +80,6 @@ if (_earlyEscape) exitWith {
 
 private _limit = [_nearX] call A3A_fnc_getGarrisonLimit;
 private _oldGarrison = garrison getVariable [_nearX, []];
-private _unitsToRefundCount = -1;
 
 if (_limit != -1) then {
     private _newGarrisonCount = count _unitsX + count _oldGarrison;
@@ -92,12 +91,20 @@ if (_limit != -1) then {
         };
         case (_newGarrisonCount >= _limit): {
             private _unitsToRefundCount = _newGarrisonCount - _limit;
-            _unitsToRefund = (reverse (+_unitsX)) resize _unitsToRefundCount;
-
+            private _unitsToRefund = _unitsX select {!isPlayer _x}; //commander may be amongst the units
+            for "_i" from 0 to (count _unitsX / 2) do { 
+                private _temp = _unitsX select _i; 
+                private _revertIndex = (count _unitsX) - _i - 1; 
+                _unitsX set [_i, _unitsX select _revertIndex]; 
+                _unitsX set [_revertIndex, _temp]; 
+            };
+            _unitsToRefund resize _unitsToRefundCount;
+            _unitsX resize (count _unitsX - _unitsToRefundCount);
+            
             private _refundMoney = 0;
             {
                 private _unitType = _x getVariable "unitType";
-                _refundMoney = _refundMoney + (server getVariable _unitType);  
+                _refundMoney = _refundMoney + (server getVariable _unitType);
                 deleteVehicle _x;
             } forEach _unitsToRefund;
 
@@ -110,10 +117,6 @@ if (_limit != -1) then {
     };
 };
 if (_earlyEscape) exitWith {};
-
-if (_unitsToRefundCount != -1) then {
-    _unitsX resize (count _unitsX - _unitsToRefundCount);
-};
 
 if (isNull _groupX) then {
     _groupX = createGroup teamPlayer;
