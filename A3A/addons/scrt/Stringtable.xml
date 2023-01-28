@@ -2381,8 +2381,8 @@
         </Container>
         <Container name="garrison">
             <Key ID="STR_garrison_info">
-                <Original>&lt;br/&gt;&lt;br/&gt;Garrison men: %1/%14&lt;br/&gt;&lt;br/&gt;Squad Leaders: %2&lt;br/&gt;%13: %3&lt;br/&gt;Riflemen: %4&lt;br/&gt;Autoriflemen: %5&lt;br/&gt;Medics: %6&lt;br/&gt;Grenadiers: %7&lt;br/&gt;Marksmen: %8&lt;br/&gt;AT Men: %9&lt;br/&gt;Engineers: %10&lt;br/&gt;Explosive Specialists: %11&lt;br/&gt;Static Weap: %12</Original>
-                <Russian>&lt;br/&gt;&lt;br/&gt;Гарнизон: %1/%14&lt;br/&gt;&lt;br/&gt;Командиры отделений: %2&lt;br/&gt;%13: %3&lt;br/&gt;Стрелки: %4&lt;br/&gt;Пулеметчики: %5&lt;br/&gt;Медики: %6&lt;br/&gt;Гренадёры: %7&lt;br/&gt;Снайперы: %8&lt;br/&gt;Гранатомётчики: %9&lt;br/&gt;Инженеры: %10&lt;br/&gt;Подрывники: %11&lt;br/&gt;Стац. орудия: %12</Russian>
+                <Original>&lt;br/&gt;&lt;br/&gt;Garrison men: %1/%13&lt;br/&gt;&lt;br/&gt;Squad Leaders: %2&lt;br/&gt;%12: %3&lt;br/&gt;Riflemen: %4&lt;br/&gt;Autoriflemen: %5&lt;br/&gt;Medics: %6&lt;br/&gt;Grenadiers: %7&lt;br/&gt;Marksmen: %8&lt;br/&gt;AT Men: %9&lt;br/&gt;Other: %10&lt;br/&gt;Static Weap: %11</Original>
+                <Russian>&lt;br/&gt;&lt;br/&gt;Гарнизон: %1/%13&lt;br/&gt;&lt;br/&gt;Командиры отделений: %2&lt;br/&gt;%12: %3&lt;br/&gt;Стрелки: %4&lt;br/&gt;Пулеметчики: %5&lt;br/&gt;Медики: %6&lt;br/&gt;Гренадёры: %7&lt;br/&gt;Снайперы: %8&lt;br/&gt;Гранатомётчики: %9&lt;br/&gt;Другие: %10&lt;br/&gt;Стац. орудия: %11</Russian>
             </Key>
             <Key ID="STR_garrison_info_technicals">
                 <Original>Technicals</Original>
@@ -2901,6 +2901,10 @@
             <Key ID="STR_params_rebelGarrisonLimit">
                 <Original>How many rebels can be garrisoned (1.5x for airports and milbases, 0.5x for resources and factories)?</Original>
                 <Russian>Сколько повстанцев может в гарнизоне (1,5x для аэропортов и военных баз, 0,5x для ресурсов и заводов)?</Russian>
+            </Key>
+            <Key ID="STR_params_rebelGarrisonLimit_desc">
+                <Original>How many rebel troops can be in garrison. Note that No limit option may affect performance as there might be too many troops for CPU to handle.</Original>
+                <Russian>Настраивает максимальное количество солдат-повстанцев, которое может быть в гарнизоне. Опция "No Limit" может влиять на производительность так как в гарнизонах может быть слишком много солдат.</Russian>
             </Key>
             <Key ID="STR_params_saveZeusBuildings">
                 <Original>Persistent Save for Zeus-placed Constructions</Original>

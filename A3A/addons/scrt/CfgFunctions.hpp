@@ -24,7 +24,6 @@ class CfgFunctions {
 			class common_defeatFactionIfPossible {};
 			class common_getPromotionThreshold {};
 			class common_rebelSalary {};
-			class common_getGarrisonLimit {};
 			class common_givePrisonerReleasePaycheck {};
 			class common_unflipVehicle {};
 			class common_shareFactionMoneyWithMembers {};
