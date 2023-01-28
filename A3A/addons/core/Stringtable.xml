@@ -5103,9 +5103,13 @@
         <Original>Garrisons</Original>
         <Russian>Гарнизоны</Russian>
       </Key>
+      <Key ID="STR_A3A_garrison_full_limit">
+        <Original>This garrison is full, choose another zone to add this HC squad into it's garrison.</Original>
+        <Russian>Этот гарнизон полон, выберите другую локацию для того чтобы добавить этот отряд в гарнизон.</Russian>
+      </Key>
       <Key ID="STR_A3A_garrison_exceed_limit">
-        <Original>Adding this squad to garrison will exceed garrison limit.</Original>
-        <Russian>Добавление этого отряда в гарнизон превысит лимит гарнизона.</Russian>
+        <Original>Adding this squad to garrison will exceed garrison limit. Some part of them will join garrison, the rest will be dismissed and their cost will be refunded.</Original>
+        <Russian>Добавление этого отряда в гарнизон превысит лимит гарнизона. Какая-то их часть присоединится к гарнизону, оставшиеся будут распущены, а их стоимость будет возмещена.</Russian>
       </Key>
       <Key ID="STR_A3A_garrison_reached_limit">
         <Original>Garrison limit has reached, you can't add new units anymore.</Original>
