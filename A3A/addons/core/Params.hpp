@@ -211,13 +211,6 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
         default = 1;
     };
-    class rebelGarrisonLimit
-    {
-        title = $STR_params_rebelGarrisonLimit;
-        values[] = {10,20,30};
-        texts[] = {"10", "20", "30"};
-        default = 20;
-    };
     class maxConstructions
     {
         title = $STR_params_maxConstructions;
@@ -380,7 +373,14 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
     };
-
+    class A3A_rebelGarrisonLimit
+    {
+        title = $STR_params_rebelGarrisonLimit;
+        tooltip = $STR_params_rebelGarrisonLimit_desc;
+        values[] = {-1, 16, 24, 32};
+        texts[] = {"No limit", "16", "24", "32"};
+        default = 24;
+    };
     class SpacerEquipment
     {
         title = "";

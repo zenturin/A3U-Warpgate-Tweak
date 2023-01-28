@@ -315,6 +315,7 @@ class CfgFunctions
             class updatePreference {};
             class updateReinfState {};
             class updateVehicles {};
+            class getGarrisonLimit {};
         };
 
         class init {
