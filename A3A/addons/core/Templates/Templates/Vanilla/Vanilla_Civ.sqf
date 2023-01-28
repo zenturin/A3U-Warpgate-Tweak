@@ -84,7 +84,8 @@ private _civUniforms = [
     "U_C_Scientist",
     "U_C_Uniform_Scientist_02_formal_F",
     "U_C_Uniform_Scientist_02_F",
-    "U_C_Uniform_Scientist_01_F"
+    "U_C_Uniform_Scientist_01_F",
+    "UK3CB_CHC_C_U_PRIEST_01"
 ];
 
 private _pressUniforms = [
@@ -162,7 +163,9 @@ private _civhats = [
     "H_Cap_tan",
     "H_StrawHat",
     "H_StrawHat_dark",
-    "H_Hat_checker"
+    "H_Hat_checker",
+    "H_Hat_Safari_olive_F",
+    "H_Hat_Safari_sand_F"
 ];
 
 ["headgear", _civHats] call _fnc_saveToTemplate;

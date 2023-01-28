@@ -379,10 +379,20 @@ class Templates
     {
         side = "Civ";
         flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_CHC\Flag\CHC_flag_co.paa";
-        name = "3CBF Chernarus";
+        name = "3CBF Eastern European";
         file = "3CBF_Civ_CHC";
         description = $STR_A3AP_setupFactionsTab_easterneuropean;
-        climate[] = {"arid","temperate"};
+        climate[] = {"temperate"};
+    };
+
+    class 3CBF_A : 3CBF_Base
+    {
+        side = "Civ";
+        flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_ADC\Flag\ADC_flag_co.paa";
+        name = "3CBF Arid";
+        file = "3CBF_Civ_A";
+        description = $STR_A3AP_setupFactionsTab_a;
+        climate[] = {"arid"};
     };
 
     class 3CBF_TKC: 3CBF_Base

@@ -16,6 +16,7 @@
 - (3CB Factions) Takistan civilians
 - (3CB Factions) TKM rebel faction
 - (3CB Factions) Tribal Fighters, Syndikat rival factions
+- (3CB) Arid Civilians faction
 - (Vanilla) NATO Tropical faction 
 - (Vanilla) Syndikat rival faction
 - (SOGPF) MACV, PAVN enemy factions
@@ -72,7 +73,8 @@
 - (Sefrou Ramal) Moved Military Administration to less problematic landscape
 - (Cam Lao Nam) Fixed some problematic outposts without vehicles, removed outposts without roads, disabled simulation on some dynamic objects
 - (Khe Sanh) Added PaCa to populated villages list
-
+- (Chernarus 2020) Manual population config, overall population cut from ~11000 to ~8000, disabled Arsenovo and Krasnoe villages
+- (3CB Factions) Removed all cars which are non-authentic to Eastern European setting (pickups, Land Rovers etc)
 ### Removals
 - Removed Truely Random Crates parameter
 - Removed "Buy Loot Crate" action on vehicle box as loot crate was moved to general store to "Other" tab
