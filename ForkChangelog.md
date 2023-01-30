@@ -76,6 +76,7 @@
 - (Chernarus 2020) Manual population config, overall population cut from ~11000 to ~8000, disabled Arsenovo and Krasnoe villages
 - (3CB Factions) Removed all cars which are non-authentic to Eastern European setting (pickups, Land Rovers etc)
 - (3CB Factions) Replaced vanilla cops with military police/rear echelon/national guard for USMC and US Army factions
+- (RHS) Fixed usage of 3CB Factions backpacks in pure RHS USMC Temperate faction
 ### Removals
 - Removed Truely Random Crates parameter
 - Removed "Buy Loot Crate" action on vehicle box as loot crate was moved to general store to "Other" tab
