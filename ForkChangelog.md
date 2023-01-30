@@ -19,10 +19,9 @@
 - (3CB) Arid Civilians faction
 - (Vanilla) NATO Tropical faction 
 - (Vanilla) Syndikat rival faction
-- (SOGPF) MACV, PAVN enemy factions
-- (SOGPF) VM rebel faction
+- (SOGPF) MACV, ARVN, PAVN enemy factions
+- (SOGPF) VM, VC rebel factions
 - (SOGPF) Vietnam civilian faction
-- (SOGPF) ARVN enemy faction and VC rebel faction for authentic experience (select MACV and ARVN as factions for invaders and occupants, then set Reb vs Occ AND Inv mode)
 - (SOGPF) Pathet Lao, Lao Royal Army rival factions
 
 ### Changes
@@ -77,6 +76,7 @@
 - (3CB Factions) Removed all cars which are non-authentic to Eastern European setting (pickups, Land Rovers etc)
 - (3CB Factions) Replaced vanilla cops with military police/rear echelon/national guard for USMC and US Army factions
 - (RHS) Fixed usage of 3CB Factions backpacks in pure RHS USMC Temperate faction
+- (SOGPF) Added M1 Garand, M1982A2, L1A1, L2A1, F1 SMG, new m16 and XM177 variants to Arms Dealer stock
 ### Removals
 - Removed Truely Random Crates parameter
 - Removed "Buy Loot Crate" action on vehicle box as loot crate was moved to general store to "Other" tab

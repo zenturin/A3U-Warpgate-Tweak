@@ -27,7 +27,7 @@ private _events = [
 ] select (_excludeId isNotEqualTo 0);
 
 //no UAVs in the 60s, obviously
-if (A3A_Riv_template isEqualTo "VN") then {
+if (((A3A_Riv_template splitString "_") select 0) isEqualTo "VN") then {
 	_events deleteAt (_events find UAVGRENADE); 
 };
 

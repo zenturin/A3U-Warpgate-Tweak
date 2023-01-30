@@ -36,6 +36,11 @@
             <German>Sonstiges</German>
             <Russian>Прочее</Russian>
         </Key>
+        <Key ID="STR_HALS_ASSAULT_RIFLES_VN">
+            <Original>Assault Rifles, Carbines</Original>
+            <German>Sturmgewehre, Karabiner</German>
+            <Russian>Штурмовые винтовки, карабины</Russian>
+        </Key>
         <Key ID="STR_HALS_ASSAULT_RIFLES">
             <Original>Assault Rifles</Original>
             <German>Sturmgewehre</German>
@@ -90,6 +95,11 @@
             <Original>Pointer Accessories</Original>
             <German>Zeigerzubehör</German>
             <Russian>Указатели, фонарики</Russian>
+        </Key>
+        <Key ID="STR_HALS_P_ACC_VN">
+            <Original>Pointers, flashlights, bayonets</Original>
+            <German>Zeiger, Taschenlampen, Bajonette</German>
+            <Russian>Указатели, фонарики, штыки</Russian>
         </Key>
         <Key ID="STR_HALS_M_ACC">
             <Original>Muzzle Accessories</Original>

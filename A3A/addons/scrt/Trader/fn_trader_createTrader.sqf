@@ -27,7 +27,7 @@ publicVariable "traderMarker";
 	[_x, true] remoteExec ["hideObject", 0, true];
 } forEach nearestTerrainObjects [_position, [], 50, false, true];
 
-private _isVn = A3A_Reb_template isEqualTo "VN";
+private _isVn = ((A3A_Reb_template splitString "_") select 0) isEqualTo "VN";
 
 //trader prop objects
 _traderTent = if (_isVn) then { 
