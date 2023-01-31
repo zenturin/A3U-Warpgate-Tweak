@@ -1,9 +1,15 @@
+#include "Constants.inc"
 #include "..\defines.inc"
 FIX_LINE_NUMBERS()
 
 params [["_overridePosition", []]];
 
 Info("UAV Flyby random event init.");
+
+if ((A3A_faction_riv get "vehiclesRivalsUavs") isEqualTo []) exitWith {
+	Info("No supported UAVs, rerolling another event.");
+    [UAVGRENADE] remoteExecCall ["SCRT_fnc_encounter_selectAndExecuteEvent", 2];
+};
 
 private _originPosition = nil;
 

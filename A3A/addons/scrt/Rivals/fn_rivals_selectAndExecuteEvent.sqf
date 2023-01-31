@@ -26,8 +26,7 @@ private _events = [
 	([CARDEMO, UAVGRENADE, ROVINGMORTAR] select { _x != _excludeId })
 ] select (_excludeId isNotEqualTo 0);
 
-//no UAVs in the 60s, obviously
-if (((A3A_Riv_template splitString "_") select 0) isEqualTo "VN") then {
+if ((A3A_faction_riv get "vehiclesRivalsUavs") isEqualTo []) then {
 	_events deleteAt (_events find UAVGRENADE); 
 };
 
