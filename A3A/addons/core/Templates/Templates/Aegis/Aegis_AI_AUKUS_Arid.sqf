@@ -124,8 +124,7 @@ if (_hasWs) then {
 
 ["variants", [
     ["Atlas_B_A_MBT_03_cannon_F", ["Sand_01",1]],
-    ["Atlas_B_A_Plane_Transport_01_infantry_F", ["Blue",1]],
-    ["Atlas_B_A_Heli_Attack_03_ard_F", ["BAF",1]]
+    ["Atlas_B_A_Plane_Transport_01_infantry_F", ["Blue",1]]
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
@@ -406,12 +405,14 @@ _sfLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_eliteLoadoutData set ["uniforms", ["U_B_UBACS_mtp_f", "U_B_UBACS_vest_mtp_f", "U_B_UBACS_tshirt_mtp_f"]];
-_eliteLoadoutData set ["vests", ["V_CarrierRigKBT_01_light_MTP_F"]];
-_eliteLoadoutData set ["Hvests", ["V_CarrierRigKBT_01_heavy_MTP_F"]];
-_eliteLoadoutData set ["GLvests", ["V_CarrierRigKBT_01_heavy_MTP_F"]];
-_eliteLoadoutData set ["backpacks", ["B_Carryall_mcamo", "B_Kitbag_mcamo"]];
-_eliteLoadoutData set ["helmets", ["H_HelmetSpecB_mcamo", "H_HelmetB_camo_mcamo", "H_HelmetB_light_mcamo"]];
+_eliteLoadoutData set ["uniforms", ["U_B_CTRG_Soldier_Arid_F", "U_B_CTRG_Soldier_3_Arid_F", "U_B_CTRG_Soldier_2_Arid_F"]];
+_eliteLoadoutData set ["vests", ["V_CarrierRigKBT_01_light_Coyote_F"]];
+_eliteLoadoutData set ["Hvests", ["V_CarrierRigKBT_01_heavy_Coyote_F"]];
+_eliteLoadoutData set ["GLvests", ["V_CarrierRigKBT_01_heavy_Coyote_F"]];
+_eliteLoadoutData set ["backpacks", ["B_Carryall_cbr", "B_Kitbag_cbr"]];
+_eliteLoadoutData set ["helmets", ["H_HelmetSpecB_paint2", "H_HelmetB_desert", "H_HelmetB_TI_arid_F"]];
+_eliteLoadoutData set ["glasses", ["G_Balaclava_TI_blk_F"]];
+_eliteLoadoutData set ["goggles", ["G_Balaclava_TI_G_blk_F"]];
 _eliteLoadoutData set ["binoculars", ["Laserdesignator"]];
 _eliteLoadoutData set ["ATLaunchers", [
     ["launch_B_Titan_short_F", "", "acc_pointer_IR", "", ["Titan_AT","Titan_AP"], [], ""]
@@ -577,9 +578,9 @@ _policeLoadoutData set ["sidearms", ["hgun_G17_black_F"]];
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _militiaLoadoutData set ["uniforms", ["Atlas_U_B_A_CombatUniform_aucamo_ard", "Atlas_U_B_A_CombatUniform_shortsleeve_aucamo_ard"]];
-_militiaLoadoutData set ["vests", ["V_Chestrig_khk", "V_PlateCarrier1_aucamo_ard_F"]];
+_militiaLoadoutData set ["vests", ["V_Chestrig_khk", "V_PlateCarrier1_aucamo_ard_F", "Atlas_V_PlateCarrier2_alt_aucamo_ard"]];
 _militiaLoadoutData set ["backpacks", ["B_AssaultPack_khk", "B_AssaultPack_aucamo_F", "B_Kitbag_aucamo_F"]];
-_militiaLoadoutData set ["helmets", ["H_HelmetB_light", "H_MilCap_aucamo", "H_Bandanna_khk", "H_Cap_aucamo"]];
+_militiaLoadoutData set ["helmets", ["H_HelmetB_light", "H_HelmetHBK_aucamo_arid_F", "H_MilCap_aucamo", "H_Bandanna_khk", "H_Cap_aucamo"]];
 _militiaLoadoutData set ["sniHats", ["H_Booniehat_aucamo_F", "H_Watchcap_khk"]];
 _militiaLoadoutData set ["longRangeRadios", ["B_RadioBag_01_aucamo_F"]];
 

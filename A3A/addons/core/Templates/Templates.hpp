@@ -148,6 +148,12 @@ class Templates
         file = "Aegis_AI_AUKUS_Temperate";
         climate[] = {"temperate"};
     };
+    class Aegis_AUKUS_Tropical : Aegis_AUKUS_Arid
+    {
+        name = "Aegis AUKUS Tropical";
+        file = "Aegis_AI_AUKUS_Tropical";
+        climate[] = {"tropical"};
+    };
 
     // class Aegis_AFRF_Arid : Aegis_Base
     // {
