@@ -25,22 +25,22 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["surrenderCrate", "Box_NATO_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["vehiclesBasic", ["B_A_Quadbike_01_wdl_F"]] call _fnc_saveToTemplate;
-private _unarmedVehicles = ["B_A_MRAP_03_wdl_F", "B_W_MRAP_01_F"];
-private _armedVehicles = ["B_A_MRAP_03_gmg_wdl_F", "B_A_MRAP_03_hmg_wdl_F", "B_W_MRAP_01_gmg_F", "B_W_MRAP_01_hmg_F"];
-["vehiclesTrucks", ["B_A_Truck_01_transport_wdl_F", "B_A_Truck_01_covered_wdl_F"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["B_A_Truck_01_cargo_wdl_F", "B_A_Truck_01_flatbed_wdl_F"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["B_A_Truck_01_ammo_wdl_F"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["B_A_Truck_01_Repair_wdl_F"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["B_A_Truck_01_fuel_wdl_F"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["B_A_Truck_01_medical_wdl_F", "B_W_APC_Wheeled_01_medical_F"]] call _fnc_saveToTemplate;
-private _lightAPCs = ["B_W_APC_Wheeled_01_cannon_v2_F"];
-["vehiclesAPCs", ["B_A_APC_tracked_03_cannon_v2_wdl_F"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["B_A_Quadbike_01_tna_F"]] call _fnc_saveToTemplate;
+private _unarmedVehicles = ["B_A_MRAP_03_tna_F", "B_T_MRAP_01_F"];
+private _armedVehicles = ["B_T_MRAP_01_hmg_F", "B_T_MRAP_01_gmg_F", "B_A_MRAP_03_gmg_tna_F", "B_A_MRAP_03_hmg_tna_F"];
+["vehiclesTrucks", ["B_A_Truck_01_transport_tna_F", "B_A_Truck_01_covered_tna_F"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["B_A_Truck_01_flatbed_tna_F", "B_A_Truck_01_cargo_tna_F"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["B_A_Truck_01_ammo_tna_F"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["B_A_Truck_01_Repair_tna_F"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["B_A_Truck_01_fuel_tna_F"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["B_T_APC_Wheeled_01_medical_F", "B_A_Truck_01_medical_tna_F"]] call _fnc_saveToTemplate;
+private _lightAPCs = ["B_T_APC_Wheeled_01_cannon_v2_F"];
+["vehiclesAPCs", ["B_A_APC_tracked_03_cannon_v2_tna_F"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
-private _airborneVehicles = ["B_W_APC_Wheeled_01_cannon_v2_F"];
+private _airborneVehicles = ["B_T_APC_Wheeled_01_cannon_v2_F"];
 ["vehiclesLightTanks",  []] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["Atlas_B_A_MBT_03_cannon_F"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["B_W_APC_Tracked_01_AA_F"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["B_T_APC_Tracked_01_AA_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["B_A_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["B_A_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
@@ -49,27 +49,27 @@ private _airborneVehicles = ["B_W_APC_Wheeled_01_cannon_v2_F"];
 ["vehiclesPlanesAA", ["B_A_Plane_Fighter_05_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["Atlas_B_A_Plane_Transport_01_infantry_F", "B_A_VTOL_01_infantry_F"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisTransport", ["B_A_Heli_Transport_02_wdl_F"]] call _fnc_saveToTemplate;
-["vehiclesHelisLight", ["B_A_Heli_light_03_unarmed_wdl_F"]] call _fnc_saveToTemplate;
-["vehiclesHelisLightAttack", ["B_A_Heli_light_03_dynamicLoadout_wdl_F"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["B_A_Heli_Attack_01_dynamicLoadout_wdl_F", "Atlas_B_A_Heli_Attack_03_F"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["B_A_Heli_Transport_02_tna_F"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["B_A_Heli_light_03_unarmed_tna_F"]] call _fnc_saveToTemplate;
+["vehiclesHelisLightAttack", ["B_A_Heli_light_03_dynamicLoadout_tna_F"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["B_A_Heli_Attack_01_dynamicLoadout_tna_F", "Atlas_B_A_Heli_Attack_03_F"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["B_W_MBT_01_arty_F","B_W_MBT_01_mlrs_F"]] call _fnc_saveToTemplate; //this line determines artillery vehicles -- Example: ["vehiclesArtillery", ["B_MBT_01_arty_F"]] -- Array, can contain multiple assets
+["vehiclesArtillery", ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"]] call _fnc_saveToTemplate; //this line determines artillery vehicles -- Example: ["vehiclesArtillery", ["B_MBT_01_arty_F"]] -- Array, can contain multiple assets
 
 ["magazines", createHashMapFromArray [
-    ["B_W_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"]],
-    ["B_W_MBT_01_mlrs_F",["12Rnd_230mm_rockets"]]
+    ["B_T_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"]],
+    ["B_T_MBT_01_mlrs_F",["12Rnd_230mm_rockets"]]
 ]] call _fnc_saveToTemplate;
 
-["uavsAttack", ["B_A_UAV_02_dynamicLoadout_wdl_F"]] call _fnc_saveToTemplate;
-private _uavsPortable = if (_hasWs) then {["Aegis_B_A_UAV_02_wdl_lxWS", "B_A_UAV_01_wdl_F"]} else {["B_A_UAV_01_wdl_F"]};
+["uavsAttack", ["B_A_UAV_02_dynamicLoadout_tna_F"]] call _fnc_saveToTemplate;
+private _uavsPortable = if (_hasWs) then {["B_A_UAV_01_tna_F", "Aegis_B_A_UAV_02_tna_lxWS"]} else {["B_A_UAV_01_tna_F"]};
 ["uavsPortable", _uavsPortable] call _fnc_saveToTemplate;
 
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
-["vehiclesMilitiaLightArmed", ["Atlas_B_A_MRAP_03_hmg_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["Atlas_B_A_Truck_01_covered_F", "Atlas_B_A_Truck_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["Atlas_B_A_MRAP_03_F"]] call _fnc_saveToTemplate;
-private _militiaAPCs = ["Atlas_B_A_APC_Wheeled_01_cannon_v2_F"]; 
+["vehiclesMilitiaLightArmed", ["Atlas_B_A_MRAP_03_hmg_trp_F"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["Atlas_B_A_Truck_01_covered_trp_F", "Atlas_B_A_Truck_01_transport_trp_F"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["Atlas_B_A_MRAP_03_trp_F"]] call _fnc_saveToTemplate;
+private _militiaAPCs = ["Atlas_B_A_APC_Wheeled_01_cannon_v2_trp_F"]; 
 
 private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
@@ -79,14 +79,14 @@ private _policeVehs = if (_hasContact) then {
 
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
-["staticMGs", ["B_A_HMG_02_high_wdl_F", "B_A_HMG_01_high_wdl_F"]] call _fnc_saveToTemplate;
-["staticATs", ["B_A_Static_AT_wdl_F"]] call _fnc_saveToTemplate;
-["staticAAs", ["B_A_Static_AA_wdl_F"]] call _fnc_saveToTemplate;
-["staticMortars", ["B_A_Mortar_01_wdl_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["B_A_HMG_02_high_tna_F", "B_A_HMG_01_high_tna_F"]] call _fnc_saveToTemplate;
+["staticATs", ["B_A_Static_AT_tna_F"]] call _fnc_saveToTemplate;
+["staticAAs", ["B_A_Static_AA_tna_F"]] call _fnc_saveToTemplate;
+["staticMortars", ["B_A_Mortar_01_tna_F"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 
-["vehicleRadar", "B_A_Radar_System_01_wdl_F"] call _fnc_saveToTemplate;
-["vehicleSam", "B_A_SAM_System_03_wdl_F"] call _fnc_saveToTemplate;
+["vehicleRadar", "B_A_Radar_System_01_tna_F"] call _fnc_saveToTemplate;
+["vehicleSam", "B_A_SAM_System_03_tna_F"] call _fnc_saveToTemplate;
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
 
@@ -98,15 +98,15 @@ private _policeVehs = if (_hasContact) then {
 ["minefieldAPERS", ["APERSMine"]] call _fnc_saveToTemplate;
 
 if (_hasApex) then {
-    _unarmedVehicles append ["B_A_LSV_01_unarmed_wdl_F", "B_A_LSV_01_light_wdl_F"];
-    _armedVehicles append ["B_A_LSV_01_AT_wdl_F", "B_A_LSV_01_armed_wdl_F"];
+    _unarmedVehicles append ["B_A_LSV_01_unarmed_tna_F", "B_A_LSV_01_light_tna_F"];
+    _armedVehicles append ["B_A_LSV_01_AT_tna_F", "B_A_LSV_01_armed_tna_F"];
 };
 
 //If Western Sahara DLC
 if (_hasWs) then {
-    _lightAPCs = ["B_W_APC_Wheeled_01_command_lxWS"];
-    _airborneVehicles pushBack "B_W_APC_Wheeled_01_command_lxWS";
-    _militiaAPCs = ["Atlas_B_A_APC_Wheeled_01_command_lxWS"];
+    _lightAPCs = ["B_T_APC_Wheeled_01_command_lxWS"];
+    _airborneVehicles pushBack "B_T_APC_Wheeled_01_command_lxWS";
+    _militiaAPCs = ["Atlas_B_A_APC_Wheeled_01_command_trp_lxWS"];
 };
 
 ["vehiclesLightAPCs", _lightAPCs] call _fnc_saveToTemplate;
@@ -119,13 +119,12 @@ if (_hasWs) then {
 
 ["animations", [
     ["Atlas_B_A_MBT_03_cannon_F", ["HideTurret",0.3,"HideHull",0.3,"showCamonetHull",0.3,"showCamonetTurret",0.3]],
-    ["Atlas_B_A_APC_Wheeled_01_cannon_v2_F", ["showBags",0,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]]
+    ["B_A_APC_tracked_03_cannon_v2_tna_F", ["showBags",0,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]]
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
     ["Atlas_B_A_Plane_Transport_01_infantry_F", ["Olive",1]],
-    ["Atlas_B_A_MBT_03_cannon_F", ["Olive_01",1]],
-    ["Atlas_B_A_Heli_Attack_03_ard_F", ["BAF",1]]
+    ["Atlas_B_A_MBT_03_cannon_F", ["Olive_01",1]]
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
@@ -166,7 +165,7 @@ _loadoutData set ["lightATLaunchers", [
 ]];
 _loadoutData set ["ATLaunchers", ["launch_NLAW_F"]];
 _loadoutData set ["AALaunchers", [
-["launch_B_Titan_olive_F", "", "acc_pointer_IR", "", ["Titan_AA"], [], ""]
+["launch_B_Titan_tna_F", "", "acc_pointer_IR", "", ["Titan_AA"], [], ""]
 ]];
 _loadoutData set ["sidearms", []];
 
@@ -195,7 +194,7 @@ _loadoutData set ["traitorUniforms", ["U_I_G_Story_Protagonist_F"]];
 _loadoutData set ["traitorVests", ["V_BandollierB_blk", "V_TacVest_blk"]];
 _loadoutData set ["traitorHats", ["H_Cap_blk", "H_Cap_oli", "H_Beret_02"]];
 
-_loadoutData set ["officerUniforms", ["Atlas_U_B_A_CombatUniform_aucamo"]];
+_loadoutData set ["officerUniforms", ["Atlas_U_B_A_CombatUniform_aucamo_trp"]];
 _loadoutData set ["officerVests", ["V_Rangemaster_belt"]];
 _loadoutData set ["officerHats", ["H_Beret_grn", "H_Beret_02", "H_MilCap_aucamo"]];
 
@@ -204,7 +203,7 @@ _loadoutData set ["vests", []];
 _loadoutData set ["Hvests", []];
 _loadoutData set ["glVests", []];
 _loadoutData set ["backpacks", []];
-_loadoutData set ["longRangeRadios", ["B_RadioBag_01_wdl_F"]];
+_loadoutData set ["longRangeRadios", ["B_RadioBag_01_tropic_F"]];
 _loadoutData set ["helmets", []];
 _loadoutData set ["slHat", ["H_Beret_grn"]];
 _loadoutData set ["sniHats", ["H_Booniehat_aucamo_F", "H_Watchcap_khk"]];
@@ -275,13 +274,13 @@ _loadoutData set ["goggles", ["G_Combat"]];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["U_B_CombatUniform_mcam_wdl_f", "U_B_CombatUniform_vest_mcam_wdl_f", "U_B_CombatUniform_tshirt_mcam_wdL_f"]];//this line determines uniforms for special forces -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
-_sfLoadoutData set ["vests", ["V_PlateCarrier1_rgr"]];
-_sfLoadoutData set ["Hvests", ["V_PlateCarrier2_rgr"]];
-_sfLoadoutData set ["backpacks", ["B_AssaultPackSpec_rgr", "B_AssaultPackSpec_rgr", "B_Bergen_wdl_F", "B_Carryall_wdl_F", "B_Kitbag_wdl_F"]];
-_sfLoadoutData set ["helmets", ["H_HelmetSpecB_wdl", "H_HelmetB_plain_wdl", "H_Booniehat_wdl", "H_Watchcap_khk", "H_Bandanna_khk"]];
+_sfLoadoutData set ["uniforms", ["U_B_T_Soldier_F", "U_B_T_Soldier_SL_F", "U_B_T_Soldier_AR_F"]];
+_sfLoadoutData set ["vests", ["V_PlateCarrier1_tna_F"]];
+_sfLoadoutData set ["Hvests", ["V_PlateCarrier2_tna_F"]];
+_sfLoadoutData set ["backpacks", ["B_AssaultPack_tna_F", "B_AssaultPack_Enh_tna_F", "B_Bergen_tna_F", "B_Carryall_tna_F", "B_Kitbag_tna_F"]];
+_sfLoadoutData set ["helmets", ["H_HelmetB_Enh_tna_F", "H_HelmetB_tna_F", "H_MilCap_tna_F", "H_Booniehat_tna_F", "H_Bandanna_tna_hs_F", "H_Bandanna_tna_F"]];
 _sfLoadoutData set ["binoculars", ["Laserdesignator"]];
-_sfLoadoutData set ["sniHats", ["H_Booniehat_wdl_hs"]];
+_sfLoadoutData set ["sniHats", ["H_Booniehat_tna_hs_F"]];
 
 _sfLoadoutData set ["slRifles", [
 ["arifle_SCAR_L_khaki_F", "muzzle_snds_m_khk_F", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
@@ -410,14 +409,14 @@ _eliteLoadoutData set ["uniforms", ["U_B_CTRG_Soldier_F", "U_B_CTRG_Soldier_3_F"
 _eliteLoadoutData set ["vests", ["V_CarrierRigKBT_01_light_Olive_F"]];
 _eliteLoadoutData set ["Hvests", ["V_CarrierRigKBT_01_heavy_Olive_F"]];
 _eliteLoadoutData set ["glVests", ["V_CarrierRigKBT_01_heavy_Olive_F"]];
-_eliteLoadoutData set ["backpacks", ["B_Bergen_wdl_F", "B_Carryall_wdl_F", "B_Kitbag_wdl_F"]];
-_eliteLoadoutData set ["helmets", ["H_HelmetSpecB_wdl", "H_HelmetB_camo_wdl", "H_HelmetB_plain_wdl", "H_HelmetB_TI_tna_F"]];
+_eliteLoadoutData set ["backpacks", ["B_Bergen_tna_F", "B_Carryall_tna_F", "B_Kitbag_tna_F"]];
+_eliteLoadoutData set ["helmets", ["H_HelmetB_Enh_tna_F", "H_HelmetB_Camo_tna_F", "H_HelmetB_tna_F", "H_HelmetB_TI_tna_F"]];
 _eliteLoadoutData set ["sniHats", ["H_Watchcap_khk"]];
 _eliteLoadoutData set ["glasses", ["G_Balaclava_TI_tna_F"]];
 _eliteLoadoutData set ["goggles", ["G_Balaclava_TI_G_tna_F"]];
 _eliteLoadoutData set ["binoculars", ["Laserdesignator"]];
 _eliteLoadoutData set ["ATLaunchers", [
-    ["launch_I_Titan_short_F", "", "acc_pointer_IR", "", ["Titan_AT","Titan_AP"], [], ""]
+    ["launch_B_Titan_short_tna_F", "", "acc_pointer_IR", "", ["Titan_AT","Titan_AP"], [], ""]
 ]];
 
 _eliteLoadoutData set ["rifles", [
@@ -482,12 +481,12 @@ _eliteLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militaryLoadoutData set ["uniforms", ["U_B_UBACS_wdl_f", "U_B_UBACS_vest_wdl_f", "U_B_UBACS_tshirt_wdl_f"]];
+_militaryLoadoutData set ["uniforms", ["U_B_UBACS_tna_f", "U_B_UBACS_vest_tna_f", "U_B_UBACS_tshirt_tna_f"]];
 _militaryLoadoutData set ["vests", ["V_CarrierRigKBT_01_light_Olive_F"]];
 _militaryLoadoutData set ["glVests", ["V_CarrierRigKBT_01_light_Olive_F", "V_CarrierRigKBT_01_light_Olive_F", "V_CarrierRigKBT_01_heavy_Olive_F"]];
-_militaryLoadoutData set ["backpacks", ["B_Carryall_wdl_F", "B_Kitbag_wdl_F"]];
-_militaryLoadoutData set ["sniHats", ["H_Watchcap_khk"]];
-_militaryLoadoutData set ["helmets", ["H_HelmetB_camo_wdl", "H_HelmetB_plain_wdl", "H_HelmetB_light_wdl"]];
+_militaryLoadoutData set ["backpacks", ["B_Carryall_tna_F", "B_Kitbag_tna_F"]];
+_militaryLoadoutData set ["sniHats", ["H_Booniehat_tna_F"]];
+_militaryLoadoutData set ["helmets", ["H_HelmetB_Camo_tna_F", "H_HelmetB_tna_F", "H_HelmetB_Light_tna_F"]];
 
 _militaryLoadoutData set ["slRifles", [
 ["arifle_SA80_blk_F", "", "acc_pointer_IR", "", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
@@ -579,10 +578,10 @@ _policeLoadoutData set ["sidearms", ["hgun_ACPC2_black_F"]];
 
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militiaLoadoutData set ["uniforms", ["Atlas_U_B_A_CombatUniform_aucamo", "Atlas_U_B_A_CombatUniform_shortsleeve_aucamo"]];
-_militiaLoadoutData set ["vests", ["V_Chestrig_rgr", "V_PlateCarrier1_aucamo_F", "Atlas_V_PlateCarrier2_alt_aucamo"]];
+_militiaLoadoutData set ["uniforms", ["Atlas_U_B_A_CombatUniform_aucamo_trp", "Atlas_U_B_A_CombatUniform_shortsleeve_aucamo_trp"]];
+_militiaLoadoutData set ["vests", ["V_Chestrig_rgr", "V_PlateCarrier2_aucamo_trp_F", "Atlas_V_PlateCarrier2_alt_aucamo_trp"]];
 _militiaLoadoutData set ["backpacks", ["B_AssaultPack_khk", "B_AssaultPack_aucamo_F", "B_Kitbag_aucamo_F"]];
-_militiaLoadoutData set ["helmets", ["H_HelmetB_light", "H_HelmetHBK_aucamo_F", "H_MilCap_aucamo", "H_Bandanna_khk", "H_Cap_aucamo"]];
+_militiaLoadoutData set ["helmets", ["H_HelmetB_light", "H_HelmetHBK_aucamo_tropic_F", "H_MilCap_aucamo", "H_Bandanna_khk", "H_Cap_aucamo"]];
 _militiaLoadoutData set ["sniHats", ["H_Booniehat_aucamo_F", "H_Watchcap_khk"]];
 _militiaLoadoutData set ["longRangeRadios", ["B_RadioBag_01_aucamo_F"]];
 
@@ -627,12 +626,12 @@ _militiaLoadoutData set ["sidearms", ["hgun_G17_black_F", "hgun_G17_black_F"]];
 
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
-_crewLoadoutData set ["uniforms", ["U_B_UBACS_wdl_f", "U_B_UBACS_vest_wdl_f"]];
+_crewLoadoutData set ["uniforms", ["U_B_UBACS_tna_f", "U_B_UBACS_vest_tna_f"]];
 _crewLoadoutData set ["vests", ["V_CarrierRigKBT_01_Olive_F"]];
 _crewLoadoutData set ["helmets", ["H_HelmetCrew_B_oli_F"]];
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", ["U_B_UBACS_wdl_f", "U_B_UBACS_vest_wdl_f"]];
+_pilotLoadoutData set ["uniforms", ["U_B_UBACS_tna_f", "U_B_UBACS_vest_tna_f"]];
 _pilotLoadoutData set ["vests", ["V_CarrierRigKBT_01_Olive_F"]];
 _pilotLoadoutData set ["helmets", ["H_PilotHelmetHeli_O", "H_PilotHelmetHeli_O_visor_up"]];
 
