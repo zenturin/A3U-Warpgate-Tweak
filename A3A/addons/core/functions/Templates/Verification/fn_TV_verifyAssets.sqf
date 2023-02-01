@@ -316,6 +316,7 @@ private _fnc_handleUniqueCases = { //handles unique name cases that the stored v
         case "minesAT";
         case "minesAPERS";
         case "blackMarketStock";
+        case "reviveKitBox";
         case "faces": {continue};
         default { Info("Entry: "+(str _entry)+" is lacking validation") };
     };
