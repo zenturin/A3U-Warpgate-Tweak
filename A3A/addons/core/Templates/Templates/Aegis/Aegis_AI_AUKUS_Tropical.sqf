@@ -549,7 +549,6 @@ _militaryLoadoutData set ["sniperRifles", [
 ["srifle_LRR_F", "", "", "optic_LRPS", [], [], ""]
 ]];
 _militaryLoadoutData set ["sidearms", ["hgun_P07_khk_F","hgun_G17_black_F"]];
-_militaryLoadoutData set ["binoculars", ["Laserdesignator"]];
 
 ///////////////////////////////
 //    Police Loadout Data    //

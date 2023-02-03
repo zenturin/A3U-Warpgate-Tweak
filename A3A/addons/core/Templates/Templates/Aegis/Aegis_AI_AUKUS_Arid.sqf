@@ -71,10 +71,9 @@ private _uavsPortable = if (_hasWs) then {["Aegis_B_A_UAV_02_lxWS", "B_A_UAV_01_
 ["vehiclesMilitiaCars", ["Atlas_B_A_MRAP_03_ard_F"]] call _fnc_saveToTemplate;
 private _militiaAPCs = ["Atlas_B_A_APC_Wheeled_01_cannon_v2_ard_F"];
 
-private _policeVehs = if (_hasContact) then {
-    ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
-} else {
-    ["B_GEN_Offroad_01_gen_F"]
+private _policeVehs = ["Police_I_Altis_Offroad_01_police_F"];
+if (_hasContact) then {
+    _policeVehs append ["Police_I_Altis_Offroad_01_comms_F", "Police_I_Altis_Offroad_01_covered_F"];
 };
 
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
@@ -274,7 +273,7 @@ _loadoutData set ["goggles", ["G_Combat"]];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_vest", "U_B_CombatUniform_mcam_tshirt"]];//this line determines uniforms for special forces -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
+_sfLoadoutData set ["uniforms", ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_vest", "U_B_CombatUniform_mcam_tshirt"]];
 _sfLoadoutData set ["vests", ["V_PlateCarrier1_rgr"]];
 _sfLoadoutData set ["Hvests", ["V_PlateCarrier2_rgr"]];
 _sfLoadoutData set ["backpacks", ["B_AssaultPackSpec_rgr", "B_Carryall_mcamo", "B_Kitbag_cbr"]];
@@ -548,7 +547,6 @@ _militaryLoadoutData set ["sniperRifles", [
 ["srifle_LRR_F", "", "", "optic_LRPS", [], [], ""]
 ]];
 _militaryLoadoutData set ["sidearms", ["hgun_G17_F","hgun_G17_black_F"]];
-_militaryLoadoutData set ["binoculars", ["Laserdesignator"]];
 
 ///////////////////////////////
 //    Police Loadout Data    //

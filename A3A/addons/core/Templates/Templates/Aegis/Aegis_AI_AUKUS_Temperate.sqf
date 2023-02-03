@@ -71,10 +71,9 @@ private _uavsPortable = if (_hasWs) then {["Aegis_B_A_UAV_02_wdl_lxWS", "B_A_UAV
 ["vehiclesMilitiaCars", ["Atlas_B_A_MRAP_03_F"]] call _fnc_saveToTemplate;
 private _militiaAPCs = ["Atlas_B_A_APC_Wheeled_01_cannon_v2_F"]; 
 
-private _policeVehs = if (_hasContact) then {
-    ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
-} else {
-    ["B_GEN_Offroad_01_gen_F"]
+private _policeVehs = ["Police_I_P_Offroad_01_police_F"];
+if (_hasContact) then {
+    _policeVehs append ["Police_I_P_Offroad_01_comms_F", "Police_I_P_Offroad_01_covered_F"];
 };
 
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
@@ -550,7 +549,6 @@ _militaryLoadoutData set ["sniperRifles", [
 ["srifle_LRR_F", "", "", "optic_LRPS", [], [], ""]
 ]];
 _militaryLoadoutData set ["sidearms", ["hgun_P07_khk_F","hgun_G17_black_F"]];
-_militaryLoadoutData set ["binoculars", ["Laserdesignator"]];
 
 ///////////////////////////////
 //    Police Loadout Data    //
