@@ -462,7 +462,6 @@ _militaryLoadoutData set ["SNIvests", ["rhsusf_spcs_ocp_sniper"]];
 _militaryLoadoutData set ["GLvests", ["rhsusf_spcs_ocp_grenadier"]];
 _militaryLoadoutData set ["backpacks", ["rhsusf_assault_eagleaiii_ocp", "B_Kitbag_mcamo", "B_Carryall_mcamo", "rhsusf_falconii_mc"]];
 _militaryLoadoutData set ["helmets", ["rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ocp_alt", "rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_headset_ocp_alt", "rhsusf_ach_helmet_camo_ocp"]];
-_militaryLoadoutData set ["binoculars", ["Laserdesignator"]];
 
 _militaryLoadoutData set ["lightATLaunchers", ["rhs_weap_M136", "rhs_weap_M136_hp"]];
 _militaryLoadoutData set ["lightHELaunchers", ["rhs_weap_M136_hedp"]];
