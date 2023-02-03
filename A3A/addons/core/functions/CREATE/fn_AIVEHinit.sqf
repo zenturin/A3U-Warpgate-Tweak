@@ -241,6 +241,9 @@ if([typeOf _veh] call A3A_Logistics_fnc_isLoadable) then {[_veh] call A3A_Logist
 // deletes vehicle if it exploded on spawn...
 [_veh] spawn A3A_fnc_cleanserVeh;
 
+//initializes animiation sources and camo variants
+[_veh] call SCRT_fnc_misc_tryInitVehicle;
+
 if (!isNull _veh) then {
     ["AIVehInit", [_veh, _side]] call EFUNC(Events,triggerEvent);
 };

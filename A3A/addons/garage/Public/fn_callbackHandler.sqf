@@ -78,7 +78,6 @@ switch _callBackName do {
 				};
 
                 player reveal _vehicle;
-                [_vehicle] call SCRT_fnc_misc_tryInitVehicle;
                 vehiclePurchase_cost = 0;
             };
 
