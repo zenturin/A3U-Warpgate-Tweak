@@ -186,15 +186,15 @@ class Templates
     //     description = $STR_A3AP_setupFactionsTab_csat;
     // };
 
-    // class Aegis_NATO_Arid : Aegis_Base
-    // {
-    //     side = "Occ";
-    //     flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
-    //     name = "Aegis NATO Arid";
-    //     file = "Aegis_AI_NATO_Arid";
-    //     climate[] = {"arid"};
-    //     description = $STR_A3AP_setupFactionsTab_nato;
-    // };
+    class Aegis_NATO_Arid : Aegis_Base
+    {
+        side = "Occ";
+        flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
+        name = "Aegis NATO Arid";
+        file = "Aegis_AI_NATO_Arid";
+        climate[] = {"arid"};
+        description = $STR_A3AP_setupFactionsTab_nato;
+    };
 
     class Aegis_FIA : Aegis_Base
     {

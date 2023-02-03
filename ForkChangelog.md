@@ -22,7 +22,7 @@
 - (SOGPF) MACV, ARVN, PAVN enemy factions
 - (SOGPF) VM, VC rebel factions
 - (SOGPF) Vietnam civilian faction
-- (SOGPF) Pathet Lao, Lao Royal Army rival factions
+- (SOGPF) Pathet Lao, Lao Army rival factions
 
 ### Changes
 - Community Version 3.1 integration
@@ -66,6 +66,7 @@
 - Increased chance to learn about Arms Dealer from interrogations and intel searches from 15% to 20%
 - Increased probability of rival event happening on 5% on each activity level
 - Slightly reduced default accuracy cap from 0.5 to 0.45
+- (Vanilla, Aegis) 4WD jeep will be added into civilian vehicles pool if Apex DLC is turned on
 - (RHS) Fixed wrong classnames for AFRF surrender and equipment boxes
 - (3CB Factions) Switched LDF to Occupants factions section
 - (Takistan) Removed resource marker, moved initial HQ position farther from Occupant airbase
@@ -77,6 +78,8 @@
 - (3CB Factions) Replaced vanilla cops with military police/rear echelon/national guard for USMC and US Army factions
 - (RHS) Fixed usage of 3CB Factions backpacks in pure RHS USMC Temperate faction
 - (SOGPF) Added M1 Garand, M1982A2, L1A1, L2A1, F1 SMG, new m16 and XM177 variants to Arms Dealer stock
+- (Vanilla) Removed XMS rifles for militia-tier units in NATO templates
+
 ### Removals
 - Removed Truely Random Crates parameter
 - Removed "Buy Loot Crate" action on vehicle box as loot crate was moved to general store to "Other" tab
