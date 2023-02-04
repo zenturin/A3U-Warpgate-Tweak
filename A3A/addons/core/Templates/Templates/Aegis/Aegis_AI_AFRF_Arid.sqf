@@ -104,7 +104,7 @@ private _uavsPortable = if (_hasWs) then {["Aegis_O_R_UAV_02_ard_lxWS", "O_R_UAV
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
 
-//Minefield definition
+
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
 

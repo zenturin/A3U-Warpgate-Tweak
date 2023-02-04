@@ -102,7 +102,7 @@ private _militiaAPCs = [];
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
 
-//Minefield definition
+
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
 
