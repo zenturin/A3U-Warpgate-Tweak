@@ -202,16 +202,17 @@ if (_prefix in ["occ", "inv"]) exitWith {
             unit(SF, "SquadLeader"),
             unit(SF, "Rifleman"),
             unit(SF, "Radioman"),
-            unit(SF, "MachineGunner"),
-            unit(SF, "LAT"),
+            selectRandom [unit(SF, "Grenadier"), unit(SF, "MachineGunner")],
+            selectRandomWeighted [unit(SF, "LAT"), 2, unit(SF, "AT"), 1],
             unit(SF, "Medic"),
-            unit(SF, "Marksman"),
+            selectRandomWeighted [unit(SF, "Marksman"), 2, unit(SF, "Sniper"), 1],
             selectRandom [
                 unit(SF, "ExplosivesExpert")
-                , unit(SF, "AT")
+                , unit(SF, "AA")
                 , unit(SF, "Grenadier")
                 , unit(SF, "Sniper")
                 , unit(SF, "Engineer")
+                , unit(SF, "MachineGunner")
             ]
         ];
     };
