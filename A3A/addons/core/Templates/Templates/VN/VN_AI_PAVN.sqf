@@ -86,7 +86,7 @@
 ["mortarMagazineHE", "vn_mortar_type63_mag_he_x8"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "vn_mortar_type63_mag_wp_x8"] call _fnc_saveToTemplate;
 
-//Minefield definition
+
 ["minefieldAT", ["vn_mine_tripwire_arty"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["vn_mine_punji_02"]] call _fnc_saveToTemplate;
 

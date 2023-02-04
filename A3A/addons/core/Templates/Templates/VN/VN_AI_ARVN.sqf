@@ -77,7 +77,7 @@
 ["mortarMagazineHE", "vn_mortar_m2_mag_he_x8"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "vn_mortar_m2_mag_wp_x8"] call _fnc_saveToTemplate;
 
-//Minefield definition
+
 ["minefieldAT", ["vn_mine_m15"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["vn_mine_m14"]] call _fnc_saveToTemplate;
 
