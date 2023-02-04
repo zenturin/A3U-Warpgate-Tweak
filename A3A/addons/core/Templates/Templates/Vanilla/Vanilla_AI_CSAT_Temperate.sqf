@@ -105,7 +105,7 @@ private _militiaAPCs = [];
 ["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
 
 if (_hasTanks) then {
-    // No seats so can't be APC
+
     _tanks append ["O_T_MBT_04_cannon_F", "O_T_MBT_04_command_F"];
 };
 
@@ -320,7 +320,7 @@ _sfLoadoutData set ["vests", ["V_HarnessO_ghex_F"]];
 _sfLoadoutData set ["backpacks", ["B_ViperLightHarness_ghex_F", "B_ViperHarness_ghex_F"]];
 _sfLoadoutData set ["helmets", ["H_HelmetO_ViperSP_ghex_F", "H_Bandanna_khk_hs", "H_Watchcap_camo", "H_MilCap_ghex_F", "H_Beret_CSAT_01_F"]];
 _sfLoadoutData set ["binoculars", ["Laserdesignator_02"]];
-//SF Weapons
+
 _sfLoadoutData set ["slRifles", [
 ["arifle_ARX_ghex_F", "muzzle_snds_65_TI_ghex_F", "acc_pointer_IR", "optic_Arco_ghex_F", ["30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green_mag_Tracer"], ["10Rnd_50BW_Mag_F"], ""],
 ["arifle_ARX_ghex_F", "muzzle_snds_65_TI_ghex_F", "acc_pointer_IR", "optic_ACO_grn", ["30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green_mag_Tracer"], ["10Rnd_50BW_Mag_F"], ""],
@@ -487,7 +487,6 @@ _militaryLoadoutData set ["vests", ["V_HarnessO_ghex_F", "V_TacVest_oli"]];
 _militaryLoadoutData set ["glVests", ["V_HarnessOGL_ghex_F"]];
 _militaryLoadoutData set ["backpacks", ["B_Carryall_ghex_F", "B_FieldPack_ghex_F", "B_FieldPack_oli", "B_Carryall_oli"]];
 _militaryLoadoutData set ["helmets", ["H_HelmetO_ghex_F"]];
-_militaryLoadoutData set ["binoculars", ["Laserdesignator_02"]];
 
 _militaryLoadoutData set ["slRifles", [
 ["arifle_CTAR_blk_F", "", "acc_pointer_IR", "optic_Arco_blk_F", ["30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_Tracer_F"], [], ""],

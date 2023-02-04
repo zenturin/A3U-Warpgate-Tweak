@@ -6,6 +6,8 @@ private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 
+//TODO: remove arifle_AKM74_polymer and arifle_AKM74_polymer_alt
+
 //////////////////////////
 //   Side Information   //
 //////////////////////////
@@ -282,7 +284,7 @@ _sfLoadoutData set ["backpacks", ["B_Carryall_green_exp_F", "B_AssaultPackSpec_r
 _sfLoadoutData set ["helmets", ["H_HelmetAggressor_cover_F", "H_HelmetAggressor_F", "H_Bandanna_khk", "H_Watchcap_camo_hs", "H_Booniehat_mgrn"]];
 _sfLoadoutData set ["binoculars", ["Laserdesignator_02"]];
 _sfLoadoutData set ["NVGs", ["O_NVGoggles_grn_F"]];
-//SF Weapons
+
 _sfLoadoutData set ["slRifles", [
 ["arifle_AK12_F", "aegis_muzzle_snds_pbs_762_blk", "acc_pointer_IR", "optic_Arco_AK_blk_F", ["30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_Tracer_F"], [], ""],
 ["arifle_AK12_arid_F", "aegis_muzzle_snds_pbs_762_arid", "acc_pointer_IR_arid_lxWS", "optic_Arco_AK_arid_F", ["30rnd_762x39_AK12_Arid_Mag_F", "30rnd_762x39_AK12_Arid_Mag_F", "30rnd_762x39_AK12_Arid_Mag_Tracer_F"], [], ""],
@@ -443,7 +445,6 @@ _militaryLoadoutData set ["glVests", ["Aegis_V_OCarrierLuchnik_GL_arid_F", "Aegi
 _militaryLoadoutData set ["Hvests", ["Aegis_V_OCarrierLuchnik_GL_arid_F", "Aegis_V_OCarrierLuchnik_CQB_arid_F"]];
 _militaryLoadoutData set ["backpacks", ["B_FieldPack_cbr", "B_Carryall_green_F"]];
 _militaryLoadoutData set ["helmets", ["H_HelmetLuchnik_cover_ruarid_F", "H_HelmetLuchnik_cover_khk_F", "H_HelmetLuchnik_olive_F"]];
-_militaryLoadoutData set ["binoculars", ["Laserdesignator_02"]];
 
 private _lats = [["launch_RPG32_black_F", "", "", "", ["RPG32_F", "RPG32_F", "RPG32_HE_F"], [], ""]];
 if (_hasApex) then {

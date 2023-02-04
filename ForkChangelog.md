@@ -79,6 +79,7 @@
 - (RHS) Fixed usage of 3CB Factions backpacks in pure RHS USMC Temperate faction
 - (SOGPF) Added M1 Garand, M1982A2, L1A1, L2A1, F1 SMG, new m16 and XM177 variants to Arms Dealer stock
 - (Vanilla) Removed XMS rifles for militia-tier units in NATO templates
+- (Vanilla, Aegis) Arms Dealer will sell 4WD vehicles if Apex is enabled
 
 ### Removals
 - Removed Truely Random Crates parameter

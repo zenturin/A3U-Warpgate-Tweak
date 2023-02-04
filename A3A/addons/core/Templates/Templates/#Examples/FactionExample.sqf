@@ -109,6 +109,8 @@
 ["milFaces", []] call _fnc_saveToTemplate;
 ["polVoices", []] call _fnc_saveToTemplate;
 ["polFaces", []] call _fnc_saveToTemplate;
+["eliteVoices", []] call _fnc_saveToTemplate;
+["eliteFaces", []] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
