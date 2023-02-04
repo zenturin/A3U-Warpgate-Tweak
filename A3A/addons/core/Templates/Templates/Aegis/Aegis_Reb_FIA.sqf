@@ -68,7 +68,18 @@ private _shopWs = if (_hasWs) then {
 } else {
     []
 };
-private _vehiclesBlackMarket = _shopWs + [
+
+private _shopApex = if (_hasApex) then {
+    [
+        ["I_C_Offroad_02_unarmed_F", 200, "UNARMEDCAR", {true}], 
+        ["I_C_Offroad_02_LMG_F", 800, "ARMEDCAR", {true}],
+        ["I_C_Offroad_02_AT_F", 1450, "ARMEDCAR", {true}]
+    ]
+} else {
+    []
+};
+
+private _vehiclesBlackMarket = _shopWs + _shopApex + [
     ["I_UAV_01_F", 2000, "UAV", {true}],
     ["I_LT_01_AA_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
     ["I_G_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],

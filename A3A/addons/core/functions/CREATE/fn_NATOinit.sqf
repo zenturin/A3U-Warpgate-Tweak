@@ -123,6 +123,11 @@ switch (true) do {
         _face = selectRandom (_faction getOrDefault ["polFaces", _regularFaces]);
         _voice = selectRandom (_faction getOrDefault ["polVoices", _regularVoices]);
     };
+    case (_unitPrefix isEqualTo "elite"): {
+        _skill = _skill * 1.1;
+        _face = selectRandom (_faction getOrDefault ["eliteFaces", _regularFaces]);
+        _voice = selectRandom (_faction getOrDefault ["eliteVoices", _regularVoices]);
+    };
     case (_unitPrefix isEqualTo "SF"): {
         _skill = _skill * 1.2;
         _face = selectRandom (_faction getOrDefault ["sfFaces", _regularFaces]);

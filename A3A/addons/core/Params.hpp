@@ -134,13 +134,6 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 1;
     };
-    class reviveKitsEnabled
-    {
-        title = $STR_params_reviveKitsEnabled;
-        values[] = {0,1};
-        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
-        default = 0;
-    };
     class lootCratesEnabled
     {
         title = $STR_params_lootCrateHeli;
@@ -447,6 +440,13 @@ class Params
         values[] = {0,33,66,100};
         texts[] = {$STR_params_helmetLossChance_0,$STR_params_helmetLossChance_1,$STR_params_helmetLossChance_2,$STR_params_helmetLossChance_3};
         default = 33;
+    };
+    class reviveKitsEnabled
+    {
+        title = $STR_params_reviveKitsEnabled;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
     };
 
 

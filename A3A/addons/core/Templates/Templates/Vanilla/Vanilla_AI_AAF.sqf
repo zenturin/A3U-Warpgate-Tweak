@@ -92,7 +92,6 @@ private _militiaAPCs = if (_hasTanks) then {["I_LT_01_cannon_F"]} else {[]};
 
 //If Tank DLC
 if (_hasTanks) then {
-    // No seats so can't be APC
     _lightArmed append ["I_LT_01_AT_F", "I_LT_01_cannon_F"];
 };
 //If Western Sahara DLC

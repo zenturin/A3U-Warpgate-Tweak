@@ -176,15 +176,21 @@ class Templates
         description = $STR_A3AP_setupFactionsTab_aaf;
     };
 
-    // class Aegis_CSAT_Arid : Aegis_Base
-    // {
-    //     side = "Inv";
-    //     flagTexture = "A3\Data_F\Flags\Flag_CSAT_CO.paa";
-    //     name = "Aegis CSAT Arid";
-    //     file = "Aegis_AI_CSAT_Arid";
-    //     climate[] = {"arid", "arctic"};
-    //     description = $STR_A3AP_setupFactionsTab_csat;
-    // };
+    class Aegis_CSAT_Arid : Aegis_Base
+    {
+        side = "Inv";
+        flagTexture = "A3\Data_F\Flags\Flag_CSAT_CO.paa";
+        name = "Aegis CSAT Arid";
+        file = "Aegis_AI_CSAT_Arid";
+        climate[] = {"arid", "arctic"};
+        description = $STR_A3AP_setupFactionsTab_csat;
+    };
+    class Aegis_CSAT_Temperate : Aegis_CSAT_Arid
+    {
+        name = "Aegis CSAT Temperate";
+        file = "Aegis_AI_CSAT_Temperate";
+        climate[] = {"temperate"};
+    };
 
     class Aegis_NATO_Arid : Aegis_Base
     {

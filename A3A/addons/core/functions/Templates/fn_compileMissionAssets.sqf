@@ -189,6 +189,7 @@ private _carsArmed =
 OccAndInv("vehiclesLightArmed")
 + OccAndInv("vehiclesMilitiaLightArmed")
 + Riv("vehiclesRivalsLightArmed")
++ ("ARMEDCAR" call _fnc_extractMarketClasses)
 + [Reb("vehicleLightArmed")];
 setVar("vehiclesLightArmed", _carsArmed);
 
@@ -198,6 +199,7 @@ OccAndInv("vehiclesLightUnarmed")      // anything else?
 + OccAndInv("vehiclesMilitiaCars")
 + OccAndInv("vehiclesPolice")
 + Riv("vehiclesRivalsCars")
++ ("UNARMEDCAR" call _fnc_extractMarketClasses)
 + [Reb("vehicleLightUnarmed")];
 setVar("vehiclesLightUnarmed", _carsUnarmed);
 setVar("vehiclesLight", _carsArmed + _carsUnarmed);
