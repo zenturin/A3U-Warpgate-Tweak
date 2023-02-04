@@ -7,7 +7,7 @@ if (!isServer and hasInterface) exitWith{};
 //Not sure if that ever happens, but it reduces redundance
 if(spawner getVariable _markerX == 2) exitWith {};
 
-Debug_1("Spawning Resource Point %1", _markerX);
+Info_1("Spawning Resource Point %1", _markerX);
 
 private _positionX = getMarkerPos _markerX;
 private _size = [_markerX] call A3A_fnc_sizeMarker;

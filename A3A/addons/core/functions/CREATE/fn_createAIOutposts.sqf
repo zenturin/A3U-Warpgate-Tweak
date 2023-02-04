@@ -15,7 +15,7 @@ private _dogs = [];
 private _positionX = getMarkerPos (_markerX);
 private _pos = [];
 
-ServerDebug_1("Spawning Outpost %1", _markerX);
+Info_1("Spawning Outpost %1", _markerX);
 
 private _size = [_markerX] call A3A_fnc_sizeMarker;
 
