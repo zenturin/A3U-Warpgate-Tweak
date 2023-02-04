@@ -195,6 +195,12 @@ class Templates
         climate[] = {"arid"};
         description = $STR_A3AP_setupFactionsTab_nato;
     };
+    class Aegis_NATO_Temperate : Aegis_NATO_Arid
+    {
+        name = "Aegis NATO Temperate";
+        file = "Aegis_AI_NATO_Temperate";
+        climate[] = {"temperate"};
+    };
 
     class Aegis_FIA : Aegis_Base
     {
