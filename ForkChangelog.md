@@ -1,13 +1,14 @@
 # Changelog
 
 ## 2.1
+*Aegis support is not yet ready, this changelog contains various strings about it for historical and progress tracking purposes*
 ### Additions
 - S.O.G. Prairie Fire CDLC support
 - Cam Lao Nam support
 - Khe Sanh support
 - Tanoa support
 - Takistan support
-- Multiple Rivals factions per modset support, startup menu changes due to this
+- Multiple Rivals factions per modset support, startup menu changes to accomodate it
 - Loot Crate Gather Distance parameter
 - Overall Enemy Balance parameter changes - new Below Normal (former pre-2.1 Normal value) and Above Normal (sligtly harder than Normal, former pre-2.1 High value) values,  Normal and High parameter values will be slightly harder
 - Special item for SP or low-population MP - Combat Readiness Recovery Kit, allows owner of such kit instantly revive someone including user of such kit, one-time use, could be bought in Vehicle Box store in "Other" tab, could be turned on via startup parameter
@@ -18,7 +19,9 @@
 - (3CB Factions) Tribal Fighters, Syndikat rival factions
 - (3CB) Arid Civilians faction
 - (Vanilla) NATO Tropical faction 
-- (Vanilla) Syndikat rival faction
+- (Vanilla, Aegis) Syndikat, Livonian Looters rebel factions
+- (Vanilla) L'Ensemble rival faction
+- (Aegis) Ion Services rival faction
 - (SOGPF) MACV, ARVN, PAVN enemy factions
 - (SOGPF) VM, VC rebel factions
 - (SOGPF) Vietnam civilian faction

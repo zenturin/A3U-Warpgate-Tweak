@@ -270,14 +270,24 @@ class Templates
         climate[] = {"temperate"};
         description = $STR_A3AP_setupFactionsTab_ll;
     };
-    // class Aegis_CHDKZ : Aegis_Base
-    // {
-    //     side = "Riv";
-    //     flagTexture = "A3_Opf\Data_F_Opf\Flags\flag_ChDKZ_CO.paa";
-    //     name = "A3 CHDKZ";
-    //     file = "Aegis_Riv_CHDKZ";
-    //     description = $STR_A3AP_setupFactionsTab_chdkz;
-    // };
+
+    class Aegis_CHDKZ : Aegis_Base
+    {
+        side = "Riv";
+        flagTexture = "A3_Opf\Data_F_Opf\Flags\flag_ChDKZ_CO.paa";
+        name = "Aegis CHDKZ";
+        file = "Aegis_Riv_CHDKZ";
+        description = $STR_A3AP_setupFactionsTab_chdkz;
+    };
+
+    class Aegis_Ion : Aegis_Base
+    {
+        side = "Riv";
+        flagTexture = "A3_Aegis\Data_F_Aegis\Flags\flag_ION_CO.paa";
+        name = "Aegis Ion PMC";
+        file = "Aegis_Riv_Ion";
+        description = $STR_A3AP_setupFactionsTab_ion;
+    };
 
     class Aegis_Civ : Aegis_Base
     {
