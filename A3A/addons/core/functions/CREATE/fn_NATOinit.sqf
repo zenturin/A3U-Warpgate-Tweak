@@ -109,9 +109,9 @@ if (_isRival) then {
 
 switch (true) do {
     case (_isRival): {
-        _skill = _skill * 0.8;
-        _face = selectRandom (_faction get "faces");
-        _voice = selectRandom (_faction get "voices");
+        _skill = _skill * 0.85;
+        _face = selectRandom (A3A_faction_riv get "faces");
+        _voice = selectRandom (A3A_faction_riv get "voices");
     };
     case (_unitPrefix isEqualTo "militia"): {
         _skill = _skill * 0.7;
