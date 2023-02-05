@@ -88,7 +88,7 @@ private _militiaAPCs = ["O_APC_Wheeled_02_rcws_v2_F"];
 
 ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["I_HMG_02_high_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["O_HMG_01_high_F", "O_HMG_01_high_F", "O_HMG_01_high_F", "O_GMG_01_high_F"]] call _fnc_saveToTemplate;
 ["staticATs", ["O_static_AT_F"]] call _fnc_saveToTemplate;
 ["staticAAs", ["O_static_AA_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["O_Mortar_01_F"]] call _fnc_saveToTemplate;
