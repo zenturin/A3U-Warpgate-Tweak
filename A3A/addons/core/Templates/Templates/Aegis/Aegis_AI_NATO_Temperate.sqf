@@ -221,6 +221,7 @@ _loadoutData set ["vests", []];
 _loadoutData set ["Hvests", []];
 _loadoutData set ["glVests", []];
 _loadoutData set ["backpacks", []];
+_loadoutData set ["atBackpacks", []];
 _loadoutData set ["longRangeRadios", ["B_RadioBag_01_wdl_F"]];
 _loadoutData set ["helmets", []];
 _loadoutData set ["slHat", ["H_Beret_02", "H_MilCap_wdl"]];
@@ -297,6 +298,7 @@ private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData set ["uniforms", ["U_B_CTRG_Soldier_Black_F", "U_B_CTRG_Soldier_3_Black_F", "U_B_CTRG_Soldier_2_Black_F"]];
 _sfLoadoutData set ["vests", ["V_Chestrig_blk", "V_PlateCarrier1_blk", "V_PlateCarrier2_blk", "Aegis_V_PlateCarrier2_alt_blk"]];
 _sfLoadoutData set ["backpacks", ["B_AssaultPackSpec_blk", "B_Kitbag_blk", "B_TacticalPack_blk", "B_Carryall_blk"]];
+_sfLoadoutData set ["atBackpacks", ["B_TacticalPack_blk", "B_Carryall_blk"]];
 _sfLoadoutData set ["helmets", [
     "H_Booniehat_blk",
     "H_Watchcap_blk",
@@ -458,6 +460,7 @@ _eliteLoadoutData set ["vests", ["V_PlateCarrier1_wdl", "V_PlateCarrier2_wdl", "
 _eliteLoadoutData set ["Hvests", ["Aegis_V_PlateCarrier2_alt_wdl", "V_PlateCarrierSpec_wdl"]];
 _eliteLoadoutData set ["glVests", ["Aegis_V_PlateCarrier2_alt_wdl", "V_PlateCarrierGL_wdl"]];
 _eliteLoadoutData set ["backpacks", ["B_AssaultPack_wdl_F", "B_AssaultPackSpec_wdl_F", "B_Kitbag_wdl_F", "B_Carryall_wdl_F"]];
+_eliteLoadoutData set ["atBackpacks", ["B_Kitbag_wdl_F", "B_Carryall_wdl_F"]];
 _eliteLoadoutData set ["helmets", ["H_HelmetSpecB_wdl", "H_HelmetSpecB_light_wdl", "Aegis_H_Helmet_FASTMT_Cover_wdl_F"]];
 _eliteLoadoutData set ["binoculars", ["Laserdesignator"]];
 
@@ -601,6 +604,7 @@ _militaryLoadoutData set ["vests", ["V_PlateCarrier1_wdl", "V_PlateCarrier2_wdl"
 _militaryLoadoutData set ["Hvests", ["V_PlateCarrier1_wdl", "V_PlateCarrier2_wdl", "Aegis_V_PlateCarrier2_alt_wdl", "V_PlateCarrierSpec_wdl"]];
 _militaryLoadoutData set ["glVests", ["V_PlateCarrier1_wdl", "V_PlateCarrier2_wdl", "Aegis_V_PlateCarrier2_alt_wdl", "V_PlateCarrierGL_wdl"]];
 _militaryLoadoutData set ["backpacks", ["B_AssaultPack_wdl_F", "B_AssaultPackSpec_wdl_F", "B_Kitbag_wdl_F", "B_Carryall_wdl_F"]];
+_militaryLoadoutData set ["atBackpacks", ["B_Kitbag_wdl_F", "B_Carryall_wdl_F"]];
 _militaryLoadoutData set ["helmets", [
     "H_HelmetB_plain_wdl", "H_HelmetB_plain_wdl", 
     "H_HelmetB_light_wdl", "H_HelmetB_light_wdl",
@@ -736,6 +740,7 @@ private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militiaLoadoutData set ["uniforms", ["U_B_CombatUniform_mcam_wdl_f", "U_B_CombatUniform_tshirt_mcam_wdL_f", "U_B_CombatUniform_vest_mcam_wdl_f"]];
 _militiaLoadoutData set ["vests", ["V_Chestrig_oli", "V_PlateCarrier1_wdl"]];
 _militiaLoadoutData set ["backpacks", ["B_AssaultPack_wdl_F", "B_Kitbag_wdl_F"]];
+_militiaLoadoutData set ["atBackpacks", ["B_Kitbag_wdl_F"]];
 _militiaLoadoutData set ["helmets", ["H_HelmetB_light_wdl", "H_HelmetB_light_wdl", "H_Bandanna_camo", "H_Cap_oli", "H_Watchcap_camo"]];
 
 _militiaLoadoutData set ["slRifles", [
@@ -1050,17 +1055,14 @@ private _atTemplate = {
     [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
-    ["backpacks"] call _fnc_setBackpack;
+    [["atBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
 
     [selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
-    ["primary", 6] call _fnc_addMagazines;
+    ["primary", 5] call _fnc_addMagazines;
 
     [selectRandom ["ATLaunchers", "missileATLaunchers"]] call _fnc_setLauncher;
     //TODO - Add a check if it's disposable.
     ["launcher", 3] call _fnc_addMagazines;
-
-    ["sidearms"] call _fnc_setHandgun;
-    ["handgun", 2] call _fnc_addMagazines;
 
     ["items_medical_standard"] call _fnc_addItemSet;
     ["items_at_extras"] call _fnc_addItemSet;
@@ -1080,23 +1082,20 @@ private _aaTemplate = {
     [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
-    ["backpacks"] call _fnc_setBackpack;
+    [["atBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
 
     [selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
-    ["primary", 6] call _fnc_addMagazines;
+    ["primary", 5] call _fnc_addMagazines;
 
     ["AALaunchers"] call _fnc_setLauncher;
     //TODO - Add a check if it's disposable.
     ["launcher", 3] call _fnc_addMagazines;
 
-    ["sidearms"] call _fnc_setHandgun;
-    ["handgun", 2] call _fnc_addMagazines;
-
     ["items_medical_standard"] call _fnc_addItemSet;
     ["items_aa_extras"] call _fnc_addItemSet;
     ["items_miscEssentials"] call _fnc_addItemSet;
     ["antiInfantryGrenades", 1] call _fnc_addItem;
-    ["smokeGrenades", 2] call _fnc_addItem;
+    ["smokeGrenades", 1] call _fnc_addItem;
 
     ["maps"] call _fnc_addMap;
     ["watches"] call _fnc_addWatch;
