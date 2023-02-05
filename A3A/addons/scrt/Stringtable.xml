@@ -204,6 +204,10 @@
                 <Original>Exegerménos.\nStandard enemy guerilla faction.</Original>
                 <Russian>Exegerménos.\nСтандартная вражеская повстанческая фракция.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_le">
+                <Original>L'Ensemble.\nFormer Syndikat branch.</Original>
+                <Russian>L'Ensemble.\nОдна из бывших ветвей Синдиката.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_chdkz">
                 <Original>CHDKZ.\nEastern European paramilitary group of people with various background - from criminals and defectors to highly professional mercenaries and soldiers.</Original>
                 <Russian>ЧДКЗ.\nВосточноевропейская военизированная группировка людей с разнообразным прошлым - от преступников и дезертиров до высокопрофессиональных наёмников и солдат.</Russian>
