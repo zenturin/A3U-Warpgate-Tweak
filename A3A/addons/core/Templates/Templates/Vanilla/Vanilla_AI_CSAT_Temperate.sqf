@@ -86,14 +86,14 @@ private _militiaAPCs = [];
 
 ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["O_HMG_01_high_F"]] call _fnc_saveToTemplate;
-["staticATs", ["O_static_AT_F"]] call _fnc_saveToTemplate;
-["staticAAs", ["O_static_AA_F"]] call _fnc_saveToTemplate;
-["staticMortars", ["O_Mortar_01_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["O_T_HMG_01_high_F", "O_T_HMG_01_high_F", "O_T_HMG_01_high_F", "O_T_GMG_01_high_F"]] call _fnc_saveToTemplate;
+["staticATs", ["O_T_Static_AT_F"]] call _fnc_saveToTemplate;
+["staticAAs", ["O_T_Static_AA_F"]] call _fnc_saveToTemplate;
+["staticMortars", ["O_T_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 
-["vehicleRadar", "O_Radar_System_02_F"] call _fnc_saveToTemplate;
-["vehicleSam", "O_SAM_System_04_F"] call _fnc_saveToTemplate;
+["vehicleRadar", "O_T_Radar_System_02_F"] call _fnc_saveToTemplate;
+["vehicleSam", "O_T_SAM_System_04_F"] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
