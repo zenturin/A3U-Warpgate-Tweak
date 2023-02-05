@@ -7,11 +7,11 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "FIA"] call _fnc_saveToTemplate;
+["name", "Syndikat"] call _fnc_saveToTemplate;
 
-["flag", "Flag_FIA_F"] call _fnc_saveToTemplate;
-["flagTexture", "a3\data_f\flags\flag_fia_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_FIA"] call _fnc_saveToTemplate;
+["flag", "Flag_Syndikat_F"] call _fnc_saveToTemplate;
+["flagTexture", "\A3\Data_F_Exp\Flags\flag_SYND_CO.paa"] call _fnc_saveToTemplate;
+["flagMarkerType", "flag_Syndicat"] call _fnc_saveToTemplate;
 
 ["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate;
 ["vehicleLightUnarmed", "I_G_Offroad_01_F"] call _fnc_saveToTemplate;
@@ -31,7 +31,6 @@ private _vehicleAA = "";
 ["vehicleCivHeli", "C_Heli_Light_01_civil_F"] call _fnc_saveToTemplate;
 ["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
 ["vehicleCivBoxSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
-
 
 ["staticMG", "I_G_HMG_02_high_F"] call _fnc_saveToTemplate;
 ["staticAT", "I_static_AT_F"] call _fnc_saveToTemplate;
@@ -83,14 +82,14 @@ private _shopApex = if (_hasApex) then {
 private _vehiclesBlackMarket = _shopWs + _shopApex + [
     ["I_UAV_01_F", 2000, "UAV", {true}],
     ["I_LT_01_AA_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["I_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["B_Heli_Light_01_dynamicLoadout_F", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
+    ["I_G_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+    ["I_Heli_Light_01_dynamicLoadout_F", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
 ];
 ["blackMarketStock", _vehiclesBlackMarket] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["I_APC_Wheeled_03_cannon_F", ["Guerilla_01",1]],
-    ["I_LT_01_AA_F", ["Indep_Olive",1]]
+    ["I_LT_01_AA_F", ["Indep_Olive",1]],
+    ["I_Heli_Light_01_dynamicLoadout_F", ["Black",1]]
 ]] call _fnc_saveToTemplate;
 
 
@@ -99,18 +98,23 @@ private _vehiclesBlackMarket = _shopWs + _shopApex + [
 ///////////////////////////
 
 private _initialRebelEquipment = [
+    "sgun_Mp153_classic_F",
     "hgun_Pistol_heavy_02_F",
+    "hgun_ACPC2_black_F",
     "hgun_PDW2000_F",
+    "4Rnd_12Gauge_Pellets", "4Rnd_12Gauge_Slug",
     "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag",
-    "6Rnd_45ACP_Cylinder","MiniGrenade","SmokeShell",
+    "9Rnd_45ACP_Mag",
+    "6Rnd_45ACP_Cylinder",
+    "MiniGrenade","SmokeShell",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk",
-    "V_BandollierB_blk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_khk","V_BandollierB_oli","V_Rangemaster_belt",
-    "Binocular",
-    "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
+    "V_TacChestrig_grn_F","V_TacChestrig_oli_F","V_TacChestrig_cbr_F",
+    "Binocular", "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
 ];
 
 private _civilianBackpacks =  [];
+
 if (_hasLawsOfWar) then {
     _civilianBackpacks append [
         "B_Messenger_Black_F", 
@@ -124,9 +128,6 @@ if (_hasLawsOfWar) then {
 } else {
     _civilianBackpacks append ["B_FieldPack_blk","B_AssaultPack_blk"];
 };
-
-["civilianBackpacks", _civilianBackpacks createHashMapFromArray []] call _fnc_saveToTemplate;
-
 _initialRebelEquipment append _civilianBackpacks;
 
 if (_hasContact) then {
@@ -137,6 +138,7 @@ if (_hasContact) then {
         "2Rnd_12Gauge_Slug"
     ];
 };
+
 
 if (_hasApex) then {
     _initialRebelEquipment append [
@@ -156,41 +158,17 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment app
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "U_IG_Guerilla1_1",
-    "U_IG_Guerilla2_1",
+    "U_I_C_Soldier_Para_1_F",
+    "U_I_C_Soldier_Para_4_F",
+    "U_I_C_Soldier_Para_5_F",
+    "U_I_C_Soldier_Para_3_F",
+    "U_I_C_Soldier_Para_2_F",
+    "U_I_C_Soldier_Camo_F",
     "U_IG_Guerilla2_2",
-    "U_IG_Guerilla2_3",
-    "U_IG_Guerilla3_1",
-    "U_IG_leader",
-    "U_IG_Guerrilla_6_1",
-    "U_I_G_resistanceLeader_F",
-    "U_I_L_Uniform_01_deserter_F"
+    "U_IG_Guerilla2_3"
 ];
 
-private _dlcUniforms = [];
-
-if (_hasContact) then {
-    _dlcUniforms append [
-        "U_I_L_Uniform_01_camo_F",
-        "U_I_L_Uniform_01_tshirt_black_F",
-        "U_I_L_Uniform_01_tshirt_olive_F",
-        "U_I_L_Uniform_01_tshirt_skull_F",
-        "U_I_L_Uniform_01_tshirt_sport_F"
-    ];
-};
-
-if (_hasWs) then {
-    _dlcUniforms append [
-        "U_lxWS_ION_Casual1",
-        "U_lxWS_ION_Casual2",
-        "U_lxWS_ION_Casual3",
-        "U_lxWS_ION_Casual4",
-        "U_lxWS_ION_Casual5",
-        "U_lxWS_SFIA_deserter"
-    ];
-};
-
-["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
+["uniforms", _rebUniforms] call _fnc_saveToTemplate;
 
 ["headgear", [
     "H_Booniehat_khk_hs",
@@ -210,10 +188,8 @@ if (_hasWs) then {
 ///  Identities   ///
 /////////////////////
 
-["faces", ["GreekHead_A3_02","GreekHead_A3_03","GreekHead_A3_04",
-"GreekHead_A3_05","GreekHead_A3_06","GreekHead_A3_07","GreekHead_A3_08",
-"GreekHead_A3_09","Ioannou","Mavros"]] call _fnc_saveToTemplate;
-["voices", ["Male01GRE", "Male02GRE", "Male03GRE", "Male04GRE", "Male05GRE", "Male06GRE"]] call _fnc_saveToTemplate;
+["faces", ["TanoanHead_A3_01","TanoanHead_A3_02","TanoanHead_A3_03","TanoanHead_A3_04","TanoanHead_A3_05","TanoanHead_A3_06","TanoanHead_A3_07","TanoanHead_A3_08"]] call _fnc_saveToTemplate;
+["voices", ["Male01ENGFRE","Male02ENGFRE"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
@@ -227,7 +203,7 @@ _loadoutData set ["binoculars", ["Binocular"]];
 
 _loadoutData set ["uniforms", _rebUniforms];
 
-_loadoutData set ["glasses", ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"]];
+_loadoutData set ["glasses", ["G_Cigarette","G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"]];
 _loadoutData set ["goggles", ["G_Lowprofile"]];
 _loadoutData set ["facemask", ["G_Bandanna_blk", "G_Bandanna_oli", "G_Bandanna_khk", "G_Bandanna_tan", "G_Bandanna_beast", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_aviator"]];
 

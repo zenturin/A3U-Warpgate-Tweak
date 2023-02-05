@@ -101,8 +101,30 @@ class Templates
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
         name = "A3 FIA";
         file = "Vanilla_Reb_FIA";
+        climate[] = {"arid"};
         description = $STR_A3AP_setupFactionsTab_fia;
     };
+
+    class Vanilla_SDK : Vanilla_Base
+    {
+        side = "Reb";
+        flagTexture = "\A3\Data_F_Exp\Flags\flag_SYND_CO.paa";
+        name = "A3 SDK";
+        file = "Vanilla_Reb_SDK";
+        climate[] = {"tropical"};
+        description = $STR_A3AP_setupFactionsTab_sdk;
+    };
+
+    class Vanilla_LL : Vanilla_Base
+    {
+        side = "Reb";
+        flagTexture = "\A3\Data_F\Flags\Flag_green_CO.paa";
+        name = "A3 LL";
+        file = "Vanilla_Reb_LL";
+        climate[] = {"temperate"};
+        description = $STR_A3AP_setupFactionsTab_ll;
+    };
+
 
     class Vanilla_Exegermenos : Vanilla_Base
     {
@@ -214,9 +236,29 @@ class Templates
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
         name = "Aegis FIA";
         file = "Aegis_Reb_FIA";
+        climate[] = {"arid"};
         description = $STR_A3AP_setupFactionsTab_fia;
     };
 
+    class Aegis_SDK : Aegis_Base
+    {
+        side = "Reb";
+        flagTexture = "\A3\Data_F_Exp\Flags\flag_SYND_CO.paa";
+        name = "Aegis SDK";
+        file = "Aegis_Reb_SDK";
+        climate[] = {"tropical"};
+        description = $STR_A3AP_setupFactionsTab_sdk;
+    };
+
+    class Aegis_LL : Aegis_Base
+    {
+        side = "Reb";
+        flagTexture = "\A3_Aegis\Data_F_Aegis\Flags\flag_Looters_CO.paa";
+        name = "Aegis LL";
+        file = "Aegis_Reb_LL";
+        climate[] = {"temperate"};
+        description = $STR_A3AP_setupFactionsTab_ll;
+    };
     // class Aegis_CHDKZ : Aegis_Base
     // {
     //     side = "Riv";
