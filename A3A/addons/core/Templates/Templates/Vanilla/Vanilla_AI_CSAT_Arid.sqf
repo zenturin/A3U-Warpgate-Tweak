@@ -369,8 +369,7 @@ _sfLoadoutData set ["sniperRifles", [
 ]];
 _sfLoadoutData set ["sidearms", [
 ["hgun_Pistol_heavy_02_F", "", "acc_flashlight_pistol", "optic_Yorris", [], [], ""],
-["hgun_Rook40_F", "muzzle_snds_L", "", "", [], [], ""],
-["hgun_Pistol_heavy_01_F", "muzzle_snds_acp", "acc_flashlight_pistol", "optic_MRD", [], [], ""]
+["hgun_Rook40_F", "muzzle_snds_L", "", "", [], [], ""]
 ]];
 
 
@@ -450,7 +449,6 @@ _eliteLoadoutData set ["sniperRifles", [
 ["srifle_GM6_F", "", "", "optic_LRPS", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""],
 ["srifle_GM6_F", "", "", "optic_SOS", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""]
 ]];
-_eliteLoadoutData set ["sidearms", ["hgun_Rook40_F"]];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -516,7 +514,7 @@ _militaryLoadoutData set ["sniperRifles", [
 ["srifle_GM6_F", "", "", "optic_LRPS", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""],
 ["srifle_GM6_F", "", "", "optic_SOS", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""]
 ]];
-_militaryLoadoutData set ["sidearms", ["hgun_Rook40_F"]];
+
 ///////////////////////////////
 //    Police Loadout Data    //
 ///////////////////////////////
@@ -550,8 +548,7 @@ _militiaLoadoutData set ["vests", ["V_HarnessO_brn"]];
 _militiaLoadoutData set ["glVests", ["V_HarnessOGL_brn"]];
 _militiaLoadoutData set ["Hvests", ["V_TacVest_brn"]];
 _militiaLoadoutData set ["backpacks", ["B_TacticalPack_ocamo", "B_Carryall_ocamo", "B_FieldPack_ocamo", "B_Carryall_cbr", "B_Kitbag_cbr"]];
-
-private _helmets = ["H_Cap_brn_SPECOPS", "H_Bandanna_cbr", "H_ShemagOpen_tan"];
+_militiaLoadoutData set ["helmets", ["H_Cap_brn_SPECOPS", "H_Bandanna_cbr", "H_ShemagOpen_tan", "H_PASGT_basic_olive_F"]];
 
 private _rifles = [
     ["arifle_Katiba_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green_mag_Tracer"], [], ""]
@@ -572,7 +569,6 @@ private _marksmanRifles = [
 
 if (_hasWs) then {
     _uniforms pushBack "U_O_LCF_noInsignia_hex_lxws";
-    _helmets pushBack "lxWS_H_ssh40_sand";
     _rifles = [
         ["arifle_Velko_lxWS", "", "acc_flashlight", "", ["35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_tracer_green_lxWS"], [], ""],
         ["arifle_Velko_lxWS", "", "acc_flashlight", "", ["35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_tracer_green_lxWS"], [], ""],
@@ -595,7 +591,6 @@ if (_hasWs) then {
     ];
 };
 _militiaLoadoutData set ["uniforms", _uniforms];
-_militiaLoadoutData set ["helmets", _helmets];
 _militiaLoadoutData set ["rifles", _rifles];
 _militiaLoadoutData set ["carbines", _carbines];
 _militiaLoadoutData set ["grenadeLaunchers",_grenadeLaunchers];
@@ -610,8 +605,6 @@ _militiaLoadoutData set ["sniperRifles", [
 ["srifle_GM6_F", "", "", "optic_Arco", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""],
 ["srifle_GM6_F", "", "", "optic_Arco_blk_F", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""]
 ]];
-_militiaLoadoutData set ["sidearms", ["hgun_Rook40_F"]];
-
 
 //////////////////////////
 //    Misc Loadouts     //
