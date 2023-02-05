@@ -132,7 +132,18 @@ class Templates
         flagTexture = "\A3\Data_F\Flags\Flag_red_CO.paa";
         name = "A3 Exegerménos";
         file = "Vanilla_Riv_Exegermenos";
+        climate[] = {"arid", "temperate"};
         description = $STR_A3AP_setupFactionsTab_exegermenos;
+    };
+
+    class Vanilla_LE : Vanilla_Base
+    {
+        side = "Riv";
+        flagTexture = "\A3\Data_F_Exp\Flags\flag_SYND_CO.paa";
+        name = "A3 L'Ensemble";
+        file = "Vanilla_Riv_LE";
+        climate[] = {"tropical"};
+        description = $STR_A3AP_setupFactionsTab_le;
     };
 
     class Vanilla_Civ : Vanilla_Base
