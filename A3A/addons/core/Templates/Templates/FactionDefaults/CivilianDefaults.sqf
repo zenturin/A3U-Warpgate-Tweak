@@ -72,8 +72,7 @@ private _currencySymbol = switch (true) do {
 	case (toLowerANSI worldName in ["cam_lao_nam", "vn_khe_sanh"]): {
 		"đ"
 	};
-    case ((toLowerANSI worldName) isEqualTo "sefrouramal");
-	case (toLowerANSI worldName in ["tanoa", "takistan"]): {
+	case (toLowerANSI worldName in ["tanoa", "takistan", "sehreno", "sefrouramal"]): {
 		"$"
 	};
     case ((toLowerANSI worldName) isEqualTo "enoch"): {
