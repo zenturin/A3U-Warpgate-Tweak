@@ -120,7 +120,6 @@ if (_hasWs) then {
 ["variants", [
     ["Atlas_B_A_Plane_Transport_01_infantry_F", ["Olive",1]],
     ["Atlas_B_G_MBT_03_cannon_F", ["Olive_01",1]],
-    ["B_A_APC_tracked_03_cannon_v2_wdl_F", ["Sand_01",1]],
     ["B_G_APC_Wheeled_03_cannon_F", ["Olive_01",1]]
 ]] call _fnc_saveToTemplate;
 
