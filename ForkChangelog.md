@@ -8,6 +8,7 @@
 - Khe Sanh support
 - Tanoa support
 - Takistan support
+- Sehreno support
 - Multiple Rivals factions per modset support, startup menu changes to accomodate it
 - Loot Crate Gather Distance parameter
 - Overall Enemy Balance parameter changes - new Below Normal (former pre-2.1 Normal value) and Above Normal (sligtly harder than Normal, former pre-2.1 High value) values,  Normal and High parameter values will be slightly harder
@@ -17,11 +18,11 @@
 - (3CB Factions) Takistan civilians
 - (3CB Factions) TKM rebel faction
 - (3CB Factions) Tribal Fighters, Syndikat rival factions
-- (3CB) Arid Civilians faction
+- (3CB Factions) Arid Civilians faction
 - (Vanilla) NATO Tropical faction 
 - (Vanilla, Aegis) Syndikat, Livonian Looters rebel factions
 - (Vanilla) L'Ensemble rival faction
-- (Aegis) Ion Services rival faction
+- (Aegis) Ion PMC rival faction
 - (SOGPF) MACV, ARVN, PAVN enemy factions
 - (SOGPF) VM, VC rebel factions
 - (SOGPF) Vietnam civilian faction

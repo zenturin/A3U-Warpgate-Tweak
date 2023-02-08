@@ -51,6 +51,10 @@ switch (toLowerANSI worldName) do {
 	{
 	    _title = localize "STR_antistasi_mission_info_khesanh_mapname_text";
 	};
+	case "sehreno":
+	{
+	    _title = localize "STR_antistasi_mission_info_sehreno_mapname_text";
+	};
 	default {
 	    _title = "Antistasi Plus";
 	};
