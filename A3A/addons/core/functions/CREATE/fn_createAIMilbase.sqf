@@ -136,6 +136,26 @@ if (random 100 < (40 + tierWar * 6)) then {
 	_vehiclesX pushBack _heavyVehicle;		
 };
 
+private _boatType = selectRandom (_faction get "vehiclesGunBoats");
+if ([_boatType] call A3A_fnc_vehAvailable) then {
+	private _mrkMar = seaSpawn inAreaArray [_positionX, 500, 500];
+	if(_mrkMar isNotEqualTo []) then {
+		private _pos = (getMarkerPos (selectRandom _mrkMar)) findEmptyPosition [0,20,_typeVehX];
+		private _vehicle=[_pos, 0, _boatType, _sideX] call A3A_fnc_spawnVehicle;
+		private _veh = _vehicle select 0;
+		[_veh, _sideX] call A3A_fnc_AIVEHinit;
+		private _vehCrew = _vehicle select 1;
+		{[_x,_markerX] call A3A_fnc_NATOinit} forEach _vehCrew;
+		private _groupVeh = _vehicle select 2;
+		_soldiers append _vehCrew;
+		_groups pushBack _groupVeh;
+		_vehiclesX pushBack _veh;
+		sleep 1;
+	} else {
+		Error_1("Could not find seaSpawn marker on %1!", _markerX);
+	};
+};
+
 if (_frontierX) then {
 	private _roads = _positionX nearRoads _size;
 	if (count _roads != 0) then {

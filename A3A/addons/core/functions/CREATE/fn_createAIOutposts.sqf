@@ -151,8 +151,8 @@ _roads = _positionX nearRoads _size;
 if (_markerX in seaports) then {
 	_typeVehX = selectRandom (_faction get "vehiclesGunBoats");
 	if ([_typeVehX] call A3A_fnc_vehAvailable) then {
-		private _mrkMar = seaSpawn select {getMarkerPos _x inArea _markerX};
-		if(count _mrkMar > 0) then
+		private _mrkMar = seaSpawn inAreaArray [_positionX, 500, 500];
+		if(_mrkMar isNotEqualTo []) then
 		{
 			private _pos = (getMarkerPos (_mrkMar select 0)) findEmptyPosition [0,20,_typeVehX];
 			private _vehicle=[_pos, 0,_typeVehX, _sideX] call A3A_fnc_spawnVehicle;
