@@ -277,9 +277,14 @@ if (_prefix in ["occ", "inv"]) exitWith {
 
 if (_prefix isEqualTo "riv") exitWith {
     _faction set ["unitCL", unit(militia, "CellLeader")];
+
     _faction set ["unitRifle", unit(militia, "Minuteman")];
     _faction set ["unitPartisan", unit(militia, "Partisan")];
     _faction set ["unitEnforcer", unit(militia, "Enforcer")];
+    _faction set ["unitMercenary", unit(militia, "Mercenary")];
+    _faction set ["unitSaboteur", unit(militia, "Oppressor")];
+    _faction set ["unitOppressor", unit(militia, "Saboteur")];
+
     _faction set ["unitCommander", unit(militia, "Commander")];
     _faction set ["unitCrew", unit(militia, "Crew")];
     _faction set ["unitPilot", unit(militia, "Pilot")];

@@ -216,3 +216,5 @@ publicVariable "traitorIntel";
 [_groupX] spawn A3A_fnc_groupDespawner;
 [_groupTraitor] spawn A3A_fnc_groupDespawner;
 [_veh] spawn A3A_fnc_vehDespawner;
+
+deleteMarkerLocal _mrk;

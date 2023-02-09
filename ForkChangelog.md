@@ -14,6 +14,7 @@
 - Overall Enemy Balance parameter changes - new Below Normal (former pre-2.1 Normal value) and Above Normal (sligtly harder than Normal, former pre-2.1 High value) values,  Normal and High parameter values will be slightly harder
 - Special item for SP or low-population MP - Combat Readiness Recovery Kit, allows owner of such kit instantly revive someone including user of such kit, one-time use, could be bought in Vehicle Box store in "Other" tab, could be turned on via startup parameter
 - Ability to possess any near friendly AI squadmate while laying incapacitated to help your original body (press T while being incapacitated, could be turned off via params menu)
+- Rivals subvariants for Kill the Traitor and Deliver Supplies tasks
 - (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
 - (3CB Factions) Takistan civilians
 - (3CB Factions) TKM rebel faction
@@ -55,6 +56,7 @@
 - Fixed bug that prevented commander from placing or removing minefields
 - Fixed some missing strings, typos, localization errors
 - Fixed non-working paradrop and loot helicopters if napalm was disabled
+- Fixed inability to assign attacks on Rivals hideouts and cells if there are no unknown locations
 - Military Administration capture/destruction will increase support in it's city
 - Post-effect will be applied while laying in wounded state
 - Transport, light attack and attack helicopters may spawn at helipads on airbases, transport helicopters and light attack helicopters may spawn at milbases

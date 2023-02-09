@@ -551,8 +551,8 @@ for "_i" from 0 to _carCount do {
    [_positionX, _size, 101] spawn SCRT_fnc_rivals_encounter_carDemo;
 };
 
-[_positionX, _size, _target, _isDifficult] spawn {
-    params ["_positionX", "_size", "_target", "_isDifficult"];
+[_positionX, _target, _isDifficult] spawn {
+    params ["_positionX", "_target", "_isDifficult"];
     if (!(alive _target)) exitWith {};
 
     sleep (random [120, 240, 360]);
@@ -569,7 +569,7 @@ for "_i" from 0 to _carCount do {
         case 300: {
             [[_positionX], "SCRT_fnc_rivals_encounter_rovingMortar"] call A3A_fnc_scheduler;
         };
-    }
+    };
 };
 
 
