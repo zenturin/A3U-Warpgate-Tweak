@@ -90,7 +90,7 @@ switch (toLowerANSI _convoyType) do
     {
         _textX = format [localize "STR_A3A_Missions_AS_Convoy_task_dest_armor",_nameOrigin,_displayTime,_nameDest];
         _taskTitle = localize "STR_A3A_Missions_AS_Convoy_task_header_armor";
-        _taskIcon = "Destroy";
+        _taskIcon = "destroy";
         _typeVehObj = selectRandom (_faction get "vehiclesAA");
     };
     case "prisoners":

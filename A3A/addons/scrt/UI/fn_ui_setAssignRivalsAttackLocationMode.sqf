@@ -34,8 +34,8 @@ if (bigAttackInProgress) exitWith {
     ] spawn SCRT_fnc_ui_showMessage;
 };
 
-private _unknownLocationsCount = count (["UNKNOWN"] call SCRT_fnc_rivals_getLocations);
-if (_unknownLocationsCount == 0) exitWith {
+private _locationsCount = count ([] call SCRT_fnc_rivals_getLocations);
+if (_locationsCount == 0) exitWith {
 	[
         localize "STR_notifiers_fail_type",
         (localize "STR_antistasi_rivals_destroy_hideoutcell_header"),  

@@ -5005,6 +5005,14 @@
                 <Original>A traitor has scheduled a meeting with %1 in %2. Kill him before he provides enough intel to give us trouble. Do this before %3. We don't where exactly this meeting will happen. You will recognise the building by the nearby Offroad and %3 presence.</Original>
                 <Russian>Предатель назначил встречу с %1 в %2. Убейте его до того как он выдаст достаточно информации о нас. Сделайте это до %3. Мы не знаем точно где произойдёт эта встреча. Вы узнаете конкретное здание по припаркованному рядом автомобилю и присутствию охраны от %3.</Russian>
             </Key>
+            <Key ID="STR_A3A_Missions_AS_RIV_Traitor_task_header">
+                <Original>Eliminate the Defector</Original>
+                <Russian>Устраните перебежчика</Russian>
+            </Key>
+            <Key ID="STR_A3A_Missions_AS_RIV_Traitor_task_desc">
+                <Original>Some invididual decided to leave our ranks in favour of %1. We should show ему that %2 betrayal is an expensive game. Eliminate him until he brings us trouble. He is in the %3. Do this before %4.</Original>
+                <Russian>Один товарищ решил внезапно покинуть наши ряды и вступить в %1. Мы должны показать ему что предательство %2 может быть дорогим удовольствием. Устраните его пока он не создал нам проблем. Он находится в %3. Сделайте это до %4.</Russian>
+            </Key>
             <Key ID="STR_A3A_Missions_AS_Convoy_task_header_ammo">
                 <Original>Intercept Ammo Convoy</Original>
                 <Russian>Перехватите конвой с боеприпасами</Russian>

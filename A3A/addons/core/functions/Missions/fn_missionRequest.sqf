@@ -65,7 +65,11 @@ switch (_type) do {
 					[[_site],"A3A_fnc_AS_Official"] remoteExec ["A3A_fnc_scheduler",2];
 				};
 				case (_site in citiesX): {
-					[[_site],"A3A_fnc_AS_Traitor"] remoteExec ["A3A_fnc_scheduler",2];
+					if (_site in ([] call SCRT_fnc_rivals_getLocations) && !("RIV_ATT" in A3A_activeTasks)) then {
+						[[_site],"A3A_fnc_RIV_AS_Traitor"] remoteExec ["A3A_fnc_scheduler",2];
+					} else {
+						[[_site],"A3A_fnc_AS_Traitor"] remoteExec ["A3A_fnc_scheduler",2];
+					}
 				};
 				default {
 					[[_site],"A3A_fnc_AS_SpecOP"] remoteExec ["A3A_fnc_scheduler",2];
