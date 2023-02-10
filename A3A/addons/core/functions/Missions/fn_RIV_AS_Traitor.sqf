@@ -136,37 +136,32 @@ if (dateToNumber date < _dateLimitNum && alive _traitor) then {
 		_patrolGroups pushBack _patrolGroup;
 	};
 
-	//////////////////////////////////////////////
-	//  Patrol vehicle 	                        //
-	//////////////////////////////////////////////
-	private _vehicleClass = if (_isDifficult) then {
-		selectRandom ((A3A_faction_riv get "vehiclesRivalsLightArmed") + (A3A_faction_riv get "vehiclesRivalsAPCs"));
-	} else {
-		selectRandom (A3A_faction_riv get "vehiclesRivalsLightArmed");
+	if (_isDifficult) then {
+		private _vehicleClass = selectRandom (A3A_faction_riv get "vehiclesRivalsLightArmed");
+
+		private _vehiclePosAndDir = [_positionX, _vehicleClass] call SCRT_fnc_common_findSafePositionForVehicle; 
+		private _patrolVehicleData = [(_vehiclePosAndDir select 0), 0, _vehicleClass, Rivals] call A3A_fnc_spawnVehicle;
+		private _patrolVeh = _patrolVehicleData select 0;
+		_patrolVeh setDir (_vehiclePosAndDir select 1);
+		private _patrolVehCrew = _patrolVehicleData select 1;
+		private _patrolVehGroup = _patrolVehicleData select 2;
+
+		_patrolVehCrew apply {
+			private _unit = _x;
+			{_unit disableAI _x} forEach ["CHECKVISIBLE", "MOVE", "COVER", "SUPPRESSION", "FSM", "TARGET", "AUTOTARGET", "ANIM"];
+			_unit allowDamage false;
+			_unit setCaptive true;
+			[_unit] call A3A_fnc_NATOinit;
+		};
+
+		[_patrolVeh, Rivals] call A3A_fnc_AIVEHinit;
+
+		_groups pushBack _patrolVehGroup;
+		_patrolGroups pushBack _patrolVehGroup;
+		_vehicles pushBack _patrolVeh;
+
+		[_patrolVehGroup, _positionX, 250] call bis_fnc_taskPatrol;
 	};
-
-	private _vehiclePosAndDir = [_positionX, _vehicleClass] call SCRT_fnc_common_findSafePositionForVehicle; 
-	private _patrolVehicleData = [(_vehiclePosAndDir select 0), 0, _vehicleClass, Rivals] call A3A_fnc_spawnVehicle;
-	private _patrolVeh = _patrolVehicleData select 0;
-	_patrolVeh setDir (_vehiclePosAndDir select 1);
-	private _patrolVehCrew = _patrolVehicleData select 1;
-	private _patrolVehGroup = _patrolVehicleData select 2;
-
-	_patrolVehCrew apply {
-		private _unit = _x;
-		{_unit disableAI _x} forEach ["CHECKVISIBLE", "MOVE", "COVER", "SUPPRESSION", "FSM", "TARGET", "AUTOTARGET", "ANIM"];
-		_unit allowDamage false;
-		_unit setCaptive true;
-		[_unit] call A3A_fnc_NATOinit;
-	};
-
-	[_patrolVeh, Rivals] call A3A_fnc_AIVEHinit;
-
-	_groups pushBack _patrolVehGroup;
-	_patrolGroups pushBack _patrolVehGroup;
-	_vehicles pushBack _patrolVeh;
-
-	[_patrolVehGroup, _positionX, 250] call bis_fnc_taskPatrol;
 };
 
 
@@ -242,8 +237,6 @@ if (!alive _traitor) then {
 		_resourcesFIAT = server getVariable "resourcesFIA";
 		[-1*(round(_hrT/3)),-1*(round(_resourcesFIAT/3))] remoteExec ["A3A_fnc_resourcesFIA",2];
 		[-10*_factor, 90] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
-	} else {
-		// Add some rebel HQ info to invaders. Must be done on server.
 		{ A3A_curHQInfoInv = A3A_curHQInfoInv + 0.25 + random 0.5 } remoteExecCall ["call", 2];
 	};
 };
