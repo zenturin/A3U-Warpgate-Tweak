@@ -29,6 +29,11 @@ private _findIfNearAndHostile = {
 	_Markers
 };
 
+private _checkRivalsTaskPossibility = {
+	params ["_site"];
+	_site in ([] call SCRT_fnc_rivals_getLocations) && {!("RIV_ATT" in A3A_activeTasks) && {([] call SCRT_fnc_rivals_rollProbability)}}
+};
+
 private _possibleMarkers = [];
 switch (_type) do {
 	case "AS": {
@@ -65,7 +70,7 @@ switch (_type) do {
 					[[_site],"A3A_fnc_AS_Official"] remoteExec ["A3A_fnc_scheduler",2];
 				};
 				case (_site in citiesX): {
-					if (_site in ([] call SCRT_fnc_rivals_getLocations) && !("RIV_ATT" in A3A_activeTasks)) then {
+					if (([_site] call _checkRivalsTaskPossibility)) then {
 						[[_site],"A3A_fnc_RIV_AS_Traitor"] remoteExec ["A3A_fnc_scheduler",2];
 					} else {
 						[[_site],"A3A_fnc_AS_Traitor"] remoteExec ["A3A_fnc_scheduler",2];
@@ -221,7 +226,12 @@ switch (_type) do {
 		} else {
             Debug_1("City weights: %1", _weightedMarkers);
 			private _site = selectRandomWeighted _weightedMarkers;
-			[[_site],"A3A_fnc_SUPP_Supplies"] remoteExec ["A3A_fnc_scheduler",2];
+
+			if (([_site] call _checkRivalsTaskPossibility)) then {
+				[[_site],"A3A_fnc_RIV_SUPP_Salvage"] remoteExec ["A3A_fnc_scheduler",2];	
+			} else {
+				[[_site],"A3A_fnc_SUPP_Supplies"] remoteExec ["A3A_fnc_scheduler",2];
+			};
 		};
 	};
 
