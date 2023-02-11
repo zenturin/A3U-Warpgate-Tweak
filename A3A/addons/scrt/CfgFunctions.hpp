@@ -107,6 +107,7 @@ class CfgFunctions {
 			class misc_getLoadoutName {};
 			class misc_tryInitVehicle {};
 			class misc_getRebelPlayers {};
+			class misc_getTimeLimit {};
     	};
 
 		class Paradrop {
