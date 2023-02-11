@@ -397,6 +397,7 @@ class CfgFunctions
             class RIV_ATT_Cell {};
             class RIV_ATT_Hideout {};
             class RIV_AS_Traitor {};
+            class RIV_SUPP_Salvage {};
             class taskDelete {};
             class taskSetState {};
             class taskUpdate {};
