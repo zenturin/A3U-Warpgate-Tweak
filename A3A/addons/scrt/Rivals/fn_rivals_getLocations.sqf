@@ -27,6 +27,10 @@ if (!(_mode in ["KNOWN", "UNKNOWN", ""])) exitWith {
 	Error("Wrong value: %1", _mode);
 };
 
+if (areRivalsDefeated || !areRivalsDiscovered || !areRivalsEnabled) exitWith {
+	[];
+};
+
 private _locations = switch (_mode) do {
 	case "KNOWN": {
 		(rivalsLocationsMap apply { 
