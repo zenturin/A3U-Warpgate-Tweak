@@ -31,7 +31,7 @@ private _dateLimitNum = dateToNumber _dateLimit;
 _dateLimit = numberToDate [date select 0, _dateLimitNum];
 private _displayTime = [_dateLimit] call A3A_fnc_dateToTimeString;
 
-private _isDifficult = if (random 10 < tierWar) then {true} else {false};
+private _isDifficult = random 10 < tierWar && ([] call SCRT_fnc_rivals_rollProbability);
 private _positionX = getMarkerPos _marker;
 
 Info_1("Is difficult: %1.", str _isDifficult);

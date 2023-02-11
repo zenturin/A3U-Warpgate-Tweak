@@ -11,7 +11,7 @@ private _groups = [];
 
 private _faction = A3A_faction_riv;
 
-private _isDifficult = random 10 < tierWar;
+private _isDifficult = random 10 < tierWar && {[] call SCRT_fnc_rivals_rollProbability};
 private _positionX = getMarkerPos _markerX;
 
 private _timeLimit = if (_isDifficult) then {45 * timeMultiplier} else {60 * timeMultiplier};
@@ -219,7 +219,7 @@ if (!alive _traitor) then {
 
     Debug("aggroEvent | Rebels won a rivals traitor mission");
 
-	[20*_factor, 90] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
+	[20*_factor, (100/baseRivalsDecay)] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
 	[10*_factor] remoteExecCall ["SCRT_fnc_rivals_addProgressToRivalsLocationReveal", 2];
 
 	[0,300 * _factor] remoteExec ["A3A_fnc_resourcesFIA",2];
