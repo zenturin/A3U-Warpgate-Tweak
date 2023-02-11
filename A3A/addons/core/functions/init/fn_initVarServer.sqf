@@ -201,6 +201,8 @@ baseRivalsDecay = switch (rivalsDifficulty) do {
 		Error_1("Can't set base rivals decay - something wrong with %1 difficulty value.", str rivalsDifficulty);
 	};
 };
+publicVariable "baseRivalsDecay";
+
 
 ///////////////////////////////////////////
 //     INITIALISING ITEM CATEGORIES     ///
