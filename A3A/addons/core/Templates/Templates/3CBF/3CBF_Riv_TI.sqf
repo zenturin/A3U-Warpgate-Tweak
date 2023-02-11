@@ -33,6 +33,9 @@
 ["handGrenadeAmmo", ["rhs_ammo_rgd5", "rhs_ammo_f1"]] call _fnc_saveToTemplate;
 ["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
 
+["minefieldAT", ["rhs_mine_tm62m"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["rhs_mine_pmn2"]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

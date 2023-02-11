@@ -47,6 +47,9 @@ private _hasMarksman = "mark" in A3A_enabledDLC;
 ["handGrenadeAmmo", ["GrenadeHandEast", "GrenadeHandGuer"]] call _fnc_saveToTemplate;
 ["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
 
+["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
