@@ -183,14 +183,6 @@ _loadoutData set ["items_police_extras", []];
 _loadoutData set ["items_crew_extras", []];
 _loadoutData set ["items_unarmed_extras", []];
 
-
-//TODO: сотая серия
-//зенитка
-//бубны
-//m21
-//продвинутые шлемы и броники у наёмников
-//вернуть хэви-весты
-
 _loadoutData set ["rifles", [
 	["rhs_weap_pm63", "rhs_acc_dtkakm", "", "",  ["rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm_tracer"], [], ""],
 	["rhs_weap_akm", "rhs_acc_dtkakm", "", "",  ["rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm_tracer"], [], ""],

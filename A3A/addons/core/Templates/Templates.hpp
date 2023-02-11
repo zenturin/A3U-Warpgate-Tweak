@@ -659,6 +659,15 @@ class Templates
         description = $STR_A3AP_setupFactionsTab_vc;
     };
 
+    class VN_Riv_PL : VN_Base
+    {
+        side = "Riv";
+        flagTexture = "\vn\objects_f_vietnam\flags\data\vn_flag_01_pl_co.paa";
+        name = "VN PL";
+        file = "VN_Riv_PL";
+        description = $STR_A3AP_setupFactionsTab_pl;
+    };
+
     class VN_Civ : VN_Base
     {
         side = "Civ";
