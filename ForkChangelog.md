@@ -20,7 +20,7 @@
 - (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
 - (3CB Factions) Takistan civilians
 - (3CB Factions) TKM rebel faction
-- (3CB Factions) Tribal Fighters, Syndikat rival factions
+- (3CB Factions) Syndikat rival faction
 - (3CB Factions) Arid Civilians faction
 - (Vanilla) NATO Tropical faction 
 - (Vanilla, Aegis) Syndikat, Livonian Looters rebel factions
@@ -29,7 +29,7 @@
 - (SOGPF) MACV, ARVN, PAVN enemy factions
 - (SOGPF) VM, VC rebel factions
 - (SOGPF) Vietnam civilian faction
-- (SOGPF) Pathet Lao, Lao Army rival factions
+- (SOGPF) Pathet Lao rival faction
 
 ### Changes
 - Community Version 3.1 integration

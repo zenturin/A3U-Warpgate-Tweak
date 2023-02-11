@@ -244,6 +244,10 @@
                 <Original>Vietnamese civilians.</Original>
                 <Russian>Вьетнамцы.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_pl">
+                <Original>Pathet Lao.\nPoilitical movement and organization from Laos.</Original>
+                <Russian>Патет Лао.\nПолитическое движение и организация из Лаоса.</Russian>
+            </Key>
         </Container>
         <Container name="magRepack">
             <Key ID="STR_magRepack_init">
