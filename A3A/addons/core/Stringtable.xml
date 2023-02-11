@@ -2673,16 +2673,16 @@
         <Polish>Wygrana</Polish>
       </Key>
       <Key ID="STR_antistasi_journal_entry_text_Default_2">
-        <Original>You will win the game when most of the population supports Faction and you have conquered all the Airbases.</Original>
-        <French>Vous gagnerez la partie lorsque la plupart de la population soutiendra la faction et que vous aurez conquis toutes les bases aériennes.</French>
-        <German>Du erringst den Sieg, wenn der Großteil der Zivilbevölkerung deine Fraktion unterstützt und sich alle Flugplätze in deiner Hand befinden.</German>
-        <Czech>Vyhrajete hru, když většina populace podporuje frakci a dobyli jste všechny letecké základny.</Czech>
-        <Chinesesimp>当绝大多数民众支持我方阵营, 并且我方已占领所有空军基地时, 你将赢得游戏胜利。</Chinesesimp>
-        <Korean>모든 공항 점거와 대다수 인구의 지지를 받으면 게임에서 승리합니다.</Korean>
-        <Russian>Вы выиграете игру, когда большая часть населения поддержит фракцию и вы захватите все авиабазы.</Russian>
-        <Italian>Vincerai una volta che la maggior parte della popolazione supporta la tua Fazione e quando avrai conquistato tutte le basi aeree</Italian>
-        <Spanish>Conseguiras la victoria si la mayoria de la población apoya tu facción y si conquistas todas las bases aéreas.</Spanish>
-        <Polish>Wygrasz grę, gdy większość populacji mapy poprze rebelie i podbijesz wszystkie Bazy Lotnicze wroga.</Polish>
+        <Original>You will win the game when most of the population supports your faction and you have conquered all the airbases and military bases.</Original>
+        <French>Vous gagnerez la partie lorsque la majorité de la population soutiendra votre faction et que vous aurez conquis toutes les bases aériennes et militaires.</French>
+        <German>Sie werden das Spiel gewinnen, wenn der Großteil der Bevölkerung Ihre Fraktion unterstützt und Sie alle Luftwaffenstützpunkte und Militärbasen erobert haben.</German>
+        <Czech>Hru vyhrajete, když většina obyvatel podpoří vaši frakci a dobyli jste všechny letecké a vojenské základny.</Czech>
+        <Chinesesimp>当大多数人支持您的派系并且您征服了所有空军基地和军事基地时，您将赢得比赛。</Chinesesimp>
+        <Korean>대부분의 인구가 귀하의 파벌을 지원하고 모든 공군 기지와 군사 기지를 정복하면 게임에서 승리하게 됩니다.</Korean>
+        <Russian>Вы выиграете игру, когда большая часть населения будет поддерживать вашу фракцию и вы захватите все авиабазы и военные базы.</Russian>
+        <Italian>Vincerai la partita quando la maggior parte della popolazione sosterrà la tua fazione e avrai conquistato tutte le basi aeree e militari.</Italian>
+        <Spanish>Ganarás el juego cuando la mayoría de la población apoye a tu facción y hayas conquistado todas las bases aéreas y bases militares.</Spanish>
+        <Polish>Wygrasz grę, gdy większość populacji poprze twoją frakcję i podbijesz wszystkie lotniska i bazy wojskowe.</Polish>
       </Key>
       <Key ID="STR_antistasi_journal_entry_header_Default_3">
         <Original>Lose</Original>
