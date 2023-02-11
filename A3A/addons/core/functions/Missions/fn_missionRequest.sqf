@@ -276,7 +276,11 @@ switch (_type) do {
 					[[_site],"A3A_fnc_RES_Refugees"] remoteExec ["A3A_fnc_scheduler",2];
 				};
 				default {
-					[[_site],"A3A_fnc_RES_Prisoners"] remoteExec ["A3A_fnc_scheduler",2]
+					if ([_site] call _checkRivalsTaskPossibility) then {
+						[[_site],"A3A_fnc_RIV_RES_Prisoners"] remoteExec ["A3A_fnc_scheduler",2];
+					} else {
+						[[_site],"A3A_fnc_RES_Prisoners"] remoteExec ["A3A_fnc_scheduler",2];
+					};
 				};
 			};
 			if (_site in citiesX) then {[[_site],"A3A_fnc_RES_Refugees"] remoteExec ["A3A_fnc_scheduler",2]} else {[[_site],"A3A_fnc_RES_Prisoners"] remoteExec ["A3A_fnc_scheduler",2]};
