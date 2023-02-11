@@ -75,6 +75,7 @@
 - Increased chance to learn about Arms Dealer from interrogations and intel searches from 15% to 20%
 - Increased probability of rival event happening on 5% on each activity level
 - Slightly reduced default accuracy cap from 0.5 to 0.45
+- Medics will fully heal on revive, non-medics will heal to 75% on revive
 - (Vanilla, Aegis) 4WD jeep will be added into civilian vehicles pool if Apex DLC is turned on
 - (RHS) Fixed wrong classnames for AFRF surrender and equipment boxes
 - (3CB Factions) Switched LDF to Occupants factions section

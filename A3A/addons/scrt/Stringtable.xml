@@ -5197,6 +5197,14 @@
                 <Original>A group of POWs is awaiting for execution in %1. We must rescue them before %2. Bring them to HQ.</Original>
                 <Russian>Группа наших пленников ожидает казни в %1. Мы должны спасти их до %2. Привезите их в штаб. </Russian>
             </Key>
+            <Key ID="STR_A3A_Missions_RIV_RES_Prisoners_task_header">
+                <Original>Rescue Prisoners</Original>
+                <Russian>Спасите пленников</Russian>
+            </Key>
+            <Key ID="STR_A3A_Missions_RIV_RES_Prisoners_task_desc">
+                <Original>%1 are about to execute our comrades in %2. We must rescue them before %3. Bring them to HQ.</Original>
+                <Russian>%1 собираются казнить наших товарищей в %2. Мы должны спасти их до %3. Привезите их в штаб.</Russian>
+            </Key>
             <Key ID="STR_A3A_Missions_RES_Refugees_task_header_1">
                 <Original>Rescue %1 Supportees</Original>
                 <Russian>Спасите сторонников %1</Russian>
@@ -5306,7 +5314,7 @@
         </Container>
         <Container name="common_actions">
             <Key ID="STR_antistasi_actions_crk_used">
-                <Original>You have successfully used Combat Readiness Recovery Kit.</Original>
+                <Original>You successfully used Combat Readiness Recovery Kit.</Original>
                 <Russian>Вы успешно использовали набор восстановления боеспособности.</Russian>
             </Key>
             <Key ID="STR_antistasi_actions_crk_use">

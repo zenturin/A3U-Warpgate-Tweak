@@ -7,13 +7,6 @@ if (!isServer and hasInterface) exitWith{};
 
 Info_1("Salvage Ambushed Truck Init, marker: %1", _markerX);
 
-//задача - спасти грузовик с едой и довезти грузовик до пункта назначения (город)
-
-//грузовик оставляет после себя паллету
-//тачка иногда лопается
-//тачка может появиться рядом с аутпостом
-
-
 private _vehicles = [];
 private _groups = [];
 private _others = [];
@@ -331,7 +324,7 @@ if (dateToNumber date < _dateLimitNum) then {
 	(units _truckPatrolGroup) apply {
 		[_x,""] call A3A_fnc_NATOinit;
 	};
-	_nul = [leader _truckPatrolGroup, _barricadeMrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
+	_nul = [leader _truckPatrolGroup, _truckMrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 	_groups pushBack _truckPatrolGroup;
 };
 

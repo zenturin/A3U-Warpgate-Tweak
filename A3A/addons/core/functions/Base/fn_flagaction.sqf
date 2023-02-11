@@ -75,6 +75,24 @@ switch _typeX do
                     name _flag
                 ], A3A_fnc_actionRevive,nil,6,true,true,"","!(_this getVariable [""helping"",false]) and (isNull attachedTo _target)",4];
             _flag setUserActionText [_actionX,format [(localize "STR_antistasi_actions_revive"), name _flag],"<t size='2'><img image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa'/></t>"];
+
+            if (reviveKitsEnabled) then {
+                [
+                    _flag,
+                    format [localize "STR_antistasi_actions_crk_use", name _flag],
+                    "a3\missions_f_exp\data\img\lobby\ui_campaign_lobby_background_tablet_button_revive02_ca.paa",
+                    "a3\missions_f_exp\data\img\lobby\ui_campaign_lobby_background_tablet_button_revive02_ca.paa",
+                    "'A3AP_SelfReviveKit' in (backpackItems player) && _this distance _target < 4 && (isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (isNull attachedTo _target) and !(_this getVariable [""helping"",false]);",
+                    "'A3AP_SelfReviveKit' in (backpackItems player) && _this distance _target < 4 && (isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (isNull attachedTo _target) and !(_this getVariable [""helping"",false]);",
+                    {},
+                    {},
+                    {
+                        params ["_target", "_caller", "_actionId", "_arguments"];
+                        [_caller, _target] call SCRT_fnc_common_revive;
+                        [_target, _actionId] call BIS_fnc_holdActionRemove;
+                    }, {}, [], 2, 0, false, false
+                ] call BIS_fnc_holdActionAdd;
+            };
         };
     };
     case "heal1":
