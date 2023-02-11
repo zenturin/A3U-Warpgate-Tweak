@@ -33,6 +33,9 @@
 ["handGrenadeAmmo", []] call _fnc_saveToTemplate;
 ["mortarAmmo", []] call _fnc_saveToTemplate;
 
+["minefieldAT", ["vn_mine_tripwire_arty"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["vn_mine_punji_02"]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

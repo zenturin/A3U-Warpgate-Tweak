@@ -92,6 +92,9 @@ if (_hasWs) then {
     ["Opf_O_S_Offroad_01_F", ["HideDoor1",1,"HideDoor2",1,"HideDoor3",1,"HideBackpacks",0.3,"HideConstruction",0.3,"hidePolice",1,"HideServices",1,"BeaconsStart",0,"BeaconsServicesStart",0]]
 ]] call _fnc_saveToTemplate;
 
+["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

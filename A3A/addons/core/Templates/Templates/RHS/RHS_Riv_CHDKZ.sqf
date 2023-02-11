@@ -49,13 +49,24 @@
 ["vehiclesRivalsHelis", ["rhsgref_ins_Mi8amt"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
-["staticLowWeapons", ["rhsgref_ins_DSHKM_Mini_TriPod", "rhsgref_ins_AGS30_TriPod"]] call _fnc_saveToTemplate;
+["staticLowWeapons", [
+	"rhsgref_ins_DSHKM_Mini_TriPod", 
+	"rhsgref_ins_NSV_TriPod", 
+	"rhsgref_ins_DSHKM_Mini_TriPod", 
+	"rhsgref_ins_NSV_TriPod", 
+	"rhsgref_ins_AGS30_TriPod", 
+	"rhsgref_ins_SPG9M", 
+	"rhsgref_ins_SPG9"
+]] call _fnc_saveToTemplate;
 ["staticMortars", ["rhsgref_ins_2b14"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 
 ["handGrenadeAmmo", ["rhs_ammo_rgd5", "rhs_ammo_f1"]] call _fnc_saveToTemplate;
 ["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
+
+["minefieldAT", ["rhs_mine_tm62m"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["rhs_mine_pmn2"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
