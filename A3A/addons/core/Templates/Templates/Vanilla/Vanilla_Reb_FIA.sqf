@@ -110,6 +110,14 @@ private _initialRebelEquipment = [
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
 ];
 
+if (_hasLawsOfWar) then {
+    _initialRebelEquipment append [
+        "V_Pocketed_olive_F", 
+        "V_Pocketed_coyote_F", 
+        "V_Pocketed_black_F"
+    ];
+};
+
 private _civilianBackpacks =  [];
 if (_hasLawsOfWar) then {
     _civilianBackpacks append [

@@ -109,9 +109,19 @@ private _initialRebelEquipment = [
     "MiniGrenade","SmokeShell",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk",
-    "V_TacChestrig_grn_F","V_TacChestrig_oli_F","V_TacChestrig_cbr_F",
+    "V_BandollierB_blk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_khk","V_BandollierB_oli",
     "Binocular", "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
 ];
+
+if (_hasLawsOfWar) then {
+    _initialRebelEquipment append [
+        "V_Pocketed_olive_F", 
+        "V_Pocketed_coyote_F", 
+        "V_Pocketed_black_F", 
+        "V_Pocketed_hunter_F", 
+        "V_Pocketed_wdl_F"
+    ];
+};
 
 private _civilianBackpacks =  [];
 
@@ -162,10 +172,7 @@ private _rebUniforms = [
     "U_BG_Guerilla2_1",
     "U_IG_Guerilla2_2",
     "U_IG_Guerilla2_3",
-    "U_I_C_Soldier_Para_5_F",
-    "U_I_C_Soldier_Para_3_F",
-    "U_I_C_Soldier_Para_2_F",
-    "U_I_C_Soldier_Camo_F"
+    "U_I_G_resistanceLeader_F"
 ];
 
 private _dlcUniforms = [];
