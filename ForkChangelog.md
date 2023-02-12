@@ -16,7 +16,6 @@
 - Ability to possess any near friendly AI squadmate while laying incapacitated to help your original body (press T while being incapacitated, could be turned off via params menu)
 - Rivals mission subvariants for Kill the Traitor and Rescue Prisoners mission types
 - New mission type - Salvage Ambushed Convoy
-- 1 second parameter for near instant automatic save selection
 - (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
 - (3CB Factions) Takistan civilians
 - (3CB Factions) TKM rebel faction

@@ -4,8 +4,8 @@ class Params
     class autoLoadLastGame
     {
         title = "Automatically load last valid save after delay";
-        values[] = {-1, 1, 60, 120, 180, 300, 600};
-        texts[] = {"No automatic load","1 second","1min","2min","3min","5min","10min"};
+        values[] = {-1, 60, 120, 180, 300, 600};
+        texts[] = {"No automatic load","1min","2min","3min","5min","10min"};
         default = -1;
     };
     class LogLevel
