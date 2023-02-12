@@ -73,11 +73,14 @@ $keyName = switch ($WorkshopID) {
     "2913672477" {"Antistasi-Plus-Dev"}
     Default {"a3a-plus"}
 }
+
+$keyName = "$keyName-$version"
+
 Push-Location
 Set-Location "$PSScriptRoot\..\..\build"
 
 .$PSScriptRoot\..\DSSignFile\DSCreateKey "$keyName"
-Copy-Item "$keyName-$version.bikey" "$addonOutLocation\Keys\$keyName-$version.bikey" -Force
+Copy-Item "$keyName.bikey" "$addonOutLocation\Keys\$keyName.bikey" -Force
 
 "`nSign PBO files..."
 Push-Location
@@ -85,11 +88,11 @@ Set-Location $addonsOutLocation
 $pboFiles = Get-ChildItem -Path $addonsOutLocation -Name "*.pbo"
 forEach ($file in $pboFiles) {
     "Signing file $file ..."
-    .$PSScriptRoot\..\DSSignFile\DSSignFile "..\..\$keyName-$version.biprivatekey" $file
+    .$PSScriptRoot\..\DSSignFile\DSSignFile "..\..\$keyName.biprivatekey" $file
 }
 
-Remove-Item "..\..\$keyName-$version.biprivatekey"
-Remove-Item "..\..\$keyName-$version.bikey"
+Remove-Item "..\..\$keyName.biprivatekey"
+Remove-Item "..\..\$keyName.bikey"
 
 Pop-Location
 
