@@ -92,8 +92,7 @@ private _civUniforms = [
     "U_C_Scientist",
     "U_C_Uniform_Scientist_02_formal_F",
     "U_C_Uniform_Scientist_02_F",
-    "U_C_Uniform_Scientist_01_F",
-    "UK3CB_CHC_C_U_PRIEST_01"
+    "U_C_Uniform_Scientist_01_F"
 ];
 
 private _pressUniforms = [
