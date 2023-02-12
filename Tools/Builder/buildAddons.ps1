@@ -69,10 +69,9 @@ Pop-Location
 
 "`nCreate key..."
 $keyName = switch ($WorkshopID) {
-    "2867537125" {"antistasi"}
-    "2729074499" {"antistasi_dev1"}
-    "2873632521" {"antistasi_dev2"}
-    Default {"a3a"}
+    "2912941775" {"Antistasi-Plus"}
+    "2913672477" {"Antistasi-Plus-Dev"}
+    Default {"a3a-plus"}
 }
 Push-Location
 Set-Location "$PSScriptRoot\..\..\build"
