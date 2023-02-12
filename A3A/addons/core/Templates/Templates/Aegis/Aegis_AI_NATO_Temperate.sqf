@@ -719,8 +719,6 @@ _policeLoadoutData set ["helmets", _helmets];
 _policeLoadoutData set ["SMGs", [
 ["sgun_M4_F", "", "acc_flashlight_pistol", "", ["8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Slug"], [], ""],
 ["sgun_M4_F", "", "acc_flashlight_pistol", "", ["8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Slug"], [], ""],
-["sgun_M4_F", "", "acc_flashlight_pistol", "optic_Aco_smg", ["8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Slug"], [], ""],
-["sgun_M4_F", "", "acc_flashlight_pistol", "optic_Holosight_blk_F", ["8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Slug"], [], ""],
 ["SMG_04_blk_F", "", "", "", ["20Rnd_460x30_Mag_F"], [], ""],
 ["SMG_04_blk_F", "", "", "", ["20Rnd_460x30_Mag_F"], [], ""],
 ["SMG_04_blk_F", "", "", "optic_Aco_smg", ["20Rnd_460x30_Mag_F"], [], ""],
