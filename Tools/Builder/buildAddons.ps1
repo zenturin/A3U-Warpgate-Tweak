@@ -77,7 +77,7 @@ Push-Location
 Set-Location "$PSScriptRoot\..\..\build"
 
 .$PSScriptRoot\..\DSSignFile\DSCreateKey "$keyName"
-Copy-Item "$keyName.bikey" "$addonOutLocation\Keys\$keyName.bikey" -Force
+Copy-Item "$keyName-$version.bikey" "$addonOutLocation\Keys\$keyName-$version.bikey" -Force
 
 "`nSign PBO files..."
 Push-Location
@@ -85,11 +85,11 @@ Set-Location $addonsOutLocation
 $pboFiles = Get-ChildItem -Path $addonsOutLocation -Name "*.pbo"
 forEach ($file in $pboFiles) {
     "Signing file $file ..."
-    .$PSScriptRoot\..\DSSignFile\DSSignFile "..\..\$keyName.biprivatekey" $file
+    .$PSScriptRoot\..\DSSignFile\DSSignFile "..\..\$keyName-$version.biprivatekey" $file
 }
 
-Remove-Item "..\..\$keyName.biprivatekey"
-Remove-Item "..\..\$keyName.bikey"
+Remove-Item "..\..\$keyName-$version.biprivatekey"
+Remove-Item "..\..\$keyName-$version.bikey"
 
 Pop-Location
 
