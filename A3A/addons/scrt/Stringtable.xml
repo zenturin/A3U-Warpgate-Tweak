@@ -144,6 +144,10 @@
                 <Original>Livonian Looters (LL).\nEastern European militants.</Original>
                 <Russian>Ливонские Лутеры (LL).\nВосточноевропейское ополчение.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_borsheviks">
+                <Original>Borsheviks.\nDon't even ask what is it.</Original>
+                <Russian>Борщевики.\nДаже не спрашивайте что это.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_ws_tura">
                 <Original>Tura.\nOne of the many militarized tribes of the Sefrawi Desert, almost like famous Turanic Raiders.</Original>
                 <Russian>Тура.\nОдно из многих военизированных племен пустыни Сефрави, почти как знаменитые туранские рейдеры.</Russian>

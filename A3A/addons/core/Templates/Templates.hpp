@@ -279,6 +279,16 @@ class Templates
         description = $STR_A3AP_setupFactionsTab_ll;
     };
 
+    class Aegis_Borsheviks : Aegis_Base
+    {
+        side = "Reb";
+        flagTexture = "A3_Opf\Data_F_Opf\Flags\flag_ChDKZ_CO.paa";
+        name = "Aegis Borsheviks";
+        file = "Aegis_Reb_Borsheviks";
+        climate[] = {"temperate"};
+        description = $STR_A3AP_setupFactionsTab_borsheviks;
+    };
+
     class Aegis_CHDKZ : Aegis_Base
     {
         side = "Riv";
