@@ -20,7 +20,9 @@
 		[west, _myVehicle, FactionGet(occ,"crew")] call A3A_fnc_createVehicleCrew;
 */
 
-params ["_group", "_vehicle", "_unitType", ["_isHeli", false]];
+params ["_group", "_vehicle", "_unitType"];
+
+private _isHeli = _vehicle isKindOf "Helicopter";
 
 private _newGroup = false;
 if (_group isEqualType sideUnknown) then {
