@@ -71,7 +71,7 @@ private _militiaAPCs = if (_hasTanks) then {["I_LT_01_cannon_F"]} else {[]};
 ["vehiclesMilitiaAPCs", _militiaAPCs] call _fnc_saveToTemplate;
 
 private _policeVehs = if (_hasContact) then {
-    ["Police_I_Altis_Offroad_01_police_F", "Police_I_Altis_Offroad_01_comms_F", "Police_I_Altis_Offroad_01_covered_F"]
+    ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
 } else {
     ["B_GEN_Offroad_01_gen_F"]
 };
@@ -486,7 +486,6 @@ private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _policeLoadoutData set ["uniforms", ["U_C_Uniform_Formal_01_blue_F"]];
 _policeLoadoutData set ["vests", ["V_BandollierB_blk"]];
 _policeLoadoutData set ["helmets", ["H_Beret_blk_POLICE"]];
-
 _policeLoadoutData set ["SMGs", [
 ["sgun_M4_F", "", "acc_flashlight_pistol", "", ["8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Pellets", "8Rnd_12Gauge_Slug"], [], ""],
 ["SMG_03_TR_black", "", "acc_flashlight", "", [], [], ""],

@@ -167,7 +167,7 @@ class Templates
 
     class Aegis_Base : Base
     {
-        requiredAddons[] = {"Weapons_1_F_lxWS","A3_Aegis_Armor_F_Aegis_APC_Tracked_02", "A3_Atlas_Armor_F_Atlas_APC_Tracked_02", "A3_Opf_Armor_F_Opf_APC_Tracked_02", "A3_Police_Soft_F_Police_Offroad_01"};
+        requiredAddons[] = {"Weapons_1_F_lxWS","A3_Aegis_Armor_F_Aegis_APC_Tracked_02", "A3_Atlas_Armor_F_Atlas_APC_Tracked_02", "A3_Opf_Armor_F_Opf_APC_Tracked_02"};
         logo = "A3_Aegis\data_f_aegis\logos\arma3_aegis_logo_ca.paa";
         basepath = QPATHTOFOLDER(Templates\Templates\Aegis); //the path to the template folder
         priority = 20;

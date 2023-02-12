@@ -90,7 +90,14 @@ private _uavsPortable = if (_hasWs) then {["Aegis_O_R_UAV_02_ard_lxWS", "O_R_UAV
 ["vehiclesMilitiaTrucks", ["O_R_Truck_02_ard_F", "O_R_Truck_02_transport_ard_F"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["O_G_Offroad_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaAPCs", ["O_R_APC_Wheeled_04_cannon_ard_F"]] call _fnc_saveToTemplate;
-["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] call _fnc_saveToTemplate;
+
+private _policeVehs = if (_hasContact) then {
+    ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
+} else {
+    ["B_GEN_Offroad_01_gen_F"]
+};
+
+["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
 ["staticMGs", ["O_R_HMG_01_high_ard_F"]] call _fnc_saveToTemplate;
 ["staticATs", ["O_R_Static_AT_ard_F"]] call _fnc_saveToTemplate;
@@ -533,16 +540,14 @@ _militaryLoadoutData set ["sidearms", ["hgun_Rook40_F"]];
 ///////////////////////////////
 //    Police Loadout Data    //
 ///////////////////////////////
-
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _policeLoadoutData set ["uniforms", ["U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"]];
-_policeLoadoutData set ["vests", ["V_TacVest_blk_POLICE"]];
-private _helmets = ["H_Cap_police"];
+_policeLoadoutData set ["vests", ["V_TacVest_gen_F"]];
+private _helmets = ["H_MilCap_gen_F", "H_Beret_gen_F"];
 if (_hasLawsOfWar) then {
     _helmets pushBack "H_PASGT_basic_blue_F";
 };
 _policeLoadoutData set ["helmets", _helmets];
-
 _policeLoadoutData set ["policeWeapons", [
 ["sgun_Mp153_black_F", "", "", "", ["4Rnd_12Gauge_Pellets", "4Rnd_12Gauge_Pellets", "4Rnd_12Gauge_Slug"], [], ""],
 ["arifle_AKSM_F", "", "", "", ["30Rnd_545x39_Black_Mag_F", "30Rnd_545x39_Black_Mag_F", "30Rnd_545x39_Mag_Tracer_Green_F"], [], ""],

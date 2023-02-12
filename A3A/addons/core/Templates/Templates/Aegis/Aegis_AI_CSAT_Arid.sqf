@@ -4,6 +4,7 @@ private _hasTanks = "tank" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
+private _hasContact = "enoch" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
@@ -86,7 +87,13 @@ private _uavsPortable = if (_hasWs) then {["O_UAV_02_lxWS", "O_UAV_01_F"]} else 
 ["vehiclesMilitiaCars", ["O_MRAP_02_F"]] call _fnc_saveToTemplate;
 private _militiaAPCs = ["O_APC_Wheeled_02_rcws_v2_F"];
 
-["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] call _fnc_saveToTemplate;
+private _policeVehs = if (_hasContact) then {
+    ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
+} else {
+    ["B_GEN_Offroad_01_gen_F"]
+};
+
+["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
 ["staticMGs", ["O_HMG_01_high_F", "O_HMG_01_high_F", "O_HMG_01_high_F", "O_GMG_01_high_F"]] call _fnc_saveToTemplate;
 ["staticATs", ["O_static_AT_F"]] call _fnc_saveToTemplate;
@@ -530,8 +537,12 @@ _militaryLoadoutData set ["sidearms", ["hgun_Rook40_F"]];
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _policeLoadoutData set ["uniforms", ["U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"]];
-_policeLoadoutData set ["vests", ["V_TacVest_blk_POLICE"]];
-_policeLoadoutData set ["helmets", ["H_Cap_police"]];
+_policeLoadoutData set ["vests", ["V_TacVest_gen_F"]];
+private _helmets = ["H_MilCap_gen_F", "H_Beret_gen_F"];
+if (_hasLawsOfWar) then {
+    _helmets pushBack "H_PASGT_basic_blue_F";
+};
+_policeLoadoutData set ["helmets", _helmets];
 
 _policeLoadoutData set ["SMGs", [
 ["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco", [], [], ""],
