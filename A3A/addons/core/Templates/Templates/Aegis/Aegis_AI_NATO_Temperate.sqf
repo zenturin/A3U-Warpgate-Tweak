@@ -84,10 +84,10 @@ private _policeVehs = if (_hasContact) then {
 
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
-["staticMGs", ["B_HMG_02_high_F", "B_HMG_01_high_F"]] call _fnc_saveToTemplate;
-["staticATs", ["B_static_AT_F"]] call _fnc_saveToTemplate;
-["staticAAs", ["B_static_AA_F"]] call _fnc_saveToTemplate;
-["staticMortars", ["B_Mortar_01_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["B_W_HMG_02_high_F", "B_W_HMG_02_high_F", "B_W_HMG_02_high_F", "B_W_HMG_01_high_F"]] call _fnc_saveToTemplate;
+["staticATs", ["B_W_Static_AT_F"]] call _fnc_saveToTemplate;
+["staticAAs", ["B_W_Static_AA_F"]] call _fnc_saveToTemplate;
+["staticMortars", ["B_W_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 
 
