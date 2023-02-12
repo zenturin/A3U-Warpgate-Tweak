@@ -81,8 +81,16 @@ class Templates
     {
         name = "A3 NATO Temperate";
         file = "Vanilla_AI_NATO_Temperate";
-        climate[] = {"temperate","tropical"};
+        climate[] = {"temperate"};
     };
+
+    class Vanilla_NATO_Tropical : Vanilla_NATO_Arid
+    {
+        name = "A3 NATO Tropical";
+        file = "Vanilla_AI_NATO_Tropical";
+        climate[] = {"tropical"};
+    };
+
 
     class Vanilla_AAF : Vanilla_Base
     {
