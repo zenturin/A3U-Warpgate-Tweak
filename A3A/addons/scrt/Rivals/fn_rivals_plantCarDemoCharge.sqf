@@ -29,8 +29,8 @@ _charge attachTo [_vehicleToCharge, [0,0,-0.8]];
 [
     _charge,
     (localize "STR_antistasi_actions_car_bomb_disarm"),
-    "\Orange\Addons\ui_f_orange\Data\CfgVehicleIcons\iconExplosiveUXO_ca.paa",
-    "\Orange\Addons\ui_f_orange\Data\CfgVehicleIcons\iconExplosiveUXO_ca.paa",
+    "a3\ui_f\data\igui\cfg\holdactions\holdaction_unbind_ca.paa",
+    "a3\ui_f\data\igui\cfg\holdactions\holdaction_unbind_ca.paa",
     "(_this distance _target < 3) and (_this getUnitTrait 'engineer')",
     "_caller distance _target < 3",
     {},

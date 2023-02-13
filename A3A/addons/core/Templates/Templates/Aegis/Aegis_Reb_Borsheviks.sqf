@@ -7,7 +7,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "LL"] call _fnc_saveToTemplate;
+["name", "Borshevik"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_ChDKZ_F"] call _fnc_saveToTemplate;
 ["flagTexture", "A3_Opf\Data_F_Opf\Flags\flag_ChDKZ_CO.paa"] call _fnc_saveToTemplate;
