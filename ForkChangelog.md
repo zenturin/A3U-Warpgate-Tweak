@@ -58,6 +58,7 @@
 - Fixed some missing strings, typos, localization errors
 - Fixed non-working paradrop and loot helicopters if napalm was disabled
 - Fixed fast travel invincibility exploit
+- Fixed defuse icons
 - Fixed inability to assign attacks on Rivals hideouts and cells if there are no unknown locations
 - Military Administration capture/destruction will increase support in it's city
 - Post-effect will be applied while laying in wounded state
