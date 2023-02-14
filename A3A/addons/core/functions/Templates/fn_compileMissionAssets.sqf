@@ -86,7 +86,7 @@ Info("Identifying vehicle types");
 setVar("vehiclesPolice", OccAndInv("vehiclesPolice"));
 setVar("vehiclesAttack", OccAndInv("vehiclesAttack"));
 setVar("vehiclesAmmoTrucks", OccAndInv("vehiclesAmmoTrucks"));
-setVar("vehiclesLightAPCs", OccAndInv("vehiclesLightAPCs"));
+setVar("vehiclesLightAPCs", OccAndInv("vehiclesLightAPCs") + OccAndInv("vehiclesMilitiaAPCs") + OccAndInv("vehiclesAirborne"));
 setVar("vehiclesMedical", OccAndInv("vehiclesMedical") + ((A3A_faction_civ get "vehiclesCivMedical") select {_x isEqualType ""}));
 setVar("vehiclesAPCs", OccAndInv("vehiclesAPCs") + Riv("vehiclesRivalsAPCs") + ("APC" call _fnc_extractMarketClasses));
 setVar("vehiclesIFVs", OccAndInv("vehiclesIFVs") );

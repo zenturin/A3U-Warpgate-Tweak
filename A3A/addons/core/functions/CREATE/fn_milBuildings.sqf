@@ -22,6 +22,7 @@ private _helicopterTypes = [];
 switch (true) do {
     case (_markerX in milbases): {
         _helicopterTypes append (_faction get "vehiclesHelisTransport");
+        _helicopterTypes append (_faction get "vehiclesHelisLight");
         _helicopterTypes append (_faction get "vehiclesHelisLightAttack");
     };
     case (_markerX in airportsX): {
@@ -38,6 +39,10 @@ private _spawnParameter = [_markerX, "Heli"] call A3A_fnc_findSpawnPosition;
 private _count = 1 + round (random 3); //Change these numbers as you want, first number is minimum, max is first plus second number
 while {_spawnParameter isEqualType [] && {_count > 0}} do {
     if (_helicopterTypes isEqualTo []) exitWith {}; //no helis to pick from
+    _helicopterTypes = _helicopterTypes select {[_x] call A3A_fnc_vehAvailable}; 
+    if (_helicopterTypes isEqualTo []) then {
+        _helicopterTypes = _faction get "vehiclesHelisLight";
+    };
     private _typeVehX = selectRandom _helicopterTypes;
     private _veh = createVehicle [_typeVehX, (_spawnParameter select 0), [],0, "CAN_COLLIDE"];
     _veh setDir (_spawnParameter select 1);
