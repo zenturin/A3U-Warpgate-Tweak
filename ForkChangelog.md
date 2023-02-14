@@ -59,6 +59,9 @@
 - Fixed non-working paradrop and loot helicopters if napalm was disabled
 - Fixed fast travel invincibility exploit
 - Fixed defuse icons
+- Fixed logic pitfall which led to no intel until Arms Dealer quest
+- Fixed non-restorable undercover state after crate carry
+- Fixed balance cost and threat assesment for light APCs, militia APCs and airborne vehicles
 - Fixed inability to assign attacks on Rivals hideouts and cells if there are no unknown locations
 - Military Administration capture/destruction will increase support in it's city
 - Post-effect will be applied while laying in wounded state
@@ -72,9 +75,9 @@
 - Reduced probability of Mechanized Airborne QRF
 - Rivals random event cooldown will depend on Rivals Difficulty parameter and current level of rivals activity (more active -> less cooldown)
 - Improved Mechanized Airborne QRF attacking behaviour
-- Increased chance to learn about Arms Dealer from interrogations and intel searches from 15% to 20%
+- Increased chance to learn about Arms Dealer via interrogations and intel searches from 15% to 20%
 - Increased probability of rival event happening on 5% on each activity level
-- Slightly reduced default accuracy cap from 0.5 to 0.45
+- Increased base delay for air superiority fighter (300->600 seconds) and CAS support (300->450 seconds) to give rebels more room for air/heavy vehicles usage
 - Medics will fully heal on revive, non-medics will heal to 75% on revive
 - (Vanilla, Aegis) 4WD jeep will be added into civilian vehicles pool if Apex DLC is turned on
 - (RHS) Fixed wrong classnames for AFRF surrender and equipment boxes

@@ -4679,10 +4679,6 @@
                 <Original>Our communications has been compromised by unknown signal across all the %1, it's everywhere now. We deciphered the signal's content, it contains a message to us. It's a unknown faction manifesto - they're calling themselves &lt;t color='#800000'&gt;%2&lt;/t&gt;, they're well armed and prepared, and their leader, %3, has declared war on us.</Original>
                 <Russian>Наша связь была скомпрометирована неизвестным сигналом по всему %1. Мы расшифровали содержание сигнала, в нем есть сообщение для нас. Это манифест неизвестной фракции - они называют себя &lt;t color='#800000'&gt;%2&lt;/t&gt;, они хорошо вооружены и подготовлены, а их лидер, %3, объявил нам войну.</Russian>
             </Key>
-            <Key ID="STR_trader_task_hint_outdated">
-                <Original>Unfortunately, enemy intel is mostly outdated. Nothing useful was found.</Original>
-                <Russian>Донесения, которые мы добыли, к сожалению, устарели.</Russian>
-            </Key>
             <Key ID="STR_trader_task_hint_description">
                 <Original>Enemy's latest report contains information about arms dealer who has arrived in our restless country. We need to find him and establish contacts between black market and the resistance.</Original>
                 <Russian>В свежих донесениях противника содержится информация о том, что в зону конфликта прибыл  торговец оружием. Необходимо наладить контакт между ним и сопротивлением.</Russian>
