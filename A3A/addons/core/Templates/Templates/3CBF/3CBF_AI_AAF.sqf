@@ -110,6 +110,9 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ]] call _fnc_saveToTemplate;
 ["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE"]] call _fnc_saveToTemplate;
 
+["insignia", ["AAF_1stRegiment", "", ""]] call _fnc_saveToTemplate;
+["milInsignia", ["AAF_3rdRegiment", "", ""]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

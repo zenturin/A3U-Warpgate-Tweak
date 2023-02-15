@@ -183,6 +183,9 @@ if (_hasWs) then {
 ["milFaces", _faces] call _fnc_saveToTemplate;
 ["milVoices", ["Male01PER","Male02PER","Male03PER"]] call _fnc_saveToTemplate;
 
+["insignia", ["GryffinRegiment", "", ""]] call _fnc_saveToTemplate;
+["milInsignia", ["CSAT_ScimitarRegiment", "", ""]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

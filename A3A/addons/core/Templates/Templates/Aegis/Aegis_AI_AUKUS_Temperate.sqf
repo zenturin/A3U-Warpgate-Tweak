@@ -142,6 +142,9 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 ["sfVoices", ["Male01ENG","Male02ENG","Male03ENG","Male04ENG","Male05ENG","Male06ENG","Male07ENG","Male08ENG","Male09ENG","Male10ENG","Male11ENG","Male12ENG"]] call _fnc_saveToTemplate;
 
+["insignia", ["NATO_19thBattalion", "", ""]] call _fnc_saveToTemplate;
+["sfInsignia", ["CombatPatrol", "", ""]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

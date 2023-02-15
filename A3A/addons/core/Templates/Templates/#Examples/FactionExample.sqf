@@ -112,6 +112,12 @@
 ["eliteVoices", []] call _fnc_saveToTemplate;
 ["eliteFaces", []] call _fnc_saveToTemplate;
 
+["insignia", []] call _fnc_saveToTemplate;
+["sfInsignia", []] call _fnc_saveToTemplate;
+["milInsignia", []] call _fnc_saveToTemplate;
+["polInsignia", []] call _fnc_saveToTemplate;
+["eliteInsignia", []] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

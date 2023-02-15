@@ -166,6 +166,9 @@ private _policeVehs = if (_hasContact) then {
 	"Mavros"
 ]] call _fnc_saveToTemplate; 
 
+["insignia", ["Spetsnaz454thRegiment", "", ""]] call _fnc_saveToTemplate;
+["sfInsignia", ["Spetsnaz223rdDetachment", "", ""]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
