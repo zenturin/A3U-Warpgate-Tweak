@@ -5144,7 +5144,7 @@
           <Original>Dead or player-controlled units can't be added to garrison.</Original>
           <Russian>Мертвые или контролируемые игроком юниты не могут быть добавлены в гарнизон.</Russian>
       </Key>
-      <Key ID="STR_garrison_fail_no_specific_units">
+      <Key ID="STR_A3A_garrison_fail_no_specific_units">
           <Original>Static crewmen, prisoners, refugees, Petros or unknown units cannot be added to garrison.</Original>
           <Russian>Расчёты стационарных орудий, пленные, беженцы, Петрос или неизвестные юниты не могут быть добавлены в гарнизон.</Russian>
       </Key>
