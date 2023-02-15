@@ -175,6 +175,9 @@ private _chFaces = ["AsianHead_A3_01","AsianHead_A3_02","AsianHead_A3_03","Asian
     "WhiteHead_19", "WhiteHead_20", "WhiteHead_21"
 ]] call _fnc_saveToTemplate;
 
+["insignia", ["CSAT_Patch", "CSAT_BearRegiment", ""]] call _fnc_saveToTemplate;
+["sfInsignia", ["CSAT_DragonRegiment"]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

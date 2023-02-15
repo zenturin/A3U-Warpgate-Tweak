@@ -154,6 +154,9 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 ["sfVoices", ["Male01ENGB", "Male02ENGB", "Male03ENGB", "Male04ENGB", "Male05ENGB"]] call _fnc_saveToTemplate;
 
+["insignia", ["111thID", "", ""]] call _fnc_saveToTemplate;
+["sfInsignia", ["CTRG"]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

@@ -173,6 +173,9 @@ if (_hasWs) then {
 };
 ["faces", _faces] call _fnc_saveToTemplate;
 
+["insignia", ["GryffinRegiment", "", ""]] call _fnc_saveToTemplate;
+["milInsignia", ["CSAT_ScimitarRegiment", "", ""]] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
