@@ -60,7 +60,7 @@ if ((groupID _groupX in ["MineF", "Watch", "Post", "Road"]) or {(isPlayer(leader
 } forEach _unitsX;
 
 if (_earlyEscape) exitWith {
-    [localize "STR_A3A_garrison_header", localize "STR_garrison_fail_dead_units"] call SCRT_fnc_misc_deniedHint;
+    [localize "STR_A3A_garrison_header", localize "STR_A3A_garrison_fail_dead_units"] call SCRT_fnc_misc_deniedHint;
 };
 
 private _bannedTypes = FactionGet(civ, "unitMan") +
@@ -75,7 +75,7 @@ private _bannedTypes = FactionGet(civ, "unitMan") +
     if (_unitType in _bannedTypes) exitWith {_earlyEscape = true};
 } forEach _unitsX;
 if (_earlyEscape) exitWith {
-    [localize "STR_A3A_garrison_header", localize "STR_garrison_fail_no_specific_units"] call SCRT_fnc_misc_deniedHint;
+    [localize "STR_A3A_garrison_header", localize "STR_A3A_garrison_fail_no_specific_units"] call SCRT_fnc_misc_deniedHint;
 };
 
 private _limit = [_nearX] call A3A_fnc_getGarrisonLimit;
@@ -91,16 +91,9 @@ if (_limit != -1) then {
         };
         case (_newGarrisonCount >= _limit): {
             private _unitsToRefundCount = _newGarrisonCount - _limit;
-            private _unitsToRefund = _unitsX select {!isPlayer _x};
-            for "_i" from 0 to (count _unitsX / 2) do { 
-                private _temp = _unitsX select _i; 
-                private _revertIndex = (count _unitsX) - _i - 1; 
-                _unitsX set [_i, _unitsX select _revertIndex]; 
-                _unitsX set [_revertIndex, _temp]; 
-            };
-            _unitsToRefund resize _unitsToRefundCount;
-            _unitsX resize (count _unitsX - _unitsToRefundCount);
-            
+            private _unitsToRefund = _unitsX select [0, _unitsToRefundCount];
+            _unitsX deleteRange [0, _unitsToRefundCount];
+
             private _refundMoney = 0;
             {
                 private _unitType = _x getVariable "unitType";
@@ -138,17 +131,15 @@ if (spawner getVariable _nearX != 2) then {
     _wp setWaypointType "MOVE";
     _groupX setCurrentWaypoint _wp;
     {
-    _x setVariable ["markerX",_nearX,true];
-    _x setVariable ["spawner",nil,true];
-    _x addEventHandler ["killed",
-        {
-        _victim = _this select 0;
-        _markerX = _victim getVariable "markerX";
-        if (!isNil "_markerX") then
-            {
-            if (sidesX getVariable [_markerX,sideUnknown] == teamPlayer) then {
-                [_victim getVariable "unitType",teamPlayer,_markerX,-1] remoteExec ["A3A_fnc_garrisonUpdate",2];
-                _victim setVariable [_markerX,nil,true];
+        _x setVariable ["markerX",_nearX,true];
+        _x setVariable ["spawner",nil,true];
+        _x addEventHandler ["Killed", {
+            _victim = _this select 0;
+            _markerX = _victim getVariable "markerX";
+            if (!isNil "_markerX") then {
+                if (sidesX getVariable [_markerX,sideUnknown] == teamPlayer) then {
+                    [_victim getVariable "unitType",teamPlayer,_markerX,-1] remoteExec ["A3A_fnc_garrisonUpdate",2];
+                    _victim setVariable [_markerX,nil,true];
                 };
             };
         }];
