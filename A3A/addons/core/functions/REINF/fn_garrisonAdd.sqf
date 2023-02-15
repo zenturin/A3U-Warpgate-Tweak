@@ -10,11 +10,6 @@ if (_hr < 1) exitWith {
 };
 
 private _markerX = positionXGarr;
-private _previousGarrison = garrison getVariable [_markerX,[]];
-
-if (count _previousGarrison >= ([_markerX] call A3A_fnc_getGarrisonLimit)) exitWith {
-	[localize "STR_garrison_garrison_header", localize "STR_garrison_error_limit", localize "STR_notifiers_fail_type"] call SCRT_fnc_ui_showDynamicTextMessage;
-};
 
 private _resourcesFIA = server getVariable "resourcesFIA";
 private _costs = server getVariable _unitType;
@@ -46,7 +41,7 @@ if (_limit != -1 && {count _garrison >= _limit}) exitWith {
 
 [-1,-_costs] remoteExec ["A3A_fnc_resourcesFIA",2];
 
-_countX = count _garrison;
+private _countX = count _garrison;
 [_unitType,teamPlayer,_markerX,1] remoteExec ["A3A_fnc_garrisonUpdate",2];
 waitUntil {(_countX < count (garrison getVariable [_markerX, []])) or (sidesX getVariable [_markerX,sideUnknown] != teamPlayer)};
 
