@@ -91,10 +91,8 @@ if (_limit != -1) then {
         };
         case (_newGarrisonCount >= _limit): {
             private _unitsToRefundCount = _newGarrisonCount - _limit;
-            private _unitsToRefund = +_unitsX;
-            reverse _unitsToRefund;
-            _unitsToRefund deleteRange [_unitsToRefundCount, count _unitsX]; 
-            _unitsX deleteRange [(count _unitsX - _unitsToRefundCount), count _unitsX];
+            private _unitsToRefund = _unitsX select [0, _unitsToRefundCount];
+            _unitsX deleteRange [0, _unitsToRefundCount];
 
             private _refundMoney = 0;
             {
