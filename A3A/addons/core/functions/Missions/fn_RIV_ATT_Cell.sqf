@@ -41,7 +41,7 @@ Info_1("Is difficult: %1.", str _isDifficult);
 ///////////////////////////////
 private _cities = ["NameCityCapital","NameCity"] call SCRT_fnc_misc_getWorldPlaces;
 private _isCity  = _cities findIf {(_x select 1) distance2D _positionX <= 250} == 0;
-private _size = 100;
+private _size = 200;
 private _searchIterations = 0;
 
 private _marker1 = createMarkerLocal [format ["%1cellTask1", _marker], _positionX];
@@ -58,7 +58,7 @@ _marker2 setMarkerAlphaLocal 0;
 
 while {true} do {
     if (_isCity && {_size > 500}) exitWith {};
-    if (!_isCity && {_size > 250}) exitWith {};
+    if (!_isCity && {_size > 275}) exitWith {};
     if (_searchIterations > 20) exitWith {};
     private _hasBorderBuildings = (_positionX nearObjects ["House", _size]) findIf {!(_x inArea _marker1) && _x inArea _marker2} != -1;
     if (!_hasBorderBuildings) exitWith {};

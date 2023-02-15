@@ -16,6 +16,7 @@
 - Ability to possess any near friendly AI squadmate while laying incapacitated to help your original body (press T while being incapacitated, could be turned off via params menu)
 - Rivals mission subvariants for Kill the Traitor and Rescue Prisoners mission types
 - New mission type - Salvage Ambushed Convoy
+- Inisgnia/patches support for enemy units 
 - (3CB Factions) Takistan Army, Horizon Island Legion, Ardistan Army factions
 - (3CB Factions) Takistan civilians
 - (3CB Factions) TKM rebel faction
@@ -63,6 +64,7 @@
 - Fixed non-restorable undercover state after crate carry
 - Fixed balance cost and threat assesment for light APCs, militia APCs and airborne vehicles
 - Fixed inability to assign attacks on Rivals hideouts and cells if there are no unknown locations
+- Air vehicles can be put into garage even when there is no captured airport yet
 - Military Administration capture/destruction will increase support in it's city
 - Post-effect will be applied while laying in wounded state
 - Transport, light attack and attack helicopters may spawn at helipads on airbases, transport helicopters and light attack helicopters may spawn at milbases
