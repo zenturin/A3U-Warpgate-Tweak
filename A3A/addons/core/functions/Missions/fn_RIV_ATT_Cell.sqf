@@ -78,7 +78,7 @@ Info_1("City size: %1.", str _size);
 private _damagedBuildings = (nearestObjects [_positionX, ["house"], _size]) select {(count ([_x] call BIS_fnc_buildingPositions)) > 0};
 private _damagedBuildingsCount = round (random [1,2,3]);
 
-if (_damagedBuildings isNotEqualTo []) then {
+if (count _damagedBuildings > 0) then {
     for "_i" from 0 to _damagedBuildingsCount do {
         private _damagedBuilding = selectRandom _damagedBuildings;
         _damagedBuilding setDamage ((random 0.5)+0.4);

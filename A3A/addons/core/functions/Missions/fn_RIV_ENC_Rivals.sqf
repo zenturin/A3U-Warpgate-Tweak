@@ -63,7 +63,7 @@ _vehicles append [_crater, _crashedVehicle];
 
 [_roadPosition, _effects] call _fnc_fire;
 
-private _damagedBuildings = (nearestObjects [_roadPosition, ["house"], 200]) select {(count ([_x] call BIS_fnc_buildingPositions)) > 0};
+private _damagedBuildings = (nearestObjects [_roadPosition, ["house"], 350]) select {(count ([_x] call BIS_fnc_buildingPositions)) > 0};
 private _damagedBuilding = nil;
 if (count _damagedBuildings > 0) then {
 	_damagedBuilding = selectRandom _damagedBuildings;
