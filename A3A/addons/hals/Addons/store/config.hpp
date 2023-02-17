@@ -551,11 +551,11 @@ class cfgHALsStore
 				stock = MAGAZINE_STOCK;
 			};
 			class 1Rnd_HE_Grenade_shell {
-				price = 100;
+				price = 75;
 				stock = MAGAZINE_STOCK;
 			};
 			class 1Rnd_HEDP_Grenade_shell {
-				price = 150;
+				price = 125;
 				stock = MAGAZINE_STOCK;
 			};
 			class UGL_FlareWhite_F {
@@ -669,63 +669,63 @@ class cfgHALsStore
 			};
 
 			class 6Rnd_HE_Grenade_shell {
-				price = 500;
+				price = 175;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_UGL_FlareWhite_F {
-				price = 200;
+				price = 50;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_UGL_FlareGreen_F {
-				price = 200;
+				price = 50;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_UGL_FlareRed_F {
-				price = 200;
+				price = 50;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_UGL_FlareYellow_F {
-				price = 200;
+				price = 50;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_UGL_FlareCIR_F {
-				price = 200;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_Smoke_Grenade_shell {
-				price = 250;
+				price = 75;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_SmokeRed_Grenade_shell {
-				price = 250;
+				price = 75;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_SmokeGreen_Grenade_shell {
-				price = 250;
+				price = 75;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_SmokeYellow_Grenade_shell {
-				price = 250;
+				price = 75;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_SmokePurple_Grenade_shell {
-				price = 250;
+				price = 75;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_SmokeBlue_Grenade_shell {
-				price = 250;
+				price = 75;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_SmokeOrange_Grenade_shell {
-				price = 250;
+				price = 75;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_Pellets_Grenade_shell {
-				price = 150;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class 6Rnd_APERSMine_Grenade_shell {
-				price = 600;
+				price = 400;
 				stock = MAGAZINE_STOCK;
 			};
 
@@ -1889,7 +1889,7 @@ class cfgHALsStore
 			// Underbarrel
 			///////////////////////////////////////////////////////
 			class 1Rnd_HE_Grenade_shell {
-				price = 100;
+				price = 75;
 				stock = MAGAZINE_STOCK;
 			};
 			class UGL_FlareWhite_F {
@@ -3616,53 +3616,53 @@ class cfgHALsStore
 
 
 			class rhsusf_mag_6Rnd_M576_Buckshot {
-				price = 150;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M441_HE {
-				price = 250;
+				price = 175;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M397_HET {
-				price = 450;
+				price = 300;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M433_HEDP {
-				price = 450;
+				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 
 			class rhsusf_mag_6Rnd_m4009 {
-				price = 450;
+				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 
 			class rhsusf_mag_6Rnd_M585_white {
-				price = 300;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_m661_green {
-				price = 300;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_m662_red {
-				price = 300;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M713_red {
-				price = 350;
+				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M714_white {
-				price = 350;
+				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M715_green {
-				price = 350;
+				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M716_yellow {
-				price = 350;
+				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 
@@ -5969,53 +5969,53 @@ class cfgHALsStore
 
 
 			class rhsusf_mag_6Rnd_M576_Buckshot {
-				price = 150;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M441_HE {
-				price = 250;
+				price = 175;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M397_HET {
-				price = 450;
+				price = 300;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M433_HEDP {
-				price = 450;
+				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 
 			class rhsusf_mag_6Rnd_m4009 {
-				price = 450;
+				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 
 			class rhsusf_mag_6Rnd_M585_white {
-				price = 300;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_m661_green {
-				price = 300;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_m662_red {
-				price = 300;
+				price = 100;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M713_red {
-				price = 350;
+				price = 150;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M714_white {
-				price = 350;
+				price = 150;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M715_green {
-				price = 350;
+				price = 150;
 				stock = MAGAZINE_STOCK;
 			};
 			class rhsusf_mag_6Rnd_M716_yellow {
-				price = 350;
+				price = 150;
 				stock = MAGAZINE_STOCK;
 			};
 
