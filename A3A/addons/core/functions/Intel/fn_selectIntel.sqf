@@ -150,7 +150,7 @@ if (_text isEqualTo "") then {
                 };
                 case (DISCOUNT):
                 {
-                    if (!isTraderQuestCompleted) then {
+                    if (!isTraderQuestCompleted && {!isTraderQuestAssigned}) then {
                         [] call _fnc_prepareTraderQuest;
                         _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
                     } else {
@@ -226,7 +226,7 @@ if (_text isEqualTo "") then {
                 };
                 case (DISCOUNT):
                 {
-                    if (!isTraderQuestCompleted) then {
+                    if (!isTraderQuestCompleted && {!isTraderQuestAssigned}) then {
                         [] call _fnc_prepareTraderQuest;
                         _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
                     } else {
@@ -292,7 +292,7 @@ if (_text isEqualTo "") then {
                 };
                 case (DISCOUNT):
                 {
-                    if (!isTraderQuestCompleted) then {
+                    if (!isTraderQuestCompleted && {!isTraderQuestAssigned}) then {
                         [] call _fnc_prepareTraderQuest;
                         _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
                     } else {
