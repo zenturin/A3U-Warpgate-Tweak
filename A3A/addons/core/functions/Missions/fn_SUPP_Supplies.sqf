@@ -24,7 +24,7 @@ private _taskId = "SUPP" + str A3A_taskCount;
 [_taskId, "SUPP", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 
 //Creating the box
-private _pos = (getMarkerPos respawnTeamPlayer) findEmptyPosition [1,50,"C_Van_01_box_F"]; //special case for bigger object search to make sure that it has enough free space around it
+private _pos = (getMarkerPos respawnTeamPlayer) findEmptyPosition [1,50,"Land_FoodSacks_01_cargo_brown_F"];
 private _truckX = "Land_FoodSacks_01_cargo_brown_F" createVehicle _pos;
 _truckX enableRopeAttach true;
 _truckX allowDamage false;
