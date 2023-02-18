@@ -69,8 +69,6 @@ while {true} do {
 			["TaskSucceeded", ["", format [localize "STR_notifiers_city_joined",_city,FactionGet(reb,"name")]]] remoteExec ["BIS_fnc_showNotification",teamPlayer];
 			sidesX setVariable [_city,teamPlayer,true];
 			[Occupants, 10, 60] remoteExec ["A3A_fnc_addAggression",2];
-			_mrkD = format ["Dum%1",_city];
-			_mrkD setMarkerColor colorTeamPlayer;
 			garrison setVariable [_city,[],true];
 			[_city] call A3A_fnc_mrkUpdate;
 
@@ -88,8 +86,6 @@ while {true} do {
 			["TaskFailed", ["", format [localize "STR_notifiers_city_joined",_city,FactionGet(occ,"name")]]] remoteExec ["BIS_fnc_showNotification",teamPlayer];
 			sidesX setVariable [_city,Occupants,true];
 			[Occupants, -10, 45] remoteExec ["A3A_fnc_addAggression",2];
-			_mrkD = format ["Dum%1",_city];
-			_mrkD setMarkerColor colorOccupants;
 			garrison setVariable [_city,[],true];
 			[_city] call A3A_fnc_mrkUpdate;
 			sleep 5;
@@ -191,13 +187,15 @@ while {true} do {
 	sleep 3;
     _numWreckedAntennas = count antennasDead;
 	//Probability of spawning a mission in.
-    _shouldSpawnRepairThisTick = round(random 100) < 20;
+    _shouldSpawnRepairThisTick = round(random 100) < 15;
     if (_numWreckedAntennas > 0 && {_shouldSpawnRepairThisTick && {!("REP" in A3A_activeTasks)}}) then {
 		_potentials = [];
 		{
-			_markerX = [markersX, _x] call BIS_fnc_nearestPosition;
-			if (sidesX getVariable [_markerX,sideUnknown] == Occupants and {spawner getVariable _markerX == 2}) exitWith {
-				_potentials pushBack [_markerX,_x];
+			if (!isNil "_x" && {!isNull _x}) then {
+				_markerX = [markersX, _x] call BIS_fnc_nearestPosition;
+				if (sidesX getVariable [_markerX,sideUnknown] == Occupants and {spawner getVariable _markerX == 2}) exitWith {
+					_potentials pushBack [_markerX,_x];
+				};
 			};
 		} forEach antennasDead;
 		if (count _potentials > 0) then {

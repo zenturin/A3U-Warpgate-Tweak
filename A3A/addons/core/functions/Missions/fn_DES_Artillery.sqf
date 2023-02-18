@@ -239,7 +239,9 @@ switch (true) do {
         [-900, _sideX] remoteExec ["A3A_fnc_timingCA",2];
         [-15,theBoss] call A3A_fnc_addScorePlayer;
 
-        _artilleryVeh removeEventHandler ["Fired", _firedEh];
+        if (!isNil "_firedEh") then {
+            _artilleryVeh removeEventHandler ["Fired", _firedEh];
+        };
         [_artilleryVeh] call A3A_fnc_addArtilleryTrailEH;
         _shellCount = round(random [2,4,7]);
         sleep 1;
@@ -270,7 +272,9 @@ sleep 30;
 
 [_taskId, "DES", 1200] spawn A3A_fnc_taskDelete;
 
-_artilleryVeh removeEventHandler ["Fired", _firedEh];
+if (!isNil "_firedEh") then {
+    _artilleryVeh removeEventHandler ["Fired", _firedEh];
+};
 
 {[_x] spawn A3A_fnc_vehDespawner} forEach (_vehicles + _props);
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;

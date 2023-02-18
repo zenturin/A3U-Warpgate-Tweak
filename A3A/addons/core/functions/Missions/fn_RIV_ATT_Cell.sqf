@@ -18,7 +18,7 @@ private _fnc_createLight = {
     _light
 };
 
-Info("Kill Cell Leader task initialization started, marker: %1.");
+Info_1("Kill Cell Leader task initialization started, marker: %1.", _marker);
 
 private _vehicles = [];
 private _groups = [];
@@ -31,7 +31,7 @@ private _dateLimitNum = dateToNumber _dateLimit;
 _dateLimit = numberToDate [date select 0, _dateLimitNum];
 private _displayTime = [_dateLimit] call A3A_fnc_dateToTimeString;
 
-private _isDifficult = if (random 10 < tierWar) then {true} else {false};
+private _isDifficult = random 10 < tierWar && ([] call SCRT_fnc_rivals_rollProbability);
 private _positionX = getMarkerPos _marker;
 
 Info_1("Is difficult: %1.", str _isDifficult);
@@ -41,7 +41,7 @@ Info_1("Is difficult: %1.", str _isDifficult);
 ///////////////////////////////
 private _cities = ["NameCityCapital","NameCity"] call SCRT_fnc_misc_getWorldPlaces;
 private _isCity  = _cities findIf {(_x select 1) distance2D _positionX <= 250} == 0;
-private _size = 100;
+private _size = 200;
 private _searchIterations = 0;
 
 private _marker1 = createMarkerLocal [format ["%1cellTask1", _marker], _positionX];
@@ -58,7 +58,7 @@ _marker2 setMarkerAlphaLocal 0;
 
 while {true} do {
     if (_isCity && {_size > 500}) exitWith {};
-    if (!_isCity && {_size > 250}) exitWith {};
+    if (!_isCity && {_size > 275}) exitWith {};
     if (_searchIterations > 20) exitWith {};
     private _hasBorderBuildings = (_positionX nearObjects ["House", _size]) findIf {!(_x inArea _marker1) && _x inArea _marker2} != -1;
     if (!_hasBorderBuildings) exitWith {};
@@ -78,30 +78,34 @@ Info_1("City size: %1.", str _size);
 private _damagedBuildings = (nearestObjects [_positionX, ["house"], _size]) select {(count ([_x] call BIS_fnc_buildingPositions)) > 0};
 private _damagedBuildingsCount = round (random [1,2,3]);
 
-for "_i" from 0 to _damagedBuildingsCount do {
-    private _damagedBuilding = selectRandom _damagedBuildings;
-	_damagedBuilding setDamage ((random 0.5)+0.4);
-	private _damagedBuildingPos = position _damagedBuilding;
-	private _damagedBuildingCollision = 2 boundingBoxReal _damagedBuilding;
-	private _p1 = _damagedBuildingCollision select 0;
-	private _p2 = _damagedBuildingCollision select 1;
-	private _maxHeight = abs ((_p2 select 2) - (_p1 select 2));
+if (count _damagedBuildings > 0) then {
+    for "_i" from 0 to _damagedBuildingsCount do {
+        private _damagedBuilding = selectRandom _damagedBuildings;
+        _damagedBuilding setDamage ((random 0.5)+0.4);
+        private _damagedBuildingPos = position _damagedBuilding;
+        private _damagedBuildingCollision = 2 boundingBoxReal _damagedBuilding;
+        private _p1 = _damagedBuildingCollision select 0;
+        private _p2 = _damagedBuildingCollision select 1;
+        private _maxHeight = abs ((_p2 select 2) - (_p1 select 2));
 
-	private _bAtlPos = (getPosATL _damagedBuilding);
-	private _bMinHeightAsl = ATLToASL _bAtlPos;
-	private _bMaxHeightAsl = ATLToASL ([_bAtlPos select 0, _bAtlPos select 1, _maxHeight]);
+        private _bAtlPos = (getPosATL _damagedBuilding);
+        private _bMinHeightAsl = ATLToASL _bAtlPos;
+        private _bMaxHeightAsl = ATLToASL ([_bAtlPos select 0, _bAtlPos select 1, _maxHeight]);
 
-	private _realRoofHeightAsl = ((lineIntersectsSurfaces [_bMaxHeightAsl, _bMinHeightAsl]) select 0) select 0;
-	_damagedBuilding animate ["door_1A_move",1];
-	_damagedBuilding animate ["door_1B_move",1];
-	_damagedBuilding animate ["door_2_rot",1];
-	_damagedBuilding animate ["door_3_rot",1];
+        private _realRoofHeightAsl = ((lineIntersectsSurfaces [_bMaxHeightAsl, _bMinHeightAsl]) select 0) select 0;
 
-	private _fire = createVehicle ["test_EmptyObjectForFireBig", _damagedBuildingPos, [], 0 , "CAN_COLLIDE"];
-	_fire setPosASL _realRoofHeightAsl;
+        if (!isNil "_realRoofHeightAsl") then {
+            private _fire = createVehicle ["test_EmptyObjectForFireBig", _damagedBuildingPos, [], 0 , "CAN_COLLIDE"];
+            _fire setPosASL _realRoofHeightAsl;
 
-    private _light = [(position _fire)] call _fnc_createLight;
-    _effects append [_light, _fire];
+            private _light = [(position _fire)] call _fnc_createLight;
+            _effects append [_light, _fire];
+        };
+        _damagedBuilding animate ["door_1A_move",1];
+        _damagedBuilding animate ["door_1B_move",1];
+        _damagedBuilding animate ["door_2_rot",1];
+        _damagedBuilding animate ["door_3_rot",1];
+    };
 };
 
 if ((random 100) < 30) then {
@@ -143,7 +147,7 @@ private _taskId = "RIV_ATT" + str A3A_taskCount;
         format [localize "STR_RIV_ATT_cell_header", A3A_faction_riv get "name"],
         _marker
     ],
-    [_targetPos, 25],
+    _targetPos,
     false,
     0,
     true,
@@ -341,7 +345,7 @@ for "_i" from 0 to _patrolCount do {
         _unit setCaptive true;
         [_unit] call A3A_fnc_NATOinit;
     };
-    [leader _patrolGroup, _marker, "SAFE","SPAWNED", "RANDOM", "NOVEH2", "LIMITED"] call A3A_fnc_proxyUPSMON;
+    _nul = [leader _patrolGroup, _marker, "SAFE","SPAWNED", "RANDOM", "NOVEH2", "LIMITED"] spawn UPSMON_fnc_UPSMON;
 
     _groups pushBack _patrolGroup;
 };
@@ -399,7 +403,6 @@ _patrolVehCrew apply {
 _groups pushBack _patrolVehGroup;
 _vehicles pushBack _patrolVeh;
 
-// [leader _patrolVehGroup, _marker, "SAFE","SPAWNED", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
 [_patrolVehGroup, _positionX, 250] call bis_fnc_taskPatrol;
 
 //////////////////////////////////////////////
@@ -548,8 +551,8 @@ for "_i" from 0 to _carCount do {
    [_positionX, _size, 101] spawn SCRT_fnc_rivals_encounter_carDemo;
 };
 
-[_positionX, _size, _target, _isDifficult] spawn {
-    params ["_positionX", "_size", "_target", "_isDifficult"];
+[_positionX, _target, _isDifficult] spawn {
+    params ["_positionX", "_target", "_isDifficult"];
     if (!(alive _target)) exitWith {};
 
     sleep (random [120, 240, 360]);
@@ -561,12 +564,12 @@ for "_i" from 0 to _carCount do {
 
     switch _event do {
         case 200: {
-            [_positionX] spawn SCRT_fnc_rivals_encounter_uavFlyby;
+            [[_positionX], "SCRT_fnc_rivals_encounter_uavFlyby"] call A3A_fnc_scheduler;
         };
         case 300: {
-            [_positionX] spawn SCRT_fnc_rivals_encounter_rovingMortar;
+            [[_positionX], "SCRT_fnc_rivals_encounter_rovingMortar"] call A3A_fnc_scheduler;
         };
-    }
+    };
 };
 
 
@@ -591,7 +594,7 @@ switch(true) do {
         [25,theBoss] call A3A_fnc_addScorePlayer;
         [400,theBoss, true] call A3A_fnc_addMoneyPlayer;
 
-        [_marker, "CELL"] call SCRT_fnc_rivals_destroyLocation;
+        [_marker, "CELL"] remoteExecCall ["SCRT_fnc_rivals_destroyLocation",2];
     };
     default {
         Error("Unexpected behaviour, cancelling mission.");
@@ -599,7 +602,7 @@ switch(true) do {
     };
 };
 
-[_taskId, "RIV_ATT", 60] spawn A3A_fnc_taskDelete;
+[_taskId, "RIV_ATT", 10] spawn A3A_fnc_taskDelete;
 
 sleep 60;
 

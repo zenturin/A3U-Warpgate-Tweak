@@ -22,6 +22,11 @@ private _fnc_distCheck = {
 { [_x, 500] call _fnc_distCheck } forEach (allMissionObjects FactionGet(riv,"surrenderCrate"));// Surrender boxes Rivals
 { deleteVehicle _x } forEach (allMissionObjects "Leaflet_05_F");				// Drone drop leaflets
 { deleteVehicle _x } forEach (allMissionObjects "Ejection_Seat_Base_F");		// All vanilla ejection seats
+{ deleteVehicle _x } forEach (allMissionObjects "Land_Pallet_F");		// Pallets from Supplies mission
+
+{ deleteVehicle _x } forEach (allMissionObjects "Land_laptop_03_closed_black_F");
+{ deleteVehicle _x } forEach (allMissionObjects "Land_laptop_03_closed_sand_F");
+{ deleteVehicle _x } forEach (allMissionObjects "Land_laptop_03_closed_olive_F");
 
 private _lootCrateType = FactionGet(reb, "lootCrate");
 // Cleanup rebel vehicles
