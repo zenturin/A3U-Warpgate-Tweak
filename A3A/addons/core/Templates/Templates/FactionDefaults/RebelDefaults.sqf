@@ -24,8 +24,8 @@
 ["vehicleCivSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
 
 ["vehicleLightSource", "Land_LampShabby_F"] call _fnc_saveToTemplate;
-["vehicleFuelDrum", ["FlexibleTank_01_forest_F", 500]] call _fnc_saveToTemplate;
-["vehicleFuelTank", ["B_Slingload_01_Fuel_F", 2000]] call _fnc_saveToTemplate;
+["vehicleFuelDrum", ["FlexibleTank_01_forest_F", 2000]] call _fnc_saveToTemplate;
+["vehicleFuelTank", ["B_Slingload_01_Fuel_F", 5000]] call _fnc_saveToTemplate;
 //FIA Rebels as Example
 ["faces", ["GreekHead_A3_02","GreekHead_A3_03","GreekHead_A3_04","GreekHead_A3_05","GreekHead_A3_06","GreekHead_A3_07","GreekHead_A3_08","GreekHead_A3_09","Ioannou","Mavros"]] call _fnc_saveToTemplate;
 ["voices", ["Male01GRE", "Male02GRE", "Male03GRE", "Male04GRE", "Male05GRE", "Male06GRE"]] call _fnc_saveToTemplate;
