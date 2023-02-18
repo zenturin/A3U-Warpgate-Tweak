@@ -65,6 +65,7 @@
 - Fixed non-restorable undercover state after crate carry
 - Fixed balance cost and threat assesment for light APCs, militia APCs and airborne vehicles
 - Fixed inability to assign attacks on Rivals hideouts and cells if there are no unknown locations
+- Headgear in arsenal will have distinct colors depending on their scarcity
 - Air vehicles can be put into garage even when there is no captured airport yet
 - Military Administration capture/destruction will increase support in it's city
 - Post-effect will be applied while laying in wounded state
