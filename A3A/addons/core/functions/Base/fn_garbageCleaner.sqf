@@ -24,10 +24,6 @@ private _fnc_distCheck = {
 { deleteVehicle _x } forEach (allMissionObjects "Ejection_Seat_Base_F");		// All vanilla ejection seats
 { deleteVehicle _x } forEach (allMissionObjects "Land_Pallet_F");		// Pallets from Supplies mission
 
-{ deleteVehicle _x } forEach (allMissionObjects "Land_laptop_03_closed_black_F");
-{ deleteVehicle _x } forEach (allMissionObjects "Land_laptop_03_closed_sand_F");
-{ deleteVehicle _x } forEach (allMissionObjects "Land_laptop_03_closed_olive_F");
-
 private _lootCrateType = FactionGet(reb, "lootCrate");
 // Cleanup rebel vehicles
 {

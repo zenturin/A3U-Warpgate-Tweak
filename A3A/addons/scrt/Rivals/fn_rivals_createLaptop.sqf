@@ -10,4 +10,17 @@ private _laptop = [
 ] call SCRT_fnc_misc_createBelonging;
 [_laptop, "Intel_Rivals_Laptop"] remoteExec ["A3A_fnc_flagaction", [teamPlayer,civilian], _laptop];
 
+_nul = _laptop spawn {
+	while {alive _this} do {
+		sleep 60;
+	
+		if (!alive _this) exitWith {};
+		if ((call SCRT_fnc_misc_getRebelPlayers) inAreaArray [position _this, distanceSPWN, distanceSPWN] isEqualTo []) exitWith {
+			deleteVehicle _this;
+		};
+	};
+
+	terminate _thisScript;
+};
+
 _laptop

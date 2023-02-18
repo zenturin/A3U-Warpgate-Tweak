@@ -98,7 +98,7 @@ private _regularVoices = nil;
 private _regularInsignia = nil;
 private _face = nil;
 private _voice = nil;
-private _insignia = "";
+private _insignia = nil;
 
 if (_isRival) then {
     _regularFaces = A3A_faction_riv get "faces";
@@ -152,7 +152,7 @@ switch (true) do {
 };
 [_unit, _face, _voice, (random [0.9, 1, 1.1])] call A3A_fnc_setIdentity;
 _unit setSkill _skill;
-if (_insignia isNotEqualTo "") then {
+if (!isNil "_insignia" && {_insignia isNotEqualTo ""}) then {
    [_unit, _insignia] call BIS_fnc_setUnitInsignia;
 };
 
