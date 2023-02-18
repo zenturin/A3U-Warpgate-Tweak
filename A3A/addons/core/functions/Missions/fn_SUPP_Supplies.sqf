@@ -66,7 +66,7 @@ if ((spawner getVariable _markerX != 2) and {!(sidesX getVariable [_markerX,side
 	] select _difficultX;
 
 	private _groupX = [_positionX, Occupants, _typeGroup] call A3A_fnc_spawnGroup;
-	[leader _groupX, _mrk, "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+	_nul = [leader _groupX, _mrk, "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 	{[_x] call A3A_fnc_NATOinit} forEach units _groupX;
 
 	_groups pushBack _groupX;
@@ -82,7 +82,7 @@ if ((dateToNumber date > _dateLimitNum) or {isNull _truckX}) then {
 } else {
 	private _countX = if (_difficultX) then {90} else {180};
 
-	if (_difficultX) then {
+	if (_difficultX && {spawner getVariable _markerX != 2 && {!(sidesX getVariable [_markerX,sideUnknown] == teamPlayer)}}) then {
 		Info("Rebels in area, spawning additional group.");
 
 		private _typeGroup = [
@@ -90,7 +90,7 @@ if ((dateToNumber date > _dateLimitNum) or {isNull _truckX}) then {
 			selectRandom ([_faction, "groupsTierSquads", 0] call SCRT_fnc_unit_flattenTier)
 		] select _difficultX;
 
-		private _group2Position = [_positionX, 650, 1000, 0, 0] call BIS_fnc_findSafePos;
+		private _group2Position = [_positionX, 450, 700, 0, 0] call BIS_fnc_findSafePos;
 		private _groupX2 = [_group2Position, Occupants, _typeGroup] call A3A_fnc_spawnGroup;
 		{[_x] call A3A_fnc_NATOinit} forEach units _groupX;
 		_groups pushBack _groupX2;

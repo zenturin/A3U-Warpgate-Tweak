@@ -122,7 +122,7 @@ if (spawner getVariable _spawnKey != 2) then {
 		private _civ = [_groupX, FactionGet(civ, "unitPress"), _pos, [],0, "NONE"] call A3A_fnc_createUnit;
 		_civ call A3A_fnc_CIVinit;
 		_civs pushBack _civ;
-		[_civ, _markerX, "LIMITED","SAFE","SPAWNED","NOFOLLOW","NOVEH2","NOSHARE","DoRelax"] call A3A_fnc_proxyUPSMON;//TODO need delete UPSMON link
+		_nul = [_civ, _markerX, "LIMITED","SAFE","SPAWNED","NOFOLLOW","NOVEH2","NOSHARE","DoRelax"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
 	};
 };
 

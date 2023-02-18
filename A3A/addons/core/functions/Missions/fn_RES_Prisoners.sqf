@@ -52,7 +52,7 @@ private _grpPOW = createGroup teamPlayer;
 
 for "_i" from 0 to _countX do {
 	private _unit = [_grpPOW, FactionGet(reb,"unitUnarmed"), (_posHouse select _i), [], 0, "NONE"] call A3A_fnc_createUnit;
-	[_unit, selectRandom (A3A_faction_reb get "faces"), selectRandom (A3A_faction_reb get "voices")] call BIS_fnc_setIdentity;
+	[_unit, selectRandom (A3A_faction_reb get "faces"), selectRandom (A3A_faction_reb get "voices")] call A3A_fnc_setIdentity;
 	_unit allowDamage false;
 	_unit setCaptive true;
 	_unit disableAI "MOVE";
@@ -114,7 +114,7 @@ if ({alive _x} count _POWs == 0) then {
 	[0,10*_bonus,_positionX] remoteExec ["A3A_fnc_citySupportChange",2];
 	[Occupants, -(_countX * 1.5), 90] remoteExec ["A3A_fnc_addAggression",2];
 
-	{ 
+	{
 		[_countX, _x] call A3A_fnc_addScorePlayer;
 		[_countX*10,_x] call A3A_fnc_addMoneyPlayer;
 	} forEach (call SCRT_fnc_misc_getRebelPlayers);

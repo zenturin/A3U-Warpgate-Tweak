@@ -306,8 +306,9 @@ private _fnc_handleUniqueCases = { //handles unique name cases that the stored v
         case "milVoices";
         case "sfFaces";
         case "milFaces";
-        case "sfVoices";
         case "polFaces";
+        case "eliteFaces";
+        case "eliteVoices";
         case "handGrenadeAmmo";
         case "mortarAmmo";
         case "animations";
@@ -316,6 +317,12 @@ private _fnc_handleUniqueCases = { //handles unique name cases that the stored v
         case "minesAT";
         case "minesAPERS";
         case "blackMarketStock";
+        case "reviveKitBox";
+        case "eliteInsignia";
+        case "polInsignia";
+        case "milInsignia";
+        case "sfInsignia";
+        case "insignia";
         case "faces": {continue};
         default { Info("Entry: "+(str _entry)+" is lacking validation") };
     };
