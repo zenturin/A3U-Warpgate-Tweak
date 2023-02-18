@@ -60,6 +60,7 @@
 - Fixed non-working paradrop and loot helicopters if napalm was disabled
 - Fixed fast travel invincibility exploit
 - Fixed defuse icons
+- Fixed non-locked driver seat on towable vehicle on dedicated server
 - Fixed logic pitfall which led to no intel until Arms Dealer quest
 - Fixed non-restorable undercover state after crate carry
 - Fixed balance cost and threat assesment for light APCs, militia APCs and airborne vehicles
