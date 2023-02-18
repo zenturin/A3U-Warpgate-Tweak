@@ -353,7 +353,7 @@ private _group1Position = [
 	] call BIS_fnc_findSafePos;
 private _group1 = [_group1Position, Rivals, selectRandom (A3A_faction_riv get "groupsFireteam")] call A3A_fnc_spawnGroup;
 _groups pushBack _group1;
-private _group1Wp = _group1 addWaypoint [(position _intelLeader), 5];
+private _group1Wp = _group1 addWaypoint [_laptopPosition, 5];
 _group1Wp setWaypointType "MOVE";
 _group1Wp setWaypointCombatMode "YELLOW";
 _group1Wp setWaypointSpeed "FULL";
@@ -372,7 +372,7 @@ private _group2Position = [
 	] call BIS_fnc_findSafePos;
 private _group2 = [_group2Position, Rivals, selectRandom (A3A_faction_riv get "groupsFireteam")] call A3A_fnc_spawnGroup;
 _groups pushBack _group2;
-private _group2Wp = _group2 addWaypoint [(position _intelLeader), 5];
+private _group2Wp = _group2 addWaypoint [_laptopPosition, 5];
 _group2Wp setWaypointType "MOVE";
 _group2Wp setWaypointCombatMode "YELLOW";
 _group2Wp setWaypointSpeed "FULL";
@@ -402,7 +402,7 @@ private _rivalVehCrew = _rivalVehData select 1;
 {[_x] call A3A_fnc_NATOinit} forEach _rivalVehCrew;
 private _rivalVehGroup = _rivalVehData select 2;
 
-private _rivalVehGroupWp = _rivalVehGroup addWaypoint [(position _intelLeader), 5];
+private _rivalVehGroupWp = _rivalVehGroup addWaypoint [_laptopPosition, 5];
 _rivalVehGroupWp setWaypointType "MOVE";
 _rivalVehGroupWp setWaypointCombatMode "YELLOW";
 _rivalVehGroupWp setWaypointSpeed "NORMAL";
@@ -410,9 +410,11 @@ _rivalVehGroupWp setWaypointSpeed "NORMAL";
 _groups pushBack _rivalVehGroup;
 _vehicles pushBack _rivalVeh;
 
+private _aliveCount = 0;
+
 waitUntil  {
 	sleep 5;
-	private _aliveCount = {alive _x} count ((units _group1) + (units _group2));
+	_aliveCount = {alive _x} count ((units _group1) + (units _group2));
 	private _isEveryoneDead = (call SCRT_fnc_misc_getRebelPlayers) findIf {alive _x && {_x distance2D _intelLeaderPosition < 1000}} == -1;
 	Info_2("%1 Group Alive: %2", A3A_faction_riv get "name", str _aliveCount);
 	(dateToNumber date > _dateLimitNum) || {_aliveCount < 2 || {_isEveryoneDead}} 
