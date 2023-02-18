@@ -1480,6 +1480,7 @@ switch _mode do {
 			case (_grayout): {
 				FORBIDDEN_ITEM_COLOR;
 			};
+			case (605 in getArray (configfile >> "CfgWeapons" >> _item >>"ItemInfo" >> "allowedSlots") && {!(_item in allArmoredHeadgear)});
 			case (_item in _initialEquipment): {
 				INITIAL_EQUIPMENT_COLOR;
 			};
