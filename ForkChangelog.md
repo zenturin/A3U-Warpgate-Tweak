@@ -1,7 +1,6 @@
 # Changelog
 
 ## 2.1
-*Aegis support is not yet ready, this changelog contains various strings about it for historical and progress tracking purposes*
 ### Additions
 - S.O.G. Prairie Fire CDLC support
 - Cam Lao Nam support
@@ -23,9 +22,8 @@
 - (3CB Factions) Syndikat rival faction
 - (3CB Factions) Arid Civilians faction
 - (Vanilla) NATO Tropical faction 
-- (Vanilla, Aegis) Syndikat, Livonian Looters rebel factions
+- (Vanilla) Syndikat, Livonian Looters rebel factions
 - (Vanilla) L'Ensemble rival faction
-- (Aegis) Ion PMC rival faction
 - (SOGPF) MACV, ARVN, PAVN enemy factions
 - (SOGPF) VM, VC rebel factions
 - (SOGPF) Vietnam civilian faction
@@ -83,7 +81,7 @@
 - Increased probability of rival event happening on 5% on each activity level
 - Increased base delay for air superiority fighter (300->600 seconds) and CAS support (300->450 seconds) to give rebels more room for air/heavy vehicles usage
 - Medics will fully heal on revive, non-medics will heal to 75% on revive
-- (Vanilla, Aegis) 4WD jeep will be added into civilian vehicles pool if Apex DLC is turned on
+- (Vanilla) 4WD jeep will be added into civilian vehicles pool if Apex DLC is turned on
 - (RHS) Fixed wrong classnames for AFRF surrender and equipment boxes
 - (3CB Factions) Switched LDF to Occupants factions section
 - (Takistan) Removed resource marker, moved initial HQ position farther from Occupant airbase
@@ -98,7 +96,7 @@
 - (RHS) Fixed usage of 3CB Factions backpacks in pure RHS USMC Temperate faction
 - (SOGPF) Added M1 Garand, M1982A2, L1A1, L2A1, F1 SMG, new m16 and XM177 variants to Arms Dealer stock
 - (Vanilla) Removed XMS rifles for militia-tier units in NATO templates
-- (Vanilla, Aegis) Arms Dealer will sell 4WD vehicles if Apex is enabled
+- (Vanilla) Arms Dealer will sell 4WD vehicles if Apex is enabled
 
 ### Removals
 - Removed Truely Random Crates parameter
