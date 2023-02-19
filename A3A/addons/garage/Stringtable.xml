@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="A3-Antistasi">
   <Package name="A3-Antistasi Mission">
     <Container name="HR_GRG">
@@ -56,7 +56,7 @@
         <Russian>Доступное место в гараже</Russian>
         <Korean>차고 여유공간</Korean>
         <Spanish>Espacio disponible en Garaje</Spanish>
-        <Chinesesimp>车库可用容量</Chinesesimp>
+        <Chinesesimp>载具库可用容量</Chinesesimp>
         <Czech>Dostupný prostor v garáži</Czech>
         <Italian>Spazio disponibile nel garage</Italian>
         <Polish>Dostępne miejsce w garażu</Polish>
@@ -177,7 +177,7 @@
         <Russian>Заполнено</Russian>
         <Korean>꽉참</Korean>
         <Spanish>Lleno</Spanish>
-        <Chinesesimp>车库已满</Chinesesimp>
+        <Chinesesimp>载具库已满</Chinesesimp>
         <Czech>plný</Czech>
         <Italian>pieno</Italian>
         <Polish>pełny</Polish>
@@ -188,7 +188,7 @@
         <Russian>Доступное место в гараже</Russian>
         <Korean>차고 여유 공간</Korean>
         <Spanish>Espacio disponible en el garaje</Spanish>
-        <Chinesesimp>车库的可用容量</Chinesesimp>
+        <Chinesesimp>载具库的可用容量</Chinesesimp>
         <Czech>Dostupný prostor v garáži</Czech>
         <Italian>Spazio disponibile nel garage</Italian>
         <Polish>Dostępne miejsce w garażu</Polish>
@@ -210,7 +210,7 @@
         <Russian>Техника будет переснаряжена после вывода из гаража</Russian>
         <Korean>차량은 차고에서 출고될 때 재무장 될 것입니다</Korean>
         <Spanish>Los vehículos serán rearmados cuando los saques</Spanish>
-        <Chinesesimp>从车库中被取出的载具会被重新武装</Chinesesimp>
+        <Chinesesimp>从载具库中被取出的载具会被重新武装</Chinesesimp>
         <Czech>Vozidla budou přezbrojena když budou vyndána z garáže</Czech>
         <Italian>I veicoli saranno riarmati quando lasceranno il garage</Italian>
         <Polish>Pojazdy zostaną dozbrojone, gdy zostaną wyciągnięte z garażu</Polish>
@@ -221,7 +221,7 @@
         <Russian>Техника не будет переснаряжена после вывода из гаража из-за недостатка источников боеприпасов</Russian>
         <Korean>탄약 차량이 없다면 차량은 차고에서 출고될때 재무장 되지 않을 것입니다</Korean>
         <Spanish>Los vehículos no serán rearmados una vez fuera ya que el garaje necesita un punto de munición cerca</Spanish>
-        <Chinesesimp>缺乏弹药来源时从车库中被取出的载具不会被重新武装</Chinesesimp>
+        <Chinesesimp>缺乏弹药来源时从载具库中被取出的载具不会被重新武装</Chinesesimp>
         <Czech>Vozidla nebudou přezbrojena když budou vyndána z garáže jelikož garáž nemá dostatek muničních zdrojů</Czech>
         <Italian>I veicoli non saranno riarmati quando lasceranno il garage poichè non è presente una fonte di munizioni</Italian>
         <Polish>Pojazdy nie zostaną dobrojone, gdy zostaną wyciągnięte z garażu, ponieważ w garażu brakuje źródła amunicji</Polish>
@@ -243,7 +243,7 @@
         <Russian>Техника будет заправлена после вывода из гаража</Russian>
         <Korean>차량은 차고에서 출고될 때 재급유 될 것입니다</Korean>
         <Spanish>Los vehículos serán repostados cuando los saques</Spanish>
-        <Chinesesimp>从车库中被取出的载具会被加满油</Chinesesimp>
+        <Chinesesimp>从载具库中被取出的载具会被加满油</Chinesesimp>
         <Czech>Vozidla budou dotankována když budou vyndána z garáže</Czech>
         <Italian>I veicoli saranno riforniti di carburante quando lasceranno il garage</Italian>
         <Polish>Pojazdy zostaną zatankowane, gdy zostaną wyciągnięte z garażu</Polish>
@@ -254,7 +254,7 @@
         <Russian>Техника не будет заправлена после вывода из гаража из-за недостатка источников топлива</Russian>
         <Korean>유류 차량이 없다면 차량은 차고에서 출고될때 재급유 되지 않을 것입니다</Korean>
         <Spanish>Los vehículos no serán repostados cuando los saques pues no hay un punto de repostaje</Spanish>
-        <Chinesesimp>缺乏油料来源时从车库中被取出的载具不会被重新加油</Chinesesimp>
+        <Chinesesimp>缺乏油料来源时从载具库中被取出的载具不会被重新加油</Chinesesimp>
         <Czech>Vozidla nebudou dotankována když budou vyndána z garáže jelikož garáž nemá dostatek palivových zdrojů</Czech>
         <Italian>I veicoli non saranno riforniti quando lasceranno il garage poichè non è presente una fonte di carburante</Italian>
         <Polish>Pojazdy nie zostaną zatankowane, gdy zostaną wyciągnięte z garażu, ponieważ w garażu brakuje źródła paliwa</Polish>
@@ -276,7 +276,7 @@
         <Russian>Техника будет отремонтирована после вывода из гаража</Russian>
         <Korean>차량은 차고에서 출고될 때 수리될 것입니다</Korean>
         <Spanish>Los vehículos serán reparados cuando los saques</Spanish>
-        <Chinesesimp>从车库中被取出的载具会被维修</Chinesesimp>
+        <Chinesesimp>从载具库中被取出的载具会被维修</Chinesesimp>
         <Czech>Vozidla budou opravena když budou vyndána z garáže</Czech>
         <Italian>I veicoli saranno riparati quando lasceranno il garage</Italian>
         <Polish>Pojazdy zostaną naprawione, gdy zostaną wyciągnięte z garażu</Polish>
@@ -287,7 +287,7 @@
         <Russian>Техника не будет отремонтирована при выводе из гаража из-за недостатка ремонтных машин</Russian>
         <Korean>수리 차량이 없다면 차량은 차고에서 출고될때 수리되지 않을 것입니다</Korean>
         <Spanish>Los vehículos no serán reparados cuando los ssaques pues no hay un sitio de reparación cerca</Spanish>
-        <Chinesesimp>缺乏维修来源时从车库中被取出的载具不会被重新维修</Chinesesimp>
+        <Chinesesimp>缺乏维修来源时从载具库中被取出的载具不会被重新维修</Chinesesimp>
         <Czech>Vozidla nebudou opravena když budou vyndána z garáže jelikož garáž nemá dostatek opravných zdrojů</Czech>
         <Italian>I veicoli non saranno riparati quando lasceranno il garage poichè non è presente una fonte di pezzi di ricambio</Italian>
         <Polish>Pojazdy nie zostaną naprawione, gdy zostaną wyciągnięte z garażu, ponieważ w garażu brakuje zasobów naprawczych</Polish>
@@ -485,7 +485,7 @@
         <Russian>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;Открыть гараж&lt;/t&gt;</Russian>
         <Korean>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;차고 열기&lt;/t&gt;</Korean>
         <Spanish>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;Abrir Garaje&lt;/t&gt;</Spanish>
-        <Chinesesimp>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;打开车库&lt;/t&gt;</Chinesesimp>
+        <Chinesesimp>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;打开载具库&lt;/t&gt;</Chinesesimp>
         <Czech>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;Otevřít Garáž&lt;/t&gt;</Czech>
         <Italian>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;Apri Garage&lt;/t&gt;</Italian>
         <Polish>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; Otwórz Garaż</Polish>
@@ -497,7 +497,7 @@
         <Russian>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; Стоянка %1</Russian>
         <Korean>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; %1 차고</Korean>
         <Spanish>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; Garaje %1</Spanish>
-        <Chinesesimp>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; 车库 %1</Chinesesimp>
+        <Chinesesimp>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; 载具库 %1</Chinesesimp>
         <Czech>&lt;img image = '\ a3 \ ui_f \ Data \ Gui \ rsc \ rscdisplayArsenal \ SpaceGarage_ca.paa'&gt; &lt;/img&gt; garáž %1</Czech>
         <Italian>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; Garage %1</Italian>
         <Polish>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; Garaż%1</Polish>
