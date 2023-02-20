@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="A3-Antistasi">
   <Package name="A3-Antistasi Mission GUI">
     <Container name="dialog_recruit_units">
@@ -33,7 +33,7 @@
         <French>Fusilier mitrailleur</French>
         <Korean>자동소총수</Korean>
         <Russian>Пулеметчик</Russian>
-        <Chinesesimp>自动步枪手</Chinesesimp>
+        <Chinesesimp>机枪手</Chinesesimp>
         <Czech>Kulometčík</Czech>
         <Italian>Fuciliere Automatico</Italian>
         <Spanish>Ametrallador</Spanish>
@@ -88,7 +88,7 @@
         <French>Tireur d'élite</French>
         <Korean>지정사수</Korean>
         <Russian>Снайпер</Russian>
-        <Chinesesimp>精准射手</Chinesesimp>
+        <Chinesesimp>狙击手</Chinesesimp>
         <Czech>Ostrostřelec</Czech>
         <Italian>Tiratore Scelto</Italian>
         <Spanish>Tirador</Spanish>
@@ -470,10 +470,12 @@
       <Key ID="STR_antistasi_dialogs_war_level_tip">
         <Original>Note that rebel vehicle stock expands as war evolves.</Original>
         <Russian>Список доступной для покупки техники будет расширяться по мере развития войны.</Russian>
+        <Chinesesimp>请注意，随着战争的发展，反抗军的载具数量会增加。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_black_market_tip">
         <Original>Black market vehicle stock depends on current War Level and various achieved milestones.</Original>
         <Russian>Список техники на чёрном рынке зависит от текущего уровня войны и успехов повстанцев.</Russian>
+        <Chinesesimp>黑市上可买的载具清单取决于当前的战争水平和反抗军的各种成功。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_vehicle_button_tooltip">
         <Original>Buy %1 for %2 %3</Original>
@@ -598,31 +600,40 @@
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_item_tooltip">
         <Original>Buy %1 for %2 %3</Original>
+        <Chinesesimp>以 %2 %3 的价格购买 %1</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_item_custom_hint_header">
         <Original>Purchase Item</Original>
+        <Chinesesimp>购买物品</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_item_custom_hint_commander_only">
         <Original>Only the Commander may buy this item.</Original>
+        <Chinesesimp>只有指挥官可以购买此物品</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_vehicle_tab_vehicles">
         <Original>Vehicles</Original>
+        <Chinesesimp>载具</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_vehicle_tab_other">
         <Original>Other</Original>
+        <Chinesesimp>其他</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_vehicle_refuel_tooltip">
         <Original>This item can refuel others.\n%1 max fuel is %2.</Original>
+        <Chinesesimp>这个物品可以为其他人加油。\n%1 最大燃料是 %2 。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_vehicle_loot_tooltip">
         <Original>This item can collect loot.</Original>
+        <Chinesesimp>这个物品可以收集战利品。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_vehicle_light_tooltip">
         <Original>This item provides light source.</Original>
+        <Chinesesimp>这个物品可以提供照明。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_vehicle_revivekitbox_tooltip">
         <Original>This item contains certain amount of Combat Readiness Recovery kits.</Original>
         <Russian>Этот предмет содержит в себе некоторое количество наборов восстановления боеспособности.</Russian>
+        <Chinesesimp>这个物品包含一定数量的战备恢复包。</Chinesesimp>
       </Key>
     </Container>
     <Container name="dialog_main_player">
@@ -785,7 +796,7 @@
         <French>Ranger</French>
         <Korean>차고</Korean>
         <Russian>Гараж</Russian>
-        <Chinesesimp>车库</Chinesesimp>
+        <Chinesesimp>载具库</Chinesesimp>
         <Czech>Garáž</Czech>
         <Italian>Garage</Italian>
         <Spanish>Garaje</Spanish>
@@ -1607,7 +1618,7 @@
         <French>Vous apporterez votre véhicule ainsi que toute cargaison et passagers avec vous.</French>
         <Korean>당신은 차량과 화물, 승객을 함께 이동시킬 것입니다</Korean>
         <Russian>Вы возьмете с собой свою технику, так же как и груз и пассажиров с вами.</Russian>
-        <Chinesesimp>您将带上您的车辆以及任何货物和乘客。</Chinesesimp>
+        <Chinesesimp>您将带上您的载具以及任何货物和乘客。</Chinesesimp>
         <Czech>Vezměte si vozidlo, a i jakýkoli náklad a cestující s vámi.</Czech>
         <Italian>Porterai con te il tuo veicolo compreso il cargo e i passeggeri.</Italian>
         <Spanish>Llevaras contigo el vehículo así como el cargamento y pasajeros.</Spanish>
@@ -2776,7 +2787,7 @@
         <French>Véhicule acheté</French>
         <Korean>차량 구매됨</Korean>
         <Russian>Техника приобретена</Russian>
-        <Chinesesimp>已购买车辆</Chinesesimp>
+        <Chinesesimp>已购买载具</Chinesesimp>
         <Czech>Vozidlo koupeno</Czech>
         <Italian>Veicolo Acquistato</Italian>
         <Spanish>Vehiculo Comprado</Spanish>
@@ -3037,7 +3048,7 @@
         <Russian>Повстанцы</Russian>
         <Polish>Rebelianci</Polish>
         <Portuguese>Insurgentes</Portuguese>
-        <Chinesesimp>叛军</Chinesesimp>
+        <Chinesesimp>反抗军</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_setup_rivals">
         <Original>Rivals</Original>
@@ -3196,26 +3207,32 @@
       <Key ID="STR_antistasi_dialogs_setup_confirm_start_create">
         <Original>Create new game with </Original>
         <Russian>Создать новую игру с </Russian>
+        <Chinesesimp>创建新游戏</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_setup_confirm_delete">
         <Original>Are you sure that you want to delete the game with ID %1 on %2?</Original>
         <Russian>Вы действительно хотите удалить игру с ID %1 на %2?</Russian>
+        <Chinesesimp>您确定要删除 %2 上 ID 为 %1 的游戏吗？</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_setup_confirm_start_copy">
         <Original>Copy game with ID %1, </Original>
         <Russian>Копировать игру с ID %1, </Russian>
+        <Chinesesimp>复制 ID 为 %1 的游戏，</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_setup_confirm_start_load">
         <Original>Load game with ID %1, </Original>
         <Russian>Загрузить игру с ID %1, </Russian>
+        <Chinesesimp>加载 ID 为 %1 的游戏，</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_setup_confirm_occ_inv">
         <Original>%1 occupants and %2 invaders?</Original>
         <Russian>%1 оккупантами and %2 захватчиками?</Russian>
+        <Chinesesimp>%1 防守方和 %2 入侵者？</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_dialogs_setup_confirm_game_name">
         <Original>name "%1", </Original>
         <Russian>названием "%1", </Russian>
+        <Chinesesimp>名称“%1”，</Chinesesimp>
       </Key>
     </Container>
     <Container name="setup_dialog_table">
@@ -3223,26 +3240,31 @@
         <Original>Map</Original>
         <German>Karte</German>
         <Russian>Карта</Russian>
+        <Chinesesimp>地图</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_setup_dialog_table_name">
         <Original>Name</Original>
         <German>Name</German>
         <Russian>Название</Russian>
+        <Chinesesimp>名字</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_setup_dialog_table_version">
         <Original>Version</Original>
         <German>Ausführung</German>
         <Russian>Версия</Russian>
+        <Chinesesimp>载具</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_setup_dialog_table_time">
         <Original>Time</Original>
         <German>Zeit</German>
         <Russian>Время</Russian>
+        <Chinesesimp>时间</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_setup_dialog_table_file">
         <Original>File</Original>
         <German>Datei</German>
         <Russian>Файл</Russian>
+        <Chinesesimp>文件</Chinesesimp>
       </Key>
     </Container>
     <Container name="hqpos_dialog">
