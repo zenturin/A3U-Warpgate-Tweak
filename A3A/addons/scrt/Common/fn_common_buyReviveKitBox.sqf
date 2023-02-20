@@ -2,8 +2,9 @@
 #include "..\defines.inc"
 FIX_LINE_NUMBERS()
 
-private _itemType = FactionGet(reb, "reviveKitBox");
-vehiclePurchase_cost = round ([_itemType] call A3A_fnc_vehiclePrice);
+private _reviveBox = FactionGet(reb, "reviveKitBox");
+private _itemType = _reviveBox#0;
+vehiclePurchase_cost = _reviveBox#1;
 
 private _resourcesFIA = 0;
 

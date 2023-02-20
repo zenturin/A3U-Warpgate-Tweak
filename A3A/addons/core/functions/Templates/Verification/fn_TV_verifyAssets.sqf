@@ -240,6 +240,7 @@ private _fnc_handleUniqueCases = { //handles unique name cases that the stored v
         case "sandbagRound";
         case "vehicleFuelTank";
         case "vehicleFuelDrum";
+        case "reviveKitBox";
         case "equipmentBox": _fnc_validateSingleClass;
 
         //array of vehicle class names
@@ -317,7 +318,6 @@ private _fnc_handleUniqueCases = { //handles unique name cases that the stored v
         case "minesAT";
         case "minesAPERS";
         case "blackMarketStock";
-        case "reviveKitBox";
         case "eliteInsignia";
         case "polInsignia";
         case "milInsignia";

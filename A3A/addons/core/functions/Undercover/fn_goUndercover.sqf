@@ -52,6 +52,7 @@ FIX_LINE_NUMBERS()
 #define REASON_CLOTHES2 13
 #define REASON_HIGHWAY 14
 #define REASON_SPOTBOMBTRUCK 15
+#define REASON_CARRYUNDERCOVERBREAK 16
 
 
 private _result = [] call A3A_fnc_canGoUndercover;
@@ -274,7 +275,7 @@ while {_reason isEqualTo -1} do
         };
         if(player getVariable ["carryUndercoverBreak", false]) exitWith
         {
-            _reason = "carryUndercoverBreak";
+            _reason = REASON_CARRYUNDERCOVERBREAK;
         };
 
         if(_reason isNotEqualTo -1) exitWith {};
@@ -347,7 +348,7 @@ switch (_reason) do
     {
         [localize "STR_info_bar_undercover_break_title", localize "STR_info_bar_undercover_break_reason_mil_items_1"] call A3A_fnc_customHint;
     };
-    case "carryUndercoverBreak":
+    case REASON_CARRYUNDERCOVERBREAK:
     {
         [localize "STR_info_bar_undercover_break_title", localize "STR_info_bar_undercover_break_reason_mil_carry"] call A3A_fnc_customHint;
         player setVariable["compromised", dateToNumber[date select 0, date select 1, date select 2, date select 3, (date select 4) + _timeLimit]];
