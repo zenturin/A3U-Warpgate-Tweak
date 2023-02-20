@@ -358,9 +358,10 @@ if  (_tab in ["other"]) then
         };
 
         if (reviveKitsEnabled) then {
+            private _reviveKitBox = (A3A_faction_reb get 'reviveKitBox');
             _buyableItemList pushBack [
-                A3A_faction_reb get 'reviveKitBox',
-                server getVariable (A3A_faction_reb get "reviveKitBox"),
+                _reviveKitBox # 0,
+                _reviveKitBox # 1,
                 "SCRT_fnc_common_buyReviveKitBox",
                 [player],
                 false,
