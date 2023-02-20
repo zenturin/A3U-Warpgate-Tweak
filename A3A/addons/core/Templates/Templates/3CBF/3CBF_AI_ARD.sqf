@@ -2,8 +2,8 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "TKA"] call _fnc_saveToTemplate;
-["spawnMarkerName", format [localize "STR_supportcorridor", "TKA"]] call _fnc_saveToTemplate;
+["name", "ARD"] call _fnc_saveToTemplate;
+["spawnMarkerName", format [localize "STR_supportcorridor", "ARD"]] call _fnc_saveToTemplate;
 
 ["flag", "Flag_ARD"] call _fnc_saveToTemplate;
 ["flagTexture", "\UK3CB_Factions\addons\UK3CB_Factions_ARD\Flag\ARD_flag_co.paa"] call _fnc_saveToTemplate;
