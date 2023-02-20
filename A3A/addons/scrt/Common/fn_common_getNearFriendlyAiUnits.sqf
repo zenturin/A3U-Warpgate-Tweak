@@ -16,7 +16,7 @@ Example:
 
 if (!unconsciousPossessAi) exitWith {[]};
 
-private _units = (units group player) select {
+private _units = (units player) select {
     !(isPlayer _x) 
     && _x isNotEqualTo petros
     && {_x inArea [player, 200, 200, 0, false]

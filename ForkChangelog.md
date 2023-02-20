@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.1
+### Additions
+- Simplified Chinese localization (credits to vbnshi)
+
+### Changes
+- Fixed accidential explicit disabled AI possession feature
+- Reduced mass of self-revive kit from 160 to 80
+
 ## 2.1
 ### Additions
 - S.O.G. Prairie Fire CDLC support
