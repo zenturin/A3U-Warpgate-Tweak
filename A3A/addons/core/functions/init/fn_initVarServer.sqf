@@ -334,10 +334,6 @@ switch (gameMode) do {
 	};
 };
 
-//TODO: Param is temporarily disabled as feature is not production-ready yet
-unconsciousPossessAi = false;
-publicVariable "unconsciousPossessAi";
-
 // Build list of extra equipment mods so we can filter out the modern stuff as necessary
 // Might not work for everything because of configSourceMod inconsistency (eg. "rhs_weap_fnfal50_61_base")
 A3A_extraEquipMods = [];

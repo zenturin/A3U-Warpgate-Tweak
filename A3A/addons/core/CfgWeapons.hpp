@@ -17,7 +17,7 @@ class CfgWeapons
         descriptionShort = "$STR_A3AP_items_crrk_desc";
         class ItemInfo: InventoryItem_Base_F
         {
-            mass=160;
+            mass=80;
         };
     };
 };
