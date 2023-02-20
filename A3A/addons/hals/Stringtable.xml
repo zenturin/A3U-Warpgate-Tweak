@@ -5,126 +5,151 @@
             <Original>Arms Dealer Store</Original>
             <German>Laden für Waffenhändler</German>
             <Russian>Магазин Оружейного Торговца</Russian>
+            <Chinesesimp>军火商商店</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_STORE_ALL">
             <Original>All</Original>
             <German>Alle</German>
             <Russian>Всё</Russian>
+            <Chinesesimp>全部</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_STORE_HANDGUNS">
             <Original>Handguns</Original>
             <German>Handfeuerwaffen</German>
             <Russian>Пистолеты</Russian>
+            <Chinesesimp>手枪</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_STORE_LAUNCHERS">
             <Original>Launchers</Original>
             <German>Trägerraketen</German>
             <Russian>Пусковые установки, РПГ</Russian>
+            <Chinesesimp>发射器</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_STORE_LAUNCHER_AMMO">
             <Original>Launcher Ammunition</Original>
             <German>Launcher-Munition</German>
             <Russian>Боеприпасы для пусковых установок, РПГ</Russian>
+            <Chinesesimp>发射器弹药</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_STORE_SMGS">
             <Original>Submachine Guns</Original>
             <German>Maschinenpistole</German>
             <Russian>Пистолеты-пулемёты</Russian>
+            <Chinesesimp>冲锋枪</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_STORE_MISC">
             <Original>Misc</Original>
             <German>Sonstiges</German>
             <Russian>Прочее</Russian>
+            <Chinesesimp>杂项</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_ASSAULT_RIFLES_VN">
             <Original>Assault Rifles, Carbines</Original>
             <German>Sturmgewehre, Karabiner</German>
             <Russian>Штурмовые винтовки, карабины</Russian>
+            <Chinesesimp>突击步枪、卡宾枪</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_ASSAULT_RIFLES">
             <Original>Assault Rifles</Original>
             <German>Sturmgewehre</German>
             <Russian>Штурмовые винтовки</Russian>
+            <Chinesesimp>突击步枪</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_ASSAULT_RIFLES_WS">
             <Original>Assault Rifles (Western Sahara)</Original>
             <German>Sturmgewehre (Western Sahara)</German>
             <Russian>Штурмовые винтовки (Western Sahara)</Russian>
+            <Chinesesimp>突击步枪(Western Sahara DLC)</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_SPECIAL_WEAPONS">
             <Original>Special Weapons</Original>
             <German>Spezielle Waffen</German>
             <Russian>Спецоружие</Russian>
+            <Chinesesimp>特殊武器</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_MGS">
             <Original>Machine Guns</Original>
             <German>Maschinengewehre</German>
             <Russian>Пулемёты</Russian>
+            <Chinesesimp>机枪</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_NAV">
             <Original>Navigation</Original>
             <German>Navigation</German>
             <Russian>Навигация</Russian>
+            <Chinesesimp>夜视仪</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_SRS">
             <Original>DMRs, Sniper Rifles, Battle Rifles</Original>
             <German>Scharfschützengewehre</German>
             <Russian>Снайперские, самозарядные винтовки</Russian>
+            <Chinesesimp>DMR、狙击步枪、精确步枪</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_MAGS">
             <Original>Magazines</Original>
             <German>Waffenmagazine</German>
             <Russian>Магазины</Russian>
+            <Chinesesimp>弹夹</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_MAGS_WS">
             <Original>Magazines (Western Sahara)</Original>
             <German>Waffenmagazine (Western Sahara)</German>
             <Russian>Магазины (Western Sahara)</Russian>
+            <Chinesesimp>弹夹(Western Sahara)</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_ADD_MAGS">
             <Original>Magazines (additional)</Original>
             <German>Zeitschriften (zusätzlich)</German>
             <Russian>Магазины (дополнительно)</Russian>
+            <Chinesesimp>弹夹(额外)</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_UB_ACC">
             <Original>Underbarrel Accessories</Original>
             <German>Underbarrel-Zubehör</German>
             <Russian>Подствольные аксессуары</Russian>
+            <Chinesesimp>枪管配件</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_P_ACC">
             <Original>Pointer Accessories</Original>
             <German>Zeigerzubehör</German>
             <Russian>Указатели, фонарики</Russian>
+            <Chinesesimp>指示器配件</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_P_ACC_VN">
             <Original>Pointers, flashlights, bayonets</Original>
             <German>Zeiger, Taschenlampen, Bajonette</German>
             <Russian>Указатели, фонарики, штыки</Russian>
+            <Chinesesimp>指示器，手电筒，刺刀</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_M_ACC">
             <Original>Muzzle Accessories</Original>
             <German>Maulkorb-Zubehör</German>
             <Russian>Наствольные аксессуары</Russian>
+            <Chinesesimp>枪口配件</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_A_M_ACC">
             <Original>Muzzle Accessories (additional)</Original>
             <German>Maulkorb-Zubehör (zusätzlich)</German>
             <Russian>Наствольные аксессуары (дополнительно)</Russian>
+            <Chinesesimp>枪口配件(额外)</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_O_ACC">
             <Original>Optics Accessories</Original>
             <German>Optik Zubehör</German>
             <Russian>Оптика</Russian>
+            <Chinesesimp>光学配件</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_A_O_ACC">
             <Original>Optics Accessories (additional)</Original>
             <German>Optik Zubehör (zusätzlich)</German>
             <Russian>Оптика (дополнительно)</Russian>
+            <Chinesesimp>光学配件(额外)</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_R_GRENADES">
             <Original>Rifle Grenades</Original>
             <German>Gewehrgranaten</German>
             <Russian>Винтовочные гранаты</Russian>
+            <Chinesesimp>步枪榴弹</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_STORE_ACTION">
             <Original>Store</Original>
@@ -166,7 +191,7 @@
             <Original>Insufficient cargo space.</Original>
             <German>Nicht genug Platz.</German>
             <Russian>Не хватает места в инвентаре</Russian>
-            <Chinesesimp>货物空间不足。</Chinesesimp>
+            <Chinesesimp>货舱空间不足。</Chinesesimp>
         </Key>
         <Key ID="STR_HALS_STORE_ITEM_PURCHASED">
             <Original>purchased</Original>
