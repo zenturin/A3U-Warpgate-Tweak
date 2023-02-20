@@ -7,7 +7,7 @@
 ### Changes
 - Fixed accidential explicit disabled AI possession feature
 - Reduced mass of self-revive kit from 160 to 80
-- Reduced price of self-revive kit box to 2100
+- Reduced price of self-revive kit box from 3000 to 2100
 
 ## 2.1
 ### Additions
