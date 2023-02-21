@@ -54,7 +54,7 @@ private _fnc_prepareTraderQuest = {
     [] remoteExec ["SCRT_fnc_trader_prepareTraderQuest", 2];
 };
 
-if (!isTraderQuestCompleted && {!isTraderQuestAssigned}) then {
+if (!isTraderQuestCompleted && !isTraderQuestAssigned) then {
     private _thresholds = createHashMapFromArray [
         ["Small", 20],
         ["Medium", 75],
@@ -150,7 +150,7 @@ if (_text isEqualTo "") then {
                 };
                 case (DISCOUNT):
                 {
-                    if (!isTraderQuestCompleted && {!isTraderQuestAssigned}) then {
+                    if (!isTraderQuestCompleted && !isTraderQuestAssigned) then {
                         [] call _fnc_prepareTraderQuest;
                         _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
                     } else {
@@ -226,7 +226,7 @@ if (_text isEqualTo "") then {
                 };
                 case (DISCOUNT):
                 {
-                    if (!isTraderQuestCompleted && {!isTraderQuestAssigned}) then {
+                    if (!isTraderQuestCompleted && !isTraderQuestAssigned) then {
                         [] call _fnc_prepareTraderQuest;
                         _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
                     } else {
@@ -292,7 +292,7 @@ if (_text isEqualTo "") then {
                 };
                 case (DISCOUNT):
                 {
-                    if (!isTraderQuestCompleted && {!isTraderQuestAssigned}) then {
+                    if (!isTraderQuestCompleted && !isTraderQuestAssigned) then {
                         [] call _fnc_prepareTraderQuest;
                         _text = format [localize "STR_trader_task_hint_description", ([] call SCRT_fnc_misc_getWorldName)];
                     } else {

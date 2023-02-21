@@ -16,4 +16,4 @@ Example:
 [] call SCRT_fnc_rivals_getEventCooldown;
 */
 
-1200 - (200 * ((5-inactivityLevelRivals) ^ (0.6 + (rivalsDifficulty/10))) + 1 / 4)
+1600 - (200 * ((5-inactivityLevelRivals) ^ (0.6 + (rivalsDifficulty/10))) + 1 / 4)
