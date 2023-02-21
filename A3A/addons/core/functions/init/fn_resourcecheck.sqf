@@ -15,6 +15,7 @@ private _suppBoost = nil;
 private _resBoost = nil;
 
 private _rivalsTaskChance = 5;
+private _traderTaskChance = 5;
 
 while {true} do {
 	nextTick = time + 600;
@@ -221,7 +222,7 @@ while {true} do {
 	};
 	sleep 4;
 
-	if (areRivalsEnabled && {tierWar > 2 && {!areRivalsDiscovered && {!isRivalsDiscoveryQuestAssigned}}}) then {
+	if (areRivalsEnabled && tierWar > 3 && !areRivalsDiscovered && !isRivalsDiscoveryQuestAssigned) then {
 		Info_1("Rivals roll: %1", _rivalsTaskChance);
 		if (random 100 < _rivalsTaskChance) then {
 			Info("Assigning Rivals Discovery Task...");
@@ -231,6 +232,16 @@ while {true} do {
 				_rivalsTaskChance + 5,
 				_rivalsTaskChance + 10
 			] select (sunOrMoon < 1);
+		};
+	};
+
+	if (tierWar > 2 && !isTraderQuestCompleted && !isTraderQuestAssigned) then {
+		Info_1("Arms Dealer roll: %1", _traderTaskChance);
+		if (random 100 < _traderTaskChance) then {
+			Info("Assigning Arms Dealer Task...");
+			[] remoteExec ["SCRT_fnc_trader_prepareTraderQuest", 2];
+		} else {
+			_traderTaskChance = _traderTaskChance + 2;
 		};
 	};
 
