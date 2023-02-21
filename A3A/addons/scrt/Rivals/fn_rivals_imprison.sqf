@@ -48,7 +48,8 @@ waitUntil {
 };
 
 if (alive _unit) then {
-	[5, 60] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
+	[random [5,6,7], 100/baseRivalsDecay] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
+	[random [5,6,7]] remoteExecCall ["SCRT_fnc_rivals_addProgressToRivalsLocationReveal", 2];
 };
 
 deleteVehicle _unit;
