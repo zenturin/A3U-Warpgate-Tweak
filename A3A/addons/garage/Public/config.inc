@@ -70,10 +70,7 @@ HR_GRG_fnc_vehInit = {
         publicVariable "staticsToSave";
     };
     _this setVariable ["ownerX",getPlayerUID player,true];
-    [_this, TeamPlayer] call A3A_fnc_AIVEHinit;
-    if (_this in arrayCivVeh) then {
-        _this setVariable ["A3A_carDemoBlock", true, true];
-    };
+    [_this, teamPlayer] call A3A_fnc_AIVEHinit;
 }; //is passed vehicle as _this
 HR_GRG_onOpenEvent = {
     //hide Antistasi's top information string as it has no use in the Garage

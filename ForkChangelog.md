@@ -1,11 +1,18 @@
 # Changelog
 
+## 2.1.2
+### Changes
+- Fixed non-appliance of modifications on vehicles being put out of garage
+- Rivals car demo event tweaks - it will spawn only in rivals-infested cities, will have probability tied to rivals activity, it will spawn car instead of planting charge into already existing car thus eliminating situations when players car could be affected 
+- (3CB Factions) Fixed ARD being named TKA
+- (SOGPF) Changed civilian helicopter model to one of the AH-1 variants
+
 ## 2.1.1
 ### Additions
 - Simplified Chinese localization (credits to vbnshi)
 
 ### Changes
-- Fixed accidential explicit disabled AI possession feature
+- Fixed accidential explicitly disabled AI possession feature
 - Reduced mass of self-revive kit from 160 to 80
 - Reduced price of self-revive kit box from 3000 to 2100
 

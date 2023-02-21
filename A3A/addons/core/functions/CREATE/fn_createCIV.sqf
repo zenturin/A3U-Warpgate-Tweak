@@ -182,11 +182,7 @@ if ([_markerX,false] call A3A_fnc_fogCheck > 0.2) then {
 	};
 };
 
-private _demoVeh = [_positionX] call SCRT_fnc_rivals_tryFindCarDemoCharge;
-
-if (!isNil "_demoVeh") then {
-	[_demoVeh] call SCRT_fnc_rivals_plantCarDemoCharge;
-};
+[_markerX] call SCRT_fnc_rivals_trySpawnCarDemo;
 
 waitUntil {sleep 1; spawner getVariable _spawnKey == 2};
 

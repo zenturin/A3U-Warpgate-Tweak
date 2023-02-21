@@ -302,11 +302,6 @@ player addEventHandler ["GetInMan", {
                 [] spawn A3A_fnc_goUndercover;
             };
         };
-        if (_veh in arrayCivVeh) then {
-            if !(_veh getVariable ["A3A_carDemoBlock", false]) then {
-                _veh setVariable ["A3A_carDemoBlock", true, true];
-            };
-        };
     };
 }];
 

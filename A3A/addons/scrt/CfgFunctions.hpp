@@ -259,7 +259,7 @@ class CfgFunctions {
 
 			class rivals_imprison {};
 
-			class rivals_tryFindCarDemoCharge {};
+			class rivals_trySpawnCarDemo {};
 			class rivals_plantCarDemoCharge {};
 			class rivals_mortarRoutine {};
 			

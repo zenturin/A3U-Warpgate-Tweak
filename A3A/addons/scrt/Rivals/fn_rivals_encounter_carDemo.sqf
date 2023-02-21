@@ -39,7 +39,7 @@ private _spawnPosition = nil;
 if (_overrideRadius != -1) then {
     _spawnPosition = [_originPosition, 100, _overrideRadius, 0, 0] call BIS_fnc_findSafePos;
 } else {
-    _spawnPosition = [_originPosition, 900, distanceSPWN, 0, 0] call BIS_fnc_findSafePos;
+    _spawnPosition = [_originPosition, 500, distanceSPWN, 0, 0] call BIS_fnc_findSafePos;
 };
 
 private _roads = objNull;
