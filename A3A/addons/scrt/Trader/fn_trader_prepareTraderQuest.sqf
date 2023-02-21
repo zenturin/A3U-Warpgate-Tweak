@@ -1,3 +1,10 @@
+#include "..\script_component.hpp"
+FIX_LINE_NUMBERS()
+
+if (isTraderQuestAssigned || isTraderQuestCompleted) exitWith {
+    Warning("Something tries to call for Arms Dealer quest again, aborting...");
+};
+
 private _posbase = getMarkerPos respawnTeamPlayer;
 private _potentials = [];
 
