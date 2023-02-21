@@ -22,7 +22,7 @@
     "vn_b_wheeled_m54_01_airport", 0.2
     ,"vn_c_car_04_01", 1]] call _fnc_saveToTemplate;
 
-["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["vn_b_air_uh1d_04_09"]] call _fnc_saveToTemplate;
 
 ["vehiclesCivBoat", [
     "vn_c_boat_02_02", 1
