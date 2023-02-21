@@ -18,11 +18,12 @@ private _groups = [];
 private _effects = [];
 private _props = [];
 
-private _timeLimit = if (_difficulty) then  {45 * timeMultiplier} else {60 * timeMultiplier};
-private _dateLimit = [date select 0, date select 1, date select 2, date select 3, (date select 4) + _timeLimit];
-private _dateLimitNum = dateToNumber _dateLimit;
-_dateLimit = numberToDate [date select 0, _dateLimitNum];
-private _displayTime = [_dateLimit] call A3A_fnc_dateToTimeString;
+private _limit = if (_difficulty) then {
+	45 call SCRT_fnc_misc_getTimeLimit
+} else {
+	60 call SCRT_fnc_misc_getTimeLimit
+};
+_limit params ["_dateLimitNum", "_displayTime"];
 
 private _destinationName = [_markerX] call A3A_fnc_localizar;
 

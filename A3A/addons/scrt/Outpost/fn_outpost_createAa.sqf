@@ -15,11 +15,7 @@ private _textX = format [localize "STR_marker_aa_empl", FactionGet(reb,"name")];
 private _marker = createMarker [format ["FIAAApost%1", random 1000], _position];
 _marker setMarkerShape "ICON";
 
-//creating task
-private _timeLimit = 45 * timeMultiplier;
-private _dateLimit = [date select 0, date select 1, date select 2, date select 3, (date select 4) + _timeLimit];
-private _dateLimitNum = dateToNumber _dateLimit;
-private _displayTime = [_dateLimit] call A3A_fnc_dateToTimeString;//Converts the time portion of the date array to a string for clarity in hints
+(45 call SCRT_fnc_misc_getTimeLimit) params ["_dateLimitNum", "_displayTime"];
 
 private _taskId = "outpostTask" + str A3A_taskCount;
 [[teamPlayer,civilian],_taskId,[format [localize "STR_aaempl_deploy_desc", _displayTime],localize "STR_aaempl_deploy_header",_marker],_position,false,0,true,"Move",true] call BIS_fnc_taskCreate;

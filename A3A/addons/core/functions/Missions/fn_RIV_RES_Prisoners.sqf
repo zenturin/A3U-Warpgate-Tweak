@@ -19,8 +19,7 @@ private _limit = if (_difficultX) then {
 } else {
 	120 call SCRT_fnc_misc_getTimeLimit
 };
-private _dateLimitNum = _limit select 0;
-private _displayTime = _limit select 1;
+_limit params ["_dateLimitNum", "_displayTime"];
 
 private _nameDest = [_markerX] call A3A_fnc_localizar;
 
