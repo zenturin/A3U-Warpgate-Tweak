@@ -6189,9 +6189,9 @@
                 <Chinesesimp>杀死军官 %1</Chinesesimp>
             </Key>
             <Key ID="STR_A3A_Missions_AS_Official_task_desc">
-                <Original>A %1 officer is inspecting %2. Go there and kill him before %3:%4.</Original>
-                <Russian>Офицер %1 инспектирует %2. Идите туда и убейте его до %3:%4.</Russian>
-                <Chinesesimp>一名 %1 官员正在检查 %2。 去那里，在 %3:%4 之前杀了他。</Chinesesimp>
+                <Original>A %1 officer is inspecting %2. Go there and kill him before %3.</Original>
+                <Russian>Офицер %1 инспектирует %2. Идите туда и убейте его до %3.</Russian>
+                <Chinesesimp>一名 %1 官员正在检查 %2。 去那里，在 %3 之前杀了他。</Chinesesimp>
             </Key>
             <Key ID="STR_A3A_Missions_AS_Ambush_task_header">
                 <Original>Ambush %1 Officer</Original>
@@ -6219,9 +6219,9 @@
                 <Chinesesimp>杀死内鬼</Chinesesimp>
             </Key>
             <Key ID="STR_A3A_Missions_AS_Traitor_task_desc">
-                <Original>A traitor has scheduled a meeting with %1 in %2. Kill him before he provides enough intel to give us trouble. Do this before %3. We don't where exactly this meeting will happen. You will recognise the building by the nearby Offroad and %3 presence.</Original>
-                <Russian>Предатель назначил встречу с %1 в %2. Убейте его до того как он выдаст достаточно информации о нас. Сделайте это до %3. Мы не знаем точно где произойдёт эта встреча. Вы узнаете конкретное здание по припаркованному рядом автомобилю и присутствию охраны от %3.</Russian>
-                <Chinesesimp>内鬼已安排在 %2 与 %1 会面。 在他提供足够的情报给我们带来麻烦之前杀了他。 在 %3 之前执行此任务。 我们不知道这次会议的确切地点。 你要通过识别停在附近的载具和 %3 携带的安保人员，找到在哪个建筑交易。</Chinesesimp>
+                <Original>A traitor has scheduled a meeting with %1 in %2. Kill him before he provides enough intel to give us trouble. Do this before %3. We don't where exactly this meeting will happen. You will recognise the building by the nearby Offroad and %1 presence.</Original>
+                <Russian>Предатель назначил встречу с %1 в %2. Убейте его до того как он выдаст достаточно информации о нас. Сделайте это до %3. Мы не знаем точно где произойдёт эта встреча. Вы узнаете конкретное здание по припаркованному рядом автомобилю и присутствию охраны от %1.</Russian>
+                <Chinesesimp>内鬼已安排在 %2 与 %1 会面。 在他提供足够的情报给我们带来麻烦之前杀了他。 在 %3 之前执行此任务。 我们不知道这次会议的确切地点。 你要通过识别停在附近的载具和 %1 携带的安保人员，找到在哪个建筑交易。</Chinesesimp>
             </Key>
             <Key ID="STR_A3A_Missions_AS_RIV_Traitor_task_header">
                 <Original>Eliminate the Defector</Original>
@@ -6229,7 +6229,7 @@
                 <Chinesesimp>消灭叛徒</Chinesesimp>
             </Key>
             <Key ID="STR_A3A_Missions_AS_RIV_Traitor_task_desc">
-                <Original>Some invididual decided to leave our ranks in favour of %1. We should show ему that %2 betrayal is an expensive game. Eliminate him until he brings us trouble. He is in the %3. Do this before %4.</Original>
+                <Original>Some invididual decided to leave our ranks in favour of %1. We should show him that %2 betrayal is an expensive game. Eliminate him until he brings us trouble. He is in the %3. Do this before %4.</Original>
                 <Russian>Один товарищ решил внезапно покинуть наши ряды и вступить в %1. Мы должны показать ему что предательство %2 может быть дорогим удовольствием. Устраните его пока он не создал нам проблем. Он находится в %3. Сделайте это до %4.</Russian>
                 <Chinesesimp>一位同志突然决定离开我们的队伍加入%1。 我们必须让他知道背叛 %2 得付出有多大的代价。 在他给我们带来麻烦之前消灭他。 它位于 %3。 在 %4 之前执行此任务。</Chinesesimp>
             </Key>
@@ -6484,7 +6484,7 @@
                 <Chinesesimp>一群平民 %1 支持者在 %2 被捕，他们即将被送进监狱。 去那里，释放他们并将他们带到总部，他们将加入我们的事业。 在 %3 之前执行此任务。</Chinesesimp>
             </Key>
             <Key ID="STR_A3A_Missions_RES_Refugees_task_header_2">
-                <Original>Rescue refugees</Original>
+                <Original>Rescue Refugees</Original>
                 <Russian>Спасите беженцев</Russian>
                 <Chinesesimp>拯救难民</Chinesesimp>
             </Key>

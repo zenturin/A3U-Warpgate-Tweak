@@ -14,17 +14,19 @@ private _sideX = sidesX getVariable [_markerX,sideUnknown];
 private _faction = Faction(_sideX);
 private _positionX = getMarkerPos _markerX;
 
-private _timeLimit = if (_difficultX) then {15  * timeMultiplier} else {30  * timeMultiplier};
-private _dateLimit = [date select 0, date select 1, date select 2, date select 3, (date select 4) + _timeLimit];
-private _dateLimitNum = dateToNumber _dateLimit;
+private _limit = if (_difficultX) then {
+	30 call SCRT_fnc_misc_getTimeLimit
+} else {
+	45 call SCRT_fnc_misc_getTimeLimit
+};
+_limit params ["_dateLimitNum", "_displayTime"];
 
- _nameDest = [_markerX] call A3A_fnc_localizar;
+_nameDest = [_markerX] call A3A_fnc_localizar;
 private _taskString = format [
 	localize "STR_A3A_Missions_AS_Official_task_desc",
 	_faction get "name",
 	[_markerX] call A3A_fnc_localizar,
-	numberToDate [2035,_dateLimitNum] select 3,
-	numberToDate [2035,_dateLimitNum] select 4
+	_displayTime
 ];
 
 private _taskId = "AS" + str A3A_taskCount;

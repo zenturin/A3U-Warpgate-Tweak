@@ -2,6 +2,7 @@
 
 ## 2.1.2
 ### Changes
+- Fixed datetime limit for missions showing incorrect values
 - Fixed non-appliance of modifications on vehicles being put out of garage
 - Rivals car demo event tweaks - it will spawn only in rivals-infested cities, will have probability tied to rivals activity, it will spawn car instead of planting charge into already existing car thus eliminating situations when players car could be affected 
 - (3CB Factions) Fixed ARD being named TKA

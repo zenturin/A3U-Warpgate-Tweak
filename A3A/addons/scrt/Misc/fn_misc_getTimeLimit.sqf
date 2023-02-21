@@ -21,7 +21,15 @@ params [
 ];
 
 private _timeLimit = _limit * timeMultiplier;
-private _dateLimit = [date select 0, date select 1, date select 2, date select 3, (date select 4) + _timeLimit];
+
+date params ["_year", "_month", "_day", "_hours", "_minutes"];
+
+private _dateLimit = if ((_hours + _timeLimit % 60) > 1) then {
+    [_year, _month, _day, _hours + (_timeLimit / 60), _minutes + (_timeLimit % 60)];
+} else {
+    [_year, _month, _day, _hours, _minutes + _timeLimit];
+};
+
 private _dateLimitNum = dateToNumber _dateLimit;
 _dateLimit = numberToDate [date select 0, _dateLimitNum];
 private _displayTime = [_dateLimit] call A3A_fnc_dateToTimeString;

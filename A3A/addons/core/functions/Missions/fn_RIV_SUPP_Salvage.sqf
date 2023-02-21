@@ -20,8 +20,7 @@ private _limit = if (_isDifficult) then {
 } else {
 	60 call SCRT_fnc_misc_getTimeLimit
 };
-private _dateLimitNum = _limit select 0;
-private _displayTime = _limit select 1;
+_limit params ["_dateLimitNum", "_displayTime"];
 
 private _spawnPosition = [_positionX, 600, 1500, 0, 0] call BIS_fnc_findSafePos;
 private _bases = citiesX + airportsX + milbases + outposts + seaports + factories + resourcesX + ["Synd_HQ"];
