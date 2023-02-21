@@ -4,8 +4,11 @@
 ### Changes
 - Fixed datetime limit for missions showing incorrect values
 - Fixed non-appliance of modifications on vehicles being put out of garage
-- Rivals car demo event tweaks - it will spawn only in rivals-infested cities, will have probability tied to rivals activity, it will spawn car instead of planting charge into already existing car thus eliminating situations when players car could be affected 
+- Rivals car demo event tweaks - it will spawn only in Rivals-infested cities, will have probability tied to rivals activity, it will spawn car instead of planting charge into already existing car thus eliminating situations when players car could be affected 
+- Moved Rivals appearance War Level from 3 to 4
+- Added passive chance to obtain info about Arms Dealer starting War Level 3 as a fallback for bad luck
 - Minor localization fixes
+- Increased base Rivals events cooldowns from 1200 to 1600 seconds
 - (3CB Factions) Fixed ARD being named TKA
 - (SOGPF) Changed civilian helicopter model to one of the AH-1 variants
 

@@ -5,6 +5,9 @@ if (isTraderQuestAssigned || isTraderQuestCompleted) exitWith {
     Warning("Something tries to call for Arms Dealer quest again, aborting...");
 };
 
+isTraderQuestAssigned = true;
+publicVariable "isTraderQuestAssigned";
+
 private _posbase = getMarkerPos respawnTeamPlayer;
 private _potentials = [];
 

@@ -49,8 +49,6 @@ private _sideName = _faction get "name";
 private _intelContent = "";
 
 private _fnc_prepareTraderQuest = {
-    isTraderQuestAssigned = true;
-    publicVariable "isTraderQuestAssigned";
     [] remoteExec ["SCRT_fnc_trader_prepareTraderQuest", 2];
 };
 
