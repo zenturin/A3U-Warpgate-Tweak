@@ -28,6 +28,8 @@ params ["_value"];
 
 private _newValue = nextRivalsLocationReveal + _value;
 
+if (([] call SCRT_fnc_rivals_getLocations) isEqualTo []) exitWith {};
+
 if (_newValue > GATE) then {
     Info("Gate value exceeded, revealing new location...");
     nextRivalsLocationReveal = 0;  
