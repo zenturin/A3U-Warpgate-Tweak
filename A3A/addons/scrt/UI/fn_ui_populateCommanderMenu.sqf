@@ -5,9 +5,15 @@ FIX_LINE_NUMBERS()
 
 disableSerialization;
 
+private _fnc_checkIfAppropriateLocation = {
+	if (theBoss distance2D (getMarkerPos "Synd_HQ") < 50) exitWith {true};
+	if (!isNil "traderMarker" && {theBoss distance2D (getMarkerPos traderMarker) < 50}) exitWith {true};
+	false;
+};
+
 private _hqMarkerPos = getMarkerPos "Synd_HQ";
 
-if (theBoss distance2D _hqMarkerPos < 50) then {
+if (call _fnc_checkIfAppropriateLocation) then {
 	menuSliderArray = [
 		[localize "STR_commander_menu_abilities_header_upper", 1140],
 		[localize "STR_commander_menu_garrison_header_upper", 2000],
@@ -203,7 +209,7 @@ if (!isTraderQuestCompleted) then {
 	(_display displayCtrl 6014) ctrlShow false;
 };
 
-if (player distance2D _hqMarkerPos > 50) then {
+if (player distance2D (getMarkerPos "Synd_HQ") > 50) then {
     (_display displayCtrl 5300) ctrlShow false;
 };
 

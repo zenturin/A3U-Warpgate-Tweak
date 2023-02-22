@@ -2,6 +2,7 @@
 
 ## 2.1.2
 ### Changes
+- Full commander menu will be available at trader location, not only HQ
 - Fixed problematic case of AI flares firing when enemy is missing 
 - Fixed datetime limit for missions showing incorrect values
 - Fixed non-appliance of modifications on vehicles being put out of garage
