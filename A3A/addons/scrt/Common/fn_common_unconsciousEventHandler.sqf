@@ -14,6 +14,11 @@ if (reviveKitsEnabled) then {
 		};
 		case DIK_T: {
 			private _nearFriendlyUnits = [] call SCRT_fnc_common_getNearFriendlyAiUnits;
+
+			if (time < (player getVariable ["A3A_possessTime", time - 1])) exitWith {
+				[localize "STR_antistasi_dialogs_ai_control_title", localize "STR_A3AP_notifications_possess_cooldown"] call SCRT_fnc_misc_deniedHint;
+			};
+			
 			if (_nearFriendlyUnits isNotEqualTo []) then {
 				(findDisplay 46) displayRemoveEventHandler ["KeyDown", respawnMenu];
 				[_nearFriendlyUnits] spawn SCRT_fnc_common_possessNearestFriendlyAI;
