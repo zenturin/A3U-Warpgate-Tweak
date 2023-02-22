@@ -3,7 +3,8 @@
 ## 2.1.2
 ### Changes
 - Full commander menu will be available at trader location, not only HQ
-- Fixed problematic case of AI flares missing when enemy is missing too 
+- Fixed problematic case of AI flares missing when enemy is missing too
+- Fixed missing Rivals surrender crate checking for auto loot action 
 - Fixed datetime limit for missions showing incorrect values
 - Fixed non-appliance of modifications on vehicles being put out of garage
 - Rivals car demo event tweaks - it will spawn only in Rivals-infested cities, will have probability tied to rivals activity, it will spawn car instead of planting charge into already existing car thus eliminating situations when players car could be affected 
