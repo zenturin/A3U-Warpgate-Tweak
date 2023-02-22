@@ -117,7 +117,6 @@ if (spawner getVariable _spawnKey != 2) then {
 			if (!surfaceIsWater _pos) exitWith {};
 		};
 		private _groupX = createGroup civilian;
-		_groupX deleteGroupWhenEmpty true;
 		_groups pushBack _groupX;
 		private _civ = [_groupX, FactionGet(civ, "unitPress"), _pos, [],0, "NONE"] call A3A_fnc_createUnit;
 		_civ call A3A_fnc_CIVinit;
@@ -137,7 +136,6 @@ if ([_markerX,false] call A3A_fnc_fogCheck > 0.2) then {
 			if (!isNull _road) then {
 				if (count (nearestObjects [_p1, ["Car", "Truck"], 5]) == 0) then {
 					private _groupP = createGroup civilian;
-    				_groupP deleteGroupWhenEmpty true;
 					_groupsPatrol pushBack _groupP;
 					private _roadcon = roadsConnectedto _road;
 					//_p1 = getPos (_roads select _countX);
