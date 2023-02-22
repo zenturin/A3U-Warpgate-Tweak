@@ -7034,6 +7034,10 @@
             </Key>
         </Container>
         <Container name="common_notifications">
+            <Key ID="STR_A3AP_notifications_possess_cooldown">
+                <Original>AI Control has already been used, please wait 15 seconds.</Original>
+                <Russian>Управление ИИ уже было использовано, пожалуйста, подождите 15 секунд.</Russian>
+            </Key>
             <Key ID="STR_antistasi_actions_common_notifications_money_found_title">
                 <Original>Money</Original>
                 <Russian>Деньги</Russian>

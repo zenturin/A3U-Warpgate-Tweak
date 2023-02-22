@@ -3,7 +3,7 @@
 ## 2.1.2
 ### Changes
 - Full commander menu will be available at trader location, not only HQ
-- Fixed problematic case of AI flares firing when enemy is missing 
+- Fixed problematic case of AI flares missing when enemy is missing too 
 - Fixed datetime limit for missions showing incorrect values
 - Fixed non-appliance of modifications on vehicles being put out of garage
 - Rivals car demo event tweaks - it will spawn only in Rivals-infested cities, will have probability tied to rivals activity, it will spawn car instead of planting charge into already existing car thus eliminating situations when players car could be affected 
@@ -14,6 +14,7 @@
 - Increased base Rivals events cooldowns from 1200 to 1600 seconds
 - Rivals imprisonment will add small progress to next Rivals location reveal
 - Reduced base time to call support from 30 seconds to 15
+- 15 seconds cooldown on AI Control while laying wounded
 - (3CB Factions) Fixed ARD being named TKA
 - (SOGPF) Changed civilian helicopter model to one of the AH-1 variants
 

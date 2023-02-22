@@ -18,7 +18,7 @@ Example:
 
 params ["_aiUnits"];
 
-if (_aiUnits isEqualTo []) exitWith {};
+player setVariable ["A3A_possessTime", time + 15];
 
 private _unit = _aiUnits select 0;
 
