@@ -2,6 +2,7 @@
 
 ## 2.1.2
 ### Changes
+- Fixed problematic case of AI flares firing when enemy is missing 
 - Fixed datetime limit for missions showing incorrect values
 - Fixed non-appliance of modifications on vehicles being put out of garage
 - Rivals car demo event tweaks - it will spawn only in Rivals-infested cities, will have probability tied to rivals activity, it will spawn car instead of planting charge into already existing car thus eliminating situations when players car could be affected 
@@ -11,6 +12,7 @@
 - Minor localization fixes
 - Increased base Rivals events cooldowns from 1200 to 1600 seconds
 - Rivals imprisonment will add small progress to next Rivals location reveal
+- Reduced base time to call support from 30 seconds to 15
 - (3CB Factions) Fixed ARD being named TKA
 - (SOGPF) Changed civilian helicopter model to one of the AH-1 variants
 
