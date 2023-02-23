@@ -12,7 +12,7 @@ if (player != theBoss) exitWith {
     ] spawn SCRT_fnc_ui_showMessage;
 };
 
-if (skillFIA > SKILL_CAP) exitWith {
+if (skillFIA >= SKILL_CAP) exitWith {
     [
         localize "STR_notifiers_fail_type",
         format [localize "STR_notifiers_skill_header", FactionGet(reb, "name")],
