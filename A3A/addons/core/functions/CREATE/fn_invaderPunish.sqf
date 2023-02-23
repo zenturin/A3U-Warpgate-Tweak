@@ -90,7 +90,7 @@ while {count _civilians < _numCiv} do
 
 
 // Termination conditions
-private _missionExpireTime = time + 3600;
+private _missionExpireTime = time + 2400;
 private _missionMinTime = time + 600;
 private _soldiers = [];
 { _soldiers append units _x } forEach _cargoGroups;
