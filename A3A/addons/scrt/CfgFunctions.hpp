@@ -46,6 +46,7 @@ class CfgFunctions {
 			class common_triggerArtilleryResponseEH {};
 			class common_buyReviveKitBox {};
 			class common_revive {};
+			class common_updateArsenal {};
 		};
 
 		class Effect {
