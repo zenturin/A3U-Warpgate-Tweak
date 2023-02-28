@@ -116,7 +116,6 @@ player setVariable ["originalBody", nil];
 player removeEventHandler ["HandleDamage",_playerEh];
 player setVariable ["controlReturned", nil];
 
-_unit setVariable ["owner",nil,true];
 _unit setVariable ["controlReturned", nil];
 _unit removeEventHandler ["HandleDamage",_unitEh];
 
