@@ -32,7 +32,6 @@
 - Infantry unit tiers based on current war level, the bigger war level - the better enemy's infantry units equipment
 - Discord Rich Presence support
 - Chemical airstrike - new airstirke variant which can be used by rebel commander and invader faction
-- - Projectile Camera
 - Howitzer and Mechanized Airborne QRF support types
 - Integrated Mag Repack script
 - Various additional settings and small abilities - vehicle unflip, server time multiplier et cetera
