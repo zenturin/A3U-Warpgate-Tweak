@@ -9,7 +9,6 @@
 ### Additions
 - Weferlingen support
 - (3CB Factions) Cold War Mode - Red Army and US Army Cold War factions, enables Cold War Mode - Authentic US and Red Army unit rosters with equipment and vehicles up until first half of 90s, exclusion of equipment that does not fit Cold War time period from all sources (enemies, loot crates and Arms Dealer store) with some exceptions
-- (3CB Factions) Non-Aligned Movement rebel faction
 - (3CB Factions) CHKDZ Cold War Rival faction
 
 ### Changes
