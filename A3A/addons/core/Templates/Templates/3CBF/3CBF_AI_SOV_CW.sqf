@@ -20,7 +20,7 @@
 
 ["vehiclesBasic", ["UK3CB_NFA_O_YAVA"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["UK3CB_CW_SOV_O_EARLY_BRDM2_UM", "UK3CB_ARD_O_GAZ_Vodnik"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["UK3CB_ARD_O_GAZ_Vodnik_Cannon", "UK3CB_ARD_O_GAZ_Vodnik_KVPT", "UK3CB_CW_SOV_O_LATE_BRDM2", "UK3CB_CW_SOV_O_LATE_BRDM2_ATGM", "UK3CB_CW_SOV_O_LATE_Gaz66_ZU23", "UK3CB_CW_SOV_O_LATE_Ural_Zu23", "UK3CB_CW_SOV_O_LATE_UAZ_AGS30"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["UK3CB_CW_SOV_O_LATE_BTR40_MG", "UK3CB_ARD_O_GAZ_Vodnik_Cannon", "UK3CB_ARD_O_GAZ_Vodnik_KVPT", "UK3CB_CW_SOV_O_LATE_BRDM2", "UK3CB_CW_SOV_O_LATE_BRDM2_ATGM", "UK3CB_CW_SOV_O_LATE_Gaz66_ZU23", "UK3CB_CW_SOV_O_LATE_Ural_Zu23", "UK3CB_CW_SOV_O_LATE_UAZ_AGS30"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["UK3CB_CW_SOV_O_EARLY_Ural", "UK3CB_CW_SOV_O_EARLY_Ural_Open", "UK3CB_CW_SOV_O_EARLY_VDV_Kraz255_Open", "UK3CB_CW_SOV_O_EARLY_Gaz66_Open", "UK3CB_CW_SOV_O_EARLY_Gaz66_Covered"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["UK3CB_CW_SOV_O_EARLY_Gaz66_Open_Flatbed", "UK3CB_CW_SOV_O_EARLY_Ural_Recovery", "UK3CB_CW_SOV_O_EARLY_Kraz255_Flatbed"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["UK3CB_CW_SOV_O_EARLY_Gaz66_Ammo", "UK3CB_CW_SOV_O_EARLY_Ural_Ammo"]] call _fnc_saveToTemplate;
@@ -63,7 +63,7 @@
 ["uavsPortable", ["rhs_pchela1t_vvsc"]] call _fnc_saveToTemplate;
 
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
-["vehiclesMilitiaLightArmed", ["UK3CB_CW_SOV_O_LATE_UAZ_MG", "UK3CB_CW_SOV_O_LATE_UAZ_MG", "UK3CB_CW_SOV_O_LATE_UAZ_MG", "UK3CB_CW_SOV_O_LATE_UAZ_SPG9", "UK3CB_CW_SOV_O_LATE_BTR40_MG"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["UK3CB_CW_SOV_O_LATE_UAZ_MG", "UK3CB_CW_SOV_O_LATE_UAZ_MG", "UK3CB_CW_SOV_O_LATE_UAZ_MG", "UK3CB_CW_SOV_O_LATE_UAZ_SPG9"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["UK3CB_CW_SOV_O_LATE_Zil131_Open", "UK3CB_CW_SOV_O_LATE_Zil131_Covered"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["UK3CB_CW_SOV_O_LATE_UAZ_Open", "UK3CB_CW_SOV_O_LATE_UAZ_Closed", "UK3CB_CW_SOV_O_LATE_BTR40"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaAPCs", ["UK3CB_CW_SOV_O_LATE_MTLB_PKT", "UK3CB_CW_SOV_O_LATE_BTR60"]] call _fnc_saveToTemplate;

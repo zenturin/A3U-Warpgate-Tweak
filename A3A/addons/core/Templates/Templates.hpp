@@ -464,7 +464,13 @@ class Templates
         name = "3CBF CHDKZ";
         file = "3CBF_Riv_CHDKZ";
         description = $STR_A3AP_setupFactionsTab_chdkz;
-        climate[] = {"arid", "temperate"};
+    };
+
+    class 3CBF_CHDKZ_CW : 3CBF_CHDKZ
+    {
+        name = "3CBF CHDKZ (Cold War)";
+        file = "3CBF_Riv_CHDKZ_CW";
+        priority = 39;
     };
 
     class 3CBF_TI : 3CBF_Base
