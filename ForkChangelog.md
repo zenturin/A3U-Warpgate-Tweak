@@ -5,6 +5,10 @@
 - (Aegis) AUKUS, NATO, CSAT, AAF factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods)
 - (Aegis) CHDKZ and Ion PMC Rival factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods) -->
 
+## 2.1.4
+### Changes
+- Commander slot perks fix
+
 ## 2.1.3
 ### Additions
 - Weferlingen support
