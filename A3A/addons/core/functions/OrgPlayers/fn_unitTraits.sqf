@@ -24,7 +24,8 @@ FIX_LINE_NUMBERS()
 
 private _type = typeOf player;
 private _text = "";
-if(roleDescription player isEqualTo "@STR_role_default_commander_role_name") then {
+
+if(roleDescription player isEqualTo "@STR_role_default_commander_role_name" || {roleDescription player isEqualTo "Default Commander"}) then {
     player setUnitTrait ["camouflageCoef",0.8];
     player setUnitTrait ["audibleCoef",0.8];
     player setUnitTrait ["loadCoef",1];
