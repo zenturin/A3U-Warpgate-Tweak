@@ -7,7 +7,7 @@
 
 ## 2.1.5
 ### Changes
-- Commander slot perks fix
+- Inability to call supports afrer unsuccessful loot heli run fix
 
 ## 2.1.4
 ### Changes
