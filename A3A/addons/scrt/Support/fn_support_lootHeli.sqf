@@ -59,6 +59,11 @@ if (!alive _heli || !(canMove _heli) || {!([(driver _heli)] call A3A_fnc_canFigh
     deleteMarker _areaMarker;
     deleteMarker "LootHeliAreaGlobalMarker";
 	Info_2("Helicopter is unable to loot area. Positions: %1, %2", str _positionOrigin, str _positionDestination);
+
+	if (isSupportMarkerPlacingLocked) then {
+		isSupportMarkerPlacingLocked = false;
+		publicVariable "isSupportMarkerPlacingLocked";
+	};
 };
 
 _wp3 = group _heli addWaypoint [_positionDestination, 2];
@@ -73,6 +78,11 @@ if (!alive _heli || !(canMove _heli) || {!([(driver _heli)] call A3A_fnc_canFigh
     deleteMarker _areaMarker;
     deleteMarker "LootHeliAreaGlobalMarker";
 	Info_2("Helicopter is unable to loot area. Positions: %1, %2", str _positionOrigin, str _positionDestination);
+
+	if (isSupportMarkerPlacingLocked) then {
+		isSupportMarkerPlacingLocked = false;
+		publicVariable "isSupportMarkerPlacingLocked";
+	};
 };
 
 [_lootCrate, 300, _positionDestination] remoteExec ["SCRT_fnc_loot_gatherLoot", 2];
