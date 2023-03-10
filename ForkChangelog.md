@@ -5,6 +5,10 @@
 - (Aegis) AUKUS, NATO, CSAT, AAF factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods)
 - (Aegis) CHDKZ and Ion PMC Rival factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods) -->
 
+## 2.1.6
+### Additions
+- Korean localization (Psycool3695)
+
 ## 2.1.5
 ### Changes
 - Inability to call supports afrer unsuccessful loot heli run fix
