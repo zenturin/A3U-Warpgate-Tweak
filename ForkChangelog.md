@@ -7,7 +7,7 @@
 
 ## 2.1.6
 ### Additions
-- Korean localization (Psycool3695)
+- Korean localization (credits to Psycool3695)
 
 ## 2.1.5
 ### Changes
