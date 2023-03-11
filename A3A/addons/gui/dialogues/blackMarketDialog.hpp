@@ -41,7 +41,7 @@ class A3A_BlackMarketDialog : A3A_TabbedDialog
                 {
                     idc = A3A_IDC_VEHICLETABBUTTON;
                     text = $STR_antistasi_dialogs_vehicle_tab_vehicles;
-                    onButtonClick = "[""switchTab"", [""vehicles""]] call A3A_fnc_buyVehicleDialog";
+                    onButtonClick = "[""switchTab"", [""vehicles""]] call A3A_fnc_blackMarketDialog";
                     x = 0;
                     y = 0;
                     w = 30 * GRID_W;

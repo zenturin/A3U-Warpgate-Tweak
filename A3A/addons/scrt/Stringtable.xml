@@ -5426,7 +5426,7 @@
                 <Korean>자금과 플레이어에 대한 다양한 기능들입니다. 플레이어에게 돈을 송금하려면 해당 플레이어를 봐야 합니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_put_garage_title">
-                <Original>Put Vehicle in Garage</Original>
+                <Original>Put Vehicle into Garage</Original>
                 <Russian>Поставить технику в гараж</Russian>
                 <Chinesesimp>把载具放进载具库</Chinesesimp>
                 <Korean>차량을 차고에 보관</Korean>
