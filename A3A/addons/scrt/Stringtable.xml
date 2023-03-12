@@ -1077,7 +1077,7 @@
                 <Original>&lt;t size='0.6'&gt;%1 receieves &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; for fighting for %4!&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;%1 получает &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; на борьбу за %4!&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;%1 收款人 &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; 为之奋斗 %4!&lt;/t&gt;</Chinesesimp>
-                <Korean>&amp;lt;t size='0.6'&amp;gt;%1이(가) &amp;lt;/t&amp;gt; %4을(를) 위해 싸운 것에 대해 &amp;lt;t size='0.6' color='#00FF00'&amp;gt;%2%3&amp;lt;/t&amp;gt;을(를) 받았습니다!&amp;lt;/t&amp;gt;</Korean>
+                <Korean>&amp;lt;t size='0.6'&amp;gt;%1이(가) %4을(를) 위해 싸운 것에 대해 &amp;lt;t size='0.6' color='#00FF00'&amp;gt;%2%3&amp;lt;/t&amp;gt;을(를) 받았습니다!&amp;lt;/t&amp;gt;</Korean>
             </Key>
             <Key ID="STR_comms_mp_hmg_airdrop">
                 <Original>&lt;t size='0.6'&gt;Rebel aircraft drops the &lt;t size='0.6' color='#804000'&gt;HMG&lt;/t&gt; near your position.&lt;/t&gt;</Original>
@@ -6841,12 +6841,13 @@
                 <Original>Gather Scattered Loot</Original>
                 <Russian>Собрать добычу вокруг</Russian>
                 <Chinesesimp>收集分散的战利品</Chinesesimp>
+                <Korean>흩어진 전리품 수집</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_successful_loot_text">
                 <Original>Scattered loot has been successfully gathered.</Original>
                 <Russian>Добыча вокруг была успешно собрана.</Russian>
                 <Chinesesimp>分散的战利品已成功收集。</Chinesesimp>
-                <Korean>흩어진 전리품 수집</Korean>
+                <Korean>흩어진 전리품이 성공적으로 수집되었습니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_no_loot_text">
                 <Original>No loot in proximity.</Original>
@@ -7140,7 +7141,7 @@
                 <Original>You found a %1 decryption key!&lt;br/&gt;It allows your faction to fully decrypt the next support call.</Original>
                 <Russian>Вы нашли ключ расшифровки %1!&lt;br/&gt; Он позволит вашей фракции полностью расшифровать следующий вызов поддержки врагом и принять соответствующие меры.</Russian>
                 <Chinesesimp>您找到了一个 %1 解密密钥！&lt;br/&gt;这将使您的派系能够完全破译下一波敌人的支援通信并采取适当的行动。</Chinesesimp>
-                <Korean>%1이(가) 암호 해독 키를 발견했습니다!&amp;lt;br/&amp;gt;다음 지원 요청을 완전히 해독할 수 있습니다.</Korean>
+                <Korean>%1의 암호 해독 키를 발견했습니다!&amp;lt;br/&amp;gt;다음 지원 요청을 완전히 해독할 수 있었습니다.</Korean>
             </Key>
             <Key ID="STR_intel_convoy_tracking_success">
                 <Original>We found the tracking data for a %1 convoy.&lt;br/&gt;Convoy position marked on map!</Original>
@@ -7158,13 +7159,13 @@
                 <Original>%1 are interesting not only for us - %2 have some valuable information about their undercovered network of hideouts and cells too.</Original>
                 <Russian>%1 интересны не только нам - %2 также имеют ценную информацию об их тайной сети укрытий и ячеек.</Russian>
                 <Chinesesimp>%1 不仅对我们有调查 - 对于 %2 也有一些关于他们隐蔽的藏身处和密室网络的有价值的信息</Chinesesimp>
-                <Korean>%1은 우리에게만 흥미로운 것이 아닙니다. %2은(는) 은신처와 셀에 위장 연락망에 대한 귀중한 정보를 가지고 있습니다.</Korean>
+                <Korean>%1은(는) 우리에게만 흥미로운 것이 아닙니다. %2은(는) 은신처와 셀에 위장 연락망에 대한 귀중한 정보를 가지고 있습니다.</Korean>
             </Key>
             <Key ID="STR_intel_discount">
                 <Original>We have found some information about undiscovered hidden smuggler routes and gave them to Arms Dealer. In return, he payed us for information and increased discount on %1 percent for any item in his Arms Dealer store.</Original>
                 <Russian>Мы нашли ценные разведданные о подпольной сети контрабандистов, их маршрутах. Мы отдали эти данные Оружейному Торговцу. Взамен, он заплатил нам за информацию и увеличил перманентную скидку на %1 процентов на всё оружие в его асортименте.</Russian>
                 <Chinesesimp>我们找到了一些关于未被发现的走私者隐藏路线的情报，并将其提供给了军火商。 作为回报，他向我们支付情报费用，并为他的军火商商店中的任何商品增加 %1% 的折扣。</Chinesesimp>
-                <Korean>우린 발견되지 않은 숨겨진 밀수 경로에 대한 정보를 발견했고 그것들을 암거래상에게 주었습니다. 그 대가로, 그는 우리에게 정보에 대한 대가를 지불했고 암거래 시장에 있는 모든 아이템에 대해 %1%의 할인을 받았습니다.</Korean>
+                <Korean>우린 발견되지 않은 숨겨진 밀수 경로에 대한 정보를 발견했고 그것들을 암거래상에게 주었습니다. 그 대가로, 그는 우리에게 정보에 대한 대가를 지불했고 암거래 시장에 있는 모든 아이템에 대해 %1퍼센트의 할인을 받았습니다.</Korean>
             </Key>
             <Key ID="STR_intel_has_access_to">
                 <Original>%1 currently has access to&lt;br/&gt;%2</Original>
@@ -7286,7 +7287,7 @@
                 <Original>Whether %1 wanted it or not, an arms dealer has arrived on %2. So let's get to buy some weapons and gear from him, one by one. %3. From what we can gather he trades his goods from a hideout in the forest outside of major cities. He's well hidden, but with the right team, we can punch through those trees, find this man out and establish contact with the black market.</Original>
                 <Russian>Хотели того %1 или нет, но на %2 прибыл торговец оружием. Итак, давайте купим у него оружие и снаряжение, одно за другим. %3. Насколько мы можем судить, он торгует своим смертоносным товаром из логова за пределами крупных городов. Он хорошо спрятался, но с правильной командой мы сможем не затеряться, найти этого человека и установить контакт с черным рынком.</Russian>
                 <Chinesesimp>不管 %1 想不想让我们找到军火商，一名军火商已经到达 %2 。所以我们可以从他那里买武器装备。%3 ，但是据我们所知，他在主要城市外的森林里交易货物。他藏得很好，但是有了合适的团队，我们可以穿过那些树，找到这个人，然后和黑市建立联系。</Chinesesimp>
-                <Korean>%1이 원하든 원하지 않든, 암거래상이 %2에 도착했습니다. 그럼 이제 무기와 장비를 하나씩 사봅시다. %3. 우리가 수집한 정보에 의하면 그는 주요 도시 외곽의 숲 속 은신처에서 물건을 거래하고 있습니다. 그는 잘 숨겨졌지만, 적절한 팀이 있다면 그 숲을 뚫고 이 남자를 찾아내 암시장에 접촉할 수 있을 겁니다.</Korean>
+                <Korean>%1이(가) 원하든 원하지 않든, 암거래상이 %2에 도착했습니다. 그럼 이제 무기와 장비를 하나씩 사봅시다. 그의 이름은 %3입니다. 우리가 수집한 정보에 의하면 그는 주요 도시 외곽의 숲 속 은신처에서 물건을 거래하고 있습니다. 그는 잘 숨겨졌지만, 적절한 팀이 있다면 그 숲을 뚫고 이 남자를 찾아내 암시장에 접촉할 수 있을 겁니다.</Korean>
             </Key>
             <Key ID="STR_rivals_quest_header">
                 <Original>Investigate the Battleground</Original>
