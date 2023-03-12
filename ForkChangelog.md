@@ -6,7 +6,7 @@
 - (Aegis) CHDKZ and Ion PMC Rival factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods) -->
 
 ## 2.1.8
-### Additions
+### Changes
 - Korean localization fixes
 
 ## 2.1.7
