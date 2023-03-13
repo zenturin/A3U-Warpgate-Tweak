@@ -483,7 +483,7 @@
                 <Original>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;Open garage&lt;/t&gt;</Original>
                 <French>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;Ouvrir Garage&lt;/t&gt;</French>
                 <Russian>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;Открыть гараж&lt;/t&gt;</Russian>
-                <Korean>&amp;lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&amp;gt; &amp;lt;t&amp;gt;차고 열기&amp;lt;/t&amp;gt;</Korean>
+                <Korean>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;차고 열기&lt;/t&gt;</Korean>
                 <Spanish>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;Abrir Garaje&lt;/t&gt;</Spanish>
                 <Chinesesimp>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;打开载具库&lt;/t&gt;</Chinesesimp>
                 <Czech>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa' size='1.6' shadow=2 /&gt; &lt;t&gt;Otevřít Garáž&lt;/t&gt;</Czech>
@@ -495,7 +495,7 @@
                 <Original>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; Garage %1</Original>
                 <French>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; Garage %1</French>
                 <Russian>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; Стоянка %1</Russian>
-                <Korean>&amp;lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&amp;gt;&amp;lt;/img&amp;gt; %1 넣기</Korean>
+                <Korean>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; %1 넣기</Korean>
                 <Spanish>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; Garaje %1</Spanish>
                 <Chinesesimp>&lt;img image='\A3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa'&gt;&lt;/img&gt; 载具库 %1</Chinesesimp>
                 <Czech>&lt;img image = '\ a3 \ ui_f \ Data \ Gui \ rsc \ rscdisplayArsenal \ SpaceGarage_ca.paa'&gt; &lt;/img&gt; garáž %1</Czech>
@@ -754,7 +754,7 @@
                 <Original>&lt;t size='0.6'&gt;Rotate Left: Q &lt;br/&gt;Rotate Right: E &lt;br/&gt;Cancel: Enter/ESC &lt;br/&gt;Place: Space&lt;/t&gt;</Original>
                 <French>&lt;t size='0.6'&gt;Tourner à gauche: Q &lt;br/&gt;Tourner à droite: E &lt;br/&gt;Annuler: Entrer/ESC &lt;br/&gt;Placer: Espace&lt;/t&gt;</French>
                 <Russian>&lt;t size='0.6'&gt;Поворот влево: Q &lt;br/&gt;Поворот вправо: E &lt;br/&gt;Отменить: Enter/ESC &lt;br/&gt;Поставить: Space&lt;/t&gt;</Russian>
-                <Korean>&amp;lt;t size='0.6'&amp;gt;좌회전: Q &amp;lt;br/&amp;gt;우회전: E &amp;lt;br/&amp;gt;취소: Enter/ESC &amp;lt;br/&amp;gt;배치: Space&amp;lt;/t&amp;gt;</Korean>
+                <Korean>&lt;t size='0.6'&gt;좌회전: Q &lt;br/&gt;우회전: E &lt;br/&gt;취소: Enter/ESC &lt;br/&gt;배치: Space&lt;/t&gt;</Korean>
                 <Spanish>&lt;t size='0.6'&gt;Rotar Izq: Q &lt;br/&gt;Rotar Der: E &lt;br/&gt;Cancelar: Enter/ESC &lt;br/&gt;Confirmar: Espacio&lt;/t&gt;</Spanish>
                 <Chinesesimp>&lt;t size='0.6'&gt;向左旋转: Q &lt;br/&gt;向右旋转: E &lt;br/&gt;取消: 回车/ESC &lt;br/&gt;放置: 空格&lt;/t&gt;</Chinesesimp>
                 <Czech>&lt;t size = '0,6'&gt; otočit doleva: Q &lt;br/&gt; Otočení vpravo: E &lt;br/&gt; Zrušit: Enter/Esc &lt;br/&gt; Místo: Space &lt;/t&gt;</Czech>
@@ -765,7 +765,7 @@
                 <Original>&lt;t size='0.6'&gt;Can't place vehicle that far away &lt;br/&gt;Cancel: Enter/ESC &lt;/t&gt;</Original>
                 <French>&lt;t size='0.6'&gt;Impossible de placer un véhicule aussi loin &lt;br/&gt;Annuler: Entrer/ESC &lt;/t&gt;</French>
                 <Russian>&lt;t size='0.6'&gt;Невозможно поставить технику так далеко &lt;br/&gt;Отменить: Enter/ESC &lt;/t&gt;</Russian>
-                <Korean>&amp;lt;t size='0.6'&amp;gt;차량을 그렇게 멀리 배치할 수 없습니다&amp;lt;br/&amp;gt;취소: Enter/ESC &amp;lt;/t&amp;gt;</Korean>
+                <Korean>&lt;t size='0.6'&gt;차량을 그렇게 멀리 배치할 수 없습니다&lt;br/&gt;취소: Enter/ESC &lt;/t&gt;</Korean>
                 <Spanish>&lt;t size='0.6'&gt;No puedes poner el vehículo tan lejos &lt;br/&gt;Cancelar: Enter/ESC &lt;/t&gt;</Spanish>
                 <Chinesesimp>&lt;t size='0.6'&gt;无法将载具放的这么远 &lt;br/&gt;取消: 回车/ESC &lt;/t&gt;</Chinesesimp>
                 <Czech>&lt;t size = '0,6'&gt; nelze umístit vozidlo tak daleko &lt;br/&gt; Zrušit: Enter/Esc &lt;/t&gt;</Czech>
@@ -776,7 +776,7 @@
                 <Original>&lt;t size='0.6'&gt;Something is blocking placement &lt;br/&gt; Rotate Left: Q &lt;br/&gt;Rotate Right: E &lt;br/&gt;Cancel: Enter/ESC &lt;/t&gt;</Original>
                 <French>&lt;t size='0.6'&gt;Quelque chose bloque l'emplacement &lt;br/&gt; Tourner à gauche: Q &lt;br/&gt;Tourner à droite: E &lt;br/&gt;Annuler: Entrer/ESC &lt;/t&gt;</French>
                 <Russian>&lt;t size='0.6'&gt;Что-то мешает размещению &lt;br/&gt; Поворот влево: Q &lt;br/&gt;Поворот вправо: E &lt;br/&gt;Отменить: Enter/ESC &lt;/t&gt;</Russian>
-                <Korean>&amp;lt;t size='0.6'&amp;gt;무언가가 배치를 막고 있습니다&amp;lt;br/&amp;gt;좌회전: Q &amp;lt;br/&amp;gt;우회전: E &amp;lt;br/&amp;gt;취소: Enter/ESC &amp;lt;/t&amp;gt;</Korean>
+                <Korean>&lt;t size='0.6'&gt;무언가가 배치를 막고 있습니다&lt;br/&gt;좌회전: Q &lt;br/&gt;우회전: E &lt;br/&gt;취소: Enter/ESC &lt;/t&gt;</Korean>
                 <Spanish>&lt;t size='0.6'&gt;Algo está bloqueando el sitio &lt;br/&gt; Rotar Izq: Q &lt;br/&gt;Rotar Der: E &lt;br/&gt;Cancelar: Enter/ESC &lt;/t&gt;</Spanish>
                 <Chinesesimp>&lt;t size='0.6'&gt;有物体遮挡了放置位置 &lt;br/&gt; 向左旋转: Q &lt;br/&gt;向右旋转: E &lt;br/&gt;取消: 回车/ESC &lt;/t&gt;</Chinesesimp>
                 <Czech>&lt;t size = '0,6'&gt; Něco blokuje umístění &lt;br/&gt; otočit doleva: Q &lt;br/&gt; Otočení vpravo: E &lt;br/&gt; Zrušit: Enter/Esc &lt;/t&gt;</Czech>
@@ -787,7 +787,7 @@
                 <Original>&lt;t size='0.6'&gt;Something is blocking placement &lt;br/&gt; Rotate Left: Q &lt;br/&gt;Rotate Right: E &lt;br/&gt;Cancel: Enter/ESC &lt;/t&gt;</Original>
                 <French>&lt;t size='0.6'&gt;Quelque chose bloque l'emplacement &lt;br/&gt; Tourner à gauche: Q &lt;br/&gt;Tourner à droite: E &lt;br/&gt;Annuler: Entrer/ESC &lt;/t&gt;</French>
                 <Russian>&lt;t size='0.6'&gt;Что-то мешает размещению &lt;br/&gt; Поворот влево: Q &lt;br/&gt;Поворот вправо: E &lt;br/&gt;Отменить: Enter/ESC &lt;/t&gt;</Russian>
-                <Korean>&amp;lt;t size='0.6'&amp;gt;무언가가 배치를 막고 있습니다&amp;lt;br/&amp;gt;좌회전: Q &amp;lt;br/&amp;gt;우회전: E &amp;lt;br/&amp;gt;취소: Enter/ESC &amp;lt;/t&amp;gt;</Korean>
+                <Korean>&lt;t size='0.6'&gt;무언가가 배치를 막고 있습니다&lt;br/&gt;좌회전: Q &lt;br/&gt;우회전: E &lt;br/&gt;취소: Enter/ESC &lt;/t&gt;</Korean>
                 <Spanish>&lt;t size='0.6'&gt;Algo está bloqueando el sitio&lt;br/&gt; Rotate Left: Q &lt;br/&gt;Rotate Right: E &lt;br/&gt;Cancel: Enter/ESC &lt;/t&gt;</Spanish>
                 <Chinesesimp>&lt;t size='0.6'&gt;有物体遮挡了放置位置 &lt;br/&gt; 向左旋转: Q &lt;br/&gt;向右旋转: E &lt;br/&gt;取消: 回车/ESC &lt;/t&gt;</Chinesesimp>
                 <Czech>&lt;t size = '0,6'&gt; Něco blokuje umístění &lt;br/&gt; otočit doleva: Q &lt;br/&gt; Otočení vpravo: E &lt;br/&gt; Zrušit: Enter/Esc &lt;/t&gt;</Czech>

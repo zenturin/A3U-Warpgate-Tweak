@@ -5,6 +5,15 @@
 - (Aegis) AUKUS, NATO, CSAT, AAF factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods)
 - (Aegis) CHDKZ and Ion PMC Rival factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods) -->
 
+## 2.1.8
+### Changes
+- Korean localization fixes
+
+## 2.1.7
+### Changes
+- Vehicles can be put into garage near Arms Dealer location
+- Removed money reward from Find the Arms Dealer task to prevent money farm exploit
+
 ## 2.1.6
 ### Additions
 - Korean localization (credits to Psycool3695)
