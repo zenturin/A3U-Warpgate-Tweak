@@ -95,11 +95,9 @@ waitUntil {
 [_taskId, "TRADER", "SUCCEEDED"] call A3A_fnc_taskSetState;
 
 {
-    [25,_x] call A3A_fnc_addScorePlayer;
-    [800,_x] call A3A_fnc_addMoneyPlayer;
+    [5,_x] call A3A_fnc_addScorePlayer;
 } forEach (call SCRT_fnc_misc_getRebelPlayers);
 [10,theBoss] call A3A_fnc_addScorePlayer;
-[250,theBoss, true] call A3A_fnc_addMoneyPlayer;
 
 traderPosition = _traderPosition;
 publicVariable "traderPosition";

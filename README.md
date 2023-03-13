@@ -8,7 +8,7 @@
   </p>
   <p>
     <a href="https://github.com/igorkis-scrts/A3-Antistasi-Plus/releases/latest">
-        <img src="https://img.shields.io/badge/Current_Stable_Version-2.1.6-red" alt="Antistasi Plus Version">
+        <img src="https://img.shields.io/badge/Current_Stable_Version-2.1.8-red" alt="Antistasi Plus Version">
     </a>
   </p>
 </div>
