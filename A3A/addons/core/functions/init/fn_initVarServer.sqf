@@ -127,9 +127,6 @@ DECLARE_SERVER_VAR(areOccupantsDefeated, false);
 DECLARE_SERVER_VAR(areInvadersDefeated, false);
 DECLARE_SERVER_VAR(areRivalsDefeated, false);
 DECLARE_SERVER_VAR(isRivalsDiscoveryQuestAssigned, false);
-//Cold War mode for 3CBF or 3CBF + GM
-DECLARE_SERVER_VAR(A3A_coldWarMode, false);
-
 
 ////////////////////////////////////
 //     SERVER ONLY VARIABLES     ///
@@ -554,12 +551,6 @@ DECLARE_SERVER_VAR(A3A_groundVehicleThreat, _groundVehicleThreat);
 //and add new entries to the bottom of the list.
 if (A3A_hasACE) then {
 	[] call A3A_fnc_aceModCompat;
-};
-
-//it affects first run only, then date will be serialized and set by loadStat
-//vidda has unique lightning config that needs to be preserved
-if (A3A_coldWarMode && {(toLowerANSI worldName) isNotEqualTo "blud_vidda"}) then {
-	setDate [1993, 5, 1, 7, 0];
 };
 
 ////////////////////////////////////
