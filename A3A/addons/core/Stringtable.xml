@@ -219,7 +219,7 @@
                 <Russian>Назад</Russian>
                 <German>Zurück</German>
                 <Czech>Zpět</Czech>
-                <Chinesesimp>向后</Chinesesimp>
+                <Chinesesimp>返回</Chinesesimp>
                 <Korean>뒤로</Korean>
                 <Italian>Indietro</Italian>
                 <Spanish>Atrás</Spanish>
@@ -243,7 +243,7 @@
                 <Russian>Инженеры установят или удалят мины на выбранной позиции, используя мины из арсенала</Russian>
                 <German>Die KI wird Minen um die ausgewählten Ziele legen oder räumen. Sie nutzt dabei den aktuellen Minenvorrat.</German>
                 <Czech>AI rozmístí nebo odstraní miny na požadovaných místech za použití současné zásoby arzenálu</Czech>
-                <Chinesesimp>AI将使用现有的军火库中地雷, 在预期目标位置部署或拆除地雷</Chinesesimp>
+                <Chinesesimp>AI将使用现有的军火库中地雷, 在指定位置部署或拆除地雷</Chinesesimp>
                 <Korean>인공지능이 현재 아스널의 지뢰 재고를 이용하여, 목표 지점에 지뢰를 심거나 제거할 것 입니다.</Korean>
                 <Italian>L'IA piazzerà o rimuoverà le mine sugli obiettivi desiderati, utilizzando l'attuale scorta di mine nell'Arsenale</Italian>
                 <Spanish>La IA desplegará o quitará las minas de los objetivos designados, usando el stock disponible</Spanish>
