@@ -1867,7 +1867,7 @@
             <Key ID="STR_cut_text_paradrop_notification_1">
                 <Original>&lt;t color='#d3d9df' size='2'&gt;Commander uses paradrop insertion at some location. You're about to be moved into plane in %1 seconds. Press ESCAPE if you don't want to be moved into airplane. Parachutes will be automatically applied on jump from plane.&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#d3d9df' size='2'&gt;Командир испольует десантирование с парашютами на определенную позицию. Вас переместит в самолёт через %1 секунд. Нажмите ESCAPE если вы не хотите перемещаться в самолёт и остаться на земле. Парашют будет автоматически прикреплен после прыжка с парашютом, нет нужды его брать отдельно.&lt;/t&gt;</Russian>
-                <Chinesesimp>&lt;t color='#d3d9df' size='2'&gt;指挥官在某些位置使用集体空投。 您将在 %1 秒后进入飞机。 如果您不想进入飞机，请按 ESCAPE ，跳伞时降落伞会自动拥有不需要自己带。&lt;/t&gt;</Chinesesimp>
+                <Chinesesimp>&lt;t color='#d3d9df' size='2'&gt;指挥官在某些位置使用集体空投。 您将在 %1 秒后进入飞机。 如果您不想进入飞机，请按 ESCAPE ，跳伞时降落伞会自动携带，不需要自己带。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#d3d9df' size='2'&gt;지휘관이 특정 위치에 공수강하 진입을 사용합니다. %1초 후에 비행기로 이동합니다. 비행기 안으로 이동하지 않으려면 ESC를 누르십시오. 낙하산은 비행기에서 점프할 때 자동으로 펼쳐집니다.&lt;/t&gt;</Korean>
             </Key>
             <Key ID="STR_cut_text_paradrop_notification_2">
@@ -7680,7 +7680,7 @@
             <Key ID="STR_A3A_Missions_LOG_Salvage_task_desc">
                 <Original>A supply shipment was sunk outside of %1. Go there and recover the supplies before %2. You will need to get a hold of a boat with a winch and cargo capabilities to recover the shipment (rescue boat, motor boat or similar ones will fit), check beaches for civilian boats you can commandeer. You may find diving gear in any enemy seaport crate or in the arsenal if you have captured any seaport and delivered crate from it before.</Original>
                 <Russian>Грузовой корабль с поставкой припасов затонул недалеко от %1. Идите туда и вытащите груз до %2. Вам потребуется лодка с лебёдкой для того чтобы достать поставку, сгодится любая лодка c лебёдкой и возможностью принять груз (подойдут спасательные, скоростные лодки и похожие на них) - вы можете либо использовать наши лодки, либо воспользоваться пришвартованными гражданскими судами. Также вы можете найти дайверское снаряжение в ящике со снаряжением в любом вражеском морском порту  или в арсенале если вы захватывали и успешно довозили до штаба ящик из морского порта ранее.</Russian>
-                <Chinesesimp>一批补给品在 %1 外沉没。 去那里并在 %2 之前回收物资。 您将需要获得一艘带有绞车和货物能力的船来回收货物（救援船、摩托艇或类似的船只都适合），检查海滩上是否有您可以征用的民用船只。 如果您之前占领过任何海港并从那里运送过箱子，您可能会在任何敌方海港箱子或军火库中找到潜水装备。</Chinesesimp>
+                <Chinesesimp>一批补给品在 %1 外沉没。 去那里并在 %2 之前回收物资。 您将需要获得一艘带有绞车和运货能力的船来回收货物（救援船、摩托艇或类似的船只都适合），检查海滩上是否有您可以征用的民用船只。 如果您之前占领过任何海港并从那里运送过箱子，您可能会在任何敌方海港箱子或军火库中找到潜水装备。</Chinesesimp>
                 <Korean>%1 외곽에서 보급 선적물이 가라앉았습니다. 가서 %2 이전에 보급품을 되찾으십시오. 선적물을 회수하려면 윈치와 화물 기능이 있는 보트를 입수하고(구조 보트, 모터 보트 또는 유사한 보트가 적합합니다), 징발할 수 있는 민간 보트가 있는지 해변을 확인하십시오. 만약 당신이 이전에 어떤 항구를 점령하고 그 곳에서 상자를 배달했다면, 당신은 적의 상자나 무기고에서 다이빙 장비를 발견할 수 있습니다.</Korean>
             </Key>
             <Key ID="STR_A3A_Missions_LOG_Helicrash_task_header">
@@ -8969,7 +8969,7 @@
             <Key ID="STR_A3A_initBases_occ">
                 <Original>Occupant</Original>
                 <Russian>Оккупанта</Russian>
-                <Chinesesimp>拥有者</Chinesesimp>
+                <Chinesesimp>占领军</Chinesesimp>
                 <Korean>점령군</Korean>
             </Key>
             <Key ID="STR_A3A_initBases_inv">
