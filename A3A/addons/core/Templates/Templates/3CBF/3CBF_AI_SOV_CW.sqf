@@ -487,8 +487,8 @@ _militaryLoadoutData set ["sidearms", ["rhs_weap_makarov_pm"]];
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _policeLoadoutData set ["uniforms", ["rhs_uniform_afghanka_moldovan_ttsko_blue"]];
-_policeLoadoutData set ["vests", ["rhs_suspender_AK8_chestrig", "rhs_suspender_AK", "rhs_suspender_AK4", "rhs_6sh92_radio"]];
-_policeLoadoutData set ["helmets", ["rhs_fieldcap_m88_moldovan_ttsko_blue_back", "rhs_fieldcap_m88_moldovan_ttsko_blue", "rhs_suspender_SKS"]];
+_policeLoadoutData set ["vests", ["rhs_suspender_AK8_chestrig", "rhs_suspender_AK", "rhs_suspender_AK4", "rhs_suspender_SKS"]];
+_policeLoadoutData set ["helmets", ["rhs_fieldcap_m88_moldovan_ttsko_blue_back", "rhs_fieldcap_m88_moldovan_ttsko_blue"]];
 _policeLoadoutData set ["SMGs", [
 ["uk3cb_sks_02", "", "", "", ["rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm_tracer"], [], ""],
 ["uk3cb_sks_01", "", "", "", ["uk3cb_10rnd_magazine_sks", "uk3cb_10rnd_magazine_sks", "uk3cb_10rnd_magazine_sks_GT"], [], ""],
