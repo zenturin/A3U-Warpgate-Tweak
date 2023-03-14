@@ -219,7 +219,7 @@
                 <Russian>Назад</Russian>
                 <German>Zurück</German>
                 <Czech>Zpět</Czech>
-                <Chinesesimp>向后</Chinesesimp>
+                <Chinesesimp>返回</Chinesesimp>
                 <Korean>뒤로</Korean>
                 <Italian>Indietro</Italian>
                 <Spanish>Atrás</Spanish>
@@ -243,7 +243,7 @@
                 <Russian>Инженеры установят или удалят мины на выбранной позиции, используя мины из арсенала</Russian>
                 <German>Die KI wird Minen um die ausgewählten Ziele legen oder räumen. Sie nutzt dabei den aktuellen Minenvorrat.</German>
                 <Czech>AI rozmístí nebo odstraní miny na požadovaných místech za použití současné zásoby arzenálu</Czech>
-                <Chinesesimp>AI将使用现有的军火库中地雷, 在预期目标位置部署或拆除地雷</Chinesesimp>
+                <Chinesesimp>AI将使用现有的军火库中地雷, 在指定位置部署或拆除地雷</Chinesesimp>
                 <Korean>인공지능이 현재 아스널의 지뢰 재고를 이용하여, 목표 지점에 지뢰를 심거나 제거할 것 입니다.</Korean>
                 <Italian>L'IA piazzerà o rimuoverà le mine sugli obiettivi desiderati, utilizzando l'attuale scorta di mine nell'Arsenale</Italian>
                 <Spanish>La IA desplegará o quitará las minas de los objetivos designados, usando el stock disponible</Spanish>
@@ -5050,4 +5050,472 @@
             </Key>
         </Container>
     </Package>
-</Project>
+</Project>火: 休息8小时并清理森林(仅限指挥官使用)。</Chinesesimp>
+                <Korean>깃발: 차량 및 분대원 모집. 지휘관 옵션.&lt;br/&gt; 페트로스 : 사이드 임무(지휘관 전용).&lt;br/&gt;지도 : 게임 설정.&lt;br/&gt;캠프 파이어: 8시간 동안 휴식을 취하고 숲을 없앱니다(지휘관 전용).</Korean>
+                <Russian>Флаг: Найм ИИ. &lt;br/&gt; Пестрос: Побочные задания (только для командира). &lt;br/&gt; Карта: параметры игры. &lt;br/&gt; Палатка: отдых в течение 8 часов.</Russian>
+                <Italian>Bandiera: Veicoli e Reclutamento Squadre e Unità.Opzioni del Comandante. &lt;br/&gt;Petros: Missioni-Secondarie (Solo per il Comandante).&lt;br/&gt;Mappa: Opzioni di Gioco.&lt;br/&gt;Falò: Riposa per 8 ore e ripulisci la foresta (Solo per il Comandante).</Italian>
+                <Spanish>Bandera: Vehículos y recltamiento de escuadras. Opciones del Comandante.&lt;br/&gt;Petros: Misiones secundarias (Solo para el Comandante).&lt;br/&gt;Mapa: Opciones de Juego.&lt;br/&gt;Campamento: Descansa por 8 horas y despeja la maleza (Solo para el Comandante).</Spanish>
+                <Polish>Flaga: Rekrutacja pojazdów i oddziałów. Opcje dowódcy.&lt;br/&gt;Petros: Misje poboczne (tylko dowódca).&lt;br/&gt;Mapa: Opcje gry.&lt;br/&gt;Ognisko: Odpoczynek przez 8 godzin i Wyczyść las (tylko dowódca).</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_header_gamemode">
+                <Original>AI Rules of Engagement</Original>
+                <French>Règles d'engagement des IA</French>
+                <German>KI Spielregeln</German>
+                <Czech>Nastavení boje</Czech>
+                <Chinesesimp>AI交战规则</Chinesesimp>
+                <Korean>인공지능 교전수칙</Korean>
+                <Russian>Правила боя ИИ</Russian>
+                <Italian>IA Regole di Ingaggio</Italian>
+                <Spanish>IA Reglas de combate</Spanish>
+                <Polish>Zasady Użycia Siły AI</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_gamemode_1">
+                <Original>%2 vs %1 war.</Original>
+                <French>Guerre %2 vs %1</French>
+                <German>Krieg %2 gegen %1</German>
+                <Czech>Válka %2 vs %1.</Czech>
+                <Chinesesimp>%2 vs %1 战争</Chinesesimp>
+                <Korean>%2 대 %1 전쟁.</Korean>
+                <Russian>Война %2 против %1.</Russian>
+                <Italian>%2 vs %1 guerra.</Italian>
+                <Spanish>Guerra %2 vs %1.</Spanish>
+                <Polish>Wojna %2 Kontra %1.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_gamemode_2">
+                <Original>%2 vs %1 war.</Original>
+                <French>Guerre %2 vs %1</French>
+                <German>Krieg %2 gegen %1</German>
+                <Czech>Válka %2 vs %1.</Czech>
+                <Chinesesimp>%2 vs %1 战争。</Chinesesimp>
+                <Korean>%2 대 %1 전쟁.</Korean>
+                <Russian>Война %2 против %1.</Russian>
+                <Italian>%2 vs %1 guerra.</Italian>
+                <Spanish>Guerra %2 vs %1.</Spanish>
+                <Polish>Wojna %2 Kontra %1.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_gamemode_3">
+                <Original>%3 vs All war.&lt;br/&gt;&lt;br/&gt;%1 and %2 will attack only %3 and act independently. Both can conquer.</Original>
+                <French>Guerre %3 vs tous..&lt;br/&gt;&lt;br/&gt;%1 et %2 n'attaqueront que %3 et agiront indépendamment. Les deux peuvent conquérir des zones.</French>
+                <German>Krieg %3 gegen alle.&lt;br/&gt;&lt;br/&gt;%1 und %2 werden selbständig nur %3 angreifen. Beide können erobern.</German>
+                <Czech>Válka %3 vs Všem .&lt;br/&gt;&lt;br/&gt;%1 a %2 zaútočí pouze na %3 a bude jednat nezávisle. Oba mohou dobýt.</Czech>
+                <Chinesesimp>%3 vs 全部阵营 战争。&lt;br/&gt;&lt;br/&gt;%1 和 %2 只会独立地攻击 %3。二者均可被占领。</Chinesesimp>
+                <Korean>%3 대 %2와 %1의 연합전. &lt;br/&gt;&lt;br/&gt;%1과 %2은 %3만 공격하고 독립적으로 활동합니다. 둘 다 정복 가능.</Korean>
+                <Russian>Война %3 против всех.&lt;br/&gt;&lt;br/&gt; %1 и %2 атакуют только %3 и действуют независимо. Оба могут победить.</Russian>
+                <Italian>%3 contro tutti.&lt;br/&gt;&lt;br/&gt;%1 e %2 attaccheranno soltanto %3 e agiranno indipendentemente. Entrambi posso conquistare.</Italian>
+                <Spanish>Guerra %3 vs Todos.&lt;br/&gt;&lt;br/&gt;%1 y %2 atacarán solo a %3 y actuarán independietemente. Ambos pueden conquistar zonas.</Spanish>
+                <Polish>Wojna %3 Kontra Wszyscy.&lt;br/&gt;&lt;br/&gt;%1 i %2 będą atakować tylko %3 i działać niezależnie od siebie. Obie strony mogą podbijać.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_gamemode_4">
+                <Original>All vs All war.&lt;br/&gt;&lt;br/&gt;%1 and %2 will attack each other and both to %3.</Original>
+                <French>Guerre tous contre tous.&lt;br/&gt;&lt;br/&gt; %1 et %2 s’attaqueront tous les deux et aussi à %3.</French>
+                <German>Krieger jeder gegen jeden.&lt;br/&gt;%1 und %2 werden einander und %3 bekämpfen.</German>
+                <Czech>Všichni vs Všem válka.&lt;br/&gt;&lt;br/&gt;%1 a %2 zaútočí na sebe a oba na %3.</Czech>
+                <Chinesesimp>全部阵营 vs 全部阵营 战争。&lt;br/&gt;&lt;br/&gt;%1 和 %2 会互相攻击, 二者都会攻击 %3。</Chinesesimp>
+                <Korean>개별 전쟁.&lt;br/&gt;&lt;br/&gt;%1과 %2은 서로를 공격하면 둘 다 %3도 공격합니다.</Korean>
+                <Russian>Все против всех.&lt;br/&gt;&lt;br/&gt;%1 и %2 будут атаковать друг друга и оба - %3.</Russian>
+                <Italian>Guerra Tutti contro Tutti.&lt;br/&gt;&lt;br/&gt;%1 e %2 si attaccheranno a vicenda e entrambi attaccheranno %3</Italian>
+                <Spanish>Guerra Todos vs Todos.&lt;br/&gt;&lt;br/&gt;%1 y %2 se atacarán entre si y ambós atacarán a %3.</Spanish>
+                <Polish>Wszyscy Kontra Wszyscy.&lt;br/&gt;&lt;br/&gt;%1 i %2 będą atakować się nawzajem i obie frakcje będą atakować %3.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_header_Default_1">
+                <Original>Welcome</Original>
+                <French>Bienvenue</French>
+                <German>Willkommen</German>
+                <Czech>Vítejte</Czech>
+                <Chinesesimp>欢迎</Chinesesimp>
+                <Korean>환영합니다</Korean>
+                <Russian>Добро пожаловать</Russian>
+                <Italian>Benvenuto</Italian>
+                <Spanish>Bienvenida</Spanish>
+                <Polish>Witaj</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_Default_1">
+                <Original>Welcome to Arma 3 - %1. This mission aims to simulate guerilla combat, tactics and strategic situations. It is not a quick and easy mod, it is long term, step-by-step mission with LOTS of features and enhanced AI.</Original>
+                <French>Bienvenue sur Arma 3 - %1. Cette mission vise à simuler des combats de guérilla, des tactiques et des situations stratégiques. Ce n'est pas un mod rapide et facile, c'est une mission à long terme, étape par étape, avec BEAUCOUP de fonctionnalités et une IA améliorée.</French>
+                <German>Willkommen zu Arma 3 - %1. Diese Mission zielt darauf ab Guerillakrieg, -taktiken und -strategien zu simulieren. Es ist kein schneller und einfacher Spielmodus. Es ist eine Mission ausgelegt auf eine lange Spielzeit mit einer MENGE an Features und erweiterter KI.</German>
+                <Czech>Vítejte v Arma 3 - %1. Cílem této mise je simulovat partyzánský boj, taktiku a strategické situace. Není to rychlý a snadný mód, je to dlouhodobá, postupná mise s mnoha funkcemi a vylepšeným AI.</Czech>
+                <Chinesesimp>欢迎来到 Arma 3 - %1。本任务旨在模拟游击战的战斗、战术和战略态势。这不是一个快速、简单的模式, 而是长期的、循序渐进的, 带有大量特性和增强型AI的任务。</Chinesesimp>
+                <Korean>아르마 3 - %1에 오신 것을 환영합니다. 이 임무는 게릴라전, 전술, 전략적 상황을 시뮬레이션하는 것을 목표로 합니다. 이 임무는 빠르고 쉬운 모드가 아니라 많은 기능과 향상된 인공지능을 가진 장기적이고 단계적인 임무입니다.</Korean>
+                <Russian>Добро пожаловать в Arma 3 - %1. Эта миссия направлена на моделирование партизанского боя, тактики и стратегических ситуаций. Это не быстрый и легкий мод, это долгосрочная, пошаговая миссия с МНОЖЕСТВОМ функций и улучшенным ИИ.</Russian>
+                <Italian>Benvenuto in Arma 3 - %1. Questa missione cerca di simulare il combattimento da guerrilla, tattiche e situazioni strategiche. Non è una mod facile e veloce, è a lungo termine, una missione passo dopo passo con MOLTE caratteristiche e un IA migliorata.</Italian>
+                <Spanish>Bienvenidos a Arma 3 - %1. Esta misión quiere simular el combate de guerrillas, así como situaciones tácticas y estratégicas. No es un modo rápido ni fácil, es a largo plazo, misiones paso a paso con MUCHAS opciones e IA avanzada.</Spanish>
+                <Polish>Witamy w Arma 3 - %1. Ta misja ma na celu symulację walki partyzanckiej, taktyki i sytuacji strategicznych. Nie jest to szybki i łatwy mod, to długoterminowa misja z dużą ilością funkcji i ulepszoną sztuczną inteligencją.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_header_Default_2">
+                <Original>Win</Original>
+                <French>Victoire</French>
+                <German>Sieg</German>
+                <Czech>Vítězství</Czech>
+                <Chinesesimp>胜利条件</Chinesesimp>
+                <Korean>승리</Korean>
+                <Russian>Победа</Russian>
+                <Italian>Vittoria</Italian>
+                <Spanish>Victoria</Spanish>
+                <Polish>Wygrana</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_Default_2">
+                <Original>You will win the game when most of the population supports your faction and you have conquered all the airbases and military bases.</Original>
+                <French>Vous gagnerez la partie lorsque la majorité de la population soutiendra votre faction et que vous aurez conquis toutes les bases aériennes et militaires.</French>
+                <German>Sie werden das Spiel gewinnen, wenn der Großteil der Bevölkerung Ihre Fraktion unterstützt und Sie alle Luftwaffenstützpunkte und Militärbasen erobert haben.</German>
+                <Czech>Hru vyhrajete, když většina obyvatel podpoří vaši frakci a dobyli jste všechny letecké a vojenské základny.</Czech>
+                <Chinesesimp>当大多数人支持您的派系并且您征服了所有空军基地和军事基地时，您将赢得比赛。</Chinesesimp>
+                <Korean>인구의 대부분이 당신의 팩션을 지지하고 당신이 모든 공군 기지와 군사 기지를 점령했을 때 게임에서 승리할 것입니다.</Korean>
+                <Russian>Вы выиграете игру, когда большая часть населения будет поддерживать вашу фракцию и вы захватите все авиабазы и военные базы.</Russian>
+                <Italian>Vincerai la partita quando la maggior parte della popolazione sosterrà la tua fazione e avrai conquistato tutte le basi aeree e militari.</Italian>
+                <Spanish>Ganarás el juego cuando la mayoría de la población apoye a tu facción y hayas conquistado todas las bases aéreas y bases militares.</Spanish>
+                <Polish>Wygrasz grę, gdy większość populacji poprze twoją frakcję i podbijesz wszystkie lotniska i bazy wojskowe.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_header_Default_3">
+                <Original>Lose</Original>
+                <French>Défaite</French>
+                <German>Niederlage</German>
+                <Czech>Prohra</Czech>
+                <Chinesesimp>失败条件</Chinesesimp>
+                <Korean>패배</Korean>
+                <Russian>Неудача</Russian>
+                <Italian>Sconfitta</Italian>
+                <Spanish>Derrota</Spanish>
+                <Polish>Przegrana</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_Default_3">
+                <Original>You will lose the game if %1 has murdered 1/3 of the total population.</Original>
+                <French>Vous perdrez la partie si %1 a tué 1/3 de la population totale.</French>
+                <German>Du verlierst das Spiel, wenn %1 1/3 der gesamten Bevölkerung ermordet hat.</German>
+                <Czech>Ztratíte hru, pokud %1 zavraždí 1/3 celkové populace.</Czech>
+                <Chinesesimp>如果 %1 谋杀了总人口的1/3, 你将输掉这场游戏。</Chinesesimp>
+                <Korean>%1이 전체 인구의 1/3을 학살할 경우 게임에서 패배합니다.</Korean>
+                <Russian>Вы проиграете игру, если %1 убил 1/3 всего населения.</Russian>
+                <Italian>Perderai se il %1 ha ucciso 1/3 della popolazione totale.</Italian>
+                <Spanish>Perderás si %1 asesina a 1/3 del total de la población.</Spanish>
+                <Polish>Przegrasz grę, jeśli %1 zamordował 1/3 całej populacji.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_header_Credits_1">
+                <Original>Script Credits</Original>
+                <French>Crédit pour les scripts</French>
+                <German>Genutzte Scripts</German>
+                <Czech>Použité skripty</Czech>
+                <Chinesesimp>脚本制作者名单</Chinesesimp>
+                <Korean>스크립트 크레딧</Korean>
+                <Russian>Авторы сценария</Russian>
+                <Italian>Crediti Scripts</Italian>
+                <Spanish>Script Credits</Spanish>
+                <Polish>Użyte Skrypty</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_Credits_1">
+                <Original>UPSMon by Monsada, Kronzy and Cool=Azroul13.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Original>
+                <German>UPSMon von Monsada, Kronzy und Cool=Azroul13.&lt;br/&gt;Persistent Save von zooloo75.&lt;br/&gt;Tags von Marker und Melbo.&lt;br/&gt;JAS von Jeroen (Entschuldige, dass es so lange gedauert hat dich hinzuzufügen)&lt;br/&gt;Advanced Towing von Seth Duda.</German>
+                <Czech>UPSMon od Monsada, Kronzy and Cool = Azroul13 &lt;br/&gt;Trvalé Uložit podle zooloo75.&lt;br/&gt;Štítky Marker a Melbo.&lt;br/&gt;JAS od Jeroen (omlouvám se za to, že jste byli pozdě)&lt;br/&gt;Štítky od Markera a Melba.&lt;br/&gt;Rozšířené tažení od Setha Dudy.</Czech>
+                <Korean>UPSMon의 Monsada, Kronzy와 Cool=Azroul13.&lt;br/&gt;영구 저장의 zooloo75.&lt;br/&gt;Tags의 Marker와 Melbo.&lt;br/&gt;JAS의 Jeroen (너무 늦게 포함해서 죄송합니다)&lt;br/&gt;Advanced Towing의 Seth Duda.</Korean>
+                <Chinesesimp>UPSMon by Monsada, Kronzy 和 Cool=Azroul13。&lt;br/&gt;Persistent Save by zooloo75。&lt;br/&gt;Tags by Marker 和 Melbo。&lt;br/&gt;JAS by Jeroen (抱歉这么晚才把你添加进来)。&lt;br/&gt;Advanced Towing by Seth Duda。</Chinesesimp>
+                <Italian>UPSMon da Monsada, Kronzy and Cool=Azroul13.&lt;br/&gt;Salvataggio Persistente di zooloo75.&lt;br/&gt;Tags da Marker and Melbo.&lt;br/&gt;JAS da Jeroen (Scusa per averti incluso così tardi)&lt;br/&gt;Advanced Towing da Seth Duda.</Italian>
+                <Spanish>UPSMon by Monsada, Kronzy and Cool=Azroul13.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Spanish>
+                <Polish>UPSMon stworzony przez Monsada, Kronzy i Cool=Azroul13.&lt;br/&gt;Persistent Save stworzony przez zooloo75.&lt;br/&gt;Tags stworzony przez Marker i Melbo.&lt;br/&gt;JAS stworzony przez Jeroen.&lt;br/&gt;Advanced Towing stworzony przez Seth Duda.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_header_Credits_2">
+                <Original>Mods</Original>
+                <French>Mods</French>
+                <German>Mods</German>
+                <Czech>Módy</Czech>
+                <Chinesesimp>模组</Chinesesimp>
+                <Korean>모드</Korean>
+                <Russian>Моды</Russian>
+                <Italian>Mods</Italian>
+                <Spanish>Mods</Spanish>
+                <Polish>Modyfikacje</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_Credits_2">
+                <Original>Integrated (optional) Mods:&lt;br/&gt;TFAR: Radio integrated in Arsenal. Sound disabled when player is unconscious.&lt;br/&gt;ACE Medical: Will disable Antistasi revive system.&lt;br/&gt;&lt;br/&gt;CAUTION: The use of Persistent Save system with TFAR and any weapon mod activated will make them mandatory in future.&lt;br/&gt;&lt;br/&gt;Any client sided Mod, such as JSRS, Blastcore, UI Mod should work.&lt;br/&gt;&lt;br/&gt;Units and vehicles mods won't work. AI Mods may cause malfunctions (in any case Antistasi has heavy AI tweaking).</Original>
+                <German>Integrierte (optionale) Mods:&lt;br/&gt;TFAR: Funkgerät in Arsenal integriert. Sound deaktiviert, wenn der Spieler bewusstlos ist.&lt;br/&gt;ACE Medical: Deaktiviert das Antistasi Revive System.&lt;br/&gt;VORSICHT: Die Speicherung des Spielstands mit TFAR oder jedglicher Mod für Waffen führt dazu, dass diese Mods bis zum Ende notwendig sind.&lt;br/&gt;&lt;br/&gt;Jeder clientseitige Mod, wie z.B. JSRS, Blastcore oder UI Mod sollte funktionieren.&lt;br/&gt;Einheiten und Fahrzeuge aus Mods funktionieren nicht. KI Mods können zu Fehlern führen. (Antistasi hat in jedem Fall viel am KI Verhalten geändert)</German>
+                <Czech>Integrované (volitelné) Módy:&lt;br/&gt;TFAR: Rádio integrované v Arsenalu. Zvuk je deaktivován, když je hráč v bezvědomí.&lt;br/&gt;ACE Lékař: Vypne Antistasi revive system.&lt;br/&gt;&lt;br/&gt;UPOZORNĚNÍ: Používání systému Uložení hry s TFAR a jakýmkoli aktivovaným módem zbraně je v budoucnosti povinné.&lt;br/&gt;&lt;br/&gt; Mód by měl fungovat. Módy pro jednotky a vozidla nebudou fungovat.&lt;br/&gt;&lt;br/&gt; Režimy AI mohou způsobit poruchy (v každém případě má Antistasi těžké vylepšení AI).</Czech>
+                <Korean>통합 (선택적)모드:&lt;br/&gt;TFAR: 무전기가 아스널에 통합됩니다. 플레이어가 의식불명이 되면 소리가 비활성화됩니다.&lt;br/&gt;ACE 의료: 안티스타시 소생 시스템을 비활성화합니다.&lt;br/&gt;&lt;br/&gt;주의: TFAR 및 활성화된 모든 무기 모드화 함께 영구 저장 시스템을 사용하면 해당 게임이 끝날 때까지 계속 해당 모드를 사용해야 합니다.&lt;br/&gt;&lt;br/&gt;JSRS, Blastcore, UI 모드와 같은 클라이언트 전용 모드는 잘 작동할겁니다.&lt;br/&gt;&lt;br/&gt;유닛 또는 차량 모드는 작동하지 않습니다. 인공지능 개선 모드는 오작동을 일으킬 수 있습니다(어떠한 경우는 안티스타시는 인공지능을 심하게 조정합니다).</Korean>
+                <Chinesesimp>内置支持的(可选)模组: &lt;br/&gt;TFAR: 无线电已集成至军火库。玩家失去意识时将会禁用声音。&lt;br/&gt;ACE医疗: 将会禁用 Antistasi 复苏系统。&lt;br/&gt;&lt;br/&gt;注意: 进行永久性存储时使用TFAR和任何武器模组, 将使它们成为强制性模组。&lt;br/&gt;&lt;br/&gt;任何客户端模组, 如JSRS, Blastcore, 用户界面模组都应当能够正常使用。&lt;br/&gt;&lt;br/&gt;单位和载具模组不会正常工作。AI模组可能会导致任务异常(在绝大多数情况下, Antistasi 对AI逻辑进行了重度调整)。</Chinesesimp>
+                <Italian>Integrate (opzionali) Mods: &lt;br/&gt;TFAR: Radio integrate nell'Arsenal. Suoni disabilitati quando il giocatore è privo di sensi.&lt;br/&gt;Ace Medical: Disabiliterà il sistema medico di Antistasi.&lt;br/&gt;&lt;br/&gt;Attenzione:Se verrà eseguito un salvataggio con le mod opzionali attive diventeranno obbligatorie la prossima volta che si tenta entrare.&lt;br/&gt;&lt;br/&gt;Qualunque mod client come: JSRS, Blastcore, UI Mod, dovrebbero funzionare&lt;br/&gt;&lt;br/&gt;Mod che aggiungono veicoli e unità non funzioneranno. Mod che modificano il comportamento dell'IA potrebbero creare problemi poiché Antistasi modifica pesantemente l'IA.</Italian>
+                <Spanish>Mods Integrados (opcionales): &lt;br/&gt; TFAR: Radio integrada en el Arsenal. Sonido deshabilitado cuando el jugador está inconsciente. &lt;br/&gt;ACE medical: Sustituirá el metódo de reanimación de Antistasi. &lt;br/&gt;&lt;br/&gt;ATENCIÓN: El uso del sistema de Guardado Persistente con TFAR y/o con cualquier mod de armas activo hará que seán obligatorios en el futuro.&lt;br/&gt;&lt;br/&gt;Cualquier otro mod del cliente, como JSRS, Blastcore, UI Mod deberían funcionar.&lt;br/&gt;&lt;br/&gt;Mods de unidades y vehículos no funcionan. Mods de IA pueden ocasionar errores (En cualquier caso Antistasi tiene una alta modificación del comportamiento de la IA).</Spanish>
+                <Polish>Zintegrowane (opcjonalne) Mody:&lt;br/&gt;TFAR: Radio zintegrowane iw Arsenale. Dźwięk wyłączony, gdy gracz jest nieprzytomny.&lt;br/&gt;ACE Medical: Wyłączy system leczenia Antistasi.&lt;br/&gt;&lt;br/&gt;UWAGA: Korzystanie z systemu Trwały Zapis wraz z modyfikacją TFAR i modyfikacjami dodającymi broni sprawi, że będą one obowiązkowe przy wczytaniu zapisu gry.&lt;br/&gt;&lt;br/&gt;Każdy mod po stronie klienta, taki jak JSRS, Blastcore oraz mody na interfejs gry powinny działać.&lt;br/&gt;&lt;br/&gt;Modyfikacje dodające jednostki i pojazdy nie będą działać. Mody na AI mogą powodować problemy (Antistasi domyślnie ma poprawione i podkręcone AI).</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_header_Credits_3">
+                <Original>Thanks</Original>
+                <French>Remerciements</French>
+                <German>Danksagung</German>
+                <Czech>Poděkování</Czech>
+                <Chinesesimp>致谢</Chinesesimp>
+                <Korean>감사드립니다</Korean>
+                <Russian>Благодарность</Russian>
+                <Italian>Grazie</Italian>
+                <Spanish>Agradecimientos</Spanish>
+                <Polish>Podziękowania</Polish>
+            </Key>
+            <Key ID="STR_antistasi_journal_entry_text_Credits_3">
+                <Original>LanCommi for his artwork.&lt;br/&gt;Goon and jw custom: Part of the code for the NAPALM script.&lt;br/&gt;rebel12340: Radio Jam script&lt;br/&gt;Manko: Earplug snippet&lt;br/&gt;bobchaos: Managing the community despite all difficulties.&lt;br/&gt;And all those players who spend their time on making comments, suggestions and reports on Steam, Github and BIS forums.</Original>
+                <French>LanCommi pour son artwork.&lt;br/&gt;Goon et jw custom: pour une partie du code du script NAPALM.&lt;br/&gt;rebel12340: pour le script de brouillage radio.&lt;br/&gt;Manko: pour le morceau de code pour les bouchons d'oreilles.&lt;br/&gt;bobchaos: pour avoir gérer la communauté malgré toutes les difficultés.&lt;br/&gt;Et à tous les joueurs qui passent leur temps à faire des commentaires, des suggestions et des rapports sur les forums Steam, Github et BIS.</French>
+                <Czech>LanCommi za jeho umělecké dílo.&lt;br/&gt;Goon a jw vlastní: Část kódu pro skript NAPALM.&lt;br/&gt;rebel12340: Radio Jam script&lt;br/&gt;Manko: Sniper snippet&lt;br/&gt;bobchaos: Správa komunity i přes všechny obtíže.&lt;br/&gt;A všichni hráči, kteří tráví čas přípravou komentářů, návrhů a zpráv na fórech Steam, Github a BIS</Czech>
+                <Korean>LanCommi: 아트워크&lt;br/&gt;Goon과 jw custom: 네이팜 스크립트 코드 일부&lt;br/&gt;rebel12340: 무전 작동불량 스크립트&lt;br/&gt;Manko: 귀마개 스크립트&lt;br/&gt;bobchaos: 모든 어려움에도 불구하고 거뮤니티를 관리함&lt;br/&gt;그리고 스팀, 깃헙 및 보헤미아 인터렉티브 스튜디오 포럼에 의견, 제안 및 보고서를 작성하는 데 시간을 주신 모든 플레이어.</Korean>
+                <Chinesesimp>LanCommi 的美术设计。&lt;br/&gt;Goon 和 jw custom: 部分凝固汽油弹(NAPALM)脚本。&lt;br/&gt;rebel12340: 无线电阻塞脚本。&lt;br/&gt;Manko: 耳塞脚本。&lt;br/&gt;bobchaos: 尽管困难重重, 但仍在管理社区。&lt;br/&gt;以及所有花时间在Steam、Github和BIS论坛上发表评论、建议和报告的玩家。</Chinesesimp>
+                <Italian>LanCommi per i suoi artworks.&lt;br/&gt;Goon e jw custom: parte del codice per lo script del NAPALM.&lt;br/&gt;rebel12340: Script di Radio Jam&lt;br/&gt;Manko: earplugs snippet&lt;br/&gt;bobchaos: Gestione della comunità nonostante tutte le difficoltà.&lt;br/&gt;E tutti quei giocatori che passano il loro tempo a fare commenti, suggerimenti e rapporti sui forum di Steam, Github e BIS.</Italian>
+                <Spanish>LanCommi por su arte.&lt;br/&gt;Goon and jw custom:Parte del código del NAPALM script.&lt;br/&gt;rebel12340: Radio Jam script&lt;br/&gt;Manko: Earplug snippet&lt;br/&gt;bobchaos: Manejar la comunidad aun con todas las dificultades.&lt;br/&gt;Todos aquellos jugadores que invirtieron su tiempo en hacer comentarios, sugerencias y reportes en Steam, Github y foros de BIS.</Spanish>
+                <Polish>LanCommi za jego prace graficzne.&lt;br/&gt;Goon i jw custom: Część kodu skryptu dodającego NAPALM.&lt;br/&gt;rebel12340: Skrypt dodający zagłuszacz radia&lt;br/&gt;Manko: Skrypt na zatyczki do uszu&lt;br/&gt;bobchaos: Zarządzanie społecznością pomimo wszystkich trudności.&lt;br/&gt;I wszyscy ci gracze, którzy spędzają czas na tworzeniu komentarzy, sugestii i raportów na forach, Discordzie, Steam, Github i BIS.</Polish>
+            </Key>
+        </Container>
+        <Container name="game_options">
+            <Key ID="STR_antistasi_dialogs_maps_game_options">
+                <Original>Game Options</Original>
+                <French>Options de jeu</French>
+                <Chinesesimp>游戏选项</Chinesesimp>
+                <Russian>Параметры</Russian>
+                <Korean>게임 설정</Korean>
+                <Italian>Opzioni di Gioco</Italian>
+                <Czech>Možnosti hry</Czech>
+                <Spanish>Opciones de Juego</Spanish>
+                <Polish>Opcje Gry</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_civ_limit">
+                <Original>Civ Limit</Original>
+                <French>Limite civile</French>
+                <Chinesesimp>平民限制</Chinesesimp>
+                <Russian>Лимит гражданских</Russian>
+                <Korean>민간인 제한</Korean>
+                <Italian>Limite Civ</Italian>
+                <Czech>Limit civilistů</Czech>
+                <Spanish>Límite de civiles</Spanish>
+                <Polish>Limit Cywili</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_civ_limit_tooltip">
+                <Original>Set the max number of spawned civilians. Affects game performance.</Original>
+                <French>Définit le nombre maximum de civils. Affecte les performances du jeu.</French>
+                <Chinesesimp>设置平民的最大生成数量。影响游戏性能。</Chinesesimp>
+                <Russian>Установите максимальное количество мирных жителей. Влияет на производительность игры.</Russian>
+                <Korean>생성되는 최대 민간인 수를 설정합니다. 게임 성능에 영향을 미칩니다.</Korean>
+                <Italian>Setta il numero massimo di civili generati. Affligge le prestazioni di gioco</Italian>
+                <Czech>Nastavit maximální počet spawnutých civilistů. Má dopad na výkon hry.</Czech>
+                <Spanish>Limitia el número máximo de civiles. Afecta al rendimiento del juego.</Spanish>
+                <Polish>Ustaw maksymalną liczbę pojawiających się cywilów. Wpływa na wydajność gry.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_spawn_distance">
+                <Original>Spawn Distance</Original>
+                <French>Distance d'apparition</French>
+                <Chinesesimp>生成距离</Chinesesimp>
+                <Russian>Дистанция спавна</Russian>
+                <Korean>스폰 거리</Korean>
+                <Italian>Distanza di Spawn</Italian>
+                <Czech>Vzdálenost spawnu</Czech>
+                <Spanish>Distancia de aparición</Spanish>
+                <Polish>Dystans Pojawiania się Jednostek</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_spawn_distance_tooltip">
+                <Original>Affects performance. Please use this with caution. Set it to lower distances if you feel Antistasi is running bad.</Original>
+                <French>Affecte les performances. Veuillez l'utiliser avec prudence. Réglez-le sur des distances plus basses si vous pensez qu'Antistasi fonctionne mal.</French>
+                <Chinesesimp>影响性能。请小心使用。如果你觉得 Antistasi 运行不够流畅, 把它调到更低的距离。</Chinesesimp>
+                <Russian>Влияет на производительность. Пожалуйста, используйте это с осторожностью. Установите меньшее расстояние, если чувствуете, что Antistasi работает плохо.</Russian>
+                <Korean>성능에 영향을 미칩니다. 주의하여 사용하십시오. 안티스타시가 작동하지 않는 것 같으면 더 낮은 거리로 조정하십시오.</Korean>
+                <Italian>Affligge le prestazioni. Usare con estrema cautela. Imposta distanze inferiori se ritieni che Antistasi stia girando male.</Italian>
+                <Czech>Má vliv na výkon. Prosím používejte s opatrností. Nastavte na nižší vzdálenosti pokud vaše Antistasi běží špatně.</Czech>
+                <Spanish>Afecta al rendimiento. Por favor, usa esto con cautela. Seleccionalo a menor distancia si notas que Antistasi está funcionando mal.</Spanish>
+                <Polish>Wpływa na wydajność. Proszę używać tego ostrożnie. Ustaw go na mniejsze odległości, jeśli czujesz, że Antistasi działa źle.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_ai_limiter">
+                <Original>AI Limiter</Original>
+                <French>Limiteur d'IA</French>
+                <Chinesesimp>AI限制</Chinesesimp>
+                <Russian>Лимит ИИ</Russian>
+                <Korean>인공지능 제한</Korean>
+                <Italian>Limitatore IA</Italian>
+                <Czech>AI Limiter</Czech>
+                <Spanish>Límite de IA</Spanish>
+                <Polish>Limit AI</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_ai_limiter_tooltip">
+                <Original>Sets how much local and simulated AI can spawn in the map. Affects performance and AI ""intelligence"". Use with caution. This is not an exact number as vehicles and squad leaders will always spawn.</Original>
+                <French>Définit la quantité d'IA locale et simulée pouvant apparaître sur la carte. Affecte les performances et l'""intelligence"" de l'IA. Utiliser avec précaution. Ce n'est pas un nombre exact car les véhicules et les chefs d'escouade apparaîtront toujours.</French>
+                <Chinesesimp>设置地图中可以生成多少本地和模拟AI。影响性能和AI"智能"。小心使用。这不是一个准确的数字, 因为载具和班长始终会生成。</Chinesesimp>
+                <Russian>Устанавливает, сколько локальных и смоделированных ИИ может появиться на карте. Влияет на производительность и «интеллект» ИИ. Используйте с осторожностью. Это не точное число, поскольку всегда будут появляться машины и лидеры отрядов.</Russian>
+                <Korean>지도에서 로컬 및 시뮬레이션된 인공지능이 생성할 수 있는 양을 설정합니다. 성능 및 인공지능의 "지능"에 영향을 미칩니다. 주의하여 사용하십시오. 이것은 차량과 분대장들이 항상 스폰하기 때문에 정확한 수치는 아닙니다.</Korean>
+                <Italian>Imposta la quantità di IA locale e simulata che può generarsi nella mappa. Influisce sulle prestazioni e sull'"intelligenza" dell'IA. Usare con cautela. Questo non è un numero esatto poiché i veicoli e i capisquadra si genereranno sempre.</Italian>
+                <Czech>Nastaví kolik lokální a simulovaných AI se může spawnout na mapě. Má dopad na výkon a "inteligenci" AI. Použijte s opatrností. Toto není přesné číslo jelikož vozidla a velitelé družstev se vždy spawnou.</Czech>
+                <Spanish>Limita cuantos locales e IA simulada aparecen en el mapa. Afecta al rendimiento y a la "inteligéncia" de la IA. Usadlo con Precaución. Esto no es un número exacto pues vehículos y líderes de escuadra siempre aparecerán.</Spanish>
+                <Polish>Określa, ile lokalnej i symulowanej sztucznej inteligencji może pojawić się na mapie w tym samym czasie. Wpływa na wydajność i „inteligencję” AI. Używaj ostrożnie. Nie jest to dokładna liczba, ponieważ pojazdy i dowódcy drużyn zawsze będą się pojawiać.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_music">
+                <Original>Music ON/OFF</Original>
+                <French>Musique ON/OFF</French>
+                <Chinesesimp>音乐播放/关闭</Chinesesimp>
+                <Russian>Музыка ВКЛ / ВЫКЛ</Russian>
+                <Korean>음악 켜기/끄기</Korean>
+                <Italian>Musica ON/OFF</Italian>
+                <Czech>Hudba zapnuto/vypnuto</Czech>
+                <Spanish>Música ON/OFF</Spanish>
+                <Polish>Muzyka WŁ / WYŁ</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_music_tooltip">
+                <Original>Disables/Enable situational music.</Original>
+                <French>Désactive/Active la musique de situation.</French>
+                <Chinesesimp>禁用/启用背景音乐</Chinesesimp>
+                <Russian>Отключение/включение музыки</Russian>
+                <Korean>상황에 맞는 음악을 켜고 끕니다.</Korean>
+                <Italian>Disabilita/Abilita Musica Situazionale.</Italian>
+                <Czech>Zapne/vypne situační hudbu</Czech>
+                <Spanish>Habilita/Deshabilita música situacional.</Spanish>
+                <Polish>Wyłącza / Włącza muzykę sytuacyjną.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_save">
+                <Original>Persistent Save</Original>
+                <French>Sauvegarde persistante</French>
+                <Chinesesimp>持久化存档</Chinesesimp>
+                <Russian>Сохранение</Russian>
+                <Korean>영구 저장</Korean>
+                <Italian>Salvataggio Persistente</Italian>
+                <Czech>Perzistentní ukládání</Czech>
+                <Spanish>Guardado Persistente</Spanish>
+                <Polish>Trwały Zapis</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_save_tooltip">
+                <Original>Use this option to save your current game. It does save the most important data in a ""Grand Theft Auto"" way. This option allows good MP save and independent saves of any version update. Vanilla saves are disabled because of lack of several features.</Original>
+                <French>Utilisez cette option pour sauvegarder votre partie en cours. Il enregistre les données les plus importantes à la manière de "" Grand Theft Auto "". Cette option permet une bonne sauvegarde MP et des sauvegardes indépendantes de toute mise à jour de version. Les sauvegardes Vanilla sont désactivées en raison du manque de plusieurs fonctionnalités.</French>
+                <Chinesesimp>使用此选项保存当前游戏进度。它确实以"侠盗猎车手"的方式保存了绝大多数重要数据。此功能实现了优秀的多人游戏存档功能, 并确保存档不受版本更新影响。由于缺少某些特性, 游戏原生的存档功能被禁用。</Chinesesimp>
+                <Russian>Используйте эту опцию, чтобы сохранить вашу текущую игру. Он действительно сохраняет самые важные данные способом "Grand Theft Auto". Этот вариант обеспечивает хорошее сохранение MP и независимое сохранение любого обновления версии. Ванильные сохранения отключены из-за отсутствия некоторых функций.</Russian>
+                <Korean>현재 게임을 저장하려면 이 옵션을 사용하십시오. ""GTA"" 방식으로 가장 중요한 데이터를 저장합니다. 이 옵션을 사용하면 좋은 멀티플레이 저장 및 버전 업데이트의 독립적인 저장이 가능합니다. 몇 가지 기능이 없기 때문에 바닐라 세이브는 사용할 수 없습니다.</Korean>
+                <Italian>Usa questa opzione per salvare la partita attuale. Salva i dati più importanti alla ""Grand Theft Auto"". Questa opzione consente un buon salvataggio MP e salvataggi indipendenti di qualsiasi aggiornamento di versione. I salvataggi Vanilla sono disabilitati a causa della mancanza di diverse funzionalità</Italian>
+                <Czech>Použijte toto nastavení k uložení momentální hry. Uloží to ta nejdůležitější data podobně jako Grand Theft Auto. Tato možnost dovoluje dobré MP ukládání a nezávislé ukládání jakékoliv update verze. Vanilla ukládání jsou vypnuta z důvodu nedostatku několika featur.</Czech>
+                <Spanish>Usa esta opción para guardar tu juego. Guarda la información más importante como lo haría "Grand Theft Auto". Esta opción permite el guardado correcto del MJ y guardados independientes de cualquier actualización de versión. El guardado por defecto esta deshabilitado por carencias de diferentes tipos.</Spanish>
+                <Polish>Użyj tej opcji, aby zapisać aktualną grę. Zapisuje najważniejsze dane w sposób „Grand Theft Auto”. Ta opcja pozwala na dobry zapis online i niezależne zapisywanie każdej aktualizacji wersji. Zapisy z podstawowej wersji gry są wyłączone z powodu braku kilku funkcji.</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_spawn_config">
+                <Original>Spawn Distance Config</Original>
+                <French>Configuration de la distance d'apparition</French>
+                <Chinesesimp>生成距离配置</Chinesesimp>
+                <Russian>Настройка дистаниции спавна</Russian>
+                <Korean>스폰 거리 설정</Korean>
+                <Italian>Configurazione Distanza di Spawn</Italian>
+                <Czech>Konfigurace vzdálenosti spawnování</Czech>
+                <Spanish>Configurar distancia de Aparición</Spanish>
+                <Polish>Konfiguracja Dystansu Pojawiania się Jednostek</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_spawn_config_plus">
+                <Original>+100 Spawn Dist.</Original>
+                <French>+100 distance d'apparition</French>
+                <Chinesesimp>+100米生成距离</Chinesesimp>
+                <Russian>+100 метров</Russian>
+                <Korean>스폰 거리 +100</Korean>
+                <Italian>+100 Dist. Spawn</Italian>
+                <Czech>+100 Spawn vzdálenost.</Czech>
+                <Spanish>+100 Distancia Apar.</Spanish>
+                <Polish>+100 Dystansu</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_spawn_config_minus">
+                <Original>-100 Spawn Dist.</Original>
+                <French>-100 distance d'apparition</French>
+                <Chinesesimp>-100米生成距离</Chinesesimp>
+                <Russian>-100 метров</Russian>
+                <Korean>스폰 거리 -100</Korean>
+                <Italian>-100 Dist. Spawn</Italian>
+                <Czech>-100 Spawn vzdálenost.</Czech>
+                <Spanish>-100 Distancia Apar.</Spanish>
+                <Polish>-100 Dystansu</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_civ_config">
+                <Original>Civ Presence Config</Original>
+                <French>Configuration de la présence civile</French>
+                <Chinesesimp>平民存在配置</Chinesesimp>
+                <Russian>Настройка гражданского насиления</Russian>
+                <Korean>민간인 스폰 설정</Korean>
+                <Italian>Configurazione Presenza Civile</Italian>
+                <Czech>Konfigurace přítomnosti civilistů</Czech>
+                <Spanish>Configurar Civiles</Spanish>
+                <Polish>Konfiguracja Obecności Cywili</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_civ_config_plus">
+                <Original>+1 Max Civs</Original>
+                <French>+1 Civil max</French>
+                <Chinesesimp>+1 平民上限</Chinesesimp>
+                <Russian>+1 к лимиту</Russian>
+                <Korean>최대 민간인 수 +1</Korean>
+                <Italian>+1 Civili Massimi</Italian>
+                <Czech>+1 Max Civilistů</Czech>
+                <Spanish>+1 Max Civs</Spanish>
+                <Polish>+1 Maks. Liczba Cywili</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_maps_civ_config_minus">
+                <Original>-1 Max Civs</Original>
+                <French>-1 Civil max</French>
+                <Chinesesimp>-1 平民上限</Chinesesimp>
+                <Russian>-1 к лимиту</Russian>
+                <Korean>최대 민간인 수 -1</Korean>
+                <Italian>-1 Civili Massimi</Italian>
+                <Czech>-1 Max Civilistů</Czech>
+                <Spanish>-1 Max Civs</Spanish>
+                <Polish>-1 Maks. Liczba Cywili</Polish>
+            </Key>
+        </Container>
+        <Container name="mission_menu">
+            <Key ID="STR_antistasi_dialogs_mission_menu_available_missions">
+                <Original>Available Missions</Original>
+                <French>Missions disponibles</French>
+                <Chinesesimp>可用任务</Chinesesimp>
+                <Russian>Доступные миссии</Russian>
+                <Korean>사용 가능 임무</Korean>
+                <Italian>Missioni Disponibili</Italian>
+                <Czech>Dostupné mise</Czech>
+                <Spanish>Misiones Disponibles</Spanish>
+                <Polish>Dostępne Misje</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_mission_menu_assassination_missions">
+                <Original>Assassination Mission</Original>
+                <French>Missions d'assassinats</French>
+                <Chinesesimp>刺杀任务</Chinesesimp>
+                <Russian>Миссия на убийство</Russian>
+                <Korean>암살 임무</Korean>
+                <Italian>Missione di Assassinio</Italian>
+                <Czech>Mise atentát</Czech>
+                <Spanish>Misiones de Asesinato</Spanish>
+                <Polish>Misje Zamachu</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_mission_menu_convoy_ambush">
+                <Original>Convoy Ambush</Original>
+                <French>Embuscade de convoi</French>
+                <Chinesesimp>车队伏击</Chinesesimp>
+                <Russian>Засада конвоя</Russian>
+                <Korean>호송대 매복</Korean>
+                <Italian>Imboscata al Convoglio</Italian>
+                <Czech>Přepadení konvoje</Czech>
+                <Spanish>Emboscada de Convoy</Spanish>
+                <Polish>Misje Zasadzka na Konwój</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_mission_menu_destroy_missions">
+                <Original>Destroy Missions</Original>
+                <French>Missions de destruction</French>
+                <Chinesesimp>摧毁任务</Chinesesimp>
+                <Russian>Миссия на уничтожение</Russian>
+                <Korean>파괴 임무</Korean>
+                <Italian>Missioni di Distruzione</Italian>
+                <Czech>Mise zničit</Czech>
+                <Spanish>Misiones de Destrucción</Spanish>
+                <Polish>Misje Zniszcz Cel</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_mission_menu_conquest_missions">
+                <Original>Conquest Missions</Original>
+                <French>Missions de conquête</French>
+                <Chinesesimp>攻占任务</Chinesesimp>
+                <Russian>Миссия захвата</Russian>
+                <Korean>점령 임무</Korean>
+                <Italian>Missioni Conquista</Italian>
+                <Czech>Mise zabrat</Czech>
+                <Spanish>Misiones de Conquista</Spanish>
+                <Polish>Misje Podbóju</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_mission_menu_logistics_missions">
+                <Original>Logistics Missions</Original>
+                <French>Missions logistiques</French>
+                <Chinesesimp>后勤任务</Chinesesimp>
+                <Russian>Миссия перевозки</Russian>
+                <Korean>병참 임무</Korean>
+                <Italian>Missioni Logistiche</Italian>
+                <Czech>Logistická mise</Czech>
+                <Spanish>Misiones Logísticas</Spanish>
+                <Polish>Misje Logistyczne</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_mission_menu_logistics_missions_tooltip">
+                <Original>Missions to acquire money or equipment</Original>
+                <French>Missions pour acquérir de l'argent ou du matériel</French>
+                <Chinesesimp>获取资金和装备的任务</Chinesesimp>
+                <Russian>Миссии по добыче денег или оборудования</Russian>
+                <Korean>자금 또는 장비 획득 임무입니다.</Korean>
+                <Italian>Missioni per acquisire soldi o equip
