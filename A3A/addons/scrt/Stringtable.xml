@@ -179,7 +179,7 @@
             <Key ID="STR_A3AP_setupFactionsTab_aaf_3cbf">
                 <Original>Altis Armed Forces (AAF).\nSmall, but highly motivated force which effectively uses a wide range of decomissioned and outdated yet still effective equipment around the world.</Original>
                 <Russian>Вооруженные силы Алтиса (AAF).\nНебольшая, но высокомотивированная сила, эффективно использующая широкий спектр хоть и выведенной из эксплуатации и устаревшей, но все еще эффективной номеклатуры вооружений со всего света.</Russian>
-                <Chinesesimp>阿尔蒂斯武装部队 (AAF)\n规模小但士气高涨的部队，能有效地使用各种退役的、过时的但仍然有效的西方装备。</Chinesesimp>
+                <Chinesesimp>阿尔蒂斯武装部队 (AAF)\n规模小但士气高涨的部队，能有效地使用各种退役的、过时的但仍然有效的各国装备。</Chinesesimp>
                 <Korean>알티스군(AAF).\n전 세계적으로 퇴역되었고 구식이지만 여전히 효과적인 서방 장비를 광범위하게 효과적으로 사용하는 작지만 사기가 높은 군대입니다.</Korean>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_tka">
@@ -227,7 +227,7 @@
             <Key ID="STR_A3AP_setupFactionsTab_aegis_aukus">
                 <Original>A trilateral security pact between Australia, United Kingdom, United States (AUKUS).\nVery versatile faction with best military equipment from three worlds.</Original>
                 <Russian>Тройственный оборонный пакт между Австралией, Объединённым Королевством и США (AUKUS).\nОчень разносторонняя фракция с лучшими вещами из трех миров.</Russian>
-                <Chinesesimp>澳大利亚、英国、美国（AUKUS）的三边安全条约。\n非常全面的派别，拥有三个国家最好的军事装备。</Chinesesimp>
+                <Chinesesimp>澳大利亚、英国、美国（AUKUS）的三边安全条约。\n非常全面的派别，拥有三个世界最好的军事装备。</Chinesesimp>
                 <Korean>호주, 영국, 미국 간의 3자 안보 협정(AUKUS).\n3세계 최고의 군사 장비를 가진 매우 다재다능한 팩션입니다.</Korean>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_aegis_afrf">
@@ -281,7 +281,7 @@
             <Key ID="STR_A3AP_setupFactionsTab_usmc">
                 <Original>United States Marine Corps.\nHighly mobile, adaptable to ever-changing battlefield yet very specialized faction.</Original>
                 <Russian>Морская пехота США.\nОчень мобильная, адаптирующаяся к любым обстоятельствам на постоянно меняющемся поле боя, но в то же время очень специализированная фракция.</Russian>
-                <Chinesesimp>美国海军陆战队\n机动性强，能适应不断变化的战场，但又是非常专业的派系。。</Chinesesimp>
+                <Chinesesimp>美国海军陆战队\n机动性强，能适应不断变化的战场，但又是非常专业的派系。</Chinesesimp>
                 <Korean>미 해병대.\n기동성이 뛰어나고 끊임없이 변화하는 전장에 적응할 수 있는 매우 전문화된 팩션입니다.</Korean>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_cdf">
