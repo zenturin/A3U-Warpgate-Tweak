@@ -101,7 +101,8 @@ private _costs = call {
         or (_typeX in OccAndInv("vehiclesFuelTrucks"))
         or (_typeX in OccAndInv("vehiclesMedical"))
     ) exitWith {1500};
-    if (_typeX in (FactionGet(all,"vehiclesHelisLight") + [FactionGet(reb,"vehicleCivHeli")])) exitWith {3000};
+    if (_typeX in [FactionGet(reb,"vehicleCivHeli")]) exitWith {([_typeX] call A3A_fnc_vehiclePrice) / 2};
+    if (_typeX in (FactionGet(all,"vehiclesHelisLight"))) exitWith {3000};
     if (
         (_typeX in FactionGet(all,"vehiclesAPCs"))
         || (_typeX in FactionGet(all,"vehiclesIFVs"))
