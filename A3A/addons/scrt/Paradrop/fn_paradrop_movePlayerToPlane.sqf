@@ -80,6 +80,8 @@ while {true} do {
 };
 
 if (_earlyEscape) exitWith {
+    cutText ["", "BLACK IN", 3, true, true];
+    5 fadeSound 1;
     [localize "STR_A3AP_paradrop_header", localize "STR_A3AP_paradrop_abort_plane_something_wrong"] call SCRT_fnc_misc_deniedHint;
 };
 
