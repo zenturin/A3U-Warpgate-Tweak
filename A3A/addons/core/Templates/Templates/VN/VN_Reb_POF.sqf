@@ -71,6 +71,7 @@ private _initialRebelEquipment = [
 "vn_m19_binocs_grey", "vn_mx991", "vn_mx991_red"
 ];
 
+_initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
