@@ -432,15 +432,6 @@ _layer = ["statisticsX"] call bis_fnc_rscLayer;
 //Load the player's personal save.
 [] spawn A3A_fnc_createDialog_shouldLoadPersonalSave;
 
-// Check if we need to relocate HQ. Might happen if we leave during placement?
-// Should be replaced with server-side monitoring loop
-if (isNil "placementDone") then {
-    if (isNil "playerPlacingHQ" || {!(playerPlacingHQ in (call A3A_fnc_playableUnits))}) then {
-        playerPlacingHQ = player;
-        publicVariable "playerPlacingHQ";
-        [] spawn A3A_fnc_placementSelection;
-    };
-};
 
 initClientDone = true;
 Info("initClient completed");
