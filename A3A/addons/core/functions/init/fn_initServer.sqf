@@ -138,7 +138,6 @@ else
     } forEach controlsX;
     petros setPos _posHQ;
     [_posHQ, true] call A3A_fnc_relocateHQObjects;         // sets all the other vars
-    placementDone = true; publicVariable "placementDone";           // do we need this now?
 };
 
 if (_startType != "load") then {
