@@ -226,6 +226,7 @@ class CfgFunctions
             class CIVinit {};
             class civVEHinit {};
             class cleanserVeh {};
+            class countFreeSpawnPositions {};
             class createAIAirplane {};
             class createAICities {};
             class createAIcontrols {};
