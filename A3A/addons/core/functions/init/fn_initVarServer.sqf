@@ -557,6 +557,7 @@ Info("Creating pricelist");
 {server setVariable [_x,75,true]} forEach [FactionGet(reb,"unitMG"), FactionGet(reb,"unitGL"), FactionGet(reb,"unitLAT")];
 {server setVariable [_x,100,true]} forEach [FactionGet(reb,"unitMedic"), FactionGet(reb,"unitExp"), FactionGet(reb,"unitEng")];
 {server setVariable [_x,150,true]} forEach [FactionGet(reb,"unitSL"), FactionGet(reb,"unitSniper")];
+{server setVariable [_x,500,true]} forEach [FactionGet(reb,"unitAT"), FactionGet(reb,"unitAA")];
 
 {
 	server setVariable [_x, _y, true];
