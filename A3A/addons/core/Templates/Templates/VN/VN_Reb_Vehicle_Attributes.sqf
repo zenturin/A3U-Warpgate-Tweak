@@ -1,5 +1,7 @@
 ["attributesVehicles", [
     ["vn_o_air_mig19_gun", ["rebCost", 999999]],
+	
+    ["vn_i_static_m60_high", ["rebCost", 300]],//7.62 static
 	//Civ Cars
     ["vn_c_car_01_01", ["rebCost", 150]], //No Cargo, 4 Seats, 121 speed
     ["vn_c_car_03_01", ["rebCost", 150]], //No Cargo 4 Seats 130 speed
