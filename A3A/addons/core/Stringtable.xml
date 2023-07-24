@@ -5105,6 +5105,9 @@
         <Portuguese>Informaçao Servior</Portuguese>
         <Spanish>Información de Servidor</Spanish>
       </Key>
+      <Key ID="STR_A3A_feedback_serverinfo_mismatch">
+        <Original>Version mismatch error:&lt;br/&gt;&lt;br/&gt;Server: %1&lt;br/&gt;Client: %2</Original>
+      </Key>
       <Key ID="STR_A3A_feedback_serverinfo_starting">
         <Original>Starting game...</Original>
         <Czech>Spouštím hru...</Czech>

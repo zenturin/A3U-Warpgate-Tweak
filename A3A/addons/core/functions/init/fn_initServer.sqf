@@ -6,6 +6,7 @@ logLevel = "LogLevel" call BIS_fnc_getParamValue; publicVariable "logLevel"; //S
 A3A_logDebugConsole = "A3A_logDebugConsole" call BIS_fnc_getParamValue; publicVariable "A3A_logDebugConsole";
 
 Info("Server init started");
+A3A_serverVersion = QUOTE(VERSION); publicVariable "A3A_serverVersion";
 Info_1("Server version: %1", QUOTE(VERSION_FULL));
 
 // ********************** Pre-setup init ****************************************************
