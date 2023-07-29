@@ -18,7 +18,7 @@ private _vehiclesLightUnarmed = ["I_G_Offroad_01_F"];
 private _vehiclesLightArmed = ["I_G_Offroad_01_armed_F"];
 private _vehiclesAt = ["I_G_Offroad_01_AT_F"];
 ["vehiclesTruck", ["I_G_Van_01_transport_F"]] call _fnc_saveToTemplate;
-private _vehiclesAA = [];
+private _vehicleAA = [];
 
 ["vehiclesBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
 
@@ -55,10 +55,10 @@ if (_hasApex) then {
 ["vehiclesAT", _vehiclesAt] call _fnc_saveToTemplate;
 
 if (_hasWs) then {
-  _vehiclesAA pushBack "I_Tura_Truck_02_aa_lxWS";
+  _vehicleAA append ["I_Tura_Truck_02_aa_lxWS"];
   _staticAA = ["I_Tura_ZU23_lxWS"];
 };
-["vehiclesAA", _vehiclesAA] call _fnc_saveToTemplate;
+["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
