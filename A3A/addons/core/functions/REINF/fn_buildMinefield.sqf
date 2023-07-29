@@ -8,7 +8,7 @@ if (!isServer and hasInterface) exitWith {};
 params ["_typeX", "_positionTel", "_quantity", "_mine"];
 
 private _typeExp = FactionGet(reb,"unitExp");
-private _typeTruck = FactionGet(reb,"vehicleTruck");
+private _typeTruck = FactionGet(reb,"vehiclesTruck") # 0;
 
 private _costs = 2*(server getVariable _typeExp) + ([_typeTruck] call A3A_fnc_vehiclePrice);
 [-2,(-1*_costs)] remoteExec ["A3A_fnc_resourcesFIA",2];
@@ -57,15 +57,18 @@ if ((_truckX distance _positionTel < 50) and ({alive _x} count units _groupX > 0
 		_owner = (leader _groupX) getVariable ["owner",leader _groupX];
 		(leader _groupX) remoteExec ["removeAllActions",leader _groupX];
 		_owner remoteExec ["selectPlayer",leader _groupX];
-		(leader _groupX) setVariable ["owner",_owner,true];
-		{[_x] joinsilent group _owner} forEach units group _owner;
-		[group _owner, _owner] remoteExec ["selectLeader", _owner];
+		// (leader _groupX) setVariable ["owner",_owner,true];
+		// {[_x] joinsilent group _owner} forEach units group _owner;
+		// [group _owner, _owner] remoteExec ["selectLeader", _owner];
 		"" remoteExec ["hint",_owner];
 		waitUntil {!(isPlayer leader _groupX)};
+		sleep 5;
 		};
 	theBoss hcRemoveGroup _groupX;
 	[petros,"hint",localize "STR_hints_build_minefield_engie_start"] remoteExec ["A3A_fnc_commsMP",[teamPlayer,civilian]];
-	_nul = [leader _groupX, _mrk, "SAFE","SPAWNED", "SHOWMARKER"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
+
+	[_groupX, "Patrol_Area", 25, 50, 100, true, _positionTel, true] call A3A_fnc_patrolLoop;
+	
 	sleep 30*_quantity;
 	if ((alive _truckX) and ({alive _x} count units _groupX > 0)) then
 		{

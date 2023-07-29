@@ -10,7 +10,7 @@
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_fuel_tank">
                 <Original>Fuel Tank</Original>
-                <Russian>Топливный бак</Russian>
+                <Russian>Топливная цистерна</Russian>
                 <Chinesesimp>油箱</Chinesesimp>
                 <Korean>연료탱크</Korean>
             </Key>
@@ -25,6 +25,22 @@
                 <Russian>Ящик c наборами восстановления боеспособности</Russian>
                 <Chinesesimp>装有战备恢复包的盒子</Chinesesimp>
                 <Korean>전투 준비 복구 키트가 든 상자</Korean>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_medical_tent">
+                <Original>Medical Tent</Original>
+                <Russian>Медицинская палатка</Russian>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_ammo_station">
+                <Original>Ammo Station</Original>
+                <Russian>Пункт боепитания</Russian>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_repair_station">
+                <Original>Repair Station</Original>
+                <Russian>Пункт ремонта</Russian>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_medical_box">
+                <Original>Medical Box</Original>
+                <Russian>Коробка с медициной</Russian>
             </Key>
         </Container>
         <Container name="arsenal">
@@ -3978,23 +3994,13 @@
                 <Chinesesimp>永远</Chinesesimp>
                 <Korean>항상</Korean>
             </Key>
-            <Key ID="STR_params_cup">
-                <Original>CUP SETTINGS</Original>
-                <Russian>НАСТРОЙКИ CUP</Russian>
-                <Chinesesimp>CUP设置</Chinesesimp>
-                <Korean>CUP 설정</Korean>
+            <Key ID="STR_params_gc_threshold">
+                <Original>Garbage Cleaner Threshold for Automatic Garbage Collection</Original>
+                <Russian>Порог активации сборщика мусора</Russian>
             </Key>
-            <Key ID="STR_params_rhs">
-                <Original>RHS SETTINGS</Original>
-                <Russian>НАСТРОЙКИ RHS</Russian>
-                <Chinesesimp>RHS设置</Chinesesimp>
-                <Korean>RHS 설정</Korean>
-            </Key>
-            <Key ID="STR_params_3cbf">
-                <Original>3CB Factions SETTINGS</Original>
-                <Russian>НАСТРОЙКИ 3CB Factions</Russian>
-                <Chinesesimp>3CB派系设置</Chinesesimp>
-                <Korean>3CB Factions 설정</Korean>
+            <Key ID="STR_params_revive_time">
+                <Original>Revive time for players (in seconds)</Original>
+                <Russian>Время до поднятия игрока на ноги (в секундах)</Russian>
             </Key>
             <Key ID="STR_params_antistasi_plus">
                 <Original>ANTISTASI PLUS PARAMETERS</Original>
@@ -4917,6 +4923,14 @@
                 <Russian>Вы не можете оставаться под прикрытием во время лечения скомпрометированного члена сопротивления!&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
                 <Chinesesimp>你不能一边伪装一边治疗一个受伤的反抗军成员！&lt;br/&gt;敌人已将你加入通缉名单！</Chinesesimp>
                 <Korean>당신은 위험에 처한 저항군을 치료하는 동안 위장 상태에 있을 수 없습니다&lt;br/&gt;적군이 당신을 수배자 목록에 추가했습니다!</Korean>
+            </Key>
+            <Key ID="STR_info_bar_undercover_break_reason_vtow_ropes">
+                <Original>You can't be undercover while tow ropes are attached to your vehicle!</Original>
+                <Russian>Вы не можете оставаться под прикрытием пока к вашей технике прикреплен буксировочный трос!</Russian>
+            </Key>
+            <Key ID="STR_info_bar_undercover_break_reason_tow_ropes">
+                <Original>You can't be undercover and use tow ropes!</Original>
+                <Russian>Вы не можете оставаться под прикрытием пока у вас в руках буксировочный трос!</Russian>
             </Key>
         </Container>
         <Container name="info_bar">
@@ -7965,16 +7979,17 @@
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt1_base">
                 <Original>&lt;t size='0.6'&gt;%1 is on the way to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%2%3&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;%1 спешит вам помочь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%2%3&lt;/t&gt;&lt;/t&gt;</Russian>
+                <Russian>&lt;t size='0.6'&gt;%1 спешит вам на помощь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%2%3&lt;/t&gt;&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt; %1 正在来救你的路上。&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%2%3&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%1이(가) 당신을 도우러 가는 중입니다.&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%2%3&lt;/t&gt;&lt;/t&gt;</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt2_base">
-                <Original>&lt;t size='0.6'&gt;Wait until you get assistance or&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%1%2&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;Подождите, пока вам не помогут или&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%1%2&lt;/t&gt;&lt;/t&gt;</Russian>
-                <Chinesesimp>&lt;t size='0.6'&gt;等到你得到救助或&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%1%2&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
-                <Korean>&lt;t size='0.6'&gt;도움을 받을 때까지 기다리거나&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%1%2&lt;/t&gt;&lt;/t&gt;</Korean>
+                <Original>&lt;t size='0.6'&gt;%1 is helping you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%2%3&lt;/t&gt;&lt;/t&gt;</Original>
+                <Russian>&lt;t size='0.6'&gt;%1 помогает вам.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%2%3&lt;/t&gt;&lt;/t&gt;</Russian>
+                <Chinesesimp>&lt;t size='0.6'&gt; %1 正在来救你的路上。&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%2%3&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
+                <Korean>&lt;t size='0.6'&gt;%1이(가) 당신을 도우러 가는 중입니다.&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%2%3&lt;/t&gt;&lt;/t&gt;</Korean>
             </Key>
+        
             <Key ID="STR_antistasi_actions_unconscious_action_prompt_possess">
                 <Original>&lt;br/&gt;Press T to possess friendly AI unit to help yourself.</Original>
                 <Russian>&lt;br/&gt;Нажмите T, чтобы вселиться в дружественный ИИ-юнит, чтобы помочь себе.</Russian>
@@ -8762,7 +8777,7 @@
             </Key>
             <Key ID="STR_A3A_buy_item_insuf_funds">
                 <Original>You can't afford this Item.</Original>
-                <Russian>Вам не хватате денег для покупки этого предмета.</Russian>
+                <Russian>Вам не хватает денег для покупки этого предмета.</Russian>
                 <Chinesesimp>您没有足够的钱购买此商品。</Chinesesimp>
                 <Korean>이 아이템은 구입할 수 없습니다.</Korean>
             </Key>
@@ -9388,6 +9403,22 @@
                 <Chinesesimp>被敌人发现</Chinesesimp>
                 <Korean>적에게 포착됨</Korean>
             </Key>
+            <Key ID="STR_A3A_goUndercover_error_towing_ropes_head">
+                <Original>This vehicle cannot go undercover while it has tow ropes attached</Original>
+                <Russian>Эта техника не может уйти в маскировка пока к ней прикреплен буксировочный трос.</Russian>
+            </Key>
+            <Key ID="STR_A3A_goUndercover_error_towing_ropes">
+                <Original>In vehicle with tow ropes attached</Original>
+                <Russian>В технике с прикрепленным буксировочным тросом</Russian>
+            </Key>
+            <Key ID="STR_A3A_goUndercover_error_towing_ropes_2">
+                <Original>%1&lt;br/&gt;Holding tow ropes.</Original>
+                <Russian>"%1&lt;br/&gt;В руках буксировочный трос.</Russian>
+            </Key>
+            <Key ID="STR_A3A_goUndercover_error_towing_ropes_output">
+                <Original>Holding tow ropes</Original>
+                <Russian>Держит буксировочный трос</Russian>
+            </Key>
         </Container>
         <Container name="A3A_ai">
             <Key ID="STR_A3A_ai_artySupport_header">
@@ -9449,24 +9480,6 @@
                 <Russian>Выберите позицию, где закончится залп.</Russian>
                 <Chinesesimp>选择齐射结束的位置。</Chinesesimp>
                 <Korean>연발포격을 완료할 위치를 선택하십시오.</Korean>
-            </Key>
-            <Key ID="STR_A3A_ai_ai_autoheal_header">
-                <Original>AI Auto Heal</Original>
-                <Russian>Автолечение ИИ</Russian>
-                <Chinesesimp>AI自动治疗</Chinesesimp>
-                <Korean>인공지능 자동 치료</Korean>
-            </Key>
-            <Key ID="STR_A3A_ai_ai_autoheal_mustbealeader">
-                <Original>You must be leader of your group to enable Auto Heal.</Original>
-                <Russian>Вы должны быть лидером своей группы для включения автолечения.</Russian>
-                <Chinesesimp>你必须是你的组长才能启用自动治疗。</Chinesesimp>
-                <Korean>자동 치료를 사용하려면 그룹의 리더여야 합니다.</Korean>
-            </Key>
-            <Key ID="STR_A3A_ai_ai_autoheal_atleast1unit">
-                <Original>Auto Heal requires at least one AI soldier in your group.</Original>
-                <Russian>Автолечение требует наличия хотя бы 1 ИИ-юнита в вашей группе.</Russian>
-                <Chinesesimp>自动治疗需要你的团队中至少有 1 个 AI 单位。</Chinesesimp>
-                <Korean>자동 치료는 당신의 그룹에 최소 한 명 이상의 인공지능 병사가 필요합니다.</Korean>
             </Key>
         </Container>
         <Container name="A3A_ammunition">
@@ -9774,6 +9787,11 @@
                 <Chinesesimp>您没有足够的钱购买这种单位（需要 %1%2）。</Chinesesimp>
                 <Korean>이런 종류의 유닛을 사는 데 필요한 자금이 부족합니다. (%1%2 필요)</Korean>
             </Key>
+            <Key ID="STR_A3A_reinf_reinfPlayer_no_money_equip">
+                <Original>You don't have enough weapons to equip this type of unit.</Original>
+                <Russian>У вас недостаточно денег для экипирования данного типа юнита.</Russian>
+            </Key>
+
             <Key ID="STR_A3A_reinf_reinfPlayer_full_squad">
                 <Original>Your squad is full or you have too many scattered units with no radio contact.</Original>
                 <Russian>Ваш отряд полон или у вас слишком много разбросанных в округе юнитов без радиосвязи с ними.</Russian>

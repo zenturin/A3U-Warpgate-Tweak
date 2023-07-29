@@ -85,13 +85,14 @@ private _costs = call {
     if (
         (_typeX in arrayCivVeh)
         or (_typeX in civBoats)
-        or (_typeX in [FactionGet(reb,"vehicleCivBoat"),FactionGet(reb,"vehicleCivCar"),FactionGet(reb,"vehicleCivTruck")])
+        or (_typeX in (FactionGet(reb,"vehiclesCivBoat") + FactionGet(reb,"vehiclesCivCar") + FactionGet(reb,"vehiclesCivTruck")))
     ) exitWith {100};
     if (
         (_typeX in FactionGet(all,"vehiclesLight"))
         or (_typeX in OccAndInv("vehiclesTrucks"))
         or (_typeX in OccAndInv("vehiclesCargoTrucks"))
         or (_typeX in OccAndInv("vehiclesMilitiaTrucks"))
+        or (_typeX in FactionGet(reb,"vehiclesTruck"))
     ) exitWith {750};
     if (
         (_typeX in FactionGet(all,"vehiclesBoats"))
@@ -101,7 +102,7 @@ private _costs = call {
         or (_typeX in OccAndInv("vehiclesFuelTrucks"))
         or (_typeX in OccAndInv("vehiclesMedical"))
     ) exitWith {1500};
-    if (_typeX in [FactionGet(reb,"vehicleCivHeli")]) exitWith {([_typeX] call A3A_fnc_vehiclePrice) / 2};
+    if (_typeX in [FactionGet(reb,"vehiclesCivHeli")]) exitWith {([_typeX] call A3A_fnc_vehiclePrice) / 2};
     if (_typeX in (FactionGet(all,"vehiclesHelisLight"))) exitWith {3000};
     if (
         (_typeX in FactionGet(all,"vehiclesAPCs"))

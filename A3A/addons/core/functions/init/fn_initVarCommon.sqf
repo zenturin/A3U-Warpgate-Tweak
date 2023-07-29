@@ -31,6 +31,19 @@ respawnTeamPlayer = "respawn_guerrila";
 posHQ = getMarkerPos respawnTeamPlayer;
 
 ////////////////////////////////////////
+//     DECLARING PATCOM VARIABLES    ///
+////////////////////////////////////////
+Info("Initialising PATCOM Variables");
+
+PATCOM_DEBUG = false; // Enable PATCOM specific debug.
+PATCOM_VISUAL_RANGE = 400; // How far before PATCOM can start to detect enemies.
+PATCOM_TARGET_TIME = 120; // How long before PATCOM unit forgets about an enemy.
+PATCOM_ARTILLERY_MANAGER = true; // Allow Patcome to control AI Artillery. False is default A3 Artillery AI.
+PATCOM_ARTILLERY_DELAY = 30; // How quickly artillery becomes available again after firing in seconds.
+PATCOM_AI_STATICS = true; // Allow AI to find and arm statics near their group.
+PATCOM_AI_STATIC_ARM = 120; // How long AI stay on static weapons after they arm them.
+
+////////////////////////////////////////
 //     DECLARING ITEM CATEGORIES     ///
 ////////////////////////////////////////
 Info("Declaring item categories");
@@ -99,12 +112,19 @@ if (A3A_hasACEMedical && isClass (configFile >> "CfgPatches" >> "adv_aceCPR")) t
 A3A_hasKAT = false;
 if(A3A_hasACEMedical && isClass (configFile >> "CfgWeapons" >> "kat_scalpel")) then {A3A_hasKAT = true; Info("KAT MED Detected.") };
 
+// Zeus enhanced
+A3A_hasZen = (isClass (configFile >> "CfgPatches" >> "zen_common"));
+
+//Content Mods (Units, Vehicles, Weapons, Clothes etc.)
+//These are handled by a script in the Templates folder to keep integrators away from critical code.
+//call A3A_fnc_detector;
+
 ////////////////////////////////////
 //        BUILDINGS LISTS        ///
 ////////////////////////////////////
 Info("Creating building arrays");
 
-listMilBld = [
+A3A_buildingWhitelist = [
 	"Land_Cargo_Tower_V1_F",
 	"Land_Cargo_Tower_V1_No1_F",
 	"Land_Cargo_Tower_V1_No2_F",
@@ -224,65 +244,73 @@ listMilBld = [
 	"Land_vn_guardtower_04_f",
 	"Land_vn_guardtower_01_f"
 ];
-
-UPSMON_Bld_remove = ["Bridge_PathLod_base_F","Land_Slum_House03_F","Land_Bridge_01_PathLod_F","Land_Bridge_Asphalt_PathLod_F","Land_Bridge_Concrete_PathLod_F","Land_Bridge_HighWay_PathLod_F","Land_Bridge_01_F","Land_Bridge_Asphalt_F","Land_Bridge_Concrete_F","Land_Bridge_HighWay_F","Land_Canal_Wall_Stairs_F","warehouse_02_f","cliff_wall_tall_f","cliff_wall_round_f","containerline_02_f","containerline_01_f","warehouse_01_f","quayconcrete_01_20m_f","airstripplatform_01_f","airport_02_terminal_f","cliff_wall_long_f","shop_town_05_f","Land_ContainerLine_01_F","Land_MilOffices_V1_F","Land_vn_b_trench_bunker_01_01","Land_vn_mil_barracks_i_ep1","Land_vn_barracks_03_f","Land_vn_barracks_01","Land_vn_b_trench_bunker_02_01","Land_vn_b_trench_bunker_02_02","Land_vn_hootch_01_12","Land_vn_hootch_01_11","Land_vn_barracks_02_f","Land_vn_hootch_01_01","Land_vn_barracks_05_f","Land_vn_barracks_04_f","Land_vn_barracks_03_01","Land_vn_barracks_03","Land_vn_barracks_03_02","Land_vn_b_trench_bunker_02_04","Land_vn_b_trench_bunker_02_03","Land_vn_b_trench_bunker_01_02","Land_vn_hootch_01_02","Land_vn_hootch_02_11","Land_vn_hootch_02_01","Land_vn_hootch_02_02","Land_vn_hootch_01_03","Land_vn_hootch_02_03","Land_vn_hootch_01_13","Land_vn_barracks_03_04","Land_vn_barracks_03_03","Land_vn_b_trench_bunker_03_02","Land_vn_b_trench_bunker_03_01","Land_vn_quonset_02_01","Land_vn_quonset_02","Land_vn_quonset_01","Land_vn_hootch_01","Land_vn_hootch_02","Land_vn_barracks_02","Land_vn_barracks_02_01","Land_vn_barracks_04","Land_vn_b_trench_bunker_03_03","Land_vn_tent_mash_01_01","Land_vn_tent_mash_01_02","Land_vn_tent_01_03","Land_vn_tent_01_01","Land_vn_tent_01_02","Land_vn_tent_01_04","Land_vn_barracks_04_01","Land_vn_barracks_04_02","Land_vn_b_trench_bunker_01_03","Land_vn_b_trench_bunker_03_04","Land_vn_tent_mash_01_04","Land_vn_tent_02_01","Land_vn_tent_02_02","Land_vn_tent_mash_01","Land_vn_tent_mash_02_03","Land_vn_tent_mash_02_04","Land_vn_hut_old02","Land_vn_tent_02_04","Land_vn_tent_02_03","Land_vn_tent_mash_02_02","Land_vn_tent_mash_02_01","Land_vn_tent_mash_01_03","Land_vn_army_hut_storrage","Land_vn_army_hut_int","Land_vn_wf_field_hospital_east","Land_vn_army_hut2_int","Land_vn_army_hut3_long_int", "Land_vn_o_prop_cong_cage_01", "Land_vn_o_prop_cong_cage_02", "Land_vn_o_prop_cong_cage_03"];
-//Lights and Lamps array used for 'Blackout'
-lamptypes = [
-	"Lamps_Base_F", 
-	"PowerLines_base_F",
-	"Land_LampDecor_F",
-	"Land_LampHalogen_F",
-	"Land_LampHarbour_F",
-	"Land_LampShabby_F",
-	"Land_NavigLight",
-	"Land_runway_edgelight",
-	"Land_PowerPoleWooden_L_F",
-	"Land_LampAirport_F", 
-	"Land_LampStreet_small_F", 
-	"Land_LampStreet_F", 
-	"Land_LampIndustrial_01_F", 
-	"Land_LampIndustrial_02_F", 
-	"Land_LampStreet_02_double_F", 
-	"Land_LampStreet_02_amplion_F", 
-	"Land_LampStreet_02_triple_F", 
-	"Land_LampStreet_02_F",
-	"land_gm_ge_lamp_02_02", 
-	"land_gm_gc_lamp_02_02", 
-	"land_gm_gc_lamp_03", 
-	"land_gm_gc_lamp_04", 
-	"land_gm_ge_lamp_01_01", 
-	"land_gm_gc_lamp_01_02", 
-	"land_gm_ge_lamp_02_01", 
-	"land_gm_gc_lamp_02_01", 
-	"land_gm_ge_lamp_03_01", 
-	"land_gm_ge_lamp_03_02", 
-	"land_gm_ge_lamp_04_01", 
-	"land_gm_ge_lamp_04_02", 
-	"land_gm_ge_lamp_05", 
-	"land_gm_gc_lamp_01_01", 
-	"land_gm_ge_lamp_01_02", 
-	"Land_Lamp_Street1_EP1", 
-	"Land_Lamp_Street2_EP1", 
-	"Land_Lampa_Ind_EP1", 
-	"Land_Lamp_Small_EP1", 
-	"Land_Lampa_ind_b", 
-	"Land_Lampa_ind", 
-	"Land_Lampa_ind_zebr", 
-	"Land_Lampa_cut", 
-	"Land_Lampa_sidl_3", 
-	"Land_Lampa_sidl_2", 
-	"Land_Lampadrevo", 
-	"Land_Lampa_sidl", 
-	"Land_Lampazel", 
-	"Land_Vo_seda", 
-	"Land_Tlampac_vo_seda", 
-	"Land_Vo_zlut", 
-	"Land_Lampa_valec", 
-	"Land_Lampa_vysoka", 
-	"Land_vn_lampshabby_f_4xdir_close", 
-	"Land_vn_lampshabby_f_4xdir_far", 
-	"Land_vn_lampshabby_f_4xdir_normal"
+A3A_buildingBlacklist = [
+	"Bridge_PathLod_base_F","Land_Slum_House03_F","Land_Bridge_01_PathLod_F","Land_Bridge_Asphalt_PathLod_F","Land_Bridge_Concrete_PathLod_F","Land_Bridge_HighWay_PathLod_F","Land_Bridge_01_F","Land_Bridge_Asphalt_F","Land_Bridge_Concrete_F","Land_Bridge_HighWay_F","Land_Canal_Wall_Stairs_F","warehouse_02_f",
+	"cliff_wall_tall_f","cliff_wall_round_f","containerline_02_f","containerline_01_f","warehouse_01_f","quayconcrete_01_20m_f","airstripplatform_01_f","airport_02_terminal_f","cliff_wall_long_f","shop_town_05_f","Land_ContainerLine_01_F","Land_MilOffices_V1_F","Land_vn_b_trench_bunker_01_01","Land_vn_mil_barracks_i_ep1","Land_vn_barracks_03_f",
+	"Land_vn_barracks_01","Land_vn_b_trench_bunker_02_01","Land_vn_b_trench_bunker_02_02","Land_vn_hootch_01_12","Land_vn_hootch_01_11","Land_vn_barracks_02_f","Land_vn_hootch_01_01","Land_vn_barracks_05_f","Land_vn_barracks_04_f","Land_vn_barracks_03_01","Land_vn_barracks_03","Land_vn_barracks_03_02","Land_vn_b_trench_bunker_02_04",
+	"Land_vn_b_trench_bunker_02_03","Land_vn_b_trench_bunker_01_02","Land_vn_hootch_01_02","Land_vn_hootch_02_11","Land_vn_hootch_02_01","Land_vn_hootch_02_02","Land_vn_hootch_01_03","Land_vn_hootch_02_03","Land_vn_hootch_01_13","Land_vn_barracks_03_04","Land_vn_barracks_03_03","Land_vn_b_trench_bunker_03_02","Land_vn_b_trench_bunker_03_01",
+	"Land_vn_quonset_02_01","Land_vn_quonset_02","Land_vn_quonset_01","Land_vn_hootch_01","Land_vn_hootch_02","Land_vn_barracks_02","Land_vn_barracks_02_01","Land_vn_barracks_04","Land_vn_b_trench_bunker_03_03","Land_vn_tent_mash_01_01","Land_vn_tent_mash_01_02","Land_vn_tent_01_03","Land_vn_tent_01_01","Land_vn_tent_01_02","Land_vn_tent_01_04",
+	"Land_vn_barracks_04_01","Land_vn_barracks_04_02","Land_vn_b_trench_bunker_01_03","Land_vn_b_trench_bunker_03_04","Land_vn_tent_mash_01_04","Land_vn_tent_02_01","Land_vn_tent_02_02","Land_vn_tent_mash_01","Land_vn_tent_mash_02_03","Land_vn_tent_mash_02_04","Land_vn_hut_old02","Land_vn_tent_02_04","Land_vn_tent_02_03","Land_vn_tent_mash_02_02",
+	"Land_vn_tent_mash_02_01","Land_vn_tent_mash_01_03","Land_vn_army_hut_storrage","Land_vn_army_hut_int","Land_vn_wf_field_hospital_east","Land_vn_army_hut2_int","Land_vn_army_hut3_long_int", "Land_vn_o_prop_cong_cage_01", "Land_vn_o_prop_cong_cage_02", "Land_vn_o_prop_cong_cage_03", "Land_SPE_bocage_long_mound", "Land_SPE_bocage_short_mound"
 ];
+//Lights and Lamps array used for 'Blackout'
+A3A_lampTypes = [
+    "Lamps_Base_F", 
+    "PowerLines_base_F",
+    "Land_LampDecor_F",
+    "Land_LampHalogen_F",
+    "Land_LampHarbour_F",
+    "Land_LampShabby_F",
+    "Land_NavigLight",
+    "Land_runway_edgelight",
+    "Land_PowerPoleWooden_L_F",
+    "Land_LampAirport_F", 
+    "Land_LampStreet_small_F", 
+    "Land_LampStreet_F", 
+    "Land_LampIndustrial_01_F", 
+    "Land_LampIndustrial_02_F", 
+    "Land_LampStreet_02_double_F", 
+    "Land_LampStreet_02_amplion_F", 
+    "Land_LampStreet_02_triple_F", 
+    "Land_LampStreet_02_F",
+    "land_gm_ge_lamp_02_02", 
+    "land_gm_gc_lamp_02_02", 
+    "land_gm_gc_lamp_03", 
+    "land_gm_gc_lamp_04", 
+    "land_gm_ge_lamp_01_01", 
+    "land_gm_gc_lamp_01_02", 
+    "land_gm_ge_lamp_02_01", 
+    "land_gm_gc_lamp_02_01", 
+    "land_gm_ge_lamp_03_01", 
+    "land_gm_ge_lamp_03_02", 
+    "land_gm_ge_lamp_04_01", 
+    "land_gm_ge_lamp_04_02", 
+    "land_gm_ge_lamp_05", 
+    "land_gm_gc_lamp_01_01", 
+    "land_gm_ge_lamp_01_02", 
+    "Land_Lamp_Street1_EP1", 
+    "Land_Lamp_Street2_EP1", 
+    "Land_Lampa_Ind_EP1", 
+    "Land_Lamp_Small_EP1", 
+    "Land_Lampa_ind_b", 
+    "Land_Lampa_ind", 
+    "Land_Lampa_ind_zebr", 
+    "Land_Lampa_cut", 
+    "Land_Lampa_sidl_3", 
+    "Land_Lampa_sidl_2", 
+    "Land_Lampadrevo", 
+    "Land_Lampa_sidl", 
+    "Land_Lampazel", 
+    "Land_Vo_seda", 
+    "Land_Tlampac_vo_seda", 
+    "Land_Vo_zlut", 
+    "Land_Lampa_valec", 
+    "Land_Lampa_vysoka", 
+    "Land_vn_lampshabby_f_4xdir_close", 
+    "Land_vn_lampshabby_f_4xdir_far", 
+    "Land_vn_lampshabby_f_4xdir_normal"
+];
+
 ////////////////////////////////////
 //     SOUNDS AND ANIMATIONS     ///
 ////////////////////////////////////
@@ -291,15 +319,18 @@ Info("Compiling sounds and animations");
 A3A_sounds_dogBark = ["x\A3A\addons\core\Music\dog_bark01.wss", "x\A3A\addons\core\Music\dog_bark02.wss", "x\A3A\addons\core\Music\dog_bark04.wss", "x\A3A\addons\core\Music\dog_bark05.wss", "x\A3A\addons\core\Music\dog_maul01.wss", "x\A3A\addons\core\Music\dog_yelp02.wss"];
 injuredSounds =  // Todo: migrate functions to A3A_sounds_callMedic
 [
-	"a3\sounds_f\characters\human-sfx\Person0\P0_moan_13_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_14_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_15_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_16_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_17_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_18_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_19_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_20_words.wss",
-	"a3\sounds_f\characters\human-sfx\Person1\P1_moan_19_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_20_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_21_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_22_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_23_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_24_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_25_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_26_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_27_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_28_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_29_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_30_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_31_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_32_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_33_words.wss",
-	"a3\sounds_f\characters\human-sfx\Person2\P2_moan_19_words.wss"
+	"a3\sounds_f\characters\human-sfx\Person0\P0_moan_13_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_14_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_15_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_16_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_17_words.wss",
+	"a3\sounds_f\characters\human-sfx\Person0\P0_moan_18_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_19_words.wss","a3\sounds_f\characters\human-sfx\Person0\P0_moan_20_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_19_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_20_words.wss",
+	"a3\sounds_f\characters\human-sfx\Person1\P1_moan_21_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_22_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_23_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_24_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_25_words.wss",
+	"a3\sounds_f\characters\human-sfx\Person1\P1_moan_26_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_27_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_28_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_29_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_30_words.wss",
+	"a3\sounds_f\characters\human-sfx\Person1\P1_moan_31_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_32_words.wss","a3\sounds_f\characters\human-sfx\Person1\P1_moan_33_words.wss","a3\sounds_f\characters\human-sfx\Person2\P2_moan_19_words.wss"
 ];
 A3A_sounds_moan = injuredSounds;
 
 A3A_sounds_soundInjured_low = [];
 A3A_sounds_soundInjured_mid = [];
 A3A_sounds_soundInjured_max = [];
+//[] call A3A_fnc_createCivilianTracks;
 
 private _soundPersonParent = "a3\sounds_f\characters\human-sfx\";
 for "_person" from 1 to 18 do {

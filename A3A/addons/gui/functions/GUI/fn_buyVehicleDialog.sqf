@@ -2,20 +2,16 @@
 Maintainer: DoomMetal
     Handles the initialization and updating of the Buy Vehicle dialog.
     This function should only be called from BuyVehicle onLoad and control activation EHs.
-
 Arguments:
     <STRING> Mode, only possible value for this dialog is "onLoad"
     <ARRAY<ANY>> Array of params for the mode when applicable. Params for specific modes are documented in the modes.
-
 Return Value:
     Nothing
-
 Scope: Clients, Local Arguments, Local Effect
 Environment: Scheduled for onLoad mode / Unscheduled for everything else unless specified
 Public: No
 Dependencies:
     None
-
 Example:
     ["onLoad"] spawn A3A_fnc_buyVehicleDialog; // initialization
 */
@@ -43,8 +39,13 @@ switch (_mode) do
         private _selectedTabIDC = -1;
         switch (_selectedTab) do 
         {
-            case ("vehicles"): {
-                _selectedTabIDC = A3A_IDC_BUYVEHICLEMAIN;
+            case ("civilian"): {
+                _selectedTabIDC = A3A_IDC_BUYCIVVEHICLEMAIN;
+            };
+            case("rebel"): {
+                _selectedTabIDC = A3A_IDC_BUYREBVEHICLEMAIN;};
+            case ("static"): {
+                _selectedTabIDC = A3A_IDC_BUYSTATICMAIN;
             };
             case("other"): {
                 _selectedTabIDC = A3A_IDC_BUYOTHERMAIN;
@@ -56,7 +57,9 @@ switch (_mode) do
         };
 
         private _allTabs = [
-            A3A_IDC_BUYVEHICLEMAIN,
+            A3A_IDC_BUYCIVVEHICLEMAIN,
+            A3A_IDC_BUYREBVEHICLEMAIN,
+            A3A_IDC_BUYSTATICMAIN,
             A3A_IDC_BUYOTHERMAIN,
             A3A_IDC_BUYVEHICLEPREVIEW
         ];
@@ -78,8 +81,15 @@ switch (_mode) do
     case ("onLoad"):
     {
         ['on'] call SCRT_fnc_ui_toggleMenuBlur;
-        ["vehicles"] call A3A_fnc_buyVehicleTabs;
+        ["vehicles", [A3A_IDC_BUYCIVVEHICLEMAIN, A3A_IDC_CIVVEHICLESGROUP, "civilian"]] call A3A_fnc_buyVehicleTabs;
+        ["vehicles", [A3A_IDC_BUYREBVEHICLEMAIN, A3A_IDC_REBVEHICLESGROUP, "military"]] call A3A_fnc_buyVehicleTabs;
+        ["vehicles", [A3A_IDC_BUYSTATICMAIN, A3A_IDC_STATICSGROUP, "static"]] call A3A_fnc_buyVehicleTabs;
         ["other"] call A3A_fnc_buyVehicleTabs;
+
+        // show the vehicle tab so that user don't freak out
+        private _display = findDisplay A3A_IDD_BUYVEHICLEDIALOG;
+        private _selectedTabCtrl = _display displayCtrl A3A_IDC_BUYCIVVEHICLEMAIN;
+        _selectedTabCtrl ctrlShow true;
     };
 
     case ("onUnload"): 

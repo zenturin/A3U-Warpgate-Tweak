@@ -210,5 +210,9 @@ if (_typeX == "rem") then {
 		_ChildControl  ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable (A3A_faction_reb get "unitGL"), A3A_faction_civ get "currencySymbol"];
 		_ChildControl = _display displayCtrl 110;
 		_ChildControl  ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable (A3A_faction_reb get "unitSniper"), A3A_faction_civ get "currencySymbol"];
+		_ChildControl = _display displayCtrl 111;
+        _ChildControl  ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable (A3A_faction_reb get "unitAT"), A3A_faction_civ get "currencySymbol"];
+		_ChildControl = _display displayCtrl 112;
+        _ChildControl  ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable (A3A_faction_reb get "unitAA"), A3A_faction_civ get "currencySymbol"];
 	};
 };

@@ -104,6 +104,7 @@ private _policeVehs = if (_hasContact) then {
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
+["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
 
@@ -112,7 +113,6 @@ private _policeVehs = if (_hasContact) then {
 ["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
 
 if (_hasTanks) then {
-
     _tanks append ["O_T_MBT_04_cannon_F", "O_T_MBT_04_command_F"];
 };
 

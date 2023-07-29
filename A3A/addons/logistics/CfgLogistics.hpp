@@ -8,7 +8,9 @@ class DOUBLES(ADDON,Nodes)
 
     #include "Nodes\3CBFactions.hpp"
     #include "Nodes\CUP.hpp"
+    #include "Nodes\D3S.hpp"
     #include "Nodes\GM.hpp"
+    #include "Nodes\RDS.hpp"
     #include "Nodes\RHS.hpp"
     #include "Nodes\Vanilla.hpp"
     #include "Nodes\VN.hpp"
@@ -29,10 +31,21 @@ class DOUBLES(ADDON,Cargo)
     };
 
     #include "Cargo\3CBFactions.hpp"
+    #include "Cargo\ACE.hpp"
     #include "Cargo\CUP.hpp"
     #include "Cargo\GM.hpp"
     #include "Cargo\RHS.hpp"
     #include "Cargo\Vanilla.hpp"
     #include "Cargo\VN.hpp"
     #include "Cargo\WS.hpp"
+
+};
+
+class DOUBLES(ADDON,Packable) {
+    class TRIPLES(ADDON,Packable,Base)
+    {
+        packObject = "CargoNet_01_box_F";
+    };
+
+    #include "Packable\Vanilla.hpp"
 };

@@ -104,7 +104,8 @@ if (count _roadCon > 0) then {
 };
 
 private _posVeh = [_posroad, 3, _dirveh + 90] call BIS_Fnc_relPos;
-private _veh = FactionGet(reb,"vehicleLightUnarmed") createVehicle _posVeh;
+private _vehType = selectRandom (FactionGet(reb,"vehicleLightUnarmed"));
+private _veh = _vehType createVehicle _posVeh;
 _veh allowDamage false;
 _veh setDir _dirVeh;
 sleep 15;
@@ -132,7 +133,7 @@ if (random 10 < 2.5) then {
 	_dog = [_groupX, "Fin_random_F",_positionX,[],0,"FORM"] call A3A_fnc_createUnit;
 	[_dog] spawn A3A_fnc_guardDog;
 	};
-_nul = [leader _groupX, _mrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
+[_groupX, "Patrol_Area", 25, 50, 100, false, [], false] call A3A_fnc_patrolLoop;
 {[_x,""] call A3A_fnc_NATOinit} forEach units _groupX;
 
 waitUntil {

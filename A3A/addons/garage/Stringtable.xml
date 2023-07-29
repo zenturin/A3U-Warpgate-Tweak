@@ -56,7 +56,7 @@
                 <Russian>Доступное место в гараже</Russian>
                 <Korean>사용 가능한 차고 공간</Korean>
                 <Spanish>Espacio disponible en Garaje</Spanish>
-                <Chinesesimp>载具库可用容量</Chinesesimp>
+                <Chinesesimp>车库可用容量</Chinesesimp>
                 <Czech>Dostupný prostor v garáži</Czech>
                 <Italian>Spazio disponibile nel garage</Italian>
                 <Polish>Dostępne miejsce w garażu</Polish>
@@ -177,7 +177,7 @@
                 <Russian>Заполнено</Russian>
                 <Korean>꽉 참</Korean>
                 <Spanish>Lleno</Spanish>
-                <Chinesesimp>载具库已满</Chinesesimp>
+                <Chinesesimp>车库已满</Chinesesimp>
                 <Czech>plný</Czech>
                 <Italian>pieno</Italian>
                 <Polish>pełny</Polish>
@@ -188,7 +188,7 @@
                 <Russian>Доступное место в гараже</Russian>
                 <Korean>사용 가능한 차고 공간</Korean>
                 <Spanish>Espacio disponible en el garaje</Spanish>
-                <Chinesesimp>载具库的可用容量</Chinesesimp>
+                <Chinesesimp>车库的可用容量</Chinesesimp>
                 <Czech>Dostupný prostor v garáži</Czech>
                 <Italian>Spazio disponibile nel garage</Italian>
                 <Polish>Dostępne miejsce w garażu</Polish>
@@ -210,7 +210,7 @@
                 <Russian>Техника будет переснаряжена после вывода из гаража</Russian>
                 <Korean>차고에서 꺼내면 차량이 재무장됩니다</Korean>
                 <Spanish>Los vehículos serán rearmados cuando los saques</Spanish>
-                <Chinesesimp>从载具库中被取出的载具会被重新武装</Chinesesimp>
+                <Chinesesimp>从车库中被取出的载具会被重新武装</Chinesesimp>
                 <Czech>Vozidla budou přezbrojena když budou vyndána z garáže</Czech>
                 <Italian>I veicoli saranno riarmati quando lasceranno il garage</Italian>
                 <Polish>Pojazdy zostaną dozbrojone, gdy zostaną wyciągnięte z garażu</Polish>
@@ -221,7 +221,7 @@
                 <Russian>Техника не будет переснаряжена после вывода из гаража из-за недостатка источников боеприпасов</Russian>
                 <Korean>차고에 탄약차량이 없기 때문에 차고에서 꺼낼 때 차량은 재무장되지 않습니다</Korean>
                 <Spanish>Los vehículos no serán rearmados una vez fuera ya que el garaje necesita un punto de munición cerca</Spanish>
-                <Chinesesimp>缺乏弹药来源时从载具库中被取出的载具不会被重新武装</Chinesesimp>
+                <Chinesesimp>缺乏弹药来源时从车库中被取出的载具不会被重新武装</Chinesesimp>
                 <Czech>Vozidla nebudou přezbrojena když budou vyndána z garáže jelikož garáž nemá dostatek muničních zdrojů</Czech>
                 <Italian>I veicoli non saranno riarmati quando lasceranno il garage poichè non è presente una fonte di munizioni</Italian>
                 <Polish>Pojazdy nie zostaną dobrojone, gdy zostaną wyciągnięte z garażu, ponieważ w garażu brakuje źródła amunicji</Polish>
@@ -243,7 +243,7 @@
                 <Russian>Техника будет заправлена после вывода из гаража</Russian>
                 <Korean>차고에서 꺼내면 차량이 재급유됩니다</Korean>
                 <Spanish>Los vehículos serán repostados cuando los saques</Spanish>
-                <Chinesesimp>从载具库中被取出的载具会被加满油</Chinesesimp>
+                <Chinesesimp>从车库中被取出的载具会被加满油</Chinesesimp>
                 <Czech>Vozidla budou dotankována když budou vyndána z garáže</Czech>
                 <Italian>I veicoli saranno riforniti di carburante quando lasceranno il garage</Italian>
                 <Polish>Pojazdy zostaną zatankowane, gdy zostaną wyciągnięte z garażu</Polish>
@@ -254,7 +254,7 @@
                 <Russian>Техника не будет заправлена после вывода из гаража из-за недостатка источников топлива</Russian>
                 <Korean>차고에 유류차량이 없기 때문에 차고에서 꺼낼 때 차량은 재급유되지 않습니다</Korean>
                 <Spanish>Los vehículos no serán repostados cuando los saques pues no hay un punto de repostaje</Spanish>
-                <Chinesesimp>缺乏油料来源时从载具库中被取出的载具不会被重新加油</Chinesesimp>
+                <Chinesesimp>缺乏油料来源时从车库中被取出的载具不会被重新加油</Chinesesimp>
                 <Czech>Vozidla nebudou dotankována když budou vyndána z garáže jelikož garáž nemá dostatek palivových zdrojů</Czech>
                 <Italian>I veicoli non saranno riforniti quando lasceranno il garage poichè non è presente una fonte di carburante</Italian>
                 <Polish>Pojazdy nie zostaną zatankowane, gdy zostaną wyciągnięte z garażu, ponieważ w garażu brakuje źródła paliwa</Polish>
@@ -276,7 +276,7 @@
                 <Russian>Техника будет отремонтирована после вывода из гаража</Russian>
                 <Korean>차고에서 꺼내면 차량이 수리됩니다</Korean>
                 <Spanish>Los vehículos serán reparados cuando los saques</Spanish>
-                <Chinesesimp>从载具库中被取出的载具会被维修</Chinesesimp>
+                <Chinesesimp>从车库中被取出的载具会被维修</Chinesesimp>
                 <Czech>Vozidla budou opravena když budou vyndána z garáže</Czech>
                 <Italian>I veicoli saranno riparati quando lasceranno il garage</Italian>
                 <Polish>Pojazdy zostaną naprawione, gdy zostaną wyciągnięte z garażu</Polish>
@@ -287,7 +287,7 @@
                 <Russian>Техника не будет отремонтирована при выводе из гаража из-за недостатка ремонтных машин</Russian>
                 <Korean>차고에 수리차량이 없기 때문에 차고에서 꺼낼 때 차량은 수리되지 않습니다</Korean>
                 <Spanish>Los vehículos no serán reparados cuando los ssaques pues no hay un sitio de reparación cerca</Spanish>
-                <Chinesesimp>缺乏维修来源时从载具库中被取出的载具不会被重新维修</Chinesesimp>
+                <Chinesesimp>缺乏维修来源时从车库中被取出的载具不会被重新维修</Chinesesimp>
                 <Czech>Vozidla nebudou opravena když budou vyndána z garáže jelikož garáž nemá dostatek opravných zdrojů</Czech>
                 <Italian>I veicoli non saranno riparati quando lasceranno il garage poichè non è presente una fonte di pezzi di ricambio</Italian>
                 <Polish>Pojazdy nie zostaną naprawione, gdy zostaną wyciągnięte z garażu, ponieważ w garażu brakuje zasobów naprawczych</Polish>
@@ -539,7 +539,7 @@
                 <Original>Loot crate stored</Original>
                 <French>Caisse de butin stockée</French>
                 <Russian>Ящик с трофеями перемещен хранилище</Russian>
-                <Korean>전리품 상자 저장</Korean>
+                <Korean>전리품 상자 저장 완료</Korean>
                 <Spanish>Caja almacenada</Spanish>
                 <Chinesesimp>已存放战利品箱</Chinesesimp>
                 <Czech>Kořistní bedna uložená</Czech>
@@ -550,7 +550,7 @@
                 <Original>Item stored</Original>
                 <French>Article stocké</French>
                 <Russian>предмет в хранилище</Russian>
-                <Korean>아이템 저장</Korean>
+                <Korean>아이템 저장 완료</Korean>
                 <Spanish>Objeto almacenado</Spanish>
                 <Chinesesimp>已存放物品</Chinesesimp>
                 <Czech>Položka uložená</Czech>
@@ -561,15 +561,15 @@
                 <Original>Fuel sold</Original>
                 <French>Carburant vendu</French>
                 <Russian>Топливо продано</Russian>
-                <Korean>연료 판매</Korean>
+                <Korean>연료 판매 완료</Korean>
                 <Spanish>Gasolina vendida</Spanish>
                 <Chinesesimp>已出售油料</Chinesesimp>
                 <Czech>Prodané palivo</Czech>
                 <Italian>Carburante venduto</Italian>
                 <Polish>Sprzedano paliwo</Polish>
             </Key>
-            <Key ID="STR_HR_GRG_Feedback_addVehicle_Fuel_commander_only">
-                <Original>Fuel sources can only be garaged by commander</Original>
+            <Key ID="STR_HR_GRG_Feedback_addVehicle_commander_only">
+                <Original>This object can only be garaged by the commander</Original>
                 <French>Les sources de carburant ne peuvent être garées que par le commandant</French>
                 <Russian>Источники топлива могут быть перемещены в гараж только Командиром</Russian>
                 <Korean>유류차량은 지휘관만 차고에 넣을 수 있습니다</Korean>
@@ -820,7 +820,7 @@
                 <Original>Zoom: Right Mouse Button + Mouse wheel</Original>
                 <French>Zoom: bouton droit de la souris + molette de la souris</French>
                 <Russian>Приближение: ПКМ + Колесико мыши</Russian>
-                <Korean>확대/축소: 오른쪽 마우스 버튼 + 마우스 휠</Korean>
+                <Korean>확대 및 축소: 오른쪽 마우스 버튼 + 마우스 휠</Korean>
                 <Spanish>Zoom: Click derecho del Ratón + Rueda del Ratón</Spanish>
                 <Chinesesimp>缩放:按下鼠标右键并使用鼠标滚轮</Chinesesimp>
                 <Czech>Zoom: Pravé tlačítko myši + kolo myši</Czech>

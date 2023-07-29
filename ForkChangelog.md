@@ -5,6 +5,18 @@
 - (Aegis) AUKUS, NATO, CSAT, AAF factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods)
 - (Aegis) CHDKZ and Ion PMC Rival factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods) -->
 
+
+## 2.2
+### Changes
+- 3.3 Community Version integration - PATCOM AI, many improvements and fixes of various gameplay systems
+- Moved rebel Apex 4WD vehicles from Vehicle Black Market to general vehicle pool, they're accessible when Apex DLC is enabled
+- Static MGs will be available from start instead of War Level 2
+
+### Removals
+- Replaced rebel payload planes with just rebel planes, removed rebel faction vehicle category in templates 
+- Removed ability to buy rebel repair vehicles after owning 4+ factories to make it more in line with fuel and ammo resources 
+- Removed auto heal toggle menu due to overhauled AI from Antistasi CV port
+
 ## 2.1.11
 ### Changes
 - Fixed radio tower city influence presentation

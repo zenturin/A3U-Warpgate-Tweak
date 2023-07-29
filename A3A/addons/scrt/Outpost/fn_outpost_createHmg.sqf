@@ -58,11 +58,12 @@ switch (true) do {
 			_owner = (leader _groupX) getVariable ["owner",leader _groupX];
 			(leader _groupX) remoteExec ["removeAllActions",leader _groupX];
 			_owner remoteExec ["selectPlayer",leader _groupX];
-			(leader _groupX) setVariable ["owner",_owner,true];
-			{[_x] joinsilent group _owner} forEach units group _owner;
-			[group _owner, _owner] remoteExec ["selectLeader", _owner];
+			// (leader _groupX) setVariable ["owner",_owner,true];
+			// {[_x] joinsilent group _owner} forEach units group _owner;
+			// [group _owner, _owner] remoteExec ["selectLeader", _owner];
 			"" remoteExec ["hint",_owner];
 			waitUntil {!(isPlayer leader _groupX)};
+			sleep 5;
 		};
 		hmgpostsFIA = hmgpostsFIA + [_marker]; publicVariable "hmgpostsFIA";
 		sidesX setVariable [_marker,teamPlayer,true];

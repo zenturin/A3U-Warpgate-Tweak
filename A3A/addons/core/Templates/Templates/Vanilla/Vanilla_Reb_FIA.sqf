@@ -13,32 +13,29 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagTexture", "a3\data_f\flags\flag_fia_co.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_FIA"] call _fnc_saveToTemplate;
 
-["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "I_G_Offroad_01_F"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "I_G_Offroad_01_armed_F"] call _fnc_saveToTemplate;
-["vehicleTruck", "I_G_Van_01_transport_F"] call _fnc_saveToTemplate;
-["vehicleAT", "I_G_Offroad_01_AT_F"] call _fnc_saveToTemplate;
-private _vehicleAA = "";
+["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+private _vehiclesLightUnarmed = ["I_G_Offroad_01_F"];
+private _vehiclesLightArmed = ["I_G_Offroad_01_armed_F"];
+private _vehiclesAt = ["I_G_Offroad_01_AT_F"];
+["vehiclesTruck", ["I_G_Van_01_transport_F"]] call _fnc_saveToTemplate;
+private _vehiclesAA = [];
 
-["vehicleBoat", "I_C_Boat_Transport_02_F"] call _fnc_saveToTemplate;
-["vehicleRepair", "I_G_Offroad_01_repair_F"] call _fnc_saveToTemplate;
+["vehiclesBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
 
-["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclesPlane", ["I_C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "C_Truck_02_transport_F"] call _fnc_saveToTemplate;
-["vehicleCivHeli", "C_Heli_Light_01_civil_F"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
-["vehicleCivBoxSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
+private _vehiclesCivCar = ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_SUV_01_F"];
+["vehiclesCivTruck", ["C_Truck_02_transport_F", "C_Van_02_transport_F", "C_Van_02_vehicle_F"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat", ["C_Boat_Civil_01_F", "C_Rubberboat"]] call _fnc_saveToTemplate;
 
-
-["staticMG", "I_G_HMG_02_high_F"] call _fnc_saveToTemplate;
-["staticAT", "I_static_AT_F"] call _fnc_saveToTemplate;
-private _staticAA = "I_static_AA_F";
-["staticMortar", "I_G_Mortar_01_F"] call _fnc_saveToTemplate;
+["staticMGs", ["I_G_HMG_02_high_F", "I_G_HMG_02_F"]] call _fnc_saveToTemplate;
+["staticAT", ["I_static_AT_F"]] call _fnc_saveToTemplate;
+private _staticAA = ["I_static_AA_F"];
+["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
+["staticMortarMagFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
 ["minesAT", ["ATMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag"]] call _fnc_saveToTemplate;
 ["minesAPERS", ["ClaymoreDirectionalMine_Remote_Mag","APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "APERSTripMine_Wire_Mag"]] call _fnc_saveToTemplate;
@@ -46,11 +43,22 @@ private _staticAA = "I_static_AA_F";
 ["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
-if (_hasWs) then {
-  _vehicleAA = "I_Tura_Truck_02_aa_lxWS";
-  _staticAA = "I_Tura_ZU23_lxWS";
+if (_hasApex) then {
+    _vehiclesCivCar pushBack "C_Offroad_02_unarmed_F";
+    _vehiclesLightUnarmed pushBack "I_C_Offroad_02_unarmed_F";
+    _vehiclesLightArmed pushBack "I_C_Offroad_02_LMG_F";
+    _vehiclesAt pushBack "I_C_Offroad_02_AT_F";
 };
-["vehicleAA", _vehicleAA] call _fnc_saveToTemplate;
+["vehiclesCivCar", _vehiclesCivCar] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", _vehiclesLightUnarmed] call _fnc_saveToTemplate;
+["vehiclesLightArmed", _vehiclesLightArmed] call _fnc_saveToTemplate;
+["vehiclesAT", _vehiclesAt] call _fnc_saveToTemplate;
+
+if (_hasWs) then {
+  _vehiclesAA pushBack "I_Tura_Truck_02_aa_lxWS";
+  _staticAA = ["I_Tura_ZU23_lxWS"];
+};
+["vehiclesAA", _vehiclesAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
@@ -70,17 +78,7 @@ private _shopWs = if (_hasWs) then {
     []
 };
 
-private _shopApex = if (_hasApex) then {
-    [
-        ["I_C_Offroad_02_unarmed_F", 200, "UNARMEDCAR", {true}], 
-        ["I_C_Offroad_02_LMG_F", 800, "ARMEDCAR", {true}],
-        ["I_C_Offroad_02_AT_F", 1450, "ARMEDCAR", {true}]
-    ]
-} else {
-    []
-};
-
-private _vehiclesBlackMarket = _shopWs + _shopApex + [
+private _vehiclesBlackMarket = _shopWs + [
     ["I_UAV_01_F", 2000, "UAV", {true}],
     ["I_LT_01_AA_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
     ["I_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
@@ -93,6 +91,7 @@ private _vehiclesBlackMarket = _shopWs + _shopApex + [
     ["I_LT_01_AA_F", ["Indep_Olive",1]]
 ]] call _fnc_saveToTemplate;
 
+#include "Vanilla_Reb_Vehicle_Attributes.sqf"
 
 ///////////////////////////
 //  Rebel Starting Gear  //
@@ -161,6 +160,7 @@ if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc15
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment append ["TFAR_anprc155","TFAR_anprc155_coyote"]};
+_initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [

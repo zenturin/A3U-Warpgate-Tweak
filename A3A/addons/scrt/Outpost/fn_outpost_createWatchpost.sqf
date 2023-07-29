@@ -22,7 +22,7 @@ private _taskId = "outpostTask" + str A3A_taskCount;
 [_taskId, "outpostTask", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 
 private _typeGroup = A3A_faction_reb get "groupSniper";
-private _typeVehX = A3A_faction_reb get "vehicleBasic";
+private _typeVehX = (A3A_faction_reb get "vehiclesBasic") select 0;
 
 _groupX = [getMarkerPos respawnTeamPlayer, teamPlayer, _typeGroup] call A3A_fnc_spawnGroup;
 _groupX setGroupId ["Watch"];
@@ -59,11 +59,12 @@ switch (true) do {
 			_owner = (leader _groupX) getVariable ["owner",leader _groupX];
 			(leader _groupX) remoteExec ["removeAllActions",leader _groupX];
 			_owner remoteExec ["selectPlayer",leader _groupX];
-			(leader _groupX) setVariable ["owner",_owner,true];
-			{[_x] joinsilent group _owner} forEach units group _owner;
-			[group _owner, _owner] remoteExec ["selectLeader", _owner];
+			// (leader _groupX) setVariable ["owner",_owner,true];
+			// {[_x] joinsilent group _owner} forEach units group _owner;
+			// [group _owner, _owner] remoteExec ["selectLeader", _owner];
 			"" remoteExec ["hint",_owner];
 			waitUntil {!(isPlayer leader _groupX)};
+			sleep 5;
 		};
 		watchpostsFIA = watchpostsFIA + [_marker]; publicVariable "watchpostsFIA";
 		sidesX setVariable [_marker,teamPlayer,true];
