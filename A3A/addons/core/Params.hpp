@@ -109,7 +109,7 @@ class Params
     {
         title = $STR_params_gc_threshold;
         values[] = {3600, 7200, 10800, 14400, 9999999};
-        texts[] = {"1hr", "2hrs", "3hrs", "4hrs", "disabled"};
+        texts[] = {"1hr", "2hrs", "3hrs", "4hrs", "Disabled"};
         Default = 9999999;
     };
     class A3A_reviveTime

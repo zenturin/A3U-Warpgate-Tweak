@@ -50,6 +50,11 @@ private _fnc_placed = {
 	if (!HR_GRG_hasFuelSource) then { 
 		_vehicle setFuel random [0.10, 0.25, 0.35];
 	}; 
+
+	if (_vehicle isKindOf "StaticWeapon") then {
+		staticsToSave pushBack _vehicle; 
+		publicVariable "staticsToSave";
+	};
 };
 
 [_typeVehX, _fnc_placed, {false}, [_cost], nil, nil, nil, _extraMessage] call HR_GRG_fnc_confirmPlacement;
