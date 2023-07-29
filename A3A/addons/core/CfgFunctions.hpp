@@ -212,6 +212,8 @@ class CfgFunctions
             class availableBasesLand {};
             class calculateMarkerArea {};
             class cargoSeats {};
+            class CIVinit {};
+            class civVEHinit {};
             class cleanserVeh {};
             class countFreeSpawnPositions {};
             class createAIAirplane {};
