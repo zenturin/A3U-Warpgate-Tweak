@@ -62,7 +62,7 @@ if (!isNil "isRallyPointPlaced" && {isRallyPointPlaced}) then {
 
     private _extraMessage = format  [localize "STR_dialogs_RP_select_pos", _cost, A3A_faction_civ get "currencySymbol"];
     private _fnc_placed = {
-        params ["_vehicle, _cost"];
+        params ["_vehicle", "_cost"];
 
         private _factionMoney = server getVariable "resourcesFIA";
         if (player == theBoss && {_cost <= _factionMoney}) then {
