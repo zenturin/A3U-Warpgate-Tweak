@@ -14,6 +14,10 @@
                 <Chinesesimp>油箱</Chinesesimp>
                 <Korean>연료탱크</Korean>
             </Key>
+            <Key ID="STR_A3AP_buyvehdialog_fuel_drum">
+                <Original>Fuel Drum</Original>
+                <Russian>Бочка с топливом</Russian>
+            </Key>
             <Key ID="STR_A3AP_buyvehdialog_light">
                 <Original>Light</Original>
                 <Russian>Уличный фонарь</Russian>

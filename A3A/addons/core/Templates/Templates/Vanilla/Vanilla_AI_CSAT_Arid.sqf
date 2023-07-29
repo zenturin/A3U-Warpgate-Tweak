@@ -360,10 +360,10 @@ if (_hasWs) then {
 _sfLoadoutData set ["machineGuns", _mgs];
 
 private _marksmanRifles = [
-    ["srifle_DMR_01_F", "muzzle_snds_B", "acc_pointer_IR", "optic_DMS", [], [], "bipod_02_F_hex"],
-    ["srifle_DMR_01_F", "muzzle_snds_B", "acc_pointer_IR", "optic_NVS", [], [], "bipod_02_F_hex"],
-    ["srifle_DMR_01_F", "muzzle_snds_B", "acc_pointer_IR", "optic_Arco", [], [], "bipod_02_F_hex"],
-    ["srifle_DMR_01_F", "muzzle_snds_B", "acc_pointer_IR", "optic_SOS", [], [], "bipod_02_F_hex"]
+    ["srifle_DMR_01_F", "muzzle_snds_B", "", "optic_DMS", [], [], "bipod_02_F_hex"],
+    ["srifle_DMR_01_F", "muzzle_snds_B", "", "optic_NVS", [], [], "bipod_02_F_hex"],
+    ["srifle_DMR_01_F", "muzzle_snds_B", "", "optic_Arco", [], [], "bipod_02_F_hex"],
+    ["srifle_DMR_01_F", "muzzle_snds_B", "", "optic_SOS", [], [], "bipod_02_F_hex"]
 ];
 
 if (_hasMarksman) then {
