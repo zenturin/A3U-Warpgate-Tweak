@@ -64,8 +64,8 @@
 ["vehiclesPolice", ["vn_i_wheeled_m151_01_mp", "vn_i_wheeled_m151_02_mp"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["vn_i_marines_static_m1919a4_high", "vn_i_marines_static_m2_high", "vn_i_marines_static_m60_high"]] call _fnc_saveToTemplate;
-["staticATs", ["vn_i_marines_static_m40a1rr", "vn_i_static_tow"]] call _fnc_saveToTemplate;
-["staticAAs", ["vn_i_static_m45"]] call _fnc_saveToTemplate;
+["staticAT", ["vn_i_marines_static_m40a1rr", "vn_i_static_tow"]] call _fnc_saveToTemplate;
+["staticAA", ["vn_i_static_m45"]] call _fnc_saveToTemplate;
 ["staticMortars", ["vn_i_static_mortar_m2"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["vn_i_static_m101_02"]] call _fnc_saveToTemplate;
 

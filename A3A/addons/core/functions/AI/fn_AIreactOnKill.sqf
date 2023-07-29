@@ -98,12 +98,15 @@ _group setVariable ["A3A_reactingToKill", true];
         if (!isNull _enemy && (primaryWeapon _x in allMachineGuns)) exitWith {
             if (random 100 < 40) then { [_x,_enemy] spawn A3A_fnc_suppressingFire };
         };
-        if ((random 100) < 35) exitWith {
+        private _noNvgIndex = (units _group) findIf {hmd _x == "" || {getArray (configFile >> "CfgWeapons" >> (hmd _x) >> "visionMode") isEqualTo ["Normal","Normal"]}};
+        if (sunOrMoon == 1 || _noNvgIndex != -1) exitWith {
             if (random 100 < 40) then { [_x,_x,_enemy] spawn A3A_fnc_chargeWithSmoke };
         };
-        if (sunOrMoon < 1 && {primaryWeapon _x in allGrenadeLaunchers}) exitWith {
+        if (primaryWeapon _x in allGrenadeLaunchers) exitWith {
             [_x,_enemy] spawn A3A_fnc_useFlares;
         };
 	};
     sleep (1 + random 1);
 } forEach _activeGroupMembers;
+
+_group setVariable ["A3A_reactingToKill", nil];

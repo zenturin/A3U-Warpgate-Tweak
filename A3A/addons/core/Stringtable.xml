@@ -431,6 +431,12 @@
                 <Spanish>Reclutar AT</Spanish>
                 <Polish>Rekrutuj Celowniczego PPANC</Polish>
             </Key>
+            <Key ID="STR_antistasi_dialogs_garrison_spawn_atmissile_text">
+                <Original>Recruit AT Missile</Original>
+             </Key>
+             <Key ID="STR_antistasi_dialogs_garrison_spawn_aamissile_text">
+                 <Original>Recruit AA Missile</Original>
+             </Key>
         </Container>
         <Container name="dialog_build_minefield">
             <Key ID="STR_antistasi_dialogs_minefield_frame_text">
@@ -616,7 +622,7 @@
                 <Polish>Rekrutuj Strzelca Wyborowego</Polish>
             </Key>
             <Key ID="STR_antistasi_dialogs_unit_recruit_antitank_text">
-                <Original>Recruit Antitank Solider</Original>
+                <Original>Recruit Antitank Soldier</Original>
                 <French>Recruter un Soldat Antichar</French>
                 <Russian>Гранатомётчик</Russian>
                 <German>Panzerabwehrsoldat rekrutieren</German>
@@ -626,6 +632,12 @@
                 <Italian>Recluta Soldato Anticarro</Italian>
                 <Spanish>Reclutar AT</Spanish>
                 <Polish>Rekrutuj Celowniczego PPANC</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_unit_recruit_atmissile_text">
+                <Original>Recruit AT Missile Soldier</Original>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_unit_recruit_aamissile_text">
+                <Original>Recruit AA Missile Soldier</Original>
             </Key>
         </Container>
         <Container name="dialog_generic">
@@ -2722,14 +2734,14 @@
                 <Polish>Użyte Skrypty</Polish>
             </Key>
             <Key ID="STR_antistasi_journal_entry_text_Credits_1">
-                <Original>Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Original>
-                <German>Persistent Save von zooloo75.&lt;br/&gt;Tags von Marker und Melbo.&lt;br/&gt;JAS von Jeroen (Entschuldige, dass es so lange gedauert hat dich hinzuzufügen)&lt;br/&gt;Advanced Towing von Seth Duda.</German>
-                <Czech>Trvalé Uložit podle zooloo75.&lt;br/&gt;Štítky Marker a Melbo.&lt;br/&gt;JAS od Jeroen (omlouvám se za to, že jste byli pozdě)&lt;br/&gt;Štítky od Markera a Melba.&lt;br/&gt;Rozšířené tažení od Setha Dudy.</Czech>
-                <Korean>영구 저장의 zooloo75.&lt;br/&gt;Tags의 Marker와 Melbo.&lt;br/&gt;JAS의 Jeroen (너무 늦게 포함해서 죄송합니다)&lt;br/&gt;Advanced Towing의 Seth Duda.</Korean>
-                <Chinesesimp>Persistent Save by zooloo75。&lt;br/&gt;Tags by Marker 和 Melbo。&lt;br/&gt;JAS by Jeroen (抱歉这么晚才把你添加进来)。&lt;br/&gt;Advanced Towing by Seth Duda。</Chinesesimp>
-                <Italian>Salvataggio Persistente di zooloo75.&lt;br/&gt;Tags da Marker and Melbo.&lt;br/&gt;JAS da Jeroen (Scusa per averti incluso così tardi)&lt;br/&gt;Advanced Towing da Seth Duda.</Italian>
-                <Spanish>Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Spanish>
-                <Polish>Persistent Save stworzony przez zooloo75.&lt;br/&gt;Tags stworzony przez Marker i Melbo.&lt;br/&gt;JAS stworzony przez Jeroen.&lt;br/&gt;Advanced Towing stworzony przez Seth Duda.</Polish>
+                <Original>Patcom by Hazey.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Original>
+                <German>Patcom von Hazey.&lt;br/&gt;Persistent Save von zooloo75.&lt;br/&gt;Tags von Marker und Melbo.&lt;br/&gt;JAS von Jeroen (Entschuldige, dass es so lange gedauert hat dich hinzuzufügen)&lt;br/&gt;Advanced Towing von Seth Duda.</German>
+                <Czech>Patcom od Hazey.&lt;br/&gt;Trvalé Uložit podle zooloo75.&lt;br/&gt;Štítky Marker a Melbo.&lt;br/&gt;JAS od Jeroen (omlouvám se za to, že jste byli pozdě)&lt;br/&gt;Štítky od Markera a Melba.&lt;br/&gt;Rozšířené tažení od Setha Dudy.</Czech>
+                <Korean>Patcom의 Hazey.&lt;br/&gt;영구 저장의 zooloo75.&lt;br/&gt;Tags의 Marker와 Melbo.&lt;br/&gt;JAS의 Jeroen (너무 늦게 포함해서 죄송합니다)&lt;br/&gt;Advanced Towing의 Seth Duda.</Korean>
+                <Chinesesimp>Patcom by Hazey.&lt;br/&gt;Persistent Save by zooloo75。&lt;br/&gt;Tags by Marker 和 Melbo。&lt;br/&gt;JAS by Jeroen (抱歉这么晚才把你添加进来)。&lt;br/&gt;Advanced Towing by Seth Duda。</Chinesesimp>
+                <Italian>Patcom da Hazey.&lt;br/&gt;Salvataggio Persistente di zooloo75.&lt;br/&gt;Tags da Marker and Melbo.&lt;br/&gt;JAS da Jeroen (Scusa per averti incluso così tardi)&lt;br/&gt;Advanced Towing da Seth Duda.</Italian>
+                <Spanish>Patcom by Hazey.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Spanish>
+                <Polish>Patcom stworzony przez Hazey.&lt;br/&gt;Persistent Save stworzony przez zooloo75.&lt;br/&gt;Tags stworzony przez Marker i Melbo.&lt;br/&gt;JAS stworzony przez Jeroen.&lt;br/&gt;Advanced Towing stworzony przez Seth Duda.</Polish>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_Credits_2">
                 <Original>Mods</Original>
@@ -4825,6 +4837,50 @@
                 <Chinesesimp>&lt;br/&gt; - 加油</Chinesesimp>
                 <Korean>&lt;br/&gt; - 재급유되었습니다</Korean>
             </Key>
+            <Key ID="STR_A3A_Utility_Items_Last_Time_Purchase">
+        <Original>You already bought one, wait %1 seconds before you can buy another.</Original>
+        <Spanish>Ya has comprado una unidad, espera %1 segundos antes de poder comprar otra.</Spanish>				  
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Insufficient_Funds">
+        <Original>You can't afford this Item.</Original>
+        <Spanish>No puedes pagar ese objeto.</Spanish>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Purchase_Title">
+        <Original>Item Purchase</Original>
+        <Spanish>Compra de objeto</Spanish>
+      </Key>
+      <Key ID="STR_A3A_Packable_Objects_Title">
+        <Original>Packing Objects</Original>
+        <Spanish>Objetos empacables</Spanish>
+      </Key>
+      <Key ID="STR_A3A_Packable_Objects_refunding_error">
+        <Original>refunding money due to error</Original>
+        <Spanish>Devolviendo el dinero a causa de un error.</Spanish>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_lootbox">
+        <Original>Loot Box</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_fueldrum">
+        <Original>Fuel Drum</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_fueltank">
+        <Original>Fuel Tank</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_medicaltent">
+        <Original>Medical Tent</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_medicalbox">
+        <Original>Medical Box</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_ammostation">
+        <Original>Ammo Station</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_repairstation">
+        <Original>Repair Station</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_light">
+        <Original>Light</Original>
+      </Key>
         </Container>
         <Container name="server_info">
             <Key ID="STR_A3A_feedback_serverinfo">

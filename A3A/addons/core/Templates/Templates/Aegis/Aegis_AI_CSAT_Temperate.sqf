@@ -96,8 +96,8 @@ private _policeVehs = if (_hasContact) then {
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
 ["staticMGs", ["Atlas_O_W_HMG_01_high_F", "Atlas_O_W_HMG_01_high_F", "Atlas_O_W_HMG_01_high_F", "Atlas_O_W_GMG_01_high_F"]] call _fnc_saveToTemplate;
-["staticATs", ["O_T_Static_AT_F"]] call _fnc_saveToTemplate;
-["staticAAs", ["O_T_Static_AA_F"]] call _fnc_saveToTemplate;
+["staticAT", ["O_T_Static_AT_F"]] call _fnc_saveToTemplate;
+["staticAA", ["O_T_Static_AA_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["O_T_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 

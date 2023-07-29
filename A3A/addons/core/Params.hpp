@@ -105,6 +105,20 @@ class Params
         texts[] = {"2","5","15","30",$STR_params_afk_disabled};
         default = 300;
     };
+    class A3A_GCThreshold
+    {
+        title = $STR_params_gc_threshold;
+        values[] = {3600, 7200, 10800, 14400, 9999999};
+        texts[] = {"1hr", "2hrs", "3hrs", "4hrs", "disabled"};
+        Default = 9999999;
+    };
+    class A3A_reviveTime
+    {
+        title = $STR_params_revive_time;
+        values[] = {8,12,16,24,32};
+        texts[] = {"8","12","16","24","32"};
+        default = 12;
+    };
 
     class Spacer60
     {
@@ -240,21 +254,6 @@ class Params
         texts[] = {$STR_params_server_riv_difficulty_easy, $STR_params_server_riv_difficulty_medium, $STR_params_server_riv_difficulty_hard};
         default = 2;
     };
-    class A3A_GCThreshold
-    {
-        title = $STR_params_gc_threshold;
-        values[] = {3600, 7200, 10800, 14400, 9999999};
-        texts[] = {"1hr", "2hrs", "3hrs", "4hrs", "disabled"};
-        Default = 9999999;
-    };
-    class A3A_reviveTime
-    {
-        title = $STR_params_revive_time;
-        values[] = {5,10,15,20,25,30};
-        texts[] = {"5","10","15","20","25","30"};
-        default = 10;
-    };
-
     class SpacerMembership
     {
         title = "";

@@ -353,9 +353,6 @@ if  (_tab in ["other"]) then
         _button setVariable ["className", _className];
         _button setVariable ["model", _model];
 
-                
-//SCRT_fnc_common_buyReviveKitBox
-        
         switch (true) do {
             case (_className isEqualTo (A3A_faction_reb get "lootCrate")): {
                 _button ctrlAddEventHandler ["ButtonClick", {

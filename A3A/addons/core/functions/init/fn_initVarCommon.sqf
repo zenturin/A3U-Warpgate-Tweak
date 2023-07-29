@@ -115,6 +115,9 @@ if(A3A_hasACEMedical && isClass (configFile >> "CfgWeapons" >> "kat_scalpel")) t
 // Zeus enhanced
 A3A_hasZen = (isClass (configFile >> "CfgPatches" >> "zen_common"));
 
+// Zeus enhanced
+A3A_hasZen = (isClass (configFile >> "CfgPatches" >> "zen_common"));
+
 //Content Mods (Units, Vehicles, Weapons, Clothes etc.)
 //These are handled by a script in the Templates folder to keep integrators away from critical code.
 //call A3A_fnc_detector;
@@ -125,6 +128,9 @@ A3A_hasZen = (isClass (configFile >> "CfgPatches" >> "zen_common"));
 Info("Creating building arrays");
 
 A3A_buildingWhitelist = [
+	"Land_Cargo_Tower_V1_F","Land_Cargo_Tower_V1_No1_F","Land_Cargo_Tower_V1_No2_F","Land_Cargo_Tower_V1_No3_F","Land_Cargo_Tower_V1_No4_F","Land_Cargo_Tower_V1_No5_F","Land_Cargo_Tower_V1_No6_F","Land_Cargo_Tower_V1_No7_F","Land_Cargo_Tower_V2_F", "Land_Cargo_Tower_V3_F", "Land_Cargo_Tower_V4_F"
+];
+A3A_milBuildingWhitelist = A3A_buildingWhitelist + [
 	"Land_Cargo_Tower_V1_F",
 	"Land_Cargo_Tower_V1_No1_F",
 	"Land_Cargo_Tower_V1_No2_F",

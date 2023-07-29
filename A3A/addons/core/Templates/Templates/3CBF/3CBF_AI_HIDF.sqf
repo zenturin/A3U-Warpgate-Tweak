@@ -66,8 +66,8 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehiclesPolice", ["UK3CB_CPD_B_UAZ_Closed", "UK3CB_CPD_B_Gaz24", "UK3CB_CPD_B_Lada", "UK3CB_CPD_B_S1203"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["RHS_M2StaticMG_D"]] call _fnc_saveToTemplate;
-["staticATs", ["RHS_TOW_TriPod_WD"]] call _fnc_saveToTemplate;
-["staticAAs", ["RHS_Stinger_AA_pod_WD"]] call _fnc_saveToTemplate;
+["staticAT", ["RHS_TOW_TriPod_WD"]] call _fnc_saveToTemplate;
+["staticAA", ["RHS_Stinger_AA_pod_WD"]] call _fnc_saveToTemplate;
 ["staticMortars", ["RHS_M252_WD"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["RHS_M119_WD"]] call _fnc_saveToTemplate;
 
