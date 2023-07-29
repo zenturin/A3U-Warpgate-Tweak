@@ -24,11 +24,11 @@ private _lightSource = [FactionGet(reb,"vehicleLightSource"), 100];
 private _items = [];
 
 if (lootCratesEnabled) then {
-    _items pushBack [_lootCrate#0, _lootCrate#1, localize "STR_A3AP_buyvehdialog_loot_crate", "lootbox", ["move", "loot"]];
+    _items pushBack [_lootCrate#0, _lootCrate#1, localize "STR_A3AP_buyvehdialog_loot_crate", "lootbox", ["move", "place", "loot"]];
 };
 
 if (reviveKitsEnabled) then {
-    _items pushBack [_reviveKitBox#0, _reviveKitBox#1, localize "STR_A3AP_buyvehdialog_revive_kit_box", "revivebox", ["cmmdr", "move", "place"]];
+    _items pushBack [_reviveKitBox#0, _reviveKitBox#1, localize "STR_A3AP_buyvehdialog_revive_kit_box", "revivebox", ["cmmdr", "move", "place", "revivekit"]];
 };
 
 _items append [

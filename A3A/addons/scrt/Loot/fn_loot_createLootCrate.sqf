@@ -33,13 +33,7 @@ private _fnc_placed = {
 		_vehicle setVariable ["ownerX",getPlayerUID player,true];
 	};
 
-	[_vehicle] call SCRT_fnc_loot_addLootCrateActions;
 	_vehicle addEventHandler ["Killed", { [_this#0] spawn { sleep 10; deleteVehicle (_this#0) } }];
-
-	clearItemCargoGlobal _vehicle;
-	clearMagazineCargoGlobal _vehicle;
-	clearWeaponCargoGlobal _vehicle;
-	clearBackpackCargoGlobal _vehicle;
 };
 
 [_typeVehX, _fnc_placed, {false}, [_cost], nil, nil, nil, _extraMessage] call HR_GRG_fnc_confirmPlacement;

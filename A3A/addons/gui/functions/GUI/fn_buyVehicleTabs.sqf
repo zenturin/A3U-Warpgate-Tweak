@@ -356,11 +356,15 @@ if  (_tab in ["other"]) then
         switch (true) do {
             case (_className isEqualTo (A3A_faction_reb get "lootCrate")): {
                 _button ctrlAddEventHandler ["ButtonClick", {
-                    closeDialog 2; [] call SCRT_fnc_loot_createLootCrate;
+                    closeDialog 2; 
+                    [] call SCRT_fnc_loot_createLootCrate;
                 }];
             };
             default {
-                _button ctrlAddEventHandler ["ButtonClick", { closeDialog 2; [player, _this#0 getVariable "className"] call A3A_fnc_buyItem }];
+                _button ctrlAddEventHandler ["ButtonClick", { 
+                    closeDialog 2; 
+                    [player, _this#0 getVariable "className"] call A3A_fnc_buyItem 
+                }];
             };
         };
 
