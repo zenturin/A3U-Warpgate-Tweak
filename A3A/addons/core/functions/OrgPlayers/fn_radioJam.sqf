@@ -1,38 +1,55 @@
 #define JAM_RADIUS 1000
 #define JAM_STRENGTH 49
 
-private _jammed = false;
-private _sideX = side player;
-private _isJammed = false;
-private _interference = 1;
-private _sendInterference = 1;
+// Pre-generate antenna -> base mappings to save scanning
+private _sideX = side group player;
 private _bases = outposts + airportsx + seaports + milbases;
+private _antennaBases = createHashMap;
+{
+    private _base = [_bases, _x] call BIS_fnc_nearestPosition;
+    _antennaBases set [netId _x, _base];
+} forEach (antennas + antennasDead);
 
-private _antennas = [];
+private _fnc_setInterference = {
+    params ["_recInterference", "_sendInterference"];
+    player setVariable ["tf_receivingDistanceMultiplicator", _recInterference];
+    player setVariable ["tf_sendingDistanceMultiplicator", _sendInterference];
 
-while {true} do {
-	_antennas = antennas select { sidesX getVariable [([_bases,_x] call BIS_fnc_nearestPosition), sideUnknown] != _sideX };
+    if(A3A_hasACRE) then
+    {
+        if(_recInterference == 1 && _sendInterference == 1) exitWith
+        {
+            [{}] call acre_api_fnc_setCustomSignalFunc;
+        };
 
-	if (_sideX != teamPlayer) then {_antennas pushBack [vehicleBox]};
-	if (_antennas isNotEqualTo []) then {
-		private _jammer = [_antennas,player] call BIS_fnc_nearestPosition;
-		private _distance = player distance _jammer;
+        [{
+            private _coreSignal = _this call acre_sys_signal_fnc_getSignalCore;
+            _coreSignal params ["_Px", "_maxSignal"];
+            private _sendInterference = player getVariable ["tf_sendingDistanceMultiplicator", 1];
 
-	    if (_distance < JAM_RADIUS) then {
-			_interference = JAM_STRENGTH - ((_distance / JAM_RADIUS) * JAM_STRENGTH) + 1; // Calculate the recieving interference, which has to be above 1 to have any effect.
-			_sendInterference = 1/_interference; //Calculate the sending interference, which needs to be below 1 to have any effect.
-			if (!_isJammed) then {_isJammed = true};
-			player setVariable ["tf_receivingDistanceMultiplicator", _interference];
-			player setVariable ["tf_sendingDistanceMultiplicator", _sendInterference];
-	    } else {
-	    	if (!_isJammed) exitWith {};
-			_isJammed = false;
-			_interference = 1;
-			_sendInterference = 1;
-			player setVariable ["tf_receivingDistanceMultiplicator", _interference];
-			player setVariable ["tf_sendingDistanceMultiplicator", _sendInterference];
-		};
-	};
-	
-	sleep 10;
+            [_Px * _sendInterference, _maxSignal]
+
+        }] call acre_api_fnc_setCustomSignalFunc;
+    }
+};
+
+while {true} do
+{
+    sleep 10;
+
+    private _jammers = antennas inAreaArray [getPosATL player, JAM_RADIUS, JAM_RADIUS];
+    _jammers = _jammers select { sidesX getVariable (_antennaBases get netId _x) != _sideX };
+
+    // No live enemy antennas within range
+    if (_jammers isEqualTo []) then {
+        [1, 1] call _fnc_setInterference;
+        continue;
+    };
+
+    private _jammer = [_jammers, player] call BIS_fnc_nearestPosition;
+    private _dist = player distance _jammer;
+
+    // Receiving interference >1 has effect, sending interference <1 has effect
+    private _interference = 1 + JAM_STRENGTH * (1 - _dist/JAM_RADIUS);
+    [_interference, 1/_interference] call _fnc_setInterference;
 };

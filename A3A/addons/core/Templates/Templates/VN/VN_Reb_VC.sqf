@@ -22,7 +22,7 @@
 
 ["flyGear", ["vn_b_uniform_heli_01_01"]] call _fnc_saveToTemplate;
 
-["vehicleBasic", "vn_c_bicycle_01"] call _fnc_saveToTemplate;
+["vehiclesBasic", ["vn_c_bicycle_01"]] call _fnc_saveToTemplate;
 ["vehicleLightUnarmed", "vn_i_wheeled_m151_01_marines"] call _fnc_saveToTemplate;
 ["vehicleLightArmed", "vn_i_wheeled_m151_mg_01_marines"] call _fnc_saveToTemplate;
 ["vehicleTruck", "vn_i_wheeled_m54_01_marines"] call _fnc_saveToTemplate;
@@ -30,10 +30,8 @@
 ["vehicleAA", "vn_b_wheeled_m54_mg_02"] call _fnc_saveToTemplate;
 
 ["vehicleBoat", "vn_o_boat_02_01"] call _fnc_saveToTemplate;
-["vehicleRepair", "vn_i_wheeled_m54_repair"] call _fnc_saveToTemplate;
 
-["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclesPlane", ["I_C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
 
 ["vehicleCivCar", "vn_c_wheeled_m151_01"] call _fnc_saveToTemplate;
 ["vehicleCivTruck", "vn_b_wheeled_m54_01_airport"] call _fnc_saveToTemplate;

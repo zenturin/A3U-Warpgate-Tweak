@@ -66,6 +66,14 @@ if (_isLand) then {
 
 	private _reinfWP = _cargoGroup addWaypoint [_posDest, 0];
 	_reinfWP setWaypointBehaviour "AWARE";
+
+	// Free the spawn position after 60 seconds
+	_vehicle spawn {
+		sleep 60;
+		if (isNull _this) exitWith {};
+		[_this getVariable "spawnPlace"] call A3A_fnc_freeSpawnPositions;
+		_this setVariable ["spawnPlace", nil];
+	};
 }
 else
 {

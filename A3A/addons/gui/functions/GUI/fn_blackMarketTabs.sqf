@@ -31,20 +31,20 @@ params[
     ["_params",[]]
 ];
 
-private _display = findDisplay A3A_IDD_BUYVEHICLEDIALOG;
+private _display = findDisplay A3A_IDD_BLACKMARKETVEHICLEDIALOG;
 private _selectedTab = -1;
 
 if (_tab isEqualTo "vehicles") then 
 {
-    _selectedTab = A3A_IDC_VEHICLESGROUP;
+    _selectedTab = A3A_IDC_BLACKMARKETVEHICLESGROUP;
     Debug("BuyVehicleTab starting...");
 
     // show the vehicle tab so that user don't freak out
-    private _selectedTabCtrl = _display displayCtrl A3A_IDC_BUYVEHICLEMAIN;
+    private _selectedTabCtrl = _display displayCtrl A3A_IDC_BLACKMARKETMAIN;
     _selectedTabCtrl ctrlShow true;
 
     // Setup Object render
-    private _objPreview = _display displayCtrl A3A_IDC_BUYOBJECTRENDER;  // 9303;
+    private _objPreview = _display displayCtrl A3A_IDC_BLACKMARKETBUYOBJECTRENDER;
     _objPreview ctrlShow false;
 
     // Add stuff to the buyable vehicles list
@@ -82,7 +82,7 @@ if (_tab isEqualTo "vehicles") then
         _itemControlsGroup ctrlSetFade 1;
         _itemControlsGroup ctrlCommit 0;
 
-        private _previewPicture = _display ctrlCreate ["A3A_Picture", A3A_IDC_BUYVEHICLEPREVIEW, _itemControlsGroup];
+        private _previewPicture = _display ctrlCreate ["A3A_Picture", A3A_IDC_BLACKMARKETPREVIEW, _itemControlsGroup];
         _previewPicture ctrlSetPosition [0, 0, 44 * GRID_W, 25 * GRID_H];
         _previewPicture ctrlSetText _editorPreview;
         _previewPicture ctrlCommit 0;
@@ -94,7 +94,7 @@ if (_tab isEqualTo "vehicles") then
         _button setVariable ["className", _className];
         _button setVariable ["model", _model];
         _button ctrlAddEventHandler ["ButtonClick", {
-            closeDialog 2; [(_this # 0) getVariable "className", "BUYBLACKMARKET"] spawn A3A_fnc_addFIAveh;
+            closeDialog 2; [(_this # 0) getVariable "className"] spawn A3A_fnc_addBlackMarketVeh;
         }];
         _button ctrlCommit 0;
 
@@ -108,14 +108,14 @@ if (_tab isEqualTo "vehicles") then
     
                     private _model = _control getVariable "model";
                     private _className = _control getVariable "className";
-                    private _display = findDisplay A3A_IDD_BUYVEHICLEDIALOG;  // 9300;
-                    private _objPreview = _display displayCtrl A3A_IDC_BUYOBJECTRENDER;  // 9303;
+                    private _display = findDisplay A3A_IDD_BLACKMARKETVEHICLEDIALOG;
+                    private _objPreview = _display displayCtrl A3A_IDC_BLACKMARKETBUYOBJECTRENDER;
                     _objPreview ctrlSetModel _model;
                     private _boundingDiameter = [_className] call FUNC(sizeOf);
                     _objPreview ctrlSetModelScale (2.25/(_boundingDiameter) * _UIScaleAdjustment);
                     _objPreview ctrlSetModelDirAndUp [[-0.6283,0.3601,0.6896],[-0.0125,-0.5015,0.8651]];  // x y z
     
-                    private _editorPreviewPicture = ctrlParentControlsGroup _control controlsGroupCtrl A3A_IDC_BUYVEHICLEPREVIEW;  // 9304;
+                    private _editorPreviewPicture = ctrlParentControlsGroup _control controlsGroupCtrl A3A_IDC_BLACKMARKETPREVIEW;
     
                     private _mouseAbsolutePos = getMousePosition;
                     private _mouseRelativePos = ctrlMousePosition _editorPreviewPicture;
@@ -137,10 +137,10 @@ if (_tab isEqualTo "vehicles") then
                 params ["_control"];
                 if (true || isNil "Dev_GUI_prevInjectExit") then {
                     params ["_control"];
-                    private _display = findDisplay A3A_IDD_BUYVEHICLEDIALOG;  // 9300;
-                    private _objPreview = _display displayCtrl A3A_IDC_BUYOBJECTRENDER;  // 9303;
+                    private _display = findDisplay A3A_IDD_BLACKMARKETVEHICLEDIALOG;
+                    private _objPreview = _display displayCtrl A3A_IDC_BLACKMARKETBUYOBJECTRENDER;
     
-                    private _editorPreviewPicture = ctrlParentControlsGroup _control controlsGroupCtrl A3A_IDC_BUYVEHICLEPREVIEW;  // 9304;
+                    private _editorPreviewPicture = ctrlParentControlsGroup _control controlsGroupCtrl A3A_IDC_BLACKMARKETPREVIEW;
     
                     _editorPreviewPicture ctrlShow true;
                     _editorPreviewPicture ctrlCommit 1;

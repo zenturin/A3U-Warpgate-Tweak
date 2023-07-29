@@ -497,11 +497,10 @@ class aiManagement: SimpleMenuBigger
 		class l2Button: SimpleButton
 		{
 			idc = -1;
-			text = $STR_antistasi_dialogs_auto_heal_title;
+			text = "PLACEHOLDER";
 			x = 0.257187 * safezoneW + safezoneX;
 			y = 0.388 * safezoneH + safezoneY;
 			tooltip = $STR_antistasi_dialogs_auto_heal_tooltip;
-			action = "closeDialog 0; if (autoHeal) then {autoHeal = false; [localize 'STR_generic_ai_auto_heal', localize 'STR_generic_ai_auto_heal_off'] call A3A_fnc_customHint;} else {autoHeal = true; [localize 'STR_generic_ai_auto_heal', localize 'STR_generic_ai_auto_heal_on'] call A3A_fnc_customHint; nul = [] spawn A3A_fnc_autoHealFnc}";
 		};
 
 		class l3Button: SimpleButton

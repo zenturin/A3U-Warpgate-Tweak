@@ -26,7 +26,7 @@ private _mrkFinal = createMarker [format ["LOG%1", random 100], _positionX];
 private _nameDest = [_city] call A3A_fnc_localizar;
 _mrkFinal setMarkerShape "ICON";
 
-private _bankVehicleClass = A3A_faction_reb get "vehicleCivSupply";
+private _bankVehicleClass = selectRandom (FactionGet(reb, "vehiclesCivSupply"));
 
 private _pos = (getMarkerPos respawnTeamPlayer) findEmptyPosition [1,50,_bankVehicleClass];
 
@@ -47,21 +47,13 @@ private _taskId = "LOG" + str A3A_taskCount;
 [[teamPlayer,civilian],_taskId,[format [localize "STR_A3A_Missions_LOG_Bank_task_desc",_nameDest,_displayTime], localize "STR_A3A_Missions_LOG_Bank_task_header",_mrkFinal],_positionX,false,0,true,"Interact",true] call BIS_fnc_taskCreate;
 [_taskId, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 
-private _mrk = createMarkerLocal [format ["%1patrolarea", floor random 100], _positionX];
-_mrk setMarkerShapeLocal "RECTANGLE";
-_mrk setMarkerSizeLocal [30,30];
-_mrk setMarkerTypeLocal "hd_warning";
-_mrk setMarkerColorLocal "ColorRed";
-_mrk setMarkerBrushLocal "DiagGrid";
-_mrk setMarkerAlphaLocal 0;
-
 private _groups = [];
 private _soldiers = [];
 for "_i" from 1 to 4 do {
 	private _groupType = if (_difficultX) then { selectRandom ([_faction get "groupsTierSmall"] call SCRT_fnc_unit_flattenTier) } else { _faction get "groupPolice" };
 	_groupX = [_positionX,Occupants,_groupType] call A3A_fnc_spawnGroup;
 	sleep 1;
-	_nul = [leader _groupX, _mrk, "LIMITED", "SAFE", "SPAWNED", "NOVEH2", "FORTIFY"] spawn UPSMON_fnc_UPSMON;
+	[_groupX, "Patrol_Area", 25, 50, 100, true, _positionX, true] call A3A_fnc_patrolLoop;
 	{[_x,""] call A3A_fnc_NATOinit; _soldiers pushBack _x} forEach units _groupX;
 	_groups pushBack _groupX;
 };
@@ -146,5 +138,4 @@ deleteVehicle _truckX;
 
 { [_x] spawn A3A_fnc_groupDespawner } forEach _groups;
 
-deleteMarker _mrk;
 deleteMarker _mrkFinal;

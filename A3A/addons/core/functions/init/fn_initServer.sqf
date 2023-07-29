@@ -7,6 +7,7 @@ A3A_logDebugConsole = "A3A_logDebugConsole" call BIS_fnc_getParamValue; publicVa
 
 
 Info("Server init started");
+A3A_serverVersion = QUOTE(VERSION); publicVariable "A3A_serverVersion";
 Info_1("Server version: %1", QUOTE(VERSION_FULL));
 
 // ********************** Pre-setup init ****************************************************
@@ -58,13 +59,11 @@ call A3A_fnc_addNodesNearMarkers;		// Needs data from both the above
 Info("Server JNA preload started");
 ["Preload"] call jn_fnc_arsenal;
 
-// UPSMON
-Info("UPSMON init started");
-[] call UPSMON_fnc_Init_UPSMON;
-
 Info("Background init completed");
 A3A_backgroundInitDone = true;
 
+Info("Server Initialising PATCOM Variables");
+[] call A3A_fnc_patrolInit;
 
 // **************** Starting game, param-dependent init *******************************
 
@@ -141,7 +140,6 @@ else
     } forEach controlsX;
     petros setPos _posHQ;
     [_posHQ, true] call A3A_fnc_relocateHQObjects;         // sets all the other vars
-    placementDone = true; publicVariable "placementDone";           // do we need this now?
 };
 
 if (_startType != "load") then {
@@ -256,6 +254,7 @@ A3A_startupState = "completed"; publicVariable "A3A_startupState";
 [] spawn A3A_fnc_distance;                          // Marker spawn loop
 [] spawn A3A_fnc_resourcecheck;                     // 10-minute loop
 [] spawn A3A_fnc_aggressionUpdateLoop;              // 1-minute loop
+[] spawn A3A_fnc_garbageCleanerTracker;             // 5-minute loop
 [] spawn SCRT_fnc_rivals_activityUpdateLoop;
 [] spawn SCRT_fnc_rivals_eventLoop;
 if (areRandomEventsEnabled) then {
@@ -295,6 +294,48 @@ savingServer = false;           // enable saving
         [] call A3A_fnc_logPerformance;
         sleep _logPeriod;
     };
+};
+
+if ((isClass (configfile >> "CBA_Extended_EventHandlers")) && (
+    isClass (configfile >> "CfgPatches" >> "lambs_danger"))) then {
+    // disable lambs danger fsm entrypoint
+    ["CAManBase", "InitPost", {
+        params ["_unit"];
+        (group _unit) setVariable ["lambs_danger_disableGroupAI", true];
+        _unit setVariable ["lambs_danger_disableAI", true];
+    }] call CBA_fnc_addClassEventHandler;
+};
+
+
+
+if(A3A_hasZen) then 
+{
+    ["zen_common_createZeus", {
+        [_this] spawn {
+            params ["_unit"];
+
+            // wait in case our event was called first
+            waitUntil {sleep 1; !isNull getAssignedCuratorLogic _unit};
+
+            //now add the logging to the module
+            [[getAssignedCuratorLogic _unit]] remoteExecCall ["A3A_fnc_initZeusLogging",0];
+        };
+    }] call CBA_fnc_addEventHandler;
+};
+
+if(A3A_hasACE) then 
+{
+    ["ace_zeus_createZeus", {
+        [_this] spawn {
+            params ["_unit"];
+
+            // wait in case our event was called first
+            waitUntil {sleep 1; !isNull getAssignedCuratorLogic _unit};
+
+            //now add the logging to the module
+            [[getAssignedCuratorLogic _unit]] remoteExecCall ["A3A_fnc_initZeusLogging",0];
+        };
+    }] call CBA_fnc_addEventHandler;
 };
 
 Info("initServer completed");

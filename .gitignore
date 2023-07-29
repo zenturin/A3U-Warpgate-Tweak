@@ -1,4 +1,5 @@
 .vscode/
+.github/
 .idea/
 *.biprivatekey
 *.log

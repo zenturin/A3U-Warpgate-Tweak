@@ -52,7 +52,7 @@ if !(isNull (objectParent player)) then
         [localize "STR_A3A_goUndercover_title", localize "STR_A3A_goUndercover_error_no_civveh"] call A3A_fnc_customHint;
         _result = [false, localize "STR_A3A_goUndercover_error_no_civveh_output"];
     };
-    if ((objectParent player) getVariable ["A3A_reported", false]) then
+    if ((objectParent player) getVariable ["A3A_reported", false]) exitWith
     {
         [localize "STR_A3A_goUndercover_title", localize "STR_A3A_goUndercover_error_reportedveh"] call A3A_fnc_customHint;
         _result = [false, localize "STR_A3A_goUndercover_error_reportedveh_output"];
@@ -99,6 +99,11 @@ if !(isNull (objectParent player)) then
     if !(_result select 0) then
     {
         [localize "STR_A3A_goUndercover_title", _text] call A3A_fnc_customHint;
+    };
+    if ((objectParent player) getVariable ["SA_Tow_Ropes", []] isNotEqualTo []) exitWith
+    {
+        [localize "STR_A3A_goUndercover_title", localize "STR_A3A_goUndercover_error_towing_ropes_head"] call A3A_fnc_customHint;
+        _result = [false, localize "STR_A3A_goUndercover_error_towing_ropes"];
     };
 }
 else
@@ -152,6 +157,12 @@ else
         _text = format [localize "STR_A3A_goUndercover_error_naked_uniform", _text];
         _result set [0, false];
         _result pushBack (localize "STR_A3A_goUndercover_error_additive_naked_output");
+    };
+    if (!isNull (player getVariable ["SA_Tow_Ropes_Vehicle", objNull])) then
+    {
+        _text = format [localize "STR_A3A_goUndercover_error_towing_ropes_2", _text];
+        _result set [0, false];
+        _result pushBack (localize "STR_A3A_goUndercover_error_towing_ropes_output");
     };
     if !(_result select 0) then
     {

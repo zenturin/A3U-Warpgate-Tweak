@@ -18,10 +18,8 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehicleAA", "UK3CB_I_G_V3S_Zu23"] call _fnc_saveToTemplate;
 
 ["vehicleBoat", "UK3CB_CHD_I_Fishing_Boat"] call _fnc_saveToTemplate;
-["vehicleRepair", "UK3CB_NAP_I_V3S_Repair"] call _fnc_saveToTemplate;
 
-["vehiclePlane", "UK3CB_CHC_I_Antonov_AN2"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "UK3CB_NAP_I_C400"] call _fnc_saveToTemplate;
+["vehiclesPlane", ["UK3CB_CHC_I_Antonov_AN2", "UK3CB_NAP_I_C400"]] call _fnc_saveToTemplate;
 
 ["vehicleCivCar", "UK3CB_ADC_C_Skoda"] call _fnc_saveToTemplate;
 ["vehicleCivTruck", "UK3CB_CHC_C_Ural_Open"] call _fnc_saveToTemplate;
