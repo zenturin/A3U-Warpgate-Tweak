@@ -1,12 +1,12 @@
-params ["_markerX", "_typeX"];
-
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 // Create a new rebel unit in a garrison that's already spawned
-private _positionX = getMarkerPos _markerX;
+_markerX = _this select 0;
+_typeX = _this select 1;
+_positionX = getMarkerPos _markerX;
 if (_typeX isEqualType "") then {
 	// Select a suitable group from the current garrison for this unit
-    private _groups = if (_typeX == FactionGet(reb,"unitCrew")) then {[]} else {
+    _groups = if (_typeX == FactionGet(reb,"unitCrew")) then {[]} else {
         allGroups select {
             (leader _x getVariable ["markerX",""] == _markerX)
             and (count units _x < 8) and (vehicle (leader _x) == leader _x)
@@ -14,19 +14,18 @@ if (_typeX isEqualType "") then {
         };
     };
 
-    private _groupX = if (_groups isEqualTo []) then {
+    _groupX = if (_groups isEqualTo []) then {
         createGroup teamPlayer
     } else {
         _groups select 0;
     };
 
-    private _unit = [_groupX, _typeX, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
+    _unit = [_groupX, _typeX, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
     [_unit,_markerX] call A3A_fnc_FIAinitBases;
     if (_typeX isEqualTo FactionGet(reb,"unitRifle")) then { [_markerX] remoteExec ["A3A_fnc_updateRebelStatics", 2] };
 
     if (_typeX == FactionGet(reb,"unitCrew")) then {
-        private _vehType = selectRandom (FactionGet(reb,"staticMortars"));
-        private _veh = _vehType createVehicle _positionX;
+        private _veh = (FactionGet(reb,"staticMortars")) # 0 createVehicle _positionX;
         [_veh] call A3A_fnc_artilleryAdd;
 
         _unit assignAsGunner _veh;

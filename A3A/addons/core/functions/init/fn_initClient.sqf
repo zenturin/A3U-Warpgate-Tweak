@@ -626,6 +626,8 @@ if (saveZeusBuildings) then {
 	} forEach (allCurators);
 };
 
+[allCurators] remoteExecCall ["A3A_fnc_initZeusLogging",0];
+
 initClientDone = true;
 Info("initClient completed");
 

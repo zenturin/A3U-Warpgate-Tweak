@@ -3999,8 +3999,8 @@
                 <Korean>항상</Korean>
             </Key>
             <Key ID="STR_params_gc_threshold">
-                <Original>Garbage Cleaner Threshold for Automatic Garbage Collection</Original>
-                <Russian>Порог активации сборщика мусора</Russian>
+                <Original>Garbage Cleaner Threshold for Automatic Garbage Collection (in hours)</Original>
+                <Russian>Порог активации сборщика мусора (в часах)</Russian>
             </Key>
             <Key ID="STR_params_revive_time">
                 <Original>Revive time for players (in seconds)</Original>

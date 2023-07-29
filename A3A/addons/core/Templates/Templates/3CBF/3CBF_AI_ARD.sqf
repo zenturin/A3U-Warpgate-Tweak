@@ -64,8 +64,8 @@
 ["vehiclesPolice", ["UK3CB_TKP_B_Hilux_Pkm", "UK3CB_TKP_B_Hilux_Open", "UK3CB_TKP_B_Lada_Police", "UK3CB_TKP_B_Datsun_Pickup", "UK3CB_TKP_B_Hilux_Closed"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["UK3CB_ARD_O_PKM_High", "UK3CB_ARD_O_DSHKM"]] call _fnc_saveToTemplate;
-["staticATs", ["UK3CB_TKA_O_Kornet"]] call _fnc_saveToTemplate;
-["staticAAs", ["UK3CB_ARD_O_ZU23", "UK3CB_ARD_O_Igla_AA_pod"]] call _fnc_saveToTemplate;
+["staticAT", ["UK3CB_TKA_O_Kornet"]] call _fnc_saveToTemplate;
+["staticAA", ["UK3CB_ARD_O_ZU23", "UK3CB_ARD_O_Igla_AA_pod"]] call _fnc_saveToTemplate;
 ["staticMortars", ["UK3CB_ARD_O_2b14_82mm"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["UK3CB_ARD_O_D30"]] call _fnc_saveToTemplate;
 

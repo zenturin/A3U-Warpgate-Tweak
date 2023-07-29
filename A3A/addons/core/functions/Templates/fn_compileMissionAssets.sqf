@@ -102,10 +102,10 @@ setVar("vehiclesHelisTransport", OccAndInv("vehiclesHelisTransport") );
 setVar("vehiclesPlanesAA", OccAndInv("vehiclesPlanesAA") );
 setVar("vehiclesPlanesCAS", OccAndInv("vehiclesPlanesCAS") );
 setVar("vehiclesPlanesTransport", OccAndInv("vehiclesPlanesTransport"));
-setVar("staticMortars", OccAndInv("staticMortars") + Riv("staticMortars") + [Reb("staticMortar")] + ("STATICMORTAR" call _fnc_extractMarketClasses));
-setVar("staticAA", OccAndInv("staticAAs") + [Reb("staticAA")] + ("STATICAA" call _fnc_extractMarketClasses));
-setVar("staticAT", OccAndInv("staticATs") + [Reb("staticAT")] + ("STATICAT" call _fnc_extractMarketClasses));
-setVar("staticMG", OccAndInv("staticMGs") + Riv("staticLowWeapons") + [Reb("staticMG")] + ("STATICMG" call _fnc_extractMarketClasses));
+setVar("staticMortars", OccAndInv("staticMortars") + Riv("staticMortars") + Reb("staticMortars") + ("STATICMORTAR" call _fnc_extractMarketClasses));
+setVar("staticAA", OccAndInv("staticAA") + [Reb("staticAA")] + ("STATICAA" call _fnc_extractMarketClasses));
+setVar("staticAT", OccAndInv("staticAT") + [Reb("staticAT")] + ("STATICAT" call _fnc_extractMarketClasses));
+setVar("staticMGs", OccAndInv("staticMGs") + Riv("staticLowWeapons") + Reb("staticMGs") + ("STATICMG" call _fnc_extractMarketClasses));
 
 //Antistasi Plus stuff
 setVar("vehiclesAirborne", OccAndInv("vehiclesAirborne"));
@@ -137,7 +137,7 @@ setVar("vehiclesRivalsArmor", _vehRivalsArmor);
 private _vehRivalsLight = Riv("vehiclesRivalsCars") + Riv("vehiclesRivalsLightArmed") + Riv("vehiclesRivalsTrucks");
 setVar("vehiclesRivalsLight", _vehRivalsLight);
 
-private _vehRivalsStatics = Riv("staticMGs") + Riv("staticATs") + Riv("staticAAs");
+private _vehRivalsStatics = Riv("staticMGs") + Riv("staticAT") + Riv("staticAA");
 setVar("vehiclesRivalsStatics", _vehRivalsStatics);
 
 private _vehRivals = Riv("vehiclesRivalsAPCs") 

@@ -65,8 +65,8 @@
 ["vehiclesPolice", ["rhsusf_m998_d_s_4dr", "rhsusf_m998_d_s_4dr_halftop", "rhsusf_m998_d_s_4dr_fulltop"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["RHS_M2StaticMG_D", "UK3CB_B_Static_M240_Elcan_High_USMC_D"]] call _fnc_saveToTemplate;
-["staticATs", ["RHS_TOW_TriPod_D"]] call _fnc_saveToTemplate;
-["staticAAs", ["RHS_Stinger_AA_pod_D"]] call _fnc_saveToTemplate;
+["staticAT", ["RHS_TOW_TriPod_D"]] call _fnc_saveToTemplate;
+["staticAA", ["RHS_Stinger_AA_pod_D"]] call _fnc_saveToTemplate;
 ["staticMortars", ["RHS_M252_D"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 

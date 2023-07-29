@@ -65,8 +65,8 @@
 ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["rhsgref_cdf_b_DSHKM"]] call _fnc_saveToTemplate;
-["staticATs", ["rhsgref_cdf_b_SPG9", "rhsgref_cdf_b_SPG9M"]] call _fnc_saveToTemplate;
-["staticAAs", ["rhsgref_cdf_b_ZU23", "rhsgref_cdf_b_Igla_AA_pod"]] call _fnc_saveToTemplate;
+["staticAT", ["rhsgref_cdf_b_SPG9", "rhsgref_cdf_b_SPG9M"]] call _fnc_saveToTemplate;
+["staticAA", ["rhsgref_cdf_b_ZU23", "rhsgref_cdf_b_Igla_AA_pod"]] call _fnc_saveToTemplate;
 ["staticMortars", ["rhsgref_ins_2b14"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["rhsgref_cdf_b_reg_d30"]] call _fnc_saveToTemplate;
 
