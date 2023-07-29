@@ -294,7 +294,7 @@ while {_reason isEqualTo -1} do
         };
     };
 
-    if (_reason != "") exitWith {};
+    if (_reason != -1) exitWith {};
 
     // Don't do location checks on air vehicles. AirspaceControl handles that.
     if (!isNull _veh and { _veh isKindOf "Air" }) then { continue };
