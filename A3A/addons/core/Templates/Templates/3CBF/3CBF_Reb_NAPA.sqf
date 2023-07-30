@@ -140,25 +140,9 @@ private _initialRebelEquipment = [
     "rhs_weap_rsp30_green","rhs_mag_rsp30_green",
     "rhs_weap_rsp30_red", "rhs_mag_rsp30_red",
     "rhs_mag_nspd", "rhs_mag_nspn_yellow", "rhs_mag_nspn_green", "rhs_mag_nspn_red",
-    "rhsgref_chicom","V_BandollierB_oli"
+    "rhsgref_chicom","V_BandollierB_oli",
+    "UK3CB_CHC_C_B_MED", "B_AssaultPack_blk"
 ];
-
-private _civilianBackpacks =  ["UK3CB_CHC_C_B_MED", "B_AssaultPack_blk"];
-if (_hasLawsOfWar) then {
-    _civilianBackpacks append [
-        "B_Messenger_Black_F", 
-        "B_Messenger_Coyote_F", 
-        "B_Messenger_Gray_F",
-        "B_Messenger_Olive_F", 
-        "B_LegStrapBag_black_F", 
-        "B_LegStrapBag_coyote_F", 
-        "B_LegStrapBag_olive_F"
-    ];
-};
-
-["civilianBackpacks", _civilianBackpacks createHashMapFromArray []] call _fnc_saveToTemplate;
-
-_initialRebelEquipment append _civilianBackpacks;
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};

@@ -78,8 +78,6 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 
 private _initialRebelEquipment = [];
 
-["civilianBackpacks", ["backpack_1", "backpack_2"] createHashMapFromArray []] call _fnc_saveToTemplate;
-
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
