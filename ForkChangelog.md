@@ -16,6 +16,7 @@
 - Replaced rebel payload planes with just rebel planes, removed rebel faction vehicle category in templates 
 - Removed ability to buy rebel repair vehicles after owning 4+ factories to make it more in line with fuel and ammo resources 
 - Removed auto heal toggle menu due to overhauled AI from Antistasi CV port
+- Removed concept of civilian backpacks as there was no clear indication about backpack type and undercover system interaction, removed backpack undercover checks
 
 ## 2.1.11
 ### Changes

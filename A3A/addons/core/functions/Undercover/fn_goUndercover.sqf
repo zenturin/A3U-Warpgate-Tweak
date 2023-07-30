@@ -120,7 +120,6 @@ private _fnc_checkClothes = {
     if (secondaryWeapon player != "") exitWith {true};
     if (handgunWeapon player != "") exitWith {true};
     if (hmd player != "") exitWith {true};
-    if (backpack player != "" && {!(backpack player in (A3A_faction_reb get "civilianBackpacks"))}) exitWith {true};
     if (getNumber(configfile >> "CfgWeapons" >> headgear player >> "ItemInfo" >> "HitpointsProtectionInfo" >> "Head" >> "armor") > 2) exitWith {true};
     if (!(uniform player in (A3A_faction_civ get "uniforms"))) exitWith {true};
     if (vest player != ""  && {!(vest player isEqualTo "V_Press_F")}) exitWith {true};

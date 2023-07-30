@@ -9359,18 +9359,6 @@
                 <Chinesesimp>可疑的制服</Chinesesimp>
                 <Korean>수상한 복장 착용</Korean>
             </Key>
-            <Key ID="STR_A3A_goUndercover_error_additive_backpack">
-                <Original>%1&lt;br/&gt;Wearing a suspicious backpack. Use civilian backpacks.</Original>
-                <Russian>"%1&lt;br/&gt;Надет подозрительный рюкзак. Используйте гражданские рюкзаки.</Russian>
-                <Chinesesimp>%1&lt;br/&gt;背着可疑的背包。 要更换民用背包。</Chinesesimp>
-                <Korean>%1&lt;br/&gt;수상한 가방을 맴. 민간 배낭을 사용하십시오.</Korean>
-            </Key>
-            <Key ID="STR_A3A_goUndercover_error_additive_backpack_output">
-                <Original>Suspicious backpack</Original>
-                <Russian>Подозрительный рюкзак</Russian>
-                <Chinesesimp>可疑的背包</Chinesesimp>
-                <Korean>수상한 가방 착용</Korean>
-            </Key>
             <Key ID="STR_A3A_goUndercover_error_naked_uniform">
                 <Original>%1&lt;br/&gt;Being naked. It's, you know, suspicious.</Original>
                 <Russian>"%1&lt;br/&gt;На вас нет одежды. Знаете, это вообще-то подозрительно.</Russian>

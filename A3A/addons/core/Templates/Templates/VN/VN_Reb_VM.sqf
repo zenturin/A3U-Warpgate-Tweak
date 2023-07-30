@@ -90,11 +90,9 @@ private _initialRebelEquipment = [
     "vn_m19_binocs_grey", "vn_mx991", "vn_mx991_red",
     "vn_m_mk2_knife_01", "vn_m_axe_01", "vn_b_type56", "vn_b_sks", "vn_b_m38", "vn_b_camo_m9130", "vn_b_camo_m40a1", "vn_b_camo_m14",
     "vn_m18_white_mag", "vn_molotov_grenade_mag", "vn_m127_mag", "vn_mine_punji_03_mag",
-    "B_FieldPack_oli", "vn_b_vest_usarmy_01"
+    "B_FieldPack_oli", "vn_b_vest_usarmy_01",
+    "vn_c_pack_01"
 ];
-
-["civilianBackpacks", ["vn_c_pack_01"]] call _fnc_saveToTemplate;
-_initialRebelEquipment pushBack "vn_c_pack_01";
 
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
