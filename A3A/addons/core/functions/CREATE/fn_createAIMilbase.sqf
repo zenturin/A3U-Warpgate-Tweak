@@ -175,7 +175,7 @@ if (_frontierX) then {
 			private _dirveh = [_roadcon, _road] call BIS_fnc_dirTo;
 			private _pos = [getPos _road, 7, _dirveh + 270] call BIS_Fnc_relPos;
 
-			private _typeVehX = selectRandom (_faction get "staticATs");
+			private _typeVehX = selectRandom (_faction get "staticAT");
 			private _veh = _typeVehX createVehicle _positionX;
 
 			_vehiclesX pushBack _veh;
@@ -199,7 +199,7 @@ if (_frontierX) then {
 			_bunker setDir _dirveh;
 			_pos = getPosATL _bunker;
 
-			private _typeVehX = selectRandom (_faction get "staticATs");
+			private _typeVehX = selectRandom (_faction get "staticAT");
 			private _veh = _typeVehX createVehicle _positionX;
 
 			_vehiclesX pushBack _veh;

@@ -18,19 +18,19 @@ if (_typeGroup isEqualType "" && {_typeGroup isEqualTo ""}) then {
 };
 if (_exit) exitWith {};
 
-if (_typeGroup isEqualTo (FactionGet(reb,"groupAT")) && {tierWar < 3}) exitWith {
+if (tierWar < 3 && {_typeGroup isEqualTo (FactionGet(reb,"groupAT"))}) exitWith {
 	[localize "STR_A3A_reinf_addFIASquadHC_header", localize "STR_A3A_reinf_addFIASquadHC_error_AT_restr"] call SCRT_fnc_misc_deniedHint;
 };
 
-if (_typeGroup in [FactionGet(reb,"staticMG"), FactionGet(reb,"vehicleLightArmed")] && {tierWar < 2}) exitWith {
+if (tierWar < 2 && {_typeGroup in (FactionGet(reb,"staticMGs") + FactionGet(reb,"vehiclesLightArmed"))}) exitWith {
 	[localize "STR_A3A_reinf_addFIASquadHC_header", localize "STR_A3A_reinf_addFIASquadHC_error_MG_restr"] call SCRT_fnc_misc_deniedHint;
 };
 
-if (_typeGroup in [FactionGet(reb,"groupSquadSupp"), FactionGet(reb,"staticAT"), FactionGet(reb,"staticAA"), FactionGet(reb,"vehicleAT"), FactionGet(reb,"vehicleAA")] && {tierWar < 4}) exitWith {
+if (tierWar < 4 && {_typeGroup in (FactionGet(reb,"staticAT") + FactionGet(reb,"staticAA") + FactionGet(reb,"vehiclesAT") + FactionGet(reb,"vehiclesAA") + [FactionGet(reb,"groupSquadSupp")])}) exitWith {
 	[localize "STR_A3A_reinf_addFIASquadHC_header", localize "STR_A3A_reinf_addFIASquadHC_error_ATAA_restr"] call SCRT_fnc_misc_deniedHint;
 };
 
-if (_typeGroup isEqualTo (A3A_faction_reb get 'staticMortar') && {tierWar < 5}) exitWith {
+if (tierWar < 5 && {_typeGroup in (A3A_faction_reb get 'staticMortars')}) exitWith {
 	[localize "STR_A3A_reinf_addFIASquadHC_header", localize "STR_A3A_reinf_addFIASquadHC_error_mortar_restr"] call SCRT_fnc_misc_deniedHint;
 };
 
