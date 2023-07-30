@@ -22,30 +22,28 @@
 
 ["flyGear", ["vn_b_uniform_heli_01_01"]] call _fnc_saveToTemplate;
 
-["vehicleBasic", "vn_c_bicycle_01"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "vn_i_wheeled_m151_01_marines"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "vn_i_wheeled_m151_mg_01_marines"] call _fnc_saveToTemplate;
-["vehicleTruck", "vn_i_wheeled_m54_01_marines"] call _fnc_saveToTemplate;
-["vehicleAT", "vn_i_wheeled_m151_mg_06_marines"] call _fnc_saveToTemplate;
-["vehicleAA", "vn_b_wheeled_m54_mg_02"] call _fnc_saveToTemplate;
+["vehiclesBasic", ["vn_c_bicycle_01"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["vn_i_wheeled_m151_01_marines"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["vn_i_wheeled_m151_mg_01_marines"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["vn_i_wheeled_m54_01_marines"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["vn_i_wheeled_m151_mg_06_marines"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["vn_b_wheeled_m54_mg_02"]] call _fnc_saveToTemplate;
 
-["vehicleBoat", "vn_o_boat_02_01"] call _fnc_saveToTemplate;
-["vehicleRepair", "vn_i_wheeled_m54_repair"] call _fnc_saveToTemplate;
+["vehiclesBoat", ["vn_o_boat_02_01"]] call _fnc_saveToTemplate;
 
-["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclesPlane", ["I_C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "vn_c_wheeled_m151_01"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "vn_b_wheeled_m54_01_airport"] call _fnc_saveToTemplate;
-["vehicleCivHeli", "C_Heli_Light_01_civil_F"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "vn_c_boat_08_01"] call _fnc_saveToTemplate;
-["vehicleCivBoxSupply", "vn_i_wheeled_m54_03_marines"] call _fnc_saveToTemplate;
+["vehiclesCivCar", ["vn_c_wheeled_m151_01"]] call _fnc_saveToTemplate;
+["vehiclesCivTruck", ["vn_b_wheeled_m54_01_airport"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat", ["vn_c_boat_08_01"]] call _fnc_saveToTemplate;
+["vehiclesCivSupply", ["vn_i_wheeled_m54_03_marines"]] call _fnc_saveToTemplate;
 
 
-["staticMG", "vn_i_marines_static_m1919a4_high"] call _fnc_saveToTemplate;
-["staticAT", "vn_i_marines_static_m40a1rr"] call _fnc_saveToTemplate;
-["staticAA", "vn_i_static_m45"] call _fnc_saveToTemplate;
-["staticMortar", "vn_i_static_mortar_m2"] call _fnc_saveToTemplate;
+["staticMGs", ["vn_i_marines_static_m1919a4_high"]] call _fnc_saveToTemplate;
+["staticAT", ["vn_i_marines_static_m40a1rr"]] call _fnc_saveToTemplate;
+["staticAA", ["vn_i_static_m45"]] call _fnc_saveToTemplate;
+["staticMortars", ["vn_i_static_mortar_m2"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "vn_mortar_m2_mag_he_x8"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "vn_mortar_m2_mag_wp_x8"] call _fnc_saveToTemplate;
 
@@ -78,6 +76,7 @@
     ["vn_b_air_oh6a_07", 25000, "HELI", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
 ]] call _fnc_saveToTemplate;
 
+#include "VN_Reb_Vehicle_Attributes.sqf"
 
 ///////////////////////////
 //  Rebel Starting Gear  //
