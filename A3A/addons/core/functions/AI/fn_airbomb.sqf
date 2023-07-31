@@ -56,38 +56,36 @@ private _timeBetweenBombs = (_metersPerBomb / _speedInMeters) - 0.05;
 
 sleep ((_timeBetweenBombs/2) + (_bombOffset/_speedInMeters));
 
-switch (true) do {
-    case (_bombType isEqualTo "CHEMICAL"): {
-        for "_i" from 1 to _bombCount do {
-            if (isNil "_plane" || {!(alive _plane)}) exitWith {};
-            sleep _timeBetweenBombs;
-            private _bombPos = (getPos _plane) vectorAdd [0, 0, -6];
-            _bomb = _ammo createvehicle _bombPos;
-            waituntil {!isnull _bomb};
-            _bomb setDir (getDir _plane);
-            _bomb setVelocity [0,0,-50];
+if (_bombType isEqualTo "CHEMICAL") then {
+    for "_i" from 1 to _bombCount do {
+        if (isNil "_plane" || {!(alive _plane)}) exitWith {};
+        sleep _timeBetweenBombs;
+        private _bombPos = (getPos _plane) vectorAdd [0, 0, -6];
+        _bomb = _ammo createvehicle _bombPos;
+        waituntil {!isnull _bomb};
+        _bomb setDir (getDir _plane);
+        _bomb setVelocity [0,0,-50];
 
-            [_bomb, _plane] spawn {
-                params ["_lBomb", "_plane"];
+        [_bomb, _plane] spawn {
+            params ["_lBomb", "_plane"];
 
-                private _pos = [];
-                private _pitchBank = [];
+            private _pos = [];
+            private _pitchBank = [];
 
-                while {(getPosATL _lBomb) select 2 > 1} do {
-                    _pos = getPos _lBomb;
-                    _pitchBank = _lBomb call BIS_fnc_getPitchBank;
-                };
-                playSound3D ["A3\Sounds_f\weapons\explosion\explosion_mine_1.wss", _lBomb];
-                deleteVehicle _lBomb;
-                _pos remoteExec ["SCRT_fnc_effect_createSmallExplosionEffect", 0];
-                [[_pos select 0, _pos select 1, 0], (getDir _plane), _pitchBank, (side _plane)] remoteExec  ["SCRT_fnc_support_chemicalBomb", 2];
+            while {(getPosATL _lBomb) select 2 > 1} do {
+                _pos = getPos _lBomb;
+                _pitchBank = _lBomb call BIS_fnc_getPitchBank;
             };
+            playSound3D ["A3\Sounds_f\weapons\explosion\explosion_mine_1.wss", _lBomb];
+            deleteVehicle _lBomb;
+            _pos remoteExec ["SCRT_fnc_effect_createSmallExplosionEffect", 0];
+            [[_pos select 0, _pos select 1, 0], (getDir _plane), _pitchBank, (side _plane)] remoteExec  ["SCRT_fnc_support_chemicalBomb", 2];
         };
     };
-
-    default {
+} else {
+    for "_i" from 1 to _bombCount do {
         sleep _timeBetweenBombs;
-    if (alive _plane) then {
+        if (alive _plane) then {
             private _bombPos = (getPosATL _plane) vectorAdd [0, 0, -5];
             _bomb = _ammo createvehicle _bombPos;
             _bomb setDir (getDir _plane);
