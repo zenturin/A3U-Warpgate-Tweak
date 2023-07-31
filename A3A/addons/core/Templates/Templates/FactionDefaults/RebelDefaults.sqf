@@ -10,7 +10,6 @@
 ["diveGear", ["U_I_Wetsuit", "V_RebreatherIA", "G_Diving"]] call _fnc_saveToTemplate;
 ["flyGear", ["U_I_pilotCoveralls"]] call _fnc_saveToTemplate;
 
-["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate;
 ["lootCrate", "A3AP_Box_Syndicate_Ammo_F"] call _fnc_saveToTemplate;
 ["rallyPoint", "B_RadioBag_01_wdl_F"] call _fnc_saveToTemplate;
 ["reviveKitBox", ["Box_NATO_Support_F", 2100]] call _fnc_saveToTemplate;
