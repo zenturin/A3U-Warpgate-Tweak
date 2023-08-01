@@ -8,7 +8,7 @@ if (debug) then {
 if ((isNil "_unit") || (isNull _unit)) exitWith {
     Error_1("Problem with NATO Param: %1", _this);
 };
-_markerX = "";
+private  _markerX = "";
 if (count _this > 1) then {
 	_markerX = _this select 1;
 	_unit setVariable ["markerX",_markerX,true];
