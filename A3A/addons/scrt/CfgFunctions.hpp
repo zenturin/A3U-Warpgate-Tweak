@@ -81,12 +81,6 @@ class CfgFunctions {
         	class loot_createLootCrate {};
 		};
 
-		class Civilian {
-			file = QPATHTOFOLDER(Civilian);
-			class civilian_createCivilianPresence {};
-			class civilian_removeCivilianPresence {};
-		};
-
 		class Misc {
 			file = QPATHTOFOLDER(Misc);
 			class misc_getMissionTitle {};

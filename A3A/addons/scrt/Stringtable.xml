@@ -3878,6 +3878,14 @@
                 <Chinesesimp>民用交通</Chinesesimp>
                 <Korean>민간인 밀집도</Korean>
             </Key>
+            <Key ID="STR_params_global_civilian_max">
+                <Original>Maximum civilians on server</Original>
+                <Russian>Максимальное количество гражданских на сервере</Russian>
+            </Key>
+            <Key ID="STR_params_civ_per_town">
+                <Original>Maximum civilians per town</Original>
+                <Russian>Максимальное количество гражданских на населенный пункт</Russian>
+            </Key>
             <Key ID="STR_params_civ_traffic_none">
                 <Original>None</Original>
                 <Russian>Отсутствует</Russian>

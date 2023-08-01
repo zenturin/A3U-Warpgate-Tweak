@@ -49,12 +49,19 @@ class Params
         texts[] = {$STR_params_civ_traffic_none,$STR_params_civ_traffic_low,$STR_params_civ_traffic_medium,$STR_params_civ_traffic_high};
         default = 2;
     };
-    class civPedestrians
+    class globalCivilianMax
     {
-        title = $STR_params_civPedestrians;
-        values[] = {0,1,3,5,7,10,15,20,25,30};
-        texts[] = {"0","1","3","5","7","10","15","20","25","30"};
-        default = 10;
+        title = $STR_params_global_civilian_max;
+        values[] = {0,2,5,10,15,20,25,30};
+        texts[] = {"0","2","5","10","15","20","25","30"};
+        default = 5;
+    };
+    class maxCiviliansPerTown
+    {
+        title = $STR_params_civ_per_town;
+        values[] = {0,2,5,10,15};
+        texts[] = {"0","2","5","10","15"};
+        default = 2;
     };
     class distanceMission
     {

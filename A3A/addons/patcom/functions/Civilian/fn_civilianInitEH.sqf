@@ -19,7 +19,6 @@
     License: MIT License
 */
 
-private ["_unit"];
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 params ["_unit"];
@@ -67,7 +66,7 @@ _unit addEventHandler ["Killed", {
     } else {
         if (isPlayer _killer) then {
             if (_victim getVariable "unitType" == FactionGet(civ, "unitWorker")) then {_killer addRating 1000};
-            [-10,_killer] call A3A_fnc_playerScoreAdd;
+            [-10,_killer] call A3A_fnc_addScorePlayer;
         };
         _multiplier = 1;
         if ((_victim getVariable "unitType") == FactionGet(civ, "unitPress")) then {_multiplier = 3};
