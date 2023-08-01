@@ -497,10 +497,11 @@ class aiManagement: SimpleMenuBigger
 		class l2Button: SimpleButton
 		{
 			idc = -1;
-			text = "PLACEHOLDER";
+			text = $STR_antistasi_dialogs_high_command_transfer_title;
 			x = 0.257187 * safezoneW + safezoneX;
 			y = 0.388 * safezoneH + safezoneY;
-			tooltip = $STR_antistasi_dialogs_auto_heal_tooltip;
+			tooltip = $STR_antistasi_dialogs_arty_high_command_transfer_tooltip;
+			action = "closeDialog 0;[] call SCRT_fnc_common_hcTransfer";
 		};
 
 		class l3Button: SimpleButton
@@ -571,16 +572,6 @@ class aiManagement: SimpleMenuBigger
 			y = 0.584 * safezoneH + safezoneY;
 			tooltip = $STR_antistasi_dialogs_mount_veh_tooltip;
 			action = "[""mount""] call A3A_fnc_vehStats";
-		};
-
-		class r5Button: SimpleButton
-		{
-			idc = 113;
-			text = $STR_antistasi_dialogs_high_command_transfer_title;
-			x = 0.477 * safezoneW + safezoneX;
-			y = 0.682 * safezoneH + safezoneY;
-			tooltip = $STR_antistasi_dialogs_arty_high_command_transfer_tooltip;
-			action = "closeDialog 0;[] call SCRT_fnc_common_hcTransfer";
 		};
 	};
 };
