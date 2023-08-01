@@ -6489,12 +6489,6 @@
                 <Chinesesimp>自动治疗</Chinesesimp>
                 <Korean>자동 치료</Korean>
             </Key>
-            <Key ID="STR_antistasi_dialogs_auto_heal_tooltip">
-                <Original>AI squad mates will heal proactively each other.</Original>
-                <Russian>ИИ-солдаты будут лечить друг друга.</Russian>
-                <Chinesesimp>AI士兵会互相治疗。</Chinesesimp>
-                <Korean>인공지능 분대원들은 서로를 적극적으로 치료할 것입니다.</Korean>
-            </Key>
             <Key ID="STR_antistasi_dialogs_garrison_units_title">
                 <Original>Garrison Units / Squads</Original>
                 <Russian>Гарнизоны / отряды</Russian>
