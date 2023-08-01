@@ -107,21 +107,20 @@ if (_veh isKindOf "Car" or{ _veh isKindOf "Tank"}) then {
 if (_side == civilian) then {
 	_veh addEventHandler ["HandleDamage",{if (((_this select 1) find "wheel" != -1) and (_this select 4=="") and (!isPlayer driver (_this select 0))) then {0;} else {(_this select 2);};}];
 	
-	if (!(_veh isKindOf "Air")) then {
-			_veh addEventHandler ["HandleDamage", {
-			private _veh = _this select 0;
-			if (side(_this select 3) == teamPlayer) then {
-				_driverX = driver _veh;
-				if (side group _driverX == civilian) then {_driverX leaveVehicle _veh};
-				_veh removeEventHandler ["HandleDamage", _thisEventHandler];
-			};
-		}];
-	};
+	if ((_veh isKindOf "Air")) exitWith {};
+
+	_veh addEventHandler ["HandleDamage", {
+		private _veh = _this select 0;
+		if (side(_this select 3) == teamPlayer) then {
+			_driverX = driver _veh;
+			if (side group _driverX == civilian) then {_driverX leaveVehicle _veh};
+			_veh removeEventHandler ["HandleDamage", _thisEventHandler];
+		};
+	}];
 };
 
 // Handler for enemy responses to vehicle damage
-if (_side == Invaders || {_side == Occupants}) then
-{
+if (_side == Invaders || _side == Occupants) then {
 	_veh addEventHandler ["HandleDamage", {
 		params ["_veh", "_part", "_damage", "_source"];
 		if (_damage < 0.5) exitWith { nil };			// rough as hell, but whatever
