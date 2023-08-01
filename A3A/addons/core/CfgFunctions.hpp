@@ -212,7 +212,6 @@ class CfgFunctions
             class availableBasesLand {};
             class calculateMarkerArea {};
             class cargoSeats {};
-            class CIVinit {};
             class civVEHinit {};
             class cleanserVeh {};
             class countFreeSpawnPositions {};
@@ -227,7 +226,6 @@ class CfgFunctions
             class createAttackForceLand {};
             class createAttackForceMixed {};
             class createAttackVehicle {};
-            class createCIV {};
             class createSDKGarrisons {};
             class createSDKgarrisonsTemp {};
             class createUnit {};
