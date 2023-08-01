@@ -341,7 +341,7 @@ for "_i" from 0 to _patrolCount do {
         _unit setCaptive true;
         [_unit] call A3A_fnc_NATOinit;
     };
-    _nul = [leader _patrolGroup, _marker, "SAFE","SPAWNED", "RANDOM", "NOVEH2", "LIMITED"] spawn UPSMON_fnc_UPSMON;
+    [_patrolGroup, "Patrol_Area", 25, 100, 250, true, _positionX, false] call A3A_fnc_patrolLoop;
 
     _groups pushBack _patrolGroup;
 };

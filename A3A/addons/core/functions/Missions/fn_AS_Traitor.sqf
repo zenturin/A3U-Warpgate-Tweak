@@ -17,7 +17,7 @@ private _limit = if (_difficultX) then {
 _limit params ["_dateLimitNum", "_displayTime"];
 
 private _radiusX = [_markerX] call A3A_fnc_sizeMarker;
-private _houses = (nearestObjects [_positionX, ["house"], _radiusX]) select {!((typeOf _x) in UPSMON_Bld_remove)};
+private _houses = (nearestObjects [_positionX, ["house"], _radiusX]) select {!((typeOf _x) in A3A_buildingBlacklist)};
 private _posHouse = [];
 private _houseX = _houses select 0;
 while {count _posHouse < 3} do {
@@ -113,14 +113,6 @@ _veh allowDamage true;
 _traitor allowDamage true;
 [_veh, Occupants] call A3A_fnc_AIVEHinit;
 {_x disableAI "MOVE"; _x setUnitPos "UP"} forEach units _groupTraitor;
-
-private _mrk = createMarkerLocal [format ["%1patrolarea", floor random 100], getPos _houseX];
-_mrk setMarkerShapeLocal "RECTANGLE";
-_mrk setMarkerSizeLocal [50,50];
-_mrk setMarkerTypeLocal "hd_warning";
-_mrk setMarkerColorLocal "ColorRed";
-_mrk setMarkerBrushLocal "DiagGrid";
-_mrk setMarkerAlphaLocal 0;
 
 private _typeGroup = if (random 10 < tierWar) then {
 	selectRandom ([(Faction(Occupants)), "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)
@@ -218,5 +210,3 @@ publicVariable "traitorIntel";
 [_groupX] spawn A3A_fnc_groupDespawner;
 [_groupTraitor] spawn A3A_fnc_groupDespawner;
 [_veh] spawn A3A_fnc_vehDespawner;
-
-deleteMarkerLocal _mrk;
