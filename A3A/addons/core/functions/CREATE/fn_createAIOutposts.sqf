@@ -155,24 +155,22 @@ _roads = _positionX nearRoads _size;
 
 if (_markerX in seaports) then {
 	_typeVehX = selectRandom (_faction get "vehiclesGunBoats");
-	if ([_typeVehX] call A3A_fnc_vehAvailable) then {
-		private _mrkMar = seaSpawn select {getMarkerPos _x inArea _markerX};
-		if(count _mrkMar > 0) then {
-			private _pos = (getMarkerPos (_mrkMar select 0)) findEmptyPosition [0,20,_typeVehX];
-			private _vehicle=[_pos, 0,_typeVehX, _sideX] call A3A_fnc_spawnVehicle;
-			private _veh = _vehicle select 0;
-			[_veh, _sideX] call A3A_fnc_AIVEHinit;
-			private _vehCrew = _vehicle select 1;
-			{[_x,_markerX] call A3A_fnc_NATOinit} forEach _vehCrew;
-			private _groupVeh = _vehicle select 2;
-			_soldiers append _vehCrew;
-			[_groupVeh, "Patrol_Water", 25, 200, -1, true, _pos] call A3A_fnc_patrolLoop;
-			_groups pushBack _groupVeh;
-			_vehiclesX pushBack _veh;
-			sleep 1;
+	private _mrkMar = seaSpawn select {getMarkerPos _x inArea _markerX};
+	if(count _mrkMar > 0) then {
+		private _pos = (getMarkerPos (_mrkMar select 0)) findEmptyPosition [0,20,_typeVehX];
+		private _vehicle=[_pos, 0,_typeVehX, _sideX] call A3A_fnc_spawnVehicle;
+		private _veh = _vehicle select 0;
+		[_veh, _sideX] call A3A_fnc_AIVEHinit;
+		private _vehCrew = _vehicle select 1;
+		{[_x,_markerX] call A3A_fnc_NATOinit} forEach _vehCrew;
+		private _groupVeh = _vehicle select 2;
+		_soldiers append _vehCrew;
+		[_groupVeh, "Patrol_Water", 25, 200, -1, true, _pos] call A3A_fnc_patrolLoop;
+		_groups pushBack _groupVeh;
+		_vehiclesX pushBack _veh;
+		sleep 1;
 	} else {
-			Error_1("Could not find seaSpawn marker on %1!", _markerX);
-		};
+		Error_1("Could not find seaSpawn marker on %1!", _markerX);
 	};
 } else {
 	if (_frontierX && {count _roads != 0}) then {
