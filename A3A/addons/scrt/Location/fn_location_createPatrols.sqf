@@ -16,6 +16,9 @@ Example:
 [_markerX, _positionX, _sideX, 4] call SCRT_fnc_location_createPatrols;
 */
 
+#include "..\defines.inc"
+FIX_LINE_NUMBERS()
+
 params [
 	["_marker", "", [""]],
 	["_markerPosition", [], [[]]],

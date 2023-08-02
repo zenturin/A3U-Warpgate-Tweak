@@ -230,8 +230,10 @@ if (_markerX in seaports) then {
 		};
 	};
 };
-//_pos = _positionX findEmptyPosition [5,_size,"I_Truck_02_covered_F"];//donde pone 5 antes ponía 10
+
 _spawnParameter = [_markerX, "Vehicle"] call A3A_fnc_findSpawnPosition;
+private _veh = nil;
+
 if (_spawnParameter isEqualType []) then {
 	_spawnsUsed pushBack _spawnParameter#2;
 	private _typeVehX = call {
