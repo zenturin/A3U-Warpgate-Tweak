@@ -22,18 +22,17 @@ ServerInfo_1("Spawning Outpost %1", _markerX);
 private _size = [_markerX] call A3A_fnc_sizeMarker;
 private _frontierX = [_markerX] call A3A_fnc_isFrontline;
 
-private _sideX = Invaders;
+private _sideX = sidesX getVariable [_markerX,sideUnknown];
 private _faction = Faction(_sideX);
 
+private _frontierX = [_markerX] call A3A_fnc_isFrontline;
 private _isFIA = random 10 >= (tierWar + difficultyCoef) and {!_frontierX and {!(_markerX in forcedSpawn)}};
 private _antenna = objNull;
 
-if (_sideX == Occupants) then {
-	if (_markerX in outposts) then {
-		_buildings = nearestObjects [_positionX,["Land_TTowerBig_1_F","Land_TTowerBig_2_F","Land_Communication_F"], _size];
-		if (count _buildings > 0) then {
-			_antenna = _buildings select 0;
-		};
+if (_sideX == Occupants && {_markerX in outposts}) then {
+	_buildings = nearestObjects [_positionX,["Land_TTowerBig_1_F","Land_TTowerBig_2_F","Land_Communication_F"], _size];
+	if (count _buildings > 0) then {
+		_antenna = _buildings select 0;
 	};
 };
 
@@ -81,47 +80,14 @@ _garrison = _garrison call A3A_fnc_garrisonReorg;
 private _radiusX = count _garrison;
 private _patrol = true;
 //If one is missing, there are no patrols??
-if (_radiusX < ([_markerX] call A3A_fnc_garrisonSize)) then
-{
+if (_radiusX < ([_markerX] call A3A_fnc_garrisonSize)) then {
 	_patrol = false;
-}
-else
-{
+} else {
 	//No patrol if patrol area overlaps with an enemy site
 	_patrol = ((markersX findIf {(getMarkerPos _x inArea _mrk) && {sidesX getVariable [_x, sideUnknown] != _sideX}}) == -1);
 };
-if (_patrol) then
-{
-	_countX = 0;
-	while {_countX < 4} do //Fixed number of patrols?
-	{
-        _arrayGroups = _faction get (if (_isFIA) then {"groupsMilitiaSmall"} else {"groupsSmall"});
-		if ([_markerX,false] call A3A_fnc_fogCheck < 0.3) then {_arraygroups = _arraygroups - (_faction get "groupSniper")};
-		_typeGroup = selectRandom _arraygroups;
-
-		private _spawnPosition = [_positionX, 25, round (_size / 2), 2, 0, -1, 0] call A3A_fnc_getSafePos;
-		if (_spawnPosition isEqualTo [0,0]) exitWith {
-			ServerDebug("Unable to find spawn position for patrol unit.");
-		};
-
-		_groupX = [_spawnPosition,_sideX, _typeGroup,false,true] call A3A_fnc_spawnGroup;
-		if !(isNull _groupX) then
-		{
-			sleep 1;
-			if ((random 10 < 2.5) and (_typeGroup isNotEqualTo (_faction get "groupSniper"))) then {
-				_dog = [_groupX, "Fin_random_F",_spawnPosition,[],0,"FORM"] call A3A_fnc_createUnit;
-				_dogs pushBack _dog;
-				[_dog] spawn A3A_fnc_guardDog;
-				sleep 1;
-			};
-
-			[_groupX, "Patrol_Area", 25, 150, 300, false, [], false] call A3A_fnc_patrolLoop;
-			_groups pushBack _groupX;
-			
-			{[_x,_markerX] call A3A_fnc_NATOinit; _soldiers pushBack _x} forEach units _groupX;
-		};
-		_countX = _countX +1;
-	};
+if (_patrol) then {
+	[_markerX, _positionX, _sideX, _faction] call SCRT_fnc_location_createPatrols;
 };
 
 if ((_frontierX) and (_markerX in outposts)) then
