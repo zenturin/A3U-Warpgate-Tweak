@@ -212,7 +212,7 @@ if (_markerX in seaports) then {
 			[_veh, _sideX] call A3A_fnc_AIVEHinit;
 			_soldiers pushBack _unit;
 		} else {
-			private _bunker = "Land_BagBunker_01_Small_green_F" createVehicle _pos;
+			private _bunker = (_faction get "sandbag") createVehicle _pos;
 			_vehiclesX pushBack _bunker;
 			_bunker setDir _dirveh;
 			_pos = getPosATL _bunker;
@@ -238,9 +238,15 @@ if (_spawnParameter isEqualType []) then {
 		if (FactionGet(civ,"vehiclesCivRepair") isEqualTo [] and random 1 < 0.1) exitWith { selectRandom (_faction get "vehiclesRepairTrucks") };
 		if (FactionGet(civ,"vehiclesCivFuel") isEqualTo [] and random 1 < 0.1) exitWith { selectRandom (_faction get "vehiclesFuelTrucks") };
 		private _types = if (!_isFIA) then {
-			(_faction get "vehiclesTrucks") + (_faction get "vehiclesCargoTrucks") + (_faction get "vehiclesMedical")
+			(_faction get "vehiclesTrucks") + 
+			(_faction get "vehiclesCargoTrucks") + 
+			(_faction get "vehiclesMedical") + 
+			(_faction get "vehiclesLightUnarmed") + 
+			(_faction get "vehiclesLightArmed")
 		} else {
-			_faction get "vehiclesMilitiaTrucks"
+			(_faction get "vehiclesMilitiaTrucks") +
+			(_faction get "vehiclesMilitiaLightArmed") +
+			(_faction get "vehiclesMilitiaCars")
 		};
 		// _types = _types select { _x in FactionGet(all,"vehiclesCargoTrucks") };
 		if (count _types == 0) then { (_faction get "vehiclesCargoTrucks") } else { _types };
@@ -290,7 +296,7 @@ if (!isNull _antenna) then {
 private _array = [];
 private _subArray = [];
 private _countX = 0;
-private _radiusX = _radiusX -1;
+_radiusX = _radiusX -1;
 while {_countX <= _radiusX} do {
 	_array pushBack (_garrison select [_countX,7]);
 	_countX = _countX + 8;
