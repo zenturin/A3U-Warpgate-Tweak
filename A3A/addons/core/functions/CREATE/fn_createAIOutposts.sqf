@@ -118,8 +118,7 @@ _soldiers append (_ret select 2);
 _spawnsUsed append (_ret select 3);
 { [_x, _sideX] call A3A_fnc_AIVEHinit } forEach _vehiclesX;
 
-if(random 100 < (40 + tierWar * 3)) then
-{
+if(random 100 < (40 + tierWar * 3)) then {
 	_large = (random 100 < (30 + tierWar * 2));
 	[_markerX, _large] spawn A3A_fnc_placeIntel;
 };
@@ -157,7 +156,7 @@ _roads = _positionX nearRoads _size;
 if (_markerX in seaports) then {
 	_typeVehX = selectRandom (_faction get "vehiclesGunBoats");
 	if ([_typeVehX] call A3A_fnc_vehAvailable) then {
-		_mrkMar = seaSpawn select {getMarkerPos _x inArea _markerX};
+		private _mrkMar = seaSpawn select {getMarkerPos _x inArea _markerX};
 		if(count _mrkMar > 0) then {
 			private _pos = (getMarkerPos (_mrkMar select 0)) findEmptyPosition [0,20,_typeVehX];
 			private _vehicle=[_pos, 0,_typeVehX, _sideX] call A3A_fnc_spawnVehicle;
@@ -277,7 +276,7 @@ if (!isNull _antenna) then {
 		} else {
 			selectRandom ([_faction, "unitTierTower"] call SCRT_fnc_unit_flattenTier)
 		};
-		_unit = [_groupX, _typeUnit, _positionX, [], _dir, "NONE"] call A3A_fnc_createUnit;
+		private _unit = [_groupX, _typeUnit, _positionX, [], _dir, "NONE"] call A3A_fnc_createUnit;
 		_unit setPosATL _posF;
 		_unit forceSpeed 0;
 
