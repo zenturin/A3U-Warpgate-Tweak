@@ -2,26 +2,23 @@
 FIX_LINE_NUMBERS()
 if (!isServer and hasInterface) exitWith{};
 
-private ["_markerX","_vehiclesX","_groups","_soldiers","_civs","_positionX","_pos","_typeGroup","_typeCiv","_size","_mrk","_ang","_countX","_groupX","_veh","_civ","_frontierX","_flagX","_dog","_garrison","_sideX","_cfg","_isFIA","_roads","_dist","_road","_roadscon","_roadcon","_dirveh","_bunker","_typeVehX","_typeUnit","_unit","_typeGroup","_stance"];
-_markerX = _this select 0;
+params ["_markerX"];
 
 //Not sure if that ever happens, but it reduces redundance
 if(spawner getVariable _markerX == 2) exitWith {};
 
-Debug_1("Spawning Resource Point %1", _markerX);
+ServerInfo_1("Spawning Airbase %1", _markerX);
 
-_positionX = getMarkerPos _markerX;
-
-_size = [_markerX] call A3A_fnc_sizeMarker;
-
-_civs = [];
-_soldiers = [];
+private _civs = [];
+private _soldiers = [];
 private _dogs = [];
-_groups = [];
-_vehiclesX = [];
+private _groups = [];
+private _vehiclesX = [];
 private _spawnsUsed = [];
 
-_frontierX = [_markerX] call A3A_fnc_isFrontline;
+private _positionX = getMarkerPos _markerX;
+private _size = [_markerX] call A3A_fnc_sizeMarker;
+private _frontierX = [_markerX] call A3A_fnc_isFrontline;
 
 _sideX = Invaders;
 
@@ -73,14 +70,13 @@ if (_frontierX) then
 	};
 };
 
-_mrk = createMarkerLocal [format ["%1patrolarea", random 100], _positionX];
+private _mrk = createMarkerLocal [format ["%1patrolarea", random 100], _positionX];
 _mrk setMarkerShapeLocal "RECTANGLE";
 _mrk setMarkerSizeLocal [(distanceSPWN/2),(distanceSPWN/2)];
 _mrk setMarkerTypeLocal "hd_warning";
 _mrk setMarkerColorLocal "ColorRed";
 _mrk setMarkerBrushLocal "DiagGrid";
-_ang = markerDir _markerX;
-_mrk setMarkerDirLocal _ang;
+_mrk setMarkerDirLocal (markerDir _markerX);
 if (!debug) then {_mrk setMarkerAlphaLocal 0};
 _garrison = garrison getVariable [_markerX,[]];
 _garrison = _garrison call A3A_fnc_garrisonReorg;
