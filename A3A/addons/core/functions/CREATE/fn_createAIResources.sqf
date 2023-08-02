@@ -23,7 +23,7 @@ private _frontierX = [_markerX] call A3A_fnc_isFrontline;
 private _sideX = sidesX getVariable [_markerX,sideUnknown];
 private _faction = Faction(_sideX);
 
-private _isFIA = random 10 <= (tierWar + difficultyCoef) and {!(_frontierX)};
+private _isFIA = random 10 > (tierWar + difficultyCoef) and {!(_frontierX)};
 
 if (_frontierX) then {
 	_roads = _positionX nearRoads _size;

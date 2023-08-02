@@ -106,10 +106,10 @@ if (_frontierX && {random 100 < (20 + tierWar * 3)}) then {
 	private _road = [_positionX] call A3A_fnc_findNearestGoodRoad;
 	if (_road distance2D _positionX > 800) exitWith {};
 
-	private _heavyVehPool =  (_faction get "vehiclesTanks") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs");
+	private _heavyVehPool =  (_faction get "vehiclesTanks") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs") + (_faction get "vehiclesLightTanks");
 	private _type = selectRandom _heavyVehPool;
 
-	private _heavyVehicle = [(_heavyVehPool select _availableIndex), (position _road), 15, 10] call A3A_fnc_safeVehicleSpawn;
+	private _heavyVehicle = [_type, (position _road), 15, 10] call A3A_fnc_safeVehicleSpawn;
 	if (isNull _heavyVehicle) exitWith {};
 
 	private _crewType = [_sideX, _heavyVehicle] call A3A_fnc_crewTypeForVehicle;
@@ -187,7 +187,7 @@ if (_additionalGarrison isNotEqualTo []) then {
 		private _group = [_positionX, _sideX, _groupTypes, false, true] call A3A_fnc_spawnGroup;
 		if !(isNull _group) then {
 			sleep 1;
-			_nul = [leader _group, _mrk, "LIMITED", "SAFE", "SPAWNED", "RANDOM", "NOVEH2"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
+			[_group, "Patrol_Area", 25, 150, 300, false, [], false] call A3A_fnc_patrolLoop;
 			_groups pushBack _group;
 			{[_x] call A3A_fnc_NATOinit; _soldiers pushBack _x} forEach units _group;
 		};
@@ -208,7 +208,7 @@ if (_radiusX < ([_markerX] call A3A_fnc_garrisonSize)) then {
 };
 
 if (_patrol) then {
-	[_markerX, _positionX, _sideX, _faction, 5] call SCRT_fnc_location_createPatrols;
+	[_markerX, _positionX, _sideX, _faction, 6] call SCRT_fnc_location_createPatrols;
 };
 private _countX = 0;
 
