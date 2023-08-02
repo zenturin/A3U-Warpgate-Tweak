@@ -32,7 +32,7 @@ if (_markerX in destroyedSites) then {
 	_params = [_positionX,Invaders, selectRandom (_faction get "groupSpecOpsRandom")];
 } else {
 	_num = round (_num * (_prestigeOPFOR + _prestigeBLUFOR)/100);
-	_frontierX = [_markerX] call A3A_fnc_isFrontline;
+	private _frontierX = [_markerX] call A3A_fnc_isFrontline;
 	if (_frontierX) then {
 		_num = _num * 2;
 		_params = [_positionX, Occupants, (selectRandom ([_faction, "groupsTierSmall"] call SCRT_fnc_unit_flattenTier))];
@@ -42,7 +42,7 @@ if (_markerX in destroyedSites) then {
 };
 if (_num < 1) then {_num = 1};
 
-private  _countX = 0;
+private _countX = 0;
 private _groupX = nil;
 private _roadPositions = (_positionX nearRoads round(_patrolSize / 2));
 
