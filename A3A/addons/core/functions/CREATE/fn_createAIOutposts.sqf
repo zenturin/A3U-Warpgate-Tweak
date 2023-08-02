@@ -26,7 +26,7 @@ private _sideX = sidesX getVariable [_markerX,sideUnknown];
 private _faction = Faction(_sideX);
 
 private _frontierX = [_markerX] call A3A_fnc_isFrontline;
-private _isFIA = random 10 >= (tierWar + difficultyCoef) and {!_frontierX and {!(_markerX in forcedSpawn)}};
+private _isFIA = random 10 > (tierWar + difficultyCoef) and {!_frontierX and {!(_markerX in forcedSpawn)}};
 private _antenna = objNull;
 
 if (_sideX == Occupants && {_markerX in outposts}) then {
