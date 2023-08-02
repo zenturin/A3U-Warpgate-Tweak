@@ -361,7 +361,7 @@ if (_varName in specialVarLoads) then {
                     _veh setVectorUp surfaceNormal (_posVeh);
                     _veh setPosATL _posVeh;
                 } else {
-                    if (A3A_saveVersion >= 20401) then { _veh setPosWorld _posVeh } else { _veh setPosATL _posVeh };
+                    _veh setPosWorld _posVeh;
                     _veh setVectorDirAndUp [_xVectorDir,_xVectorUp];
                 };
                 [_veh, teamPlayer] call A3A_fnc_AIVEHinit;                  // Calls initObject instead if it's a buyable item
