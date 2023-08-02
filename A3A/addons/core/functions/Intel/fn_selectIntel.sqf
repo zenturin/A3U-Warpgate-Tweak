@@ -182,21 +182,6 @@ if (_text isEqualTo "") then {
                     };
                     _text = format [localize "STR_intel_key_pack", _sideName];
                 };
-        /*
-                // These are meaningless at the moment
-                case (ACCESS_AIR):
-                {
-                    _text = format ["%1 currently has access to<br/>%2", _sideName, ([_side, ACCESS_AIR] call A3A_fnc_getVehicleIntel)];
-                };
-                case (ACCESS_HELI):
-                {
-                    _text = format ["%1 currently has access to<br/>%2", _sideName, ([_side, ACCESS_HELI] call A3A_fnc_getVehicleIntel)];
-                };
-                case (ACCESS_ARMOR):
-                {
-                    _text = format ["%1 currently has access to<br/>%2", _sideName, ([_side, ACCESS_ARMOR] call A3A_fnc_getVehicleIntel)];
-                };
-        */
                 case (CONVOYS):
                 {
                     [] call A3A_fnc_cleanConvoyMarker;

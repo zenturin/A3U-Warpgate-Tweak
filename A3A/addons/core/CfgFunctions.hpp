@@ -255,7 +255,6 @@ class CfgFunctions
             class spawnVehicle {};
             class spawnVehicleAtMarker {};
             class spawnVehiclePrecise {};
-            class vehAvailable {};
             class VEHdespawner {};
             class vehKilledOrCaptured {};
             class wavedAttack {};
@@ -355,7 +354,6 @@ class CfgFunctions
 
         class Intel {
             file = QPATHTOFOLDER(functions\Intel);
-            class getVehicleIntel {};
             class placeIntel {};
             class searchEncryptedIntel {};
             class searchIntelOnDocument {};

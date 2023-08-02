@@ -215,7 +215,7 @@ _planeSpawns = [];
       _dir = _dir - 180;
     };
 
-    _vehicleSpawns pushBack [[_pos, _dir]];
+    _vehicleSpawns pushBack [_pos, _dir];
 } forEach _garages;
 
 _mortarSpawns = [];
@@ -229,7 +229,7 @@ _samSpawns = [];
 {
   _pos = getMarkerPos _x;
   _pos set [2, ((_pos select 2) + 0.1) max 0.1];
-  _samSpawns pushBack [[_pos, 0], false];
+  _samSpawns pushBack [_pos, 0];
 } forEach _samMarker;
 
 _spawns = [_vehicleSpawns, _heliSpawns, _planeSpawns, _mortarSpawns, _samSpawns];
