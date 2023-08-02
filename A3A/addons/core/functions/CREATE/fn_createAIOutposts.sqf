@@ -1,64 +1,84 @@
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
+
 if (!isServer and hasInterface) exitWith{};
-private ["_markerX","_vehiclesX","_groups","_soldiers","_positionX","_pos","_size","_frontierX","_sideX","_cfg","_isFIA","_garrison","_antenna","_radiusX","_buildings","_mrk","_countX","_typeGroup","_groupX","_typeUnit","_typeVehX","_veh","_unit","_flagX","_boxX","_roads","_mrkMar","_vehicle","_vehCrew","_groupVeh","_dist","_road","_roadCon","_dirVeh","_bunker","_dir","_posF"];
-_markerX = _this select 0;
+
+params ["_markerX"];
 
 //Not sure if that ever happens, but it reduces redundance
 if(spawner getVariable _markerX == 2) exitWith {};
 
-_vehiclesX = [];
-_groups = [];
-_soldiers = [];
+private _vehiclesX = [];
+private _groups = [];
+private _soldiers = [];
 private _dogs = [];
 private _spawnsUsed = [];
 
-_positionX = getMarkerPos (_markerX);
-_pos = [];
+private _positionX = getMarkerPos (_markerX);
+private _pos = [];
 
-ServerDebug_1("Spawning Outpost %1", _markerX);
+ServerInfo_1("Spawning Outpost %1", _markerX);
 
-_size = [_markerX] call A3A_fnc_sizeMarker;
+private _size = [_markerX] call A3A_fnc_sizeMarker;
+private _frontierX = [_markerX] call A3A_fnc_isFrontline;
 
-_frontierX = [_markerX] call A3A_fnc_isFrontline;
-_sideX = Invaders;
-_isFIA = false;
-if (sidesX getVariable [_markerX,sideUnknown] == Occupants) then
-{
-	_sideX = Occupants;
-	if ((random 10 >= (tierWar + difficultyCoef)) and !(_frontierX) and !(_markerX in forcedSpawn)) then
-	{
-		_isFIA = true;
-	};
-};
+private _sideX = Invaders;
 private _faction = Faction(_sideX);
 
-_antenna = objNull;
+private _isFIA = random 10 >= (tierWar + difficultyCoef) and {!_frontierX and {!(_markerX in forcedSpawn)}};
+private _antenna = objNull;
 
-if (_sideX == Occupants) then
-{
-	if (_markerX in outposts) then
-	{
+if (_sideX == Occupants) then {
+	if (_markerX in outposts) then {
 		_buildings = nearestObjects [_positionX,["Land_TTowerBig_1_F","Land_TTowerBig_2_F","Land_Communication_F"], _size];
-		if (count _buildings > 0) then
-		{
+		if (count _buildings > 0) then {
 			_antenna = _buildings select 0;
 		};
 	};
 };
 
-_mrk = createMarkerLocal [format ["%1patrolarea", random 100], _positionX];
+private _mrk = createMarkerLocal [format ["%1patrolarea", random 100], _positionX];
 _mrk setMarkerShapeLocal "RECTANGLE";
 _mrk setMarkerSizeLocal [(distanceSPWN/2),(distanceSPWN/2)];
 _mrk setMarkerTypeLocal "hd_warning";
 _mrk setMarkerColorLocal "ColorRed";
 _mrk setMarkerBrushLocal "DiagGrid";
-_ang = markerDir _markerX;
-_mrk setMarkerDirLocal _ang;
+_mrk setMarkerDirLocal (markerDir _markerX);
 if (!debug) then {_mrk setMarkerAlphaLocal 0};
-_garrison = garrison getVariable [_markerX,[]];
+
+private _patrolVehicleData = [_sideX, _positionX, _size] call SCRT_fnc_garrison_rollOversizeVehicle;
+if (_patrolVehicleData isNotEqualTo []) then {
+	private _patrolVeh = _patrolVehicleData select 0;
+	private _patrolVehCrew = crew _patrolVeh;
+	private _patrolVehicleGroup = _patrolVehicleData select 2;
+	{[_x] call A3A_fnc_NATOinit} forEach _patrolVehCrew;
+	[_patrolVeh, _sideX] call A3A_fnc_AIVEHinit;
+
+	_soldiers = _soldiers + _patrolVehCrew;
+	_groups pushBack _patrolVehicleGroup;
+	_vehiclesX pushBack _patrolVeh;
+
+	[_patrolVehicleGroup, _positionX, (_size + 50)] call bis_fnc_taskPatrol;
+};
+
+//maybe it's no longer needed after all..?
+private _additionalGarrison = [_sideX, _markerX] call SCRT_fnc_garrison_rollOversizeGarrison;
+if (_additionalGarrison isNotEqualTo []) then {
+	for "_i" from 0 to (count _additionalGarrison) - 1 do {
+		private _groupTypes = _additionalGarrison select _i;
+		private _group = [_positionX, _sideX, _groupTypes, false, true] call A3A_fnc_spawnGroup;
+		if !(isNull _group) then {
+			sleep 1;
+			[_group, "Patrol_Area", 25, 150, 300, false, [], false] call A3A_fnc_patrolLoop;
+			_groups pushBack _group;
+			{[_x] call A3A_fnc_NATOinit; _soldiers pushBack _x} forEach units _group;
+		};
+	};
+};
+
+private _garrison = garrison getVariable [_markerX,[]];
 _garrison = _garrison call A3A_fnc_garrisonReorg;
-_radiusX = count _garrison;
+private _radiusX = count _garrison;
 private _patrol = true;
 //If one is missing, there are no patrols??
 if (_radiusX < ([_markerX] call A3A_fnc_garrisonSize)) then
