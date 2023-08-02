@@ -240,4 +240,4 @@ _spawns = [_vehicleSpawns, _heliSpawns, _planeSpawns, _mortarSpawns, _samSpawns]
     private _varName = format ["%1_%2", _marker, _x#1];
     spawner setVariable [_varName + "_places", _x#0, true];
     spawner setVariable [_varName + "_used", (_x#0) apply {false}, true];
-} forEach [[_vehicleSpawns, "vehicle"], [_heliSpawns, "heli"], [_planeSpawns, "plane"], [_mortarSpawns, "mortar"]];
+} forEach [[_vehicleSpawns, "vehicle"], [_heliSpawns, "heli"], [_planeSpawns, "plane"], [_mortarSpawns, "mortar"], [_samSpawns, "sam"]];
