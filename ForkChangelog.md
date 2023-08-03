@@ -8,16 +8,17 @@
 
 ## 2.2
 ### Changes
-- 3.3 Community Version integration - PATCOM AI, many improvements and fixes of various gameplay systems
+- 3.3.2 Community Version integration - PATCOM AI integration, AA/AT missile specialists, many improvements and fixes of various gameplay systems
 - Moved rebel Apex 4WD vehicles from Vehicle Black Market to general vehicle pool, they're accessible when Apex DLC is enabled
 - Static MGs will be available from start instead of War Level 2
+- Ability to override AA/AT specialist loadouts via Rebel Loadouts feature
 
 ### Removals
 - Replaced rebel payload planes with just rebel planes, removed rebel faction vehicle category in templates 
 - Removed ability to buy rebel repair vehicles after owning 4+ factories to make it more in line with fuel and ammo resources 
 - Removed auto heal toggle menu
 - Removed concept of civilian backpacks as there was no clear indication about backpack type and undercover system interaction, removed backpack undercover checks
-- Removed Civilian Presence Module, replaced with PATCOM civilian system from vanilla Antistasi due to it being more performant
+- Removed Civilian Presence Module, replaced with PATCOM civilian system
 
 ## 2.1.11
 ### Changes
