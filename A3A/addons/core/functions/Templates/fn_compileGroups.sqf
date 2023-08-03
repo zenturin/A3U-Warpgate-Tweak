@@ -362,15 +362,15 @@ if (_prefix isEqualTo "reb") exitWith {
 
     //groups
     _faction set ["groupMedium", [_faction get "unitSL", _faction get "unitGL", _faction get "unitMG", _faction get "unitRifle"]];
-    _faction set ["groupAT", [_faction get "unitSL", _faction get "unitMG", _faction get "unitLAT", _faction get "unitLAT", _faction get "unitLAT"]];
+    _faction set ["groupAT", [_faction get "unitSL", _faction get "unitMG", _faction get "unitAT", _faction get "unitLAT", _faction get "unitRifle"]];
     _faction set ["groupSquad", [
         _faction get "unitSL"
         , _faction get "unitGL"
         , _faction get "unitRifle"
         , _faction get "unitMG"
-        , _faction get "unitRifle"
+        , _faction get "unitSniper"
         , _faction get "unitLAT"
-        , _faction get "unitRifle"
+        , _faction get "unitAT"
         , _faction get "unitMedic"
     ]];
     _faction set ["groupSquadEng", [
@@ -385,7 +385,7 @@ if (_prefix isEqualTo "reb") exitWith {
     ]];
     _faction set ["groupSquadSupp", [
         _faction get "unitSL"
-        , _faction get "unitGL"
+        , _faction get "unitAA"
         , _faction get "unitRifle"
         , _faction get "unitMG"
         , _faction get "unitLAT"
@@ -403,15 +403,15 @@ if (_prefix isEqualTo "reb") exitWith {
         , _faction get "unitMG"
         , _faction get "unitRifle"
         , _faction get "unitRifle"
-        , _faction get "unitLAT"
+        , _faction get "unitAA"
         , _faction get "unitMedic"
     ]];
     _faction set ["groupAtEmpl", [
         _faction get "unitSL"
         , _faction get "unitRifle"
+        , _faction get "unitAT"
         , _faction get "unitLAT"
-        , _faction get "unitLAT"
-        , _faction get "unitLAT"
+        , _faction get "unitRifle"
         , _faction get "unitMedic"
     ]];
     _faction set ["groupHmgEmpl", [

@@ -61,4 +61,4 @@ _costs = 2*_crewCost + ([(FactionGet(reb,"staticMortars")) # 0] call A3A_fnc_veh
 
 _costHR = 2;
 _costs = 2*_crewCost + ([FactionGet(reb,"vehiclesLightArmed") # 0] call A3A_fnc_vehiclePrice);
-(_display displayCtrl 113) ctrlSetTooltip format [localize "STR_dialog_cost_hire",_costs,_costHR, A3A_faction_civ get "currencySymbol"];
+(_display displayCtrl 112) ctrlSetTooltip format [localize "STR_dialog_cost_hire",_costs,_costHR, A3A_faction_civ get "currencySymbol"];

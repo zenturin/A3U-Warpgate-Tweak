@@ -42,7 +42,7 @@ private _weaponHM = createHashMapFromArray [
 	[A3A_faction_reb get "unitAT", "MissileLaunchersAT"]];
 
 if (A3A_rebelGear getOrDefault [_weaponHM getOrDefault [_typeUnit, ""], false] isEqualTo []) exitWith {
-	["AI Recruitment", "You don't have enough weapons to equip this type of unit."] call A3A_fnc_customHint;
+	[localize "STR_A3A_reinf_reinfPlayer_header", localize "STR_A3A_reinf_reinfPlayer_no_weapons_equip"] call A3A_fnc_customHint;
 };
 
 private _unit = [group player, _typeUnit, position player, [], 0, "NONE"] call A3A_fnc_createUnit;

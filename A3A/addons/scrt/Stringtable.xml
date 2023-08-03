@@ -5248,9 +5248,9 @@
                 <Chinesesimp>狙击手</Chinesesimp>
                 <Korean>지정사수</Korean>
             </Key>
-            <Key ID="STR_antistasi_dialogs_at_title">
-                <Original>AT</Original>
-                <Russian>Гранатомётчик</Russian>
+            <Key ID="STR_antistasi_dialogs_lat_title">
+                <Original>Light AT</Original>
+                <Russian>Лёгкий гранатомётчик</Russian>
                 <Chinesesimp>AT兵</Chinesesimp>
                 <Korean>대전차병</Korean>
             </Key>
@@ -5266,11 +5266,19 @@
                 <Chinesesimp>班长</Chinesesimp>
                 <Korean>분대장</Korean>
             </Key>
-            <Key ID="STR_antistasi_dialogs_demolitionist_title">
-                <Original>Demolitionist</Original>
-                <Russian>Подрывник</Russian>
+            <Key ID="STR_antistasi_dialogs_sapper_title">
+                <Original>Sapper</Original>
+                <Russian>Сапёр</Russian>
                 <Chinesesimp>炸弹专家</Chinesesimp>
                 <Korean>폭파전문가</Korean>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_at_title">
+                <Original>AT Specialist</Original>
+                <Russian>ПТ-специалист</Russian>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_aa_title">
+                <Original>AA Specialist</Original>
+                <Russian>Оператор ПЗРК</Russian>
             </Key>
         </Container>
         <Container name="simple_menu_dialogs">
@@ -9782,10 +9790,13 @@
                 <Korean>이런 종류의 유닛을 사는 데 필요한 자금이 부족합니다. (%1%2 필요)</Korean>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_no_money_equip">
-                <Original>You don't have enough weapons to equip this type of unit.</Original>
+                <Original>You don't have enough money to equip this type of unit.</Original>
                 <Russian>У вас недостаточно денег для экипирования данного типа юнита.</Russian>
             </Key>
-
+            <Key ID="STR_A3A_reinf_reinfPlayer_no_weapons_equip">
+                <Original>You don't have enough weapons to equip this type of unit.</Original>
+                <Russian>У вас недостаточно оружия для экипирования данного типа юнита.</Russian>
+            </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_full_squad">
                 <Original>Your squad is full or you have too many scattered units with no radio contact.</Original>
                 <Russian>Ваш отряд полон или у вас слишком много разбросанных в округе юнитов без радиосвязи с ними.</Russian>
