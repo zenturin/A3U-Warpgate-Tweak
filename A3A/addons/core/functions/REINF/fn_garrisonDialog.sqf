@@ -49,11 +49,11 @@ private ["_garrison","_costs","_hr","_size"];
 // };
 
 
-private _watchpostFIA = if (_site in watchpostsFIA) then {true} else {false};
-private _roadblockFIA = if (_site in roadblocksFIA) then {true} else {false};
-private _aapostFIA = if (_site in aapostsFIA) then {true} else {false};
-private _atpostFIA = if (_site in atpostsFIA) then {true} else {false};
-private _hmgpostFIA = if (_site in hmgpostsFIA) then {true} else {false};
+private _watchpostFIA = _site in watchpostsFIA;
+private _roadblockFIA = _site in roadblocksFIA;
+private _aapostFIA = _site in aapostsFIA;
+private _atpostFIA = _site in atpostsFIA;
+private _hmgpostFIA = _site in hmgpostsFIA;
 
 _garrison = if (!_watchpostFIA) then {
 	garrison getVariable [_site,[]]
@@ -121,13 +121,6 @@ if (_typeX == "rem") then {
 		};
 		default {
 			{
-				if (_x == (A3A_faction_reb get "unitCrew")) then {
-					if (_outpostFIA) then {
-						_costs = _costs + ([(A3A_faction_reb get "vehiclesLightArmed") # 0] call A3A_fnc_vehiclePrice)
-					} else {
-						_costs = _costs + ([(A3A_faction_reb get "staticMortars") # 0] call A3A_fnc_vehiclePrice)
-					};
-				};
 				_hr = _hr + 1;
 				_costs = _costs + (server getVariable [_x,0]);
 			} forEach _garrison;
