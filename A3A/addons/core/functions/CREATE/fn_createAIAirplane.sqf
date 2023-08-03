@@ -256,6 +256,8 @@ if(random 100 < (50 + tierWar * 3)) then {
 };
 
 if (!_busy) then {
+	private _pos = nil;
+	private _ang = nil;
 	//Newer system in place
 	private _runwaySpawnLocation = [_markerX] call A3A_fnc_getRunwayTakeoffForAirportMarker;
 	if !(_runwaySpawnLocation isEqualTo []) then

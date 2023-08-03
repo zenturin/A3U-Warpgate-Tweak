@@ -231,14 +231,6 @@ switch _typeX do
                 }
             },nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull])",4
         ];
-        if (lootCratesEnabled) then {
-            _flag addAction [
-                format ["<img image='\a3\ui_f\data\igui\cfg\simpletasks\types\box_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_buy_loot_crate"], 
-                {
-                    [] call SCRT_fnc_loot_createLootCrate
-                },nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull])",4
-            ];
-        };
         [_flag] call HR_GRG_fnc_initGarage;
     };
     case "Intel_Small":
@@ -304,19 +296,6 @@ switch _typeX do
             false,
             "",
             "isPlayer _this && (_target getVariable ['laptopSearchDone', false] != true)",
-            4
-        ];
-    };
-    case "buy_crate": {
-        _flag addAction [
-            format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\box_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_buy_loot_crate"], 
-            {[] call SCRT_fnc_loot_createLootCrate},
-            nil,
-            0,
-            false,
-            true,
-            "",
-            "(isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (side (group _this) == teamPlayer)",
             4
         ];
     };
