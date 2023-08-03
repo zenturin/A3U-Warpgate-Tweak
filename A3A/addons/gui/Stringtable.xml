@@ -627,6 +627,10 @@
                 <Korean>반군용</Korean>
                 <Spanish>Rebelde</Spanish>
             </Key>
+            <Key ID="STR_antistasi_dialogs_vehicle_tab_mil">
+                <Original>Military</Original>
+                <Russian>Военная техника</Russian>
+            </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_static">
                 <Original>Statics</Original>
                 <Russian>Стац. орудия</Russian>
