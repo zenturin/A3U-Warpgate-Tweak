@@ -1,4 +1,4 @@
-class garrisonRecruit: SimpleMenuBig 
+class garrisonRecruit: SimpleMenuBigger 
 {
 	idd = 100;
 	
@@ -57,8 +57,17 @@ class garrisonRecruit: SimpleMenuBig
 			y = 0.584 * safezoneH + safezoneY;
 			action = "[A3A_faction_reb get 'unitSL'] spawn A3A_fnc_garrisonAdd";
 		};
-		
-		class mortarButton: SimpleButton
+
+		class aaButton: SimpleButton
+		{
+			idc = 112;
+			text = $STR_antistasi_dialogs_unit_recruit_aamissile_text;
+			x = 0.257187 * safezoneW + safezoneX;
+			y = 0.680 * safezoneH + safezoneY;
+			action = "[A3A_faction_reb get 'unitAA'] spawn A3A_fnc_garrisonAdd";
+		};
+
+		class latButton: SimpleButton
 		{
 			idc = 108;
 			text = $STR_antistasi_dialogs_garrison_spawn_at_text;
@@ -84,10 +93,19 @@ class garrisonRecruit: SimpleMenuBig
 			y = 0.486 * safezoneH + safezoneY;
 			action = "[A3A_faction_reb get 'unitSniper'] spawn A3A_fnc_garrisonAdd";
 		};
+		
+		class atButton: SimpleButton
+		{
+			idc = 111;
+			text = $STR_antistasi_dialogs_unit_recruit_atmissile_text;
+			x = 0.477 * safezoneW + safezoneX;
+			y = 0.584 * safezoneH + safezoneY;
+			action = "[A3A_faction_reb get 'unitAT'] spawn A3A_fnc_garrisonAdd";
+		};
 	};
 };
 
-class unitRecruit: SimpleMenuBig 
+class unitRecruit: SimpleMenuBigger 
 {
 	idd=100;
 	
@@ -144,6 +162,15 @@ class unitRecruit: SimpleMenuBig
 			y = 0.584 * safezoneH + safezoneY;
 			action = "[A3A_faction_reb get 'unitEng'] spawn A3A_fnc_reinfPlayer";
 		};
+
+		class atButton: SimpleButton
+		{
+			idc = 112;
+			text = $STR_antistasi_dialogs_unit_recruit_atmissile_text;
+			x = 0.257187 * safezoneW + safezoneX;
+			y = 0.680 * safezoneH + safezoneY;
+			action = "[A3A_faction_reb get 'unitAT'] spawn A3A_fnc_reinfPlayer";
+		};
 		
 		class explButton: SimpleButton
 		{
@@ -172,13 +199,22 @@ class unitRecruit: SimpleMenuBig
 			action = "[A3A_faction_reb get 'unitSniper'] spawn A3A_fnc_reinfPlayer";
 		};
 
-		class atButton: SimpleButton
+		class latButton: SimpleButton
 		{
 			idc = 111;
 			text = $STR_antistasi_dialogs_unit_recruit_antitank_text;
 			x = 0.477 * safezoneW + safezoneX;
 			y = 0.584 * safezoneH + safezoneY;
 			action = "[A3A_faction_reb get 'unitLAT'] spawn A3A_fnc_reinfPlayer";
+		};
+
+		class aaButton: SimpleButton
+		{
+			idc = 113;
+			text = $STR_antistasi_dialogs_unit_recruit_aamissile_text;
+			x = 0.477 * safezoneW + safezoneX;
+			y = 0.680 * safezoneH + safezoneY;
+			action = "[A3A_faction_reb get 'unitAA'] spawn A3A_fnc_reinfPlayer";
 		};
 	};
 };
@@ -1294,7 +1330,7 @@ class rebelLoadoutMenu: SimpleMenuMedium
 		class l7Text: SimpleText
 		{
 			idc = 120007;
-			text = $STR_antistasi_dialogs_at_title;
+			text = $STR_antistasi_dialogs_lat_title;
 			x = 0.422656 * safezoneW + safezoneX;
 			y = 0.456 * safezoneH + safezoneY;
 			w = 0.0773437 * safezoneW;	
@@ -1324,9 +1360,29 @@ class rebelLoadoutMenu: SimpleMenuMedium
 		class l10Text: SimpleText
 		{
 			idc = 120010;
-			text = $STR_antistasi_dialogs_demolitionist_title;
+			text = $STR_antistasi_dialogs_sapper_title;
 			x = 0.422656 * safezoneW + safezoneX;
 			y = 0.555 * safezoneH + safezoneY;
+			w = 0.0773437 * safezoneW;	
+			h = 0.022 * safezoneH;
+		};
+
+		class l11Text: SimpleText
+		{
+			idc = 120011;
+			text = $STR_antistasi_dialogs_at_title;
+			x = 0.422656 * safezoneW + safezoneX;
+			y = 0.588 * safezoneH + safezoneY;
+			w = 0.0773437 * safezoneW;	
+			h = 0.022 * safezoneH;
+		};
+
+		class l12Text: SimpleText
+		{
+			idc = 120012;
+			text = $STR_antistasi_dialogs_aa_title;
+			x = 0.422656 * safezoneW + safezoneX;
+			y = 0.621 * safezoneH + safezoneY;
 			w = 0.0773437 * safezoneW;	
 			h = 0.022 * safezoneH;
 		};
@@ -1529,6 +1585,46 @@ class rebelLoadoutMenu: SimpleMenuMedium
 			w = 0.0103125 * safezoneW;
 			h = 0.022 * safezoneH;
 			action = "(A3A_faction_reb get 'unitExp') call SCRT_fnc_arsenal_clearLoadout;";
+		};
+
+		class l11ArsenalButton: ArsenalButton
+		{
+			idc = -1;
+			x = 0.54125 * safezoneW + safezoneX;
+			y = 0.588 * safezoneH + safezoneY;
+			w = 0.0103125 * safezoneW;
+			h = 0.022 * safezoneH;
+			action = "currentRebelLoadout = A3A_faction_reb get 'unitAT'; [] call JN_fnc_arsenal_handleAction;";
+		};
+
+		class l11ResetButton: ResetButton
+		{
+			idc = -1;
+			x = 0.561875 * safezoneW + safezoneX;
+			y = 0.588 * safezoneH + safezoneY;
+			w = 0.0103125 * safezoneW;
+			h = 0.022 * safezoneH;
+			action = "(A3A_faction_reb get 'unitAT') call SCRT_fnc_arsenal_clearLoadout;";
+		};
+
+		class l12ArsenalButton: ArsenalButton
+		{
+			idc = -1;
+			x = 0.54125 * safezoneW + safezoneX;
+			y = 0.621 * safezoneH + safezoneY;
+			w = 0.0103125 * safezoneW;
+			h = 0.022 * safezoneH;
+			action = "currentRebelLoadout = A3A_faction_reb get 'unitAA'; [] call JN_fnc_arsenal_handleAction;";
+		};
+
+		class l12ResetButton: ResetButton
+		{
+			idc = -1;
+			x = 0.561875 * safezoneW + safezoneX;
+			y = 0.621 * safezoneH + safezoneY;
+			w = 0.0103125 * safezoneW;
+			h = 0.022 * safezoneH;
+			action = "(A3A_faction_reb get 'unitAA') call SCRT_fnc_arsenal_clearLoadout;";
 		};
 	};
 };

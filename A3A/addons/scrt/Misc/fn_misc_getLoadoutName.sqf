@@ -1,6 +1,6 @@
 private _sourceString = _this;
 
-if (count _sourceString < 24) exitWith {_sourceString};
+// if (count _sourceString < 24) exitWith {_sourceString};
 
 private _stringParts = _sourceString splitString "_";
 

@@ -1124,7 +1124,7 @@ class SimpleMenuMedium : SimpleMenu
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.225 * safezoneH + safezoneY;
 			w = 0.165 * safezoneW;
-			h = 0.363 * safezoneH;
+			h = 0.429 * safezoneH;
 		};
 
 		class titleBackground: BOX
