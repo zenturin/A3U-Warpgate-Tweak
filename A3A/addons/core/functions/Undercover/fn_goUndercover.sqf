@@ -74,6 +74,11 @@ if(!_canGoUndercoverValue && {_canGoUndercoverReason isEqualTo (localize "STR_A3
     };
 };
 
+private _fnc_enemyDistanceCheck = {
+    params ["_enemy", "_distance"];
+    (side _enemy == Invaders or side _enemy == Occupants) and (_enemy knowsAbout player > 1.4 or _enemy distance player < _distance)
+};
+
 private _fnc_checkBaseUndercoverBreak = {
     params ["_secureBases"];
     private _base = [_secureBases, player] call BIS_fnc_nearestPosition;
@@ -194,6 +199,7 @@ while {_reason isEqualTo -1} do
     if !(isNull _veh) then
     {
         private _vehType = typeOf _veh;
+        private _detectionDistance = if (sunOrMoon < 1) then {50} else {100};
         if (!(_vehType in undercoverVehicles)) exitWith
         {
             _reason = REASON_VNOCIVIL;
@@ -209,16 +215,9 @@ while {_reason isEqualTo -1} do
             _reason = REASON_VTOWROPES;
         };
 
-        if (call _fnc_checkClothesVehicle) exitWith
+        if ({[_x, _detectionDistance] call _fnc_enemyDistanceCheck} count allUnits > 0 && {call _fnc_checkClothesVehicle}) exitWith
         {
-            if ({((side _x == Invaders) or (side _x == Occupants)) and ((_x knowsAbout player > 1.4) or (_x distance player < 350))} count allUnits > 0) then
-            {
-                _reason = REASON_CLOTHES2
-            }
-            else
-            {
-                _reason = REASON_CLOTHES1
-            };
+            _reason = REASON_CLOTHES2
         };
 
         if (A3A_hasACE) then
@@ -250,7 +249,7 @@ while {_reason isEqualTo -1} do
         {
             if (!(isOnRoad position _veh) && {count (_veh nearRoads 50) == 0}) then
             {
-                if ({((side _x == Invaders) || (side _x == Occupants)) && ((_x knowsAbout player > 1.4) || (_x distance player < 350))} count allUnits > 0) then
+                if ({[_x, _detectionDistance] call _fnc_enemyDistanceCheck} count allUnits > 0) then
                 {
                     _reason = REASON_HIGHWAY;
                 };
@@ -259,7 +258,7 @@ while {_reason isEqualTo -1} do
     } else {
         if (_healingTarget != objNull && {side _healingTarget != civilian && {_healingTarget isKindOf "Man"}}) exitWith
         {
-            if ({((side _x == Invaders) or(side _x == Occupants)) and((_x knowsAbout player > 1.4) or(_x distance player < 350))} count allUnits > 0) then
+            if ({[_x, _detectionDistance] call _fnc_enemyDistanceCheck} count allUnits > 0) then
             {
                 _reason = REASON_BADMEDIC2;
             }
@@ -270,7 +269,7 @@ while {_reason isEqualTo -1} do
         };
         if (call _fnc_checkClothes) exitWith
         {
-            if ({((side _x == Invaders) or (side _x == Occupants)) and ((_x knowsAbout player > 1.4) or (_x distance player < 350))} count allUnits > 0) then
+            if ({[_x, 300] call _fnc_enemyDistanceCheck} count allUnits > 0) then
             {
                 _reason = REASON_CLOTHES2
             }

@@ -72,10 +72,6 @@ if (isServer) then {
 		} forEach _unlockedItemsInTab;
 	} forEach jna_dataList;
 
-	if !(unlockedNVGs isEqualTo []) then {
-		haveNV = true; publicVariable "haveNV"
-	};
-
 	//Check if we have radios unlocked and update haveRadio.
 	call A3A_fnc_checkRadiosUnlocked;
 

@@ -9,17 +9,18 @@
 ## 2.2
 ### Changes
 - 3.3.2 Community Version integration - PATCOM AI integration, AA/AT missile specialists, many improvements and fixes of various gameplay systems
+- Undercover balance pass - removed concept of civilian backpacks as there was no clear indication about backpack type and undercover system interaction, removed backpack undercover checks, wearning military clothes while in being in vehicle allows you to go undercover but the enemy can still detect player if he's close enough (100 meters for day and 50 meters for night) to him
 - Moved rebel Apex 4WD vehicles from Vehicle Black Market to general vehicle pool, they're accessible when Apex DLC is enabled
-- Static MGs will be available from start instead of War Level 2
 - Ability to override AA/AT specialist loadouts via Rebel Loadouts feature
+- Added new AA/AT specialist units to various rebel teams and squads 
 - Fixed broken mortar spawn on some vanilla Rivals factions
-- Fixed 'Undefined variable in expression: a3a_faction_civ' error when player opens aresenal in non-AntistasiPlus environment
+- Fixed 'Undefined variable in expression: a3a_faction_civ' error when player opens aresenal in non-AntistasiPlus mission environment
+- Reduced cloth vehicle check distance for enemies from 350 meters to 50
 
 ### Removals
 - Replaced rebel payload planes with just rebel planes, removed rebel faction vehicle category in templates 
-- Removed ability to buy rebel repair vehicles after owning 4+ factories to make it more in line with fuel and ammo resources 
+- Removed ability to buy rebel repair vehicles after owning 4+ factories to make it more in line with fuel and ammo resources economy
 - Removed auto heal toggle menu
-- Removed concept of civilian backpacks as there was no clear indication about backpack type and undercover system interaction, removed backpack undercover checks
 - Removed Civilian Presence Module, replaced with PATCOM civilian system
 
 ## 2.1.11

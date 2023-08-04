@@ -15,7 +15,6 @@ Environment: Scheduled
 Public: Yes
 Dependencies:
     <ARRAY> allMachineGuns
-    <BOOL> haveNV
     <HashMap> A3A_faction_all
 
 Example:

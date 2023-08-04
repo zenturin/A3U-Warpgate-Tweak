@@ -4907,22 +4907,18 @@
                 <Korean>당신은 도로로부터 너무 멀리 떨어져 있습니다!</Korean>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_items_1">
-                <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearning a non-civilian backpack&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform!</Original>
-                <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы носите негражданский рюкзак&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме!</Russian>
-                <Chinesesimp>你不能在伪装模式下：&lt;br/&gt;&lt;br/&gt;带任何可见的武器&lt;br/&gt;穿着防弹衣或装备&lt;br/&gt;穿着非平民背包&lt;br/&gt;戴头盔&lt;br/&gt;戴夜视仪&lt;br/&gt;穿军装！</Chinesesimp>
-                <Korean>다음을 착용하는 동안에는 위장이 불가능합니다!:&lt;br/&gt;&lt;br/&gt;무기가 보임&lt;br/&gt;조끼를 입음&lt;br/&gt;민간용이 아닌 가방을 맴&lt;br/&gt;헬멧을 착용함&lt;br/&gt;야시경 착용함&lt;br/&gt;군복 착용함</Korean>
+                <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform!</Original>
+                <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме!</Russian>
+            </Key>
+            <Key ID="STR_info_bar_undercover_break_reason_mil_items_2">
+                <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform&lt;br/&gt;Enemy have added you to Wanted list!</Original>
+                <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_carry">
                 <Original>You're looking very suspicious while carrying military-grade items, and the enemy has noticed it.</Original>
                 <Russian>Вы выглядите очень подозрительно, когда носите предметы военного назначения, и враг это заметил.</Russian>
                 <Chinesesimp>你在携带军事级别的物品时显得非常可疑，被敌人发现了。</Chinesesimp>
                 <Korean>당신은 군용 아이템을 들고 있는 동안 매우 수상해보였고, 적이 그걸 알아차렸습니다.</Korean>
-            </Key>
-            <Key ID="STR_info_bar_undercover_break_reason_mil_items_2">
-                <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearning a non-civilian backpack&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform&lt;br/&gt;Enemy have added you to Wanted list!</Original>
-                <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы носите негражданский рюкзак&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
-                <Chinesesimp>你不能在伪装模式下：&lt;br/&gt;&lt;br/&gt;带任何可见的武器&lt;br/&gt;穿着防弹衣或装备&lt;br/&gt;穿着非平民背包&lt;br/&gt;戴头盔&lt;br/&gt;戴夜视仪&lt;br/&gt;穿军装！&lt;br/&gt;敌人已经把你加进通缉名单了！</Chinesesimp>
-                <Korean>다음을 착용하는 동안에는 위장이 불가능합니다!:&lt;br/&gt;&lt;br/&gt;무기가 보임&lt;br/&gt;조끼를 입음&lt;br/&gt;간용이 아닌 가방을 맴&lt;br/&gt;헬멧을 착용함&lt;br/&gt;야시경 착용함&lt;br/&gt;군복 착용함&lt;br/&gt;적군이 당신을 수배자 목록에 추가했습니다!</Korean>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_bad_medic_1">
                 <Original>You can't stay in undercover state while healing a compromised resistance member!</Original>
