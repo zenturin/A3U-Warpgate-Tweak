@@ -53,7 +53,14 @@ switch (_category) do {
 		_vehicleClasses = _militaryVehicles;
 	};
 	case "static": {
-		private _statics = (A3A_faction_reb get 'staticMGs') select {_x isNotEqualTo []};
+		private _statics = [];
+		
+		if (tierWar > 2) then {
+			private _availableVehs = (A3A_faction_reb get 'staticMGs') select {_x isNotEqualTo []};
+			_statics append _availableVehs;
+		};
+
+		 (A3A_faction_reb get 'staticMGs') select {_x isNotEqualTo []};
 
 		if (tierWar > 3) then {
 			private _availableVehs = 
