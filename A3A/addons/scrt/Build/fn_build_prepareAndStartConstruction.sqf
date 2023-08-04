@@ -170,4 +170,4 @@ private _fnc_placed = {
     [_type, _pos, _dir] spawn A3A_fnc_buildCreateVehicleCallback;
 };
 
-[_constructionClass, _fnc_placed, {false}, [_cost], nil, nil, nil, _extraMessage] call HR_GRG_fnc_confirmPlacement;
+[_constructionClass, _fnc_placed, {false}, [construction_cost], nil, nil, nil, _extraMessage] call HR_GRG_fnc_confirmPlacement;

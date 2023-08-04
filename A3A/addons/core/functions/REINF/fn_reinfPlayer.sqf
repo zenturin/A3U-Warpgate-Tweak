@@ -30,7 +30,7 @@ private _weaponHM = createHashMapFromArray [
 ];
 
 if (A3A_rebelGear getOrDefault [_weaponHM getOrDefault [_typeUnit, ""], false] isEqualTo []) exitWith {
-	[localize "STR_A3A_reinf_reinfPlayer_header", localize "STR_A3A_reinf_reinfPlayer_no_money_equip"] call A3A_fnc_customHint;
+	[localize "STR_A3A_reinf_reinfPlayer_header", localize "STR_A3A_reinf_reinfPlayer_no_weapons_equip"] call A3A_fnc_customHint;
 };
 
 private _weaponHM = createHashMapFromArray [
