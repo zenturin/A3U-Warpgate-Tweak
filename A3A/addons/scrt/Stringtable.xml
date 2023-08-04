@@ -8764,8 +8764,8 @@
                 <Korean>&lt;t color='#800000'&gt;%1&lt;/t&gt;이(가) 우리 위치 근처에 이동식 박격포를 설치하고 있습니다!</Korean>
             </Key>
             <Key ID="STR_rivals_activity_drone_strike_description">
-                <Original>Drone strike is imminent, take cover!</Original>
-                <Russian>Удар БПЛА неизбежен, все в укрытие!</Russian>
+                <Original>&lt;t color='#800000'&gt;Drone strike&lt;/t&gt; is imminent, take cover!</Original>
+                <Russian>&lt;t color='#800000'&gt;Удар с БПЛА&lt;/t&gt; неизбежен, в укрытие!</Russian>
                 <Chinesesimp>无人机来袭，躲起来！</Chinesesimp>
                 <Korean>무인기 공격이 임박했습니다! 엄폐하십시오!</Korean>
             </Key>
