@@ -10,29 +10,26 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["flagTexture", "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_EAF"] call _fnc_saveToTemplate;
 
-["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "rhsgref_nat_uaz_open"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "rhsgref_nat_uaz_dshkm"] call _fnc_saveToTemplate;
-["vehicleTruck", "rhsgref_nat_ural_open"] call _fnc_saveToTemplate;
-["vehicleAT", "rhsgref_nat_uaz_spg9"] call _fnc_saveToTemplate;
-["vehicleAA", "rhsgref_nat_ural_Zu23"] call _fnc_saveToTemplate;
+["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["rhsgref_nat_uaz_open"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["rhsgref_nat_uaz_dshkm"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["rhsgref_nat_ural_open"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["rhsgref_nat_uaz_spg9"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["rhsgref_nat_ural_Zu23"]] call _fnc_saveToTemplate;
 
-["vehicleBoat", "I_C_Boat_Transport_02_F"] call _fnc_saveToTemplate;
-["vehicleRepair", "rhsgref_cdf_ural_repair"] call _fnc_saveToTemplate;
+["vehiclesBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
 
-["vehiclePlane", "RHS_AN2"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclesPlane", ["RHS_AN2"]] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "RHS_Ural_Open_Civ_03"] call _fnc_saveToTemplate;
-["vehicleCivHeli", "RHS_Mi8t_civilian"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
-["vehicleCivBoxSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
+["vehiclesCivCar", ["C_Offroad_01_F"]] call _fnc_saveToTemplate;
+["vehiclesCivTruck", ["RHS_Ural_Open_Civ_03"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["RHS_Mi8t_civilian"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat", ["C_Rubberboat"]] call _fnc_saveToTemplate;
 
-["staticMG", "rhsgref_nat_DSHKM"] call _fnc_saveToTemplate;
-["staticAT", "rhsgref_nat_SPG9"] call _fnc_saveToTemplate;
-["staticAA", "rhsgref_nat_ZU23"] call _fnc_saveToTemplate;
-["staticMortar", "rhsgref_nat_2b14"] call _fnc_saveToTemplate;
+["staticMGs", ["rhsgref_nat_DSHKM"]] call _fnc_saveToTemplate;
+["staticAT", ["rhsgref_nat_SPG9"]] call _fnc_saveToTemplate;
+["staticAA", ["rhsgref_nat_ZU23"]] call _fnc_saveToTemplate;
+["staticMortars", ["rhsgref_nat_2b14"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "rhs_mag_d832du_10"] call _fnc_saveToTemplate;
 
@@ -133,9 +130,9 @@ private _initialRebelEquipment = [
     "rhsgref_chicom","V_BandollierB_oli"
 ];
 
-private _civilianBackpacks =  [];
+private _backpacks = [];
 if (_hasLawsOfWar) then {
-    _civilianBackpacks append [
+    _backpacks append [
         "B_Messenger_Black_F", 
         "B_Messenger_Coyote_F", 
         "B_Messenger_Gray_F",
@@ -145,17 +142,16 @@ if (_hasLawsOfWar) then {
         "B_LegStrapBag_olive_F"
     ];
 } else {
-    _civilianBackpacks pushBack "B_AssaultPack_blk";
+    _backpacks pushBack "B_AssaultPack_blk";
 };
 
-["civilianBackpacks", _civilianBackpacks createHashMapFromArray []] call _fnc_saveToTemplate;
-
-_initialRebelEquipment append _civilianBackpacks;
+_initialRebelEquipment append _backpacks;
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment append ["TFAR_anprc155","TFAR_anprc155_coyote"]};
+_initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [

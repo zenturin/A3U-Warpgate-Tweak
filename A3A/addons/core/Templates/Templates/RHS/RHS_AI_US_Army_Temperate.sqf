@@ -63,8 +63,8 @@
 ["vehiclesPolice", ["rhsusf_m998_w_4dr", "rhsusf_m998_w_4dr_halftop", "rhsusf_m998_w_4dr_fulltop"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["RHS_M2StaticMG_WD"]] call _fnc_saveToTemplate;
-["staticATs", ["RHS_TOW_TriPod_WD"]] call _fnc_saveToTemplate;
-["staticAAs", ["RHS_Stinger_AA_pod_WD"]] call _fnc_saveToTemplate;
+["staticAT", ["RHS_TOW_TriPod_WD"]] call _fnc_saveToTemplate;
+["staticAA", ["RHS_Stinger_AA_pod_WD"]] call _fnc_saveToTemplate;
 ["staticMortars", ["RHS_M252_WD"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["RHS_M119_WD"]] call _fnc_saveToTemplate;
 
@@ -75,6 +75,7 @@
 
 ["mortarMagazineHE", "rhs_12Rnd_m821_HE"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
+["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
 
 ["minefieldAT", ["rhsusf_mine_M19"]] call _fnc_saveToTemplate;

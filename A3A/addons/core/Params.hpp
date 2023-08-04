@@ -49,12 +49,19 @@ class Params
         texts[] = {$STR_params_civ_traffic_none,$STR_params_civ_traffic_low,$STR_params_civ_traffic_medium,$STR_params_civ_traffic_high};
         default = 2;
     };
-    class civPedestrians
+    class globalCivilianMax
     {
-        title = $STR_params_civPedestrians;
-        values[] = {0,1,3,5,7,10,15,20,25,30};
-        texts[] = {"0","1","3","5","7","10","15","20","25","30"};
-        default = 10;
+        title = $STR_params_global_civilian_max;
+        values[] = {0,2,5,10,15,20,25,30};
+        texts[] = {"0","2","5","10","15","20","25","30"};
+        default = 5;
+    };
+    class maxCiviliansPerTown
+    {
+        title = $STR_params_civ_per_town;
+        values[] = {0,2,5,10,15};
+        texts[] = {"0","2","5","10","15"};
+        default = 2;
     };
     class distanceMission
     {
@@ -104,6 +111,20 @@ class Params
         values[] = {120,300,900,1800,9999999};
         texts[] = {"2","5","15","30",$STR_params_afk_disabled};
         default = 300;
+    };
+    class A3A_GCThreshold
+    {
+        title = $STR_params_gc_threshold;
+        values[] = {3600, 7200, 10800, 14400, 9999999};
+        texts[] = {"1hr", "2hrs", "3hrs", "4hrs", "Disabled"};
+        Default = 9999999;
+    };
+    class A3A_reviveTime
+    {
+        title = $STR_params_revive_time;
+        values[] = {8,12,16,24,32};
+        texts[] = {"8","12","16","24","32"};
+        default = 12;
     };
 
     class Spacer60
@@ -240,7 +261,6 @@ class Params
         texts[] = {$STR_params_server_riv_difficulty_easy, $STR_params_server_riv_difficulty_medium, $STR_params_server_riv_difficulty_hard};
         default = 2;
     };
-
     class SpacerMembership
     {
         title = "";
@@ -294,16 +314,16 @@ class Params
     class A3A_enemyBalanceMul
     {
         title = $STR_params_overall_enemy_res_balance;
-        values[] = {3, 5, 7, 10, 12, 14, 16, 20, 28};
-        texts[] =  {$STR_params_difficulty_trivial, $STR_params_difficulty_veasy, $STR_params_difficulty_easy, $STR_params_difficulty_easymedium, $STR_params_difficulty_medium, $STR_params_difficulty_mediumhigh, $STR_params_difficulty_hard, $STR_params_difficulty_vhard, $STR_params_difficulty_extreme };
-        default = 12;
+        values[] = {4,6,8,10,11,12,13,14,17,20,24,28};
+        texts[] =  {"0.4x","0.6x","0.8x","1.0x","1.1x", "1.2x","1.3x", "1.4x","1.7x","2.0x","2.4x","2.8x"};
+        default = 11;
     };
     class A3A_enemyAttackMul
     {
         attr[] = {"server"};
         title = $STR_params_response_balance;
-        values[] = {3,5,7,10,14,20,28};
-        texts[] =  {$STR_params_difficulty_trivial,$STR_params_difficulty_veasy,$STR_params_difficulty_easy,$STR_params_difficulty_medium,$STR_params_difficulty_hard,$STR_params_difficulty_vhard,$STR_params_difficulty_extreme};
+        values[] = {4,6,8,10,12,14,17,20,24,28};
+        texts[] =  {"0.4x","0.6x","0.8x","1.0x","1.2x","1.4x","1.7x","2.0x","2.4x","2.8x"};
         default = 10;
     };
     class A3A_invaderBalanceMul

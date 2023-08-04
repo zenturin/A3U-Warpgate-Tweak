@@ -106,8 +106,11 @@ _lineIndex = 0;
         ];
         sleep 0.25;
     } forEach _crewArray;
-    [leader _groupX, _marker, "LIMITED", "SAFE", "RANDOMUP", "SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 
+    private _garrisonGroup = [_groupX, getMarkerPos _markerX, _patrolSize] call A3A_fnc_patrolGroupGarrison;
+    if (count _garrisonGroup > 0) then {
+			_allGroups append _garrisonGroup;
+		};
 
     private _forcePatrol = ((count _allGroups) > ((count _patrolGroups) * 3));
     _groupSoldier = createGroup _side;
@@ -172,38 +175,9 @@ if(((_patrolMarkerSize select 0) < (_mainMarkerSize select 0)) || {(_patrolMarke
 _patrolMarker setMarkerSizeLocal _patrolMarkerSize;
 
 {
-  [leader _x, _marker, "LIMITED", "SAFE", "SPAWNED", "RANDOM", "NOFOLLOW", "NOVEH"] spawn UPSMON_fnc_UPSMON;
+  [_x, "Patrol_Defend", 0, 100, -1, true, _positionX, false] call A3A_fnc_patrolLoop;
 } forEach _stayGroups;
 
 {
-  [leader _x, _patrolMarker, "LIMITED", "SAFE", "SPAWNED", "RANDOM","NOVEH2"] spawn UPSMON_fnc_UPSMON;
+  [_x, "Patrol_Area", 25, 150, 300, false, [], false] call A3A_fnc_patrolLoop;
 } forEach _patrolGroups;
-
-/*
-waitUntil {sleep 5; (spawner getVariable _marker == 2)};
-
-[_marker] call A3A_fnc_freeSpawnPositions;
-
-deleteMarker _patrolMarker;
-
-{
-	if (alive _x) then
-	{
-		deleteVehicle _x;
-	};
-} forEach _allSoldiers;
-
-{
-	deleteGroup _x
-} forEach _allGroups;
-
-{
-	if (!(_x in staticsToSave)) then
-	{
-		if ((!([distanceSPWN, 1, _x, teamPlayer] call A3A_fnc_distanceUnits))) then
-		{
-			deleteVehicle _x;
-		};
-	};
-} forEach _allVehicles;
-*/

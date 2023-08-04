@@ -1,6 +1,6 @@
 class A3A_BlackMarketDialog : A3A_TabbedDialog
 {
-  idd = A3A_IDD_BUYVEHICLEDIALOG;
+  idd = A3A_IDD_BLACKMARKETVEHICLEDIALOG;
   onLoad = "['onLoad'] spawn A3A_fnc_blackMarketDialog";
   onUnload = "['onUnload'] spawn A3A_fnc_blackMarketDialog";
 
@@ -39,8 +39,8 @@ class A3A_BlackMarketDialog : A3A_TabbedDialog
             {
                 class VehicleTabButton : A3A_Button
                 {
-                    idc = A3A_IDC_VEHICLETABBUTTON;
-                    text = $STR_antistasi_dialogs_vehicle_tab_vehicles;
+                    idc = A3A_IDC_BLACKMARKETTABBUTTON;
+                    text = $STR_antistasi_dialogs_vehicle_tab_mil;
                     onButtonClick = "[""switchTab"", [""vehicles""]] call A3A_fnc_blackMarketDialog";
                     x = 0;
                     y = 0;
@@ -53,14 +53,14 @@ class A3A_BlackMarketDialog : A3A_TabbedDialog
         // Main content
         class VehicleTab : A3A_DefaultControlsGroup
         {
-            idc = A3A_IDC_BUYVEHICLEMAIN;
+            idc = A3A_IDC_BLACKMARKETMAIN;
             show = false;
 
             class Controls
             {
                 class VehiclesControlsGroup : A3A_ControlsGroupNoHScrollbars
                 {
-                    idc = A3A_IDC_VEHICLESGROUP;
+                    idc = A3A_IDC_BLACKMARKETVEHICLESGROUP;
                     x = 0;
                     y = 4 * GRID_H;
                     w = PX_W(DIALOG_W);
@@ -82,7 +82,7 @@ class A3A_BlackMarketDialog : A3A_TabbedDialog
     {
         class VehiclePreview
         {
-            idc = A3A_IDC_BUYOBJECTRENDER;
+            idc = A3A_IDC_BLACKMARKETBUYOBJECTRENDER;
 
             type = 82;
             model = "\A3\Structures_F\Items\Food\Can_V3_F.p3d";

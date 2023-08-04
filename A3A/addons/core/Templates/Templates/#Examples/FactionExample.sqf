@@ -67,8 +67,8 @@
 ["vehiclesPolice", []] call _fnc_saveToTemplate;
 
 ["staticMGs", []] call _fnc_saveToTemplate;
-["staticATs", []] call _fnc_saveToTemplate;
-["staticAAs", []] call _fnc_saveToTemplate;
+["staticAT", []] call _fnc_saveToTemplate;
+["staticAA", []] call _fnc_saveToTemplate;
 ["staticMortars", []] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 

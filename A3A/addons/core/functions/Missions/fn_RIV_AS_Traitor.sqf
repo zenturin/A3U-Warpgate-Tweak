@@ -22,7 +22,7 @@ private _limit = if (_isDifficult) then {
 _limit params ["_dateLimitNum", "_displayTime"];
 
 private _radiusX = [_markerX] call A3A_fnc_sizeMarker;
-private _houses = (nearestObjects [_positionX, ["house"], _radiusX]) select {!((typeOf _x) in UPSMON_Bld_remove)};
+private _houses = (nearestObjects [_positionX, ["house"], _radiusX]) select {!((typeOf _x) in A3A_buildingBlacklist)};
 private _posHouse = [];
 private _houseX = _houses select 0;
 while {count _posHouse < 3} do {
@@ -100,18 +100,9 @@ _traitor allowDamage true;
 
 waitUntil {sleep 1; (call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_positionX, distanceSPWN1, distanceSPWN1] isNotEqualTo [] || {dateToNumber date > _dateLimitNum}};
 
-private _mrk = nil;
 private _patrolGroups = [];
 
 if (dateToNumber date < _dateLimitNum && alive _traitor) then {
-	_mrk = createMarkerLocal [format ["%1patrolarea", floor random 100], getPos _houseX];
-	_mrk setMarkerShapeLocal "RECTANGLE";
-	_mrk setMarkerSizeLocal [50,50];
-	_mrk setMarkerTypeLocal "hd_warning";
-	_mrk setMarkerColorLocal "ColorRed";
-	_mrk setMarkerBrushLocal "DiagGrid";
-	_mrk setMarkerAlphaLocal 0;
-
 	private _patrolCount = nil;
 	private _patrolPool = nil;
 	if (_isDifficult) then {
@@ -131,7 +122,7 @@ if (dateToNumber date < _dateLimitNum && alive _traitor) then {
 			_unit setCaptive true;
 			[_unit,""] call A3A_fnc_NATOinit;
 		};
-		_nul = [leader _patrolGroup, _mrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
+		[_groupX, "Patrol_Area", 25, 50, 100, false, [], false] call A3A_fnc_patrolLoop;
 
 		_groups pushBack _patrolGroup;
 		_patrolGroups pushBack _patrolGroup;
@@ -248,7 +239,5 @@ sleep 30;
 
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
-
-deleteMarkerLocal _mrk;
 
 Info("Rivals Eliminate the Defector cleanup complete.");

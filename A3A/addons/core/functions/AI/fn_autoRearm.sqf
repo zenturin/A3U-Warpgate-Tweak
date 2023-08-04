@@ -65,8 +65,7 @@ if ((_primaryWeapon in initialRebelEquipment) || (_primaryWeapon isEqualTo "")) 
 		_unit doMove (getPosATL _selectedContainer);
 		if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_better_weapon"};
 		_timeOut = time + 60;
-		sleep 1;
-		waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+		waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 		if ((unitReady _unit) && ([_unit] call A3A_fnc_canFight) && (_unit distance _selectedContainer > 3) && (_selectedContainer isKindOf "ReammoBox_F") && (!isNull _selectedContainer)) then {_unit setPos position _selectedContainer};
 		if (_unit distance _selectedContainer < 3) then {
 			_unit action ["TakeWeapon",_selectedContainer,_selectedWeapon];
@@ -116,8 +115,7 @@ if ((_foundItem) && (_unit getVariable "rearming")) then {
 	_unit doMove (getPosATL _selectedContainer);
 	if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_rearming"};
 	_timeOut = time + 60;
-	sleep 1;
-	waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+	waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 	if ((unitReady _unit) && ([_unit] call A3A_fnc_canFight) && (_unit distance _selectedContainer > 3) && (_selectedContainer isKindOf "ReammoBox_F") && (!isNull _selectedContainer)) then {_unit setPos position _selectedContainer};
 	if (_unit distance _selectedContainer < 3) then {
 		_unit action ["rearm",_selectedContainer];
@@ -158,8 +156,7 @@ if ((_secondaryWeapon == "") && (loadAbs _unit < 340)) then {
 		_unit doMove (getPosATL _selectedContainer);
 		if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_secondary_weapon"};
 		_timeOut = time + 60;
-		sleep 1;
-		waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+		waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 		if ((unitReady _unit) && ([_unit] call A3A_fnc_canFight) && (_unit distance _selectedContainer > 3) && (_selectedContainer isKindOf "ReammoBox_F") && (!isNull _selectedContainer)) then {_unit setPos position _selectedContainer};
 		if (_unit distance _selectedContainer < 3) then {
 			_unit action ["TakeWeapon",_selectedContainer,_selectedWeapon];
@@ -207,8 +204,7 @@ if (_secondaryWeapon != "") then {
 		_unit doMove (position _selectedContainer);
 		if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_rearming"};
 		_timeOut = time + 60;
-		sleep 1;
-		waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+		waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 		if ((unitReady _unit) && ([_unit] call A3A_fnc_canFight) && (_unit distance _selectedContainer > 3) && (_selectedContainer isKindOf "ReammoBox_F") && (!isNull _selectedContainer)) then {_unit setPos position _selectedContainer};
 		if (_unit distance _selectedContainer < 3) then {
 			if ((backpack _unit == "") && (backPack _selectedContainer != "")) then {
@@ -252,8 +248,7 @@ if (!haveRadio && {!(_unit call A3A_fnc_hasARadio)}) then {
 		_unit doMove (getPosATL _selectedContainer);
 		if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_radio"};
 		_timeOut = time + 60;
-		sleep 1;
-		waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+		waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 		if (_unit distance _selectedContainer < 3) then {
 			_unit action ["rearm",_selectedContainer];
 			private _radio = _selectedContainer call A3A_fnc_getRadio;
@@ -283,8 +278,7 @@ if (hmd _unit == "") then {
 		_unit doMove (getPosATL _selectedContainer);
 		if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_nv_goggles"};
 		_timeOut = time + 60;
-		sleep 1;
-		waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+		waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 		if (_unit distance _selectedContainer < 3) then {
 			_unit action ["rearm",_selectedContainer];
 			_unit linkItem _hmd;
@@ -313,8 +307,7 @@ if (!(headgear _unit in allArmoredHeadgear)) then {
 		_unit doMove (getPosATL _selectedContainer);
 		if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_helmet"};
 		_timeOut = time + 60;
-		sleep 1;
-		waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+		waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 		if (_unit distance _selectedContainer < 3) then {
 			_unit action ["rearm",_selectedContainer];
 			_unit addHeadgear _helmet;
@@ -343,14 +336,14 @@ if ({_x == "FirstAidKit"} count (items _unit) < _targetFAKs) then {
 		_unit doMove (getPosATL _selectedContainer);
 		if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_fak"};
 		_timeOut = time + 60;
-		sleep 1;
-		waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+		waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 		if (_unit distance _selectedContainer < 3) then {
 			while {{_x == "FirstAidKit"} count (items _unit) < _targetFAKs} do {
 				_unit action ["rearm",_selectedContainer];
 				_unit addItem "FirstAidKit";
 				_selectedContainer removeItem "FirstAidKit";
-				if ("FirstAidKit" in items _selectedBody) then {sleep 3};
+				if !("FirstAidKit" in items _selectedBody) exitWith {};
+				sleep 3;
 			};
 		};
 		_selectedContainer setVariable ["busy",false];
@@ -373,8 +366,7 @@ if ((_foundItem) && (_unit getVariable "rearming")) then {
 	_unit doMove (getPosATL _selectedContainer);
 	if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_vest"};
 	_timeOut = time + 60;
-	sleep 1;
-	waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+	waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 	if (_unit distance _selectedContainer < 3) then {
 		_itemsUnit = vestItems _unit;
 		_unit addVest (vest _selectedContainer);
@@ -407,8 +399,7 @@ if (backpack _unit == "") then {
 		_unit doMove (getPosATL _selectedContainer);
 		if (_inPlayerGroup) then {_unit groupChat localize "STR_chats_autoloot_backpack"};
 		_timeOut = time + 60;
-		sleep 1;
-		waitUntil {!([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
+		waitUntil {sleep 1; !([_unit] call A3A_fnc_canFight) || (isNull _selectedContainer) || (_unit distance _selectedContainer < 3) || (_timeOut < time) || (unitReady _unit)};
 		if (_unit distance _selectedContainer < 3) then {
 			_unit addBackPackGlobal ((backpack _selectedContainer) call A3A_fnc_basicBackpack);
 			_unit action ["rearm",_selectedContainer];

@@ -31,7 +31,7 @@ if !(_cured getVariable ["incapacitated",false]) exitWith
 
 private _medkits = ["Medikit"] + (A3A_faction_reb get "mediKits");    // Medikit is kept in case a unit still got hold of it.
 private _firstAidKits = ["FirstAidKit"] + (A3A_faction_reb get "firstAidKits");    // FirstAidKit is kept in case a unit still got hold of it.
-private _hasMedkit = (count (_medkits arrayIntersect items _medic) > 0);
+private _hasMedkit = (count (_medkits arrayIntersect (items _medic + items _cured)) > 0);
 private _medicFAKs = if (!_hasMedkit) then { _firstAidKits arrayIntersect items _medic };
 private _curedFAKs = if (!_hasMedkit) then { _firstAidKits arrayIntersect items _cured };
 
@@ -47,16 +47,16 @@ private _hasMedicalVeh = ((nearestObjects [_medic, A3A_faction_all get "vehicles
 }) isNotEqualTo [];
 private _timer = switch (true) do {
     case (_isMedic && {_hasMedicalVeh}): {
-        time + 8
+        time + (A3A_reviveTime / 3)
     };
     case (_isMedic): {
-        time + 12
+        time + (A3A_reviveTime / 2)
     };
     case (_hasMedicalVeh): {
-        time + 16
+        time + (A3A_reviveTime / 1.5)
     };
     default {
-        time + 24
+        time + A3A_reviveTime
     };
 };
 
@@ -183,9 +183,5 @@ if ((_sideX != side (group _medic)) and ((_sideX == Occupants) or (_sideX == Inv
     sleep 2;
 };
 _cured setVariable ["incapacitated",false,true];        // why is this applied later? check
-
-if (_isMedic && {_hasMedicalVeh}) then {
-    _cured setDamage 0;
-};
 
 true;

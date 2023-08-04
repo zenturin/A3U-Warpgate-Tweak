@@ -58,9 +58,34 @@ if (!isNil "isRallyPointPlaced" && {isRallyPointPlaced}) then {
         [localize "STR_dialogs_RP_header", localize "STR_dialogs_RP_comm_only_fail"] call SCRT_fnc_misc_deniedHint;
     };
 
-    vehiclePurchase_cost = _finalCost;
+    _cost = _finalCost;
 
-    private _extraMessage = format  [localize "STR_dialogs_RP_select_pos", vehiclePurchase_cost, A3A_faction_civ get "currencySymbol"];
+    private _extraMessage = format  [localize "STR_dialogs_RP_select_pos", _cost, A3A_faction_civ get "currencySymbol"];
+    private _fnc_placed = {
+        params ["_vehicle", "_cost"];
 
-    ["Land_TentSolar_01_folded_olive_F", "CREATERALLYPOINT", [], nil, nil, nil, false, _extraMessage] call HR_GRG_fnc_confirmPlacement;
+        private _factionMoney = server getVariable "resourcesFIA";
+        if (player == theBoss && {_cost <= _factionMoney}) then {
+            [0,(-1 * _cost)] remoteExec ["A3A_fnc_resourcesFIA",2];
+        }
+        else {
+            [-1 * _cost] call A3A_fnc_resourcesPlayer;
+            _vehicle setVariable ["ownerX",getPlayerUID player,true];
+        };
+
+        private _posWorld = getPosWorld _vehicle;
+        deleteVehicle _vehicle;
+        [_posWorld] call SCRT_fnc_rally_placeRallyPoint;
+
+        isRallyPointPlaced = true;
+    	publicVariable "isRallyPointPlaced";
+		petros sideRadio "SentGenBaseUnlockRespawn";
+    	[petros, "support", localize "STR_dialogs_RP_success"] remoteExec ["A3A_fnc_commsMP", 0];
+    };
+
+    private _fnc_check = {
+        [[(position player), 50] call A3A_fnc_enemyNearCheck, localize "STR_dialogs_RP_enemies_near_placement_fail"];
+    };
+
+    ["Land_TentSolar_01_folded_olive_F", _fnc_placed, _fnc_check, [_cost], nil, nil, nil, _extraMessage] call HR_GRG_fnc_confirmPlacement;
 };

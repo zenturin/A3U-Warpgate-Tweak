@@ -79,13 +79,6 @@ class CfgFunctions {
         	class loot_addActionLoot {};
         	class loot_removeActionLoot {};
         	class loot_createLootCrate {};
-        	class loot_addLootCrateActions {};
-		};
-
-		class Civilian {
-			file = QPATHTOFOLDER(Civilian);
-			class civilian_createCivilianPresence {};
-			class civilian_removeCivilianPresence {};
 		};
 
 		class Misc {

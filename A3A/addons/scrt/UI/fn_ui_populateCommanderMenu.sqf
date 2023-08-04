@@ -113,29 +113,47 @@ lbAdd [1750, localize "STR_commander_menu_chemba_title"];
 lbSetData [1750, 7, "CHEMICAL"];
 lbSetTooltip [1750, 7, localize "STR_commander_menu_chemba_tooltip"];
 
+private _hasVn = "VN" isEqualTo ((A3A_Reb_template splitString "_") select 0);
+
 if (napalmEnabled) then { 
 	lbAdd [1750, localize "STR_commander_menu_na_title"];
 	lbSetData [1750, 8, "NAPALM"];
 	lbSetTooltip [1750, 8, localize "STR_commander_menu_na_tooltip"];
 
-	lbAdd [1750, localize "STR_commander_menu_paradrop_title"];
-	lbSetData [1750, 9, "PARADROP"];
-	lbSetTooltip [1750, 9, localize "STR_commander_menu_paradrop_tooltip"];
-
-	if (lootCratesEnabled) then {
-		lbAdd [1750, localize "STR_commander_menu_loot_heli_title"];
-		lbSetData [1750, 10, "LOOTHELI"];
-		lbSetTooltip [1750, 10, localize "STR_commander_menu_loot_heli_tooltip"];
+	if (!_hasVn) then {
+		lbAdd [1750, localize "STR_commander_menu_paradrop_title"];
+		lbSetData [1750, 9, "PARADROP"];
+		lbSetTooltip [1750, 9, localize "STR_commander_menu_paradrop_tooltip"];
+		 
+		if (lootCratesEnabled) then {
+			lbAdd [1750, localize "STR_commander_menu_loot_heli_title"];
+			lbSetData [1750, 10, "LOOTHELI"];
+			lbSetTooltip [1750, 10, localize "STR_commander_menu_loot_heli_tooltip"];
+		};
+	} else {
+		if (lootCratesEnabled) then {
+			lbAdd [1750, localize "STR_commander_menu_loot_heli_title"];
+			lbSetData [1750, 9, "LOOTHELI"];
+			lbSetTooltip [1750, 9, localize "STR_commander_menu_loot_heli_tooltip"];
+		};
 	};
 } else {
-	lbAdd [1750, localize "STR_commander_menu_paradrop_title"];
-	lbSetData [1750, 8, "PARADROP"];
-	lbSetTooltip [1750, 8, localize "STR_commander_menu_paradrop_tooltip"];
-
-	if (lootCratesEnabled) then {
-		lbAdd [1750, localize "STR_commander_menu_loot_heli_title"];
-		lbSetData [1750, 9, "LOOTHELI"];
-		lbSetTooltip [1750, 9, localize "STR_commander_menu_loot_heli_tooltip"];
+	if (!_hasVn) then {
+		lbAdd [1750, localize "STR_commander_menu_paradrop_title"];
+		lbSetData [1750, 8, "PARADROP"];
+		lbSetTooltip [1750, 8, localize "STR_commander_menu_paradrop_tooltip"];
+		 
+		if (lootCratesEnabled) then {
+			lbAdd [1750, localize "STR_commander_menu_loot_heli_title"];
+			lbSetData [1750, 9, "LOOTHELI"];
+			lbSetTooltip [1750, 9, localize "STR_commander_menu_loot_heli_tooltip"];
+		};
+	} else {
+		if (lootCratesEnabled) then {
+			lbAdd [1750, localize "STR_commander_menu_loot_heli_title"];
+			lbSetData [1750, 8, "LOOTHELI"];
+			lbSetTooltip [1750, 98, localize "STR_commander_menu_loot_heli_tooltip"];
+		};
 	};
 };
 

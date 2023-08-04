@@ -49,11 +49,11 @@ private ["_garrison","_costs","_hr","_size"];
 // };
 
 
-private _watchpostFIA = if (_site in watchpostsFIA) then {true} else {false};
-private _roadblockFIA = if (_site in roadblocksFIA) then {true} else {false};
-private _aapostFIA = if (_site in aapostsFIA) then {true} else {false};
-private _atpostFIA = if (_site in atpostsFIA) then {true} else {false};
-private _hmgpostFIA = if (_site in hmgpostsFIA) then {true} else {false};
+private _watchpostFIA = _site in watchpostsFIA;
+private _roadblockFIA = _site in roadblocksFIA;
+private _aapostFIA = _site in aapostsFIA;
+private _atpostFIA = _site in atpostsFIA;
+private _hmgpostFIA = _site in hmgpostsFIA;
 
 _garrison = if (!_watchpostFIA) then {
 	garrison getVariable [_site,[]]
@@ -84,7 +84,7 @@ if (_typeX == "rem") then {
 			_costs = round (_costs * 0.75);
 		};
 		case (_roadblockFIA): {
-			_costs = [A3A_faction_reb get "vehicleLightArmed"] call A3A_fnc_vehiclePrice; //car with mg
+			_costs = [(A3A_faction_reb get "vehiclesLightArmed") # 0] call A3A_fnc_vehiclePrice; //car with mg
 			_hr = 1; //static gunner
 			{
 				_costs = _costs + (server getVariable [_x,0]);
@@ -93,7 +93,7 @@ if (_typeX == "rem") then {
 			_costs = round (_costs * 0.75);
 		};
 		case (_aapostFIA): {
-			_costs = [A3A_faction_reb get "staticAA"] call A3A_fnc_vehiclePrice; //AA
+			_costs = [(A3A_faction_reb get "staticAA") # 0] call A3A_fnc_vehiclePrice; //AA
 			_hr = 1; //static gunner
 			{
 				_costs = _costs + (server getVariable [_x,0]);
@@ -102,7 +102,7 @@ if (_typeX == "rem") then {
 			_costs = round (_costs * 0.75);
 		};
 		case (_atpostFIA): {
-			_costs = [A3A_faction_reb get "staticAT"] call A3A_fnc_vehiclePrice; //AT
+			_costs = [(A3A_faction_reb get "staticAT") # 0] call A3A_fnc_vehiclePrice; //AT
 			_hr = 1; //static gunner
 			{
 				_costs = _costs + (server getVariable [_x,0]);
@@ -111,7 +111,7 @@ if (_typeX == "rem") then {
 			_costs = round (_costs * 0.75);
 		};
 		case (_hmgpostFIA): {
-			_costs = [A3A_faction_reb get "staticMG"] call A3A_fnc_vehiclePrice; //HMG
+			_costs = [(A3A_faction_reb get "staticMGs") # 0] call A3A_fnc_vehiclePrice; //HMG
 			_hr = 1; //static gunner
 			{
 				_costs = _costs + (server getVariable [_x,0]);
@@ -121,13 +121,6 @@ if (_typeX == "rem") then {
 		};
 		default {
 			{
-				if (_x == (A3A_faction_reb get "unitCrew")) then {
-					if (_outpostFIA) then {
-						_costs = _costs + ([A3A_faction_reb get "vehicleLightArmed"] call A3A_fnc_vehiclePrice)
-					} else {
-						_costs = _costs + ([A3A_faction_reb get "staticMortar"] call A3A_fnc_vehiclePrice)
-					};
-				};
 				_hr = _hr + 1;
 				_costs = _costs + (server getVariable [_x,0]);
 			} forEach _garrison;
@@ -210,5 +203,9 @@ if (_typeX == "rem") then {
 		_ChildControl  ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable (A3A_faction_reb get "unitGL"), A3A_faction_civ get "currencySymbol"];
 		_ChildControl = _display displayCtrl 110;
 		_ChildControl  ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable (A3A_faction_reb get "unitSniper"), A3A_faction_civ get "currencySymbol"];
+		_ChildControl = _display displayCtrl 111;
+        _ChildControl  ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable (A3A_faction_reb get "unitAT"), A3A_faction_civ get "currencySymbol"];
+		_ChildControl = _display displayCtrl 112;
+        _ChildControl  ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable (A3A_faction_reb get "unitAA"), A3A_faction_civ get "currencySymbol"];
 	};
 };

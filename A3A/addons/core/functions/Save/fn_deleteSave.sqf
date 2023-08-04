@@ -37,7 +37,7 @@ private _savedPlayers = _namespace getVariable ["savedPlayers" + _postfix, []];
 	"chopForest", "nextTick", "weather", "destroyedBuildings", "aggressionOccupants",
 	"aggressionInvaders", "resourcesFIA", "hr", "staticsX", "jna_datalist",
 	"prestigeOPFOR", "prestigeBLUFOR", "garrison", "wurzelGarrison", "usesWurzelGarrison", "minesX",
-	"tasks", "idlebases", "idleassets", "killZones", "controlsSDK", "params",
+	"tasks", "killZones", "controlsSDK", "params",
 	"attackCountdownOccupants", "attackCountdownInvaders",
 	"savedPlayers", "testingTimerIsActive", "HR_Garage", "A3A_fuelAmountleftArray", "HQKnowledge", "enemyResources",
 	"version", "name", "saveTime", "ended", "factions", "addonVics", "DLC",

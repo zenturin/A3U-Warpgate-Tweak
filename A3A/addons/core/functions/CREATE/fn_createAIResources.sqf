@@ -1,31 +1,34 @@
-params ["_markerX"];
-
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 if (!isServer and hasInterface) exitWith{};
 
+params ["_markerX"];
+
 //Not sure if that ever happens, but it reduces redundance
 if(spawner getVariable _markerX == 2) exitWith {};
 
-Info_1("Spawning Resource Point %1", _markerX);
-
-private _positionX = getMarkerPos _markerX;
-private _size = [_markerX] call A3A_fnc_sizeMarker;
+ServerInfo_1("Spawning Airbase %1", _markerX);
 
 private _civs = [];
 private _soldiers = [];
 private _dogs = [];
 private _groups = [];
 private _vehiclesX = [];
+private _spawnsUsed = [];
+
+private _positionX = getMarkerPos _markerX;
+private _size = [_markerX] call A3A_fnc_sizeMarker;
 
 private _frontierX = [_markerX] call A3A_fnc_isFrontline;
 private _sideX = sidesX getVariable [_markerX,sideUnknown];
 private _faction = Faction(_sideX);
-private _isFIA = random 10 <= (tierWar + difficultyCoef) and {!(_frontierX)};
+
+private _isFIA = random 10 > (tierWar + difficultyCoef) and {!(_frontierX)};
 
 if (_frontierX) then {
-	private _roads = _positionX nearRoads _size;
-	if (count _roads != 0) then {
+	_roads = _positionX nearRoads _size;
+	if (count _roads != 0) then
+	{
 		private _dist = 0;
 		private _road = objNull;
 		{if ((position _x) distance _positionX > _dist) then {_road = _x;_dist = position _x distance _positionX}} forEach _roads;
@@ -36,39 +39,35 @@ if (_frontierX) then {
 
 		private _groupX = createGroup _sideX;
 		_groups pushBack _groupX;
+		private _pos = [getPos _road, 7, _dirveh + 270] call BIS_Fnc_relPos;
 
-		if (_faction getOrDefault ["noSandbag", false]) then {
-			private _pos = [getPos _road, 7, _dirveh + 270] call BIS_Fnc_relPos;
-			private _typeVehX = selectRandom (_faction get "staticATs");
+		if (_faction getOrDefault ["noSandbag", false]) then {		
+			private _typeVehX = selectRandom (_faction get "staticAT");
 			private _veh = _typeVehX createVehicle _positionX;
 			_vehiclesX pushBack _veh;
 			_veh setPos _pos;
 			_veh setDir _dirVeh + 180;
-
 			private _typeUnit = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTiered;
 			private _unit = [_groupX, _typeUnit, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
+			_unit moveInGunner _veh;
 			[_unit,_markerX] call A3A_fnc_NATOinit;
 			[_veh, _sideX] call A3A_fnc_AIVEHinit;
-			_unit moveInGunner _veh;
 			_soldiers pushBack _unit;
 		} else {
-			private _pos = [getPos _road, 7, _dirveh + 270] call BIS_Fnc_relPos;
 			private _bunker = (_faction get "sandbag") createVehicle _pos;
 			_vehiclesX pushBack _bunker;
-
 			_bunker setDir _dirveh;
 			_pos = getPosATL _bunker;
-			private _typeVehX = selectRandom (_faction get "staticATs");
+			private _typeVehX = selectRandom (_faction get "staticAT");
 			private _veh = _typeVehX createVehicle _positionX;
 			_vehiclesX pushBack _veh;
 			_veh setPos _pos;
 			_veh setDir _dirVeh + 180;
-
 			private _typeUnit = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTiered;
 			private _unit = [_groupX, _typeUnit, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
+			_unit moveInGunner _veh;
 			[_unit,_markerX] call A3A_fnc_NATOinit;
 			[_veh, _sideX] call A3A_fnc_AIVEHinit;
-			_unit moveInGunner _veh;
 			_soldiers pushBack _unit;
 		};
 	};
@@ -80,8 +79,7 @@ _mrk setMarkerSizeLocal [(distanceSPWN/2),(distanceSPWN/2)];
 _mrk setMarkerTypeLocal "hd_warning";
 _mrk setMarkerColorLocal "ColorRed";
 _mrk setMarkerBrushLocal "DiagGrid";
-_ang = markerDir _markerX;
-_mrk setMarkerDirLocal _ang;
+_mrk setMarkerDirLocal (markerDir _markerX);
 if (!debug) then {_mrk setMarkerAlphaLocal 0};
 
 //maybe it's no longer needed after all..?
@@ -92,7 +90,7 @@ if (_additionalGarrison isNotEqualTo []) then {
 		private _group = [_positionX, _sideX, _groupTypes, false, true] call A3A_fnc_spawnGroup;
 		if !(isNull _group) then {
 			sleep 1;
-			_nul = [leader _group, _mrk, "SAFE","SPAWNED", "RANDOM", "NOVEH2"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
+			[_group, "Patrol_Area", 25, 150, 300, false, [], false] call A3A_fnc_patrolLoop;
 			_groups pushBack _group;
 			{[_x] call A3A_fnc_NATOinit; _soldiers pushBack _x} forEach units _group;
 		};
@@ -121,48 +119,33 @@ _flagX allowDamage false;
 _vehiclesX pushBack _flagX;
 if (flagTexture _flagX != (_faction get "flagTexture")) then {[_flagX,(_faction get "flagTexture")] remoteExec ["setFlagTexture",_flagX]};
 
-if (!(_markerX in destroyedSites)) then
-{
-	if (daytime > 8 and {daytime < 18}) then
-	{
-		private _groupX = createGroup civilian;
-		_groups pushBack _groupX;
-		for "_i" from 1 to 4 do {
-			private _civ = [_groupX, FactionGet(civ, "unitWorker"), _positionX, [],0, "NONE"] call A3A_fnc_createUnit;
-			_civ call A3A_fnc_CIVinit;
-			_civs pushBack _civ;
-			_civ setVariable ["markerX",_markerX,true];
-			sleep 0.5;
-			_civ addEventHandler ["Killed", {
-				if (({alive _x} count (units group (_this select 0))) == 0) then
-				{
-					_markerX = (_this select 0) getVariable "markerX";
-					_nameX = [_markerX] call A3A_fnc_localizar;
-					destroyedSites pushBackUnique _markerX;
-					publicVariable "destroyedSites";
-					["TaskFailed", ["", format [localize "STR_notifiers_resourcefactory_destoyed",_nameX]]] remoteExec ["BIS_fnc_showNotification",[teamPlayer,civilian]];
-				};
-			}];
-		};
-		//_nul = [_markerX,_civs] spawn destroyCheck;
-		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "SPAWNED","NOFOLLOW", "NOSHARE","DORELAX","NOVEH2"] spawn UPSMON_fnc_UPSMON;//TODO need delete UPSMON link
-	};
+private _spawnedCivilians = [_markerX, 4] call A3A_fnc_createResourceCiv;
+if !(isNil "_spawnedCivilians") then {
+	_groups pushBack (_spawnedCivilians # 0);
+	_civs append (_spawnedCivilians # 1);
 };
 
 private _spawnParameter = [_markerX, "Vehicle"] call A3A_fnc_findSpawnPosition;
+private _veh = nil;
+
 if (_spawnParameter isEqualType []) then {
+	_spawnsUsed pushBack _spawnParameter#2;
 	private _typeVehX = call {
 		if (FactionGet(civ,"vehiclesCivRepair") isEqualTo [] and random 1 < 0.1) exitWith { selectRandom (_faction get "vehiclesRepairTrucks") };
 		if (FactionGet(civ,"vehiclesCivFuel") isEqualTo [] and random 1 < 0.1) exitWith { selectRandom (_faction get "vehiclesFuelTrucks") };
 		private _types = if (!_isFIA) then {
-			(_faction get "vehiclesTrucks") + (_faction get "vehiclesCargoTrucks") + (_faction get "vehiclesMedical")
+			(_faction get "vehiclesTrucks") + (_faction get "vehiclesCargoTrucks")
 		} else {
 			_faction get "vehiclesMilitiaTrucks"
 		};
+		_types = _types select { _x in FactionGet(all,"vehiclesCargoTrucks") };
+		if (count _types == 0) then { (_faction get "vehiclesCargoTrucks") } else { _types };
 		selectRandom _types;
 	};
-	_veh = createVehicle [_typeVehX, (_spawnParameter select 0), [], 0, "NONE"];
-	_veh setDir (_spawnParameter select 1);
+	isNil {
+		_veh = createVehicle [_typeVehX, (_spawnParameter select 0), [], 0, "NONE"];
+		_veh setDir (_spawnParameter select 1);
+	};
 	_vehiclesX pushBack _veh;
 	[_veh, _sideX] call A3A_fnc_AIVEHinit;
 	sleep 1;
@@ -181,27 +164,33 @@ while {_countX <= _radiusX} do {
 
 for "_i" from 0 to (count _array - 1) do {
 	_groupX = if (_i == 0) then {
-		[_positionX,_sideX, (_array select _i),true,false] call A3A_fnc_spawnGroup
+		[_positionX,_sideX, (_array select _i),true, false] call A3A_fnc_spawnGroup;
 	} else {
-		[_positionX,_sideX, (_array select _i),false,true] call A3A_fnc_spawnGroup
+		private _spawnPosition = [_positionX, 10, 50, 5, 0, -1, 0] call A3A_fnc_getSafePos;
+		[_spawnPosition, _sideX, (_array select _i), false, true] call A3A_fnc_spawnGroup
 	};
 	_groups pushBack _groupX;
+
 	{
-		[_x,_markerX] call A3A_fnc_NATOinit;
+		[_x, _markerX] call A3A_fnc_NATOinit;
 		_soldiers pushBack _x;
 	} forEach units _groupX;
+
 	if (_i == 0) then {
-		//Can't we just precompile this and call this like every other funtion? Would save some time
-		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE", "RANDOMUP","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
+		private _garrisonGroup = [_groupX, getMarkerPos _markerX, _size] call A3A_fnc_patrolGroupGarrison;
+		if (count _garrisonGroup > 0) then {
+			_groups append _garrisonGroup;
+		};
 	} else {
-		_nul = [leader _groupX, _markerX, "LIMITED", "SAFE","SPAWNED", "RANDOM","NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
+		[_groupX, "Patrol_Defend", 0, 100, -1, true, _positionX, false] call A3A_fnc_patrolLoop;
 	};
-};//TODO need delete UPSMON link
+};
+
 ["locationSpawned", [_markerX, "Resource", true]] call EFUNC(Events,triggerEvent);
 
 waitUntil {sleep 1; (spawner getVariable _markerX == 2)};
 
-[_markerX] call A3A_fnc_freeSpawnPositions;
+_spawnsUsed call A3A_fnc_freeSpawnPositions;
 
 deleteMarker _mrk;
 

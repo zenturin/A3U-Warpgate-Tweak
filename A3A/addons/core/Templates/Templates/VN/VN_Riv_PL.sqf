@@ -20,7 +20,7 @@
 ["vehiclesRivalsLightArmed", ["vn_o_wheeled_btr40_mg_02_pl", "vn_o_wheeled_btr40_mg_01_pl", "vn_o_wheeled_btr40_mg_03_pl", "vn_o_wheeled_z157_mg_01_pl", "vn_o_wheeled_z157_mg_02_pl"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsTrucks", ["vn_o_wheeled_z157_01_pl", "vn_o_wheeled_z157_02_pl"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsCars", ["vn_o_wheeled_btr40_01_pl"]] call _fnc_saveToTemplate;
-["vehiclesRivalsAPCs", ["vn_o_wheeled_btr40_mg_01_pl", "vn_o_wheeled_btr40_mg_02_pl"]] call _fnc_saveToTemplate;
+["vehiclesRivalsAPCs", ["vn_o_wheeled_btr40_mg_01_pl", "vn_o_wheeled_btr40_mg_02_pl", "vn_o_wheeled_btr40_mg_04_pl"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsTanks", ["vn_o_armor_pt76a_01_pl"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsHelis", ["vn_o_air_mi2_01_01"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", []] call _fnc_saveToTemplate;			
@@ -133,10 +133,12 @@ _loadoutData set ["rifles", [
 	["vn_type56", "", "vn_b_type56", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""],
 	["vn_sks", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
 	["vn_sks", "", "vn_b_sks", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
-	["vn_m1_garand", "", "", "", ["vn_m1_garand_mag", "vn_m1_garand_mag", "vn_m1_garand_t_mag"], [], ""],
-	["vn_m1_garand", "", "vn_b_m1_garand", "", ["vn_m1_garand_mag", "vn_m1_garand_mag", "vn_m1_garand_t_mag"], [], ""]
+	["vn_k98k", "", "", "", ["vn_k98k_mag", "vn_k98k_t_mag", "vn_k98k_mag"], [], ""],
+	["vn_k98k", "", "vn_b_k98k", "vn_o_1_5x_k98k", ["vn_k98k_mag", "vn_k98k_t_mag", "vn_k98k_mag"], [], ""]
 ]];
 _loadoutData set ["tunedRifles", [
+	["vn_kbkg", "", "", "", ["vn_kbkg_mag", "vn_kbkg_mag", "vn_kbkg_t_mag"], [], ""],
+	["vn_kbkg", "", "", "", ["vn_kbkg_mag", "vn_kbkg_mag", "vn_kbkg_t_mag"], [], ""],
 	["vn_type56", "", "", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""],
 	["vn_type56", "", "vn_b_type56", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""]
 ]];
@@ -157,6 +159,8 @@ _loadoutData set ["carbines", [
 	["vn_pps43", "", "", "", ["vn_pps_mag", "vn_pps_mag", "vn_pps_t_mag"], [], ""]
 ]];
 _loadoutData set ["grenadeLaunchers", [
+	["vn_kbkg_gl", "", "", "", ["vn_kbkg_mag", "vn_kbkg_mag", "vn_kbkg_t_mag"], ["vn_20mm_f1n60_frag_mag", "vn_20mm_kgn_frag_mag", "vn_20mm_pgn60_heat_mag"], ""],
+	["vn_kbkg_gl", "", "", "", ["vn_kbkg_mag", "vn_kbkg_mag", "vn_kbkg_t_mag"], ["vn_20mm_f1n60_frag_mag", "vn_20mm_dgn_wp_mag", "vn_20mm_pgn60_heat_mag"], ""],
 	["vn_sks_gl", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], ["vn_22mm_m60_frag_mag", "vn_22mm_m19_wp_mag", "vn_22mm_m60_heat_mag", "vn_22mm_m22_smoke_mag"], ""],
 	["vn_sks_gl", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], ["vn_22mm_m60_frag_mag", "vn_22mm_m22_smoke_mag", "vn_22mm_lume_mag"], ""],
 	["vn_m1_garand_gl", "", "", "", ["vn_m1_garand_mag", "vn_m1_garand_mag", "vn_m1_garand_t_mag"], ["vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag", "vn_22mm_m19_wp_mag"], ""],
@@ -164,19 +168,16 @@ _loadoutData set ["grenadeLaunchers", [
 ]];
 _loadoutData set ["machineGuns", [
 	["vn_rpd", "", "", "", ["vn_rpd_100_mag"], [], ""],
-	["vn_rpd", "", "", "", ["vn_rpd_100_mag"], [], ""],
-	["vn_m1918", "", "", "", ["vn_m1918_mag", "vn_m1918_mag", "vn_m1918_t_mag"], [], "vn_bipod_m1918"],
-	["vn_m1918", "", "", "", ["vn_m1918_mag", "vn_m1918_mag", "vn_m1918_t_mag"], [], ""],
-	"vn_dp28", 
+	["vn_mg42", "", "", "", ["vn_mg42_50_mag", "vn_mg42_50_mag", "vn_mg42_50_t_mag"], [], ""],
 	"vn_dp28"
 ]];
 _loadoutData set ["marksmanRifles", [
-	["vn_sks", "", "", "vn_o_3x_m9130", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
-	["vn_m1_garand", "", "", "vn_o_3x_m84", ["vn_m1_garand_mag", "vn_m1_garand_mag", "vn_m1_garand_t_mag"], [], ""]
+	["vn_sks", "", "", "vn_o_3x_sks", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
+	["vn_k98k", "", "vn_b_k98k", "vn_o_1_5x_k98k", ["vn_k98k_mag", "vn_k98k_t_mag", "vn_k98k_mag"], [], "vn_b_camo_k98k"]
 ]];
 _loadoutData set ["ATLaunchers", ["vn_rpg2"]];
 _loadoutData set ["AALaunchers", ["vn_sa7"]];
-_loadoutData set ["sidearms", ["vn_pm", "vn_m10", "vn_m712", "vn_m1911", "vn_izh54_p"]];
+_loadoutData set ["sidearms", ["vn_pm", "vn_m10", "vn_m712", "vn_m1911", "vn_izh54_p", "vn_type64"]];
 
 //////////////////////////
 //    Misc Loadouts     //

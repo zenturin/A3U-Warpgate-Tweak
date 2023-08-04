@@ -9,11 +9,7 @@ private _mounted = false;
 private _veh = objNull;
 private _sideX = side _groupX;
 private _faction = Faction(_sideX);
-private _typeVehX = if (_sideX == teamPlayer) then {
-	if !(_isMortar) then { _faction get "staticMG" } else { _faction get "staticMortar" };
-} else {
-	selectRandom (if !(_isMortar) then { _faction get "staticMGs" } else { _faction get "staticMortars" });
-};
+private _typeVehX = selectRandom (if !(_isMortar) then { _faction get "staticMGs" } else { _faction get "staticMortars" });
 private _backpckG = backPack _gunner;
 private _backpckA = backpack _helperX;
 while {(alive _gunner)} do

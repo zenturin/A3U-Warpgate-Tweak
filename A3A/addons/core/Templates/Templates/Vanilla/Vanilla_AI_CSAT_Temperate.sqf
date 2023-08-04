@@ -93,17 +93,18 @@ private _policeVehs = if (_hasContact) then {
 
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
-["staticMGs", ["O_T_HMG_01_high_F", "O_T_HMG_01_high_F", "O_T_HMG_01_high_F", "O_T_GMG_01_high_F"]] call _fnc_saveToTemplate;
-["staticATs", ["O_T_Static_AT_F"]] call _fnc_saveToTemplate;
-["staticAAs", ["O_T_Static_AA_F"]] call _fnc_saveToTemplate;
-["staticMortars", ["O_T_Mortar_01_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["O_HMG_01_high_F", "O_HMG_01_high_F", "O_HMG_01_high_F", "O_GMG_01_high_F"]] call _fnc_saveToTemplate;
+["staticAT", ["O_static_AT_F"]] call _fnc_saveToTemplate;
+["staticAA", ["O_static_AA_F"]] call _fnc_saveToTemplate;
+["staticMortars", ["O_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 
-["vehicleRadar", "O_T_Radar_System_02_F"] call _fnc_saveToTemplate;
-["vehicleSam", "O_T_SAM_System_04_F"] call _fnc_saveToTemplate;
+["vehicleRadar", "O_Radar_System_02_F"] call _fnc_saveToTemplate;
+["vehicleSam", "O_SAM_System_04_F"] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
+["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
 
@@ -112,7 +113,6 @@ private _policeVehs = if (_hasContact) then {
 ["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
 
 if (_hasTanks) then {
-
     _tanks append ["O_T_MBT_04_cannon_F", "O_T_MBT_04_command_F"];
 };
 
@@ -174,10 +174,7 @@ if (_hasWs) then {
         "lxWS_African_Head_04",
         "lxWS_Said_Head",
         "lxWS_African_Head_Old_Bard",
-        "lxWS_African_Head_03",
-        "PersianHead_A3_06",
-        "PersianHead_A3_07",
-        "PersianHead_A3_05"
+        "lxWS_African_Head_03"
     ];
 };
 ["milFaces", _faces] call _fnc_saveToTemplate;
@@ -594,8 +591,7 @@ private _marksmanRifles = [
 if (_hasWs) then {
     _rifles = [
         ["arifle_Velko_lxWS", "", "acc_flashlight", "", ["35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_tracer_green_lxWS"], [], ""],
-        ["arifle_Velko_lxWS", "", "acc_flashlight", "", ["35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_tracer_green_lxWS"], [], ""],
-        ["arifle_Galat_lxWS", "", "acc_flashlight", "", ["30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Tracer_Green_F"], [], ""]
+        ["arifle_Velko_lxWS", "", "acc_flashlight", "", ["35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_tracer_green_lxWS"], [], ""]
     ];
     _carbines = [
         ["arifle_VelkoR5_lxWS", "", "acc_flashlight", "", ["35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_reload_tracer_green_lxWS", "35Rnd_556x45_Velko_tracer_green_lxWS"], [], ""]

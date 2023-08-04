@@ -13,7 +13,7 @@ _unit setVariable ["surrendered", true, true];
 if (typeOf _unit == "Fin_random_F") exitWith {};		// dogs do not surrender?
 
 if (!alive _unit) exitWith {};							// Used to happen with ACE, seems to be fixed
-if (lifeState _unit isEqualTo "INCAPACITATED") exitWith {
+if (lifeState _unit == "INCAPACITATED") exitWith {
     Info("Unit attempted to surrender while incapacitated"); // If not rare, probably a sync bug
 	_unit setVariable ["surrendered", false, true];
 };
@@ -54,10 +54,7 @@ private _surrenderCrateType = if (_unit getVariable ["isRival", false]) then {
 };
 private _boxX = _surrenderCrateType createVehicle position _unit;
 _boxX allowDamage false;
-clearMagazineCargoGlobal _boxX;
-clearWeaponCargoGlobal _boxX;
-clearItemCargoGlobal _boxX;
-clearBackpackCargoGlobal _boxX;
+[_boxX] call A3A_fnc_initObject;
 
 if (_unit getVariable ["hasLaptop", false] && {!(_unit getVariable ["hasLaptopSpawned", false])}) then {
 	[_unit] call SCRT_fnc_rivals_createLaptop;
