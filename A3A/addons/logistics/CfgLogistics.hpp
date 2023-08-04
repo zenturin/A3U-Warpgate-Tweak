@@ -6,16 +6,26 @@ class DOUBLES(ADDON,Nodes)
         canLoadWeapon = 1; //if the vehicle can load weapons
     };
 
+    #include "Nodes\3CBBAF.hpp"
     #include "Nodes\3CBFactions.hpp"
     #include "Nodes\CUP.hpp"
     #include "Nodes\D3S.hpp"
     #include "Nodes\GM.hpp"
     #include "Nodes\RDS.hpp"
     #include "Nodes\RHS.hpp"
+    #include "Nodes\RNT.hpp"
+    #include "Nodes\SPE.hpp"
+    #include "Nodes\IFA.hpp"
+    #include "Nodes\UNS.hpp"
     #include "Nodes\Vanilla.hpp"
+    #include "Nodes\OPTRE.hpp" // has to be here. It uses the classes from vanilla trucks
     #include "Nodes\VN.hpp"
     #include "Nodes\WS.hpp"
     #include "Nodes\Aegis.hpp"
+    #include "Nodes\CW.hpp"
+    #include "Nodes\FFAA.hpp"
+    #include "Nodes\PED.hpp"
+    #include "Nodes\JMS.hpp"
 };
 
 class DOUBLES(ADDON,Cargo)
@@ -32,12 +42,19 @@ class DOUBLES(ADDON,Cargo)
 
     #include "Cargo\3CBFactions.hpp"
     #include "Cargo\ACE.hpp"
+    #include "Cargo\BWA3.hpp"
     #include "Cargo\CUP.hpp"
     #include "Cargo\GM.hpp"
     #include "Cargo\RHS.hpp"
+    #include "Cargo\IFA.hpp"
+    #include "Cargo\SPE.hpp"
+    #include "Cargo\UNS.hpp"
     #include "Cargo\Vanilla.hpp"
+    #include "Cargo\OPTRE.hpp" // has to be here. It uses the class for the vanilla fuel drum
     #include "Cargo\VN.hpp"
     #include "Cargo\WS.hpp"
+    #include "Cargo\CW.hpp"
+    #include "Cargo\FFAA.hpp"
 
 };
 
