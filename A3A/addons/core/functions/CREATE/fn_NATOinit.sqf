@@ -193,7 +193,7 @@ if (sunOrMoon < 1) then {
     } else {
         private _arr = (allNVGs arrayIntersect (items _unit));
         if (_arr isNotEqualTo [] || {_hmd != ""}) then {
-            if ((10 - tierWar) > random 10 && {!haveNV && {_unit != leader (group _unit)}}) then {
+            if ((10 - tierWar) > random 10 && {_unit != leader (group _unit)}) then {
                 if (_hmd == "") then {
                     _hmd = _arr select 0;
                     _unit removeItem _hmd;

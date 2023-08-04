@@ -210,13 +210,18 @@ while {true} do
 							{
 							[_x,_nearX] call A3A_fnc_suppressingFire;
 							} forEach _baseOfFire select {(_x getVariable ["typeOfSoldier",""] == "MGMan") or (_x getVariable ["typeOfSoldier",""] == "StaticGunner")};
+
 							if (sunOrMoon < 1) then
 								{
-								if !(haveNV) then
-									{
-										{
-											[_x,_nearX] call A3A_fnc_suppressingFire;
-										} forEach _baseOfFire select {(_x getVariable ["typeOfSoldier",""] == "Normal") and (count (getArray (configfile >> "CfgWeapons" >> primaryWeapon _x >> "muzzles")) == 2)};
+									private _noNvgIndex = (units _groupX) findIf {hmd _x == "" || {getArray (configFile >> "CfgWeapons" >> (hmd _x) >> "visionMode") isEqualTo ["Normal","Normal"]}};	
+									if (_noNvgIndex != -1) then {
+										if (([_LeaderX] call A3A_fnc_canFight) and (primaryWeapon _LeaderX in allGrenadeLaunchers)) then {
+											[_LeaderX,_nearX] call A3A_fnc_useFlares
+										} else {
+											{
+												[_x,_nearX] call A3A_fnc_suppressingFire;
+											} forEach _baseOfFire select {(_x getVariable ["typeOfSoldier",""] == "Normal") and (count (getArray (configfile >> "CfgWeapons" >> primaryWeapon _x >> "muzzles")) == 2)};
+										};
 									};
 								};
 							};

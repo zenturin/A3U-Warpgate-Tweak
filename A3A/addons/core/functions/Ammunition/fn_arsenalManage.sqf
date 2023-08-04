@@ -107,7 +107,6 @@ _sortedNVs sort true;		// sort by count, ascending
 
 while {_totalNV >= minWeaps} do {
 	private _nvToUnlock = (_sortedNVs deleteAt (count _sortedNVs - 1)) select 1;
-	haveNV = true; publicVariable "haveNV";
 	[_nvToUnlock] call A3A_fnc_unlockEquipment;
 	_updated = format ["%1%2<br/>",_updated,getText (configFile >> "CfgWeapons" >> _nvToUnlock >> "displayName")];
 	_totalNV =_totalNV - minWeaps;		// arguably wrong but doesn't matter in practice
