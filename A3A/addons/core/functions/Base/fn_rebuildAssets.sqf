@@ -32,7 +32,7 @@ switch (true) do {
 	};
 
 	case (!isNull _antennaDead): {
-		private _militaryBuildings = nearestObjects [_position, listMilBld, 500,  true];
+		private _militaryBuildings = nearestObjects [_position, A3A_buildingWhitelist, 500,  true];
 
 		{
 			[_x] remoteExec ["A3A_fnc_repairRuinedBuilding", 2];
@@ -50,7 +50,7 @@ switch (true) do {
 	};
 
 	default {
-		private _militaryBuildings = nearestObjects [_position, listMilBld, 500,  true];
+		private _militaryBuildings = nearestObjects [_position, A3A_buildingWhitelist, 500,  true];
 
 		{
 			[_x] remoteExec ["A3A_fnc_repairRuinedBuilding", 2];

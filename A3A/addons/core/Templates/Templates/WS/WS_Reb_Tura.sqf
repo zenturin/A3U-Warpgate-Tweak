@@ -13,30 +13,27 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagTexture", "\lxws\data_f_lxws\img\Flags\flag_Argana_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "lxWS_flag_Argana"] call _fnc_saveToTemplate;
 
-["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "I_G_Offroad_01_F"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "I_G_Offroad_01_armed_F"] call _fnc_saveToTemplate;
-["vehicleTruck", "I_G_Van_01_transport_F"] call _fnc_saveToTemplate;
-["vehicleAT", "I_Tura_Offroad_armor_AT_lxWS"] call _fnc_saveToTemplate;
-["vehicleAA", "I_G_Offroad_01_AT_F"] call _fnc_saveToTemplate;
+["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["I_G_Offroad_01_F"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["I_G_Offroad_01_armed_F"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["I_G_Van_01_transport_F"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["I_Tura_Offroad_armor_AT_lxWS"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["I_G_Offroad_01_AT_F"]] call _fnc_saveToTemplate;
 
-["vehicleBoat", "I_C_Boat_Transport_02_F"] call _fnc_saveToTemplate;
-["vehicleRepair", "I_G_Offroad_01_repair_F"] call _fnc_saveToTemplate;
+["vehiclesBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
 
-["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclesPlane", ["I_C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "C_Offroad_lxWS"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "C_Truck_02_transport_F"] call _fnc_saveToTemplate;
-["vehicleCivHeli", "C_Heli_Light_01_civil_F"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
-["vehicleCivBoxSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
+["vehiclesCivCar", ["C_Offroad_lxWS"]] call _fnc_saveToTemplate;
+["vehiclesCivTruck", ["C_Truck_02_transport_F"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat", ["C_Rubberboat"]] call _fnc_saveToTemplate;
 
-["staticMG", "I_G_HMG_02_high_F"] call _fnc_saveToTemplate;
-["staticAT", "I_static_AT_F"] call _fnc_saveToTemplate;
-["staticAA", "I_Tura_ZU23_lxWS"] call _fnc_saveToTemplate;
+["staticMGs", ["I_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
+["staticAT", ["I_static_AT_F"]] call _fnc_saveToTemplate;
+["staticAA", ["I_Tura_ZU23_lxWS"]] call _fnc_saveToTemplate;
 
-["staticMortar", "I_G_Mortar_01_F"] call _fnc_saveToTemplate;
+["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
 
@@ -84,9 +81,9 @@ private _initialRebelEquipment = [
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
 ];
 
-private _civilianBackpacks =  [];
+private _backpacks =  [];
 if (_hasLawsOfWar) then {
-    _civilianBackpacks append [
+    _backpacks append [
         "B_Messenger_Black_F", 
         "B_Messenger_Coyote_F", 
         "B_Messenger_Gray_F",
@@ -96,12 +93,10 @@ if (_hasLawsOfWar) then {
         "B_LegStrapBag_olive_F"
     ];
 } else {
-    _civilianBackpacks append ["B_FieldPack_blk","B_AssaultPack_blk"];
+    _backpacks append ["B_FieldPack_blk","B_AssaultPack_blk"];
 };
 
-["civilianBackpacks", _civilianBackpacks createHashMapFromArray []] call _fnc_saveToTemplate;
-
-_initialRebelEquipment append _civilianBackpacks;
+_initialRebelEquipment append _backpacks;
 
 
 if (_hasContact) then {
@@ -128,6 +123,7 @@ if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc15
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment append ["TFAR_anprc155","TFAR_anprc155_coyote"]};
+_initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [

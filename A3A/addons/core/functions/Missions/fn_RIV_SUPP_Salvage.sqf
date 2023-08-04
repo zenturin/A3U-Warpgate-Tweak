@@ -134,7 +134,7 @@ private _crewClasses = [
 	A3A_faction_reb get "unitEng"
 ];
 
-private _truckClass = A3A_faction_reb get "vehicleTruck";
+private _truckClass = selectRandom (A3A_faction_reb get "vehiclesTruck");
 private _truck = createVehicle [_truckClass, [_startingRoadPosition select 0, _startingRoadPosition select 1, 0.9], [], 0, "CAN_COLLIDE"];
 _truck setDir _dirVeh;
 _truck setDamage (random [0.3,0.5,0.7]);
@@ -183,9 +183,6 @@ waitUntil {
 
 
 Info("Setting things in motion...");
-
-private _barricadeMrk = nil;
-private _truckMrk = nil;
 
 if (dateToNumber date < _dateLimitNum) then {
 	for "_i" from 0 to round (random [3,5,6]) do {
@@ -296,34 +293,21 @@ if (dateToNumber date < _dateLimitNum) then {
 		(_faction get "groupsFireteam")
 	};
 
-	_barricadeMrk = createMarkerLocal [format ["%1patrolarea", floor random 10000], _barricadePos];
-	_barricadeMrk setMarkerShapeLocal "RECTANGLE";
-	_barricadeMrk setMarkerSizeLocal [50,50];
-	_barricadeMrk setMarkerTypeLocal "hd_warning";
-	_barricadeMrk setMarkerColorLocal "ColorRed";
-	_barricadeMrk setMarkerBrushLocal "DiagGrid";
-	_barricadeMrk setMarkerAlphaLocal 0;
-
 	private _barricadePatrolGroup = [_barricadePos, Rivals, (selectRandom _patrolPool)] call A3A_fnc_spawnGroup;
 	(units _barricadePatrolGroup) apply {
 		[_x,""] call A3A_fnc_NATOinit;
 	};
-	_nul = [leader _barricadePatrolGroup, _barricadeMrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
-	_groups pushBack _barricadePatrolGroup;
 
-	_truckMrk = createMarkerLocal [format ["%1patrolarea", floor random 10000], _barricadePos];
-	_truckMrk setMarkerShapeLocal "RECTANGLE";
-	_truckMrk setMarkerSizeLocal [50,50];
-	_truckMrk setMarkerTypeLocal "hd_warning";
-	_truckMrk setMarkerColorLocal "ColorRed";
-	_truckMrk setMarkerBrushLocal "DiagGrid";
-	_truckMrk setMarkerAlphaLocal 0;
+	[_barricadePatrolGroup, "Patrol_Defend", 0, 200, -1, true, _barricadePos, false] call A3A_fnc_patrolLoop;
+	_groups pushBack _barricadePatrolGroup;
 
 	private _truckPatrolGroup = [_startingRoadPosition, Rivals, (selectRandom _patrolPool)] call A3A_fnc_spawnGroup;
 	(units _truckPatrolGroup) apply {
 		[_x,""] call A3A_fnc_NATOinit;
 	};
-	_nul = [leader _truckPatrolGroup, _truckMrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
+
+	[_truckPatrolGroup, "Patrol_Area", 50, 150, 250, true, (position _truck), false] call A3A_fnc_patrolLoop;
+
 	_groups pushBack _truckPatrolGroup;
 };
 
@@ -367,14 +351,6 @@ switch(true) do {
 };
 
 sleep 30;
-
-if (!isNil "_barricadeMrk") then {
-	deleteMarker _barricadeMrk;
-};
-
-if (!isNil "_truckMrk") then {
-	deleteMarker _truckMrk;
-};
 
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;

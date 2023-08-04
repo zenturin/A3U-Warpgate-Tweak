@@ -10,9 +10,13 @@
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_fuel_tank">
                 <Original>Fuel Tank</Original>
-                <Russian>Топливный бак</Russian>
+                <Russian>Топливная цистерна</Russian>
                 <Chinesesimp>油箱</Chinesesimp>
                 <Korean>연료탱크</Korean>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_fuel_drum">
+                <Original>Fuel Drum</Original>
+                <Russian>Бочка с топливом</Russian>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_light">
                 <Original>Light</Original>
@@ -25,6 +29,22 @@
                 <Russian>Ящик c наборами восстановления боеспособности</Russian>
                 <Chinesesimp>装有战备恢复包的盒子</Chinesesimp>
                 <Korean>전투 준비 복구 키트가 든 상자</Korean>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_medical_tent">
+                <Original>Medical Tent</Original>
+                <Russian>Медицинская палатка</Russian>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_ammo_station">
+                <Original>Ammo Station</Original>
+                <Russian>Пункт боепитания</Russian>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_repair_station">
+                <Original>Repair Station</Original>
+                <Russian>Пункт ремонта</Russian>
+            </Key>
+            <Key ID="STR_A3AP_buyvehdialog_medical_box">
+                <Original>Medical Box</Original>
+                <Russian>Коробка с медициной</Russian>
             </Key>
         </Container>
         <Container name="arsenal">
@@ -3858,6 +3878,14 @@
                 <Chinesesimp>民用交通</Chinesesimp>
                 <Korean>민간인 밀집도</Korean>
             </Key>
+            <Key ID="STR_params_global_civilian_max">
+                <Original>Maximum civilians on server</Original>
+                <Russian>Максимальное количество гражданских на сервере</Russian>
+            </Key>
+            <Key ID="STR_params_civ_per_town">
+                <Original>Maximum civilians per town</Original>
+                <Russian>Максимальное количество гражданских на населенный пункт</Russian>
+            </Key>
             <Key ID="STR_params_civ_traffic_none">
                 <Original>None</Original>
                 <Russian>Отсутствует</Russian>
@@ -3978,23 +4006,13 @@
                 <Chinesesimp>永远</Chinesesimp>
                 <Korean>항상</Korean>
             </Key>
-            <Key ID="STR_params_cup">
-                <Original>CUP SETTINGS</Original>
-                <Russian>НАСТРОЙКИ CUP</Russian>
-                <Chinesesimp>CUP设置</Chinesesimp>
-                <Korean>CUP 설정</Korean>
+            <Key ID="STR_params_gc_threshold">
+                <Original>Garbage Cleaner Threshold for Automatic Garbage Collection (in hours)</Original>
+                <Russian>Порог активации сборщика мусора (в часах)</Russian>
             </Key>
-            <Key ID="STR_params_rhs">
-                <Original>RHS SETTINGS</Original>
-                <Russian>НАСТРОЙКИ RHS</Russian>
-                <Chinesesimp>RHS设置</Chinesesimp>
-                <Korean>RHS 설정</Korean>
-            </Key>
-            <Key ID="STR_params_3cbf">
-                <Original>3CB Factions SETTINGS</Original>
-                <Russian>НАСТРОЙКИ 3CB Factions</Russian>
-                <Chinesesimp>3CB派系设置</Chinesesimp>
-                <Korean>3CB Factions 설정</Korean>
+            <Key ID="STR_params_revive_time">
+                <Original>Revive time for players (in seconds)</Original>
+                <Russian>Время до поднятия игрока на ноги (в секундах)</Russian>
             </Key>
             <Key ID="STR_params_antistasi_plus">
                 <Original>ANTISTASI PLUS PARAMETERS</Original>
@@ -4889,22 +4907,18 @@
                 <Korean>당신은 도로로부터 너무 멀리 떨어져 있습니다!</Korean>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_items_1">
-                <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearning a non-civilian backpack&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform!</Original>
-                <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы носите негражданский рюкзак&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме!</Russian>
-                <Chinesesimp>你不能在伪装模式下：&lt;br/&gt;&lt;br/&gt;带任何可见的武器&lt;br/&gt;穿着防弹衣或装备&lt;br/&gt;穿着非平民背包&lt;br/&gt;戴头盔&lt;br/&gt;戴夜视仪&lt;br/&gt;穿军装！</Chinesesimp>
-                <Korean>다음을 착용하는 동안에는 위장이 불가능합니다!:&lt;br/&gt;&lt;br/&gt;무기가 보임&lt;br/&gt;조끼를 입음&lt;br/&gt;민간용이 아닌 가방을 맴&lt;br/&gt;헬멧을 착용함&lt;br/&gt;야시경 착용함&lt;br/&gt;군복 착용함</Korean>
+                <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform!</Original>
+                <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме!</Russian>
+            </Key>
+            <Key ID="STR_info_bar_undercover_break_reason_mil_items_2">
+                <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform&lt;br/&gt;Enemy have added you to Wanted list!</Original>
+                <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_carry">
                 <Original>You're looking very suspicious while carrying military-grade items, and the enemy has noticed it.</Original>
                 <Russian>Вы выглядите очень подозрительно, когда носите предметы военного назначения, и враг это заметил.</Russian>
                 <Chinesesimp>你在携带军事级别的物品时显得非常可疑，被敌人发现了。</Chinesesimp>
                 <Korean>당신은 군용 아이템을 들고 있는 동안 매우 수상해보였고, 적이 그걸 알아차렸습니다.</Korean>
-            </Key>
-            <Key ID="STR_info_bar_undercover_break_reason_mil_items_2">
-                <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearning a non-civilian backpack&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform&lt;br/&gt;Enemy have added you to Wanted list!</Original>
-                <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы носите негражданский рюкзак&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
-                <Chinesesimp>你不能在伪装模式下：&lt;br/&gt;&lt;br/&gt;带任何可见的武器&lt;br/&gt;穿着防弹衣或装备&lt;br/&gt;穿着非平民背包&lt;br/&gt;戴头盔&lt;br/&gt;戴夜视仪&lt;br/&gt;穿军装！&lt;br/&gt;敌人已经把你加进通缉名单了！</Chinesesimp>
-                <Korean>다음을 착용하는 동안에는 위장이 불가능합니다!:&lt;br/&gt;&lt;br/&gt;무기가 보임&lt;br/&gt;조끼를 입음&lt;br/&gt;간용이 아닌 가방을 맴&lt;br/&gt;헬멧을 착용함&lt;br/&gt;야시경 착용함&lt;br/&gt;군복 착용함&lt;br/&gt;적군이 당신을 수배자 목록에 추가했습니다!</Korean>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_bad_medic_1">
                 <Original>You can't stay in undercover state while healing a compromised resistance member!</Original>
@@ -4917,6 +4931,14 @@
                 <Russian>Вы не можете оставаться под прикрытием во время лечения скомпрометированного члена сопротивления!&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
                 <Chinesesimp>你不能一边伪装一边治疗一个受伤的反抗军成员！&lt;br/&gt;敌人已将你加入通缉名单！</Chinesesimp>
                 <Korean>당신은 위험에 처한 저항군을 치료하는 동안 위장 상태에 있을 수 없습니다&lt;br/&gt;적군이 당신을 수배자 목록에 추가했습니다!</Korean>
+            </Key>
+            <Key ID="STR_info_bar_undercover_break_reason_vtow_ropes">
+                <Original>You can't be undercover while tow ropes are attached to your vehicle!</Original>
+                <Russian>Вы не можете оставаться под прикрытием пока к вашей технике прикреплен буксировочный трос!</Russian>
+            </Key>
+            <Key ID="STR_info_bar_undercover_break_reason_tow_ropes">
+                <Original>You can't be undercover and use tow ropes!</Original>
+                <Russian>Вы не можете оставаться под прикрытием пока у вас в руках буксировочный трос!</Russian>
             </Key>
         </Container>
         <Container name="info_bar">
@@ -5222,9 +5244,9 @@
                 <Chinesesimp>狙击手</Chinesesimp>
                 <Korean>지정사수</Korean>
             </Key>
-            <Key ID="STR_antistasi_dialogs_at_title">
-                <Original>AT</Original>
-                <Russian>Гранатомётчик</Russian>
+            <Key ID="STR_antistasi_dialogs_lat_title">
+                <Original>Light AT</Original>
+                <Russian>Лёгкий гранатомётчик</Russian>
                 <Chinesesimp>AT兵</Chinesesimp>
                 <Korean>대전차병</Korean>
             </Key>
@@ -5240,11 +5262,19 @@
                 <Chinesesimp>班长</Chinesesimp>
                 <Korean>분대장</Korean>
             </Key>
-            <Key ID="STR_antistasi_dialogs_demolitionist_title">
-                <Original>Demolitionist</Original>
-                <Russian>Подрывник</Russian>
+            <Key ID="STR_antistasi_dialogs_sapper_title">
+                <Original>Sapper</Original>
+                <Russian>Сапёр</Russian>
                 <Chinesesimp>炸弹专家</Chinesesimp>
                 <Korean>폭파전문가</Korean>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_at_title">
+                <Original>AT Specialist</Original>
+                <Russian>ПТ-специалист</Russian>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_aa_title">
+                <Original>AA Specialist</Original>
+                <Russian>Оператор ПЗРК</Russian>
             </Key>
         </Container>
         <Container name="simple_menu_dialogs">
@@ -5943,7 +5973,7 @@
                 <Korean>네이팜탄 투하</Korean>
             </Key>
             <Key ID="STR_commander_menu_na_tooltip">
-                <Original>Das Flugzeug fliegt über und bedeckt ein bestimmtes Gebiet mit Napalm.</Original>
+                <Original>Plane flies over and drops napalm bombs with incendiary effect.</Original>
                 <Russian>Самолет пролетает и покрывает указанную область напалмом.</Russian>
                 <Chinesesimp>飞机飞过，指定区域并用凝固汽油弹覆盖。</Chinesesimp>
                 <Korean>비행기가 상공에서 날아와서 지정한 장소에 네이팜탄을 투하합니다.</Korean>
@@ -6462,12 +6492,6 @@
                 <Russian>Автолечение</Russian>
                 <Chinesesimp>自动治疗</Chinesesimp>
                 <Korean>자동 치료</Korean>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_auto_heal_tooltip">
-                <Original>AI squad mates will heal proactively each other.</Original>
-                <Russian>ИИ-солдаты будут лечить друг друга.</Russian>
-                <Chinesesimp>AI士兵会互相治疗。</Chinesesimp>
-                <Korean>인공지능 분대원들은 서로를 적극적으로 치료할 것입니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_garrison_units_title">
                 <Original>Garrison Units / Squads</Original>
@@ -7965,16 +7989,17 @@
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt1_base">
                 <Original>&lt;t size='0.6'&gt;%1 is on the way to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%2%3&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;%1 спешит вам помочь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%2%3&lt;/t&gt;&lt;/t&gt;</Russian>
+                <Russian>&lt;t size='0.6'&gt;%1 спешит вам на помощь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%2%3&lt;/t&gt;&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt; %1 正在来救你的路上。&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%2%3&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%1이(가) 당신을 도우러 가는 중입니다.&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%2%3&lt;/t&gt;&lt;/t&gt;</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt2_base">
-                <Original>&lt;t size='0.6'&gt;Wait until you get assistance or&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%1%2&lt;/t&gt;&lt;/t&gt;</Original>
-                <Russian>&lt;t size='0.6'&gt;Подождите, пока вам не помогут или&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%1%2&lt;/t&gt;&lt;/t&gt;</Russian>
-                <Chinesesimp>&lt;t size='0.6'&gt;等到你得到救助或&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%1%2&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
-                <Korean>&lt;t size='0.6'&gt;도움을 받을 때까지 기다리거나&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%1%2&lt;/t&gt;&lt;/t&gt;</Korean>
+                <Original>&lt;t size='0.6'&gt;%1 is helping you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%2%3&lt;/t&gt;&lt;/t&gt;</Original>
+                <Russian>&lt;t size='0.6'&gt;%1 помогает вам.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%2%3&lt;/t&gt;&lt;/t&gt;</Russian>
+                <Chinesesimp>&lt;t size='0.6'&gt; %1 正在来救你的路上。&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%2%3&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
+                <Korean>&lt;t size='0.6'&gt;%1이(가) 당신을 도우러 가는 중입니다.&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%2%3&lt;/t&gt;&lt;/t&gt;</Korean>
             </Key>
+        
             <Key ID="STR_antistasi_actions_unconscious_action_prompt_possess">
                 <Original>&lt;br/&gt;Press T to possess friendly AI unit to help yourself.</Original>
                 <Russian>&lt;br/&gt;Нажмите T, чтобы вселиться в дружественный ИИ-юнит, чтобы помочь себе.</Russian>
@@ -8739,8 +8764,8 @@
                 <Korean>&lt;t color='#800000'&gt;%1&lt;/t&gt;이(가) 우리 위치 근처에 이동식 박격포를 설치하고 있습니다!</Korean>
             </Key>
             <Key ID="STR_rivals_activity_drone_strike_description">
-                <Original>Drone strike is imminent, take cover!</Original>
-                <Russian>Удар БПЛА неизбежен, все в укрытие!</Russian>
+                <Original>&lt;t color='#800000'&gt;Drone strike&lt;/t&gt; is imminent, take cover!</Original>
+                <Russian>&lt;t color='#800000'&gt;Удар с БПЛА&lt;/t&gt; неизбежен, в укрытие!</Russian>
                 <Chinesesimp>无人机来袭，躲起来！</Chinesesimp>
                 <Korean>무인기 공격이 임박했습니다! 엄폐하십시오!</Korean>
             </Key>
@@ -8762,7 +8787,7 @@
             </Key>
             <Key ID="STR_A3A_buy_item_insuf_funds">
                 <Original>You can't afford this Item.</Original>
-                <Russian>Вам не хватате денег для покупки этого предмета.</Russian>
+                <Russian>Вам не хватает денег для покупки этого предмета.</Russian>
                 <Chinesesimp>您没有足够的钱购买此商品。</Chinesesimp>
                 <Korean>이 아이템은 구입할 수 없습니다.</Korean>
             </Key>
@@ -9340,18 +9365,6 @@
                 <Chinesesimp>可疑的制服</Chinesesimp>
                 <Korean>수상한 복장 착용</Korean>
             </Key>
-            <Key ID="STR_A3A_goUndercover_error_additive_backpack">
-                <Original>%1&lt;br/&gt;Wearing a suspicious backpack. Use civilian backpacks.</Original>
-                <Russian>"%1&lt;br/&gt;Надет подозрительный рюкзак. Используйте гражданские рюкзаки.</Russian>
-                <Chinesesimp>%1&lt;br/&gt;背着可疑的背包。 要更换民用背包。</Chinesesimp>
-                <Korean>%1&lt;br/&gt;수상한 가방을 맴. 민간 배낭을 사용하십시오.</Korean>
-            </Key>
-            <Key ID="STR_A3A_goUndercover_error_additive_backpack_output">
-                <Original>Suspicious backpack</Original>
-                <Russian>Подозрительный рюкзак</Russian>
-                <Chinesesimp>可疑的背包</Chinesesimp>
-                <Korean>수상한 가방 착용</Korean>
-            </Key>
             <Key ID="STR_A3A_goUndercover_error_naked_uniform">
                 <Original>%1&lt;br/&gt;Being naked. It's, you know, suspicious.</Original>
                 <Russian>"%1&lt;br/&gt;На вас нет одежды. Знаете, это вообще-то подозрительно.</Russian>
@@ -9387,6 +9400,22 @@
                 <Russian>Замечен врагом</Russian>
                 <Chinesesimp>被敌人发现</Chinesesimp>
                 <Korean>적에게 포착됨</Korean>
+            </Key>
+            <Key ID="STR_A3A_goUndercover_error_towing_ropes_head">
+                <Original>This vehicle cannot go undercover while it has tow ropes attached</Original>
+                <Russian>Эта техника не может уйти в маскировка пока к ней прикреплен буксировочный трос.</Russian>
+            </Key>
+            <Key ID="STR_A3A_goUndercover_error_towing_ropes">
+                <Original>In vehicle with tow ropes attached</Original>
+                <Russian>В технике с прикрепленным буксировочным тросом</Russian>
+            </Key>
+            <Key ID="STR_A3A_goUndercover_error_towing_ropes_2">
+                <Original>%1&lt;br/&gt;Holding tow ropes.</Original>
+                <Russian>"%1&lt;br/&gt;В руках буксировочный трос.</Russian>
+            </Key>
+            <Key ID="STR_A3A_goUndercover_error_towing_ropes_output">
+                <Original>Holding tow ropes</Original>
+                <Russian>Держит буксировочный трос</Russian>
             </Key>
         </Container>
         <Container name="A3A_ai">
@@ -9449,24 +9478,6 @@
                 <Russian>Выберите позицию, где закончится залп.</Russian>
                 <Chinesesimp>选择齐射结束的位置。</Chinesesimp>
                 <Korean>연발포격을 완료할 위치를 선택하십시오.</Korean>
-            </Key>
-            <Key ID="STR_A3A_ai_ai_autoheal_header">
-                <Original>AI Auto Heal</Original>
-                <Russian>Автолечение ИИ</Russian>
-                <Chinesesimp>AI自动治疗</Chinesesimp>
-                <Korean>인공지능 자동 치료</Korean>
-            </Key>
-            <Key ID="STR_A3A_ai_ai_autoheal_mustbealeader">
-                <Original>You must be leader of your group to enable Auto Heal.</Original>
-                <Russian>Вы должны быть лидером своей группы для включения автолечения.</Russian>
-                <Chinesesimp>你必须是你的组长才能启用自动治疗。</Chinesesimp>
-                <Korean>자동 치료를 사용하려면 그룹의 리더여야 합니다.</Korean>
-            </Key>
-            <Key ID="STR_A3A_ai_ai_autoheal_atleast1unit">
-                <Original>Auto Heal requires at least one AI soldier in your group.</Original>
-                <Russian>Автолечение требует наличия хотя бы 1 ИИ-юнита в вашей группе.</Russian>
-                <Chinesesimp>自动治疗需要你的团队中至少有 1 个 AI 单位。</Chinesesimp>
-                <Korean>자동 치료는 당신의 그룹에 최소 한 명 이상의 인공지능 병사가 필요합니다.</Korean>
             </Key>
         </Container>
         <Container name="A3A_ammunition">
@@ -9773,6 +9784,14 @@
                 <Russian>У вас недостаточно денег для найма этого юнита (требуется %1%2).</Russian>
                 <Chinesesimp>您没有足够的钱购买这种单位（需要 %1%2）。</Chinesesimp>
                 <Korean>이런 종류의 유닛을 사는 데 필요한 자금이 부족합니다. (%1%2 필요)</Korean>
+            </Key>
+            <Key ID="STR_A3A_reinf_reinfPlayer_no_money_equip">
+                <Original>You don't have enough money to equip this type of unit.</Original>
+                <Russian>У вас недостаточно денег для экипирования данного типа юнита.</Russian>
+            </Key>
+            <Key ID="STR_A3A_reinf_reinfPlayer_no_weapons_equip">
+                <Original>You don't have enough weapons to equip this type of unit.</Original>
+                <Russian>У вас недостаточно оружия для экипирования данного типа юнита.</Russian>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_full_squad">
                 <Original>Your squad is full or you have too many scattered units with no radio contact.</Original>

@@ -17,7 +17,7 @@ private _limit = if (_difficultX) then {
 _limit params ["_dateLimitNum", "_displayTime"];
 
 private _radiusX = [_markerX] call A3A_fnc_sizeMarker;
-private _houses = (nearestObjects [_positionX, ["house"], _radiusX]) select {!((typeOf _x) in UPSMON_Bld_remove)};
+private _houses = (nearestObjects [_positionX, ["house"], _radiusX]) select {!((typeOf _x) in A3A_buildingBlacklist)};
 private _posHouse = [];
 private _houseX = _houses select 0;
 while {count _posHouse < 3} do {
@@ -104,7 +104,8 @@ if (count _roadCon > 0) then {
 };
 
 private _posVeh = [_posroad, 3, _dirveh + 90] call BIS_Fnc_relPos;
-private _veh = FactionGet(reb,"vehicleLightUnarmed") createVehicle _posVeh;
+private _vehType = selectRandom (FactionGet(reb,"vehiclesLightUnarmed"));
+private _veh = _vehType createVehicle _posVeh;
 _veh allowDamage false;
 _veh setDir _dirVeh;
 sleep 15;
@@ -112,14 +113,6 @@ _veh allowDamage true;
 _traitor allowDamage true;
 [_veh, Occupants] call A3A_fnc_AIVEHinit;
 {_x disableAI "MOVE"; _x setUnitPos "UP"} forEach units _groupTraitor;
-
-private _mrk = createMarkerLocal [format ["%1patrolarea", floor random 100], getPos _houseX];
-_mrk setMarkerShapeLocal "RECTANGLE";
-_mrk setMarkerSizeLocal [50,50];
-_mrk setMarkerTypeLocal "hd_warning";
-_mrk setMarkerColorLocal "ColorRed";
-_mrk setMarkerBrushLocal "DiagGrid";
-_mrk setMarkerAlphaLocal 0;
 
 private _typeGroup = if (random 10 < tierWar) then {
 	selectRandom ([(Faction(Occupants)), "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)
@@ -132,7 +125,7 @@ if (random 10 < 2.5) then {
 	_dog = [_groupX, "Fin_random_F",_positionX,[],0,"FORM"] call A3A_fnc_createUnit;
 	[_dog] spawn A3A_fnc_guardDog;
 	};
-_nul = [leader _groupX, _mrk, "LIMITED", "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
+[_groupX, "Patrol_Area", 25, 50, 100, false, [], false] call A3A_fnc_patrolLoop;
 {[_x,""] call A3A_fnc_NATOinit} forEach units _groupX;
 
 waitUntil {
@@ -217,5 +210,3 @@ publicVariable "traitorIntel";
 [_groupX] spawn A3A_fnc_groupDespawner;
 [_groupTraitor] spawn A3A_fnc_groupDespawner;
 [_veh] spawn A3A_fnc_vehDespawner;
-
-deleteMarkerLocal _mrk;

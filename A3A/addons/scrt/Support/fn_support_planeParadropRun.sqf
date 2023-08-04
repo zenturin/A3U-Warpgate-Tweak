@@ -7,7 +7,8 @@ private _angleOrigin = _angle - 180;
 private _originPosition = [_positionOrigin, 2000, _angleOrigin] call BIS_fnc_relPos;
 private _finPosition = [_positionDestination, 2000, _angle] call BIS_fnc_relPos;
 
-private _planeData = [_originPosition, _angle, A3A_faction_reb get "vehiclePlane", teamPlayer] call A3A_fnc_spawnVehicle;
+private _planeType = (A3A_faction_reb get "vehiclesPlane") # 0;
+private _planeData = [_originPosition, _angle, _planeType, teamPlayer] call A3A_fnc_spawnVehicle;
 paradropPlane = _planeData select 0;
 private _planeCrew = _planeData select 1;
 private _groupPlane = _planeData select 2;

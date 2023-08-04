@@ -120,8 +120,8 @@ if (_spawnableVehicle != "") then {
 	} forEach units _group;
 	deleteGroup _group;
 	
-	[_vehicleGroup, _markerPosition, 500] call bis_fnc_taskPatrol;
-	// [leader _vehicleGroup, _marker, "SAFE","SPAWNED","RANDOM","NOFOLLOW"] call A3A_fnc_proxyUPSMON;
+	// [_vehicleGroup, _markerPosition, 500] call bis_fnc_taskPatrol;
+	[_vehicleGroup, "Patrol_Area", 25, 100, 500, true, _markerPosition, false] call A3A_fnc_patrolLoop;
 
 	_groups pushBack _vehicleGroup;
 	_vehicles pushBack _vehicle;
@@ -162,8 +162,8 @@ if (_spawnableVehicle != "") then {
 	{
 		[_x] call A3A_fnc_NATOinit;
 	} forEach units _group;
-	_nul = [leader _group, _marker, "SAFE","SPAWNED","RANDOM","NOVEH2","NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
 
+	[_group, "Patrol_Area", 25, 250, 350, true, (getMarkerPos _marker), false] call A3A_fnc_patrolLoop;
 	_groups pushBack _group;
 };
 

@@ -10,29 +10,27 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["flagTexture", "uk3cb_factions\addons\uk3cb_factions_tkm\flag\tkm_b_flag_co.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "UK3CB_MARKER_B_TKM"] call _fnc_saveToTemplate;
 
-["vehicleBasic", "UK3CB_TKM_I_YAVA"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "UK3CB_TKM_I_LR_Closed"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "UK3CB_TKM_I_Hilux_Dshkm"] call _fnc_saveToTemplate;
-["vehicleTruck", "UK3CB_TKM_I_V3S_Open"] call _fnc_saveToTemplate;
-["vehicleAT", "UK3CB_TKM_I_Hilux_Spg9"] call _fnc_saveToTemplate;
-["vehicleAA", "UK3CB_TKM_I_V3S_Zu23"] call _fnc_saveToTemplate;
+["vehiclesBasic", ["UK3CB_TKM_I_YAVA"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["UK3CB_TKM_I_LR_Closed"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["UK3CB_TKM_I_Hilux_Dshkm"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["UK3CB_TKM_I_V3S_Open"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["UK3CB_TKM_I_Hilux_Spg9"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["UK3CB_TKM_I_V3S_Zu23"]] call _fnc_saveToTemplate;
 
-["vehicleBoat", "UK3CB_CHD_I_Fishing_Boat"] call _fnc_saveToTemplate;
-["vehicleRepair", "UK3CB_TKM_I_V3S_Repair"] call _fnc_saveToTemplate;
+["vehiclesBoat", ["UK3CB_CHD_I_Fishing_Boat"]] call _fnc_saveToTemplate;
 
-["vehiclePlane", "UK3CB_CHC_I_Antonov_AN2"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclesPlane", ["UK3CB_CHC_I_Antonov_AN2", "I_C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "UK3CB_TKC_C_Hilux_Civ_Open"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "UK3CB_TKC_C_Ural_Open"] call _fnc_saveToTemplate;
-["vehicleCivHeli", "UK3CB_TKC_C_Mi8AMT"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "UK3CB_CHC_C_Fishing_Boat"] call _fnc_saveToTemplate;
-["vehicleCivBoxSupply", "UK3CB_ADC_C_S1203"] call _fnc_saveToTemplate;
+["vehiclesCivCar", ["UK3CB_TKC_C_Hilux_Civ_Open"]] call _fnc_saveToTemplate;
+["vehiclesCivTruck", ["UK3CB_TKC_C_Ural_Open"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["UK3CB_TKC_C_Mi8AMT"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat", ["UK3CB_CHC_C_Fishing_Boat"]] call _fnc_saveToTemplate;
+["vehiclesCivSupply", ["UK3CB_ADC_C_S1203"]] call _fnc_saveToTemplate;
 
-["staticMG", "UK3CB_TKM_I_DSHKM"] call _fnc_saveToTemplate;
-["staticAT", "UK3CB_TKM_I_SPG9"] call _fnc_saveToTemplate;
-["staticAA", "UK3CB_TKM_I_ZU23"] call _fnc_saveToTemplate;
-["staticMortar", "UK3CB_TKM_I_2b14_82mm"] call _fnc_saveToTemplate;
+["staticMGs", ["UK3CB_TKM_I_DSHKM"]] call _fnc_saveToTemplate;
+["staticAT", ["UK3CB_TKM_I_SPG9"]] call _fnc_saveToTemplate;
+["staticAA", ["UK3CB_TKM_I_ZU23"]] call _fnc_saveToTemplate;
+["staticMortars", ["UK3CB_TKM_I_2b14_82mm"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "rhs_mag_d832du_10"] call _fnc_saveToTemplate;
 
@@ -126,6 +124,8 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["UK3CB_KDF_I_MIG21_CAS", ["SIL",1]]
 ]] call _fnc_saveToTemplate;
 
+#include "3CBF_Reb_Vehicle_Attributes.sqf"
+
 ///////////////////////////
 //  Rebel Starting Gear  //
 ///////////////////////////
@@ -147,30 +147,15 @@ private _initialRebelEquipment = [
     "rhs_mag_nspd", "rhs_mag_nspn_yellow", "rhs_mag_nspn_green", "rhs_mag_nspn_red",
     "UK3CB_V_CW_Chestrig","UK3CB_V_CW_Chestrig_2_Small",
     "UK3CB_V_Chicom_Brown", "UK3CB_V_Chicom_Brown_m88",
-    "UK3CB_V_Chicom_Desert", "UK3CB_V_Chicom_Desert_m88"
+    "UK3CB_V_Chicom_Desert", "UK3CB_V_Chicom_Desert_m88",
+    "UK3CB_CHC_C_B_MED", "B_AssaultPack_blk"
 ];
-
-private _civilianBackpacks =  ["UK3CB_CHC_C_B_MED", "B_AssaultPack_blk"];
-if (_hasLawsOfWar) then {
-    _civilianBackpacks append [
-        "B_Messenger_Black_F", 
-        "B_Messenger_Coyote_F", 
-        "B_Messenger_Gray_F",
-        "B_Messenger_Olive_F", 
-        "B_LegStrapBag_black_F", 
-        "B_LegStrapBag_coyote_F", 
-        "B_LegStrapBag_olive_F"
-    ];
-};
-
-["civilianBackpacks", _civilianBackpacks createHashMapFromArray []] call _fnc_saveToTemplate;
-
-_initialRebelEquipment append _civilianBackpacks;
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment append ["TFAR_anprc155","TFAR_anprc155_coyote"]};
+_initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [

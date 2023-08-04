@@ -32,7 +32,7 @@ if (random 100 < 30) then {
     _civ moveInCargo _heliVeh;
 };
 
-{_x spawn A3A_fnc_CIVinit} forEach _heliCrew;
+{[_x] spawn A3A_fnc_civilianInitEH} forEach _heliCrew;
 private _heliGroup = _civHeliData select 2;
 
 _groups pushBack _heliGroup;

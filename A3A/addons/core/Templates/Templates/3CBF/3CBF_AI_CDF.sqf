@@ -65,8 +65,8 @@
 ["vehiclesPolice", ["UK3CB_CPD_B_UAZ_Closed", "UK3CB_CPD_B_Gaz24", "UK3CB_CPD_B_Lada", "UK3CB_CPD_B_S1203"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["rhsgref_cdf_b_DSHKM", "UK3CB_NFA_B_PKM_High", "RHS_M2StaticMG_WD"]] call _fnc_saveToTemplate;
-["staticATs", ["rhsgref_cdf_b_SPG9", "rhsgref_cdf_b_SPG9M"]] call _fnc_saveToTemplate;
-["staticAAs", ["rhsgref_cdf_b_ZU23", "rhsgref_cdf_b_Igla_AA_pod"]] call _fnc_saveToTemplate;
+["staticAT", ["rhsgref_cdf_b_SPG9", "rhsgref_cdf_b_SPG9M"]] call _fnc_saveToTemplate;
+["staticAA", ["rhsgref_cdf_b_ZU23", "rhsgref_cdf_b_Igla_AA_pod"]] call _fnc_saveToTemplate;
 ["staticMortars", ["rhsgref_ins_2b14"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["rhsgref_cdf_b_reg_d30"]] call _fnc_saveToTemplate;
 
@@ -77,6 +77,7 @@
 
 ["mortarMagazineHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "rhs_mag_d832du_10"] call _fnc_saveToTemplate;
+["mortarMagazineFlare", "rhs_mag_3vs25m_10"] call _fnc_saveToTemplate;
 
 
 ["minefieldAT", ["rhsusf_mine_M19"]] call _fnc_saveToTemplate;

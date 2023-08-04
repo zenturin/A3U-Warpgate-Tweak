@@ -33,7 +33,6 @@ if (isServer) then {
 	["enemyResources"] call A3A_fnc_getStatVariable;
 	["HQKnowledge"] call A3A_fnc_getStatVariable;
 
-//	["idlebases"] call A3A_fnc_getStatVariable;			// Might bring this back at some point
 	["killZones"] call A3A_fnc_getStatVariable;
 	["controlsSDK"] call A3A_fnc_getStatVariable;
 	["bombRuns"] call A3A_fnc_getStatVariable;
@@ -72,10 +71,6 @@ if (isServer) then {
 			[_x, true] call A3A_fnc_unlockEquipment;
 		} forEach _unlockedItemsInTab;
 	} forEach jna_dataList;
-
-	if !(unlockedNVGs isEqualTo []) then {
-		haveNV = true; publicVariable "haveNV"
-	};
 
 	//Check if we have radios unlocked and update haveRadio.
 	call A3A_fnc_checkRadiosUnlocked;
@@ -192,7 +187,6 @@ if (isServer) then {
 	["tasks"] call A3A_fnc_getStatVariable;
 
 	statsLoaded = 0; publicVariable "statsLoaded";
-	placementDone = true; publicVariable "placementDone";
 	petros allowdamage true;
 
 	{specialVarLoads deleteAt _x;} forEach (keys specialVarLoads);

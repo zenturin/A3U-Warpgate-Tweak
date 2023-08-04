@@ -77,7 +77,7 @@ private _disabledTowns = getArray (_mapInfo/"disabledTowns");
 {server setVariable [_x select 0,_x select 1]} forEach _townPopulations;
 private _hardCodedPopulation = _townPopulations isNotEqualTo [];
 
-private _cityConfigs = "(getText (_x >> ""type"") in [""NameCityCapital"", ""NameCity"", ""NameVillage"", ""CityCenter""]) &&
+private _cityConfigs = "(getText (_x >> ""type"") in [""NameCityCapital"",""Namecitycapital"", ""NameCity"",""Namecity"", ""NameVillage"",""Namevillage"", ""CityCenter"",""Citycenter""]) &&
 !(getText (_x >> ""Name"") isEqualTo """") && !((configName _x) in _disabledTowns)"
 configClasses (configfile >> "CfgWorlds" >> worldName >> "Names");
 if (toLowerANSI worldName isEqualTo "blud_vidda") then {

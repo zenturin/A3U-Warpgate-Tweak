@@ -615,15 +615,33 @@
                 <Chinesesimp>只有指挥官可以购买此物品</Chinesesimp>
                 <Korean>지휘관만 이 아이템을 살 수 있습니다.</Korean>
             </Key>
-            <Key ID="STR_antistasi_dialogs_vehicle_tab_vehicles">
-                <Original>Vehicles</Original>
-                <Chinesesimp>载具</Chinesesimp>
-                <Korean>차량</Korean>
+            <Key ID="STR_antistasi_dialogs_vehicle_tab_civ">
+                <Original>Civilian</Original>
+                <Russian>Гражд. техника</Russian>
+                <Korean>민간용</Korean>
+                <Spanish>Civil</Spanish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_vehicle_tab_reb">
+                <Original>Rebel</Original>
+                <Russian>Военная техника</Russian>
+                <Korean>반군용</Korean>
+                <Spanish>Rebelde</Spanish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_vehicle_tab_mil">
+                <Original>Military</Original>
+                <Russian>Военная техника</Russian>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_vehicle_tab_static">
+                <Original>Statics</Original>
+                <Russian>Стац. орудия</Russian>
+                <Korean>고정화기</Korean>
+                <Spanish>Estáticas</Spanish>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_other">
                 <Original>Other</Original>
-                <Chinesesimp>其他</Chinesesimp>
+                <Russian>Другое</Russian>
                 <Korean>그 외</Korean>
+                <Spanish>Otras</Spanish>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_refuel_tooltip">
                 <Original>This item can refuel others.\n%1 max fuel is %2.</Original>

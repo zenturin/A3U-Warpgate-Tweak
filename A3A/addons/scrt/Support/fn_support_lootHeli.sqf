@@ -14,7 +14,8 @@ private _intermediatePosition = [_positionDestination, 200, _angle] call BIS_fnc
 private _originPosition = [_positionOrigin, 1500, _angleOrigin] call BIS_fnc_relPos;
 private _finPosition = [_positionDestination, 1500, _angle] call BIS_fnc_relPos;
 
-private _heliData = [_originPosition, _angle, A3A_faction_reb get "vehicleCivHeli", teamPlayer] call A3A_fnc_spawnVehicle;
+private _heliType = selectRandom (A3A_faction_reb get "vehiclesCivHeli");
+private _heliData = [_originPosition, _angle, _heliType, teamPlayer] call A3A_fnc_spawnVehicle;
 private _heli = _heliData select 0;
 private _heliCrew = _heliData select 1;
 private _groupHeli = _heliData select 2;

@@ -52,53 +52,15 @@ if !(isNull (objectParent player)) then
         [localize "STR_A3A_goUndercover_title", localize "STR_A3A_goUndercover_error_no_civveh"] call A3A_fnc_customHint;
         _result = [false, localize "STR_A3A_goUndercover_error_no_civveh_output"];
     };
-    if ((objectParent player) getVariable ["A3A_reported", false]) then
+    if ((objectParent player) getVariable ["A3A_reported", false]) exitWith
     {
         [localize "STR_A3A_goUndercover_title", localize "STR_A3A_goUndercover_error_reportedveh"] call A3A_fnc_customHint;
         _result = [false, localize "STR_A3A_goUndercover_error_reportedveh_output"];
     };
-
-    private _text = localize "STR_A3A_goUndercover_error_additive_header";
-    _result = [true];
-    if (driver vehicle player isNotEqualTo player && {(primaryWeapon player != "" || secondaryWeapon player != "" || handgunWeapon player != "")}) then
+    if ((objectParent player) getVariable ["SA_Tow_Ropes", []] isNotEqualTo []) exitWith
     {
-        _text = format [localize "STR_A3A_goUndercover_error_additive_visible_weapon_veh", _text];
-        _result set [0, false];
-        _result pushBack (localize "STR_A3A_goUndercover_error_additive_visible_weapon_veh_output");
-    };
-    if (vest player != ""  && {vest player isNotEqualTo "V_Press_F"}) then
-    {
-        _text = format [localize "STR_A3A_goUndercover_error_additive_vest", _text];
-        _result set [0, false];
-        _result pushBack (localize "STR_A3A_goUndercover_error_additive_vest_output");
-    };
-    if (headgear player in allArmoredHeadgear) then
-    {
-        _text = format [localize "STR_A3A_goUndercover_error_additive_helmet", _text];
-        _result set [0, false];
-        _result pushBack (localize "STR_A3A_goUndercover_error_additive_helmet_output");
-    };
-    if (hmd player != "") then
-    {
-        _text = format [localize "STR_A3A_goUndercover_error_additive_nvg", _text];
-        _result set [0, false];
-        _result pushBack (localize "STR_A3A_goUndercover_error_additive_nvg_output");
-    };
-    if ((uniform player != "") && !(uniform player in (A3A_faction_civ get "uniforms"))) then
-    {
-        _text = format [localize "STR_A3A_goUndercover_error_additive_uniform", _text];
-        _result set [0, false];
-        _result pushBack (localize "STR_A3A_goUndercover_error_additive_uniform_output");
-    };
-    if (uniform player == "") then
-    {
-        _text = format [localize "STR_A3A_goUndercover_error_naked_uniform", _text];
-        _result set [0, false];
-        _result pushBack (localize "STR_A3A_goUndercover_error_additive_naked_output");
-    };
-    if !(_result select 0) then
-    {
-        [localize "STR_A3A_goUndercover_title", _text] call A3A_fnc_customHint;
+        [localize "STR_A3A_goUndercover_title", localize "STR_A3A_goUndercover_error_towing_ropes_head"] call A3A_fnc_customHint;
+        _result = [false, localize "STR_A3A_goUndercover_error_towing_ropes"];
     };
 }
 else
@@ -141,17 +103,23 @@ else
         _result set [0, false];
         _result pushBack (localize "STR_A3A_goUndercover_error_additive_uniform_output");
     };
-    if (backpack player != "" && {!(backpack player in (A3A_faction_reb get "civilianBackpacks"))}) then 
-    {
-        _text = format [localize "STR_A3A_goUndercover_error_additive_backpack", _text];
-        _result set [0, false];
-        _result pushBack (localize "STR_A3A_goUndercover_error_additive_backpack_output");
-    };
     if (uniform player == "") then
     {
         _text = format [localize "STR_A3A_goUndercover_error_naked_uniform", _text];
         _result set [0, false];
         _result pushBack (localize "STR_A3A_goUndercover_error_additive_naked_output");
+    };
+    if (!isNull (player getVariable ["SA_Tow_Ropes_Vehicle", objNull])) then
+    {
+        _text = format [localize "STR_A3A_goUndercover_error_towing_ropes_2", _text];
+        _result set [0, false];
+        _result pushBack (localize "STR_A3A_goUndercover_error_towing_ropes_output");
+    };
+    if (!isNull (player getVariable ["SA_Tow_Ropes_Vehicle", objNull])) then
+    {
+        _text = format [localize "STR_A3A_goUndercover_error_towing_ropes_2", _text];
+        _result set [0, false];
+        _result pushBack (localize "STR_A3A_goUndercover_error_towing_ropes_output");
     };
     if !(_result select 0) then
     {

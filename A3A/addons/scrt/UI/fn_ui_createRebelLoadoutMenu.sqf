@@ -48,4 +48,12 @@ if (str (_display) != "no display") then {
     if ((A3A_faction_reb get "unitExp") in rebelLoadouts) then {
         [(_display displayCtrl 120010)] call _addLoadoutMark;
     };
+
+    if ((A3A_faction_reb get "unitAT") in rebelLoadouts) then {
+        [(_display displayCtrl 120011)] call _addLoadoutMark;
+    };
+
+    if ((A3A_faction_reb get "unitAA") in rebelLoadouts) then {
+        [(_display displayCtrl 120012)] call _addLoadoutMark;
+    };
 };

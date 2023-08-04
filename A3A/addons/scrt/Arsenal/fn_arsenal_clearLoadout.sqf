@@ -41,7 +41,7 @@ if (str (_display) != "no display") then {
     };
 
     if !((A3A_faction_reb get 'unitLAT') in rebelLoadouts) then {
-        (_display displayCtrl 120007) ctrlSetText localize "STR_antistasi_dialogs_at_title";
+        (_display displayCtrl 120007) ctrlSetText localize "STR_antistasi_dialogs_lat_title";
     };
 
     if !((A3A_faction_reb get 'unitCrew') in rebelLoadouts) then {
@@ -53,7 +53,15 @@ if (str (_display) != "no display") then {
     };
 
     if !((A3A_faction_reb get 'unitExp') in rebelLoadouts) then {
-        (_display displayCtrl 120010) ctrlSetText localize "STR_antistasi_dialogs_demolitionist_title";
+        (_display displayCtrl 120010) ctrlSetText localize "STR_antistasi_dialogs_sapper_title";
+    };
+
+    if !((A3A_faction_reb get 'unitAT') in rebelLoadouts) then {
+        (_display displayCtrl 120011) ctrlSetText localize "STR_antistasi_dialogs_at_title";
+    };
+
+    if !((A3A_faction_reb get 'unitAA') in rebelLoadouts) then {
+        (_display displayCtrl 120012) ctrlSetText localize "STR_antistasi_dialogs_aa_title";
     };
 };
 

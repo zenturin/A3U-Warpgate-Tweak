@@ -5,6 +5,7 @@ class CfgFunctions
     {
         class AI {
             file = QPATHTOFOLDER(functions\AI);
+            class AIdrag {};
             class airbomb {};
             class AIreactOnKill {};
             class artySupport {};
@@ -12,7 +13,6 @@ class CfgFunctions
             class assaultBuilding {};
             class attackDrillAI {};
             class attackHeli {};
-            class autoHealFnc {};
             class autoLoot {};
             class autoRearm {};
             class callForSupport {};
@@ -127,6 +127,7 @@ class CfgFunctions
             class flagaction {};
             class fogCheck {};
             class garbageCleaner {};
+            class garbageCleanerTracker {};
             class garrisonInfo {};
             class getAggroLevelString {};
             class getRecentDamage {};
@@ -149,6 +150,7 @@ class CfgFunctions
             class onHeadlessClientDisconnect {};
             class onPlayerDisconnect {};
             class patrolDestinations {};
+            class petrosDeathMonitor {};
             class placementSelection {};
             class playableUnits {};
             class getSideRadioTowerInfluence {};
@@ -210,9 +212,9 @@ class CfgFunctions
             class availableBasesLand {};
             class calculateMarkerArea {};
             class cargoSeats {};
-            class CIVinit {};
             class civVEHinit {};
             class cleanserVeh {};
+            class countFreeSpawnPositions {};
             class createAIAirplane {};
             class createAICities {};
             class createAIcontrols {};
@@ -224,7 +226,6 @@ class CfgFunctions
             class createAttackForceLand {};
             class createAttackForceMixed {};
             class createAttackVehicle {};
-            class createCIV {};
             class createSDKGarrisons {};
             class createSDKgarrisonsTemp {};
             class createUnit {};
@@ -254,7 +255,6 @@ class CfgFunctions
             class spawnVehicle {};
             class spawnVehicleAtMarker {};
             class spawnVehiclePrecise {};
-            class vehAvailable {};
             class VEHdespawner {};
             class vehKilledOrCaptured {};
             class wavedAttack {};
@@ -333,6 +333,7 @@ class CfgFunctions
             class credits {};
             class initACEUnconsciousHandler {};
             class initBases {};
+            class initUtilityItems {};
             class initGarrisons {};
             class initPreJIP { preInit = 1; };
             class initSpawnPlaces {};
@@ -343,6 +344,7 @@ class CfgFunctions
 
             class initVehClassToCrew {};
             class initZones {};
+            class initZeusLogging {};
             class modBlacklist {};
             class playerMarkers {};
             class prepareMarkerArrays {};
@@ -352,7 +354,6 @@ class CfgFunctions
 
         class Intel {
             file = QPATHTOFOLDER(functions\Intel);
-            class getVehicleIntel {};
             class placeIntel {};
             class searchEncryptedIntel {};
             class searchIntelOnDocument {};
@@ -485,6 +486,7 @@ class CfgFunctions
             class addBombRun {};
             class addFIAsquadHC {};
             class addFIAveh {};
+            class addBlackMarketVeh {};
             class addSquadVeh {};
             class addToGarrison {};
             class buildCreateVehicleCallback {};
@@ -589,6 +591,9 @@ class CfgFunctions
             class SUP_carpetBombsRoutine {};
             class SUP_CAS {};
             class SUP_CASAvailable {};
+            class SUP_CASApproach {};
+            class SUP_CASDiveBomb {};
+            class SUP_CASDiveBombRun {};
             class SUP_CASRoutine {};
             class SUP_CASRun {};
             class SUP_cruiseMissile {};
@@ -727,13 +732,15 @@ class CfgFunctions
 
         class UtilityItems {
             file = QPATHTOFOLDER(functions\UtilityItems);
-            class carryItem {};
-            class initMovableObject {};
-            class rotateItem {};
-            class buyItem {};
             class attachedObjects {};
+            class buyItem {};
+            class carryItem {};
             class dropObject {};
+            class initMovableObject {};
+            class initObject {};
+            class initObjectRemote {};
             class remainingFuel {};
+            class rotateItem {};
         };
     };
 };

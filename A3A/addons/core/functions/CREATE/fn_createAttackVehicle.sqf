@@ -29,6 +29,7 @@ private _vehicle = [_markerOrigin, _vehicleType] call A3A_fnc_spawnVehicleAtMark
 if(isNull _vehicle) exitWith {objNull};
 
 private _crewGroup = [_side, _vehicle] call A3A_fnc_createVehicleCrew;
+
 {
     [_x, nil, nil, _resPool] call A3A_fnc_NATOinit
 } forEach (units _crewGroup);
@@ -38,9 +39,6 @@ private _cargoGroup = grpNull;
 private _expectedCargo = ([_vehicleType, true] call BIS_fnc_crewCount) - ([_vehicleType, false] call BIS_fnc_crewCount);
 if (_expectedCargo >= 2) then
 {
-    // These types won't let the cargo group disembark, so they're a waste of units even if they have spare seats
-    if (_vehicleType in FactionGet(all, "vehiclesHelisAttack") + FactionGet(all, "vehiclesHelisLightAttack")) exitWith {};
-
     //Vehicle is able to transport units
     private _groupType = call {
         if (_isAirdrop) exitWith { selectRandom  ([_faction get "groupsTierMedium"] call SCRT_fnc_unit_getTiered) };
@@ -50,7 +48,6 @@ if (_expectedCargo >= 2) then
         if (_troopType == "Tank") exitWith { [_faction get "groupTierAT"] call SCRT_fnc_unit_getTiered };
     };
 
-    Info_2("Group type: %1, vehicle type: %2", _groupType, _vehicleType);
 
     if (_expectedCargo < count _groupType) then { _groupType resize _expectedCargo };           // trim to cargo seat count
     _cargoGroup = [getMarkerPos _markerOrigin, _side, _groupType, true, false] call A3A_fnc_spawnGroup;         // force spawn, should be pre-checked

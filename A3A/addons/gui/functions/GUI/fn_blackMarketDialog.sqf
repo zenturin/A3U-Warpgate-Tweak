@@ -39,7 +39,7 @@ switch (_mode) do
     {
         ['on'] call SCRT_fnc_ui_toggleMenuBlur;
 
-        private _display = findDisplay A3A_IDD_BUYVEHICLEDIALOG;
+        private _display = findDisplay A3A_IDD_BLACKMARKETVEHICLEDIALOG;
         private _selectedTab = _params select 0;
 
         Debug_1("MainDialog switching tab to %1.", _selectedTab);
@@ -48,7 +48,7 @@ switch (_mode) do
         switch (_selectedTab) do 
         {
             case ("vehicles"): {
-                _selectedTabIDC = A3A_IDC_BUYVEHICLEMAIN;
+                _selectedTabIDC = A3A_IDC_BLACKMARKETMAIN;
             };
         };
 
@@ -57,8 +57,8 @@ switch (_mode) do
         };
 
         private _allTabs = [
-            A3A_IDC_BUYVEHICLEMAIN,
-            A3A_IDC_BUYVEHICLEPREVIEW
+            A3A_IDC_BLACKMARKETMAIN,
+            A3A_IDC_BLACKMARKETPREVIEW
         ];
 
         // Hide all tabs
@@ -79,6 +79,11 @@ switch (_mode) do
     {
         ['on'] call SCRT_fnc_ui_toggleMenuBlur;
         ["vehicles"] call A3A_fnc_blackMarketTabs;
+
+        // show the vehicle tab so that user don't freak out
+        private _display = findDisplay A3A_IDD_BLACKMARKETVEHICLEDIALOG;
+        private _selectedTabCtrl = _display displayCtrl A3A_IDC_BLACKMARKETMAIN;
+        _selectedTabCtrl ctrlShow true;
     };
 
     case ("onUnload"): 

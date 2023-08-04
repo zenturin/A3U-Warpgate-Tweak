@@ -23,3 +23,5 @@ private _childControl = _display displayCtrl 104;
 (_display displayCtrl 109) ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable FactionGet(reb,"unitGL"),A3A_faction_civ get "currencySymbol"];
 (_display displayCtrl 110) ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable FactionGet(reb,"unitSniper"),A3A_faction_civ get "currencySymbol"];
 (_display displayCtrl 111) ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable FactionGet(reb,"unitLAT"),A3A_faction_civ get "currencySymbol"];
+(_display displayCtrl 112) ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable FactionGet(reb,"unitAT"),A3A_faction_civ get "currencySymbol"];
+(_display displayCtrl 113) ctrlSetTooltip format [localize "STR_dialog_cost_hire_no_HR",server getVariable FactionGet(reb,"unitAA"),A3A_faction_civ get "currencySymbol"];

@@ -14,6 +14,13 @@ FIX_LINE_NUMBERS()
 params ["_veh", "_side", "_resPool", ["_excludeTrails", false]];
 
 if (isNil "_veh") exitWith {};
+
+// Not a crewed vehicle, nothing to do here
+if (fullCrew [_veh, "", true] isEqualTo []) exitWith {
+	// buyable item, use initObject. Happens on game loading at the moment
+	if (typeof _veh in A3A_utilityItemHM) then { _veh call A3A_fnc_initObject };
+};
+
 if !(isNil { _veh getVariable "ownerSide" }) exitWith {
 	// vehicle already initialized, just swap side and exit
 	[_veh, _side, true] call A3A_fnc_vehKilledOrCaptured;
@@ -24,9 +31,6 @@ _veh setVariable ["ownerSide", _side, true];
 
 if (isNil "_resPool") then { _resPool = "legacy" };
 _veh setVariable ["A3A_resPool", _resPool, true];
-
-// probably just shouldn't be called for these
-if ((_veh isKindOf "Building") or {(_veh isKindOf "ReammoBox_F")}) exitWith {};
 
 // this might need moving into a different function later
 if (_side == teamPlayer) then {
@@ -103,21 +107,20 @@ if (_veh isKindOf "Car" or{ _veh isKindOf "Tank"}) then {
 if (_side == civilian) then {
 	_veh addEventHandler ["HandleDamage",{if (((_this select 1) find "wheel" != -1) and (_this select 4=="") and (!isPlayer driver (_this select 0))) then {0;} else {(_this select 2);};}];
 	
-	if (!(_veh isKindOf "Air")) then {
-			_veh addEventHandler ["HandleDamage", {
-			private _veh = _this select 0;
-			if (side(_this select 3) == teamPlayer) then {
-				_driverX = driver _veh;
-				if (side group _driverX == civilian) then {_driverX leaveVehicle _veh};
-				_veh removeEventHandler ["HandleDamage", _thisEventHandler];
-			};
-		}];
-	};
+	if ((_veh isKindOf "Air")) exitWith {};
+
+	_veh addEventHandler ["HandleDamage", {
+		private _veh = _this select 0;
+		if (side(_this select 3) == teamPlayer) then {
+			_driverX = driver _veh;
+			if (side group _driverX == civilian) then {_driverX leaveVehicle _veh};
+			_veh removeEventHandler ["HandleDamage", _thisEventHandler];
+		};
+	}];
 };
 
 // Handler for enemy responses to vehicle damage
-if (_side == Invaders || {_side == Occupants}) then
-{
+if (_side == Invaders || _side == Occupants) then {
 	_veh addEventHandler ["HandleDamage", {
 		params ["_veh", "_part", "_damage", "_source"];
 		if (_damage < 0.5) exitWith { nil };			// rough as hell, but whatever

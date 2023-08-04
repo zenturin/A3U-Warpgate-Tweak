@@ -357,18 +357,20 @@ if (_prefix isEqualTo "reb") exitWith {
     _faction set ["unitRifle", unit(militia, "Rifleman")];
     _faction set ["unitSL", unit(militia, "SquadLeader")];
     _faction set ["unitEng", unit(militia, "Engineer")];
+    _faction set ["unitAA", unit(militia, "AA")];
+    _faction set ["unitAT", unit(militia, "AT")];
 
     //groups
     _faction set ["groupMedium", [_faction get "unitSL", _faction get "unitGL", _faction get "unitMG", _faction get "unitRifle"]];
-    _faction set ["groupAT", [_faction get "unitSL", _faction get "unitMG", _faction get "unitLAT", _faction get "unitLAT", _faction get "unitLAT"]];
+    _faction set ["groupAT", [_faction get "unitSL", _faction get "unitMG", _faction get "unitAT", _faction get "unitLAT", _faction get "unitRifle"]];
     _faction set ["groupSquad", [
         _faction get "unitSL"
         , _faction get "unitGL"
         , _faction get "unitRifle"
         , _faction get "unitMG"
-        , _faction get "unitRifle"
+        , _faction get "unitSniper"
         , _faction get "unitLAT"
-        , _faction get "unitRifle"
+        , _faction get "unitAT"
         , _faction get "unitMedic"
     ]];
     _faction set ["groupSquadEng", [
@@ -383,7 +385,7 @@ if (_prefix isEqualTo "reb") exitWith {
     ]];
     _faction set ["groupSquadSupp", [
         _faction get "unitSL"
-        , _faction get "unitGL"
+        , _faction get "unitAA"
         , _faction get "unitRifle"
         , _faction get "unitMG"
         , _faction get "unitLAT"
@@ -394,22 +396,22 @@ if (_prefix isEqualTo "reb") exitWith {
     _faction set ["groupSniper", double( _faction get "unitSniper" )];
     _faction set ["groupSentry", [_faction get "unitGL", _faction get "unitRifle"]];
 
-    _faction set ["unitsSoldiers", (_faction get "groupSquadEng") + [_faction get "unitSniper", _faction get "unitCrew"]];
+    _faction set ["unitsSoldiers", (_faction get "groupSquadEng") + [_faction get "unitSniper", _faction get "unitCrew", _faction get "unitAA", _faction get "unitAT"]];
 
     _faction set ["groupAaEmpl", [
         _faction get "unitSL"
         , _faction get "unitMG"
         , _faction get "unitRifle"
         , _faction get "unitRifle"
-        , _faction get "unitLAT"
+        , _faction get "unitAA"
         , _faction get "unitMedic"
     ]];
     _faction set ["groupAtEmpl", [
         _faction get "unitSL"
         , _faction get "unitRifle"
+        , _faction get "unitAT"
         , _faction get "unitLAT"
-        , _faction get "unitLAT"
-        , _faction get "unitLAT"
+        , _faction get "unitRifle"
         , _faction get "unitMedic"
     ]];
     _faction set ["groupHmgEmpl", [

@@ -420,9 +420,9 @@
                 <Polish>Rekrutuj Strzelca Wyborowego</Polish>
             </Key>
             <Key ID="STR_antistasi_dialogs_garrison_spawn_at_text">
-                <Original>Recruit AT</Original>
+                <Original>Recruit Light AT</Original>
                 <French>Recruter un AT</French>
-                <Russian>Гранатомётчик</Russian>
+                <Russian>Лёгкий Гранатомётчик</Russian>
                 <German>Panzerabwehr rekrutieren</German>
                 <Czech>Raketometník</Czech>
                 <Chinesesimp>招募反坦克手</Chinesesimp>
@@ -616,9 +616,9 @@
                 <Polish>Rekrutuj Strzelca Wyborowego</Polish>
             </Key>
             <Key ID="STR_antistasi_dialogs_unit_recruit_antitank_text">
-                <Original>Recruit Antitank Solider</Original>
+                <Original>Recruit Light AT Specialist</Original>
                 <French>Recruter un Soldat Antichar</French>
-                <Russian>Гранатомётчик</Russian>
+                <Russian>Лёгкий Гранатомётчик</Russian>
                 <German>Panzerabwehrsoldat rekrutieren</German>
                 <Czech>Raketometník</Czech>
                 <Chinesesimp>招募反坦克手</Chinesesimp>
@@ -626,6 +626,14 @@
                 <Italian>Recluta Soldato Anticarro</Italian>
                 <Spanish>Reclutar AT</Spanish>
                 <Polish>Rekrutuj Celowniczego PPANC</Polish>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_unit_recruit_atmissile_text">
+                <Original>Recruit AT Specialist</Original>
+                <Russian>ПТ-специалист</Russian>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_unit_recruit_aamissile_text">
+                <Original>Recruit AA Specialist</Original>
+                <Russian>Оператор ПЗРК</Russian>
             </Key>
         </Container>
         <Container name="dialog_generic">
@@ -2722,14 +2730,14 @@
                 <Polish>Użyte Skrypty</Polish>
             </Key>
             <Key ID="STR_antistasi_journal_entry_text_Credits_1">
-                <Original>UPSMon by Monsada, Kronzy and Cool=Azroul13.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Original>
-                <German>UPSMon von Monsada, Kronzy und Cool=Azroul13.&lt;br/&gt;Persistent Save von zooloo75.&lt;br/&gt;Tags von Marker und Melbo.&lt;br/&gt;JAS von Jeroen (Entschuldige, dass es so lange gedauert hat dich hinzuzufügen)&lt;br/&gt;Advanced Towing von Seth Duda.</German>
-                <Czech>UPSMon od Monsada, Kronzy and Cool = Azroul13 &lt;br/&gt;Trvalé Uložit podle zooloo75.&lt;br/&gt;Štítky Marker a Melbo.&lt;br/&gt;JAS od Jeroen (omlouvám se za to, že jste byli pozdě)&lt;br/&gt;Štítky od Markera a Melba.&lt;br/&gt;Rozšířené tažení od Setha Dudy.</Czech>
-                <Korean>UPSMon의 Monsada, Kronzy와 Cool=Azroul13.&lt;br/&gt;영구 저장의 zooloo75.&lt;br/&gt;Tags의 Marker와 Melbo.&lt;br/&gt;JAS의 Jeroen (너무 늦게 포함해서 죄송합니다)&lt;br/&gt;Advanced Towing의 Seth Duda.</Korean>
-                <Chinesesimp>UPSMon by Monsada, Kronzy 和 Cool=Azroul13。&lt;br/&gt;Persistent Save by zooloo75。&lt;br/&gt;Tags by Marker 和 Melbo。&lt;br/&gt;JAS by Jeroen (抱歉这么晚才把你添加进来)。&lt;br/&gt;Advanced Towing by Seth Duda。</Chinesesimp>
-                <Italian>UPSMon da Monsada, Kronzy and Cool=Azroul13.&lt;br/&gt;Salvataggio Persistente di zooloo75.&lt;br/&gt;Tags da Marker and Melbo.&lt;br/&gt;JAS da Jeroen (Scusa per averti incluso così tardi)&lt;br/&gt;Advanced Towing da Seth Duda.</Italian>
-                <Spanish>UPSMon by Monsada, Kronzy and Cool=Azroul13.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Spanish>
-                <Polish>UPSMon stworzony przez Monsada, Kronzy i Cool=Azroul13.&lt;br/&gt;Persistent Save stworzony przez zooloo75.&lt;br/&gt;Tags stworzony przez Marker i Melbo.&lt;br/&gt;JAS stworzony przez Jeroen.&lt;br/&gt;Advanced Towing stworzony przez Seth Duda.</Polish>
+                <Original>Patcom by Hazey.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Original>
+                <German>Patcom von Hazey.&lt;br/&gt;Persistent Save von zooloo75.&lt;br/&gt;Tags von Marker und Melbo.&lt;br/&gt;JAS von Jeroen (Entschuldige, dass es so lange gedauert hat dich hinzuzufügen)&lt;br/&gt;Advanced Towing von Seth Duda.</German>
+                <Czech>Patcom od Hazey.&lt;br/&gt;Trvalé Uložit podle zooloo75.&lt;br/&gt;Štítky Marker a Melbo.&lt;br/&gt;JAS od Jeroen (omlouvám se za to, že jste byli pozdě)&lt;br/&gt;Štítky od Markera a Melba.&lt;br/&gt;Rozšířené tažení od Setha Dudy.</Czech>
+                <Korean>Patcom의 Hazey.&lt;br/&gt;영구 저장의 zooloo75.&lt;br/&gt;Tags의 Marker와 Melbo.&lt;br/&gt;JAS의 Jeroen (너무 늦게 포함해서 죄송합니다)&lt;br/&gt;Advanced Towing의 Seth Duda.</Korean>
+                <Chinesesimp>Patcom by Hazey.&lt;br/&gt;Persistent Save by zooloo75。&lt;br/&gt;Tags by Marker 和 Melbo。&lt;br/&gt;JAS by Jeroen (抱歉这么晚才把你添加进来)。&lt;br/&gt;Advanced Towing by Seth Duda。</Chinesesimp>
+                <Italian>Patcom da Hazey.&lt;br/&gt;Salvataggio Persistente di zooloo75.&lt;br/&gt;Tags da Marker and Melbo.&lt;br/&gt;JAS da Jeroen (Scusa per averti incluso così tardi)&lt;br/&gt;Advanced Towing da Seth Duda.</Italian>
+                <Spanish>Patcom by Hazey.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Spanish>
+                <Polish>Patcom stworzony przez Hazey.&lt;br/&gt;Persistent Save stworzony przez zooloo75.&lt;br/&gt;Tags stworzony przez Marker i Melbo.&lt;br/&gt;JAS stworzony przez Jeroen.&lt;br/&gt;Advanced Towing stworzony przez Seth Duda.</Polish>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_Credits_2">
                 <Original>Mods</Original>
@@ -4825,6 +4833,50 @@
                 <Chinesesimp>&lt;br/&gt; - 加油</Chinesesimp>
                 <Korean>&lt;br/&gt; - 재급유되었습니다</Korean>
             </Key>
+            <Key ID="STR_A3A_Utility_Items_Last_Time_Purchase">
+        <Original>You already bought one, wait %1 seconds before you can buy another.</Original>
+        <Spanish>Ya has comprado una unidad, espera %1 segundos antes de poder comprar otra.</Spanish>				  
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Insufficient_Funds">
+        <Original>You can't afford this Item.</Original>
+        <Spanish>No puedes pagar ese objeto.</Spanish>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Purchase_Title">
+        <Original>Item Purchase</Original>
+        <Spanish>Compra de objeto</Spanish>
+      </Key>
+      <Key ID="STR_A3A_Packable_Objects_Title">
+        <Original>Packing Objects</Original>
+        <Spanish>Objetos empacables</Spanish>
+      </Key>
+      <Key ID="STR_A3A_Packable_Objects_refunding_error">
+        <Original>refunding money due to error</Original>
+        <Spanish>Devolviendo el dinero a causa de un error.</Spanish>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_lootbox">
+        <Original>Loot Box</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_fueldrum">
+        <Original>Fuel Drum</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_fueltank">
+        <Original>Fuel Tank</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_medicaltent">
+        <Original>Medical Tent</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_medicalbox">
+        <Original>Medical Box</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_ammostation">
+        <Original>Ammo Station</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_repairstation">
+        <Original>Repair Station</Original>
+      </Key>
+      <Key ID="STR_A3A_Utility_Items_Name_light">
+        <Original>Light</Original>
+      </Key>
         </Container>
         <Container name="server_info">
             <Key ID="STR_A3A_feedback_serverinfo">
@@ -4890,6 +4942,10 @@
                 <Russian>Ожидание завершения инициализации.</Russian>
                 <Polish>Oczekiwanie na zakończenie inicjowania w tle.</Polish>
                 <Portuguese>A epera de inicio de segundo plano para completar</Portuguese>
+            </Key>
+            <Key ID="STR_A3A_feedback_serverinfo_mismatch">
+                <Original>Version mismatch error:&lt;br/&gt;&lt;br/&gt;Server: %1&lt;br/&gt;Client: %2</Original>
+                <Russian>Ошибка, несовпадение версий:&lt;br/&gt;&lt;br/&gt;Сервер: %1&lt;br/&gt;Клиент: %2</Russian>
             </Key>
         </Container>
         <Container name="A3A_actions">
@@ -5020,6 +5076,42 @@
                 <Chinesesimp>%1 小队返回 总部 ，因为指向驻军的区域已经丢失。</Chinesesimp>
                 <Korean>%1 그룹은 주둔지로 지목된 구역을 잃었기 때문에 하이 커맨드 통제로 되돌아갔습니다.</Korean>
             </Key>
+            <Key ID="STR_A3A_garrison_error_no_hr">
+                <Original>You lack HR to recruit units.</Original>
+                <Russian>Вам не хватает HR, чтобы добавить новый юнит в гарнизон.</Russian>
+                <Korean>유닛을 모집할 인력이 부족합니다.</Korean>
+                <Spanish>Te falta HR para reclutar unidades.</Spanish>
+            </Key>
+            <Key ID="STR_A3A_garrison_error_no_money">
+                <Original>You don't have enough money for adding this kind of unit (%1€ needed).</Original>
+                <Russian>У вас недостаточно денег для добавления такого юнита (необходимо %1€).</Russian>
+                <Korean>이런 종류의 유닛을 추가할 충분한 비용이 없습니다 (%1€ 필요).</Korean>
+                <Spanish>No tienes suficiente dinero para añadir este tipo de unidad (Necesitas %1€).</Spanish>
+            </Key>
+            <Key ID="STR_A3A_garrison_recruit_success">
+                <Original>Unit has been recruited.%1</Original>
+                <Russian>Юнит нанят в гарнизон.%1</Russian>
+                <Korean>다음 유닛을 모집했습니다: %1</Korean>
+                <Spanish>La unidad ha sido reclutada.%1</Spanish>
+            </Key>
+            <Key ID="STR_A3A_garrison_error_enemies_near">
+                <Original>You can't recruit units into garrison when enemies are near the zone.</Original>
+                <Russian>Вы не можете набирать юниты в гарнизон, когда враги находятся рядом с зоной.</Russian>
+                <Korean>적들이 근처에 있을 때는 주둔지에 유닛을 모집할 수 없습니다.</Korean>
+                <Spanish>No puedes reclutar unidades en guarniciones cuando los enemigos se encuentran cerca de la zona.</Spanish>
+            </Key>
+            <Key ID="STR_A3A_garrison_error_still_updating">
+                <Original>This garrison is still updating, please try again in a few seconds.</Original>
+                <Russian>Этот гарнизон все еще обновляется, повторите попытку через несколько секунд.</Russian>
+                <Korean>이 주둔지는 아직 업데이트 중이니 몇 초 후에 다시 시도하십시오.</Korean>
+                <Spanish>La guarnición se está actualizando, por favor inténtalo en unos segundos.</Spanish>
+            </Key>
+            <Key ID="STR_A3A_garrison_error_no_mortar">
+                <Original>You can't add mortars to Roadblock or Watchpost garrisons.</Original>
+                <Russian>Вы не можете добавлять минометы в гарнизоны блокпостов и сторожевых постов.</Russian>
+                <Korean>검문소나 감시초소에는 박격포를 추가할 수 없습니다.</Korean>
+                <Spanish>No puedes añadir morteros a las guarniciones de Control de carretera o Puesto de boservación.</Spanish>
+            </Key>
         </Container>
         <Container name="A3AP_items">
             <Key ID="STR_A3AP_items_crrk_name">
@@ -5047,6 +5139,26 @@
                 <Russian>&lt;br/&gt;&lt;t size='0.8' color='#%1' shadow='1' shadowColor='#%2' valign='top'&gt;Нажмите &lt;t color='#%3'&gt;%4&lt;/t&gt; чтобы закрыть подсказку. +%5&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;t size='0.8' color='#%1' shadow='1' shadowColor='#%2' valign='top'&gt;按 &lt;t color='#%3'&gt;%4&lt;/t&gt; 解除提示。 +%5&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;t size='0.8' color='#%1' shadow='1' shadowColor='#%2' valign='top'&gt;힌트를 해제하려면 &lt;t color='#%3'&gt;%4+%5&lt;/t&gt; 키를 누르십시오.&lt;/t&gt;</Korean>
+            </Key>
+        </Container>
+        <Container name="A3A_GCTracker">
+            <Key ID="STR_A3A_GCTracker_tracker_title">
+                <Original>Garbage Cleaner Tracker</Original>
+                <Russian>Трекер сборщика мусора</Russian>
+                <Korean>쓰레기 청소 기록 프로그램</Korean>
+                <Spanish>Seguimiento del Limpiador de Basura</Spanish>
+            </Key>
+            <Key ID="STR_A3A_GCTracker_tracker_notification">
+                <Original>Last Garbage Clean was %1 ago. Keep track of it.</Original>
+                <Russian>Последняя очистка мусора была произведена %1 назад. Следите за ней.</Russian>
+                <Korean>마지막 쓰레기 청소는 %1 전에 실행되었습니다. 계속 기록합니다.</Korean>
+                <Spanish>La ultima Limpieza de Basura fue hace %1. Mantenlo supervisado.</Spanish>
+            </Key>
+            <Key ID="STR_A3A_GCTracker_tracker_ran_gc">
+                <Original>Garbage Cleaner Tracker run a garbage clean because the time passed the threshold. Keep track of GC times.</Original>
+                <Original>Трекер сборщика мусора запустил очистку мусора так как время превысило порог. Следите за порогом сборки мусора.</Original>
+                <Korean>쓰레기 청소 기록 프로그램이 임계값을 초과하여 쓰레기를 청소합니다. 쓰레기 청소 시간을 계속 기록합니다.</Korean>
+                <Spanish>El Seguimiento del Limpiador de Basura llevó a cabo una limpieza porque el umbral de tiempo fue superado. Mantén supervisado el Limpiador de Basura.</Spanish>
             </Key>
         </Container>
     </Package>

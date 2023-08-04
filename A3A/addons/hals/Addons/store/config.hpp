@@ -7154,9 +7154,12 @@ class cfgHALsStore
 			ITEM(vn_welrod, 100, PISTOL_STOCK);
 			ITEM(vn_m10, 75, PISTOL_STOCK);
 			ITEM(vn_m1895, 100, PISTOL_STOCK);
+			ITEM(vn_type64, 200, PISTOL_STOCK);
 
 			ITEM(vn_pm, 125, PISTOL_STOCK);
 			ITEM(vn_fkb1_pm, 150, PISTOL_STOCK);
+			ITEM(vn_p38, 125, PISTOL_STOCK);
+			ITEM(vn_ppk, 200, PISTOL_STOCK);
 			
 			ITEM(vn_tt33, 175, PISTOL_STOCK);
 			ITEM(vn_m1911, 175, PISTOL_STOCK);
@@ -7193,6 +7196,9 @@ class cfgHALsStore
 			ITEM(vn_mat49_vc, 275, RIFLE_STOCK);
 
 			ITEM(vn_f1_smg, 325, RIFLE_STOCK);
+			ITEM(vn_l2a3, 400, RIFLE_STOCK);
+			ITEM(vn_l34a1, 650, RIFLE_STOCK);
+			ITEM(vn_l34a1_xm148, 900, RIFLE_STOCK);
 
 			ITEM(vn_pps43, 350, RIFLE_STOCK);
 			ITEM(vn_pps52, 375, RIFLE_STOCK);
@@ -7221,6 +7227,8 @@ class cfgHALsStore
 
 			ITEM(vn_dp28, 550, RIFLE_STOCK);
 
+			ITEM(vn_l4, 1000, RIFLE_STOCK);
+
 			ITEM(vn_rpd, 1100, RIFLE_STOCK);
 			ITEM(vn_rpd_shorty_01, 1100, RIFLE_STOCK);
 			ITEM(vn_rpd_shorty, 1100, RIFLE_STOCK);
@@ -7235,6 +7243,8 @@ class cfgHALsStore
 
 			ITEM(vn_m63a_cdo, 1700, RIFLE_STOCK);
 			ITEM(vn_m63a_lmg, 1800, RIFLE_STOCK);
+
+			ITEM(vn_mg42, 2250, RIFLE_STOCK);
 		};
 
 		class sniperriflesvn
@@ -7243,7 +7253,11 @@ class cfgHALsStore
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_m1891, 450, RIFLE_STOCK);
-			ITEM(vn_m9130, 600, RIFLE_STOCK);
+			ITEM(vn_m9130, 500, RIFLE_STOCK);
+			ITEM(vn_m1903, 550, RIFLE_STOCK);
+			ITEM(vn_m1903_gl, 675, RIFLE_STOCK);
+			ITEM(vn_m36, 350, RIFLE_STOCK);
+			ITEM(vn_k98k, 700, RIFLE_STOCK);
 
 			ITEM(vn_m1_garand, 700, RIFLE_STOCK);
 			ITEM(vn_m1_garand_gl, 775, RIFLE_STOCK);
@@ -7272,6 +7286,9 @@ class cfgHALsStore
 			ITEM(vn_l1a1_xm148, 1700, RIFLE_STOCK);
 			ITEM(vn_l1a1_xm148_camo, 1700, RIFLE_STOCK);
 
+			ITEM(vn_svd, 1450, RIFLE_STOCK);
+
+			ITEM(vn_m14a1_shorty, 1700, RIFLE_STOCK);
 			ITEM(vn_m14, 1750, RIFLE_STOCK);
 			ITEM(vn_m14_camo, 1750, RIFLE_STOCK);
 
@@ -7290,6 +7307,11 @@ class cfgHALsStore
 			ITEM(vn_m2carbine_gl, 425, RIFLE_STOCK);
 
 			ITEM(vn_m3carbine, 900, RIFLE_STOCK);
+			ITEM(vn_m1carbine_shorty, 1200, RIFLE_STOCK);
+
+			ITEM(vn_ak_01, 1000, RIFLE_STOCK);
+			ITEM(vn_kbkg, 1000, RIFLE_STOCK);
+			ITEM(vn_kbkg_gl, 1150, RIFLE_STOCK);
 
 			ITEM(vn_gau5a, 800, RIFLE_STOCK);
 			ITEM(vn_xm177e1, 800, RIFLE_STOCK);
@@ -7303,6 +7325,8 @@ class cfgHALsStore
 
 			ITEM(vn_xm177_xm148, 1050, RIFLE_STOCK);
 			ITEM(vn_xm177_xm148_camo, 1050, RIFLE_STOCK);
+			ITEM(vn_xm177_m203, 1100, RIFLE_STOCK);
+			ITEM(vn_xm177_m203_camo, 1100, RIFLE_STOCK);
 
 			ITEM(vn_m16_usaf, 1000, RIFLE_STOCK);
 			ITEM(vn_xm16e1, 1000, RIFLE_STOCK);
@@ -7323,8 +7347,10 @@ class cfgHALsStore
 
 			ITEM(vn_m72, 250, 15);
 
-			ITEM(vn_rpg2, 500, 15);
-			ITEM(vn_rpg7, 750, 15);
+			ITEM(vn_m20a1b1_01, 550, 15);
+
+			ITEM(vn_rpg2, 750, 15);
+			ITEM(vn_rpg7, 1000, 15);
 
 			ITEM(vn_sa7, 1300, 15);
 			ITEM(vn_sa7b, 1600, 15);
@@ -7353,6 +7379,15 @@ class cfgHALsStore
 			};
 			class vn_rpg7_mag {
 				price = 200;
+				stock = 50;
+			};
+
+			class vn_m20a1b1_heat_mag {
+				price = 50;
+				stock = 50;
+			};
+			class vn_m20a1b1_wp_mag {
+				price = 100;
 				stock = 50;
 			};
 		};
@@ -7406,6 +7441,22 @@ class cfgHALsStore
 				price = 25;
 				stock = 50;
 			};
+			class vn_20mm_dgn_wp_mag {
+				price = 100;
+				stock = 50;
+			};
+			class vn_20mm_pgn60_heat_mag {
+				price = 115;
+				stock = 50;
+			};
+			class vn_20mm_kgn_frag_mag {
+				price = 135;
+				stock = 50;
+			};
+			class vn_20mm_f1n60_frag_mag {
+				price = 50;
+				stock = 50;
+			};
 		};
 
 		class muzzlesvn
@@ -7415,6 +7466,7 @@ class cfgHALsStore
 			
 			ITEM(vn_s_mk22, 100, MZ_STOCK);
 			ITEM(vn_s_pm, 100, MZ_STOCK);
+			ITEM(vn_s_ppk, 100, MZ_STOCK);
 			ITEM(vn_s_mpu, 100, MZ_STOCK);
 			ITEM(vn_s_mc10, 100, MZ_STOCK);
 			ITEM(vn_s_m45_camo, 100, MZ_STOCK);
@@ -7422,10 +7474,10 @@ class cfgHALsStore
 			ITEM(vn_s_m3a1, 100, MZ_STOCK);
 			ITEM(vn_s_mat49, 100, MZ_STOCK);
 			ITEM(vn_s_sten, 100, MZ_STOCK);
+			ITEM(vn_s_hp, 100, MZ_STOCK);
 
-			ITEM(vn_s_m16, 200, MZ_STOCK);
-
-			ITEM(vn_s_m14, 300, MZ_STOCK);
+			ITEM(vn_s_m16, 500, MZ_STOCK);
+			ITEM(vn_s_m14, 500, MZ_STOCK);
 		};
 
 		class underbarrelvn
@@ -7439,6 +7491,9 @@ class cfgHALsStore
 			ITEM(vn_b_camo_vz54, 10, 50);
 			ITEM(vn_b_camo_m1_garand, 10, 50);
 			ITEM(vn_b_camo_m14a1, 10, 50);
+			ITEM(vn_b_camo_m1903, 10, 50);
+			ITEM(vn_b_camo_k98k, 10, 50);
+			ITEM(vn_b_camo_svd, 10, 50);
 
 			ITEM(vn_bipod_m16, 100, 50);
 			ITEM(vn_bipod_m1918, 100, 50);
@@ -7519,6 +7574,26 @@ class cfgHALsStore
 				price = 500;
 				stock = 100;
 			};
+
+			class vn_o_8x_m1903 {
+				price = 700;
+				stock = 100;
+			};
+
+			class vn_o_1_5x_k98k {
+				price = 450;
+				stock = 100;
+			};
+
+			class vn_o_4x_svd {
+				price = 650;
+				stock = 100;
+			};
+
+			class vn_o_m14_front {
+				price = 50;
+				stock = 100;
+			};
 		};
 
 		class pointersvn 
@@ -7534,6 +7609,9 @@ class cfgHALsStore
 			ITEM(vn_b_type56, 65, PN_STOCK);
 			ITEM(vn_b_l1a1, 65, PN_STOCK);
 			ITEM(vn_b_m1_garand, 65, PN_STOCK);
+			ITEM(vn_b_m1903, 25, PN_STOCK);
+			ITEM(vn_b_m36, 25, PN_STOCK);
+			ITEM(vn_b_k98k, 100, PN_STOCK);
 		};
 
 		class magazinesvn 
@@ -7570,10 +7648,14 @@ class cfgHALsStore
 			ITEM(vn_m10_mag, 10, MZ_STOCK);
 			ITEM(vn_welrod_mag, 10, MZ_STOCK);
 			ITEM(vn_m1895_mag, 10, MZ_STOCK);
+
+			ITEM(vn_type64_mag, 15, MZ_STOCK);
 			
 			ITEM(vn_m1911_mag, 15, MZ_STOCK);
 			ITEM(vn_tt33_mag, 15, MZ_STOCK);
 			ITEM(vn_pm_mag, 10, MZ_STOCK);
+			ITEM(vn_ppk_mag, 10, MZ_STOCK);
+			ITEM(vn_p38_mag, 10, MZ_STOCK);
 
 			ITEM(vn_hd_mag, 25, MZ_STOCK);
 			ITEM(vn_hp_mag, 35, MZ_STOCK);
@@ -7590,6 +7672,9 @@ class cfgHALsStore
 			ITEM(vn_ppsh41_35_t_mag, 60, MZ_STOCK);
 			ITEM(vn_ppsh41_71_mag, 110, MZ_STOCK);
 			ITEM(vn_ppsh41_71_t_mag, 125, MZ_STOCK);
+
+			ITEM(vn_f1_smg_mag, 35, MZ_STOCK);
+			ITEM(vn_f1_smg_t_mag, 45, MZ_STOCK);
 
 			ITEM(vn_mc10_mag, 50, MZ_STOCK);
 			ITEM(vn_mc10_t_mag, 60, MZ_STOCK);
@@ -7618,9 +7703,6 @@ class cfgHALsStore
 			ITEM(vn_m1928_mag, 100, MZ_STOCK);
 			ITEM(vn_m1928_t_mag, 110, MZ_STOCK);
 
-			ITEM(vn_f1_smg_mag, 55, MZ_STOCK);
-			ITEM(vn_f1_smg_t_mag, 65, MZ_STOCK);
-
 			///////////////////////////////////////////////////////
 			// MGs
 			///////////////////////////////////////////////////////
@@ -7643,7 +7725,10 @@ class cfgHALsStore
 			ITEM(vn_l1a1_30_mag, 200, MZ_STOCK);
 			ITEM(vn_l1a1_30_t_mag, 215, MZ_STOCK);
 
-			
+			ITEM(vn_mg42_50_mag, 250, MZ_STOCK);
+			ITEM(vn_mg42_50_t_mag, 275, MZ_STOCK);
+
+
 
 			///////////////////////////////////////////////////////
 			// Rifles
@@ -7666,15 +7751,20 @@ class cfgHALsStore
 			ITEM(vn_m63a_30_mag, 135, MZ_STOCK);
 			ITEM(vn_m63a_30_t_mag, 150, MZ_STOCK);
 
+			ITEM(vn_kbkg_mag, 75, MZ_STOCK);
+			ITEM(vn_kbkg_t_mag, 90, MZ_STOCK);
 			ITEM(vn_type56_mag, 150, MZ_STOCK);
 			ITEM(vn_type56_t_mag, 165, MZ_STOCK);
-			
+
 
 			///////////////////////////////////////////////////////
 			// Sniper Rifles, battle rifles
 			///////////////////////////////////////////////////////
 			ITEM(vn_m38_mag, 50, MZ_STOCK);
 			ITEM(vn_m38_t_mag, 50, MZ_STOCK);
+
+			ITEM(vn_m1903_mag, 60, MZ_STOCK);
+			ITEM(vn_m1903_t_mag, 65, MZ_STOCK);
 
 			ITEM(vn_m14_10_mag, 125, MZ_STOCK);
 			ITEM(vn_m14_10_t_mag, 135, MZ_STOCK);
@@ -7684,9 +7774,15 @@ class cfgHALsStore
 
 			ITEM(vn_m1_garand_mag, 75, MZ_STOCK);
 			ITEM(vn_m1_garand_t_mag, 85, MZ_STOCK);
+
+			ITEM(vn_m36_mag, 85, MZ_STOCK);
+			ITEM(vn_m36_t_mag, 90, MZ_STOCK);
 			
 			ITEM(vn_m4956_10_mag, 100, MZ_STOCK);
 			ITEM(vn_m4956_10_t_mag, 115, MZ_STOCK);
+
+			ITEM(vn_k98k_mag, 135, MZ_STOCK);
+			ITEM(vn_k98k_t_mag, 140, MZ_STOCK);
 
 			ITEM(vn_m14_mag, 165, MZ_STOCK);
 			ITEM(vn_m14_t_mag, 175, MZ_STOCK);
@@ -7698,6 +7794,9 @@ class cfgHALsStore
 			ITEM(vn_l1a1_20_t_mag, 165, MZ_STOCK);
 			ITEM(vn_l1a1_10_mag, 100, MZ_STOCK);
 			ITEM(vn_l1a1_10_t_mag, 115, MZ_STOCK);
+
+			ITEM(vn_svd_mag, 125, MZ_STOCK);
+			ITEM(vn_svd_t_mag, 140, MZ_STOCK);
 		};	
 
 		class miscvn 

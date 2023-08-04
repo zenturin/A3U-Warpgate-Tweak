@@ -6,6 +6,7 @@ FIX_LINE_NUMBERS()
 if (isNil "logLevel") then { logLevel = 2; A3A_logDebugConsole = 1 };
 
 Info("initClient started");
+A3A_clientVersion = QUOTE(VERSION);
 Info_1("Client version: %1", QUOTE(VERSION_FULL));
 
 // *************************** Client pre-setup init *******************************
@@ -17,7 +18,6 @@ player forceAddUniform "U_C_WorkerCoveralls";
 musicON = false;
 recruitCooldown = 0;			//Prevents units being recruited too soon after being dismissed.
 incomeRep = false;
-autoHeal = true;				//Should AI in player squad automatically heal teammates
 isPowPaycheckAnnounced = false; //Are players know about that IDAP pays for released prisoners
 isSupportAnnounced = false;     //Are support abilities announced
 isMenuOpen = false;             //is Commander/Player menu open
@@ -40,23 +40,44 @@ enableEnvironment [false, true];
 if !(isServer) then {
     call A3A_fnc_initVarCommon;
 
+    [] execVM QPATHTOFOLDER(Scripts\fn_advancedTowingInit.sqf);
+
     Info("Running client JNA preload");
     ["Preload"] call jn_fnc_arsenal;
 
     // Headless client navgrid init
     if (!hasInterface) then {
-        Info("Headless client UPSMON init started");
-        [] call UPSMON_fnc_Init_UPSMON;
-        Info("Headless client UPSMON init completed");
+        Info("HC Initialising PATCOM Variables");
+        [] call A3A_fnc_patrolInit;
 
         call A3A_fnc_loadNavGrid;
         waitUntil { sleep 0.1; !isNil "serverInitDone" };			// addNodesNearMarkers needs marker lists
         call A3A_fnc_addNodesNearMarkers;
     };
+
+    if ((isClass (configfile >> "CBA_Extended_EventHandlers")) && (
+        isClass (configfile >> "CfgPatches" >> "lambs_danger"))) then {
+        // disable lambs danger fsm entrypoint
+        ["CAManBase", "InitPost", {
+            params ["_unit"];
+            (group _unit) setVariable ["lambs_danger_disableGroupAI", true];
+            _unit setVariable ["lambs_danger_disableAI", true];
+        }] call CBA_fnc_addClassEventHandler;
+    };
 };
 
+// Server/client version check
+waitUntil { sleep 0.1; !isNil "initZonesDone" };
+if (isNil "A3A_serverVersion") then { A3A_serverVersion = "pre-3.3" };
+if (A3A_clientVersion != A3A_serverVersion) exitWith {
+    private _errorStr = format [localize "STR_A3A_feedback_serverinfo_mismatch", A3A_serverVersion, A3A_clientVersion];
+    [localize "STR_A3A_feedback_serverinfo", _errorStr] call A3A_fnc_customHint;
+};
+
+// Show server startup state hints
 if (isNil "A3A_startupState") then { A3A_startupState = "waitserver" };
 while {true} do {
+    if (dialog) then { sleep 0.1; continue };           // don't spam hints while the setup dialog is open
     private _stateStr = localize ("STR_A3A_feedback_serverinfo_" + A3A_startupState);
     isNil { [localize "STR_A3A_feedback_serverinfo", _stateStr, true] call A3A_fnc_customHint };         // not re-entrant, apparently
     if (A3A_startupState == "completed") exitWith {};
@@ -117,7 +138,7 @@ player setPos _safePos;
 player setDir ([player, boxX] call BIS_fnc_dirTo);
 player setVariable ["spawner",true,true];
 
-if (A3A_hasTFAR || {A3A_hasTFARBeta}) then {
+if (A3A_hasTFAR || A3A_hasTFARBeta || A3A_hasACRE) then {
     [] spawn A3A_fnc_radioJam;
 };
 
@@ -561,15 +582,7 @@ _layer = ["statisticsX"] call bis_fnc_rscLayer;
 //Load the player's personal save.
 [] spawn A3A_fnc_createDialog_shouldLoadPersonalSave;
 
-// Check if we need to relocate HQ. Might happen if we leave during placement?
-// Should be replaced with server-side monitoring loop
-if (isNil "placementDone") then {
-    if (isNil "playerPlacingHQ" || {!(playerPlacingHQ in (call A3A_fnc_playableUnits))}) then {
-        playerPlacingHQ = player;
-        publicVariable "playerPlacingHQ";
-        [] spawn A3A_fnc_placementSelection;
-    };
-};
+[allCurators] remoteExecCall ["A3A_fnc_initZeusLogging",0];
 
 if (magRepack) then {
 	Info("Initializing Mag Repack...");
@@ -612,6 +625,8 @@ if (saveZeusBuildings) then {
 		}];
 	} forEach (allCurators);
 };
+
+[allCurators] remoteExecCall ["A3A_fnc_initZeusLogging",0];
 
 initClientDone = true;
 Info("initClient completed");

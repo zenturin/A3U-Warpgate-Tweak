@@ -101,8 +101,8 @@ private _policeVehs = if (_hasContact) then {
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
 ["staticMGs", ["O_R_HMG_01_high_ard_F"]] call _fnc_saveToTemplate;
-["staticATs", ["O_R_Static_AT_ard_F"]] call _fnc_saveToTemplate;
-["staticAAs", ["O_R_Static_AA_ard_F"]] call _fnc_saveToTemplate;
+["staticAT", ["O_R_Static_AT_ard_F"]] call _fnc_saveToTemplate;
+["staticAA", ["O_R_Static_AA_ard_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["O_R_Mortar_01_ard_F"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 
@@ -111,6 +111,7 @@ private _policeVehs = if (_hasContact) then {
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
+["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
 
