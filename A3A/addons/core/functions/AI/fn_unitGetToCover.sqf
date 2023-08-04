@@ -9,7 +9,7 @@ private _enemy = if (count _this > 1) then {_this select 1} else {_unit findNear
 
 if (isNull _enemy) exitWith {};
 if (_unit distance _enemy < 300) exitWith {};
-if (random 100 < 40) then {[_unit,_unit,_enemy] call A3A_fnc_chargeWithSmoke};
+if (random 100 < 35) then {[_unit,_unit,_enemy] call A3A_fnc_chargeWithSmoke};
 _coverX = [_unit,_enemy] call A3A_fnc_coverage;
 
 if (_coverX isEqualTo []) exitWith {};

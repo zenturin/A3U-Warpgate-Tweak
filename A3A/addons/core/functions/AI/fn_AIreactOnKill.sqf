@@ -99,7 +99,7 @@ _group setVariable ["A3A_reactingToKill", true];
         };
         private _noNvgIndex = (units _group) findIf {hmd _x == "" || {getArray (configFile >> "CfgWeapons" >> (hmd _x) >> "visionMode") isEqualTo ["Normal","Normal"]}};
         if (sunOrMoon == 1 || _noNvgIndex == -1) exitWith {
-            if (random 100 < 40) then { [_x,_x,_enemy] spawn A3A_fnc_chargeWithSmoke };
+            if (random 100 < 35) then { [_x,_x,_enemy] spawn A3A_fnc_chargeWithSmoke };
         };
         if (primaryWeapon _x in allGrenadeLaunchers) exitWith {
             [_x, side (group _x), _enemy] spawn A3A_fnc_useFlares;

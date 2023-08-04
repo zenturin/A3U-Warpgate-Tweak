@@ -499,7 +499,6 @@ DECLARE_SERVER_VAR(A3A_smokeMuzzleHM, _smokeMuzzleHM);
 ////////////////////////////////////
 
 // Utility items data init
-server setVariable [FactionGet(reb,"lootCrate"), 100, true]; //utility items use it, so it should be declared earlier
 call A3A_fnc_initUtilityItems;
 ONLY_DECLARE_SERVER_VAR(A3A_utilityItemList);
 ONLY_DECLARE_SERVER_VAR(A3A_utilityItemHM);

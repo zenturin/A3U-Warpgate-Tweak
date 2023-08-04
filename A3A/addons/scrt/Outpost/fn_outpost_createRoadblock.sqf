@@ -46,7 +46,7 @@ waitUntil {
 	sleep 1;
 	(!isNil "cancelEstabTask" && {cancelEstabTask}) || 
 	{_units findIf {[_x] call A3A_fnc_canFight} == -1 || 
-	{{alive _x && {_x distance _position < 10}} count units _groupX > 0 ||
+	{{alive _x && {_x distance _position < 35}} count units _groupX > 0 ||
 	{(dateToNumber date > _dateLimitNum)}}}
 };
 
