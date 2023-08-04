@@ -29,7 +29,7 @@ if (isNil "specialVarLoads") then {
         "minesX","staticsX","antennas","mrkNATO","mrkSDK",
         "posHQ","hr","dateX","prestigeOPFOR",
         "prestigeBLUFOR","resourcesFIA","skillFIA","destroyedSites",
-        "garrison","tasks","membersX","destroyedBuildings","idlebases",
+        "garrison","tasks","membersX","destroyedBuildings",
         "chopForest","weather","killZones","jna_dataList","controlsSDK","mrkCSAT","nextTick",
         "bombRuns","wurzelGarrison","aggressionOccupants", "aggressionInvaders", "enemyResources", "HQKnowledge",
         "testingTimerIsActive", "version", "HR_Garage", "A3A_fuelAmountleftArray",
@@ -313,10 +313,6 @@ if (_varName in specialVarLoads) then {
             A3A_curHQInfoInv = _varValue#1;
             A3A_oldHQInfoOcc = _varValue#2;
             A3A_oldHQInfoInv = _varValue#3;
-        };
-
-        case 'idlebases': {
-            {server setVariable [(_x select 0),(_x select 1),true]} forEach _varValue;
         };
 
         case 'killZones': {
