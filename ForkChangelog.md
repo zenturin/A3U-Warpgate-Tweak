@@ -15,8 +15,10 @@
 - Added new AA/AT specialist units to various rebel teams and squads 
 - Fixed broken mortar spawn on some vanilla Rivals factions
 - Fixed 'Undefined variable in expression: a3a_faction_civ' error when player opens aresenal in non-AntistasiPlus mission environment
+- Fixed wrong usage of Aegis classnames in Vanilla CSAT Temperate faction which led to no static weapons on CSAT outposts
 - Reduced cloth vehicle check distance for enemies from 350 meters to 50
 - Increased save vehicle area around HQ from 50 to 100 meters
+- Increased player squad size from 9 to 11 AI members
 
 ### Removals
 - Replaced rebel payload planes with just rebel planes, removed rebel faction vehicle category in templates 

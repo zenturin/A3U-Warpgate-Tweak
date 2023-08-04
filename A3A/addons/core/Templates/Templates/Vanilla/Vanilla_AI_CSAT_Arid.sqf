@@ -166,10 +166,7 @@ if (_hasWs) then {
         "lxWS_African_Head_04",
         "lxWS_Said_Head",
         "lxWS_African_Head_Old_Bard",
-        "lxWS_African_Head_03",
-        "PersianHead_A3_06",
-        "PersianHead_A3_07",
-        "PersianHead_A3_05"
+        "lxWS_African_Head_03"
     ];
 };
 ["faces", _faces] call _fnc_saveToTemplate;
