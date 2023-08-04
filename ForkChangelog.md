@@ -7,8 +7,12 @@
 
 
 ## 2.2
+
+### Additions 
+- SOGPF 1.3 update support
+
 ### Changes
-- 3.3.2 Community Version integration - PATCOM AI integration, AA/AT missile specialists, many improvements and fixes of various gameplay systems
+- 3.3 Community Version integration - PATCOM AI integration, AA/AT missile specialists, many improvements and fixes of various gameplay systems
 - Undercover balance pass - removed concept of civilian backpacks as there was no clear indication about backpack type and undercover system interaction, removed backpack undercover checks, wearning military clothes while in being in vehicle allows you to go undercover but the enemy can still detect player if he's close enough (100 meters for day and 50 meters for night) to him
 - Moved rebel Apex 4WD vehicles from Vehicle Black Market to general vehicle pool, they're accessible when Apex DLC is enabled
 - Ability to override AA/AT specialist loadouts via Rebel Loadouts feature
@@ -17,6 +21,7 @@
 - Fixed 'Undefined variable in expression: a3a_faction_civ' error when player opens aresenal in non-AntistasiPlus mission environment
 - Fixed wrong usage of Aegis classnames in Vanilla CSAT Temperate faction which led to no static weapons on CSAT outposts
 - Increased save vehicle area around HQ from 50 to 100 meters
+- Increased custom outpost (AA/HMG/AT emplacements, roadblocks and watchposts) task completion radius from 10 to 35 meters
 
 ### Removals
 - Replaced rebel payload planes with just rebel planes, removed rebel faction vehicle category in templates 

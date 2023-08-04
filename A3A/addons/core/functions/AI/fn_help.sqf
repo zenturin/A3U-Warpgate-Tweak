@@ -75,13 +75,15 @@ if (_medicX != _unit) then
     private _enemy = _medicX findNearestEnemy _unit;
     if ((_unit getVariable ["incapacitated", false]) and (!isNull _enemy)) then
     {
-        [_medicX,_unit,_enemy] call A3A_fnc_chargeWithSmoke;
+        if (random 100 < 35) then {
+            [_medicX,_unit,_enemy] call A3A_fnc_chargeWithSmoke;
+        };
 
         // Get some smoke/suppression help from nearby AI squadmates.
         private _nearFriends = units _medicX select { (_x != _medicX) and (_x call A3A_fnc_canFight) and (_x distance _unit < 50) and !(_x getVariable ["helping",false]) and (!isPlayer _x) };
         {
             if (random 100 > 40) then { continue };
-            if (random 100 > 60) then {
+            if (random 100 > 65) then {
                 [selectRandom _nearFriends, _unit, _enemy] spawn A3A_fnc_chargeWithSmoke;
             } else {
                 [selectRandom _nearFriends, _enemy] spawn A3A_fnc_suppressingFire;
@@ -129,7 +131,9 @@ if (_medicX != _unit) then
 else
 {
     // Self-heal + smoke stuff
-    [_medicX,_medicX] call A3A_fnc_chargeWithSmoke;
+    if (random 100 < 35) then {
+        [_medicX,_medicX] call A3A_fnc_chargeWithSmoke;
+    };
     if ([_medicX] call A3A_fnc_canFight) then
     {
         _medicX action ["HealSoldierSelf",_medicX];
