@@ -148,5 +148,26 @@ if (_money < construction_cost) exitWith {
 };
 
 private _extraMessage = format [localize "STR_veh_callback_constructions_text", construction_cost, A3A_faction_civ get "currencySymbol"];
+private _fnc_placed = {
+	params ["_vehicle", "_cost"];
 
-[_constructionClass,  "BUILDSTRUCTURE", [], nil, nil, nil, false, _extraMessage] call HR_GRG_fnc_confirmPlacement;
+    private _earlyEscape = false;
+    switch (construction_type) do { //return inverted here so true = cant place
+        case "LIGHT_BUNKER";
+        case "HEAVY_BUNKER": {
+            if (isOnRoad _vehicle || {!(_vehicle inArea construction_nearestFriendlyMarker)}) then {
+                [localize "STR_A3A_reinf_buildCvc_header", localize "STR_veh_callback_constructions"] call SCRT_fnc_misc_deniedHint;
+                _earlyEscape = true;
+            };
+        };
+    };
+    if (_earlyEscape) exitWith {};
+
+	private _type = typeOf _vehicle;
+    private _pos = getPosASL _vehicle;
+    private _dir = getDir _vehicle;
+    deleteVehicle _vehicle;
+    [_type, _pos, _dir] spawn A3A_fnc_buildCreateVehicleCallback;
+};
+
+[_constructionClass, _fnc_placed, {false}, [construction_cost], nil, nil, nil, _extraMessage] call HR_GRG_fnc_confirmPlacement;

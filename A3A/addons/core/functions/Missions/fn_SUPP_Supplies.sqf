@@ -50,24 +50,15 @@ _truckX setVariable ["destinationX",_nameDest,true];
 
 waitUntil {sleep 1; dateToNumber date > _dateLimitNum or {spawner getVariable _markerX != 2}};
 
-private _mrk = nil;
 
 if ((spawner getVariable _markerX != 2) and {!(sidesX getVariable [_markerX,sideUnknown] == teamPlayer)}) then {
-	_mrk = createMarkerLocal [format ["%1patrolarea", floor random 100], _positionX];
-	_mrk setMarkerShapeLocal "RECTANGLE";
-	_mrk setMarkerSizeLocal [50,50];
-	_mrk setMarkerTypeLocal "hd_warning";
-	_mrk setMarkerColorLocal "ColorRed";
-	_mrk setMarkerBrushLocal "DiagGrid";
-	_mrk setMarkerAlphaLocal 0;
-
 	private _typeGroup = [
 		_faction get "groupPoliceTeam",
 		_faction get "groupPoliceSquad"
 	] select _difficultX;
 
 	private _groupX = [_positionX, Occupants, _typeGroup] call A3A_fnc_spawnGroup;
-	_nul = [leader _groupX, _mrk, "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] spawn UPSMON_fnc_UPSMON;
+	[_groupX, "Patrol_Area", 25, 100, 250, true, _positionX, false] call A3A_fnc_patrolLoop;
 	{[_x] call A3A_fnc_NATOinit} forEach units _groupX;
 
 	_groups pushBack _groupX;
@@ -144,10 +135,6 @@ if ((dateToNumber date > _dateLimitNum) or {isNull _truckX}) then {
 		[5*_bonus,-5*_bonus,_positionX] remoteExec ["A3A_fnc_citySupportChange",2];
 		[-10*_bonus,theBoss] call A3A_fnc_addScorePlayer;
 	};
-};
-
-if (!isNil "_mrk") then {
-	deleteMarker _mrk;
 };
 
 deleteVehicle _truckX;

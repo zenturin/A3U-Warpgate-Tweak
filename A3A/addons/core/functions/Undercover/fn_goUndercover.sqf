@@ -44,15 +44,16 @@ FIX_LINE_NUMBERS()
 #define REASON_TOWINGMILITARY 5
 #define REASON_CONTROL 6
 #define REASON_NOFLY 7
-#define REASON_COMPROMISED 8
-#define REASON_BADMEDIC1 9
-#define REASON_BADMEDIC2 10
-#define REASON_CARRY 11
-#define REASON_CLOTHES1 12
-#define REASON_CLOTHES2 13
-#define REASON_HIGHWAY 14
-#define REASON_SPOTBOMBTRUCK 15
-#define REASON_CARRYUNDERCOVERBREAK 16
+#define REASON_BADMEDIC1 8
+#define REASON_BADMEDIC2 9
+#define REASON_CARRY 10
+#define REASON_CLOTHES1 11
+#define REASON_CLOTHES2 12
+#define REASON_HIGHWAY 13
+#define REASON_SPOTBOMBTRUCK 14
+#define REASON_CARRYUNDERCOVERBREAK 15
+#define REASON_TOWROPES 16
+#define REASON_VTOWROPES 17
 
 
 private _result = [] call A3A_fnc_canGoUndercover;
@@ -67,11 +68,15 @@ if(!_canGoUndercoverValue && {_canGoUndercoverReason isEqualTo (localize "STR_A3
         {
             if ((isPlayer _x) && (captive _x)) then
             {
-                [_x, false] remoteExec["setCaptive"];
-                _x setCaptive false;
+                [_x, false] remoteExec["setCaptive", _x];
             };
         } forEach ((crew(objectParent player)) + (assignedCargo(objectParent player)) - [player]);
     };
+};
+
+private _fnc_enemyDistanceCheck = {
+    params ["_enemy", "_distance"];
+    (side _enemy == Invaders or side _enemy == Occupants) and (_enemy knowsAbout player > 1.4 or _enemy distance player < _distance)
 };
 
 private _fnc_checkBaseUndercoverBreak = {
@@ -82,6 +87,10 @@ private _fnc_checkBaseUndercoverBreak = {
 
     switch (true) do {
         case (detectionAreas findIf {player inArea _x} != -1): {
+            _reason = REASON_CONTROL;
+        };
+        case (_base in milAdministrationsX && {(position player) distance (getMarkerPos _base) < 50});
+        case (_base in (airportsX + milbases + outposts + seaports) && {player inArea _base}): {
             _reason = REASON_CONTROL;
         };
         case (_base in controlsX && {player inArea _base}): {
@@ -106,10 +115,6 @@ private _fnc_checkBaseUndercoverBreak = {
                 _reason = REASON_DISTANCEX;
             };
         };
-        case (_base in milAdministrationsX && {(position player) distance (getMarkerPos _base) < 50});
-        case (_base in (airportsX + milbases + outposts + seaports) && {player inArea _base}): {
-            _reason = REASON_CONTROL;
-        };
     };
 
     _reason
@@ -120,7 +125,6 @@ private _fnc_checkClothes = {
     if (secondaryWeapon player != "") exitWith {true};
     if (handgunWeapon player != "") exitWith {true};
     if (hmd player != "") exitWith {true};
-    if (backpack player != "" && {!(backpack player in (A3A_faction_reb get "civilianBackpacks"))}) exitWith {true};
     if (getNumber(configfile >> "CfgWeapons" >> headgear player >> "ItemInfo" >> "HitpointsProtectionInfo" >> "Head" >> "armor") > 2) exitWith {true};
     if (!(uniform player in (A3A_faction_civ get "uniforms"))) exitWith {true};
     if (vest player != ""  && {!(vest player isEqualTo "V_Press_F")}) exitWith {true};
@@ -157,7 +161,6 @@ private _fnc_getTimeLimit = {
 private _layer = ["A3A_infoCenter"] call BIS_fnc_rscLayer;
 [(localize "STR_info_bar_undercover_on"), 0, 0, 4, 0, 0, _layer] spawn bis_fnc_dynamicText;
 
-[player, true] remoteExec["setCaptive", 0, player];
 player setCaptive true;
 [] spawn A3A_fnc_statistics;
 if (player == leader group player) then {
@@ -196,6 +199,7 @@ while {_reason isEqualTo -1} do
     if !(isNull _veh) then
     {
         private _vehType = typeOf _veh;
+        private _detectionDistance = if (sunOrMoon < 1) then {50} else {100};
         if (!(_vehType in undercoverVehicles)) exitWith
         {
             _reason = REASON_VNOCIVIL;
@@ -205,17 +209,15 @@ while {_reason isEqualTo -1} do
         {
             _reason = REASON_VCOMPROMISED;
         };
-
-        if (call _fnc_checkClothesVehicle) exitWith
+        
+        if (_veh getVariable ["SA_Tow_Ropes", []] isNotEqualTo []) exitWith 
         {
-            if ({((side _x == Invaders) or (side _x == Occupants)) and ((_x knowsAbout player > 1.4) or (_x distance player < 350))} count allUnits > 0) then
-            {
-                _reason = REASON_CLOTHES2
-            }
-            else
-            {
-                _reason = REASON_CLOTHES1
-            };
+            _reason = REASON_VTOWROPES;
+        };
+
+        if ({[_x, _detectionDistance] call _fnc_enemyDistanceCheck} count allUnits > 0 && {call _fnc_checkClothesVehicle}) exitWith
+        {
+            _reason = REASON_CLOTHES2
         };
 
         if (A3A_hasACE) then
@@ -243,26 +245,20 @@ while {_reason isEqualTo -1} do
             _reason = REASON_NOFLY;
         };
 
-        if ((_vehType != FactionGet(reb,"vehicleCivHeli")) && (!(_vehType isEqualTo FactionGet(reb,"vehicleCivBoat")))) then
+        if (_vehType isKindOf "Land") then
         {
             if (!(isOnRoad position _veh) && {count (_veh nearRoads 50) == 0}) then
             {
-                if ({((side _x == Invaders) || (side _x == Occupants)) && ((_x knowsAbout player > 1.4) || (_x distance player < 350))} count allUnits > 0) then
+                if ({[_x, _detectionDistance] call _fnc_enemyDistanceCheck} count allUnits > 0) then
                 {
                     _reason = REASON_HIGHWAY;
                 };
             };
-
-            if(_reason isNotEqualTo -1) exitWith {};
-
-            _reason = [_secureBases] call _fnc_checkBaseUndercoverBreak;
         };
-    }
-    else
-    {
+    } else {
         if (_healingTarget != objNull && {side _healingTarget != civilian && {_healingTarget isKindOf "Man"}}) exitWith
         {
-            if ({((side _x == Invaders) or(side _x == Occupants)) and((_x knowsAbout player > 1.4) or(_x distance player < 350))} count allUnits > 0) then
+            if ({[_x, _detectionDistance] call _fnc_enemyDistanceCheck} count allUnits > 0) then
             {
                 _reason = REASON_BADMEDIC2;
             }
@@ -273,7 +269,7 @@ while {_reason isEqualTo -1} do
         };
         if (call _fnc_checkClothes) exitWith
         {
-            if ({((side _x == Invaders) or (side _x == Occupants)) and ((_x knowsAbout player > 1.4) or (_x distance player < 350))} count allUnits > 0) then
+            if ({[_x, 300] call _fnc_enemyDistanceCheck} count allUnits > 0) then
             {
                 _reason = REASON_CLOTHES2
             }
@@ -290,17 +286,23 @@ while {_reason isEqualTo -1} do
         {
             _reason = REASON_CARRYUNDERCOVERBREAK;
         };
-
-        if(_reason isNotEqualTo -1) exitWith {};
-
-        _reason = [_secureBases] call _fnc_checkBaseUndercoverBreak;
+        if (!isNull (player getVariable ["SA_Tow_Ropes_Vehicle", objNull])) exitWith
+        {
+            _reason = REASON_TOWROPES;
+        };
     };
+
+    if (_reason != -1) exitWith {};
+
+    // Don't do location checks on air vehicles. AirspaceControl handles that.
+    if (!isNull _veh and { _veh isKindOf "Air" }) then { continue };
+
+    _reason = [_secureBases] call _fnc_checkBaseUndercoverBreak;
 };
 
 Info_1("Final undercover break reason: %1", _reason);
 
 if (captive player) then {
-    [player, false] remoteExec["setCaptive"];
     player setCaptive false;
 };
 
@@ -309,8 +311,7 @@ if !(isNull (objectParent player)) then
     {
         if (isPlayer _x) then
         {
-            [_x, false] remoteExec["setCaptive", 0, _x];
-            _x setCaptive false;
+            [_x, false] remoteExec["setCaptive", _x];
         }
     } forEach((assignedCargo(vehicle player)) + (crew(vehicle player)) - [player]);
 };
@@ -407,6 +408,14 @@ switch (_reason) do
         } else {
             player setVariable["compromised", [] call _fnc_getTimeLimit];
         };
+    };
+    case REASON_VTOWROPES:
+    {
+        [localize "STR_info_bar_undercover_break_title", localize "STR_info_bar_undercover_break_reason_vtow_ropes"] call A3A_fnc_customHint;
+    };
+    case REASON_TOWROPES:
+    {
+        [localize "STR_info_bar_undercover_break_title", localize "STR_info_bar_undercover_break_reason_tow_ropes"] call A3A_fnc_customHint;
     };
     default
     {

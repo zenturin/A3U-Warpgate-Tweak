@@ -138,9 +138,6 @@ private _moneyEarned = 0;
             removeAllWeapons _lootContainer;
             _lootContainer setVariable ["isLooted", true, true];
         };
-        // case (typeOf _lootContainer isEqualTo rivalsAmmoCache): {
-        //     _lootContainer setVariable ["isLooted", true, true];
-        // };
         default {
             deleteVehicle _lootContainer;
         };

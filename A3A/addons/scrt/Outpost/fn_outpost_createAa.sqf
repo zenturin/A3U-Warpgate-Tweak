@@ -27,7 +27,8 @@ _groupX = [getMarkerPos respawnTeamPlayer, teamPlayer, _formatX] call A3A_fnc_sp
 _groupX setGroupId ["Post"];
 _road = [getMarkerPos respawnTeamPlayer] call A3A_fnc_findNearestGoodRoad;
 _pos = position _road findEmptyPosition [1,30,"B_G_Van_01_transport_F"];
-_truckX = (A3A_faction_reb get "vehicleLightUnarmed") createVehicle _pos;
+_vehType = (A3A_faction_reb get "vehiclesLightUnarmed") select 0;
+_truckX = _vehType createVehicle _pos;
 _groupX addVehicle _truckX;
 {
     [_x] call A3A_fnc_FIAinit
@@ -42,7 +43,7 @@ waitUntil {
 	sleep 1;
 	(!isNil "cancelEstabTask" && {cancelEstabTask}) || 
 	{_units findIf {[_x] call A3A_fnc_canFight} == -1 || 
-	{{alive _x && {_x distance _position < 10}} count units _groupX > 0 ||
+	{{alive _x && {_x distance _position < 35}} count units _groupX > 0 ||
 	{(dateToNumber date > _dateLimitNum)}}}
 };
 
@@ -58,11 +59,12 @@ switch (true) do {
 			_owner = (leader _groupX) getVariable ["owner",leader _groupX];
 			(leader _groupX) remoteExec ["removeAllActions",leader _groupX];
 			_owner remoteExec ["selectPlayer",leader _groupX];
-			(leader _groupX) setVariable ["owner",_owner,true];
-			{[_x] joinsilent group _owner} forEach units group _owner;
-			[group _owner, _owner] remoteExec ["selectLeader", _owner];
+			// (leader _groupX) setVariable ["owner",_owner,true];
+			// {[_x] joinsilent group _owner} forEach units group _owner;
+			// [group _owner, _owner] remoteExec ["selectLeader", _owner];
 			"" remoteExec ["hint",_owner];
 			waitUntil {!(isPlayer leader _groupX)};
+			sleep 5;
 		};
 		aapostsFIA = aapostsFIA + [_marker]; publicVariable "aapostsFIA";
 		sidesX setVariable [_marker,teamPlayer,true];

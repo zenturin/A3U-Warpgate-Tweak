@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Antistasi Plus" width="200" heigth="200" src="https://user-images.githubusercontent.com/6746043/206381805-43f2a69a-2754-49f3-95e2-aeaad8a4cee3.png">
+  <img alt="Antistasi Plus" width="200" height="200" src="https://user-images.githubusercontent.com/6746043/206381805-43f2a69a-2754-49f3-95e2-aeaad8a4cee3.png">
   <h1>Antistasi Plus</h1>
   <p>
     <i>An Arma 3 persistent multiplayer scenario about guerilla warfare tactics.</i>
@@ -8,10 +8,13 @@
   </p>
   <p>
     <a href="https://github.com/igorkis-scrts/A3-Antistasi-Plus/releases/latest">
-        <img src="https://img.shields.io/badge/Current_Stable_Version-2.1.11-red" alt="Antistasi Plus Version">
+        <img src="https://img.shields.io/badge/Current_Stable_Version-2.2-red" alt="Antistasi Plus Version">
     </a>
   </p>
 </div>
+
+### Latest Stable Release
+**[Steam Workshop: Antistasi Plus](https://steamcommunity.com/sharedfiles/filedetails/?id=2912941775)**
 
 ## Features 
 - Arms Dealer vendor with the ability to directly buy and sell weapons, items and gear

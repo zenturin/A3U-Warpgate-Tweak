@@ -22,32 +22,29 @@
 
 ["flyGear", ["vn_b_uniform_heli_01_01"]] call _fnc_saveToTemplate;
 
-["vehicleBasic", "vn_c_bicycle_01"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "vn_i_wheeled_m151_01_marines"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "vn_i_wheeled_m151_mg_01_marines"] call _fnc_saveToTemplate;
-["vehicleTruck", "vn_i_wheeled_m54_01_marines"] call _fnc_saveToTemplate;
-["vehicleAT", "vn_i_wheeled_m151_mg_06_marines"] call _fnc_saveToTemplate;
-["vehicleAA", "vn_b_wheeled_m54_mg_02"] call _fnc_saveToTemplate;
+["vehiclesBasic", ["vn_o_bicycle_01_vcmf"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["vn_o_wheeled_btr40_01_vcmf"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["vn_o_wheeled_z157_mg_01_vcmf", "vn_o_wheeled_btr40_mg_02_vcmf", "vn_o_wheeled_btr40_mg_01_vcmf", "vn_o_wheeled_btr40_mg_04_vcmf"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["vn_o_wheeled_z157_01_vcmf", "vn_o_wheeled_z157_02_vcmf"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["vn_o_wheeled_btr40_mg_05_vcmf"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["vn_o_wheeled_btr40_mg_03_vcmf", "vn_o_wheeled_z157_mg_02_vcmf"]] call _fnc_saveToTemplate;
 
-["vehicleBoat", "vn_o_boat_02_01"] call _fnc_saveToTemplate;
-["vehicleRepair", "vn_i_wheeled_m54_repair"] call _fnc_saveToTemplate;
+["vehiclesBoat", ["vn_o_boat_02_mg_00", "vn_o_boat_01_mg_00"]] call _fnc_saveToTemplate;
 
-["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclesPlane", ["vn_o_air_mig19_gun"]] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "vn_c_wheeled_m151_01"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "vn_b_wheeled_m54_01_airport"] call _fnc_saveToTemplate;
-["vehicleCivHeli", "C_Heli_Light_01_civil_F"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "vn_c_boat_08_01"] call _fnc_saveToTemplate;
-["vehicleCivBoxSupply", "vn_i_wheeled_m54_03_marines"] call _fnc_saveToTemplate;
+["vehiclesCivCar", ["vn_c_car_02_01", "vn_c_car_01_01","vn_c_car_03_01","vn_c_wheeled_m151_02","vn_c_wheeled_m151_01","vn_c_car_04_01"]] call _fnc_saveToTemplate;
+["vehiclesCivTruck", ["vn_b_wheeled_m54_01_airport"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["vn_b_air_uh1d_04_09"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat", ["vn_c_boat_08_01"]] call _fnc_saveToTemplate;
+["vehiclesCivSupply", ["vn_i_wheeled_m54_03_marines"]] call _fnc_saveToTemplate;
 
-
-["staticMG", "vn_i_marines_static_m1919a4_high"] call _fnc_saveToTemplate;
-["staticAT", "vn_i_marines_static_m40a1rr"] call _fnc_saveToTemplate;
-["staticAA", "vn_i_static_m45"] call _fnc_saveToTemplate;
-["staticMortar", "vn_i_static_mortar_m2"] call _fnc_saveToTemplate;
-["staticMortarMagHE", "vn_mortar_m2_mag_he_x8"] call _fnc_saveToTemplate;
-["staticMortarMagSmoke", "vn_mortar_m2_mag_wp_x8"] call _fnc_saveToTemplate;
+["staticMGs", ["vn_o_vc_static_dp28_high", "vn_o_vc_static_m1910_low_02", "vn_o_vc_static_m1910_low_01", "vn_o_vc_static_sgm_low_02", "vn_o_vc_static_sgm_low_01"]] call _fnc_saveToTemplate;
+["staticAT", ["vn_o_vc_static_d44", "vn_o_vc_static_type56rr"]] call _fnc_saveToTemplate;
+["staticAA", ["vn_o_vc_static_zgu1_01", "vn_o_vc_static_dshkm_high_02", "vn_o_vc_static_m1910_high_01", "vn_o_vc_static_sgm_high_01"]] call _fnc_saveToTemplate;
+["staticMortars", ["vn_o_vc_static_mortar_type63"]] call _fnc_saveToTemplate;
+["staticMortarMagHE", "vn_mortar_type63_mag_he_x8"] call _fnc_saveToTemplate;
+["staticMortarMagSmoke", "vn_mortar_type63_mag_wp_x8"] call _fnc_saveToTemplate;
 
 ["mineAT", "vn_mine_m15_mag"] call _fnc_saveToTemplate;
 ["mineAPERS", "vn_mine_m14_mag"] call _fnc_saveToTemplate;
@@ -60,25 +57,22 @@
 //////////////////////////////////////
 
 ["blackMarketStock", [
-    ["vn_o_nva_navy_static_sgm_low_02", 500, "STATICMG", {true}],
-    ["vn_o_nva_navy_static_sgm_low_01", 750, "STATICMG", {true}],
-    ["vn_o_nva_navy_static_dshkm_high_01", 1000, "STATICMG", {true}],
-    ["vn_o_nva_navy_static_dshkm_low_02", 1000, "STATICMG", {true}],
-    ["vn_o_nva_navy_static_dshkm_low_01", 1500, "STATICMG", {true}],
     ["vn_o_nva_static_at3", 3000, "STATICMG", {tierWar > 3}],
     ["vn_o_nva_65_static_mortar_type53", 3000, "STATICMORTAR", {tierWar > 5}],
 
-    ["vn_o_wheeled_btr40_mg_01_nvam", 2500, "CAR", {true}],
-    ["vn_o_wheeled_btr40_mg_02_nvam", 3000, "CAR", {true}],
+    ["vn_o_vc_static_h12", 15000, "ARTILLERY", {tierWar > 5}],
 
-    ["vn_o_armor_m113_acav_03", 6000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count milbases > 0}],
-    ["vn_o_armor_m113_01", 7500, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count milbases > 0}],
+    ["vn_o_armor_btr50pk_01", 6000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count milbases > 0}],
+    ["vn_o_armor_btr50pk_02", 7500, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count milbases > 0}],
 
     ["vn_o_armor_pt76a_01_nva65", 15000, "TANK", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count milbases > 0}}],
     ["vn_o_armor_pt76b_01_nva65", 17500, "TANK", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count milbases > 0}}],
-    ["vn_o_armor_type63_01_nva65", 17500, "TANK", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count milbases > 0}}]
+    ["vn_o_armor_type63_01_nva65", 17500, "TANK", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count milbases > 0}}],
+
+    ["vn_o_air_mig19_cas", 25000, "PLANE", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
 ]] call _fnc_saveToTemplate;
 
+#include "VN_Reb_Vehicle_Attributes.sqf"
 
 ///////////////////////////
 //  Rebel Starting Gear  //
@@ -93,11 +87,9 @@ private _initialRebelEquipment = [
     "vn_m19_binocs_grey", "vn_mx991", "vn_mx991_red",
     "vn_m_mk2_knife_01", "vn_m_axe_01", "vn_b_type56", "vn_b_sks", "vn_b_m38", "vn_b_camo_m9130", "vn_b_camo_m40a1", "vn_b_camo_m14",
     "vn_rdg2_mag", "vn_molotov_grenade_mag", "vn_m127_mag", "vn_mine_punji_03_mag",
-    "B_FieldPack_oli", "vn_o_vest_05"
+    "B_FieldPack_oli", "vn_o_vest_05",
+    "vn_c_pack_01"
 ];
-
-["civilianBackpacks", ["vn_c_pack_01"]] call _fnc_saveToTemplate;
-_initialRebelEquipment pushBack "vn_c_pack_01";
 
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 

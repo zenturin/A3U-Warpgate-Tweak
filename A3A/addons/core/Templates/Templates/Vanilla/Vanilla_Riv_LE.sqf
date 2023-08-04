@@ -35,7 +35,8 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
 ["staticLowWeapons", ["O_G_HMG_02_F"]] call _fnc_saveToTemplate;
-["staticATs", ["O_static_AT_F"]] call _fnc_saveToTemplate;
+["staticAT", ["O_static_AT_F"]] call _fnc_saveToTemplate;
+["staticMortars", ["O_Mortar_01_F"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 

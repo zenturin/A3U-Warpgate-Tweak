@@ -66,8 +66,8 @@
 ["vehiclesPolice", ["rhs_uaz_open_vv", "rhs_uaz_vv"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["rhs_KORD_high_MSV"]] call _fnc_saveToTemplate;
-["staticATs", ["rhs_Kornet_9M133_2_msv"]] call _fnc_saveToTemplate;
-["staticAAs", ["rhs_Igla_AA_pod_msv", "RHS_ZU23_MSV"]] call _fnc_saveToTemplate;
+["staticAT", ["rhs_Kornet_9M133_2_msv"]] call _fnc_saveToTemplate;
+["staticAA", ["rhs_Igla_AA_pod_msv", "RHS_ZU23_MSV"]] call _fnc_saveToTemplate;
 ["staticMortars", ["rhs_2b14_82mm_msv"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["rhs_D30_msv"]] call _fnc_saveToTemplate;
 
@@ -78,6 +78,7 @@
 
 ["mortarMagazineHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "rhs_mag_d832du_10"] call _fnc_saveToTemplate;
+["mortarMagazineFlare", "rhs_mag_3vs25m_10"] call _fnc_saveToTemplate;
 
 
 ["minefieldAT", ["rhs_mine_tm62m"]] call _fnc_saveToTemplate;

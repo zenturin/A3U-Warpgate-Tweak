@@ -15,8 +15,8 @@ if (!isNil "_overrideRadius") then {
     _size = _radiusX select 0;
 };
 
-for "_i" from 0 to ((count lamptypes) -1) do {
-    private _lamps = _positionX nearObjects [lamptypes select _i,_size];
+for "_i" from 0 to ((count A3A_lampTypes) -1) do {
+    private _lamps = _positionX nearObjects [A3A_lampTypes select _i,_size];
     {
         sleep 0.3; 
         _x setDamage _damage

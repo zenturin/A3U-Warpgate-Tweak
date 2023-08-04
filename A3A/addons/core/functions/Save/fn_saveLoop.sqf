@@ -164,23 +164,25 @@ if (!isNil "isRallyPointPlaced" && {isRallyPointPlaced}) then {
 
 _arrayEst = [];
 {
-	_veh = _x;
-	_typeVehX = typeOf _veh;
-	if ((_veh distance getMarkerPos respawnTeamPlayer < 50) and !(_veh in staticsToSave) and !(_typeVehX in ["ACE_SandbagObject","Land_FoodSacks_01_cargo_brown_F","Land_Pallet_F"])) then {
-		if (((not (_veh isKindOf "StaticWeapon")) and (not (_veh isKindOf "ReammoBox")) and (not (_veh isKindOf "ReammoBox_F")) and (not(_veh isKindOf "Building"))) and (not (_typeVehX == (A3A_faction_reb get "vehicleCivSupply"))) and (count attachedObjects _veh == 0) and (alive _veh) and ({(alive _x) and (!isPlayer _x)} count crew _veh == 0) and (not(_typeVehX == "WeaponHolderSimulated"))) then {
-			_posVeh = getPosWorld _veh;
-			_xVectorUp = vectorUp _veh;
-			_xVectorDir = vectorDir _veh;
-            private _state = [_veh] call HR_GRG_fnc_getState;
-			_arrayEst pushBack [_typeVehX,_posVeh,_xVectorUp,_xVectorDir, _state];
-		};
+	// Include buyable items marked as saveable
+	// TODO: Do we need to refund the others?
+	if (typeof _x in A3A_utilityItemHM and {"save" in (A3A_utilityItemHM get typeof _x)#4}) then {
+		_arrayEst pushBack [typeof _x, getPosWorld _x, vectorUp _x, vectorDir _x, [_x] call HR_GRG_fnc_getState];
+		continue;
 	};
-} forEach vehicles - [boxX,flagX,vehicleBox,mapX];
 
-_sites = markersX select {sidesX getVariable [_x,sideUnknown] == teamPlayer};
+	if (fullCrew [_x, "", true] isEqualTo []) then { continue };			// no crew seats, not in utilityItems, not saved
+	if (_x isKindOf "StaticWeapon") then { continue };						// static weapons are accounted for in staticsToSave
+	if ({(alive _x) and (!isPlayer _x)} count crew _x > 0) then { continue };		// no AI-crewed vehicles, those are refunded
+
+	_arrayEst pushBack [typeof _x, getPosWorld _x, vectorUp _x, vectorDir _x, [_x] call HR_GRG_fnc_getState];
+
+} forEach (vehicles inAreaArray [markerPos respawnTeamPlayer, 100, 100] select { alive _x });
+
+
 {
 	_positionX = position _x;
-	if ((alive _x) and !(surfaceIsWater _positionX) and !(isNull _x)) then {
+	if ((alive _x) and !(surfaceIsWater _positionX) and (isNull attachedTo _x)) then {
 		_arrayEst pushBack [typeOf _x,getPosWorld _x,vectorUp _x, vectorDir _x];
 	};
 } forEach staticsToSave;
@@ -410,22 +412,6 @@ _resDefInv = _resDefInv / A3A_balancePlayerScale;
 // HQ knowledge
 ["HQKnowledge", [A3A_curHQInfoOcc, A3A_curHQInfoInv, A3A_oldHQInfoOcc, A3A_oldHQInfoInv]] call A3A_fnc_setStatVariable;
 
-// these are obsolete? idlebases is only used short-term now, idleassets is dead
-/*
-_dataX = [];
-{
-	_dataX pushBack [_x,server getVariable _x];
-} forEach airportsX + outposts + milbases;
-
-["idlebases",_dataX] call A3A_fnc_setStatVariable;
-
-_dataX = [];
-{
-	_dataX pushBack [_x,timer getVariable _x];
-} forEach (vehAttack + vehMRLS + vehAA + vehHelis + vehFixedWing + staticAAOccupants + staticAAInvaders + [vehNATOBoat, vehCSATBoat, staticATOccupants, staticATInvaders]);
-
-["idleassets",_dataX] call A3A_fnc_setStatVariable;
-*/
 
 _dataX = [];
 {

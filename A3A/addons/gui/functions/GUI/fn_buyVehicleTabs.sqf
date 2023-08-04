@@ -32,23 +32,18 @@ params[
 ];
 
 private _display = findDisplay A3A_IDD_BUYVEHICLEDIALOG;
-private _selectedTab = -1;
 
-if (_tab isEqualTo "vehicles") then
+if (_tab isEqualTo "vehicles") then 
 {
-    _selectedTab = A3A_IDC_VEHICLESGROUP;
+    _params params ["_tab", "_selectedTab", "_category"];
     Debug("BuyVehicleTab starting...");
-
-    // show the vehicle tab so that user don't freak out
-    private _selectedTabCtrl = _display displayCtrl A3A_IDC_BUYVEHICLEMAIN;
-    _selectedTabCtrl ctrlShow true;
 
     // Setup Object render
     private _objPreview = _display displayCtrl A3A_IDC_BUYOBJECTRENDER;  // 9303;
     _objPreview ctrlShow false;
 
     // Add stuff to the buyable vehicles list
-    private _buyableVehiclesList = [] call SCRT_fnc_ui_populateVehicleBox;
+    private _buyableVehiclesList = [_category] call SCRT_fnc_ui_populateVehicleBox;
     private _vehiclesControlsGroup = _display displayCtrl _selectedTab;
 
     private _added = 0;
@@ -96,7 +91,7 @@ if (_tab isEqualTo "vehicles") then
         _button setVariable ["className", _className];
         _button setVariable ["model", _model];
         _button ctrlAddEventHandler ["ButtonClick", {
-            closeDialog 2; [(_this # 0) getVariable "className", "BUYFIA"] spawn A3A_fnc_addFIAveh;
+            closeDialog 2; [(_this # 0) getVariable "className"] spawn A3A_fnc_addFIAveh;
         }];
         _button ctrlCommit 0;
 
@@ -107,7 +102,6 @@ if (_tab isEqualTo "vehicles") then
                 if (true || isNil "Dev_GUI_prevInjectEnter") then {
                     params ["_control"];
                     private _UIScaleAdjustment = (0.55/getResolution#5);  // I tweaked this on UI Small, so that's why the 0.55 is the base size.
-
                     private _model = _control getVariable "model";
                     private _className = _control getVariable "className";
                     private _display = findDisplay A3A_IDD_BUYVEHICLEDIALOG;  // 9300;
@@ -128,7 +122,6 @@ if (_tab isEqualTo "vehicles") then
                     _objPreview ctrlSetPosition [_objPreview_x + 0.5 * (22 * pixelW * pixelGridNoUIScale), 4, _objPreview_y - 0.5 * (12.5 * pixelW * pixelGridNoUIScale) + _yAdjustment];
                     _editorPreviewPicture ctrlShow false;
                     _editorPreviewPicture ctrlCommit 1;
-
                     _objPreview ctrlShow true;
                     _objPreview ctrlEnable false;  // Prevent the user dragging it.
                 } else {
@@ -297,6 +290,7 @@ if (_tab isEqualTo "vehicles") then
 if  (_tab in ["other"]) then
 {
     Debug("BuyLogisticsTab starting...");
+    private _selectedTab = -1;
 
     if(_tab isEqualTo "other") then
     {
@@ -307,96 +301,16 @@ if  (_tab in ["other"]) then
     private _objPreview = _display displayCtrl A3A_IDC_BUYOBJECTRENDER;  // 9303;
     _objPreview ctrlShow false;
 
-    // className, price, function, params, commaderOnly?
-    private _buyableItemList = [];
-
-    // Add items
-        private _fuelDrum = (A3A_faction_reb get 'vehicleFuelDrum');
-        _buyableItemList pushBack [
-            _fuelDrum # 0,
-            _fuelDrum # 1,
-            "A3A_fnc_buyItem",
-            [
-                player,
-                _fuelDrum # 0,
-                _fuelDrum # 1,
-                [
-                    ['A3A_fnc_initMovableObject', false], ['A3A_Logistics_fnc_addLoadAction', false]
-                ]
-            ],
-            false,
-            "Fuel Drum"
-        ];
-
-        private _fuelTank = (A3A_faction_reb get 'vehicleFuelTank');
-        _buyableItemList pushBack [
-            _fuelTank # 0,
-            _fuelTank # 1,
-            "A3A_fnc_buyItem",
-            [
-                player,
-                _fuelTank # 0,
-                _fuelTank # 1,
-                [
-                    ['A3A_fnc_initMovableObject', false], ['A3A_Logistics_fnc_addLoadAction', false]
-                ]
-            ],
-            true,
-            localize "STR_A3AP_buyvehdialog_fuel_tank"
-        ];
-
-        //LTC
-        if (lootCratesEnabled) then {
-            _buyableItemList pushBack [
-                A3A_faction_reb get 'lootCrate',
-                server getVariable (A3A_faction_reb get "lootCrate"),
-                "SCRT_fnc_loot_createLootCrate",
-                [player],
-                false,
-                localize "STR_A3AP_buyvehdialog_loot_crate"
-            ];
-        };
-
-        if (reviveKitsEnabled) then {
-            private _reviveKitBox = (A3A_faction_reb get 'reviveKitBox');
-            _buyableItemList pushBack [
-                _reviveKitBox # 0,
-                _reviveKitBox # 1,
-                "SCRT_fnc_common_buyReviveKitBox",
-                [player],
-                false,
-                localize "STR_A3AP_buyvehdialog_revive_kit_box"
-            ];
-        };
-
-        _buyableItemList pushBack [
-            A3A_faction_reb get 'vehicleLightSource',
-            25,
-            "A3A_fnc_buyItem",
-            [
-                player,
-                A3A_faction_reb get 'vehicleLightSource',
-                25,
-                [
-                    ['A3A_fnc_initMovableObject', false]
-                ]
-            ],
-            false,
-            localize "STR_A3AP_buyvehdialog_light"
-        ];
-
-
     private _itemControlsGroup = _display displayCtrl _selectedTab;
 
     private _added = 0;
     {
-        _x params [
+        (A3A_utilityItemHM get _x) params [
             ["_className", ""],
             ["_price", 0],
-            ["_func", ""],
-            ["_params", []],
-            ["_commanderOnly", false],
-            ["_buttonText", ""]
+            ["_buttonText", ""],
+            ["_iconType", ""],
+            ["_flags", []]
         ];
         private _configClass = configFile >> "CfgVehicles" >> _className;
         if (!isClass _configClass) then { continue };
@@ -415,7 +329,7 @@ if  (_tab in ["other"]) then
         */
 
         // Add some extra padding to the top if there are 2 rows or less
-        private _topPadding = if (count _buyableItemList < 7) then {5 * GRID_H} else {0};
+        private _topPadding = if (count A3A_utilityItemList < 7) then {5 * GRID_H} else {0};
 
         private _itemXpos = 7 * GRID_W + ((7 * GRID_W + 44 * GRID_W) * (_added mod 3));
         private _itemYpos = (floor (_added / 3)) * (44 * GRID_H) + _topPadding;
@@ -430,25 +344,31 @@ if  (_tab in ["other"]) then
         _previewPicture ctrlSetText _editorPreview;
         _previewPicture ctrlCommit 0;
 
+
+
         private _button = _display ctrlCreate ["A3A_ShortcutButton", -1, _itemControlsGroup];
         _button ctrlSetPosition [0, 25 * GRID_H, 44 * GRID_W, 12 * GRID_H];
         _button ctrlSetText _displayName;
         _button ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_item_tooltip", _displayName, _price, "€"];
         _button setVariable ["className", _className];
         _button setVariable ["model", _model];
-        _button setVariable ["function", _func];
-        _button setVariable ["params", _params];
-        _button setVariable ["commanderOnly", _commanderOnly];
-        _button setVariable ["editorPreview", _editorPreview];
-        _button ctrlAddEventHandler ["ButtonClick", {
-            closeDialog 2;
-            if (((_this # 0) getVariable "commanderOnly") && player isNotEqualTo theBoss) exitwith {
-                [localize "STR_antistasi_dialogs_buy_item_custom_hint_header", localize "STR_antistasi_dialogs_buy_item_custom_hint_commander_only"] call A3A_fnc_customHint;
+
+        switch (true) do {
+            case (_className isEqualTo (A3A_faction_reb get "lootCrate")): {
+                _button ctrlAddEventHandler ["ButtonClick", {
+                    closeDialog 2; 
+                    [] call SCRT_fnc_loot_createLootCrate;
+                }];
             };
-            private _func_name = (_this # 0) getVariable "function";
-            private _params = (_this # 0) getVariable "params";
-            _params spawn (missionNamespace getVariable _func_name);
-        }];
+            default {
+                _button ctrlAddEventHandler ["ButtonClick", { 
+                    closeDialog 2; 
+                    [player, _this#0 getVariable "className"] call A3A_fnc_buyItem 
+                }];
+            };
+        };
+
+        _button ctrlAddEventHandler ["ButtonClick", { closeDialog 2; [player, _this#0 getVariable "className"] call A3A_fnc_buyItem }];
         _button ctrlCommit 0;
 
         // Object Render
@@ -468,7 +388,6 @@ if  (_tab in ["other"]) then
                     private _boundingDiameter = [_className] call FUNC(sizeOf);
                     _objPreview ctrlSetModelScale (2.25/(_boundingDiameter) * _UIScaleAdjustment);
                     _objPreview ctrlSetModelDirAndUp [[-0.6283,0.3601,0.6896],[-0.0125,-0.5015,0.8651]];  // x y z
-
                     private _editorPreviewPicture = ctrlParentControlsGroup _control controlsGroupCtrl A3A_IDC_BUYVEHICLEPREVIEW;  // 9304;
                     private _mouseAbsolutePos = getMousePosition;
                     private _mouseRelativePos = ctrlMousePosition _editorPreviewPicture;
@@ -479,7 +398,6 @@ if  (_tab in ["other"]) then
                     _objPreview ctrlSetPosition [_objPreview_x + 0.5 * (22 * pixelW * pixelGridNoUIScale), 4, _objPreview_y - 0.5 * (12.5 * pixelW * pixelGridNoUIScale) + _yAdjustment];
                     _editorPreviewPicture ctrlShow false;
                     _editorPreviewPicture ctrlCommit 1;
-
                     _objPreview ctrlShow true;
                     _objPreview ctrlEnable false;  // Prevent the user dragging it.
                 } else {
@@ -510,49 +428,53 @@ if  (_tab in ["other"]) then
         _priceText ctrlSetText format ["%1 €",_price];
         _priceText ctrlCommit 0;
 
-        if (_className in [(A3A_faction_reb get 'vehicleFuelTank')#0, (A3A_faction_reb get 'vehicleFuelDrum')#0]) then
-        {
-            private _refuelIcon = _display ctrlCreate ["A3A_PictureStroke", -1, _itemControlsGroup];
-            _refuelIcon ctrlSetPosition [1 * GRID_W, 1 * GRID_H, 3 * GRID_W, 3 * GRID_H];
-            _refuelIcon ctrlSetText A3A_Icon_Refuel;
-            private _refuelCount = if (A3A_hasACE) then {getNumber (_configClass >> "ace_refuel_fuelCargo")} else {getNumber (_configClass >> "transportFuel")};
-            _refuelIcon ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_refuel_tooltip", _displayName, _refuelCount];
-            _refuelIcon ctrlCommit 0;
+        private _itemPic = _display ctrlCreate ["A3A_PictureStroke", -1, _itemControlsGroup];
+        _itemPic ctrlSetPosition [1 * GRID_W, 1 * GRID_H, 3 * GRID_W, 3 * GRID_H];
+        private _iconPath = switch (_iconType) do {
+            case "light": { A3A_Icon_Light };
+            case "revivebox": { A3A_Icon_HealKit };
+            case "lootbox": { A3A_Icon_Box };
+            case "gear": { A3A_Icon_Gear };
+            case "heal": { A3A_Icon_Heal };
+            case "refuel": { A3A_Icon_Refuel }; 
+            case "repair": { A3A_Icon_Repair };
+            case "rearm": { A3A_Icon_Rearm };
+            default { "" };
         };
+        _itemPic ctrlSetText _iconPath;
 
+        if (_className in [(A3A_faction_reb get 'vehicleFuelTank')#0, (A3A_faction_reb get 'vehicleFuelDrum')#0]) then {
+            private _refuelCount = if (A3A_hasACE) then {getNumber (_configClass >> "ace_refuel_fuelCargo")} else {getNumber (_configClass >> "transportFuel")};
+            _itemPic ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_refuel_tooltip", _displayName, _refuelCount];
+        };
+        if (_className isEqualTo (A3A_faction_reb get 'surrenderCrate')) then {
+            _itemPic ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_loot_tooltip", _displayName, getNumber(_configClass >> "maximumLoad")];
+        };
+        if (_className in [(A3A_faction_reb get 'vehicleMedicalBox')#0, (A3A_faction_reb get 'vehicleHealthStation')#0]) then {
+            _itemPic ctrlSetTooltip localize "STR_antistasi_dialogs_buy_vehicle_med_tooltip";
+        };
+        if (_className isEqualTo (FactionGet(reb,"vehicleAmmoStation")#0)) then {
+            _itemPic ctrlSetTooltip localize "STR_antistasi_dialogs_buy_vehicle_ammo_tooltip";
+        };
+        if (_className isEqualTo (FactionGet(reb,"vehicleRepairStation")#0)) then {
+            _itemPic ctrlSetTooltip localize "STR_antistasi_dialogs_buy_vehicle_repair_tooltip";
+        };
         if (_className isEqualTo (A3A_faction_reb get 'lootCrate')) then
         {
-            private _ltcIcon = _display ctrlCreate ["A3A_PictureStroke", -1, _itemControlsGroup];
-            _ltcIcon ctrlSetPosition [1 * GRID_W, 1 * GRID_H, 3 * GRID_W, 3 * GRID_H];
-            _ltcIcon ctrlSetText A3A_Icon_Box;
-            _ltcIcon ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_loot_tooltip", _displayName];
-            _ltcIcon ctrlCommit 0;
+            _itemPic ctrlSetTooltip localize "STR_antistasi_dialogs_buy_vehicle_loot_tooltip";
         };
-
-        if (_className isEqualTo (A3A_faction_reb get 'reviveKitBox')) then
-        {
-            private _ltcIcon = _display ctrlCreate ["A3A_PictureStroke", -1, _itemControlsGroup];
-            _ltcIcon ctrlSetPosition [1 * GRID_W, 1 * GRID_H, 3 * GRID_W, 3 * GRID_H];
-            _ltcIcon ctrlSetText A3A_Icon_HealKit;
-            _ltcIcon ctrlSetTooltip format [localize "STR_antistasi_dialogs_buy_vehicle_revivekitbox_tooltip", _displayName];
-            _ltcIcon ctrlCommit 0;
-        };
-
         if (_className isEqualTo (A3A_faction_reb get 'vehicleLightSource')) then
         {
-            private _ltcIcon = _display ctrlCreate ["A3A_PictureStroke", -1, _itemControlsGroup];
-            _ltcIcon ctrlSetPosition [1 * GRID_W, 1 * GRID_H, 3 * GRID_W, 3 * GRID_H];
-            _ltcIcon ctrlSetText A3A_Icon_Light;
-            _ltcIcon ctrlSetTooltip localize "STR_antistasi_dialogs_buy_vehicle_light_tooltip";
-            _ltcIcon ctrlCommit 0;
+            _itemPic ctrlSetTooltip localize "STR_antistasi_dialogs_buy_vehicle_light_tooltip";
         };
+        _itemPic ctrlCommit 0;
 
         // Show item
         _itemControlsGroup ctrlSetFade 0;
         _itemControlsGroup ctrlCommit 0.1;
 
         _added = _added + 1;
-    } forEach _buyableItemList;
+    } forEach A3A_utilityItemList;
 
     Debug("BuyLogisticsTab complete.");
 };

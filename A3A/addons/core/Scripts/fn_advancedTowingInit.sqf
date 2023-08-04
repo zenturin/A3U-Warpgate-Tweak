@@ -51,8 +51,6 @@ if( count (ropeAttachedObjects _vehicle) == 0 ) then { \
 	_cargo = ((ropeAttachedObjects _vehicle) select 0) getVariable ["SA_Cargo",objNull]; \
 };
 
-SA_Advanced_Towing_Install = {
-
 // Prevent advanced towing from installing twice
 if(!isNil "SA_TOW_INIT") exitWith {};
 scriptName "fn_advancedTowingInit.sqf";
@@ -404,7 +402,6 @@ SA_Attach_Tow_Ropes = {
 };
 
 SA_Take_Tow_Ropes = {
-	if (captive player) then {player setCaptive false};//by Barbolani to avoid undercover exploits
 	params ["_vehicle","_player"];
 	if(local _vehicle) then {
 		diag_log format ["Take Tow Ropes Called %1", _this];
@@ -801,16 +798,4 @@ SA_RemoteExecServer = {
 	};
 };
 
-if (isServer) then {
-	// Install Advanced Towing on all clients (plus JIP) //
-	publicVariable "SA_Advanced_Towing_Install";
-	remoteExecCall ["SA_Advanced_Towing_Install", -2,true];
-};
-
 Info("Loaded advanced towing");
-
-};
-
-if (isServer) then {
-	[] call SA_Advanced_Towing_Install;
-};

@@ -69,8 +69,8 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehiclesPolice", ["UK3CB_ADP_B_LandRover_Open", "UK3CB_ADP_B_LandRover_Closed", "UK3CB_ADP_B_Hilux_Open", "UK3CB_ADP_B_Hilux_Closed"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["UK3CB_AAF_B_M240_High", "UK3CB_AAF_B_M2_TriPod"]] call _fnc_saveToTemplate;
-["staticATs", ["UK3CB_AAF_B_TOW_TriPod"]] call _fnc_saveToTemplate;
-["staticAAs", ["UK3CB_AAF_B_Stinger_AA_pod", "UK3CB_AAF_B_RBS70"]] call _fnc_saveToTemplate;
+["staticAT", ["UK3CB_AAF_B_TOW_TriPod"]] call _fnc_saveToTemplate;
+["staticAA", ["UK3CB_AAF_B_Stinger_AA_pod", "UK3CB_AAF_B_RBS70"]] call _fnc_saveToTemplate;
 ["staticMortars", ["UK3CB_AAF_B_M252"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["UK3CB_AAF_B_M119"]] call _fnc_saveToTemplate;
 
@@ -81,6 +81,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 
 ["mortarMagazineHE", "rhs_12Rnd_m821_HE"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
+["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
 
 ["minefieldAT", ["rhsusf_mine_M19"]] call _fnc_saveToTemplate;

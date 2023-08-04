@@ -66,8 +66,8 @@
 ["vehiclesPolice", ["UK3CB_LFR_B_LR_Open", "UK3CB_LFR_B_LR_Closed", "UK3CB_LFR_B_Landcruiser", "UK3CB_LFR_B_Pickup"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["UK3CB_LDF_B_DSHKM", "UK3CB_LDF_B_M2_TriPod", "UK3CB_LDF_B_PKM_High"]] call _fnc_saveToTemplate;
-["staticATs", ["UK3CB_LDF_B_Kornet", "UK3CB_LDF_B_TOW_TriPod"]] call _fnc_saveToTemplate;
-["staticAAs", ["UK3CB_LDF_B_RBS70", "UK3CB_LDF_B_ZU23", "UK3CB_LDF_B_Igla_AA_pod"]] call _fnc_saveToTemplate;
+["staticAT", ["UK3CB_LDF_B_Kornet", "UK3CB_LDF_B_TOW_TriPod"]] call _fnc_saveToTemplate;
+["staticAA", ["UK3CB_LDF_B_RBS70", "UK3CB_LDF_B_ZU23", "UK3CB_LDF_B_Igla_AA_pod"]] call _fnc_saveToTemplate;
 ["staticMortars", ["UK3CB_LDF_B_M252"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["UK3CB_LDF_B_D30"]] call _fnc_saveToTemplate;
 
@@ -78,6 +78,7 @@
 
 ["mortarMagazineHE", "rhs_12Rnd_m821_HE"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
+["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
 
 ["minefieldAT", ["rhsusf_mine_M19"]] call _fnc_saveToTemplate;

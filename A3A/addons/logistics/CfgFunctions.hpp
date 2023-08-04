@@ -30,12 +30,14 @@ class CfgFunctions {
             class getVehicleNodes {};
             class initMountedWeapon {};
             class load {};
+            class packObject {};
             class refreshVehicleLoad {};
             class removeWeaponAction {};
             class toggleAceActions {};
             class toggleLock {};
             class tryLoad {};
             class unload {};
+            class unpackObject {};
         };
     };
 };
