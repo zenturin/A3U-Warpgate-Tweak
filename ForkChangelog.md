@@ -13,6 +13,7 @@
 - Static MGs will be available from start instead of War Level 2
 - Ability to override AA/AT specialist loadouts via Rebel Loadouts feature
 - Fixed broken mortar spawn on some vanilla Rivals factions
+- Fixed 'Undefined variable in expression: a3a_faction_civ' error when player opens aresenal in non-AntistasiPlus environment
 
 ### Removals
 - Replaced rebel payload planes with just rebel planes, removed rebel faction vehicle category in templates 
