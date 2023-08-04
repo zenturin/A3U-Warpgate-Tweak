@@ -413,22 +413,6 @@ _resDefInv = _resDefInv / A3A_balancePlayerScale;
 // HQ knowledge
 ["HQKnowledge", [A3A_curHQInfoOcc, A3A_curHQInfoInv, A3A_oldHQInfoOcc, A3A_oldHQInfoInv]] call A3A_fnc_setStatVariable;
 
-// these are obsolete? idlebases is only used short-term now, idleassets is dead
-/*
-_dataX = [];
-{
-	_dataX pushBack [_x,server getVariable _x];
-} forEach airportsX + outposts + milbases;
-
-["idlebases",_dataX] call A3A_fnc_setStatVariable;
-
-_dataX = [];
-{
-	_dataX pushBack [_x,timer getVariable _x];
-} forEach (vehAttack + vehMRLS + vehAA + vehHelis + vehFixedWing + staticAAOccupants + staticAAInvaders + [vehNATOBoat, vehCSATBoat, staticATOccupants, staticATInvaders]);
-
-["idleassets",_dataX] call A3A_fnc_setStatVariable;
-*/
 
 _dataX = [];
 {

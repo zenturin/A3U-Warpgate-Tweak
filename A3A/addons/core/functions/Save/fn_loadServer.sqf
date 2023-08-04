@@ -33,7 +33,6 @@ if (isServer) then {
 	["enemyResources"] call A3A_fnc_getStatVariable;
 	["HQKnowledge"] call A3A_fnc_getStatVariable;
 
-//	["idlebases"] call A3A_fnc_getStatVariable;			// Might bring this back at some point
 	["killZones"] call A3A_fnc_getStatVariable;
 	["controlsSDK"] call A3A_fnc_getStatVariable;
 	["bombRuns"] call A3A_fnc_getStatVariable;
