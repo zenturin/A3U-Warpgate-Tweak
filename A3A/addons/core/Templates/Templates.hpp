@@ -669,7 +669,7 @@ class Templates
 
     class VN_ARVN : VN_Base
     {
-        side = "Occ";
+        side = "Inv";
         flagTexture = "\vn\objects_f_vietnam\flags\data\vn_flag_01_arvn_co.paa";
         name = "VN ARVN";
         file = "VN_AI_ARVN";
