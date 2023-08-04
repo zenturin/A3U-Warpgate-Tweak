@@ -177,13 +177,12 @@ _arrayEst = [];
 
 	_arrayEst pushBack [typeof _x, getPosWorld _x, vectorUp _x, vectorDir _x, [_x] call HR_GRG_fnc_getState];
 
-} forEach (vehicles inAreaArray [markerPos respawnTeamPlayer, 50, 50] select { alive _x });
+} forEach (vehicles inAreaArray [markerPos respawnTeamPlayer, 100, 100] select { alive _x });
 
 
-_sites = markersX select {sidesX getVariable [_x,sideUnknown] == teamPlayer};
 {
 	_positionX = position _x;
-	if ((alive _x) and !(surfaceIsWater position _x) and !(isNull attachedTo _x)) then {
+	if ((alive _x) and !(surfaceIsWater _positionX) and (isNull attachedTo _x)) then {
 		_arrayEst pushBack [typeOf _x,getPosWorld _x,vectorUp _x, vectorDir _x];
 	};
 } forEach staticsToSave;
