@@ -27,10 +27,8 @@ if (_resourcesFIA < _cost) exitWith {
 	[localize "STR_A3A_addFiaVeh_header", format [localize "STR_A3AP_error_veh_not_enough_money_generic", _cost, A3A_faction_civ get "currencySymbol"]] call A3A_fnc_customHint;
 };
 
-private _nearestMarker = [markersX select {sidesX getVariable [_x,sideUnknown] == teamPlayer},player] call BIS_fnc_nearestPosition;
-
-if (!(player inArea _nearestMarker)) exitWith {
-	[localize "STR_A3A_addFiaVeh_header", localize "STR_A3AP_error_veh_close_to_flag_generic"] call A3A_fnc_customHint;
+if (player distance2d traderX > 50) exitWith {
+	[localize "STR_A3A_addFiaVeh_header", localize "STR_veh_callback_arms_dealer_close"] call A3A_fnc_customHint;
 };
 
 private _extraMessage =	format [localize "STR_veh_callback_select_veh_generic", _cost,  A3A_faction_civ get "currencySymbol"];
@@ -50,5 +48,8 @@ private _fnc_placed = {
 
 	player reveal _vehicle;
 };
+private _fnc_check = {
+	[(player distance2d traderX > 50), localize "STR_veh_callback_arms_dealer_close"];
+};
 
-[_typeVehX, _fnc_placed, {false}, [_cost], nil, nil, nil, _extraMessage] call HR_GRG_fnc_confirmPlacement;
+[_typeVehX, _fnc_placed, _fnc_check, [_cost], nil, nil, nil, _extraMessage] call HR_GRG_fnc_confirmPlacement;
