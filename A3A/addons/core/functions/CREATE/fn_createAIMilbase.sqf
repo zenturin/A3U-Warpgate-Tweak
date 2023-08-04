@@ -395,7 +395,7 @@ for "_i" from 0 to (count _array - 1) do {
 
 waitUntil {sleep 1; (spawner getVariable _markerX == 2)};
 
-[_markerX] call A3A_fnc_freeSpawnPositions;
+_spawnsUsed call A3A_fnc_freeSpawnPositions;
 
 deleteMarker _mrk;
 { if (alive _x) then { deleteVehicle _x } } forEach _soldiers;
