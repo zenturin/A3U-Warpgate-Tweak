@@ -721,4 +721,9 @@ class Templates
         file = "VN_Civ";
         description = $STR_A3AP_setupFactionsTab_vietcivs;
     };
+	
+    // ***************************** CW *****************************
+
+    #include "Templates\CW\templates.hpp"
+
 };

@@ -16,8 +16,12 @@ params ["_traderX"];
 private _templateParts = A3A_Reb_template splitString "_";
 
 switch (true) do {
+    case ("CW" isEqualTo (_templateParts select 0)): {
+        Info("Initializing CW trader.");
+        [_traderX, "cw"] call HALs_store_fnc_addTrader;
+    };
     case ("VN" isEqualTo (_templateParts select 0)): {
-        Info("Initializing RHS trader.");
+        Info("Initializing VN trader.");
         [_traderX, "vn"] call HALs_store_fnc_addTrader;
     };
     case ("coldWar" in A3A_factionEquipFlags): {

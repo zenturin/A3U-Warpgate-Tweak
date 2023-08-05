@@ -7146,6 +7146,173 @@ class cfgHALsStore
 			ITEM(B_UavTerminal, 2500, MISC_STOCK);
 		};
 
+//Clone Wars
+
+		class handgunscw{
+			displayName = "Handguns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
+
+			ITEM(SWLW_DC15SA, 110, PISTOL_STOCK); //AMMO: SWLW_DC15SA_Mag
+			ITEM(SWLW_DC17, 100, PISTOL_STOCK); //AMMO: SWLW_DC17_Mag
+			ITEM(SWLW_RG4D, 100, PISTOL_STOCK); //AMMO: SWLW_RG4D_Mag
+		};
+
+		class smgcw{
+			displayName = "Submachine Guns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(SWLW_E5, 185, RIFLE_STOCK); // SWLW_E5_Mag
+			ITEM(SWLW_DC15s, 200, RIFLE_STOCK); // SWLW_DC15s_Mag
+            ITEM(SWLW_ACPR, 190, RIFLE_STOCK); // SWLW_acpr_Mag
+			ITEM(SWLW_ACPA, 125, RIFLE_STOCK); // SWLW_acpa_Mag
+			ITEM(SWLW_DP20, 210, RIFLE_STOCK); // SWLW_DP20_Mag
+		};
+		
+		class mgcw{
+			displayName = "Machine Guns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
+
+			ITEM(SWLW_LS150, 550, RIFLE_STOCK); // SWLW_LS150_mag
+			ITEM(SWLW_DC15SAW, 550, RIFLE_STOCK); // SWLW_DC15SAW_mag
+			ITEM(SWLW_E5C, 500, RIFLE_STOCK); // SWLW_E5C_mag
+			ITEM(SWLW_ZH73, 500, RIFLE_STOCK); // SWLW_ZH73_Mag
+			ITEM(SWLW_WestarM5, 600, RIFLE_STOCK); // SWLW_WestarM5_Mag
+			ITEM(SWLW_Z6, 800, RIFLE_STOCK); // SWLW_Z6_mag
+		};
+
+		class riflescw{
+			displayName = "Rifles, Carbines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			ITEM(SWLW_DC15A, 225, RIFLE_STOCK); // SWLW_DC15A_Mag
+			ITEM(SWLW_DC15A_wooden, 200, RIFLE_STOCK); // SWLW_DC15A_Mag
+			ITEM(SWLW_DC15A_ugl, 230, RIFLE_STOCK); // SWLW_DC15A_Mag
+			ITEM(SWLW_DC15A_ugl_wooden, 230, RIFLE_STOCK); // SWLW_DC15A_Mag
+			ITEM(SWLW_DC15AC, 225, RIFLE_STOCK); // SWLW_DC15AC_Mag
+			ITEM(SWLW_DC15BR, 200, RIFLE_STOCK); // SWLW_DC15BR_Mag
+			ITEM(SWLW_DC17M, 200, RIFLE_STOCK); // SWLW_DC17M_Blaster_Mag  SWLW_DC17M_Sniper_Mag SWLW_DC17M_AT_Mag
+		};
+
+		class sniperriflescw{
+			displayName = "DMRs, Sniper Rifles, Battle Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(SWLW_sniper, 580, RIFLE_STOCK); // SWLW_sniper_Mag
+			ITEM(SWLW_DC15X, 700, RIFLE_STOCK); // SWLW_DC15X_Mag
+			ITEM(SWLW_DC15X_wooden, 700, RIFLE_STOCK); // SWLW_DC15X_Mag
+		};
+
+		class launcherscw{
+			displayName = "Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+			ITEM(ls_weapon_rps6, 300, 25);
+			ITEM(SWLW_E60R, 450, 25); 
+			ITEM(SWLW_E60R_AA, 450, 25); 
+			ITEM(SWLW_PLX1, 500, 25); 
+			ITEM(SWLW_PLX1_AA, 500, 25); 
+			ITEM(SWLW_Z7, 350, 25); 
+		}; 
+
+		class launchermagazinescw{
+			displayName = "Launcher Ammunition";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			ITEM(ls_mag_rpg_1rnd, 100, 15);
+			ITEM(SWLW_e60r_at_mag, 150, 15);
+			ITEM(SWLW_e60r_aa_mag, 200, 15);
+			ITEM(SWLW_plx1_at_mag, 170, 15);
+			ITEM(SWLW_plx1_aa_mag, 220, 15);
+			ITEM(SWLW_Z7_mag, 200, 15);
+		};
+
+		class riflegrenadescw{
+			displayName = "Rifle Grenades";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			ITEM(SWLW_DC15A_UGL_Mag, 70, 25);
+			ITEM(SWLW_DC15A_UGL_smoke_white_Mag, 50, 25);
+			ITEM(SWLW_DC15A_UGL_flare_white_Mag, 60, 25);
+		};
+
+		class muzzlescw{
+			displayName = "Muzzle Accessories";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
+			ITEM(swlw_attachment_dc17m_at, 90, MZ_STOCK);
+			ITEM(swlw_attachment_dc17m_blaster, 70, MZ_STOCK);
+			ITEM(swlw_attachment_dc17m_sniper, 80, MZ_STOCK);
+		};
+
+		class magazinescw{
+			displayName = "Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(SWLW_DC15SA_Mag, 15, MZ_STOCK);
+            ITEM(SWLW_DC17_Mag, 20, MZ_STOCK);
+            ITEM(SWLW_RG4D_Mag, 20, MZ_STOCK);
+            ITEM(SWLW_E5_Mag, 25, MZ_STOCK);
+            ITEM(SWLW_DC15s_Mag, 30, MZ_STOCK);
+            ITEM(SWLW_acpr_Mag, 22, MZ_STOCK);
+            ITEM(SWLW_acpa_Mag, 15, MZ_STOCK);
+            ITEM(SWLW_DP20_Mag, 25, MZ_STOCK);
+            ITEM(SWLW_LS150_mag, 120, MZ_STOCK);
+            ITEM(SWLW_DC15SAW_mag, 150, MZ_STOCK);
+			ITEM(SWLW_E5C_mag, 100, MZ_STOCK);
+            ITEM(SWLW_ZH73_Mag, 110, MZ_STOCK);
+            ITEM(SWLW_WestarM5_Mag, 160, MZ_STOCK);
+            ITEM(SWLW_DC15A_Mag, 80, MZ_STOCK);
+            ITEM(SWLW_Z6_mag, 200, MZ_STOCK);
+            ITEM(SWLW_DC15AC_Mag, 75, MZ_STOCK);
+            ITEM(SWLW_DC15BR_Mag, 70, MZ_STOCK);
+            ITEM(SWLW_DC17M_Blaster_Mag, 90, MZ_STOCK);
+            ITEM(SWLW_DC17M_Sniper_Mag, 100, MZ_STOCK);
+			ITEM(SWLW_DC17M_AT_Mag, 120, MZ_STOCK);
+            ITEM(SWLW_sniper_Mag, 100, MZ_STOCK);
+            ITEM(SWLW_DC15X_Mag, 110, MZ_STOCK);
+			ITEM(3AS_FlamerFuel, 350, MZ_STOCK);
+            ITEM(SWLW_mag_40mm_1rnd, 250, MZ_STOCK);
+
+		};
+
+		class misccw{
+			displayName = "Misc";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
+
+			ITEM(SWLW_clones_spec_demo_mag, 450, MISC_STOCK);
+			ITEM(SWLW_clones_spec_breach_mag, 400, MISC_STOCK);
+		};
+
+		class pointerscw{
+			displayName = "Pointer Accessories";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(acc_pointer_ir, 70, PN_STOCK);
+		};
+
+		class specialweaponscw{
+			displayName = "Special Weapons";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			ITEM(3AS_Flamer_Base, 300, RIFLE_STOCK); // 3AS_FlamerFuel
+			ITEM(SWLW_GL, 800, RIFLE_STOCK); // SWLW_mag_40mm_1rnd
+		};
+
+		class opticscw{
+			displayName = "Optics Accessories";
+			picture = "";
+			ITEM(swlw_attachment_scope_dc17m_sniper, 80, MAGAZINE_STOCK);
+			ITEM(swlw_sniper_scope, 100, MAGAZINE_STOCK);
+			ITEM(swlw_zh73_scope, 80, MAGAZINE_STOCK);
+			ITEM(swlw_westarm5_scope, 100, MAGAZINE_STOCK);
+			ITEM(swlw_westar35s_scope, 60, MAGAZINE_STOCK);
+		};
+
+		class underbarrelcw{
+	     	displayName = "Underbarrel Accessories";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
+
+			ITEM(bipod_01_F_blk, 30, 20);
+			ITEM(bipod_02_F_blk, 30, 20);
+			ITEM(bipod_03_F_blk, 30, 20);
+		};
+
+// VN
+
 		class handgunsvn
 		{
 			displayName = $STR_HALS_STORE_HANDGUNS;
@@ -7949,7 +8116,29 @@ class cfgHALsStore
 				"misc3cbfcw"
 			};
 		};
-
+		
+		class cw
+		{
+			displayName = "Arms Dealer Store";
+			categories[] = {
+				"handgunscw",
+				"smgcw",
+				"mgcw",
+				"riflescw",
+				"sniperriflescw",
+				"launcherscw",
+				"launchermagazinescw",
+				"riflegrenadescw",
+				"muzzlescw",
+				"magazinescw", 
+				"pointerscw",
+				"specialweaponscw",
+				"misccw",
+				"opticscw",
+				"underbarrelcw"
+			};
+		};
+		
 		class vn
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
