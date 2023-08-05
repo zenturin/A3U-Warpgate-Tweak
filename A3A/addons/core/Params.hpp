@@ -124,7 +124,7 @@ class Params
         title = $STR_params_revive_time;
         values[] = {8,12,16,24,32};
         texts[] = {"8","12","16","24","32"};
-        default = 12;
+        default = 16;
     };
 
     class Spacer60
