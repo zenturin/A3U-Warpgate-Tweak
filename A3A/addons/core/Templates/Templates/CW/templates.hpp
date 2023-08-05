@@ -56,7 +56,7 @@
         file = "CW_Riv_DET";
     };
 	
-    class JM_Base
+    class EMP_Base
     {
         requiredAddons[] = {"3AS_Characters", "442_equipment", "SWLB_clones", "JLTS_core", "CWDependencies", "JMSLLTE_empire_mod"};
         basepath = QPATHTOFOLDER(Templates\Templates\CW);
@@ -64,19 +64,19 @@
         priority = 100;
     };
 
-    class JM_EMP : JM_Base
+    class EMP_EMP : EMP_Base
     {
         side = "Occ";
         flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_Empire.paa);
         name = "Empire";
-        file = "JM_AI_EMP";
+        file = "EMP_AI_EMP";
     };
 	
-    class JM_EMP_WBK : JM_Base
+    class EMP_EMP_WBK : EMP_Base
     {
         requiredAddons[] = {"3AS_Characters", "442_equipment", "SWLB_clones", "JLTS_core", "CWDependencies", "JMSLLTE_empire_mod", "WBK_Lightsabers"};
         side = "Occ";
         flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_Empire.paa);
         name = "Empire (WBK)";
-        file = "JM_AI_EMP_WBK";
+        file = "EMP_AI_EMP_WBK";
     };

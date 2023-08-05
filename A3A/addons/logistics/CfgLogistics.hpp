@@ -25,7 +25,7 @@ class DOUBLES(ADDON,Nodes)
     #include "Nodes\CW.hpp"
     #include "Nodes\FFAA.hpp"
     #include "Nodes\PED.hpp"
-    #include "Nodes\JMS.hpp"
+    #include "Nodes\EMP.hpp"
 };
 
 class DOUBLES(ADDON,Cargo)
