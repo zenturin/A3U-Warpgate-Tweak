@@ -6,6 +6,13 @@
 - (Aegis) CHDKZ and Ion PMC Rival factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods) -->
 
 
+## 2.2.1
+### Changes
+- Fixed surrender crates not clearing default loot before being populated with surrendered soldier's loot
+- Fixed no initialization of vehicles bought from vehicle box or Vehicle Black Market
+- Fixed automatic task failure when unit arrives at custom outpost
+- Revive time default value changed from 12 to 16 seconds, medics revive twice faster
+
 ## 2.2
 
 ### Additions 

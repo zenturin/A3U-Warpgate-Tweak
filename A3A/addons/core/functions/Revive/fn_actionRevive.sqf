@@ -41,24 +41,7 @@ if (!_hasMedkit && {count _medicFAKs == 0 && count _curedFAKs == 0}) exitWith
     if (_inPlayerGroup) then {_medic groupChat localize "STR_chats_action_revive_no_fak_me"};
     false
 };
-
-private _hasMedicalVeh = ((nearestObjects [_medic, A3A_faction_all get "vehiclesMedical", 25]) select {
-    [getPosATL _x, 25] call A3A_fnc_enemyNearCheck && {(side _x == side _medic || side _x == sideUnknown)}
-}) isNotEqualTo [];
-private _timer = switch (true) do {
-    case (_isMedic && {_hasMedicalVeh}): {
-        time + (A3A_reviveTime / 3)
-    };
-    case (_isMedic): {
-        time + (A3A_reviveTime / 2)
-    };
-    case (_hasMedicalVeh): {
-        time + (A3A_reviveTime / 1.5)
-    };
-    default {
-        time + A3A_reviveTime
-    };
-};
+private _timer = if (_isMedic) then { A3A_reviveTime / 2 } else { time + A3A_reviveTime };
 
 _medic setVariable ["helping", true];
 _medic playMoveNow selectRandom medicAnims;
