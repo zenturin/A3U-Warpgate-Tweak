@@ -11,6 +11,7 @@
 - Fixed surrender crates not clearing default loot before being populated with surrendered soldier's loot
 - Fixed no initialization of vehicles bought from vehicle box or Vehicle Black Market
 - Fixed automatic task failure when unit arrives at custom outpost
+- Fixed no price increase appliance on rebel units soldiers after skill training
 - Revive time default value changed from 12 to 16 seconds, medics revive twice faster
 
 ## 2.2
