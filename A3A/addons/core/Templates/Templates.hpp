@@ -722,6 +722,10 @@ class Templates
         description = $STR_A3AP_setupFactionsTab_vietcivs;
     };
 	
+    // ***************************** CUP *****************************
+
+    #include "Templates\CUP\templates.hpp"	
+	
     // ***************************** CW *****************************
 
     #include "Templates\CW\templates.hpp"

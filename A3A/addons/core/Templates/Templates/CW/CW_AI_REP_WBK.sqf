@@ -139,6 +139,14 @@ _loadoutData set ["NVGs", ["lsd_gar_standardSPC_nvg"]];						//this line determi
 _loadoutData set ["binoculars", ["SWLB_clone_binocular"]];		//this line determines the binoculars
 _loadoutData set ["Rangefinder", ["SWLB_clone_commander_binocular"]];
 
+_loadoutData set ["traitorUniforms", ["SWLB_clone_uniform"]];
+_loadoutData set ["traitorVests", ["SWLB_clone_basic_armor"]];
+_loadoutData set ["traitorHats", ["SWLB_clone_P2_helmet"]];
+
+_loadoutData set ["officerUniforms", ["SWLB_clone_uniform"]];
+_loadoutData set ["officerVests", ["SWLB_clone_assault_armor"]];
+_loadoutData set ["officerHats", ["SWLB_clone_P2_helmet"]];
+
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
 _loadoutData set ["vests", []];

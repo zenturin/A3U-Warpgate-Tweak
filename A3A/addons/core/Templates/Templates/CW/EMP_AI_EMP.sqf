@@ -141,6 +141,14 @@ _loadoutData set ["NVGs", ["lsd_gar_standardSPC_nvg"]];						//this line determi
 _loadoutData set ["binoculars", ["SWLB_clone_binocular"]];		//this line determines the binoculars
 _loadoutData set ["Rangefinder", ["SWLB_clone_commander_binocular"]];
 
+_loadoutData set ["traitorUniforms", ["JMSLLTE_StormTrooper_dirty_F_CombatUniform"]];
+_loadoutData set ["traitorVests", ["JMSLLTE_StormtrooperHidden_armor"]];
+_loadoutData set ["traitorHats", ["JMSLLTE_Stormtrooper_dirty_helmet"]];
+
+_loadoutData set ["officerUniforms", ["JMSLLTE_StormTrooper_dirty_F_CombatUniform"]];
+_loadoutData set ["officerVests", ["JMSLLTE_StormtrooperHeavy_armor"]];
+_loadoutData set ["officerHats", ["JMSLLTE_Stormtrooper_dirty_helmet"]];
+
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
 _loadoutData set ["vests", []];

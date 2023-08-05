@@ -139,6 +139,14 @@ _loadoutData set ["NVGs", ["JLTS_NVG_droid_chip_1"]];						//this line determine
 _loadoutData set ["binoculars", ["JLTS_DroidBinocular"]];		//this line determines the binoculars
 _loadoutData set ["Rangefinder", ["JLTS_DroidBinocular"]];
 
+_loadoutData set ["traitorUniforms", ["3AS_U_CIS_Light_Armor"]];
+_loadoutData set ["traitorVests", ["3AS_CIS_Grenadier_Vest"]];
+_loadoutData set ["traitorHats", ["3as_CIS_Light_helmet"]];
+
+_loadoutData set ["officerUniforms", ["3AS_U_CIS_TS"]];
+_loadoutData set ["officerVests", ["SWLB_clone_basic_armor"]];
+_loadoutData set ["officerHats", [""]];
+
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
 _loadoutData set ["vests", []];
