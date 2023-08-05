@@ -19,6 +19,7 @@ class DOUBLES(ADDON,Nodes)
     #include "Nodes\UNS.hpp"
     #include "Nodes\Vanilla.hpp"
     #include "Nodes\OPTRE.hpp" // has to be here. It uses the classes from vanilla trucks
+    #include "Nodes\RACS.hpp" // has to be here. It uses the classes from vanilla trucks
     #include "Nodes\VN.hpp"
     #include "Nodes\WS.hpp"
     #include "Nodes\Aegis.hpp"

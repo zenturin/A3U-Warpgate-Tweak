@@ -721,4 +721,28 @@ class Templates
         file = "VN_Civ";
         description = $STR_A3AP_setupFactionsTab_vietcivs;
     };
+
+    // ***************************** IFA *****************************
+
+    // #include "Templates\IFA\templates.hpp"
+
+    // ***************************** OPTRE *****************************
+
+    #include "Templates\OPTRE\templates.hpp"
+
+    // ***************************** CW *****************************
+
+    // #include "Templates\CW\templates.hpp"
+	
+    // ***************************** FFAA *****************************
+
+    // #include "Templates\FFAA\templates.hpp"
+	
+    // ***************************** Pedagne *****************************
+
+    // #include "Templates\Pedagne\templates.hpp"
+
+    // ***************************** RACS *****************************
+
+    #include "Templates\RACS\templates.hpp"
 };

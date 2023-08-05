@@ -40,6 +40,10 @@ switch (true) do {
         Info("Initializing WS trader.");
         [_traderX, "ws"] call HALs_store_fnc_addTrader;
     };
+    case ("OPTRE" isEqualTo (_templateParts select 0)): {
+        Info("Initializing OPTRE trader.");
+        [_traderX, "OPTRE"] call HALs_store_fnc_addTrader;
+    };
     default  {
         Info("Initializing vanilla trader.");
         [_traderX, "vanilla"] call HALs_store_fnc_addTrader;
