@@ -209,3 +209,12 @@
         name = "CUP CHC";
         file = "CUP_Civ_CHC";
     };
+    class CUP_CHDKZ : CUP_Base
+    {
+        side = "Riv";
+        flagTexture = "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa";
+        logo = "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa";
+        name = "CUP CHDKZ";
+        file = "CUP_Riv_CHDKZ";
+        description = $STR_A3AP_setupFactionsTab_chdkz;
+    };
