@@ -51,6 +51,8 @@ private _fnc_placed = {
 		_vehicle setFuel random [0.10, 0.25, 0.35];
 	}; 
 
+	[_vehicle, teamPlayer] call A3A_fnc_AIVehInit;
+
 	if (_vehicle isKindOf "StaticWeapon") then {
 		staticsToSave pushBack _vehicle; 
 		publicVariable "staticsToSave";

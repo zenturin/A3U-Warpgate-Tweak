@@ -54,7 +54,10 @@ private _surrenderCrateType = if (_unit getVariable ["isRival", false]) then {
 };
 private _boxX = _surrenderCrateType createVehicle position _unit;
 _boxX allowDamage false;
-[_boxX] call A3A_fnc_initObject;
+clearMagazineCargoGlobal _boxX;
+clearWeaponCargoGlobal _boxX;
+clearItemCargoGlobal _boxX;
+clearBackpackCargoGlobal _boxX;
 
 if (_unit getVariable ["hasLaptop", false] && {!(_unit getVariable ["hasLaptopSpawned", false])}) then {
 	[_unit] call SCRT_fnc_rivals_createLaptop;
