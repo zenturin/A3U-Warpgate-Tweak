@@ -218,7 +218,6 @@
     {
         side = "Riv";
         flagTexture = "\CUP\BaseConfigs\CUP_BaseConfigs\data\Flags\flag_chdkz_co.paa";
-        logo = "\CUP\BaseConfigs\CUP_BaseConfigs\data\Flags\flag_chdkz_co.paa";
         name = "CUP CHDKZ";
         file = "CUP_Riv_CHDKZ";
         description = $STR_A3AP_setupFactionsTab_chdkz;
