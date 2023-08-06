@@ -10,8 +10,6 @@
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_unsc_ca.paa)] call _fnc_saveToTemplate;
 ["flagMarkerType", "a3u_flag_optre_unsc"] call _fnc_saveToTemplate;
-
-//test
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
