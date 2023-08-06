@@ -737,5 +737,9 @@ class Templates
     // ***************************** FFAA *****************************
 
     #include "Templates\FFAA\templates.hpp"
+	
+    // ***************************** Pedagne *****************************
+
+    #include "Templates\Pedagne\templates.hpp"
 
 };
