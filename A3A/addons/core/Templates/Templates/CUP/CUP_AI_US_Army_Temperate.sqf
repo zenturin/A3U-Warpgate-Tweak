@@ -295,9 +295,9 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["CUP_U_B_USArmy_ACU_Kneepad_Gloves_OEFCP", "CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_OEFCP"]];
 _eliteLoadoutData set ["vests", ["CUP_V_B_IOTV_OEFCP_Rifleman_USArmy"]];
-_eliteLoadoutData set ["SLvests", ["CUP_V_B_IOTV_OEFCP_TL_USArmy"]];
-_eliteLoadoutData set ["MGvests", ["CUP_V_B_IOTV_OEFCP_MG_USArmy"]];
-_eliteLoadoutData set ["GLvests", ["CUP_V_B_IOTV_OEFCP_Grenadier_USArmy"]];
+_eliteLoadoutData set ["slVests", ["CUP_V_B_IOTV_OEFCP_TL_USArmy"]];
+_eliteLoadoutData set ["mgVests", ["CUP_V_B_IOTV_OEFCP_MG_USArmy"]];
+_eliteLoadoutData set ["glVests", ["CUP_V_B_IOTV_OEFCP_Grenadier_USArmy"]];
 _eliteLoadoutData set ["backpacks", ["B_Carryall_cbr", "CUP_B_AssaultPack_Coyote", "B_AssaultPack_cbr"]];
 _eliteLoadoutData set ["atBackpacks", ["B_Carryall_cbr"]];
 _eliteLoadoutData set ["helmets", ["CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OEFCP", "CUP_H_USArmy_HelmetACH_ESS_Headset_OEFCP", "CUP_H_USArmy_HelmetACH_OEFCP"]];

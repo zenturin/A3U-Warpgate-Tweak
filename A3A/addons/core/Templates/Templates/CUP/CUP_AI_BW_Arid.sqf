@@ -59,6 +59,8 @@
 ["vehiclesMilitiaLightArmed", ["CUP_B_nM1025_M2_USMC_DES"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["CUP_B_MTVR_BAF_DES"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["CUP_B_nM1025_Unarmed_USMC_DES"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["CUP_B_M113A3_desert_USA", "CUP_B_M113A3_desert_USA"]] call _fnc_saveToTemplate;
+
 ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["CUP_B_M2StaticMG_US"]] call _fnc_saveToTemplate;
@@ -289,8 +291,8 @@ private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["CUP_U_B_GER_Tropentarn_1", "CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_3", "CUP_U_B_GER_Tropentarn_4",
 "CUP_U_B_GER_Tropentarn_5", "CUP_U_B_GER_Tropentarn_6", "CUP_U_B_GER_Tropentarn_7", "CUP_U_B_GER_Tropentarn_8"]];
 _eliteLoadoutData set ["vests", ["CUP_V_B_GER_PVest_Trop_RFL"]];
-_eliteLoadoutData set ["MGvests", ["CUP_V_B_GER_PVest_Trop_MG"]];
-_eliteLoadoutData set ["GLvests", ["CUP_V_B_GER_PVest_Trop_Gren"]];
+_eliteLoadoutData set ["mgVests", ["CUP_V_B_GER_PVest_Trop_MG"]];
+_eliteLoadoutData set ["glVests", ["CUP_V_B_GER_PVest_Trop_Gren"]];
 _eliteLoadoutData set ["backpacks", ["CUP_B_GER_Pack_Tropentarn"]];
 _eliteLoadoutData set ["atBackpacks", ["B_Carryall_cbr"]];
 _eliteLoadoutData set ["helmets", ["CUP_H_Ger_M92_Cover_Trop", "CUP_H_Ger_M92_Cover_Trop_GG_CB", "CUP_H_Ger_M92_Cover_Trop_GG_CF", "CUP_H_Ger_M92_Cover_Trop_GG"]];

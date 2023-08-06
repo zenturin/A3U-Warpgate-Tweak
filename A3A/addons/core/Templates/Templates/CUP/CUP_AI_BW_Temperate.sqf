@@ -291,8 +291,8 @@ private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["CUP_U_B_GER_Flecktarn_1", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3", "CUP_U_B_GER_Flecktarn_4",
 "CUP_U_B_GER_Flecktarn_5", "CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_8"]];
 _eliteLoadoutData set ["vests", ["CUP_V_B_GER_PVest_Fleck_RFL"]];
-_eliteLoadoutData set ["MGvests", ["CUP_V_B_GER_PVest_Fleck_MG"]];
-_eliteLoadoutData set ["GLvests", ["CUP_V_B_GER_PVest_Fleck_Gren"]];
+_eliteLoadoutData set ["mgVests", ["CUP_V_B_GER_PVest_Fleck_MG"]];
+_eliteLoadoutData set ["glVests", ["CUP_V_B_GER_PVest_Fleck_Gren"]];
 _eliteLoadoutData set ["backpacks", ["CUP_B_GER_Pack_Flecktarn"]];
 _eliteLoadoutData set ["atBackpacks", ["B_Carryall_green_F"]];
 _eliteLoadoutData set ["helmets", ["CUP_H_Ger_M92_Cover", "CUP_H_Ger_M92_Cover_GG_CB", "CUP_H_Ger_M92_Cover_GG_CF", "CUP_H_Ger_M92_Cover_GG"]];
@@ -427,8 +427,6 @@ _militaryLoadoutData set ["sniperRifles", [
 ///////////////////////////////
 //    Police Loadout Data    //
 ///////////////////////////////
-
-private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 

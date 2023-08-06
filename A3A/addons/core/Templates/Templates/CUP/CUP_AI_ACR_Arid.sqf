@@ -56,6 +56,8 @@
 ["vehiclesMilitiaLightArmed", ["CUP_B_nM1025_M2_USA_DES"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["CUP_B_MTVR_USA"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["CUP_B_nM1025_Unarmed_USA_DES"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["CUP_B_BRDM2_HQ_CZ_Des", "CUP_B_BRDM2_CZ_Des"]] call _fnc_saveToTemplate;
+
 ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["CUP_B_DSHKM_ACR"]] call _fnc_saveToTemplate;
@@ -298,9 +300,9 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["CUP_U_B_CZ_DST_NoKneepads", "CUP_U_B_CZ_DST_Kneepads", "CUP_U_B_CZ_DST_Kneepads_Sleeve"]];
 _eliteLoadoutData set ["vests", ["CUP_V_CZ_NPP2006_nk_des"]];
-_eliteLoadoutData set ["SLvests", ["CUP_V_CZ_NPP2006_co_des"]];
-_eliteLoadoutData set ["MGvests", ["CUP_V_CZ_NPP2006_nk_des"]];
-_eliteLoadoutData set ["GLvests", ["CUP_V_CZ_NPP2006_nk_des"]];
+_eliteLoadoutData set ["slVests", ["CUP_V_CZ_NPP2006_co_des"]];
+_eliteLoadoutData set ["mgVests", ["CUP_V_CZ_NPP2006_nk_des"]];
+_eliteLoadoutData set ["glVests", ["CUP_V_CZ_NPP2006_nk_des"]];
 _eliteLoadoutData set ["backpacks", ["B_Carryall_cbr", "B_FieldPack_cbr"]];
 _eliteLoadoutData set ["atBackpacks", ["B_FieldPack_cbr"]];
 _eliteLoadoutData set ["helmets", ["CUP_H_CZ_Helmet01", "CUP_H_CZ_Helmet02", "CUP_H_CZ_Helmet07", "CUP_H_CZ_Helmet08"]];

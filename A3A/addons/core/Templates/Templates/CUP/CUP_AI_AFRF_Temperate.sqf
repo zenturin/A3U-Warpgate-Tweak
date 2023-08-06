@@ -290,9 +290,9 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["CUP_U_O_RUS_EMR_1", "CUP_U_O_RUS_EMR_gloves_pads", "CUP_U_O_RUS_EMR_2", "CUP_U_O_RUS_EMR_rolled_up_gloves_pads"]];
 _eliteLoadoutData set ["vests", ["CUP_Vest_RUS_6B45_Sh117"]];
-_eliteLoadoutData set ["SLvests", ["CUP_Vest_RUS_6B45_Sh117_Del"]];
-_eliteLoadoutData set ["MGvests", ["CUP_Vest_RUS_6B45_Sh117_PKP_Nut"]];
-_eliteLoadoutData set ["GLvests", ["CUP_Vest_RUS_6B45_Sh117_VOG_Del"]];
+_eliteLoadoutData set ["slVests", ["CUP_Vest_RUS_6B45_Sh117_Del"]];
+_eliteLoadoutData set ["mgVests", ["CUP_Vest_RUS_6B45_Sh117_PKP_Nut"]];
+_eliteLoadoutData set ["glVests", ["CUP_Vest_RUS_6B45_Sh117_VOG_Del"]];
 _eliteLoadoutData set ["backpacks", ["CUP_O_RUS_Patrol_bag_Green", "CUP_O_RUS_Patrol_bag_Summer"]];
 _eliteLoadoutData set ["atBackpacks", ["CUP_O_RUS_Patrol_bag_Green_Shovel"]];
 _eliteLoadoutData set ["helmets", ["CUP_H_RUS_6B27_cover", "CUP_H_RUS_6B46", "CUP_H_RUS_6B27_cover_headset_goggles", "CUP_H_RUS_6B27_cover_headset", "CUP_H_RUS_6B47_v2_Summer", "CUP_H_RUS_6B47_headset"]];

@@ -289,8 +289,8 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["CUP_U_B_BAF_DPM_UBACSLONGKNEE", "CUP_U_B_BAF_DPM_UBACSLONGKNEE_Gloves", "CUP_U_B_BAF_DPM_UBACSROLLED_Gloves", "CUP_U_B_BAF_DPM_UBACSROLLEDKNEE"]];
 _eliteLoadoutData set ["vests", ["CUP_V_B_BAF_DPM_Osprey_Mk3_Rifleman"]];
-_eliteLoadoutData set ["MGvests", ["CUP_V_B_BAF_DPM_Osprey_Mk3_AutomaticRifleman"]];
-_eliteLoadoutData set ["GLvests", ["CUP_V_B_BAF_DPM_Osprey_Mk3_Grenadier"]];
+_eliteLoadoutData set ["mgVests", ["CUP_V_B_BAF_DPM_Osprey_Mk3_AutomaticRifleman"]];
+_eliteLoadoutData set ["glVests", ["CUP_V_B_BAF_DPM_Osprey_Mk3_Grenadier"]];
 _eliteLoadoutData set ["backpacks", ["B_Carryall_khk"]];
 _eliteLoadoutData set ["atBackpacks", ["B_Kitbag_rgr"]];
 _eliteLoadoutData set ["helmets", ["CUP_H_BAF_DPM_Mk6_NETTING_PRR", "CUP_H_BAF_DPM_Mk6_GOGGLES_PRR", "CUP_H_BAF_DPM_Mk6_GLASS_PRR", "CUP_H_BAF_DPM_Mk6_CREW_PRR"]];

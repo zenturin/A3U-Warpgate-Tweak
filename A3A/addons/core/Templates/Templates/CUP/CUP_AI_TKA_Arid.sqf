@@ -293,9 +293,9 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["CUP_U_O_TK_MixedCamo", "CUP_U_O_TK_Green"]];
 _eliteLoadoutData set ["vests", ["CUP_V_B_Ciras_Khaki2"]];
-_eliteLoadoutData set ["SLvests", ["CUP_V_PMC_CIRAS_Khaki_TL"]];
-_eliteLoadoutData set ["MGvests", ["CUP_V_B_Ciras_Khaki"]];
-_eliteLoadoutData set ["GLvests", ["CUP_V_PMC_CIRAS_Khaki_Grenadier"]];
+_eliteLoadoutData set ["slVests", ["CUP_V_PMC_CIRAS_Khaki_TL"]];
+_eliteLoadoutData set ["mgVests", ["CUP_V_B_Ciras_Khaki"]];
+_eliteLoadoutData set ["glVests", ["CUP_V_PMC_CIRAS_Khaki_Grenadier"]];
 _eliteLoadoutData set ["backpacks", ["B_Carryall_cbr"]];
 _eliteLoadoutData set ["atBackpacks", ["B_AssaultPack_rgr"]];
 _eliteLoadoutData set ["helmets", ["CUP_H_SLA_Helmet", "CUP_H_SLA_Helmet_OD_worn", "CUP_H_TK_Helmet"]];

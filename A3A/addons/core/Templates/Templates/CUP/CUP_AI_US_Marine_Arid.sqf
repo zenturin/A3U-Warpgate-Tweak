@@ -297,9 +297,9 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["CUP_U_B_USMC_MCCUU_des_gloves", "CUP_U_B_USMC_MCCUU_des_roll_2", "CUP_U_B_USMC_MCCUU_des_roll_2_gloves", "CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves", "CUP_U_B_USMC_MCCUU_des_roll_pads_gloves", "CUP_U_B_USMC_MCCUU_des_roll_pads", "CUP_U_B_USMC_MCCUU_des_roll_gloves", "CUP_U_B_USMC_MCCUU_des_roll"]];
 _eliteLoadoutData set ["vests", ["CUP_V_B_Eagle_SPC_Rifleman"]];
-_eliteLoadoutData set ["SLvests", ["CUP_V_B_Eagle_SPC_Officer"]];
-_eliteLoadoutData set ["MGvests", ["CUP_V_B_Eagle_SPC_MG"]];
-_eliteLoadoutData set ["GLvests", ["CUP_V_B_Eagle_SPC_GL"]];
+_eliteLoadoutData set ["slVests", ["CUP_V_B_Eagle_SPC_Officer"]];
+_eliteLoadoutData set ["mgVests", ["CUP_V_B_Eagle_SPC_MG"]];
+_eliteLoadoutData set ["glVests", ["CUP_V_B_Eagle_SPC_GL"]];
 _eliteLoadoutData set ["backpacks", ["B_AssaultPack_rgr"]];
 _eliteLoadoutData set ["atBackpacks", ["CUP_B_USMC_MOLLE"]];
 _eliteLoadoutData set ["helmets", ["CUP_H_LWHv2_MARPAT_des", "CUP_H_LWHv2_MARPAT_des_comms", "CUP_H_USArmy_ECH_MARPAT_des", "CUP_H_USArmy_ECH_GCOVERED_Headset_MARPAT_des"]];

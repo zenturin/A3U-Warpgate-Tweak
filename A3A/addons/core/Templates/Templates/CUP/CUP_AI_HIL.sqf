@@ -304,9 +304,9 @@ _eliteLoadoutData set ["uniforms", ["CUP_U_B_HIL_ACU_CCE", "CUP_U_B_HIL_ACU_Glov
 "CUP_U_B_HIL_ACU_Kneepad_Rolled_CCE","CUP_U_B_HIL_ACU_Kneepad_Rolled_Gloves_CCE","CUP_U_B_HIL_ACU_Rolled_CCE","CUP_U_B_HIL_ACU_Rolled_Gloves_CCE"
 ]];
 _eliteLoadoutData set ["vests", ["CUP_V_PMC_CIRAS_OD_Patrol"]];
-_eliteLoadoutData set ["SLvests", ["CUP_V_PMC_CIRAS_OD_TL"]];
-_eliteLoadoutData set ["MGvests", ["CUP_V_PMC_CIRAS_OD_Grenadier"]];
-_eliteLoadoutData set ["GLvests", ["CUP_V_PMC_CIRAS_OD_Grenadier"]];
+_eliteLoadoutData set ["slVests", ["CUP_V_PMC_CIRAS_OD_TL"]];
+_eliteLoadoutData set ["mgVests", ["CUP_V_PMC_CIRAS_OD_Grenadier"]];
+_eliteLoadoutData set ["glVests", ["CUP_V_PMC_CIRAS_OD_Grenadier"]];
 _eliteLoadoutData set ["backpacks", ["CUP_B_TacticalPack_CCE"]];
 _eliteLoadoutData set ["atBackpacks", ["CUP_B_TacticalPack_CCE"]];
 _eliteLoadoutData set ["helmets", ["CUP_H_HIL_HelmetACH_CCE", "CUP_H_HIL_HelmetACH_GCovered_CCE", "CUP_H_HIL_HelmetACH_GCovered_Headset_CCE", "CUP_H_HIL_HelmetACH_ESS_CCE", "CUP_H_HIL_HelmetACH_ESS_Headset_CCE"]];
