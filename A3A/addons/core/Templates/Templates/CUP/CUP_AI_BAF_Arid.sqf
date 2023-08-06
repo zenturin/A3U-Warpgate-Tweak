@@ -162,8 +162,8 @@ _loadoutData set ["longRangeRadios", []];
 _loadoutData set ["atBackpacks", []];
 _loadoutData set ["slBackpacks", []];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", []];
-_loadoutData set ["sniHats", []];
+_loadoutData set ["slHat", ["CUP_H_BAF_PARA_PRROVER_BERET"]];
+_loadoutData set ["sniHats", ["H_Booniehat_tan"]];
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies];
 _loadoutData set ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies];
