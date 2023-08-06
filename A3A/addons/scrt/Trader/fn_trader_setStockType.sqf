@@ -20,6 +20,10 @@ switch (true) do {
         Info("Initializing EMP trader.");
         [_traderX, "emp"] call HALs_store_fnc_addTrader;
     };
+    case ("UNS" isEqualTo (_templateParts select 0)): {
+        Info("Initializing Unsung trader.");
+        [_traderX, "uns"] call HALs_store_fnc_addTrader;
+    };
     case ("CW" isEqualTo (_templateParts select 0)): {
         Info("Initializing CW trader.");
         [_traderX, "cw"] call HALs_store_fnc_addTrader;
