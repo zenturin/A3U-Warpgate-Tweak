@@ -734,4 +734,8 @@ class Templates
 
     #include "Templates\IFA\templates.hpp"
 
+    // ***************************** FFAA *****************************
+
+    #include "Templates\FFAA\templates.hpp"
+
 };
