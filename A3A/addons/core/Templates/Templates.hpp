@@ -754,4 +754,8 @@ class Templates
 
     #include "Templates\3CBBAF\templates.hpp"
 	
+    // ***************************** Unsung *****************************
+
+    #include "Templates\UNS\templates.hpp"
+	
 };
