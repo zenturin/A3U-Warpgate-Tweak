@@ -130,3 +130,10 @@
         file = "IFA_CIV_Arctic";
         climate[] = {"arctic"};
     };
+    class IFA_RIV_COMU : IFA_Base
+    {
+        side = "Riv";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\IFA\flag_poland_co.paa);
+        name = "IFA Communists";
+        file = "IFA_Riv_COMU";
+    };
