@@ -730,4 +730,8 @@ class Templates
 
     #include "Templates\CW\templates.hpp"
 
+    // ***************************** IFA *****************************
+
+    #include "Templates\IFA\templates.hpp"
+
 };

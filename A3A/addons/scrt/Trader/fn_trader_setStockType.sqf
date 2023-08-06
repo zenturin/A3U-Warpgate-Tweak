@@ -52,6 +52,10 @@ switch (true) do {
         Info("Initializing WS trader.");
         [_traderX, "ws"] call HALs_store_fnc_addTrader;
     };
+    case ("IFA" isEqualTo (_templateParts select 0)): {
+        Info("Initializing IFA trader.");
+        [_traderX, "ww2mod"] call HALs_store_fnc_addTrader;
+    };
     default  {
         Info("Initializing vanilla trader.");
         [_traderX, "vanilla"] call HALs_store_fnc_addTrader;
