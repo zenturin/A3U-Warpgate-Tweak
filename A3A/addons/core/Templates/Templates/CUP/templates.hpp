@@ -31,6 +31,7 @@
         name = "CUP AFRF Arid";
         file = "CUP_AI_AFRF_Arid";
         climate[] = {"arid"};
+        description = $STR_A3AP_setupFactionsTab_aegis_afrf;
     };
     class CUP_AFRF_Temperate : CUP_AFRF_Arid
     {
@@ -68,6 +69,7 @@
         file = "CUP_AI_CDF_Arctic";
         climate[] = {"arctic"};
         maps[] = {"chernarus_winter"};
+        description = $STR_A3AP_setupFactionsTab_cdf;
     };
     class CUP_CDF_Temperate : CUP_CDF_Arctic
     {
@@ -121,6 +123,7 @@
         name = "CUP US Army Arid";
         file = "CUP_AI_US_Army_Arid";
         climate[] = {"arid"};
+        description = $STR_A3AP_setupFactionsTab_usaf;
     };
     class CUP_USAF_Temperate : CUP_USAF_Arid
     {
@@ -136,6 +139,7 @@
         name = "CUP USMC Arid";
         file = "CUP_AI_US_Marine_Arid";
         climate[] = {"arid"};
+        description = $STR_A3AP_setupFactionsTab_usmc;
     };
     class CUP_USMC_Temperate : CUP_USMC_Arid
     {
@@ -194,6 +198,7 @@
         flagTexture = "cup\baseconfigs\cup_baseconfigs\data\flags\flag_napa_co.paa";
         name = "CUP NAPA";
         file = "CUP_Reb_NAPA";
+        description = $STR_A3AP_setupFactionsTab_napa_3cbf;
     };
     class CUP_TKC : CUP_Base
     {
