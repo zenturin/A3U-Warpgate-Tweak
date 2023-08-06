@@ -242,9 +242,7 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["ls_cis_b1droid_uniform"]];
 _eliteLoadoutData set ["vests", ["SWLB_clone_basic_armor"]];
-_eliteLoadoutData set ["MGvests", ["SWLB_clone_basic_armor"]];
-_eliteLoadoutData set ["MEDvests", ["SWLB_clone_basic_armor"]];
-_eliteLoadoutData set ["GLvests", ["SWLB_clone_basic_armor"]];
+_eliteLoadoutData set ["glVests", ["SWLB_clone_basic_armor"]];
 _eliteLoadoutData set ["backpacks", ["lsd_cis_standard_backpack"]];
 _eliteLoadoutData set ["atBackpacks", ["lsd_cis_standard_backpack"]];
 _eliteLoadoutData set ["helmets", ["ls_cis_b1_helmet"]];

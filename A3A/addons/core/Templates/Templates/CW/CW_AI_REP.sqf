@@ -245,9 +245,7 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["SWLB_clone_uniform"]];
 _eliteLoadoutData set ["vests", ["SWLB_clone_basic_armor", "SWLB_clone_basic_armor", "SWLB_clone_basic_armor", "SWLB_clone_basic_armor", "SWLB_clone_kama_armor", "SWLB_clone_assault_armor", "SWLB_CEE_Engineer_Vest"]];
-_eliteLoadoutData set ["MGvests", ["SWLB_clone_assault_armor"]];
-_eliteLoadoutData set ["MEDvests", ["SWLB_clone_assault_armor"]];
-_eliteLoadoutData set ["GLvests", ["SWLB_clone_grenadier_armor"]];
+_eliteLoadoutData set ["glVests", ["SWLB_clone_grenadier_armor"]];
 _eliteLoadoutData set ["backpacks", ["SWLB_clone_backpack", "SWLB_clone_backpack_heavy", "SWLB_clone_backpack_medic", "SWLB_clone_backpack_RTO"]];
 _eliteLoadoutData set ["atBackpacks", ["SWLB_clone_backpack_heavy"]];
 _eliteLoadoutData set ["helmets", ["SWLB_clone_P2_helmet"]];
