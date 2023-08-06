@@ -742,4 +742,12 @@ class Templates
 
     #include "Templates\Pedagne\templates.hpp"
 
+    // ***************************** PLA *****************************
+
+    #include "Templates\PLA\templates.hpp"
+	
+    // ***************************** SWE *****************************
+
+    #include "Templates\SWE\templates.hpp"
+	
 };
