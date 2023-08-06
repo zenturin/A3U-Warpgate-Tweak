@@ -141,6 +141,14 @@ _loadoutData set ["NVGs", ["lsd_gar_standardSPC_nvg"]];						//this line determi
 _loadoutData set ["binoculars", ["SWLB_clone_binocular"]];		//this line determines the binoculars
 _loadoutData set ["Rangefinder", ["SWLB_clone_commander_binocular"]];
 
+_loadoutData set ["traitorUniforms", ["JMSLLTE_StormTrooper_dirty_F_CombatUniform"]];
+_loadoutData set ["traitorVests", ["JMSLLTE_StormtrooperHidden_armor"]];
+_loadoutData set ["traitorHats", ["JMSLLTE_Stormtrooper_dirty_helmet"]];
+
+_loadoutData set ["officerUniforms", ["JMSLLTE_StormTrooper_dirty_F_CombatUniform"]];
+_loadoutData set ["officerVests", ["JMSLLTE_StormtrooperHeavy_armor"]];
+_loadoutData set ["officerHats", ["JMSLLTE_Stormtrooper_dirty_helmet"]];
+
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
 _loadoutData set ["vests", []];
@@ -249,9 +257,8 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["JMSLLTE_StormTrooper_dirty_F_CombatUniform"]];
 _eliteLoadoutData set ["vests", ["JMSLLTE_StormtrooperHidden_armor", "JMSLLTE_StormtrooperAmmo_armor", "JMSLLTE_StormtrooperBand_armor", "JMSLLTE_StormtrooperCape_dirty_armor", "JMSLLTE_StormtrooperHolster_armor", "JMSLLTE_StormtrooperBand2_armor"]];
-_eliteLoadoutData set ["MGvests", ["JMSLLTE_StormtrooperHeavy_armor"]];
-_eliteLoadoutData set ["MEDvests", ["JMSLLTE_StormtrooperHeavy_armor"]];
-_eliteLoadoutData set ["GLvests", ["JMSLLTE_StormtrooperAmmoP_armor"]];
+_eliteLoadoutData set ["mgVests", ["JMSLLTE_StormtrooperHeavy_armor"]];
+_eliteLoadoutData set ["glVests", ["JMSLLTE_StormtrooperAmmoP_armor"]];
 _eliteLoadoutData set ["backpacks", ["JMSLLTE_back_stormpack_v1", "JMSLLTE_back_stormpack_surv", "JMSLLTE_back_stcape"]];
 _eliteLoadoutData set ["atBackpacks", ["JMSLLTE_back_stormpack_surv"]];
 _eliteLoadoutData set ["helmets", ["JMSLLTE_Stormtrooper_dirty_helmet"]];

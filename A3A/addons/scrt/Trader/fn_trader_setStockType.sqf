@@ -16,9 +16,17 @@ params ["_traderX"];
 private _templateParts = A3A_Reb_template splitString "_";
 
 switch (true) do {
+    case ("EMP" isEqualTo (_templateParts select 0)): {
+        Info("Initializing EMP trader.");
+        [_traderX, "emp"] call HALs_store_fnc_addTrader;
+    };
     case ("CW" isEqualTo (_templateParts select 0)): {
         Info("Initializing CW trader.");
         [_traderX, "cw"] call HALs_store_fnc_addTrader;
+    };
+    case ("CUP" isEqualTo (_templateParts select 0)): {
+        Info("Initializing CUP trader.");
+        [_traderX, "cup"] call HALs_store_fnc_addTrader;
     };
     case ("VN" isEqualTo (_templateParts select 0)): {
         Info("Initializing VN trader.");

@@ -139,6 +139,14 @@ _loadoutData set ["NVGs", ["JLTS_NVG_droid_chip_1"]];						//this line determine
 _loadoutData set ["binoculars", ["JLTS_DroidBinocular"]];		//this line determines the binoculars
 _loadoutData set ["Rangefinder", ["JLTS_DroidBinocular"]];
 
+_loadoutData set ["traitorUniforms", ["3AS_U_CIS_Light_Armor"]];
+_loadoutData set ["traitorVests", ["3AS_CIS_Grenadier_Vest"]];
+_loadoutData set ["traitorHats", ["3as_CIS_Light_helmet"]];
+
+_loadoutData set ["officerUniforms", ["3AS_U_CIS_TS"]];
+_loadoutData set ["officerVests", ["SWLB_clone_basic_armor"]];
+_loadoutData set ["officerHats", [""]];
+
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
 _loadoutData set ["vests", []];
@@ -234,9 +242,9 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["ls_cis_b1droid_uniform"]];
 _eliteLoadoutData set ["vests", ["SWLB_clone_basic_armor"]];
-_eliteLoadoutData set ["MGvests", ["SWLB_clone_basic_armor"]];
-_eliteLoadoutData set ["MEDvests", ["SWLB_clone_basic_armor"]];
-_eliteLoadoutData set ["GLvests", ["SWLB_clone_basic_armor"]];
+_eliteLoadoutData set ["mgVests", ["SWLB_clone_basic_armor"]];
+_eliteLoadoutData set ["medVests", ["SWLB_clone_basic_armor"]];
+_eliteLoadoutData set ["glVests", ["SWLB_clone_basic_armor"]];
 _eliteLoadoutData set ["backpacks", ["lsd_cis_standard_backpack"]];
 _eliteLoadoutData set ["atBackpacks", ["lsd_cis_standard_backpack"]];
 _eliteLoadoutData set ["helmets", ["ls_cis_b1_helmet"]];

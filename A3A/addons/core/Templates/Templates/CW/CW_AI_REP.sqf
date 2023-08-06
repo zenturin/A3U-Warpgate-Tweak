@@ -140,6 +140,14 @@ _loadoutData set ["NVGs", ["lsd_gar_standardSPC_nvg"]];						//this line determi
 _loadoutData set ["binoculars", ["SWLB_clone_binocular"]];		//this line determines the binoculars
 _loadoutData set ["Rangefinder", ["SWLB_clone_commander_binocular"]];
 
+_loadoutData set ["traitorUniforms", ["SWLB_clone_uniform"]];
+_loadoutData set ["traitorVests", ["SWLB_clone_basic_armor"]];
+_loadoutData set ["traitorHats", ["SWLB_clone_P2_helmet"]];
+
+_loadoutData set ["officerUniforms", ["SWLB_clone_uniform"]];
+_loadoutData set ["officerVests", ["SWLB_clone_assault_armor"]];
+_loadoutData set ["officerHats", ["SWLB_clone_P2_helmet"]];
+
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
 _loadoutData set ["vests", []];
@@ -237,9 +245,7 @@ _sfLoadoutData set ["sidearms", [
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["SWLB_clone_uniform"]];
 _eliteLoadoutData set ["vests", ["SWLB_clone_basic_armor", "SWLB_clone_basic_armor", "SWLB_clone_basic_armor", "SWLB_clone_basic_armor", "SWLB_clone_kama_armor", "SWLB_clone_assault_armor", "SWLB_CEE_Engineer_Vest"]];
-_eliteLoadoutData set ["MGvests", ["SWLB_clone_assault_armor"]];
-_eliteLoadoutData set ["MEDvests", ["SWLB_clone_assault_armor"]];
-_eliteLoadoutData set ["GLvests", ["SWLB_clone_grenadier_armor"]];
+_eliteLoadoutData set ["glVests", ["SWLB_clone_grenadier_armor"]];
 _eliteLoadoutData set ["backpacks", ["SWLB_clone_backpack", "SWLB_clone_backpack_heavy", "SWLB_clone_backpack_medic", "SWLB_clone_backpack_RTO"]];
 _eliteLoadoutData set ["atBackpacks", ["SWLB_clone_backpack_heavy"]];
 _eliteLoadoutData set ["helmets", ["SWLB_clone_P2_helmet"]];
