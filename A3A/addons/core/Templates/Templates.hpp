@@ -750,4 +750,8 @@ class Templates
 
     #include "Templates\SWE\templates.hpp"
 	
+    // ***************************** 3CB BAF *****************************
+
+    #include "Templates\3CBBAF\templates.hpp"
+	
 };

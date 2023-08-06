@@ -40,8 +40,8 @@
 ["vehiclesGunBoats", ["sfp_strb90", "sfp_rbb_norrkoping"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["CUP_I_JAS_39_RACS"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["CUP_I_JAS_39_RACS"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["CUP_I_JAS39_RACS"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["CUP_I_JAS39_RACS"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["sfp_tp84_2015", "sfp_s100b"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["sfp_hkp9", "sfp_hkp6"]] call _fnc_saveToTemplate;
