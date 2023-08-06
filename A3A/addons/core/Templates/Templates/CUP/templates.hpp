@@ -212,8 +212,8 @@
     class CUP_CHDKZ : CUP_Base
     {
         side = "Riv";
-        flagTexture = "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa";
-        logo = "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa";
+        flagTexture = "\CUP\BaseConfigs\CUP_BaseConfigs\data\Flags\flag_chdkz_co.paa";
+        logo = "\CUP\BaseConfigs\CUP_BaseConfigs\data\Flags\flag_chdkz_co.paa";
         name = "CUP CHDKZ";
         file = "CUP_Riv_CHDKZ";
         description = $STR_A3AP_setupFactionsTab_chdkz;
