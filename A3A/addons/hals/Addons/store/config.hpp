@@ -11216,8 +11216,7 @@ class cfgHALsStore
 			ITEM(uns_l1a1, 400, RIFLE_STOCK); // uns_l1a1mag_T			
 			ITEM(uns_l2a1, 420, RIFLE_STOCK); // uns_l1a1mag
 			ITEM(uns_l2a1_shorty, 400, RIFLE_STOCK); // uns_l1a1mag
-			ITEM(uns_l1a1gl, 450, RIFLE_STOCK); // uns_l1a1mag
-			ITEM(uns_l1a1, 400, RIFLE_STOCK); // uns_type99mag_T			
+			ITEM(uns_l1a1gl, 450, RIFLE_STOCK); // uns_l1a1mag		
 			ITEM(uns_smle, 150, RIFLE_STOCK); // uns_smlemag
 			ITEM(uns_smle_sniper, 300, RIFLE_STOCK); // uns_smlemag_T
 			ITEM(uns_m14, 500, RIFLE_STOCK); // uns_m14mag
@@ -11227,8 +11226,7 @@ class cfgHALsStore
 			ITEM(uns_m3carbine, 650, RIFLE_STOCK); // uns_m2carbinemag
 			ITEM(uns_mas36, 150, RIFLE_STOCK); // uns_m1garandmag
 			ITEM(uns_mas36short_gl, 300, RIFLE_STOCK); // uns_mas36mag
-			ITEM(uns_mas36short, 200, RIFLE_STOCK); // uns_mas36mag_T
-			ITEM(uns_mas36short_gl, 300, RIFLE_STOCK); // uns_mas36mag_T			
+			ITEM(uns_mas36short, 200, RIFLE_STOCK); // uns_mas36mag_T		
 			ITEM(uns_mas4956, 400, RIFLE_STOCK); // uns_mas4956mag
 			ITEM(uns_mas4956_gl, 500, RIFLE_STOCK); // uns_mas4956mag_T
 			ITEM(uns_kar98k, 200, RIFLE_STOCK); // uns_kar98kmag
@@ -11433,10 +11431,6 @@ class cfgHALsStore
 			ITEM(uns_b_mas49, 70, PN_STOCK);
 			ITEM(uns_b_spike17, 70, PN_STOCK);
 			ITEM(uns_b_m1, 70, PN_STOCK);
-			ITEM(uns_b_m1884, 70, PN_STOCK);
-			ITEM(uns_b_mas49, 70, PN_STOCK);
-			ITEM(uns_b_spike17, 70, PN_STOCK);
-			ITEM(uns_b_m1, 70, PN_STOCK);
 			ITEM(uns_b_m4, 70, PN_STOCK);
 			ITEM(uns_b_m6, 70, PN_STOCK);
 			ITEM(b_smle_1937, 70, PN_STOCK);
@@ -11450,10 +11444,10 @@ class cfgHALsStore
 			
 			ITEM(uns_ex41, 700, 25); // uns_ex41mag
 			ITEM(uns_m79, 600, 25); // Uns_1Rnd_HE_M381
-			ITEM(uns_baikal, 200, RIFLE_STOCK); // uns_12gaugemag_2
-			ITEM(uns_baikal_sawnoff, 200, RIFLE_STOCK); // uns_12gaugemag_2
-			ITEM(uns_ithaca37, 200, RIFLE_STOCK); // uns_12gaugemag_5
-			ITEM(uns_ithaca37_grip, 200, RIFLE_STOCK); // uns_12gaugemag_5
+			ITEM(uns_baikal, 150, RIFLE_STOCK); // uns_12gaugemag_2
+			ITEM(uns_baikal_sawnoff, 150, RIFLE_STOCK); // uns_12gaugemag_2
+			ITEM(uns_ithaca37, 180, RIFLE_STOCK); // uns_12gaugemag_5
+			ITEM(uns_ithaca37_grip, 180, RIFLE_STOCK); // uns_12gaugemag_5
 			ITEM(uns_model12, 200, RIFLE_STOCK); // uns_12gaugemag_6
 			ITEM(uns_m870, 200, RIFLE_STOCK); // uns_m870mag
 			ITEM(uns_m870_mk1, 200, RIFLE_STOCK); // uns_m870mag
@@ -12406,7 +12400,7 @@ class cfgHALsStore
 			};
 		};
 		
-		class uns
+		class unsstore
 		{
 			displayName = "Arms Dealer Store";
 			categories[] = {

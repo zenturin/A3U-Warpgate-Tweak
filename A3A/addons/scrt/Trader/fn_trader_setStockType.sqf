@@ -22,7 +22,7 @@ switch (true) do {
     };
     case ("UNS" isEqualTo (_templateParts select 0)): {
         Info("Initializing Unsung trader.");
-        [_traderX, "uns"] call HALs_store_fnc_addTrader;
+        [_traderX, "unsstore"] call HALs_store_fnc_addTrader;
     };
     case ("CW" isEqualTo (_templateParts select 0)): {
         Info("Initializing CW trader.");

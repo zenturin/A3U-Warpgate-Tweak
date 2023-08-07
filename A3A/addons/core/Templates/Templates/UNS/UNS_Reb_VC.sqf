@@ -49,7 +49,6 @@
 
     ["uns_willysmg50", 1750, "CAR", {true}],
     ["uns_Type55_MG", 2050, "CAR", {true}],
-    ["uns_BTR152_DHSK", 2500, "CAR", {true}],
 
     ["uns_M113_M2", 6000, "APC", {true}],
     ["uns_M113A1_M2", 9000, "APC", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
