@@ -21,6 +21,7 @@ class NavGrid {
 	Kunduz = QPATHTOFOLDER(Antistasi_Kunduz.Kunduz\navGrid.sqf);
 	Tembelan = QPATHTOFOLDER(Antistasi_Tembelan.Tembelan\navGrid.sqf);
 	tem_anizay = QPATHTOFOLDER(Antistasi_tem_anizay.tem_anizay\navGrid.sqf);
+	SPE_Normandy = QPATHTOFOLDER(Antistasi_SPE_Normandy.SPE_Normandy\navGrid.sqf);
 	gm_weferlingen_winter = QPATHTOFOLDER(Antistasi_gm_weferlingen_winter.gm_weferlingen_winter\navGrid.sqf);
     gm_weferlingen_summer = QPATHTOFOLDER(Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\navGrid.sqf);
 };

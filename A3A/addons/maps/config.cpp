@@ -47,6 +47,7 @@ class CfgMissions
 		A3A_Mission(Kunduz, "Antistasi Ultimate - Kunduz")
 		A3A_Mission(Tembelan, "Antistasi Ultimate - Tembelan Island")
 		A3A_Mission(tem_anizay, "Antistasi Ultimate - Anizay")
+		A3A_Mission(SPE_Normandy, "Antistasi Ultimate - Normandy")
 		A3A_Mission(gm_weferlingen_winter, "Antistasi Ultimate - Weferlingen Winter")
         A3A_Mission(gm_weferlingen_summer, "Antistasi Ultimate - Weferlingen Summer")
 #if __A3_DEBUG__

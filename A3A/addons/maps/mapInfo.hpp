@@ -21,6 +21,7 @@ class mapInfo {
 	#include "Antistasi_Kunduz.Kunduz\mapInfo.hpp"
 	#include "Antistasi_Tembelan.Tembelan\mapInfo.hpp"
 	#include "Antistasi_tem_anizay.tem_anizay\mapInfo.hpp"
+	#include "Antistasi_SPE_Normandy.SPE_Normandy\mapInfo.hpp"
 	#include "Antistasi_gm_weferlingen_winter.gm_weferlingen_winter\mapInfo.hpp"
     #include "Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\mapInfo.hpp"
 };
