@@ -13021,26 +13021,26 @@ class cfgHALsStore
 				"underbarreluns"
 			};
 		};
-    class OPTRE
-    {
-          displayName = $STR_ARMS_DEALER_STORE;
-          categories[] = {
-              "handgunshalo",
-              "smghalo",
-              "mghalo",
-              "rifleshalo",
-              "sniperrifleshalo",
-              "launchershalo",
-              "launchermagazineshalo",
-              "riflegrenadeshalo",
-              "muzzleshalo",
-              "magazineshalo", 
-              "pointershalo",
-              "specialweaponshalo",
-              "mischalo",
-              "opticshalo",
-              "underbarrelhalo"
-        };
-    };
+		class OPTRE
+		{
+		  displayName = $STR_ARMS_DEALER_STORE;
+		  categories[] = {
+			      "handgunshalo",
+			      "smghalo",
+			      "mghalo",
+			      "rifleshalo",
+			      "sniperrifleshalo",
+			      "launchershalo",
+			      "launchermagazineshalo",
+			      "riflegrenadeshalo",
+			      "muzzleshalo",
+			      "magazineshalo", 
+			      "pointershalo",
+			      "specialweaponshalo",
+			      "mischalo",
+			      "opticshalo",
+			      "underbarrelhalo"
+			};
+		};
 	};
 };
