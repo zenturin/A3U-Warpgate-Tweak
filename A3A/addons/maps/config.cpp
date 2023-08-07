@@ -31,6 +31,7 @@ class CfgMissions
         A3A_Mission(SefrouRamal, $STR_antistasi_mission_info_sefrouramal_mapname_text)
 		A3A_Mission(chernarus, "Antistasi Ultimate - Chernarus Autumn")
 		A3A_Mission(chernarus_summer, "Antistasi Ultimate - Chernarus Summer")
+		A3A_Mission(Chernarus_Winter, "Antistasi Ultimate - Chernarus Winter")
         A3A_Mission(cup_chernarus_A3, $STR_antistasi_mission_info_chernarus2020_mapname_text)
         A3A_Mission(Enoch, $STR_antistasi_mission_info_livonia_mapname_text)
         A3A_Mission(Esseker, $STR_antistasi_mission_info_esseker_mapname_text)
