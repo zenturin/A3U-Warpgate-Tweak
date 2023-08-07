@@ -3,6 +3,7 @@ class mapInfo {
     #include "Antistasi_Malden.Malden\mapInfo.hpp"
     #include "Antistasi_SefrouRamal.SefrouRamal\mapInfo.hpp"
     #include "Antistasi_Stratis.Stratis\mapInfo.hpp"
+	#include "Antistasi_chernarus.chernarus\mapInfo.hpp"
     #include "Antistasi_cup_chernarus_A3.cup_chernarus_A3\mapInfo.hpp"
     #include "Antistasi_Enoch.Enoch\mapInfo.hpp"
     #include "Antistasi_Esseker.Esseker\mapInfo.hpp"
