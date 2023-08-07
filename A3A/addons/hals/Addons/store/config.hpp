@@ -11311,7 +11311,6 @@ class cfgHALsStore
 			ITEM(uns_357mag, 17, MZ_STOCK);
 			ITEM(uns_m1911mag, 17, MZ_STOCK);
 			ITEM(uns_m1carbinemag, 17, MZ_STOCK);
-			ITEM(Uns_1Rnd_HE_M381, 17, MZ_STOCK);
 			ITEM(uns_makarovmag, 17, MZ_STOCK);
 			ITEM(uns_mat49_20_mag, 17, MZ_STOCK);
 			ITEM(uns_40mm_mkv_White, 17, MZ_STOCK);
@@ -11427,7 +11426,7 @@ class cfgHALsStore
 			ITEM(uns_b_m1917, 70, PN_STOCK);
 			ITEM(uns_b_6h3, 70, PN_STOCK);
 			ITEM(uns_b_m40_camo, 70, PN_STOCK);
-			ITEM(uns_b_m1884, 70, PN_STOCK);
+			ITEM(uns_kar_m1884, 70, PN_STOCK);
 			ITEM(uns_b_mas49, 70, PN_STOCK);
 			ITEM(uns_b_spike17, 70, PN_STOCK);
 			ITEM(uns_b_m1, 70, PN_STOCK);
