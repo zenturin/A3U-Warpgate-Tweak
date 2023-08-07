@@ -81,7 +81,7 @@ class Templates
     {
         name = "A3 NATO Temperate";
         file = "Vanilla_AI_NATO_Temperate";
-        climate[] = {"temperate"};
+        climate[] = {"temperate", "arctic"};
     };
 
     class Vanilla_NATO_Tropical : Vanilla_NATO_Arid
@@ -129,7 +129,7 @@ class Templates
         flagTexture = "\A3\Data_F\Flags\Flag_green_CO.paa";
         name = "A3 LL";
         file = "Vanilla_Reb_LL";
-        climate[] = {"temperate"};
+        climate[] = {"temperate", "arctic"};
         description = $STR_A3AP_setupFactionsTab_ll;
     };
 
@@ -139,7 +139,7 @@ class Templates
         flagTexture = "\A3\Data_F\Flags\Flag_red_CO.paa";
         name = "A3 Exegerménos";
         file = "Vanilla_Riv_Exegermenos";
-        climate[] = {"arid", "temperate"};
+        climate[] = {"arid", "temperate", "arctic"};
         description = $STR_A3AP_setupFactionsTab_exegermenos;
     };
 
@@ -186,7 +186,7 @@ class Templates
     {
         name = "Aegis AUKUS Temperate";
         file = "Aegis_AI_AUKUS_Temperate";
-        climate[] = {"temperate"};
+        climate[] = {"temperate", "arctic"};
     };
     class Aegis_AUKUS_Tropical : Aegis_AUKUS_Arid
     {
@@ -222,14 +222,14 @@ class Templates
         flagTexture = "A3\Data_F\Flags\Flag_CSAT_CO.paa";
         name = "Aegis CSAT Arid";
         file = "Aegis_AI_CSAT_Arid";
-        climate[] = {"arid", "arctic"};
+        climate[] = {"arid"};
         description = $STR_A3AP_setupFactionsTab_csat;
     };
     class Aegis_CSAT_Temperate : Aegis_CSAT_Arid
     {
         name = "Aegis CSAT Temperate";
         file = "Aegis_AI_CSAT_Temperate";
-        climate[] = {"temperate"};
+        climate[] = {"temperate", "arctic"};
     };
 
     class Aegis_NATO_Arid : Aegis_Base
@@ -245,7 +245,7 @@ class Templates
     {
         name = "Aegis NATO Temperate";
         file = "Aegis_AI_NATO_Temperate";
-        climate[] = {"temperate"};
+        climate[] = {"temperate", "arctic"};
     };
 
     class Aegis_FIA : Aegis_Base
@@ -274,7 +274,7 @@ class Templates
         flagTexture = "\A3_Aegis\Data_F_Aegis\Flags\flag_Looters_CO.paa";
         name = "Aegis LL";
         file = "Aegis_Reb_LL";
-        climate[] = {"temperate"};
+        climate[] = {"temperate", "arctic"};
         description = $STR_A3AP_setupFactionsTab_ll;
     };
 
@@ -343,7 +343,7 @@ class Templates
         name = "RHS CDF";
         file = "RHS_AI_CDF";
         maps[] = {"cup_chernarus_A3"};
-        climate[] = {"temperate"};
+        climate[] = {"temperate", "arctic"};
         description = $STR_A3AP_setupFactionsTab_cdf;
     };
 
@@ -534,7 +534,7 @@ class Templates
         file = "3CBF_AI_CDF";
         description = $STR_A3AP_setupFactionsTab_cdf;
         climate[] = {"temperate"};
-        maps[] = {"cup_chernarus_A3"};
+        maps[] = {"cup_chernarus_A3", "chernarus", "chernarus_summer", "Chernarus_Winter"};
     };
 
     class 3CBF_HIDF : 3CBF_Base
