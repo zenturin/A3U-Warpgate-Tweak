@@ -10844,7 +10844,7 @@ class cfgHALsStore
 			ITEM(LIB_WaltherPPK, 110, PISTOL_STOCK); //AMMO: LIB_7Rnd_765x17_PPK
 			ITEM(LIB_Webley_mk6, 110, PISTOL_STOCK); //AMMO: LIB_6Rnd_455
 			ITEM(LIB_Webley_Flare, 110, PISTOL_STOCK); //AMMO: LIB_1Rnd_flare_white
-			ITEM(LIB_Welrod, 150, PISTOL_STOCK); //AMMO: LIB_6Rnd_9x19_Welrod
+			ITEM(LIB_Welrod_mk1, 150, PISTOL_STOCK); //AMMO: LIB_6Rnd_9x19_Welrod
 			ITEM(LIB_Colt_M1911, 110, PISTOL_STOCK); //AMMO: LIB_7Rnd_45ACP
 		};
 
@@ -11061,6 +11061,350 @@ class cfgHALsStore
 			ITEM(LIB_Maxim_Bar, 600, 20);
 			ITEM(LIB_Maxim_Bag, 500, 20);
 			ITEM(LIB_Laffete_Tripod, 400, 20);
+		};
+
+//SPE_IFA3
+
+		class handgunsspe{
+			displayName = "Handguns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
+
+			ITEM(LIB_M1896, 90, PISTOL_STOCK); //AMMO: LIB_10Rnd_9x19_M1896
+			ITEM(LIB_FLARE_PISTOL, 50, PISTOL_STOCK); //AMMO: LIB_1Rnd_flare_white
+			ITEM(LIB_M1895, 90, PISTOL_STOCK); //AMMO: LIB_7Rnd_762x38
+			ITEM(LIB_P08, 110, PISTOL_STOCK); //AMMO: LIB_8Rnd_9x19_P08
+			ITEM(LIB_P38, 110, PISTOL_STOCK); //AMMO: LIB_8Rnd_9x19
+			ITEM(LIB_TT33, 110, PISTOL_STOCK); //AMMO: LIB_8Rnd_762x25
+			ITEM(LIB_WaltherPPK, 110, PISTOL_STOCK); //AMMO: LIB_7Rnd_765x17_PPK
+			ITEM(LIB_Webley_mk6, 110, PISTOL_STOCK); //AMMO: LIB_6Rnd_455
+			ITEM(LIB_Webley_Flare, 110, PISTOL_STOCK); //AMMO: LIB_1Rnd_flare_white
+			ITEM(LIB_Welrod_mk1, 150, PISTOL_STOCK); //AMMO: LIB_6Rnd_9x19_Welrod
+			ITEM(LIB_Colt_M1911, 110, PISTOL_STOCK); //AMMO: LIB_7Rnd_45ACP
+			
+			ITEM(SPE_P08, 110, PISTOL_STOCK); //AMMO: SPE_8Rnd_9x19_P08
+			ITEM(SPE_M1911, 110, PISTOL_STOCK); //AMMO: SPE_7Rnd_45ACP_1911
+			
+		};
+
+		class smgspe{
+			displayName = "Submachine Guns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(LIB_Sten_Mk2, 165, RIFLE_STOCK); // LIB_32Rnd_9x19_Sten
+			ITEM(LIB_Sten_Mk5, 185, RIFLE_STOCK); // LIB_32Rnd_9x19_Sten
+			ITEM(LIB_MP38, 210, RIFLE_STOCK); // LIB_32Rnd_9x19
+			ITEM(LIB_MP40, 200, RIFLE_STOCK); // LIB_32Rnd_9x19_t
+			ITEM(LIB_PPSh41_m, 245, RIFLE_STOCK); // LIB_35Rnd_762x25 LIB_71Rnd_762x25
+			ITEM(LIB_M3_GreaseGun, 185, RIFLE_STOCK); // LIB_30Rnd_M3_GreaseGun_45ACP
+            ITEM(LIB_M1A1_Thompson, 220, RIFLE_STOCK); // 30rnd mag: LIB_30Rnd_45ACP 30rnd mag tracer: LIB_30Rnd_45ACP_t
+			ITEM(LIB_M1928_Thompson, 245, RIFLE_STOCK); // 30rnd mag: LIB_30Rnd_45ACP 30rnd mag tracer: LIB_30Rnd_45ACP_t 50rnd mag: LIB_50Rnd_45ACP
+			ITEM(LIB_M1928A1_Thompson, 280, RIFLE_STOCK); // 30rnd mag: LIB_30Rnd_45ACP 30rnd mag tracer: LIB_30Rnd_45ACP_t
+			ITEM(LIB_MP44, 400, RIFLE_STOCK); // 30rnd mag: LIB_30Rnd_792x33  LIB_30Rnd_792x33_t
+			
+			ITEM(SPE_Sten_Mk2, 165, RIFLE_STOCK); // SPE_32Rnd_9x19_Sten
+			ITEM(SPE_Sten_Mk2_Suppressed, 185, RIFLE_STOCK); // LIB_32Rnd_9x19_Sten
+			ITEM(SPE_MP40, 200, RIFLE_STOCK); // SPE_32Rnd_9x19 SPE_32Rnd_9x19_t
+			ITEM(SPE_M3_GreaseGun, 185, RIFLE_STOCK); // SPE_30Rnd_M3_GreaseGun_45ACP SPE_30Rnd_M3_GreaseGun_45ACP_t
+			ITEM(SPE_STG44, 400, RIFLE_STOCK); // 30rnd mag: SPE_30Rnd_792x33  SPE_30Rnd_792x33_t
+			
+		};
+		
+		class mgspe{
+			displayName = "Machine Guns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
+
+			ITEM(LIB_M1919A4, 550, RIFLE_STOCK); //NORMAL: LIB_50Rnd_762x63 M1_BALL: LIB_50Rnd_762x63_M1
+			ITEM(LIB_M1919A6, 650, RIFLE_STOCK); //NORMAL: LIB_50Rnd_762x63 M1_BALL: LIB_50Rnd_762x63_M1
+			ITEM(LIB_Bren_Mk2, 500, RIFLE_STOCK); //NORMAL: LIB_Bren_Mk2 BALL: LIB_30Rnd_770x56_MKVIII
+			ITEM(LIB_M1918A2_BAR, 400, RIFLE_STOCK); //NORMAL: LIB_M1918A2_BAR BALL: LIB_20Rnd_762x63_M1
+			ITEM(LIB_DP28, 650, RIFLE_STOCK); //NORMAL: LIB_47Rnd_762x54	LIB_47Rnd_762x54d
+			ITEM(LIB_DT, 750, RIFLE_STOCK); //NORMAL: LIB_63Rnd_762x54	LIB_63Rnd_762x54d
+			ITEM(LIB_DT_OPTIC, 1200, RIFLE_STOCK); //NORMAL: LIB_63Rnd_762x54	LIB_63Rnd_762x54d
+			ITEM(LIB_MG34, 850, RIFLE_STOCK); //NORMAL: LIB_50Rnd_792x57 	LIB_50Rnd_792x57_SMK	LIB_50Rnd_792x57_sS
+			ITEM(LIB_MG42, 1000, RIFLE_STOCK); //NORMAL: LIB_50Rnd_792x57 	LIB_50Rnd_792x57_SMK	LIB_50Rnd_792x57_sS
+			ITEM(LIB_FG42G, 500, RIFLE_STOCK); //NORMAL: LIB_20Rnd_792x57
+			
+			ITEM(SPE_M1919A4, 550, RIFLE_STOCK); //NORMAL: SPE_50Rnd_762x63 SPE_50Rnd_762x63_M1 SPE_50Rnd_762x63_M2_AP
+			ITEM(SPE_M1919A6, 650, RIFLE_STOCK); //NORMAL: SPE_50Rnd_762x63 SPE_50Rnd_762x63_M1 SPE_50Rnd_762x63_M2_AP
+			ITEM(SPE_FM_24_M29, 500, RIFLE_STOCK); // SPE_25Rnd_75x54 SPE_25Rnd_75x54_35P_AP
+			ITEM(SPE_M1918A2_BAR, 400, RIFLE_STOCK); // SPE_20Rnd_762x63 SPE_20Rnd_762x63_M1 SPE_20Rnd_762x63_M2_AP
+			ITEM(SPE_MG34, 850, RIFLE_STOCK); //NORMAL: SPE_50Rnd_792x57 	SPE_50Rnd_792x57_SMK	SPE_50Rnd_792x57_sS
+			ITEM(SPE_MG42, 1000, RIFLE_STOCK); //NORMAL: SPE_50Rnd_792x57 	SPE_50Rnd_792x57_SMK	SPE_50Rnd_792x57_sS
+			
+		};
+
+		class riflesspe{
+			displayName = "Rifles, Carbines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			ITEM(LIB_LeeEnfield_No1, 210, RIFLE_STOCK); //NORMAL: LIB_10Rnd_770x56 BALL: LIB_10Rnd_770x56_MkVIII
+			ITEM(LIB_LeeEnfield_No4, 200, RIFLE_STOCK); //^^
+			ITEM(LIB_DELISLE, 250, RIFLE_STOCK); //NORMAL: LIB_7Rnd_45ACP_DeLisle
+			ITEM(LIB_M1_Carbine, 250, RIFLE_STOCK); //NORMAL: LIB_15Rnd_762x33 TRACER: LIB_15Rnd_762x33_t
+			ITEM(LIB_M1_Garand, 300, RIFLE_STOCK); //NORMAL: LIB_8Rnd_762x63 BALL: LIB_8Rnd_762x63_M1 tracer: LIB_8Rnd_762x63_t
+			ITEM(LIB_M1903A3_Springfield, 200, RIFLE_STOCK); //NORMAL: LIB_5Rnd_762x63
+			ITEM(LIB_M9130, 180, RIFLE_STOCK); //NORMAL: LIB_5Rnd_762x54 LIB_5Rnd_762x54_b30 LIB_5Rnd_762x54_D LIB_5Rnd_762x54_t30 LIB_5Rnd_762x54_t46
+			ITEM(LIB_M38, 170, RIFLE_STOCK); //NORMAL: ^^
+			ITEM(LIB_M44, 170, RIFLE_STOCK); //NORMAL: ^^^
+			ITEM(LIB_SVT_40, 320, RIFLE_STOCK); //NORMAL: LIB_10Rnd_762x54 LIB_10Rnd_762x54_b30 LIB_10Rnd_762x54_d LIB_10Rnd_762x54_t30 LIB_10Rnd_762x54_t46 LIB_10Rnd_762x54_t302 LIB_10Rnd_762x54_t462
+			ITEM(LIB_K98, 210, RIFLE_STOCK); //NORMAL: LIB_5Rnd_792x57 LIB_5Rnd_792x57_t LIB_5Rnd_792x57_SMK LIB_5Rnd_792x57_sS
+			ITEM(LIB_K98_Late, 190, RIFLE_STOCK); //NORMAL: ^^
+			ITEM(LIB_G3340, 200, RIFLE_STOCK); //NORMAL: ^^^
+			ITEM(LIB_G41, 300, RIFLE_STOCK); //NORMAL: LIB_10Rnd_792x57_clip
+			ITEM(LIB_G43, 280, RIFLE_STOCK); //NORMAL: LIB_10Rnd_792x57 LIB_10Rnd_792x57_T2 LIB_10Rnd_792x57_SMK LIB_10Rnd_792x57_sS LIB_10Rnd_792x57_T
+			
+			ITEM(SPE_M1_Carbine, 250, RIFLE_STOCK); //NORMAL: SPE_15Rnd_762x33 TRACER: SPE_15Rnd_762x33_t
+			ITEM(SPE_M1_Garand, 300, RIFLE_STOCK); //NORMAL: SPE_8Rnd_762x63  SPE_8Rnd_762x63_M1  SPE_8Rnd_762x63_t SPE_8Rnd_762x63_M2_AP
+			ITEM(SPE_M1903A3_Springfield, 200, RIFLE_STOCK); //NORMAL: SPE_5Rnd_762x63  SPE_5Rnd_762x63_M1  SPE_5Rnd_762x63_t  SPE_5Rnd_762x63_M2_AP
+			ITEM(SPE_K98, 210, RIFLE_STOCK); //NORMAL: SPE_5Rnd_792x57 SPE_5Rnd_792x57_t SPE_5Rnd_792x57_SMK SPE_5Rnd_792x57_sS
+			ITEM(SPE_K98_Late, 190, RIFLE_STOCK); //NORMAL: ^^
+			ITEM(SPE_G43, 280, RIFLE_STOCK); //NORMAL: SPE_10Rnd_792x57 SPE_10Rnd_792x57_T2 SPE_10Rnd_792x57_SMK SPE_10Rnd_792x57_sS SPE_10Rnd_792x57_T
+
+		};
+
+		class sniperriflesspe{
+			displayName = "DMRs, Sniper Rifles, Battle Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(LIB_LeeEnfield_No4_Scoped, 580, RIFLE_STOCK); // SAME AS LIB_LeeEnfield_No1
+			ITEM(LIB_M1903A4_Springfield, 570, RIFLE_STOCK); // SAME AS LIB_M1903A3_Springfield
+			ITEM(LIB_K98ZF39, 570, RIFLE_STOCK); // SAME AS LIB_K98
+			ITEM(LIB_M9130PU, 570, RIFLE_STOCK); // SAME AS LIB_M9130
+			
+			ITEM(SPE_M1903A4_Springfield, 570, RIFLE_STOCK); // SAME AS SPE_M1903A3_Springfield
+			ITEM(SPE_K98ZF39, 570, RIFLE_STOCK); // SAME AS SPE_K98
+			
+		};
+
+		class launchersspe{
+			displayName = "Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+			ITEM(LIB_PIAT, 300, 25); 
+			ITEM(LIB_M1A1_Bazooka, 350, 25); 
+			ITEM(LIB_Faustpatrone, 200, 25); 
+			ITEM(LIB_PzFaust_30m, 225, 25); 
+			ITEM(LIB_PzFaust_60m, 250, 25); 
+			ITEM(LIB_RPzB, 350, 25); 
+			ITEM(LIB_RPzB_w, 350, 25); 
+			
+			ITEM(SPE_Faustpatrone, 100, 15);
+			ITEM(SPE_PzFaust_30m, 100, 15);
+			ITEM(SPE_PzFaust_60m, 100, 15);
+			ITEM(SPE_M1A1_Bazooka, 350, 25); 
+			
+		}; 
+
+		class launchermagazinesspe{
+			displayName = "Launcher Ammunition";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			ITEM(LIB_1Rnd_89m_PIAT, 100, 15);
+			ITEM(LIB_1Rnd_60mm_M6, 100, 15);
+			ITEM(LIB_1Rnd_Faustpatrone, 100, 15);
+			ITEM(LIB_1Rnd_PzFaust_30m, 100, 15);
+			ITEM(LIB_1Rnd_PzFaust_60m, 100, 15);
+			ITEM(LIB_1Rnd_RPzB, 100, 15);
+			
+			ITEM(SPE_1Rnd_60mm_M6, 100, 15);
+			ITEM(SPE_1Rnd_Faustpatrone, 100, 15);
+			ITEM(SPE_1Rnd_PzFaust_30m, 100, 15);
+			ITEM(SPE_1Rnd_PzFaust_60m, 100, 15);
+			
+		};
+
+		class riflegrenadesspe{
+			displayName = "Rifle Grenades";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			ITEM(LIB_1Rnd_G_MillsBomb, 70, 25);
+			ITEM(LIB_1Rnd_G_M9A1, 80, 25);
+			ITEM(LIB_1Rnd_G_Mk2, 90, 25);
+			ITEM(LIB_1Rnd_G_PZGR_30, 70, 25);
+			ITEM(LIB_1Rnd_G_PZGR_40, 90, 25);
+			ITEM(LIB_1Rnd_G_DYAKONOV, 80, 25);
+		};
+
+		class muzzlesspe{
+			displayName = "Muzzle Accessories";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
+			
+			ITEM(lib_acc_p1903_bayo, 75, MZ_STOCK);
+			ITEM(lib_acc_no4_mk2_bayo, 75, MZ_STOCK);
+			ITEM(lib_acc_m1_bayo, 75, MZ_STOCK);
+			ITEM(lib_acc_m1891_bayo, 75, MZ_STOCK);
+			ITEM(lib_acc_k98_bayo, 75, MZ_STOCK);
+			ITEM(lib_acc_gl_enfield_cup_empty, 80, MZ_STOCK);
+			ITEM(lib_acc_gl_m7, 80, MZ_STOCK);
+			ITEM(lib_acc_gw_sb_empty, 80, MZ_STOCK);
+			ITEM(lib_acc_gl_dyakonov_empty, 80, MZ_STOCK);
+			
+			ITEM(spe_acc_m3_suppressor_45acp, 75, MZ_STOCK);
+			ITEM(spe_acc_m1_bayo, 75, MZ_STOCK);
+			ITEM(spe_acc_m1905_bayo, 75, MZ_STOCK);
+			ITEM(spe_acc_k98_bayo, 75, MZ_STOCK);
+			ITEM(spe_acc_gl_m8, 80, MZ_STOCK);
+			ITEM(spe_acc_gl_m7, 80, MZ_STOCK);
+			ITEM(spe_acc_gw_sb_empty, 80, MZ_STOCK);
+			
+		};
+
+		class magazinesspe{
+			displayName = "Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(LIB_7Rnd_45ACP, 17, MZ_STOCK);
+            ITEM(LIB_32Rnd_9x19_Sten, 20, MZ_STOCK);
+            ITEM(LIB_30Rnd_45ACP, 22, MZ_STOCK);
+            ITEM(LIB_50Rnd_45ACP, 45, MZ_STOCK);
+            ITEM(LIB_50Rnd_762x63_M1, 75, MZ_STOCK);
+            ITEM(LIB_30Rnd_770x56_MKVIII, 65, MZ_STOCK);
+            ITEM(LIB_20Rnd_762x63_M1, 55, MZ_STOCK);
+            ITEM(LIB_10Rnd_770x56_MkVIII, 27, MZ_STOCK);
+            ITEM(LIB_15Rnd_762x33, 20, MZ_STOCK);
+            ITEM(LIB_8Rnd_762x63, 26, MZ_STOCK); 
+			ITEM(LIB_10Rnd_9x19_M1896, 12, MZ_STOCK);
+			ITEM(LIB_1Rnd_flare_white, 10, MZ_STOCK);
+			ITEM(LIB_7Rnd_762x38, 15, MZ_STOCK);
+			ITEM(LIB_8Rnd_9x19_P08, 15, MZ_STOCK);
+			ITEM(LIB_8Rnd_9x19, 15, MZ_STOCK);
+			ITEM(LIB_8Rnd_762x25, 15, MZ_STOCK);
+			ITEM(LIB_7Rnd_765x17_PPK, 17, MZ_STOCK);
+			ITEM(LIB_6Rnd_455, 15, MZ_STOCK);
+			ITEM(LIB_6Rnd_9x19_Welrod, 20, MZ_STOCK);
+			ITEM(LIB_1Rnd_flare_yellow, 10, MZ_STOCK);
+			ITEM(LIB_1Rnd_flare_red, 10, MZ_STOCK);
+			ITEM(LIB_1Rnd_flare_green, 10, MZ_STOCK);
+			ITEM(LIB_32Rnd_9x19, 22, MZ_STOCK);
+			ITEM(LIB_32Rnd_9x19_t, 22, MZ_STOCK);
+			ITEM(LIB_30Rnd_M3_GreaseGun_45ACP, 22, MZ_STOCK);
+			ITEM(LIB_35Rnd_762x25, 22, MZ_STOCK);
+            ITEM(LIB_71Rnd_762x25, 45, MZ_STOCK);
+			ITEM(LIB_47Rnd_762x54, 70, MZ_STOCK);
+			ITEM(LIB_47Rnd_762x54d, 80, MZ_STOCK);
+			ITEM(LIB_63Rnd_762x54, 90, MZ_STOCK);
+			ITEM(LIB_63Rnd_762x54d, 100, MZ_STOCK);
+			ITEM(LIB_50Rnd_792x57, 80, MZ_STOCK);
+			ITEM(LIB_50Rnd_792x57_SMK, 90, MZ_STOCK);
+			ITEM(LIB_50Rnd_792x57_sS, 90, MZ_STOCK);
+			ITEM(LIB_20Rnd_792x57, 60, MZ_STOCK);
+			ITEM(LIB_30Rnd_792x33, 50, MZ_STOCK);
+			ITEM(LIB_30Rnd_792x33_t, 50, MZ_STOCK);
+			ITEM(LIB_5Rnd_762x54, 15, MZ_STOCK);
+			ITEM(LIB_5Rnd_762x54_b30, 20, MZ_STOCK);
+			ITEM(LIB_5Rnd_762x54_D, 20, MZ_STOCK);
+			ITEM(LIB_5Rnd_762x54_t30, 20, MZ_STOCK);
+			ITEM(LIB_5Rnd_762x54_t46, 20, MZ_STOCK);
+			ITEM(LIB_10Rnd_762x54, 25, MZ_STOCK);
+			ITEM(LIB_10Rnd_762x54_b30, 30, MZ_STOCK);
+			ITEM(LIB_10Rnd_762x54_d, 25, MZ_STOCK);
+			ITEM(LIB_10Rnd_762x54_t30, 25, MZ_STOCK);
+			ITEM(LIB_10Rnd_762x54_t46, 25, MZ_STOCK);
+			ITEM(LIB_10Rnd_762x54_t302, 25, MZ_STOCK);
+			ITEM(LIB_10Rnd_762x54_t462, 25, MZ_STOCK);
+			ITEM(LIB_5Rnd_792x57, 15, MZ_STOCK);
+			ITEM(LIB_5Rnd_792x57_t, 20, MZ_STOCK);
+			ITEM(LIB_5Rnd_792x57_SMK, 25, MZ_STOCK);
+			ITEM(LIB_5Rnd_792x57_sS, 20, MZ_STOCK);
+			ITEM(LIB_10Rnd_792x57_clip, 35, MZ_STOCK);
+			ITEM(LIB_10Rnd_792x57, 20, MZ_STOCK);
+			ITEM(LIB_10Rnd_792x57_T2, 25, MZ_STOCK);
+			ITEM(LIB_10Rnd_792x57_SMK, 35, MZ_STOCK);
+			ITEM(LIB_10Rnd_792x57_sS, 25, MZ_STOCK);
+			ITEM(LIB_10Rnd_792x57_T, 25, MZ_STOCK);
+			
+			ITEM(SPE_8Rnd_9x19_P08, 15, MZ_STOCK);
+			ITEM(SPE_7Rnd_45ACP_1911, 15, MZ_STOCK);
+			ITEM(SPE_32Rnd_9x19_Sten, 20, MZ_STOCK);
+			ITEM(SPE_32Rnd_9x19, 20, MZ_STOCK);
+			ITEM(SPE_32Rnd_9x19_t, 20, MZ_STOCK);
+			ITEM(SPE_30Rnd_M3_GreaseGun_45ACP, 20, MZ_STOCK);
+			ITEM(SPE_30Rnd_M3_GreaseGun_45ACP_t, 20, MZ_STOCK);
+			ITEM(SPE_30Rnd_792x33, 30, MZ_STOCK);
+			ITEM(SPE_30Rnd_792x33_t, 30, MZ_STOCK);
+			ITEM(SPE_50Rnd_762x63, 50, MZ_STOCK);
+			ITEM(SPE_50Rnd_762x63_M1, 50, MZ_STOCK);
+			ITEM(SPE_50Rnd_762x63_M2_AP, 70, MZ_STOCK);
+			ITEM(SPE_25Rnd_75x54, 40, MZ_STOCK);
+			ITEM(SPE_25Rnd_75x54_35P_AP, 50, MZ_STOCK);
+			ITEM(SPE_20Rnd_762x63, 35, MZ_STOCK);
+			ITEM(SPE_20Rnd_762x63_M1, 35, MZ_STOCK);
+			ITEM(SPE_20Rnd_762x63_M2_AP, 45, MZ_STOCK);
+			ITEM(SPE_50Rnd_792x57, 50, MZ_STOCK);
+			ITEM(SPE_50Rnd_792x57_SMK, 50, MZ_STOCK);
+			ITEM(SPE_50Rnd_792x57_sS, 50, MZ_STOCK);
+			ITEM(SPE_15Rnd_762x33, 25, MZ_STOCK);
+			ITEM(SPE_15Rnd_762x33_t, 25, MZ_STOCK);
+			ITEM(SPE_8Rnd_762x63, 25, MZ_STOCK);
+			ITEM(SPE_8Rnd_762x63_M1, 25, MZ_STOCK);
+			ITEM(SPE_8Rnd_762x63_t, 26, MZ_STOCK);
+			ITEM(SPE_8Rnd_762x63_M2_AP, 30, MZ_STOCK);
+			ITEM(SPE_5Rnd_762x63, 20, MZ_STOCK);
+			ITEM(SPE_5Rnd_762x63_M1, 22, MZ_STOCK);
+			ITEM(SPE_5Rnd_762x63_t, 22, MZ_STOCK);
+			ITEM(SPE_5Rnd_762x63_M2_AP, 25, MZ_STOCK);
+			ITEM(SPE_5Rnd_792x57, 20, MZ_STOCK);
+			ITEM(SPE_5Rnd_792x57_t, 25, MZ_STOCK);
+			ITEM(SPE_5Rnd_792x57_SMK, 30, MZ_STOCK);
+			ITEM(SPE_5Rnd_792x57_sS, 30, MZ_STOCK);
+			ITEM(SPE_10Rnd_792x57, 35, MZ_STOCK);
+			ITEM(SPE_10Rnd_792x57_T2, 35, MZ_STOCK);
+			ITEM(SPE_10Rnd_792x57_SMK, 45, MZ_STOCK);
+			ITEM(SPE_10Rnd_792x57_sS, 45, MZ_STOCK);
+			ITEM(SPE_10Rnd_792x57_T, 35, MZ_STOCK);
+			
+		};
+
+		class miscspe{
+			displayName = "Misc";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
+
+			ITEM(LIB_Ladung_Big_MINE_mag, 450, MISC_STOCK);
+			ITEM(LIB_Ladung_Small_MINE_mag, 400, MISC_STOCK);
+			
+			ITEM(SPE_US_TNT_4pound_mag, 450, MISC_STOCK);
+			ITEM(SPE_US_TNT_half_pound_mag, 400, MISC_STOCK);
+			ITEM(SPE_US_Bangalore_mag, 450, MISC_STOCK);
+			
+		};
+
+		class pointersspe{
+			displayName = "Pointer Accessories";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(lib_m1918a2_bar_handle, 70, PN_STOCK);
+			ITEM(lib_m1918a2_bar_bipod, 70, PN_STOCK);
+			
+			ITEM(spe_m1918a2_bar_handle, 70, PN_STOCK);
+			ITEM(spe_m1918a2_bar_bipod, 70, PN_STOCK);
+		};
+
+		class specialweaponsspe{
+			displayName = "Special Weapons";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			ITEM(LIB_M2_Flamethrower, 300, 25);
+			ITEM(B_LIB_US_M2Flamethrower, 800, 25);
+			
+			ITEM(SPE_Fusil_Mle_208_12, 150, 25);
+			ITEM(SPE_Fusil_Mle_208_12_Sawedoff, 150, 25);
+			ITEM(SPE_Flammenwerfer41, 300, 25);
+			ITEM(B_SPE_GER_Flammenwerfer_41, 800, 25);
+			ITEM(SPE_M2_Flamethrower, 300, 25);
+			ITEM(B_SPE_US_M2Flamethrower, 800, 25);
+			
+		};
+
+		class opticsspe{
+			displayName = "Optics Accessories";
+			picture = "";
+			ITEM(lib_optic_zf4, 150, MAGAZINE_STOCK);
+		};
+
+		class underbarrelspe{
+	     	displayName = "Backpack Static";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
+
+			ITEM(LIB_Maxim_Bar, 600, 20);
+			ITEM(LIB_Maxim_Bag, 500, 20);
+			ITEM(LIB_Laffete_Tripod, 400, 20);
+			
+			ITEM(SPE_Lafette_Tripod, 400, 20);
 		};
 
 //Unsung
@@ -12396,6 +12740,28 @@ class cfgHALsStore
 				"miscifaa",
 				"opticsifaa",
 				"underbarrelifaa"
+			};
+		};
+
+		class ww2cdlcmod
+		{
+			displayName = "Arms Dealer Store";
+			categories[] = {
+				"handgunsspe",
+				"smgspe",
+				"mgspe",
+				"riflesspe",
+				"sniperriflesspe",
+				"launchersspe",
+				"launchermagazinesspe",
+				"riflegrenadesspe",
+				"muzzlesspe",
+				"magazinesspe", 
+				"pointersspe",
+				"specialweaponsspe",
+				"miscspe",
+				"opticsspe",
+				"underbarrelspe"
 			};
 		};
 		

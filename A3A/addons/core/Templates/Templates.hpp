@@ -758,4 +758,8 @@ class Templates
 
     #include "Templates\UNS\templates.hpp"
 	
+    // ***************************** SPE IFA *****************************
+
+    #include "Templates\SPE_IFA\templates.hpp"
+	
 };
