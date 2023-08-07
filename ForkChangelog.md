@@ -5,7 +5,9 @@
 - (Aegis) AUKUS, NATO, CSAT, AAF factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods)
 - (Aegis) CHDKZ and Ion PMC Rival factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods) -->
 
-
+## 2.2.2
+### Changes
+- Fixed rebel mortars missing prices
 ## 2.2.1
 ### Changes
 - Fixed surrender crates not clearing default loot before being populated with surrendered soldier's loot
