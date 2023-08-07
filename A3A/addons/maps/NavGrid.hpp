@@ -18,5 +18,6 @@ class NavGrid {
     vn_khe_sanh = QPATHTOFOLDER(Antistasi_vn_khe_sanh.vn_khe_sanh\navGrid.sqf);
     Sehreno = QPATHTOFOLDER(Antistasi_Sehreno.Sehreno\navGrid.sqf);
 	sara = QPATHTOFOLDER(Antistasi_sara.sara\navGrid.sqf);
+	gm_weferlingen_winter = QPATHTOFOLDER(Antistasi_gm_weferlingen_winter.gm_weferlingen_winter\navGrid.sqf);
     gm_weferlingen_summer = QPATHTOFOLDER(Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\navGrid.sqf);
 };
