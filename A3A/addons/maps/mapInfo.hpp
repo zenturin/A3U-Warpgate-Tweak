@@ -24,6 +24,8 @@ class mapInfo {
 	#include "Antistasi_tem_anizay.tem_anizay\mapInfo.hpp"
 	#include "Antistasi_SPE_Normandy.SPE_Normandy\mapInfo.hpp"
 	#include "Antistasi_lingor3.lingor3\mapInfo.hpp"
+	#include "Antistasi_Panthera3.Panthera3\mapInfo.hpp"
+	#include "Antistasi_Winthera3.Winthera3\mapInfo.hpp"
 	#include "Antistasi_gm_weferlingen_winter.gm_weferlingen_winter\mapInfo.hpp"
     #include "Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\mapInfo.hpp"
 };
