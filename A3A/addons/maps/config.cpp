@@ -36,6 +36,7 @@ class CfgMissions
         A3A_Mission(Enoch, "Antistasi Ultimate - Livonia")
         A3A_Mission(Esseker, "Antistasi Ultimate - Esseker")
         A3A_Mission(Napf, "Antistasi Ultimate - Napf")
+		A3A_Mission(NapfWinter, "Antistasi Ultimate - Napf Winter")
         A3A_Mission(blud_vidda, "Antistasi Ultimate - Vidda")
         A3A_Mission(vt7, "Antistasi Ultimate - Virolahti")
         A3A_Mission(takistan, "Antistasi Ultimate - Takistan")
