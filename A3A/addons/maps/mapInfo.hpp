@@ -28,6 +28,7 @@ class mapInfo {
 	#include "Antistasi_Winthera3.Winthera3\mapInfo.hpp"
 	#include "Antistasi_abramia.abramia\mapInfo.hpp"
 	#include "Antistasi_OPTRE_Madrigal.OPTRE_Madrigal\mapInfo.hpp"
+	#include "Antistasi_rhspkl.rhspkl\mapInfo.hpp"
 	#include "Antistasi_gm_weferlingen_winter.gm_weferlingen_winter\mapInfo.hpp"
     #include "Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\mapInfo.hpp"
 };

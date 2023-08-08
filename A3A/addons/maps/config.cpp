@@ -54,6 +54,7 @@ class CfgMissions
 		A3A_Mission(Winthera3, "Antistasi Ultimate - Panthera Winter")
 		A3A_Mission(abramia, "Antistasi Ultimate - Isla Abramia")
 		A3A_Mission(OPTRE_Madrigal, "Antistasi Ultimate - Madrigal")
+		A3A_Mission(rhspkl, "Antistasi Ultimate - Prei Khmaoch Luong")
 		A3A_Mission(gm_weferlingen_winter, "Antistasi Ultimate - Weferlingen Winter")
         A3A_Mission(gm_weferlingen_summer, "Antistasi Ultimate - Weferlingen Summer")
 #if __A3_DEBUG__
