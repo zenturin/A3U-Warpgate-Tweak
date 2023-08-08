@@ -46,6 +46,8 @@ private _fnc_placed = {
 		playSound "A3AP_UiSuccess";
 	};
 
+	[_vehicle, teamPlayer] call A3A_fnc_AIVehInit;
+
 	player reveal _vehicle;
 };
 private _fnc_check = {
