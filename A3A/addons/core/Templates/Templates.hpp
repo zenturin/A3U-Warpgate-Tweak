@@ -761,5 +761,12 @@ class Templates
     // ***************************** SPE IFA *****************************
 
     #include "Templates\SPE_IFA\templates.hpp"
-	
+  
+     // ***************************** OPTRE *****************************
+
+    #include "Templates\OPTRE\templates.hpp"
+  
+     // ***************************** RACS *****************************
+
+    #include "Templates\RACS\templates.hpp"
 };
