@@ -10,6 +10,7 @@ class NavGrid {
     Enoch = QPATHTOFOLDER(Antistasi_Enoch.Enoch\navGrid.sqf);
     Esseker = QPATHTOFOLDER(Antistasi_Esseker.Esseker\navGrid.sqf);
     Napf = QPATHTOFOLDER(Antistasi_Napf.Napf\navGrid.sqf);
+	NapfWinter = QPATHTOFOLDER(Antistasi_NapfWinter.NapfWinter\navGrid.sqf);
     blud_vidda = QPATHTOFOLDER(Antistasi_blud_vidda.blud_vidda\navGrid.sqf);
     vt7 = QPATHTOFOLDER(Antistasi_vt7.vt7\navGrid.sqf);
     takistan = QPATHTOFOLDER(Antistasi_takistan.takistan\navGrid.sqf);
@@ -23,6 +24,11 @@ class NavGrid {
 	tem_anizay = QPATHTOFOLDER(Antistasi_tem_anizay.tem_anizay\navGrid.sqf);
 	SPE_Normandy = QPATHTOFOLDER(Antistasi_SPE_Normandy.SPE_Normandy\navGrid.sqf);
 	lingor3 = QPATHTOFOLDER(Antistasi_lingor3.lingor3\navGrid.sqf);
+	Panthera3 = QPATHTOFOLDER(Antistasi_Panthera3.Panthera3\navGrid.sqf);
+	Winthera3 = QPATHTOFOLDER(Antistasi_Winthera3.Winthera3\navGrid.sqf);
+	abramia = QPATHTOFOLDER(Antistasi_abramia.abramia\navGrid.sqf);
+	OPTRE_Madrigal = QPATHTOFOLDER(Antistasi_OPTRE_Madrigal.OPTRE_Madrigal\navGrid.sqf);
+	rhspkl = QPATHTOFOLDER(Antistasi_rhspkl.rhspkl\navGrid.sqf);
 	gm_weferlingen_winter = QPATHTOFOLDER(Antistasi_gm_weferlingen_winter.gm_weferlingen_winter\navGrid.sqf);
     gm_weferlingen_summer = QPATHTOFOLDER(Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\navGrid.sqf);
 };
