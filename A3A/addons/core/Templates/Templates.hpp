@@ -762,11 +762,15 @@ class Templates
 
     #include "Templates\SPE_IFA\templates.hpp"
   
-     // ***************************** OPTRE *****************************
+    // ***************************** OPTRE *****************************
 
     #include "Templates\OPTRE\templates.hpp"
   
-     // ***************************** RACS *****************************
+    // ***************************** RACS *****************************
 
     #include "Templates\RACS\templates.hpp"
+  
+    // ***************************** BWA3 *****************************
+
+    #include "Templates\BWA3\templates.hpp"
 };
