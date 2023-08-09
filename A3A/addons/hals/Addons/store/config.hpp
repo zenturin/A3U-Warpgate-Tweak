@@ -13021,7 +13021,7 @@ class cfgHALsStore
 				"underbarreluns"
 			};
 		};
-		class OPTRE
+		class optre
 		{
 		  displayName = $STR_ARMS_DEALER_STORE;
 		  categories[] = {
