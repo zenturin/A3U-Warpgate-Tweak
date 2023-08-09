@@ -56,7 +56,7 @@ if (["IFA3_Core"] call _has_addon) then { // ifa
 };
 
 if (["ww2_spe_assets_c_characters_germans_c"] call _has_addon) then { // spearhead
-    _modsets pushBack "ww2cdlcmod";
+    _modsets pushBack "ww2cdlc";
 };
 
 // Multiple mods required (for now)
