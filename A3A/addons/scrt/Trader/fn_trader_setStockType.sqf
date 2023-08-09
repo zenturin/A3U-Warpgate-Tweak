@@ -1,7 +1,8 @@
-//	Author: Socrates
+//	Author: Socrates/Silence
 // 
 //	Description:
-//	Sets trader stock based on current modset.
+//	Sets trader stock based on current mods loaded.
+//  09/08/2023: Now has the ability to detect multiple mods and load them all into the trader.
 //
 //	Returns:
 //	Nothing.
@@ -35,55 +36,55 @@ private _has_addon = {
 private _modsets = [];
 
 if (["JMSLLTE_empire_mod"] call _has_addon) then { // star wars empire
-    _modsets pushBack ["emp"];
+    _modsets pushBack "emp";
 };
 
 if (["uns_weap_w"] call _has_addon) then { // unsung
-    _modsets pushBack ["unsstore"];
+    _modsets pushBack "unsstore";
 };
 
 if (["vn_weapons"] call _has_addon) then { // sogpf
-    _modsets pushBack ["vn"];
+    _modsets pushBack "vn";
 };
 
 if (["UK3CB_Factions_Vehicles_SUV"] call _has_addon) then { // 3cbf
-    _modsets pushBack ["3cbf"];
+    _modsets pushBack "3cbf";
 };
 
 if (["IFA3_Core"] call _has_addon) then { // ifa
-    _modsets pushBack ["ww2mod"];
+    _modsets pushBack "ww2mod";
 };
 
 if (["ww2_spe_assets_c_characters_germans_c"] call _has_addon) then { // spearhead
-    _modsets pushBack ["ww2cdlcmod"];
+    _modsets pushBack "ww2cdlcmod";
 };
 
 // Multiple mods required (for now)
 
 if ([["3AS_Characters", "442_equipment", "SWLB_clones", "JLTS_core", "CWDependencies"]] call _has_addon) then { // star wars clone wars
-    _modsets pushBack ["cw"];
+    _modsets pushBack "cw";
 };
 
 if ([["CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core"]] call _has_addon) then { // cup
-    _modsets pushBack ["cup"];
+    _modsets pushBack "cup";
 };
 
 if ([["rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor"]] call _has_addon) then { // rhs
-    _modsets pushBack ["rhs"];
+    _modsets pushBack "rhs";
 };
 
 if ([["OPTRE_Core", "OPTRE_FC_Core"]] call _has_addon) then { // optre
-    _modsets pushBack ["optre"];
+    _modsets pushBack "optre";
 };
 
 // Special cases
 if ("coldWar" in A3A_factionEquipFlags) then { // 3cbf cold war
-    _modsets = ["3cbfcw"];
+    _modsets = "3cbfcw";
 };
 
-if (_modsets isEqualTo []) then {_modsets pushBack ["vanilla"]}; // If it still hasn't got anything by this point, we can safely assume no supported mods are loaded.
+if (_modsets isEqualTo []) then {_modsets pushBack "vanilla"}; // If it still hasn't got anything by this point, we can safely assume no supported mods are loaded.
 
-if ("ws" in A3A_enabledDLC) then {_modsets pushBack ["ws"]}; // western sahara
+if ("ws" in A3A_enabledDLC) then {_modsets pushBack "ws"}; // western sahara
 
 [_traderX, _modsets] call HALs_store_fnc_addTrader;
 
