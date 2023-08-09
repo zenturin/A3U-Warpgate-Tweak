@@ -18,59 +18,63 @@ private _templateParts = A3A_Reb_template splitString "_";
 switch (true) do {
     case ("EMP" isEqualTo (_templateParts select 0)): {
         Info("Initializing EMP trader.");
-        [_traderX, "emp"] call HALs_store_fnc_addTrader;
+        [_traderX, ["emp"]] call HALs_store_fnc_addTrader;
     };
     case ("UNS" isEqualTo (_templateParts select 0)): {
         Info("Initializing Unsung trader.");
-        [_traderX, "unsstore"] call HALs_store_fnc_addTrader;
+        [_traderX, ["unsstore"]] call HALs_store_fnc_addTrader;
     };
     case ("CW" isEqualTo (_templateParts select 0)): {
         Info("Initializing CW trader.");
-        [_traderX, "cw"] call HALs_store_fnc_addTrader;
+        [_traderX, ["cw"]] call HALs_store_fnc_addTrader;
+    };
+    case ("CUP" isEqualTo (_templateParts select 0) && {isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")}): {
+        Info("Initializing CUP + RHS trader.");
+        [_traderX, ["cup", "rhs"]] call HALs_store_fnc_addTrader;
     };
     case ("CUP" isEqualTo (_templateParts select 0)): {
         Info("Initializing CUP trader.");
-        [_traderX, "cup"] call HALs_store_fnc_addTrader;
+        [_traderX, ["cup"]] call HALs_store_fnc_addTrader;
     };
     case ("VN" isEqualTo (_templateParts select 0)): {
         Info("Initializing VN trader.");
-        [_traderX, "vn"] call HALs_store_fnc_addTrader;
+        [_traderX, ["vn"]] call HALs_store_fnc_addTrader;
     };
     case ("coldWar" in A3A_factionEquipFlags): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using 3CBF CW trader stock.", servertime];
-        [_traderX, "3cbfcw"] call HALs_store_fnc_addTrader;
+        [_traderX, ["3cbfcw"]] call HALs_store_fnc_addTrader;
     };
     case ("RHS" isEqualTo (_templateParts select 0)): {
         Info("Initializing RHS trader.");
-        [_traderX, "rhs"] call HALs_store_fnc_addTrader;
+        [_traderX, ["rhs"]] call HALs_store_fnc_addTrader;
     };
     case ("3CBF" isEqualTo (_templateParts select 0)): {
         Info("Initializing 3CBF trader.");
-        [_traderX, "3cbf"] call HALs_store_fnc_addTrader;
+        [_traderX, ["3cbf"]] call HALs_store_fnc_addTrader;
     };
     case ("Aegis" isEqualTo (_templateParts select 0)): {
         Info("Initializing Aegis trader.");
-        [_traderX, "aegis"] call HALs_store_fnc_addTrader;
+        [_traderX, ["aegis"]] call HALs_store_fnc_addTrader;
     };
     case ("ws" in A3A_enabledDLC): {
         Info("Initializing WS trader.");
-        [_traderX, "ws"] call HALs_store_fnc_addTrader;
+        [_traderX, ["ws"]] call HALs_store_fnc_addTrader;
     };
     case ("OPTRE" isEqualTo (_templateParts select 0)): {
         Info("Initializing OPTRE trader.");
-        [_traderX, "OPTRE"] call HALs_store_fnc_addTrader;
+        [_traderX, ["OPTRE"]] call HALs_store_fnc_addTrader;
     };
     case ("IFA" isEqualTo (_templateParts select 0)): {
         Info("Initializing IFA trader.");
-        [_traderX, "ww2mod"] call HALs_store_fnc_addTrader;
+        [_traderX, ["ww2mod"]] call HALs_store_fnc_addTrader;
     };
     case ("SPE" isEqualTo (_templateParts select 0)): {
         Info("Initializing IFA trader.");
-        [_traderX, "ww2cdlcmod"] call HALs_store_fnc_addTrader;
+        [_traderX, ["ww2cdlcmod"]] call HALs_store_fnc_addTrader;
     };
     default  {
         Info("Initializing vanilla trader.");
-        [_traderX, "vanilla"] call HALs_store_fnc_addTrader;
+        [_traderX, ["vanilla"]] call HALs_store_fnc_addTrader;
     };
 };
 
