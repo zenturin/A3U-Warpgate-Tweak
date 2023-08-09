@@ -69,6 +69,10 @@ if ([["CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_C
     _modsets pushBack "cup";
 };
 
+if ([["ffaa_data"]] call _has_addon) then { // ffaa
+    _modsets pushBack "ffaastock";
+};
+
 if ([["rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor"]] call _has_addon) then { // rhs
     _modsets pushBack "rhs";
 };
