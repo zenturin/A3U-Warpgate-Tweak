@@ -9,7 +9,7 @@
 ["flagMarkerType", "mando_marker_red"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["CW_Quadbike"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["CW_Offroad_Mando", "CW_Ifrit_Mando"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["lsd_civ_lancerBike"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["CW_Offroad_Mando_HMG"]] call _fnc_saveToTemplate;
 ["vehiclesTruck", ["CW_Mando_argon_transport"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["CW_Offroad_Mando_AT"]] call _fnc_saveToTemplate;
@@ -71,14 +71,13 @@
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "SWLW_westar35c","SWLW_Westar35S",
-    "SWLW_Westar35S_Mag","SWLW_westar35c_Mag",
-    "SWLW_Westar35SA","SWLW_westar35sa_Mag",
-    ["ls_weapon_rps6_disposable", 50],
+    "ls_weapon_westar35c_primary", // it has no ammo for a reason. It's too OP at the start, but petros still needs a gun.
+    "ls_weapon_westar35sa_secondary","SWLW_westar35sa_Mag",
+    ["ls_weapon_rps6_disposable", 5],
     ["SWLW_clones_spec_breach_mag", 10], ["SWLW_clones_spec_demo_mag", 3],
     "3AS_ThermalDetonator","SmokeShell",
-    "ls_mandalorian_traditional_vest",
-	"ls_mandalorian_traditional_helmet",
+    "SWLB_CEE_Recon_Lieutenant","SWLB_CEE_Officer_Tactical", // we could give them proper vests, but they might be getting removed from legion, so we'll be safe
+    "ls_mandalorian_vizslaGrunt_helmet","ls_mandalorian_vizslaSergeant_helmet","ls_mandalorian_vizslaCaptain_helmet","ls_mandalorian_ordoGrunt_helmet","ls_mandalorian_ordoSergeant_helmet",
     "ls_mandalorian_standard_backpack", "ls_mandalorian_light_backpack", "ls_mandalorian_demo_backpack","ls_mandalorian_heavy_backpack","ls_mandalorian_medic_backpack",
     "SWLB_clone_commander_binocular_night"
 ];
@@ -97,9 +96,7 @@ private _dlcUniforms = [];
 
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
 
-["headgear", [
-    "ls_mandalorian_traditional_helmet"
-]] call _fnc_saveToTemplate;
+["headgear", []] call _fnc_saveToTemplate;
 
 /////////////////////
 ///  Identities   ///
