@@ -85,6 +85,10 @@ if ([["mas_chi_army"]] call _has_addon) then { // pla
     _modsets pushBack "plastock";
 };
 
+if ([["bwa3_common"]] call _has_addon) then { // BWA3
+    _modsets pushBack "bwastock";
+};
+
 if ([["rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor"]] call _has_addon) then { // rhs
     _modsets pushBack "rhs";
 };
