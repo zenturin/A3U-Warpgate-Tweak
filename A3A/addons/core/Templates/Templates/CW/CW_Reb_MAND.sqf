@@ -71,7 +71,7 @@
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "ls_weapon_westar35c_primary", // it has no ammo for a reason. It's too OP at the start, but petros still needs a gun.
+    "JLTS_DP23", "JLTS_DP23_mag",
     "ls_weapon_westar35sa_secondary","SWLW_westar35sa_Mag",
     ["ls_weapon_rps6_disposable", 5],
     ["SWLW_clones_spec_breach_mag", 10], ["SWLW_clones_spec_demo_mag", 3],
