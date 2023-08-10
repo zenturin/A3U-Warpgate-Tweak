@@ -77,6 +77,10 @@ if ([["ASZ_Weapons_A3"]] call _has_addon) then { // pedagne
     _modsets pushBack "italystock";
 };
 
+if ([["sfp_soldiers"]] call _has_addon) then { // sfp
+    _modsets pushBack "spfstock";
+};
+
 if ([["rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor"]] call _has_addon) then { // rhs
     _modsets pushBack "rhs";
 };
