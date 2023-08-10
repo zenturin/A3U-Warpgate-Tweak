@@ -84,7 +84,14 @@ switch (_mode) do {
 		HALs_store_category_items = [];
 		
 		private _items = [];
-		private _categories = getArray (configFile >> "cfgHALsAddons" >> "cfgHALsStore" >> "stores" >> _trader getVariable ["HALs_store_trader_type", ""] >> "categories");
+		private _categories = [];
+		private _traderType = _trader getVariable ["HALs_store_trader_type", []];
+
+		{
+			private _categoryAdd = getArray (configFile >> "cfgHALsAddons" >> "cfgHALsStore" >> "stores" >> _x >> "categories");
+			_categories = _categories + _categoryAdd;
+		} forEach _traderType; // make sure it grabs ALL categories, not only the first
+
 		{
 			private _categoryItems = "true" configClasses (configFile >> "cfgHALsAddons" >> "cfgHALsStore" >> "categories" >> _x) apply {[configName _x, getNumber (_x >> "price") max 0]};
 			
@@ -254,7 +261,17 @@ switch (_mode) do {
 				}];
 
 				private _cfg = configFile >> "cfgHALsAddons" >> "cfgHALsStore";
-				private _categories = getArray (_cfg >> "stores" >> _trader getVariable ["HALs_store_trader_type", ""] >> "categories");
+
+				// hacky fix
+				private _categories = [];
+				private _traderType = _trader getVariable ["HALs_store_trader_type", []];
+
+				{
+					private _categoryAdd = getArray (_cfg >> "stores" >> _x >> "categories");
+					_categories = _categories + _categoryAdd;
+				} forEach _traderType; // make sure it grabs ALL categories, not only the first
+
+				// private _categories = getArray (_cfg >> "stores" >> ( (_trader getVariable ["HALs_store_trader_type", []]) select 0) >> "categories");
 				_categories = [_categories, {getText (_cfg >> "categories" >> _x >> "displayName")}, true] call HALs_fnc_sortArray;
 
 				_ctrlCategory lbAdd localize "STR_HALS_STORE_ALL";

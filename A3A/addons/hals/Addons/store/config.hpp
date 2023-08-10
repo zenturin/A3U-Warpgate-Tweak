@@ -35,7 +35,7 @@ class cfgHALsStore
 		///////////////////////////////////////////////////////
 		class handgunsAegis 
 		{
-			displayName = $STR_HALS_STORE_HANDGUNS;
+			displayName = "Aegis Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 			ITEM(hgun_Pistol_heavy_01_F, 450, PISTOL_STOCK);
 			ITEM(hgun_Pistol_heavy_01_green_F, 450, PISTOL_STOCK);
@@ -53,7 +53,7 @@ class cfgHALsStore
 
 		class launchersAegis 
 		{
-			displayName = $STR_HALS_STORE_LAUNCHERS;
+			displayName = "Aegis Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(launch_RPG7_F, 650, LAUNCHER_STOCK);
@@ -92,7 +92,7 @@ class cfgHALsStore
 
 		class riflesAegis 
 		{
-			displayName = $STR_HALS_ASSAULT_RIFLES;
+			displayName = "Aegis Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_AKS_F, 250, RIFLE_STOCK);
@@ -282,7 +282,7 @@ class cfgHALsStore
 
 		class specialWeaponsAegis 
 		{
-			displayName = $STR_HALS_SPECIAL_WEAPONS;
+			displayName = "Aegis Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(GL_XM25_F, 1500, RIFLE_STOCK);
@@ -307,7 +307,7 @@ class cfgHALsStore
 
 		class mgAegis 
 		{
-			displayName = $STR_HALS_MGS;
+			displayName = "Aegis MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_RPK_F, 900, RIFLE_STOCK);
@@ -363,7 +363,7 @@ class cfgHALsStore
 
 		class sniperRiflesAegis 
 		{
-			displayName = $STR_HALS_SRS;
+			displayName = "Aegis Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(srifle_DMR_07_blk_F, 1450, RIFLE_STOCK);
@@ -431,7 +431,7 @@ class cfgHALsStore
 
 		class smgAegis 
 		{
-			displayName = $STR_HALS_STORE_SMGS;
+			displayName = "Aegis SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SMG_03C_TR_black, 350, RIFLE_STOCK);
@@ -468,7 +468,7 @@ class cfgHALsStore
 
 		class magazinesAegis 
 		{
-			displayName = $STR_HALS_MAGS;
+			displayName = "Aegis Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			///////////////////////////////////////////////////////
@@ -1294,7 +1294,7 @@ class cfgHALsStore
 		///////////////////////////////////////////////////////
 		class handgunsVanilla 
 		{
-			displayName = $STR_HALS_STORE_HANDGUNS;
+			displayName = "Vanilla Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(hgun_Pistol_heavy_01_F, 450, PISTOL_STOCK);
@@ -1308,7 +1308,7 @@ class cfgHALsStore
 
 		class launchersVanilla 
 		{
-			displayName = $STR_HALS_STORE_LAUNCHERS;
+			displayName = "Vanilla Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(launch_RPG7_F, 650, 15);
@@ -1339,7 +1339,7 @@ class cfgHALsStore
 
 		class launcherMagazinesVanilla 
 		{
-			displayName = $STR_HALS_STORE_LAUNCHER_AMMO;
+			displayName = "Vanilla Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class RPG7_F {
@@ -1394,7 +1394,7 @@ class cfgHALsStore
 
 		class riflesVanilla 
 		{
-			displayName = $STR_HALS_ASSAULT_RIFLES;
+			displayName = "Vanilla Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_AKS_F, 250, RIFLE_STOCK);
@@ -1478,7 +1478,7 @@ class cfgHALsStore
 
 		class sniperRiflesVanilla 
 		{
-			displayName = $STR_HALS_SRS;
+			displayName = "Vanilla Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(srifle_DMR_07_blk_F, 1450, RIFLE_STOCK);
@@ -1533,7 +1533,7 @@ class cfgHALsStore
 
 		class mgVanilla 
 		{
-			displayName = $STR_HALS_MGS;
+			displayName = "Vanilla MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_CTARS_blk_F, 1500, RIFLE_STOCK);
@@ -1569,7 +1569,7 @@ class cfgHALsStore
 
 		class smgVanilla 
 		{
-			displayName = $STR_HALS_STORE_SMGS;
+			displayName = Vanilla SMGs;
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SMG_03C_TR_black, 350, RIFLE_STOCK);
@@ -1598,7 +1598,7 @@ class cfgHALsStore
 
 		class navigationVanilla 
 		{
-			displayName = $STR_HALS_NAV;
+			displayName = "Vanilla GPS, Binoculars, NVGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
 
 			ITEM(ItemGPS, 300, NN_STOCK);
@@ -1619,7 +1619,7 @@ class cfgHALsStore
 
 		class underbarrelVanilla 
 		{
-			displayName = $STR_HALS_UB_ACC;
+			displayName = "Vanilla Bipods";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(bipod_02_F_arid, 100, 50);
@@ -1637,7 +1637,7 @@ class cfgHALsStore
 
 		class pointersVanilla 
 		{
-			displayName = $STR_HALS_P_ACC;
+			displayName = "Vanilla Pointers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(acc_flashlight, 75, PN_STOCK);
@@ -1648,7 +1648,7 @@ class cfgHALsStore
 
 		class muzzlesVanilla 
 		{
-			displayName = $STR_HALS_M_ACC;
+			displayName = "Vanilla Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(muzzle_snds_338_black, 500, MZ_STOCK); //5
@@ -1682,7 +1682,7 @@ class cfgHALsStore
 
 		class opticsVanilla 
 		{
-			displayName = $STR_HALS_O_ACC;
+			displayName = "Vanilla Optics";
 			picture = "";
 
 			class optic_tws {
@@ -1877,7 +1877,7 @@ class cfgHALsStore
 
 		class magazinesVanilla 
 		{
-			displayName = $STR_HALS_MAGS;
+			displayName = "Vanilla Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class Laserbatteries {
@@ -2458,7 +2458,7 @@ class cfgHALsStore
 
 		class miscVanilla 
 		{
-			displayName = $STR_HALS_STORE_MISC;
+			displayName = "Vanilla Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(H_HelmetO_ViperSP_ghex_F, 15000, MISC_STOCK);
@@ -2553,7 +2553,7 @@ class cfgHALsStore
 
 		class riflesWs 
 		{
-			displayName = $STR_HALS_ASSAULT_RIFLES_WS;
+			displayName = "WesternSahara Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_XMS_Base_lxWS, 700, RIFLE_STOCK);
@@ -2609,7 +2609,7 @@ class cfgHALsStore
 
 		class magazinesWs 
 		{
-			displayName = $STR_HALS_MAGS_WS;
+			displayName = "WesternSahara Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			//SLR Rifle grenades
@@ -2713,7 +2713,7 @@ class cfgHALsStore
 		///////////////////////////////////////////////////////
 		class handgunsRhs 
 		{
-			displayName = $STR_HALS_STORE_HANDGUNS;
+			displayName = "RHS Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(rhs_weap_makarov_pm, 75, PISTOL_STOCK);
@@ -2735,7 +2735,7 @@ class cfgHALsStore
 
 		class launchersRhs 
 		{
-			displayName = $STR_HALS_STORE_LAUNCHERS;
+			displayName = "RHS Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_rpg26, 200, 50);
@@ -2765,7 +2765,7 @@ class cfgHALsStore
 
 		class launcherMagazinesRhs 
 		{
-			displayName = $STR_HALS_STORE_LAUNCHER_AMMO;
+			displayName = "RHS Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 		
 			class rhs_rpg7_PG7V_mag {
@@ -2831,7 +2831,7 @@ class cfgHALsStore
 
 		class riflesRhs 
 		{
-			displayName = $STR_HALS_ASSAULT_RIFLES;
+			displayName = "RHS Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_aks74u, 200, RIFLE_STOCK);
@@ -2931,7 +2931,7 @@ class cfgHALsStore
 
 		class sniperRiflesRhs 
 		{
-			displayName = $STR_HALS_SRS;
+			displayName = "RHS Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_m38_rail, 400, RIFLE_STOCK);
@@ -3005,7 +3005,7 @@ class cfgHALsStore
 
 		class mgRhs 
 		{
-			displayName = $STR_HALS_MGS;
+			displayName = "RHS MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_m27iar, 1800, RIFLE_STOCK);
@@ -3029,7 +3029,7 @@ class cfgHALsStore
 
 		class smgRhs 
 		{
-			displayName = $STR_HALS_STORE_SMGS;
+			displayName = "RHS SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_pp2000, 600, RIFLE_STOCK);
@@ -3047,7 +3047,7 @@ class cfgHALsStore
 
 		class specialWeaponsRhs 
 		{
-			displayName = $STR_HALS_SPECIAL_WEAPONS;
+			displayName = "RHS Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_m79, 350, RIFLE_STOCK);
@@ -3059,7 +3059,7 @@ class cfgHALsStore
 
 		class navigationRhs 
 		{
-			displayName = $STR_HALS_NAV;
+			displayName = "RHS GPS, Binoculars, NVGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
 
 			ITEM(ItemGPS, 200, NN_STOCK);
@@ -3088,7 +3088,7 @@ class cfgHALsStore
 
 		class underbarrelRhs 
 		{
-			displayName = $STR_HALS_UB_ACC;
+			displayName = "RHS Bipods";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(rhs_acc_harris_swivel, 100, 50);
@@ -3119,7 +3119,7 @@ class cfgHALsStore
 
 		class pointersRhs 
 		{
-			displayName = $STR_HALS_P_ACC;
+			displayName = "RHS Pointers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(acc_flashlight, 75, PN_STOCK);
@@ -3152,7 +3152,7 @@ class cfgHALsStore
 
 		class muzzlesRhs 
 		{
-			displayName = $STR_HALS_M_ACC;
+			displayName = "RHS Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(rhs_acc_6p9_suppressor, 200, MZ_STOCK);
@@ -3212,7 +3212,7 @@ class cfgHALsStore
 
 		class opticsRhs 
 		{
-			displayName = $STR_HALS_O_ACC;
+			displayName = "RHS Optics";
 			picture = "";
 
 			class rhsgref_acc_l1a1_l2a2 {
@@ -3578,7 +3578,7 @@ class cfgHALsStore
 
 		class magazinesRhs 
 		{
-			displayName = $STR_HALS_MAGS;
+			displayName = "RHS Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class Laserbatteries {
@@ -4429,7 +4429,7 @@ class cfgHALsStore
 
 		class miscRhs 
 		{
-			displayName = $STR_HALS_STORE_MISC;
+			displayName = "RHS Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 			ITEM(B_Bergen_mcamo_F, 900, MISC_STOCK);
 			ITEM(B_Bergen_tna_F, 900, MISC_STOCK);
@@ -4469,63 +4469,28 @@ class cfgHALsStore
 
 		class handguns3cbf
 		{
-			displayName = $STR_HALS_STORE_HANDGUNS;
+			displayName = "3CBF Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
-			ITEM(rhs_weap_6p53, 150, PISTOL_STOCK);
-			ITEM(rhs_weap_pya, 200, PISTOL_STOCK);
-			ITEM(rhs_weap_pb_6p9, 250, PISTOL_STOCK);
-
-			ITEM(rhsusf_weap_m9, 250, PISTOL_STOCK);
-			ITEM(rhsusf_weap_m1911a1, 250, PISTOL_STOCK);
 
 			ITEM(UK3CB_BHP, 275, PISTOL_STOCK);
-
 			ITEM(UK3CB_USP, 300, PISTOL_STOCK);
-
-			ITEM(rhs_weap_cz99, 350, PISTOL_STOCK);
-			ITEM(rhsusf_weap_glock17g4, 300, PISTOL_STOCK);
-
 			ITEM(UK3CB_CZ75, 400, PISTOL_STOCK);
 
-			ITEM(rhs_weap_M320, 400, PISTOL_STOCK);
 		};
 
 		class launchers3cbf
 		{
-			displayName = $STR_HALS_STORE_LAUNCHERS;
+			displayName = "3CBF Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
-			ITEM(rhs_weap_rpg26, 200, 50);
-			ITEM(rhs_weap_rshg2, 200, 50);
-			ITEM(rhs_weap_rpg75, 175, 50);
-
-			ITEM(rhs_weap_m80, 250, 50);
-
-			ITEM(rhs_weap_m72a7, 300, 50);
-
 			ITEM(UK3CB_Blowpipe, 500, 50);
-
-			ITEM(rhs_weap_M136, 400, 50);
-			ITEM(rhs_weap_M136_hedp, 500, 50);
-			ITEM(rhs_weap_M136_hp, 500, 50);
-
-			ITEM(rhs_weap_rpg7, 750, 15);
-
-			ITEM(rhs_weap_maaws, 1300, 15);
-
-			ITEM(rhs_weap_igla, 1300, 50);
-			ITEM(rhs_weap_fim92, 1600, 50);
-
-			ITEM(rhs_weap_smaw, 1500, 15);
-			ITEM(rhs_weap_smaw_green, 1500, 15);
-
-			ITEM(rhs_weap_fgm148, 6000, 10);
+			
 		};
 
 		class smg3cbf
 		{
-			displayName = $STR_HALS_STORE_SMGS;
+			displayName = "3CBF SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uk3cb_ppsh41, 375, RIFLE_STOCK);
@@ -4551,29 +4516,12 @@ class cfgHALsStore
 			ITEM(uk3cb_auga2_para, 950, RIFLE_STOCK);
 			ITEM(uk3cb_auga2_para_tan, 950, RIFLE_STOCK);
 
-			ITEM(rhs_weap_pp2000, 600, RIFLE_STOCK);
-
-			ITEM(rhs_weap_asval, 1200, RIFLE_STOCK);
-			ITEM(rhs_weap_asval_grip, 1250, RIFLE_STOCK);
-			ITEM(rhs_weap_asval_grip_npz, 1300, RIFLE_STOCK);
-			ITEM(rhs_weap_asval_npz, 1250, RIFLE_STOCK);
-
-			ITEM(rhsusf_weap_MP7A2, 800, RIFLE_STOCK);
-			ITEM(rhsusf_weap_MP7A2_aor1, 800, RIFLE_STOCK);
-			ITEM(rhsusf_weap_MP7A2_desert, 800, RIFLE_STOCK);
-			ITEM(rhsusf_weap_MP7A2_winter, 800, RIFLE_STOCK);
 		};
 
 		class rifles3cbf
 		{
-			displayName = $STR_HALS_ASSAULT_RIFLES;
+			displayName = "3CBF Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-
-			ITEM(rhs_weap_aks74u, 200, RIFLE_STOCK);
-
-			ITEM(rhs_weap_MP44, 500, RIFLE_STOCK);
-
-			ITEM(rhs_weap_pm63, 750, RIFLE_STOCK);
 
 			ITEM(UK3CB_M16A1, 400, RIFLE_STOCK);
 			ITEM(UK3CB_M16A1_LSW, 425, RIFLE_STOCK);
@@ -4585,70 +4533,14 @@ class cfgHALsStore
 			ITEM(UK3CB_FAMAS_F1, 750, RIFLE_STOCK);
 			ITEM(UK3CB_FAMAS_F1_GLM203, 1000, RIFLE_STOCK);
 
-			ITEM(rhs_weap_m70ab2, 700, RIFLE_STOCK);
-			ITEM(rhs_weap_m70b1, 700, RIFLE_STOCK);
-			ITEM(rhs_weap_m92, 300, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m70b1n, 800, RIFLE_STOCK);
-			ITEM(rhs_weap_m70b3n, 800, RIFLE_STOCK);
-			ITEM(rhs_weap_m70b3n_pbg40, 1050, RIFLE_STOCK);
-
-			ITEM(rhs_weap_savz58p, 950, RIFLE_STOCK);
-			ITEM(rhs_weap_savz58p_black, 950, RIFLE_STOCK);
-			ITEM(rhs_weap_savz58v, 950, RIFLE_STOCK);
-			ITEM(rhs_weap_savz58v_black, 950, RIFLE_STOCK);
-
 			ITEM(uk3cb_ak47, 700, RIFLE_STOCK);
 			ITEM(uk3cb_ak47n, 800, RIFLE_STOCK);
-
-			ITEM(rhs_weap_akm, 800, RIFLE_STOCK);
-			ITEM(rhs_weap_akmn, 900, RIFLE_STOCK);
-			ITEM(rhs_weap_akmn_npz, 950, RIFLE_STOCK);
-			ITEM(rhs_weap_akm_zenitco01_b33, 1050, RIFLE_STOCK);
-
-			ITEM(rhs_weap_vhsd2, 900, RIFLE_STOCK);
-			ITEM(rhs_weap_vhsk2, 1000, RIFLE_STOCK);
-			ITEM(rhs_weap_vhsd2_ct15x, 1100, RIFLE_STOCK);
-			ITEM(rhs_weap_vhsd2_bg, 1150, RIFLE_STOCK);
-			ITEM(rhs_weap_vhsd2_bg_ct15x, 1250, RIFLE_STOCK);
-
-			ITEM(rhs_weap_ak103_1, 600, RIFLE_STOCK);
-			ITEM(rhs_weap_ak103_1_npz, 650, RIFLE_STOCK);
-			ITEM(rhs_weap_ak103_2, 700, RIFLE_STOCK);
-			ITEM(rhs_weap_ak103_2_npz, 650, RIFLE_STOCK);
-			ITEM(rhs_weap_ak103, 650, RIFLE_STOCK);
-			ITEM(rhs_weap_ak103_npz, 725, RIFLE_STOCK);
-			ITEM(rhs_weap_ak103_zenitco01_b33, 750, RIFLE_STOCK);
-			ITEM(rhs_weap_ak103_gp25, 800, RIFLE_STOCK);
-			ITEM(rhs_weap_ak103_gp25_npz, 850, RIFLE_STOCK);
-
-			ITEM(rhs_weap_ak104, 700, RIFLE_STOCK);
-			ITEM(rhs_weap_ak104_npz, 750, RIFLE_STOCK);
-			ITEM(rhs_weap_ak104_zenitco01_b33, 775, RIFLE_STOCK);
-
-			ITEM(rhs_weap_aks74, 500, RIFLE_STOCK);
-			ITEM(rhs_weap_aks74_2, 525, RIFLE_STOCK);
-			ITEM(rhs_weap_ak74, 500, RIFLE_STOCK);
-			ITEM(rhs_weap_ak74_2, 525, RIFLE_STOCK);
-			ITEM(rhs_weap_ak74_3, 550, RIFLE_STOCK);
-			ITEM(rhs_weap_ak74_gp25, 650, RIFLE_STOCK);
 
 			ITEM(UK3CB_HK33KA1, 650, RIFLE_STOCK);
 			ITEM(UK3CB_HK33KA2, 650, RIFLE_STOCK);
 			ITEM(UK3CB_HK33KA3, 650, RIFLE_STOCK);
 			ITEM(UK3CB_HK33KA2_RIS, 700, RIFLE_STOCK);
 			ITEM(UK3CB_HK33KA2_RIS_GL, 950, RIFLE_STOCK);
-
-			ITEM(rhs_weap_ak105, 700, RIFLE_STOCK);
-			ITEM(rhs_weap_ak105_zenitco01, 750, RIFLE_STOCK);
-			ITEM(rhs_weap_ak105_zenitco01_b33, 775, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m21a, 600, RIFLE_STOCK);
-			ITEM(rhs_weap_m21a_pr, 750, RIFLE_STOCK);
-			ITEM(rhs_weap_m21s, 550, RIFLE_STOCK);
-			ITEM(rhs_weap_m21s_pr, 700, RIFLE_STOCK);
-			ITEM(rhs_weap_m21a_pbg40, 800, RIFLE_STOCK);
-			ITEM(rhs_weap_m21a_pr_pbg40, 850, RIFLE_STOCK);
 
 			ITEM(uk3cb_auga2_sr_blk, 850, RIFLE_STOCK);
 			ITEM(uk3cb_auga2_sr, 850, RIFLE_STOCK);
@@ -4686,66 +4578,26 @@ class cfgHALsStore
 			ITEM(uk3cb_auga3_gl_blu, 1450, RIFLE_STOCK);
 			ITEM(uk3cb_auga3_gl, 1450, RIFLE_STOCK);
 
-
-			ITEM(rhs_weap_g36c, 800, RIFLE_STOCK);
-			ITEM(rhs_weap_g36kv, 900, RIFLE_STOCK);
-			ITEM(rhs_weap_g36kv_ag36, 1050, RIFLE_STOCK);
-
-			ITEM(rhs_weap_mk18, 1100, RIFLE_STOCK);
-			ITEM(rhs_weap_mk18_bk, 1300, RIFLE_STOCK);
-			ITEM(rhs_weap_mk18_KAC_bk, 1300, RIFLE_STOCK);
-			ITEM(rhs_weap_mk18_d, 1300, RIFLE_STOCK);
-			ITEM(rhs_weap_mk18_KAC_d, 1300, RIFLE_STOCK);
-			ITEM(rhs_weap_mk18_m320, 1550, RIFLE_STOCK);
-			ITEM(rhs_weap_mk18_KAC, 1300, RIFLE_STOCK);
-			ITEM(rhs_weap_mk18_wd, 1300, RIFLE_STOCK);
-			ITEM(rhs_weap_mk18_KAC_wd, 1300, RIFLE_STOCK);
-
 			ITEM(UK3CB_ACR_Crew, 1300, RIFLE_STOCK);
 			ITEM(UK3CB_ACR_Carbine, 1350, RIFLE_STOCK);
 			ITEM(UK3CB_ACR_Rifle, 1400, RIFLE_STOCK);
 			ITEM(UK3CB_ACR_Rifle_Long, 1450, RIFLE_STOCK);
 			ITEM(UK3CB_ACR_Carbine_UGL, 1550, RIFLE_STOCK);
 
-			ITEM(rhs_weap_hk416d10, 1500, RIFLE_STOCK);
-			ITEM(rhs_weap_hk416d10_LMT, 1500, RIFLE_STOCK);
-			ITEM(rhs_weap_hk416d10_LMT_d, 1500, RIFLE_STOCK);
-			ITEM(rhs_weap_hk416d10_LMT_wd, 1500, RIFLE_STOCK);
-			ITEM(rhs_weap_hk416d10_m320, 1500, RIFLE_STOCK);
-
-			ITEM(rhs_weap_hk416d145, 1500, RIFLE_STOCK);
-			ITEM(rhs_weap_hk416d145_d, 1650, RIFLE_STOCK);
-			ITEM(rhs_weap_hk416d145_d_2, 1650, RIFLE_STOCK);
-			ITEM(rhs_weap_hk416d145_wd, 1650, RIFLE_STOCK);
-			ITEM(rhs_weap_hk416d145_wd_2, 1650, RIFLE_STOCK);
-			ITEM(rhs_weap_hk416d145_m320, 1800, RIFLE_STOCK);
 		};
 
 		class sniperRifles3cbf
 		{
-			displayName = $STR_HALS_SRS;
+			displayName = "3CBF Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
-			ITEM(rhs_weap_m38_rail, 350, RIFLE_STOCK);
 			ITEM(UK3CB_Enfield_Rail, 450, RIFLE_STOCK);
-
 
 			ITEM(uk3cb_sks_01, 500, RIFLE_STOCK);
 			ITEM(uk3cb_sks_02, 650, RIFLE_STOCK);
 
-			ITEM(rhs_weap_m1garand_sa43, 600, RIFLE_STOCK);
-
 			ITEM(UK3CB_M1903A1_unertl, 850, RIFLE_STOCK);
 
-			ITEM(rhs_weap_vss, 1500, RIFLE_STOCK);
-			ITEM(rhs_weap_vss_grip, 1550, RIFLE_STOCK);
-			ITEM(rhs_weap_vss_grip_npz, 1600, RIFLE_STOCK);
-			ITEM(rhs_weap_vss_npz, 1650, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m76, 1100, RIFLE_STOCK);
-
-			ITEM(rhs_weap_l1a1, 1300, RIFLE_STOCK);
-			ITEM(rhs_weap_l1a1_wood, 1300, RIFLE_STOCK);
 			ITEM(UK3CB_FNFAL_FULL, 1300, RIFLE_STOCK);
 			ITEM(UK3CB_FNFAL_FOREGRIP, 1300, RIFLE_STOCK);
 			ITEM(UK3CB_FNFAL_PARA, 1250, RIFLE_STOCK);
@@ -4775,82 +4627,21 @@ class cfgHALsStore
 			ITEM(UK3CB_PSG1A1, 1725, RIFLE_STOCK);
 			ITEM(UK3CB_PSG1A1_RIS, 1825, RIFLE_STOCK);
 
-			ITEM(rhs_weap_t5000, 1550, RIFLE_STOCK);
-
 			ITEM(UK3CB_SVD_OLD, 1300, RIFLE_STOCK);
 			ITEM(UK3CB_SVD_OLD_NPZ, 1500, RIFLE_STOCK);
 
-			ITEM(rhs_weap_svdp_wd, 1300, RIFLE_STOCK);
-			ITEM(rhs_weap_svdp_wd_npz, 1500, RIFLE_STOCK);
-
-			ITEM(rhs_weap_svds, 1250, RIFLE_STOCK);
-			ITEM(rhs_weap_svds_npz, 1450, RIFLE_STOCK);
-			
-			ITEM(rhs_weap_m14, 1400, RIFLE_STOCK);
-			ITEM(rhs_weap_m14_d, 1450, RIFLE_STOCK);
-			ITEM(rhs_weap_m14_fiberglass, 1500, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m14_rail, 1500, RIFLE_STOCK);
-			ITEM(rhs_weap_m14_rail_d, 2450, RIFLE_STOCK);
-			ITEM(rhs_weap_m14_rail_fiberglass, 2450, RIFLE_STOCK);
-			ITEM(rhs_weap_m14_rail_wd, 2450, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m14_ris_d, 2550, RIFLE_STOCK);
-			ITEM(rhs_weap_m14_ris_fiberglass, 2550, RIFLE_STOCK);
-			ITEM(rhs_weap_m14_ris_wd, 2550, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m14ebrri, 2200, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m24sws, 1000, RIFLE_STOCK);
-			ITEM(rhs_weap_m24sws_d, 1000, RIFLE_STOCK);
-			ITEM(rhs_weap_m24sws_wd, 1000, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m40a5, 1400, RIFLE_STOCK);
-			ITEM(rhs_weap_m40a5_d, 1400, RIFLE_STOCK);
-			ITEM(rhs_weap_m40a5_Wd, 1400, RIFLE_STOCK);
-
-			ITEM(rhs_weap_XM2010, 2000, RIFLE_STOCK);
-			ITEM(rhs_weap_XM2010_wd, 2000, RIFLE_STOCK);
-			ITEM(rhs_weap_XM2010_d, 2000, RIFLE_STOCK);
-			ITEM(rhs_weap_XM2010_sa, 2000, RIFLE_STOCK);
-
-			ITEM(rhs_weap_M107, 3500, 5);
-			ITEM(rhs_weap_M107_d, 3500, 5);
-			ITEM(rhs_weap_M107_w, 3500, 5);
-			ITEM(rhs_weap_m82a1, 3500, 5);
-
-			ITEM(rhs_weap_mk17_CQC, 2500, RIFLE_STOCK);
-			ITEM(rhs_weap_mk17_STD, 2600, RIFLE_STOCK);
-			ITEM(rhs_weap_mk17_LB, 2700, RIFLE_STOCK);
-
-			ITEM(rhs_weap_SCARH_CQC, 2500, RIFLE_STOCK);
-			ITEM(rhs_weap_SCARH_FDE_CQC, 2500, RIFLE_STOCK);
-
-			ITEM(rhs_weap_SCARH_STD, 2600, RIFLE_STOCK);
-			ITEM(rhs_weap_SCARH_FDE_STD, 2600, RIFLE_STOCK);
-
-			ITEM(rhs_weap_SCARH_LB, 2700, RIFLE_STOCK);
-			ITEM(rhs_weap_SCARH_FDE_LB, 2700, RIFLE_STOCK);
 		};
 
 		class mg3cbf
 		{
-			displayName = $STR_HALS_MGS;
+			displayName = "3CBF MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(UK3CB_Bren, 550, RIFLE_STOCK);
 
 			ITEM(UK3CB_RPK, 800, RIFLE_STOCK);
 
-			ITEM(rhs_weap_m27iar, 1800, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m249, 1100, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m249_pip, 1350, RIFLE_STOCK);
-
 			ITEM(UK3CB_M60, 1300, RIFLE_STOCK);
-
-			ITEM(rhs_weap_m84, 1500, RIFLE_STOCK);
 
 			ITEM(UK3CB_MG3, 1700, RIFLE_STOCK);
 			ITEM(UK3CB_MG3_Railed, 1900, RIFLE_STOCK);
@@ -4858,12 +4649,6 @@ class cfgHALsStore
 			ITEM(UK3CB_MG3_KWS_G, 2000, RIFLE_STOCK);
 			ITEM(UK3CB_MG3_KWS_T, 2000, RIFLE_STOCK);
 
-			ITEM(rhs_weap_pkp, 1900, RIFLE_STOCK);
-			
-			ITEM(rhs_weap_m240G, 2000, RIFLE_STOCK);
-
-			ITEM(rhs_weap_rpk74m, 625, RIFLE_STOCK);					
-			ITEM(rhs_weap_rpk74m_npz, 900, RIFLE_STOCK);
 			ITEM(UK3CB_RPK_74, 550, RIFLE_STOCK);
 			ITEM(UK3CB_RPK_74_BLK, 550, RIFLE_STOCK);
 			ITEM(UK3CB_RPK_74N, 600, RIFLE_STOCK);
@@ -4872,7 +4657,7 @@ class cfgHALsStore
 		
 		class additionalMagazines3cbf
 		{
-			displayName = $STR_HALS_ADD_MAGS;
+			displayName = "3CBF Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			ITEM(UK3CB_CZ75_9_20Rnd, 75, MAGAZINE_STOCK);
@@ -5392,7 +5177,7 @@ class cfgHALsStore
 
 		class additionalScopes3cbf 
 		{
-			displayName = $STR_HALS_A_O_ACC;
+			displayName = "3CBF Optics";
 			picture = "";
 
 			class uk3cb_optic_sro {
@@ -5427,7 +5212,7 @@ class cfgHALsStore
 
 		class additionalMuzzles3cbf 
 		{
-			displayName = $STR_HALS_A_M_ACC;
+			displayName = "3CBF Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(uk3cb_muzzle_snds_g3, 450, MZ_STOCK);
@@ -5436,7 +5221,7 @@ class cfgHALsStore
 
 		class handguns3cbfcw
 		{
-			displayName = $STR_HALS_STORE_HANDGUNS;
+			displayName = "3CBCW Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(rhs_weap_makarov_pm, 75, PISTOL_STOCK);
@@ -5459,7 +5244,7 @@ class cfgHALsStore
 
 		class smg3cbfcw
 		{
-			displayName = $STR_HALS_STORE_SMGS;
+			displayName = "3CBCW SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uk3cb_ppsh41, 375, RIFLE_STOCK);
@@ -5486,7 +5271,7 @@ class cfgHALsStore
 
 		class rifles3cbfcw
 		{
-			displayName = $STR_HALS_ASSAULT_RIFLES;
+			displayName = "3CBCW Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_aks74u, 200, RIFLE_STOCK);
@@ -5547,7 +5332,7 @@ class cfgHALsStore
 
 		class sniperRifles3cbfcw
 		{
-			displayName = $STR_HALS_SRS;
+			displayName = "3CBCW Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uk3cb_sks_01, 500, RIFLE_STOCK);
@@ -5598,7 +5383,7 @@ class cfgHALsStore
 
 		class mg3cbfcw
 		{
-			displayName = $STR_HALS_MGS;
+			displayName = "3CBCW MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(UK3CB_Bren, 550, RIFLE_STOCK);
@@ -5626,7 +5411,7 @@ class cfgHALsStore
 
 		class specialWeapons3cbfcw 
 		{
-			displayName = $STR_HALS_SPECIAL_WEAPONS;
+			displayName = "3CBCW Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_m79, 350, RIFLE_STOCK);
@@ -5635,7 +5420,7 @@ class cfgHALsStore
 
 		class launcherMagazines3cbfcw 
 		{
-			displayName = $STR_HALS_STORE_LAUNCHER_AMMO;
+			displayName = "3CBCW Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class rhs_rpg7_PG7V_mag {
@@ -5697,7 +5482,7 @@ class cfgHALsStore
 
 		class navigation3cbfcw
 		{
-			displayName = $STR_HALS_NAV;
+			displayName = "3CBCW GPS, Binoculars, NVGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
 
 			ITEM(ItemGPS, 200, NN_STOCK);
@@ -5711,7 +5496,7 @@ class cfgHALsStore
 
 		class underbarrel3cbfcw
 		{
-			displayName = $STR_HALS_UB_ACC;
+			displayName = "3CBCW Bipods";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(rhsusf_acc_harris_bipod, 100, 50);
@@ -5721,7 +5506,7 @@ class cfgHALsStore
 
 		class pointers3cbfcw 
 		{
-			displayName = $STR_HALS_P_ACC;
+			displayName = "3CBCW Pointers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(acc_flashlight, 75, PN_STOCK);
@@ -5731,7 +5516,7 @@ class cfgHALsStore
 
 		class muzzles3cbfcw 
 		{
-			displayName = $STR_HALS_M_ACC;
+			displayName = "3CBCW Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(rhs_acc_6p9_suppressor, 200, MZ_STOCK);
@@ -5773,7 +5558,7 @@ class cfgHALsStore
 
 		class optics3cbfcw 
 		{
-			displayName = $STR_HALS_O_ACC;
+			displayName = "3CBCW Optics";
 			picture = "";
 
 			class uk3cb_optic_sro {
@@ -5930,7 +5715,7 @@ class cfgHALsStore
 
 		class magazines3cbfcw 
 		{
-			displayName = $STR_HALS_MAGS;
+			displayName = "3CBCW Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class Laserbatteries 
@@ -7114,7 +6899,7 @@ class cfgHALsStore
 
 		class misc3cbfcw 
 		{
-			displayName = $STR_HALS_STORE_MISC;
+			displayName = "3CBCW Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(rhsgref_hidf_alicepack, 750, MISC_STOCK);
@@ -7149,16 +6934,32 @@ class cfgHALsStore
 //Clone Wars
 
 		class handgunscw{
-			displayName = "Handguns";
+			displayName = "CW Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(SWLW_DC15SA, 110, PISTOL_STOCK); //AMMO: SWLW_DC15SA_Mag
 			ITEM(SWLW_DC17, 100, PISTOL_STOCK); //AMMO: SWLW_DC17_Mag
 			ITEM(SWLW_RG4D, 100, PISTOL_STOCK); //AMMO: SWLW_RG4D_Mag
+			ITEM(ls_weapon_dualDC17_secondary, 150, PISTOL_STOCK); //AMMO: ls_mag_dc17dual_20rnd
+			ITEM(ls_weapon_dc17sidearm_fordoCustom, 120, PISTOL_STOCK); //AMMO: ls_mag_dc17sidearm
+			ITEM(ls_weapon_dc17sidearm, 100, PISTOL_STOCK); //AMMO: ls_mag_dc17sidearm
+			ITEM(ls_weapon_electrostaff_melee, 300, PISTOL_STOCK); //AMMO: 
+			ITEM(ls_weapon_verpinePowerLance_melee, 400, PISTOL_STOCK); //AMMO: 
+			ITEM(SWLW_Westar35SA, 100, PISTOL_STOCK); //AMMO: SWLW_westar35sa_Mag
+			ITEM(ls_weapon_westar35sa_secondary, 100, PISTOL_STOCK); //AMMO: SWLW_westar35sa_Mag
+
+			ITEM(3AS_pistol_DC15SA_F, 110, PISTOL_STOCK); //AMMO: 3AS_15Rnd_EC30_mag 3AS_15Rnd_EM30_mag
+			ITEM(3AS_DC17S_F, 100, PISTOL_STOCK); //AMMO: 3AS_16Rnd_EC20_Mag 3AS_16Rnd_EM20_Mag
+			ITEM(3AS_DC17STest_F, 150, PISTOL_STOCK); //AMMO: 3AS_10Rnd_Test_mag
+			ITEM(DymekBlasterPistol_F, 120, PISTOL_STOCK); //AMMO: 3AS_16Rnd_EY20_Mag
+			ITEM(3AS_S5_f, 120, PISTOL_STOCK); //AMMO: 11Rnd_45ACP_Mag
+
+			ITEM(JLTS_DC17SA, 100, PISTOL_STOCK); //AMMO: JLTS_DC17SA_mag
+			ITEM(JLTS_RG4D, 100, PISTOL_STOCK); //AMMO: JLTS_RG4D_mag
 		};
 
 		class smgcw{
-			displayName = "Submachine Guns";
+			displayName = "CW SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SWLW_E5, 185, RIFLE_STOCK); // SWLW_E5_Mag
@@ -7166,81 +6967,172 @@ class cfgHALsStore
             ITEM(SWLW_ACPR, 190, RIFLE_STOCK); // SWLW_acpr_Mag
 			ITEM(SWLW_ACPA, 125, RIFLE_STOCK); // SWLW_acpa_Mag
 			ITEM(SWLW_DP20, 210, RIFLE_STOCK); // SWLW_DP20_Mag
+			
+			ITEM(JLTS_DC15S, 200, RIFLE_STOCK); // JLTS_DC15S_mag
+			ITEM(JLTS_DP23, 210, RIFLE_STOCK); // JLTS_DP23_mag
+			ITEM(JLTS_E5, 185, RIFLE_STOCK); // JLTS_E5_mag
+			
+			ITEM(3AS_DC15S_F, 200, RIFLE_STOCK); // 3AS_60Rnd_EC30_mag 3AS_60Rnd_EM30_mag
+			ITEM(3AS_E5_F, 210, RIFLE_STOCK); // 3AS_60Rnd_EM50_RedPlasma
+
 		};
 		
 		class mgcw{
-			displayName = "Machine Guns";
+			displayName = "CW MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(SWLW_LS150, 550, RIFLE_STOCK); // SWLW_LS150_mag
+			ITEM(ls_weapon_ls150_primary, 550, RIFLE_STOCK); // SWLW_LS150_mag
 			ITEM(SWLW_DC15SAW, 550, RIFLE_STOCK); // SWLW_DC15SAW_mag
 			ITEM(SWLW_E5C, 500, RIFLE_STOCK); // SWLW_E5C_mag
 			ITEM(SWLW_ZH73, 500, RIFLE_STOCK); // SWLW_ZH73_Mag
 			ITEM(SWLW_WestarM5, 600, RIFLE_STOCK); // SWLW_WestarM5_Mag
 			ITEM(SWLW_Z6, 800, RIFLE_STOCK); // SWLW_Z6_mag
+			ITEM(SWLW_WestarM5_ugl, 600, RIFLE_STOCK); // SWLW_WestarM5_standard_Mag
+			ITEM(SWLW_DC15SAW_wooden, 550, RIFLE_STOCK); // SWLW_DC15SAW_mag
+			
+			ITEM(JLTS_E5C, 500, RIFLE_STOCK); // JLTS_E5C_mag
+			ITEM(JLTS_E5C_stock, 500, RIFLE_STOCK); // JLTS_E5C_mag
+			ITEM(JLTS_Z6, 600, RIFLE_STOCK); // JLTS_Z6_mag
+			
+			ITEM(E5C_F, 500, RIFLE_STOCK); // 3AS_130Rnd_EM50_RedPlasma
+			ITEM(3AS_DC15L_F, 800, RIFLE_STOCK); // 3AS_200Rnd_EC40_Mag 3AS_200Rnd_EM40_Mag
+			ITEM(3AS_WestarM5_F, 600, RIFLE_STOCK); // 3AS_60Rnd_EC50_Mag
+			ITEM(3AS_WestarM5_GL, 800, RIFLE_STOCK); // 3AS_60Rnd_EM50_RedPlasma
+			
 		};
 
 		class riflescw{
-			displayName = "Rifles, Carbines";
+			displayName = "CW Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
 			ITEM(SWLW_DC15A, 225, RIFLE_STOCK); // SWLW_DC15A_Mag
-			ITEM(SWLW_DC15A_wooden, 200, RIFLE_STOCK); // SWLW_DC15A_Mag
-			ITEM(SWLW_DC15A_ugl, 230, RIFLE_STOCK); // SWLW_DC15A_Mag
-			ITEM(SWLW_DC15A_ugl_wooden, 230, RIFLE_STOCK); // SWLW_DC15A_Mag
+			ITEM(SWLW_DC15A_wooden, 225, RIFLE_STOCK); // SWLW_DC15A_Mag
+			ITEM(SWLW_DC15A_ugl, 330, RIFLE_STOCK); // SWLW_DC15A_Mag
+			ITEM(SWLW_DC15A_ugl_wooden, 330, RIFLE_STOCK); // SWLW_DC15A_Mag
 			ITEM(SWLW_DC15AC, 225, RIFLE_STOCK); // SWLW_DC15AC_Mag
-			ITEM(SWLW_DC15BR, 200, RIFLE_STOCK); // SWLW_DC15BR_Mag
-			ITEM(SWLW_DC17M, 200, RIFLE_STOCK); // SWLW_DC17M_Blaster_Mag  SWLW_DC17M_Sniper_Mag SWLW_DC17M_AT_Mag
+			ITEM(SWLW_DC17M, 500, RIFLE_STOCK); // SWLW_DC17M_Blaster_Mag  SWLW_DC17M_Sniper_Mag SWLW_DC17M_AT_Mag
+			ITEM(ls_weapon_dc15a_wooden, 225, RIFLE_STOCK); // SWLW_DC15A_Mag
+			ITEM(ls_weapon_dc15a, 225, RIFLE_STOCK); // SWLW_DC15A_Mag
+			ITEM(SWLW_westar35c, 225, RIFLE_STOCK); // SWLW_westar35c_Mag
+			ITEM(ls_weapon_westar35c_primary, 225, RIFLE_STOCK); // SWLW_westar35c_Mag
+			ITEM(SWLW_Westar35S, 225, RIFLE_STOCK); // SWLW_Westar35S_Mag
+			ITEM(ls_weapon_westar35s_primary, 225, RIFLE_STOCK); // SWLW_Westar35S_Mag
+			
+			ITEM(JLTS_DC15A_plastic, 225, RIFLE_STOCK); // JLTS_DC15A_mag
+			ITEM(JLTS_DC15A, 225, RIFLE_STOCK); // JLTS_DC15A_mag
+			ITEM(JLTS_DC15A_ugl_plastic, 330, RIFLE_STOCK); // JLTS_DC15A_mag
+			ITEM(JLTS_DC15A_ugl, 330, RIFLE_STOCK); // JLTS_DC15A_mag
+			ITEM(JLTS_DW32S, 300, RIFLE_STOCK); // JLTS_DW32S_mag
+			ITEM(JLTS_SBB3, 300, RIFLE_STOCK); // JLTS_SBB3_mag
+
+			ITEM(3AS_DC15A_GL, 225, RIFLE_STOCK); // 3AS_45Rnd_EC50_Mag
+			ITEM(3AS_DC15A_F, 225, RIFLE_STOCK); // 3AS_45Rnd_EM50_Mag
+			ITEM(3AS_DC15C_F, 225, RIFLE_STOCK); // 3AS_40Rnd_EC40_Mag 
+			ITEM(3AS_DC15C_GL, 330, RIFLE_STOCK); // 3AS_40Rnd_EM40_Mag
+			ITEM(3AS_DC17M_F, 500, RIFLE_STOCK); // 3AS_100Rnd_EC40_mag 3AS_100Rnd_EM40_mag 3AS_5Rnd_EC80_mag 3AS_5Rnd_EM80_mag 3AS_AntiArmour_mag
+			ITEM(3AS_DymekBlasterRifle_F, 300, RIFLE_STOCK); // 3AS_45Rnd_EY50_Mag
+			
 		};
 
 		class sniperriflescw{
-			displayName = "DMRs, Sniper Rifles, Battle Rifles";
+			displayName = "CW Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SWLW_sniper, 580, RIFLE_STOCK); // SWLW_sniper_Mag
 			ITEM(SWLW_DC15X, 700, RIFLE_STOCK); // SWLW_DC15X_Mag
 			ITEM(SWLW_DC15X_wooden, 700, RIFLE_STOCK); // SWLW_DC15X_Mag
+			ITEM(SWLW_DC15BR, 300, RIFLE_STOCK); // SWLW_DC15BR_Mag
+			
+			ITEM(JLTS_EPL2, 400, RIFLE_STOCK); // JLTS_EPL2_mag
+			
+			ITEM(3AS_DymekSniperRifle_F, 400, RIFLE_STOCK); // 3AS_10Rnd_EY80_Mag
+			ITEM(3AS_Valken38X_F, 400, RIFLE_STOCK); // 3AS_10Rnd_EC80_Mag 3AS_10Rnd_EM80_Mag
+			
 		};
 
 		class launcherscw{
-			displayName = "Launchers";
+			displayName = "CW Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
-			ITEM(ls_weapon_rps6, 300, 25);
+			
+			ITEM(ls_weapon_rps6_disposable, 200, 25);
+			ITEM(ls_weapon_rps6, 400, 25);
 			ITEM(SWLW_E60R, 450, 25); 
 			ITEM(SWLW_E60R_AA, 450, 25); 
 			ITEM(SWLW_PLX1, 500, 25); 
 			ITEM(SWLW_PLX1_AA, 500, 25); 
+			ITEM(ls_weapon_at_plx1, 500, 25); 
+			ITEM(ls_weapon_aa_plx1, 500, 25); 
 			ITEM(SWLW_Z7, 350, 25); 
+			
+			ITEM(JLTS_E60R_AT, 500, 25); 
+			ITEM(JLTS_PLX1_AT, 500, 25); 
+			ITEM(JLTS_RPS6, 450, 25); 
+			
+			ITEM(3AS_Chaingun, 350, 25); 
+			ITEM(3AS_E60R_F, 500, 25); 
+			ITEM(3AS_PLX1_F, 500, 25); 
+			ITEM(3AS_RPS6_G, 400, 25); 
+			ITEM(3AS_RPS6_F, 400, 25); 
+			ITEM(3AS_RPS6_HP, 450, 25); 
+			
 		}; 
 
 		class launchermagazinescw{
-			displayName = "Launcher Ammunition";
+			displayName = "CW Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
-			ITEM(ls_mag_rpg_1rnd, 100, 15);
-			ITEM(SWLW_e60r_at_mag, 150, 15);
+			
+			ITEM(ls_mag_rpg_1rnd, 200, 15);
+			ITEM(SWLW_e60r_at_mag, 250, 15);
 			ITEM(SWLW_e60r_aa_mag, 200, 15);
-			ITEM(SWLW_plx1_at_mag, 170, 15);
+			ITEM(SWLW_plx1_at_mag, 250, 15);
 			ITEM(SWLW_plx1_aa_mag, 220, 15);
 			ITEM(SWLW_Z7_mag, 200, 15);
+			
+			ITEM(JLTS_RPS6_HE_mag, 100, 15);
+			ITEM(JLTS_E60R_AT_mag, 250, 15);
+			ITEM(JLTS_E60R_AP_mag, 200, 15);
+			ITEM(JLTS_PLX1_AT_mag, 250, 15);
+			ITEM(JLTS_PLX1_AP_mag, 200, 15);
+			ITEM(JLTS_RPS6_mag, 200, 15);
+			
+			ITEM(3AS_Chaingun_Drum_Mag, 100, 15);
+			ITEM(3AS_E60R_AT, 250, 15);
+			ITEM(3AS_JLTS_MK43_AT, 300, 15);
+			ITEM(3AS_JLTS_MK39_AA, 250, 15);
+			ITEM(3AS_JLTS_MK44_HE, 200, 15);
+			ITEM(3AS_MK41_AT, 250, 15);
+			ITEM(3AS_MK42_HE, 200, 15);
+			
 		};
 
 		class riflegrenadescw{
-			displayName = "Rifle Grenades";
+			displayName = "CW Rifle Grenades";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
 			ITEM(SWLW_DC15A_UGL_Mag, 70, 25);
 			ITEM(SWLW_DC15A_UGL_smoke_white_Mag, 50, 25);
-			ITEM(SWLW_DC15A_UGL_flare_white_Mag, 60, 25);
+			ITEM(SWLW_DC15A_UGL_flare_white_Mag, 50, 25);
+			ITEM(SWLW_WestarM5_g_Mag, 70, 25);
+			
+			ITEM(3AS_6Rnd_HE_Grenade_shell, 70, 25);
+			
 		};
 
 		class muzzlescw{
-			displayName = "Muzzle Accessories";
+			displayName = "CW Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
+			
 			ITEM(swlw_attachment_dc17m_at, 90, MZ_STOCK);
 			ITEM(swlw_attachment_dc17m_blaster, 70, MZ_STOCK);
 			ITEM(swlw_attachment_dc17m_sniper, 80, MZ_STOCK);
+			
+			ITEM(3as_muzzle_le_dc15a, 80, MZ_STOCK);
+			
 		};
 
 		class magazinescw{
-			displayName = "Magazines";
+			displayName = "CW Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(SWLW_DC15SA_Mag, 15, MZ_STOCK);
@@ -7267,59 +7159,135 @@ class cfgHALsStore
             ITEM(SWLW_DC15X_Mag, 110, MZ_STOCK);
 			ITEM(3AS_FlamerFuel, 350, MZ_STOCK);
             ITEM(SWLW_mag_40mm_1rnd, 250, MZ_STOCK);
+			
+			ITEM(ls_mag_dc17dual_20rnd, 25, MZ_STOCK);
+            ITEM(ls_mag_dc17sidearm, 20, MZ_STOCK);
+            ITEM(SWLW_westar35sa_Mag, 20, MZ_STOCK);
+            ITEM(3AS_15Rnd_EC30_mag, 20, MZ_STOCK);
+            ITEM(3AS_15Rnd_EM30_mag, 20, MZ_STOCK);
+            ITEM(3AS_16Rnd_EC20_Mag, 20, MZ_STOCK);
+            ITEM(3AS_16Rnd_EM20_Mag, 20, MZ_STOCK);
+            ITEM(3AS_10Rnd_Test_mag, 25, MZ_STOCK);
+            ITEM(3AS_16Rnd_EY20_Mag, 20, MZ_STOCK);
+            ITEM(JLTS_DC17SA_mag, 20, MZ_STOCK);
+			ITEM(JLTS_RG4D_mag, 20, MZ_STOCK);
+            ITEM(JLTS_DC15S_mag, 20, MZ_STOCK);
+            ITEM(JLTS_DP23_mag, 50, MZ_STOCK);
+            ITEM(JLTS_E5_mag, 40, MZ_STOCK);
+            ITEM(3AS_60Rnd_EC30_mag, 40, MZ_STOCK);
+            ITEM(3AS_60Rnd_EM30_mag, 40, MZ_STOCK);
+            ITEM(3AS_60Rnd_EM50_RedPlasma, 40, MZ_STOCK);
+            ITEM(SWLW_WestarM5_standard_Mag, 90, MZ_STOCK);
+            ITEM(JLTS_E5C_mag, 100, MZ_STOCK);
+			ITEM(JLTS_Z6_mag, 120, MZ_STOCK);
+            ITEM(3AS_130Rnd_EM50_RedPlasma, 100, MZ_STOCK);
+            ITEM(3AS_200Rnd_EC40_Mag, 150, MZ_STOCK);
+			ITEM(3AS_200Rnd_EM40_Mag, 150, MZ_STOCK);
+            ITEM(3AS_60Rnd_EC50_Mag, 100, MZ_STOCK);
+			ITEM(SWLW_westar35c_Mag, 60, MZ_STOCK);
+            ITEM(SWLW_Westar35S_Mag, 60, MZ_STOCK);
+            ITEM(JLTS_DC15A_mag, 50, MZ_STOCK);
+            ITEM(JLTS_DW32S_mag, 70, MZ_STOCK);
+            ITEM(JLTS_SBB3_mag, 70, MZ_STOCK);
+            ITEM(3AS_45Rnd_EC50_Mag, 50, MZ_STOCK);
+            ITEM(3AS_45Rnd_EM50_Mag, 50, MZ_STOCK);
+            ITEM(3AS_40Rnd_EC40_Mag, 60, MZ_STOCK);
+            ITEM(3AS_40Rnd_EM40_Mag, 60, MZ_STOCK);
+            ITEM(3AS_100Rnd_EC40_mag, 70, MZ_STOCK);
+			ITEM(3AS_100Rnd_EM40_mag, 70, MZ_STOCK);
+            ITEM(3AS_5Rnd_EC80_mag, 90, MZ_STOCK);
+            ITEM(3AS_5Rnd_EM80_mag, 90, MZ_STOCK);
+            ITEM(3AS_AntiArmour_mag, 250, MZ_STOCK);
+            ITEM(3AS_45Rnd_EY50_Mag, 100, MZ_STOCK);
+            ITEM(JLTS_EPL2_mag, 75, MZ_STOCK);
+            ITEM(3AS_10Rnd_EY80_Mag, 90, MZ_STOCK);
+            ITEM(3AS_10Rnd_EC80_Mag, 90, MZ_STOCK);
+            ITEM(3AS_10Rnd_EM80_Mag, 90, MZ_STOCK);
 
 		};
 
 		class misccw{
-			displayName = "Misc";
+			displayName = "CW Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(SWLW_clones_spec_demo_mag, 450, MISC_STOCK);
 			ITEM(SWLW_clones_spec_breach_mag, 400, MISC_STOCK);
+			
 		};
 
 		class pointerscw{
-			displayName = "Pointer Accessories";
+			displayName = "CW Binoculars, NVGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
-			ITEM(acc_pointer_ir, 70, PN_STOCK);
+			ITEM(SWLB_clone_commander_binocular, 70, PN_STOCK);
+			ITEM(SWLB_clone_commander_binocular_night, 70, PN_STOCK);
+			ITEM(SWLB_clone_binocular, 70, PN_STOCK);
+			ITEM(JLTS_DroidBinocular, 70, PN_STOCK);
+			ITEM(3AS_JLTS_CloneScoutElectroBinocular, 70, PN_STOCK);
+			ITEM(JLTS_CloneBinocular, 70, PN_STOCK);
+			ITEM(JLTS_CloneBinocular_black, 70, PN_STOCK);
+
+			ITEM(ls_mandalorian_rangefinder_nvg, 70, PN_STOCK);
+			ITEM(lsd_gar_p1Rangefinder_nvg, 70, PN_STOCK);
+			ITEM(lsd_gar_rangefinder_nvg, 70, PN_STOCK);
+			ITEM(ls_memefor_splinterCell_nvg, 70, PN_STOCK);
+			ITEM(ls_memefor_ZygerrianDisguise, 70, PN_STOCK);
+			
 		};
 
 		class specialweaponscw{
-			displayName = "Special Weapons";
+			displayName = "CW Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(3AS_Flamer_Base, 300, RIFLE_STOCK); // 3AS_FlamerFuel
 			ITEM(SWLW_GL, 800, RIFLE_STOCK); // SWLW_mag_40mm_1rnd
 		};
 
 		class opticscw{
-			displayName = "Optics Accessories";
+			displayName = "CW Optics";
 			picture = "";
+			
 			ITEM(swlw_attachment_scope_dc17m_sniper, 80, MAGAZINE_STOCK);
 			ITEM(swlw_sniper_scope, 100, MAGAZINE_STOCK);
 			ITEM(swlw_zh73_scope, 80, MAGAZINE_STOCK);
 			ITEM(swlw_westarm5_scope, 100, MAGAZINE_STOCK);
 			ITEM(swlw_westar35s_scope, 60, MAGAZINE_STOCK);
+			ITEM(ls_acc_dcholosight_blue, 60, MAGAZINE_STOCK);
+			ITEM(ls_acc_dcholosight_green, 60, MAGAZINE_STOCK);
+			ITEM(ls_acc_dcholosight_red, 60, MAGAZINE_STOCK);
+			ITEM(ls_acc_dcholosight_yellow, 60, MAGAZINE_STOCK);
+			
+			ITEM(jlts_dc15x_scope, 100, MAGAZINE_STOCK);
+			
+			ITEM(3as_optic_lescope_dc15a, 80, MAGAZINE_STOCK);
+			ITEM(3as_optic_red_dc15a, 60, MAGAZINE_STOCK);
+			ITEM(3as_optic_acog_dc15c, 80, MAGAZINE_STOCK);
+			ITEM(3as_optic_reflex_dc15c, 60, MAGAZINE_STOCK);
+			ITEM(3as_optic_dc15l, 60, MAGAZINE_STOCK);
+			ITEM(3as_optic_holo_dc15s, 60, MAGAZINE_STOCK);
+			ITEM(3as_optic_vk38x, 70, MAGAZINE_STOCK);
+			ITEM(3as_optic_scope_westarm5, 70, MAGAZINE_STOCK);
+			
 		};
 
 		class underbarrelcw{
-	     	displayName = "Underbarrel Accessories";
+	     	displayName = "CW Bipods";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(bipod_01_F_blk, 30, 20);
 			ITEM(bipod_02_F_blk, 30, 20);
 			ITEM(bipod_03_F_blk, 30, 20);
+			
+			ITEM(3as_bipod_dc15l_f, 30, 20);
+			ITEM(3as_bipod_vk38x_f, 30, 20);
+			
 		};
 
 //Galactic Civil War
 
 		class handgunsemp{
-			displayName = "Handguns";
+			displayName = "Empire Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
-			ITEM(SWLW_DC15SA, 110, PISTOL_STOCK); //AMMO: SWLW_DC15SA_Mag
-			ITEM(SWLW_DC17, 100, PISTOL_STOCK); //AMMO: SWLW_DC17_Mag
-			ITEM(SWLW_RG4D, 100, PISTOL_STOCK); //AMMO: SWLW_RG4D_Mag
 			ITEM(JMSLLTE_dl18pistol, 100, PISTOL_STOCK); //AMMO: JMSLLTE_DL18_20rnd_Mag
 			ITEM(JMSLLTE_ec17pistol, 100, PISTOL_STOCK); //AMMO: JMSLLTE_EC17_15rnd_Mag
 			ITEM(JMSLLTE_rk3pistol, 100, PISTOL_STOCK); //AMMO: JMSLLTE_RK3_20rnd_Mag
@@ -7327,43 +7295,27 @@ class cfgHALsStore
 		};
 
 		class smgemp{
-			displayName = "Submachine Guns";
+			displayName = "Empire SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
-			ITEM(SWLW_E5, 185, RIFLE_STOCK); // SWLW_E5_Mag
-			ITEM(SWLW_DC15s, 200, RIFLE_STOCK); // SWLW_DC15s_Mag
-            ITEM(SWLW_ACPR, 190, RIFLE_STOCK); // SWLW_acpr_Mag
-			ITEM(SWLW_ACPA, 125, RIFLE_STOCK); // SWLW_acpa_Mag
-			ITEM(SWLW_DP20, 210, RIFLE_STOCK); // SWLW_DP20_Mag
 			ITEM(JMSLLTE_dh17rifle, 170, RIFLE_STOCK); // JMSLLTE_DH17_60Rnd_Mag
 			ITEM(JMSLLTE_a300c, 210, RIFLE_STOCK); // JMSLLTE_A300C_30rnd_Mag
 			ITEM(JMSLLTE_e11carb, 200, RIFLE_STOCK); // JMSLLTE_E11C_60Rnd_Mag
 		};
 		
 		class mgemp{
-			displayName = "Machine Guns";
+			displayName = "Empire MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
-			ITEM(SWLW_LS150, 550, RIFLE_STOCK); // SWLW_LS150_mag
-			ITEM(SWLW_DC15SAW, 550, RIFLE_STOCK); // SWLW_DC15SAW_mag
 			ITEM(JMSLLTE_rt97cBlasterRifle, 550, RIFLE_STOCK); // JMSLLTE_RT97C_150Rnd_Mag
 			ITEM(JMSLLTE_DLT19BlasterRifle, 550, RIFLE_STOCK); // JMSLLTE_DLT19_75Rnd_Mag
-			ITEM(SWLW_E5C, 500, RIFLE_STOCK); // SWLW_E5C_mag
-			ITEM(SWLW_ZH73, 500, RIFLE_STOCK); // SWLW_ZH73_Mag
-			ITEM(SWLW_WestarM5, 600, RIFLE_STOCK); // SWLW_WestarM5_Mag
-			ITEM(SWLW_Z6, 800, RIFLE_STOCK); // SWLW_Z6_mag
+
 		};
 
 		class riflesemp{
-			displayName = "Rifles, Carbines";
+			displayName = "Empire Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-			ITEM(SWLW_DC15A, 225, RIFLE_STOCK); // SWLW_DC15A_Mag
-			ITEM(SWLW_DC15A_wooden, 220, RIFLE_STOCK); // SWLW_DC15A_Mag
-			ITEM(SWLW_DC15A_ugl, 230, RIFLE_STOCK); // SWLW_DC15A_Mag
-			ITEM(SWLW_DC15A_ugl_wooden, 225, RIFLE_STOCK); // SWLW_DC15A_Mag
-			ITEM(SWLW_DC15AC, 225, RIFLE_STOCK); // SWLW_DC15AC_Mag
-			ITEM(SWLW_DC15BR, 200, RIFLE_STOCK); // SWLW_DC15BR_Mag
-			ITEM(SWLW_DC17M, 200, RIFLE_STOCK); // SWLW_DC17M_Blaster_Mag  SWLW_DC17M_Sniper_Mag SWLW_DC17M_AT_Mag
+
 			ITEM(JMSLLTE_a280, 230, RIFLE_STOCK); // JMSLLTE_A280_30rnd_Mag
 			ITEM(JMSLLTE_a280stock, 230, RIFLE_STOCK); // JMSLLTE_A280_30rnd_Mag
 			ITEM(JMSLLTE_a280c, 230, RIFLE_STOCK); // JMSLLTE_A280C_20rnd_Mag
@@ -7376,87 +7328,39 @@ class cfgHALsStore
 		};
 
 		class sniperriflesemp{
-			displayName = "DMRs, Sniper Rifles, Battle Rifles";
+			displayName = "Empire Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
-			ITEM(SWLW_sniper, 580, RIFLE_STOCK); // SWLW_sniper_Mag
 			ITEM(JMSLLTE_E17DRifle, 700, RIFLE_STOCK); // JMSLLTE_E17d_5Rnd_Mag
 			ITEM(JMSLLTE_dlt20a, 650, RIFLE_STOCK); // JMSLLTE_DLT20a_10Rnd_Mag
 			ITEM(JMSLLTE_DLT19dRifle, 700, RIFLE_STOCK); // JMSLLTE_DLT19d_10Rnd_Mag
 			ITEM(JMSLLTE_DLT19xRifle, 700, RIFLE_STOCK); // JMSLLTE_DLT19x_10Rnd_Mag
 			ITEM(JMSLLTE_a300, 250, RIFLE_STOCK); // JMSLLTE_A300_15rnd_Mag
 			ITEM(JMSLLTE_a310, 250, RIFLE_STOCK); // JMSLLTE_A310_15rnd_Mag
-			ITEM(SWLW_DC15X, 700, RIFLE_STOCK); // SWLW_DC15X_Mag
-			ITEM(SWLW_DC15X_wooden, 700, RIFLE_STOCK); // SWLW_DC15X_Mag
+
 		};
 
 		class launchersemp{
-			displayName = "Launchers";
+			displayName = "Empire Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
-			ITEM(ls_weapon_rps6, 300, 25);
-			ITEM(SWLW_E60R, 450, 25); 
-			ITEM(SWLW_E60R_AA, 450, 25); 
-			ITEM(SWLW_PLX1, 500, 25); 
-			ITEM(SWLW_PLX1_AA, 500, 25); 
-			ITEM(SWLW_Z7, 350, 25); 
+
+			ITEM(JMSLLTE_RPS10_launcher, 300, 25);
+
 		}; 
 
 		class launchermagazinesemp{
-			displayName = "Launcher Ammunition";
+			displayName = "Empire Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
-			ITEM(ls_mag_rpg_1rnd, 100, 15);
-			ITEM(SWLW_e60r_at_mag, 150, 15);
-			ITEM(SWLW_e60r_aa_mag, 200, 15);
-			ITEM(SWLW_plx1_at_mag, 170, 15);
-			ITEM(SWLW_plx1_aa_mag, 220, 15);
-			ITEM(SWLW_Z7_mag, 200, 15);
-		};
 
-		class riflegrenadesemp{
-			displayName = "Rifle Grenades";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
-			ITEM(SWLW_DC15A_UGL_Mag, 70, 25);
-			ITEM(SWLW_DC15A_UGL_smoke_white_Mag, 50, 25);
-			ITEM(SWLW_DC15A_UGL_flare_white_Mag, 60, 25);
-		};
+			ITEM(JMSLLTE_RPS10_Mag, 200, 15);
+			ITEM(JMSLLTE_RPS10_HE_Mag, 170, 15);
 
-		class muzzlesemp{
-			displayName = "Muzzle Accessories";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
-			ITEM(swlw_attachment_dc17m_at, 90, MZ_STOCK);
-			ITEM(swlw_attachment_dc17m_blaster, 70, MZ_STOCK);
-			ITEM(swlw_attachment_dc17m_sniper, 80, MZ_STOCK);
 		};
 
 		class magazinesemp{
-			displayName = "Magazines";
+			displayName = "Empire Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
-			ITEM(SWLW_DC15SA_Mag, 15, MZ_STOCK);
-            ITEM(SWLW_DC17_Mag, 20, MZ_STOCK);
-            ITEM(SWLW_RG4D_Mag, 20, MZ_STOCK);
-            ITEM(SWLW_E5_Mag, 25, MZ_STOCK);
-            ITEM(SWLW_DC15s_Mag, 30, MZ_STOCK);
-            ITEM(SWLW_acpr_Mag, 22, MZ_STOCK);
-            ITEM(SWLW_acpa_Mag, 15, MZ_STOCK);
-            ITEM(SWLW_DP20_Mag, 25, MZ_STOCK);
-            ITEM(SWLW_LS150_mag, 120, MZ_STOCK);
-            ITEM(SWLW_DC15SAW_mag, 150, MZ_STOCK);
-			ITEM(SWLW_E5C_mag, 100, MZ_STOCK);
-            ITEM(SWLW_ZH73_Mag, 110, MZ_STOCK);
-            ITEM(SWLW_WestarM5_Mag, 160, MZ_STOCK);
-            ITEM(SWLW_DC15A_Mag, 80, MZ_STOCK);
-            ITEM(SWLW_Z6_mag, 200, MZ_STOCK);
-            ITEM(SWLW_DC15AC_Mag, 75, MZ_STOCK);
-            ITEM(SWLW_DC15BR_Mag, 70, MZ_STOCK);
-            ITEM(SWLW_DC17M_Blaster_Mag, 90, MZ_STOCK);
-            ITEM(SWLW_DC17M_Sniper_Mag, 100, MZ_STOCK);
-			ITEM(SWLW_DC17M_AT_Mag, 120, MZ_STOCK);
-            ITEM(SWLW_sniper_Mag, 100, MZ_STOCK);
-            ITEM(SWLW_DC15X_Mag, 110, MZ_STOCK);
-			ITEM(3AS_FlamerFuel, 350, MZ_STOCK);
-            ITEM(SWLW_mag_40mm_1rnd, 250, MZ_STOCK);
-
 			ITEM(JMSLLTE_DL18_20rnd_Mag, 20, MZ_STOCK);
             ITEM(JMSLLTE_EC17_15rnd_Mag, 15, MZ_STOCK);
             ITEM(JMSLLTE_RK3_20rnd_Mag, 20, MZ_STOCK);
@@ -7480,36 +7384,10 @@ class cfgHALsStore
 			ITEM(JMSLLTE_A310_15rnd_Mag, 125, MZ_STOCK);
 		};
 
-		class miscemp{
-			displayName = "Misc";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
-
-			ITEM(SWLW_clones_spec_demo_mag, 450, MISC_STOCK);
-			ITEM(SWLW_clones_spec_breach_mag, 400, MISC_STOCK);
-		};
-
-		class pointersemp{
-			displayName = "Pointer Accessories";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
-
-			ITEM(acc_pointer_ir, 70, PN_STOCK);
-		};
-
-		class specialweaponsemp{
-			displayName = "Special Weapons";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-			ITEM(3AS_Flamer_Base, 300, RIFLE_STOCK); // 3AS_FlamerFuel
-			ITEM(SWLW_GL, 800, RIFLE_STOCK); // SWLW_mag_40mm_1rnd
-		};
-
 		class opticsemp{
-			displayName = "Optics Accessories";
+			displayName = "Empire Optics";
 			picture = "";
-			ITEM(swlw_attachment_scope_dc17m_sniper, 80, MAGAZINE_STOCK);
-			ITEM(swlw_sniper_scope, 100, MAGAZINE_STOCK);
-			ITEM(swlw_zh73_scope, 80, MAGAZINE_STOCK);
-			ITEM(slwl_westarm5_scope, 100, MAGAZINE_STOCK);
-			ITEM(swlw_westar35s_scope, 60, MAGAZINE_STOCK);
+
 			ITEM(jmsllte_dh17_bl_scope, 60, MAGAZINE_STOCK);
 			ITEM(jmsllte_a280_bl_scope, 80, MAGAZINE_STOCK);
 			ITEM(jmsllte_a280c_bl_scope, 80, MAGAZINE_STOCK);
@@ -7518,21 +7396,12 @@ class cfgHALsStore
 			ITEM(jmsllte_rt97c_bl_scope, 100, MAGAZINE_STOCK);
 		};
 
-		class underbarrelemp{
-	     	displayName = "Underbarrel Accessories";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
-
-			ITEM(bipod_01_F_blk, 30, 20);
-			ITEM(bipod_02_F_blk, 30, 20);
-			ITEM(bipod_03_F_blk, 30, 20);
-		};
-
 		///////////////////////////////////////////////////////
 		// CUP
 		///////////////////////////////////////////////////////
 		class handgunsCup 
 		{
-			displayName = "Handguns";
+			displayName = "CUP Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(hgun_Rook40_F, 150, PISTOL_STOCK);
@@ -7572,7 +7441,7 @@ class cfgHALsStore
 
 		class smgCup 
 		{
-			displayName = "Submachine Guns";
+			displayName = "CUP SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(CUP_smg_PS90_olive, 350, PISTOL_STOCK);
@@ -7631,7 +7500,7 @@ class cfgHALsStore
 
 		class launchersCup 
 		{
-			displayName = "Launchers";
+			displayName = "CUP Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(CUP_launch_RShG2, 250, 50);
@@ -7679,7 +7548,7 @@ class cfgHALsStore
 
 		class launcherMagazinesCup 
 		{
-			displayName = "Launcher Ammunition";
+			displayName = "CUP Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class CUP_SMAW_Spotting {
@@ -7778,7 +7647,7 @@ class cfgHALsStore
 
 		class specialWeaponsCup 
 		{
-			displayName = "Special Weapons";
+			displayName = "CUP Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(CUP_hgun_BallisticShield_Armed, 300, RIFLE_STOCK);
@@ -7800,7 +7669,7 @@ class cfgHALsStore
 
 		class sniperRiflesCup 
 		{
-			displayName = "DMRs, Sniper Rifles, Battle Rifles";
+			displayName = "CUP Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(CUP_SKS, 350, RIFLE_STOCK);
@@ -7943,7 +7812,7 @@ class cfgHALsStore
 
 		class mgCup 
 		{
-			displayName = "Machine Guns";
+			displayName = "CUP MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(CUP_lmg_UK59, 1100, RIFLE_STOCK);
@@ -8033,7 +7902,7 @@ class cfgHALsStore
 
 		class riflesCup 
 		{
-			displayName = "Assault Rifles";
+			displayName = "CUP Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_AKS_F, 200, RIFLE_STOCK);
@@ -8252,7 +8121,7 @@ class cfgHALsStore
 
 		class magazinesCup 
 		{
-			displayName = "Magazines";
+			displayName = "CUP Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class Laserbatteries {
@@ -10002,7 +9871,7 @@ class cfgHALsStore
 
 		class underbarrelCup 
 		{
-			displayName = "Underbarrel Accessories";
+			displayName = "CUP Bipods";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(bipod_02_F_arid, 100, 50);
@@ -10022,7 +9891,7 @@ class cfgHALsStore
 
 		class pointersCup 
 		{
-			displayName = "Pointer Accessories";
+			displayName = "CUP Pointers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(acc_flashlight, 75, PN_STOCK);
@@ -10059,7 +9928,7 @@ class cfgHALsStore
 
 		class muzzlesCup 
 		{
-			displayName = "Muzzle Accessories";
+			displayName = "CUP Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(muzzle_snds_338_black, 500, MZ_STOCK); //5
@@ -10130,7 +9999,7 @@ class cfgHALsStore
 
 		class opticsCup 
 		{
-			displayName = "Optics Accessories";
+			displayName = "CUP Optics";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemOptic_ca.paa";
 
 			class CUP_optic_artel_m14 {
@@ -10754,7 +10623,7 @@ class cfgHALsStore
 
 		class navigationCup 
 		{
-			displayName = "Navigation";
+			displayName = "CUP GPS, Binoculars, NVGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
 
 			ITEM(ItemGPS, 300, NN_STOCK);
@@ -10782,7 +10651,7 @@ class cfgHALsStore
 
 		class miscCup 
 		{
-			displayName = "Misc";
+			displayName = "CUP Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(B_Bergen_dgtl_F, 900, MISC_STOCK);
@@ -10832,7 +10701,7 @@ class cfgHALsStore
 //IFA3
 
 		class handgunsifaa{
-			displayName = "Handguns";
+			displayName = "IFA Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(LIB_M1896, 90, PISTOL_STOCK); //AMMO: LIB_10Rnd_9x19_M1896
@@ -10849,7 +10718,7 @@ class cfgHALsStore
 		};
 
 		class smgifaa{
-			displayName = "Submachine Guns";
+			displayName = "IFA SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(LIB_Sten_Mk2, 165, RIFLE_STOCK); // LIB_32Rnd_9x19_Sten
@@ -10865,7 +10734,7 @@ class cfgHALsStore
 		};
 		
 		class mgifaa{
-			displayName = "Machine Guns";
+			displayName = "IFA MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(LIB_M1919A4, 550, RIFLE_STOCK); //NORMAL: LIB_50Rnd_762x63 M1_BALL: LIB_50Rnd_762x63_M1
@@ -10881,7 +10750,7 @@ class cfgHALsStore
 		};
 
 		class riflesifaa{
-			displayName = "Rifles, Carbines";
+			displayName = "IFA Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(LIB_LeeEnfield_No1, 210, RIFLE_STOCK); //NORMAL: LIB_10Rnd_770x56 BALL: LIB_10Rnd_770x56_MkVIII
 			ITEM(LIB_LeeEnfield_No4, 200, RIFLE_STOCK); //^^
@@ -10901,7 +10770,7 @@ class cfgHALsStore
 		};
 
 		class sniperriflesifaa{
-			displayName = "DMRs, Sniper Rifles, Battle Rifles";
+			displayName = "IFA Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(LIB_LeeEnfield_No4_Scoped, 580, RIFLE_STOCK); // SAME AS LIB_LeeEnfield_No1
@@ -10911,7 +10780,7 @@ class cfgHALsStore
 		};
 
 		class launchersifaa{
-			displayName = "Launchers";
+			displayName = "IFA Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			ITEM(LIB_PIAT, 300, 25); 
 			ITEM(LIB_M1A1_Bazooka, 350, 25); 
@@ -10923,7 +10792,7 @@ class cfgHALsStore
 		}; 
 
 		class launchermagazinesifaa{
-			displayName = "Launcher Ammunition";
+			displayName = "IFA Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			ITEM(LIB_1Rnd_89m_PIAT, 100, 15);
 			ITEM(LIB_1Rnd_60mm_M6, 100, 15);
@@ -10934,7 +10803,7 @@ class cfgHALsStore
 		};
 
 		class riflegrenadesifaa{
-			displayName = "Rifle Grenades";
+			displayName = "IFA Rifle Grenades";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			ITEM(LIB_1Rnd_G_MillsBomb, 70, 25);
 			ITEM(LIB_1Rnd_G_M9A1, 80, 25);
@@ -10945,7 +10814,7 @@ class cfgHALsStore
 		};
 
 		class muzzlesifaa{
-			displayName = "Muzzle Accessories";
+			displayName = "IFA Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(lib_acc_p1903_bayo, 75, MZ_STOCK);
@@ -10960,7 +10829,7 @@ class cfgHALsStore
 		};
 
 		class magazinesifaa{
-			displayName = "Magazines";
+			displayName = "IFA Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(LIB_7Rnd_45ACP, 17, MZ_STOCK);
@@ -11026,7 +10895,7 @@ class cfgHALsStore
 		};
 
 		class miscifaa{
-			displayName = "Misc";
+			displayName = "IFA Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(LIB_Ladung_Big_MINE_mag, 450, MISC_STOCK);
@@ -11034,7 +10903,7 @@ class cfgHALsStore
 		};
 
 		class pointersifaa{
-			displayName = "Pointer Accessories";
+			displayName = "IFA BAR Accessories";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(lib_m1918a2_bar_handle, 70, PN_STOCK);
@@ -11042,20 +10911,20 @@ class cfgHALsStore
 		};
 
 		class specialweaponsifaa{
-			displayName = "Special Weapons";
+			displayName = "IFA Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(LIB_M2_Flamethrower, 300, 25);
 			ITEM(B_LIB_US_M2Flamethrower, 800, 25);
 		};
 
 		class opticsifaa{
-			displayName = "Optics Accessories";
+			displayName = "IFA Optics";
 			picture = "";
 			ITEM(lib_optic_zf4, 150, MAGAZINE_STOCK);
 		};
 
 		class underbarrelifaa{
-	     	displayName = "Backpack Static";
+	     	displayName = "IFA Backpack Statics";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(LIB_Maxim_Bar, 600, 20);
@@ -11066,20 +10935,8 @@ class cfgHALsStore
 //SPE_IFA3
 
 		class handgunsspe{
-			displayName = "Handguns";
+			displayName = "SPE Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
-
-			ITEM(LIB_M1896, 90, PISTOL_STOCK); //AMMO: LIB_10Rnd_9x19_M1896
-			ITEM(LIB_FLARE_PISTOL, 50, PISTOL_STOCK); //AMMO: LIB_1Rnd_flare_white
-			ITEM(LIB_M1895, 90, PISTOL_STOCK); //AMMO: LIB_7Rnd_762x38
-			ITEM(LIB_P08, 110, PISTOL_STOCK); //AMMO: LIB_8Rnd_9x19_P08
-			ITEM(LIB_P38, 110, PISTOL_STOCK); //AMMO: LIB_8Rnd_9x19
-			ITEM(LIB_TT33, 110, PISTOL_STOCK); //AMMO: LIB_8Rnd_762x25
-			ITEM(LIB_WaltherPPK, 110, PISTOL_STOCK); //AMMO: LIB_7Rnd_765x17_PPK
-			ITEM(LIB_Webley_mk6, 110, PISTOL_STOCK); //AMMO: LIB_6Rnd_455
-			ITEM(LIB_Webley_Flare, 110, PISTOL_STOCK); //AMMO: LIB_1Rnd_flare_white
-			ITEM(LIB_Welrod_mk1, 150, PISTOL_STOCK); //AMMO: LIB_6Rnd_9x19_Welrod
-			ITEM(LIB_Colt_M1911, 110, PISTOL_STOCK); //AMMO: LIB_7Rnd_45ACP
 			
 			ITEM(SPE_P08, 110, PISTOL_STOCK); //AMMO: SPE_8Rnd_9x19_P08
 			ITEM(SPE_M1911, 110, PISTOL_STOCK); //AMMO: SPE_7Rnd_45ACP_1911
@@ -11087,20 +10944,9 @@ class cfgHALsStore
 		};
 
 		class smgspe{
-			displayName = "Submachine Guns";
+			displayName = "SPE SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-
-			ITEM(LIB_Sten_Mk2, 165, RIFLE_STOCK); // LIB_32Rnd_9x19_Sten
-			ITEM(LIB_Sten_Mk5, 185, RIFLE_STOCK); // LIB_32Rnd_9x19_Sten
-			ITEM(LIB_MP38, 210, RIFLE_STOCK); // LIB_32Rnd_9x19
-			ITEM(LIB_MP40, 200, RIFLE_STOCK); // LIB_32Rnd_9x19_t
-			ITEM(LIB_PPSh41_m, 245, RIFLE_STOCK); // LIB_35Rnd_762x25 LIB_71Rnd_762x25
-			ITEM(LIB_M3_GreaseGun, 185, RIFLE_STOCK); // LIB_30Rnd_M3_GreaseGun_45ACP
-            ITEM(LIB_M1A1_Thompson, 220, RIFLE_STOCK); // 30rnd mag: LIB_30Rnd_45ACP 30rnd mag tracer: LIB_30Rnd_45ACP_t
-			ITEM(LIB_M1928_Thompson, 245, RIFLE_STOCK); // 30rnd mag: LIB_30Rnd_45ACP 30rnd mag tracer: LIB_30Rnd_45ACP_t 50rnd mag: LIB_50Rnd_45ACP
-			ITEM(LIB_M1928A1_Thompson, 280, RIFLE_STOCK); // 30rnd mag: LIB_30Rnd_45ACP 30rnd mag tracer: LIB_30Rnd_45ACP_t
-			ITEM(LIB_MP44, 400, RIFLE_STOCK); // 30rnd mag: LIB_30Rnd_792x33  LIB_30Rnd_792x33_t
-			
+		
 			ITEM(SPE_Sten_Mk2, 165, RIFLE_STOCK); // SPE_32Rnd_9x19_Sten
 			ITEM(SPE_Sten_Mk2_Suppressed, 185, RIFLE_STOCK); // LIB_32Rnd_9x19_Sten
 			ITEM(SPE_MP40, 200, RIFLE_STOCK); // SPE_32Rnd_9x19 SPE_32Rnd_9x19_t
@@ -11110,20 +10956,9 @@ class cfgHALsStore
 		};
 		
 		class mgspe{
-			displayName = "Machine Guns";
+			displayName = "SPE MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
-			ITEM(LIB_M1919A4, 550, RIFLE_STOCK); //NORMAL: LIB_50Rnd_762x63 M1_BALL: LIB_50Rnd_762x63_M1
-			ITEM(LIB_M1919A6, 650, RIFLE_STOCK); //NORMAL: LIB_50Rnd_762x63 M1_BALL: LIB_50Rnd_762x63_M1
-			ITEM(LIB_Bren_Mk2, 500, RIFLE_STOCK); //NORMAL: LIB_Bren_Mk2 BALL: LIB_30Rnd_770x56_MKVIII
-			ITEM(LIB_M1918A2_BAR, 400, RIFLE_STOCK); //NORMAL: LIB_M1918A2_BAR BALL: LIB_20Rnd_762x63_M1
-			ITEM(LIB_DP28, 650, RIFLE_STOCK); //NORMAL: LIB_47Rnd_762x54	LIB_47Rnd_762x54d
-			ITEM(LIB_DT, 750, RIFLE_STOCK); //NORMAL: LIB_63Rnd_762x54	LIB_63Rnd_762x54d
-			ITEM(LIB_DT_OPTIC, 1200, RIFLE_STOCK); //NORMAL: LIB_63Rnd_762x54	LIB_63Rnd_762x54d
-			ITEM(LIB_MG34, 850, RIFLE_STOCK); //NORMAL: LIB_50Rnd_792x57 	LIB_50Rnd_792x57_SMK	LIB_50Rnd_792x57_sS
-			ITEM(LIB_MG42, 1000, RIFLE_STOCK); //NORMAL: LIB_50Rnd_792x57 	LIB_50Rnd_792x57_SMK	LIB_50Rnd_792x57_sS
-			ITEM(LIB_FG42G, 500, RIFLE_STOCK); //NORMAL: LIB_20Rnd_792x57
-			
 			ITEM(SPE_M1919A4, 550, RIFLE_STOCK); //NORMAL: SPE_50Rnd_762x63 SPE_50Rnd_762x63_M1 SPE_50Rnd_762x63_M2_AP
 			ITEM(SPE_M1919A6, 650, RIFLE_STOCK); //NORMAL: SPE_50Rnd_762x63 SPE_50Rnd_762x63_M1 SPE_50Rnd_762x63_M2_AP
 			ITEM(SPE_FM_24_M29, 500, RIFLE_STOCK); // SPE_25Rnd_75x54 SPE_25Rnd_75x54_35P_AP
@@ -11134,24 +10969,9 @@ class cfgHALsStore
 		};
 
 		class riflesspe{
-			displayName = "Rifles, Carbines";
+			displayName = "SPE Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-			ITEM(LIB_LeeEnfield_No1, 210, RIFLE_STOCK); //NORMAL: LIB_10Rnd_770x56 BALL: LIB_10Rnd_770x56_MkVIII
-			ITEM(LIB_LeeEnfield_No4, 200, RIFLE_STOCK); //^^
-			ITEM(LIB_DELISLE, 250, RIFLE_STOCK); //NORMAL: LIB_7Rnd_45ACP_DeLisle
-			ITEM(LIB_M1_Carbine, 250, RIFLE_STOCK); //NORMAL: LIB_15Rnd_762x33 TRACER: LIB_15Rnd_762x33_t
-			ITEM(LIB_M1_Garand, 300, RIFLE_STOCK); //NORMAL: LIB_8Rnd_762x63 BALL: LIB_8Rnd_762x63_M1 tracer: LIB_8Rnd_762x63_t
-			ITEM(LIB_M1903A3_Springfield, 200, RIFLE_STOCK); //NORMAL: LIB_5Rnd_762x63
-			ITEM(LIB_M9130, 180, RIFLE_STOCK); //NORMAL: LIB_5Rnd_762x54 LIB_5Rnd_762x54_b30 LIB_5Rnd_762x54_D LIB_5Rnd_762x54_t30 LIB_5Rnd_762x54_t46
-			ITEM(LIB_M38, 170, RIFLE_STOCK); //NORMAL: ^^
-			ITEM(LIB_M44, 170, RIFLE_STOCK); //NORMAL: ^^^
-			ITEM(LIB_SVT_40, 320, RIFLE_STOCK); //NORMAL: LIB_10Rnd_762x54 LIB_10Rnd_762x54_b30 LIB_10Rnd_762x54_d LIB_10Rnd_762x54_t30 LIB_10Rnd_762x54_t46 LIB_10Rnd_762x54_t302 LIB_10Rnd_762x54_t462
-			ITEM(LIB_K98, 210, RIFLE_STOCK); //NORMAL: LIB_5Rnd_792x57 LIB_5Rnd_792x57_t LIB_5Rnd_792x57_SMK LIB_5Rnd_792x57_sS
-			ITEM(LIB_K98_Late, 190, RIFLE_STOCK); //NORMAL: ^^
-			ITEM(LIB_G3340, 200, RIFLE_STOCK); //NORMAL: ^^^
-			ITEM(LIB_G41, 300, RIFLE_STOCK); //NORMAL: LIB_10Rnd_792x57_clip
-			ITEM(LIB_G43, 280, RIFLE_STOCK); //NORMAL: LIB_10Rnd_792x57 LIB_10Rnd_792x57_T2 LIB_10Rnd_792x57_SMK LIB_10Rnd_792x57_sS LIB_10Rnd_792x57_T
-			
+
 			ITEM(SPE_M1_Carbine, 250, RIFLE_STOCK); //NORMAL: SPE_15Rnd_762x33 TRACER: SPE_15Rnd_762x33_t
 			ITEM(SPE_M1_Garand, 300, RIFLE_STOCK); //NORMAL: SPE_8Rnd_762x63  SPE_8Rnd_762x63_M1  SPE_8Rnd_762x63_t SPE_8Rnd_762x63_M2_AP
 			ITEM(SPE_M1903A3_Springfield, 200, RIFLE_STOCK); //NORMAL: SPE_5Rnd_762x63  SPE_5Rnd_762x63_M1  SPE_5Rnd_762x63_t  SPE_5Rnd_762x63_M2_AP
@@ -11162,30 +10982,18 @@ class cfgHALsStore
 		};
 
 		class sniperriflesspe{
-			displayName = "DMRs, Sniper Rifles, Battle Rifles";
+			displayName = "SPE Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-
-			ITEM(LIB_LeeEnfield_No4_Scoped, 580, RIFLE_STOCK); // SAME AS LIB_LeeEnfield_No1
-			ITEM(LIB_M1903A4_Springfield, 570, RIFLE_STOCK); // SAME AS LIB_M1903A3_Springfield
-			ITEM(LIB_K98ZF39, 570, RIFLE_STOCK); // SAME AS LIB_K98
-			ITEM(LIB_M9130PU, 570, RIFLE_STOCK); // SAME AS LIB_M9130
-			
+		
 			ITEM(SPE_M1903A4_Springfield, 570, RIFLE_STOCK); // SAME AS SPE_M1903A3_Springfield
 			ITEM(SPE_K98ZF39, 570, RIFLE_STOCK); // SAME AS SPE_K98
 			
 		};
 
 		class launchersspe{
-			displayName = "Launchers";
+			displayName = "SPE Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
-			ITEM(LIB_PIAT, 300, 25); 
-			ITEM(LIB_M1A1_Bazooka, 350, 25); 
-			ITEM(LIB_Faustpatrone, 200, 25); 
-			ITEM(LIB_PzFaust_30m, 225, 25); 
-			ITEM(LIB_PzFaust_60m, 250, 25); 
-			ITEM(LIB_RPzB, 350, 25); 
-			ITEM(LIB_RPzB_w, 350, 25); 
-			
+
 			ITEM(SPE_Faustpatrone, 100, 15);
 			ITEM(SPE_PzFaust_30m, 100, 15);
 			ITEM(SPE_PzFaust_60m, 100, 15);
@@ -11194,15 +11002,9 @@ class cfgHALsStore
 		}; 
 
 		class launchermagazinesspe{
-			displayName = "Launcher Ammunition";
+			displayName = "SPE Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
-			ITEM(LIB_1Rnd_89m_PIAT, 100, 15);
-			ITEM(LIB_1Rnd_60mm_M6, 100, 15);
-			ITEM(LIB_1Rnd_Faustpatrone, 100, 15);
-			ITEM(LIB_1Rnd_PzFaust_30m, 100, 15);
-			ITEM(LIB_1Rnd_PzFaust_60m, 100, 15);
-			ITEM(LIB_1Rnd_RPzB, 100, 15);
-			
+
 			ITEM(SPE_1Rnd_60mm_M6, 100, 15);
 			ITEM(SPE_1Rnd_Faustpatrone, 100, 15);
 			ITEM(SPE_1Rnd_PzFaust_30m, 100, 15);
@@ -11211,29 +11013,25 @@ class cfgHALsStore
 		};
 
 		class riflegrenadesspe{
-			displayName = "Rifle Grenades";
+			displayName = "SPE Rifle Grenades";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
-			ITEM(LIB_1Rnd_G_MillsBomb, 70, 25);
-			ITEM(LIB_1Rnd_G_M9A1, 80, 25);
-			ITEM(LIB_1Rnd_G_Mk2, 90, 25);
-			ITEM(LIB_1Rnd_G_PZGR_30, 70, 25);
-			ITEM(LIB_1Rnd_G_PZGR_40, 90, 25);
-			ITEM(LIB_1Rnd_G_DYAKONOV, 80, 25);
+			
+			ITEM(SPE_1Rnd_G_NBGR_42, 50, 25);
+			ITEM(SPE_1Rnd_G_M2_ANM8, 50, 25);
+			ITEM(SPE_1Rnd_G_PZGR_30, 90, 25);
+			ITEM(SPE_1Rnd_G_SPRGR_30, 80, 25);
+			ITEM(SPE_1Rnd_G_PZGR_40, 90, 25);
+			ITEM(SPE_1Rnd_G_M9A1, 80, 25);
+			ITEM(SPE_1Rnd_G_Mk2, 90, 25);
+			ITEM(SPE_1Rnd_G_M2_AN_M14, 100, 25);
+			ITEM(SPE_1Rnd_G_M17A1, 50, 25);
+			ITEM(SPE_1Rnd_G_FLGR, 50, 25);
+			
 		};
 
 		class muzzlesspe{
-			displayName = "Muzzle Accessories";
+			displayName = "SPE Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
-			
-			ITEM(lib_acc_p1903_bayo, 75, MZ_STOCK);
-			ITEM(lib_acc_no4_mk2_bayo, 75, MZ_STOCK);
-			ITEM(lib_acc_m1_bayo, 75, MZ_STOCK);
-			ITEM(lib_acc_m1891_bayo, 75, MZ_STOCK);
-			ITEM(lib_acc_k98_bayo, 75, MZ_STOCK);
-			ITEM(lib_acc_gl_enfield_cup_empty, 80, MZ_STOCK);
-			ITEM(lib_acc_gl_m7, 80, MZ_STOCK);
-			ITEM(lib_acc_gw_sb_empty, 80, MZ_STOCK);
-			ITEM(lib_acc_gl_dyakonov_empty, 80, MZ_STOCK);
 			
 			ITEM(spe_acc_m3_suppressor_45acp, 75, MZ_STOCK);
 			ITEM(spe_acc_m1_bayo, 75, MZ_STOCK);
@@ -11246,68 +11044,8 @@ class cfgHALsStore
 		};
 
 		class magazinesspe{
-			displayName = "Magazines";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
-			
-			ITEM(LIB_7Rnd_45ACP, 17, MZ_STOCK);
-            ITEM(LIB_32Rnd_9x19_Sten, 20, MZ_STOCK);
-            ITEM(LIB_30Rnd_45ACP, 22, MZ_STOCK);
-            ITEM(LIB_50Rnd_45ACP, 45, MZ_STOCK);
-            ITEM(LIB_50Rnd_762x63_M1, 75, MZ_STOCK);
-            ITEM(LIB_30Rnd_770x56_MKVIII, 65, MZ_STOCK);
-            ITEM(LIB_20Rnd_762x63_M1, 55, MZ_STOCK);
-            ITEM(LIB_10Rnd_770x56_MkVIII, 27, MZ_STOCK);
-            ITEM(LIB_15Rnd_762x33, 20, MZ_STOCK);
-            ITEM(LIB_8Rnd_762x63, 26, MZ_STOCK); 
-			ITEM(LIB_10Rnd_9x19_M1896, 12, MZ_STOCK);
-			ITEM(LIB_1Rnd_flare_white, 10, MZ_STOCK);
-			ITEM(LIB_7Rnd_762x38, 15, MZ_STOCK);
-			ITEM(LIB_8Rnd_9x19_P08, 15, MZ_STOCK);
-			ITEM(LIB_8Rnd_9x19, 15, MZ_STOCK);
-			ITEM(LIB_8Rnd_762x25, 15, MZ_STOCK);
-			ITEM(LIB_7Rnd_765x17_PPK, 17, MZ_STOCK);
-			ITEM(LIB_6Rnd_455, 15, MZ_STOCK);
-			ITEM(LIB_6Rnd_9x19_Welrod, 20, MZ_STOCK);
-			ITEM(LIB_1Rnd_flare_yellow, 10, MZ_STOCK);
-			ITEM(LIB_1Rnd_flare_red, 10, MZ_STOCK);
-			ITEM(LIB_1Rnd_flare_green, 10, MZ_STOCK);
-			ITEM(LIB_32Rnd_9x19, 22, MZ_STOCK);
-			ITEM(LIB_32Rnd_9x19_t, 22, MZ_STOCK);
-			ITEM(LIB_30Rnd_M3_GreaseGun_45ACP, 22, MZ_STOCK);
-			ITEM(LIB_35Rnd_762x25, 22, MZ_STOCK);
-            ITEM(LIB_71Rnd_762x25, 45, MZ_STOCK);
-			ITEM(LIB_47Rnd_762x54, 70, MZ_STOCK);
-			ITEM(LIB_47Rnd_762x54d, 80, MZ_STOCK);
-			ITEM(LIB_63Rnd_762x54, 90, MZ_STOCK);
-			ITEM(LIB_63Rnd_762x54d, 100, MZ_STOCK);
-			ITEM(LIB_50Rnd_792x57, 80, MZ_STOCK);
-			ITEM(LIB_50Rnd_792x57_SMK, 90, MZ_STOCK);
-			ITEM(LIB_50Rnd_792x57_sS, 90, MZ_STOCK);
-			ITEM(LIB_20Rnd_792x57, 60, MZ_STOCK);
-			ITEM(LIB_30Rnd_792x33, 50, MZ_STOCK);
-			ITEM(LIB_30Rnd_792x33_t, 50, MZ_STOCK);
-			ITEM(LIB_5Rnd_762x54, 15, MZ_STOCK);
-			ITEM(LIB_5Rnd_762x54_b30, 20, MZ_STOCK);
-			ITEM(LIB_5Rnd_762x54_D, 20, MZ_STOCK);
-			ITEM(LIB_5Rnd_762x54_t30, 20, MZ_STOCK);
-			ITEM(LIB_5Rnd_762x54_t46, 20, MZ_STOCK);
-			ITEM(LIB_10Rnd_762x54, 25, MZ_STOCK);
-			ITEM(LIB_10Rnd_762x54_b30, 30, MZ_STOCK);
-			ITEM(LIB_10Rnd_762x54_d, 25, MZ_STOCK);
-			ITEM(LIB_10Rnd_762x54_t30, 25, MZ_STOCK);
-			ITEM(LIB_10Rnd_762x54_t46, 25, MZ_STOCK);
-			ITEM(LIB_10Rnd_762x54_t302, 25, MZ_STOCK);
-			ITEM(LIB_10Rnd_762x54_t462, 25, MZ_STOCK);
-			ITEM(LIB_5Rnd_792x57, 15, MZ_STOCK);
-			ITEM(LIB_5Rnd_792x57_t, 20, MZ_STOCK);
-			ITEM(LIB_5Rnd_792x57_SMK, 25, MZ_STOCK);
-			ITEM(LIB_5Rnd_792x57_sS, 20, MZ_STOCK);
-			ITEM(LIB_10Rnd_792x57_clip, 35, MZ_STOCK);
-			ITEM(LIB_10Rnd_792x57, 20, MZ_STOCK);
-			ITEM(LIB_10Rnd_792x57_T2, 25, MZ_STOCK);
-			ITEM(LIB_10Rnd_792x57_SMK, 35, MZ_STOCK);
-			ITEM(LIB_10Rnd_792x57_sS, 25, MZ_STOCK);
-			ITEM(LIB_10Rnd_792x57_T, 25, MZ_STOCK);
+			displayName = "SPE Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";		
 			
 			ITEM(SPE_8Rnd_9x19_P08, 15, MZ_STOCK);
 			ITEM(SPE_7Rnd_45ACP_1911, 15, MZ_STOCK);
@@ -11352,11 +11090,8 @@ class cfgHALsStore
 		};
 
 		class miscspe{
-			displayName = "Misc";
+			displayName = "SPE Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
-
-			ITEM(LIB_Ladung_Big_MINE_mag, 450, MISC_STOCK);
-			ITEM(LIB_Ladung_Small_MINE_mag, 400, MISC_STOCK);
 			
 			ITEM(SPE_US_TNT_4pound_mag, 450, MISC_STOCK);
 			ITEM(SPE_US_TNT_half_pound_mag, 400, MISC_STOCK);
@@ -11365,22 +11100,18 @@ class cfgHALsStore
 		};
 
 		class pointersspe{
-			displayName = "Pointer Accessories";
+			displayName = "SPE BAR Accessories";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
-			ITEM(lib_m1918a2_bar_handle, 70, PN_STOCK);
-			ITEM(lib_m1918a2_bar_bipod, 70, PN_STOCK);
-			
 			ITEM(spe_m1918a2_bar_handle, 70, PN_STOCK);
 			ITEM(spe_m1918a2_bar_bipod, 70, PN_STOCK);
+			
 		};
 
 		class specialweaponsspe{
-			displayName = "Special Weapons";
+			displayName = "SPE Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-			ITEM(LIB_M2_Flamethrower, 300, 25);
-			ITEM(B_LIB_US_M2Flamethrower, 800, 25);
-			
+
 			ITEM(SPE_Fusil_Mle_208_12, 150, 25);
 			ITEM(SPE_Fusil_Mle_208_12_Sawedoff, 150, 25);
 			ITEM(SPE_Flammenwerfer41, 300, 25);
@@ -11390,27 +11121,18 @@ class cfgHALsStore
 			
 		};
 
-		class opticsspe{
-			displayName = "Optics Accessories";
-			picture = "";
-			ITEM(lib_optic_zf4, 150, MAGAZINE_STOCK);
-		};
-
 		class underbarrelspe{
-	     	displayName = "Backpack Static";
+	     	displayName = "SPE Backpack Static";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
-			ITEM(LIB_Maxim_Bar, 600, 20);
-			ITEM(LIB_Maxim_Bag, 500, 20);
-			ITEM(LIB_Laffete_Tripod, 400, 20);
-			
 			ITEM(SPE_Lafette_Tripod, 400, 20);
+			
 		};
 
 //Unsung
 
 		class handgunsuns{
-			displayName = "Handguns";
+			displayName = "Unsung Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(uns_bhp, 90, PISTOL_STOCK); //AMMO: uns_13Rnd_hp
@@ -11438,7 +11160,7 @@ class cfgHALsStore
 		};
 
 		class smguns{
-			displayName = "Submachine Guns";
+			displayName = "Unsung SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uns_f1_smg, 165, RIFLE_STOCK); // uns_f1_smg_mag
@@ -11474,7 +11196,7 @@ class cfgHALsStore
 		};
 		
 		class mguns{
-			displayName = "Machine Guns";
+			displayName = "Unsung MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(uns_m60grip, 600, RIFLE_STOCK); //NORMAL: uns_m60mag
@@ -11501,7 +11223,7 @@ class cfgHALsStore
 		};
 
 		class riflesuns{
-			displayName = "Rifles, Carbines";
+			displayName = "Unsung Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(uns_ak47, 200, RIFLE_STOCK); //NORMAL: uns_ak47mag
@@ -11551,7 +11273,7 @@ class cfgHALsStore
 		};
 
 		class sniperriflesuns{
-			displayName = "DMRs, Sniper Rifles, Battle Rifles";
+			displayName = "Unsung Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uns_type99, 150, RIFLE_STOCK); // uns_type99mag
@@ -11584,7 +11306,7 @@ class cfgHALsStore
 		};
 
 		class launchersuns{
-			displayName = "Launchers";
+			displayName = "Unsung Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(uns_B40, 200, 25); // uns_B40grenade
@@ -11599,7 +11321,7 @@ class cfgHALsStore
 		}; 
 
 		class launchermagazinesuns{
-			displayName = "Launcher Ammunition";
+			displayName = "Unsung Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(uns_B40grenade, 100, 15);
@@ -11613,7 +11335,7 @@ class cfgHALsStore
 		};
 
 		class riflegrenadesuns{
-			displayName = "Rifle Grenades";
+			displayName = "Unsung Rifle Grenades";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(Uns_1Rnd_HE_M381, 70, 25);
@@ -11632,7 +11354,7 @@ class cfgHALsStore
 		};
 
 		class muzzlesuns{
-			displayName = "Muzzle Accessories";
+			displayName = "Unsung Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(uns_s_uzi, 80, MZ_STOCK);
@@ -11647,7 +11369,7 @@ class cfgHALsStore
 		};
 
 		class magazinesuns{
-			displayName = "Magazines";
+			displayName = "Unsung Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(uns_13Rnd_hp, 17, MZ_STOCK);
@@ -11752,7 +11474,7 @@ class cfgHALsStore
 		};
 
 		class miscuns{
-			displayName = "Misc";
+			displayName = "Unsung Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(DemoCharge_Remote_Mag, 450, MISC_STOCK);
@@ -11760,7 +11482,7 @@ class cfgHALsStore
 		};
 
 		class pointersuns{
-			displayName = "Pointer Accessories";
+			displayName = "Unsung Bayonets";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(uns_b_spike, 70, PN_STOCK);
@@ -11782,7 +11504,7 @@ class cfgHALsStore
 		};
 
 		class specialweaponsuns{
-			displayName = "Special Weapons";
+			displayName = "Unsung Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(uns_ex41, 700, 25); // uns_ex41mag
@@ -11799,7 +11521,7 @@ class cfgHALsStore
 		};
 
 		class opticsuns{
-			displayName = "Optics Accessories";
+			displayName = "Unsung Optics";
 			picture = "";
 			
 			ITEM(uns_o_anpvs2_m16, 350, MAGAZINE_STOCK);
@@ -11821,7 +11543,7 @@ class cfgHALsStore
 		};
 
 		class underbarreluns{
-	     	displayName = "Bipod Accessories";
+	     	displayName = "Unsung Bipods";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(uns_bp_m60, 100, MAGAZINE_STOCK);
@@ -11831,7 +11553,7 @@ class cfgHALsStore
 
 		class handgunsvn
 		{
-			displayName = $STR_HALS_STORE_HANDGUNS;
+			displayName = "VN Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(vn_welrod, 100, PISTOL_STOCK);
@@ -11865,7 +11587,7 @@ class cfgHALsStore
 
 		class smgvn
 		{
-			displayName = $STR_HALS_STORE_SMGS;
+			displayName = "VN SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_vz61, 200, RIFLE_STOCK);
@@ -11903,7 +11625,7 @@ class cfgHALsStore
 
 		class mgvn
 		{
-			displayName = $STR_HALS_MGS;
+			displayName = "VN MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_m1918, 400, RIFLE_STOCK);
@@ -11932,7 +11654,7 @@ class cfgHALsStore
 
 		class sniperriflesvn
 		{
-			displayName = $STR_HALS_SRS;
+			displayName = "VN Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_m1891, 450, RIFLE_STOCK);
@@ -11980,7 +11702,7 @@ class cfgHALsStore
 		
 		class riflesvn
 		{
-			displayName = $STR_HALS_ASSAULT_RIFLES_VN;
+			displayName = "VN Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_m1carbine, 200, RIFLE_STOCK);
@@ -12025,7 +11747,7 @@ class cfgHALsStore
 
 		class launchersvn
 		{
-			displayName = $STR_HALS_STORE_LAUNCHERS;
+			displayName = "VN Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(vn_m72, 250, 15);
@@ -12041,7 +11763,7 @@ class cfgHALsStore
 
 		class launchermagazinesvn
 		{
-			displayName = $STR_HALS_STORE_LAUNCHER_AMMO;
+			displayName = "VN Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class vn_m72_mag {
@@ -12077,7 +11799,7 @@ class cfgHALsStore
 
 		class riflegrenadesvn
 		{
-			displayName = $STR_HALS_R_GRENADES;
+			displayName = "VN Rifle Grenades";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class vn_22mm_n94_heat_mag {
@@ -12144,7 +11866,7 @@ class cfgHALsStore
 
 		class muzzlesvn
 		{
-			displayName = $STR_HALS_M_ACC;
+			displayName = "VN Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(vn_s_mk22, 100, MZ_STOCK);
@@ -12165,7 +11887,7 @@ class cfgHALsStore
 
 		class underbarrelvn
 		{
-			displayName = $STR_HALS_UB_ACC;
+			displayName = "VN Bipods";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(vn_b_camo_m9130, 10, 50);
@@ -12185,7 +11907,7 @@ class cfgHALsStore
 
 		class specialWeaponsvn 
 		{
-			displayName = $STR_HALS_SPECIAL_WEAPONS;
+			displayName = "VN Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_m79, 500, RIFLE_STOCK);
@@ -12195,7 +11917,7 @@ class cfgHALsStore
 
 		class opticsvn 
 		{
-			displayName = $STR_HALS_O_ACC;
+			displayName = "VN Optics";
 			picture = "";
 
 			class vn_o_3x_m84 {
@@ -12281,7 +12003,7 @@ class cfgHALsStore
 
 		class pointersvn 
 		{
-			displayName = $STR_HALS_P_ACC_VN;
+			displayName = "VN Pointers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(vn_b_carbine, 50, PN_STOCK);
@@ -12299,7 +12021,7 @@ class cfgHALsStore
 
 		class magazinesvn 
 		{
-			displayName = $STR_HALS_MAGS;
+			displayName = "VN Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			ITEM(vn_mk1_udg_mag, 50, MZ_STOCK);
@@ -12484,7 +12206,7 @@ class cfgHALsStore
 
 		class miscvn 
 		{
-			displayName = $STR_HALS_STORE_MISC;
+			displayName = "VN Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(IEDUrbanSmall_Remote_Mag, 500, MISC_STOCK);
@@ -12498,7 +12220,7 @@ class cfgHALsStore
 	
 		//OPTRE
 		class handgunshalo{
-			displayName = "Handguns";
+			displayName = "OPTRE Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(OPTRE_M6B, 110, PISTOL_STOCK); //AMMO: OPTRE_8Rnd_127x40_Mag
@@ -12509,7 +12231,7 @@ class cfgHALsStore
 		};
 
 		class smghalo{
-			displayName = "Submachine Guns";
+			displayName = "OPTRE SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(OPTRE_M45, 225, RIFLE_STOCK); // Ammo: OPTRE_6Rnd_8Gauge_Pellets
@@ -12522,7 +12244,7 @@ class cfgHALsStore
 		};
 		
 		class mghalo{
-			displayName = "Machine Guns";
+			displayName = "OPTRE MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(OPTRE_HMG38, 600, RIFLE_STOCK); //Ammo: OPTRE_40Rnd_30x06_Mag
@@ -12531,7 +12253,7 @@ class cfgHALsStore
 		};
 
 		class rifleshalo{
-			displayName = "Rifles, Carbines";
+			displayName = "OPTRE Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(OPTRE_BR37, 325, RIFLE_STOCK); //Ammo: OPTRE_10RND_338_SP
 			ITEM(OPTRE_BR45, 345, RIFLE_STOCK); //Ammo: OPTRE_36Rnd_95x40_Mag
@@ -12562,7 +12284,7 @@ class cfgHALsStore
 		};
 
 		class sniperrifleshalo{
-			displayName = "DMRs, Sniper Rifles, Battle Rifles";
+			displayName = "OPTRE Snipers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(OPTRE_Commando_Black, 400, RIFLE_STOCK); // Ammo: Commando_20Rnd_65_Mag
@@ -12578,13 +12300,13 @@ class cfgHALsStore
 		};
 
 		class launchershalo{
-			displayName = "Launchers";
+			displayName = "OPTRE Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			ITEM(OPTRE_M41_SSR, 500, 25); 
 		}; 
 
 		class launchermagazineshalo{
-			displayName = "Launcher Ammunition";
+			displayName = "OPTRE Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			ITEM(OPTRE_M41_Twin_HE, 100, 15);
 			ITEM(OPTRE_M41_Twin_HEAP, 150, 15);
@@ -12596,7 +12318,7 @@ class cfgHALsStore
 		};
 
 		class riflegrenadeshalo{
-			displayName = "Rifle Grenades";
+			displayName = "OPTRE Rifle Grenades";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			ITEM(1Rnd_HE_Grenade_shell, 70, 25);
 			ITEM(1Rnd_Smoke_Grenade_shell, 50, 25);
@@ -12604,7 +12326,7 @@ class cfgHALsStore
 		};
 
 		class muzzleshalo{
-			displayName = "Muzzle Accessories";
+			displayName = "OPTRE Muzzles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			ITEM(optre_ma5suppressor, 80, MZ_STOCK);
 			ITEM(optre_m12_suppressor, 80, MZ_STOCK);
@@ -12615,7 +12337,7 @@ class cfgHALsStore
 		};
 
 		class magazineshalo{
-			displayName = "Magazines";
+			displayName = "OPTRE Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(OPTRE_8Rnd_127x40_Mag, 17, MZ_STOCK);
@@ -12642,7 +12364,7 @@ class cfgHALsStore
 		};
 
 		class mischalo{
-			displayName = "Misc";
+			displayName = "OPTRE Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			// Spartan gear
@@ -12683,7 +12405,7 @@ class cfgHALsStore
 		};
 
 		class pointershalo{
-			displayName = "Pointer Accessories";
+			displayName = "OPTRE Pointers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(optre_bmr_laser, 70, PN_STOCK);
@@ -12696,7 +12418,7 @@ class cfgHALsStore
 		};
 
 		class specialweaponshalo{
-			displayName = "Special Weapons";
+			displayName = "OPTRE Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(OPTRE_M319, 300, RIFLE_STOCK);
 			ITEM(OPTRE_M319n, 400, RIFLE_STOCK);
@@ -12705,7 +12427,7 @@ class cfgHALsStore
 		};
 
 		class opticshalo{
-			displayName = "Optics Accessories";
+			displayName = "OPTRE Optics";
 			picture = "";
 			ITEM(optre_br45_scope, 150, MAGAZINE_STOCK);
 			ITEM(optre_br55hb_scope, 150, MAGAZINE_STOCK);
@@ -12725,11 +12447,1022 @@ class cfgHALsStore
 		};
 
 		class underbarrelhalo{
-	     	displayName = "Underbarrel Accessories";
+	     	displayName = "OPTRE Grips";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(optre_br45grip, 50, 20);
 		};
+
+
+		//FFAA
+		class handgunsffaa{
+			displayName = "FFAA Handguns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
+
+			ITEM(ffaa_armas_fnp9, 110, PISTOL_STOCK); //AMMO: ffaa_9x19_pistola
+			ITEM(ffaa_armas_usp, 150, PISTOL_STOCK); //AMMO: ffaa_9x19_pistola
+			ITEM(ffaa_armas_p226, 110, PISTOL_STOCK); //AMMO: ffaa_9x19_pistola
+			
+		};
+
+		class smgffaa{
+			displayName = "FFAA SMGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(ffaa_armas_hkmp5a5, 225, RIFLE_STOCK); // Ammo: ffaa_9x19_mp5
+			ITEM(ffaa_armas_hkmp5pdw, 225, RIFLE_STOCK); // Ammo: ffaa_9x19_mp5_60rnd
+			ITEM(ffaa_armas_hkmp510a3, 250, RIFLE_STOCK); // Ammo: ^^
+			ITEM(ffaa_armas_ump, 250, RIFLE_STOCK); // Ammo: ffaa_9x19_ump
+			ITEM(ffaa_armas_p90, 350, RIFLE_STOCK); // Ammo: ffaa_507x28_p90
+			
+		};
+		
+		class mgffaa{
+			displayName = "FFAA MGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
+
+			ITEM(ffaa_armas_ameli, 600, RIFLE_STOCK); //Ammo: ffaa_556x45_ameli
+			ITEM(ffaa_armas_minimi, 650, RIFLE_STOCK); //Ammo: ffaa_556x45_mg4
+			ITEM(ffaa_armas_mg4, 650, RIFLE_STOCK); //Ammo: ffaa_556x45_mg4
+			ITEM(ffaa_armas_mg3, 500, RIFLE_STOCK); //Ammo: ffaa_762x51_mg3
+			
+		};
+
+		class riflesffaa{
+			displayName = "FFAA Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
+			ITEM(ffaa_armas_cetme_l, 325, RIFLE_STOCK); //Ammo: ffaa_556x45_cedmel
+			ITEM(ffaa_armas_cetme_lc, 345, RIFLE_STOCK); //Ammo: ffaa_556x45_cedmel
+			ITEM(ffaa_armas_hk416A5_short_blk, 465, RIFLE_STOCK); //Ammo: ffaa_556x45_cedmel
+			ITEM(ffaa_armas_hkag36e, 450, RIFLE_STOCK); //Ammo: ffaa_556x45_g36
+			ITEM(ffaa_armas_hkag36e_tir, 460, RIFLE_STOCK); //Ammo: ffaa_556x45_g36_tracer_green
+			ITEM(ffaa_armas_hkag36k, 440, RIFLE_STOCK); //Ammo: ffaa_556x45_g36
+			ITEM(ffaa_armas_hkag36k_tir, 450, RIFLE_STOCK); //Ammo: ffaa_556x45_g36_tracer_green
+			ITEM(ffaa_armas_hkg36e_normal, 350, RIFLE_STOCK); //Ammo: ffaa_556x45_g36
+			ITEM(ffaa_armas_hkg36e, 370, RIFLE_STOCK); //Ammo: ffaa_556x45_g36
+			ITEM(ffaa_armas_hkg36e_tir, 390, RIFLE_STOCK); //Ammo: ffaa_556x45_g36
+			ITEM(ffaa_armas_hkg36k_normal, 310, RIFLE_STOCK); //Ammo: ffaa_556x45_g36
+			ITEM(ffaa_armas_hkg36k, 320, RIFLE_STOCK); //Ammo: ffaa_556x45_g36
+			ITEM(ffaa_armas_hkg36k_tir, 340, RIFLE_STOCK); //Ammo: ffaa_556x45_g36
+
+		};
+
+		class sniperriflesffaa{
+			displayName = "FFAA Snipers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(ffaa_armas_cetme_c, 430, RIFLE_STOCK); // Ammo: ffaa_762x51_cedmec
+			ITEM(ffaa_armas_cetme_e, 450, RIFLE_STOCK); // Ammo: ffaa_762x51_cedmec
+			ITEM(ffaa_armas_hk417A2_long_blk, 580, RIFLE_STOCK); // Ammo: ffaa_20Rnd_762x51_hk417
+			ITEM(ffaa_armas_aw, 680, RIFLE_STOCK); // Ammo: ffaa_762x51_accuracy
+			ITEM(ffaa_armas_m95, 1000, RIFLE_STOCK); // Ammo: ffaa_127x99_he
+			ITEM(ffaa_armas_aw50, 1000, RIFLE_STOCK); // Ammo: ffaa_127x99_ap
+			
+		};
+
+		class launchersffaa{
+			displayName = "FFAA Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+			
+			ITEM(ffaa_armas_c90_CR_AM, 500, 25);
+			ITEM(ffaa_armas_c90_CR_BK, 500, 25); 
+			ITEM(ffaa_armas_c90_CR_FIM, 500, 25); 
+			ITEM(ffaa_armas_c90, 500, 25); 
+			ITEM(ffaa_armas_c100_abk, 700, 25); 
+			ITEM(ffaa_armas_c100, 700, 25); 
+			ITEM(ffaa_armas_c100_biv, 700, 25); 
+			
+		}; 
+
+		class muzzlesffaa{
+			displayName = "FFAA Muzzles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
+			
+			ITEM(ffaa_snds_gt_556, 80, MZ_STOCK);
+
+		};
+
+		class magazinesffaa{
+			displayName = "FFAA Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(ffaa_9x19_pistola, 17, MZ_STOCK);
+            ITEM(ffaa_9x19_mp5, 25, MZ_STOCK);
+            ITEM(ffaa_9x19_mp5_60rnd, 50, MZ_STOCK);
+            ITEM(ffaa_9x19_ump, 30, MZ_STOCK);
+            ITEM(ffaa_507x28_p90, 40, MZ_STOCK);
+            ITEM(ffaa_556x45_ameli, 100, MZ_STOCK);
+            ITEM(ffaa_556x45_mg4, 100, MZ_STOCK);
+            ITEM(ffaa_762x51_mg3, 120, MZ_STOCK);
+            ITEM(ffaa_556x45_cedmel, 70, MZ_STOCK);
+            ITEM(ffaa_556x45_g36, 70, MZ_STOCK);
+            ITEM(ffaa_556x45_g36_tracer_green, 70, MZ_STOCK);
+            ITEM(ffaa_762x51_cedmec, 90, MZ_STOCK);
+            ITEM(ffaa_20Rnd_762x51_hk417, 90, MZ_STOCK);
+            ITEM(ffaa_762x51_accuracy, 70, MZ_STOCK);
+            ITEM(ffaa_127x99_he, 150, MZ_STOCK); 
+			ITEM(ffaa_127x99_ap, 200, MZ_STOCK);
+
+		};
+
+		class pointersffaa{
+			displayName = "FFAA Pointers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(ffaa_acc_puntero_ir, 70, PN_STOCK);
+			
+		};
+
+		class opticsffaa{
+			displayName = "FFAA Optics";
+			picture = "";
+			
+			ITEM(ffaa_optic_acog, 160, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_elcan, 150, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_elcan_ard, 150, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_enasa, 150, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_holografico, 150, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_mk4_v2, 250, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_mk4_v1, 250, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_lv, 250, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_romeo4t_black, 150, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_3x12x50, 230, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_5x25x56, 250, MAGAZINE_STOCK);
+			ITEM(ffaa_optic_susat, 150, MAGAZINE_STOCK);
+
+		};
+
+		class underbarrelffaa{
+	     	displayName = "FFAA Grips";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
+
+			ITEM(ffaa_bipod_g36, 50, 20);
+			
+		};
+
+
+		//Pedagne
+		class handgunsitaly{
+			displayName = "Pedagne Handguns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
+
+			ITEM(ASZ_M84, 110, PISTOL_STOCK); //AMMO: 15Rnd_9x19_M9_ASZ
+			ITEM(ASZ_M92, 130, PISTOL_STOCK); //AMMO: 15Rnd_9x19_M9SD_ASZ
+			ITEM(ASZ_glock17, 140, PISTOL_STOCK); //AMMO: 16Rnd_9x21_Mag
+
+		};
+		
+		class mgitaly{
+			displayName = "Pedagne MGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
+
+			ITEM(ASZ_M249_base, 600, RIFLE_STOCK); //Ammo: 200Rnd_M249mag
+			ITEM(ASZ_M249mk1_base, 650, RIFLE_STOCK); //Ammo: 200Rnd_M249mag
+
+		};
+
+		class riflesitaly{
+			displayName = "Pedagne Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
+			ITEM(ASZ_AR7090, 245, RIFLE_STOCK); //Ammo: 20Rnd_556x45_Stanag_ASZ
+			ITEM(ASZ_AR7090_gl, 345, RIFLE_STOCK); //Ammo: 20Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160, 365, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160_GLS, 470, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160_GLS_CC, 450, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160_C, 400, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160_IV_L_CC, 390, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160SF, 365, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160SF_GLS, 470, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160SF_GLS_CC, 450, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160SF_C, 400, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160SF_CC, 380, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_ARX160SF_IV_L_CC, 320, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(APD_ARX200, 420, RIFLE_STOCK); //Ammo: ASZ_20Rnd_762x51_Mag
+			ITEM(APD_ARX200sf, 420, RIFLE_STOCK); //Ammo: ASZ_20Rnd_762x51_Mag_AP
+			ITEM(APD_ARX200sf_VGrip, 440, RIFLE_STOCK); //Ammo: ASZ_20Rnd_762x51_Mag_SD
+			ITEM(APD_ARX200_VGrip, 440, RIFLE_STOCK); //Ammo: ASZ_20Rnd_762x51_Mag_Tracer
+			ITEM(ASZ_SC90, 300, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_SC90_gl, 400, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_SCS90, 290, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			ITEM(ASZ_M4A1, 400, RIFLE_STOCK); //Ammo: 30Rnd_556x45_Stanag_SD_ASZ
+			
+		};
+
+		class sniperriflesitaly{
+			displayName = "Pedagne Snipers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(ASZ_M40A3_Des, 450, RIFLE_STOCK); // Ammo: 5Rnd_762x51_Mag_ASZ
+			ITEM(ASZ_M40A3_Des_ghillie, 470, RIFLE_STOCK); // Ammo: 5Rnd_762x51_Mag_ASZ
+			ITEM(ASZ_M40A3_Green, 450, RIFLE_STOCK); // Ammo: 5Rnd_762x51_Mag_ASZ
+			ITEM(ASZ_M40A3_Green_ghillie, 470, RIFLE_STOCK); // Ammo: 5Rnd_762x51_Mag_ASZ
+			ITEM(ASZ_SakoTRG42, 500, RIFLE_STOCK); // Ammo: 10Rnd_762x51_Mag_ASZ	5Rnd_762x51_Mag_ASZ
+			ITEM(ASZ_MCM_tac50_blk, 800, RIFLE_STOCK); // Ammo: ASZ_5x127_Mag
+			ITEM(ASZ_MCM_tac50_des, 800, RIFLE_STOCK); // Ammo: ASZ_5x127_Mag
+			ITEM(ASZ_MCM_tac50_green, 800, RIFLE_STOCK); // Ammo: ASZ_5x127_Mag
+			ITEM(ASZ_M107_des, 1000, RIFLE_STOCK); // Ammo: 7Rnd_408_Mag
+			ITEM(ASZ_M107_blk, 1000, RIFLE_STOCK); // Ammo: 7Rnd_408_Mag
+
+		};
+
+		class launchersitaly{
+			displayName = "Pedagne Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+			
+			ITEM(ASZ_PzF3_Loaded, 500, 25);
+			ITEM(ASZ_Launch_Spike, 700, 25); // ASZ_Spike_Mag
+			ITEM(ASZ_Launch_Stinger, 600, 25); // ASZ_Stinger_Mag
+		}; 
+
+		class launchermagazinesitaly{
+			displayName = "Pedagne Launcher Ammo";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(ASZ_Spike_Mag, 400, 15);
+			ITEM(ASZ_Stinger_Mag, 250, 15);
+
+		};
+
+		class muzzlesitaly{
+			displayName = "Pedagne Muzzles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
+			
+			ITEM(asz_silencer_m4a1, 80, MZ_STOCK);
+			ITEM(asz_silencer_556_blk, 80, MZ_STOCK);
+			ITEM(asz_silencer_556_des, 80, MZ_STOCK);
+			ITEM(asz_silencer_762_blk, 80, MZ_STOCK);
+			ITEM(asz_silencer_762_des, 80, MZ_STOCK);
+			
+		};
+
+		class magazinesitaly{
+			displayName = "Pedagne Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(15Rnd_9x19_M9_ASZ, 17, MZ_STOCK);
+            ITEM(15Rnd_9x19_M9SD_ASZ, 20, MZ_STOCK);
+            ITEM(20Rnd_556x45_Stanag_ASZ, 35, MZ_STOCK);
+            ITEM(20Rnd_556x45_Stanag_SD_ASZ, 35, MZ_STOCK);
+            ITEM(ASZ_20Rnd_762x51_Mag_AP, 75, MZ_STOCK);
+            ITEM(ASZ_20Rnd_762x51_Mag, 55, MZ_STOCK);
+            ITEM(30Rnd_556x45_Stanag_SD_ASZ, 45, MZ_STOCK);
+            ITEM(ASZ_20Rnd_762x51_Mag_SD, 55, MZ_STOCK);
+            ITEM(ASZ_20Rnd_762x51_Mag_Tracer, 55, MZ_STOCK);
+            ITEM(200Rnd_M249mag, 95, MZ_STOCK);
+            ITEM(5Rnd_762x51_Mag_ASZ, 45, MZ_STOCK);
+            ITEM(10Rnd_762x51_Mag_ASZ, 65, MZ_STOCK);
+            ITEM(ASZ_5x127_Mag, 100, MZ_STOCK);		
+            ITEM(6Rnd_HE_Grenade_shell_ASZ, 350, MZ_STOCK); 
+
+		};
+
+		class pointersitaly{
+			displayName = "Pedagne Pointers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(asz_flashlight, 70, PN_STOCK);
+			ITEM(asz_pointer_blk, 70, PN_STOCK);
+			ITEM(asz_pointer, 70, PN_STOCK);
+			ITEM(asz_pointer_m4, 70, PN_STOCK);
+
+		};
+
+		class specialweaponsitaly{
+			displayName = "Pedagne Special Weapons";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
+			ITEM(ASZ_M32, 600, RIFLE_STOCK); // 6Rnd_HE_Grenade_shell_ASZ
+			ITEM(ASZ_Mk13, 400, RIFLE_STOCK);
+
+		};
+
+		class opticsitaly{
+			displayName = "Pedagne Optics";
+			picture = "";
+			
+			ITEM(asz_acog, 200, MAGAZINE_STOCK);
+			ITEM(asz_aimpoint_compm4s, 150, MAGAZINE_STOCK);
+			ITEM(asz_aimpoint_pro_blk, 150, MAGAZINE_STOCK);
+			ITEM(asz_aimpoint_pro_des, 150, MAGAZINE_STOCK);
+			ITEM(asz_ams, 250, MAGAZINE_STOCK);
+			ITEM(asz_eotech_blk, 150, MAGAZINE_STOCK);
+			ITEM(asz_eotech_des, 150, MAGAZINE_STOCK);
+			ITEM(asz_leupold_mk4_cqt, 300, MAGAZINE_STOCK);
+			ITEM(asz_leupold_mk4_lrt_blk, 350, MAGAZINE_STOCK);
+			ITEM(asz_leupold_mk4_mrt_black, 350, MAGAZINE_STOCK);
+			ITEM(asz_leupold_mk4_mrt_des, 350, MAGAZINE_STOCK);
+			ITEM(asz_leupold_vxr_patrol, 250, MAGAZINE_STOCK);
+			ITEM(asz_schmidt_bender_lp, 350, MAGAZINE_STOCK);
+			ITEM(asz_tasco_pronghorn, 250, MAGAZINE_STOCK);
+
+		};
+
+		class underbarrelitaly{
+	     	displayName = "Pedagne Grips";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
+
+			ITEM(asz_bipod_m107, 50, 20);
+			ITEM(asz_bipod_ar7090, 50, 20);
+			ITEM(asz_bipod_arx_blk, 50, 20);
+			ITEM(asz_bipod_arx_des, 50, 20);
+			ITEM(asz_bipod_m249, 50, 20);
+			ITEM(asz_bipod_m40a3, 50, 20);
+			ITEM(asz_bipod_tac50, 50, 20);
+			ITEM(asz_bipod_sakotrg42, 50, 20);
+			
+		};
+		
+		//SFP Sweden
+		class handgunsswe{
+			displayName = "SFP Handguns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
+
+			ITEM(sfp_p226, 110, PISTOL_STOCK); //AMMO: sfp_15Rnd_9x19_Mag
+			ITEM(sfp_p88, 110, PISTOL_STOCK); //AMMO: sfp_17Rnd_9x19_Mag
+			ITEM(sfp_revolver58, 100, PISTOL_STOCK); //AMMO: sfp_6nd_9x29_Mag
+			ITEM(sfp_signpist50, 50, PISTOL_STOCK); //AMMO: sfp_1rnd_lyspatron7_mag
+
+		};
+
+		class smgswe{
+			displayName = "SFP SMGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(sfp_cbj_ms, 225, RIFLE_STOCK); // Ammo: sfp_30Rnd_650x25mag	sfp_30Rnd_650x25mag_subsonic
+			ITEM(sfp_kpistm45, 235, RIFLE_STOCK); // Ammo: sfp_36Rnd_9mm_kpistm45	sfp_71Rnd_9mm_kpistm45
+			ITEM(sfp_kpistm45b, 220, RIFLE_STOCK); // Ammo: sfp_36Rnd_9mm_kpistm45
+			ITEM(sfp_mp5, 280, RIFLE_STOCK); // Ammo: sfp_30Rnd_9mm_mp5
+			ITEM(sfp_mp5_rail, 320, RIFLE_STOCK); // Ammo: sfp_30Rnd_9mm_mp5_JHP
+
+		};
+		
+		class mgswe{
+			displayName = "SFP MGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
+
+			ITEM(sfp_ksp58a, 600, RIFLE_STOCK); //Ammo: sfp_50Rnd_655x55_ksp58
+			ITEM(sfp_ksp58, 650, RIFLE_STOCK); //Ammo: sfp_100Rnd_762x51_ksp58
+			ITEM(sfp_ksp58B2, 680, RIFLE_STOCK); //Ammo: sfp_249Rnd_762x51_ksp58
+			ITEM(sfp_ksp58f, 650, RIFLE_STOCK); //Ammo: sfp_50Rnd_762x51_ksp58_ap
+			ITEM(sfp_ksp90b, 550, RIFLE_STOCK); //Ammo: sfp_200Rnd_556x45_ksp90
+			ITEM(sfp_ksp90c, 580, RIFLE_STOCK); //Ammo: sfp_200Rnd_556x45_ksp90_irtracer
+			
+		};
+
+		class riflesswe{
+			displayName = "SFP Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
+			ITEM(sfp_ak5, 325, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag
+			ITEM(sfp_ak5_m203, 445, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag_plastic
+			ITEM(sfp_ak5b, 365, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag_irtracer
+			ITEM(sfp_ak5c, 380, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag_irtracer_plastic
+			ITEM(sfp_ak5c_alt, 360, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag_tracer
+			ITEM(sfp_ak5c_blk, 360, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag_tracer_plastic
+			ITEM(sfp_ak5c_m203, 460, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag
+			ITEM(sfp_ak5c_m203_blk, 460, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag
+			ITEM(sfp_ak5d, 350, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag
+			ITEM(sfp_ak5dmk2, 360, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag
+			ITEM(sfp_cga5p, 360, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag
+			ITEM(sfp_g36c, 320, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag_g36
+
+		};
+
+		class sniperriflesswe{
+			displayName = "SFP Snipers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(sfp_ak4, 400, RIFLE_STOCK); // Ammo: sfp_20Rnd_762x51_ak4
+			ITEM(sfp_ak4_m203, 530, RIFLE_STOCK); // Ammo: sfp_20Rnd_762x51_ak4_ap
+			ITEM(sfp_ak4b, 450, RIFLE_STOCK); // Ammo: sfp_20Rnd_762x51_ak4_tracer
+			ITEM(sfp_ak4b_m203, 570, RIFLE_STOCK); // Ammo: sfp_20Rnd_762x51_ak4_irtracer
+			ITEM(sfp_ak4c, 480, RIFLE_STOCK); // Ammo: sfp_20Rnd_762x51_ak4
+			ITEM(sfp_ak4d, 500, RIFLE_STOCK); // Ammo: sfp_20Rnd_762x51_ak4
+			ITEM(sfp_psg90_base, 580, RIFLE_STOCK); // Ammo: sfp_9Rnd_762x51_psg90	sfp_9Rnd_762x51_psg90_prick
+			ITEM(sfp_psg90_camo, 580, RIFLE_STOCK); // Ammo: sfp_9Rnd_762x51_psg90_tracer
+			ITEM(sfp_ag90_base, 1000, RIFLE_STOCK); // Ammo: sfp_10Rnd_127x99_ag90
+			
+		};
+
+		class launchersswe{
+			displayName = "SFP Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+			
+			ITEM(sfp_pskott68, 500, 25); 
+			ITEM(sfp_pskott86, 550, 25);
+			ITEM(sfp_rb57, 800, 25);
+			ITEM(sfp_grg48, 650, 25);
+			ITEM(sfp_grg86, 750, 25);
+			ITEM(sfp_rbs69, 500, 25);
+			
+		}; 
+
+		class launchermagazinesswe{
+			displayName = "SFP Launcher Ammo";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(sfp_grg_smoke_mag, 100, 15);
+			ITEM(sfp_grg_illum_mag, 100, 15);
+			ITEM(sfp_grg_he_mag, 300, 15);
+			ITEM(sfp_grg_heat_62_mag, 300, 15);
+			ITEM(sfp_grg_heat_66_mag, 320, 15);
+			ITEM(sfp_grg_heat_mag, 350, 15);
+			ITEM(sfp_rbs69_mag, 200, 15);
+			
+		};
+
+		class magazinesswe{
+			displayName = "SFP Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(sfp_15Rnd_9x19_Mag, 15, MZ_STOCK);
+            ITEM(sfp_17Rnd_9x19_Mag, 16, MZ_STOCK);
+            ITEM(sfp_6nd_9x29_Mag, 10, MZ_STOCK);
+            ITEM(sfp_1rnd_lyspatron7_mag, 5, MZ_STOCK);
+            ITEM(sfp_30Rnd_650x25mag, 25, MZ_STOCK);
+            ITEM(sfp_30Rnd_650x25mag_subsonic, 25, MZ_STOCK);
+            ITEM(sfp_36Rnd_9mm_kpistm45, 30, MZ_STOCK);
+            ITEM(sfp_71Rnd_9mm_kpistm45, 60, MZ_STOCK);
+            ITEM(sfp_30Rnd_9mm_mp5, 35, MZ_STOCK);
+            ITEM(sfp_30Rnd_9mm_mp5_JHP, 40, MZ_STOCK);
+            ITEM(sfp_50Rnd_655x55_ksp58, 100, MZ_STOCK);
+            ITEM(sfp_100Rnd_762x51_ksp58, 150, MZ_STOCK);
+            ITEM(sfp_249Rnd_762x51_ksp58, 200, MZ_STOCK);
+            ITEM(sfp_50Rnd_762x51_ksp58_ap, 120, MZ_STOCK);
+            ITEM(sfp_200Rnd_556x45_ksp90, 200, MZ_STOCK); 
+			ITEM(sfp_200Rnd_556x45_ksp90_irtracer, 200, MZ_STOCK);
+            ITEM(sfp_30Rnd_556x45_Stanag, 50, MZ_STOCK);
+            ITEM(sfp_30Rnd_556x45_Stanag_plastic, 50, MZ_STOCK);
+            ITEM(sfp_30Rnd_556x45_Stanag_irtracer, 50, MZ_STOCK);
+            ITEM(sfp_30Rnd_556x45_Stanag_irtracer_plastic, 50, MZ_STOCK); 			
+			ITEM(sfp_30Rnd_556x45_Stanag_tracer, 50, MZ_STOCK);
+            ITEM(sfp_30Rnd_556x45_Stanag_tracer_plastic, 50, MZ_STOCK);
+            ITEM(sfp_30Rnd_556x45_Stanag_g36, 50, MZ_STOCK);
+            ITEM(sfp_20Rnd_762x51_ak4, 60, MZ_STOCK);
+            ITEM(sfp_20Rnd_762x51_ak4_ap, 65, MZ_STOCK);
+            ITEM(sfp_20Rnd_762x51_ak4_tracer, 60, MZ_STOCK);
+            ITEM(sfp_20Rnd_762x51_ak4_irtracer, 60, MZ_STOCK);
+            ITEM(sfp_9Rnd_762x51_psg90, 80, MZ_STOCK);
+            ITEM(sfp_9Rnd_762x51_psg90_prick, 90, MZ_STOCK);
+            ITEM(sfp_9Rnd_762x51_psg90_tracer, 80, MZ_STOCK);
+            ITEM(sfp_10Rnd_127x99_ag90, 200, MZ_STOCK);
+
+		};
+
+		class pointersswe{
+			displayName = "SFP Pointers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(sfp_dbal2, 70, PN_STOCK);
+
+		};
+
+		class specialweaponsswe{
+			displayName = "SFP Special Weapons";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
+			ITEM(sfp_remington870, 300, RIFLE_STOCK); // sfp_12Gauge_8rd_Pellets
+			ITEM(sfp_remington870_chrome, 400, RIFLE_STOCK); // sfp_12Gauge_8rd_Slug
+			ITEM(sfp_remington870_wood_chrome, 400, RIFLE_STOCK);
+			ITEM(sfp_remington870_wood_blue, 400, RIFLE_STOCK);
+			
+		};
+
+		class opticsswe{
+			displayName = "SFP Optics";
+			picture = "";
+			
+			ITEM(sfp_optic_aimpoint, 150, MAGAZINE_STOCK);
+			ITEM(sfp_optic_3x_aimpoint, 250, MAGAZINE_STOCK);
+			ITEM(sfp_optic_aimpoint_t1, 150, MAGAZINE_STOCK);
+			ITEM(sfp_optic_kikarsikte09_4x, 350, MAGAZINE_STOCK);
+			ITEM(sfp_optic_kikarsikte90b_10x, 450, MAGAZINE_STOCK);
+			ITEM(sfp_optic_susat_4x, 250, MAGAZINE_STOCK);
+			
+		};
+
+		class underbarrelswe{
+	     	displayName = "SFP Bipods";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
+
+			ITEM(sfp_ksp58_snow_support, 50, 20);
+			
+		};		
+
+		//PLA
+		
+		class mgpla{
+			displayName = "PLA MGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
+
+			ITEM(LMG_mas_chi_pkm_F, 600, RIFLE_STOCK); //Ammo: 150Rnd_762x54_Box
+			ITEM(arifle_mas_qbz95_mg, 700, RIFLE_STOCK); //Ammo: 100Rnd_580x42_Mag_F
+			ITEM(arifle_mas_qbz95_cmg, 710, RIFLE_STOCK); //Ammo: 100Rnd_580x42_Mag_F
+			
+		};
+
+		class riflespla{
+			displayName = "PLA Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
+			ITEM(arifle_mas_qbz95, 325, RIFLE_STOCK); //Ammo: 30Rnd_mas_chi_580x42UW_mag
+			ITEM(arifle_mas_qbz95_UW, 345, RIFLE_STOCK); //Ammo: 30Rnd_mas_chi_580x42SD_mag
+			ITEM(arifle_mas_qbz95_gl, 465, RIFLE_STOCK); //Ammo: 30Rnd_mas_chi_580x42UW_mag
+			ITEM(arifle_mas_qbz95_cqb, 340, RIFLE_STOCK); //Ammo: 30Rnd_mas_chi_580x42UW_mag
+
+		};
+
+		class sniperriflespla{
+			displayName = "PLA Snipers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(arifle_mas_qbz95_snp, 580, RIFLE_STOCK); // Ammo: 20Rnd_mas_chi_650x39SD_mag
+			ITEM(arifle_mas_qbz95_csnp, 600, RIFLE_STOCK); // Ammo: 20Rnd_mas_chi_650x39SD_mag
+			ITEM(srifle_mas_chi_GM6_F, 900, RIFLE_STOCK); // Ammo: 5Rnd_mas_chi_127x108_Mag	5Rnd_mas_chi_127x108_APDS_Mag
+			
+		};
+
+		class launcherspla{
+			displayName = "PLA Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+			
+			ITEM(launch_mas_chi_RPG32_F, 500, 25); 
+			ITEM(launch_mas_chi_Strela_F, 550, 25); // Strela_mas_chi
+			
+		}; 
+
+		class launchermagazinespla{
+			displayName = "PLA Launcher Ammo";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(Strela_mas_chi, 300, 15);
+			
+		};
+
+		class magazinespla{
+			displayName = "PLA Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(30Rnd_mas_chi_580x42UW_mag, 55, MZ_STOCK);
+            ITEM(30Rnd_mas_chi_580x42SD_mag, 60, MZ_STOCK);
+            ITEM(20Rnd_mas_chi_650x39SD_mag, 90, MZ_STOCK);
+            ITEM(5Rnd_mas_chi_127x108_Mag, 150, MZ_STOCK);
+            ITEM(5Rnd_mas_chi_127x108_APDS_Mag, 200, MZ_STOCK);
+
+		};
+
+		// BWMod
+		class handgunsbwa{
+			displayName = "BWMod Handguns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
+
+			ITEM(BWA3_P12, 110, PISTOL_STOCK); //AMMO: BWA3_12Rnd_45ACP_P12
+			ITEM(BWA3_P2A1, 50, PISTOL_STOCK); //AMMO: BWA3_1Rnd_Flare_Illum
+			ITEM(BWA3_P8, 110, PISTOL_STOCK); //AMMO: BWA3_15Rnd_9x19_P8
+
+		};
+
+		class smgbwa{
+			displayName = "BWMod SMGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(BWA3_MP7, 225, RIFLE_STOCK); // Ammo: BWA3_40Rnd_46x30_MP7 BWA3_20Rnd_46x30_MP7
+
+		};
+		
+		class mgbwa{
+			displayName = "BWMod MGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
+
+			ITEM(BWA3_MG3, 600, RIFLE_STOCK); //Ammo: BWA3_120Rnd_762x51	BWA3_120Rnd_762x51_Tracer
+			ITEM(BWA3_MG4, 650, RIFLE_STOCK); //Ammo: BWA3_200Rnd_556x45	BWA3_200Rnd_556x45_Tracer
+			ITEM(BWA3_MG5, 750, RIFLE_STOCK); //Ammo: BWA3_120Rnd_762x51_soft	BWA3_120Rnd_762x51_Tracer_soft
+			ITEM(BWA3_MG5_tan, 750, RIFLE_STOCK); //Ammo: BWA3_120Rnd_762x51_soft	BWA3_120Rnd_762x51_Tracer_soft
+			
+		};
+
+		class riflesbwa{
+			displayName = "BWMod Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
+			ITEM(BWA3_G36A1, 325, RIFLE_STOCK); //Ammo: BWA3_30Rnd_556x45_G36
+			ITEM(BWA3_G36A1_green, 325, RIFLE_STOCK); //Ammo: BWA3_30Rnd_556x45_G36_Tracer
+			ITEM(BWA3_G36A1_tan, 325, RIFLE_STOCK); //Ammo: BWA3_30Rnd_556x45_G36_SD
+			ITEM(BWA3_G36A2, 330, RIFLE_STOCK); //Ammo: BWA3_30Rnd_556x45_G36_Tracer_Dim
+			ITEM(BWA3_G36A2_green, 330, RIFLE_STOCK); //Ammo: BWA3_30Rnd_556x45_G36_AP
+			ITEM(BWA3_G36A2_tan, 330, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A3, 340, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A3_green, 340, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A3_tan, 340, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A1_AG40, 410, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A1_AG40_green, 410, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A1_AG40_tan, 410, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A2_AG40, 420, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A2_AG40_green, 420, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A2_AG40_tan, 420, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A3_AG40, 430, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A3_AG40_green, 430, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G36A3_AG40_tan, 430, RIFLE_STOCK);
+			ITEM(BWA3_G36KA0, 300, RIFLE_STOCK);
+			ITEM(BWA3_G36KA0_green, 300, RIFLE_STOCK);
+			ITEM(BWA3_G36KA0_tan, 300, RIFLE_STOCK);
+			ITEM(BWA3_G36KA1, 310, RIFLE_STOCK);
+			ITEM(BWA3_G36KA1_green, 310, RIFLE_STOCK);
+			ITEM(BWA3_G36KA1_tan, 310, RIFLE_STOCK);
+			ITEM(BWA3_G36KA2, 320, RIFLE_STOCK);
+			ITEM(BWA3_G36KA2_green, 320, RIFLE_STOCK);
+			ITEM(BWA3_G36KA2_tan, 320, RIFLE_STOCK);
+			ITEM(BWA3_G36KA3, 330, RIFLE_STOCK);
+			ITEM(BWA3_G36KA3_green, 330, RIFLE_STOCK);
+			ITEM(BWA3_G36KA3_tan, 330, RIFLE_STOCK);
+			ITEM(BWA3_G36KA4, 340, RIFLE_STOCK);
+			ITEM(BWA3_G36KA4_green, 340, RIFLE_STOCK);
+			ITEM(BWA3_G36KA4_tan, 340, RIFLE_STOCK);
+			ITEM(BWA3_G38, 400, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G38_tan, 400, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G38_AG40, 500, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G38_AG40_tan, 500, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G38C, 390, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G38C_tan, 390, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G38K, 395, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G38K_tan, 395, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G38K_AG40, 510, RIFLE_STOCK); //Ammo: 
+			ITEM(BWA3_G38K_AG40_tan, 510, RIFLE_STOCK); //Ammo: 
+			
+		};
+
+		class sniperriflesbwa{
+			displayName = "BWMod Snipers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(BWA3_G27, 670, RIFLE_STOCK); // Ammo: BWA3_20Rnd_762x51_G28_LR	BWA3_20Rnd_762x51_G28_SD
+			ITEM(BWA3_G27_tan, 670, RIFLE_STOCK); // Ammo: BWA3_20Rnd_762x51_G28_Tracer
+			ITEM(BWA3_G27_AG40, 780, RIFLE_STOCK); // Ammo: BWA3_20Rnd_762x51_G28_AP
+			ITEM(BWA3_G28, 680, RIFLE_STOCK); // Ammo: BWA3_20Rnd_762x51_G28 BWA3_20Rnd_762x51_G28_Tracer_Dim
+			ITEM(BWA3_G29, 750, RIFLE_STOCK); // Ammo: BWA3_10Rnd_86x70_G29	BWA3_10Rnd_86x70_G29_Tracer
+			ITEM(BWA3_G82, 1000, RIFLE_STOCK); // Ammo: BWA3_10Rnd_127x99_G82	BWA3_10Rnd_127x99_G82_AP
+
+		};
+
+		class launchersbwa{
+			displayName = "BWMod Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+			
+			ITEM(BWA3_Bunkerfaust_Loaded, 500, 25); 
+			ITEM(BWA3_PzF3_Tandem_Loaded, 600, 25); 
+			ITEM(BWA3_RGW90_Loaded, 700, 25); 
+			ITEM(BWA3_CarlGustav, 800, 25); 
+			ITEM(BWA3_Fliegerfaust, 700, 25); 
+			
+		}; 
+
+		class launchermagazinesbwa{
+			displayName = "BWMod Launcher Ammo";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(BWA3_CarlGustav_HE, 150, 15);
+			ITEM(BWA3_CarlGustav_HEAT, 250, 15);
+			ITEM(BWA3_CarlGustav_HEDP, 300, 15);
+			ITEM(BWA3_CarlGustav_Illum, 50, 15);
+			ITEM(BWA3_CarlGustav_Smoke, 50, 15);
+			ITEM(BWA3_Fliegerfaust_Mag, 350, 15);
+			
+		};
+
+		class muzzlesbwa{
+			displayName = "BWMod Muzzles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
+			
+			ITEM(bwa3_muzzle_snds_rotex_iia, 80, MZ_STOCK);
+			ITEM(bwa3_muzzle_snds_rotex_monoblock, 80, MZ_STOCK);
+			ITEM(bwa3_muzzle_snds_qdss, 80, MZ_STOCK);
+			ITEM(bwa3_muzzle_snds_qdss_green, 80, MZ_STOCK);
+			ITEM(bwa3_muzzle_snds_qdss_tan, 80, MZ_STOCK);
+			ITEM(bwa3_muzzle_snds_rotex_iiic, 80, MZ_STOCK);
+			ITEM(bwa3_muzzle_snds_rotex_iiic_green, 80, MZ_STOCK);
+			ITEM(bwa3_muzzle_snds_rotex_iiic_tan, 80, MZ_STOCK);
+			ITEM(bwa3_muzzle_snds_rotex_ii, 80, MZ_STOCK);
+			
+		};
+
+		class magazinesbwa{
+			displayName = "BWMod Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(BWA3_12Rnd_45ACP_P12, 15, MZ_STOCK);
+            ITEM(BWA3_1Rnd_Flare_Illum, 10, MZ_STOCK);
+            ITEM(BWA3_15Rnd_9x19_P8, 15, MZ_STOCK);
+            ITEM(BWA3_40Rnd_46x30_MP7, 40, MZ_STOCK);
+            ITEM(BWA3_20Rnd_46x30_MP7, 25, MZ_STOCK);
+            ITEM(BWA3_120Rnd_762x51, 80, MZ_STOCK);
+            ITEM(BWA3_120Rnd_762x51_Tracer, 80, MZ_STOCK);
+            ITEM(BWA3_200Rnd_556x45, 120, MZ_STOCK);
+            ITEM(BWA3_200Rnd_556x45_Tracer, 120, MZ_STOCK);
+            ITEM(BWA3_120Rnd_762x51_soft, 80, MZ_STOCK);
+            ITEM(BWA3_120Rnd_762x51_Tracer_soft, 80, MZ_STOCK);
+            ITEM(BWA3_30Rnd_556x45_G36, 45, MZ_STOCK);
+            ITEM(BWA3_30Rnd_556x45_G36_Tracer, 45, MZ_STOCK);
+            ITEM(BWA3_30Rnd_556x45_G36_SD, 45, MZ_STOCK);
+            ITEM(BWA3_30Rnd_556x45_G36_Tracer_Dim, 45, MZ_STOCK); 
+			ITEM(BWA3_30Rnd_556x45_G36_AP, 65, MZ_STOCK);
+            ITEM(BWA3_20Rnd_762x51_G28_LR, 55, MZ_STOCK);
+            ITEM(BWA3_20Rnd_762x51_G28_SD, 80, MZ_STOCK);
+            ITEM(BWA3_20Rnd_762x51_G28_Tracer, 80, MZ_STOCK);
+            ITEM(BWA3_20Rnd_762x51_G28_AP, 150, MZ_STOCK); 
+            ITEM(BWA3_20Rnd_762x51_G28, 80, MZ_STOCK); 
+			ITEM(BWA3_20Rnd_762x51_G28_Tracer_Dim, 80, MZ_STOCK);
+            ITEM(BWA3_10Rnd_86x70_G29, 90, MZ_STOCK);
+            ITEM(BWA3_10Rnd_86x70_G29_Tracer, 90, MZ_STOCK);
+            ITEM(BWA3_10Rnd_127x99_G82, 150, MZ_STOCK);
+            ITEM(BWA3_10Rnd_127x99_G82_AP, 250, MZ_STOCK); 
+
+		};
+
+		class pointersbwa{
+			displayName = "BWMod Pointers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(bwa3_acc_varioray_irlaser_black, 70, PN_STOCK);
+			ITEM(bwa3_acc_varioray_irlaser, 70, PN_STOCK);
+			ITEM(bwa3_acc_llm01_irlaser, 70, PN_STOCK);
+			ITEM(bwa3_acc_llm01_irlaser_green, 70, PN_STOCK);
+			ITEM(bwa3_acc_llm01_irlaser_tan, 70, PN_STOCK);
+			ITEM(bwa3_acc_llm01_irlaser_underbarrel, 70, PN_STOCK);
+
+		};
+
+		class opticsbwa{
+			displayName = "BWMod Optics";
+			picture = "";
+			
+			ITEM(bwa3_optic_pmii_shortdotcc, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_pmii_dmr, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_pmii_dmr_microt1_front, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_pmii_dmr_microt1_rear, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_m5xi_msr, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_m5xi_msr_microt2, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_m5xi_tremor3, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_m5xi_tremor3_microt2, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_hensoldt, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_compm2, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_compm2_green, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_compm2_tan, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_microt1, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_microt2, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_eotech552, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_eotech552_green, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_eotech552_tan, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_eotech, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_eotech_sand, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_eotech_sand_mag_off, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_eotech_mag_off, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_rsas, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_rsas_brown, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_rsas_green, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_rsas_riser, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_rsas_sand, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_rsas_tan, 150, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30_brown, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30_microt2, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30_microt2_brown, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30_rsas, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30_rsas_brown, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30_rsas_brown_pip, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30i, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30i_microt2, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30i_microt2_sand, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30i_rsas, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30i_rsas_sand, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_zo4x30i_sand, 250, MAGAZINE_STOCK);
+			ITEM(bwa3_optic_nsa80, 350, MAGAZINE_STOCK);
+			
+		};
+
+		class underbarrelbwa{
+	     	displayName = "BWMod Bipods";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
+
+			ITEM(bwa3_bipod_harris, 50, 20);
+			ITEM(bwa3_bipod_harris_green, 50, 20);
+			ITEM(bwa3_bipod_harris_tan, 50, 20);
+			ITEM(bwa3_bipod_atlas, 50, 20);
+			ITEM(bwa3_bipod_mg3, 50, 20);
+			
+		};
+		
+		//3CBBAF
+		class handguns3cbbaf{
+			displayName = "3CBBAF Handguns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
+
+			ITEM(UK3CB_BAF_L105A1, 110, PISTOL_STOCK); //AMMO: UK3CB_BAF_9_13Rnd
+			ITEM(UK3CB_BAF_L105A2, 110, PISTOL_STOCK); //AMMO: UK3CB_BAF_9_15Rnd
+			ITEM(UK3CB_BAF_L107A1, 110, PISTOL_STOCK); //AMMO: UK3CB_BAF_9_13Rnd
+			ITEM(UK3CB_BAF_L117A2, 110, PISTOL_STOCK); //AMMO: UK3CB_BAF_9_15Rnd
+			ITEM(UK3CB_BAF_L131A1, 120, PISTOL_STOCK); //AMMO: UK3CB_BAF_9_17Rnd
+			ITEM(UK3CB_BAF_L9A1, 110, PISTOL_STOCK); //AMMO: UK3CB_BAF_9_13Rnd
+			
+		};
+
+		class smg3cbbaf{
+			displayName = "3CBBAF SMGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(UK3CB_BAF_L91A1, 225, RIFLE_STOCK); // Ammo: UK3CB_BAF_9_30Rnd
+			ITEM(UK3CB_BAF_L92A1, 250, RIFLE_STOCK); // Ammo: UK3CB_BAF_9_30Rnd
+
+		};
+		
+		class mg3cbbaf{
+			displayName = "3CBBAF MGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
+
+			ITEM(UK3CB_BAF_L110_762, 600, RIFLE_STOCK); //Ammo: UK3CB_BAF_762_100Rnd UK3CB_BAF_762_100Rnd_T 
+			ITEM(UK3CB_BAF_L110A1, 650, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_100Rnd
+			ITEM(UK3CB_BAF_L110A2, 650, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_100Rnd_T
+			ITEM(UK3CB_BAF_L110A2RIS, 670, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_200Rnd
+			ITEM(UK3CB_BAF_L110A3, 680, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_200Rnd_T
+			ITEM(UK3CB_BAF_L7A2, 580, RIFLE_STOCK); //Ammo: UK3CB_BAF_762_200Rnd UK3CB_BAF_762_200Rnd_T
+			ITEM(UK3CB_BAF_L86A2, 530, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd 
+			
+		};
+
+		class rifles3cbbaf{
+			displayName = "3CBBAF Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
+			ITEM(UK3CB_BAF_L103A2, 330, RIFLE_STOCK); //Ammo: 
+			ITEM(UK3CB_BAF_L119A1, 365, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L119A1_CQB, 355, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd_T
+			ITEM(UK3CB_BAF_L119A1_RIS, 370, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L119A1_UKUGL, 450, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L22, 300, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L22A2, 310, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A2, 340, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A2_EMAG, 340, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A2_RIS, 360, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A2_RIS_G, 360, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A2_RIS_D, 360, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A2_RIS_W, 360, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A2_UGL, 460, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A2_UGL_HWS, 480, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A3, 380, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L85A3_UGL, 500, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+			ITEM(UK3CB_BAF_L98A2, 300, RIFLE_STOCK); //Ammo: UK3CB_BAF_556_30Rnd
+
+		};
+
+		class sniperrifles3cbbaf{
+			displayName = "3CBBAF Snipers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(UK3CB_BAF_L115A3, 700, RIFLE_STOCK); // Ammo: UK3CB_BAF_338_5Rnd
+			ITEM(UK3CB_BAF_L115A3_BL, 700, RIFLE_STOCK); // Ammo: UK3CB_BAF_338_5Rnd_Tracer
+			ITEM(UK3CB_BAF_L115A3_DE, 700, RIFLE_STOCK); // Ammo: UK3CB_BAF_338_5Rnd
+			ITEM(UK3CB_BAF_L115A3_Ghillie, 730, RIFLE_STOCK); // Ammo: UK3CB_BAF_338_5Rnd
+			ITEM(UK3CB_BAF_L115A3_BL_Ghillie, 730, RIFLE_STOCK); // Ammo: UK3CB_BAF_338_5Rnd
+			ITEM(UK3CB_BAF_L115A3_DE_Ghillie, 730, RIFLE_STOCK); // Ammo: UK3CB_BAF_338_5Rnd
+			ITEM(UK3CB_BAF_L118A1_Covert, 580, RIFLE_STOCK); // Ammo: UK3CB_BAF_762_L42A1_10Rnd
+			ITEM(UK3CB_BAF_L118A1_Covert_BL, 580, RIFLE_STOCK); // Ammo: UK3CB_BAF_762_L42A1_10Rnd_T
+			ITEM(UK3CB_BAF_L118A1_Covert_DE, 580, RIFLE_STOCK); // Ammo: UK3CB_BAF_762_L42A1_10Rnd
+			ITEM(UK3CB_BAF_L129A1, 550, RIFLE_STOCK); // Ammo: UK3CB_BAF_762_L42A1_20Rnd 
+			ITEM(UK3CB_BAF_L135A1, 1000, RIFLE_STOCK); // Ammo: vanilla 5rnd .50
+			ITEM(UK3CB_BAF_L1A1, 450, RIFLE_STOCK); // Ammo: UK3CB_BAF_762_L42A1_20Rnd_T
+			ITEM(UK3CB_BAF_L1A1_Wood, 460, RIFLE_STOCK); // Ammo: UK3CB_BAF_762_L42A1_20Rnd
+			ITEM(UK3CB_BAF_L86A3, 430, RIFLE_STOCK); // Ammo: UK3CB_BAF_556_30Rnd
+			
+		};
+
+		class launchers3cbbaf{
+			displayName = "3CBBAF Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+			
+			ITEM(UK3CB_BAF_AT4_CS_AT_Launcher, 500, 25); 
+			ITEM(UK3CB_BAF_AT4_CS_AP_Launcher, 500, 25); 
+			ITEM(UK3CB_BAF_NLAW_Launcher, 700, 25);  
+			ITEM(UK3CB_BAF_Javelin_Slung_Tube, 800, 25); 
+			
+		}; 
+
+		class riflegrenades3cbbaf{
+			displayName = "3CBBAF Rifle Grenades";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(UK3CB_BAF_1Rnd_HE_Grenade_Shell, 70, 25);
+			ITEM(UK3CB_BAF_1Rnd_HEDP_Grenade_Shell, 70, 25);
+			ITEM(UK3CB_BAF_1Rnd_Smoke_Grenade_shell, 50, 25);
+			ITEM(UK3CB_BAF_UGL_FlareWhite_F, 50, 25);
+			
+		};
+
+		class muzzles3cbbaf{
+			displayName = "3CBBAF Muzzles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
+			
+			ITEM(uk3cb_baf_silencer_l110, 80, MZ_STOCK);
+			ITEM(uk3cb_baf_sffh, 80, MZ_STOCK);
+			ITEM(uk3cb_baf_silencer_l115a3, 80, MZ_STOCK);
+			ITEM(uk3cb_baf_silencer_l85, 80, MZ_STOCK);
+			ITEM(uk3cb_baf_bayonet_l3a1, 100, MZ_STOCK);
+			ITEM(uk3cb_baf_silencer_l91a1, 80, MZ_STOCK);
+			
+		};
+
+		class magazines3cbbaf{
+			displayName = "3CBBAF Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+			
+			ITEM(UK3CB_BAF_9_13Rnd, 12, MZ_STOCK);
+            ITEM(UK3CB_BAF_9_15Rnd, 15, MZ_STOCK);
+            ITEM(UK3CB_BAF_9_17Rnd, 18, MZ_STOCK);
+            ITEM(UK3CB_BAF_9_30Rnd, 25, MZ_STOCK);
+            ITEM(UK3CB_BAF_762_100Rnd, 80, MZ_STOCK);
+            ITEM(UK3CB_BAF_762_100Rnd_T, 80, MZ_STOCK);
+            ITEM(UK3CB_BAF_762_200Rnd, 150, MZ_STOCK);
+            ITEM(UK3CB_BAF_762_200Rnd_T, 150, MZ_STOCK);
+            ITEM(UK3CB_BAF_556_100Rnd, 70, MZ_STOCK);
+            ITEM(UK3CB_BAF_556_100Rnd_T, 70, MZ_STOCK);
+            ITEM(UK3CB_BAF_556_200Rnd, 120, MZ_STOCK);
+            ITEM(UK3CB_BAF_556_200Rnd_T, 120, MZ_STOCK);
+            ITEM(UK3CB_BAF_556_30Rnd, 50, MZ_STOCK);
+            ITEM(UK3CB_BAF_556_30Rnd_T, 50, MZ_STOCK);
+            ITEM(UK3CB_BAF_338_5Rnd, 60, MZ_STOCK); 
+			ITEM(UK3CB_BAF_338_5Rnd_Tracer, 60, MZ_STOCK);
+            ITEM(UK3CB_BAF_762_L42A1_10Rnd, 90, MZ_STOCK);
+            ITEM(UK3CB_BAF_762_L42A1_10Rnd_T, 90, MZ_STOCK);
+            ITEM(UK3CB_BAF_762_L42A1_20Rnd, 130, MZ_STOCK);
+            ITEM(UK3CB_BAF_762_L42A1_20Rnd_T, 130, MZ_STOCK); 
+
+		};
+
+		class pointers3cbbaf{
+			displayName = "3CBBAF Pointers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(uk3cb_baf_llm_flashlight_black, 70, PN_STOCK);
+			ITEM(uk3cb_baf_llm_flashlight_tan, 70, PN_STOCK);
+			ITEM(uk3cb_baf_llm_ir_black, 70, PN_STOCK);
+			ITEM(uk3cb_baf_llm_ir_tan, 70, PN_STOCK);
+
+		};
+
+		class specialweapons3cbbaf{
+			displayName = "3CBBAF Special Weapons";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			
+			ITEM(UK3CB_BAF_L128A1, 300, RIFLE_STOCK); // UK3CB_BAF_12G_Pellets	UK3CB_BAF_12G_Slugs
+
+		};
+
+		class optics3cbbaf{
+			displayName = "3CBBAF Optics";
+			picture = "";
+			
+			ITEM(rksl_optic_eot552, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_eot552_c, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_eot552x, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_eot552x_c, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_lds, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_lds_c, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_rmr_ms19, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_rmr_ms19_fde, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_rmr_rm33, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_rmr_rm33_fde, 150, MAGAZINE_STOCK);
+			ITEM(rksl_optic_pmii_312, 250, MAGAZINE_STOCK);
+			ITEM(rksl_optic_pmii_312_des, 250, MAGAZINE_STOCK);
+			ITEM(rksl_optic_pmii_312_sunshade, 250, MAGAZINE_STOCK);
+			ITEM(rksl_optic_pmii_312_sunshade_des, 350, MAGAZINE_STOCK);
+			ITEM(rksl_optic_pmii_312_sunshade_wdl, 350, MAGAZINE_STOCK);
+			ITEM(rksl_optic_pmii_312_wdl, 250, MAGAZINE_STOCK);
+			ITEM(rksl_optic_pmii_525, 350, MAGAZINE_STOCK);
+			ITEM(rksl_optic_pmii_525_des, 350, MAGAZINE_STOCK);
+			ITEM(rksl_optic_pmii_525_wdl, 350, MAGAZINE_STOCK);
+			
+		};
+
+		class underbarrel3cbbaf{
+	     	displayName = "3CBBAF Grips";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
+
+			ITEM(uk3cb_underbarrel_acc_bipod, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_afg, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_afg_d, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_afg_g, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_afg_t, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_afg_w, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_grippod, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_grippod_d, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_grippod_g, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_grippod_t, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_grippod_w, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_fgrip, 50, 20);
+			ITEM(uk3cb_underbarrel_acc_fgrip_bipod, 50, 20);
+			
+		};		
+
 	};
 
 	class stores 
@@ -12901,14 +13634,9 @@ class cfgHALsStore
 				"sniperriflesemp",
 				"launchersemp",
 				"launchermagazinesemp",
-				"riflegrenadesemp",
-				"muzzlesemp",
-				"magazinesemp", 
-				"pointersemp",
-				"specialweaponsemp",
-				"miscemp",
-				"opticsemp",
-				"underbarrelemp"
+				"magazinesemp",
+				"opticsemp"
+
 			};
 		};
 
@@ -12958,7 +13686,7 @@ class cfgHALsStore
 
 		class ww2mod
 		{
-			displayName = "Arms Dealer Store";
+			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
 				"handgunsifaa",
 				"smgifaa",
@@ -12978,9 +13706,9 @@ class cfgHALsStore
 			};
 		};
 
-		class ww2cdlcmod
+		class ww2cdlc
 		{
-			displayName = "Arms Dealer Store";
+			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
 				"handgunsspe",
 				"smgspe",
@@ -12995,14 +13723,13 @@ class cfgHALsStore
 				"pointersspe",
 				"specialweaponsspe",
 				"miscspe",
-				"opticsspe",
 				"underbarrelspe"
 			};
 		};
 		
 		class unsstore
 		{
-			displayName = "Arms Dealer Store";
+			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
 				"handgunsuns",
 				"smguns",
@@ -13021,7 +13748,7 @@ class cfgHALsStore
 				"underbarreluns"
 			};
 		};
-		class OPTRE
+		class optre
 		{
 		  displayName = $STR_ARMS_DEALER_STORE;
 		  categories[] = {
@@ -13040,6 +13767,108 @@ class cfgHALsStore
 			      "mischalo",
 			      "opticshalo",
 			      "underbarrelhalo"
+			};
+		};
+		class ffaastock
+		{
+		  displayName = $STR_ARMS_DEALER_STORE;
+		  categories[] = {
+			      "handgunsffaa",
+			      "smgffaa",
+			      "mgffaa",
+			      "riflesffaa",
+			      "sniperriflesffaa",
+			      "launchersffaa",
+			      "muzzlesffaa",
+			      "magazinesffaa", 
+			      "pointersffaa",
+			      "opticsffaa",
+			      "underbarrelffaa"
+			};
+		};
+		class italystock
+		{
+		  displayName = $STR_ARMS_DEALER_STORE;
+		  categories[] = {
+			      "handgunsitaly",
+			      "mgitaly",
+			      "riflesitaly",
+			      "sniperriflesitaly",
+			      "launchersitaly",
+			      "launchermagazinesitaly",
+			      "muzzlesitaly",
+			      "magazinesitaly", 
+			      "pointersitaly",
+			      "specialweaponsitaly",
+			      "opticsitaly",
+			      "underbarrelitaly"
+			};
+		};
+		class sfpstock
+		{
+		  displayName = $STR_ARMS_DEALER_STORE;
+		  categories[] = {
+			      "handgunsswe",
+			      "smgswe",
+			      "mgswe",
+			      "riflesswe",
+			      "sniperriflesswe",
+			      "launchersswe",
+			      "launchermagazinesswe",
+			      "magazinesswe", 
+			      "pointersswe",
+			      "specialweaponsswe",
+			      "opticsswe",
+			      "underbarrelswe"
+			};
+		};
+		class plastock
+		{
+		  displayName = $STR_ARMS_DEALER_STORE;
+		  categories[] = {
+			      "mgpla",
+			      "riflespla",
+			      "sniperriflespla",
+			      "launcherspla",
+			      "launchermagazinespla",
+			      "magazinespla"
+			};
+		};
+		class bwastock
+		{
+		  displayName = $STR_ARMS_DEALER_STORE;
+		  categories[] = {
+			      "handgunsbwa",
+			      "smgbwa",
+			      "mgbwa",
+			      "riflesbwa",
+			      "sniperriflesbwa",
+			      "launchersbwa",
+			      "launchermagazinesbwa",
+			      "muzzlesbwa",
+			      "magazinesbwa", 
+			      "pointersbwa",
+			      "opticsbwa",
+			      "underbarrelbwa"
+			};
+		};
+		class 3cbbafstock
+		{
+		  displayName = $STR_ARMS_DEALER_STORE;
+		  categories[] = {
+			      "handguns3cbbaf",
+			      "smg3cbbaf",
+			      "mg3cbbaf",
+			      "rifles3cbbaf",
+			      "sniperrifles3cbbaf",
+			      "launchers3cbbaf",
+			      "riflegrenades3cbbaf",
+			      "muzzles3cbbaf",
+			      "magazines3cbbaf", 
+			      "pointers3cbbaf",
+			      "specialweapons3cbbaf",
+			      "optics3cbbaf",
+			      "underbarrel3cbbaf"
 			};
 		};
 	};
