@@ -31,7 +31,10 @@ try {
 	if (_traderType isEqualTo []) then {throw ["No Trader type", __LINE__]};
 
 	{
-		if (!isClass (configFile >> "cfgHALsAddons" >> "cfgHALsStore" >> "stores" >> _x)) then {throw ["Invalid Trader type", __LINE__]};
+		if (!isClass (configFile >> "cfgHALsAddons" >> "cfgHALsStore" >> "stores" >> _x)) then {
+			throw ["Invalid Trader type", __LINE__];
+			diag_log format ["Broken Entry: %1. Full Entry: %2", _x, _traderType];
+		};
 	} forEach _traderType;
 
 	//private _type = {typeOf _trader isKindOf [_x, configFile >> "cfgVehicles"]} count ["CAManBase", "Car_F", "ReammoBox_F"];
