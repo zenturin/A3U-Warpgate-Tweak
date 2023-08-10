@@ -89,6 +89,10 @@ if ([["bwa3_common"]] call _has_addon) then { // BWA3
     _modsets pushBack "bwastock";
 };
 
+if ([["UK3CB_BAF_Weapons", "UK3CB_BAF_Vehicles", "UK3CB_BAF_Units_Common", "UK3CB_BAF_Equipment"]] call _has_addon) then { // 3CBBAF
+    _modsets pushBack "3cbbafstock";
+};
+
 if ([["rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor"]] call _has_addon) then { // rhs
     _modsets pushBack "rhs";
 };
