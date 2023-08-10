@@ -7264,9 +7264,6 @@ class cfgHALsStore
 			ITEM(3as_optic_reflex_dc15c, 60, MAGAZINE_STOCK);
 			ITEM(3as_optic_dc15l, 60, MAGAZINE_STOCK);
 			ITEM(3as_optic_holo_dc15s, 60, MAGAZINE_STOCK);
-			ITEM(ls_acc_dcholosight_green, 60, MAGAZINE_STOCK);
-			ITEM(ls_acc_dcholosight_red, 60, MAGAZINE_STOCK);
-			ITEM(ls_acc_dcholosight_yellow, 60, MAGAZINE_STOCK);
 			ITEM(3as_optic_vk38x, 70, MAGAZINE_STOCK);
 			ITEM(3as_optic_scope_westarm5, 70, MAGAZINE_STOCK);
 			

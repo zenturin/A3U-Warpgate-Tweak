@@ -69,23 +69,23 @@ if ([["CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_C
     _modsets pushBack "cup";
 };
 
-if ([["ffaa_data"]] call _has_addon) then { // ffaa
+if (["ffaa_data"] call _has_addon) then { // ffaa
     _modsets pushBack "ffaastock";
 };
 
-if ([["ASZ_Weapons_A3"]] call _has_addon) then { // pedagne
+if (["ASZ_Weapons_A3"] call _has_addon) then { // pedagne
     _modsets pushBack "italystock";
 };
 
-if ([["sfp_soldiers"]] call _has_addon) then { // sfp
-    _modsets pushBack "spfstock";
+if (["sfp_soldiers"] call _has_addon) then { // sfp
+    _modsets pushBack "sfpstock";
 };
 
-if ([["mas_chi_army"]] call _has_addon) then { // pla
+if (["mas_chi_army"] call _has_addon) then { // pla
     _modsets pushBack "plastock";
 };
 
-if ([["bwa3_common"]] call _has_addon) then { // BWA3
+if (["bwa3_common"] call _has_addon) then { // BWA3
     _modsets pushBack "bwastock";
 };
 
