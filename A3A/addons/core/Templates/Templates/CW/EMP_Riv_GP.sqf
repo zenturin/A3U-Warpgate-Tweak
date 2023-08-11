@@ -145,8 +145,8 @@ _loadoutData set ["items_crew_extras", []];
 _loadoutData set ["items_unarmed_extras", []];
 
 _loadoutData set ["rifles", [
-	["JMSLLTE_dh17rifle", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_60Rnd_Mag"], [], ""],
-	["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
+	["JMSLLTE_dh17rifle", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_60Rnd_Mag"], [], ""],
+	["JMSLLTE_dh17", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
 ]];
 _loadoutData set ["tunedRifles", [
 	["JMSLLTE_a280", "", "", "jmsllte_a280_holo_scope",  ["JMSLLTE_A280_30rnd_Mag"], [], ""],
@@ -160,8 +160,8 @@ _loadoutData set ["enforcerRifles", [
 	["JMSLLTE_a300c", "", "", "jmsllte_a300_bl_scope",  ["JMSLLTE_A300_15rnd_Mag"], [], ""]
 ]];
 _loadoutData set ["carbines", [
-	["JMSLLTE_dh17rifle", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_60Rnd_Mag"], [], ""],
-	["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
+	["JMSLLTE_dh17rifle", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_60Rnd_Mag"], [], ""],
+	["JMSLLTE_dh17", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
 ]];
 _loadoutData set ["grenadeLaunchers", [
 	["SWLW_WestarM5_UGL", "", "", "", ["SWLW_WestarM5_standard_Mag"], ["SWLW_WestarM5_g_Mag"], ""],
