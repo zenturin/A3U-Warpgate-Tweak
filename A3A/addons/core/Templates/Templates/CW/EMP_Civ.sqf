@@ -124,12 +124,7 @@ _loadoutData set ["pressUniforms", _pressUniforms];
 _loadoutData set ["workerUniforms", _workerUniforms];
 _loadoutData set ["pressVests", ["V_Press_F"]];
 _loadoutData set ["helmets", _civHats];
-private _pressHelmets = if (_hasLawsOfWar) then {
-    ["H_Cap_press", "H_PASGT_basic_blue_press_F", "H_PASGT_neckprot_blue_press_F"];
-} else {
-    ["H_Cap_press"];
-};
-_loadoutData set ["pressHelmets", _pressHelmets];
+_loadoutData set ["pressHelmets", _civHats];
 
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
