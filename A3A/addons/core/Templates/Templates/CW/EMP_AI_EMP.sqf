@@ -358,8 +358,8 @@ _policeLoadoutData set ["uniforms", ["JMSLLTE_EmpOfficer_black_F_CombatUniform"]
 _policeLoadoutData set ["vests", ["JMSLLTE_Officerrank_navy_lt_armor", "JMSLLTE_Officerrank_lt_armor"]];
 _policeLoadoutData set ["helmets", ["JMSLLTE_EmpOfficerCap_black_helmet"]];
 _policeLoadoutData set ["smgs", [
-["JMSLLTE_dh17rifle", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_60Rnd_Mag"], [], ""],
-["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
+["JMSLLTE_dh17rifle", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_60Rnd_Mag"], [], ""],
+["JMSLLTE_dh17", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
 ]];
 _policeLoadoutData set ["sidearms", [
 ["JMSLLTE_se14pistol", "", "", "", ["JMSLLTE_SE14_30rnd_Mag"], [], ""]
@@ -391,8 +391,8 @@ _militiaLoadoutData set ["grenadeLaunchers", [
 ["SWLW_DC15A_ugl", "", "", "", ["SWLW_DC15A_Mag"], ["SWLW_DC15A_UGL_Mag", "SWLW_DC15A_UGL_smoke_white_Mag", "SWLW_DC15A_UGL_flare_white_Mag"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
-["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""],
-["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""],
+["JMSLLTE_dh17", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""],
+["JMSLLTE_dh17", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""],
 ["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""],
 ["SWLW_DP20", "", "", "", ["SWLW_DP20_Mag"], [], ""]
 ]];
@@ -427,7 +427,7 @@ _crewLoadoutData set ["uniforms", ["JMSLLTE_EmpNavyCrew_black_F_CombatUniform"]]
 _crewLoadoutData set ["vests", ["JMSLLTE_StormtrooperHidden_armor"]];				//this line determines vests for vehicle crew loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
 _crewLoadoutData set ["helmets", ["JMSLLTE_EmpOfficerCap_black_helmet"]];
 _crewLoadoutData set ["carbines", [
-["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
+["JMSLLTE_dh17", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
 ]];
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
@@ -435,7 +435,7 @@ _pilotLoadoutData set ["uniforms", ["JMSLLTE_EmpTiePilot_black_F_CombatUniform"]
 _pilotLoadoutData set ["vests", ["JMSLLTE_TIEpilot_vest_armor"]];			//this line determines vests for pilot loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
 _pilotLoadoutData set ["helmets", ["JMSLLTE_EmpTiePilot_helmet"]];	
 _pilotLoadoutData set ["carbines", [
-["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
+["JMSLLTE_dh17", "", "", "jmsllte_dh17_holo_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
 ]];
 
 
