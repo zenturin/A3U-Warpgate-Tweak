@@ -54,7 +54,7 @@ switch (true) do {
 		sleep 3;
 		deleteMarker _marker;
 	};
-	case (_units findIf {[_x] call A3A_fnc_canFight && {_x distance _position < 10}} != -1): {
+	case (_units findIf {[_x] call A3A_fnc_canFight && {_x distance _position < 35}} != -1): {
 		if (isPlayer leader _groupX) then {
 			_owner = (leader _groupX) getVariable ["owner",leader _groupX];
 			(leader _groupX) remoteExec ["removeAllActions",leader _groupX];
@@ -66,9 +66,10 @@ switch (true) do {
 			waitUntil {!(isPlayer leader _groupX)};
 			sleep 5;
 		};
-		atpostsFIA = atpostsFIA + [_marker]; publicVariable "atpostsFIA";
+		atpostsFIA pushBack _marker; 
+		publicVariable "atpostsFIA";
 		sidesX setVariable [_marker,teamPlayer,true];
-		markersX = markersX + [_marker];
+		markersX pushBack _marker;
 		publicVariable "markersX";
 		spawner setVariable [_marker,2,true];
 		[_taskId, "outpostTask", "SUCCEEDED"] call A3A_fnc_taskSetState;
@@ -79,6 +80,7 @@ switch (true) do {
 		_garrison = A3A_faction_reb get "groupAtEmpl";
 		garrison setVariable [_marker,_garrison,true];
 		staticPositions setVariable [_marker, [_position, _direction], true];
+		[_taskId, "outpostTask", "SUCCEEDED"] call A3A_fnc_taskSetState;
 		["RebelControlCreated", [_marker, "atemplacement"]] call EFUNC(Events,triggerEvent);
 	};
 	default {
