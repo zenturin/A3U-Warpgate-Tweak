@@ -6,6 +6,7 @@ class CfgFunctions
         {
             file = QPATHTOFOLDER(functions\Ammunition);
             class grabForbiddenItems {};
+            class removeForbiddenItems {};
         };
         class Utility
         {

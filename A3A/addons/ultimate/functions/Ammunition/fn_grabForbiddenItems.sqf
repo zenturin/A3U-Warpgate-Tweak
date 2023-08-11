@@ -1,3 +1,17 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Handles grabbing forbidden items from config. Puts result into the A3U_forbiddenItems global space.
+
+    Params:
+	N/A
+
+    Usage:
+    [] call A3U_fnc_grabForbiddenItems;
+*/
+
 private _forbiddenItems = [];
 private _inheritedForbiddenItems = [];
 
