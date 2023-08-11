@@ -62,6 +62,8 @@ private _allExceptNVs = _weapons + _explosives + _backpacks + _items + _optics +
 		if ("Backpacks" in _categories && {_item in allBackpacksTool}) exitWith {};			// should be UAV & static backpacks
 		if ("StaticWeaponParts" in _categories) exitWith {};
 
+		if (_item in A3U_forbiddenItems && {getNumber (configFile >> "A3U" >> "forbiddenItems" >> _item >> "unlimited") isEqualTo 0}) exitWith {};
+
 		_item call A3A_fnc_unlockEquipment;
 
 		private _name = switch (true) do {
