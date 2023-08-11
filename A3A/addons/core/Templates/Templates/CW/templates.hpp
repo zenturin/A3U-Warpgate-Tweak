@@ -82,3 +82,20 @@
         name = "Empire (WBK)";
         file = "EMP_AI_EMP_WBK";
     };
+	
+    class EMP_RIV_GP : EMP_Base
+    {
+        side = "Riv";
+        flagTexture = "\LS_statics_props\flags\data\flag_mandalorian.paa";
+        name = "EMP Partisans";
+        file = "EMP_Riv_GP";
+        description = "Saw Gerrera's Partisans are an extremely militant, anti-imperial group, willing to use any and all tactics against their enemies.";
+    };
+	
+    class EMP_Civ : EMP_Base
+    {
+        side = "Civ";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_partisans.paa;
+        name = "EMP Civ";
+        file = "EMP_Civ";
+    };
