@@ -1,5 +1,23 @@
 params ["_configClass", "_itemMod", "_itemType"];
 
+diag_log _configClass;
+
+private _forbiddenItems = [];
+private _inheritedForbiddenItems = [];
+
+{
+	if (getNumber (configFile "A3U" >> "forbiddenItems" >> _configClass) isEqualTo 1) exitWith {
+		_inheritedForbiddenItems pushBack _x;
+	};
+	_forbiddenItems pushBack _x;
+} forEach (configfile >> "A3U" >> "forbiddenItems") call BIS_fnc_getCfgSubClasses;
+
+if (inheritsFrom (configOf _configClass))
+
+if (_configClass in _forbiddenItems) exitWith {false};
+
+// diag_log _itemMod;
+// diag_log _itemType;
 
 if ("specialGM" in A3A_factionEquipFlags) exitWith {
 	private _cfgName = configName _configClass;
