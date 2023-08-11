@@ -7213,6 +7213,34 @@ class cfgHALsStore
 			ITEM(SWLW_clones_spec_demo_mag, 450, MISC_STOCK);
 			ITEM(SWLW_clones_spec_breach_mag, 400, MISC_STOCK);
 			
+			
+			ITEM(lsd_cis_oom_Geonosis_helmet, 1000, MISC_STOCK);
+			ITEM(ls_cis_b1_helmet, 1000, MISC_STOCK);
+			ITEM(lsd_cis_b1Geonosis_helmet, 1000, MISC_STOCK);
+			ITEM(lsd_cis_b1Saboteur_helmet, 1000, MISC_STOCK);
+			ITEM(lsd_cis_b1Training_helmet, 1000, MISC_STOCK);
+			ITEM(lsd_cis_oomCrew_helmet, 1000, MISC_STOCK);
+			ITEM(lsd_cis_oomOfficer_helmet, 1000, MISC_STOCK);
+			ITEM(lsd_cis_oomCrew_uniform, 1500, MISC_STOCK);
+			ITEM(ls_cis_b1Droid_uniform, 1500, MISC_STOCK);
+			ITEM(lsd_cis_bxDroid_uniform, 1500, MISC_STOCK);
+			ITEM(lsd_cis_oomPilot_uniform, 1500, MISC_STOCK);
+			ITEM(3AS_U_CIS_TS, 1500, MISC_STOCK);
+			
+			ITEM(JLTS_credits_10, 100, MISC_STOCK);
+			ITEM(JLTS_credits_50, 500, MISC_STOCK);
+			ITEM(JLTS_credits_100, 1000, MISC_STOCK);
+			ITEM(JLTS_credits_500, 5000, MISC_STOCK);
+			ITEM(JLTS_credits_1000, 10000, MISC_STOCK);
+			ITEM(JLTS_credits_5000, 50000, MISC_STOCK);
+			ITEM(JLTS_flan_10 , 100, MISC_STOCK);
+			ITEM(JLTS_flan_50, 500, MISC_STOCK);
+			ITEM(JLTS_flan_100, 1000, MISC_STOCK);
+			ITEM(JLTS_flan_500, 5000, MISC_STOCK);
+			ITEM(JLTS_flan_1000, 10000, MISC_STOCK);
+			ITEM(JLTS_flan_5000, 50000, MISC_STOCK);
+			ITEM(JLTS_credit_card, 1138, MISC_STOCK);
+			
 		};
 
 		class pointerscw{
