@@ -6852,10 +6852,10 @@
         </Container>
         <Container name="credits_generic">
             <Key ID="STR_antistasi_credits_authors_plus">
-                <Original>Antistasi Plus Authors:</Original>
-                <Russian>Авторы Antistasi Plus:</Russian>
-                <Chinesesimp>Antistasi Plus 作者：</Chinesesimp>
-                <Korean>안티스타시 플러스 제작자:</Korean>
+                <Original>Antistasi Ultimate Authors:</Original>
+                <Russian>Авторы Antistasi Ultimate:</Russian>
+                <Chinesesimp>Antistasi Ultimate 作者：</Chinesesimp>
+                <Korean>안티스타시 얼티밋의 제작자:</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_authors">
                 <Original>Antistasi Authors:</Original>
@@ -6864,10 +6864,10 @@
                 <Korean>안티스타시 제작자:</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_generic_author_text">
-                <Original>Socrates</Original>
-                <Russian>Socrates</Russian>
-                <Chinesesimp>Socrates</Chinesesimp>
-                <Korean>Socrates</Korean>
+                <Original>Stutpip123, Silence, Karl</Original>
+                <Russian>Stutpip123, Silence, Karl</Russian>
+                <Chinesesimp>Stutpip123, Silence, Karl</Chinesesimp>
+                <Korean>Stutpip123, Silence, Karl</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_cw_mode">
                 <Original>Cold War Mode</Original>
