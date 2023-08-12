@@ -48,7 +48,7 @@
 - DRO by mbrdmn
 - Discord Rich Presence by ConnorAU 
 - Antistasi Plus fork of Community by Socrates
-- Antistasi Ultimate fork of Plus by Stutpip123, Silence, Karl
+- Antistasi Ultimate fork of Plus by Stutpip123, Silence, Karl, Antistasi Ultimate Team
 
 ## Additional Icons Credits
 <div>

@@ -8,7 +8,7 @@ picture = QPATHTOFOLDER(Pictures\antistasi_plus_overview.paa);
 #else
 name = "[Dev] Antistasi Plus";
 #endif
-author = "Stutpip123, Silence, Karl, Socrates, Offical Antistasi Community";
+author = "Antistasi Ultimate Team, Socrates, Offical Antistasi Community";
 description = "";
 tooltip = "[Dev] Antistasi Plus";
 tooltipOwned = "Antistasi Plus";

@@ -6864,10 +6864,10 @@
                 <Korean>안티스타시 제작자:</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_generic_author_text">
-                <Original>Stutpip123, Silence, Karl</Original>
-                <Russian>Stutpip123, Silence, Karl</Russian>
-                <Chinesesimp>Stutpip123, Silence, Karl</Chinesesimp>
-                <Korean>Stutpip123, Silence, Karl</Korean>
+                <Original>Antistasi Ultimate Team</Original>
+                <Russian>Antistasi Ultimate Team</Russian>
+                <Chinesesimp>Antistasi Ultimate Team</Chinesesimp>
+                <Korean>Antistasi Ultimate Team</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_cw_mode">
                 <Original>Cold War Mode</Original>
