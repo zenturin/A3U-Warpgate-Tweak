@@ -472,6 +472,8 @@ DECLARE_SERVER_VAR(undercoverVehicles, _undercoverVehicles);
 //This is all very tightly coupled.
 //Beware when changing these, or doing anything with them, really.
 
+Info("Generating forbidden items list");
+[] call A3U_fnc_grabForbiddenItems;
 Info("Scanning config entries for items");
 [A3A_fnc_equipmentIsValidForCurrentModset] call A3A_fnc_configSort;
 Info("Categorizing vehicle classes");
