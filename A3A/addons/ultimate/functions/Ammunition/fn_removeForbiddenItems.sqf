@@ -1,3 +1,17 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Handles removing forbidden items from arrays.
+
+    Params:
+	_arrays  <ARRAY> <DEFAULT: [lootBasicItem,lootNVG,lootItem,lootWeapon,lootAttachment,lootMagazine,lootGrenade,lootExplosive,lootBackpack,lootHelmet,lootVest,lootDevice]>
+
+    Usage:
+    [_arrays] call A3U_fnc_removeForbiddenItems;
+*/
+
 params [ 
 	["_arrays", [lootBasicItem,lootNVG,lootItem,lootWeapon,lootAttachment,lootMagazine,lootGrenade,lootExplosive,lootBackpack,lootHelmet,lootVest,lootDevice]] 
     // lord forgive me for this MONSTROSITY
