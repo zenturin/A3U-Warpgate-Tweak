@@ -5,14 +5,14 @@ params [
 
 if (missionNamespace getVariable ["A3U_loot_removedForbiddenItems", false] isEqualTo true) exitWith {};
  
-_start = diag_tickTime; 
+private _start = diag_tickTime; 
  
 { 
 	private _array = _x; 
 	{ 
 		private _index = _array find _x; 
 		if (_index isNotEqualTo -1 && {getNumber (configFile >> "A3U" >> "forbiddenItems" >> _x >> "appearInCrates") isEqualTo 0}) then {
-            [format ["Found %1 in %2", _x, _array]] call A3U_fnc_log;
+            [format ["Removed %1 from %2", _x, _array]] call A3U_fnc_log;
 			_array deleteAt (_index) 
 		};
 	} forEach A3U_forbiddenItems;
@@ -20,7 +20,7 @@ _start = diag_tickTime;
  
 ["Currently removing forbidden items from a ton of arrays. This may take a while. (Time exponentially expands as more stuff needs to be iterated through!)"] call A3U_fnc_log; 
  
-_stop = diag_tickTime;
+private _stop = diag_tickTime;
  
 [format ["Forbidden items removal took approximately: %1 seconds.",round(_stop - _start)]] call A3U_fnc_log;
 
