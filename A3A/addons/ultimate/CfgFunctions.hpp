@@ -12,6 +12,7 @@ class CfgFunctions
         {
             file = QPATHTOFOLDER(functions\Utility);
             class log {};
+            class logisticsGrabSeats {};
         };
     };
 };
