@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3785;
+		nextID=3865;
 	};
 	class Camera
 	{
-		pos[]={2429.3838,70.289459,3864.2864};
-		dir[]={-0.41676742,-0.69579351,0.5849722};
-		up[]={-0.40373877,0.71823823,0.56668431};
-		aside[]={0.81444204,-1.4354009e-007,0.58025634};
+		pos[]={8103.6426,427.62924,700.00073};
+		dir[]={0.10004959,-0.1499114,0.98362529};
+		up[]={0.015170591,0.98869771,0.14914802};
+		aside[]={0.99486697,2.1187589e-008,-0.10119306};
 	};
 };
 binarizationWanted=0;
-sourceName="ultimate_2";
+sourceName="Antistasi_SPE_Normandy";
 addons[]=
 {
 	"A3_Ui_F",
@@ -257,7 +257,7 @@ dlcs[]=
 randomSeed=6975511;
 class ScenarioData
 {
-	author="Bob Murphy";
+	author="Antistasi Ultimate Dev Team";
 };
 class CustomAttributes
 {
@@ -285,8 +285,8 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
+		briefingName="Antistasi Ultimate - Normandy";
 		resistanceWest=0;
-		resistanceEast=1;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -11752,7 +11752,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=159.39397;
+							angle=159.39395;
 							id=5983;
 						};
 						class Item73
@@ -11765,7 +11765,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=48.815994;
+							angle=48.81599;
 							id=5984;
 						};
 						class Item74
@@ -12358,7 +12358,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=53.942993;
+							angle=53.942989;
 							id=4514;
 							atlOffset=5.0083427;
 						};
@@ -18445,7 +18445,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=53.942993;
+							angle=53.942989;
 							id=5814;
 							atlOffset=10.348522;
 						};
@@ -19260,7 +19260,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=348.22693;
+							angle=348.2269;
 							id=1212;
 						};
 						class Item1
@@ -20733,7 +20733,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=159.93398;
+							angle=159.93396;
 							id=5816;
 							atlOffset=-0.00038146973;
 						};
@@ -22090,7 +22090,7 @@ class Mission
 							type="rectangle";
 							a=5;
 							b=5;
-							angle=226.83463;
+							angle=226.83461;
 							id=6420;
 							atlOffset=0.056453705;
 						};
@@ -22103,7 +22103,7 @@ class Mission
 							type="rectangle";
 							a=5;
 							b=5;
-							angle=213.06769;
+							angle=213.06767;
 							id=6422;
 						};
 						class Item38
@@ -102189,7 +102189,7 @@ class Mission
 					colorName="ColorRed";
 					a=146.93735;
 					b=146.7538;
-					angle=204.58698;
+					angle=204.58696;
 					id=6906;
 					atlOffset=363.80618;
 				};
@@ -102357,7 +102357,7 @@ class Mission
 					colorName="ColorRed";
 					a=99.764;
 					b=101.50984;
-					angle=94.885986;
+					angle=94.885979;
 					id=6916;
 					atlOffset=371.89029;
 				};
@@ -102371,7 +102371,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=176.28897;
+					angle=176.28896;
 					id=6917;
 					atlOffset=271.3876;
 				};
@@ -102399,7 +102399,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=181.62897;
+					angle=181.62895;
 					id=6919;
 					atlOffset=350.82443;
 				};
@@ -102494,7 +102494,7 @@ class Mission
 					colorName="ColorRed";
 					a=119.54311;
 					b=140.38626;
-					angle=204.58698;
+					angle=204.58696;
 					id=6926;
 					atlOffset=363.63403;
 				};
@@ -102508,7 +102508,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=176.28897;
+					angle=176.28896;
 					id=6927;
 					atlOffset=270.15283;
 				};
@@ -102536,7 +102536,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=211.43462;
+					angle=211.4346;
 					id=6929;
 					atlOffset=351.22958;
 				};
@@ -102550,7 +102550,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=212.64697;
+					angle=212.64696;
 					id=6932;
 					atlOffset=244.92168;
 				};

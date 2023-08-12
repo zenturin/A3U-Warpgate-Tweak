@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=163;
+		nextID=172;
 	};
 	class Camera
 	{
@@ -27,7 +27,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="ultimate_2";
+sourceName="Antistasi_chernarus";
 addons[]=
 {
 	"A3_Ui_F",
@@ -192,13 +192,13 @@ dlcs[]=
 randomSeed=5703879;
 class ScenarioData
 {
-	author="stutpip123, Karl";
+	author="Antistasi Ultimate Dev Team";
 };
 class Mission
 {
 	class Intel
 	{
-		briefingName="Antistasi Ultimate - Harvest Green";
+		briefingName="Antistasi Ultimate -  Chernarus Autumn";
 		resistanceWest=0;
 		startWind=0.1;
 		forecastWind=0.1;
@@ -715,7 +715,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=237.01195;
+					angle=237.01192;
 					id=120;
 				};
 				class Item13
@@ -741,7 +741,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=207.52597;
+					angle=207.52596;
 					id=122;
 				};
 				class Item15
@@ -754,7 +754,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=200.52597;
+					angle=200.52596;
 					id=123;
 				};
 				class Item16
@@ -767,7 +767,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=195.99696;
+					angle=195.99695;
 					id=124;
 				};
 				class Item17
@@ -830,7 +830,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=200.52596;
+					angle=200.52594;
 					id=2225;
 				};
 				class Item22
@@ -843,7 +843,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=200.52596;
+					angle=200.52594;
 					id=2226;
 				};
 				class Item23
@@ -856,7 +856,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=200.52596;
+					angle=200.52594;
 					id=2227;
 				};
 				class Item24
@@ -869,7 +869,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=200.52596;
+					angle=200.52594;
 					id=2228;
 				};
 				class Item25
@@ -882,7 +882,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=200.52596;
+					angle=200.52594;
 					id=2229;
 				};
 				class Item26
@@ -895,7 +895,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=200.52596;
+					angle=200.52594;
 					id=2230;
 				};
 				class Item27
@@ -973,7 +973,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=207.52596;
+					angle=207.52594;
 					id=2236;
 				};
 				class Item33
@@ -986,7 +986,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=207.52596;
+					angle=207.52594;
 					id=2237;
 				};
 				class Item34
@@ -999,7 +999,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=207.52596;
+					angle=207.52594;
 					id=2238;
 				};
 			};
@@ -1383,7 +1383,7 @@ class Mission
 					colorName="ColorGreen";
 					a=9.6932468;
 					b=4.7401009;
-					angle=214.35852;
+					angle=214.35851;
 					id=158;
 					atlOffset=0.062484741;
 				};
@@ -1452,7 +1452,7 @@ class Mission
 					colorName="ColorGreen";
 					a=7.8309999;
 					b=7.7649999;
-					angle=190.00992;
+					angle=190.0099;
 					id=2208;
 					atlOffset=0.11811757;
 				};
@@ -1702,7 +1702,7 @@ class Mission
 					colorName="ColorGreen";
 					a=8.7680368;
 					b=11.922183;
-					angle=199.65271;
+					angle=199.65269;
 					id=175;
 					atlOffset=0.00036621094;
 				};
@@ -22829,7 +22829,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351765;
 					b=12.158278;
-					angle=68.947067;
+					angle=68.94706;
 					id=2243;
 					atlOffset=269.96475;
 				};
@@ -22843,7 +22843,7 @@ class Mission
 					colorName="ColorRed";
 					a=68.642349;
 					b=105.59891;
-					angle=144.40681;
+					angle=144.4068;
 					id=2239;
 					atlOffset=363.57239;
 				};
@@ -22871,7 +22871,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=30.867992;
+					angle=30.86799;
 					id=2241;
 					atlOffset=240.20215;
 				};
@@ -22941,7 +22941,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10393.766,5.9257159,2419.0422};
-				angles[]={0,0.95280737,-0};
+				angles[]={0,0.95280737,0};
 			};
 			side="Empty";
 			flags=5;
