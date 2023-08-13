@@ -17,9 +17,9 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["smallBunker", ""] call _fnc_saveToTemplate;                    // *something here*
-["sandbag", ""] call _fnc_saveToTemplate;                        // *something here*
-["sandbagRound", ""] call _fnc_saveToTemplate;                   // *something here*
+["smallBunker", ""] call _fnc_saveToTemplate;
+["sandbag", ""] call _fnc_saveToTemplate;
+["sandbagRound", ""] call _fnc_saveToTemplate;
 
 // vehicles can be placed in more than one category if they fit between both. Cost will be derived by the higher category
 ["vehiclesBasic", []] call _fnc_saveToTemplate;			 // unarmed or armed, with 0-2 passengers
