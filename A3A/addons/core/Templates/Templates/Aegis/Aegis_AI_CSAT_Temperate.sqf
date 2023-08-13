@@ -77,7 +77,7 @@ if (_hasHelicopters) then {
 ["O_T_MBT_02_arty_ghex_F",["32Rnd_155mm_Mo_shells_O"]]
 ]] call _fnc_saveToTemplate;
 
-["uavsAttack", ["O_T_UAV_04_CAS_F", "O_UAV_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
+["uavsAttack", ["O_T_UAV_04_CAS_F"]] call _fnc_saveToTemplate;
 private _uavsPortable = if (_hasWs) then {["Aegis_O_T_UAV_02_lxWS", "O_T_UAV_01_F"]} else {["O_T_UAV_01_F"]};
 ["uavsPortable", _uavsPortable] call _fnc_saveToTemplate;
 
