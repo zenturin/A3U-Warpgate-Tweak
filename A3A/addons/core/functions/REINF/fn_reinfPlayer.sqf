@@ -20,30 +20,18 @@ if (_costs > _resourcesFIA) exitWith {[localize "STR_A3A_reinf_reinfPlayer_heade
 
 if ((count units group player) + (count units stragglers) > 9) exitWith {[localize "STR_A3A_reinf_reinfPlayer_header", localize "STR_A3A_reinf_reinfPlayer_full_squad"] call A3A_fnc_customHint;};
 
-private _weaponHM = createHashMapFromArray [
-	[A3A_faction_reb get "unitSniper", "SniperRifles"],
-	[A3A_faction_reb get "unitLAT", "RocketLaunchers"],
-	[A3A_faction_reb get "unitMG", "MachineGuns"],
-	[A3A_faction_reb get "unitGL", "GrenadeLaunchers"],
-	[A3A_faction_reb get "unitAA", "MissileLaunchersAA"],
-	[A3A_faction_reb get "unitAT", "MissileLaunchersAT"]
-];
+// private _weaponHM = createHashMapFromArray [
+// 	[A3A_faction_reb get "unitSniper", "SniperRifles"],
+// 	[A3A_faction_reb get "unitLAT", "RocketLaunchers"],
+// 	[A3A_faction_reb get "unitMG", "MachineGuns"],
+// 	[A3A_faction_reb get "unitGL", "GrenadeLaunchers"],
+// 	[A3A_faction_reb get "unitAA", "MissileLaunchersAA"],
+// 	[A3A_faction_reb get "unitAT", "MissileLaunchersAT"]
+// ];
 
-if (A3A_rebelGear getOrDefault [_weaponHM getOrDefault [_typeUnit, ""], false] isEqualTo []) exitWith {
-	[localize "STR_A3A_reinf_reinfPlayer_header", localize "STR_A3A_reinf_reinfPlayer_no_weapons_equip"] call A3A_fnc_customHint;
-};
-
-private _weaponHM = createHashMapFromArray [
-	[A3A_faction_reb get "unitSniper", "SniperRifles"],
-	[A3A_faction_reb get "unitLAT", "RocketLaunchers"],
-	[A3A_faction_reb get "unitMG", "MachineGuns"],
-	[A3A_faction_reb get "unitGL", "GrenadeLaunchers"],
-	[A3A_faction_reb get "unitAA", "MissileLaunchersAA"],
-	[A3A_faction_reb get "unitAT", "MissileLaunchersAT"]];
-
-if (A3A_rebelGear getOrDefault [_weaponHM getOrDefault [_typeUnit, ""], false] isEqualTo []) exitWith {
-	[localize "STR_A3A_reinf_reinfPlayer_header", localize "STR_A3A_reinf_reinfPlayer_no_weapons_equip"] call A3A_fnc_customHint;
-};
+// if (A3A_rebelGear getOrDefault [_weaponHM getOrDefault [_typeUnit, ""], false] isEqualTo []) exitWith {
+// 	[localize "STR_A3A_reinf_reinfPlayer_header", localize "STR_A3A_reinf_reinfPlayer_no_weapons_equip"] call A3A_fnc_customHint;
+// };
 
 private _unit = [group player, _typeUnit, position player, [], 0, "NONE"] call A3A_fnc_createUnit;
 

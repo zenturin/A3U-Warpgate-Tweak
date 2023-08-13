@@ -18,16 +18,18 @@ if (getText(configfile >> "CfgMagazines" >> _x >> "nameSound") isEqualTo "Chemli
      {
      allChemlights pushback _x;
      };
-if (getText(configfile >> "CfgMagazines" >> _x >> "nameSound") isEqualTo "smokeshell") then
-     {
-     allSmokeGrenades pushback _x;
-     };
+
 if (getText(configfile >> "CfgMagazines" >> _x >> "nameSound") isEqualTo "") then
      {
      allLaunchedSmokeGrenades pushback _x;
      };
 } forEach allMagSmokeShell;
 */
+
+if (getText(configfile >> "CfgMagazines" >> _x >> "nameSound") isEqualTo "smokeshell") then
+     {
+     allSmokeGrenades pushback _x;
+     };
 
 //Flares ID
 //PBP - NOT WORKING

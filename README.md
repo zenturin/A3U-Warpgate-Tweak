@@ -1,20 +1,20 @@
 <div align="center">
-  <img alt="Antistasi Plus" width="200" height="200" src="https://user-images.githubusercontent.com/6746043/206381805-43f2a69a-2754-49f3-95e2-aeaad8a4cee3.png">
-  <h1>Antistasi Plus</h1>
+  <img alt="Antistasi Ultimate" width="200" height="200" src="https://user-images.githubusercontent.com/6746043/206381805-43f2a69a-2754-49f3-95e2-aeaad8a4cee3.png">
+  <h1>Antistasi Ultimate</h1>
   <p>
     <i>An Arma 3 persistent multiplayer scenario about guerilla warfare tactics.</i>
     <br/>
-    <i>Fork of Antistasi Community Version focused on expanding player's capabilities and introducing new gameplay features.</i>
+    <i>Fork of Antistasi Plus Version focused on expanding templates, maps and features.</i>
   </p>
-  <p>
+  <!-- <p>
     <a href="https://github.com/igorkis-scrts/A3-Antistasi-Plus/releases/latest">
-        <img src="https://img.shields.io/badge/Current_Stable_Version-2.2-red" alt="Antistasi Plus Version">
+        <img src="https://img.shields.io/badge/Current_Stable_Version-2.2.3-red" alt="Antistasi Plus Version">
     </a>
-  </p>
+  </p> -->
 </div>
 
 ### Latest Stable Release
-**[Steam Workshop: Antistasi Plus](https://steamcommunity.com/sharedfiles/filedetails/?id=2912941775)**
+**[Steam Workshop: Antistasi Ultimate (WIP)](https://steamcommunity.com/sharedfiles/filedetails/?id=3012257104)**
 
 ## Features 
 - Arms Dealer vendor with the ability to directly buy and sell weapons, items and gear
@@ -47,7 +47,8 @@
 - HALs_Store by HallyG, R3vo and barman75
 - DRO by mbrdmn
 - Discord Rich Presence by ConnorAU 
-- Antistasi Plus fork by Socrates
+- Antistasi Plus fork of Community by Socrates
+- Antistasi Ultimate fork of Plus by Stutpip123, Silence, Karl
 
 ## Additional Icons Credits
 <div>

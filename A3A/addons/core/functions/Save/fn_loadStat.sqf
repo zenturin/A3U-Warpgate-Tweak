@@ -147,7 +147,7 @@ if (_varName in specialVarLoads) then {
             {
                 _costs = server getVariable _x;
                 for "_i" from 1 to _varValue do {
-                    _costs = round (_costs + (_costs * (_i/280)));
+                    _costs = round (_costs + (_costs * (_i/840)));
                 };
                 server setVariable [_x,_costs,true];
             } forEach FactionGet(reb,"unitsSoldiers");

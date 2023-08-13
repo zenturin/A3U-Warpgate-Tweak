@@ -87,3 +87,5 @@ _initialEquipment append allCosmeticHeadgear;
 _initialEquipment append allCosmeticGlasses;
 _initialEquipment append FactionGet(reb,"uniforms");
 _initialEquipment append FactionGet(reb,"headgear");
+
+call A3U_fnc_removeForbiddenItems;
