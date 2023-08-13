@@ -29,3 +29,17 @@
     class OPTRE_FC_Elite_Helmet_SpecOps : forbidden_limited_base {};
     class OPTRE_FC_Elite_Helmet_Ultra : forbidden_limited_base {};
     class OPTRE_FC_Elite_Helmet_Zealot : forbidden_limited_base {};
+
+    class OPTRE_FC_T33_FuelRod_Cannon_Guided : forbidden_limited_base {};
+    class OPTRE_FC_T33_FuelRod_Cannon : forbidden_limited_base {};
+    class OPTRE_FC_T60_PulseCarbine : forbidden_limited_base {};
+    class OPTRE_FC_Jackal_Shield : forbidden_limited_base {};
+    class OPTRE_FC_Jackal_Shield_Needler : forbidden_limited_base {};
+    class OPTRE_FC_Jackal_Orange_Shield_Needler : forbidden_limited_base {};
+    class OPTRE_FC_Jackal_Red_Shield_Needler : forbidden_limited_base {};
+    class OPTRE_FC_Jackal_Orange_Shield : forbidden_limited_base {};
+    class OPTRE_FC_Jackal_Red_Shield : forbidden_limited_base {};
+
+    class OPTRE_FC_Railgun : forbidden_limited_base {};
+    class OPTRE_M247H_Etilka : forbidden_limited_base {appearInCrates = 1};
+    class OPTRE_M99A2S3 : OPTRE_M247H_Etilka {};
