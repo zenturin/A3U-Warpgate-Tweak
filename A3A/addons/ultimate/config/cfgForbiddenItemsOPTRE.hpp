@@ -29,7 +29,6 @@
     class OPTRE_FC_Elite_Helmet_SpecOps : forbidden_limited_base {};
     class OPTRE_FC_Elite_Helmet_Ultra : forbidden_limited_base {};
     class OPTRE_FC_Elite_Helmet_Zealot : forbidden_limited_base {};
-    class OPTRE_FC_Elite_Helmet_Zealot : forbidden_limited_base {};
 
     class OPTRE_FC_T33_FuelRod_Cannon_Guided : forbidden_limited_base {};
     class OPTRE_FC_T33_FuelRod_Cannon : forbidden_limited_base {};
