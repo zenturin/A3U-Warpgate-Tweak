@@ -1290,9 +1290,9 @@ class cfgHALsStore
 		};
 
 		///////////////////////////////////////////////////////
-		// Vanilla and GM AAF
+		// Global Mobilisation
 		///////////////////////////////////////////////////////
-		class handgunsVanilla 
+		class handgunsgm 
 		{
 			displayName = "Vanilla Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
@@ -1306,7 +1306,7 @@ class cfgHALsStore
 			ITEM(hgun_Pistol_heavy_02_F, 600, PISTOL_STOCK);
 		};
 
-		class launchersVanilla 
+		class launchersgm 
 		{
 			displayName = "Vanilla Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
@@ -1337,7 +1337,7 @@ class cfgHALsStore
 			ITEM(launch_O_Titan_short_F, 3250, 3);
 		};
 
-		class launcherMagazinesVanilla 
+		class launcherMagazinesgm 
 		{
 			displayName = "Vanilla Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
@@ -13490,6 +13490,422 @@ class cfgHALsStore
 			ITEM(uk3cb_underbarrel_acc_fgrip_bipod, 50, 20);
 			
 		};		
+		
+		///////////////////////////////////////////////////////
+		// Global Mobilisation
+		///////////////////////////////////////////////////////
+		class handgunsgm{
+			displayName = "GM Handguns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
+
+			ITEM(gm_lp1_blk, 50, PISTOL_STOCK); //AMMO: gm_1Rnd_265mm_flare_single_wht_gc
+			ITEM(gm_m49_blk, 100, PISTOL_STOCK); //AMMO: gm_8Rnd_9x19mm_B_DM11_p210_blk
+			ITEM(gm_p1_blk, 100, PISTOL_STOCK); //AMMO: gm_8Rnd_9x19mm_B_DM11_p1_blk
+			ITEM(gm_p1sd_blk, 100, PISTOL_STOCK); //AMMO: gm_8Rnd_9x19mm_BSD_DM81_p1_blk
+			ITEM(gm_p210_blk, 110, PISTOL_STOCK); //AMMO: gm_8Rnd_9x19mm_B_DM51_p210_blk
+			ITEM(gm_p2a1_blk, 50, PISTOL_STOCK); //AMMO: gm_1Rnd_265mm_smoke_single_blk_gc
+			ITEM(gm_pim_blk, 100, PISTOL_STOCK); //AMMO: gm_8Rnd_9x18mm_B_pst_pm_blk
+			ITEM(gm_pimb_blk, 100, PISTOL_STOCK); //AMMO: gm_8Rnd_9x18mm_B_pst_pm_blk
+			ITEM(gm_pm63_handgun_blk, 200, PISTOL_STOCK); //AMMO: gm_15Rnd_9x18mm_B_pst_pm63_blk
+			ITEM(gm_pn3_gry, 50, PISTOL_STOCK); //AMMO: 
+			ITEM(gm_wz78_blk, 50, PISTOL_STOCK); //AMMO: gm_1Rnd_265mm_flare_multi_nbc_DM47
+			
+		};
+		
+		class riflesgm
+		{
+			displayName = "GM Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(gm_mpiak74n_brn, 350, RIFLE_STOCK);
+			ITEM(gm_mpiak74n_prp, 350, RIFLE_STOCK);
+			ITEM(gm_mpiaks74n_brn, 350, RIFLE_STOCK);
+			ITEM(gm_mpiaks74n_prp, 350, RIFLE_STOCK);
+			ITEM(gm_mpiaks74nk_brn, 350, RIFLE_STOCK);
+			ITEM(gm_mpiaks74nk_prp, 350, RIFLE_STOCK);
+
+			ITEM(gm_hk69a1_blk, 400, RIFLE_STOCK);
+			ITEM(gm_pallad_d_brn, 300, RIFLE_STOCK);
+
+			ITEM(gm_m16a1_blk, 400, RIFLE_STOCK);
+			ITEM(gm_m16a2_blk, 450, RIFLE_STOCK);
+
+			ITEM(gm_mpikm72_brn, 700, RIFLE_STOCK);
+			ITEM(gm_mpikm72_prp, 700, RIFLE_STOCK);
+
+			ITEM(gm_mpikms72_brn, 700, RIFLE_STOCK);
+			ITEM(gm_mpikms72_prp, 700, RIFLE_STOCK);
+
+			ITEM(gm_akm_wud, 700, RIFLE_STOCK);
+			ITEM(gm_akm_pallad_wud, 950, RIFLE_STOCK);
+			ITEM(gm_akmn_wud, 850, RIFLE_STOCK);
+
+
+			ITEM(gm_c7a1_oli, 650, RIFLE_STOCK);
+			ITEM(gm_c7a1_blk, 650, RIFLE_STOCK);
+			ITEM(gm_gvm95_blk, 650, RIFLE_STOCK);
+
+
+			ITEM(gm_g36e_blk, 900, RIFLE_STOCK);
+
+
+		};
+		
+		class mggm 
+		{
+			displayName = "GM MGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(gm_lmgrpk74n_prp, 900, RIFLE_STOCK);
+			ITEM(gm_lmgrpk74n_brn, 900, RIFLE_STOCK);
+
+			ITEM(gm_lmgrpk_brn, 900, RIFLE_STOCK);
+			ITEM(gm_lmgrpk_prp, 900, RIFLE_STOCK);
+
+			ITEM(gm_mg3_blk, 2000, RIFLE_STOCK);
+			ITEM(gm_mg3_des, 2000, RIFLE_STOCK);
+
+			ITEM(gm_hmgpkm_prp, 1750, RIFLE_STOCK);
+			
+		};
+
+		class sniperRiflesgm
+		{
+			displayName = "GM Snipers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(gm_svd_wud, 1500, RIFLE_STOCK);
+
+
+		};
+
+		class smggm 
+		{
+			displayName = "GM SMGs";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(gm_mp2a1_blk, 100, RIFLE_STOCK);
+
+			ITEM(gm_mp5a2_blk, 250, RIFLE_STOCK);
+			ITEM(gm_mp5a3_blk, 250, RIFLE_STOCK);
+
+			ITEM(gm_mp5sd2_blk, 350, RIFLE_STOCK);
+			ITEM(gm_mp5sd3_blk, 350, RIFLE_STOCK);
+		};
+
+		class launchersgm
+		{
+			displayName = "GM Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+
+			ITEM(gm_m72a3_oli, 200, 50);
+			ITEM(gm_rpg18_oli, 200, 50);
+			ITEM(gm_pzf3_blk, 800, 50); 
+			ITEM(gm_pzf44_2_oli, 500, 15);
+			ITEM(gm_rpg7_wud, 700, 15);
+			ITEM(gm_rpg7_prp, 700, 15);
+			ITEM(gm_pzf84_oli, 1000, 15);
+			ITEM(gm_fim43_oli, 750, 50);
+			ITEM(gm_9k32m_oli, 750, 50);
+
+		};
+	
+		class launcherMagazinesgm 
+		{
+			displayName = "GM Launcher Ammunition";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+
+			class gm_1Rnd_84x245mm_heat_t_DM12_carlgustaf {
+				price = 125;
+				stock = 50;
+			};
+			class gm_1Rnd_84x245mm_heat_t_DM12a1_carlgustaf {
+				price = 145;
+				stock = 50;
+			};
+			class gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf {
+				price = 200;
+				stock = 50;
+			};
+			class gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf {
+				price = 250;
+				stock = 50;
+			};
+			class gm_1Rnd_84x245mm_ILLUM_DM16_carlgustaf {
+				price = 25;
+				stock = 50;
+			};
+
+			class gm_1Rnd_66mm_heat_m72a3 {
+				price = 50;
+				stock = 50;
+			};
+
+			class gm_1Rnd_60mm_heat_dm12_pzf3 {
+				price = 150;
+				stock = 50;
+			};
+			class gm_1Rnd_60mm_heat_dm22_pzf3 {
+				price = 200;
+				stock = 50;
+			};
+			class gm_1Rnd_60mm_heat_dm32_pzf3 {
+				price = 300;
+				stock = 50;
+			};
+
+			class gm_1Rnd_44x537mm_heat_dm32_pzf44_2 {
+				price = 90;
+				stock = 50;
+			};
+
+			class gm_1Rnd_70mm_he_m585_fim43 {
+				price = 750;
+				stock = 50;
+			};
+
+			class gm_1Rnd_72mm_he_9m32m {
+				price = 750;
+				stock = 50;
+			};
+
+			class gm_1Rnd_40mm_heat_pg7v_rpg7 {
+				price = 115;
+				stock = 50;
+			};
+			class gm_1Rnd_40mm_heat_pg7vl_rpg7 {
+				price = 200;
+				stock = 50;
+			};
+
+		};
+
+		class opticsgm
+		{
+			displayName = "GM Optics";
+			picture = "";
+
+			class gm_pso1_gry {
+				price = 500;
+				stock = 50;
+			};
+
+			class gm_zvn64_rear_ak {
+				price = 25;
+				stock = 50;
+			};
+
+			class gm_c79a1_blk {
+				price = 400;
+				stock = 50;
+			};
+
+			class gm_c79a1_oli {
+				price = 400;
+				stock = 50;
+			};
+
+			class gm_feroz24_blk {
+				price = 250;
+				stock = 50;
+			};
+
+			class gm_feroz2x17_pzf44_2_blk {
+				price = 250;
+				stock = 50;
+			};
+
+			class gm_feroz2x17_pzf44_2_des {
+				price = 250;
+				stock = 50;
+			};
+
+			class gm_feroz2x17_pzf44_2_win {
+				price = 250;
+				stock = 50;
+			};
+
+			class gm_pgo7v_blk {
+				price = 250;
+				stock = 50;
+			};
+
+			class gm_zfk4x25_blk {
+				price = 250;
+				stock = 50;
+			};
+
+		};
+
+		class pointersgm 
+		{
+			displayName = "GM Pointer";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(gm_zvn64_front, 25, PN_STOCK);
+		};
+
+		class muzzlesgm 
+		{
+			displayName = "Muzzle Accessories";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
+
+			ITEM(gm_bayonet_6x3_wud, 10, PN_STOCK);
+			ITEM(gm_bayonet_6x3_blk, 10, PN_STOCK);
+
+		};
+
+		class magazinesgm 
+		{
+			displayName = "GM Magazines";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+
+
+			///////////////////////////////////////////////////////
+			// Underbarrel
+			///////////////////////////////////////////////////////
+
+
+
+			///////////////////////////////////////////////////////
+			// Pistols, SMGs
+			///////////////////////////////////////////////////////
+			class gm_30Rnd_9x19mm_B_DM51_mp5_blk {
+				price = 65;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_30Rnd_9x19mm_B_DM11_mp5_blk {
+				price = 50;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_30Rnd_9x19mm_AP_DM91_mp5_blk {
+				price = 100;
+				stock = MAGAZINE_STOCK;
+			};
+
+			class gm_32Rnd_9x19mm_B_DM51_mp2_blk {
+				price = 65;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_32Rnd_9x19mm_B_DM11_mp2_blk {
+				price = 50;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_32Rnd_9x19mm_AP_DM91_mp2_blk {
+				price = 100;
+				stock = MAGAZINE_STOCK;
+			};
+			
+
+			///////////////////////////////////////////////////////
+			// RIFLES
+			///////////////////////////////////////////////////////
+			class gm_30Rnd_556x45mm_B_DM11_g36_blk {
+				price = 65;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_30Rnd_556x45mm_B_T_DM21_g36_blk {
+				price = 75;
+				stock = MAGAZINE_STOCK;
+			};
+
+			class gm_30Rnd_556x45mm_B_DM11_g36_des {
+				price = 65;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_30Rnd_556x45mm_B_T_DM21_g36_des {
+				price = 75;
+				stock = MAGAZINE_STOCK;
+			};
+
+
+			///////////////////////////////////////////////////////
+			// DMRs, Sniper Rifles
+			///////////////////////////////////////////////////////
+
+
+			class gm_10Rnd_762x54mmR_AP_7N1_svd_blk {
+				price = 225;
+				stock = MAGAZINE_STOCK;
+			};
+
+			class gm_10Rnd_762x54mmR_API_7bz3_svd_blk {
+				price = 250;
+				stock = MAGAZINE_STOCK;
+			};
+
+			class gm_10Rnd_762x54mmR_B_T_7t2_svd_blk {
+				price = 235;
+				stock = MAGAZINE_STOCK;
+			};
+
+			
+			///////////////////////////////////////////////////////
+			// MGs
+			///////////////////////////////////////////////////////
+			class gm_45Rnd_545x39mm_B_7N6_ak74_prp {
+				price = 100;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_45Rnd_545x39mm_B_T_7T3_ak74_prp {
+				price = 115;
+				stock = MAGAZINE_STOCK;
+			};
+
+			class gm_100Rnd_762x54mmR_B_T_7t2_pk_grn {
+				price = 200;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_100Rnd_762x54mmR_API_7bz3_pk_grn {
+				price = 225;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_100Rnd_762x54mm_B_T_t46_pk_grn {
+				price = 300;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_100Rnd_762x54mm_API_b32_pk_grn {
+				price = 325;
+				stock = MAGAZINE_STOCK;
+			};
+
+			class gm_120Rnd_762x51mm_B_T_DM21_mg3_grn {
+				price = 200;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_120Rnd_762x51mm_B_T_DM21A1_mg3_grn {
+				price = 225;
+				stock = MAGAZINE_STOCK;
+			};
+			class gm_120Rnd_762x51mm_B_T_DM21A2_mg3_grn {
+				price = 325;
+				stock = MAGAZINE_STOCK;
+			};
+
+
+			///////////////////////////////////////////////////////
+			// SMGs
+			///////////////////////////////////////////////////////
+
+		};
+		
+		class underbarrelgm{
+	     	displayName = "GM Bipods";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
+
+			ITEM(gm_g3_bipod_blk, 50, 20);
+			ITEM(gm_g8_bipod_blk, 50, 20);
+			ITEM(gm_msg90_bipod_blk, 50, 20);
+			
+		};	
+		
+		class miscgm{
+			displayName = "GM Misc";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
+
+			ITEM(gm_explosive_petn_charge, 450, MISC_STOCK);
+			ITEM(gm_explosive_plnp_charge, 400, MISC_STOCK);
+		};
 
 	};
 
@@ -13897,6 +14313,25 @@ class cfgHALsStore
 			      "specialweapons3cbbaf",
 			      "optics3cbbaf",
 			      "underbarrel3cbbaf"
+			};
+		};
+		class globmob 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsgm", 
+				"riflesgm", 
+				"mggm",
+				"sniperRiflesgm", 
+				"smggm", 
+				"launchersgm", 
+				"launcherMagazinesgm", 
+				"opticsgm", 
+				"pointersgm", 
+				"muzzlesgm", 
+				"magazinesgm",
+				"underbarrelgm", 
+				"miscgm"
 			};
 		};
 	};
