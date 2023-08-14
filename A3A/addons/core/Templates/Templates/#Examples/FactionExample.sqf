@@ -39,10 +39,6 @@
 ["vehiclesLightTanks", []] call _fnc_saveToTemplate;             // tanks with poor armor and weapons
 ["vehiclesAA", []] call _fnc_saveToTemplate;                    // ideally heavily armed with anti-ground capability and enclosed turret. Passengers will be ignored
 
-//["vehiclesCRV", []] call_fnc_saveToTemplate;                  // vehicle with capability to repair,rearm and refuel vehicles
-//["vehiclesUGV", []] call_fnc_saveToTemplate;			// unmanned ground vehicle, armed(or unarmed so it can carry cargo??)
-								// UGV's and CRV's are currently not utilyzed and may not be in the future
-
 ["vehiclesTransportBoats", []] call _fnc_saveToTemplate;	// boat that can carry passengers and cargoboxes
 ["vehiclesGunBoats", []] call _fnc_saveToTemplate;              // armed boat, with passengers(?)
 //["vehiclesAmphibious", []] call _fnc_saveToTemplate;          // armed or unarmed wheled or tracked based vehicle with light armor(?) and passengers(?)
@@ -55,7 +51,7 @@
 
 ["vehiclesHelisLight", []] call _fnc_saveToTemplate;            // ideally fragile & unarmed helis seating 4+
 ["vehiclesHelisTransport", []] call _fnc_saveToTemplate;        // bigger heli with more passengers. 
-Should be capable of dealing damage to ground targets without additional scripting
+//Should be capable of dealing damage to ground targets without additional scripting
 
 // Should be capable of dealing damage to ground targets without additional scripting
 ["vehiclesHelisLightAttack", []] call _fnc_saveToTemplate;      // Utility helis with fixed or door guns + rocket pods
@@ -80,10 +76,10 @@ Should be capable of dealing damage to ground targets without additional scripti
 ["staticMGs", []] call _fnc_saveToTemplate;                     // static machine guns
 ["staticAT", []] call _fnc_saveToTemplate;                      // static anti-tank weapons 
 ["staticAA", []] call _fnc_saveToTemplate;                      // static anti-aircraft weapons
-["staticMortars", []] call _fnc_saveToTemplate;                 // static mortars usually with ability to be disassembled
-["staticHowitzers", []] call _fnc_saveToTemplate;               // static Howitzzers
+["staticMortars", []] call _fnc_saveToTemplate;                 // static mortars
+["staticHowitzers", []] call _fnc_saveToTemplate;               // static howitzers
 
-["vehicleRadar", ""] call _fnc_saveToTemplate;                  // vehicle with radar*
+["vehicleRadar", ""] call _fnc_saveToTemplate;                  // vehicle with radar
 ["vehicleSam", ""] call _fnc_saveToTemplate;                    // vehicle with SAM
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;            // explosive ammo for Howitzer
@@ -94,7 +90,7 @@ Should be capable of dealing damage to ground targets without additional scripti
 //Minefield definition
 //CFGVehicles variant of Mines are needed "ATMine", "APERSTripMine", "APERSMine"
 ["minefieldAT", []] call _fnc_saveToTemplate;                   // anti-tank mines
-["minefieldAPERS", []] call _fnc_saveToTemplate;                // anti-personale mines
+["minefieldAPERS", []] call _fnc_saveToTemplate;                // anti-personal mines
 
 //SLAT cages, camo nets, logs, doors etc
 ["animations", [
