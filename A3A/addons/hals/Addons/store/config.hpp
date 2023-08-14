@@ -13584,13 +13584,20 @@ class cfgHALsStore
 			displayName = "GM SMGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
-			ITEM(gm_mp2a1_blk, 100, RIFLE_STOCK);
+			ITEM(gm_mp2a1_blk, 200, RIFLE_STOCK); // gm_32Rnd_9x19mm_B_DM51_mp2_blk
 
-			ITEM(gm_mp5a2_blk, 250, RIFLE_STOCK);
-			ITEM(gm_mp5a3_blk, 250, RIFLE_STOCK);
-
+			ITEM(gm_mp5a2_blk, 250, RIFLE_STOCK); // gm_30Rnd_9x19mm_B_DM11_mp5_blk
+			ITEM(gm_mp5a3_blk, 250, RIFLE_STOCK); // gm_30Rnd_9x19mm_B_DM11_mp5a3_blk
+			ITEM(gm_mp5a4_blk, 250, RIFLE_STOCK); // gm_60Rnd_9x19mm_B_DM11_mp5a3_blk
+			ITEM(gm_mp5a5_blk, 250, RIFLE_STOCK);
+			ITEM(gm_mp5n_blk, 250, RIFLE_STOCK);
+			ITEM(gm_mp5n_surefire_blk, 250, RIFLE_STOCK);
+			ITEM(gm_mp5nsd1_blk, 350, RIFLE_STOCK);
+			ITEM(gm_mp5nsd2_blk, 350, RIFLE_STOCK);
 			ITEM(gm_mp5sd2_blk, 350, RIFLE_STOCK);
 			ITEM(gm_mp5sd3_blk, 350, RIFLE_STOCK);
+			ITEM(gm_mp5sd5_blk, 350, RIFLE_STOCK);
+			ITEM(gm_mp5sd6_blk, 350, RIFLE_STOCK);
 		};
 
 		class launchersgm
