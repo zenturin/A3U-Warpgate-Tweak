@@ -13556,6 +13556,8 @@ class cfgHALsStore
 			displayName = "GM MGs";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
+			ITEM(gm_lmgk500_brn, 800, RIFLE_STOCK);
+			ITEM(gm_lmgk500s_brn, 800, RIFLE_STOCK);
 			ITEM(gm_lmgrpk74n_prp, 900, RIFLE_STOCK);
 			ITEM(gm_lmgrpk74n_brn, 900, RIFLE_STOCK);
 
@@ -13564,6 +13566,9 @@ class cfgHALsStore
 
 			ITEM(gm_mg3_blk, 2000, RIFLE_STOCK);
 			ITEM(gm_mg3_des, 2000, RIFLE_STOCK);
+			
+			ITEM(gm_mg8a1_blk, 2000, RIFLE_STOCK); // gm_100Rnd_762x51mm_B_T_DM21_mg8_oli
+			ITEM(gm_mg8a2_blk, 2000, RIFLE_STOCK); // gm_100Rnd_762x51mm_B_T_DM21A1_mg8_oli gm_100Rnd_762x51mm_B_T_DM21A2_mg8_oli
 
 			ITEM(gm_hmgpkm_prp, 1750, RIFLE_STOCK);
 			
@@ -13575,7 +13580,9 @@ class cfgHALsStore
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(gm_svd_wud, 1500, RIFLE_STOCK);
-
+			ITEM(gm_psg1_blk, 1500, RIFLE_STOCK); // gm_20Rnd_762x51mm_B_T_DM21_g3_blk
+			ITEM(gm_msg90_blk, 1500, RIFLE_STOCK); // gm_20Rnd_762x51mm_B_T_DM151_g3_blk
+			ITEM(gm_msg90a1_blk, 1500, RIFLE_STOCK); // gm_20Rnd_762x51mm_B_T_DM41_g3_blk
 
 		};
 
