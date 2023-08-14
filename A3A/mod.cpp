@@ -1,13 +1,8 @@
-#if __has_include("\x\A3A\addons\core\script_component.hpp")
-#include "\x\A3A\addons\core\script_component.hpp"
-name = QUOTE(Antistasi Plus);
-logo = QPATHTOFOLDER(Pictures\antistasi_plus_logo_sw.paa);
-logoOver = QPATHTOFOLDER(Pictures\antistasi_plus_logo.paa);
-logoSmall = QPATHTOFOLDER(Pictures\antistasi_plus_logo_small.paa);
-picture = QPATHTOFOLDER(Pictures\antistasi_plus_overview.paa);
-#else
 name = "Antistasi Ultimate";
-#endif
+logo = "\x\A3A\addons\core\Pictures\antistasi_ultimate_logo_sw.paa";
+logoOver = "\x\A3A\addons\core\Pictures\antistasi_ultimate_logo.paa";
+logoSmall = "\x\A3A\addons\core\Pictures\antistasi_ultimate_logo_small.paa";
+picture = "\x\A3A\addons\core\Pictures\antistasi_ultimate_overview.paa";
 author = "Antistasi Ultimate Team, Socrates, Offical Antistasi Community";
 description = "";
 tooltip = "Antistasi Ultimate";
