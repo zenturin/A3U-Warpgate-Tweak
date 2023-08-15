@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=121;
+		nextID=129;
 	};
 	class Camera
 	{
@@ -27,7 +27,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="ultimate_2";
+sourceName="Antistasi_Tembelan";
 addons[]=
 {
 	"A3_Ui_F",
@@ -171,7 +171,7 @@ dlcs[]=
 randomSeed=14599179;
 class ScenarioData
 {
-	author="stutpip123, Karl";
+	author="Antistasi Ultimate Dev Team";
 };
 class Mission
 {
@@ -1604,7 +1604,7 @@ class Mission
 							colorName="ColorGreen";
 							a=14.496;
 							b=11.538742;
-							angle=28.279572;
+							angle=28.27957;
 							id=274;
 							atlOffset=-0.071720123;
 						};
@@ -1649,7 +1649,7 @@ class Mission
 					colorName="ColorBrown";
 					a=69.968704;
 					b=76.622749;
-					angle=228.59018;
+					angle=228.59016;
 					id=158;
 					atlOffset=25.352036;
 				};
@@ -2039,7 +2039,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=180.36298;
+					angle=180.36299;
 					id=480;
 				};
 				class Item29
@@ -2818,7 +2818,7 @@ class Mission
 			position[]={9207.2539,20.667,4988.5352};
 			name="spawnpoint";
 			type="hd_start";
-			angle=28.146971;
+			angle=28.146969;
 			id=351;
 			atlOffset=15.667;
 		};
@@ -3950,7 +3950,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351765;
 					b=12.158278;
-					angle=65.080162;
+					angle=65.080154;
 					id=491;
 					atlOffset=272.69196;
 				};
@@ -3992,7 +3992,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=30.867992;
+					angle=30.86799;
 					id=489;
 					atlOffset=240.82674;
 				};

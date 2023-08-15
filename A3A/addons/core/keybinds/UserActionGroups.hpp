@@ -1,6 +1,6 @@
 class UserActionGroups {
     class PREFIX {
-        name = "Antistasi Plus";
+        name = "Antistasi Ultimate";
         isAddon = 0;
         group[] = {
             QGVAR(battleMenu),
