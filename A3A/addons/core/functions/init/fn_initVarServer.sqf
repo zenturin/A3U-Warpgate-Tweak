@@ -472,6 +472,8 @@ DECLARE_SERVER_VAR(undercoverVehicles, _undercoverVehicles);
 //This is all very tightly coupled.
 //Beware when changing these, or doing anything with them, really.
 
+Info("Generating forbidden items list");
+[] call A3U_fnc_grabForbiddenItems;
 Info("Scanning config entries for items");
 [A3A_fnc_equipmentIsValidForCurrentModset] call A3A_fnc_configSort;
 Info("Categorizing vehicle classes");
@@ -564,6 +566,7 @@ _fnc_setPriceIfValid =
 { [_rebelVehicleCosts, _x, 500] call _fnc_setPriceIfValid } forEach FactionGet(reb, "staticMGs") + FactionGet(reb, "vehiclesBoat");
 { [_rebelVehicleCosts, _x, 1000] call _fnc_setPriceIfValid } forEach FactionGet(reb, "staticAT");
 { [_rebelVehicleCosts, _x, 1200] call _fnc_setPriceIfValid } forEach FactionGet(reb, "staticAA");
+{ [_rebelVehicleCosts, _x, 2500] call _fnc_setPriceIfValid } forEach FactionGet(reb, "staticMortars");
 { [_rebelVehicleCosts, _x, 1500] call _fnc_setPriceIfValid } forEach FactionGet(reb, "vehiclesAA");
 { [_rebelVehicleCosts, _x, 1200] call _fnc_setPriceIfValid } forEach FactionGet(reb, "vehiclesAT");
 { [_rebelVehicleCosts, _x, 5000] call _fnc_setPriceIfValid } forEach FactionGet(reb, "vehiclesCivHeli");

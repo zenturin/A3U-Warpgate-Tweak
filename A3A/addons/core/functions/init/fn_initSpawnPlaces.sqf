@@ -46,7 +46,7 @@ _mainMarker = getMarkerPos _marker;
     case ("hangar"): {_hangarMarker pushBack _fullName;};
     case ("plane"): {_planeMarker pushBack _fullName;};
     case ("mortar"): {_mortarMarker pushBack _fullName;};
-    case ("sam"): {_samMarker pushBack _fullName;};
+	case ("sam"): {_samMarker pushBack _fullName;};
   };
   _fullName setMarkerAlpha 0;
 } forEach _placementMarker;
@@ -62,8 +62,7 @@ private ["_markerSize", "_distance", "_buildings", "_hangars", "_garages", "_hel
 _markerSize = markerSize _marker;
 _distance = sqrt ((_markerSize select 0) * (_markerSize select 0) + (_markerSize select 1) * (_markerSize select 1));
 
-//TODO: fix garage row "Land_GarageRow_01_large_F"
-_buildings = nearestObjects [getMarkerPos _marker, ["Land_Hangar_2","land_bunker_garage","Helipad_Base_F", "Land_vn_b_helipad_01", "Land_BludpadCircle", "Land_Hangar_F", "Land_TentHangar_V1_F", "Land_Airport_01_hangar_F", "Land_Mil_hangar_EP1", "Land_Ss_hangar", "Land_Ss_hangard", "Land_vn_helipad_base", "Land_vn_airport_01_hangar_f", "Land_vn_usaf_hangar_01", "Land_vn_usaf_hangar_02", "Land_vn_usaf_hangar_03"], _distance, true];
+_buildings = nearestObjects [getMarkerPos _marker, ["Land_Hangar_2", "Helipad_Base_F", "land_bunker_garage", "Land_vn_b_helipad_01", "Land_BludpadCircle", "Land_Hangar_F", "Land_TentHangar_V1_F", "Land_Airport_01_hangar_F", "Land_Mil_hangar_EP1", "Land_Ss_hangar", "Land_Ss_hangard", "Land_vn_helipad_base", "Land_vn_airport_01_hangar_f", "Land_vn_usaf_hangar_01", "Land_vn_usaf_hangar_02", "Land_vn_usaf_hangar_03"], _distance, true];
 
 _hangars = [];
 _helipads = [];
@@ -85,7 +84,7 @@ _garages = [];
       default {
         _hangars pushBack _x;
       };
-    };
+	};
   };
 } forEach _buildings;
 
@@ -97,7 +96,7 @@ private _hangarCount = count _hangars;
   _markerX = _x;
   _markerSize = markerSize _x;
   _distance = sqrt ((_markerSize select 0) * (_markerSize select 0) + (_markerSize select 1) * (_markerSize select 1));
-  _buildings = nearestObjects [getMarkerPos _x, ["Helipad_Base_F", "Land_BludpadCircle", "Land_vn_b_helipad_01", "Land_vn_helipad_base"], _distance, true];
+  _buildings = nearestObjects [getMarkerPos _x, ["Land_BludpadCircle", "Land_vn_b_helipad_01", "Helipad_Base_F", "Land_vn_helipad_base"], _distance, true];
   {
     if((getPos _x) inArea _markerX) then
     {
@@ -146,12 +145,24 @@ _vehicleSpawns = [];
       {
         //Cleaning area
         private _radius = [0,0] vectorDistance [_width, _height];
+        if (!isMultiplayer) then
         {
-          if((getPos _x) inArea _markerX) then
           {
-            [_x,true] remoteExec ["hideObjectGlobal",2];
-          }
-        } foreach (nearestTerrainObjects [getMarkerPos _markerX, ["Tree","Bush", "Hide", "Rock", "Fence"], _radius, true]);
+            if((getPos _x) inArea _markerX) then
+            {
+              _x hideObject true;
+            };
+          } foreach (nearestTerrainObjects [getMarkerPos _markerX, ["Tree","Bush", "Hide", "Rock", "Fence"], _radius, true]);
+        }
+        else
+        {
+          {
+            if((getPos _x) inArea _markerX) then
+            {
+              [_x,true] remoteExec ["hideObjectGlobal",2];
+            }
+          } foreach (nearestTerrainObjects [getMarkerPos _markerX, ["Tree","Bush", "Hide", "Rock", "Fence"], _radius, true]);
+        };
 
         //Create the places
         _vehicleCount = floor ((_width - SPACING) / (4 + SPACING));
@@ -173,9 +184,18 @@ _heliSpawns = [];
 {
     _pos = getPos _x;
     _pos set [2, 0.4];
+    if (!isMultiplayer) then
     {
-      [_x,true] remoteExec ["hideObjectGlobal",2];
-    } foreach (nearestTerrainObjects [_pos, ["Tree","Bush", "Hide", "Rock"], 5, true]);
+      {
+        _x hideObject true;
+      } foreach (nearestTerrainObjects [_pos, ["Tree","Bush", "Hide", "Rock"], 5, true]);
+    }
+    else
+    {
+      {
+        [_x,true] remoteExec ["hideObjectGlobal",2];
+      } foreach (nearestTerrainObjects [_pos, ["Tree","Bush", "Hide", "Rock"], 5, true]);
+    };
     _dir = direction _x;
     _heliSpawns pushBack [_pos, _dir];
 } forEach _helipads;
@@ -233,6 +253,8 @@ _samSpawns = [];
 } forEach _samMarker;
 
 _spawns = [_vehicleSpawns, _heliSpawns, _planeSpawns, _mortarSpawns, _samSpawns];
+
+//Debug_2("%1 set to %2", _marker, [_vehicleSpawns, _heliSpawns, _planeSpawns, _mortarSpawns]);
 
 //Create the spawn places and initial used-slot arrays
 {

@@ -73,14 +73,14 @@ private _vehiclesCivCar = ["OPTRE_M12_CIV", "OPTRE_Genet"];
 ///////////////////////////
 
 private _initialRebelEquipment = [
+"OPTRE_M45", // only here because petros needs a primary
 "OPTRE_M6G",
-"OPTRE_M45",
-"OPTRE_8Rnd_127x40_Mag","OPTRE_12Rnd_8Gauge_Pellets","MiniGrenade","SmokeShell",
+"OPTRE_M6C",
+"OPTRE_8Rnd_127x40_AP_Mag","OPTRE_8Rnd_127x40_Mag","MiniGrenade","SmokeShell",
 ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
 "B_FieldPack_blk","B_AssaultPack_blk","B_Kitbag_rgr",
 "V_SmershVest_01_F","V_BandollierB_rgr","V_Chestrig_oli",
-"Binocular",
-"optre_m6g_flashlight","optre_m45_flashlight"];
+"Binocular"];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["OPTRE_ANPRC_521_URF","OPTRE_ANPRC_515"]};

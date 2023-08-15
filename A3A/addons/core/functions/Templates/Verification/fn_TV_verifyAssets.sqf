@@ -344,7 +344,7 @@ private _invalidReasons = [];
         case ("vehicles" in _entry): _fnc_validateArrayOfClasses;
         case ("vehicle" in _entry): _fnc_validateSingleClass;
         case ("static" in _entry): {
-            if (_side in [west, east]) then _fnc_validateArrayOfClasses else _fnc_validateSingleClass;
+            if (_side in [west, east, resistance]) then _fnc_validateArrayOfClasses else _fnc_validateSingleClass;
         };
         default _fnc_handleUniqueCases;
     };

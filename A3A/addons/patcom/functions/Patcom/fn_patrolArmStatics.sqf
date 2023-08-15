@@ -55,12 +55,10 @@ _unitArray = _unitArray select {isNull objectParent _x};
 if (count _unitArray == 0) exitWith {};
 
 {
+    // Exit if unitArray is empty.
+    if (count _unitArray == 0) exitWith {};
+
     private _unit = selectRandom _unitArray;
-
-    if (isNil "_unit") then {
-        continue;
-    };
-
     if (_unit distance2D _x < 100) then {
         _assignedPairs pushback [_unit, _x, _group];
         _unitArray deleteAt (_unitArray find _unit);	

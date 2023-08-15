@@ -43,7 +43,7 @@ waitUntil {
 	sleep 1;
 	(!isNil "cancelEstabTask" && {cancelEstabTask}) || 
 	{_units findIf {[_x] call A3A_fnc_canFight} == -1 || 
-	{{alive _x && {_x distance _position < 35}} count units _groupX > 0 ||
+	{{[_x] call A3A_fnc_canFight && {_x distance _position < 35}} count units _groupX > 0 ||
 	{(dateToNumber date > _dateLimitNum)}}}
 };
 
@@ -54,7 +54,7 @@ switch (true) do {
 		sleep 3;
 		deleteMarker _marker;
 	};
-	case (_units findIf {[_x] call A3A_fnc_canFight && {_x distance _position < 10}} != -1): {
+	case (units _groupX findIf {[_x] call A3A_fnc_canFight && {_x distance _position < 35}} != -1): {
 		if (isPlayer leader _groupX) then {
 			_owner = (leader _groupX) getVariable ["owner",leader _groupX];
 			(leader _groupX) remoteExec ["removeAllActions",leader _groupX];
@@ -66,12 +66,12 @@ switch (true) do {
 			waitUntil {!(isPlayer leader _groupX)};
 			sleep 5;
 		};
-		aapostsFIA = aapostsFIA + [_marker]; publicVariable "aapostsFIA";
+		aapostsFIA pushBack _marker;
+		publicVariable "aapostsFIA";
 		sidesX setVariable [_marker,teamPlayer,true];
-		markersX = markersX + [_marker];
+		markersX pushBack _marker;
 		publicVariable "markersX";
 		spawner setVariable [_marker,2,true];
-		[_taskId, "outpostTask", "SUCCEEDED"] call A3A_fnc_taskSetState;
 		_nul = [-5,5,_position] remoteExec ["A3A_fnc_citySupportChange",2];
 		_marker setMarkerType "n_antiair";
 		_marker setMarkerColor colorTeamPlayer;
@@ -79,6 +79,7 @@ switch (true) do {
 		_garrison = A3A_faction_reb get "groupAaEmpl";
 		garrison setVariable [_marker,_garrison,true];
 		staticPositions setVariable [_marker, [_position, _direction], true];
+		[_taskId, "outpostTask", "SUCCEEDED"] call A3A_fnc_taskSetState;
 		["RebelControlCreated", [_marker, "aaemplacement"]] call EFUNC(Events,triggerEvent);
 	};
 	default {

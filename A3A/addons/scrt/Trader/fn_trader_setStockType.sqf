@@ -1,7 +1,8 @@
-//	Author: Socrates
+//	Author: Socrates/Silence
 // 
 //	Description:
-//	Sets trader stock based on current modset.
+//	Sets trader stock based on current mods loaded.
+//  09/08/2023: Now has the ability to detect multiple mods and load them all into the trader.
 //
 //	Returns:
 //	Nothing.
@@ -13,65 +14,46 @@ FIX_LINE_NUMBERS()
 
 params ["_traderX"];
 
-private _templateParts = A3A_Reb_template splitString "_";
+private _has_addon = {
+    params [["_class", ""]];
+    if (_class isEqualTo "") exitWith {false};
 
-switch (true) do {
-    case ("EMP" isEqualTo (_templateParts select 0)): {
-        Info("Initializing EMP trader.");
-        [_traderX, "emp"] call HALs_store_fnc_addTrader;
+    if (_class isEqualType []) exitWith {
+        {
+            if (isClass (configFile >> "cfgPatches" >> _x)) then {diag_log format ["cfgPatches class %1 does exist.", _x]; true} else {diag_log format ["cfgPatches class %1 does not exist.", _x]; false};
+        } forEach _class;
     };
-    case ("UNS" isEqualTo (_templateParts select 0)): {
-        Info("Initializing Unsung trader.");
-        [_traderX, "unsstore"] call HALs_store_fnc_addTrader;
-    };
-    case ("CW" isEqualTo (_templateParts select 0)): {
-        Info("Initializing CW trader.");
-        [_traderX, "cw"] call HALs_store_fnc_addTrader;
-    };
-    case ("CUP" isEqualTo (_templateParts select 0)): {
-        Info("Initializing CUP trader.");
-        [_traderX, "cup"] call HALs_store_fnc_addTrader;
-    };
-    case ("VN" isEqualTo (_templateParts select 0)): {
-        Info("Initializing VN trader.");
-        [_traderX, "vn"] call HALs_store_fnc_addTrader;
-    };
-    case ("coldWar" in A3A_factionEquipFlags): {
-        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using 3CBF CW trader stock.", servertime];
-        [_traderX, "3cbfcw"] call HALs_store_fnc_addTrader;
-    };
-    case ("RHS" isEqualTo (_templateParts select 0)): {
-        Info("Initializing RHS trader.");
-        [_traderX, "rhs"] call HALs_store_fnc_addTrader;
-    };
-    case ("3CBF" isEqualTo (_templateParts select 0)): {
-        Info("Initializing 3CBF trader.");
-        [_traderX, "3cbf"] call HALs_store_fnc_addTrader;
-    };
-    case ("Aegis" isEqualTo (_templateParts select 0)): {
-        Info("Initializing Aegis trader.");
-        [_traderX, "aegis"] call HALs_store_fnc_addTrader;
-    };
-    case ("ws" in A3A_enabledDLC): {
-        Info("Initializing WS trader.");
-        [_traderX, "ws"] call HALs_store_fnc_addTrader;
-    };
-    case ("OPTRE" isEqualTo (_templateParts select 0)): {
-        Info("Initializing OPTRE trader.");
-        [_traderX, "OPTRE"] call HALs_store_fnc_addTrader;
-    };
-    case ("IFA" isEqualTo (_templateParts select 0)): {
-        Info("Initializing IFA trader.");
-        [_traderX, "ww2mod"] call HALs_store_fnc_addTrader;
-    };
-    case ("SPE" isEqualTo (_templateParts select 0)): {
-        Info("Initializing IFA trader.");
-        [_traderX, "ww2cdlcmod"] call HALs_store_fnc_addTrader;
-    };
-    default  {
-        Info("Initializing vanilla trader.");
-        [_traderX, "vanilla"] call HALs_store_fnc_addTrader;
+
+    if (isClass (configFile >> "cfgPatches" >> _class)) then {
+        true
+    } else {
+        false
     };
 };
+
+private _modsets = [];
+
+private _cfg = (configfile >> "A3U" >> "traderMods") call BIS_fnc_getCfgSubClasses;
+
+{
+    private _addons = getArray (configFile >> "A3U" >> "traderMods" >> _x >> "addons");
+    private _prefix = getText (configFile >> "A3U" >> "traderMods" >> _x >> "prefix");
+
+    if ([_addons] call _has_addon) then {
+        _modsets pushBack _x;
+        [format ["Added %1 to _modsets list.", _x]] call A3U_fnc_log;
+    };
+} forEach _cfg;
+
+// Special cases
+if (_modsets isEqualTo []) then {_modsets pushBack "vanilla"}; // If it still hasn't got anything by this point, we can safely assume no supported mods are loaded.
+
+if ("ws" in A3A_enabledDLC) then {_modsets pushBack "ws"}; // western sahara
+
+if ("coldWar" in A3A_factionEquipFlags) then { // 3cbf cold war
+    _modsets = "3cbfcw";
+};
+
+[_traderX, _modsets] call HALs_store_fnc_addTrader;
 
 [] call SCRT_fnc_trader_removeUnlockedItemsFromStock;
