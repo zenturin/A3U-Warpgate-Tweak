@@ -319,6 +319,27 @@ if (_type == "CAS") then
         {
             _loadout = ["PylonRack_1Rnd_Missile_AA_03_F","PylonRack_4Rnd_LG_scalpel","PylonRack_20Rnd_Rocket_03_HE_F","CUP_PylonPod_32Rnd_S5_plane_M","PylonMissile_1Rnd_Bomb_03_F","PylonMissile_1Rnd_Bomb_03_F","CUP_PylonPod_32Rnd_S5_plane_M","PylonRack_20Rnd_Rocket_03_AP_F","PylonRack_4Rnd_LG_scalpel","PylonRack_1Rnd_Missile_AA_03_F"];
         };
+		//Project RACS
+        case "PRACS_A4M":
+        {
+            _loadout = ["PRACS_Mk81_MERX3","PRACS_Mk81_MERX3","PRACS_70mm_AP_X19","PRACS_70mm_FFAR_X19","PRACS_Mk81_MERX6"];
+        };
+        case "PRACS_F16CJ":
+        {
+            _loadout = ["PRACS_AIM9M_WT_X1","PRACS_AIM9M_WT_X1","PRACS_AIM9M_WT_X1","PRACS_AIM9M_WT_X1","PRACS_70mm_FFAR_X57","PRACS_70mm_FFAR_AP_X57","PRACS_AGM65_TL_X2","PRACS_Zuni_5_X12","PRACS_F16_Bellytank_X1","PRACS_F16_CFT_X1"];
+        };
+        case "PRACS_F16CJR":
+        {
+            _loadout = ["PRACS_AIM9M_WT_X1","PRACS_AIM9M_WT_X1","PRACS_Python_3_WT_X1","PRACS_Python_3_WT_X1","PRACS_70mm_FFAR_X57","PRACS_70mm_FFAR_AP_X57","PRACS_GBU12_X2","PRACS_GBU12_X2","PRACS_F16_Bellytank_X1","PRACS_F16_CFT_X1"];
+        };
+        case "PRACS_SLA_MiG27":
+        {
+            _loadout = ["rhs_mag_ub32_s5m1","rhs_mag_ub32_s5m1","PRACS_Kh25_X1","PRACS_Kh25_X1","PRACS_FAB_250_M62_X1","PRACS_FAB_250_M62_X1"];
+        };
+        case "PRACS_SLA_Su25":
+        {
+            _loadout = ["PRACS_AA8_X1","PRACS_AA8_X1","PRACS_RBK_250_PTAB_X1","PRACS_RBK_250_PTAB_X1","rhs_mag_ub32_s5ko","rhs_mag_ub32_s5ko","PRACS_Kh25_X1","PRACS_Kh25_X1","PRACS_RBK_500_SPBE_X1","PRACS_RBK_500_SPBE_X1"];
+        };
         default
         {
             Error_1("Plane type %1 currently not supported for CAS, please add the case!", typeOf _plane);
@@ -540,6 +561,16 @@ if (_type == "AA") then
         case "JMSLLTE_TIEinterceptor_veh_F": 
         {
             _loadout = [];
+        };
+		//Project RACS
+        case "PRACS_MirageIII": 
+        {
+            _loadout = ["PRACS_AIM9M_X1","PRACS_AIM9M_X1","PRACS_AIM120_X2","PRACS_AIM120_X2","PRACS_R530D_X1"];
+        };
+        case "PRACS_SLA_MiG23";
+		case "PRACS_SLA_MiG21": 
+        {
+            _loadout = ["PRACS_AA8_X2_L","PRACS_AA8_X2_R","PRACS_AA10R_X1","PRACS_AA10R_X1"];
         };
         default
         {
