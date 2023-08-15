@@ -14,7 +14,7 @@
 </div>
 
 ### Latest Stable Release
-**[Steam Workshop: Antistasi Ultimate (WIP)](https://steamcommunity.com/sharedfiles/filedetails/?id=3012257104)**
+**[Steam Workshop: Antistasi Ultimate](https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032)**
 
 ## [Features](https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Features)
 
