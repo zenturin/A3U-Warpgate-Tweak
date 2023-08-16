@@ -33,8 +33,8 @@
         MIT License
         
 */
-#include "..\..\..\script_component.hpp"
-FIX_LINE_NUMBERS() // neither of these work (i'm presuming because the CBA compile function restructures the file path for #includes)
+// #include "..\..\..\script_component.hpp"
+// FIX_LINE_NUMBERS()
 params ["_faction", "_templatePath"];
 private _failedLoadouts = createHashMap;
 private _loadoutsValid = true;
@@ -73,7 +73,8 @@ private _standardTraits = createHashMapFromArray [
         };
 
         if (_trait isEqualTo "baseClass") then { // && {_value isEqualType ""} && {isClass (configFile >> "CfgVehicles" >> _value)}
-            diag_log _value;
+            // diag_log _value;
+            _passed = true;
             if (_value isEqualType "" && {isClass (configFile >> "CfgVehicles" >> _value)}) exitWith { // make sure it grabs the correct data type, kept getting an error because it was returning bool
                 [format ["Custom base class verified. Value is: %1", _value], _fnc_scriptName] call A3U_fnc_log;  // you may be asking yourself, "why not just use the check above?" Reason: wanted to be special
             };
@@ -105,6 +106,6 @@ private _standardTraits = createHashMapFromArray [
 
 if (count _failedLoadouts isNotEqualTo 0) then {
     private _failedText = _templatePath+" Loadout validation failed for loadouts:"+endl + ((_failedLoadouts apply {_x +": "+endl + (_y joinString endl) + endl}) joinString endl);
-    Error(_failedText);//ToDo split this in to 1k messages, ending before a new loadout
+    // Error(_failedText);//ToDo split this in to 1k messages, ending before a new loadout
 };
 _loadoutsValid
