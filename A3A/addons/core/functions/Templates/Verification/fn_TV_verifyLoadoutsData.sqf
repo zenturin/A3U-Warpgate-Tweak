@@ -33,8 +33,8 @@
         MIT License
         
 */
-// #include "x\A3A\addons\core\script_component.hpp" // different because we don't mimic default structure
-// FIX_LINE_NUMBERS() // neither of these work (i'm presuming because the CBA compile function restructures the file path for #includes)
+#include "..\..\..\script_component.hpp"
+FIX_LINE_NUMBERS() // neither of these work (i'm presuming because the CBA compile function restructures the file path for #includes)
 params ["_faction", "_templatePath"];
 private _failedLoadouts = createHashMap;
 private _loadoutsValid = true;
@@ -103,8 +103,8 @@ private _standardTraits = createHashMapFromArray [
     } forEach _traits;
 } forEach (_faction get "loadouts");
 
-// if (count _failedLoadouts isNotEqualTo 0) then {
-//     private _failedText = _templatePath+" Loadout validation failed for loadouts:"+endl + ((_failedLoadouts apply {_x +": "+endl + (_y joinString endl) + endl}) joinString endl);
-//     Error(_failedText);//ToDo split this in to 1k messages, ending before a new loadout
-// };
+if (count _failedLoadouts isNotEqualTo 0) then {
+    private _failedText = _templatePath+" Loadout validation failed for loadouts:"+endl + ((_failedLoadouts apply {_x +": "+endl + (_y joinString endl) + endl}) joinString endl);
+    Error(_failedText);//ToDo split this in to 1k messages, ending before a new loadout
+};
 _loadoutsValid
