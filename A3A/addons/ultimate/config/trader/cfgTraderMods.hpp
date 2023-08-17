@@ -85,4 +85,9 @@ class traderMods
         addons[] = {"OPTRE_Core", "OPTRE_FC_Core"};
         prefix = "optre";
     };
+    class GM : base
+    {
+        addons[] = {"gm_core"};
+        prefix = "globmob";
+    };
 };
