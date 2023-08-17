@@ -65,7 +65,7 @@
 
 ["vehiclesPolice", ["LIB_Kfz1_sernyt"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["SPE_MG42_Lafette_Deployed", "SPE_MG34_Lafette_Deployed"]] call _fnc_saveToTemplate;
+["staticMGs", ["SPE_MG42_Lafette_trench_Deployed", "SPE_MG34_Lafette_Trench_Deployed"]] call _fnc_saveToTemplate;
 ["staticAT", ["SPE_leFH18_AT", "SPE_Pak40"]] call _fnc_saveToTemplate;
 ["staticAA", ["SPE_FlaK_30", "SPE_FlaK_38"]] call _fnc_saveToTemplate;
 ["staticMortars", ["SPE_GrW278_1"]] call _fnc_saveToTemplate;
