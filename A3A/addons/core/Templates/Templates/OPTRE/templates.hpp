@@ -9,7 +9,7 @@
     /*------------- START UNSC -------------*/
     class OPTRE_UNSC : OPTRE_Base
     {
-        requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core", "A3U_Functions"}; // required addons (cfgPatches) to be loaded for this to show up
+        requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core"}; // required addons (cfgPatches) to be loaded for this to show up
         side = "Occ";
         flagTexture = QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_unsc_ca.paa);
         name = "UNSC";
@@ -50,7 +50,7 @@
     /*------------- START COVENANT -------------*/
     class OPTRE_Cov : OPTRE_Base
     {
-        requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core", "A3U_Functions"};
+        requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core"};
         side = "Inv";
         flagTexture = QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_covenant_ca.paa);
         name = "Covenant (Elites)";
@@ -60,7 +60,7 @@
 
     class OPTRE_Cov_Grunts : OPTRE_Cov
     {
-        requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core", "A3U_Functions", "WBK_Halo_Alients"};
+        requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core", "WBK_Halo_Alients"};
         name = "Covenant (WBK Elites)";
         file = "OPTRE_AI_Covenant_Grunts";
         description = "The Covenant (With Webknights elites and grunts)";

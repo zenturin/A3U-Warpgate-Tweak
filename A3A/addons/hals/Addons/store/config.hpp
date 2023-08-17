@@ -11520,7 +11520,7 @@ class cfgHALsStore
 			ITEM(uns_b_m1917, 70, PN_STOCK);
 			ITEM(uns_b_6h3, 70, PN_STOCK);
 			ITEM(uns_b_m40_camo, 70, PN_STOCK);
-			ITEM(uns_kar_m1884, 70, PN_STOCK);
+			ITEM(b_kar_m1884, 70, PN_STOCK);
 			ITEM(uns_b_mas49, 70, PN_STOCK);
 			ITEM(uns_b_spike17, 70, PN_STOCK);
 			ITEM(uns_b_m1, 70, PN_STOCK);

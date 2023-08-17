@@ -30,6 +30,8 @@
     "C_Truck_02_fuel_F", 0.1
 ]] call _fnc_saveToTemplate;
 
+["vehiclesCivHeli", []] call _fnc_saveToTemplate;
+
 /////////////////////
 ///  Identities   ///
 /////////////////////

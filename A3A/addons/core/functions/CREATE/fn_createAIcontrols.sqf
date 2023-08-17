@@ -98,7 +98,7 @@ if (_isControl) then
 			_veh setDir _dirVeh;
 
 			_groupE = createGroup _sideX;
-			_typeUnit = _faction get "unitStaticCrew";
+			private _typeUnit = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTiered;
 			_unit = [_groupE, _typeUnit, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
 			_unit moveInGunner _veh;
 			_soldiers pushBack _unit;
@@ -115,7 +115,7 @@ if (_isControl) then
 				_veh setPosATL _pos;
 				_veh setDir _dirVeh + 180;
 
-				_typeUnit = _faction get "unitStaticCrew";
+				private _typeUnit = [_faction get "unitTierStaticCrew"] call SCRT_fnc_unit_getTiered;
 				_unit = [_groupE, _typeUnit, _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
 				_unit moveInGunner _veh;
 				_soldiers pushBack _unit;
@@ -139,7 +139,7 @@ if (_isControl) then
 			sleep 1;
 			{ [_x, _sideX] call A3A_fnc_AIVEHinit } forEach _vehiclesX;
 			};
-        _typeGroup = selectRandom (_faction get "groupsMedium");
+        private _typeGroup = selectRandom (_faction get "groupsMilitiaMedium");
 		_groupX = [_positionX,_sideX, _typeGroup, true] call A3A_fnc_spawnGroup;
 		if !(isNull _groupX) then
 			{
@@ -183,7 +183,7 @@ if (_isControl) then
 else
 	{
 	_markersX = markersX select {(getMarkerPos _x distance _positionX < distanceSPWN) and (sidesX getVariable [_x,sideUnknown] == teamPlayer)};
-	_markersX = _markersX - ["Synd_HQ"] - outpostsFIA;
+	_markersX = _markersX - ["Synd_HQ"] - watchpostsFIA - roadblocksFIA - aapostsFIA - atpostsFIA - hmgpostsFIA;
 	_frontierX = if (count _markersX > 0) then {true} else {false};
 	if (_frontierX) then
 		{

@@ -226,7 +226,7 @@ _sfLoadoutData set ["carbines", [
 ["OPTRE_Commando", "", "", "optic_Holosight_blk_F", ["Commando_20Rnd_65_Mag", "Commando_20Rnd_65_Mag", "Commando_20Rnd_65_Mag"], [], ""]
 ]];
 _sfLoadoutData set ["grenadeLaunchers", [
-["OPTRE_MA5BGL", "", "", "optre_ma5_smartlink", ["OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag"], ["3Rnd_HE_Grenade_shell", "3Rnd_HE_Grenade_shell", "OPTRE_1Rnd_SmokeGreen_Grenade_shell"], ""]
+["OPTRE_MA5BGL", "", "", "optre_ma5_smartlink", ["OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_SmokeGreen_Grenade_shell"], ""]
 ]];
 _sfLoadoutData set ["SMGs", [
 ["OPTRE_M7", "", "optre_m7_laser", "optre_m7_sight", [], [], ""],
@@ -267,7 +267,7 @@ _eliteLoadoutData set ["carbines", [
 ["OPTRE_MA37B", "optre_ma5suppressor", "", "", ["OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag"], [], ""]
 ]];
 _eliteLoadoutData set ["grenadeLaunchers", [
-["OPTRE_M319N", "", "", "", ["M319_HE_Grenade_Shell", "M319_HE_Grenade_Shell", "M319_HE_Grenade_Shell"], [], ""]
+["OPTRE_M319N", "", "", "", ["M319_HE_Grenade_Shell", "M319_Smoke", "OPTRE_signalSmokeB"], [], ""]
 ]];
 _eliteLoadoutData set ["SMGs", [
 ["OPTRE_M7", "optre_m7_silencer", "", "optre_m393_eotech", [], [], ""],
@@ -309,7 +309,7 @@ _militaryLoadoutData set ["carbines", [
 ["OPTRE_MA37B", "", "", "", ["OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag"], [], ""]
 ]];
 _militaryLoadoutData set ["grenadeLaunchers", [
-["OPTRE_M319N", "", "", "", ["M319_HE_Grenade_Shell", "M319_HE_Grenade_Shell", "M319_HE_Grenade_Shell"], [], ""]
+["OPTRE_M319N", "", "", "", ["M319_HE_Grenade_Shell", "M319_Smoke", "OPTRE_signalSmokeB"], [], ""]
 ]];
 _militaryLoadoutData set ["SMGs", [
 ["OPTRE_M7", "", "", "", [], [], ""],
@@ -359,7 +359,7 @@ _militiaLoadoutData set ["carbines", [
 ["OPTRE_MA5A", "", "", "", ["OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag"], [], ""]
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
-["OPTRE_M319", "", "", "", ["M319_HE_Grenade_Shell", "M319_HE_Grenade_Shell", "M319_HE_Grenade_Shell"], [], ""]
+["OPTRE_M319", "", "", "", ["M319_HE_Grenade_Shell", "M319_Smoke", "OPTRE_signalSmokeB"], [], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
 ["OPTRE_M12_SOC", "", "", "optre_m393_eotech", [], [], ""]

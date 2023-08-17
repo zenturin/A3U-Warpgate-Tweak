@@ -21,4 +21,13 @@ class CfgPatches
 class A3U
 {
     #include "config\cfgForbiddenItems.hpp"
+    #include "config\trader\cfgTraderMods.hpp"
+};
+
+class Extended_PreInit_EventHandlers 
+{
+    class A3U_init
+	{
+        init = "call A3U_fnc_init";
+    };
 };

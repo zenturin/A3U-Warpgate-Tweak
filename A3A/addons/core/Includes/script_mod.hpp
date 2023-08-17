@@ -19,7 +19,7 @@
 #define VERSION_AR_FULL MAJOR,MINOR,PATCHLVL,BUILD
 
 // probably should move to script_version.hpp?
-#define MINIMUM_MISSION_VERSION_AR 2,0,0
+#define MINIMUM_MISSION_VERSION_AR 10,0,0
 
 #define REQUIRED_VERSION 2.06
 

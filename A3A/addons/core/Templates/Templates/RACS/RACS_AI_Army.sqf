@@ -48,8 +48,8 @@
 ["vehiclesGunBoats", ["PRACS_Mk5_SOCR"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["PRACS_BMR_HQ"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["PRACS_A4M", "PRACS_F16CJR"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["PRACS_MirageIII", "PRACS_F16CJ"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["PRACS_A4M", "PRACS_F16CJR", "PRACS_F16CJ"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["PRACS_MirageIII"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["PRACS_C130"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["PRACS_UH1H"]] call _fnc_saveToTemplate;

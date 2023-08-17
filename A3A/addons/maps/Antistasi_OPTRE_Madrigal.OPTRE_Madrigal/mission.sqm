@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=340;
+		nextID=359;
 	};
 	class Camera
 	{
-		pos[]={4283.0522,44.736248,6283.3228};
-		dir[]={-0.30303809,-0.64309919,0.70328188};
-		up[]={-0.25448829,0.76577836,0.59060937};
-		aside[]={0.91837949,-2.5250483e-007,0.39572144};
+		pos[]={1696.5427,133.31531,7439.5249};
+		dir[]={-0.60124695,-0.76580685,0.22816359};
+		up[]={-0.71598971,0.6430679,0.27170727};
+		aside[]={0.35480031,-4.703179e-008,0.93495023};
 	};
 };
 binarizationWanted=0;
@@ -161,7 +161,7 @@ dlcs[]=
 randomSeed=10410863;
 class ScenarioData
 {
-	author="stutpip123";
+	author="Antistasi Ultimate Dev Team";
 	disabledAI=1;
 	respawn=3;
 	class Header
@@ -212,7 +212,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="BOOL";
-					value=0;
+					value=1;
 				};
 			};
 		};
@@ -223,7 +223,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Antistasi Ultimate Madrigal";
+		briefingName="Antistasi Ultimate - Madrigal";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
@@ -667,7 +667,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=22.214806;
-							angle=227.84627;
+							angle=227.84625;
 							id=299;
 						};
 						class Item17
@@ -736,7 +736,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=9.5769997;
-							angle=114.5317;
+							angle=114.53169;
 							id=307;
 							atlOffset=0.33212757;
 						};
@@ -5884,7 +5884,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4470.9771,7.54,3698.0071};
-				angles[]={0,1.5633962,-0};
+				angles[]={0,1.5633962,0};
 			};
 			side="Empty";
 			flags=5;
@@ -5909,6 +5909,7 @@ class Mission
 			};
 			id=637;
 			type="Land_u_Barracks_V2_F";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item95
 		{
