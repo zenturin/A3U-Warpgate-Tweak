@@ -40,8 +40,8 @@ private _cfg = (configfile >> "A3U" >> "traderMods") call BIS_fnc_getCfgSubClass
     private _prefix = getText (configFile >> "A3U" >> "traderMods" >> _x >> "prefix");
 
     if ([_addons] call _has_addon) then {
-        _modsets pushBack _x;
-        [format ["Added %1 to _modsets list.", _x]] call A3U_fnc_log;
+        _modsets pushBack _prefix;
+        [format ["Added %1 to _modsets list.", _prefix]] call A3U_fnc_log;
     };
 } forEach _cfg;
 
