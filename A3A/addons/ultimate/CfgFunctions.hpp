@@ -21,6 +21,7 @@ class CfgFunctions
         class Utility
         {
             file = QPATHTOFOLDER(functions\Utility);
+            class hasAddon {};
             class log {};
             class logisticsGrabSeats {};
         };
