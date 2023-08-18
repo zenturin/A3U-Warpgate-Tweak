@@ -35,6 +35,7 @@ class cfgHALsStore
 		#include "config\3cbfcw.hpp"
 		#include "config\aegis.hpp"
 		#include "config\bwa.hpp"
+		#include "config\csa38.hpp"
 		#include "config\cup.hpp"
 		#include "config\cw.hpp"
 		#include "config\empire.hpp"

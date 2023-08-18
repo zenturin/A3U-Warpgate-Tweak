@@ -337,9 +337,9 @@ _militaryLoadoutData set ["sidearms", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_policeLoadoutData set ["uniforms", ["3AS_U_CIS_Light_Armor", "3AS_U_CIS_Officer_Armor"]];
-_policeLoadoutData set ["vests", ["JLTS_CloneVestHolster"]];
-_policeLoadoutData set ["helmets", ["3as_CIS_Light_helmet"]];
+_policeLoadoutData set ["uniforms", ["lsd_cis_oomSecurity_uniform"]];
+_policeLoadoutData set ["vests", ["SWLB_clone_basic_armor"]];
+_policeLoadoutData set ["helmets", ["ls_cis_b1_helmet"]];
 _policeLoadoutData set ["smgs", [
 ["SWLW_ACPR", "", "", "", ["SWLW_acpr_mag"], [], ""],
 ["SWLW_ACPA", "", "", "", ["SWLW_acpa_Mag"], [], ""]
