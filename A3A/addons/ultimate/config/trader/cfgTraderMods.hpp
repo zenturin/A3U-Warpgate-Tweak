@@ -90,4 +90,14 @@ class traderMods
         addons[] = {"gm_core"};
         prefix = "globmob";
     };
+    class niarms : base
+    {
+        addons[] = {"hlcweapons_core"};
+        prefix = "niarms";
+    };
+    class fwa : base
+    {
+        addons[] = {"sp_fwa_fal"};
+        prefix = "fwa";
+    };
 };

@@ -42,6 +42,7 @@ class cfgHALsStore
 		#include "config\gm.hpp"
 		#include "config\ifa.hpp"
 		#include "config\italy.hpp"
+		#include "config\niarms.hpp"
 		#include "config\optre.hpp"
 		#include "config\pla.hpp"
 		#include "config\rhs.hpp"
@@ -476,6 +477,35 @@ class cfgHALsStore
 				"magazinesgm",
 				"underbarrelgm", 
 				"miscgm"
+			};
+		};
+		class niarms 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesniarms", 
+				"mgniarms",
+				"sniperRiflesniarms", 
+				"smgniarms", 
+				"opticsniarms", 
+				"pointersniarms", 
+				"muzzlesniarms", 
+				"magazinesniarms",
+				"underbarrelniarms"
+			};
+		};
+		class fwa 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesfwa", 
+				"mgnfwa",
+				"sniperRiflesfwa", 
+				"smgfwa", 
+				"opticsfwa", 
+				"muzzlesfwa", 
+				"magazinesfwa",
+				"underbarrelfwa"
 			};
 		};
 	};
