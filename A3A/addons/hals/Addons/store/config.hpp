@@ -1290,9 +1290,9 @@ class cfgHALsStore
 		};
 
 		///////////////////////////////////////////////////////
-		// Global Mobilisation
+		// Vanilla
 		///////////////////////////////////////////////////////
-		class handgunsgm 
+		class handgunsVanilla 
 		{
 			displayName = "Vanilla Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
@@ -1306,7 +1306,7 @@ class cfgHALsStore
 			ITEM(hgun_Pistol_heavy_02_F, 600, PISTOL_STOCK);
 		};
 
-		class launchersgm 
+		class launchersVanilla 
 		{
 			displayName = "Vanilla Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
@@ -1337,7 +1337,7 @@ class cfgHALsStore
 			ITEM(launch_O_Titan_short_F, 3250, 3);
 		};
 
-		class launcherMagazinesgm 
+		class launcherMagazinesVanilla 
 		{
 			displayName = "Vanilla Launcher Ammo";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
