@@ -18,8 +18,6 @@
 			ITEM(hlc_rifle_M14, 550, RIFLE_STOCK); // hlc_20Rnd_762x51_B_M14
 			ITEM(hlc_rifle_M14dmr_Rail, 750, RIFLE_STOCK);
 
-            // blacklist: HLC_wp_M134Painless
-
 			ITEM(hlc_wp_xm4, 800, RIFLE_STOCK); // hlc_30rnd_556x45_EPR
 			ITEM(hlc_wp_XM177E2, 900, RIFLE_STOCK);
 			ITEM(hlc_rifle_mk18mod0, 900, RIFLE_STOCK); // hlc_30rnd_556x45_TDim_L5

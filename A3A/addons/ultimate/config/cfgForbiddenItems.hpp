@@ -11,6 +11,8 @@ class forbiddenItems
         appearInCrates = 0;
     };
 
+    class HLC_wp_M134Painless : forbidden_limited_base {};
+
     #include "cfgForbiddenItemsCW.hpp"
     #include "cfgForbiddenItemsOPTRE.hpp"
 	#include "cfgForbiddenItemsGM.hpp"
