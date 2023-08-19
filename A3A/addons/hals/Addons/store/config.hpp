@@ -40,6 +40,7 @@ class cfgHALsStore
 		#include "config\cw.hpp"
 		#include "config\empire.hpp"
 		#include "config\ffaa.hpp"
+		#include "config\fwa.hpp"
 		#include "config\gm.hpp"
 		#include "config\ifa.hpp"
 		#include "config\italy.hpp"
@@ -500,7 +501,7 @@ class cfgHALsStore
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
 				"riflesfwa", 
-				"mgnfwa",
+				"mgfwa",
 				"sniperRiflesfwa", 
 				"smgfwa", 
 				"opticsfwa", 
