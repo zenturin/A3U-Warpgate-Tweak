@@ -56,7 +56,13 @@ if (_hasApex) then {
     "C_Van_01_fuel_F", 0.2
     ,"C_Truck_02_fuel_F", 0.1]] call _fnc_saveToTemplate;
 
-["vehiclesCivHeli", ["C_Heli_Light_01_civil_F" , "C_IDAP_Heli_Transport_02_F" , "O_Heli_Light_02_unarmed_F"]] call _fnc_saveToTemplate;
+private _civhelicopter ["C_Heli_Light_01_civil_F" , "O_Heli_Light_02_unarmed_F"]];
+
+if (_hasLawsOfWar) then {
+    _civhelicopter append ["C_IDAP_Heli_Transport_02_F"];
+};
+
+["vehiclesCivHeli", _civhelicopter] call _fnc_saveToTemplate;
 
 ["variants", [
     ["C_IDAP_Heli_Transport_02_F", ["Dahoman",1]],
