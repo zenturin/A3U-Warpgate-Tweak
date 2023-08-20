@@ -8,9 +8,20 @@ class CfgFunctions
             class grabForbiddenItems {};
             class removeForbiddenItems {};
         };
+        class cba
+        {
+            file = QPATHTOFOLDER(functions\cba);
+            class settings {};
+        };
+        class init
+        {
+            file = QPATHTOFOLDER(functions\init);
+            class init {};
+        };
         class Utility
         {
             file = QPATHTOFOLDER(functions\Utility);
+            class hasAddon {};
             class log {};
             class logisticsGrabSeats {};
         };

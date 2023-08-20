@@ -54,12 +54,14 @@ class A3A {
 
 #include "Scripts\MagRepack\MagRepack_config.hpp"
 
-class CfgMPGameTypes {
-    class ANTI {
+class CfgMPGameTypes 
+{
+    class ANTI 
+    {
         name = "Antistasi";
         shortcut = "ANTI";
         id = 30;
-        picture = QPATHTOFOLDER(Pictures\antistasi_plus_logo_small.paa);
+        picture = QPATHTOFOLDER(Pictures\antistasi_ultimate_logo_small.paa);
         description = "";
     };
 };

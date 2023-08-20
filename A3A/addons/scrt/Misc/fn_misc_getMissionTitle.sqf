@@ -60,7 +60,7 @@ switch (toLowerANSI worldName) do {
 	    _title = localize "STR_antistasi_mission_info_weferlingen_mapname_text";
 	};
 	default {
-	    _title = "Antistasi Plus";
+	    _title = "Antistasi Ultimate";
 	};
 };
 

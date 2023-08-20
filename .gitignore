@@ -19,8 +19,10 @@ A3-Antistasi/Pictures/Mission/
 
 #Keys
 Antistasi-Plus.biprivatekey
+Antistasi-Ultimate.biprivatekey
 
 #Ignore Python bytecode files and bytecode-cache folder
 __pycache__/
 build/
+release/
 *.py[cod]
