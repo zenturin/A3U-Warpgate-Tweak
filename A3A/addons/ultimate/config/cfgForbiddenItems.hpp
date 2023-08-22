@@ -16,4 +16,5 @@ class forbiddenItems
 	#include "cfgForbiddenItemsGM.hpp"
 	#include "cfgForbiddenItemsNIA.hpp"
     #include "cfgForbiddenItemsOPTRE.hpp"
+    #include "cfgForbiddenItemsTOW.hpp"
 };

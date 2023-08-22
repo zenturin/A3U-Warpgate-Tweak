@@ -510,5 +510,17 @@ class cfgHALsStore
 				"underbarrelfwa"
 			};
 		};
+		class tow 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflestow", 
+				"mgtow",
+				"opticstow", 
+				"muzzlestow", 
+				"magazinestow",
+				"underbarreltow"
+			};
+		};
 	};
 };
