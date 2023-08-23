@@ -5,10 +5,9 @@ class forbiddenItems
         unlimited = 1;
         appearInCrates = 0;
     };
-    class forbidden_limited_base
+    class forbidden_limited_base : forbidden_unlimited_base
     {
         unlimited = 0;
-        appearInCrates = 0;
     };
 
     #include "cfgForbiddenItemsCW.hpp"
@@ -16,5 +15,6 @@ class forbiddenItems
 	#include "cfgForbiddenItemsGM.hpp"
 	#include "cfgForbiddenItemsNIA.hpp"
     #include "cfgForbiddenItemsOPTRE.hpp"
+    #include "cfgForbiddenItemsSMA.hpp"
     #include "cfgForbiddenItemsTOW.hpp"
 };

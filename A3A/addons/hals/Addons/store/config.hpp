@@ -49,7 +49,9 @@ class cfgHALsStore
 		#include "config\pla.hpp"
 		#include "config\rhs.hpp"
 		#include "config\sfp.hpp"
+		#include "config\sma.hpp"
 		#include "config\spearhead.hpp"
+		#include "config\tow.hpp"
 		#include "config\unsung.hpp"
 		#include "config\vanilla.hpp"
 		#include "config\vn.hpp"
@@ -520,6 +522,18 @@ class cfgHALsStore
 				"muzzlestow", 
 				"magazinestow",
 				"underbarreltow"
+			};
+		};
+		class sma 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflessma", 
+				"mgsma",
+				"opticssma", 
+				"muzzlessma", 
+				"magazinessma",
+				"underbarrelsma"
 			};
 		};
 	};

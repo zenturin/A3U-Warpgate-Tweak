@@ -80,10 +80,6 @@
 			ITEM(tier1_rahg_la5_m300c_black_fl, 75, PN_STOCK);
 			ITEM(tier1_rahg_ngal_m600v_alt_black, 75, PN_STOCK);
 			ITEM(tier1_rahg_ngal_m600v_alt_black_fl, 75, PN_STOCK);
-			ITEM(tier1_m110_la5_top, 75, PN_STOCK);
-			ITEM(tier1_m110_la5_top, 75, PN_STOCK);
-			ITEM(tier1_m110_la5_top, 75, PN_STOCK);
-			ITEM(tier1_m110_la5_top, 75, PN_STOCK);
 		};
 
 		class muzzlesTOW 

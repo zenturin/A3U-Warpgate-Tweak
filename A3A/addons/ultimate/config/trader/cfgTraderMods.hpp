@@ -100,4 +100,14 @@ class traderMods
         addons[] = {"sp_fwa_fal"};
         prefix = "fwa";
     };
+    class tow : base
+    {
+        addons[] = {"Tier1_Weapons"};
+        prefix = "tow";
+    };
+    class sma : base
+    {
+        addons[] = {"SMA_Weapons"};
+        prefix = "sma";
+    };
 };
