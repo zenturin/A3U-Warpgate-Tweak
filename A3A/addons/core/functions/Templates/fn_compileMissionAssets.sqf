@@ -128,6 +128,7 @@ private _variantMap = createHashMap;
 {_variantMap set [_x select 0, _x select 1]} forEach (A3A_faction_occ get "variants");
 {_variantMap set [_x select 0, _x select 1]} forEach (A3A_faction_reb get "variants");
 {_variantMap set [_x select 0, _x select 1]} forEach (A3A_faction_riv get "variants");
+{_variantMap set [_x select 0, _x select 1]} forEach (A3A_faction_civ get "variants");
 A3A_faction_all set ["variants", _variantMap];
 
 //Rivals
