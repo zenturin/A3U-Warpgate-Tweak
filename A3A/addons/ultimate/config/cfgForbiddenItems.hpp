@@ -10,6 +10,8 @@ class forbiddenItems
         unlimited = 0;
         appearInCrates = 0;
     };
+	
+	class uns_m72used : forbidden_limited_base {};
 
     #include "cfgForbiddenItemsCW.hpp"
     #include "cfgForbiddenItemsOPTRE.hpp"
