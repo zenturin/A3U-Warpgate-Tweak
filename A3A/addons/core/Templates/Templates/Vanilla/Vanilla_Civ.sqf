@@ -62,11 +62,11 @@ if (_hasLawsOfWar) then {
     _civhelicopter append ["C_IDAP_Heli_Transport_02_F"];
 };
 
-["vehiclesCivHeli", _civhelicopter] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["C_Heli_Light_01_civil_F" , "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["C_IDAP_Heli_Transport_02_F", ["Dahoman",1]],
-    ["O_Heli_Light_02_unarmed_F", ["Blue",1]]
+    ["I_Heli_Transport_02_F", ["Dahoman", 1]],
+    ["O_Heli_Light_02_unarmed_F", ["Blue", 1]]
 ]] call _fnc_saveToTemplate;
 
 //////////////////////////
