@@ -29,6 +29,16 @@ if (!isServer and hasInterface) exitWith{};
 
 if (_markerX in destroyedSites) exitWith {};
 
+private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
+private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
+
+if (_lowCiv) exitWith {};
+
+private _sideX = sidesX getVariable [_markerX,sideUnknown];
+private _faction = Faction(_sideX);
+
+private _groupSide = civilian;
+
 private _spawnKey = _markerX + "_civ";
 private _civilianGroups = [];
 private _soundSources = [];
@@ -49,13 +59,35 @@ private _cityData = server getVariable _city;
 private _numCiv = round (1.5 * sqrt (_cityData # 0) * (1 - tierWar / 20));
 
 // We don't want to add too many civ's.
-if (_numCiv > maxCiviliansPerTown) then {
+if (_numCiv > maxCiviliansPerTown && {_civNonHuman isEqualTo false}) then {
     _numCiv = maxCiviliansPerTown;
 };
 
-if (random 100 < ((aggressionOccupants) + (aggressionInvaders))) then {
+// Disregard the above statement if civs aren't human
+if (_civNonHuman) then 
+{
+    if (_numCiv < 10) then {_numCiv = _numCiv * 2}; // we want the cities to be infested, no?
+    
+    switch _faction do
+    {
+        case A3A_faction_occ : 
+        {
+            _groupSide = east; // if city is occupant, make the zombies invader
+        };
+        case A3A_faction_inv : 
+        {
+            _groupSide = west; // if city is invader, make the zombies occupant
+        };
+        case A3A_faction_reb : 
+        {
+            _groupSide = west; // you get the idea by now
+        };
+    };
+}; // This ensures the zombies are always aggro to the city owner
+
+if (random 100 < ((aggressionOccupants) + (aggressionInvaders)) && {_civNonHuman isEqualTo false}) then {
     private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
-    private _groupX = createGroup civilian;
+    private _groupX = createGroup _groupSide;
     _civilianGroups pushBack _groupX;
     private _civPress = [_groupX, FactionGet(civ, "unitPress"), _spawnPosition, [],0, "NONE"] call A3A_fnc_createUnit;
     [_civPress] spawn A3A_fnc_civilianInitEH;
@@ -71,7 +103,7 @@ for "_i" from 1 to _numCiv do {
 
     private _posHouse = [];
 
-    if (count _buildings > 0) then {
+    if (count _buildings > 0 && {_civNonHuman isEqualTo false}) then {
         _building = selectRandom _buildings;
         private _housePositions = [_building] call BIS_fnc_buildingPositions;
         _buildings deleteAt (_buildings find _building);
@@ -82,7 +114,7 @@ for "_i" from 1 to _numCiv do {
             _posHouse = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
         };
 
-        private _groupX = createGroup civilian;
+        private _groupX = createGroup _groupSide;
         private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
         _civUnit setPosATL _posHouse;
         _civilianGroups pushBack _groupX;
@@ -116,7 +148,7 @@ for "_i" from 1 to _numCiv do {
         };
 
     } else {
-        private _groupX = createGroup civilian;
+        private _groupX = createGroup _groupSide;
         private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
         private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _spawnPosition, [],0, "NONE"] call A3A_fnc_createUnit;
         _civUnit setPosATL _spawnPosition;

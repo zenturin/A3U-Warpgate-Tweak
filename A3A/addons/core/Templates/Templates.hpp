@@ -773,4 +773,8 @@ class Templates
     // ***************************** BWA3 *****************************
 
     #include "Templates\BWA3\templates.hpp"
+
+    // ***************************** STALKER *****************************
+
+    #include "Templates\STALKER\templates.hpp"
 };

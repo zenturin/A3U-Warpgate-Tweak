@@ -60,4 +60,25 @@ class CfgMarkers
 		icon = QPATHTOFOLDER(Pictures\Markers\marker_insurrection_ca.paa);
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_insurrection_ca.paa);
 	};
+
+	// This ukraine flag is for the STALKER modset, not current day ukraine
+	// Please don't use it for current day, it desensitises people to the reality that ukraine is in a war
+	class a3u_flag_stalker_ukraine: a3u_flag_optre_unsc 
+	{
+		name = "Ukrainian Flag (STALKER)";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_ukraine_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_ukraine_ca.paa);
+	};
+	class a3u_flag_stalker_military: a3u_flag_optre_unsc
+	{
+		name = "Military Flag (STALKER)";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_military_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_military_ca.paa);
+	};
+	class a3u_flag_stalker_monolith: a3u_flag_optre_unsc 
+	{
+		name = "Monolith Flag (STALKER)";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_monolith_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_monolith_ca.paa);
+	};
 };
