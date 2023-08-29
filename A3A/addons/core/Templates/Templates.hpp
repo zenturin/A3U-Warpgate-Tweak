@@ -733,6 +733,10 @@ class Templates
     // ***************************** IFA *****************************
 
     #include "Templates\IFA\templates.hpp"
+	
+    // ***************************** CSA38 *****************************
+
+    #include "Templates\CSA38\templates.hpp"
 
     // ***************************** FFAA *****************************
 
@@ -773,4 +777,8 @@ class Templates
     // ***************************** BWA3 *****************************
 
     #include "Templates\BWA3\templates.hpp"
+	
+    // ***************************** GM *****************************
+
+    #include "Templates\GM\templates.hpp"
 };
