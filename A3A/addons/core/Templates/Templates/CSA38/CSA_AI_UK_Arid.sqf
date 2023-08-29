@@ -213,16 +213,24 @@ _sfLoadoutData set ["sniHats", ["H_LIB_UK_Helmet_Mk2_Desert"]];
 _sfLoadoutData set ["binoculars", ["LIB_Binocular_UK"]];
 
 //SF Weapons
-_sfLoadoutData set ["rifles", [["LIB_LeeEnfield_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
+_sfLoadoutData set ["rifles", [["CSA38_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
 _sfLoadoutData set ["carbines", [["LIB_DELISLE", "", "", "", ["LIB_7Rnd_45ACP_DeLisle"], [], ""]]];
-_sfLoadoutData set ["grenadeLaunchers", [["LIB_LeeEnfield_No1", "lib_acc_gl_enfield_cup_empty", "", "", ["LIB_10Rnd_770x56"], ["LIB_1Rnd_G_MillsBomb"], ""]]];
-_sfLoadoutData set ["SMGs", [["LIB_M1928_Thompson", "", "", "", ["LIB_50Rnd_45ACP"], [], ""],
-	["LIB_Sten_Mk5", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]]];
-_sfLoadoutData set ["machineGuns", [["LIB_Bren_Mk2", "", "", "", ["LIB_30Rnd_770x56"], [], ""]]];
+_sfLoadoutData set ["grenadeLaunchers", [["CSA38_SMLE", "lib_acc_gl_enfield_cup_empty", "", "", ["LIB_10Rnd_770x56"], ["LIB_1Rnd_G_MillsBomb"], ""]]];
+_sfLoadoutData set ["SMGs", [["CSA38_stenMkV", "", "", "", ["csa38_32_9x19"], [], ""],
+	["CSA38_stenMkIIs", "", "", "", ["csa38_32_9x19"], [], ""],
+	["CSA38_stenMkVI", "", "", "", ["csa38_32_9x19"], [], ""],
+	["LIB_M1928_Thompson", "", "", "", ["LIB_50Rnd_45ACP"], [], ""]
+]];
+_sfLoadoutData set ["machineGuns", [["CSA38_BRENMKI2", "", "", "", ["CSA38_7_7_100x56R", "CSA38_7_7_100x56RAP"], [], ""],
+	["CSA38_BRENMKII2", "", "", "", ["CSA38_7_7_100x56R", "CSA38_7_7_100x56RAP"], [], ""]]];
 _sfLoadoutData set ["marksmanRifles", [["LIB_DELISLE", "", "", "", ["LIB_7Rnd_45ACP_DeLisle"], [], ""]]];
-_sfLoadoutData set ["sniperRifles", [["LIB_LeeEnfield_No4_Scoped", "", "", "", ["LIB_10Rnd_770x56","LIB_10Rnd_770x56_MkVIII"], [], ""]]];
+_sfLoadoutData set ["sniperRifles", [["CSA38_No4t", "", "", "", ["LIB_10Rnd_770x56","LIB_10Rnd_770x56_MkVIII"], [], ""],
+	["CSA38_boys", "", "", "", ["CSA38_5_13_9x99mmB"], [], ""]
+]];
 _sfLoadoutData set ["sidearms", [["LIB_Welrod_mk1", "", "", "", ["LIB_6Rnd_9x19_Welrod"], [], ""],
-	["LIB_Webley_mk6", "", "", "", ["LIB_6Rnd_455"], [], ""]]];
+	["LIB_Webley_mk6", "", "", "", ["LIB_6Rnd_455"], [], ""],
+	["CSA38_enf", "", "", "", ["CSA38_6Rnd_38SW_Cylinder"], [], ""]
+]];
 	
 /////////////////////////////////
 //    Elite Loadout Data    //
@@ -240,17 +248,25 @@ _eliteLoadoutData set ["slHat", ["H_LIB_UK_Helmet_Mk2_Desert"]];
 _eliteLoadoutData set ["sniHats", ["H_LIB_UK_Helmet_Mk2_Desert"]];
 _eliteLoadoutData set ["binoculars", ["LIB_Binocular_UK"]];
 
-_eliteLoadoutData set ["rifles", [["LIB_LeeEnfield_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""],
-	["LIB_LeeEnfield_No1", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_eliteLoadoutData set ["carbines", [["LIB_LeeEnfield_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_eliteLoadoutData set ["grenadeLaunchers", [["LIB_LeeEnfield_No1", "lib_acc_gl_enfield_cup_empty", "", "", ["LIB_10Rnd_770x56"], ["LIB_1Rnd_G_MillsBomb"], ""]]];
+_eliteLoadoutData set ["rifles", [["CSA38_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""],
+	["CSA38_SMLE", "", "", "", ["LIB_10Rnd_770x56"], [], ""],
+	["CSA38_SMLE2", "", "", "", ["LIB_10Rnd_770x56"], [], ""]
+]];
+_eliteLoadoutData set ["carbines", [["CSA38_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
+_eliteLoadoutData set ["grenadeLaunchers", [["CSA38_SMLE", "lib_acc_gl_enfield_cup_empty", "", "", ["LIB_10Rnd_770x56"], ["LIB_1Rnd_G_MillsBomb"], ""]]];
 _eliteLoadoutData set ["SMGs", [["LIB_M1A1_Thompson", "", "", "", ["LIB_30Rnd_45ACP","LIB_30Rnd_45ACP_t"], [], ""],
 	["LIB_M1928A1_Thompson", "", "", "", ["LIB_30Rnd_45ACP","LIB_30Rnd_45ACP_t"], [], ""],
-	["LIB_Sten_Mk2", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]]];
-_eliteLoadoutData set ["machineGuns", [["LIB_Bren_Mk2", "", "", "", ["LIB_30Rnd_770x56"], [], ""]]];
-_eliteLoadoutData set ["marksmanRifles", [["LIB_LeeEnfield_No1", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_eliteLoadoutData set ["sniperRifles", [["LIB_LeeEnfield_No4_Scoped", "", "", "", ["LIB_10Rnd_770x56","LIB_10Rnd_770x56_MkVIII"], [], ""]]];
-_eliteLoadoutData set ["sidearms", [["LIB_Colt_M1911", "", "", "", ["LIB_7Rnd_45ACP"], [], ""]]];
+	["CSA38_stenMkIII", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""],
+	["CSA38_stenMkIV", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]
+]];
+_eliteLoadoutData set ["machineGuns", [["CSA38_BRENMKI", "", "", "", ["LIB_30Rnd_770x56"], [], ""],
+	["CSA38_BRENMKII", "", "", "", ["LIB_30Rnd_770x56"], [], ""],
+	["CSA38_BRENMKI2", "", "", "", ["CSA38_7_7_100x56R", "CSA38_7_7_100x56RAP"], [], ""],
+	["CSA38_BRENMKII2", "", "", "", ["CSA38_7_7_100x56R", "CSA38_7_7_100x56RAP"], [], ""]
+]];
+_eliteLoadoutData set ["marksmanRifles", [["CSA38_SMLE", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
+_eliteLoadoutData set ["sniperRifles", [["CSA38_No4t", "", "", "", ["LIB_10Rnd_770x56","LIB_10Rnd_770x56_MkVIII"], [], ""]]];
+_eliteLoadoutData set ["sidearms", [["CSA38_enf", "", "", "", ["CSA38_6Rnd_38SW_Cylinder"], [], ""]]];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -268,17 +284,27 @@ _militaryLoadoutData set ["slHat", ["H_LIB_UK_Helmet_Mk2_Desert"]];
 _militaryLoadoutData set ["sniHats", ["H_LIB_UK_Helmet_Mk2_Desert"]];
 _militaryLoadoutData set ["binoculars", ["LIB_Binocular_UK"]];
 
-_militaryLoadoutData set ["rifles", [["LIB_LeeEnfield_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""],
-	["LIB_LeeEnfield_No1", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_militaryLoadoutData set ["carbines", [["LIB_LeeEnfield_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_militaryLoadoutData set ["grenadeLaunchers", [["LIB_LeeEnfield_No1", "lib_acc_gl_enfield_cup_empty", "", "", ["LIB_10Rnd_770x56"], ["LIB_1Rnd_G_MillsBomb"], ""]]];
+_militaryLoadoutData set ["rifles", [["CSA38_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""],
+	["CSA38_SMLE", "", "", "", ["LIB_10Rnd_770x56"], [], ""],
+	["CSA38_SMLE2", "", "", "", ["LIB_10Rnd_770x56"], [], ""]
+]];
+_militaryLoadoutData set ["carbines", [["CSA38_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
+_militaryLoadoutData set ["grenadeLaunchers", [["CSA38_SMLE", "lib_acc_gl_enfield_cup_empty", "", "", ["LIB_10Rnd_770x56"], ["LIB_1Rnd_G_MillsBomb"], ""]]];
 _militaryLoadoutData set ["SMGs", [["LIB_M1A1_Thompson", "", "", "", ["LIB_30Rnd_45ACP","LIB_30Rnd_45ACP_t"], [], ""],
 	["LIB_M1928A1_Thompson", "", "", "", ["LIB_30Rnd_45ACP","LIB_30Rnd_45ACP_t"], [], ""],
-	["LIB_Sten_Mk2", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]]];
-_militaryLoadoutData set ["machineGuns", [["LIB_Bren_Mk2", "", "", "", ["LIB_30Rnd_770x56"], [], ""]]];
-_militaryLoadoutData set ["marksmanRifles", [["LIB_LeeEnfield_No1", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_militaryLoadoutData set ["sniperRifles", [["LIB_LeeEnfield_No4_Scoped", "", "", "", ["LIB_10Rnd_770x56","LIB_10Rnd_770x56_MkVIII"], [], ""]]];
-_militaryLoadoutData set ["sidearms", [["LIB_Colt_M1911", "", "", "", ["LIB_7Rnd_45ACP"], [], ""]]];
+	["CSA38_stenMkI", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""],
+	["CSA38_stenMkII", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""],
+	["CSA38_stenMkIII", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""],
+	["CSA38_stenMkIV", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]
+]];
+_militaryLoadoutData set ["machineGuns", [["CSA38_BRENMKI", "", "", "", ["LIB_30Rnd_770x56"], [], ""],
+	["CSA38_BRENMKII", "", "", "", ["LIB_30Rnd_770x56"], [], ""]
+]];
+_militaryLoadoutData set ["marksmanRifles", [["CSA38_SMLE", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
+_militaryLoadoutData set ["sniperRifles", [["CSA38_No4t", "", "", "", ["LIB_10Rnd_770x56","LIB_10Rnd_770x56_MkVIII"], [], ""]]];
+_militaryLoadoutData set ["sidearms", [["LIB_Webley_mk6", "", "", "", ["LIB_6Rnd_455"], [], ""],
+	["CSA38_enf", "", "", "", ["CSA38_6Rnd_38SW_Cylinder"], [], ""]
+]];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -288,9 +314,12 @@ private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch an
 _policeLoadoutData set ["uniforms", ["U_LIB_UK_KhakiDrills"]];
 _policeLoadoutData set ["vests", ["V_LIB_UK_P37_Sten"]];
 _policeLoadoutData set ["helmets", ["H_LIB_UK_Beret"]];
-_policeLoadoutData set ["SMGs", [["LIB_Sten_Mk2", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]]];
+_policeLoadoutData set ["SMGs", [["CSA38_stenMkI", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""],
+	["CSA38_stenMkII", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]
+]];
 _policeLoadoutData set ["sidearms", [
-	["LIB_Webley_mk6", "", "", "", ["LIB_6Rnd_455"], [], ""]
+	["LIB_Webley_mk6", "", "", "", ["LIB_6Rnd_455"], [], ""],
+	["CSA38_enf", "", "", "", ["CSA38_6Rnd_38SW_Cylinder"], [], ""]
 ]];
 
 ////////////////////////////////
@@ -308,15 +337,26 @@ _militiaLoadoutData set ["helmets", ["H_LIB_UK_Helmet_Mk2_Desert"]];
 _militiaLoadoutData set ["sniHats", ["H_LIB_UK_Helmet_Mk2_Desert"]];
 _militiaLoadoutData set ["slHat", ["H_LIB_UK_Helmet_Mk2_Desert"]];
 
-_militiaLoadoutData set ["rifles", [["LIB_LeeEnfield_No1", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_militiaLoadoutData set ["carbines", [["LIB_LeeEnfield_No1", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_militiaLoadoutData set ["grenadeLaunchers", [["LIB_LeeEnfield_No1", "lib_acc_gl_enfield_cup_empty", "", "", ["LIB_10Rnd_770x56"], ["LIB_1Rnd_G_MillsBomb"], ""]]];
-_militiaLoadoutData set ["SMGs", [["LIB_Sten_Mk2", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]]];
-_militiaLoadoutData set ["machineGuns", [["LIB_Bren_Mk2", "", "", "", ["LIB_30Rnd_770x56"], [], ""]]];
-_militiaLoadoutData set ["marksmanRifles", [["LIB_LeeEnfield_No1", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_militiaLoadoutData set ["sniperRifles", [["LIB_LeeEnfield_No4_Scoped", "", "", "", ["LIB_10Rnd_770x56","LIB_10Rnd_770x56_MkVIII"], [], ""],
-	["LIB_LeeEnfield_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
-_militiaLoadoutData set ["sidearms", [["LIB_Webley_mk6", "", "", "", ["LIB_6Rnd_455"], [], ""]]];
+_militiaLoadoutData set ["rifles", [["CSA38_SMLE", "", "", "", ["LIB_10Rnd_770x56"], [], ""],
+	["CSA38_SMLE2", "", "", "", ["LIB_10Rnd_770x56"], [], ""]
+]];
+_militiaLoadoutData set ["carbines", [["CSA38_SMLE", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
+_militiaLoadoutData set ["grenadeLaunchers", [["CSA38_SMLE", "lib_acc_gl_enfield_cup_empty", "", "", ["LIB_10Rnd_770x56"], ["LIB_1Rnd_G_MillsBomb"], ""]]];
+_militiaLoadoutData set ["SMGs", [["CSA38_stenMkI", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""],
+	["CSA38_stenMkII", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""],
+	["CSA38_stenMkIII", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]
+]];
+_militiaLoadoutData set ["machineGuns", [["CSA38_BRENMKI", "", "", "", ["LIB_30Rnd_770x56"], [], ""],
+	["CSA38_BRENMKII", "", "", "", ["LIB_30Rnd_770x56"], [], ""]
+]];
+_militiaLoadoutData set ["marksmanRifles", [["CSA38_SMLE", "", "", "", ["LIB_10Rnd_770x56"], [], ""]]];
+_militiaLoadoutData set ["sniperRifles", [["CSA38_No4t", "", "", "", ["LIB_10Rnd_770x56","LIB_10Rnd_770x56_MkVIII"], [], ""],
+	["CSA38_No4", "", "", "", ["LIB_10Rnd_770x56"], [], ""]
+]];
+_militiaLoadoutData set ["sidearms", [["LIB_Webley_mk6", "", "", "", ["LIB_6Rnd_455"], [], ""],
+	["CSA38_enf", "", "", "", ["CSA38_6Rnd_38SW_Cylinder"], [], ""]
+]];
+
 //////////////////////////
 //    Misc Loadouts     //
 //////////////////////////
@@ -327,7 +367,7 @@ _crewLoadoutData set ["uniforms", ["U_LIB_UK_KhakiDrills"]];
 _crewLoadoutData set ["vests", ["V_LIB_UK_P37_Crew"]];
 _crewLoadoutData set ["helmets", ["H_LIB_UK_Beret_Tankist"]];
 _crewLoadoutData set ["carbines", [
-    ["LIB_Sten_Mk2", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]
+    ["CSA38_stenMkII", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]
 ]];	
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
@@ -335,7 +375,7 @@ _pilotLoadoutData set ["uniforms", ["U_LIB_US_Pilot","U_LIB_US_Bomber_Pilot"]];
 _pilotLoadoutData set ["vests", ["V_LIB_US_LifeVest"]];
 _pilotLoadoutData set ["helmets", ["H_LIB_US_Helmet_Pilot","H_LIB_US_Pilot_Glasses_Down","H_LIB_US_Helmet_Glasses_Up","H_LIB_US_Helmet_Pilot_Respirator_Glasses_Down","H_LIB_US_Helmet_Pilot_Respirator_Glasses_Up","H_LIB_US_Helmet_Pilot_Respirator"]];
 _pilotLoadoutData set ["carbines", [
-    ["LIB_Sten_Mk2", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]
+    ["CSA38_stenMkII", "", "", "", ["LIB_32Rnd_9x19_Sten"], [], ""]
 ]];	
 
 
