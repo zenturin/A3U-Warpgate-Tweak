@@ -536,5 +536,19 @@ class cfgHALsStore
 				"underbarrelsma"
 			};
 		};
+		class csa38
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunscsa", 
+				"smgcsa",
+				"mgcsa", 
+				"riflescsa", 
+				"sniperriflescsa",
+				"muzzlescsa",
+				"magazinescsa", 
+				"launcherscsa"
+			};
+		};
 	};
 };

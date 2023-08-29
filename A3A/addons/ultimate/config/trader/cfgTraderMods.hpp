@@ -110,4 +110,9 @@ class traderMods
         addons[] = {"SMA_Weapons"};
         prefix = "sma";
     };
+    class csa38 : base
+    {
+        addons[] = {"csa38ii_data"};
+        prefix = "csa38";
+    };
 };
