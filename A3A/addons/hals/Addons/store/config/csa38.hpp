@@ -12,7 +12,7 @@
 			ITEM(csa38_vz30, 50, PISTOL_STOCK); //AMMO: csa38_FlareWhite26mm
 			ITEM(csa38_czvz22, 100, PISTOL_STOCK); //AMMO: CSA38_9mm_8xBrowning
 			ITEM(csa38_czvz24, 110, PISTOL_STOCK); //AMMO: CSA38_9mm_8xBrowning
-			ITEM(csa38_vz27, 110, PISTOL_STOCK); //AMMO: CSA38_7_65mm_8xBrowning
+			ITEM(csa38_czvz27, 110, PISTOL_STOCK); //AMMO: CSA38_7_65mm_8xBrowning
 			ITEM(csa38_czvz36, 110, PISTOL_STOCK); //AMMO: CSA38_6_35mm_8xBrowning
 			ITEM(csa38_czvz38, 110, PISTOL_STOCK); //AMMO: CSA38_9mm_9xBrowning
 			ITEM(csa38_WaltherPP, 110, PISTOL_STOCK); //AMMO: csa38_7_65mm_8xBrow
