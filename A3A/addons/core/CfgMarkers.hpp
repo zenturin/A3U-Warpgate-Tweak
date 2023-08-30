@@ -81,4 +81,10 @@ class CfgMarkers
 		icon = QPATHTOFOLDER(Pictures\Markers\marker_monolith_ca.paa);
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_monolith_ca.paa);
 	};
+	class a3u_flag_stalker_loners: a3u_flag_optre_unsc 
+	{
+		name = "Loner Flag (STALKER)";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_loners_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_loners_ca.paa);
+	};
 };

@@ -40,25 +40,14 @@
         description = "[STALKER] Due to the emissions, all civilian life was wiped out, being replaced by zombies. (This is an experimental template, disabling traffic and replacing all civ spawns with zombies)";
     };
 
-    // class OPTRE_Cov : STALKER_Base
-    // {
-    //     requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core"};
-    //     side = "Inv";
-    //     flagTexture = QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_covenant_ca.paa);
-    //     name = "Covenant (Elites)";
-    //     file = "OPTRE_AI_Covenant";
-    //     description = "The Covenant (With OPTRE elites)";
-    // };
-
-    // class OPTRE_Reb : STALKER_Base
-    // {
-    //     requiredAddons[] = {"OPTRE_Core"};
-    //     side = "Reb";
-    //     flagTexture = QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_insurrection_ca.paa);
-    //     name = "Insurrectionists";
-    //     file = "OPTRE_Reb_Ins";
-    //     description = "Led by Jerald Mulkey Ander, this faction fights to be free from the reign of the UNSC. They are similar to the United Rebel Front, but have no army to back up their cause. Yet.";
-    // };
+    class STALKER_Loners : STALKER_Base
+    {
+        side = "Reb";
+        flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_loners_ca.paa);
+        name = "Loners";
+        file = "STALKER_Reb_Loners";
+        description = "[STALKER] Loners are independent, claiming allegiance to no faction. Give them the promise of a glorious artefact however, and they may just destroy the other factions to find your promise...";
+    };
 
     // class OPTRE_Riv : STALKER_Base
     // {
@@ -67,13 +56,4 @@
     //     name = "United Rebel Front";
     //     file = "OPTRE_Riv_Ins";
     //     description = "Led by Colonel Watts, this faction originally fought with the insurrectionists. They hate each other due to different ideals, but still use similar equipment.";
-    // };
-
-    // class OPTRE_Civ : STALKER_Base
-    // {
-    //     side = "Civ";
-    //     flagTexture = QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_insurrection_ca.paa);
-    //     name = "OPTRE Civs";
-    //     file = "OPTRE_Civ";
-    //     description = "OPTRE Civilians.";
     // };

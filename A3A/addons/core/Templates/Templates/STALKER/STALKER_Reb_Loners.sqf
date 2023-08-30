@@ -2,28 +2,34 @@
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "TKM"] call _fnc_saveToTemplate;
+#include "..\..\..\script_component.hpp"
 
-["flag", "Flag_FIA_F"] call _fnc_saveToTemplate;
-["flagTexture", "a3\data_f\flags\flag_fia_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_FIA"] call _fnc_saveToTemplate;
+["name", "Loners"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["I_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["CUP_I_Hilux_armored_unarmed_NAPA"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["CUP_I_Hilux_DSHKM_NAPA"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["CUP_V3S_Open_NAPA"]] call _fnc_saveToTemplate;
+["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
+["flagTexture", QPATHTOFOLDER(Templates\Templates\STALKER\images\flag_ukraine_co.paa)] call _fnc_saveToTemplate;
+["flagMarkerType", "a3u_flag_stalker_loners"] call _fnc_saveToTemplate;
+
+["vehiclesBasic", ["CUP_C_TT650_RU"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["CUP_I_Datsun_4seat"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["CUP_I_Datsun_PK"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["CUP_C_Ural_Open_Civ_03"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["CUP_I_Hilux_SPG9_NAPA"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["CUP_I_Ural_ZU23_NAPA", "CUP_I_Hilux_zu23_NAPA"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["CUP_I_Ural_ZU23_NAPA", "CUP_I_Hilux_igla_NAPA"]] call _fnc_saveToTemplate;
 ["vehiclesBoat", ["I_G_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlane", ["CUP_C_DC3_CIV"]] call _fnc_saveToTemplate;
-["vehiclesCivPlane", ["CUP_C_AN2_CIV", "CUP_C_C47_CIV"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["CUP_I_LR_Ambulance_RACS"]] call _fnc_saveToTemplate;
+["vehiclesCivPlane", ["CUP_C_CESSNA_CIV"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["CUP_O_GAZ_Vodnik_MedEvac_RU"]] call _fnc_saveToTemplate;
 
-["vehiclesCivCar", ["CUP_O_Hilux_unarmed_CR_CIV"]] call _fnc_saveToTemplate;
-["vehiclesCivTruck", ["CUP_C_Ural_Civ_03"]] call _fnc_saveToTemplate;
+["vehiclesCivCar", ["CUP_O_Hilux_unarmed_CR_CIV_Tan"]] call _fnc_saveToTemplate;
+["vehiclesCivTruck", ["CUP_C_Ural_Civ_01"]] call _fnc_saveToTemplate;
 ["vehiclesCivHeli", ["CUP_C_Mi17_Civilian_RU"]] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", ["C_Rubberboat"]] call _fnc_saveToTemplate;
+// ["vehiclesCivCar", []] call _fnc_saveToTemplate;
+// ["vehiclesCivTruck", []] call _fnc_saveToTemplate;
+// ["vehiclesCivHeli", []] call _fnc_saveToTemplate;
+// ["vehiclesCivBoat", []] call _fnc_saveToTemplate;
 
 ["staticMGs", ["CUP_I_DSHKM_NAPA"]] call _fnc_saveToTemplate;
 ["staticAT", ["CUP_I_SPG9_NAPA"]] call _fnc_saveToTemplate;
@@ -40,30 +46,19 @@
 ["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate; //this line determines explosives needed for breaching Tanks -- Example: [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] -- Array, can use Multiple
 
-#include "CUP_Reb_Vehicle_Attributes.sqf"
+#include "STALKER_Reb_Vehicle_Attributes.sqf"
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 
 ["blackMarketStock", [
-    ["CUP_B_TOW_TriPod_USMC", 3000, "STATICAT", {tierWar > 3}],
-    ["CUP_B_AGS_CDF", 3000, "STATICMG", {tierWar > 3}],
-
-    ["CUP_B_BRDM2_HQ_CZ", 2050, "CAR", {true}],
-    ["CUP_B_BRDM2_CDF", 2500, "CAR", {true}],
-
-    ["CUP_B_BTR80_FIA", 6000, "APC", {true}],
     ["CUP_B_BMP2_CDF", 9000, "APC", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
     ["CUP_B_T72_CDF", 20000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
   
     ["CUP_B_ZSU23_CDF", 10000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
 
-    ["CUP_B_CESSNA_T41_ARMED_USA", 10000, "PLANE", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["CUP_B_L39_CZ", 40000, "PLANE", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-
-    ["CUP_B_Mi17_CDF", 15000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["CUP_O_Mi8_RU", 25000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
 ]] call _fnc_saveToTemplate;
 
@@ -72,15 +67,15 @@
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "CUP_sgun_slamfire", "CUP_srifle_LeeEnfield", "CUP_srifle_LeeEnfield_rail",
-    "CUP_1Rnd_12Gauge_Pellets_No00_Buck", "CUP_1Rnd_12Gauge_Pellets_No3_Buck", "CUP_10x_303_M",
-    "CUP_hgun_TaurusTracker455", "CUP_6Rnd_45ACP_M",
-    ["CUP_launch_RPG18", 50],
+    "CUP_SKS", "CUP_arifle_Sa58V",
+    "CUP_10Rnd_762x39_SKS_M", "CUP_15Rnd_Sa58_M",
+    "CUP_hgun_PMM", "CUP_12Rnd_9x18_PMM_M",
+    ["CUP_launch_RPG18", 3],
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "CUP_HandGrenade_RGD5", "SmokeShell",
-    "CUP_V_I_Carrier_Belt", "CUP_V_I_Guerilla_Jacket", "CUP_V_I_RACS_Carrier_Rig_2", "CUP_V_I_RACS_Carrier_Rig_wdl_2",
-    "CUP_V_RUS_Smersh_New_Light", "CUP_V_OI_TKI_Jacket1_06", "CUP_V_OI_TKI_Jacket5_05", "CUP_V_OI_TKI_Jacket5_06", "CUP_V_OI_TKI_Jacket3_04",
-    "B_FieldPack_cbr", "B_FieldPack_khk", "B_FieldPack_oli","B_AssaultPack_cbr","B_AssaultPack_rgr","B_AssaultPack_khk",
+    "CUP_V_O_Ins_Carrier_Rig", "CUP_V_B_GER_Carrier_Rig_3_Brown", "CUP_V_O_SLA_M23_1_BRN", "SCE_Coat_Short_1",
+    "SCE_Coat_Short_2", "SCE_Coat_Short_3", "SCE_Coat_Short_4", "CUP_V_O_SLA_M23_1_OD",
+    "SE_Scavenger_Backpack", "CUP_B_ACRScout_m95",
     "Binocular"
 ];
 
@@ -100,71 +95,42 @@ _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "CUP_I_B_PARA_Unit_2",
-    "CUP_I_B_PARA_Unit_6",
-    "CUP_I_B_PARA_Unit_9",
-    "CUP_U_I_GUE_Anorak_01",
-    "CUP_U_I_GUE_Woodland1",
-    "CUP_U_I_GUE_WorkU_02",
-    "CUP_U_I_GUE_Anorak_03",
-    "CUP_U_I_GUE_Anorak_02",
-    "CUP_U_I_GUE_Flecktarn",
-    "CUP_U_I_GUE_Flecktarn4",
-    "CUP_U_I_GUE_WorkU_01",
-    "U_IG_Guerilla1_1",
-    "U_IG_Guerilla2_1",
-    "U_IG_Guerilla2_2",
-    "U_IG_Guerilla2_3",
-    "U_IG_Guerilla3_1",
-    "U_IG_leader",
-    "U_IG_Guerrilla_6_1",
-    "U_I_G_resistanceLeader_F"
-];          //Uniforms given to Normal Rebels
-
-private _rebUniformsAI = [
-    "CUP_O_TKI_Khet_Jeans_04",
-    "CUP_O_TKI_Khet_Jeans_02",
-    "CUP_O_TKI_Khet_Jeans_01",
-    "CUP_O_TKI_Khet_Jeans_03",
-    "CUP_O_TKI_Khet_Partug_04",
-    "CUP_O_TKI_Khet_Partug_02",
-    "CUP_O_TKI_Khet_Partug_01",
-    "CUP_O_TKI_Khet_Partug_07",
-    "CUP_O_TKI_Khet_Partug_08",
-    "CUP_O_TKI_Khet_Partug_05",
-    "CUP_O_TKI_Khet_Partug_06",
-    "CUP_O_TKI_Khet_Partug_03"
+    "SE_Scavenger_Coat",
+    "SCE_Loner_1",
+    "SCE_Loner_2",
+    "SCE_Loner_3",
+    "SCE_Loner_4",
+    "SE_Assault_Fatigues_Loner"
 ];
 
-["uniforms", _rebUniforms + _rebUniformsAI] call _fnc_saveToTemplate;         //These Items get added to the Arsenal
+private _rebUniformsAI = ["SCE_Bandit_Rags_2_3", "SCE_Bandit_Rags_1_3"] + _rebUniforms;
+
+["uniforms", _rebUniforms + _rebUniformsAI] call _fnc_saveToTemplate;
 
 ["headgear", [
-    "H_ShemagOpen_tan",
-    "H_ShemagOpen_khk",
-    "CUP_H_TKI_SkullCap_01",
-    "CUP_H_TKI_SkullCap_02",
-    "CUP_H_TKI_SkullCap_03",
-    "CUP_H_TKI_SkullCap_04",
-    "CUP_H_TKI_SkullCap_05",
-    "CUP_H_TKI_SkullCap_06",
-    "CUP_H_TKI_Lungee_Open_01",
-    "CUP_H_TKI_Lungee_Open_02",
-    "CUP_H_TKI_Lungee_Open_03",
-    "CUP_H_TKI_Lungee_Open_04",
-    "CUP_H_TKI_Lungee_Open_05",
-    "CUP_H_TKI_Lungee_Open_06",
-    "CUP_H_TKI_Lungee_01",
-    "CUP_H_TKI_Lungee_02",
-    "CUP_H_TKI_Lungee_03",
-    "CUP_H_TKI_Lungee_04"
-]] call _fnc_saveToTemplate;          //Headgear used by Rebell Ai until you have Armored Headgear.
+    "armst_Hood_closed_loner1",
+    "armst_Hood_closed_loner2",
+    "armst_Hood_closed_loner3",
+    "armst_Hood_closed_loner4",
+    "armst_Hood_closed_loner5",
+    "armst_Hood_mid_loner1",
+    "armst_Hood_mid_loner2",
+    "armst_Hood_mid_loner3",
+    "armst_Hood_mid_loner4",
+    "armst_Hood_mid_loner5",
+    "armst_Hood_full_loner1",
+    "armst_Hood_full_loner2",
+    "armst_Hood_full_loner3",
+    "armst_Hood_full_loner4",
+    "armst_Hood_full_loner5"
+]] call _fnc_saveToTemplate;
 
 /////////////////////
 ///  Identities   ///
 /////////////////////
 
-["faces", ["PersianHead_A3_01","PersianHead_A3_02","PersianHead_A3_03"]] call _fnc_saveToTemplate;
-["voices", ["CUP_D_Male01_TK","CUP_D_Male02_TK","CUP_D_Male03_TK","CUP_D_Male04_TK","CUP_D_Male05_TK"]] call _fnc_saveToTemplate;
+["faces", ["RussianHead_1","RussianHead_2","RussianHead_3"]] call _fnc_saveToTemplate;
+["voices", ["Male01RUS","Male02RUS","Male03RUS"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
@@ -176,7 +142,7 @@ _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 
 _loadoutData set ["uniforms", _rebUniformsAI];
-_loadoutData set ["facewear", ["CUP_Beard_Black", "None", "CUP_Beard_Brown", "CUP_TK_NeckScarf"]];
+_loadoutData set ["facewear", ["CUP_G_Scarf_Face_Blk", "CUP_PMC_Facewrap_Black"]];
 
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies];
 _loadoutData set ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies];

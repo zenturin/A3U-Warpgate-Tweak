@@ -11,3 +11,5 @@ private _radius = sqrt 2 * _axis; // grab the general radius of the map, this is
 [[[_center, (_radius / 1.6), (_radius / 1.6), 0, true]],(_anomalyAmount / 2),(_anomalyAmount / 3),(_anomalyAmount / 3),(_anomalyAmount * 2)] call A3U_fnc_createAnomalyField;
 
 [format ["Creating anomaly field with anomalyAmount: %1", _anomalyAmount], _fnc_scriptName] call A3U_fnc_log;
+
+// this doesn't work on every map, but it does function well for the ones it works on

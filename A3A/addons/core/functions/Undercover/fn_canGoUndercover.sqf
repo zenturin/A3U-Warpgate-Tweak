@@ -42,6 +42,17 @@ if (captive player) exitWith
     [false, localize "STR_A3A_goUndercover_error_alreadyundercover_output"];
 };
 
+private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
+private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
+
+if (_lowCiv) exitWith {
+    [localize "STR_A3A_goUndercover_title", "Undercover not allowed in current civ template."] call A3A_fnc_customHint;
+};
+
+if (_civNonHuman) exitWith {
+    [localize "STR_A3A_goUndercover_title", "Undercover not allowed in current civ template."] call A3A_fnc_customHint;
+};
+
 private _secureBases = airportsX + milbases + outposts + seaports + (controlsX select {isOnRoad(getMarkerPos _x)});
 private _result = [];
 
