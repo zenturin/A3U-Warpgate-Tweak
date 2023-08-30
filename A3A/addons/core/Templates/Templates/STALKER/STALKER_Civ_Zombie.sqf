@@ -126,8 +126,8 @@ private _pressTemplate = {
 
 private _prefix = "militia";
 private _unitTypes = [
-    ["Press", _pressTemplate, [["baseClass", ["Zombie_Special_OPFOR_Leaper_1"], false]]], // to-do: allow press to spawn but make them special infected
-    ["Worker", _workerTemplate, [["baseClass", ["Zombie_O_Walker_Civ"], false]]],
+    ["Press", _pressTemplate, [["baseClass", "Zombie_Special_OPFOR_Leaper_1", false]]], // to-do: allow press to spawn but make them special infected
+    ["Worker", _workerTemplate, [["baseClass", "Zombie_O_Walker_Civ", false]]],
     ["Man", _manTemplate, [["baseClass", ["Zombie_O_Walker_Civ", "Zombie_O_Shambler_Civ"], false]]]
 ];
 

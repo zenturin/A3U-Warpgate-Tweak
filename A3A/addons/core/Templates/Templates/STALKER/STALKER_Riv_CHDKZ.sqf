@@ -32,7 +32,7 @@
 	"GreekHead_A3_04",
 	"AsianHead_A3_03",
 	"AsianHead_A3_06"
-]] call _fnc_saveToTemplate; 
+]] call _fnc_saveToTemplate;
 ["voices", ["Male01POL", "Male02POL", "Male03POL", "Male01RUS", "Male02RUS", "Male03RUS"]] call _fnc_saveToTemplate;
 
 //////////////////////////

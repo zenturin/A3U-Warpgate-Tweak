@@ -66,7 +66,7 @@ if (_numCiv > maxCiviliansPerTown && {_civNonHuman isEqualTo false}) then {
 // Disregard the above statement if civs aren't human
 if (_civNonHuman) then 
 {
-    if (_numCiv < 10) then {_numCiv = _numCiv * 2}; // we want the cities to be infested, no?
+    if (_numCiv < 5) then {_numCiv = _numCiv * 2}; // we want the cities to be infested, no?
     
     switch _faction do
     {
@@ -97,6 +97,10 @@ if (random 100 < ((aggressionOccupants) + (aggressionInvaders)) && {_civNonHuman
 
 for "_i" from 1 to _numCiv do {
     
+    if (_civNonHuman && {count _civilians >= (globalCivilianMax * 2)}) exitWith {
+        Info("Global Civilian spawn limit reached! - Exiting");
+    };
+
     if (count units civilian >= globalCivilianMax) exitWith {
         Info("Global Civilian spawn limit reached! - Exiting");
     };

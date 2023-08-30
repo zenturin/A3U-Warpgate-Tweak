@@ -21,7 +21,6 @@ class CfgPatches
 class A3U
 {
     #include "config\cfgForbiddenItems.hpp"
-    #include "config\cfgUnitSides.hpp"
     #include "config\trader\cfgTraderMods.hpp"
 };
 

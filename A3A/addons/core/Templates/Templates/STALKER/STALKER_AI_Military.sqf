@@ -9,7 +9,7 @@
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Templates\Templates\STALKER\images\flag_ukraine_co.paa)] call _fnc_saveToTemplate;
-["flagMarkerType", "a3u_flag_stalker_ukraine"] call _fnc_saveToTemplate;
+["flagMarkerType", "a3u_flag_stalker_military"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //

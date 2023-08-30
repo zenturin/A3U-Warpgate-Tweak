@@ -54,7 +54,8 @@ if (_civNotHuman) exitWith
     {
         params ["_victim", "_killer"];
         [_victim] spawn A3A_fnc_postmortem;
-    }]
+    }];
+    ["civInit", [_unit]] call EFUNC(Events,triggerEvent);
 };
 
 _unit addEventHandler["FiredNear", {
