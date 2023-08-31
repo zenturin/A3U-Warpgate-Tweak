@@ -24,58 +24,75 @@
 // I had to edit this because the original script doesn't take into account water, out of bounds, etc.
 // License: APL-SA
 
-params["_posParams",["_springboard",0],["_burner",0],["_electra",0],["_meatgrinder",0]];
-
-if(typeName _posParams != typeName []) then {
-    //created via module
-    private _pos = _posParams getVariable "objectarea";
-    _springboard = _posParams getVariable ["springboards",0];
-    _burner = _posParams getVariable ["burners",0];
-    _electra = _posParams getVariable ["electras",0];
-    _meatgrinder = _posParams getVariable ["meatgrinders",0];
-    private _module = _posParams;
-    _posParams = [[(getpos _posParams), _pos#0, _pos#1, _pos#2, _pos#3]];
-    deleteVehicle _module;
-};
+params[["_anomalyAmount", 40]];
 
 private _anomalies = [];
 
-private _fnc_grabPos = {
-    params ["_posParams"];
-    private _pos = _posParams call CBA_fnc_randPosArea;
-    private _overWater = !(_pos isFlatEmpty  [-1, -1, -1, -1, 2, false] isEqualTo []);
+private _drawAnomalies = missionNamespace getVariable ["A3U_setting_anomalyDraw", false];
 
-    if (_overWater) exitWith {_pos = [0,0,0]; _pos};
+private _fnc_grabPos = {
+    private _pos = [nil, ["water"]] call BIS_fnc_randomPos;
+
+    // I used to have random code here, it's not needed anymore
+
+    if (_pos isEqualTo [0,0] || {_pos isEqualTo [0,0,0]}) exitWith {_pos = call _fnc_grabPos}; // pls let recursive function work
 
     _pos
 };
 
-for "_i" from 1 to _springboard do {
-    _pos = [_posParams] call _fnc_grabPos;
-    if (_pos isEqualTo [0,0,0]) exitWith {};
-    _anomalies pushBack ([_pos] call anomaly_fnc_createSpringboard);
+private _fnc_structureText = { // idk why I named it this, it structures the text AND makes a marker
+    params ["_text", "_anomaly", "_index"];
+
+    if (_drawAnomalies isEqualTo false) exitWith {};
+    
+    private _marker = createMarker [(_text + str _index), [0,0]];
+    _marker setMarkerType "mil_dot";
+    _marker setMarkerText _text;
+    _marker setMarkerPos (getPos _anomaly);
 };
 
-for "_i" from 1 to _burner do {
-    _pos = [_posParams] call _fnc_grabPos;
-    if (_pos isEqualTo [0,0,0]) exitWith {};
-    _anomalies pushBack ([_pos] call anomaly_fnc_createBurner);
+[format ["Creating anomaly field, anomaly amount: ", [_anomalyAmount]], _fnc_scriptName] call A3U_fnc_log;
+
+for "_i" from 1 to _anomalyAmount do {
+    private _pos = call _fnc_grabPos;
+    private _roll = selectRandomWeighted [
+        1,0.5,
+        2,0.5,
+        3,0.3,
+        4,0.2
+    ];
+
+    switch (_roll) do
+    {
+        case 1: 
+        {
+            private _anomaly = [_pos] call anomaly_fnc_createMeatgrinder;
+            _anomalies pushBack _anomaly;
+            ["meatgrinder", _anomaly, _i] call _fnc_structureText;
+        };
+        case 2: 
+        {
+            private _anomaly = [_pos] call anomaly_fnc_createSpringboard;
+            _anomalies pushBack _anomaly;
+            ["springboard", _anomaly, _i] call _fnc_structureText;
+        };
+        case 3: 
+        {
+            private _anomaly = [_pos] call anomaly_fnc_createBurner;
+            _anomalies pushBack _anomaly;
+            ["burner", _anomaly, _i] call _fnc_structureText;
+        };
+        case 4: 
+        {
+            private _anomaly = [_pos] call anomaly_fnc_createElectra;
+            _anomalies pushBack _anomaly;
+            ["electra", _anomaly, _i] call _fnc_structureText;
+        };
+    };
 };
 
-for "_i" from 1 to _electra do {
-    _pos = [_posParams] call _fnc_grabPos;
-    if (_pos isEqualTo [0,0,0]) exitWith {};
-    _anomalies pushBack ([_pos] call anomaly_fnc_createElectra);
-};
+// [_anomalies] call A3U_fnc_cleanupAnomalyField;
 
-for "_i" from 1 to _meatgrinder do {
-    _pos = [_posParams] call _fnc_grabPos;
-    if (_pos isEqualTo [0,0,0]) exitWith {};
-    _anomalies pushBack ([_pos] call anomaly_fnc_createMeatgrinder);
-};
-
-[_anomalies] call A3U_fnc_cleanupAnomalyField;
-
-[format ["Created anomaly field, params: %1", _posParams], _fnc_scriptName] call A3U_fnc_log;
+[format ["Created anomaly field, anomaly amount final: ", [count _anomalies]], _fnc_scriptName] call A3U_fnc_log;
 
 _anomalies

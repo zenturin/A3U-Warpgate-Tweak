@@ -47,12 +47,7 @@ if (captive player) exitWith
 private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
 private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
 
-if (_lowCiv) exitWith {
-    [localize "STR_A3A_goUndercover_title", "Undercover not allowed in current civ template."] call A3A_fnc_customHint;
-    [false, "Undercover not allowed in current civ template."];
-};
-
-if (_civNonHuman) exitWith {
+if (_lowCiv || {_civNonHuman}) exitWith {
     [localize "STR_A3A_goUndercover_title", "Undercover not allowed in current civ template."] call A3A_fnc_customHint;
     [false, "Undercover not allowed in current civ template."];
 };
