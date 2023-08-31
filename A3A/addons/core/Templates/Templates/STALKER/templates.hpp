@@ -15,6 +15,13 @@
         file = "STALKER_AI_Military";
         description = "[STALKER] A phenomena of blinding light illuminates the sky high above the CNPP. The incident lasts two full hours before subsiding, witnesses reported it disappeared as if power suddenly failed. The Ukrainian military was subsequently dispatched into the zone.";
     };
+    class STALKER_ClearSky : STALKER_Military
+    {
+        flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_clearsky_ca.paa);
+        name = "Clear Sky";
+        file = "STALKER_AI_ClearSky";
+        description = "[STALKER] Clear Sky was formed after a split occurred among members of the research team that caused the Zone to emerge in the first place. Disputes concerning cleaning up the aftermath of the failed experiment caused approximately half of the scientists to leave.";
+    };
     
     class STALKER_Monolith : STALKER_Base
     {
@@ -45,23 +52,30 @@
     {
         side = "Reb";
         flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_loners_ca.paa);
-        name = "Loners";
+        name = "[Hard] Loners";
         file = "STALKER_Reb_Loners";
         description = "[STALKER] Loners are independent, claiming allegiance to no faction. Give them the promise of a glorious artefact however, and they may just destroy the other factions to find your promise...";
+    };
+    class STALKER_Ecologists : STALKER_Loners
+    {
+        flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_ecologists_ca.paa);
+        name = "[Medium] Ecologists";
+        file = "STALKER_Reb_Ecologists";
+        description = "[STALKER] Ecologists are scientists who worked for the Ukrainian government. Now they question if they should research the zone for their own gain.";
     };
 
     class STALKER_Duty : STALKER_Base
     {
         side = "Riv";
         flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_duty_ca.paa);
-        name = "Duty";
+        name = "[Hard] Duty";
         file = "STALKER_Riv_Duty";
-        description = "[STALKER] Led by Captain Tachenko, this faction was originally integrated with the military. After a resounding failure during the second disaster, the Captain cut off communication with headquarters and announced the formation of a paramilitary group in the Zone.";
+        description = "[STALKER] Led by Captain Tachenko, this faction was originally integrated with the military. After a resounding failure during the second disaster, the Captain cut off communication with headquarters and announced the formation of a paramilitary group.";
     };
     class STALKER_Bandits : STALKER_Duty
     {
         flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_bandits_ca.paa);
-        name = "Bandits";
+        name = "[Medium] Bandits";
         file = "STALKER_Riv_Bandits";
         description = "[STALKER] Led by Yoga, this faction has notoriously been a pain for the Loners to deal with. Almost everyone hates them.";
     };

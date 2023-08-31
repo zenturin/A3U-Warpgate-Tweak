@@ -87,4 +87,28 @@ class CfgMarkers
 		icon = QPATHTOFOLDER(Pictures\Markers\marker_loners_ca.paa);
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_loners_ca.paa);
 	};
+	class a3u_flag_stalker_duty: a3u_flag_optre_unsc 
+	{
+		name = "Duty Flag (STALKER)";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_duty_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_duty_ca.paa);
+	};
+	class a3u_flag_stalker_bandits: a3u_flag_optre_unsc 
+	{
+		name = "Bandit Flag (STALKER)";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_bandits_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_bandits_ca.paa);
+	};
+	class a3u_flag_stalker_ecologists: a3u_flag_optre_unsc 
+	{
+		name = "Ecologist Flag (STALKER)";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_ecologists_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_ecologists_ca.paa);
+	};
+	class a3u_flag_stalker_clearsky: a3u_flag_optre_unsc 
+	{
+		name = "Clear Sky Flag (STALKER)";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_clearsky_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_clearsky_ca.paa);
+	};
 };

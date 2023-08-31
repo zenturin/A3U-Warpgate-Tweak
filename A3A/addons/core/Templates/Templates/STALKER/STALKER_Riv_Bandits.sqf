@@ -144,7 +144,7 @@ _loadoutData set ["items_crew_extras", []];
 _loadoutData set ["items_unarmed_extras", []];
 
 _loadoutData set ["rifles", [
-    ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
+    ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""]
 ]];
 _loadoutData set ["tunedRifles", [
     ["CUP_arifle_AK12_black", "", "", "", ["CUP_30Rnd_545x39_AK12_M"], [], ""]

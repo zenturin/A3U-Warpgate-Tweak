@@ -55,9 +55,7 @@
 
 private _civUniforms = [
     "SCE_Bandit_Rags_1_1",
-    "SCE_Bandit_Rags_1_2",
-    "SE_Leather_Jacket_Loner_Green",
-    "SE_Leather_Jacket_Loner_Tan"
+    "SCE_Bandit_Rags_1_2"
 ];
 
 private _civUniformsAI = [

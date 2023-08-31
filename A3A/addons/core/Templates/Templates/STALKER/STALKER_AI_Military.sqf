@@ -16,7 +16,6 @@
 //////////////////////////
 
 ["attributeLowAir", true] call _fnc_saveToTemplate; // due to emissions in "the zone" and such, you don't want helis and planes flying around all the time
-["attributeLowCiv", true] call _fnc_saveToTemplate; // due to emissions in "the zone", no civs would exist as workers (e.g factory workers, etc)
 
 ["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate;
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
