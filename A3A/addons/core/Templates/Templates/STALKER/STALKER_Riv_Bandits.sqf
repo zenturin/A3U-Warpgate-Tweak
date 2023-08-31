@@ -2,8 +2,8 @@
 //   Rivals Information   //
 ///////////////////////////
 
-["name", "CHDKZ"] call _fnc_saveToTemplate;
-["nameLeader", "Mikola Bardak"] call _fnc_saveToTemplate;
+["name", "Bandits"] call _fnc_saveToTemplate;
+["nameLeader", "Yoga"] call _fnc_saveToTemplate; // I stg if someone goes "BUT ACTUALLY IT'S BAROV!" I will delete this faction personally
 
 //////////////////////////////////////
 //       	Identities    			//
@@ -15,23 +15,7 @@
 	"RussianHead_4", 
 	"RussianHead_5", 
 	"WhiteHead_29", 
-	"WhiteHead_30", 
-	"LivonianHead_1", 
-	"LivonianHead_2",
-	"LivonianHead_3",
-	"LivonianHead_4",
-	"LivonianHead_5",
-	"LivonianHead_6",
-	"LivonianHead_7",
-	"LivonianHead_8",
-	"LivonianHead_9",
-	"LivonianHead_10",
-	"GreekHead_A3_02",
-	"GreekHead_A3_06",
-	"GreekHead_A3_03",
-	"GreekHead_A3_04",
-	"AsianHead_A3_03",
-	"AsianHead_A3_06"
+	"WhiteHead_30"
 ]] call _fnc_saveToTemplate;
 ["voices", ["Male01POL", "Male02POL", "Male03POL", "Male01RUS", "Male02RUS", "Male03RUS"]] call _fnc_saveToTemplate;
 
@@ -41,11 +25,11 @@
 ["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
 ["surrenderCrate", "Box_Syndicate_Wps_F"] call _fnc_saveToTemplate;
 
-["vehiclesRivalsLightArmed", ["CUP_O_UAZ_MG_CHDKZ", "CUP_O_Hilux_DSHKM_CHDKZ", "CUP_O_UAZ_AGS30_CHDKZ", "CUP_O_Hilux_UB32_CHDKZ", "CUP_O_BRDM2_CHDKZ", "CUP_O_BRDM2_HQ_CHDKZ"]] call _fnc_saveToTemplate;
+["vehiclesRivalsLightArmed", ["CUP_I_Hilux_DSHKM_NAPA", "CUP_O_Hilux_DSHKM_CHDKZ"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsTrucks", ["CUP_O_Ural_Open_CHDKZ", "CUP_O_Ural_CHDKZ"]] call _fnc_saveToTemplate;
-["vehiclesRivalsCars", ["CUP_O_UAZ_Open_CHDKZ", "CUP_O_UAZ_Unarmed_CHDKZ", "CUP_O_Hilux_unarmed_CHDKZ"]] call _fnc_saveToTemplate;
-["vehiclesRivalsAPCs", ["CUP_O_BTR60_CHDKZ", "CUP_O_BTR80_CHDKZ", "CUP_O_BMP2_CHDKZ"]] call _fnc_saveToTemplate;
-["vehiclesRivalsTanks", ["CUP_O_T55_CHDKZ", "CUP_O_T72_CHDKZ"]] call _fnc_saveToTemplate;
+["vehiclesRivalsCars", ["CUP_I_Hilux_unarmed_NAPA"]] call _fnc_saveToTemplate;
+["vehiclesRivalsAPCs", ["CUP_I_BRDM2_HQ_NAPA", "CUP_I_BRDM2_NAPA"]] call _fnc_saveToTemplate;
+["vehiclesRivalsTanks", ["CUP_I_T55_NAPA", "CUP_I_T34_NAPA"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsHelis", ["CUP_O_Mi8_CHDKZ"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
@@ -83,33 +67,20 @@ _loadoutData set ["smokeGrenades", ["SmokeShell"]];
 _loadoutData set ["signalsmokeGrenades", ["SmokeShellRed"]];
 
 _loadoutData set ["facewear", [
-	"G_Shades_Black", 
-	"G_Shades_Blue", 
-	"G_Shades_Green", 
-	"G_Shades_Red", 
-	"G_Aviator",
-	"G_Spectacles", 
-	"G_Spectacles_Tinted",
-	"G_Sport_BlackWhite", 
-	"G_Sport_Blackyellow", 
-	"G_Sport_Greenblack", 
-	"G_Sport_Checkered", 
-	"G_Sport_Red", 
-	"G_Bandanna_aviator",
-	"G_Bandanna_beast",
-	"G_Bandanna_sport",
-	"G_Bandanna_shades"
+	"CUP_G_Scarf_Face_Blk",
+	"SE_Respirator",
+	"SE_PPM88"
 ]];
-_loadoutData set ["fullmask", []];
+
+_loadoutData set ["fullmask", [
+	"CAU_G_CBRN_m04_hoodless",
+	"CAU_G_CBRN_s10_blk"
+]];
 
 _loadoutData set ["headgear", [
-
-    "H_Cap_grn",
-    "H_Cap_oli",
-	"H_MilCap_grn",
-	"H_Bandanna_khk",
-	"H_Beret_blk"
-
+    "SE_Ushanka",
+    "CUP_H_PMC_Cap_Back_EP_Grey",
+	"CUP_H_PMC_Cap_EP_Grey"
 ]];
 
 _loadoutData set ["maps", ["ItemMap"]];
@@ -122,23 +93,23 @@ _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["Rangefinder", ["CUP_SOFLAM"]];
 
 _loadoutData set ["uniforms", [
-	"CUP_U_O_CHDKZ_Kam_01",
-	"CUP_U_O_CHDKZ_Kam_02",
-	"CUP_U_O_CHDKZ_Kam_03",
-	"CUP_U_O_CHDKZ_Kam_04",
-	"CUP_U_O_CHDKZ_Kam_05",
-	"CUP_U_O_CHDKZ_Kam_06",
-	"CUP_U_O_CHDKZ_Kam_07",
-	"CUP_U_O_CHDKZ_Kam_08"
+	"SCE_Bandit_1",
+	"SCE_Bandit_2",
+	"SCE_Bandit_3",
+	"SCE_Bandit_4"
 ]];
 
-_loadoutData set ["offuniforms", ["CUP_U_O_CHDKZ_Commander"]];
-_loadoutData set ["vests", ["CUP_V_O_Ins_Carrier_Rig"]];
-_loadoutData set ["heavyVests", ["CUP_V_O_Ins_Carrier_Rig"]];
-_loadoutData set ["atBackpacks", ["CUP_B_INS_RPG_Backpack"]];
-_loadoutData set ["backpacks", ["CUP_B_INS_AlicePack_Ammo"]];
-_loadoutData set ["helmets", ["CUP_H_ChDKZ_Beanie"]];
-_loadoutData set ["heavyHelmets", ["CUP_H_ChDKZ_Beanie"]];
+_loadoutData set ["offuniforms", ["SE_Assault_Fatigues_Bandit"]];
+_loadoutData set ["offvests", ["SCE_V_SEVA_Loner_6"]];
+_loadoutData set ["offhelmets", ["SCE_H_SEVA_Loner_6"]];
+_loadoutData set ["offfacewear", ["SCE_G_SEVA_HELMET_VISOR"]];
+_loadoutData set ["offbackpacks", ["SCE_B_SEVA_Loner_6"]];
+_loadoutData set ["vests", ["SCE_V_SEVA_Loner_1"]];
+_loadoutData set ["heavyVests", ["SCE_Exo2G_Bandit_2"]];
+_loadoutData set ["atBackpacks", ["CUP_B_USPack_Black"]];
+_loadoutData set ["backpacks", ["CUP_B_USPack_Black"]];
+_loadoutData set ["helmets", ["CUP_H_PMC_Beanie_Black", "CUP_H_RUS_K6_3_black"]];
+_loadoutData set ["heavyHelmets", ["SCE_Exo_Helmet_Bandit"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
@@ -174,22 +145,19 @@ _loadoutData set ["items_unarmed_extras", []];
 
 _loadoutData set ["rifles", [
     ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
-	["CUP_arifle_AKS", "", "", "CUP_optic_PechenegScope", ["CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_bakelite_M"], [], ""]
 ]];
 _loadoutData set ["tunedRifles", [
-    ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
-    ["CUP_arifle_AKS", "", "", "CUP_optic_PechenegScope", ["CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_bakelite_M"], [], ""]
+    ["CUP_arifle_AK12_black", "", "", "", ["CUP_30Rnd_545x39_AK12_M"], [], ""]
 ]];
 _loadoutData set ["enforcerRifles", [
-    ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
-    ["CUP_arifle_AKS", "", "", "CUP_optic_PechenegScope", ["CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_bakelite_M"], [], ""]
+    ["CUP_arifle_AK74M_railed", "", "", "", ["CUP_30Rnd_545x39_AK12_M"], [], ""]
 ]];
 _loadoutData set ["carbines", [
-    ["CUP_arifle_AKS74U", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""]
+    ["CUP_arifle_OTS14_GROZA_Grip", "", "", "", ["CUP_20Rnd_9x39_SP5_GROZA_M"], [], ""]
 ]];
 _loadoutData set ["grenadeLaunchers", [
     ["CUP_arifle_AK74_GL", "", "", "", ["CUP_30Rnd_545x39_AK74_plum_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SmokeRed_GP25_M"], ""],
-	["CUP_arifle_AKM_GL", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_bakelite_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SmokeRed_GP25_M"], ""]
+	["CUP_arifle_AK12_GP34_black", "", "", "", ["CUP_30Rnd_545x39_AK12_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SmokeRed_GP25_M"], ""]
 ]];
 _loadoutData set ["machineGuns", [
     ["CUP_arifle_RPK74M", "", "", "", ["CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"], [], ""]
@@ -214,16 +182,17 @@ _loadoutData set ["sidearms", [
 //////////////////////////
 
 private _crewLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData set ["vests", ["CUP_V_O_Ins_Carrier_Rig"]];
-_crewLoadoutData set ["helmets", ["CUP_H_ChDKZ_Beanie"]];
+_crewLoadoutData set ["uniforms", ["CAU_U_CBRN_blk"]];
+_crewLoadoutData set ["vests", ["SCE_V_SEVA_Loner_6"]];
+_crewLoadoutData set ["helmets", ["CUP_H_Ger_M92_Black"]];
 
 private _pilotLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["vests", ["CUP_V_O_Ins_Carrier_Rig"]];
-_pilotLoadoutData set ["helmets", ["H_Cap_headphones"]];
-
+_pilotLoadoutData set ["uniforms", ["CAU_U_CBRN_blk"]];
+_pilotLoadoutData set ["vests", ["SCE_V_SEVA_Loner_6"]];
+_pilotLoadoutData set ["helmets", ["CUP_H_Ger_M92_Black_GG_CF"]];
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################
-
+// ^ Watch me
 
 /////////////////////////////////
 //    Unit Type Definitions    //
@@ -235,15 +204,11 @@ _pilotLoadoutData set ["helmets", ["H_Cap_headphones"]];
 //However, these exist in case you really do want to do a lot of custom alterations.
 
 private _cellLeaderTemplate = {
-	if (random 100 > 60) then {
-		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
-	} else {
-		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
-	};
-	["vests"] call _fnc_setVest;
-	[["offuniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
+	["offhelmets"] call _fnc_setHelmet;
+	["offfacewear"] call _fnc_setFacewear;
+	["offuniforms"] call _fnc_setUniform;
+	["offvests"] call _fnc_setVest;
+	["offbackpacks"] call _fnc_setBackpack;
 
 	[selectRandom ["grenadeLaunchers", "rifles"]] call _fnc_setPrimary;
 	["primary", 6] call _fnc_addMagazines;
@@ -274,12 +239,12 @@ private _cellLeaderTemplate = {
 };
 
 private _mercenaryTemplate = {
-	if (random 100 > 60) then {
+	if (random 100 < 60) then {
 		["heavyHelmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["heavyVests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -309,10 +274,10 @@ private _mercenaryTemplate = {
 private _enforcerTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -347,10 +312,10 @@ private _enforcerTemplate = {
 private _partisanTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -382,10 +347,10 @@ private _partisanTemplate = {
 private _minutemanTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -417,10 +382,10 @@ private _minutemanTemplate = {
 private _medicTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -448,10 +413,10 @@ private _medicTemplate = {
 private _saboteurTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -485,10 +450,10 @@ private _saboteurTemplate = {
 private _explosivesExpertTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -522,10 +487,10 @@ private _explosivesExpertTemplate = {
 private _atTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -557,10 +522,10 @@ private _atTemplate = {
 private _aaTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -592,10 +557,10 @@ private _aaTemplate = {
 private _oppressorTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -623,10 +588,10 @@ private _oppressorTemplate = {
 private _sharpshooterTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["fullmask"] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
+		["facewear"] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
@@ -693,12 +658,14 @@ private _unarmedTemplate = {
 };
 
 private _commanderTemplate = {
-	[selectRandomWeighted ["helmets", 0.3, "headgear", 0.7]] call _fnc_setHelmet;
+	["offhelmets"] call _fnc_setHelmet;
+	["offfacewear"] call _fnc_setFacewear;
+	["offuniforms"] call _fnc_setUniform;
+	["offvests"] call _fnc_setVest;
+	["offbackpacks"] call _fnc_setBackpack;
+
 	["sidearms"] call _fnc_setHandgun;
 	["handgun", 2] call _fnc_addMagazines;
-
-	["vests"] call _fnc_setVest;
-	[["offuniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
 	["items_medical_basic"] call _fnc_addItemSet;
 	["items_unarmed_extras"] call _fnc_addItemSet;
