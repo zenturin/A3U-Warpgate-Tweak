@@ -74,7 +74,7 @@ private _initialRebelEquipment = [
     ["IEDUrbanSmall_Remote_Mag", 5], ["IEDLandSmall_Remote_Mag", 5],
     "CUP_HandGrenade_RGD5", "SmokeShell",
     "SE_Eastern_Chest_Rig_Brown", "CUP_V_O_SLA_M23_1_BRN", "CUP_V_O_SLA_M23_1_OD",
-    "SE_Satchel_Bag", "SE_Hunting_Backpack",
+    "SE_Satchel_Bag", "SE_Hunting_Backpack", "SE_SEVA_Visor",
     "Binocular"
 ];
 
