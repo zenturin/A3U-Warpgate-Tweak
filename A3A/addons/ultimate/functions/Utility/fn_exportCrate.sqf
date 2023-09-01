@@ -22,7 +22,7 @@
     this addAction ["copy", {[(_this select 0), "RHS", "snipers"] call A3U_fnc_exportCrate}];
 */
 
-// I am aware this script looks like hot dogshit, it works for it's given purpose and it's not intended to be used normally
+// I am aware this script looks like hot dogshit, it works for it's given purpose and it's not intended to be used for anyone other than devs
 
 params [
 	["_object", cursorObject],
