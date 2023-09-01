@@ -36,7 +36,6 @@ class OPTRE_Vehicles_Pelican_Pelican_base_p3d : TRIPLES(ADDON,Nodes,Base)
         };
     };
 };
-class OPTRE_Vehicles_Pelican_Pelican_base_p3d : {};
 
 class OPTRE_Vehicles_Warthog_M12_MAAV_p3d : TRIPLES(ADDON,Nodes,Base)
 {
@@ -45,10 +44,15 @@ class OPTRE_Vehicles_Warthog_M12_MAAV_p3d : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0,-1.7,-0.9};
-            seats[] = {2, 3};
+            seats[] = {2,3};
+        };
+        class Node2
+        {
+            offset[] = {0,-0.9,-0.9};
         };
     };
 };
+class OPTRE_Vehicles_Warthog_M12_MAAV_CIV_p3d : OPTRE_Vehicles_Warthog_M12_MAAV_p3d {};
 
 class OPTRE_Vehicles_Cart_Cart_p3d : TRIPLES(ADDON,Nodes,Base)
 {
@@ -68,8 +72,12 @@ class OPTRE_Vehicles_catfish_optre_catfish : TRIPLES(ADDON,Nodes,Base)
     {
         class Node1
         {
-            offset[] = {0.27,-1.9,-0.45};
+            offset[] = {0.27,-1.8,-0.45};
             seats[] = {4};
+        };
+        class Node2
+        {
+            offset[] = {0.27,-2.6,-0.45};
         };
     };
 };
@@ -227,7 +235,7 @@ class OPTRE_Vehicles_Air_Falcon_falcon_p3d : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0,0.3,-1.3};
-            seats[] = {1,2,3,6,7}
+            seats[] = {1,2,3,6,7};
         };
     };
 };
