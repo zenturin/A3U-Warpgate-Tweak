@@ -2,26 +2,22 @@
     Function: A3U_fnc_createAnomalyField
 
     Description:
-        Creates and anomaly field with specific amount of each anomaly type, avoiding water and out of bounds areas
+        Creates an anomaly field around the map, avoiding water
 
     Parameter:
-        _posParams - array containing parameters for the function CBA_fnc_randPosArea, See dokumentation here:http://cbateam.github.io/CBA_A3/docs/files/common/fnc_randPosArea-sqf.html (default: [])
-        _springboard     - how many anomalies of the type springboard should be created (default: 0)
-        _burner         - how many anomalies of the type burner should be created (default: 0)
-        _electra         - how many anomalies of the type electra should be created (default: 0)
-        _meatgrinder     - how many anomalies of the type meatgrinder should be created (default: 0)
+        _anomalyAmount <INTEGER>
 
     Returns:
-        array of all crated anomalies
+        array of all created anomalies
 
     Author:
-        diwako 2018-03-21
+        Silence
 */
 
-// You can find this script by diwako here: https://github.com/diwako/stalker_anomalies/blob/master/mod/diwako_anomalies/functions/anomalies/fn_createAnomalyField.sqf
-// This is the mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1383903166
+// You can find the unedited script by diwako here: https://github.com/diwako/stalker_anomalies/blob/master/mod/diwako_anomalies/functions/anomalies/fn_createAnomalyField.sqf
+// This is their mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1383903166
 
-// I had to edit this because the original script doesn't take into account water, out of bounds, etc.
+// I had to rewrite this because the original script doesn't take into account water, out of bounds, etc.
 // License: APL-SA
 
 params[["_anomalyAmount", 40]];
@@ -59,7 +55,7 @@ for "_i" from 1 to _anomalyAmount do {
         1,0.5,
         2,0.5,
         3,0.3,
-        4,0.2
+        4,0.3
     ];
 
     switch (_roll) do

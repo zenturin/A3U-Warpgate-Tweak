@@ -67,15 +67,14 @@
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "CUP_SKS", "CUP_arifle_Sa58V",
-    "CUP_10Rnd_762x39_SKS_M", "CUP_15Rnd_Sa58_M",
+    "CUP_SKS",
+    "CUP_10Rnd_762x39_SKS_M",
     "CUP_hgun_PMM", "CUP_12Rnd_9x18_PMM_M",
     ["CUP_launch_RPG18", 3],
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "CUP_HandGrenade_RGD5", "SmokeShell",
-    "CUP_V_O_Ins_Carrier_Rig", "CUP_V_B_GER_Carrier_Rig_3_Brown", "CUP_V_O_SLA_M23_1_BRN", "SCE_Coat_Short_1",
-    "SCE_Coat_Short_2", "SCE_Coat_Short_3", "SCE_Coat_Short_4", "CUP_V_O_SLA_M23_1_OD",
-    "SE_Scavenger_Backpack", "CUP_B_ACRScout_m95",
+    "CUP_V_O_Ins_Carrier_Rig", "CUP_V_B_GER_Carrier_Rig_3_Brown", "CUP_V_O_SLA_M23_1_BRN", "CUP_V_O_SLA_M23_1_OD",
+    "SE_Scavenger_Backpack",
     "Binocular"
 ];
 
@@ -95,7 +94,6 @@ _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "SE_Scavenger_Coat",
     "SCE_Loner_1",
     "SCE_Loner_2",
     "SCE_Loner_3",

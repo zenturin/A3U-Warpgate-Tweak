@@ -1,100 +1,89 @@
-//////////////////////////
-//       Vehicles       //
-//////////////////////////    
+private _hasWs = "ws" in A3A_enabledDLC;
+private _hasLawsOfWar = "orange" in A3A_enabledDLC;
+private _hasApex = "expansion" in A3A_enabledDLC;
 
-["vehiclesCivCar", [
-    "CUP_O_Hilux_unarmed_TK_CIV", 0.5
-    , "CUP_C_LR_Transport_CTK", 0.5
-    , "CUP_C_Bus_City_TKCIV", 0.2
-    , "CUP_C_SUV_TK", 0.3
-    , "CUP_C_Datsun_4seat", 0.5
-    , "CUP_C_Golf4_black_Civ", 0.5
-    , "CUP_C_Golf4_random_Civ", 0.5
-    , "CUP_C_Octavia_CIV", 0.5
-    , "CUP_C_Pickup_unarmed_CIV", 0.5
-    ]] call _fnc_saveToTemplate;
-
-["vehiclesCivIndustrial", [
-    "CUP_C_V3S_Open_TKC", 0.3
-    , "CUP_C_V3S_Covered_TKC", 0.2
-    , "CUP_C_Ural_Civ_01", 0.2
-]] call _fnc_saveToTemplate;
-
-["vehiclesCivBoat", [
-    "CUP_C_Fishing_Boat_Chernarus", 0.2
-    , "CUP_C_PBX_CIV", 0.7
-    , "CUP_C_Zodiac_CIV", 0.7
-]] call _fnc_saveToTemplate;
-
-["vehiclesCivRepair", [
-    "C_Truck_02_box_F", 0.1
-    , "C_Offroad_01_repair_F", 0.1
-]] call _fnc_saveToTemplate;
-
-["vehiclesCivMedical", [
-    "CUP_C_S1203_Ambulance_CIV", 0.1
-]] call _fnc_saveToTemplate;
-
-["vehiclesCivFuel", [
-    "C_Truck_02_fuel_F", 0.1
-    , "C_Van_01_fuel_F", 0.1
-]] call _fnc_saveToTemplate;
-
-/////////////////////
-///  Identities   ///
-/////////////////////
+//////////////////////////////
+//   Civilian Information   //
+//////////////////////////////
 
 ["attributeLowCiv", true] call _fnc_saveToTemplate; // due to emissions in "the zone", all civs would be gone
 
-["faces", ["LivonianHead_6","Sturrock","WhiteHead_01","WhiteHead_02","WhiteHead_03","WhiteHead_04",
-"WhiteHead_05","WhiteHead_07","WhiteHead_08","WhiteHead_09","WhiteHead_10","WhiteHead_11","WhiteHead_12",
-"WhiteHead_14","WhiteHead_15","WhiteHead_16","WhiteHead_17","WhiteHead_18","WhiteHead_19","WhiteHead_20",
-"WhiteHead_21"]] call _fnc_saveToTemplate;
+//////////////////////////
+//       Vehicles       //
+//////////////////////////
+
+private _civCarsWithWeights = [
+    "C_Quadbike_01_F", 0.3
+    ,"C_Hatchback_01_F", 1.0
+    ,"C_Hatchback_01_sport_F", 0.3
+    ,"C_Offroad_01_F", 1.0
+    ,"C_SUV_01_F", 1.0
+    ,"C_Van_02_vehicle_F", 1.0                // van from Orange
+    ,"C_Van_02_transport_F", 0.2            // minibus
+    ,"C_Offroad_02_unarmed_F", 0.5            // Apex 4WD
+    ,"C_Offroad_01_comms_F", 0.1            // Contact
+    ,"C_Offroad_01_covered_F", 0.1
+];
+
+if (_hasApex) then {
+    _civCarsWithWeights append ["C_Offroad_02_unarmed_F", 1.0];
+};
+
+["vehiclesCivCar", _civCarsWithWeights] call _fnc_saveToTemplate;
+
+
+["vehiclesCivIndustrial", [
+    "C_Van_01_transport_F", 1.0
+    ,"C_Van_01_box_F", 0.8
+    ,"C_Truck_02_transport_F", 0.5
+    ,"C_Truck_02_covered_F", 0.5
+    ,"C_Tractor_01_F", 0.3    ]] call _fnc_saveToTemplate;
+
+["vehiclesCivBoat", [
+    "C_Boat_Civil_01_rescue_F", 0.1            // motorboats
+    ,"C_Boat_Civil_01_police_F", 0.1
+    ,"C_Boat_Civil_01_F", 1.0
+    ,"C_Rubberboat", 1.0                    // rescue boat
+    ,"C_Boat_Transport_02_F", 1.0            // RHIB
+    ,"C_Scooter_Transport_01_F", 0.5]] call _fnc_saveToTemplate;
+
+["vehiclesCivRepair", [
+    "C_Offroad_01_repair_F", 0.3
+    ,"C_Van_02_service_F", 0.3                // orange
+    ,"C_Truck_02_box_F", 0.1]] call _fnc_saveToTemplate;
+
+["vehiclesCivMedical", ["C_Van_02_medevac_F", 0.1]] call _fnc_saveToTemplate;
+
+["vehiclesCivFuel", [
+    "C_Van_01_fuel_F", 0.2
+    ,"C_Truck_02_fuel_F", 0.1]] call _fnc_saveToTemplate;
+
+["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
 
 private _civUniforms = [
-    "CUP_U_C_Citizen_01"
+    "U_C_Man_casual_1_F"
 ];
 
-private _civUniformsAI = [
-    "CUP_U_C_Citizen_02",
-    "CUP_U_C_Citizen_01",
-    "CUP_U_C_Citizen_04",
-    "CUP_U_C_Citizen_03",
-    "CUP_U_C_Rocker_01",
-    "CUP_U_C_Rocker_02",
-    "CUP_U_C_Rocker_03",
-    "CUP_U_C_Rocker_04",
-    "CUP_U_C_Tracksuit_02",
-    "CUP_U_C_Tracksuit_01"
-]; //Uniforms given to AI
+["uniforms", _civUniforms] call _fnc_saveToTemplate;
 
-private _pressUniforms = ["U_C_Journalist", "U_Marshal"];            //Uniforms given to Press/Journalists
-
-private _workerUniforms = ["CUP_U_C_Worker_03", "CUP_U_C_Worker_04", "CUP_U_C_Worker_02", "CUP_U_C_Worker_01", "CUP_U_C_Mechanic_02", "CUP_U_C_Mechanic_03", "CUP_U_C_Mechanic_01"];           //Uniforms given to Workers at Factories/Resources
-
-["uniforms", _civUniforms + _pressUniforms + _workerUniforms] call _fnc_saveToTemplate;          //Uniforms given to the Arsenal, Allowed for Undercover and given to Rebel Ai that go Undercover
-
-_civHats = [];
-
-["headgear", _civHats] call _fnc_saveToTemplate;            //Headgear given to Normal Civs, Workers, Undercover Rebels.
+["headgear", []] call _fnc_saveToTemplate;
 
 private _loadoutData = call _fnc_createLoadoutData;
 
-_loadoutData set ["uniforms", _civUniformsAI];
-_loadoutData set ["pressUniforms", _pressUniforms];
-_loadoutData set ["workerUniforms", _workerUniforms];
-_loadoutData set ["pressVests", ["V_Press_F"]];
-_loadoutData set ["pressHelmets", ["H_Cap_press"]];
-_loadoutData set ["workerHelmets", ["H_Cap_blk", "CUP_H_PMC_Cap_Tan"]];
+_loadoutData set ["uniforms", _civUniforms];
+_loadoutData set ["pressUniforms", _civUniforms];
+_loadoutData set ["workerUniforms", _civUniforms];
+_loadoutData set ["pressVests", []];
+_loadoutData set ["helmets", []];
+_loadoutData set ["pressHelmets", []];
 
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
-
 
 private _manTemplate = {
     ["uniforms"] call _fnc_setUniform;
