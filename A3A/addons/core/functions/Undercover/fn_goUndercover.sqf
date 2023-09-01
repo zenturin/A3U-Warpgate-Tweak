@@ -62,7 +62,7 @@ private _canGoUndercoverReason = _result select 1;
 
 if(!_canGoUndercoverValue && {_canGoUndercoverReason isEqualTo (localize "STR_A3A_goUndercover_error_alreadyundercover_output")}) exitWith {};
 
-if(!_canGoUndercoverValue && {_canGoUndercoverReason isEqualTo (localize "Undercover not allowed in current civ template.")}) exitWith {};
+if(!_canGoUndercoverValue && {_canGoUndercoverReason isEqualTo ("Undercover not allowed in current civ template.")}) exitWith {};
 
 if(!_canGoUndercoverValue && {_canGoUndercoverReason isEqualTo (localize "STR_A3A_goUndercover_error_spotting_output")}) exitWith {
     if !(isNull (objectParent player)) then {
