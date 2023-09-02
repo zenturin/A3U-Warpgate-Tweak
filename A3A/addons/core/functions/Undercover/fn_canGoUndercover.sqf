@@ -28,6 +28,8 @@ Example:
     [] call A3A_fnc_canGoUndercover;
 */
 
+#include "..\..\script_component.hpp"
+
 private _reasons = [];
 
 if (player != player getVariable["owner", player]) exitWith

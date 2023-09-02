@@ -18,8 +18,9 @@ if(!(_result select 0)) then
             } forEach ((crew(objectParent player)) + (assignedCargo(objectParent player)) - [player]);
         };
     };
-    if((_result select 1) == "Undercover not allowed in current civ template.") exitWith {};
 };
+
+if (_result select 0 isEqualTo false) exitWith {["Undercover", _result select 1] call A3A_fnc_customHint};
 
 private _layer = ["A3A_infoCenter"] call BIS_fnc_rscLayer;
 ["Undercover ON", 0, 0, 4, 0, 0, _layer] spawn bis_fnc_dynamicText;
