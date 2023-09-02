@@ -95,6 +95,16 @@ if (random 100 < ((aggressionOccupants) + (aggressionInvaders)) && {_civNonHuman
     [_groupX, "Patrol_Area", 5, 50, 300, false, [], false] call A3A_fnc_patrolLoop;
 };
 
+// if (random 100 < 30 && {_civNonHuman}) then {
+//     private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
+//     private _groupX = createGroup _groupSide;
+//     _civilianGroups pushBack _groupX;
+//     private _mutant = [_groupX, FactionGet(civ, "unitMutant"), _spawnPosition, [],0, "NONE"] call A3A_fnc_createUnit;
+//     [_mutant] spawn A3A_fnc_civilianInitEH;
+//     _civilians pushBack _mutant;
+//     [_groupX] call A3A_fnc_patrolLoop;
+// };
+
 for "_i" from 1 to _numCiv do {
     
     if (_civNonHuman && {count _civilians >= (globalCivilianMax * 2)}) exitWith {
