@@ -51,7 +51,7 @@ if (_lowCiv || {_civNonHuman}) exitWith {
 };
 
 private _roadblocks = controlsX select {isOnRoad(getMarkerPos _x)};
-private _secureBases = airportsX + outposts + seaports + _roadblocks;
+private _secureBases = airportsX + milbases + outposts + seaports + (controlsX select {isOnRoad(getMarkerPos _x)});
 private _result = [];
 
 if !(isNull (objectParent player)) then

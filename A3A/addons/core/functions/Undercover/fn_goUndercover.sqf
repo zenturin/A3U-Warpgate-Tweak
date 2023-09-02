@@ -36,8 +36,10 @@ if (player == leader group player) then
     } forEach units group player;
 };
 
-private _roadblocks = controlsX select {isOnRoad(getMarkerPos _x)};
-private _secureBases = airportsX + outposts + seaports + _roadblocks;
+private _secureBases = (
+    (airportsX + outposts + seaports + milbases + (controlsX select {isOnRoad(getMarkerPos _x)})) select {sidesX getVariable [_x, sideUnknown] != teamPlayer}
+) + (milAdministrationsX select {sidesX getVariable [_x,sideUnknown] == Occupants});
+
 private _lastBaseInside = "";
 private _reason = "";
 ["Undercover", [""]] call EFUNC(Events,triggerEvent);
