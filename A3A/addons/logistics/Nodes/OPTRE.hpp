@@ -5,7 +5,7 @@ class OPTRE_Vehicles_Mongoose_mongoose_p3d : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0,-0.4,-0.7};
-            seats[] = {1, 2};
+            seats[] = {0, 1};
         };
     };
 };
@@ -44,7 +44,7 @@ class OPTRE_Vehicles_Warthog_M12_MAAV_p3d : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0,-1.7,-0.9};
-            seats[] = {2,3};
+            seats[] = {1,2};
         };
         class Node2
         {
@@ -61,7 +61,7 @@ class OPTRE_Vehicles_Cart_Cart_p3d : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0,0.9,-0.6};
-            seats[] = {2};
+            seats[] = {1};
         };
     };
 };
@@ -73,7 +73,7 @@ class OPTRE_Vehicles_catfish_optre_catfish : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0.27,-1.8,-0.45};
-            seats[] = {4};
+            seats[] = {3};
         };
         class Node2
         {
@@ -223,7 +223,7 @@ class OPTRE_FC_Vehicles_Spectre_Spectre_empty_p3d : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0.1,-1.5,-0.1};
-            seats[] = {3,4};
+            seats[] = {2,3};
         };
     };
 };
@@ -235,21 +235,11 @@ class OPTRE_Vehicles_Air_Falcon_falcon_p3d : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0,0.3,-1.3};
-            seats[] = {1,2,3,6,7};
+            seats[] = {0,1,2,5,6};
         };
     };
 };
 class OPTRE_Vehicles_Air_Falcon_falcon_unarmed_p3d : OPTRE_Vehicles_Air_Falcon_falcon_p3d {};
-
-
-// // grab classes
-// class A3_soft_f_beta_Truck_02_Truck_02_covered_F_p3d; // kamaz
-// class A3_soft_f_beta_Truck_02_Truck_02_transport_F;
-
-// class A3_Soft_F_EPC_Truck_03_Truck_03_covered_F_p3d; // typhoon
-// class A3_Soft_F_EPC_Truck_03_Truck_03_transport_F_p3d;
-
-// already should be defined in the other files
 
 class OPTRE_m1015_mule_cover_ins : A3_soft_f_beta_Truck_02_Truck_02_covered_F_p3d {}; // mule
 class OPTRE_m1015_mule_ins : A3_soft_f_beta_Truck_02_Truck_02_transport_F {};
