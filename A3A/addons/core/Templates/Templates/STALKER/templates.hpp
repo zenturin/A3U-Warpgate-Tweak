@@ -43,7 +43,8 @@
     {
         requiredAddons[] = {};
         side = "Civ";
-        flagTexture = QPATHTOFOLDER(Templates\Templates\STALKER\images\flag_ukraine_co.paa);
+        logo = "a3\ui_f\data\logos\arma3_white_ca.paa";
+        flagTexture = "a3\ui_f\data\logos\arma3_white_ca.paa";
         name = "No Civs";
         file = "STALKER_Civ_Empty";
         description = "All civilian life was wiped out. (This is an experimental template, disabling traffic and all civ presence)";

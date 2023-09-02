@@ -6,7 +6,7 @@ private _hasApex = "expansion" in A3A_enabledDLC;
 //   Civilian Information   //
 //////////////////////////////
 
-["attributeLowCiv", true] call _fnc_saveToTemplate; // due to emissions in "the zone", all civs would be gone
+["attributeLowCiv", true] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //

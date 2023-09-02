@@ -6,7 +6,7 @@ private _hasApex = "expansion" in A3A_enabledDLC;
 //   Civilian Information   //
 //////////////////////////////
 
-["attributeCivNonHuman", true] call _fnc_saveToTemplate; // due to emissions in "the zone", all civs would be zombies
+["attributeCivNonHuman", true] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
