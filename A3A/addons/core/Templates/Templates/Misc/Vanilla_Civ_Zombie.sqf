@@ -65,11 +65,36 @@ if (_hasApex) then {
 //////////////////////////
 
 private _civUniforms = [
-    "CUP_U_O_RUS_Gorka_Green",
-    "CUP_U_O_RUS_Gorka_Green_gloves_kneepads",
-    "CUP_U_O_CHDKZ_Lopotev",
-    "CUP_U_C_Labcoat_02",
-    "CUP_U_I_GUE_Anorak_02"
+    "U_C_Man_casual_1_F",
+    "U_C_Man_casual_2_F",
+    "U_C_Man_casual_3_F",
+    "U_C_Man_casual_4_F",
+    "U_C_Man_casual_5_F",
+    "U_C_Man_casual_6_F",
+    "U_C_ArtTShirt_01_v1_F",
+    "U_C_ArtTShirt_01_v2_F",
+    "U_C_ArtTShirt_01_v3_F",
+    "U_C_ArtTShirt_01_v4_F",
+    "U_C_ArtTShirt_01_v5_F",
+    "U_C_ArtTShirt_01_v6_F",
+    "U_NikosBody",
+    "U_NikosAgedBody",
+    "U_C_Poloshirt_blue",
+    "U_C_Poloshirt_burgundy",
+    "U_C_Poloshirt_stripped",
+    "U_C_Poloshirt_tricolour",
+    "U_C_Poloshirt_salmon",
+    "U_C_Poloshirt_redwhite",
+    "U_OrestesBody",
+    "U_C_Poor_1",
+    "U_C_HunterBody_grn",
+    "U_I_L_Uniform_01_tshirt_skull_F",
+    "U_I_L_Uniform_01_tshirt_black_F",
+    "U_I_L_Uniform_01_tshirt_sport_F",
+    "U_C_Scientist",
+    "U_C_Uniform_Scientist_02_formal_F",
+    "U_C_Uniform_Scientist_02_F",
+    "U_C_Uniform_Scientist_01_F"
 ];
 
 ["uniforms", _civUniforms] call _fnc_saveToTemplate;
@@ -80,8 +105,7 @@ private _loadoutData = call _fnc_createLoadoutData;
 
 _loadoutData set ["uniforms", _civUniforms];
 _loadoutData set ["pressUniforms", _civUniforms];
-_loadoutData set ["workerUniforms", ["CAU_U_CBRN_blue"]];
-_loadoutData set ["workerFacewear", ["CAU_G_CBRN_m50_blue_hood", "CAU_G_CBRN_s10_blue"]];
+_loadoutData set ["workerUniforms", ["U_C_WorkerCoveralls", "U_C_Uniform_Farmer_01_F"]];
 _loadoutData set ["pressVests", []];
 _loadoutData set ["helmets", []];
 _loadoutData set ["pressHelmets", []];
@@ -102,8 +126,6 @@ private _manTemplate = {
 private _workerTemplate = {
     ["workerHelmets"] call _fnc_setHelmet;
     ["workerUniforms"] call _fnc_setUniform;
-
-    ["workerFacewear"] call _fnc_setFacewear;
 
     ["items_medical_standard"] call _fnc_addItemSet;
 
@@ -126,7 +148,7 @@ private _pressTemplate = {
 private _prefix = "militia";
 private _unitTypes = [
     ["Press", _pressTemplate], // to-do: allow press to spawn but make them special infected
-    ["Worker", _workerTemplate], // needed to be normal for resources, factories, etc
+    ["Worker", _workerTemplate],
     ["Man", _manTemplate],
     ["Special", _manTemplate, [["baseClass", ["Zombie_O_Walker_Civ", "Zombie_O_Shambler_Civ", "Zombie_O_Shooter_FIA", "Zombie_Special_OPFOR_Leaper_1", "Zombie_Special_OPFOR_Leaper_2"], false]]]
 ];

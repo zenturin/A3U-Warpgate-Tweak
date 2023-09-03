@@ -2,6 +2,7 @@
     {
         requiredAddons[] = {"CUP_Vehicles_Core", "SCE_Uniforms"};
         logo = QPATHTOFOLDER(Templates\Templates\STALKER\images\flag_ukraine_co.paa); // before people go "WOOO WHEN UKRAINE FACTION", no! STALKER is set in ukraine around 2000-2010
+        flagTexture = QPATHTOFOLDER(Templates\Templates\STALKER\images\flag_ukraine_co.paa);
         basepath = QPATHTOFOLDER(Templates\Templates\STALKER);
         priority = 62;
         climate[] = {"temperate","tropical","arid","arctic"};
@@ -22,6 +23,15 @@
         file = "STALKER_AI_ClearSky";
         description = "[STALKER] Clear Sky was formed after a split occurred among members of the research team that caused the Zone to emerge in the first place. Disputes concerning cleaning up the aftermath of the failed experiment caused approximately half of the scientists to leave.";
     };
+
+    class STALKER_Civ_Zombie : STALKER_Base
+    {
+        requiredAddons[] = {"WBK_ZombieCreatures"};
+        side = "Civ";
+        name = "Mutants";
+        file = "STALKER_Civ_Zombie";
+        description = "All civilian life was wiped out, being replaced by zombies and mutants. Workers are clad in CBRN gear. (This is an experimental template, disabling traffic and replacing civs with zombies/mutants)";
+    };
     
     class STALKER_Monolith : STALKER_Base
     {
@@ -37,24 +47,6 @@
         name = "Freedom";
         file = "STALKER_AI_Freedom";
         description = "[STALKER] After Strelok disables the Brain Scorcher, Freedom units head towards the Center of the Zone but encounter Duty. As a result, the Freedom Expeditionary Unit, led by Loki, creates a camp in the Yanov station.";
-    };
-
-    class STALKER_Civ_Empty : STALKER_Base
-    {
-        requiredAddons[] = {};
-        side = "Civ";
-        logo = "a3\ui_f\data\logos\arma3_white_ca.paa";
-        flagTexture = "a3\ui_f\data\logos\arma3_white_ca.paa";
-        name = "No Civs";
-        file = "STALKER_Civ_Empty";
-        description = "All civilian life was wiped out. (This is an experimental template, disabling traffic and all civ presence)";
-    };
-    class STALKER_Civ_Zombie : STALKER_Civ_Empty
-    {
-        requiredAddons[] = {"WBK_ZombieCreatures"};
-        name = "Zombies";
-        file = "STALKER_Civ_Zombie";
-        description = "All civilian life was wiped out, being replaced by zombies. (This is an experimental template, disabling traffic and replacing civs with zombies)";
     };
 
     class STALKER_Loners : STALKER_Base

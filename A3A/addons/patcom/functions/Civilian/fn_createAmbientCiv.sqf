@@ -25,7 +25,7 @@ FIX_LINE_NUMBERS()
 params ["_markerX"];
 
 // We only want to run on the server and not on the players
-if (!isServer and hasInterface) exitWith{};
+if (!isServer and hasInterface) exitWith {};
 
 if (_markerX in destroyedSites) exitWith {};
 
@@ -33,6 +33,7 @@ private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
 private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
 
 if (_lowCiv) exitWith {};
+if ("seaport" in _markerX && {_civNonHuman}) exitWith {};
 
 private _sideX = sidesX getVariable [_markerX,sideUnknown];
 private _faction = Faction(_sideX);
@@ -59,7 +60,7 @@ private _cityData = server getVariable _city;
 private _numCiv = round (1.5 * sqrt (_cityData # 0) * (1 - tierWar / 20));
 
 // We don't want to add too many civ's.
-if (_numCiv > maxCiviliansPerTown && {_civNonHuman isEqualTo false}) then {
+if (_numCiv > maxCiviliansPerTown) then {
     _numCiv = maxCiviliansPerTown;
 };
 
@@ -78,12 +79,25 @@ if (_civNonHuman) then
         {
             _groupSide = west; // if city is invader, make the zombies occupant
         };
-        case A3A_faction_reb : 
-        {
-            _groupSide = west; // you get the idea by now
-        };
     };
 }; // This ensures the zombies are always aggro to the city owner
+
+if (_faction isEqualTo A3A_faction_reb) exitWith {
+    if (count units civilian >= globalCivilianMax) exitWith {
+        Info("Global Civilian spawn limit reached! - Exiting");
+    };
+
+    for "_i" from 1 to _numCiv do {
+        private _groupX = createGroup _groupSide;
+        private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
+        private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _spawnPosition, [],0, "NONE"] call A3A_fnc_createUnit;
+        _civUnit setPosATL _spawnPosition;
+        _civilianGroups pushBack _groupX;
+        _civilians pushBack _civUnit;
+        [_civUnit] spawn A3A_fnc_civilianInitEH;
+        [_groupX] call A3A_fnc_patrolLoop;
+    };
+}; // we don't want enemies spawning in friendly cities, call them "safe havens"
 
 if (random 100 < ((aggressionOccupants) + (aggressionInvaders)) && {_civNonHuman isEqualTo false}) then {
     private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
@@ -129,7 +143,13 @@ for "_i" from 1 to _numCiv do {
         };
 
         private _groupX = createGroup _groupSide;
-        private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
+
+        if (_civNonHuman) then {
+            private _civUnit = [_groupX, FactionGet(civ, "unitSpecial"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
+        } else {
+            private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
+        };
+
         _civUnit setPosATL _posHouse;
         _civilianGroups pushBack _groupX;
         _civilians pushBack _civUnit;
@@ -164,7 +184,13 @@ for "_i" from 1 to _numCiv do {
     } else {
         private _groupX = createGroup _groupSide;
         private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
-        private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _spawnPosition, [],0, "NONE"] call A3A_fnc_createUnit;
+
+        if (_civNonHuman) then {
+            private _civUnit = [_groupX, FactionGet(civ, "unitSpecial"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
+        } else {
+            private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
+        };
+
         _civUnit setPosATL _spawnPosition;
         _civilianGroups pushBack _groupX;
         _civilians pushBack _civUnit;

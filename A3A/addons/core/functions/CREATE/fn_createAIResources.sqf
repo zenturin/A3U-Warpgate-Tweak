@@ -122,7 +122,7 @@ if (flagTexture _flagX != (_faction get "flagTexture")) then {[_flagX,(_faction 
 private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
 private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
 
-if (_lowCiv isEqualTo false && {_civNonHuman isEqualTo false}) then {
+if (_lowCiv isEqualTo false) then {
 	private _spawnedCivilians = [_markerX, 4] call A3A_fnc_createResourceCiv;
 	if !(isNil "_spawnedCivilians") then {
 		_groups pushBack (_spawnedCivilians # 0);
