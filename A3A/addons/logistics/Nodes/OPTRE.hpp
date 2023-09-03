@@ -61,7 +61,7 @@ class OPTRE_Vehicles_Cart_Cart_p3d : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0,0.9,-0.6};
-            seats[] = {1};
+            seats[] = {0};
         };
     };
 };
@@ -73,7 +73,7 @@ class OPTRE_Vehicles_catfish_optre_catfish : TRIPLES(ADDON,Nodes,Base)
         class Node1
         {
             offset[] = {0.27,-1.8,-0.45};
-            seats[] = {3};
+            seats[] = {5};
         };
         class Node2
         {
