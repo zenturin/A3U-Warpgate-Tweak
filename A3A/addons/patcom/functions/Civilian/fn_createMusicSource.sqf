@@ -23,8 +23,10 @@
 params ["_building"];
 
 private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
+private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
 
 if (_lowCiv) exitWith {};
+if (_civNonHuman) exitWith {};
 
 // We add the music source to a RoadCone rather than the building itself.
 // This is so we can delete the source later in a easier fashion.

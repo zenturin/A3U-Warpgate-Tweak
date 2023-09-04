@@ -45,6 +45,7 @@ private _civilianGroups = [];
 private _soundSources = [];
 private _lightSources = [];
 private _civilians = [];
+private _special = [];
 private _buildings = [];
 private _building = objNull;
 private _positionX = getMarkerPos (_markerX);
@@ -64,29 +65,8 @@ if (_numCiv > maxCiviliansPerTown) then {
     _numCiv = maxCiviliansPerTown;
 };
 
-// Disregard the above statement if civs aren't human
-if (_civNonHuman) then 
-{
-    // if (_numCiv < 5) then {_numCiv = _numCiv * 2}; // we want the cities to be infested, no?
-    if (maxCiviliansPerTown <= 10) then {
-        _numCiv = maxCiviliansPerTown * 3;
-    };
-    
-    switch _faction do
-    {
-        case A3A_faction_occ : 
-        {
-            _groupSide = east; // if city is occupant, make the zombies invader
-        };
-        case A3A_faction_inv : 
-        {
-            _groupSide = west; // if city is invader, make the zombies occupant
-        };
-    };
-}; // This ensures the zombies are always aggro to the city owner
-
-if (_faction isEqualTo A3A_faction_reb) exitWith {
-    if (count _civilians >= _numCiv) exitWith {
+if (_faction isEqualTo A3A_faction_reb && {_civNonHuman}) exitWith {
+    if (count units civilian >= globalCivilianMax) exitWith {
         Info("Global Civilian spawn limit reached! - Exiting");
     };
 
@@ -100,7 +80,60 @@ if (_faction isEqualTo A3A_faction_reb) exitWith {
         [_civUnit] spawn A3A_fnc_civilianInitEH;
         [_groupX] call A3A_fnc_patrolLoop;
     };
+
+    // need to repaste this so civs actually get removed
+    waitUntil {sleep 1;(spawner getVariable _spawnKey == 2)};
+    {if (alive _x) then {deleteVehicle _x};} forEach _civilians;
+    { deleteGroup _x } forEach _civilianGroups;
+    {deleteVehicle _x} forEach _soundSources;
+    {deleteVehicle _x} forEach _lightSources;
 }; // we don't want enemies spawning in friendly cities, call them "safe havens"
+
+// Disregard the above statement if civs aren't human
+if (_civNonHuman) exitWith
+{
+    if (count _special >= (globalCivilianMax * 2)) exitWith {
+        Info("Global spawn limit reached! - Exiting");
+    };
+
+    // if (_numCiv < 5) then {_numCiv = _numCiv * 2}; // we want the cities to be infested, no?
+    if (maxCiviliansPerTown <= 10) then {
+        _numCiv = random [6, 8, 10];
+    };
+    
+    switch _faction do
+    {
+        case A3A_faction_occ : 
+        {
+            _groupSide = east; // if city is occupant, make the zombies invader
+        };
+        case A3A_faction_inv : 
+        {
+            _groupSide = west; // if city is invader, make the zombies occupant
+        };
+    };
+
+    for "_i" from 1 to _numCiv do {
+        private _groupX = createGroup _groupSide;
+        private _spawnPosition = [_positionX, 10, 30, 3, 0, -1, 0] call A3A_fnc_getSafePos;
+
+        private _civUnit = [_groupX, FactionGet(civ, "unitSpecial"), _spawnPosition, [],0, "NONE"] call A3A_fnc_createUnit;
+
+        _civUnit setPosATL _spawnPosition;
+        _civilianGroups pushBack _groupX;
+        _special pushBack _civUnit;
+        [_civUnit] spawn A3A_fnc_civilianInitEH;
+        [_groupX] call A3A_fnc_patrolLoop;
+    };
+
+    // need to repaste this so civs actually get removed
+    waitUntil {sleep 1;(spawner getVariable _spawnKey == 2)};
+    {if (alive _x) then {deleteVehicle _x};} forEach _civilians;
+    {if (alive _x) then {deleteVehicle _x};} forEach _special;
+    { deleteGroup _x } forEach _civilianGroups;
+    {deleteVehicle _x} forEach _soundSources;
+    {deleteVehicle _x} forEach _lightSources;
+}; // This ensures the zombies are always aggro to the city owner
 
 if (random 100 < ((aggressionOccupants) + (aggressionInvaders)) && {_civNonHuman isEqualTo false}) then {
     private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
@@ -112,22 +145,7 @@ if (random 100 < ((aggressionOccupants) + (aggressionInvaders)) && {_civNonHuman
     [_groupX, "Patrol_Area", 5, 50, 300, false, [], false] call A3A_fnc_patrolLoop;
 };
 
-// if (random 100 < 30 && {_civNonHuman}) then {
-//     private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
-//     private _groupX = createGroup _groupSide;
-//     _civilianGroups pushBack _groupX;
-//     private _mutant = [_groupX, FactionGet(civ, "unitMutant"), _spawnPosition, [],0, "NONE"] call A3A_fnc_createUnit;
-//     [_mutant] spawn A3A_fnc_civilianInitEH;
-//     _civilians pushBack _mutant;
-//     [_groupX] call A3A_fnc_patrolLoop;
-// };
-
 for "_i" from 1 to _numCiv do {
-    
-    if (_civNonHuman && {count _civilians >= (globalCivilianMax * 2)}) exitWith {
-        Info("Global Civilian spawn limit reached! - Exiting");
-    };
-
     if (count units civilian >= globalCivilianMax) exitWith {
         Info("Global Civilian spawn limit reached! - Exiting");
     };
@@ -147,13 +165,7 @@ for "_i" from 1 to _numCiv do {
 
         private _groupX = createGroup _groupSide;
 
-        private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [], 0, "NONE"];
-
-        if (_civNonHuman) then {
-            _civUnit = [_groupX, FactionGet(civ, "unitSpecial"), _posHouse, [], 0, "NONE"];
-        };
-
-        private _civUnit = _civUnit call A3A_fnc_createUnit;
+        private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [], 0, "NONE"] call A3A_fnc_createUnit;
 
         _civUnit setPosATL _posHouse;
         _civilianGroups pushBack _groupX;
@@ -190,13 +202,7 @@ for "_i" from 1 to _numCiv do {
         private _groupX = createGroup _groupSide;
         private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
 
-        private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _spawnPosition, [],0, "NONE"];
-
-        if (_civNonHuman) then {
-            _civUnit = [_groupX, FactionGet(civ, "unitSpecial"), _spawnPosition, [],0, "NONE"];
-        };
-
-        private _civUnit = _civUnit call A3A_fnc_createUnit;
+        private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [], 0, "NONE"] call A3A_fnc_createUnit;
 
         _civUnit setPosATL _spawnPosition;
         _civilianGroups pushBack _groupX;
