@@ -67,7 +67,10 @@ if (_numCiv > maxCiviliansPerTown) then {
 // Disregard the above statement if civs aren't human
 if (_civNonHuman) then 
 {
-    if (_numCiv < 5) then {_numCiv = _numCiv * 2}; // we want the cities to be infested, no?
+    // if (_numCiv < 5) then {_numCiv = _numCiv * 2}; // we want the cities to be infested, no?
+    if (maxCiviliansPerTown <= 10) then {
+        _numCiv = maxCiviliansPerTown * 3;
+    };
     
     switch _faction do
     {
@@ -83,7 +86,7 @@ if (_civNonHuman) then
 }; // This ensures the zombies are always aggro to the city owner
 
 if (_faction isEqualTo A3A_faction_reb) exitWith {
-    if (count units civilian >= globalCivilianMax) exitWith {
+    if (count _civilians >= _numCiv) exitWith {
         Info("Global Civilian spawn limit reached! - Exiting");
     };
 
@@ -144,11 +147,13 @@ for "_i" from 1 to _numCiv do {
 
         private _groupX = createGroup _groupSide;
 
+        private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [], 0, "NONE"];
+
         if (_civNonHuman) then {
-            private _civUnit = [_groupX, FactionGet(civ, "unitSpecial"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
-        } else {
-            private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
+            _civUnit = [_groupX, FactionGet(civ, "unitSpecial"), _posHouse, [], 0, "NONE"];
         };
+
+        private _civUnit = _civUnit call A3A_fnc_createUnit;
 
         _civUnit setPosATL _posHouse;
         _civilianGroups pushBack _groupX;
@@ -185,11 +190,13 @@ for "_i" from 1 to _numCiv do {
         private _groupX = createGroup _groupSide;
         private _spawnPosition = [_positionX, 10, 150, 3, 0, -1, 0] call A3A_fnc_getSafePos;
 
+        private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _spawnPosition, [],0, "NONE"];
+
         if (_civNonHuman) then {
-            private _civUnit = [_groupX, FactionGet(civ, "unitSpecial"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
-        } else {
-            private _civUnit = [_groupX, FactionGet(civ, "unitMan"), _posHouse, [],0, "NONE"] call A3A_fnc_createUnit;
+            _civUnit = [_groupX, FactionGet(civ, "unitSpecial"), _spawnPosition, [],0, "NONE"];
         };
+
+        private _civUnit = _civUnit call A3A_fnc_createUnit;
 
         _civUnit setPosATL _spawnPosition;
         _civilianGroups pushBack _groupX;
