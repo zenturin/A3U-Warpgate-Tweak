@@ -781,4 +781,8 @@ class Templates
     // ***************************** GM *****************************
 
     #include "Templates\GM\templates.hpp"
+
+    // ***************************** BRAF *****************************
+
+    #include "Templates\BRAF\templates.hpp"
 };
