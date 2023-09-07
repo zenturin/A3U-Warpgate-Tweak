@@ -2,12 +2,12 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "Amalgamate Republic"] call _fnc_saveToTemplate;
-["spawnMarkerName", "Amalgamate Support Tunnel"] call _fnc_saveToTemplate;
+["name", "Scion Empire"] call _fnc_saveToTemplate;
+["spawnMarkerName", "Scion Support Tunnel"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_AAF_F"] call _fnc_saveToTemplate;
-["flagTexture", "sc_props\data\flags\flag_ar_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "SC_flag_ARBlue"] call _fnc_saveToTemplate;
+["flagTexture", "sc_props\data\flags\flag_se_co.paa"] call _fnc_saveToTemplate;
+["flagMarkerType", "SC_flag_SE"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
@@ -26,21 +26,21 @@
 ["vehiclesRepairTrucks", ["SCEXT_Gator_Logistics_AR"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["SCEXT_Gator_Crate_AR"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["SC_Gator_TC_AR"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["SCEXT_Gator_APC_AR"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["SC_AR_IFV"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["SC_AR_IFV", "SCEXT_Gator_APC_AR"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["SC_SaurusAPC_Unarmed_SE"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["SC_SE_IFV"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["SC_SE_IFV", "SC_SaurusAPC_SE"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesLightTanks",  ["SCEXT_Grizzly_AR", "SC_EXT_Rhino_AR"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["SCEXT_Grizzly_AR", "SC_EXT_Rhino_AR"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["SC_Ferret_AA_AR"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["SC_EXT_Ant_SE", "SC_EXT_Scorpion"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["SC_Mantis", "SC_EXT_Rhino_AR"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["SC_SaurusAPC_AA_SE"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["O_G_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["SCR_TF3LInterceptor_AR"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["SCR_TF3LInterceptor_AR"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", ["SC_ProwlerClassCorvette_VTOL"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["SCR_TF3Fighter_SE"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["SCR_TF3Fighter_SE"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["SC_VTOL_X42_SE"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisTransport", ["SC_VTOL_X42S_AR", "SC_EXT_Comanche_AR", "SC_EXT_Comanche_V_AR"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLight", ["SC_EXT_Comanche_V_AR"]] call _fnc_saveToTemplate;
@@ -58,8 +58,8 @@
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
 ["vehiclesMilitiaLightArmed", ["SCEXT_Dingo_A_AR"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["SC_Gator_FB_AR"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["SCEXT_Dingo_AR"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["SCEXT_Gator_APC_AR"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["SC_SaurusAPC_Unarmed_SE"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["SC_SaurusAPC_SE"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["SCEXT_Gator_Flatbed_Trans_AR"]] call _fnc_saveToTemplate;
 
@@ -161,8 +161,8 @@ _loadoutData set ["atBackpacks", []];
 _loadoutData set ["aaBackpacks", ["SC_WarbotRocketRack"]];
 _loadoutData set ["longRangeRadios", ["SC_Backpack_WD_Urban_SL"]];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", ["SC_Helmet_SEN_SL_TV10_Black_VU"]];
-_loadoutData set ["sniHats", ["SC_Helmet_WD_AV1_Urban_Light_V"]];
+_loadoutData set ["slHat", ["SC_Helmet_RN_Urban"]];
+_loadoutData set ["sniHats", ["SC_MDF_Pathfinder_Helmet"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
@@ -207,12 +207,12 @@ _loadoutData set ["goggles", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["SC_Undersuit_Black", "SC_Undersuit_Trojan"]];
-_sfLoadoutData set ["vests", ["SC_Vest_SEN_Medium_Night"]];
-_sfLoadoutData set ["GLvests", ["SC_Vest_SEN_Heavy_Night"]];
-_sfLoadoutData set ["backpacks", ["SC_MercerJumppack_Black"]];
-_sfLoadoutData set ["helmets", ["SC_Helmet_SEN_Night", "SC_Helmet_SEN_Night_TV10"]];
-_sfLoadoutData set ["sniHats", ["SC_Helmet_WD_Black_V"]];
+_sfLoadoutData set ["uniforms", ["SC_Warbot_Uniform"]];
+_sfLoadoutData set ["vests", ["SC_Vest_Warbot"]];
+_sfLoadoutData set ["GLvests", ["SC_WarfighterVest"]];
+_sfLoadoutData set ["backpacks", ["SC_WarbotJumppack"]];
+_sfLoadoutData set ["helmets", ["SC_Gen2WarbotHead_NoFS", "SC_Gen2WarbotHead"]];
+_sfLoadoutData set ["sniHats", ["SC_EliminatorHead"]];
 
 _sfLoadoutData set ["binoculars", ["Rangefinder"]];
 _sfLoadoutData set ["lightATLaunchers", ["SC_MPML"]];
@@ -251,14 +251,14 @@ _sfLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData set ["uniforms", ["SC_Warbot_Uniform"]];
-_eliteLoadoutData set ["vests", ["SC_WarfighterVest"]];
-_eliteLoadoutData set ["SLvests", ["SC_WarfighterVest"]];
-_eliteLoadoutData set ["GLvests", ["SC_WarfighterVest"]];
-_eliteLoadoutData set ["backpacks", ["SC_Backpack_Warbot"]];
-_eliteLoadoutData set ["expBackpacks", ["SC_WarbotJumppack"]];
-_eliteLoadoutData set ["atBackpacks", ["SC_WarbotRocketRack"]];
-_eliteLoadoutData set ["helmets", ["SC_EliminatorHead", "SC_Gen2WarbotHead_NoFS"]];
+_eliteLoadoutData set ["uniforms", ["SC_Uniform_Gloves_Black"]];
+_eliteLoadoutData set ["vests", ["SC_Vest_WP_Heavy_Urban"]];
+_eliteLoadoutData set ["SLvests", ["SC_MDF_Heavy_Black"]];
+_eliteLoadoutData set ["GLvests", ["SC_Vest_WP_Heavy_Urban"]];
+_eliteLoadoutData set ["backpacks", ["SC_EnforcerRucksack"]];
+_eliteLoadoutData set ["expBackpacks", ["SC_EnforcerRucksack"]];
+_eliteLoadoutData set ["atBackpacks", []];
+_eliteLoadoutData set ["helmets", ["SC_Helmet_WP_Urban", "SC_Helmet_RN_Urban"]];
 
 _eliteLoadoutData set ["lightATLaunchers", ["SC_MPML"]];
 _eliteLoadoutData set ["lightHELaunchers", ["SC_MPML"]];
@@ -306,13 +306,13 @@ _eliteLoadoutData set ["SMGs", ["WRS_Weapon_AR_2"]];
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militaryLoadoutData set ["uniforms", ["SC_Uniform_Gloves_Black", "SC_Undersuit_Black"]];
-_militaryLoadoutData set ["vests", ["SC_Vest_WD_Medium_Urban", "SC_Vest_WD_Light_Urban"]];
-_militaryLoadoutData set ["SLvests", ["SC_Vest_WD_Heavy_Black"]];
-_militaryLoadoutData set ["GLvests", ["SC_Vest_WD_Heavy_Urban"]];
-_militaryLoadoutData set ["backpacks", ["SC_Backpack_WD_Urban"]];
-_militaryLoadoutData set ["expBackpacks", ["SC_Backpack_WD_Urban"]];
-_militaryLoadoutData set ["atBackpacks", ["SC_Backpack_WD_Urban"]];
-_militaryLoadoutData set ["helmets", ["SC_MDF_Pathfinder_Helmet", "SC_Helmet_WD_Urban_V", "SC_Helmet_EN_Urban"]];
+_militaryLoadoutData set ["vests", ["SC_Vest_WP_Light_Urban", "SC_Vest_WD_Light_Urban"]];
+_militaryLoadoutData set ["SLvests", ["SC_Vest_WP_Heavy_Urban"]];
+_militaryLoadoutData set ["GLvests", ["SC_Vest_WP_Medium_Urban"]];
+_militaryLoadoutData set ["backpacks", ["SC_Backpack_WP_Urban"]];
+_militaryLoadoutData set ["expBackpacks", ["SC_Backpack_WP_Urban"]];
+_militaryLoadoutData set ["atBackpacks", ["SC_WarbotRocketRack"]];
+_militaryLoadoutData set ["helmets", ["SC_Helmet_WP_Urban", "SC_Helmet_RN_Urban"]];
 
 _militaryLoadoutData set ["lightATLaunchers", ["SC_MPML"]];
 _militaryLoadoutData set ["lightHELaunchers", ["SC_MPML"]];
@@ -357,8 +357,8 @@ _militaryLoadoutData set ["SMGs", ["WRS_Weapon_AR_2"]];
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _policeLoadoutData set ["uniforms", ["SC_Uniform_Gloves_Black"]];
-_policeLoadoutData set ["vests", ["SC_Vest_WD_Medium_Guard", "SC_Vest_WD_Light_Guard"]];
-_policeLoadoutData set ["helmets", ["SC_Beret_AR", "SC_Beret_AR_v2"]];
+_policeLoadoutData set ["vests", ["SC_Vest_WP_Medium_Guard", "SC_Vest_WP_Light_Guard"]];
+_policeLoadoutData set ["helmets", ["SC_Beret_SE"]];
 _policeLoadoutData set ["SMGs", [
 ["WRS_Weapon_AR_2", "", "", "optic_hamr", ["WRS_Ar2_Magazine"], [], ""],
 ["SC_Rifle_AR12C", "", "", "", ["SC_35Rnd_762x51_Mag"], [], ""]
@@ -371,17 +371,17 @@ _policeLoadoutData set ["sidearms", ["WRS_Weapon_Revolver"]];
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _militiaLoadoutData set ["uniforms", ["SC_Uniform_Gloves_Black"]];
-_militiaLoadoutData set ["vests", ["SC_Vest_WD_Light_Urban"]];
-_militiaLoadoutData set ["ATvests", ["SC_Vest_WD_Heavy_Urban"]];
-_militiaLoadoutData set ["GLvests", ["SC_Vest_WD_Heavy_Urban"]];
-_militiaLoadoutData set ["SLvests", ["SC_Vest_WD_Medium_Urban"]];
-_militiaLoadoutData set ["MGvests", ["SC_Vest_WD_Heavy_Urban"]];
-_militiaLoadoutData set ["backpacks", ["SC_Backpack_WD_Urban"]];
+_militiaLoadoutData set ["vests", ["SC_Vest_WP_Light_Urban"]];
+_militiaLoadoutData set ["ATvests", ["SC_Vest_WP_Medium_Urban"]];
+_militiaLoadoutData set ["GLvests", ["SC_Vest_WP_Medium_Urban"]];
+_militiaLoadoutData set ["SLvests", ["SC_Vest_WP_Heavy_Urban"]];
+_militiaLoadoutData set ["MGvests", ["SC_Vest_WP_Medium_Urban"]];
+_militiaLoadoutData set ["backpacks", ["SC_Backpack_WP_Urban"]];
 _militiaLoadoutData set ["medBackpacks", ["SC_PTC"]];
-_militiaLoadoutData set ["atBackpacks", ["SC_SentinelPack_Black"]];
-_militiaLoadoutData set ["helmets", ["SC_MilTac_Urban"]];
-_militiaLoadoutData set ["slHat", ["SC_Beret_AR_v2"]];
-_militiaLoadoutData set ["sniHats", ["SC_Beret_AR"]];
+_militiaLoadoutData set ["atBackpacks", ["SC_WarbotRocketRack"]];
+_militiaLoadoutData set ["helmets", ["SC_ConscriptHelmet_Urban", "SC_ConscriptHelmet3_Urban"]];
+_militiaLoadoutData set ["slHat", []];
+_militiaLoadoutData set ["sniHats", []];
 
 _militiaLoadoutData set ["lightATLaunchers", ["SC_MPML"]];
 _militiaLoadoutData set ["ATLaunchers", [
@@ -423,16 +423,16 @@ _militiaLoadoutData set ["sidearms", [
 //////////////////////////
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
 _crewLoadoutData set ["uniforms", ["SC_Undersuit_Black"]];
-_crewLoadoutData set ["vests", ["SC_Vest_WD_Basic_Guard", "SC_Vest_WD_Medium_Guard"]];
-_crewLoadoutData set ["helmets", ["SC_Helmet_WD_Guard_Light_V"]];
+_crewLoadoutData set ["vests", ["SC_Vest_WP_Light_Urban", "SC_Vest_WP_Medium_Urban"]];
+_crewLoadoutData set ["helmets", ["SC_Helmet_WP_Urban"]];
 _crewLoadoutData set ["carbines", [
 ["WRS_Weapon_AR_2", "", "", "", ["WRS_Ar2_Magazine"], [], ""]
 ]];	
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
 _pilotLoadoutData set ["uniforms", ["SC_Undersuit_Black"]];			
-_pilotLoadoutData set ["vests", ["SC_Vest_WD_Light_Guard"]];			
-_pilotLoadoutData set ["helmets", ["SC_Helmet_SKY_White"]];
+_pilotLoadoutData set ["vests", ["SC_Vest_WP_Light_Urban"]];			
+_pilotLoadoutData set ["helmets", ["SC_Helmet_GRI_Black"]];
 _pilotLoadoutData set ["carbines", [
 ["WRS_Weapon_AR_2", "", "", "", ["WRS_Ar2_Magazine"], [], ""]
 ]];	

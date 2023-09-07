@@ -781,4 +781,8 @@ class Templates
     // ***************************** GM *****************************
 
     #include "Templates\GM\templates.hpp"
+
+    // ***************************** Scion *****************************
+
+    #include "Templates\Scion\templates.hpp"
 };
