@@ -106,14 +106,15 @@ _loadoutData set ["marksmanRifles", []];
 _loadoutData set ["sniperRifles", []];
 
 _loadoutData set ["missileATLaunchers", [
-    ["CUP_launch_Javelin", "", "", "", ["CUP_Javelin_M"], [], ""],
-    ["CUP_launch_M47", "", "", "", ["CUP_Dragon_EP1_M"], [], ""]
+    ["CUP_launch_Javelin", "", "", "", ["CUP_Javelin_M"], [], ""]
 ]];
+_loadoutData set ["lightATLaunchers", ["braf_launch_alac"]];
 _loadoutData set ["AALaunchers", [
-    ["CUP_launch_FIM92Stinger", "", "", "", [""], [], ""]
+    ["braf_Igla", "", "", "", ["braf_Igla_missile"], [], ""]
 ]];
 _loadoutData set ["ATLaunchers", [
-    ["CUP_launch_MAAWS", "", "", "CUP_optic_MAAWS_Scope", ["CUP_MAAWS_HEDP_M", "CUP_MAAWS_HEAT_M"], [], ""]
+    ["braf_Gustav", "", "", "", ["CUP_MAAWS_HEDP_M", "CUP_MAAWS_HEAT_M"], [], ""],
+	["braf_m20a1superbazooka", "", "", "", ["CUP_MAAWS_HEDP_M", "CUP_MAAWS_HEAT_M"], [], ""]
 ]];
 _loadoutData set ["sidearms", []];
 
@@ -134,17 +135,17 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["radios", ["ItemRadio"]];
 _loadoutData set ["gpses", ["ItemGPS"]];
-_loadoutData set ["NVGs", ["CUP_NVG_PVS15_black"]];
-_loadoutData set ["binoculars", ["Binocular"]];
-_loadoutData set ["rangefinders", ["Rangefinder"]];
+_loadoutData set ["NVGs", ["braf_nvg_loris"]];
+_loadoutData set ["binoculars", ["braf_Steiner_750RC"]];
+_loadoutData set ["rangefinders", ["CUP_SOFLAM"]];
 
-_loadoutData set ["traitorUniforms", ["CUP_U_B_USArmy_ACU_OEFCP"]];
-_loadoutData set ["traitorVests", ["CUP_V_B_IOTV_OEFCP_Empty_USArmy"]];
-_loadoutData set ["traitorHats", ["CUP_H_USArmy_Boonie_OEFCP"]];
+_loadoutData set ["traitorUniforms", ["braf_army_acu_rolled_regular_uniform_gloves"]];
+_loadoutData set ["traitorVests", ["braf_iba_lizard_squadleader"]];
+_loadoutData set ["traitorHats", ["braf_beret_black"]];
 
-_loadoutData set ["officerUniforms", ["CUP_U_B_USArmy_ACU_OEFCP"]];
-_loadoutData set ["officerVests", ["CUP_V_B_IOTV_OEFCP_Empty_USArmy"]];
-_loadoutData set ["officerHats", ["CUP_H_US_patrol_cap_OEFCP"]];
+_loadoutData set ["officerUniforms", ["braf_army_acu_rolled_regular_uniform_gloves"]];
+_loadoutData set ["officerVests", ["braf_iba_lizard_squadleader"]];
+_loadoutData set ["officerHats", ["braf_beret_blue"]];
 
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
@@ -160,8 +161,8 @@ _loadoutData set ["longRangeRadios", []];
 _loadoutData set ["atBackpacks", []];
 _loadoutData set ["slBackpacks", []];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", ["H_Beret_02"]];
-_loadoutData set ["sniHats", ["CUP_H_USArmy_Boonie_hs_OEFCP"]];
+_loadoutData set ["slHat", ["braf_beret_olive"]];
+_loadoutData set ["sniHats", ["braf_boonie_hat_lizard"]];
 _loadoutData set ["glasses", []];
 _loadoutData set ["goggles", []];
 
@@ -175,7 +176,7 @@ _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials
 private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
 private _eeItems = ["ToolKit", "MineDetector"];
 private _mmItems = [];
-private _sfmmItems = ["CUP_optic_AN_PVS_10_black"];
+private _sfmmItems = [];
 
 if (A3A_hasACE) then {
 	_slItems append ["ACE_microDAGR", "ACE_DAGR"];
@@ -208,18 +209,18 @@ _loadoutData set ["items_unarmed_extras", []];
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData set ["items_marksman_extras", (_mmItems + _sfmmItems)];
 _sfLoadoutData set ["items_sniper_extras", (_mmItems + _sfmmItems)];
-_sfLoadoutData set ["uniforms", ["CUP_U_CRYE_G3C_MC_US", "CUP_U_CRYE_G3C_MC_V2", "CUP_U_CRYE_G3C_MC", "CUP_U_CRYE_V1_Full"]];
-_sfLoadoutData set ["vests", ["CUP_V_CPC_Fastbelt_mc"]];
-_sfLoadoutData set ["mgVests", ["CUP_V_CPC_weapons_mc"]];
-_sfLoadoutData set ["medVests", ["CUP_V_JPC_medicalbelt_mc"]];
-_sfLoadoutData set ["glVests", ["CUP_V_PMC_CIRAS_Khaki_Grenadier"]];
-_sfLoadoutData set ["backpacks", ["B_AssaultPack_cbr", "B_Carryall_cbr"]];
-_sfLoadoutData set ["slBackpacks", ["B_Kitbag_cbr"]];
-_sfLoadoutData set ["atBackpacks", ["CUP_B_US_IIID_OEFCP"]];
-_sfLoadoutData set ["helmets", ["CUP_H_OpsCore_Spray_SF", "CUP_H_OpsCore_Covered_MTP_SF", "CUP_H_OpsCore_Covered_MTP"]];
-_sfLoadoutData set ["slHat", ["CUP_H_USA_Cap_Mcam_DEF"]];
-_sfLoadoutData set ["sniHats", ["CUP_H_USArmy_Boonie_hs_OCP"]];
-_sfLoadoutData set ["NVGs", ["CUP_NVG_GPNVG_black"]];
+_sfLoadoutData set ["uniforms", ["braf_army_jacket_lizard_uniform", "braf_army_jacket_gloves_lizard_uniform"]];
+_sfLoadoutData set ["vests", ["braf_iba_lizard_squadleader"]];
+_sfLoadoutData set ["mgVests", ["braf_iba_lizard_squadleader"]];
+_sfLoadoutData set ["medVests", ["braf_iba_lizard_squadleader"]];
+_sfLoadoutData set ["glVests", ["braf_iba_lizard_squadleader"]];
+_sfLoadoutData set ["backpacks", ["braf_modular_assault_black"]];
+_sfLoadoutData set ["slBackpacks", ["braf_modular_assault_black"]];
+_sfLoadoutData set ["atBackpacks", ["braf_modular_assault_black"]];
+_sfLoadoutData set ["helmets", ["braf_eb_opscore_black", "braf_eb_opscore_comtac_black"]];
+_sfLoadoutData set ["slHat", ["braf_beret_grenat"]];
+_sfLoadoutData set ["sniHats", ["braf_bandeirante_cap_lizard"]];
+_sfLoadoutData set ["NVGs", ["braf_nvg_loris"]];
 _sfLoadoutData set ["binoculars", ["CUP_SOFLAM"]];
 //["Weapon", "Muzzle", "Rail", "Sight", [], [], "Bipod"];
 
@@ -293,15 +294,15 @@ _sfLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData set ["uniforms", ["CUP_U_B_USArmy_ACU_Kneepad_Gloves_OEFCP", "CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_OEFCP"]];
-_eliteLoadoutData set ["vests", ["CUP_V_B_IOTV_OEFCP_Rifleman_USArmy"]];
-_eliteLoadoutData set ["slVests", ["CUP_V_B_IOTV_OEFCP_TL_USArmy"]];
-_eliteLoadoutData set ["mgVests", ["CUP_V_B_IOTV_OEFCP_MG_USArmy"]];
-_eliteLoadoutData set ["glVests", ["CUP_V_B_IOTV_OEFCP_Grenadier_USArmy"]];
-_eliteLoadoutData set ["backpacks", ["B_Carryall_cbr", "CUP_B_AssaultPack_Coyote", "B_AssaultPack_cbr"]];
-_eliteLoadoutData set ["atBackpacks", ["B_Carryall_cbr"]];
-_eliteLoadoutData set ["helmets", ["CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OEFCP", "CUP_H_USArmy_HelmetACH_ESS_Headset_OEFCP", "CUP_H_USArmy_HelmetACH_OEFCP"]];
-_eliteLoadoutData set ["slHat", ["CUP_H_USArmy_Boonie_OEFCP"]];
+_eliteLoadoutData set ["uniforms", ["braf_army_acu_regular_uniform", "braf_army_acu_regular_uniform_gloves"]];
+_eliteLoadoutData set ["vests", ["braf_iba_lizard_rifleman", "braf_iba_lizard_rifleman", "braf_iba_lizard"]];
+_eliteLoadoutData set ["slVests", ["braf_iba_lizard_squadleader"]];
+_eliteLoadoutData set ["mgVests", ["braf_iba_lizard_rifleman"]];
+_eliteLoadoutData set ["glVests", ["braf_iba_lizard_rifleman"]];
+_eliteLoadoutData set ["backpacks", ["braf_alice_medium_olive", "braf_alice_medium_olive_field"]];
+_eliteLoadoutData set ["atBackpacks", ["braf_alice_large_olive", "braf_alice_large_olive_field", "braf_alice_large_olive_rope"]];
+_eliteLoadoutData set ["helmets", ["braf_eb_opscore_olive", "braf_eb_opscore_comtac_olive"]];
+_eliteLoadoutData set ["slHat", ["braf_beret_jungle"]];
 _eliteLoadoutData set ["binoculars", ["CUP_LRTV"]];
 
 
@@ -373,19 +374,19 @@ _eliteLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", ["CUP_U_B_USArmy_ACU_Kneepad_Gloves_OEFCP", "CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_OEFCP"]];
-_militaryLoadoutData set ["slUniforms", ["CUP_U_B_USArmy_ACU_Rolled_Gloves_OEFCP"]];
-_militaryLoadoutData set ["vests", ["CUP_V_B_IOTV_OEFCP_Rifleman_USArmy"]];
-_militaryLoadoutData set ["mgVests", ["CUP_V_B_IOTV_OEFCP_MG_USArmy"]];
-_militaryLoadoutData set ["medVests", ["CUP_V_B_IOTV_OEFCP_Medic_USArmy"]];
-_militaryLoadoutData set ["slVests", ["CUP_V_B_IOTV_OEFCP_TL_USArmy"]];
-_militaryLoadoutData set ["glVests", ["CUP_V_B_IOTV_OEFCP_Grenadier_USArmy"]];
-_militaryLoadoutData set ["engVests", ["CUP_V_B_IOTV_OEFCP_Rifleman_Deltoid_USArmy"]];
-_militaryLoadoutData set ["backpacks", ["B_Carryall_cbr", "CUP_B_AssaultPack_Coyote", "B_AssaultPack_cbr"]];
-_militaryLoadoutData set ["slBackpacks", ["B_Kitbag_cbr"]];
-_militaryLoadoutData set ["atBackpacks", ["CUP_B_US_Assault_OEFCP"]];
-_militaryLoadoutData set ["helmets", ["CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OEFCP", "CUP_H_USArmy_HelmetACH_ESS_Headset_OEFCP", "CUP_H_USArmy_HelmetACH_OEFCP"]];
-_militaryLoadoutData set ["binoculars", ["CUP_LRTV"]];
+_militaryLoadoutData set ["uniforms", ["braf_army_combat_shirt_camo_uniform", "braf_army_combat_shirt_camo_uniform_gloves"]];
+_militaryLoadoutData set ["slUniforms", ["braf_army_combat_shirt_airborne_uniform_gloves"]];
+_militaryLoadoutData set ["vests", ["braf_lbv_olive", "braf_iba_lizard_rifleman", "braf_iba_lizard"]];
+_militaryLoadoutData set ["mgVests", ["braf_lbv_olive_rifleman", "braf_iba_lizard"]];
+_militaryLoadoutData set ["medVests", ["braf_lbv_olive_rifleman", "braf_iba_lizard"]];
+_militaryLoadoutData set ["slVests", ["braf_lbv_olive_squadleader", "braf_iba_lizard_squadleader"]];
+_militaryLoadoutData set ["glVests", ["braf_lbv_olive_rifleman", "braf_iba_lizard"]];
+_militaryLoadoutData set ["engVests", ["braf_lbv_olive_rifleman", "braf_iba_lizard"]];
+_militaryLoadoutData set ["backpacks", ["braf_belt_buttpack", "braf_modular_assault_olive"]];
+_militaryLoadoutData set ["slBackpacks", ["braf_modular_assault_olive"]];
+_militaryLoadoutData set ["atBackpacks", ["braf_alice_medium_olive", "braf_alice_medium_olive_field", "braf_alice_medium_olive_field_helmet"]];
+_militaryLoadoutData set ["helmets", ["braf_eb_ccb", "braf_eb_ccb_cover", "braf_eb_ccb_cover_goggles_down", "braf_eb_ccb_cover_goggles_up", "braf_eb_ccb_nvg"]];
+_militaryLoadoutData set ["binoculars", ["braf_Steiner_750RC"]];
 
 _militaryLoadoutData set ["slRifles", [
     ["CUP_arifle_M4A3_black", "", "", "CUP_optic_ACOG", ["CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
@@ -462,9 +463,9 @@ _militaryLoadoutData set ["sidearms", [
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 
-_policeLoadoutData set ["uniforms", ["U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"]];
-_policeLoadoutData set ["vests", ["V_TacVest_blk_POLICE"]];
-_policeLoadoutData set ["helmets", ["H_Cap_police"]];
+_policeLoadoutData set ["uniforms", ["braf_FAB_regular_uniform", "braf_FAB_regular_uniform_gloves"]];
+_policeLoadoutData set ["vests", ["braf_tacvest_black"]];
+_policeLoadoutData set ["helmets", ["braf_m1_liner_plastic"]];
 
 _policeLoadoutData set ["shotGuns", [
     ["CUP_sgun_M1014", "", "", "", ["CUP_8Rnd_12Gauge_Slug"], [], ""]
@@ -483,13 +484,13 @@ _policeLoadoutData set ["sidearms", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData set ["uniforms", ["CUP_U_B_USArmy_ACU_OEFCP"]];
-_militiaLoadoutData set ["vests", ["CUP_V_B_IOTV_OEFCP_Rifleman_USArmy"]];
-_militiaLoadoutData set ["sniVests", ["CUP_V_B_IOTV_OEFCP_TL_USArmy"]];
-_militiaLoadoutData set ["backpacks", ["B_AssaultPack_cbr", "B_FieldPack_cbr"]];
-_militiaLoadoutData set ["slBackpacks", ["B_Kitbag_cbr"]];
-_militiaLoadoutData set ["atBackpacks", ["CUP_B_US_Assault_OEFCP"]];
-_militiaLoadoutData set ["helmets", ["CUP_H_USArmy_HelmetACH_OEFCP"]];
+_militiaLoadoutData set ["uniforms", ["braf_army_regular_uniform", "braf_army_regular_uniform_gloves"]];
+_militiaLoadoutData set ["vests", ["braf_LC2_duty_rifleman", "braf_LC2_field_rifleman"]];
+_militiaLoadoutData set ["sniVests", ["braf_LC2_duty_squadleader", "braf_LC2_field_squadleader"]];
+_militiaLoadoutData set ["backpacks", ["braf_belt_buttpack"]];
+_militiaLoadoutData set ["slBackpacks", ["braf_belt_buttpack"]];
+_militiaLoadoutData set ["atBackpacks", ["braf_modular_assault_olive"]];
+_militiaLoadoutData set ["helmets", ["braf_army_PatrolCap", "braf_m1_steel", "braf_m1_cover_late_lz"]];
 
 _militiaLoadoutData set ["rifles", [
     ["CUP_arifle_M4A1_black", "", "", "", ["CUP_30Rnd_556x45_Stanag"], [], ""],
@@ -528,11 +529,11 @@ _militiaLoadoutData set ["sidearms", [
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData set ["uniforms", ["CUP_U_B_USArmy_ACU_OEFCP"]];
-_crewLoadoutData set ["vests", ["CUP_V_B_IOTV_OEFCP_TL_USArmy"]];
-_crewLoadoutData set ["helmets", ["CUP_H_CVC"]];
+_crewLoadoutData set ["uniforms", ["braf_army_regular_CoverallCrew"]];
+_crewLoadoutData set ["vests", ["braf_LC2_driver"]];
+_crewLoadoutData set ["helmets", ["braf_eb_cbt"]];
 _crewLoadoutData set ["carbines", [
-    ["CUP_arifle_M4A1", "", "", "", ["CUP_30Rnd_556x45_Stanag"], [], ""]
+    ["Braf_MT12", "", "", "", ["30Rnd_9x21_Mag"], [], ""]
 ]];	
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
@@ -540,7 +541,7 @@ _pilotLoadoutData set ["uniforms", ["CUP_U_B_USArmy_PilotOverall"]];
 _pilotLoadoutData set ["vests", ["CUP_V_B_USArmy_PilotVest"]];
 _pilotLoadoutData set ["helmets", ["H_PilotHelmetHeli_B"]];
 _pilotLoadoutData set ["carbines", [
-    ["CUP_arifle_M4A1", "", "", "", ["CUP_30Rnd_556x45_Stanag"], [], ""]
+    ["Braf_MT12", "", "", "", ["30Rnd_9x21_Mag"], [], ""]
 ]];	
 
 /////////////////////////////////
