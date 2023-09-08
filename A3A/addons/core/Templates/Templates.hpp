@@ -781,4 +781,12 @@ class Templates
     // ***************************** GM *****************************
 
     #include "Templates\GM\templates.hpp"
+
+    // ***************************** Misc *****************************
+
+    #include "Templates\Misc\templates.hpp"
+
+    // ***************************** STALKER *****************************
+
+    #include "Templates\STALKER\templates.hpp"
 };
