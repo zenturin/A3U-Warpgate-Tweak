@@ -6,6 +6,8 @@ private _hasApex = "expansion" in A3A_enabledDLC;
 //   Civilian Information   //
 //////////////////////////////
 
+["attributeCivNonHuman", true] call _fnc_saveToTemplate;
+
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
@@ -56,12 +58,7 @@ if (_hasApex) then {
     "C_Van_01_fuel_F", 0.2
     ,"C_Truck_02_fuel_F", 0.1]] call _fnc_saveToTemplate;
 
-["vehiclesCivHeli", ["C_Heli_Light_01_civil_F" , "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"]] call _fnc_saveToTemplate;
-
-["variants", [
-    ["I_Heli_Transport_02_F", ["Dahoman", 1]],
-    ["O_Heli_Light_02_unarmed_F", ["Blue", 1]]
-]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
@@ -100,108 +97,24 @@ private _civUniforms = [
     "U_C_Uniform_Scientist_01_F"
 ];
 
-private _pressUniforms = [
-    "U_C_Journalist",
-    "U_Marshal"
-    ];
+["uniforms", _civUniforms] call _fnc_saveToTemplate;
 
-private _workerUniforms = [
-    "U_C_WorkerCoveralls",
-    "U_C_Uniform_Farmer_01_F"
-    ];
-
-private _dlcUniforms = [];
-
-if (_hasApex) then {_dlcUniforms append [
-    "U_C_man_sport_1_F",
-    "U_C_man_sport_2_F",
-    "U_C_man_sport_3_F"];
-};
-
-if (_hasLawsOfWar) then {
-  _dlcUniforms append [
-    "U_C_Paramedic_01_F",
-    "U_C_Mechanic_01_F"
-  ];
-  _workerUniforms append [
-    "U_C_ConstructionCoverall_Black_F",
-    "U_C_ConstructionCoverall_Blue_F",
-    "U_C_ConstructionCoverall_Red_F",
-    "U_C_ConstructionCoverall_Vrana_F"
-  ];
-};
-
-if (_hasWs && {(toLowerANSI worldName) in ["sefrouramal", "takistan"]}) then {
-  _civUniforms = [
-    "U_lxWS_C_Djella_01",
-    "U_lxWS_C_Djella_02",
-    "U_lxWS_C_Djella_02a",
-    "U_lxWS_C_Djella_03",
-    "U_lxWS_C_Djella_04",
-    "U_lxWS_C_Djella_05",
-    "U_lxWS_C_Djella_06",
-    "U_lxWS_C_Djella_07",
-    "U_lxWS_Tak_01_A",
-    "U_lxWS_Tak_01_B",
-    "U_lxWS_Tak_01_C",
-    "U_lxWS_Tak_02_A",
-    "U_lxWS_Tak_02_B",
-    "U_lxWS_Tak_02_C",
-    "U_lxWS_Tak_03_A",
-    "U_lxWS_Tak_03_B",
-    "U_lxWS_Tak_03_C"
-  ];
-};
-
-["uniforms", _civUniforms + _pressUniforms + _workerUniforms + _dlcUniforms] call _fnc_saveToTemplate;
-
-private _civhats = [
-    "H_Bandanna_blu",
-    "H_Bandanna_cbr",
-    "H_Bandanna_gry",
-    "H_Bandanna_khk",
-    "H_Bandanna_sand",
-    "H_Bandanna_sgg",
-    "H_Bandanna_surfer",
-    "H_Bandanna_surfer_blk",
-    "H_Bandanna_surfer_grn",
-    "H_Cap_blk",
-    "H_Cap_blu",
-    "H_Cap_grn",
-    "H_Cap_grn_BI",
-    "H_Cap_oli",
-    "H_Cap_red",
-    "H_Cap_surfer",
-    "H_Cap_tan",
-    "H_StrawHat",
-    "H_StrawHat_dark",
-    "H_Hat_checker",
-    "H_Hat_Safari_olive_F",
-    "H_Hat_Safari_sand_F"
-];
-
-["headgear", _civHats] call _fnc_saveToTemplate;
+["headgear", []] call _fnc_saveToTemplate;
 
 private _loadoutData = call _fnc_createLoadoutData;
 
 _loadoutData set ["uniforms", _civUniforms];
-_loadoutData set ["pressUniforms", _pressUniforms];
-_loadoutData set ["workerUniforms", _workerUniforms];
-_loadoutData set ["pressVests", ["V_Press_F"]];
-_loadoutData set ["helmets", _civHats];
-private _pressHelmets = if (_hasLawsOfWar) then {
-    ["H_Cap_press", "H_PASGT_basic_blue_press_F", "H_PASGT_neckprot_blue_press_F"];
-} else {
-    ["H_Cap_press"];
-};
-_loadoutData set ["pressHelmets", _pressHelmets];
+_loadoutData set ["pressUniforms", _civUniforms];
+_loadoutData set ["workerUniforms", ["U_C_WorkerCoveralls", "U_C_Uniform_Farmer_01_F"]];
+_loadoutData set ["pressVests", []];
+_loadoutData set ["helmets", []];
+_loadoutData set ["pressHelmets", []];
 
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 
 private _manTemplate = {
-    ["helmets"] call _fnc_setHelmet;
     ["uniforms"] call _fnc_setUniform;
 
     ["items_medical_standard"] call _fnc_addItemSet;
@@ -211,7 +124,7 @@ private _manTemplate = {
     ["compasses"] call _fnc_addCompass;
 };
 private _workerTemplate = {
-    ["helmets"] call _fnc_setHelmet;
+    ["workerHelmets"] call _fnc_setHelmet;
     ["workerUniforms"] call _fnc_setUniform;
 
     ["items_medical_standard"] call _fnc_addItemSet;
@@ -231,11 +144,13 @@ private _pressTemplate = {
     ["watches"] call _fnc_addWatch;
     ["compasses"] call _fnc_addCompass;
 };
+
 private _prefix = "militia";
 private _unitTypes = [
-    ["Press", _pressTemplate],
+    ["Press", _pressTemplate], // to-do: allow press to spawn but make them special infected
     ["Worker", _workerTemplate],
-    ["Man", _manTemplate]
+    ["Man", _manTemplate],
+    ["Special", _manTemplate, [["baseClass", ["Zombie_O_Walker_Civ", "Zombie_O_Shambler_Civ", "Zombie_O_Shooter_FIA", "Zombie_Special_OPFOR_Leaper_1", "Zombie_Special_OPFOR_Leaper_2"], false]]]
 ];
 
 [_prefix, _unitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;

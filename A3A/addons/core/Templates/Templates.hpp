@@ -785,4 +785,11 @@ class Templates
     // ***************************** Scion *****************************
 
     #include "Templates\Scion\templates.hpp"
+    // ***************************** Misc *****************************
+
+    #include "Templates\Misc\templates.hpp"
+
+    // ***************************** STALKER *****************************
+
+    #include "Templates\STALKER\templates.hpp"
 };
