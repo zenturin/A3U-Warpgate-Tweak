@@ -18,7 +18,6 @@
 			ITEM(OPTRE_M45A, 425, RIFLE_STOCK); // Ammo: OPTRE_6Rnd_8Gauge_Pellets
 			ITEM(OPTRE_M45E, 250, RIFLE_STOCK); // Ammo: OPTRE_6Rnd_8Gauge_Pellets
 			ITEM(OPTRE_M7, 250, RIFLE_STOCK); // Ammo: OPTRE_60Rnd_5x23mm_Mag
-			ITEM(OPTRE_M12_SOC, 350, RIFLE_STOCK); // Ammo: OPTRE_64Rnd_57x31_Mag
 			ITEM(OPTRE_MA37K, 400, RIFLE_STOCK); // Ammo: OPTRE_32Rnd_762x51_Mag
 			ITEM(OPTRE_MA5K, 400, RIFLE_STOCK); // Ammo: OPTRE_32Rnd_762x51_Mag
 		};
@@ -126,7 +125,6 @@
             ITEM(16Rnd_10mm_Ball, 25, MZ_STOCK);
             ITEM(OPTRE_6Rnd_8Gauge_Pellets, 25, MZ_STOCK);
             ITEM(OPTRE_60Rnd_5x23mm_Mag, 65, MZ_STOCK);
-            ITEM(OPTRE_64Rnd_57x31_Mag, 55, MZ_STOCK);
             ITEM(OPTRE_32Rnd_762x51_Mag, 30, MZ_STOCK);
             ITEM(OPTRE_40Rnd_30x06_Mag, 35, MZ_STOCK);
             ITEM(OPTRE_100Rnd_762x51_Box, 62, MZ_STOCK);

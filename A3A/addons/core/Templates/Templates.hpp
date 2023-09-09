@@ -633,4 +633,12 @@ class Templates
     // ***************************** Aegis *****************************
 
     #include "Templates\Aegis\templates.hpp"
+
+    // ***************************** Misc *****************************
+
+    #include "Templates\Misc\templates.hpp"
+
+    // ***************************** STALKER *****************************
+
+    #include "Templates\STALKER\templates.hpp"
 };
