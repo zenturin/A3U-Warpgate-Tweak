@@ -85,20 +85,6 @@ class cfgHALsStore
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
-				"handgunsVanilla", 
-				"launchersVanilla", 
-				"riflesVanilla", 
-				"sniperRiflesVanilla", 
-				"mgVanilla",
-				"smgVanilla", 
-				"launcherMagazinesVanilla", 
-				"magazinesVanilla", 
-				"opticsVanilla", 
-				"muzzlesVanilla", 
-				"underbarrelVanilla", 
-				"pointersVanilla", 
-				"navigationVanilla", 
-				"miscVanilla",
 				"riflesWs",
 				"magazinesWs"
 			};
@@ -114,14 +100,7 @@ class cfgHALsStore
 				"sniperRiflesAegis", 
 				"mgAegis",
 				"smgAegis", 
-				"launcherMagazinesVanilla", 
-				"magazinesAegis", 
-				"opticsVanilla", 
-				"muzzlesVanilla", 
-				"underbarrelVanilla", 
-				"pointersVanilla", 
-				"navigationVanilla", 
-				"miscVanilla"
+				"magazinesAegis"
 			};
 		};
 
