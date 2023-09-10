@@ -48,6 +48,7 @@ class cfgHALsStore
 		#include "config\optre.hpp"
 		#include "config\pla.hpp"
 		#include "config\rhs.hpp"
+		#include "config\scion.hpp"
 		#include "config\sfp.hpp"
 		#include "config\sma.hpp"
 		#include "config\spearhead.hpp"
@@ -548,6 +549,17 @@ class cfgHALsStore
 				"muzzlescsa",
 				"magazinescsa", 
 				"launcherscsa"
+			};
+		};
+		class scion
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesScion", 
+				"magazinesriflesScion",
+				"sniperRiflesScion", 
+				"magazinessniperRiflesScion", 
+				"opticsScion"
 			};
 		};
 	};
