@@ -9,10 +9,10 @@
         priority = 65;
     };
 
-    class BRAF_Temperate : BRAF_Base
+    class BRAF_Tropical : BRAF_Base
     {
         side = "Occ";
         flagTexture = QPATHTOFOLDER(Templates\Templates\BRAF\flag_brazil.paa);
-        name = "BRAF Brazil Temperate";
-        file = "BRAF_AI_BRAF_Temperate";
+        name = "BRAF Brazil Tropical";
+        file = "BRAF_AI_BRAF_Tropical";
     };
