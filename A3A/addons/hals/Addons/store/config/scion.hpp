@@ -63,7 +63,6 @@
 				stock = 100;
 			};
             class sc_reflex_c_red : sc_reflex_c_blue {};
-            class sc_reflex_c_red : sc_reflex_c_blue {};
             class sc_reflex_c1_red : sc_reflex_c_blue {};
             class sc_reflex_r_blue : sc_reflex_c_blue {};
             class sc_reflex_r_green : sc_reflex_c_blue {};
