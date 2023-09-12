@@ -150,7 +150,7 @@ private _unitTypes = [
     ["Press", _pressTemplate], // to-do: allow press to spawn but make them special infected
     ["Worker", _workerTemplate],
     ["Man", _manTemplate],
-    ["Special", _manTemplate, [["baseClass", ["Zombie_O_Walker_Civ", "Zombie_O_Shambler_Civ", "Zombie_O_Shooter_FIA", "Zombie_Special_OPFOR_Leaper_1", "Zombie_Special_OPFOR_Leaper_2"], false]]]
+    ["Special", _manTemplate, [["baseClass", ["Zombie_O_Walker_Civ", "Zombie_O_Shambler_Civ", "Zombie_Special_OPFOR_Leaper_1"], true]]]
 ];
 
 [_prefix, _unitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;
