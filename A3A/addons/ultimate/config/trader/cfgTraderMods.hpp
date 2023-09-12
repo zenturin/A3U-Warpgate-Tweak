@@ -115,4 +115,9 @@ class traderMods
         addons[] = {"csa38ii_data"};
         prefix = "csa38";
     };
+    class braf : base
+    {
+        addons[] = {"BRAF_Air"};
+        prefix = "brafstock";
+    };
 };
