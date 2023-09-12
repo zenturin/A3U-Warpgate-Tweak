@@ -407,12 +407,12 @@ _policeLoadoutData set ["shotGuns", [
     ["braf_boito_14_oldstock", "", "", "", ["BRAF_Boito_5Rnd_buck","BRAF_Boito_5Rnd_slug","BRAF_Boito_5Rnd_riot"], [], ""],
 	["braf_boito_14_nostock", "", "", "", ["BRAF_Boito_5Rnd_buck","BRAF_Boito_5Rnd_slug","BRAF_Boito_5Rnd_riot"], [], ""],
 	["braf_boito_14_newstock", "", "", "", ["BRAF_Boito_5Rnd_buck","BRAF_Boito_5Rnd_slug","BRAF_Boito_5Rnd_riot"], [], ""],
-    ["braf_boito_20_oldstock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_8Rnd_riot"], [], ""],
-	["braf_boito_20_nostock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_8Rnd_riot"], [], ""],
-	["braf_boito_20_newstock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_8Rnd_riot"], [], ""],
-    ["braf_boito_24_oldstock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_8Rnd_riot"], [], ""],
-	["braf_boito_24_nostock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_8Rnd_riot"], [], ""],
-	["braf_boito_24_newstock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_8Rnd_riot"], [], ""]
+    ["braf_boito_20_oldstock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_7Rnd_riot"], [], ""],
+	["braf_boito_20_nostock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_7Rnd_riot"], [], ""],
+	["braf_boito_20_newstock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_7Rnd_riot"], [], ""],
+    ["braf_boito_24_oldstock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_7Rnd_riot"], [], ""],
+	["braf_boito_24_nostock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_7Rnd_riot"], [], ""],
+	["braf_boito_24_newstock", "", "", "", ["BRAF_Boito_8Rnd_buck","BRAF_Boito_8Rnd_slug","BRAF_Boito_7Rnd_riot"], [], ""]
 ]];
 _policeLoadoutData set ["SMGs", [
 	["Braf_MT12", "", "", "", ["30Rnd_9x21_Mag"], [], ""],

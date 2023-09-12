@@ -93,7 +93,7 @@
 
 			ITEM(Braf_lmga4, 800, RIFLE_STOCK); // CUP_60Rnd_556x45_SureFire
 			ITEM(Braf_mag, 1100, RIFLE_STOCK); // Braf_75Rnd_mag58_mag Braf_50Rnd_mag58_mag
-			ITEM(Braf_mag, 1000, RIFLE_STOCK); // 200Rnd_556x45_Box_F
+			ITEM(braf_Minimi, 1000, RIFLE_STOCK); // 200Rnd_556x45_Box_F
 			ITEM(Braf_FAP, 800, RIFLE_STOCK); // braf_40Rnd_762x51 braf_40Rnd_762x51_red
 
 		};
