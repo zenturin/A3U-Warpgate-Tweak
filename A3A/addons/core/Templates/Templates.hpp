@@ -629,7 +629,11 @@ class Templates
     // ***************************** GM *****************************
 
     #include "Templates\GM\templates.hpp"
-	
+
+    // ***************************** BRAF *****************************
+
+    #include "Templates\BRAF\templates.hpp"
+
     // ***************************** Aegis *****************************
 
     #include "Templates\Aegis\templates.hpp"
@@ -641,4 +645,5 @@ class Templates
     // ***************************** STALKER *****************************
 
     #include "Templates\STALKER\templates.hpp"
+
 };
