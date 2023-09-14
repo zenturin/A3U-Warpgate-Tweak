@@ -54,7 +54,7 @@
         side = "Inv";
         flagTexture = QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_covenant_ca.paa);
         name = "Covenant (Elites)";
-        file = "OPTRE_AI_Covenant";
+        file = "OPTRE_AI_Covenant_New";
         description = "The Covenant (With OPTRE elites)";
     };
 
@@ -62,7 +62,7 @@
     {
         requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core", "WBK_Halo_Alients"};
         name = "Covenant (WBK Elites)";
-        file = "OPTRE_AI_Covenant_Grunts";
+        file = "OPTRE_AI_Covenant_Grunts_New";
         description = "The Covenant (With Webknights elites and grunts)";
     };
     /*------------- END COVENANT -------------*/
