@@ -125,7 +125,7 @@
     class IFA_CIV_Zombie_Soldiers : IFA_CIV
     {
         requiredAddons[] = {"IFA3_Core", "WBK_ZombieCreatures"};
-        priority = 20;
+        priority = 14;
         name = "IFA Soldier Zombies";
         file = "IFA_CIV_Zombie_Soldiers";
     };

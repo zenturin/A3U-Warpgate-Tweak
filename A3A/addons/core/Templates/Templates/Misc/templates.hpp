@@ -2,7 +2,7 @@
     {
         requiredAddons[] = {};
         basepath = QPATHTOFOLDER(Templates\Templates\Misc);
-        priority = 62;
+        priority = 0;
         side = "Civ";
         logo = "a3\ui_f\data\logos\arma3_white_ca.paa";
         flagTexture = "a3\ui_f\data\logos\arma3_white_ca.paa";

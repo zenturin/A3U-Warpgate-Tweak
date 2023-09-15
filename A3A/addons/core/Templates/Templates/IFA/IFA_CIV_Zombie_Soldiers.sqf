@@ -2,6 +2,8 @@
 //       Vehicles       //
 //////////////////////////    
 
+["attributeCivNonHuman", true] call _fnc_saveToTemplate;
+
 ["vehiclesCivCar", [
     "LIB_GazM1", 1
     , "LIB_GazM1_dirty", 1
