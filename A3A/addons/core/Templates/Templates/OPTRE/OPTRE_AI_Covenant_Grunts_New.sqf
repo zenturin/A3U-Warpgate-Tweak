@@ -19,15 +19,6 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["vehiclesMilitiaAPCs", ["OPTRE_FC_Spectre_Empty"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["OPTRE_FC_Spectre"]] call _fnc_saveToTemplate;
-["vehiclesLightTanks",  ["OPTRE_FC_Spectre"]] call _fnc_saveToTemplate;
-
-["staticHowitzers", []] call _fnc_saveToTemplate;
-["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
-["vehicleRadar", "O_Radar_System_02_F"] call _fnc_saveToTemplate;
-["vehicleSam", "OPTRE_FC_TyrantAA"] call _fnc_saveToTemplate;
-
 ["vehiclesBasic", ["OPTRE_FC_Ghost_Driverless"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["OPTRE_FC_Ghost_Driverless"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["OPTRE_FC_Ghost_Needler_Driverless", "OPTRE_FC_Ghost_Armor_Driverless"]] call _fnc_saveToTemplate; //this line determines light and armed vehicles -- Example: ["vehiclesLightArmed", ["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
@@ -39,6 +30,7 @@
 ["vehiclesMedical", ["OPTRE_m1015_mule_medical_ins"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["OPTRE_FC_Spectre_Recovery_Ultra"]] call _fnc_saveToTemplate;
 ["vehiclesAirborne", ["OPTRE_FC_Spectre", "OPTRE_FC_Spectre_AI_Ultra"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["OPTRE_FC_Spectre", "OPTRE_FC_Spectre_Empty"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 ["vehiclesLightTanks",  ["OPTRE_FC_Spectre", "OPTRE_FC_Spectre_AI_Ultra"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["OPTRE_FC_Wraith"]] call _fnc_saveToTemplate;
@@ -968,7 +960,7 @@ private _unitTypes = [
 ///////////////////////
 private _prefix = "military";
 private _unitTypes = [
-    ["SquadLeader", _squadLeaderTemplate, [["baseClass", "WBK_EliteMainWeap_9", true]], [_prefix]],
+    ["SquadLeader", _squadLeaderTemplate, [["baseClass", "WBK_EliteMainWeap_3", true]], [_prefix]],
     ["Radioman", _radiomanTemplate, [["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]],
     ["Rifleman", _riflemanTemplate, [["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]],
     ["Medic", _medicTemplate, [["medic", true], ["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]],
@@ -1001,7 +993,7 @@ private _unitTypes = [
 ////////////////////////
 private _prefix = "militia";
 private _unitTypes = [
-    ["SquadLeader", _squadLeaderTemplate, [["baseClass", "WBK_EliteMainWeap_9", true]], [_prefix]],
+    ["SquadLeader", _squadLeaderTemplate, [["baseClass", "WBK_EliteMainWeap_2", true]], [_prefix]],
     ["Radioman", _radiomanTemplate, [["baseClass", "WBK_Grunt_1", true]], [_prefix]],
     ["Rifleman", _riflemanTemplate, [["baseClass", "WBK_Grunt_1", true]], [_prefix]],
     ["Medic", _medicTemplate, [["medic", true], ["baseClass", "WBK_Grunt_2", true]], [_prefix]],

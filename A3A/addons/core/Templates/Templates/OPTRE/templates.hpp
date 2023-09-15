@@ -13,7 +13,7 @@
         side = "Occ";
         flagTexture = QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_unsc_ca.paa);
         name = "UNSC";
-        file = "OPTRE_AI_UNSC";
+        file = "OPTRE_AI_UNSC_New";
         climate[] = {"arid", "temperate"};
         description = "The UNSC";
     };
@@ -21,21 +21,21 @@
     class OPTRE_UNSC_desert : OPTRE_UNSC
     {
         name = "UNSC Desert";
-        file = "OPTRE_AI_UNSC_desert";
+        file = "OPTRE_AI_UNSC_desert_New";
         climate[] = {"arid", "temperate"};
     };
     
     class OPTRE_UNSC_snow : OPTRE_UNSC
     {
         name = "UNSC Snow";
-        file = "OPTRE_AI_UNSC_snow";
+        file = "OPTRE_AI_UNSC_snow_New";
         climate[] = {"arctic"};
     };
 
     class OPTRE_UNSC_tropical : OPTRE_UNSC
     {
         name = "UNSC Tropical";
-        file = "OPTRE_AI_UNSC_tropical";
+        file = "OPTRE_AI_UNSC_tropical_New";
         climate[] = {"tropical"};
     };
 
