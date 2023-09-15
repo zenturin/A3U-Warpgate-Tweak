@@ -147,17 +147,18 @@ private _pressTemplate = {
 
 private _specialUnits = [
     "Zombie_O_Walker_Civ",
-    "Zombie_O_Walker_Civ",
-    "Zombie_O_Walker_Civ",
-    "Zombie_O_Shambler_Civ",
-    "Zombie_O_Shambler_Civ",
     "Zombie_O_Shambler_Civ",
     "WBK_SpecialZombie_Corrupted_3",
-    "WBK_SpecialZombie_Corrupted_3",
-    // ^ My way of avoiding making a selectRandomWeighted fnc
-    "Zombie_Special_OPFOR_Boomer",
-    "Zombie_Special_OPFOR_Leaper_2",
-    "Zombie_Special_OPFOR_Screamer"
+    "Zombie_Special_OPFOR_Screamer",
+    "Zombie_Special_OPFOR_Leaper_2"
+];
+
+private _specialUnitsWeights = [
+    1.0,
+    0.8,
+    0.3,
+    0.15,
+    0.05
 ];
 
 private _prefix = "militia";
@@ -165,7 +166,7 @@ private _unitTypes = [
     ["Press", _pressTemplate], // to-do: allow press to spawn but make them special infected
     ["Worker", _workerTemplate], // needed to be normal for resources, factories, etc
     ["Man", _manTemplate],
-    ["Special", _manTemplate, [["baseClass", _specialUnits, false]]]
+    ["Special", _manTemplate, [["baseClass", [_specialUnits, _specialUnitsWeights], true]]]
 ];
 
 [_prefix, _unitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;

@@ -33,6 +33,7 @@ class CfgFunctions
             class hasAddon {};
             class log {};
             class logisticsGrabSeats {};
+            class weightTest {};
         };
     };
 };
