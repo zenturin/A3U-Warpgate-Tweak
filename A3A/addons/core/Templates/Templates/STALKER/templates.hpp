@@ -26,7 +26,7 @@
 
     class STALKER_Civ_Zombie : STALKER_Base
     {
-        requiredAddons[] = {"WBK_ZombieCreatures"};
+        requiredAddons[] = {"SCE_Uniforms", "WBK_ZombieCreatures"};
         side = "Civ";
         name = "Mutants";
         file = "STALKER_Civ_Zombie";
