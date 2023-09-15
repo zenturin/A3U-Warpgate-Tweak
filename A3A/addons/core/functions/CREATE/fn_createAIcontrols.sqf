@@ -27,7 +27,7 @@ A3A_hasIFA = false;
 //IFA Detection
 if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
   A3A_hasIFA = true;
-  [2,"Iront Front Detected.",_fileName] call A3A_fnc_log;
+  [2,"Iront Front Detected.",_fnc_scriptName] call A3A_fnc_log;
 };
 
 _isControl = if (isOnRoad _positionX) then {true} else {false};
@@ -139,7 +139,7 @@ if (_isControl) then
 			sleep 1;
 			{ [_x, _sideX] call A3A_fnc_AIVEHinit } forEach _vehiclesX;
 			};
-        private _typeGroup = selectRandom (_faction get "groupsMilitiaMedium");
+        private _typeGroup = selectRandom (_faction get "groupsTierMedium");
 		_groupX = [_positionX,_sideX, _typeGroup, true] call A3A_fnc_spawnGroup;
 		if !(isNull _groupX) then
 			{
@@ -170,7 +170,7 @@ if (_isControl) then
 		[_veh, _sideX] call A3A_fnc_AIVEHinit;
 		_vehiclesX pushBack _veh;
 		sleep 1;
-		_typeGroup = selectRandom (_faction get "groupsMilitiaMedium");
+		_typeGroup = selectRandom (_faction get "groupsTierMedium");
 		_groupX = [_positionX, _sideX, _typeGroup, true] call A3A_fnc_spawnGroup;
 		if !(isNull _groupX) then
 			{

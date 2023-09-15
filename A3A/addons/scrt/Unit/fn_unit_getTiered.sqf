@@ -24,17 +24,18 @@ if (_forceTier != -1) exitWith {
     _tieredArray select _forceTier
 };
 
-switch (true) do {
-    case (tierWar < 5):
+switch (true) do 
+{
+    case (tierWar >= 8): // if tier is 8 or higher, choose elite
     {
-        _tieredArray select 0
+        _tieredArray select 2
     };
-    case (tierWar < 8 && {tierWar > 4}):
+    case (tierWar >= 4): // if tier is 4 or higher, choose military
     {
         _tieredArray select 1
     };
-    case (tierWar > 7):
+    case (tierWar <= 3): // if tier is 3 or lower, choose militia
     {
-        _tieredArray select 2
+        _tieredArray select 0
     };
 };
