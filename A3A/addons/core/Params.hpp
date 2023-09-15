@@ -127,6 +127,35 @@ class Params
         default = 16;
     };
 
+    class Spacer101
+    {
+        title = "";
+        values[] = {""};
+        texts[] = {""};
+        default = "";
+    };
+    class Spacer102
+    {
+        title = "ANTISTASI ULTIMATE PARAMETERS";
+        values[] = {""};
+        texts[] = {""};
+        default = "";
+    };
+    class cosmeticsEnabled
+    {
+        title = "Enable Cosmetics";
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 1;
+    };
+    class zombiesUncapped
+    {
+        title = "Enable Uncapped Zombie Spawning";
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
+    };
+
     class Spacer60
     {
         title = "";
@@ -468,14 +497,6 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
     };
-    class cosmeticsEnabled
-    {
-        title = "Enable Cosmetics";
-        values[] = {0,1};
-        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
-        default = 1;
-    };
-
 
     class SpacerLoot
     {

@@ -100,6 +100,10 @@ if (_civNonHuman) exitWith
     if (maxCiviliansPerTown <= 10) then {
         _numCiv = random [6, 8, 10];
     };
+
+    if (zombiesUncapped isEqualTo true) then {
+        _numCiv = _numCiv * 2;
+    };
     
     switch _faction do
     {
