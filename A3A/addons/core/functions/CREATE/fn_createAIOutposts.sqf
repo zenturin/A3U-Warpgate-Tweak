@@ -65,7 +65,7 @@ private _additionalGarrison = [_sideX, _markerX] call SCRT_fnc_garrison_rollOver
 if (_additionalGarrison isNotEqualTo []) then {
 	for "_i" from 0 to (count _additionalGarrison) - 1 do {
 		private _groupTypes = _additionalGarrison select _i;
-		private _group = [_positionX, _sideX, (selectRandom ([_faction, "groupsTierMedium"] call SCRT_fnc_unit_flattenTier)), false, true] call A3A_fnc_spawnGroup;
+		private _group = [_positionX, _sideX, (selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)), false, true] call A3A_fnc_spawnGroup;
 		if !(isNull _group) then {
 			sleep 1;
 			[_group, "Patrol_Area", 25, 150, 300, false, [], false] call A3A_fnc_patrolLoop;
@@ -303,7 +303,7 @@ while {_countX <= _radiusX} do {
 };
 
 for "_i" from 0 to (count _array - 1) do {
-	_array = (selectRandom ([_faction, "groupsTierMedium"] call SCRT_fnc_unit_flattenTier));
+	_array = (selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier));
 	_groupX = if (_i == 0) then {
 		[_positionX, _sideX, _array, true, false] call A3A_fnc_spawnGroup;
 	} else {
