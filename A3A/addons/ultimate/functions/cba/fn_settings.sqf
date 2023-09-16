@@ -16,7 +16,7 @@
     "SLIDER", // setting type
     "War Level For Militia", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "Antistasi Ultimate", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [0, 7, 3, 0],
+    [0, 7, 3, 0], // lowest, highest, default, idk what the last one does
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
