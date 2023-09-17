@@ -83,7 +83,7 @@ if (["diwako_anomalies"] call A3U_fnc_hasAddon) then {
         "SLIDER", // setting type
         "Anomaly Population (Lower = More)", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
         "Antistasi Ultimate - Diwako Anomaly Settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-        [100, 1000, 200, 0],
+        [0, 1000, 200, 0],
         true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
         {
             params ["_value"];
