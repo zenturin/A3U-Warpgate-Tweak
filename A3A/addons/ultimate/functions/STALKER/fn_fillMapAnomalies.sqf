@@ -1,4 +1,4 @@
-params [["_anomalyAmount", 200]];
+params [["_anomalyAmount", 200]]; // ignore this parameter, it doesn't do anything
 
 private _size = worldSize;
 
