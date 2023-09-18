@@ -69,7 +69,7 @@
 private _initialRebelEquipment = [
     "CUP_arifle_L85A2", "CUP_smg_MP5A5",
     "CUP_30Rnd_556x45_Stanag_L85", "CUP_30Rnd_9x19_MP5",
-    "CUP_hgun_Phantom", "CUP_18Rnd_9x19_Phantom",
+    "CUP_hgun_Phantom", "CUP_18Rnd_9x19_Phantom", "anomalydetector",
     ["CUP_launch_RPG18", 10],
     ["IEDUrbanSmall_Remote_Mag", 5], ["IEDLandSmall_Remote_Mag", 5],
     "CUP_HandGrenade_RGD5", "SmokeShell",
