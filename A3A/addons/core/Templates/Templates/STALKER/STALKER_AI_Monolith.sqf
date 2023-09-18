@@ -209,21 +209,21 @@ _loadoutData set ["goggles", []];
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData set ["uniforms", ["SE_SEVA_Monolith"]];
 _sfLoadoutData set ["vests", ["SCE_V_SEVA_Monolith"]];
-_sfLoadoutData set ["mgVests", ["CUP_V_CZ_vest12"]];
+_sfLoadoutData set ["mgVests", ["SCE_Exo2G_Monolith"]];
 _sfLoadoutData set ["medVests", ["CUP_V_CZ_vest10"]];
-_sfLoadoutData set ["glVests", ["CUP_V_CZ_vest06"]];
-_sfLoadoutData set ["backpacks", ["CUP_B_Kombat_Olive"]];
+_sfLoadoutData set ["glVests", ["SCE_Exo2G_Monolith"]];
+_sfLoadoutData set ["backpacks", ["SCE_B_SEVA_Monolith"]];
 _sfLoadoutData set ["slBackpacks", ["CUP_B_ACRPara_m95"]];
 _sfLoadoutData set ["atBackpacks", ["CUP_O_RUS_Patrol_bag_Green"]];
-_sfLoadoutData set ["helmets", []];
+_sfLoadoutData set ["helmets", ["SCE_Exo_Helmet_Monolith"]];
 _sfLoadoutData set ["slHat", []];
 _sfLoadoutData set ["sniHats", []];
 _sfLoadoutData set ["NVGs", ["CUP_NVG_HMNVS"]];
 _sfLoadoutData set ["binoculars", ["CUP_LRTV"]];
 
 _sfLoadoutData set ["glasses", [
-    "SE_SEVA_Visor"
-]];
+    "CAU_G_CBRN_m04_white_hood"
+]]; 
 
 _sfLoadoutData set ["slRifles", [
     ["CUP_arifle_AUG_A1", "", "", "", ["CUP_30Rnd_556x45_AUG"], [], ""],

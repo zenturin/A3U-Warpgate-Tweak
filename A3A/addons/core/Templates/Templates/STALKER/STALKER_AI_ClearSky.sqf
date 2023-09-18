@@ -213,20 +213,20 @@ _loadoutData set ["goggles", []];
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData set ["uniforms", ["SCE_ClearSky_CBRN"]];
 _sfLoadoutData set ["vests", ["SCE_V_SEVA_Loner_6", "SCE_V_SEVA_ClearSky"]];
-_sfLoadoutData set ["mgVests", ["SCE_V_SEVA_ClearSky"]];
+_sfLoadoutData set ["mgVests", ["SCE_Exo2G_loner_2"]];
 _sfLoadoutData set ["medVests", ["SCE_V_SEVA_ClearSky"]];
-_sfLoadoutData set ["glVests", ["SCE_V_SEVA_ClearSky"]];
+_sfLoadoutData set ["glVests", ["SCE_Exo2G_loner_2"]];
 _sfLoadoutData set ["backpacks", ["SCE_B_SEVA_ClearSky"]];
 _sfLoadoutData set ["slBackpacks", ["SE_SEVA_Oxygen_Tank"]];
 _sfLoadoutData set ["atBackpacks", ["SCE_B_SEVA_Loner_6"]];
-_sfLoadoutData set ["helmets", ["SCE_H_SEVA_ClearSky"]];
+_sfLoadoutData set ["helmets", ["SCE_Exo_Helmet_Mercenary"]];
 _sfLoadoutData set ["slHat", ["SCE_H_SEVA_ClearSky"]];
 _sfLoadoutData set ["sniHats", ["SCE_H_SEVA_ClearSky"]];
 _sfLoadoutData set ["NVGs", ["CUP_NVG_GPNVG_Hide"]];
 _sfLoadoutData set ["binoculars", ["CUP_LRTV"]];
 
 _sfLoadoutData set ["glasses", [
-    "SCE_G_SEVA_HELMET_VISOR"
+    "CAU_G_CBRN_m04_hoodless"
 ]];
 
 _sfLoadoutData set ["slRifles", [
