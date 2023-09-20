@@ -123,21 +123,42 @@ private _pressTemplate = {
     ["compasses"] call _fnc_addCompass;
 };
 
-private _specialUnits = [
-    "Zombie_O_Walker_Civ",
-    "Zombie_O_Shambler_Civ",
-    "WBK_SpecialZombie_Corrupted_3",
-    "Zombie_Special_OPFOR_Leaper_2",
-    "Zombie_Special_OPFOR_Boomer"
-];
+private _specialUnits = [];
+private _specialUnitsWeights = [];
 
-private _specialUnitsWeights = [
-    1.0,
-    0.8,
-    0.4,
-    0.1,
-    0.07
-];
+if (["dev_mutant_asymhuman"] call A3U_fnc_hasAddon) then {
+    _specialUnits = [
+        "dev_o_zombie_polo_2_F_afro",
+        "dev_o_zombie_casual_5_v2_F_afro",
+        "dev_form939_o",
+        "dev_asymhuman_o",
+        "dev_toxmut_o"
+    ];
+
+    _specialUnitsWeights = [
+        0.7,
+        0.5,
+        0.3,
+        0.2,
+        0.1
+    ];
+} else {
+    _specialUnits = [
+        "Zombie_O_Walker_Civ",
+        "Zombie_O_Shambler_Civ",
+        "WBK_SpecialZombie_Corrupted_3",
+        "Zombie_Special_OPFOR_Leaper_2",
+        "Zombie_Special_OPFOR_Boomer"
+    ];
+
+    _specialUnitsWeights = [
+        1.0,
+        0.8,
+        0.4,
+        0.1,
+        0.07
+    ];
+};
 
 private _prefix = "militia";
 private _unitTypes = [
