@@ -545,45 +545,44 @@ class cfgHALsStore
 				"launcherscsa"
 			};
 		};
-		class scion
-		{
-			displayName = $STR_ARMS_DEALER_STORE;
-			categories[] = {
-				"riflesScion", 
-				"magazinesriflesScion",
-				"sniperRiflesScion", 
-				"magazinessniperRiflesScion", 
-				"opticsScion"
-			};
+	class scion
+	{
+		displayName = $STR_ARMS_DEALER_STORE;
+		categories[] = {
+			"riflesScion", 
+			"magazinesriflesScion",
+			"sniperRiflesScion", 
+			"magazinessniperRiflesScion", 
+			"opticsScion"
 		};
-		class wrs
-		{
-			displayName = $STR_ARMS_DEALER_STORE;
-			categories[] = {
-				"riflesWRS", 
-				"magazinesriflesWRS",
-				"sniperRiflesWRS", 
-				"magazinessniperRiflesWRS"
-      };
-    };
-		class brafstock		
-		{
-			displayName = $STR_ARMS_DEALER_STORE;
-			categories[] = {
-        "handgunsBraf", 
-        "launchersBraf", 
-        "riflesBraf", 
-        "sniperRiflesBraf",
-        "specialWeaponsBraf", 
-        "mgBraf", 
-        "smgBraf", 
-        "launcherMagazinesBraf", 
-        "magazinesBraf", 
-        "opticsBraf", 
-        "muzzlesBraf",  
-        "pointersBraf", 
-        "navigationBraf"
-		  };
+	};
+	class wrs
+	{
+		displayName = $STR_ARMS_DEALER_STORE;
+		categories[] = {
+			"riflesWRS", 
+			"magazinesriflesWRS",
+			"sniperRiflesWRS", 
+			"magazinessniperRiflesWRS"
+		};
+	};
+	class brafstock		
+	{
+		displayName = $STR_ARMS_DEALER_STORE;
+		categories[] = {
+			"handgunsBraf", 
+			"launchersBraf", 
+			"riflesBraf", 
+			"sniperRiflesBraf",
+			"specialWeaponsBraf", 
+			"mgBraf", 
+			"smgBraf", 
+			"launcherMagazinesBraf", 
+			"magazinesBraf", 
+			"opticsBraf", 
+			"muzzlesBraf",  
+			"pointersBraf", 
+			"navigationBraf"
 		};
 	};
 };
