@@ -48,7 +48,7 @@ private _roadPositions = (_positionX nearRoads round(_patrolSize / 2));
 
 private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
 
-if (_civNonHuman && {(selectRandom [1,2]) isEqualTo 2}) exitWith {
+if (_civNonHuman && {(selectRandom [1,2,3]) isEqualTo 2}) exitWith {
 	["locationSpawned", [_markerX, "City", true]] call EFUNC(Events,triggerEvent);
 
 	waitUntil {sleep 1;(spawner getVariable _markerX == 2)};
