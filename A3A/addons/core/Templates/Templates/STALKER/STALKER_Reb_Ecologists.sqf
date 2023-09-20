@@ -69,7 +69,7 @@
 private _initialRebelEquipment = [
     "CUP_arifle_L85A2", "CUP_smg_MP5A5",
     "CUP_30Rnd_556x45_Stanag_L85", "CUP_30Rnd_9x19_MP5",
-    "CUP_hgun_Phantom", "CUP_18Rnd_9x19_Phantom", "anomalydetector",
+    "CUP_hgun_Phantom", "CUP_18Rnd_9x19_Phantom",
     ["CUP_launch_RPG18", 10],
     ["IEDUrbanSmall_Remote_Mag", 5], ["IEDLandSmall_Remote_Mag", 5],
     "CUP_HandGrenade_RGD5", "SmokeShell",
@@ -77,6 +77,8 @@ private _initialRebelEquipment = [
     "SE_Satchel_Bag", "SE_Hunting_Backpack", "SE_SEVA_Visor",
     "Binocular"
 ];
+
+if (["diwako_anomalies"] call A3U_fnc_hasAddon) then {_initialRebelEquipment append ["anomalydetector"]};
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr", "tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {

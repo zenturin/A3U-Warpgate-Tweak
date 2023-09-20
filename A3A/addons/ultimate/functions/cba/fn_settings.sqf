@@ -89,6 +89,8 @@ if (["tts_emission"] call A3U_fnc_hasAddon) then {
             missionNamespace setVariable ["A3U_setting_emissionSpeedMaximum",round(_value),true];
         }
     ] call CBA_fnc_addSetting;
+
+    #include "fn_emission_settings.sqf"
 };
 
 if (["diwako_anomalies"] call A3U_fnc_hasAddon) then {
