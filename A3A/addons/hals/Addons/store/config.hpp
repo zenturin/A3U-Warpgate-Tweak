@@ -56,6 +56,7 @@ class cfgHALsStore
 		#include "config\unsung.hpp"
 		#include "config\vanilla.hpp"
 		#include "config\vn.hpp"
+		#include "config\wrs.hpp"
 		#include "config\ws.hpp"
 	};
 
@@ -560,6 +561,16 @@ class cfgHALsStore
 				"sniperRiflesScion", 
 				"magazinessniperRiflesScion", 
 				"opticsScion"
+			};
+		};
+		class wrs
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesWRS", 
+				"magazinesriflesWRS",
+				"sniperRiflesWRS", 
+				"magazinessniperRiflesWRS"
 			};
 		};
 	};

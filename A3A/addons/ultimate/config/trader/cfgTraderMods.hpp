@@ -117,7 +117,12 @@ class traderMods
     };
     class scion : base
     {
-        addons[] = {"sc_weapons", "WBK_SciFiWeaponary"};
+        addons[] = {"sc_weapons"};
         prefix = "scion";
+    };
+    class wrs : base
+    {
+        addons[] = {"WBK_SciFiWeaponary"};
+        prefix = "wrs";
     };
 };
