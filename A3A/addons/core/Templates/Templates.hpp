@@ -630,6 +630,10 @@ class Templates
 
     #include "Templates\GM\templates.hpp"
 
+    // ***************************** Scion *****************************
+
+    #include "Templates\Scion\templates.hpp"
+
     // ***************************** BRAF *****************************
 
     #include "Templates\BRAF\templates.hpp"

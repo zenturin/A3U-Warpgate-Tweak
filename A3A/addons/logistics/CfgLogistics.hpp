@@ -14,13 +14,14 @@ class DOUBLES(ADDON,Nodes)
     #include "Nodes\RDS.hpp"
     #include "Nodes\RHS.hpp"
     #include "Nodes\RNT.hpp"
+    #include "Nodes\Scion.hpp"
     #include "Nodes\SPE.hpp"
     #include "Nodes\IFA.hpp"
     #include "Nodes\CSA.hpp"
     #include "Nodes\UNS.hpp"
     #include "Nodes\Vanilla.hpp"
-    #include "Nodes\OPTRE.hpp" // has to be here. It uses the classes from vanilla trucks
-    #include "Nodes\RACS.hpp" // has to be here. It uses the classes from vanilla trucks
+    #include "Nodes\OPTRE.hpp"
+    #include "Nodes\RACS.hpp"
     #include "Nodes\VN.hpp"
     #include "Nodes\WS.hpp"
     #include "Nodes\Aegis.hpp"

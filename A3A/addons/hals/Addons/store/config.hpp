@@ -48,6 +48,7 @@ class cfgHALsStore
 		#include "config\optre.hpp"
 		#include "config\pla.hpp"
 		#include "config\rhs.hpp"
+		#include "config\scion.hpp"
 		#include "config\sfp.hpp"
 		#include "config\sma.hpp"
 		#include "config\spearhead.hpp"
@@ -55,6 +56,7 @@ class cfgHALsStore
 		#include "config\unsung.hpp"
 		#include "config\vanilla.hpp"
 		#include "config\vn.hpp"
+		#include "config\wrs.hpp"
 		#include "config\ws.hpp"
 		#include "config\braf.hpp"
 	};
@@ -543,24 +545,44 @@ class cfgHALsStore
 				"launcherscsa"
 			};
 		};
-		
+		class scion
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesScion", 
+				"magazinesriflesScion",
+				"sniperRiflesScion", 
+				"magazinessniperRiflesScion", 
+				"opticsScion"
+			};
+		};
+		class wrs
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesWRS", 
+				"magazinesriflesWRS",
+				"sniperRiflesWRS", 
+				"magazinessniperRiflesWRS"
+			};
+		};
 		class brafstock		
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
-			"handgunsBraf", 
-			"launchersBraf", 
-			"riflesBraf", 
-			"sniperRiflesBraf",
-			"specialWeaponsBraf", 
-			"mgBraf", 
-			"smgBraf", 
-			"launcherMagazinesBraf", 
-			"magazinesBraf", 
-			"opticsBraf", 
-			"muzzlesBraf",  
-			"pointersBraf", 
-			"navigationBraf"
+				"handgunsBraf", 
+				"launchersBraf", 
+				"riflesBraf", 
+				"sniperRiflesBraf",
+				"specialWeaponsBraf", 
+				"mgBraf", 
+				"smgBraf", 
+				"launcherMagazinesBraf", 
+				"magazinesBraf", 
+				"opticsBraf", 
+				"muzzlesBraf",  
+				"pointersBraf", 
+				"navigationBraf"
 			};
 		};
 	};
