@@ -124,6 +124,7 @@ class traderMods
     {
         addons[] = {"WBK_SciFiWeaponary"};
         prefix = "wrs";
+    };
     class braf : base
     {
         addons[] = {"BRAF_Air"};
