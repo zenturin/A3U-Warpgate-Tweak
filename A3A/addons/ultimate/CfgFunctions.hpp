@@ -16,7 +16,9 @@ class CfgFunctions
         class init
         {
             file = QPATHTOFOLDER(functions\init);
+            class checkMods {};
             class init {};
+            class popup {};
         };
         class STALKER
         {

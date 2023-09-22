@@ -48,39 +48,45 @@ private _roadPositions = (_positionX nearRoads round(_patrolSize / 2));
 
 private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
 
-if (_civNonHuman && {(selectRandom [1,2]) isEqualTo 2}) then {} else {
-	while {(spawner getVariable _markerX != 2) and (_countX < _num)} do {
-		private _spawnPosition = [];
+if (_civNonHuman && {(selectRandom [1,2,3]) isEqualTo 2}) exitWith {
+	["locationSpawned", [_markerX, "City", true]] call EFUNC(Events,triggerEvent);
 
-		if (count _roadPositions >= 1) then {
-			_spawnPosition = selectRandom _roadPositions;
-			_roadPositions deleteAt (_roadPositions find _spawnPosition);
-		} else {
-			_spawnPosition = _positionX;
-		};
+	waitUntil {sleep 1;(spawner getVariable _markerX == 2)};
 
-		_groupX = [_spawnPosition, (_params # 1), (_params # 2)] call A3A_fnc_spawnGroup;
+	["locationSpawned", [_markerX, "City", false]] call EFUNC(Events,triggerEvent);
+};
 
-		// Forced non-spawner for performance and consistency with other garrison patrols
-		{
-			[_x, "", false] call A3A_fnc_NATOinit; 
-			_soldiers pushBack _x;
-		} forEach units _groupX;
+while {(spawner getVariable _markerX != 2) and (_countX < _num)} do {
+	private _spawnPosition = [];
 
-		sleep 1;
-
-		// Only spawn dog units with Occupant forces.
-		if (_isAAF) then {
-			if (random 10 < 2.5) then {
-				private _dog = [_groupX, "Fin_random_F", _spawnPosition, [], 0, "FORM"] call A3A_fnc_createUnit;
-				_dogs pushBack _dog;
-				[_dog] spawn A3A_fnc_guardDog;
-			};
-		};
-		[_groupX, "Patrol_Area", 25, 150, 150, false, _positionX, true] call A3A_fnc_patrolLoop;
-		_groups pushBack _groupX;
-		_countX = _countX + 1;
+	if (count _roadPositions >= 1) then {
+		_spawnPosition = selectRandom _roadPositions;
+		_roadPositions deleteAt (_roadPositions find _spawnPosition);
+	} else {
+		_spawnPosition = _positionX;
 	};
+
+	_groupX = [_spawnPosition, (_params # 1), (_params # 2)] call A3A_fnc_spawnGroup;
+
+	// Forced non-spawner for performance and consistency with other garrison patrols
+	{
+		[_x, "", false] call A3A_fnc_NATOinit; 
+		_soldiers pushBack _x;
+	} forEach units _groupX;
+
+	sleep 1;
+
+	// Only spawn dog units with Occupant forces.
+	if (_isAAF) then {
+		if (random 10 < 2.5) then {
+			private _dog = [_groupX, "Fin_random_F", _spawnPosition, [], 0, "FORM"] call A3A_fnc_createUnit;
+			_dogs pushBack _dog;
+			[_dog] spawn A3A_fnc_guardDog;
+		};
+	};
+	[_groupX, "Patrol_Area", 25, 150, 150, false, _positionX, true] call A3A_fnc_patrolLoop;
+	_groups pushBack _groupX;
+	_countX = _countX + 1;
 };
 
 ["locationSpawned", [_markerX, "City", true]] call EFUNC(Events,triggerEvent);

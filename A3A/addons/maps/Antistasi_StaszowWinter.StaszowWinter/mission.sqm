@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1327;
+		nextID=1388;
 	};
 	class Camera
 	{
@@ -493,6 +493,7 @@ randomSeed=9556496;
 class ScenarioData
 {
 	author="Antistasi Ultimate Dev Team";
+	respawn=3;
 	class Header
 	{
 		gameType="CTI";
@@ -504,6 +505,19 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
+		{
+			property="ReviveMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -520,14 +534,14 @@ class CustomAttributes
 							class data
 							{
 								singleType="STRING";
-								value="None";
+								value="Counter";
 							};
 						};
 					};
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 };
 class Mission
@@ -3859,7 +3873,7 @@ class Mission
 							colorName="ColorBrown";
 							a=8.9949999;
 							b=19.718;
-							angle=56.622974;
+							angle=56.622971;
 							id=4199;
 							atlOffset=0.035198212;
 						};
@@ -3912,7 +3926,7 @@ class Mission
 							colorName="ColorBrown";
 							a=8.9949999;
 							b=19.718;
-							angle=56.622971;
+							angle=56.622967;
 							id=5444;
 							atlOffset=-0.036750793;
 						};
@@ -3926,7 +3940,7 @@ class Mission
 							colorName="ColorBrown";
 							a=8.9949999;
 							b=19.718;
-							angle=56.622971;
+							angle=56.622967;
 							id=5445;
 							atlOffset=-0.0084228516;
 						};
@@ -4352,7 +4366,7 @@ class Mission
 							colorName="ColorGreen";
 							a=12.236;
 							b=10.906;
-							angle=53.089973;
+							angle=53.08997;
 							id=5447;
 							atlOffset=0.056304932;
 						};
@@ -4950,7 +4964,7 @@ class Mission
 							type="rectangle";
 							a=15.697052;
 							b=12.715591;
-							angle=112.55951;
+							angle=112.5595;
 							id=3642;
 							atlOffset=0.0084018707;
 						};
@@ -5065,7 +5079,7 @@ class Mission
 							type="rectangle";
 							a=57.679291;
 							b=30.980202;
-							angle=226.41728;
+							angle=226.41727;
 							id=4201;
 							atlOffset=-2.0707855;
 						};
@@ -64907,7 +64921,7 @@ class Mission
 					colorName="ColorRed";
 					a=95.451752;
 					b=108.67588;
-					angle=200.23772;
+					angle=200.2377;
 					id=5407;
 					atlOffset=377.97659;
 				};

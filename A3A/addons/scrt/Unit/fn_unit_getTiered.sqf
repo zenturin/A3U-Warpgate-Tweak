@@ -24,17 +24,21 @@ if (_forceTier != -1) exitWith {
     _tieredArray select _forceTier
 };
 
-switch (true) do {
-    case (tierWar < 5):
+private _militia = missionNamespace getVariable ["A3U_setting_tierWarMilitia", 3];
+private _elite = missionNamespace getVariable ["A3U_setting_tierWarElite", 8];
+
+switch (true) do 
+{
+    case (tierWar >= _elite): // if tier is equal to or higher than the elite setting, choose elite
     {
-        _tieredArray select 0
+        _tieredArray select 2
     };
-    case (tierWar < 8 && {tierWar > 4}):
+    case (tierWar >= (_militia + 1)): // if tier is equal to or higher than the militia setting + 1, choose military
     {
         _tieredArray select 1
     };
-    case (tierWar > 7):
+    case (tierWar <= _militia): // if tier is equal to or lower than the militia setting, choose militia
     {
-        _tieredArray select 2
+        _tieredArray select 0
     };
 };
