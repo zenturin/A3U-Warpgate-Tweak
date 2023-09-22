@@ -16,7 +16,7 @@
 
 private _addons = [];
 
-if (["CUP_AirVehicles_Core"] call A3U_fnc_hasAddon && {["rhs_faction_usarmy"] call A3U_fnc_hasAddon}) then {
+if (["CUP_AirVehicles_Core"] call A3U_fnc_hasAddon && {["RHS_US_A2Port_Armor"] call A3U_fnc_hasAddon}) then {
     _addons pushBack "CUP and RHS";
 };
 
