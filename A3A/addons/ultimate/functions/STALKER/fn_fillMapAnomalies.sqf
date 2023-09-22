@@ -1,4 +1,20 @@
-params [["_anomalyAmount", 200]]; // ignore this parameter, it doesn't do anything
+/*
+    Function: A3U_fnc_fillMapAnomalies
+
+    Description:
+        Fills the map with anomalies, based off of map size and cba setting
+
+    Parameter:
+        N/A
+
+    Returns:
+        N/A
+
+    Author:
+        Silence
+*/
+
+params [["_anomalyAmount", 200]]; // ignore this parameter, it doesn't do anything atm
 
 private _size = worldSize;
 

@@ -1,3 +1,19 @@
+/*
+    Function: A3U_fnc_emission
+
+    Description:
+        Starts random emissions, grabs values from cba settings
+
+    Parameter:
+        N/A
+
+    Returns:
+        N/A
+
+    Author:
+        Silence
+*/
+
 private _emissionMin = missionNamespace getVariable ["A3U_setting_emissionMinimum",45];
 private _emissionMax = missionNamespace getVariable ["A3U_setting_emissionMaximum",60];
 

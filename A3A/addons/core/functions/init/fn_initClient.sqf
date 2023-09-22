@@ -634,3 +634,5 @@ Info("initClient completed");
 if (!isMultiplayer) then {
 	["noSingleplayer",false,1,false,false] call BIS_fnc_endMission;
 };
+
+call A3U_fnc_checkMods;
