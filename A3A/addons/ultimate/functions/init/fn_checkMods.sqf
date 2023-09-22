@@ -20,8 +20,33 @@ if (["CUP_AirVehicles_Core"] call A3U_fnc_hasAddon && {["RHS_US_A2Port_Armor"] c
     _addons pushBack "CUP and RHS";
 };
 
+if (["AR_AdvancedRappelling"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "Advanced Rappeling";
+};
+
+if (["AUR_AdvancedUrbanRappelling"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "Advanced Urban Rappeling";
+};
+
+if (["lambs_danger"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "LAMBS AI";
+};
+
+if (["VCOM_AI"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "VCOM AI";
+};
+
+if (["HIG_wall"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "AI Cannot See Through Grass";
+};
+
 if (_addons isNotEqualTo []) exitWith {
-    private _text = format["Warning. Addons loaded may not work correctly, or work together. Addons: %1", _addons];
+    private _addonText = _addons joinString ", ";
+
+    private _text = formatText 
+    [
+        "Warning. Addons loaded may not work correctly, or work together.%1%1| %2 |%1%1Consider removing them if you encounter any issues.", lineBreak, _addonText
+    ];
 
     [_text, "Warning"] call A3U_fnc_popup;
 
