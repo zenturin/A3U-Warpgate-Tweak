@@ -5,7 +5,6 @@
 
     // BMPs a bit better than APC but not Bradley level
     ["rhs_bmp2e_msv", ["cost", 120], ["threat", 150]],
-    ["rhs_btr60", ["cost", 120], ["threat", 150]],
 
     // This one is quite strong by light-armed standards
     ["rhsgref_cdf_b_reg_uaz_dshkm", ["cost", 75], ["threat", 120]],
