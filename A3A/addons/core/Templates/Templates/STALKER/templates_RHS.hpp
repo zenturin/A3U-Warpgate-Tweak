@@ -23,6 +23,12 @@
         file = "STALKER_AI_ClearSky_RHS";
         description = "[STALKER] Clear Sky was formed after a split occurred among members of the research team that caused the Zone to emerge in the first place. Disputes concerning cleaning up the aftermath of the failed experiment caused approximately half of the scientists to leave.";
     };
+
+    class STALKER_Civ_Zombie_RHS : STALKER_Civ_Zombie
+    {
+        requiredAddons[] = {"rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor", "WBK_ZombieCreatures"};
+        file = "STALKER_Civ_Zombie_RHS";
+    };
     
     class STALKER_Monolith_RHS : STALKER_Base_RHS
     {
