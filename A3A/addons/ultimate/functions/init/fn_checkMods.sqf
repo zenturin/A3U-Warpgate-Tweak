@@ -17,7 +17,7 @@
 private _addons = [];
 
 if (["CUP_AirVehicles_Core"] call A3U_fnc_hasAddon && {["RHS_US_A2Port_Armor"] call A3U_fnc_hasAddon}) then {
-    _addons pushBack "CUP and RHS";
+    _addons pushBack "CUP and RHS (Pick One)";
 };
 
 if (["AR_AdvancedRappelling"] call A3U_fnc_hasAddon) then {
@@ -38,6 +38,30 @@ if (["VCOM_AI"] call A3U_fnc_hasAddon) then {
 
 if (["HIG_wall"] call A3U_fnc_hasAddon) then {
     _addons pushBack "AI Cannot See Through Grass";
+};
+
+if (["asr_ai3_main"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "ASR AI3";
+};
+
+if (["ALiVE_main"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "ALiVE";
+};
+
+if (["mcc_sandbox"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "MCC Sandbox 4";
+};
+
+if (["zhc_main"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "Zulu Headless Client (ZHC)";
+};
+
+if (["PiR"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "Project injury Reaction (PiR)";
+};
+
+if (["Werthles_WHK"] call A3U_fnc_hasAddon) then {
+    _addons pushBack "Werthles' Headless Module";
 };
 
 if (_addons isNotEqualTo []) exitWith {
