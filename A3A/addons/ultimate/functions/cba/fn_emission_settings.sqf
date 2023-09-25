@@ -17,7 +17,7 @@
         "LIST", // setting type
         "AI Effect", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
         ["Antistasi Ultimate - TTS Emission Settings", "Effects"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-        [[0, 4], ["Kill Unsheltered Units", "Disabled"], 4],
+        [[0, 4], ["Kill Unsheltered Units", "Disabled"], 1],
         true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
         {  
             params ["_value"];
