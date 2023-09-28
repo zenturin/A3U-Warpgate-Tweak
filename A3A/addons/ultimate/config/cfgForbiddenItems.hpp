@@ -13,6 +13,7 @@ class forbiddenItems
 	class uns_m72used : forbidden_limited_base {};
 
     class PRACS_g3a3t40 : forbidden_limited_base {};
+    class PRACS_g3a4t40 : forbidden_limited_base {};
 
     #include "cfgForbiddenItemsCW.hpp"
     #include "cfgForbiddenItemsFWA.hpp"
