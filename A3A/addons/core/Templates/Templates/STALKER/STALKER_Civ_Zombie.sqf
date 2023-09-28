@@ -146,17 +146,19 @@ if (["dev_mutant_asymhuman"] call A3U_fnc_hasAddon) then {
     _specialUnits = [
         "Zombie_O_Walker_Civ",
         "Zombie_O_Shambler_Civ",
-        "WBK_SpecialZombie_Corrupted_3",
+        "Zombie_Special_OPFOR_Screamer",
         "Zombie_Special_OPFOR_Leaper_2",
-        "Zombie_Special_OPFOR_Boomer"
+        "Zombie_Special_OPFOR_Boomer",
+        "WBK_SpecialZombie_Smasher_3"
     ];
 
     _specialUnitsWeights = [
         1.0,
         0.8,
-        0.4,
+        0.3,
+        0.2,
         0.1,
-        0.07
+        0.001
     ];
 };
 

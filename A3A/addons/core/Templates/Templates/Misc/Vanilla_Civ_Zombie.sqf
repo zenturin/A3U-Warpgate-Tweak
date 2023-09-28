@@ -148,7 +148,7 @@ private _pressTemplate = {
 private _specialUnits = [
     "Zombie_O_Walker_Civ",
     "Zombie_O_Shambler_Civ",
-    "WBK_SpecialZombie_Corrupted_3",
+    "Zombie_O_RC_Civ",
     "Zombie_Special_OPFOR_Screamer",
     "Zombie_Special_OPFOR_Leaper_2"
 ];
