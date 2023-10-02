@@ -42,8 +42,8 @@
 ["vehiclesGunBoats", ["rhsusf_mkvsoc"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["rhs_btr70_msv" ]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", []] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", []] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["RHS_Su25SM_vvs"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["rhs_mig29sm_vvs"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["RHS_C130J"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["RHS_Mi8AMT_vdv"]] call _fnc_saveToTemplate;
@@ -73,7 +73,7 @@
 ["vehicleRadar", ""] call _fnc_saveToTemplate;
 ["vehicleSam", ""] call _fnc_saveToTemplate;
 
-["rhs_mag_3of56_10"] call _fnc_saveToTemplate;
+["howitzerMagazineHE", "rhs_mag_3of56_10"] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
