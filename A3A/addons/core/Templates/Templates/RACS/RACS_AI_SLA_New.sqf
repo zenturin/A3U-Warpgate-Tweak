@@ -334,7 +334,7 @@ _militaryLoadoutData set ["lightATLaunchers", ["rhs_weap_rpg26"]];
 _militaryLoadoutData set ["lightHELaunchers", ["rhs_weap_rshg2"]];
 
 _militaryLoadoutData set ["slRifles", [
-    ["rhs_weap_akm_zenitco01_b33", "", "", "", ["rhs_30Rnd_762x39mm_bakelite", "rhs_30Rnd_762x39mm_bakelite", "rhs_30Rnd_762x39mm_bakelite"], [], ""]
+    ["rhs_weap_akm_zenitco01_b33", "", "", "", ["rhs_30Rnd_762x39mm_bakelite", "rhs_30Rnd_762x39mm_bakelite", "rhs_30Rnd_762x39mm_bakelite"], [], ""],
     ["rhs_weap_g36c", "", "", "rhsusf_acc_compm4", ["rhssaf_30rnd_556x45_EPR_G36"], [], ""]
 ]];
 _militaryLoadoutData set ["rifles", [
