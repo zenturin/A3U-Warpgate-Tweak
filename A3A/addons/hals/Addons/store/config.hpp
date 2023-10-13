@@ -137,20 +137,11 @@ class cfgHALsStore
 				"launchers3cbf", 
 				"rifles3cbf", 
 				"sniperRifles3cbf", 
-				"specialWeaponsRhs",
 				"mg3cbf", 
 				"smg3cbf", 
-				"launcherMagazinesRhs", 
-				"magazinesRhs",
 				"additionalMuzzles3cbf",
 				"additionalScopes3cbf",
-				"additionalMagazines3cbf",
-				"opticsRhs", 
-				"muzzlesRhs", 
-				"underbarrelRhs", 
-				"pointersRhs", 
-				"navigationRhs", 
-				"miscRhs"
+				"additionalMagazines3cbf"
 			};
 		};
 
