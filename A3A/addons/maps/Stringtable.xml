@@ -108,7 +108,7 @@
             <Key ID="STR_antistasi_mission_info_Malden_mapname_short_text">
                 <Original>Antistasi Ultimate - Malden Elegy</Original>
                 <German>Antistasi Ultimate - Malden Elegie</German>
-                <Russian>Antistasi Ultimate - Элегия Малд.</Russian>
+                <Russian>Antistasi Ultimate - Элегия Малдена</Russian>
                 <Chinesesimp>Antistasi Ultimate - 马尔登悲歌</Chinesesimp>
                 <Korean>안티스타시 플러스 - 몰든의 애가</Korean>
             </Key>
@@ -310,7 +310,7 @@
             </Key>
             <Key ID="STR_antistasi_mission_info_tanoa_blurb_text">
                 <Original>A pack of old men in a job where people die young.</Original>
-                <Russian>Стая стариков там, где люди умирают молодыми.</Russian>
+                <Russian>Там, где молодые умирают, в бой идут старики.</Russian>
                 <Chinesesimp>一群老人从事英年早逝的工作。</Chinesesimp>
                 <Korean>사람들이 젊어서 죽는 직업의 노인들.</Korean>
             </Key>
@@ -347,7 +347,7 @@
             </Key>
             <Key ID="STR_antistasi_mission_info_khesanh_blurb_text">
                 <Original>“In this world, a man himself is nothing. And there ain't no world but this one.”</Original>
-                <Russian>„В этом мире человек, сам по себе - ничто. И нет другого мира, кроме этого."</Russian>
+                <Russian>“В этом мире человек, сам по себе - ничто. И нет другого мира, кроме этого.”</Russian>
                 <Chinesesimp>只有这个世界，一个人什么都不是。</Chinesesimp>
                 <Korean>"이 세상에서 인간 그 자체는 아무것도 아니다. 그리고 이 세계 외에는 다른 세계는 없다." </Korean>
             </Key>
