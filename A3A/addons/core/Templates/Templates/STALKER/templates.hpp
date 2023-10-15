@@ -81,4 +81,4 @@
         description = "[STALKER] Led by Yoga, this faction has notoriously been a pain for the Loners to deal with. Almost everyone hates them.";
     };
 
-    // #include "templates_RHS.hpp"
+    #include "templates_RHS.hpp"
