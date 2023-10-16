@@ -404,7 +404,72 @@
 			</Key>
 			<Key ID="STR_antistasi_mission_info_SPE_Normandy_blurb_text">
 				<Original>Vive la résistance!</Original>
+                <Russian>Vive la résistance!</Russian>
 			</Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_name">
+                <Original>Automatically load last valid save after delay</Original>
+                <Russian>Автоматически загружать последнее сохранение после задержки</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_no_automatic_load">
+                <Original>No automatic load</Original>
+                <Russian>Не загружать автоматически</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_1min">
+                <Original>1 min</Original>
+                <Russian>1 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_2min">
+                <Original>2 min</Original>
+                <Russian>2 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_3min">
+                <Original>3 min</Original>
+                <Russian>3 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_5min">
+                <Original>5 min</Original>
+                <Russian>5 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_10min">
+                <Original>10 min</Original>
+                <Russian>10 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_name">
+                <Original>Logging Level during setup</Original>
+                <Russian>Уровень логгирования</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_Error">
+                <Original>Error</Original>
+                <Russian>Ошибки</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_Info">
+                <Original>Info</Original>
+                <Russian>Информация</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_Debug">
+                <Original>Debug</Original>
+                <Russian>Дебаг</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_Verbose">
+                <Original>Verbose</Original>
+                <Russian>Подробный</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_name">
+                <Original>Log debug console use during setup</Original>
+                <Russian>Логгировать использование дебаг консоли</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_None">
+                <Original>None</Original>
+                <Russian>Не логировать никого</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_All_none_dev">
+                <Original>All none dev</Original>
+                <Russian>Логгировать не-разработчиков</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_Dev">
+                <Original>Dev</Original>
+                <Russian>Логгировать всех</Russian>
+            </Key>
         </Container>
     </Package>
 </Project>
