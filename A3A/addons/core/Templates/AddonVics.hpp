@@ -57,7 +57,7 @@ class AddonVics
         path = QPATHTOFOLDER(Templates\AddonVics);
         requiredAddons[] = {"CUP_AirVehicles_Core"};
         files[] = { {"Civ", "cup_veh_Civ.sqf"} };
-        displayName = "CUP Civilian Car Pack";
+        displayName = "CUP Civilian Vehicle Pack";
         description = "A vehicle pack from CUP that extends the civilian vehicle pool";
         loadedMessage = "CUP civilian loaded, civilian vehicle pool expanded";
     };
