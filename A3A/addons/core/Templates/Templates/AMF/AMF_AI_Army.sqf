@@ -359,7 +359,7 @@ _militaryLoadoutData set ["carbines", [
     ["AMF_614_short_01_F", "", "", "AMF_exps3", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ]];
 _militaryLoadoutData set ["grenadeLaunchers", [
-    ["R3F_SCAR_H_CAM_LG_GHILLIE", "", "", "AMF_xps3_magnifier_side_painted", ["R3F_20Rnd_762x51_SCAR"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
+    ["R3F_SCAR_H_CAM_LG_GHILLIE", "", "", "AMF_xps3_magnifier_side_painted", ["R3F_20Rnd_762x51_SCAR"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""],
     ["R3F_SCAR_H_CAM_LG", "", "", "AMF_EOTECH_553_painted", ["R3F_20Rnd_762x51_SCAR"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militaryLoadoutData set ["SMGs", [
@@ -367,7 +367,7 @@ _militaryLoadoutData set ["SMGs", [
 ]];
 _militaryLoadoutData set ["machineGuns", [
     ["amf_mini_mg_tactical_mk3", "", "", "AMF_specter", ["150Rnd_MINI_MG_mag"], [], "amf_acc_mini_grip2"],
-    ["amf_mini_mg_tactical_mk3", "", "", "AMF_EOTECH_553", ["150Rnd_MINI_MG_mag"], [], "amf_acc_mini_grip3"],
+    ["amf_mini_mg_tactical_mk3", "", "", "AMF_EOTECH_553", ["150Rnd_MINI_MG_mag"], [], "amf_acc_mini_grip3"]
 ]];
 _militaryLoadoutData set ["marksmanRifles", [
     ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["20Rnd_762x51_Mag"], [], ""],
