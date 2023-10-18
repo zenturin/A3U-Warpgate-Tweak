@@ -58,8 +58,8 @@ _addon set ["vehiclesCivCar", [
 	,"CUP_C_Golf4_Sport_random_Civ" , 0.8
 	,"CUP_C_Pickup_unarmed_CIV" , 0.8
 	,"CUP_C_Octavia_CIV" , 0.9
-	,"CUP_I_TT650_NAPA" 0.4
-	,"CUP_I_TT650_TKA" 0.4
+	,"CUP_I_TT650_NAPA" , 0.4
+	,"CUP_I_TT650_TKA" , 0.4
 ]];
 
 _addon set ["vehiclesCivMedical", [
@@ -84,8 +84,8 @@ _addon set ["vehiclesCivIndustrial", [
 	,"CUP_C_Tractor_Old_CIV" , 0.3
 	,"CUP_C_TowingTractor_CIV" , 0.01
 	,"CUP_I_Van_Cargo_ION" , 0.7
-	,"CUP_I_Tractor_Old_SYND" 0.2
-	,"CUP_I_Tractor_UN" 0.2
+	,"CUP_I_Tractor_Old_SYND" , 0.2
+	,"CUP_I_Tractor_UN" , 0.2
 ]];
 
 _addon set ["vehiclesCivFuel", [
