@@ -1,6 +1,6 @@
     class AMF_Base
     {
-        requiredAddons[] = {""};
+        requiredAddons[] = {"AMF_FAMAS", "r3f_armes"};
         basepath = QPATHTOFOLDER(Templates\Templates\AMF);
         logo = QPATHTOFOLDER(Templates\Templates\AMF\images\flag_france_co.paa);
         priority = 80;
@@ -12,4 +12,9 @@
         flagTexture = QPATHTOFOLDER(Templates\Templates\AMF\images\flag_france_co.paa);
         name = "French Army";
         file = "AMF_AI_Army";
+    };
+    class AMF_Army_Tan : AMF_Army
+    {
+        name = "French Army (Desert)";
+        file = "AMF_AI_Army_Tan";
     };

@@ -16,11 +16,11 @@
     "SLIDER", // setting type
     "War Level For Militia", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "Antistasi Ultimate", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [0, 7, 3, 0], // lowest, highest, default, idk what the last one does
+    [2, 7, 3, 0], // lowest, highest, default, idk what the last one does
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
-		missionNamespace setVariable ["A3U_setting_tierWarMilitia",_value,true];
+		missionNamespace setVariable ["A3U_setting_tierWarMilitia",(round _value),true];
     }
 ] call CBA_fnc_addSetting;
 
@@ -29,11 +29,11 @@
     "SLIDER", // setting type
     "War Level For Elite", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "Antistasi Ultimate", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [0, 15, 8, 0],
+    [2, 15, 8, 0],
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
-		missionNamespace setVariable ["A3U_setting_tierWarElite",_value,true];
+		missionNamespace setVariable ["A3U_setting_tierWarElite",(round _value),true];
     }
 ] call CBA_fnc_addSetting;
 

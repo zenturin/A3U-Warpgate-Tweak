@@ -20,33 +20,33 @@
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
 ["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["R3F_PVP_CE", "R3F_MATV_CE"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["R3F_PVP_FN_CE", "R3F_PVP_WASP_CE"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["AMF_GBC180_PERS_01", "R3F_KAMAZ_CE_trans"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["R3F_PVP_DA", "R3F_MATV_DA"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["R3F_PVP_FN_DA", "R3F_PVP_WASP_DA"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["AMF_GBC180_PERS_01", "R3F_KAMAZ_DA_trans"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["AMF_GBC180_PLATEAU_01", "AMF_GBC180_PERS_01"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["AMF_GBC180_AmmoTruck"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["AMF_GBC180_MECA_01"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["R3F_KAMAZ_CE_fuel"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["R3F_KAMAZ_CE_medevac", "AMF_VBMR_SAN_CE"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["B_AMF_VAB_ULTIMA_X8_F", "AMF_VBMR_HMG_CE", "AMF_VBMR_GENIE_OD", "AMF_VBMR_L_CE_01"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["B_AMF_VAB_ULTIMA_X8_F", "AMF_VBMR_HMG_CE", "AMF_VBCI_CE_01_F", "AMF_EBRC_CE_01", "B_AMF_AMX10_RCR_01_F"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["R3F_PANDUR_CE", "B_AMF_AMX10_RCR_01_F", "B_AMF_VAB_ULTIMA_TOP_X8_F", "AMF_VBMR_COMMANDEMENT_CE", "AMF_VBCI_CE_01_F"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", ["AMF_VBCI_CE_01_F", "B_AMF_AMX10_RCR_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightTanks",  ["B_AMF_AMX10_RCR_SEPAR_01_F", "R3F_DCL_CE"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["B_AMF_TANK_01", "B_AMF_TANK_CE_02_F", "R3F_MBT52_CE"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["R3F_KAMAZ_DA_fuel"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["R3F_KAMAZ_DA_medevac", "AMF_VBMR_SAN_TDF"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["B_AMF_VAB_ULTIMA_X8_TDF_F", "AMF_VBMR_HMG_TDF", "AMF_VBMR_GENIE_TDF", "AMF_VBMR_L_TDF_01"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["B_AMF_VAB_ULTIMA_X8_TDF_F", "AMF_VBMR_HMG_TDF", "AMF_VBCI_TDF_01_F", "AMF_EBRC_TDF_01", "B_AMF_AMX10_RCR_02_F"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["R3F_PANDUR_DA", "B_AMF_AMX10_RCR_02_F", "B_AMF_VAB_ULTIMA_TOP_X8_TDF_F", "AMF_VBMR_COMMANDEMENT_TDF", "AMF_VBCI_TDF_01_F"]] call _fnc_saveToTemplate;
+["vehiclesIFVs", ["AMF_VBCI_TDF_01_F", "B_AMF_AMX10_RCR_02_F"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["B_AMF_AMX10_RCR_SEPAR_02_F", "R3F_DCL_DA"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["B_AMF_TANK_TDF_01_F", "B_AMF_TANK_TDF_02_F", "R3F_MBT52_DA"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["B_APC_Tracked_01_AA_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
-["vehiclesAmphibious", ["R3F_PANDUR_CE"]] call _fnc_saveToTemplate;
+["vehiclesAmphibious", ["R3F_PANDUR_DA"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["R3F_ALCA_ADLA", "AMF_RAFALE_B_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["AMF_RAFALE_B_01_F", "R3F_GRIPEN", "B_AMF_PLANE_FIGHTER_02_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["B_AMF_PLANE_TRANSPORT_01_F"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["AMF_gazelle_afte_f", "R3F_AH6_CE", "R3F_LYNX_CE"]] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", ["amf_nh90_tth_transport", "amf_cougar", "R3F_MERLIN_CE"]] call _fnc_saveToTemplate;
-["vehiclesHelisLightAttack", ["R3F_AH6_CE_ARMED", "R3F_LYNX_CE_ARMED"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["AMF_gazelle_afte_f", "R3F_AH6_DA", "R3F_LYNX_DA"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["amf_nh90_tth_transport", "amf_cougar", "R3F_MERLIN_DA"]] call _fnc_saveToTemplate;
+["vehiclesHelisLightAttack", ["R3F_AH6_DA_ARMED", "R3F_LYNX_DA_ARMED"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["AMF_TIGRE_01"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"]] call _fnc_saveToTemplate;
@@ -58,10 +58,10 @@
 ["uavsAttack", ["B_UAV_02_CAS_F"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate;
 
-["vehiclesMilitiaLightArmed", ["R3F_PVP_FN_CE"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["R3F_PVP_FN_DA"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["AMF_GBC180_PERS_01"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["R3F_PVP_CE"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["R3F_FENNEC_CE"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["R3F_PVP_DA"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["R3F_FENNEC_DA"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["R3F_PVP_GENDARMERIE"]] call _fnc_saveToTemplate;
 
@@ -202,18 +202,18 @@ _loadoutData set ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData set ["uniforms", ["amf_uniform_04_OD", "amf_uniform_05_OD"]];
-_sfLoadoutData set ["vests", ["amf_JPC_01_OD", "amf_DCS_01_OD"]];
-_sfLoadoutData set ["mgVests", ["amf_SMB_ART_TDF"]];
-_sfLoadoutData set ["medVests", ["amf_DCS_03_OD"]];
-_sfLoadoutData set ["glVests", ["amf_SMB_GRE_TDF"]];
-_sfLoadoutData set ["backpacks", ["AMF_rush24_01"]];
-_sfLoadoutData set ["slBackpacks", ["R3F_sac_petit_noir"]];
-_sfLoadoutData set ["atBackpacks", ["AMF_Bergen_F2"]];
-_sfLoadoutData set ["helmets", ["AMF_opscore4", "AMF_OPSCORE2_OD1_2"]];
+_sfLoadoutData set ["uniforms", ["amf_uniform_04_TAN", "amf_uniform_05_TAN"]];
+_sfLoadoutData set ["vests", ["amf_JPC_01_BLK", "amf_DCS_01_BLK", "amf_DCS_02_BLK"]];
+_sfLoadoutData set ["mgVests", ["amf_SMB_ART_TAN"]];
+_sfLoadoutData set ["medVests", ["amf_SMB_AUXSAN_TAN"]];
+_sfLoadoutData set ["glVests", ["amf_SMB_GRE_TAN"]];
+_sfLoadoutData set ["backpacks", ["AMF_rush24_01_BLK", "AMF_rush24_01_TAN"]];
+_sfLoadoutData set ["slBackpacks", ["AMF_FELIN_BACKPACK_LIGHT_TAN", "AMF_FELIN_BACKPACK_MEDIC_TAN"]];
+_sfLoadoutData set ["atBackpacks", ["amf_tecpack_70L_TAN"]];
+_sfLoadoutData set ["helmets", ["AMF_OPSCORE4_BLACK", "AMF_OPSCORE4_TAN", "AMF_OPSCORE_TAN1", "AMF_OPSCORE_TAN_2"]];
 _sfLoadoutData set ["slHat", ["AMF_BERET_MARINE_PARA"]];
-_sfLoadoutData set ["sniHats", ["AMF_F3_L02"]];
-_sfLoadoutData set ["NVGs", ["AMF_BINYX_BLK_NVG"]];
+_sfLoadoutData set ["sniHats", ["AMF_OPSCORE_TAN2_2", "AMF_FELIN_L03_TAN"]];
+_sfLoadoutData set ["NVGs", ["AMF_ONYX_NVG"]];
 _sfLoadoutData set ["binoculars", ["AMF_OB72_SOPHIE"]];
 
 _sfLoadoutData set ["lightATLaunchers", ["AMF_AT4CS_Loaded"]];
@@ -269,7 +269,7 @@ _sfLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData set ["uniforms", ["amf_uniform_01_CE_HS", "amf_uniform_01_RE_CE_HS", "amf_uniform_03_CE_HS", "amf_uniform_05_TAN"]];
+_eliteLoadoutData set ["uniforms", ["amf_uniform_01_DA_HS", "amf_uniform_01_RE_DA_HS", "amf_uniform_03_DA_HS", "amf_uniform_05_TAN"]];
 _eliteLoadoutData set ["slUniform", ["amf_uniform_04_TAN"]];
 _eliteLoadoutData set ["vests", ["amf_DCS_04_TAN", "amf_DCS_03_TAN", "amf_DCS_02_TAN"]];
 _eliteLoadoutData set ["mgVests", ["amf_SMB_ART_TAN"]];
@@ -338,7 +338,7 @@ _eliteLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", ["amf_uniform_01_CE_HX", "amf_uniform_01_RE_CE_MD", "amf_uniform_01_RE_NG_CE_HS"]];
+_militaryLoadoutData set ["uniforms", ["amf_uniform_01_DA_HX", "amf_uniform_01_RE_DA_MD", "amf_uniform_01_RE_NG_DA_HS"]];
 _militaryLoadoutData set ["slUniform", ["amf_uniform_05_TAN"]];
 _militaryLoadoutData set ["vests", ["amf_SMB_AUXSAN_TAN", "amf_SMB_AUXSAN_FAMAS_TAN", "amf_JPC_01_TAN"]];
 _militaryLoadoutData set ["mgVests", ["amf_SMB_ART_TAN"]];
@@ -349,8 +349,8 @@ _militaryLoadoutData set ["engVests", ["amf_SMB_GRE_FAMAS_TAN"]];
 _militaryLoadoutData set ["backpacks", ["AMF_rush24_01_TAN", "amf_tecpack_30L_TAN", "AMF_FELIN_BACKPACK_TAN"]];
 _militaryLoadoutData set ["slBackpacks", ["AMF_FELIN_BACKPACK_LIGHT_TAN", "AMF_rush24_01_TAN"]];
 _militaryLoadoutData set ["atBackpacks", ["AMF_Bergen_F2"]];
-_militaryLoadoutData set ["helmets", ["AMF_FELIN_05_TAN", "AMF_FELIN_05_CE", "AMF_FELIN_06_CE", "AMF_FELIN_06_TAN", "AMF_TC801_TAN_EARPROT_BLK", "AMF_TC801_TAN_EARPROT_BLK_2"]];
-_militaryLoadoutData set ["sniHats", ["AMF_FELIN_L05_TAN", "AMF_FELIN_L05_CE", "AMF_TC800_TAN_EARPROT_TAN", "AMF_TC800_TAN_EARPROT_TAN_2"]];
+_militaryLoadoutData set ["helmets", ["AMF_FELIN_05_TAN", "AMF_FELIN_06_TAN", "AMF_TC801_TAN_EARPROT_BLK", "AMF_TC801_TAN_EARPROT_BLK_2"]];
+_militaryLoadoutData set ["sniHats", ["AMF_FELIN_L05_TAN", "AMF_TC800_TAN_EARPROT_TAN", "AMF_TC800_TAN_EARPROT_TAN_2"]];
 _militaryLoadoutData set ["binoculars", ["AMF_APX_M241"]];
 
 _militaryLoadoutData set ["lightATLaunchers", ["AMF_AT4CS_Loaded"]];
@@ -419,14 +419,14 @@ _policeLoadoutData set ["sidearms", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData set ["uniforms", ["amf_uniform_01_RE_NG_OD_HX", "amf_uniform_01_RE_OD_HS"]];
+_militiaLoadoutData set ["uniforms", ["amf_uniform_01_RE_NG_DA_HX", "amf_uniform_01_RE_DA_HS"]];
 _militiaLoadoutData set ["vests", ["amf_SMB_TDF"]];
 _militiaLoadoutData set ["sniVests", ["amf_SMB_TP_SCAR_TAN"]];
 _militiaLoadoutData set ["backpacks", ["AMF_rush24_01_TAN", "amf_tecpack_30L_TAN"]];
 _militiaLoadoutData set ["slBackpacks", ["AMF_FELIN_BACKPACK_TAN"]];
 _militiaLoadoutData set ["atBackpacks", ["B_Kitbag_cbr"]];
-_militiaLoadoutData set ["helmets", ["AMF_FELIN_05_CE", "AMF_FELIN_05_TAN", "AMF_FELIN_06_CE"]];
-_militiaLoadoutData set ["sniHats", ["AMF_FELIN_L06_CE", "AMF_FELIN_L06_TAN"]];
+_militiaLoadoutData set ["helmets", ["AMF_FELIN_05_TAN", "AMF_FELIN_06_TAN"]];
+_militiaLoadoutData set ["sniHats", ["AMF_FELIN_L06_TAN"]];
 
 _militiaLoadoutData set ["lightATLaunchers", ["AMF_AT4CS_Loaded"]];
 _militiaLoadoutData set ["lightHELaunchers", ["AMF_LRAC89_F"]];
