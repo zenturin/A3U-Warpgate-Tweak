@@ -17,4 +17,5 @@
     {
         name = "French Army (Desert)";
         file = "AMF_AI_Army_Tan";
+        climate[] = {"arid"};
     };

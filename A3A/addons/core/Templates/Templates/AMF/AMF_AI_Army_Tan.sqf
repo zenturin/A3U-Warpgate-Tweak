@@ -20,8 +20,8 @@
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
 ["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["R3F_PVP_DA", "R3F_MATV_DA"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["R3F_PVP_FN_DA", "R3F_PVP_WASP_DA"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["R3F_PVP_DA", "B_AMF_VAB_ULTIMA_X8_TDF_F"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["R3F_PVP_FN_DA", "AMF_VBMR_L_TDF_01"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["AMF_GBC180_PERS_01", "R3F_KAMAZ_DA_trans"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["AMF_GBC180_PLATEAU_01", "AMF_GBC180_PERS_01"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["AMF_GBC180_AmmoTruck"]] call _fnc_saveToTemplate;
