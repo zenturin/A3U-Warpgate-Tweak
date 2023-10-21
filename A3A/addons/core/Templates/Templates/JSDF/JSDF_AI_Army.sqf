@@ -2,6 +2,8 @@
 //   Side Information   //
 //////////////////////////
 
+// Abandoned, these mods do not have nearly enough weapons and gear
+
 #include "..\..\..\script_component.hpp"
 
 ["name", "Japanese Self Defense Force"] call _fnc_saveToTemplate; 						
@@ -87,7 +89,7 @@
 ///  Identities   ///
 /////////////////////
 
-["voices", ["Male01CHI","Male02CHI","Male03CHI"]] call _fnc_saveToTemplate; // No japanese voices, but players won't notice
+["voices", ["Male01CHI","Male02CHI","Male03CHI"]] call _fnc_saveToTemplate; // No japanese voices, but players won't notice (hopefully)
 
 ["faces", ["JapaneseHead10","JapaneseHead24","JapaneseHead11"]] call _fnc_saveToTemplate;
 
@@ -105,11 +107,11 @@ _loadoutData set ["marksmanRifles", []];
 _loadoutData set ["sniperRifles", []];
 
 _loadoutData set ["missileATLaunchers", [
-    ["AMF_AT4CS_Loaded", "", "", "", ["Eryx_HEAT"], [], ""],
-    ["AMF_LRAC89_F", "", "", "", ["AMF_AC89mm_F1"], [], ""]
+    ["gac_JSDF_W_RR_84mm", "", "", "", ["gac_MAAWS_HEAT"], [], ""],
+    ["gac_JSDF_W_RR_110mm", "", "", "", ["gac_110mmLAM_JM12"], [], ""]
 ]];
 _loadoutData set ["AALaunchers", [
-    ["R3F_STINGER", "", "", "", ["R3F_STINGER_mag"], [], ""]
+    ["Sparky_JSDF_overhaul_gac_LMAT", "", "", "", ["Titan_AA"], [], ""]
 ]];
 
 _loadoutData set ["sidearms", []];
