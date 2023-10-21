@@ -26,7 +26,7 @@ private _cfg = (configfile >> "A3U" >> "forbiddenItems") call BIS_fnc_getCfgSubC
         continue
     };
     private _addons = getArray (configfile >> "A3U" >> "forbiddenItems" >> _x >> "addons");
-        if (count _addons == 0 || _addons findIf { (isClass (configFile >> "CfgPatches" >> _x)) } > -1) then {
+        if (count _addons == 0 || { (isClass (configFile >> "CfgPatches" >> _x)) } count _addons == count _addons) then {
             _forbiddenItems pushBack _x;
             [format ["Added %1 to forbiddenItems list.", _x]] call A3U_fnc_log;
         };
