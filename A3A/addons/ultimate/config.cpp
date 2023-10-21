@@ -18,6 +18,25 @@ class CfgPatches
 
 #include "CfgFunctions.hpp"
 
+#include "radio_ids.hpp"
+
+#define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
+    name = #ITEM; \
+    count = COUNT; \
+};
+
+class cfgWeapons
+{
+    class ItemRadio;
+    #include "patches\cfgWeapons.hpp"
+};
+
+class cfgVehicles
+{
+    class Item_Base_F;
+    #include "patches\cfgVehicles.hpp"
+};
+
 class A3U
 {
     #include "config\plane\cfgPlaneLoadouts.hpp"
