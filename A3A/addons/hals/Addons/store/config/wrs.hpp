@@ -1,6 +1,6 @@
 		class riflesWRS 
 		{
-			displayName = "Research & Security Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_wrs", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(WRS_Weapon_AR, 500, RIFLE_STOCK);
@@ -10,7 +10,7 @@
 
 		class magazinesriflesWRS
 		{
-            displayName = "Research & Security Magazines";
+            displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_wrs", localize "STR_A3AU_magazines"]);
             picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
             ITEM(WRS_Ar_Magazine, 200, MAGAZINE_STOCK);	
@@ -20,7 +20,7 @@
 
 		class sniperRiflesWRS
 		{
-			displayName = "Research & Security Sniper Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_wrs", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(WRS_Weapon_ShockGun, 1500, RIFLE_STOCK);	
@@ -30,7 +30,7 @@
 
 		class magazinessniperRiflesWRS
 		{
-			displayName = "Research & Security Sniper Rifle Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_wrs", localize "STR_A3AU_srMagazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
             ITEM(WRS_Shockgun_Magazine, 500, MAGAZINE_STOCK);	

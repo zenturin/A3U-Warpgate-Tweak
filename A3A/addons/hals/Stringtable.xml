@@ -333,76 +333,288 @@
             <Korean>%1€가 더 필요합니다.</Korean>
         </Key> -->
     </Package>
-    <Package name="STR_A3AU_hals_store_categories">
-        <Key ID="STR_A3AU_store_handgunsVanilla">
-            <Origianl>Vanilla Handguns</Original>
-            <English>Vanilla Handguns</English>
-            <Russian>Ванильные Пистолеты</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_launchersVanilla">
-            <Origianl>Vanilla Launchers</Original>
-            <English>Vanilla Launchers</English>
-            <Russian>Ванильные Пусковые Установки</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_riflesVanilla">
-            <Origianl>Vanilla Rifles</Original>
-            <English>Vanilla Rifles</English>
-            <Russian>Ванильные Автоматы</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_sniperRiflesVanilla">
-            <Origianl>Vanilla Snipers</Original>
-            <English>Vanilla Sniper Rifles</English>
-            <Russian>Ванильные Снайперские Винтовки</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_mgVanilla">
-            <Origianl>Vanilla MGs</Original>
-            <English>Vanilla MGs</English>
-            <Russian>Ванильные Пулеметы</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_smgVanilla">
-            <Origianl>Vanilla SMGs</Original>
-            <English>Vanilla SMGs</English>
-            <Russian>Ванильные ПП</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_launcherMagazinesVanilla">
-            <Origianl>Vanilla Launchers' Magazines</Original>
-            <English>Vanilla Launchers' Magazines</English>
-            <Russian>Ванильные боеприпасы к Пусковым Установкам</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_magazinesVanilla">
-            <Origianl>Vanilla Magazines</Original>
-            <English>Vanilla Magazines</English>
-            <Russian>Ванильные Магазины</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_opticsVanilla">
-            <Origianl>Vanilla Sights</Original>
-            <English>Vanilla Sights</English>
-            <Russian>Ванильные Прицелы</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_muzzlesVanilla">
-            <Origianl>Vanilla Muzzle Devices</Original>
-            <English>Vanilla Muzzle Devices</English>
-            <Russian>Ванильные ДТК и Глушители</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_underbarrelVanilla">
-            <Origianl>Vanilla Bipods</Original>
-            <English>Vanilla Bipods</English>
-            <Russian>Ванильные Сошки</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_pointersVanilla">
-            <Origianl>Vanilla Pointers and Flashlights</Original>
-            <English>Vanilla Pointers and Flashlights</English>
-            <Russian>Ванильные ЛЦУ и Фонарики</Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_navigationVanilla">
-            <Origianl>Vanilla GPS, Binoculars, NVGs</Original>
-            <English>Ванильные GPS, Бинокли, ПНВ</English>
-            <Russian></Russian>
-        </Key>
-        <Key ID="STR_A3AU_store_miscVanilla">
-            <Origianl>Vanilla Misc</Original>
-            <English>Vanilla Misc</English>
-            <Russian>Ванилла Прочее</Russian>
-        </Key>
+    <Package name="A3AU_hals_store">
+        <!-- category names -->
+        <Container name="A3AU_hals_store_categories">
+            <Key ID="STR_A3AU_handguns">
+                <Origianl>Handguns</Original>
+                <English>Handguns</English>
+                <Russian>Пистолеты</Russian>
+            </Key>
+            <Key ID="STR_A3AU_smgs">
+                <Origianl>SMGs</Original>
+                <English>SMGSs</English>
+                <Russian>Пистолеты-пулемёты</Russian>
+            </Key>
+            <Key ID="STR_A3AU_rifles">
+                <Origianl>Rifles</Original>
+                <English>Rifles</English>
+                <Russian>Штурмовые Винтовки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_sniperRifles">
+                <Origianl>Sniper Rifles</Original>
+                <English>Sniper Rifles</English>
+                <Russian>Снайперские Винтовки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_mgs">
+                <Origianl>MGs</Original>
+                <English>MGs</English>
+                <Russian>Пулеметы</Russian>
+            </Key>
+            <Key ID="STR_A3AU_launchers">
+                <Origianl>Launchers</Original>
+                <English>Launchers</English>
+                <Russian>Пусковые Установки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_specialWeapons">
+                <Origianl>Special Weapons</Original>
+                <English>Special Weapons</English>
+                <Russian>Спецоружие</Russian>
+            </Key>
+            <Key ID="STR_A3AU_magazines">
+                <Origianl>Magazines</Original>
+                <English>Magazines</English>
+                <Russian>Магазины</Russian>
+            </Key>
+            <Key ID="STR_A3AU_glGrenades">
+                <Origianl>GL Grenadaes</Original>
+                <English>GL Grenades</English>
+                <Russian>Подствольные Гранаты</Russian>
+            </Key>
+            <Key ID="STR_A3AU_launcherAmmo">
+                <Origianl>Missiles and Rockets</Original>
+                <English>Missiles and Rockets</English>
+                <Russian>Ракеты и Реактивные гранаты</Russian>
+            </Key>
+            <Key ID="STR_A3AU_sights">
+                <Origianl>Sights</Original>
+                <English>Sights</English>
+                <Russian>Прицелы</Russian>
+            </Key>
+            <Key ID="STR_A3AU_muzzles">
+                <Origianl>Muzzle Devices</Original>
+                <English>Muzzle Devices</English>
+                <Russian>Дульные Устройства</Russian>
+            </Key>
+            <Key ID="STR_A3AU_bipods">
+                <Origianl>Bipods</Original>
+                <English>Bipods</English>
+                <Russian>Сошки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_grips">
+                <Origianl>Grips</Original>
+                <English>Grips</English>
+                <Russian>Рукоятки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_handles">
+                <Origianl>Handles</Original>
+                <English>Handles</English>
+                <Russian>Рукоятки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_pointers">
+                <Origianl>Pointers</Original>
+                <English>Pointers</English>
+                <Russian>ЛЦУ</Russian>
+            </Key>
+            <Key ID="STR_A3AU_flashlights">
+                <Origianl>Flashlights</Original>
+                <English>Flashlights</English>
+                <Russian>Фонарики</Russian>
+            </Key>
+            <Key ID="STR_A3AU_gps">
+                <Origianl>GPS</Original>
+                <English>GPS</English>
+                <Russian>GPS</Russian>
+            </Key>
+            <Key ID="STR_A3AU_binoculars">
+                <Origianl>Binoculars</Original>
+                <English>Binoculars</English>
+                <Russian>Бинокли</Russian>
+            </Key>
+            <Key ID="STR_A3AU_nvgs">
+                <Origianl>NVGs</Original>
+                <English>NVGs</English>
+                <Russian>ПНВ</Russian>
+            </Key>
+            <Key ID="STR_A3AU_misc">
+                <Origianl>Misc</Original>
+                <English>Misc</English>
+                <Russian>Прочее</Russian>
+            </Key>
+            <Key ID="STR_A3AU_bagsStatics">
+                <Origianl>Bags with Statics</Original>
+                <English>Bags with Statics</English>
+                <Russian>Сумки со Стационарным оружием</Russian>
+            </Key>
+            <Key ID="STR_A3AU_srMagazines">
+                <Origianl>Sniper Rifle Magazines</Original>
+                <English>Sniper Rifle Magazines</English>
+                <Russian>Магазины для Снайперских Винтовок</Russian>
+            </Key>
+            <Key ID="STR_A3AU_camouflage">
+                <Origianl>Camouflage</Original>
+                <English>Camouflage</English>
+                <Russian>Камуфляж</Russian>
+            </Key>
+        </Container>
+        <!-- helpers -->
+        <Container name="A3AU_hals_store_helpers">
+            <Key ID="STR_A3AU_and">
+                <Origianl>and</Original>
+                <English>and</English>
+                <Russian>и</Russian>
+                <German>und</German>
+            </Key>
+            <Key ID="STR_A3AU_barret">
+                <Origianl>Barret</Original>
+                <English>Barret</English>
+                <Russian>Barret</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Vanilla">
+                <Origianl>Arma 3</Original>
+                <English>Arma 3</English>
+                <Russian>Арма 3</Russian>
+            </Key>
+            <Key ID="STR_A3AU_3cbbaf">
+                <Origianl>3CBBAF</Original>
+                <English>3CBBAF</English>
+                <Russian>3CBBAF</Russian>
+            </Key>
+            <Key ID="STR_A3AU_3cbf">
+                <Origianl>3CB</Original>
+                <English>3CB</English>
+                <Russian>3CB</Russian>
+            </Key>
+            <Key ID="STR_A3AU_3cbfcw">
+                <Origianl>3CBFCW</Original>
+                <English>3CBFCW</English>
+                <Russian>3CBFCW</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Aegis">
+                <Origianl>Aegis</Original>
+                <English>Aegis</English>
+                <Russian>Aegis</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Braf">
+                <Origianl>BRAF</Original>
+                <English>BRAF</English>
+                <Russian>BRAF</Russian>
+            </Key>
+            <Key ID="STR_A3AU_bwa">
+                <Origianl>BWA</Original>
+                <English>BWA</English>
+                <Russian>BWA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_csa">
+                <Origianl>CSA38</Original>
+                <English>CSA38</English>
+                <Russian>CSA38</Russian>
+            </Key>
+            <Key ID="STR_A3AU_cup">
+                <Origianl>CUP</Original>
+                <English>CUP</English>
+                <Russian>CUP</Russian>
+            </Key>
+            <Key ID="STR_A3AU_cw">
+                <Origianl>CW</Original>
+                <English>CW</English>
+                <Russian>CW</Russian>
+            </Key>
+            <Key ID="STR_A3AU_empire">
+                <Origianl>Empire</Original>
+                <English>Empire</English>
+                <Russian>Empire</Russian>
+            </Key>
+            <Key ID="STR_A3AU_ffaa">
+                <Origianl>FFAA</Original>
+                <English>FFAA</English>
+                <Russian>FFAA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_fwa">
+                <Origianl>FWA</Original>
+                <English>FWA</English>
+                <Russian>FWA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_gm">
+                <Origianl>GM</Original>
+                <English>GM</English>
+                <Russian>GM</Russian>
+            </Key>
+            <Key ID="STR_A3AU_ifa">
+                <Origianl>IFA</Original>
+                <English>IFA</English>
+                <Russian>IFA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_italy">
+                <Origianl>Pedagne</Original>
+                <English>Pedagne</English>
+                <Russian>Pedagne</Russian>
+            </Key>
+            <Key ID="STR_A3AU_niarms">
+                <Origianl>NIArms</Original>
+                <English>NIArms</English>
+                <Russian>NIArms</Russian>
+            </Key>
+            <Key ID="STR_A3AU_optre">
+                <Origianl>OPTRE</Original>
+                <English>OPTRE</English>
+                <Russian>OPTRE</Russian>
+            </Key>
+            <Key ID="STR_A3AU_pla">
+                <Origianl>PLA</Original>
+                <English>PLA</English>
+                <Russian>PLA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_rhs">
+                <Origianl>RHS</Original>
+                <English>RHS</English>
+                <Russian>RHS</Russian>
+            </Key>
+            <Key ID="STR_A3AU_scion">
+                <Origianl>Scion</Original>
+                <English>Scion</English>
+                <Russian>Scion</Russian>
+            </Key>
+            <Key ID="STR_A3AU_sfp">
+                <Origianl>SFP</Original>
+                <English>SFP</English>
+                <Russian>SFP</Russian>
+            </Key>
+            <Key ID="STR_A3AU_sma">
+                <Origianl>SMA</Original>
+                <English>SMA</English>
+                <Russian>SMA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_spearhead">
+                <Origianl>SPE</Original>
+                <English>SPE</English>
+                <Russian>SPE</Russian>
+            </Key>
+            <Key ID="STR_A3AU_tow">
+                <Origianl>Tier 1</Original>
+                <English>Tier 1</English>
+                <Russian>Tier 1</Russian>
+            </Key>
+            <Key ID="STR_A3AU_unsung">
+                <Origianl>Unsung</Original>
+                <English>Unsung</English>
+                <Russian>Unsung</Russian>
+            </Key>
+            <Key ID="STR_A3AU_vn">
+                <Origianl>VN</Original>
+                <English>VN</English>
+                <Russian>VN</Russian>
+            </Key>
+            <Key ID="STR_A3AU_wrs">
+                <Origianl>Research & Security</Original>
+                <English>Research & Security</English>
+                <Russian>Research & Security</Russian>
+            </Key>
+            <Key ID="STR_A3AU_ws">
+                <Origianl>Western Sahara</Original>
+                <English>Western Sahara</English>
+                <Russian>Western Sahara</Russian>
+            </Key>
+        </Container>
     </Package>
 </Project>
