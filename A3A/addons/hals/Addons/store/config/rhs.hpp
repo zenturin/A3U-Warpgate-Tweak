@@ -502,7 +502,7 @@
 
 		class opticsRhs 
 		{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_sights"]);;
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class rhsgref_acc_l1a1_l2a2 {

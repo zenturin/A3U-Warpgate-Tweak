@@ -290,7 +290,7 @@
 
 		class mgAegis 
 		{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_mgs"]);;
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_RPK_F, 900, RIFLE_STOCK);

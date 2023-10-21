@@ -388,7 +388,7 @@
 		};
 
 		class opticsuns{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_sights"]);;
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_sights"]);
 			picture = "";
 			
 			ITEM(uns_o_anpvs2_m16, 350, MAGAZINE_STOCK);
