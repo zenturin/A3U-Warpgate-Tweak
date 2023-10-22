@@ -650,4 +650,8 @@ class Templates
 
     #include "Templates\STALKER\templates.hpp"
 
+    // ***************************** AMF *****************************
+
+    #include "Templates\AMF\templates.hpp"
+
 };
