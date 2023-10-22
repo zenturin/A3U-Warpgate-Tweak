@@ -1,6 +1,6 @@
 		class riflesScion 
 		{
-			displayName = "Scion Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_scion", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SC_Rifle_Ravager, 500, RIFLE_STOCK);
@@ -13,7 +13,7 @@
 
 		class magazinesriflesScion
 		{
-            displayName = "Scion Magazines";
+            displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_scion", localize "STR_A3AU_magazines"]);
             picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
             ITEM(SC_20Rnd_Plasma_Mag, 100, MAGAZINE_STOCK);	
@@ -25,7 +25,7 @@
 
 		class sniperRiflesScion 
 		{
-			displayName = "Scion Sniper Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_scion", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SC_Rifle_SSR55, 1200, RIFLE_STOCK);	
@@ -34,7 +34,7 @@
 
 		class magazinessniperRiflesScion
 		{
-			displayName = "Scion Sniper Rifle Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_scion", localize "STR_A3AU_srMagazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
             ITEM(SC_5Rnd_50HV_Mag, 250, MAGAZINE_STOCK);	
@@ -42,7 +42,7 @@
 
 		class opticsScion 
 		{
-			displayName = "Scion Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_scion", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class sc_reflex_c_blue 

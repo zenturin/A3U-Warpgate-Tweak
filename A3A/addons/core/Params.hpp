@@ -109,14 +109,14 @@ class Params
     {
         title = $STR_params_afk;
         values[] = {120,300,900,1800,9999999};
-        texts[] = {"2","5","15","30",$STR_params_afk_disabled};
+        texts[] = {"2","5","15","30", $STR_params_afk_disabled};
         default = 300;
     };
     class A3A_GCThreshold
     {
         title = $STR_params_gc_threshold;
         values[] = {3600, 7200, 10800, 14400, 9999999};
-        texts[] = {"1hr", "2hrs", "3hrs", "4hrs", "Disabled"};
+        texts[] = {"1", "2", "3", "4", $STR_params_afk_disabled};
         Default = 9999999;
     };
     class A3A_reviveTime
@@ -136,35 +136,35 @@ class Params
     };
     class Spacer102
     {
-        title = "ANTISTASI ULTIMATE PARAMETERS";
+        title = $STR_A3AU_params_name;
         values[] = {""};
         texts[] = {""};
         default = "";
     };
     class cosmeticsEnabled
     {
-        title = "Enable Cosmetics";
+        title = $STR_A3AU_cosmetics;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 1;
     };
     class zombiesUncapped
     {
-        title = "Enable Uncapped Zombie Spawning";
+        title = $STR_A3AU_uncap_zombie_spawn;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
     };
     class plusGarrison
     {
-        title = "Use Old Plus Garrison Spawning";
+        title = $STR_A3AU_old_garrison_spawn;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
     };
     class vanillaArmsDealer
     {
-        title = "Include Vanilla Weapons In Arms Dealer";
+        title = $STR_A3AU_vanilla_weapons_in_arms_dealer;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
