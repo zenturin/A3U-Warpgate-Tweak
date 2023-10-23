@@ -32,7 +32,7 @@ params [
 private _wepCargo = weaponCargo _object;
 // private _magCargo = magazineCargo _object;
 
-private _wepsText = format [
+private _wepsText = format [ // Formatted like this so it can be put straight into a config, any changes to the indentation will break it
 '		class %1%2 
 		{
             displayName = "%2 %1";
@@ -64,6 +64,7 @@ private _magsText = format [
     };
 } forEach _wepCargo;
 
+// Formatted like this so it can be put straight into a config, any changes to the indentation will break it
 _wepsText = _wepsText + "		
 		};";
 

@@ -40,6 +40,10 @@ if (plusGarrison) exitWith
         {
             _tieredArray select 2
         };
+        default
+        {
+            _tieredArray select 0
+        };
     };
 };
 

@@ -1,5 +1,11 @@
 class planeLoadouts
 {
+    // It also has support for these parameters, though I haven't used them before.
+    // mainGun
+    // rocketLauncher[]
+    // missileLauncher[]
+    // bombRacks[]
+    // diveParams[]
     class CAS
     {
         class B_Plane_CAS_01_dynamicLoadout_F
