@@ -1,4 +1,5 @@
-class TFAR_SCR536: ItemRadio 
+class TFAR_anprc152;
+class TFAR_SCR536: TFAR_anprc152 
 {
     author = AUTHOR;
     displayName = "SCR-536";
@@ -7,9 +8,10 @@ class TFAR_SCR536: ItemRadio
     scopeCurator = 2;
     model = QPATHTOFOLDER(patches\data\scr536);
     picture = QPATHTOFOLDER(patches\data\scr536_ca.paa);
-    tf_prototype = 0;
+    tf_prototype = 1;
     tf_range = 1000;
-    tf_dialog = "anprc152_radio_dialog";
+    tf_dialog = "scr536_radio_dialog";
+    // tf_dialog = "anprc152_radio_dialog";
     tf_encryptionCode = "tf_west_radio_code";
     tf_dialogUpdate = "call TFAR_fnc_updateSWDialogToChannel;";
     tf_subtype = "digital";
@@ -17,4 +19,18 @@ class TFAR_SCR536: ItemRadio
     tf_additional_channel = 1;
 };
 
-TF_RADIO_IDS(TFAR_SCR536,SCR536)
+class TFAR_SCR536_1: TFAR_SCR536 
+{
+    displayName = "SCR-536 1";
+    scope=1;
+    scopeCurator=1;
+    scopeArsenal=1;
+    ace_arsenal_hide=1;
+    tf_prototype=0;
+    tf_radio=1;
+    ace_arsenal_uniqueBase="TFAR_SCR536";
+};
+
+#include "radios.hpp"
+
+// TF_RADIO_IDS(TFAR_SCR536,SCR536)

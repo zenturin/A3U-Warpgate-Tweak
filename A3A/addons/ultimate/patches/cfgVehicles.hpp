@@ -5,7 +5,12 @@ class Item_TFAR_SCR536: Item_Base_F
     displayName = "SCR-536";
     author = AUTHOR;
     vehicleClass = "Items";
-    class TransportItems {
-        MACRO_ADDITEM(TFAR_SCR536,1);
+    class TransportItems
+    {
+        class _xx_TFAR_SCR536
+        {
+            name="TFAR_SCR536";
+            count=1;
+        };
     };
 };
