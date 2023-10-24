@@ -29,6 +29,7 @@ class cfgWeapons
 class cfgVehicles
 {
     class Item_Base_F;
+    class Thing;
     #include "patches\cfgVehicles.hpp"
 };
 
@@ -75,12 +76,12 @@ class scr536_radio_dialog
     class background: RscBackPicture
     {
         idc = 100100;
-        text = "x\A3A\addons\ultimate\patches\data\radio_co.paa";
+        text = "x\A3A\addons\ultimate\patches\data\radio_ca.paa";
         moving = 1;
-        x = 0.123594 * safezoneW + safezoneX;
-        y = 0.00499991 * safezoneH + safezoneY;
+        x = 0.0978125 * safezoneW + safezoneX;
+        y = -0.00599999 * safezoneH + safezoneY;
         w = 0.252656 * safezoneW;
-        h = 0.781 * safezoneH;
+        h = 0.891 * safezoneH;
     };
     class image: RscBackPicture
     {

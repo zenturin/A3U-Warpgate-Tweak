@@ -6,7 +6,7 @@ class TFAR_SCR536: TFAR_anprc152
     descriptionShort = "SCR-536";
     scope = 2;
     scopeCurator = 2;
-    model = QPATHTOFOLDER(patches\data\scr536);
+    model = QPATHTOFOLDER(patches\scr536);
     picture = QPATHTOFOLDER(patches\data\scr536_ca.paa);
     tf_prototype = 1;
     tf_range = 1000;
