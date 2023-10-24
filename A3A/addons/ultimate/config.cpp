@@ -68,7 +68,7 @@ class scr536_radio_dialog
         "enter",
         "clear",
         "edit",
-        "channel_edit",
+        // "channel_edit",
         "channel_up",
         "channel_down"
 	};
@@ -92,6 +92,29 @@ class scr536_radio_dialog
         w = 0.175313 * safezoneW;
         h = 0.154 * safezoneH;
     };
+    class edit: RscEditLCD
+    {
+        idc = 100500;
+        canModify = 1;
+        onKeyUp = "if (_this select 1 in [28,156]) then { [((ctrlParent (_this select 0))) displayCtrl 100500] call TFAR_handhelds_fnc_onButtonClick_Enter; };";
+
+        x = 0.365937 * safezoneW + safezoneX;
+        y = 0.247 * safezoneH + safezoneY;
+        w = 0.0979687 * safezoneW;
+        h = 0.033 * safezoneH;
+        tooltip = "Current frequency";
+    };
+    // class channel_edit: RscEditLCD
+    // {
+    //     idc = 100600;
+    //     canModify = 0;
+
+    //     x = 0.407187 * safezoneW + safezoneX;
+    //     y = 0.291 * safezoneH + safezoneY;
+    //     w = 0.061875 * safezoneW;
+    //     h = 0.033 * safezoneH;
+    //     tooltip = "Current channel";
+    // };
     class enter: HiddenButton
     {
         idc = 100300;
@@ -99,7 +122,7 @@ class scr536_radio_dialog
         action = "";
 
         x = 0.438125 * safezoneW + safezoneX;
-        y = 0.346 * safezoneH + safezoneY;
+        y = 0.335 * safezoneH + safezoneY;
         w = 0.020625 * safezoneW;
         h = 0.022 * safezoneH;
         tooltip = "Set frequency";
@@ -114,29 +137,6 @@ class scr536_radio_dialog
         w = 0.0309375 * safezoneW;
         h = 0.022 * safezoneH;
         tooltip = "Clear frequency";
-    };
-    class edit: RscEditLCD
-    {
-        idc = 100500;
-        canModify = 1;
-        onKeyUp = "if (_this select 1 in [28,156]) then { [((ctrlParent (_this select 0))) displayCtrl 100500] call TFAR_handhelds_fnc_onButtonClick_Enter; };";
-
-        x = 0.365937 * safezoneW + safezoneX;
-        y = 0.236 * safezoneH + safezoneY","0.0928125;
-        w = 0.0928125 * safezoneW;
-        h = 0.044 * safezoneH;
-        tooltip = "Current frequency";
-    };
-    class channel_edit: RscEditLCD
-    {
-        idc = 100600;
-        canModify = 0;
-
-        x = 0.407187 * safezoneW + safezoneX;
-        y = 0.28 * safezoneH + safezoneY;
-        w = 0.061875 * safezoneW;
-        h = 0.044 * safezoneH;
-        tooltip = "Current channel";
     };
     class channel_up: HiddenButton
     {
@@ -155,7 +155,7 @@ class scr536_radio_dialog
         action = "[0, false] call TFAR_fnc_setChannelViaDialog;";
 
         x = 0.371094 * safezoneW + safezoneX;
-        y = 0.346 * safezoneH + safezoneY;
+        y = 0.335 * safezoneH + safezoneY;
         w = 0.020625 * safezoneW;
         h = 0.022 * safezoneH;
         tooltip = "Previous channel";
