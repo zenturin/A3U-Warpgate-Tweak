@@ -94,3 +94,10 @@
         file = "OPTRE_Civ";
         description = "OPTRE Civilians.";
     };
+    class OPTRE_Civ_Flood : OPTRE_Civ
+    {
+        requiredAddons[] = {"dev_common"};
+        name = "OPTRE Flood";
+        file = "OPTRE_Civ_Flood";
+        description = "OPTRE Flood Combat Forms.";
+    };

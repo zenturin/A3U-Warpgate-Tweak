@@ -1,6 +1,12 @@
+private _hasWs = "ws" in A3A_enabledDLC;
+private _hasLawsOfWar = "orange" in A3A_enabledDLC;
+private _hasApex = "expansion" in A3A_enabledDLC;
+
 //////////////////////////////
 //   Civilian Information   //
 //////////////////////////////
+
+["attributeCivNonHuman", true] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
@@ -32,13 +38,11 @@
 
 ["vehiclesCivHeli", []] call _fnc_saveToTemplate;
 
-/////////////////////
-///  Identities   ///
-/////////////////////
+//////////////////////////
+//       Identities     //
+//////////////////////////
 
-["faces", ["GreekHead_A3_02", "GreekHead_A3_03", "GreekHead_A3_04", "GreekHead_A3_05", "GreekHead_A3_06",
-"GreekHead_A3_07", "GreekHead_A3_08", "GreekHead_A3_09", "Ioannou", "Barklem", "AfricanHead_02",
-"AsianHead_A3_02", "AsianHead_A3_03", "WhiteHead_05"]] call _fnc_saveToTemplate;
+["faces", ["WBK_DecapatedHead_Normal"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
@@ -103,7 +107,6 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 
 private _manTemplate = {
-    ["helmets"] call _fnc_setHelmet;
     ["uniforms"] call _fnc_setUniform;
 
     ["items_medical_standard"] call _fnc_addItemSet;
@@ -113,7 +116,7 @@ private _manTemplate = {
     ["compasses"] call _fnc_addCompass;
 };
 private _workerTemplate = {
-    ["helmets"] call _fnc_setHelmet;
+    ["workerHelmets"] call _fnc_setHelmet;
     ["workerUniforms"] call _fnc_setUniform;
 
     ["items_medical_standard"] call _fnc_addItemSet;
@@ -134,11 +137,30 @@ private _pressTemplate = {
     ["compasses"] call _fnc_addCompass;
 };
 
+private _specialUnits = [
+    "dev_flood_combat_o",
+    "dev_flood_combat_br55_o",
+    "dev_flood_combat_at_o",
+    "dev_flood_sangheili_o",
+    "dev_flood_sangheili_t25_o",
+    "dev_flood_sangheili_at_o"
+];
+
+private _specialUnitsWeights = [
+    1.0,
+    0.9,
+    0.8,
+    0.6,
+    0.5,
+    0.4
+];
+
 private _prefix = "militia";
 private _unitTypes = [
-    ["Press", _pressTemplate],
-    ["Worker", _workerTemplate],
-    ["Man", _manTemplate]
+    ["Press", _pressTemplate], // to-do: allow press to spawn but make them special infected
+    ["Worker", _workerTemplate], // needed to be normal for resources, factories, etc
+    ["Man", _manTemplate],
+    ["Special", _manTemplate, [["baseClass", [_specialUnits, _specialUnitsWeights], true]]]
 ];
 
 [_prefix, _unitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;
