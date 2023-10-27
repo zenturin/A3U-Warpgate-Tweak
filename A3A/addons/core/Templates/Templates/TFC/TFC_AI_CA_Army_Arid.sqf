@@ -5,11 +5,11 @@
 #include "..\..\..\script_component.hpp"
 
 ["name", "Canadian Army"] call _fnc_saveToTemplate;
-["spawnMarkerName", format [localize "STR_supportcorridor", "US"]] call _fnc_saveToTemplate;
+["spawnMarkerName", "Canadian Support Corridor"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate; 						
 ["flagTexture", QPATHTOFOLDER(Templates\Templates\TFC\images\flag_canada_co.paa)] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_Canada"] call _fnc_saveToTemplate; 	
+["flagMarkerType", "flag_Canada"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
