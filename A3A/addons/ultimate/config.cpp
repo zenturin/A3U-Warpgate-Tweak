@@ -18,8 +18,6 @@ class CfgPatches
 
 #include "CfgFunctions.hpp"
 
-// #include "radio_ids.hpp"
-
 class cfgWeapons
 {
     class ItemRadio;
