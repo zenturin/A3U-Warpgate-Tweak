@@ -31,6 +31,7 @@ class DOUBLES(ADDON,Nodes)
     #include "Nodes\EMP.hpp"
 	#include "Nodes\BRAF.hpp"
 	#include "Nodes\AMF.hpp"
+	#include "Nodes\TFC.hpp"
 };
 
 class DOUBLES(ADDON,Cargo)
