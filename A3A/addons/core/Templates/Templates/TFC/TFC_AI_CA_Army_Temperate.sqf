@@ -206,16 +206,6 @@ _loadoutData set ["items_police_extras", []];
 _loadoutData set ["items_crew_extras", []];
 _loadoutData set ["items_unarmed_extras", []];
 
-_loadoutData set ["glasses", [
-    "rhsusf_shemagh_grn",
-    "rhsusf_shemagh2_grn"
-]];
-_loadoutData set ["goggles", [
-    "rhs_ess_black", 
-    "rhsusf_shemagh_gogg_grn",
-    "rhsusf_shemagh2_gogg_grn"
-]];
-
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
 ///////////////////////////////////////
@@ -502,7 +492,6 @@ _pilotLoadoutData set ["SMGs", [
 /////////////////////////////////
 //    Unit Type Definitions    //
 /////////////////////////////////
-
 
 private _squadLeaderTemplate = {
     [selectRandomWeighted ["helmets", 2, "slHat", 1]] call _fnc_setHelmet;
