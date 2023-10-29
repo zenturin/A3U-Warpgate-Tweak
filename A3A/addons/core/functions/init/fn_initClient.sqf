@@ -636,3 +636,7 @@ if (!isMultiplayer) then {
 };
 
 call A3U_fnc_checkMods;
+
+if (["WBK_IMS_ANIMS_2"] call A3U_fnc_hasAddon) then {
+    [player] call A3U_fnc_IMS_stealthKill;
+};

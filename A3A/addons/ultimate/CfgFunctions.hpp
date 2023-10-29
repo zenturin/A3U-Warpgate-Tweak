@@ -20,6 +20,11 @@ class CfgFunctions
             class init {};
             class popup {};
         };
+        class patches
+        {
+            file = QPATHTOFOLDER(functions\patches);
+            class IMS_stealthKill {};
+        };
         class STALKER
         {
             file = QPATHTOFOLDER(functions\STALKER);
