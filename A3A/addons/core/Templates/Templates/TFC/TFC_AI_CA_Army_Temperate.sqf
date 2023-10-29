@@ -24,7 +24,7 @@
 ["vehiclesLightArmed", ["tfc_vs_luvw_armed_f", "rhsusf_m1043_w_m2", "rhsusf_m1151_m240_v2_usarmy_wd"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["rhsusf_M1078A1P2_B_WD_fmtv_usarmy", "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "tfc_mlvw_f"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["tfc_mlvw_ammo_f", "rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["tfc_mlvw_ammo_f", "rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["tfc_mlvw_repair_f", "rhsusf_M977A4_REPAIR_BKIT_usarmy_d"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["rhsusf_M978A4_usarmy_wd", "rhsusf_M978A4_BKIT_usarmy_wd"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["rhsusf_m113_usarmy_medical"]] call _fnc_saveToTemplate;

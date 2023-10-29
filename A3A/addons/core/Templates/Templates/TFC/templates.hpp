@@ -12,12 +12,12 @@
         flagTexture = QPATHTOFOLDER(Templates\Templates\TFC\images\flag_canada_co.paa);
         name = "Canadian Army";
         file = "TFC_AI_CA_Army_Temperate";
+        description = "The Canadian Army with some assets provided by NATO, in a woodland theme.";
     };
-    /*
     class TFC_Army_Arid : TFC_Army
     {
         name = "Canadian Army (Desert)";
         file = "TFC_AI_CA_Army_Arid";
         climate[] = {"arid"};
+        description = "The Canadian Army with some assets provided by NATO, in a desert theme.";
     };
-    */

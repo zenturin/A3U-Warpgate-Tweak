@@ -19,23 +19,25 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["tfc_vs_luvw_f", "rhsusf_m998_w_4dr_fulltop", "rhsusf_m1043_w"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["tfc_vs_luvw_armed_f", "rhsusf_m1043_w_m2", "rhsusf_m1151_m240_v2_usarmy_wd"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["rhsusf_M1078A1P2_B_WD_fmtv_usarmy", "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "tfc_mlvw_f"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["tfc_mlvw_ammo_f", "rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["tfc_mlvw_repair_f", "rhsusf_M977A4_REPAIR_BKIT_usarmy_d"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["rhsusf_M978A4_usarmy_wd", "rhsusf_M978A4_BKIT_usarmy_wd"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["rhsusf_m113_usarmy_medical"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["tfc_tapv_gmg", "tfc_wheeled_lav6_isc", "tfc_wheeled_lav6_lrss", "rhsusf_M1117_W", "rhsusf_stryker_m1126_m2_wd", "rhsusf_stryker_m1132_m2_np_wd"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["tfc_wheeled_lav6_isc", "tfc_wheeled_lav6_lrss", "rhsusf_stryker_m1126_m2_wd", "RHS_M2A3_BUSKI_wd", "RHS_M2A3_wd"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["tfc_wheeled_lav6_isc", "tfc_wheeled_lav6_lrss", "rhsusf_M1220_M2_usarmy_wd", "rhsusf_M1232_M2_usarmy_wd"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", ["RHS_M2A2_BUSKI_WD", "RHS_M6_wd"]] call _fnc_saveToTemplate;
+// This mod doesn't have much desert stuff, so it'll basically become USA... but hey, still canada
 
-["vehiclesLightTanks",  ["RHS_M2A3_BUSKIII_wd", "RHS_M2A2_wd"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["TFC_MBT_Leopard2A4M_F", "TFC_MBT_Leopard2A4M_Plow"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["RHS_M6_wd"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["tfc_vs_luvw_arid_f", "rhsusf_m998_d_4dr_fulltop", "rhsusf_m1043_d"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["tfc_vs_luvw_arid_armed_f", "rhsusf_m1043_d_m2", "rhsusf_m1151_m240_v2_usarmy_d"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["rhsusf_M1078A1P2_D_fmtv_usarmy", "rhsusf_M1078A1P2_D_flatbed_fmtv_usarmy"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["rhsusf_M1078A1P2_D_flatbed_fmtv_usarmy", "rhsusf_M1084A1P2_B_D_fmtv_usarmy"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["rhsusf_M977A4_AMMO_BKIT_usarmy_d", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["rhsusf_M977A4_REPAIR_BKIT_usarmy_d"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["rhsusf_M978A4_BKIT_usarmy_d"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["tfc_wheeled_lav6_isc_ar" "rhsusf_M1117_D", "rhsusf_stryker_m1126_m2_d", "rhsusf_stryker_m1132_m2_np_d"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["tfc_wheeled_lav6_isc_ar", "rhsusf_stryker_m1126_m2_d", "RHS_M2A3_BUSKI_d", "RHS_M2A3_d"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["tfc_wheeled_lav6_isc_ar", "rhsusf_M1220_M2_usarmy_d", "rhsusf_M1232_M2_usarmy_d"]] call _fnc_saveToTemplate;
+["vehiclesIFVs", ["RHS_M2A2_BUSKI", "RHS_M6"]] call _fnc_saveToTemplate;
+
+["vehiclesLightTanks",  ["RHS_M2A3_BUSKIII", "RHS_M2A2"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["TFC_MBT_Leopard2A4M_F"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["RHS_M6"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
@@ -44,11 +46,10 @@
 ["vehiclesPlanesAA", ["rhsusf_f22"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["tfc_cc130_cargo"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisTransport", ["TFC_CH146408_transport_F", "RHS_UH60M", "RHS_UH60M2", "RHS_CH_47F"]] call _fnc_saveToTemplate;
-["vehiclesHelisLight", ["TFC_CH146408_transport_F", "TFC_CH146413_casevac_F"]] call _fnc_saveToTemplate;
-["vehiclesHelisLightAttack", ["TFC_CH146417_ingress_F", "RHS_MELB_AH6M_M", "RHS_MELB_AH6M_H"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["tfc_ch164_dynamicloadout"]] call _fnc_saveToTemplate;
-
+["vehiclesHelisTransport", ["RHS_UH60M", "RHS_CH_47F_light"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["RHS_UH60M2"]] call _fnc_saveToTemplate;
+["vehiclesHelisLightAttack", ["RHS_MELB_AH6M_M", "RHS_MELB_AH6M_H"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["RHS_AH64D"]] call _fnc_saveToTemplate;
 
 ["magazines", createHashMapFromArray [
     ["rhsusf_m109_usarmy",["rhs_mag_155mm_m795_28"]]
@@ -57,18 +58,18 @@
 ["uavsAttack", ["B_UAV_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate;
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
-["vehiclesMilitiaLightArmed", ["tfc_vs_luvw_armed_f", "rhsusf_m1025_w_m2"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["c_tfc_vs_lsvw_transport_uncovered_f", "tfc_mlvw_f"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["tfc_vs_luvw_f", "rhsusf_m998_w_2dr_halftop"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["tfc_tapv_gmg", "tfc_wheeled_lav6_isc"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["tfc_vs_luvw_arid_armed_f", "rhsusf_m1025_d_m2"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["rhsusf_M1078A1P2_D_fmtv_usarmy"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["tfc_vs_luvw_arid_f", "rhsusf_m998_d_2dr_halftop"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["tfc_wheeled_lav6_isc_ar"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["tfc_vs_luvw_f", "rhsusf_m998_w_4dr_halftop"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["tfc_vs_luvw_armed_f", "rhsusf_m998_d_4dr_halftop"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["RHS_M2StaticMG_WD"]] call _fnc_saveToTemplate;
-["staticAT", ["RHS_TOW_TriPod_WD"]] call _fnc_saveToTemplate;
-["staticAA", ["RHS_Stinger_AA_pod_WD"]] call _fnc_saveToTemplate;
-["staticMortars", ["RHS_M252_WD"]] call _fnc_saveToTemplate;
-["staticHowitzers", ["RHS_M119_WD"]] call _fnc_saveToTemplate;
+["staticMGs", ["RHS_M2StaticMG_D"]] call _fnc_saveToTemplate;
+["staticAT", ["RHS_TOW_TriPod_D"]] call _fnc_saveToTemplate;
+["staticAA", ["RHS_Stinger_AA_pod_D"]] call _fnc_saveToTemplate;
+["staticMortars", ["RHS_M252_D"]] call _fnc_saveToTemplate;
+["staticHowitzers", ["RHS_M119_D"]] call _fnc_saveToTemplate;
 
 ["vehicleRadar", "B_Radar_System_01_F"] call _fnc_saveToTemplate;
 ["vehicleSam", "B_SAM_System_03_F"] call _fnc_saveToTemplate;
@@ -85,13 +86,9 @@
 
 // #include "RHS_Vehicle_Attributes.sqf"
 
-// ["variants", [
-//     ["rhsusf_stryker_m1126_m2_d", ["Tan",1]],
-//     ["rhsusf_stryker_m1126_mk19_d", ["Tan",1]],
-//     ["rhsusf_stryker_m1127_m2_d", ["Tan",1]],
-//     ["rhsusf_stryker_m1132_m2_np_d", ["Tan",1]],
-//     ["rhsusf_stryker_m1134_d", ["Tan",1]]
-// ]] call _fnc_saveToTemplate;
+["variants", [
+    ["TFC_MBT_Leopard2A4M_F", ["tfc_Leopard2A4M_Sand",1]]
+]] call _fnc_saveToTemplate;
 
 /////////////////////
 ///  Identities   ///
@@ -151,11 +148,11 @@ _loadoutData set ["NVGs", ["TFC_NVG_PVS14", "TFC_NVG_PVS23"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["rangefinders", ["rhsusf_bino_lerca_1200_black"]];
 
-_loadoutData set ["traitorUniforms", ["TFC_CU_CombatUniform_tunic_cadpat_TW"]];
-_loadoutData set ["traitorVests", ["TFC_CV_SORD_Ballistic_TW", "TFC_CV_BV_tw"]];
-_loadoutData set ["traitorHats", ["TFC_CH_CG634_CADPAT_SCRIM_01_TW", "TFC_CH_CG634_CADPAT_SCRIM_L_01_TW"]];
+_loadoutData set ["traitorUniforms", ["TFC_CU_CombatUniform_tunic_cadpat_AR"]];
+_loadoutData set ["traitorVests", ["TFC_CV_SORD_Ballistic_AR", "TFC_CV_BV_AR"]];
+_loadoutData set ["traitorHats", ["TFC_CH_CG634_CADPAT_SCRIM_01_AR", "TFC_CH_CG634_CADPAT_SCRIM_L_01_AR"]];
 
-_loadoutData set ["officerUniforms", ["TFC_CU_CombatUniform_otw_cadpat_TW"]];
+_loadoutData set ["officerUniforms", ["TFC_CU_CombatUniform_otw_cadpat_AR"]];
 _loadoutData set ["officerVests", ["V_Rangemaster_belt"]];
 _loadoutData set ["officerHats", ["TFC_CH_Beret_MPBranch"]];
 
@@ -167,11 +164,11 @@ _loadoutData set ["SNIvests", []];
 _loadoutData set ["GLvests", []];
 _loadoutData set ["vests", []];
 _loadoutData set ["backpacks", []];
-_loadoutData set ["atBackpacks", ["TFC_CB_CTS_Rucksack_TW"]];
-_loadoutData set ["longRangeRadios", ["TFC_CB_Smallpack_TW_TFAR"]];
+_loadoutData set ["atBackpacks", ["TFC_CB_CTS_Rucksack_AR"]];
+_loadoutData set ["longRangeRadios", ["TFC_CB_Smallpack_AR_TFAR"]];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", ["TFC_CH_CG634_CADPAT_SCRIM_01_TW", "TFC_CH_CG634_CADPAT_GG_TW"]];
-_loadoutData set ["sniHats", ["TFC_CH_CG634_CADPAT_SCRIM_01_TW"]];
+_loadoutData set ["slHat", ["TFC_CH_CG634_CADPAT_SCRIM_01_AR", "TFC_CH_CG634_CADPAT_GG_AR"]];
+_loadoutData set ["sniHats", ["TFC_CH_CG634_CADPAT_SCRIM_01_AR"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
@@ -205,16 +202,6 @@ _loadoutData set ["items_sniper_extras", _mmItems];
 _loadoutData set ["items_police_extras", []];
 _loadoutData set ["items_crew_extras", []];
 _loadoutData set ["items_unarmed_extras", []];
-
-_loadoutData set ["glasses", [
-    "rhsusf_shemagh_grn",
-    "rhsusf_shemagh2_grn"
-]];
-_loadoutData set ["goggles", [
-    "rhs_ess_black", 
-    "rhsusf_shemagh_gogg_grn",
-    "rhsusf_shemagh2_gogg_grn"
-]];
 
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
@@ -276,8 +263,8 @@ _sfLoadoutData set ["sniperRifles", [
     ["rhs_weap_m24sws", "rhsusf_acc_m24_silencer_black", "", "rhsusf_acc_M8541", ["rhsusf_5Rnd_762x51_m993_Mag"], [], "rhsusf_acc_harris_swivel"],
     ["rhs_weap_m24sws", "rhsusf_acc_m24_silencer_black", "", "rhsusf_acc_premier", ["rhsusf_5Rnd_762x51_m993_Mag"], [], "rhsusf_acc_harris_swivel"],
     ["rhs_weap_m24sws", "rhsusf_acc_m24_silencer_black", "", "rhsusf_acc_LEUPOLDMK4", ["rhsusf_5Rnd_762x51_m993_Mag"], [], "rhsusf_acc_harris_swivel"],
-    ["TFC_W_c21_TW", "TFC_WA_supp_C21_tw", "", "tfc_wa_5_25_x56_high", ["tfc_8rnd_338"], [], "tfc_wa_harris_bipod_small"],
-    ["TFC_W_c21_TW", "TFC_WA_supp_C21_tw", "", "rhsusf_acc_nxs_3515x50_md", ["tfc_8rnd_338"], [], "rhsusf_acc_harris_bipod"]
+    ["TFC_W_c21_AR", "TFC_WA_supp_C21_tw", "", "tfc_wa_5_25_x56_high", ["tfc_8rnd_338"], [], "tfc_wa_harris_bipod_small"],
+    ["TFC_W_c21_AR", "TFC_WA_supp_C21_tw", "", "rhsusf_acc_nxs_3515x50_md", ["tfc_8rnd_338"], [], "rhsusf_acc_harris_bipod"]
 ]];
 _sfLoadoutData set ["sidearms", [
     ["tfc_w_P320_blk", "", "acc_flashlight_pistol", "", ["16Rnd_9x21_Mag"], [], ""]
@@ -360,15 +347,15 @@ _eliteLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_tunic_cadpat_TW", "TFC_CU_CombatUniform_otw_cadpat_TW"]];
-_militaryLoadoutData set ["vests", ["TFC_CV_SORD_Ballistic_TW", "TFC_CV_SORD"]];
+_militaryLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_tunic_cadpat_AR", "TFC_CU_CombatUniform_otw_cadpat_AR"]];
+_militaryLoadoutData set ["vests", ["TFC_CV_SORD_Ballistic_AR", "TFC_CV_SORD"]];
 _militaryLoadoutData set ["MGvests", ["TFC_CV_OTV_BV_tw"]];
 _militaryLoadoutData set ["MEDvests", ["TFC_CV_SORD"]];
-_militaryLoadoutData set ["SLvests", ["TFC_CV_SORD_Ballistic_TW"]];
+_militaryLoadoutData set ["SLvests", ["TFC_CV_SORD_Ballistic_AR"]];
 _militaryLoadoutData set ["SNIvests", ["TFC_CV_SORD"]];
 _militaryLoadoutData set ["GLvests", ["TFC_CV_OTV_BV_tw"]];
-_militaryLoadoutData set ["backpacks", ["TFC_CB_Smallpack_TW", "TFC_CB_Medbag_tw"]];
-_militaryLoadoutData set ["helmets", ["TFC_CH_CG634_CADPAT_TW", "TFC_CH_CG634_CADPAT_GG_TW", "TFC_CH_CG634_CADPAT_SCRIM_03_TW", "TFC_CH_CG634_CADPAT_SCRIM_L_03_TW"]];
+_militaryLoadoutData set ["backpacks", ["TFC_CB_Smallpack_AR", "TFC_CB_Medbag_tw"]];
+_militaryLoadoutData set ["helmets", ["TFC_CH_CG634_CADPAT_AR", "TFC_CH_CG634_CADPAT_GG_AR", "TFC_CH_CG634_CADPAT_SCRIM_03_AR", "TFC_CH_CG634_CADPAT_SCRIM_L_03_AR"]];
 
 _militaryLoadoutData set ["lightATLaunchers", ["rhs_weap_M136", "rhs_weap_M136_hp"]];
 _militaryLoadoutData set ["lightHELaunchers", ["rhs_weap_M136_hedp"]];
@@ -406,11 +393,13 @@ _militaryLoadoutData set ["machineGuns", [
 ]];
 _militaryLoadoutData set ["marksmanRifles", [
     ["rhs_weap_sr25", "", "", "rhsusf_acc_ACOG2", ["rhsusf_20Rnd_762x51_SR25_m118_special_Mag"], [], ""],
-    ["TFC_W_c14", "", "", "rhsusf_acc_LEUPOLDMK4_2", ["tfc_5rnd_338"], [], "rhsusf_acc_harris_bipod"]
+    ["TFC_W_c14", "", "", "rhsusf_acc_LEUPOLDMK4_2", ["tfc_5rnd_338"], [], "rhsusf_acc_harris_bipod"],
+    ["TFC_W_c20", "", "", "rhsusf_acc_ELCAN", ["20Rnd_762x51_Mag"], [], "TFC_WA_c20_vgbp"]
 ]];
 _militaryLoadoutData set ["sniperRifles", [
     ["rhs_weap_m24sws", "", "", "rhsusf_acc_LEUPOLDMK4", [], [], "rhsusf_acc_harris_bipod"],
-    ["TFC_W_c21_TW", "", "", "rhsusf_acc_LEUPOLDMK4_2", [], [], "rhsusf_acc_harris_bipod"]
+    ["TFC_W_c21_AR", "", "", "rhsusf_acc_LEUPOLDMK4_2", [], [], "rhsusf_acc_harris_bipod"],
+    ["TFC_W_c15a2", "", "", "rhsusf_acc_LEUPOLDMK4_2", [], [], ""]
 ]];
 _militaryLoadoutData set ["sidearms", [
     ["tfc_w_P320_blk", "", "", "", ["16Rnd_9x21_Mag"], [], ""],
@@ -422,9 +411,9 @@ _militaryLoadoutData set ["sidearms", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_policeLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_tunic_cadpat_TW"]];
+_policeLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_tunic_cadpat_AR"]];
 _policeLoadoutData set ["vests", ["TFC_CV_BV_tw", "V_Chestrig_rgr"]];
-_policeLoadoutData set ["helmets", ["TFC_CH_Booniehat_CADPAT_TW", "TFC_CH_Beret_MPBranch"]];
+_policeLoadoutData set ["helmets", ["TFC_CH_Booniehat_CADPAT_AR", "TFC_CH_Beret_MPBranch"]];
 _policeLoadoutData set ["policeWeapons", [
     ["rhs_weap_M590_5RD", "", "", "", ["rhsusf_5Rnd_00Buck", "rhsusf_5Rnd_Slug"], [], ""],
     ["TFC_W_c8a3", "", "", "", ["rhs_mag_30Rnd_556x45_M193_Stanag"], [], ""]
@@ -436,14 +425,14 @@ _policeLoadoutData set ["sidearms", ["tfc_w_bhp"]];
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militiaLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_otw_cadpat_TW", "TFC_CU_CombatUniform_tunic_cadpat_TW"]];
+_militiaLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_otw_cadpat_AR", "TFC_CU_CombatUniform_tunic_cadpat_AR"]];
 _militiaLoadoutData set ["vests", ["V_SmershVest_01_F", "V_PlateCarrierIA1_dgtl", "V_Chestrig_rgr", "TFC_CV_BV_tw"]];
-_militiaLoadoutData set ["backpacks", ["TFC_CB_Smallpack_TW", "TFC_CB_Medbag_tw"]];
-_militiaLoadoutData set ["atBackpacks", ["TFC_CB_CTS_Rucksack_TW"]];
-_militiaLoadoutData set ["helmets", ["TFC_CH_CG634_CADPAT_TW", "TFC_CH_CG634_CADPAT_SCRIM_L_01_TW", "TFC_CH_CG634_CADPAT_SCRIM_01_TW"]];
-_militiaLoadoutData set ["slHat", ["TFC_CH_CG634_CADPAT_SCRIM_L_01_TW", "TFC_CH_CG634_CADPAT_GG_TW"]];
-_militiaLoadoutData set ["sniHats", ["TFC_CH_CG634_CADPAT_SCRIM_L_01_TW"]];
-_militiaLoadoutData set ["longRangeRadios", ["TFC_CB_Smallpack_TW_TFAR"]];
+_militiaLoadoutData set ["backpacks", ["TFC_CB_Smallpack_AR", "TFC_CB_Medbag_tw"]];
+_militiaLoadoutData set ["atBackpacks", ["TFC_CB_CTS_Rucksack_AR"]];
+_militiaLoadoutData set ["helmets", ["TFC_CH_CG634_CADPAT_AR", "TFC_CH_CG634_CADPAT_SCRIM_L_01_AR", "TFC_CH_CG634_CADPAT_SCRIM_01_AR"]];
+_militiaLoadoutData set ["slHat", ["TFC_CH_CG634_CADPAT_SCRIM_L_01_AR", "TFC_CH_CG634_CADPAT_GG_AR"]];
+_militiaLoadoutData set ["sniHats", ["TFC_CH_CG634_CADPAT_SCRIM_L_01_AR"]];
+_militiaLoadoutData set ["longRangeRadios", ["TFC_CB_Smallpack_AR_TFAR"]];
 
 _militiaLoadoutData set ["lightATLaunchers", ["rhs_weap_m72a7"]];
 
@@ -480,9 +469,9 @@ _militiaLoadoutData set ["sidearms", ["tfc_w_bhp", "tfc_w_P226_rail"]];
 //    Misc Loadouts     //
 //////////////////////////
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
-_crewLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_tunic_cadpat_TW"]];
+_crewLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_tunic_cadpat_AR"]];
 _crewLoadoutData set ["vests", ["TFC_CV_BV_tw"]];
-_crewLoadoutData set ["helmets", ["TFC_CH_CG634_CADPAT_GG_Crew_TW", "TFC_CH_CG634_CADPAT_Crew_TW"]];
+_crewLoadoutData set ["helmets", ["TFC_CH_CG634_CADPAT_GG_Crew_AR", "TFC_CH_CG634_CADPAT_Crew_AR"]];
 _crewLoadoutData set ["carbines", [
     ["TFC_W_c8a3", "", "", "", ["rhs_mag_30Rnd_556x45_M855_Stanag"], [], ""]
 ]];
@@ -492,7 +481,7 @@ _crewLoadoutData set ["SMGs", [
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_Aircrew_TW"]];
+_pilotLoadoutData set ["uniforms", ["TFC_CU_CombatUniform_Aircrew_AR"]];
 _pilotLoadoutData set ["vests", ["TFC_CV_AIRCREW_TEMPERATE"]];
 _pilotLoadoutData set ["helmets", ["TFC_CH_Helo_Pilot", "TFC_CH_Helo_Crew"]];
 _pilotLoadoutData set ["SMGs", [
@@ -502,7 +491,6 @@ _pilotLoadoutData set ["SMGs", [
 /////////////////////////////////
 //    Unit Type Definitions    //
 /////////////////////////////////
-
 
 private _squadLeaderTemplate = {
     [selectRandomWeighted ["helmets", 2, "slHat", 1]] call _fnc_setHelmet;
