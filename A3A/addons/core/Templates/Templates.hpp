@@ -654,4 +654,8 @@ class Templates
 
     #include "Templates\AMF\templates.hpp"
 
+    // ***************************** Task Force Canada *****************************
+
+    #include "Templates\TFC\templates.hpp"
+
 };

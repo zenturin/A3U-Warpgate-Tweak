@@ -16,6 +16,10 @@ class planeLoadouts
         {
             loadout[] = {"PylonMissile_Missile_MICAIR_x1","PylonMissile_Missile_MICAIR_x1","","","PylonRack_3Rnd_GBU12_LGB","PylonRack_3Rnd_GBU12_LGB","PylonRack_Missile_TANK_02_x1_f","PylonRack_Missile_TANK_02_x1_f","PylonRack_2_Missile_MICAEM_x1","PylonRack_2_Missile_MICAEM_x1","PylonRack_Missile_TANK_01_x1_f"};
         };
+        class TFC_CP140_dynamicLoadout
+        {
+            loadout[] = {"PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonMissile_Bomb_GBU12_x1","PylonMissile_Bomb_GBU12_x1",""};
+        };
     };
     class AA
     {
