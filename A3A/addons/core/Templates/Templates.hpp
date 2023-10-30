@@ -653,5 +653,9 @@ class Templates
     // ***************************** AMF *****************************
 
     #include "Templates\AMF\templates.hpp"
+	
+    // ***************************** NFtS *****************************
+
+    #include "Templates\NFtS\templates.hpp"
 
 };
