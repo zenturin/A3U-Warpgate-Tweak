@@ -280,7 +280,7 @@ _sfLoadoutData set ["GLsidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData set ["uniforms", ["TFC_CU_Operator_otw_mc_tw", "TFC_CU_Operator_otw_tw_mc"]];
+_eliteLoadoutData set ["uniforms", ["TFC_CU_Operator_otw_mc_ar", "TFC_CU_Operator_otw_ar_mc"]];
 _eliteLoadoutData set ["vests", ["tfc_vest_pico_dsx", "tfc_vest_pico_dsx_astl"]];
 _eliteLoadoutData set ["MGvests", ["tfc_vest_pico_dsx_ast3", "tfc_vest_pico_dsx_tl2"]];
 _eliteLoadoutData set ["MEDvests", ["tfc_vest_pico_dsx_Med"]];
