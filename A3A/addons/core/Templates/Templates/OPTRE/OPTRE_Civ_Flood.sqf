@@ -150,9 +150,9 @@ private _specialUnitsWeights = [
     1.0,
     0.9,
     0.8,
-    0.6,
-    0.5,
-    0.4
+    0.4,
+    0.3,
+    0.3
 ];
 
 private _prefix = "militia";
