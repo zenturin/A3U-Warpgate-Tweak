@@ -19,9 +19,9 @@
 ["surrenderCrate", "LIB_AmmoCrate_Arty_SU"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["vehiclesBasic", ["LIB_GazM1_SOV"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["NORTH_SOV_R75"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["LIB_Willys_MB","LIB_Willys_MB_Hood"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed",["LIB_Scout_M3"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed",["NORTH_SOV_T38","NORTH_SOV_T20","NORTH_SOV_BA10","NORTH_SOV_BA6","NORTH_SOV_T60"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["LIB_US6_Tent","LIB_US6_Open"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["LIB_US6_Open_Cargo","LIB_US6_Tent_Cargo"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["LIB_US6_Ammo"]] call _fnc_saveToTemplate;
@@ -29,12 +29,12 @@
 ["vehiclesFuelTrucks", ["LIB_Zis5v_Fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["LIB_Zis5v_Med"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["LIB_Scout_M3_FFV","LIB_Scout_M3"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["LIB_Scout_M3_FFV","LIB_SOV_M3_Halftrack"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", ["LIB_SU85", "LIB_T34_76"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["LIB_T34_85","LIB_JS2_43"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["LIB_Scout_M3_FFV","LIB_SOV_M3_Halftrack","NORTH_SOV_T34_76_1941"]] call _fnc_saveToTemplate;
+["vehiclesIFVs", ["LIB_SU85","NORTH_SOV_T34_76_1943","NORTH_SOV_T28","NORTH_SOV_T28e","NORTH_SOV_T28_com"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["NORTH_SOV_KV1_1940","NORTH_SOV_KV1_1941","NORTH_SOV_KV1_1942","NORTH_SOV_KV1E_1940","NORTH_SOV_T34_85","NORTH_SOV_T34_85_45","NORTH_SOV_T34_85","NORTH_SOV_T34_85_45","LIB_JS2_43","LIB_JS2_43","LIB_JS2_43"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["LIB_Zis5v_61K"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["LIB_Scout_M3_FFV"]] call _fnc_saveToTemplate;
-["vehiclesLightTanks",  ["LIB_T34_76"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["LIB_Scout_M3_FFV","NORTH_SOV_T60","NORTH_SOV_T70"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["NORTH_SOV_T26_M33","NORTH_SOV_T26_M38","NORTH_SOV_T26_M39","NORTH_SOV_T26_M33com","NORTH_SOV_T70","NORTH_SOV_41_BT5","NORTH_SOV_41_BT5Com","NORTH_SOV_41_BT7","NORTH_SOV_41_BT7A","NORTH_SOV_41_BT7Com_M35","NORTH_SOV_41_T26_M33_OT","NORTH_SOV_41_T26_M39_OT"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["LIB_LCA"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", []] call _fnc_saveToTemplate;
@@ -65,25 +65,25 @@
 
 ["vehiclesPolice", ["LIB_GazM1_SOV"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["LIB_MG34_Lafette_Deployed","LIB_MG42_Lafette_Deployed"]] call _fnc_saveToTemplate;
-["staticAT", ["LIB_Zis3"]] call _fnc_saveToTemplate;
-["staticAA", ["LIB_61k"]] call _fnc_saveToTemplate;
-["staticMortars", ["LIB_BM37"]] call _fnc_saveToTemplate;
-["staticHowitzers", ["LIB_leFH18"]] call _fnc_saveToTemplate;
+["staticMGs", ["NORTH_FIN_Maxim_High"]] call _fnc_saveToTemplate;
+["staticAT", ["NORTH_SOV_76mm1936"]] call _fnc_saveToTemplate;
+["staticAA", ["NORTH_SOV_Maxim_Quad"]] call _fnc_saveToTemplate;
+["staticMortars", ["NORTH_SOV_50rm38"]] call _fnc_saveToTemplate;
+["staticHowitzers", ["NORTH_SOV_152mm1938"]] call _fnc_saveToTemplate;
 
-["vehicleRadar", "LIB_FlaK_36_AA"] call _fnc_saveToTemplate;
-["vehicleSam", "LIB_FlaK_36_AA"] call _fnc_saveToTemplate;
+["vehicleRadar", "LIB_61k"] call _fnc_saveToTemplate;
+["vehicleSam", "LIB_61k"] call _fnc_saveToTemplate;
 
-["howitzerMagazineHE", "LIB_20x_Shell_105L28_Gr38_HE"] call _fnc_saveToTemplate;
+["howitzerMagazineHE", "NORTH_10Shell_152mmHE_152h38"] call _fnc_saveToTemplate;
 
-["mortarMagazineHE", "LIB_8Rnd_82mmHE_BM37"] call _fnc_saveToTemplate;
-["mortarMagazineSmoke", "LIB_82mm_BM37_SmokeShell"] call _fnc_saveToTemplate;
+["mortarMagazineHE", "NORTH_10Shell_50mm_MortarHEshell_50krh38"] call _fnc_saveToTemplate;
+["mortarMagazineSmoke", "NORTH_10Shell_50mm_MortarSmokeShell_50krh38"] call _fnc_saveToTemplate;
 
 //Minefield definition
 ["minefieldAT", ["LIB_TM44_MINE"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["LIB_PMD6_MINE"]] call _fnc_saveToTemplate;
 
-#include "IFA_Vehicle_Attributes.sqf"
+#include "NFtS_Vehicle_Attributes.sqf"
 
 /////////////////////
 ///  Identities   ///

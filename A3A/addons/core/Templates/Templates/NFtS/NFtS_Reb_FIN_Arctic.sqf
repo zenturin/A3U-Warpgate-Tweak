@@ -39,7 +39,7 @@
 ["breachingExplosivesAPC", [["LIB_Ladung_Big_MINE_mag", 1], ["LIB_Ladung_Small_MINE_mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["LIB_Ladung_Big_MINE_mag", 1], ["LIB_Ladung_Small_MINE_mag", 2]]] call _fnc_saveToTemplate;
 
-#include "IFA_Reb_Vehicle_Attributes.sqf"
+#include "NFtS_Reb_Vehicle_Attributes.sqf"
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
