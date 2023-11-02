@@ -27,8 +27,8 @@
 ["vehiclesCivBoat", ["NORTH_FIN_Syoksyvene"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["NORTH_FIN_Maxim"]] call _fnc_saveToTemplate;
-["staticAT", ["NORTH_FIN_Lahti_L39AA","NORTH_FIN_45PSTK37"]] call _fnc_saveToTemplate;
-["staticAA", ["NORTH_SOV_Maxim_Quad"]] call _fnc_saveToTemplate;
+["staticAT", ["NORTH_FIN_45PSTK37"]] call _fnc_saveToTemplate;
+["staticAA", ["NORTH_FIN_Lahti_L39AA","NORTH_SOV_Maxim_Quad"]] call _fnc_saveToTemplate;
 ["staticMortars", ["NORTH_SOV_50rm38"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "NORTH_10Shell_50mm_MortarHEshell_50krh38"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "NORTH_10Shell_50mm_MortarSmokeShell_50krh38"] call _fnc_saveToTemplate;

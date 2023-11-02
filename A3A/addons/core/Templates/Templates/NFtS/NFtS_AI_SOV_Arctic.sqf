@@ -68,7 +68,7 @@
 ["staticMGs", ["NORTH_FIN_Maxim_High"]] call _fnc_saveToTemplate;
 ["staticAT", ["NORTH_SOV_W_76mm1936"]] call _fnc_saveToTemplate;
 ["staticAA", ["NORTH_SOV_Maxim_Quad"]] call _fnc_saveToTemplate;
-["staticMortars", ["NORTH_SOV_50rm38"]] call _fnc_saveToTemplate;
+["staticMortars", ["LIB_BM37"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["NORTH_SOV_W_152mm1938"]] call _fnc_saveToTemplate;
 
 ["vehicleRadar", "LIB_61k"] call _fnc_saveToTemplate;
@@ -76,8 +76,8 @@
 
 ["howitzerMagazineHE", "NORTH_10Shell_152mmHE_152h38"] call _fnc_saveToTemplate;
 
-["mortarMagazineHE", "NORTH_10Shell_50mm_MortarHEshell_50krh38"] call _fnc_saveToTemplate;
-["mortarMagazineSmoke", "NORTH_10Shell_50mm_MortarSmokeShell_50krh38"] call _fnc_saveToTemplate;
+["mortarMagazineHE", "LIB_8Rnd_82mmHE_BM37"] call _fnc_saveToTemplate;
+["mortarMagazineSmoke", "LIB_82mm_BM37_SmokeShell"] call _fnc_saveToTemplate;
 
 //Minefield definition
 ["minefieldAT", ["LIB_TM44_MINE"]] call _fnc_saveToTemplate;
