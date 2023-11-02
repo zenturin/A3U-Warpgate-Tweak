@@ -658,4 +658,8 @@ class Templates
 
     #include "Templates\NFtS\templates.hpp"
 
+    // ***************************** Task Force Canada *****************************
+
+    #include "Templates\TFC\templates.hpp"
+
 };
