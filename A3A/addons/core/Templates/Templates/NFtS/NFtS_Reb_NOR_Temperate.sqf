@@ -4,34 +4,34 @@
 
 #include "..\..\..\script_component.hpp"
 
-["name", "UVOD"] call _fnc_saveToTemplate;
+["name", "Norges Opprorere"] call _fnc_saveToTemplate;
 
-["flag", "FlagCarrierCzechRepublic_EP1"] call _fnc_saveToTemplate;
-["flagTexture", QPATHTOFOLDER(Templates\Templates\CSA38\flag_Czech.paa)] call _fnc_saveToTemplate;
-["flagMarkerType", "Faction_CzechRepublic_EP1"] call _fnc_saveToTemplate;
+["flag", "Flag_FIA_F"] call _fnc_saveToTemplate;
+["flagTexture", QPATHTOFOLDER(Templates\Templates\NFtS\flag_norway.paa)] call _fnc_saveToTemplate;
+["flagMarkerType", "NORTH_Flag_FIN"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["CSA38_kolo"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["LIB_Willys_MB"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["LIB_US_Willys_MB_M1919"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["CSA38_pragaRV4", "CSA38_pragaRV"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["CSA38_ltvz34"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["NORTH_FIN_41_R75"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["LIB_Kfz1_sernyt"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["LIB_Kfz1_MG42_sernyt"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["NORTH_FIN_FordV8"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["NORTH_FIN_BA10"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["LIB_Zis5v_61K"]] call _fnc_saveToTemplate;
 
 ["vehiclesBoat", ["LIB_LCVP"]] call _fnc_saveToTemplate;
 
-["vehiclesPlane", ["LIB_RAAF_P39"]] call _fnc_saveToTemplate;
+["vehiclesPlane", ["LIB_ACI_P39"]] call _fnc_saveToTemplate;
 
 ["vehiclesCivCar", ["LIB_GazM1","LIB_GazM1_dirty"]] call _fnc_saveToTemplate;
 ["vehiclesCivTruck", ["LIB_Zis5v"]] call _fnc_saveToTemplate;
 ["vehiclesCivHeli", []] call _fnc_saveToTemplate;
-["vehiclesCivBoat", ["LIB_LCA"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat", ["NORTH_FIN_Syoksyvene"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["LIB_M1919_M2"]] call _fnc_saveToTemplate;
-["staticAT", ["csa38_pak35_FR"]] call _fnc_saveToTemplate;
-["staticAA", ["LIB_FlaK_30"]] call _fnc_saveToTemplate;
-["staticMortars", ["LIB_M2_60"]] call _fnc_saveToTemplate;
-["staticMortarMagHE", "LIB_8Rnd_60mmHE_M2"] call _fnc_saveToTemplate;
-["staticMortarMagSmoke", "LIB_60mm_M2_SmokeShell"] call _fnc_saveToTemplate;
+["staticMGs", ["NORTH_FIN_Maxim"]] call _fnc_saveToTemplate;
+["staticAT", ["NORTH_FIN_45PSTK37"]] call _fnc_saveToTemplate;
+["staticAA", ["NORTH_FIN_Lahti_L39AA","NORTH_SOV_Maxim_Quad"]] call _fnc_saveToTemplate;
+["staticMortars", ["NORTH_SOV_50rm38"]] call _fnc_saveToTemplate;
+["staticMortarMagHE", "NORTH_10Shell_50mm_MortarHEshell_50krh38"] call _fnc_saveToTemplate;
+["staticMortarMagSmoke", "NORTH_10Shell_50mm_MortarSmokeShell_50krh38"] call _fnc_saveToTemplate;
 
 ["mineAT", "LIB_TMI_42_MINE_mag"] call _fnc_saveToTemplate;
 ["mineAPERS", "LIB_shumine_42_MINE_mag"] call _fnc_saveToTemplate;
@@ -39,7 +39,7 @@
 ["breachingExplosivesAPC", [["LIB_Ladung_Big_MINE_mag", 1], ["LIB_Ladung_Small_MINE_mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["LIB_Ladung_Big_MINE_mag", 1], ["LIB_Ladung_Small_MINE_mag", 2]]] call _fnc_saveToTemplate;
 
-#include "CSA_Vehicle_Attributes.sqf"
+#include "NFtS_Reb_Vehicle_Attributes.sqf"
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
@@ -52,10 +52,7 @@
     ["LIB_Kfz1_Hood_camo", 2050, "CAR", {true}],
 
     ["LIB_SdKfz_7", 6000, "APC", {true}],
-	
-	["CSA38_TCvz33", 12000, "TANK", {true}],
-	["CSA38_ltvz35", 25000, "TANK", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
-	["CSA38_ltvz38", 28000, "TANK", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+
     ["LIB_PzKpfwVI_B", 40000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
   
     ["LIB_SdKfz_7_AA", 10000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
@@ -69,15 +66,15 @@
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "CSA38_vz23","LIB_PTRD",
-    "CSA38_7_92_5xMauser","LIB_1Rnd_145x114",
-    "csa38_czvz22","CSA38_9mm_8xBrowning",
-    ["LIB_Faustpatrone", 50],
+    "NORTH_nor_krag1894","LIB_PTRD",
+    "NORTH_5Rnd_krag_bullets","LIB_1Rnd_145x114",
+    "NORTH_m1893","NORTH_6Rnd_m1893_mag",
+    ["NORTH_fin_panzerfaustKlein", 50],
     ["LIB_Ladung_Small_MINE_mag", 10], ["LIB_Ladung_Big_MINE_mag", 3],
-    "lib_shg24",
-    "V_csa38_equip_CZ01","V_csa38_equip_CZ02","V_csa38_equip_CZ12",
-    "csa38_GeMedicbag", "csa38_pouzdrovz23",
-    "CSA38_Binocular", "csa38_Binocular2"
+    "NORTH_M32Grenade_mag","NORTH_molotov",
+    "V_NORTH_Nor_Belt_Krag","V_NORTH_Nor_Belt_Officer","V_NORTH_Nor_Belt_Madsen22","V_NORTH_Nor_Belt_Madsen14","V_NORTH_Nor_Belt",
+    "NORTH_fin_BreadBag", "NORTH_fin_BreadBag2","NORTH_fin_BreadBag3",
+    "NORTH_Binocular_Zeiss"
 ];
 
 //if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
@@ -87,16 +84,13 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment app
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "U_csa38_uniCZ10",
-    "U_csa38_uniCZ01",
-	"U_csa38_uniCZ09",
-	"U_csa38_uniCZ04",
-	"U_csa38_uniCZ08",
-	"U_csa38_uniCZ03",
-	"U_csa38_uniCZ07",
-	"U_csa38_uniCZ05",
-	"U_csa38_uniCZ06",
-    "U_csa38_uniCZ02"
+    "U_NORTH_NOR_I_Uniform",
+    "U_NORTH_NOR_I_Uniform1",
+    "U_NORTH_NOR_I_Uniform2",
+	"U_NORTH_NOR_I_Uniform3",
+    "U_NORTH_NOR_I_Uniform4",
+    "U_NORTH_NOR_I_Uniform_Sergeant",
+	"U_NORTH_NOR_I_Uniform_Specialist"
 ];
 
 private _dlcUniforms = [];
@@ -104,10 +98,10 @@ private _dlcUniforms = [];
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
 
 ["headgear", [
-    "Headgear_csa38_CZbaret3",
-    "Headgear_csa38_vz31",
-	"Headgear_csa38_lodicka1",
-    "Headgear_csa38_vz32"
+    "H_NORTH_Nor_Fieldcap",
+    "H_NORTH_Nor_Fieldcap_2",
+    "H_NORTH_Nor_Fieldcap_3",
+	"H_NORTH_Nor_Fieldcap_4"
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
@@ -126,7 +120,7 @@ private _loadoutData = call _fnc_createLoadoutData;
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["LIB_GER_ItemWatch"]];
 _loadoutData set ["compasses", ["LIB_GER_ItemCompass_deg"]];
-_loadoutData set ["binoculars", ["CSA38_Binocular"]];
+_loadoutData set ["binoculars", ["LIB_Binocular_GER"]];
 
 _loadoutData set ["uniforms", _rebUniforms];
 

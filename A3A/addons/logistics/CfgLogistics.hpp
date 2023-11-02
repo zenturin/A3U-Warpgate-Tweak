@@ -32,6 +32,7 @@ class DOUBLES(ADDON,Nodes)
 	#include "Nodes\BRAF.hpp"
 	#include "Nodes\AMF.hpp"
 	#include "Nodes\TFC.hpp"
+	#include "Nodes\NFtS.hpp"
 };
 
 class DOUBLES(ADDON,Cargo)
@@ -61,6 +62,7 @@ class DOUBLES(ADDON,Cargo)
     #include "Cargo\WS.hpp"
     #include "Cargo\CW.hpp"
     #include "Cargo\FFAA.hpp"
+	#include "Cargo\NFtS.hpp"
 
 };
 
