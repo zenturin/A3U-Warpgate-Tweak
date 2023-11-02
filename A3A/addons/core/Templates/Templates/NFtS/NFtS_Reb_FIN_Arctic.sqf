@@ -4,7 +4,7 @@
 
 #include "..\..\..\script_component.hpp"
 
-["name", "Suomen Vastarinta"] call _fnc_saveToTemplate;
+["name", "Suomi Armeija"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_FIA_F"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Templates\Templates\NFtS\flag_finland.paa)] call _fnc_saveToTemplate;
@@ -29,9 +29,9 @@
 ["staticMGs", ["NORTH_FIN_Maxim"]] call _fnc_saveToTemplate;
 ["staticAT", ["NORTH_FIN_Lahti_L39AA","NORTH_FIN_45PSTK37"]] call _fnc_saveToTemplate;
 ["staticAA", ["NORTH_SOV_Maxim_Quad"]] call _fnc_saveToTemplate;
-["staticMortars", ["NORTH_FIN_50krh38"]] call _fnc_saveToTemplate;
-["staticMortarMagHE", "LIB_8Rnd_60mmHE_M2"] call _fnc_saveToTemplate;
-["staticMortarMagSmoke", "LIB_60mm_M2_SmokeShell"] call _fnc_saveToTemplate;
+["staticMortars", ["NORTH_SOV_50rm38"]] call _fnc_saveToTemplate;
+["staticMortarMagHE", "NORTH_10Shell_50mm_MortarHEshell_50krh38"] call _fnc_saveToTemplate;
+["staticMortarMagSmoke", "NORTH_10Shell_50mm_MortarSmokeShell_50krh38"] call _fnc_saveToTemplate;
 
 ["mineAT", "LIB_TMI_42_MINE_mag"] call _fnc_saveToTemplate;
 ["mineAPERS", "LIB_shumine_42_MINE_mag"] call _fnc_saveToTemplate;
