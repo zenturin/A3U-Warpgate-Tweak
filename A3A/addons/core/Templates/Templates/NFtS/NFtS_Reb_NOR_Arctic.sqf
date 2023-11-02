@@ -4,17 +4,17 @@
 
 #include "..\..\..\script_component.hpp"
 
-["name", "Suomi Armeija"] call _fnc_saveToTemplate;
+["name", "Norges Opprorere"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_FIA_F"] call _fnc_saveToTemplate;
-["flagTexture", QPATHTOFOLDER(Templates\Templates\NFtS\flag_finland.paa)] call _fnc_saveToTemplate;
+["flagTexture", QPATHTOFOLDER(Templates\Templates\NFtS\flag_norway.paa)] call _fnc_saveToTemplate;
 ["flagMarkerType", "NORTH_Flag_FIN"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["NORTH_FIN_41_R75"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["LIB_Kfz1_sernyt"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["LIB_Kfz1_w"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["LIB_Kfz1_MG42_sernyt"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["NORTH_FIN_FordV8"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["NORTH_FIN_BA10"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["NORTH_FIN_W_FordV8"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["NORTH_FIN_W_BA10"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["LIB_Zis5v_61K"]] call _fnc_saveToTemplate;
 
 ["vehiclesBoat", ["LIB_LCVP"]] call _fnc_saveToTemplate;
@@ -22,7 +22,7 @@
 ["vehiclesPlane", ["LIB_ACI_P39"]] call _fnc_saveToTemplate;
 
 ["vehiclesCivCar", ["LIB_GazM1","LIB_GazM1_dirty"]] call _fnc_saveToTemplate;
-["vehiclesCivTruck", ["LIB_Zis5v"]] call _fnc_saveToTemplate;
+["vehiclesCivTruck", ["LIB_Zis5v_w"]] call _fnc_saveToTemplate;
 ["vehiclesCivHeli", []] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", ["NORTH_FIN_Syoksyvene"]] call _fnc_saveToTemplate;
 
@@ -66,13 +66,13 @@
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "NORTH_fin_m27rv","LIB_PTRD",
-    "NORTH_5Rnd_m39_mag","LIB_1Rnd_145x114",
-    "NORTH_l35","NORTH_8Rnd_l35_mag",
+    "NORTH_nor_krag1894","LIB_PTRD",
+    "NORTH_5Rnd_krag_bullets","LIB_1Rnd_145x114",
+    "NORTH_m1893","NORTH_6Rnd_m1893_mag",
     ["NORTH_fin_panzerfaustKlein", 50],
     ["LIB_Ladung_Small_MINE_mag", 10], ["LIB_Ladung_Big_MINE_mag", 3],
     "NORTH_M32Grenade_mag","NORTH_molotov",
-    "V_NORTH_FIN_Rifleman_1","V_NORTH_FIN_Rifleman_2","V_NORTH_FIN_Rifleman_3","V_NORTH_FIN_Rifleman_4","V_NORTH_FIN_Rifleman_5","V_NORTH_FIN_Rifleman_6","V_NORTH_FIN_Rifleman_7","V_NORTH_FIN_Rifleman_8","V_NORTH_FIN_Rifleman_9","V_NORTH_FIN_Rifleman_10","V_NORTH_FIN_Rifleman_11","V_NORTH_FIN_Rifleman_12",
+    "V_NORTH_Nor_Belt_Krag","V_NORTH_Nor_Belt_Officer","V_NORTH_Nor_Belt_Madsen22","V_NORTH_Nor_Belt_Madsen14","V_NORTH_Nor_Belt",
     "NORTH_fin_BreadBag", "NORTH_fin_BreadBag2","NORTH_fin_BreadBag3",
     "NORTH_Binocular_Zeiss"
 ];
@@ -84,15 +84,17 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment app
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "U_NORTH_FIN_M27_Uniform_Private",
-    "U_NORTH_FIN_M27_Uniform_Private_2",
-    "U_NORTH_FIN_M27_Uniform_Private_3",
-	"U_NORTH_FIN_M27_Uniform_CPL",
-    "U_NORTH_FIN_M27_Uniform_CPL_2",
-    "U_NORTH_FIN_M27_Uniform_SGT",
-	"U_NORTH_FIN_M27_Uniform_SGT_2",
-    "U_NORTH_FIN_M27_Uniform_Private_1CL",
-    "U_NORTH_FIN_M27_Uniform_Private_1CL_2"
+    "U_NORTH_NOR_I_W_Snowsuit",
+    "U_NORTH_NOR_I_W_Snowsuit_HMKG",
+    "U_NORTH_NOR_I_W_Snowsuit_lower",
+	"U_NORTH_NOR_I_W_Snowsuit_upper",
+	"U_NORTH_NOR_I_W_Uniform",
+    "U_NORTH_NOR_I_W_Uniform1",
+    "U_NORTH_NOR_I_W_Uniform2",
+	"U_NORTH_NOR_I_W_Uniform3",
+    "U_NORTH_NOR_I_W_Uniform4",
+    "U_NORTH_NOR_I_W_Uniform_Sergeant",
+	"U_NORTH_NOR_I_W_Uniform_Specialist"
 ];
 
 private _dlcUniforms = [];
@@ -100,10 +102,10 @@ private _dlcUniforms = [];
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
 
 ["headgear", [
-    "H_NORTH_FIN_M27_civilguardhat",
-    "H_NORTH_FIN_M27_civilguardhat_2",
-    "H_NORTH_FIN_M27_civilguardhat_3",
-	"H_NORTH_FIN_M27_civilguardhat_4"
+    "H_NORTH_Nor_Fieldcap",
+    "H_NORTH_Nor_Fieldcap_2",
+    "H_NORTH_Nor_Fieldcap_3",
+	"H_NORTH_Nor_Fieldcap_4"
 ]] call _fnc_saveToTemplate;
 
 /////////////////////

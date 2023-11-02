@@ -166,7 +166,7 @@ _loadoutData set ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalS
 _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 
 //Unit type specific item sets. Add or remove these, depending on the unit types in use.
-private _slItems = [];
+private _slItems = ["TFAR_SCR536"];
 private _eeItems = ["ToolKit", "MineDetector"];
 private _mmItems = [];
 
