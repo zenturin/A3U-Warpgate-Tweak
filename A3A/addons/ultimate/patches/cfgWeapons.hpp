@@ -1,5 +1,5 @@
-class TFAR_anprc152;
-class TFAR_SCR536: TFAR_anprc152 
+// class TFAR_anprc152;
+class TFAR_SCR536: ItemRadio 
 {
     author = AUTHOR;
     displayName = "SCR-536";
