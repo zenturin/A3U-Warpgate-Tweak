@@ -52,7 +52,7 @@ class ruha {
 	antennasBlacklistIndex[] = {};
 	banks[] = {}; //no suitable building available
 	garrison[] = {
-		{},{"milbase_2","outpost_9","control_11"},{},{"control_11"}
+		{},{"milbase_2","outpost_9","resource_2","control_11"},{},{"control_11"}
 	};
 	fuelStationTypes[] = {"Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","Land_Fuelstation","Land_Fuelstation_army","Land_Benzina_schnell"};
 	milAdministrations[] = {
