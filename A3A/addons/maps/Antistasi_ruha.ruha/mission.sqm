@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1153;
 	class ItemIDProvider
 	{
 		nextID=2879;
 	};
 	class LayerIndexProvider
 	{
-		nextID=176;
+		nextID=196;
 	};
 	class Camera
 	{
-		pos[]={4923.8643,167.94328,1152.7158};
-		dir[]={0.13043121,-0.65485048,0.74449378};
-		up[]={0.11301079,0.75572646,0.64506298};
-		aside[]={0.98503858,4.8044603e-007,-0.17257297};
+		pos[]={7945.9751,183.78854,3505.2539};
+		dir[]={0.053072173,0.035963673,0.99794376};
+		up[]={-0.0019098641,0.99935269,-0.035912197};
+		aside[]={0.99858916,-2.5902409e-009,-0.053106502};
 	};
 };
 binarizationWanted=0;
@@ -3827,7 +3827,7 @@ class Mission
 							colorName="ColorGreen";
 							a=148.96745;
 							b=181.47551;
-							angle=223.20139;
+							angle=223.20137;
 							id=1058;
 							atlOffset=-0.27274132;
 						};
@@ -3854,7 +3854,7 @@ class Mission
 							colorName="ColorGreen";
 							a=22.426819;
 							b=21.469519;
-							angle=108.17504;
+							angle=108.17503;
 							id=1163;
 							atlOffset=0.81381989;
 						};
@@ -4029,23 +4029,24 @@ class Mission
 						class Item29
 						{
 							dataType="Marker";
-							position[]={7937.8521,37.097069,3636.8184};
-							name="outp_5_vehicle_1";
+							position[]={7937.8521,37.097,3636.8181};
+							name="outp_14_vehicle";
 							markerType="RECTANGLE";
 							type="rectangle";
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=164.50294;
+							angle=164.50299;
 							id=1802;
+							atlOffset=-6.4849854e-005;
 						};
 					};
 					id=255;
-					atlOffset=21.085104;
+					atlOffset=21.085068;
 				};
 			};
 			id=257;
-			atlOffset=21.085104;
+			atlOffset=21.085068;
 		};
 		class Item3
 		{
@@ -4121,7 +4122,7 @@ class Mission
 							colorName="ColorBrown";
 							a=91.244034;
 							b=56.813999;
-							angle=0.17999998;
+							angle=0.17999996;
 							id=284;
 							atlOffset=0.75421619;
 						};
@@ -4232,7 +4233,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=216.44487;
+							angle=216.44485;
 							id=309;
 							atlOffset=0.00040149689;
 						};
