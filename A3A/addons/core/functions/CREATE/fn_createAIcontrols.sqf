@@ -169,11 +169,11 @@ if (_isControl) then
 		{
 			case (tierWar >= 9): // if higher or equal to 9, grab military light tank
 			{
-				_vehicleGet = "vehiclesAPCs";
+				_vehicleGet = "vehiclesLightTanks";
 			};
-			case (tierWar >= 6): // if higher or equal to 6, grab militia APC
+			case (tierWar >= 6): // if higher or equal to 6, grab military APC
 			{
-				_vehicleGet = "vehiclesMilitiaAPCs";
+				_vehicleGet = "vehiclesAPCs";
 			};
 			case (tierWar >= 3): // if higher or equal to 3, grab militia light armed car
 			{
