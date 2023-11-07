@@ -130,4 +130,10 @@ class traderMods
         addons[] = {"BRAF_Air"};
         prefix = "brafstock";
     };
+	
+    class nfts : base
+    {
+        addons[] = {"NORTH_Main"};
+        prefix = "nftsstock";
+    };
 };
