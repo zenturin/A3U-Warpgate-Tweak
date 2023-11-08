@@ -585,13 +585,7 @@ class cfgHALsStore
 				"sniperriflesnfts",
 				"launchersnfts",
 				"launchermagazinesnfts",
-				"riflegrenadesnfts",
-				"muzzlesnfts",
 				"magazinesnfts", 
-				"pointersnfts",
-				"specialweaponsnfts",
-				"miscnfts",
-				"opticsnfts",
 				"underbarrelnfts"
 			};
 		};

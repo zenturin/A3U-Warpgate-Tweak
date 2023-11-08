@@ -615,6 +615,11 @@
                 <English>Western Sahara</English>
                 <Russian>Western Sahara</Russian>
             </Key>
+			<Key ID="STR_A3AU_nfts">
+                <Original>Northern Fronts</Original>
+                <English>Northern Fronts</English>
+                <Russian>Northern Fronts</Russian>
+            </Key>
         </Container>
     </Package>
 </Project>
