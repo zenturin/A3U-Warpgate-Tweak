@@ -208,8 +208,8 @@ class Params
     class lootCrateDistance
     {
         title = $STR_params_lootCrateDistance;
-        values[] = {25, 50, 75, 100};
-        texts[] = {"25", "50", "75", "100"};
+        values[] = {10, 25, 50, 75, 100};
+        texts[] = {"10", "25", "50", "75", "100"};
         default = 50;
     };
     class playerIcons
