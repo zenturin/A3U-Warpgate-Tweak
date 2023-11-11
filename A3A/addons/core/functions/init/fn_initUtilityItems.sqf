@@ -32,12 +32,14 @@ if (reviveKitsEnabled) then {
 };
 
 _items append [
-    [_fuelDrum#0, _fuelDrum#1, localize "STR_A3AP_buyvehdialog_fuel_drum", "refuel", ["fuel", "move", "save"]],
-    [_fuelTank#0, _fuelTank#1, localize "STR_A3AP_buyvehdialog_fuel_tank", "refuel", ["cmmdr", "fuel", "place", "move", "save"]],
-    [_medTent#0, _medTent#1, localize "STR_A3AP_buyvehdialog_medical_tent", "heal", ["place", "move", "pack"]],
-    [_ammoStation#0, _ammoStation#1, localize "STR_A3AP_buyvehdialog_ammo_station", "rearm", ["cmmdr", "place", "move", "save"]],
-    [_repairStation#0, _repairStation#1, localize "STR_A3AP_buyvehdialog_repair_station", "repair", ["cmmdr", "place", "move", "pack", "save"]],
-    [_lightSource#0, _lightSource#1, localize "STR_A3AP_buyvehdialog_light", "light", ["move"]]     // note: If we do want this saved, need to switch saveLoop to nearObjects  
+    [_fuelTank#0, _fuelTank#1, "fueltank", "refuel", ["cmmdr", "fuel", "place", "move", "rotate", "save"]],
+    [_medTent#0, _medTent#1, "medicaltent", "heal", ["place", "move", "rotate", "pack"]],
+    [_ammoStation#0, _ammoStation#1, "ammostation", "rearm", ["cmmdr", "place", "move", "rotate", "save"]],
+    [_repairStation#0, _repairStation#1, "repairstation", "repair", ["cmmdr", "place", "move", "rotate", "pack", "save"]],
+    [_lightSource, 25, "light", "", ["move"]],           // note: If we do want this saved, need to switch saveLoop to nearObjects
+    ["Land_PlasticCase_01_medium_F", 100, "buildboxsmall", "", ["place", "move", "build"]],
+    ["Land_PlasticCase_01_large_F", 500, "buildboxlarge", "", ["place", "move", "build"]]
+    // TODO: get larger box from somewhere
 ];
 
 if(A3A_hasACE) then {
