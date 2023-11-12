@@ -35,11 +35,11 @@ switch (_mode) do
         private _rText = (_displayOrControl displayCtrl IDC_PLACERHINT_R_TEXT);
         private _shiftText = (_displayOrControl displayCtrl IDC_PLACERHINT_SHIFT_TEXT);
         private _spaceText = (_displayOrControl displayCtrl IDC_PLACERHINT_SPACE_TEXT);
-        _altText ctrlSetText format ["%1 %2", localize "STR_antistasi_teamleader_placer_alt_key", localize "str_3den_display3den_entitymenu_movesurface_text"];
-        _eText ctrlSetText localize "STR_antistasi_teamleader_placer_e_key";
-        _rText ctrlSetText localize "STR_antistasi_teamleader_placer_r_key";
-        _shiftText ctrlSetText localize "STR_antistasi_teamleader_placer_shift_key";
-        _spaceText ctrlSetText localize "STR_antistasi_teamleader_placer_space_key";
+        _altText ctrlSetText format ["%1 %2", "Alt: ", localize "str_3den_display3den_entitymenu_movesurface_text"];
+        _eText ctrlSetText "E: Rotate counter-clockwise";
+        _rText ctrlSetText "R: Rotate clockwise ";
+        _shiftText ctrlSetText "SHIFT: Unsafe placement mode";
+        _spaceText ctrlSetText "SPACE: Place object";
         uiNamespace setVariable ["A3A_placerHint_display", _displayOrControl];
     };
     case ("setContextKey"):
@@ -55,11 +55,11 @@ switch (_mode) do
 
         if (_keyType == "cancel") exitWith {
             (_display displayCtrl IDC_PLACERHINT_C) ctrlShow true;
-            _textCtrl ctrlSetText format [localize "STR_antistasi_teamleader_placer_c_key", _keyData];
+            _textCtrl ctrlSetText format ["C: Cancel %1", _keyData];
         };
         if (_keyType == "rebuild") exitWith {
             (_display displayCtrl IDC_PLACERHINT_T) ctrlShow true;
-            _textCtrl ctrlSetText format [localize "STR_antistasi_teamleader_placer_t_key", _keyData];
+            _textCtrl ctrlSetText format ["T: Rebuild for %1 €", _keyData];
         };
         _textCtrl ctrlSetText "";
     };

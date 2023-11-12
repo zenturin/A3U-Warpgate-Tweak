@@ -14,7 +14,7 @@ private _fnc_distCheck = {
 };
 
 // Cleanup constructed buildings
-private _rebMarkers = (airportsX + outposts + seaports + factories + resourcesX) select { sidesX getVariable _x == teamPlayer };
+private _rebMarkers = (airportsX + outposts + seaports + factories + resourcesX + milbases) select { sidesX getVariable _x == teamPlayer };
 // ^ Add extra plus related stuff
 _rebMarkers append outpostsFIA; _rebMarkers pushBack "Synd_HQ";
 

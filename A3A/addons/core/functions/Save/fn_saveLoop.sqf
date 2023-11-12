@@ -186,7 +186,7 @@ _arrayEst = [];
 	};
 } forEach staticsToSave;
 
-private _rebMarkers = (airportsX + outposts + seaports + factories + resourcesX) select { sidesX getVariable _x == teamPlayer };
+private _rebMarkers = (airportsX + outposts + seaports + factories + resourcesX + milbases) select { sidesX getVariable _x == teamPlayer };
 // ^ Update to include plus related stuff
 _rebMarkers append outpostsFIA; _rebMarkers pushBack "Synd_HQ";
 {
