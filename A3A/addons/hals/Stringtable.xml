@@ -343,7 +343,7 @@
             </Key>
             <Key ID="STR_A3AU_smgs">
                 <Original>SMGs</Original>
-                <English>SMGSs</English>
+                <English>SMGs</English>
                 <Russian>Пистолеты-пулемёты</Russian>
             </Key>
             <Key ID="STR_A3AU_rifles">
@@ -606,14 +606,19 @@
                 <Russian>VN</Russian>
             </Key>
             <Key ID="STR_A3AU_wrs">
-                <Original>Research & Security</Original>
-                <English>Research & Security</English>
-                <Russian>Research & Security</Russian>
+                <Original>Research and Security</Original>
+                <English>Research and Security</English>
+                <Russian>Research and Security</Russian>
             </Key>
             <Key ID="STR_A3AU_ws">
                 <Original>Western Sahara</Original>
                 <English>Western Sahara</English>
                 <Russian>Western Sahara</Russian>
+            </Key>
+			<Key ID="STR_A3AU_nfts">
+                <Original>Northern Fronts</Original>
+                <English>Northern Fronts</English>
+                <Russian>Northern Fronts</Russian>
             </Key>
         </Container>
     </Package>
