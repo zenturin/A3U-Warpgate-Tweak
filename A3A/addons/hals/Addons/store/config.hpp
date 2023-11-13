@@ -59,6 +59,7 @@ class cfgHALsStore
 		#include "config\wrs.hpp"
 		#include "config\ws.hpp"
 		#include "config\braf.hpp"
+		#include "config\nfts.hpp"
 	};
 
 	class stores 
@@ -571,6 +572,21 @@ class cfgHALsStore
 				"muzzlesBraf",  
 				"pointersBraf", 
 				"navigationBraf"
+			};
+		};
+		class nftsstock
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsnfts",
+				"smgnfts",
+				"mgnfts",
+				"riflesnfts",
+				"sniperriflesnfts",
+				"launchersnfts",
+				"launchermagazinesnfts",
+				"magazinesnfts", 
+				"underbarrelnfts"
 			};
 		};
 	};
