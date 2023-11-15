@@ -233,7 +233,7 @@ _sfLoadoutData set ["grenadeLaunchers", [
     ["rhs_weap_ak74m_gp25_npz", "rhs_acc_dtk", "", "rhs_acc_rakurspm", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N10_AK"], ["rhs_VOG25"], ""]
 ]];
 _sfLoadoutData set ["SMGs", [
-    ["PRACS_UZI", "", "", "rhsusf_acc_rm05", [], [], ""]
+    ["PRACS_UZI", "", "", "rhsusf_acc_rm05", ["PRACS_35rd_9mm_UZI"], [], ""]
 ]];
 _sfLoadoutData set ["machineGuns", [
     ["rhs_weap_pkm", "", "", "", ["rhs_100Rnd_762x54mmR", "rhs_100Rnd_762x54mmR", "rhs_100Rnd_762x54mmR"], [], ""],
@@ -243,7 +243,7 @@ _sfLoadoutData set ["marksmanRifles", [
     ["rhs_weap_svdp_wd_npz", "", "", "rhs_acc_dh520x56", ["rhs_10Rnd_762x54mmR_7N1", "rhs_10Rnd_762x54mmR_7N1", "rhs_10Rnd_762x54mmR_7N1"], [], ""]
 ]];
 _sfLoadoutData set ["sniperRifles", [   
-    ["rhs_weap_t5000", "", "", "rhs_acc_dh520x56", [], [], ""]
+    ["rhs_weap_t5000", "", "", "rhs_acc_dh520x56", ["rhs_5Rnd_338lapua_t5000"], [], ""]
 ]];
 _sfLoadoutData set ["sidearms", [
     ["rhs_weap_pya", "", "", "", [], [], ""],
@@ -289,7 +289,7 @@ _eliteLoadoutData set ["grenadeLaunchers", [
     ["rhs_weap_ak74m_gp25", "rhs_acc_dtk", "", "rhs_acc_1p63", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N10_AK"], ["rhs_VOG25"], ""]
 ]];
 _eliteLoadoutData set ["SMGs", [
-    ["PRACS_UZI", "", "", "rhsusf_acc_rm05", [], [], ""]
+    ["PRACS_UZI", "", "", "rhsusf_acc_rm05", ["PRACS_30rd_9mm_UZI"], [], ""]
 ]];
 _eliteLoadoutData set ["machineGuns", [
     ["rhs_weap_pkm", "", "", "", ["rhs_100Rnd_762x54mmR", "rhs_100Rnd_762x54mmR", "rhs_100Rnd_762x54mmR"], [], ""],
@@ -299,7 +299,7 @@ _eliteLoadoutData set ["marksmanRifles", [
     ["rhs_weap_svdp_wd_npz", "", "", "rhs_acc_dh520x56", ["rhs_10Rnd_762x54mmR_7N1", "rhs_10Rnd_762x54mmR_7N1", "rhs_10Rnd_762x54mmR_7N1"], [], ""]
 ]];
 _eliteLoadoutData set ["sniperRifles", [
-    ["rhs_weap_t5000", "", "", "rhs_acc_dh520x56", [], [], ""]
+    ["rhs_weap_t5000", "", "", "rhs_acc_dh520x56", ["rhs_5Rnd_338lapua_t5000"], [], ""]
 ]];
 _eliteLoadoutData set ["sidearms", [
     ["rhs_weap_pya", "", "", "", [], [], ""],
@@ -344,7 +344,7 @@ _militaryLoadoutData set ["grenadeLaunchers", [
     ["rhs_weap_ak74m_gp25_npz", "rhs_acc_dtk", "", "rhs_acc_rakurspm", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N10_AK"], ["rhs_VOG25"], ""]
 ]];
 _militaryLoadoutData set ["SMGs", [
-    ["PRACS_HK33", "", "", "rhsusf_acc_rm05", [], [], ""]
+    ["PRACS_HK33", "", "", "rhsusf_acc_rm05", ["PRACS_30rd_HK33_mag"], [], ""]
 ]];
 _militaryLoadoutData set ["machineGuns", [
     ["rhs_weap_aks74n", "", "", "rhs_acc_ekp8_02", ["rhs_45Rnd_545X39_7N10_AK", "rhs_45Rnd_545X39_7N10_AK", "rhs_45Rnd_545X39_7N10_AK"], [], ""]
@@ -353,7 +353,7 @@ _militaryLoadoutData set ["marksmanRifles", [
     ["rhs_weap_vss", "", "", "rhs_acc_pso1m2", ["rhs_20rnd_9x39mm_SP5", "rhs_20rnd_9x39mm_SP5", "rhs_20rnd_9x39mm_SP5"], [], ""]
 ]];
 _militaryLoadoutData set ["sniperRifles", [
-    ["rhs_weap_t5000", "", "", "rhs_acc_dh520x56", [], [], ""]
+    ["rhs_weap_t5000", "", "", "rhs_acc_dh520x56", ["rhs_5Rnd_338lapua_t5000"], [], ""]
 ]];
 _militaryLoadoutData set ["sidearms", [
     ["rhs_weap_makarov_pm", "", "", "", [], [], ""]
@@ -370,8 +370,8 @@ _policeLoadoutData set ["vests", ["rhs_belt_AK", "rhs_belt_AK_back"]];
 _policeLoadoutData set ["helmets", ["PRACS_SLA_Border_Guard_Cap"]];
 
 _policeLoadoutData set ["SMGs", [
-    ["rhs_weap_aks74u", "", "", "", [], [], ""],
-    ["rhs_weap_pp2000", "", "", "", [], [], ""]
+    ["rhs_weap_aks74u", "", "", "", ["rhs_30Rnd_545x39_7N6_AK"], [], ""],
+    ["rhs_weap_pp2000", "", "", "", ["rhs_mag_9x19mm_7n31_20"], [], ""]
 ]];
 _policeLoadoutData set ["sidearms", [
     ["rhs_weap_type94_new", "", "", "", ["rhs_mag_6x8mm_mhp"], [], ""]
@@ -404,8 +404,8 @@ _militiaLoadoutData set ["grenadeLaunchers", [
     ["rhs_weap_ak74n_gp25", "", "", "rhs_acc_1p78", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N10_AK"], ["rhs_VOG25", "rhs_VOG25", "rhs_VOG25"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
-    ["PRACS_UZI", "", "", "rhsusf_acc_eotech_xps3", [], [], ""],
-    ["rhs_weap_aks74u", "", "", "", [], [], ""]
+    ["PRACS_UZI", "", "", "rhsusf_acc_eotech_xps3", ["PRACS_30rd_9mm_UZI"], [], ""],
+    ["rhs_weap_aks74u", "", "", "", ["rhs_30Rnd_545x39_7N6_AK"], [], ""]
 ]];
 _militiaLoadoutData set ["machineGuns", [
     ["rhs_weap_ak74m_desert_npz", "", "", "", ["rhs_45Rnd_545X39_7N10_AK", "rhs_45Rnd_545X39_7N10_AK", "rhs_45Rnd_545X39_7N10_AK"], [], ""]
