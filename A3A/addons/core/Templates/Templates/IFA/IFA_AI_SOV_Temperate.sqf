@@ -42,7 +42,7 @@
 
 ["vehiclesPlanesCAS", ["LIB_Pe2"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["LIB_P39"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", ["LIB_C47_Skytrain"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["LIB_Li2"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", []] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", []] call _fnc_saveToTemplate;
