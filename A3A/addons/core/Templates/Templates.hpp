@@ -91,6 +91,16 @@ class Templates
         climate[] = {"tropical"};
     };
 
+    class Vanilla_LDF : Vanilla_Base
+    {
+        side = "Occ";
+        flagTexture = "a3\data_f_enoch\flags\flag_enoch_co.paa";
+        name = "A3 LDF";
+        file = "Vanilla_AI_LDF";
+        maps[] = {"enoch","vt7"};
+        climate[] = {"temperate"};
+        forceDLC[] = {"enoch"};
+    };
 
     class Vanilla_AAF : Vanilla_Base
     {
