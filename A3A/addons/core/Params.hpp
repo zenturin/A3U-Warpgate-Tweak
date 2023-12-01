@@ -126,6 +126,13 @@ class Params
         texts[] = {"8","12","16","24","32"};
         default = 16;
     };
+    class A3A_builderPermissions
+    {
+        title = "Player classes permitted to use the building placer";
+        values[] = {1, 2, 3};
+        texts[] = {"Team leaders", "Engineers", "Both"};
+        default = 3;
+    };
 
     class Spacer101
     {

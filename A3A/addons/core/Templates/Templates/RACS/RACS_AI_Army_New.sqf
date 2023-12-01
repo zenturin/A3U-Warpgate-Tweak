@@ -22,7 +22,7 @@
 ["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["PRACS_M1025", "PRACS_M1025_marine"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["PRACS_M1025_M2", "PRACS_M1151_M240"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["PRACS_M250_flat_bed", "PRACS_M250"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["PRACS_M250_open", "PRACS_M250"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["PRACS_M250_flat_bed", "PRACS_M250"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["PRACS_M250_Ammo"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["PRACS_M250_Repair"]] call _fnc_saveToTemplate;
@@ -235,7 +235,7 @@ _sfLoadoutData set ["grenadeLaunchers", [
     ["rhs_weap_m4a1_blockII_M203_wd", "rhsusf_acc_nt4_tan", "rhsusf_acc_m952v", "rhsusf_acc_acog", ["rhs_mag_30Rnd_556x45_M855A1_Stanag", "rhs_mag_30Rnd_556x45_M855A1_Stanag", "rhs_mag_30Rnd_556x45_M855A1_Stanag"], ["1Rnd_HE_Grenade_shell"], ""]
 ]];
 _sfLoadoutData set ["SMGs", [
-    ["rhsusf_weap_MP7A2", "rhsusf_acc_rotex_mp7", "", "rhsusf_acc_eotech_xps3", [], [], "rhsusf_acc_rvg_blk"]
+    ["rhsusf_weap_MP7A2", "rhsusf_acc_rotex_mp7", "", "rhsusf_acc_eotech_xps3", ["rhsusf_mag_40Rnd_46x30_AP"], [], "rhsusf_acc_rvg_blk"]
 ]];
 _sfLoadoutData set ["machineGuns", [
     ["rhs_weap_m249_pip", "", "", "", ["rhsusf_200Rnd_556x45_box", "rhsusf_200Rnd_556x45_box", "rhsusf_200Rnd_556x45_box"], [], "rhsusf_acc_saw_bipod"],
@@ -245,7 +245,7 @@ _sfLoadoutData set ["marksmanRifles", [
     ["rhs_weap_sr25", "", "", "rhsusf_acc_m8541", ["rhsusf_20Rnd_762x51_SR25_m118_special_Mag", "rhsusf_20Rnd_762x51_SR25_m118_special_Mag", "rhsusf_20Rnd_762x51_SR25_m118_special_Mag"], [], "rhsusf_acc_harris_bipod"]
 ]];
 _sfLoadoutData set ["sniperRifles", [   
-    ["rhs_weap_XM2010", "", "", "rhsusf_acc_m8541", [], [], ""]
+    ["rhs_weap_XM2010", "", "", "rhsusf_acc_m8541", ["rhsusf_5Rnd_300winmag_xm2010"], [], ""]
 ]];
 _sfLoadoutData set ["sidearms", [
     ["rhs_weap_cz99", "", "", "", [], [], ""],
@@ -300,7 +300,7 @@ _eliteLoadoutData set ["marksmanRifles", [
     ["PRACS_g3a4_w", "", "", "rhsusf_acc_m8541_low", ["PRACS_20rd_G3_mag", "PRACS_20rd_G3_mag", "PRACS_20rd_G3_mag"], [], "pracs_g3_bipod"]
 ]];
 _eliteLoadoutData set ["sniperRifles", [
-    ["rhs_weap_m40a5", "", "", "rhsusf_acc_m8541", [], [], ""]
+    ["rhs_weap_m40a5", "", "", "rhsusf_acc_m8541", ["rhsusf_5Rnd_762x51_AICS_m118_special_Mag"], [], ""]
 ]];
 _eliteLoadoutData set ["sidearms", [
     ["rhs_weap_cz99", "", "", "", [], [], ""],
@@ -348,7 +348,7 @@ _militaryLoadoutData set ["grenadeLaunchers", [
     ["rhs_weap_vhsd2_bg", "", "", "rhsusf_acc_eotech_xps3", ["rhsgref_30rnd_556x45_vhs2", "rhsgref_30rnd_556x45_vhs2", "rhsgref_30rnd_556x45_vhs2"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militaryLoadoutData set ["SMGs", [
-    ["PRACS_HK33", "", "", "rhsusf_acc_rm05", [], [], ""]
+    ["PRACS_HK33", "", "", "rhsusf_acc_rm05", ["PRACS_30rd_HK33_mag"], [], ""]
 ]];
 _militaryLoadoutData set ["machineGuns", [
     ["PRACS_Mk48_Para", "", "", "", ["PRACS_100rd_Mk48_M80ball_Soft_pouch", "PRACS_100rd_Mk48_M80ball_Soft_pouch", "PRACS_100rd_Mk48_M80ball_Soft_pouch"], [], ""],
@@ -375,8 +375,8 @@ _policeLoadoutData set ["vests", ["PRACS_Police_Vest", "PRACS_holster_vest"]];
 _policeLoadoutData set ["helmets", ["PRACS_Police_Cap"]];
 
 _policeLoadoutData set ["SMGs", [
-    ["PRACS_UZI", "", "", "", [], [], ""],
-    ["PRACS_HK33A4", "", "", "", [], [], ""]
+    ["PRACS_UZI", "", "", "", ["PRACS_30rd_9mm_UZI"], [], ""],
+    ["PRACS_HK33A4", "", "", "", ["PRACS_30rd_HK33_mag"], [], ""]
 ]];
 _policeLoadoutData set ["sidearms", [
     ["rhsusf_weap_m1911a1", "", "", "", ["rhsusf_mag_7x45acp_MHP"], [], ""]
@@ -409,8 +409,8 @@ _militiaLoadoutData set ["grenadeLaunchers", [
     ["rhs_weap_vhsd2_bg", "", "", "rhsusf_acc_eotech_xps3", ["rhsgref_30rnd_556x45_vhs2", "rhsgref_30rnd_556x45_vhs2", "rhsgref_30rnd_556x45_vhs2"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
-    ["PRACS_UZI", "", "", "rhsusf_acc_eotech_xps3", [], [], ""],
-    ["PRACS_HK53", "", "", "rhsusf_acc_rm05", [], [], ""]
+    ["PRACS_UZI", "", "", "", ["PRACS_30rd_9mm_UZI"], [], ""],
+    ["PRACS_HK33A4", "", "", "", ["PRACS_30rd_HK33_mag"], [], ""]
 ]];
 _militiaLoadoutData set ["machineGuns", [
     ["PRACS_Mk48_STD", "", "", "", ["PRACS_100rd_Mk48_M80ball_Soft_pouch", "PRACS_100rd_Mk48_M80ball_Soft_pouch", "PRACS_100rd_Mk48_M80ball_Soft_pouch"], [], ""],

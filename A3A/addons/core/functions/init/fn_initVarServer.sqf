@@ -90,6 +90,8 @@ DECLARE_SERVER_VAR(A3A_lastGarbageCleanTime, serverTime);
 DECLARE_SERVER_VAR(A3A_arsenalLimits, createHashMap);
 //Time of last garbage clean notification
 DECLARE_SERVER_VAR(A3A_lastGarbageCleanTimeNote, serverTime);
+// Under-construction objects
+DECLARE_SERVER_VAR(A3A_unbuiltObjects, []);
 
 //Antistasi Plus variables
 
@@ -164,6 +166,7 @@ A3A_oldHQInfoOcc = [];			// arrays of [xpos, ypos, knowledge]
 A3A_oldHQInfoInv = [];
 
 // These are silly, should be nil/true and local-defined only
+A3A_buildingsToSave = [];
 cityIsSupportChanging = false;
 resourcesIsChanging = false;
 savingServer = true;					// lock out saves until this is changed
