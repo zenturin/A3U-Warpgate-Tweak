@@ -33,18 +33,22 @@
             <Key ID="STR_A3AP_buyvehdialog_medical_tent">
                 <Original>Medical Tent</Original>
                 <Russian>Медицинская палатка</Russian>
+				<Korean>의료 텐트</Korean>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_ammo_station">
                 <Original>Ammo Station</Original>
                 <Russian>Пункт боепитания</Russian>
+				<Korean>탄약고</Korean>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_repair_station">
                 <Original>Repair Station</Original>
                 <Russian>Пункт ремонта</Russian>
+				<Korean>수리소</Korean>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_medical_box">
                 <Original>Medical Box</Original>
                 <Russian>Коробка с медициной</Russian>
+				<Korean>의료 상자</Korean>
             </Key>
         </Container>
         <Container name="arsenal">
@@ -3881,10 +3885,12 @@
             <Key ID="STR_params_global_civilian_max">
                 <Original>Maximum civilians on server</Original>
                 <Russian>Максимальное количество гражданских на сервере</Russian>
+				<Korean>서버 최대 민간인 수</Korean>
             </Key>
             <Key ID="STR_params_civ_per_town">
                 <Original>Maximum civilians per town</Original>
                 <Russian>Максимальное количество гражданских на населенный пункт</Russian>
+				<Korean>마을 당 최대 민간인 수</Korean>
             </Key>
             <Key ID="STR_params_civ_traffic_none">
                 <Original>None</Original>
@@ -4009,10 +4015,12 @@
             <Key ID="STR_params_gc_threshold">
                 <Original>Garbage Cleaner Threshold for Automatic Garbage Collection (in hours)</Original>
                 <Russian>Порог активации сборщика мусора (в часах)</Russian>
+				<Korean>자동 쓰레기 청소에 대한 쓰레기 청소 프로그램 임계점 (시간)</Korean>
             </Key>
             <Key ID="STR_params_revive_time">
                 <Original>Revive time for players (in seconds)</Original>
                 <Russian>Время до поднятия игрока на ноги (в секундах)</Russian>
+				<Korean>플레이어 소생 시간 (초)</Korean>
             </Key>
             <Key ID="STR_params_antistasi_plus">
                 <Original>ANTISTASI PLUS PARAMETERS</Original>
@@ -4810,6 +4818,7 @@
                 <Original>Your Headquarters</Original>
                 <English>Your Headquarters</English>
                 <Russian>Штаб</Russian>
+				<Korean>당신의 사령부</Korean>
             </Key>
         </Container>
         <Container name="system_chats">
@@ -4914,10 +4923,12 @@
             <Key ID="STR_info_bar_undercover_break_reason_mil_items_1">
                 <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform!</Original>
                 <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме!</Russian>
+				<Korean>다음과 같은 경우에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음!</Korean>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_items_2">
                 <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform&lt;br/&gt;Enemy have added you to Wanted list!</Original>
                 <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
+				<Korean>다음과 같은 경우에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음!&lt;br/&gt;적이 당신을 수배 목록에 추가했습니다!</Korean>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_carry">
                 <Original>You're looking very suspicious while carrying military-grade items, and the enemy has noticed it.</Original>
@@ -5278,10 +5289,12 @@
             <Key ID="STR_antistasi_dialogs_at_title">
                 <Original>AT Specialist</Original>
                 <Russian>ПТ-специалист</Russian>
+				<Korean>대전차전문가</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_aa_title">
                 <Original>AA Specialist</Original>
                 <Russian>Оператор ПЗРК</Russian>
+				<Korean>대공전문가</Korean>
             </Key>
         </Container>
         <Container name="simple_menu_dialogs">
@@ -9411,18 +9424,22 @@
             <Key ID="STR_A3A_goUndercover_error_towing_ropes_head">
                 <Original>This vehicle cannot go undercover while it has tow ropes attached</Original>
                 <Russian>Эта техника не может уйти в маскировка пока к ней прикреплен буксировочный трос.</Russian>
+				<Korean>이 차량은 견인줄이 걸려 있는 동안에는 위장이 불가능합니다.</Korean>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes">
                 <Original>In vehicle with tow ropes attached</Original>
                 <Russian>В технике с прикрепленным буксировочным тросом</Russian>
+				<Korean>견인 로프가 부착된 차량일 경우</Korean>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes_2">
                 <Original>%1&lt;br/&gt;Holding tow ropes.</Original>
                 <Russian>"%1&lt;br/&gt;В руках буксировочный трос.</Russian>
+				<Korean>%1이(가)&lt;br/&gt;견인 로프를 잡고 있습니다.</Korean>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes_output">
                 <Original>Holding tow ropes</Original>
                 <Russian>Держит буксировочный трос</Russian>
+				<Korean>견인 로프를 잡는 중</Korean>
             </Key>
         </Container>
         <Container name="A3A_ai">
@@ -9795,10 +9812,12 @@
             <Key ID="STR_A3A_reinf_reinfPlayer_no_money_equip">
                 <Original>You don't have enough money to equip this type of unit.</Original>
                 <Russian>У вас недостаточно денег для экипирования данного типа юнита.</Russian>
+				<Korean>이런 종류의 유닛을 장비하는 데 필요한 자금이 부족합니다.</Korean>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_no_weapons_equip">
                 <Original>You don't have enough weapons to equip this type of unit.</Original>
                 <Russian>У вас недостаточно оружия для экипирования данного типа юнита.</Russian>
+				<Korean>이런 종류의 유닛을 장비하는 데 필요한 무기가 부족합니다.</Korean>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_full_squad">
                 <Original>Your squad is full or you have too many scattered units with no radio contact.</Original>
