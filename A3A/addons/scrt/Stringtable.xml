@@ -8519,7 +8519,7 @@
                 <Original>Unconscious</Original>
                 <Russian>Раненый</Russian>
                 <Chinesesimp>失去意识</Chinesesimp>
-                <Korean>의식불명의</Korean>
+                <Korean>의식불명</Korean>
             </Key>
         </Container>
         <Container name="player_actions">
