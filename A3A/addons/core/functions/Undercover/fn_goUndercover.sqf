@@ -1,11 +1,45 @@
+/*
+Maintainer: Wurzel0701
+    Activates undercover if possible and controls its status till undercover is broken/ended
+
+Arguments:
+    <NIL>
+
+Return Value:
+    <NIL>
+
+Scope: Local
+Environment: Scheduled
+Public: Yes
+Dependencies:
+    <HashMap> A3A_faction_civ
+    <HashMap> A3A_faction_reb
+    <ARRAY> controlsX
+    <ARRAY> airportsX
+    <ARRAY> outposts
+    <ARRAY> seaports
+    <ARRAY> undercoverVehicles
+    <BOOL> A3A_hasACE
+    <SIDE> Occupants
+    <SIDE> Invaders
+    <ARRAY> detectionAreas
+    <NAMESPACE> sidesX
+    <SIDE> teamPlayer
+    <NUMBER> aggressionOccupants
+    <NUMBER> aggressionInvaders
+    <NUMBER> tierWar
+
+Example:
+    [] call A3A_fnc_goUndercover;
+*/
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 
 private _result = [] call A3A_fnc_canGoUndercover;
 
-if(!(_result select 0)) then
+if(!(_result select 0)) exitWith
 {
-    if((_result select 1) == "Spotted by enemies") exitWith
+    if((_result select 1) == "Spotted by enemies") then
     {
         if !(isNull (objectParent player)) then
         {
