@@ -4434,6 +4434,9 @@
                 <Chinesesimp>战利品箱收集距离</Chinesesimp>
                 <Korean>전리품 수집 거리</Korean>
             </Key>
+            <Key ID="STR_params_lootCratePrice">
+                <Original>Loot crate price</Original>
+            </Key>
             <Key ID="STR_params_spawnDistance">
                 <Original>Enemy spawn distance</Original>
                 <Russian>Радиус спавна противников, событий и.т.д.</Russian>

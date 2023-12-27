@@ -18,7 +18,7 @@ private _medTent = FactionGet(reb,"vehicleHealthStation");
 private _ammoStation = FactionGet(reb,"vehicleAmmoStation");
 private _repairStation = FactionGet(reb,"vehicleRepairStation");
 private _reviveKitBox = FactionGet(reb, "reviveKitBox");
-private _lootCrate = [FactionGet(reb,"lootCrate"), 100];
+private _lootCrate = [FactionGet(reb,"lootCrate"), lootCratePrice];
 private _lightSource = [FactionGet(reb,"vehicleLightSource"), 100];
 
 private _items = [];

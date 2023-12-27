@@ -219,6 +219,13 @@ class Params
         texts[] = {"10", "25", "50", "75", "100"};
         default = 50;
     };
+    class lootCratePrice
+    {
+        title = $STR_params_lootCratePrice;
+        values[] = {100, 200, 300, 400, 500};
+        texts[] = {"100", "200", "300", "400", "500"};
+        default = 100;
+    };
     class playerIcons
     {
         title = $STR_params_playerIcons;
