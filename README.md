@@ -13,8 +13,12 @@
   </p> -->
 </div>
 
-### Latest Stable Release
+## Latest Stable Release
 **[Steam Workshop: Antistasi Ultimate](https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032)**
+
+### _Interested in Extender modding?_
+
+**[Extender Example (Ultimate)](https://github.com/Westalgie/A3UExtender)**
 
 ## [Features](https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Features)
 

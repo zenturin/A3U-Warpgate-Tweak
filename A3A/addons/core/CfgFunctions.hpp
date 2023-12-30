@@ -73,6 +73,7 @@ class CfgFunctions
             class categoryOverrides {};
             class checkRadiosUnlocked {};
             class configSort {};
+            class compatibleMagazinesWithExceptions {};
             class dress {};
             class empty {};
             class equipmentClassToCategories {};
@@ -178,6 +179,20 @@ class CfgFunctions
             class unlockVehicle {};
             class updateRebelStatics {};
             class zoneCheck {};
+        };
+
+        class Builder {
+            file = QPATHTOFOLDER(functions\Builder);
+            class addBuildingActions {};
+            class buildingComplete {};
+            class buildingPlacer {};
+            class buildingPlacerStart {};
+            class initBuildableObjects {};
+            class initBuilderMonitors {};
+            class initPlacerDB {};
+            class lockBuilderBox {};
+            class placeBuilderObjects {};
+            class processBuildingTimeouts {};
         };
 
         class Collections {

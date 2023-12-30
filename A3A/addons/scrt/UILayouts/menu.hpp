@@ -388,15 +388,15 @@ class radioComm: SimpleMenuBigger
 			action = "closeDialog 0; createDialog 'playerMoney';";
 		};
 
-		class r2Button: SimpleButton
-		{
-			idc = -1;
-			text = $STR_antistasi_dialogs_construction_menu_frame_text;
-			x = 0.477 * safezoneW + safezoneX;
-			y = 0.388 * safezoneH + safezoneY;
-			tooltip = $STR_antistasi_dialogs_construction_tooltip;
-			action = "closeDialog 0; [] call SCRT_fnc_ui_createConstructionMenu;";
-		};
+		// class r2Button: SimpleButton
+		// {
+		// 	idc = -1;
+		// 	text = $STR_antistasi_dialogs_construction_menu_frame_text;
+		// 	x = 0.477 * safezoneW + safezoneX;
+		// 	y = 0.388 * safezoneH + safezoneY;
+		// 	tooltip = $STR_antistasi_dialogs_construction_tooltip;
+		// 	action = "closeDialog 0; [] call SCRT_fnc_ui_createConstructionMenu;";
+		// };
 
 		class r3Button: SimpleButton
 		{
@@ -777,27 +777,27 @@ class constructionMenu: SimpleMenuSmall
 			h = 0.0222222 * safezoneH;
 		};
 
-		class r1Button: SimpleButton
-		{
-			idc = -1;
-			text = $STR_antistasi_dialogs_remove_construction;
-			tooltip = $STR_antistasi_dialogs_remove_construction_tooltip;
-			x = 0.477 * safezoneW + safezoneX;
-			y = 0.262 * safezoneH + safezoneY;	
-			colorBackground[] = {"0.376","0.125","0.043",0.9};
-			action = "[] spawn SCRT_fnc_ui_prepareConstructionRemoval;";
-		};
+		// class r1Button: SimpleButton
+		// {
+		// 	idc = -1;
+		// 	text = $STR_antistasi_dialogs_remove_construction;
+		// 	tooltip = $STR_antistasi_dialogs_remove_construction_tooltip;
+		// 	x = 0.477 * safezoneW + safezoneX;
+		// 	y = 0.262 * safezoneH + safezoneY;	
+		// 	colorBackground[] = {"0.376","0.125","0.043",0.9};
+		// 	action = "[] spawn SCRT_fnc_ui_prepareConstructionRemoval;";
+		// };
 
-		class r2Button: SimpleButton
-		{
-			idc = -1;
-			text = $STR_antistasi_dialogs_build;
-			x = 0.477 * safezoneW + safezoneX;
-			y = 0.346 * safezoneH + safezoneY;
-			tooltip = $STR_antistasi_dialogs_build_tooltip;
-			action = "[] call SCRT_fnc_ui_prepareConstructionBuild;";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.376])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.125])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.043])",0.9};
-		};
+		// class r2Button: SimpleButton
+		// {
+		// 	idc = -1;
+		// 	text = $STR_antistasi_dialogs_build;
+		// 	x = 0.477 * safezoneW + safezoneX;
+		// 	y = 0.346 * safezoneH + safezoneY;
+		// 	tooltip = $STR_antistasi_dialogs_build_tooltip;
+		// 	action = "[] call SCRT_fnc_ui_prepareConstructionBuild;";
+		// 	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.376])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.125])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.043])",0.9};
+		// };
 	};
 };
 

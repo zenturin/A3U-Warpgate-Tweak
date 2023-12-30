@@ -39,10 +39,10 @@ private _count = objNull;
 	};
 } forEach _magazines;
 
-private _originalWeaponsWithSimilarWeapons = [_weapons] call SCRT_fnc_arsenal_getSimilarWeapons;
-if (!isNil "_originalWeaponsWithSimilarWeapons" && {count _originalWeaponsWithSimilarWeapons > 0}) then {
-	_weapons = _originalWeaponsWithSimilarWeapons;
-};
+// private _originalWeaponsWithSimilarWeapons = [_weapons] call SCRT_fnc_arsenal_getSimilarWeapons;
+// if (!isNil "_originalWeaponsWithSimilarWeapons" && {count _originalWeaponsWithSimilarWeapons > 0}) then {
+	// _weapons = _originalWeaponsWithSimilarWeapons;
+// };
 
 [] call SCRT_fnc_trader_removeUnlockedItemsFromStock;
 

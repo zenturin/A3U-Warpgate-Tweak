@@ -103,6 +103,7 @@ if (!isServer) then {
 
 // Headless clients register with server and bail out at this point
 if (!isServer and !hasInterface) exitWith {
+    player setPosATL (markerPos respawnTeamPlayer vectorAdd [-100, -100, 0]);
     [clientOwner] remoteExecCall ["A3A_fnc_addHC",2];
 };
 
@@ -313,7 +314,7 @@ player addEventHandler ["GetInMan", {
     };
     if (!_exit) then {
         private _vehType = typeOf _veh;
-        if (_veh in undercoverVehicles) then {
+        if (_vehType in undercoverVehicles) then {
             if !(_veh getVariable ["A3A_reported", false]) then {
                 [] spawn A3A_fnc_goUndercover;
             };
@@ -568,6 +569,12 @@ mapX addAction [localize "STR_antistasi_actions_move_this_asset", A3A_fnc_moveHQ
 
 [] spawn A3A_fnc_unitTraits;
 
+// Get list of buildable objects, has map (and template?) dependency
+call A3A_fnc_initBuildableObjects;
+
+// Start cursorObject monitor loop for adding removeStructure actions
+// Note: unitTraits must run first to add engineer trait to default commander
+0 spawn A3A_fnc_initBuilderMonitors;
 
 disableSerialization;
 //1 cutRsc ["H8erHUD","PLAIN",0,false];

@@ -126,6 +126,13 @@ class Params
         texts[] = {"8","12","16","24","32"};
         default = 16;
     };
+    class A3A_builderPermissions
+    {
+        title = "Player classes permitted to use the building placer";
+        values[] = {1, 2, 3};
+        texts[] = {"Team leaders", "Engineers", "Both"};
+        default = 3;
+    };
 
     class Spacer101
     {
@@ -208,9 +215,16 @@ class Params
     class lootCrateDistance
     {
         title = $STR_params_lootCrateDistance;
-        values[] = {25, 50, 75, 100};
-        texts[] = {"25", "50", "75", "100"};
+        values[] = {10, 25, 50, 75, 100};
+        texts[] = {"10", "25", "50", "75", "100"};
         default = 50;
+    };
+    class lootCratePrice
+    {
+        title = $STR_params_lootCratePrice;
+        values[] = {100, 200, 300, 400, 500};
+        texts[] = {"100", "200", "300", "400", "500"};
+        default = 100;
     };
     class playerIcons
     {

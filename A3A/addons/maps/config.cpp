@@ -59,8 +59,10 @@ class CfgMissions
 		A3A_Mission(Staszow, "Antistasi Ultimate - Staszow")
 		A3A_Mission(StaszowWinter, "Antistasi Ultimate - Staszow Winter")
 		A3A_Mission(iron_excelsior_Tobruk, "Antistasi Ultimate - Tobruk")
+		A3A_Mission(ruha, "Antistasi Ultimate - Ruha")
 		A3A_Mission(gm_weferlingen_winter, "Antistasi Ultimate - Weferlingen Winter")
         A3A_Mission(gm_weferlingen_summer, "Antistasi Ultimate - Weferlingen Summer")
+		A3A_Mission(brf_sumava, "Antistasi Ultimate - Sumava")
 #if __A3_DEBUG__
         A3A_Mission(Stratis, $STR_antistasi_mission_info_Stratis_mapname_text)
 #endif
