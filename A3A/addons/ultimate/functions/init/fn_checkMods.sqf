@@ -16,6 +16,8 @@
 
 private _addons = [];
 
+// No point "optimising", script runs once at startup.
+
 if (["CUP_AirVehicles_Core"] call A3U_fnc_hasAddon && {["RHS_US_A2Port_Armor"] call A3U_fnc_hasAddon}) then {
     _addons pushBack localize "STR_A3AU_init_mods_warning_CUP_RHS";
 };
@@ -62,6 +64,14 @@ if (["PiR"] call A3U_fnc_hasAddon) then {
 
 if (["Werthles_WHK"] call A3U_fnc_hasAddon) then {
     _addons pushBack localize "STR_A3AU_init_mods_warning_WHK";
+};
+
+if (["jac_zeus_wargame"] call A3U_fnc_hasAddon) then {
+    _addons pushBack localize "STR_A3AU_init_mods_warning_Wargame";
+};
+
+if (["diw_armor_plates_main"] call A3U_fnc_hasAddon) then {
+    _addons pushBack localize "STR_A3AU_init_mods_warning_APS";
 };
 
 if (_addons isNotEqualTo []) exitWith {

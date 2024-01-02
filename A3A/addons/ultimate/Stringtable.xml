@@ -74,5 +74,15 @@
             <English>Werthles' Headless Module</English>
             <Russian>Werthles' Headless Module</Russian>
         </Key>
+        <Key ID="STR_A3AU_init_mods_warning_Wargame">
+            <Original>ZEUS WARGAME</Original>
+            <English>ZEUS WARGAME</English>
+            <Russian>ZEUS WARGAME</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_APS">
+            <Original>Armor Plates System</Original>
+            <English>Armor Plates System</English>
+            <Russian>Armor Plates System</Russian>
+        </Key>
     </Package>
 </Project>
