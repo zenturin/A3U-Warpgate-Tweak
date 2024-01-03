@@ -48,6 +48,10 @@ private _moneyEarned = 0;
     _lootContainer = _x;
 
     _magazines = magazineCargo _lootContainer;
+    _weaponsWithAttachments = weaponsItems _lootContainer;
+    _items = itemCargo _lootContainer;
+    _backpacks = backpackCargo _lootContainer;
+    
     if (count _magazines > 0) then {
         {
             if(_x in arrayMoney) then {
@@ -61,21 +65,18 @@ private _moneyEarned = 0;
         } forEach _magazines;
     };
 
-    _backpacks = backpackCargo _lootContainer;
     if (count _backpacks > 0) then {
         {
             _vehicle addBackpackCargoGlobal [_x, 1];
         } forEach _backpacks;
     };
 
-    _items = itemCargo _lootContainer;
     if (count _items > 0) then {
         {
             _vehicle addItemCargoGlobal [_x, 1];
         } forEach _items;
     };
 
-     _weaponsWithAttachments = weaponsItems _lootContainer;
     if (count _weaponsWithAttachments > 0) then {
         {
             _vehicle addWeaponWithAttachmentsCargoGlobal [_x, 1];
@@ -84,7 +85,14 @@ private _moneyEarned = 0;
 
     switch (true) do {
         case (_lootContainer isKindOf "Man"): {
+
             _assignedItems = assignedItems _lootContainer;
+            _lootContainerMagazines = magazines _lootContainer;
+            _vest = vest _lootContainer;
+            _headgear = headgear _lootContainer;
+            _backpack = backpack _lootContainer;
+            _lootContainerWeapons = weapons _lootContainer;
+            
             if (count _assignedItems > 0) then {
                 {
                     _vehicle addItemCargoGlobal [_x,1];
@@ -93,7 +101,6 @@ private _moneyEarned = 0;
                 } forEach _assignedItems;
             };
 
-            _lootContainerMagazines = magazines _lootContainer;
             if (count _lootContainerMagazines > 0) then {
                 {
                     if(_x in arrayMoney) then {
@@ -108,25 +115,21 @@ private _moneyEarned = 0;
                 } forEach _lootContainerMagazines;
             };
 
-            _vest = vest _lootContainer;
             if (_vest isNotEqualTo "") then {
                 _vehicle addItemCargoGlobal [_vest,1];
                 removeVest _lootContainer;
             };
 
-            _headgear = headgear _lootContainer;
             if (_headgear isNotEqualTo "") then {
                 _vehicle addItemCargoGlobal [_headgear,1];
                 removeHeadgear _lootContainer;
             };
 
-            _backpack = backpack _lootContainer;
             if (_backpack isNotEqualTo "") then {
                 _vehicle addBackpackCargoGlobal [_backpack,1];
                 removeBackpackGlobal _lootContainer;
             };
 
-            _lootContainerWeapons = weapons _lootContainer;
             if (count _lootContainerWeapons > 0) then {
                 {
                     
