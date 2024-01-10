@@ -672,4 +672,8 @@ class Templates
 
     #include "Templates\TFC\templates.hpp"
 
+    // ***************************** TMT - Turkish Forces *****************************
+
+    #include "Templates\TMT\templates.hpp"
+
 };

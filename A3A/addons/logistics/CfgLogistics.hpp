@@ -32,6 +32,7 @@ class DOUBLES(ADDON,Nodes)
 	#include "Nodes\BRAF.hpp"
 	#include "Nodes\AMF.hpp"
 	#include "Nodes\TFC.hpp"
+	#include "Nodes\TMT.hpp"
 	#include "Nodes\NFtS.hpp"
 };
 
