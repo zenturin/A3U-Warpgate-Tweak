@@ -167,9 +167,14 @@ if (_isControl) then
 		private _vehicleGet = "";
 		switch (true) do 
 		{
-			case (tierWar >= 9): // if higher or equal to 9, grab military light tank
+			private _tier9Vehicle = (_faction getOrDefault ["vehiclesLightTanks", []]);
+			if (_tier9Vehicle isEqualTo []) then {
+				_tier9Vehicle = "vehiclesAirborne";
+			};
+
+			case (tierWar >= 9): // if higher or equal to 9, grab military light tank (or airborne, if light tank not found)
 			{
-				_vehicleGet = "vehiclesLightTanks";
+				_vehicleGet = _tier9Vehicle;
 			};
 			case (tierWar >= 6): // if higher or equal to 6, grab military APC
 			{
