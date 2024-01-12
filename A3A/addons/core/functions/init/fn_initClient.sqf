@@ -648,10 +648,14 @@ if (["WBK_IMS_ANIMS_2"] call A3U_fnc_hasAddon) then {
     [player] call A3U_fnc_IMS_stealthKill;
 };
 
-if (fatigueEnabled) then {
-    player enableFatigue false;
-};
-
-if (staminaEnabled) then {
-    player enableStamina false;
+if (fatigueEnabled isEqualTo false) then { 
+	player enableFatigue false; 
+}; 
+ 
+if (staminaEnabled isEqualTo false) then { 
+	player enableStamina false; 
+}; 
+ 
+if (swayEnabled isEqualTo false) then { 
+	player setCustomAimCoef 0; 
 };

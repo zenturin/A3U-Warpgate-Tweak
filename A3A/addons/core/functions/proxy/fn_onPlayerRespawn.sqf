@@ -218,10 +218,14 @@ if (side group player == teamPlayer) then
 	if (A3A_hasACE) then {[] call A3A_fnc_ACEpvpReDress};
 };
 
-if (fatigueEnabled) then {
-    player enableFatigue false;
-};
-
-if (staminaEnabled) then {
-    player enableStamina false;
+if (fatigueEnabled isEqualTo false) then { 
+	player enableFatigue false; 
+}; 
+ 
+if (staminaEnabled isEqualTo false) then { 
+	player enableStamina false; 
+}; 
+ 
+if (swayEnabled isEqualTo false) then { 
+	player setCustomAimCoef 0; 
 };
