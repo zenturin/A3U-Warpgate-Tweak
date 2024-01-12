@@ -5,7 +5,7 @@ params ["_newUnit","_oldUnit"];
 
 if (isNull _oldUnit) exitWith {};
 
-waitUntil {alive player};
+waitUntil {alive _newUnit};
 
 //When LAN hosting, Bohemia's Zeus module code will cause the player lose Zeus access if the body is deleted after respawning.
 //This is a workaround that re-assigns curator to the player if their body is deleted.
@@ -15,7 +15,7 @@ if (isServer) then {
 		[] spawn {
 			sleep 1;		// should ensure that the bug unassigns first
 			{ player assignCurator _x } forEach allCurators;
-		}
+		};
 	}];
 };
 
@@ -25,7 +25,7 @@ removeAllActions _oldUnit;
 _oldUnit setVariable ["incapacitated",false,true];
 _newUnit setVariable ["incapacitated",false,true];
 
-if (side group player == teamPlayer) then
+if (side group _newUnit == teamPlayer) then
 {
 	_owner = _oldUnit getVariable ["owner",_oldUnit];
 
@@ -68,7 +68,7 @@ if (side group player == teamPlayer) then
 		if (_x getVariable ["owner", ObjNull] == _oldUnit) then {
 			_x setVariable ["owner", _newUnit, true];
 		};
-	} forEach (units group player);
+	} forEach (units group _newUnit);
 
 
 	disableUserInput false;
@@ -80,11 +80,12 @@ if (side group player == teamPlayer) then
 	_newUnit setUnitLoadout [[],[],[],[selectRandom ((A3A_faction_civ get "uniforms") + (A3A_faction_reb get "uniforms")), []],[],[],[],"",[],
 	[(selectRandom unlockedmaps),"","",(selectRandom unlockedCompasses),(selectRandom unlockedwatches),""]];
 
-	if (!isPlayer (leader group player)) then {(group player) selectLeader player};
-	player addEventHandler ["FIRED", {
+	if (!isPlayer (leader group _newUnit)) then {(group _newUnit) selectLeader _newUnit};
+	_newUnit addEventHandler ["FIRED", 
+	{
 		_player = _this select 0;
 		if (captive _player) then {
-			if ({if (((side _x == Occupants) or (side _x == Invaders)) and (_x distance player < 300)) exitWith {1}} count allUnits > 0) then
+			if ({if (((side _x == Occupants) or (side _x == Invaders)) and (_x distance _player < 300)) exitWith {1}} count allUnits > 0) then
 			{
 				[_player,false] remoteExec ["setCaptive",0,_player];
 				_player setCaptive false;
@@ -110,13 +111,13 @@ if (side group player == teamPlayer) then
 		};
 	}];
 
-	player addEventHandler ["InventoryOpened",
+	_newUnit addEventHandler ["InventoryOpened",
 	{
 		private ["_playerX","_containerX","_typeX"];
 		_control = false;
 		_playerX = _this select 0;
 		if (captive _playerX) then
-			{
+		{
 			_containerX = _this select 1;
 			_typeX = typeOf _containerX;
 			if (((_containerX isKindOf "CAManBase") and (!alive _containerX)) or (_typeX in [A3A_faction_occ get "ammobox", A3A_faction_inv get "ammobox"])) then
@@ -146,15 +147,15 @@ if (side group player == teamPlayer) then
 	}];
 
 	if (hasInterface) then {
-		[player] call A3A_fnc_punishment_FF_addEH;
+		[_newUnit] call A3A_fnc_punishment_FF_addEH;
 		[] spawn A3A_fnc_outOfBounds;
 	};
-	player addEventHandler ["HandleHeal",
+	_newUnit addEventHandler ["HandleHeal",
 	{
 		_player = _this select 0;
 		if (captive _player) then
 		{
-			if ({((side _x== Invaders) or (side _x== Occupants)) and (_x knowsAbout player > 1.4)} count allUnits > 0) then
+			if ({((side _x== Invaders) or (side _x== Occupants)) and (_x knowsAbout _player > 1.4)} count allUnits > 0) then
 			{
 				[_player,false] remoteExec ["setCaptive",0,_player];
 				_player setCaptive false;
@@ -175,7 +176,7 @@ if (side group player == teamPlayer) then
 			};
 		}
 	}];
-	player addEventHandler ["WeaponAssembled",
+	_newUnit addEventHandler ["WeaponAssembled",
 	{
 		private _veh = _this select 1;
 		[_veh, teamPlayer] call A3A_fnc_AIVEHinit;		// will flip/capture if already initialized
@@ -191,7 +192,7 @@ if (side group player == teamPlayer) then
 			};
 		};
 	}];
-	player addEventHandler ["WeaponDisassembled",
+	_newUnit addEventHandler ["WeaponDisassembled",
 	{
 		_bag1 = _this select 1;
 		_bag2 = _this select 2;
@@ -200,7 +201,7 @@ if (side group player == teamPlayer) then
 	}];
 
 	if (areRivalsDiscovered) then {
-		player addEventHandler ["Killed", {
+		_newUnit addEventHandler ["Killed", {
 			params ["_unit", "_killer", "_instigator", "_useEffects"];
 			if (_killer getVariable ["isRival", false]) then {
 				[-5, 60] remoteExec ["SCRT_fnc_rivals_reduceActivity",2];
@@ -214,18 +215,18 @@ if (side group player == teamPlayer) then
 } else {
 	_oldUnit setVariable ["spawner",nil,true];
 	_newUnit setVariable ["spawner",true,true];
-	[player] call A3A_fnc_dress;
+	[_newUnit] call A3A_fnc_dress;
 	if (A3A_hasACE) then {[] call A3A_fnc_ACEpvpReDress};
 };
 
 if (fatigueEnabled isEqualTo false) then { 
-	player enableFatigue false; 
+	_newUnit enableFatigue false; 
 }; 
  
 if (staminaEnabled isEqualTo false) then { 
-	player enableStamina false; 
+	_newUnit enableStamina false; 
 }; 
  
 if (swayEnabled isEqualTo false) then { 
-	player setCustomAimCoef 0; 
+	_newUnit setCustomAimCoef 0; 
 };
