@@ -164,7 +164,7 @@ private _data = [];
 
             if (count _lootContainerWeapons > 0) then {
                 {
-                    if (lootCrateUnlockedItems && {_x in _unlockedWeapons}) exitWith {};
+                    if (lootCrateUnlockedItems && {_x in unlockedWeapons}) exitWith {};
                     _vehicle addWeaponCargoGlobal [_x, 1];
                     _lootContainer removeWeaponGlobal _x;
                 } forEach _lootContainerWeapons;
