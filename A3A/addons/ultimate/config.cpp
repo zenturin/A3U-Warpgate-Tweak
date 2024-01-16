@@ -161,6 +161,8 @@ class scr536_radio_dialog
     };
 };
 
+// to-do: move the radio stuff into a seperate folder inside patches, let arma load it as its own addon
+
 class A3U
 {
     #include "config\plane\cfgPlaneLoadouts.hpp"

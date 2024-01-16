@@ -226,6 +226,13 @@ class Params
         texts[] = {"100", "200", "300", "400", "500"};
         default = 100;
     };
+    class lootCrateUnlockedItems
+    {
+        title = $STR_params_lootCrateUnlockedItems;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
+    };
     class playerIcons
     {
         title = $STR_params_playerIcons;

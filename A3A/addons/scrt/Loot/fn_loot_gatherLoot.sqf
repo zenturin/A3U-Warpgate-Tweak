@@ -44,6 +44,8 @@ if(_supplies isEqualTo []) exitWith {
 
 private _moneyEarned = 0;
 
+private _data = [];
+
 {
     _lootContainer = _x;
 
@@ -51,12 +53,26 @@ private _moneyEarned = 0;
     _weaponsWithAttachments = weaponsItems _lootContainer;
     _items = itemCargo _lootContainer;
     _backpacks = backpackCargo _lootContainer;
+
+    if (lootCrateUnlockedItems) then {
+
+        _data = [_magazines, _weaponsWithAttachments, _items, _backpacks];
+
+        private _unlocked = [_data] call a3u_fnc_removeUnlockedItems;
+
+        // redefine vars minus returned _data, to refresh array
+        _magazines = _magazines - _unlocked;
+        _weaponsWithAttachments = _weaponsWithAttachments - _unlocked;
+        _items = _items - _unlocked;
+        _backpacks = _backpacks - _unlocked;
+
+    };
     
     if (count _magazines > 0) then {
         {
             if(_x in arrayMoney) then {
-               _moneyIndex = arrayMoney find _x;
-               if(_moneyIndex isNotEqualTo -1) then {
+                _moneyIndex = arrayMoney find _x;
+                if (_moneyIndex isNotEqualTo -1) then {
                     _moneyEarned = _moneyEarned + (arrayMoneyAmount select _moneyIndex);
                 };
             } else {
@@ -92,6 +108,19 @@ private _moneyEarned = 0;
             _headgear = headgear _lootContainer;
             _backpack = backpack _lootContainer;
             _lootContainerWeapons = weapons _lootContainer;
+
+            if (lootCrateUnlockedItems) then {
+
+                _data = [_assignedItems, _lootContainerMagazines, _lootContainerWeapons];
+            
+                private _unlocked = [_data] call a3u_fnc_removeUnlockedItems;
+
+                // redefine vars minus returned _data, to refresh array
+                _assignedItems = _assignedItems - _unlocked;
+                _lootContainerMagazines = _lootContainerMagazines - _unlocked;
+                _lootContainerWeapons = _lootContainerWeapons - _unlocked;
+
+            };
             
             if (count _assignedItems > 0) then {
                 {
@@ -103,7 +132,7 @@ private _moneyEarned = 0;
 
             if (count _lootContainerMagazines > 0) then {
                 {
-                    if(_x in arrayMoney) then {
+                    if (_x in arrayMoney) then {
                         _moneyIndex = arrayMoney find _x;
                         if(_moneyIndex isNotEqualTo -1) then {
                             _moneyEarned = _moneyEarned + (arrayMoneyAmount select _moneyIndex);
@@ -116,23 +145,26 @@ private _moneyEarned = 0;
             };
 
             if (_vest isNotEqualTo "") then {
+                if (lootCrateUnlockedItems && {_vest in unlockedVests}) exitWith {};
                 _vehicle addItemCargoGlobal [_vest,1];
                 removeVest _lootContainer;
             };
 
             if (_headgear isNotEqualTo "") then {
+                if (lootCrateUnlockedItems && {_headgear in unlockedHeadgear}) exitWith {};
                 _vehicle addItemCargoGlobal [_headgear,1];
                 removeHeadgear _lootContainer;
             };
 
             if (_backpack isNotEqualTo "") then {
+                if (lootCrateUnlockedItems && {_backpack in unlockedBackpacks}) exitWith {};
                 _vehicle addBackpackCargoGlobal [_backpack,1];
                 removeBackpackGlobal _lootContainer;
             };
 
             if (count _lootContainerWeapons > 0) then {
                 {
-                    
+                    if (lootCrateUnlockedItems && {_x in _unlockedWeapons}) exitWith {};
                     _vehicle addWeaponCargoGlobal [_x, 1];
                     _lootContainer removeWeaponGlobal _x;
                 } forEach _lootContainerWeapons;
