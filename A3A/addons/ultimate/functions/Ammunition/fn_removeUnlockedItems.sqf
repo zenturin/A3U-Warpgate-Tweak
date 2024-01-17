@@ -30,7 +30,7 @@ private _unlocks = (unlockedHeadgear + unlockedVests + unlockedNVGs + unlockedOp
 
     {
         private _item = _x;
-        if (typeName _item isEqualTo "ARRAY") then {
+        if (_item isEqualType []) then {
             // diag_log format["Test: %1", _item];
             _originalItem = _item;
             _item = _item select 0;
@@ -47,6 +47,7 @@ private _unlocks = (unlockedHeadgear + unlockedVests + unlockedNVGs + unlockedOp
             };
         } forEach _unlocks;
 
+        // Weapons are weird due to how they are stored, and would conflict with the standard items
         {
             if (_originalItem in _indexed) exitWith {}; // element is already indexed, ignore
             if (_item in _x) then {
