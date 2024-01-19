@@ -24,6 +24,7 @@ class NavGrid {
 	tem_anizay = QPATHTOFOLDER(Antistasi_tem_anizay.tem_anizay\navGrid.sqf);
 	SPE_Normandy = QPATHTOFOLDER(Antistasi_SPE_Normandy.SPE_Normandy\navGrid.sqf);
 	lingor3 = QPATHTOFOLDER(Antistasi_lingor3.lingor3\navGrid.sqf);
+	lythium = QPATHTOFOLDER(Antistasi_lythium.lythium\navGrid.sqf);
 	Panthera3 = QPATHTOFOLDER(Antistasi_Panthera3.Panthera3\navGrid.sqf);
 	Winthera3 = QPATHTOFOLDER(Antistasi_Winthera3.Winthera3\navGrid.sqf);
 	abramia = QPATHTOFOLDER(Antistasi_abramia.abramia\navGrid.sqf);

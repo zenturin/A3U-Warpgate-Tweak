@@ -58,6 +58,23 @@
                 <Chinesesimp>无论我们愿不愿意, 我们都卷入了一场关于与阿尔蒂斯占领者的战争。</Chinesesimp>
                 <Korean>우리가 원했든 원하지 않았든, 우린 알티스의 점령군들과 침략자와의 전쟁을 시작했습니다.</Korean>
             </Key>
+            <Key ID="STR_antistasi_mission_info_Lythium_mapname_short_text">
+                <Original>Antistasi Ultimate - Lythium</Original>
+                <Russian>Antistasi Ultimate - Lythium</Russian>
+                <Chinesesimp>Antistasi Ultimate - Lythium</Chinesesimp>
+                <Korean>안티스타시 플러스 - Lythium</Korean>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_Lythium_mapname_text">
+                <Original>Antistasi Ultimate - Lythium</Original>
+                <Chinesesimp>Antistasi Ultimate - Lythium</Chinesesimp>
+                <Russian>Antistasi Ultimate - Lythium</Russian>
+                <Korean>안티스타시 플러스 - Lythium</Korean>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_Lythium_blurb_text">
+                <Original>Whether we wanted it or not, we stepped into a war with occupants and invaders on Lythium.</Original>
+                <Russian>Хотим мы того или нет, но мы начали войну против оккупантов и захвачтиков Lythium.</Russian>
+                <German>Ob wir es wollten oder nicht, wir traten in einen Krieg mit Besatzern auf Lythium.</German>
+            </Key>
             <Key ID="STR_antistasi_mission_info_Stratis_mapname_short_text">
                 <Original>Antistasi Stratis</Original>
                 <French>Antistasi Stratis</French>
