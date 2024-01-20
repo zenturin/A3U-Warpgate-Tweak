@@ -53,7 +53,7 @@ class lythium
 	};
 	disabledTowns[] = {"MilitaryBase02", "MilitaryBase03", "MilitaryBase06", "MilitaryBase08", "puestocrow", "puestovulcan", "pelotoncampbase", "martinfob", "mikisfob", "greencaampbase", "ibancampbase", "kinduffactory", "kinduf"};
 	antennas[] = {
-		{14451.5,16338,0.000354767}
+		{16207.7,19631.8,0.898682},{13740.9,9353.18,-1.15576},{2981.66,9053.11,-0.42218},{8585.65,7038.04,-0.320374},{12328.4,5381.54,0}
 	};
 	antennasBlacklistIndex[] = {};
 	banks[] = {
@@ -67,7 +67,7 @@ class lythium
 		"Land_FuelStation_Feed_F","Land_fs_feed_F","Land_FuelStation_01_pump_malevil_F","Land_FuelStation_01_pump_F","Land_FuelStation_02_pump_F","Land_FuelStation_03_pump_F"
 	};
 	milAdministrations[] = {
-		{11308,6737.23,1.90735e-006},{4962.55,10639.8,-3.05176e-005},{9645.47,14027.3,-3.05176e-005},{1315.08,14302.8,0}
+		{4962.55,10639.8,-3.05176e-005},{9645.47,14027.3,-3.05176e-005},{1315.08,14302.8,0}
 	};
 	climate = "arid";
 	buildObjects[] = {
