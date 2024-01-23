@@ -50,6 +50,7 @@ class CfgMissions
 		A3A_Mission(tem_anizay, "Antistasi Ultimate - Anizay")
 		A3A_Mission(SPE_Normandy, "Antistasi Ultimate - Normandy")
 		A3A_Mission(lingor3, "Antistasi Ultimate - Lingor")
+		A3A_Mission(lythium, "Antistasi Ultimate - Lythium")
 		A3A_Mission(Panthera3, "Antistasi Ultimate - Panthera")
 		A3A_Mission(Winthera3, "Antistasi Ultimate - Panthera Winter")
 		A3A_Mission(abramia, "Antistasi Ultimate - Isla Abramia")
