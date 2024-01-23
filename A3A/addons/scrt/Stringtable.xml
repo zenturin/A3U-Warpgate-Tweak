@@ -4437,6 +4437,9 @@
             <Key ID="STR_params_lootCratePrice">
                 <Original>Loot crate price</Original>
             </Key>
+            <Key ID="STR_params_lootCrateUnlockedItems">
+                <Original>Loot crate ignore unlocked items</Original>
+            </Key>
             <Key ID="STR_params_spawnDistance">
                 <Original>Enemy spawn distance</Original>
                 <Russian>Радиус спавна противников, событий и.т.д.</Russian>
