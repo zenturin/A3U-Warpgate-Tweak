@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=912;
+		nextID=1104;
 	};
 	class Camera
 	{
 		pos[]={13151.321,480.81433,4389.7788};
-		dir[]={0.893062,-0.35067129,0.28195536};
-		up[]={0.33441791,0.93649149,0.10558117};
-		aside[]={0.30107218,2.5099143e-007,-0.95361346};
+		dir[]={0.56415695,-0.76410174,0.31285059};
+		up[]={0.66823149,0.64509577,0.37056464};
+		aside[]={0.48496771,0,-0.8745321};
 	};
 };
 binarizationWanted=0;
@@ -183,15 +183,10 @@ dlcs[]=
 randomSeed=619182;
 class ScenarioData
 {
-	author="Silence";
-	saving=0;
+	author="Antistasi Ultimate Dev Team";
 	disabledAI=1;
-	class Header
-	{
-		gameType="ANTI";
-		minPlayers=1;
-		maxPlayers=38;
-	};
+	respawn=3;
+	respawnDelay=15.000001;
 };
 class CustomAttributes
 {
@@ -215,7 +210,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="STRING";
-								value="None";
+								value="Counter";
 							};
 						};
 					};
@@ -249,7 +244,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="SCALAR";
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -260,6 +255,7 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="Antistasi Ultimate - Lythium";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
@@ -1044,7 +1040,7 @@ class Mission
 									colorName="ColorGreen";
 									a=10;
 									b=10;
-									angle=207.00632;
+									angle=207.00624;
 									id=1725;
 								};
 								class Item1
@@ -1422,7 +1418,7 @@ class Mission
 									colorName="ColorGreen";
 									a=10;
 									b=10;
-									angle=114.22717;
+									angle=114.22715;
 									id=1432;
 								};
 								class Item1
@@ -1557,7 +1553,7 @@ class Mission
 									colorName="ColorBlue";
 									a=15;
 									b=15;
-									angle=56.17601;
+									angle=56.176006;
 									id=1592;
 								};
 								class Item1
