@@ -54,7 +54,7 @@ private _data = [];
     _items = itemCargo _lootContainer;
     _backpacks = backpackCargo _lootContainer;
 
-    if (lootCrateUnlockedItems) then {
+    if ((lootCrateUnlockedItems isEqualTo true)) then {
 
         _data = [_magazines, _weaponsWithAttachments, _items, _backpacks];
 
@@ -109,7 +109,7 @@ private _data = [];
             _backpack = backpack _lootContainer;
             _lootContainerWeapons = weapons _lootContainer;
 
-            if (lootCrateUnlockedItems) then {
+            if ((lootCrateUnlockedItems isEqualTo true)) then {
 
                 _data = [_assignedItems, _lootContainerMagazines, _lootContainerWeapons];
             
@@ -145,26 +145,26 @@ private _data = [];
             };
 
             if (_vest isNotEqualTo "") then {
-                if (lootCrateUnlockedItems && {_vest in unlockedVests}) exitWith {};
+                if ((lootCrateUnlockedItems isEqualTo true) && {_vest in unlockedVests}) exitWith {};
                 _vehicle addItemCargoGlobal [_vest,1];
                 removeVest _lootContainer;
             };
 
             if (_headgear isNotEqualTo "") then {
-                if (lootCrateUnlockedItems && {_headgear in unlockedHeadgear}) exitWith {};
+                if ((lootCrateUnlockedItems isEqualTo true) && {_headgear in unlockedHeadgear}) exitWith {};
                 _vehicle addItemCargoGlobal [_headgear,1];
                 removeHeadgear _lootContainer;
             };
 
             if (_backpack isNotEqualTo "") then {
-                if (lootCrateUnlockedItems && {_backpack in unlockedBackpacks}) exitWith {};
+                if ((lootCrateUnlockedItems isEqualTo true) && {_backpack in unlockedBackpacks}) exitWith {};
                 _vehicle addBackpackCargoGlobal [_backpack,1];
                 removeBackpackGlobal _lootContainer;
             };
 
             if (count _lootContainerWeapons > 0) then {
                 {
-                    if (lootCrateUnlockedItems && {_x in unlockedWeapons}) exitWith {};
+                    if ((lootCrateUnlockedItems isEqualTo true) && {_x in unlockedWeapons}) exitWith {};
                     _vehicle addWeaponCargoGlobal [_x, 1];
                     _lootContainer removeWeaponGlobal _x;
                 } forEach _lootContainerWeapons;
