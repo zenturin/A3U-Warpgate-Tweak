@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1;
 	class ItemIDProvider
 	{
 		nextID=2726;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=217;
+		nextID=226;
 	};
 	class Camera
 	{
-		pos[]={17918.893,117.74847,9100.1924};
-		dir[]={0.21855596,-0.70481592,0.67488587};
-		up[]={0.21714626,0.70938927,0.67053246};
-		aside[]={0.9513582,-6.01176e-008,-0.3080889};
+		pos[]={12462.323,244.33713,18870.266};
+		dir[]={-0.29925072,-0.6590535,0.69000041};
+		up[]={-0.26222998,0.75209409,0.60463905};
+		aside[]={0.91743493,-2.3719622e-008,0.39788863};
 	};
 };
 binarizationWanted=0;
@@ -259,7 +259,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=210;
+		items=209;
 		class Item0
 		{
 			dataType="Marker";
@@ -803,7 +803,7 @@ class Mission
 					type="rectangle";
 					a=428.56769;
 					b=572.02759;
-					angle=1.7248777;
+					angle=1.7248776;
 					id=2372;
 					atlOffset=-5.9803352;
 				};
@@ -1105,7 +1105,7 @@ class Mission
 					type="rectangle";
 					a=259.33313;
 					b=62.431732;
-					angle=269.67114;
+					angle=269.67111;
 					id=2690;
 					atlOffset=-0.61199951;
 				};
@@ -1644,7 +1644,7 @@ class Mission
 					colorName="ColorGreen";
 					a=10;
 					b=10;
-					angle=162.68199;
+					angle=162.68198;
 					id=2550;
 					atlOffset=-0.00010681152;
 				};
@@ -1672,7 +1672,7 @@ class Mission
 					colorName="ColorGreen";
 					a=10;
 					b=10;
-					angle=184.26299;
+					angle=184.26297;
 					id=2553;
 					atlOffset=0.00018310547;
 				};
@@ -1699,7 +1699,7 @@ class Mission
 					colorName="ColorGreen";
 					a=10;
 					b=10;
-					angle=162.68199;
+					angle=162.68198;
 					id=2559;
 					atlOffset=0.00015830994;
 				};
@@ -1713,7 +1713,7 @@ class Mission
 					colorName="ColorGreen";
 					a=10;
 					b=10;
-					angle=91.431992;
+					angle=91.431984;
 					id=2562;
 					atlOffset=-0.00029754639;
 				};
@@ -1932,7 +1932,7 @@ class Mission
 					colorName="ColorWEST";
 					a=127.9091;
 					b=99.523102;
-					angle=0.055634439;
+					angle=0.055634435;
 					id=2582;
 				};
 				class Item12
@@ -22629,7 +22629,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351999;
 					b=12.158;
-					angle=89.031631;
+					angle=89.031624;
 					id=2633;
 				};
 				class Item9
@@ -22695,7 +22695,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=222.39996;
+					angle=222.39995;
 					id=2696;
 				};
 				class Item14
@@ -22708,7 +22708,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=55.421883;
+					angle=55.421879;
 					id=2700;
 					atlOffset=0.75766754;
 				};
@@ -23159,7 +23159,7 @@ class Mission
 			colorName="ColorPink";
 			a=50;
 			b=50;
-			angle=210.3663;
+			angle=210.36629;
 			id=2386;
 		};
 		class Item105
@@ -23170,7 +23170,7 @@ class Mission
 			text="Your Headquarters";
 			type="hd_flag";
 			colorName="ColorGUER";
-			angle=210.3663;
+			angle=210.36629;
 			id=2387;
 		};
 		class Item106
@@ -25926,49 +25926,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17372.881,43.207211,3274.3684};
-			};
-			areaSize[]={5,-1,5};
-			flags=1;
-			id=2707;
-			type="ModuleHideTerrainObjects_F";
-			atlOffset=-4.5776367e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="#filter";
-					expression="_this setVariable [""#filter"",_value]";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=15;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="#hideLocally";
-					expression="_this setVariable [""#hideLocally"",_value]";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=1;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item203
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={17724.615,30.68,3500.0942};
 			};
 			areaSize[]={5,-1,5};
@@ -26006,7 +25963,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item204
+		class Item203
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -26048,7 +26005,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item205
+		class Item204
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -26090,7 +26047,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item206
+		class Item205
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -26132,7 +26089,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item207
+		class Item206
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -26174,7 +26131,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item208
+		class Item207
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -26216,7 +26173,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item209
+		class Item208
 		{
 			dataType="Logic";
 			class PositionInfo
