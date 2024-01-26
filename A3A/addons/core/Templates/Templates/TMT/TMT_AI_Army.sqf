@@ -86,8 +86,8 @@
 ///  Identities   ///
 /////////////////////
 
-["faces", ["WhiteHead_01","WhiteHead_02","WhiteHead_03","PersianHead_A3_01","PersianHead_A3_02","PersianHead_A3_03"]] call _fnc_saveToTemplate;
-["voices", ["CUP_D_Male01_TK","CUP_D_Male02_TK","CUP_D_Male03_TK","CUP_D_Male04_TK","CUP_D_Male05_TK"]] call _fnc_saveToTemplate; // idk what voices to use, so takistani? feel free to correct it
+["faces", ["WhiteHead_01","WhiteHead_02","WhiteHead_03","WhiteHead_04","WhiteHead_05","WhiteHead_06"]] call _fnc_saveToTemplate;
+["voices", ["Male01ENG","Male02ENG","Male03ENG","Male04ENG","Male05ENG","Male06ENG"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
@@ -158,6 +158,8 @@ _loadoutData set ["helmets", []];
 _loadoutData set ["slHat", ["TMT_Beret_black"]];
 _loadoutData set ["sniHats", ["TMT_Beret_black"]];
 
+_loadoutData set ["glasses", ["tmt_tacticalglasses_clear"]];
+
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies];
 _loadoutData set ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies];
@@ -198,43 +200,44 @@ _loadoutData set ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData set ["uniforms", ["tmt_specialforces_combat_uniform_gloves", "tmt_specialforces_combat_uniform_gloves_kneepad", "tmt_specialforces_combat_kn_sfshell_uniform"]];
+_sfLoadoutData set ["uniforms", ["tmt_specialforces_combat_uniform_gloves_kneepad", "tmt_specialforces_combat_uniform_gloves"]];
 _sfLoadoutData set ["vests", ["TACTEC", "TACTEC_full", "TACTEC_medium"]];
-_sfLoadoutData set ["mgVests", ["TMT_Gendarme_WarriorAssaultVest_MG"]];
-_sfLoadoutData set ["medVests", ["TMT_Gendarme_WarriorAssaultVest_Medic_Belt"]];
-_sfLoadoutData set ["glVests", ["TMT_Gendarme_WarriorAssaultVest_556_Sling"]];
-_sfLoadoutData set ["backpacks", ["tmt_backpack_compact_ozkk", "tmt_backpack_compact_ozkk_base"]];
+_sfLoadoutData set ["mgVests", ["TMT_TAN_WarriorAssaultVest_MG_belt"]];
+_sfLoadoutData set ["medVests", ["TMT_TAN_WarriorAssaultVest_Medic_Belt"]];
+_sfLoadoutData set ["glVests", ["TMT_TAN_WarriorAssaultVest_556_Belt"]];
+_sfLoadoutData set ["backpacks", ["tmt_patrolpack_set", "tmt_patrolpack"]];
 _sfLoadoutData set ["slBackpacks", ["tmt_patrolpack_radio"]];
-_sfLoadoutData set ["atBackpacks", ["tmt_patrolpack"]];
-_sfLoadoutData set ["helmets", ["tmt_garanti_helmet_cut_cover_peltor_sof", "tmt_garanti_helmet_cut_cover_sof"]];
-_sfLoadoutData set ["slHat", ["tmt_garanti_helmet_cut_cover_peltor_IR_full_sof"]];
-_sfLoadoutData set ["sniHats", ["tmt_garanti_helmet_cut_cover_rac_IR_full_sof"]];
-_sfLoadoutData set ["NVGs", ["TMT_GPNVG"]];
+_sfLoadoutData set ["atBackpacks", ["tmt_tacticalpack_tan"]];
+_sfLoadoutData set ["helmets", ["tmt_garanti_helmet_cut_cover_peltor_IR_sof", "tmt_garanti_helmet_cut_cover_peltor_IR_full_sof"]];
+_sfLoadoutData set ["slHat", ["tmt_garanti_helmet_cut_cover_rac_IR_full_sof"]];
+_sfLoadoutData set ["sniHats", ["tmt_garanti_helmet_cut_cover_peltor_IR_full_sof"]];
+_sfLoadoutData set ["NVGs", ["TMT_GPNVG", "CUP_NVG_GPNVG_black"]];
 _sfLoadoutData set ["binoculars", ["CUP_Vector21Nite"]];
+
+_sfLoadoutData set ["glasses", [
+    "tmt_tacticalglasses_buff_sof",
+    "tmt_tacticalglasses_shamagh_filet_sof",
+    "tmt_buff_sof"
+]];
 
 _sfLoadoutData set ["slRifles", [
     ["TMT_KCR556_TAN_11_Grip", "", "tmt_anpeq16black_m952", "CUP_optic_ACOG_TA01B_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
     ["TMT_KCR556_TAN_11_KGL40", "", "tmt_anpeq15black_m952", "CUP_optic_CompM2_Black", ["TMT_30Rnd_Lancer_Mag"], ["1Rnd_HE_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "UGL_FlareRed_F"], ""],
-    ["TMT_MPT55_grip", "", "tmt_anpeq15black_m952", "CUP_optic_G33_HWS_BLK", ["TMT_30Rnd_Lancer_Mag"], [], ""],
-    ["TMT_MPT55_K", "", "tmt_anpeq15black_m952", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
-    ["TMT_M4_Carbine_Gasblock_Grip", "", "CUP_acc_ANPEQ_15_Top_Flashlight_Black_L", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_STANAG_Mag"], [], ""]
+    ["TMT_HK416_14_5_alt_RAL", "", "tmt_anpeq16tan_m952", "TMT_EOTechxps3_t", ["TMT_30Rnd_STANAG_PULL_Mag"], [], ""],
+    ["TMT_HK416_14_5_alt_RAL_Gripod", "", "tmt_anpeq16tan_m952", "TMT_EOTechxps3_t_magnifier_open", ["TMT_30Rnd_STANAG_PULL_Mag"], [], ""]
 ]];
 _sfLoadoutData set ["rifles", [  
-    ["TMT_HK416_14_5_Black", "", "tmt_anpeq15black_top", "TMT_EOTechxps3_b", ["TMT_30Rnd_STANAG_Mag"], [], ""],
-    ["TMT_KCR556_BLK_11", "", "", "CUP_optic_AC11704_Black", ["TMT_30Rnd_STANAG_Mag"], [], ""],
-    ["TMT_M4A1_Grip", "", "", "CUP_optic_MicroT1", ["TMT_30Rnd_STANAG_Mag"], [], ""],
-    ["TMT_SIG516_Grip", "", "", "CUP_optic_Elcan_SpecterDR_black", ["TMT_30Rnd_STANAG_PULL_Mag"], [], ""]
+    ["TMT_HK416_14_5_RAL", "", "tmt_anpeq15black_top", "TMT_EOTechxps3_b", ["TMT_30Rnd_STANAG_Mag"], [], ""],
+    ["TMT_HK416_14_5_RAL_Gripod", "", "tmt_anpeq15black_top", "TMT_EOTechxps3_t_magnifier_open", ["TMT_30Rnd_STANAG_Mag"], [], ""]
 ]];
 _sfLoadoutData set ["carbines", [  
-    ["TMT_MPT55_K", "", "", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
-    ["TMT_MPT55_K_grip", "", "", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
-    ["TMT_KCR556_BLK_7_5", "", "", "TMT_EOTechxps3_b", ["TMT_30Rnd_Lancer_Mag"], [], ""],
-    ["TMT_KCR556_BLK_7_5_Grip", "", "", "TMT_EOTechxps3_b", ["TMT_30Rnd_Lancer_Mag"], [], ""]
+    ["TMT_HK416_11_RAL", "", "", "CUP_optic_Eotech553_Coyote", ["TMT_30Rnd_STANAG_Mag"], [], ""],
+    ["TMT_HK416_11_RAL_Gripod", "", "", "CUP_optic_Eotech553_Coyote", ["TMT_30Rnd_STANAG_Mag"], [], ""]
 ]];
 _sfLoadoutData set ["grenadeLaunchers", [
-    ["TMT_KCR556_BLK_11_KGL40", "", "CUP_acc_ANPEQ_2_Black_Top", "CUP_optic_ACOG2", ["TMT_30Rnd_Lancer_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_SmokeGreen_Grenade_shell"], ""],
-    ["TMT_HK416_M320_14_5_Black", "", "CUP_acc_ANPEQ_2_Black_Top", "CUP_optic_Elcan_SpecterDR_black", ["TMT_30Rnd_Lancer_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_SmokeGreen_Grenade_shell"], ""],
-    ["TMT_SIG516_M320", "", "tmt_anpeq15black_m952", "CUP_optic_Elcan_SpecterDR_black", ["TMT_30Rnd_Lancer_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_SmokeGreen_Grenade_shell"], ""]
+    ["TMT_HK416_M320_11_RAL", "", "", "CUP_optic_Elcan_Coyote", ["TMT_30Rnd_STANAG_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_SmokeGreen_Grenade_shell"], ""],
+    ["TMT_HK416_M320_14_5_RAL", "", "", "CUP_optic_Elcan_Coyote", ["TMT_30Rnd_STANAG_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_SmokeGreen_Grenade_shell"], ""],
+    ["TMT_HK416_M320_14_5_alt_RAL", "", "", "CUP_optic_Elcan_Coyote", ["TMT_30Rnd_STANAG_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_SmokeGreen_Grenade_shell"], ""]
 ]];
 _sfLoadoutData set ["SMGs", [
     ["TMT_SAR109", "", "", "CUP_optic_AC11704_Black", ["TMT_30Rnd_9x19_Mag_SAR109"], [], ""],
@@ -269,54 +272,50 @@ _sfLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData set ["uniforms", ["tmt_digital_combat_uniform_gloves_kneepad", "tmt_digital_combat_uniform_gloves"]];
-_eliteLoadoutData set ["slUniform", ["tmt_desert_combat_uniform_gloves_kneepad"]];
-_eliteLoadoutData set ["vests", ["TMT_TAN_WarriorAssaultVest_556", "TMT_TAN_WarriorAssaultVest_556_Belt"]];
-_eliteLoadoutData set ["mgVests", ["TMT_TAN_WarriorAssaultVest_MG", "TMT_TAN_WarriorAssaultVest_MG_belt"]];
-_eliteLoadoutData set ["medVests", ["TMT_TAN_WarriorAssaultVest_Medic", "TMT_TAN_WarriorAssaultVest_Medic_Belt"]];
-_eliteLoadoutData set ["slVests", ["TMT_TAN_WarriorAssaultVest_radio_belt", "TMT_TAN_WarriorAssaultVest_556_Belt"]];
-_eliteLoadoutData set ["glVests", ["tmt_file_assault_vest_gl"]];
-_eliteLoadoutData set ["engVests", ["TMT_TAN_WarriorAssaultVest_MG"]];
-_eliteLoadoutData set ["backpacks", ["tmt_backpack_compact_digital", "tmt_tacticalpack_desert"]];
-_eliteLoadoutData set ["slBackpacks", ["tmt_tacticalpack_mat_desert", "tmt_tacticalpack_radio_desert"]];
-_eliteLoadoutData set ["atBackpacks", ["tmt_tacticalpack_desert"]];
-_eliteLoadoutData set ["helmets", ["tmt_garanti_helmet_midcut_cover_jgk", "tmt_garanti_helmet_midcut_fullcover_tan"]];
-_eliteLoadoutData set ["sniHats", ["tmt_garanti_helmet_midcut_cover_IR_jgk"]];
+_eliteLoadoutData set ["uniforms", ["tmt_multicam_combat_uniform_gloves_kneepad", "tmt_multicam_combat_uniform_gloves"]];
+_eliteLoadoutData set ["slUniform", ["tmt_multicam_combat_kn_sfshell_uniform"]];
+_eliteLoadoutData set ["vests", ["CPC_SAT", "CUP_V_B_Armatus_MCam"]];
+_eliteLoadoutData set ["mgVests", ["CPC_MG_S_SAT"]];
+_eliteLoadoutData set ["medVests", ["CPC_MEDIC_SAT"]];
+_eliteLoadoutData set ["slVests", ["CPC_S_SAT", "CPC_SAT"]];
+_eliteLoadoutData set ["glVests", ["CPC_S_MEDIC_SAT"]];
+_eliteLoadoutData set ["engVests", ["CPC_MG_SAT"]];
+_eliteLoadoutData set ["backpacks", ["tmt_backpack_compact_mc_base", "CUP_B_Kombat_Olive"]];
+_eliteLoadoutData set ["slBackpacks", ["tmt_backpack_compact_mc", "CUP_B_Kombat_Radio_Olive"]];
+_eliteLoadoutData set ["atBackpacks", ["tmt_alicepack_full_rpg"]];
+_eliteLoadoutData set ["helmets", ["tmt_garanti_helmet_cut_cover_rac_IR_full_mc", "tmt_garanti_helmet_cut_cover_peltor_IR_full_mc"]];
+_eliteLoadoutData set ["sniHats", ["tmt_garanti_helmet_cut_cover_rac_IR_full_mc"]];
 _eliteLoadoutData set ["binoculars", ["CUP_LRTV"]];
 
 _eliteLoadoutData set ["slRifles", [
-    ["TMT_MPT76", "", "", "CUP_optic_Elcan", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
-    ["TMT_MPT76_Handle_2", "", "", "CUP_optic_Elcan", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
-    ["TMT_KCR556_BLK_14_5_Grip", "", "CUP_acc_ANPEQ_15_Top_Flashlight_Black_L", "CUP_optic_SB_11_4x20_PM", ["TMT_30Rnd_Lancer_Mag"], [], ""]
+    ["TMT_M4_Carbine_Gasblock", "", "", "CUP_optic_Elcan_SpecterDR_black", ["TMT_30Rnd_STANAG_PULL_Mag"], [], ""],
+    ["TMT_M4_Carbine_Gasblock_Afg", "", "", "CUP_optic_G33_HWS_BLK", ["TMT_30Rnd_STANAG_Mag"], [], ""],
+    ["TMT_M4_Carbine_Gasblock_Afg_str", "", "CUP_acc_ANPEQ_15_Tan_Top", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_STANAG_PULL_Mag"], [], ""]
 ]];
 _eliteLoadoutData set ["rifles", [
-    ["TMT_MPT76", "", "", "TMT_EOTech552_b_magnifier_open", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
-    ["TMT_MPT76_2", "", "", "TMT_EOTech552_b", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
-    ["TMT_MPT55_K_grip", "", "", "CUP_optic_ACOG_TA01B_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
-    ["TMT_SAR308_Grip", "", "", "CUP_optic_AC11704_Black", ["CUP_30Rnd_762x39_AK103_bakelite_M"], [], ""],
-    ["TMT_HK416_11_Black", "", "", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
-    ["TMT_SAR308", "", "", "", ["CUP_30Rnd_762x39_AK103_bakelite_M"], [], ""]
+    ["TMT_MPT55", "", "", "TMT_EOTechxps3_b_magnifier_open", ["TMT_30Rnd_Lancer_Mag"], [], ""],
+    ["TMT_MPT55", "", "", "CUP_optic_Elcan", ["TMT_30Rnd_Lancer_Mag"], [], ""],
+    ["TMT_M4A1_Grip", "", "", "TMT_EOTechxps3_b", ["TMT_30Rnd_Lancer_Mag"], [], ""],
+    ["TMT_M4A1", "", "", "TMT_EOTechxps3_b", ["TMT_30Rnd_Lancer_Mag"], [], ""]
 ]];
 _eliteLoadoutData set ["carbines", [
-    ["TMT_M4A1_Grip", "", "", "", ["TMT_30Rnd_STANAG_Mag"], [], ""],
-    ["TMT_M4A1_V2", "", "", "", ["TMT_30Rnd_STANAG_Mag"], [], ""],
+    ["TMT_M4_Carbine_Gasblock", "", "", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_STANAG_Mag"], [], ""],
+    ["TMT_M4_Carbine_Gasblock_Grip", "", "", "TMT_EOTechxps3_b_magnifier_open", ["TMT_30Rnd_STANAG_Mag"], [], ""],
     ["TMT_MPT55_K_grip", "", "", "TMT_EOTechxps3_b", ["TMT_30Rnd_Lancer_Mag"], [], ""]
 ]];
 _eliteLoadoutData set ["grenadeLaunchers", [
-    ["TMT_MPT55_K_AK40", "", "", "TMT_EOTechxps3_b_magnifier_open", ["TMT_30Rnd_Lancer_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""],
-    ["TMT_MPT76_AK40", "", "", "TMT_EOTechxps3_b_magnifier_open", ["TMT_20Rnd_762x51_B_mpt76"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
+    ["TMT_M4_Carbine_M203_Gasblock", "", "", "CUP_optic_Elcan", ["TMT_30Rnd_STANAG_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""],
+    ["TMT_M4_Carbine_M320_Gasblock", "", "", "TMT_EOTechxps3_b_magnifier_open", ["TMT_30Rnd_STANAG_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _eliteLoadoutData set ["SMGs", [
     ["TMT_SAR109_Standart", "", "", "", ["TMT_30Rnd_9x19_Mag_SAR109"], [], ""],
     ["CUP_smg_MP5A5_Rail_AFG", "", "", "", ["CUP_30Rnd_9x19_MP5"], [], ""]
 ]];
 _eliteLoadoutData set ["machineGuns", [
-    ["TMT_PKM", "", "", "", ["150Rnd_762x54_Box"], [], ""],
     ["TMT_M249_Para", "", "", "", ["tmt_200rnd_556x45_M_SAW_Standart"], [], ""]
 ]];
 _eliteLoadoutData set ["marksmanRifles", [
-    ["TMT_KNT76_TAN_2", "", "", "CUP_optic_Elcan_SpecterDR_black", ["TMT_20Rnd_762x51_B_mpt76"], [], "CUP_bipod_Harris_1A2_L_BLK"],
-    ["TMT_MPT76_Gripod", "", "", "TMT_3EOS_KESKIN_B", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
+    ["TMT_KNT76_BLACK", "", "", "TMT_3EOS_KESKIN_B", ["TMT_20Rnd_762x51_B_mpt76"], [], "CUP_bipod_Harris_1A2_L_BLK"],
     ["TMT_M110_Black", "", "", "CUP_optic_ACOG2", ["TMT_20Rnd_762x51_B_M110"], [], "TMT_Bipod_blk"]
 ]];
 _eliteLoadoutData set ["sniperRifles", [
@@ -338,36 +337,34 @@ _eliteLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", ["tmt_kkk_combat_uniform", "tmt_kkk_green_combat_uniform_gloves"]];
-_militaryLoadoutData set ["slUniform", ["tmt_kkk_combat_kn_sfshell_uniform"]];
-_militaryLoadoutData set ["vests", ["TMT_WarriorAssaultVest_556_Belt", "TMT_WarriorAssaultVest_556"]];
-_militaryLoadoutData set ["mgVests", ["TMT_WarriorAssaultVest_MG"]];
-_militaryLoadoutData set ["medVests", ["TMT_WarriorAssaultVest_Medic", "TMT_WarriorAssaultVest_Medic_Belt"]];
-_militaryLoadoutData set ["slVests", ["TMT_WarriorAssaultVest_556_Sling_belt"]];
+_militaryLoadoutData set ["uniforms", ["tmt_digital_combat_uniform_gloves_kneepad", "tmt_digital_combat_uniform"]];
+_militaryLoadoutData set ["slUniform", ["tmt_digital_combat_sfshell_kn_uniform"]];
+_militaryLoadoutData set ["vests", ["tmt_file_assault_vest", "TMT_TAN_WarriorAssaultVest_556_Belt"]];
+_militaryLoadoutData set ["mgVests", ["TMT_TAN_WarriorAssaultVest_MG_belt", "tmt_file_assault_vest_mg"]];
+_militaryLoadoutData set ["medVests", ["TMT_TAN_WarriorAssaultVest_Medic_Belt", "TMT_TAN_WarriorAssaultVest_Medic"]];
+_militaryLoadoutData set ["slVests", ["tmt_file_assault_vest"]];
 _militaryLoadoutData set ["glVests", ["tmt_file_assault_vest_gl"]];
-_militaryLoadoutData set ["engVests", ["TMT_WarriorAssaultVest_radio_belt"]];
-_militaryLoadoutData set ["backpacks", ["tmt_alicepack", "tmt_alicepack_full_radio"]];
-_militaryLoadoutData set ["slBackpacks", ["tmt_alicepack_radio"]];
-_militaryLoadoutData set ["atBackpacks", ["tmt_alicepack_full_rpg"]];
-_militaryLoadoutData set ["helmets", ["tmt_8ABMK_helmet", "tmt_8abmk_helmet_tactical"]];
-_militaryLoadoutData set ["sniHats", ["tmt_garanti_helmet_cut_fullcover_peltor_IR_kkk"]];
+_militaryLoadoutData set ["engVests", ["TMT_TAN_WarriorAssaultVest_MG"]];
+_militaryLoadoutData set ["backpacks", ["tmt_alicepack_full_camp_digital_camo", "tmt_tacticalpack_mat_tan"]];
+_militaryLoadoutData set ["slBackpacks", ["tmt_tacticalpack_radio_tan"]];
+_militaryLoadoutData set ["atBackpacks", ["tmt_alicepack_full_rpg_digitalcamo"]];
+_militaryLoadoutData set ["helmets", ["tmt_garanti_helmet_midcut_patch_kkk", "tmt_garanti_helmet_midcut_fullcover_patch_KKK"]];
+_militaryLoadoutData set ["sniHats", ["tmt_garanti_helmet_cut_fullcover_peltor_kkk", "tmt_garanti_helmet_midcut_fullcover_patch_IR_KKK"]];
 _militaryLoadoutData set ["binoculars", ["CUP_LRTV"]];
 
 _militaryLoadoutData set ["slRifles", [
-    ["TMT_MPT76", "", "", "CUP_optic_Elcan_SpecterDR_black", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
-    ["TMT_MPT76_Handle_2", "", "", "CUP_optic_HoloBlack", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
-    ["TMT_KCR556_BLK_14_5_Grip", "", "CUP_acc_ANPEQ_15_Top_Flashlight_Black_L", "CUP_optic_MicroT1", ["TMT_30Rnd_Lancer_Mag"], [], ""]
+    ["TMT_MPT55_K_C_clamp", "", "", "CUP_optic_MicroT1", ["TMT_30Rnd_Lancer_Mag"], [], ""],
+    ["TMT_MPT55_K_C_clamp", "", "", "CUP_optic_Elcan_SpecterDR_black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
+    ["TMT_MPT55_C_clamp", "", "", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
+    ["TMT_MPT76_Handle_2", "", "", "CUP_optic_HoloBlack", ["TMT_20Rnd_762x51_B_mpt76"], [], ""]
 ]];
 _militaryLoadoutData set ["rifles", [
-    ["TMT_MPT76", "", "", "TMT_EOTech552_b_magnifier_open", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
-    ["TMT_MPT76_2", "", "", "TMT_EOTech552_b", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
-    ["TMT_HK416_11_Black", "", "", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
-    ["TMT_SAR308", "", "", "", ["CUP_30Rnd_762x39_AK103_bakelite_M"], [], ""]
+    ["TMT_MPT55", "", "", "TMT_EOTechxps3_b_magnifier_open", ["TMT_30Rnd_Lancer_Mag"], [], ""],
+    ["TMT_MPT55", "", "", "CUP_optic_Elcan", ["TMT_30Rnd_Lancer_Mag"], [], ""]
 ]];
 _militaryLoadoutData set ["carbines", [
-    ["TMT_M4A1_Grip", "", "", "", ["TMT_30Rnd_STANAG_Mag"], [], ""],
-    ["TMT_M4A1_V2", "", "", "", ["TMT_30Rnd_STANAG_Mag"], [], ""],
-    ["TMT_MPT55_K_grip", "", "", "TMT_EOTechxps3_b", ["TMT_30Rnd_Lancer_Mag"], [], ""]
+    ["TMT_MPT55_K", "", "", "TMT_EOTechxps3_b", ["TMT_30Rnd_Lancer_Mag"], [], ""],
+    ["TMT_MPT55_K_C_clamp", "", "", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""]
 ]];
 _militaryLoadoutData set ["grenadeLaunchers", [
     ["TMT_MPT55_K_AK40", "", "", "TMT_EOTechxps3_b_magnifier_open", ["TMT_30Rnd_Lancer_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""],
@@ -401,9 +398,9 @@ _militaryLoadoutData set ["sidearms", [
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 
-_policeLoadoutData set ["uniforms", ["tmt_police_combat_tshirt_gl_kneepad_uniform", "tmt_police_combat_sfshell_uniform"]];
-_policeLoadoutData set ["vests", ["tmt_balistic_vest_backpack_jgk", "tmt_balistic_vest_carrier_jgk"]];
-_policeLoadoutData set ["helmets", ["TMT_Beret_green_police", "tmt_MilCap_police"]];
+_policeLoadoutData set ["uniforms", ["tmt_police_combat_uniform"]];
+_policeLoadoutData set ["vests", ["TACTEC_tan", "TACTEC_light_tan"]];
+_policeLoadoutData set ["helmets", ["tmt_booniehat_police", "tmt_MilCap_police_headset", "tmt_mich2000_poh"]];
 
 _policeLoadoutData set ["SMGs", [
     ["TMT_SAR109", "", "", "", ["TMT_30Rnd_9x19_Mag_SAR109"], [], ""],
@@ -418,28 +415,28 @@ _policeLoadoutData set ["sidearms", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData set ["uniforms", ["tmt_police_combat_uniform", "tmt_police_combat_uniform_gloves_kneepad"]];
-_militiaLoadoutData set ["vests", ["TACTEC_light", "tmt_file_assault_vest_desert", "tmt_balistic_vest_carrier_jgk"]];
-_militiaLoadoutData set ["sniVests", ["tmt_balistic_vest_carrier_jgk"]];
-_militiaLoadoutData set ["backpacks", ["tmt_backpack_compact_tan_base"]];
-_militiaLoadoutData set ["slBackpacks", ["tmt_tacticalpack_mat_tan"]];
-_militiaLoadoutData set ["atBackpacks", ["tmt_tacticalpack_tan"]];
-_militiaLoadoutData set ["helmets", ["tmt_MilCap_police", "tmt_cap_jgk", "tmt_booniehat_police"]];
-_militiaLoadoutData set ["sniHats", ["tmt_MilCap_police_headset", "tmt_Booniehat_police_HS"]];
+_militiaLoadoutData set ["uniforms", ["tmt_kkk_combat_uniform", "tmt_kkk_combat_uniform_gloves"]];
+_militiaLoadoutData set ["vests", ["TMT_WarriorAssaultVest", "TMT_WarriorAssaultVest_belt", "TMT_WarriorAssaultVest_556"]];
+_militiaLoadoutData set ["sniVests", ["TMT_WarriorAssaultVest_radio_belt", "TMT_WarriorAssaultVest_556_Sling"]];
+_militiaLoadoutData set ["backpacks", ["tmt_alicepack"]];
+_militiaLoadoutData set ["slBackpacks", ["tmt_alicepack_full_radio"]];
+_militiaLoadoutData set ["atBackpacks", ["tmt_alicepack_full_rpg"]];
+_militiaLoadoutData set ["helmets", ["tmt_8ABMK_helmet", "tmt_m88helmet_green", "tmt_Booniehat_kkk_HS"]];
+_militiaLoadoutData set ["sniHats", ["tmt_garanti_helmet_cut_patch_peltor_sof", "tmt_Booniehat_kkk_peltor"]];
 
 _militiaLoadoutData set ["rifles", [
-    ["TMT_SAR56_tan", "", "", "", ["TMT_30Rnd_SARSILMAZ_Mag_TAN"], [], ""],
-    ["TMT_SAR56_tan_AFG", "", "", "", ["TMT_30Rnd_SARSILMAZ_Mag_TAN"], [], ""],
-    ["TMT_M4_Carbine_Gasblock_Afg_moe", "", "", "", ["TMT_30Rnd_STANAG_Mag"], [], ""],
-    ["TMT_G3A3", "", "", "", ["TMT_20Rnd_762x51_B_G3"], [], ""]
+    ["TMT_MPT76_Handle_2", "", "", "", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
+    ["TMT_MPT76", "", "", "", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
+    ["TMT_MPT76", "", "", "CUP_optic_Elcan", ["TMT_20Rnd_762x51_B_mpt76"], [], ""]
 ]];
 _militiaLoadoutData set ["carbines", [
-    ["TMT_SAR223", "", "", "", ["TMT_30Rnd_STANAG_Mag"], [], ""],
-    ["TMT_HK416_11_RAL", "", "", "", ["TMT_30Rnd_Lancer_Mag"], [], ""],
-    ["TMT_HK33_RIFLE_STOCK_R", "", "", "CUP_optic_AC11704_Black", ["TMT_30Rnd_HK33_Mag"], [], ""]
+    ["TMT_MPT76", "", "", "", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
+    ["TMT_MPT76", "", "", "", ["TMT_20Rnd_762x51_B_mpt76"], [], ""],
+    ["TMT_MPT55_grip", "", "", "CUP_optic_Eotech553_Black", ["TMT_30Rnd_Lancer_Mag"], [], ""],
+    ["TMT_HK416_11_RAL", "", "", "", ["TMT_30Rnd_Lancer_Mag"], [], ""]
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
-    ["TMT_HK33_RIFLE_STOCK_GL", "", "", "CUP_optic_MicroT1", ["TMT_30Rnd_HK33_Mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
+    ["TMT_MPT76_AK40", "", "", "", ["TMT_20Rnd_762x51_B_mpt76"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
     ["TMT_SAR109_Standart", "", "", "", ["TMT_30Rnd_9x19_Mag_SAR109"], [], ""],
@@ -449,7 +446,7 @@ _militiaLoadoutData set ["machineGuns", [
     ["TMT_PKM", "", "", "", ["150Rnd_762x54_Box"], [], ""]
 ]];
 _militiaLoadoutData set ["marksmanRifles", [
-    ["TMT_KNT76_TAN_2", "", "", "CUP_optic_Elcan_SpecterDR_black", ["TMT_20Rnd_762x51_B_mpt76"], [], "CUP_bipod_Harris_1A2_L_BLK"]
+    ["TMT_KNT76_BLACK", "", "", "TMT_3EOS_KESKIN_B", ["TMT_20Rnd_762x51_B_mpt76"], [], "TMT_Bipod_blk"]
 ]];
 _militiaLoadoutData set ["sidearms", [
     ["CUP_hgun_Glock17_blk", "", "", "", ["CUP_17Rnd_9x19_glock17"], [], ""],
