@@ -52,13 +52,14 @@ class green_sea
 		{"Caribou_isl051", 0},
 		{"Utes_name", 0}
 	};
-	disabledTowns[] = {};
+	disabledTowns[] = {"Caribou_isl051","Utes_name"};
 	antennas[] = {
 		{3029.11,2350.27,0.229149},{4547.68,3132.05,0.693176},{3715.81,5984.25,0},{6563.68,3405.56,0.0547333},{5264.35,5314.45,-0.00253296},{6443.78,6545.48,0.0928955},{4967.81,9966.56,0},{8127.52,9151.57,0},{13477.6,3345.84,0.0730896},{13010.1,5964.96,-0.0163116},{12937,12763.6,0.164017},{11241.9,4261.85,-0.0175781},{15694.7,3796.42,0},
 
 		{2834.82,2099.14,0},{17372.9,3274.37,-4.57764e-005},{17724.6,3500.09,0},{18329.7,2555.48,-7.62939e-006},{18830.9,3125.07,0},{18610.1,4617.28,0},{19387.2,5016.62,0},{18293,6820.32,0}
 	};
-	antennasBlacklistIndex[] = {13,14,15,16,17,18,19,20}; // basically just duplicates of the rest
+	// antennasBlacklistIndex[] = {13,14,15,16,17,18,19,20}; // basically just duplicates of the rest
+	antennasBlacklistIndex[] = {};
 	banks[] = {}; //no suitable building available
 	garrison[] = {
 		{},{"outpost_22","outpost_24","outpost_25","outpost_26","seaport_5","milbase_2","airport_5","resource_10","resource_11","resource_12"},{},{}
