@@ -354,7 +354,7 @@
                 <German>Maschinengewehrschütze rekrutieren</German>
                 <Czech>Kulometník</Czech>
                 <Chinesesimp>招募自动步枪手</Chinesesimp>
-                <Korean>자동화기사수 모집</Korean>
+                <Korean>자동소총수 모집</Korean>
                 <Italian>Recluta Fuciliere Automatico</Italian>
                 <Spanish>Reclutar ametrallador</Spanish>
                 <Polish>Rekrutuj Celowniczego KM</Polish>
@@ -550,7 +550,7 @@
                 <German>Maschinengewehrschütze rekrutieren</German>
                 <Czech>Kulometník</Czech>
                 <Chinesesimp>招募自动步枪手</Chinesesimp>
-                <Korean>자동화기사수 모집</Korean>
+                <Korean>자동소총수 모집</Korean>
                 <Italian>Recluta Fuciliere Automatico</Italian>
                 <Spanish>Reclutar Ametrallador</Spanish>
                 <Polish>Rekrutuj Celowniczego KM</Polish>
@@ -1039,7 +1039,7 @@
                 <German>Aggression</German>
                 <Czech>Agresivita</Czech>
                 <Chinesesimp>侵略性</Chinesesimp>
-                <Korean>어그로 효과</Korean>
+                <Korean>공격성 효과</Korean>
                 <Russian>Агрессия</Russian>
                 <Italian>Effetti Aggro</Italian>
                 <Spanish>Efectos Aggro</Spanish>
@@ -1051,7 +1051,7 @@
                 <German>Behalte dies im Auge. Wenn sie zu hoch wird, wirst du dich deutlich mehr Angriffen und besseren Einheiten entgegenstellen müssen.</German>
                 <Czech>Dávejte pozor na to. Pokud je příliš vysoká, budete muset čelit více útokům s lepšími jednotkami.</Czech>
                 <Chinesesimp>密切关注侵略性。如果侵略性太高, 你将不得不面对更多、更强的进攻部队。</Chinesesimp>
-                <Korean>경계하십시오. 수치가 너무 높다면, 적군이 더 자주, 강하게 공격할 것입니다.</Korean>
+                <Korean>조심하십시오. 수치가 너무 높다면, 적군이 더 자주, 강하게 공격할 것입니다.</Korean>
                 <Russian>Следите за уровнем агрессии. Чем он выше, тем больше хорошо экипированных солдат будет использовать противник.</Russian>
                 <Italian>Tienilo d'occhio. Se è troppo alto, dovrai affrontare più attacchi con truppe migliori.</Italian>
                 <Spanish>Echale un ojo, si es muy alto, te tendrás que enfrentar a más ataques con mejores tropas</Spanish>
@@ -4882,7 +4882,7 @@
       <Key ID="STR_A3A_Utility_Items_Insufficient_Funds">
         <Original>You can't afford this Item.</Original>
         <Spanish>No puedes pagar ese objeto.</Spanish>
-        <Korean>이 아이템을 구매할 여유가 없습니다.</Korean>
+        <Korean>이 아이템을 구입할 자금이 부족합니다.</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Purchase_Title">
         <Original>Item Purchase</Original>
@@ -4892,7 +4892,7 @@
       <Key ID="STR_A3A_Packable_Objects_Title">
         <Original>Packing Objects</Original>
         <Spanish>Objetos empacables</Spanish>
-        <Korean>개체 포장</Korean>
+        <Korean>오브젝트 포장</Korean>
       </Key>
       <Key ID="STR_A3A_Packable_Objects_refunding_error">
         <Original>refunding money due to error</Original>
@@ -5239,13 +5239,13 @@
                 <Original>Use Old Plus Garrison Spawning</Original>
                 <English>Use Old Plus Garrison Spawning</English>
                 <Russian>Использовать старую логику спавна гарнизонов из Plus</Russian>
-                <Korean>기존 플러스 버전 주둔지 스폰 사용</Korean>
+                <Korean>기존 안티스타시 플러스 주둔지 스폰 사용</Korean>
             </Key>
             <Key ID="STR_A3AU_vanilla_weapons_in_arms_dealer">
                 <Original>Include Vanilla Weapons In Arms Dealer</Original>
                 <English>Include Vanilla Weapons In Arms Dealer</English>
                 <Russian>Добавить ванильное оружие в ассортимент торговца оружием</Russian>
-                <Korean>암거래상에게 바닐라 무기 포함시키기</Korean>
+                <Korean>암거래상에 바닐라 무기 포함</Korean>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>

@@ -500,7 +500,7 @@
             <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_All_none_dev">
                 <Original>All none dev</Original>
                 <Russian>Логгировать не-разработчиков</Russian>
-                <Korean>개발자 버전 제외</Korean>
+                <Korean>모두(개발자 버전 제외)</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_Dev">
                 <Original>Dev</Original>
