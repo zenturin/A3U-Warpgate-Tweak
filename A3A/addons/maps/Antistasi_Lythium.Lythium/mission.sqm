@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=2;
+	toggles=1026;
 	class ItemIDProvider
 	{
 		nextID=1834;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1104;
+		nextID=1152;
 	};
 	class Camera
 	{
-		pos[]={13151.321,480.81433,4389.7788};
-		dir[]={0.56415695,-0.76410174,0.31285059};
-		up[]={0.66823149,0.64509577,0.37056464};
-		aside[]={0.48496771,0,-0.8745321};
+		pos[]={11249.867,93.445847,2401.1328};
+		dir[]={0.62684733,-0.45890895,0.62965685};
+		up[]={0.32377213,0.8884837,0.32522315};
+		aside[]={0.70868665,-2.7357601e-008,-0.70552444};
 	};
 };
 binarizationWanted=0;
@@ -224,19 +224,6 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
-			property="cba_settings_hasSettingsFile";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="EnableDebugConsole";
 			expression="true";
 			class Value
@@ -248,7 +235,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		nAttributes=1;
 	};
 };
 class Mission
@@ -1418,7 +1405,7 @@ class Mission
 									colorName="ColorGreen";
 									a=10;
 									b=10;
-									angle=114.22715;
+									angle=114.22714;
 									id=1432;
 								};
 								class Item1
@@ -1709,16 +1696,16 @@ class Mission
 								class Item2
 								{
 									dataType="Marker";
-									position[]={12571.778,341.97672,18195.414};
+									position[]={12197.107,341.97672,17942.232};
 									name="airport_1";
 									markerType="RECTANGLE";
 									type="rectangle";
 									colorName="ColorEAST";
-									a=148.47949;
-									b=728.33032;
+									a=463.05231;
+									b=693.021;
 									angle=39.550869;
 									id=973;
-									atlOffset=-0.57327271;
+									atlOffset=0.026702881;
 								};
 								class Item3
 								{
@@ -1844,7 +1831,7 @@ class Mission
 								};
 							};
 							id=421;
-							atlOffset=0.053100586;
+							atlOffset=0.053039551;
 						};
 						class Item1
 						{
@@ -1856,16 +1843,16 @@ class Mission
 								class Item0
 								{
 									dataType="Marker";
-									position[]={11677.25,34.012985,2034.7434};
+									position[]={11825.368,34.012985,2124.1824};
 									name="airport_2";
 									markerType="RECTANGLE";
 									type="rectangle";
 									colorName="ColorEAST";
-									a=173.27405;
-									b=670.00928;
-									angle=324.26645;
+									a=543.1662;
+									b=632.36218;
+									angle=356.56641;
 									id=1004;
-									atlOffset=6.8347988;
+									atlOffset=6.9064674;
 								};
 								class Item1
 								{
@@ -1971,11 +1958,11 @@ class Mission
 								};
 							};
 							id=429;
-							atlOffset=2.5434647;
+							atlOffset=2.5455914;
 						};
 					};
 					id=420;
-					atlOffset=-24.691742;
+					atlOffset=-24.691162;
 				};
 				class Item3
 				{
@@ -3892,28 +3879,28 @@ class Mission
 								class Item0
 								{
 									dataType="Marker";
-									position[]={12562.231,345.94714,18228.08};
+									position[]={12194.106,345.94714,18119.857};
 									name="detectPlayer_1";
 									markerType="RECTANGLE";
 									type="rectangle";
-									a=337.76382;
-									b=762.59406;
+									a=671.58478;
+									b=1085.5083;
 									angle=40.924133;
 									id=976;
-									atlOffset=3.3971558;
+									atlOffset=3.9971313;
 								};
 								class Item1
 								{
 									dataType="Marker";
-									position[]={11752.319,30.227615,1988.8865};
+									position[]={11714.854,30.227615,1987.4407};
 									name="detectPlayer_2";
 									markerType="RECTANGLE";
 									type="rectangle";
-									a=265.61343;
-									b=681.89526;
+									a=297.02142;
+									b=969.88806;
 									angle=324.68872;
 									id=1008;
-									atlOffset=1.6373253;
+									atlOffset=2.0024433;
 								};
 								class Item2
 								{
@@ -3967,7 +3954,7 @@ class Mission
 								};
 							};
 							id=543;
-							atlOffset=0.27933121;
+							atlOffset=6.4077492;
 						};
 					};
 					id=469;
