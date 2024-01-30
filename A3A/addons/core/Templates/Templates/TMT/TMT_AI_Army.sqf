@@ -4,7 +4,7 @@
 
 #include "..\..\..\script_component.hpp"
 
-["name", "Turkish Land Forces"] call _fnc_saveToTemplate; 						
+["name", "TurkAF"] call _fnc_saveToTemplate; 						
 ["spawnMarkerName", "Turkish Support Corridor"] call _fnc_saveToTemplate; 			
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate; 						
