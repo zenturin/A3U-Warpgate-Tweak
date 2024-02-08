@@ -5233,7 +5233,7 @@
             <Key ID="STR_A3AU_radioman_support">
                 <Original>Support Caller</Original>
                 <English>Support Caller</English>
-                <Russian>помощь зов</Russian>
+                <Russian>Вызывающий поддержку</Russian>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>
