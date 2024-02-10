@@ -41,7 +41,7 @@ if (!isNil "_customLoadout") exitWith {
 		_unit setUnitLoadout _customLoadout;
 	};
 
-    if (goggles _unit != _goggles && {!(isNil "_customLoadout")}) then {
+    if (goggles _unit != _goggles && {randomizeRebelLoadoutUniforms}) then {
         removeGoggles _unit;
         _unit addGoggles _goggles;
     };
