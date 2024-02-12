@@ -3,7 +3,7 @@ params ["_plane", "_type"];
 /*  Equips a plane with the needed loadout
     Params:
         _plane: OBJECT : The actual plane object
-        _type: STRING : The type of attack plane, either "CAS" or "AA"
+        _type: STRING : The type of attack plane, either "CAS", "CASDIVE" or "AA"
     Returns:
         Nothing
 */
@@ -70,6 +70,169 @@ if ((typeOf _plane) in _cfg) exitWith
     [format["Given plane class %1 a loadout of %2, from config", typeOf _plane, _loadout], _fnc_scriptName] call A3U_fnc_log;
 };
 
+if (_type == "CASDIVE") then
+{
+    _validInput = true;
+    switch (typeOf _plane) do
+    {
+        //Vanilla NATO CAS (A-10)
+        case "B_D_Plane_CAS_01_dynamicLoadout_lxWS";
+        case "B_W_Plane_CAS_01_dynamicLoadout_F"; 
+        case "B_T_Plane_CAS_01_dynamicLoadout_F";
+        case "B_Plane_CAS_01_dynamicLoadout_F":
+        {
+            _loadout = ["","","","","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_BombCluster_03_F","","","",""];
+            _plane setVariable ["mainGun", "Gatling_30mm_Plane_CAS_01_F"];
+            _plane setVariable ["bombRacks", ["Bomb_04_Plane_CAS_01_F", "BombCluster_03_F"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        //Vanilla CSAT CAS
+        case "Atlas_O_W_Plane_CAS_02_dynamicLoadout_ghex_F";
+        case "O_T_Plane_CAS_02_dynamicLoadout_ghex_F";
+        case "O_R_Plane_CAS_02_dynamicLoadout_F";
+        case "O_R_Plane_CAS_02_dynamicLoadout_ard_F";
+        case "O_Plane_CAS_02_dynamicLoadout_F":
+        {
+            _loadout = ["","","","","PylonMissile_1Rnd_BombCluster_02_cap_F","PylonMissile_1Rnd_Bomb_03_F","","","",""];
+            _plane setVariable ["mainGun", "Cannon_30mm_Plane_CAS_02_F"];
+            _plane setVariable ["bombRacks", ["Bomb_03_Plane_CAS_02_F", "BombCluster_02_F"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+
+        //Vanilla IND CAS
+        case "O_A_Plane_Fighter_03_dynamicLoadout_F";
+        case "Atlas_O_T_Plane_Fighter_03_dynamicLoadout_F";
+        case "I_Plane_Fighter_03_dynamicLoadout_F":
+        {
+            _loadout = ["PylonRack_12Rnd_missiles","PylonRack_3Rnd_LG_scalpel","PylonMissile_1Rnd_Mk82_F","PylonWeapon_300Rnd_20mm_shells","PylonMissile_1Rnd_Mk82_F","PylonRack_3Rnd_LG_scalpel","PylonRack_12Rnd_missiles"];
+            _plane setVariable ["mainGun", "Twin_Cannon_20mm"];
+            _plane setVariable ["rocketLauncher", ["Rocket_04_AP_Plane_CAS_01_F"]];
+            _plane setVariable ["missileLauncher", ["Missile_AGM_02_Plane_CAS_01_F", "missiles_SCALPEL"]];
+            _plane setVariable ["bombRacks", ["Mk82BombLauncher"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        //Aegis F-35
+        case "Atlas_B_A_Plane_Fighter_05_ard_F";
+        case "Atlas_B_A_Plane_Fighter_05_trp_F";
+        case "B_A_Plane_Fighter_05_F";
+        case "B_A_Plane_Fighter_05_tna_F";
+        case "B_A_Plane_Fighter_05_wdl_F";
+        case "B_Plane_Fighter_05_F";
+        case "B_T_Plane_Fighter_05_F";
+        case "B_W_Plane_Fighter_05_F";
+        case "Atlas_I_I_Plane_Fighter_05_F";
+        case "Atlas_B_A_Plane_Fighter_05_F": {
+            _loadout = ["PylonRack_Missile_BIM9X_x1","PylonRack_Missile_BIM9X_x1","","","","","","","PylonRack_Bomb_SDB_x4","","PylonWeapon_220Rnd_25mm_shells"];
+            _plane setVariable ["mainGun", "gatling_25mm"];
+            _plane setVariable ["bombRacks", ["weapon_SDBLauncher"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        //RHS US CAS (A-10)
+        case "RHS_A10";
+        case "UK3CB_CW_US_B_EARLY_A10":
+        {
+            _loadout = ["rhs_mag_ANALQ131","","","","rhs_mag_gbu12","","rhs_mag_cbu87","","","","rhs_mag_aim9m_2","rhsusf_ANALE40_CMFlare_Chaff_Magazine_x16"];
+            _plane setVariable ["mainGun", "RHS_weap_gau8"];
+            _plane setVariable ["bombRacks", ["rhs_weap_gbu12", "rhs_weap_cbu87"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        //RHS CDF L-159
+        case "rhs_l159_cdf_b_CDF":
+        {
+            _loadout = ["rhs_mag_Sidewinder","","rhs_mag_mk82","rhs_mag_zpl20_hei","rhs_mag_mk82","","rhs_mag_Sidewinder","rhsusf_ANALE40_CMFlare_Chaff_Magazine_x2"];
+            _plane setVariable ["mainGun", "RHS_weap_zpl20"];
+            _plane setVariable ["bombRacks", ["rhs_weap_mk82"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "UK3CB_AAF_O_Su25SM";
+        case "RHS_Su25SM_vvsc";
+        case "RHS_Su25SM_CAS_vvs";
+        case "rhsgref_cdf_b_su25";
+        case "UK3CB_TKA_B_Su25SM_CAS";
+        case "UK3CB_LDF_B_Su25SM_CAS";
+        case "UK3CB_ADA_I_Su25SM_CAS";
+        case "UK3CB_KDF_B_Su25SM_CAS";
+        case "UK3CB_ARD_O_Su25SM_CAS";
+        case "UK3CB_CW_SOV_O_LATE_Su25SM_CAS":
+        {
+            _loadout = ["rhs_mag_ofab250","rhs_mag_fab250","","","","","","","rhs_mag_R60M","rhs_mag_R60M","rhs_ASO2_CMFlare_Chaff_Magazine_x4"];
+            _plane setVariable ["mainGun", "rhs_weap_gsh302"];
+            _plane setVariable ["bombRacks", ["rhs_weap_fab250", "rhs_weap_ofab250"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "rhssaf_airforce_l_18":
+        {
+            _loadout = ["rhs_mag_bd3_usk_a_o25l_s25o","rhs_mag_bd3_usk_a_o25l_s25of","","","rhs_mag_R60M_APU60","rhs_mag_R60M_APU60","","rhs_BVP3026_CMFlare_Chaff_Magazine_x2"];
+            _plane setVariable ["mainGun", "rhs_weap_gsh301"];
+            _plane setVariable ["bombRacks", ["rhs_weap_s25", "rhs_weap_s25of"]];
+            _plane setVariable ["diveParams", [1000, 600, 200, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "vn_b_air_f4c_at":
+        {
+            _loadout = ["","","vn_bomb_500_mk82_he_mag_x1","vn_bomb_750_blu1b_fb_mag_x1","","","","","","",""];
+            _plane setVariable ["bombRacks", ["vn_bomb_mk82_he_launcher","vn_bomb_blu1b_750_fb_launcher"]];
+            _plane setVariable ["diveParams", [1000, 600, 170, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "vn_b_air_f100d_at":
+        {
+            _loadout = ["","","vn_fuel_f100_335_mag","vn_fuel_f100_335_mag","vn_bomb_500_blu1b_fb_mag_x1","vn_bomb_500_mk82_he_mag_x1"];
+            _plane setVariable ["mainGun", "vn_m39a1_v_quad"];
+            _plane setVariable ["bombRacks", ["vn_bomb_blu1b_500_fb_launcher", "vn_bomb_mk82_he_launcher"]];
+            _plane setVariable ["diveParams", [1000, 600, 170, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "vn_o_air_mig19_at":
+        {
+            _loadout = ["","","vn_bomb_500_fab250_he_mag_x1","vn_bomb_500_fab250_he_mag_x1"];
+            _plane setVariable ["mainGun", "vn_nr30_v_01"];
+            _plane setVariable ["bombRacks", ["vn_bomb_500_fab250_he_mag_x1"]];
+            _plane setVariable ["diveParams", [1000, 600, 170, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "vn_o_air_mig21_cas":
+        {
+            _loadout = ["vn_bomb_500_fab250_he_mag_x1","vn_bomb_500_fab250_he_mag_x1","vn_gunpod_gsh23l_v_200_mag"];
+            _plane setVariable ["mainGun", "vn_gunpod_gsh23l"];
+            _plane setVariable ["bombRacks", ["vn_bomb_fab250_he_launcher"]];
+            _plane setVariable ["diveParams", [1000, 600, 170, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "RHSGREF_A29B_HIDF":
+        {
+            _loadout = ["","rhs_mag_mk82","","rhs_mag_mk82","","rhsusf_ANALE40_CMFlare_Magazine_x2"];
+            _plane setVariable ["mainGun", "rhs_weap_M3W_A29"];
+            _plane setVariable ["bombRacks", ["rhs_weap_planeAI"]];
+            _plane setVariable ["diveParams", [1000, 600, 170, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "UK3CB_B_Mystere_HIDF_CAS1";
+        case "UK3CB_MDF_B_Mystere_CAS1":
+        {
+            _loadout = ["","PylonMissile_1Rnd_Mk82_F","PylonMissile_1Rnd_Mk82_F",""];
+            _plane setVariable ["mainGun", "uk3cb_mystere_cannon_30mm"];
+            _plane setVariable ["bombRacks", ["Mk82BombLauncher"]];
+            _plane setVariable ["diveParams", [1000, 600, 185, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "UK3CB_TKA_B_L39_PYLON";
+        case "UK3CB_AAF_B_L39_PYLON";
+        case "UK3CB_KRG_B_L39_PYLON";
+        case "UK3CB_LDF_B_L39_PYLON":
+        {
+            _loadout = ["PylonRack_1Rnd_AAA_missiles","","PylonMissile_1Rnd_Mk82_F","PylonWeapon_300Rnd_20mm_shells","PylonMissile_1Rnd_BombCluster_01_F","","PylonRack_1Rnd_AAA_missiles"];
+            _plane setVariable ["mainGun", "Twin_Cannon_20mm"];
+            _plane setVariable ["bombRacks", ["Mk82BombLauncher", "BombCluster_01_F"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        case "UK3CB_CW_SOV_O_LATE_MIG21_AT";
+        case "UK3CB_TKA_B_MIG21_AT":
+        {
+            _loadout = ["rhs_mag_ofab250_bd3_umk2a","","","rhs_mag_fab250_bd3_umk2a"];
+            _plane setVariable ["mainGun", "uk3cb_mig21_GSh23L_23mm"];
+            _plane setVariable ["bombRacks", ["rhs_weap_ofab250","rhs_weap_fab250"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        default
+        {
+            Error_1("Plane type %1 currently not supported for CAS, please add the case!", typeOf _plane);
+        };
+    };
+};
 if (_type == "CAS") then
 {
     _validInput = true;
