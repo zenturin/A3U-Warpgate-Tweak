@@ -55,7 +55,7 @@ private _aa = ["I_LT_01_AA_F"];
 
 ["vehiclesArtillery", ["I_Truck_02_MRL_F", "B_MBT_01_arty_F"]] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [
-["I_Truck_02_MRL_F", ["12Rnd_230mm_rockets"]],
+["I_Truck_02_MRL_F", ["12Rnd_230mm_rockets", "12Rnd_230mm_rockets_cluster"]],
 ["B_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"]]
 ]] call _fnc_saveToTemplate;
 
