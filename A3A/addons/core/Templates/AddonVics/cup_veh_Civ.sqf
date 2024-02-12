@@ -130,6 +130,9 @@ _addon set ["vehiclesCivHeli", [    //planes for test
 	,"CUP_C_Cessna_172_CIV" //Ambient
 ]];
 
+//check if there any planes in here and put the in _addon set ["vehiclesCivPlanes", 
+
+
 //"CUP_C_A300_CIV" //Ambient
 //,"CUP_C_B737_CIV" //Ambient
 //,"CUP_C_Cessna_172_CIV_BLUE" //Ambient
