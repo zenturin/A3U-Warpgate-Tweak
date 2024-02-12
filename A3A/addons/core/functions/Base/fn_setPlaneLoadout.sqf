@@ -30,7 +30,17 @@ private _cfg = _cfgAAClasses + _cfgCASClasses; // may be worth caching this on i
 if ((typeOf _plane) in _cfg) exitWith
 {
     switch (_type) do
-    {
+    {	
+	case "CASDIVE":
+        {
+            _loadout = getArray (_cfgCAS >> (typeOf _plane) >> "loadout");
+
+            _mainGun            = [(_cfgCAS >> (typeOf _plane)), "mainGun", ""] call BIS_fnc_returnConfigEntry;   //should be _cfgCASDIVE ?
+            _rocketLauncher     = [(_cfgCAS >> (typeOf _plane)), "rocketLauncher", []] call BIS_fnc_returnConfigEntry;
+            _missileLauncher    = [(_cfgCAS >> (typeOf _plane)), "missileLauncher", []] call BIS_fnc_returnConfigEntry;
+            _bombRacks          = [(_cfgCAS >> (typeOf _plane)), "bombRacks", []] call BIS_fnc_returnConfigEntry;
+            _diveParams         = [(_cfgCAS >> (typeOf _plane)), "diveParams", []] call BIS_fnc_returnConfigEntry;
+        };
         case "CAS":
         {
             _loadout = getArray (_cfgCAS >> (typeOf _plane) >> "loadout");
