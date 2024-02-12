@@ -14,10 +14,10 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagMarkerType", "flag_Syndicat"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
-private _vehiclesLightUnarmed = ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F"]] call _fnc_saveToTemplate;
+private _vehiclesLightUnarmed = ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F"]; 
+private _vehiclesLightArmed = ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F"];
 ["vehiclesTruck", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F"]] call _fnc_saveToTemplate;
+private _vehiclesAt = ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F"];
 private _vehicleAA = [];
 
 ["vehiclesBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
@@ -43,10 +43,17 @@ private _staticAA = ["I_static_AA_F"];
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
 if (_hasWs) then {
-  _vehicleAA pushBack "I_Tura_Truck_02_aa_lxWS";
-  _staticAA = ["I_Tura_ZU23_lxWS"];
+    _vehiclesLightUnarmed pushBack "I_G_Offroad_01_armor_base_lxWS";
+    _vehiclesLightArmed pushBack "I_G_Offroad_01_armor_armed_lxWS";
+    _vehiclesAt pushBack "I_G_Offroad_01_armor_AT_lxWS";
+    _vehiclesAA pushBack "I_Tura_Truck_02_aa_lxWS";
+    _staticAA = ["I_Tura_ZU23_lxWS"];
 };
-["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
+
+["vehiclesLightUnarmed", _vehiclesLightUnarmed] call _fnc_saveToTemplate;
+["vehiclesLightArmed", _vehiclesLightArmed] call _fnc_saveToTemplate;
+["vehiclesAT", _vehiclesAt] call _fnc_saveToTemplate;
+["vehiclesAA", _vehiclesAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
@@ -57,10 +64,7 @@ if (_hasWs) then {
 private _shopWs = if (_hasWs) then {
     [
         ["I_UAV_02_lxWS", 3500, "UAV", {tierWar > 2}], 
-        ["I_G_UAV_02_IED_lxWS", 4500, "UAV", {tierWar > 3}],
-        ["I_G_Offroad_01_armor_base_lxWS", 4500, "UNARMEDCAR", {true}],
-        ["I_G_Offroad_01_armor_armed_lxWS", 4500, "ARMEDCAR", {true}],
-        ["I_G_Offroad_01_armor_AT_lxWS", 4500, "ARMEDCAR", {true}]
+        ["I_G_UAV_02_IED_lxWS", 4500, "UAV", {tierWar > 3}]
     ]
 } else {
     []
@@ -69,14 +73,22 @@ private _shopWs = if (_hasWs) then {
 private _vehiclesBlackMarket = _shopWs + [
     ["I_UAV_01_F", 2000, "UAV", {true}],
     ["I_LT_01_AA_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["I_LT_01_scout_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["I_LT_01_cannon_F", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["I_LT_01_AT_F", 11000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
     ["I_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+    ["B_Heli_Light_01_F", 7000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["B_Heli_Light_01_dynamicLoadout_F", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
 ];
+
 ["blackMarketStock", _vehiclesBlackMarket] call _fnc_saveToTemplate;
 
 ["variants", [
     ["I_APC_Wheeled_03_cannon_F", ["Guerilla_01",1]],
-    ["I_LT_01_AA_F", ["Indep_Olive",1]]
+    ["I_LT_01_AA_F", ["Indep_Olive",1]],
+    ["I_LT_01_scout_F", ["Indep_Olive",1]],
+    ["I_LT_01_cannon_F", ["Indep_Olive",1]],
+    ["I_LT_01_AT_F", ["Indep_Olive",1]]
 ]] call _fnc_saveToTemplate;
 
 #include "Vanilla_Reb_Vehicle_Attributes.sqf"
