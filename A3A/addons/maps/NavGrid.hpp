@@ -40,4 +40,5 @@ class NavGrid {
     green_sea = QPATHTOFOLDER(Antistasi_green_sea.green_sea\navGrid.sqf);
 	brf_sumava = QPATHTOFOLDER(Antistasi_brf_sumava.brf_sumava\navGrid.sqf);
 	UMB_Colombia = QPATHTOFOLDER(Antistasi_UMB_Colombia.UMB_Colombia\navGrid.sqf);
+	tem_kujari = QPATHTOFOLDER(Antistasi_tem_kujari.tem_kujari\navGrid.sqf);
 };
