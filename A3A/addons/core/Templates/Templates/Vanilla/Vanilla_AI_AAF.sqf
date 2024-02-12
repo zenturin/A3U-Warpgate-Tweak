@@ -122,6 +122,10 @@ if (_hasWs) then {
     ["I_LT_01_cannon_F", ["showCamonetHull", 0.3, "showTools", 0.25, "showSLATHull", 0.3]]
 ]] call _fnc_saveToTemplate;
 
+["variants", [
+    ["I_LT_01_AA_F", ["Indep_Olive", 0]],
+    ["I_LT_01_scout_F",["Indep_Olive", 0]]
+]] call _fnc_saveToTemplate;
 /////////////////////
 ///  Identities   ///
 /////////////////////
