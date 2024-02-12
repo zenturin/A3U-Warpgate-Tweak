@@ -67,6 +67,7 @@ if (_hasHelicopters) then {
 };
 
 ["vehiclesHelisTransport", _transportHelicopters] call _fnc_saveToTemplate;
+private _lightAttackHelicopters = ["O_Heli_Light_02_dynamicLoadout_F"];
 ["vehiclesHelisAttack", ["O_Heli_Attack_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", ["O_MBT_02_arty_F"]] call _fnc_saveToTemplate;
