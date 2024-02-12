@@ -377,7 +377,7 @@ if (_hasMarksman) then {
     ];
 };
 
-_sfLoadoutData set ["marksmanRiflSes", _marksmanRifles];
+_sfLoadoutData set ["marksmanRiflSes", _marksmanRifles];  // a typo? "marksmanRiflSes"
 _sfLoadoutData set ["sniperRifles", [
 ["srifle_GM6_F", "", "", "optic_KHS_blk", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""],
 ["srifle_GM6_F", "", "", "optic_LRPS", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""],
