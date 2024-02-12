@@ -164,6 +164,9 @@ _loadoutData set ["officerUniforms", ["U_I_OfficerUniform"]];
 _loadoutData set ["officerVests", ["UK3CB_AAF_B_V_TacVest_DIGI_GRN"]];
 _loadoutData set ["officerHats", ["H_MilCap_dgtl", "UK3CB_AAF_B_H_Beret_Army_Off"]];
 
+_loadoutData set ["cloakUniforms", ["U_I_FullGhillie_ard", "U_I_FullGhillie_lsh", "U_I_FullGhillie_sard", "U_I_GhillieSuit", "UK3CB_AAF_B_U_CombatUniform_Ghillie_DIGI_Mixed"]];
+_loadoutData set ["cloakVests", ["UK3CB_AAF_B_V_MK_Vest_DIGI_BRN", "UK3CB_AAF_B_B_ASS_DIGI_GRN"]];
+
 _loadoutData set ["uniforms", ["UK3CB_AAF_B_U_CombatUniform_DIGI_GRN", "UK3CB_AAF_B_U_CombatUniform_Shortsleeve_DIGI_GRN", "UK3CB_AAF_B_U_JumperUniform_DIGI_GRN", "U_BG_Guerilla1_2_F"]];
 _loadoutData set ["MGvests", []];
 _loadoutData set ["MEDvests", []];
