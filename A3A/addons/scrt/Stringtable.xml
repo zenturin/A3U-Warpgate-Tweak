@@ -7329,7 +7329,7 @@
                 <Korean>%1은 방어 예비 병력이 하나도 없습니다!</Korean>
             </Key>
             <Key ID="STR_intel_key_pack">
-                <Original>You found a package of %1 decryption keys!&lt;br/&gt;They allow your faction to decrypt support calls.</Original>
+                <Original>You found a package of %1 decryption keys!&lt;br/&gt;This will allow your faction to decrypt support calls.</Original>
                 <Russian>Вы нашли упаковку с %1 ключами расшифровки!&lt;br/&gt;Это позволит вашей фракции расшифровывать вражеские вызовы поддержки.</Russian>
                 <Chinesesimp>您找到了 %1 个解密密钥包！&lt;br/&gt;这将允许你的派系破译敌人的支援通信。</Chinesesimp>
                 <Korean>%1의 암호 해독 키 패키지를 찾았습니다!&lt;br/&gt;그것들은 당신의 팩션이 지원 요청을 해독할 수 있게 해줍니다.</Korean>
