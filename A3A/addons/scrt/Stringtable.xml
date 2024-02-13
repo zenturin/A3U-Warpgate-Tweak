@@ -8805,6 +8805,10 @@
                 <Chinesesimp>无人机来袭，躲起来！</Chinesesimp>
                 <Korean>무인기 공격이 임박했습니다! 엄폐하십시오!</Korean>
             </Key>
+            <Key ID="STR_rivals_activity_heli_raid_description">
+                <Original>&lt;t color='#800000'&gt;%1 helicopter&lt;/t&gt; is near us!</Original>
+                <Russian>&lt;t color='#800000'&gt;Вертолёт %1&lt;/t&gt; рядом с нами!</Russian>
+            </Key>
         </Container>
     </Package>
     <Package name="A3-Antistasi-Namespace">
