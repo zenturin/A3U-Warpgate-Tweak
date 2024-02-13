@@ -243,6 +243,10 @@
                 <Chinesesimp>布尔什维克。\不要问它是什么。</Chinesesimp>
                 <Korean>볼셰비키.\n뭔지 절대 묻지 마시오.</Korean>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_lm">
+                <Original>Livonian Militia (LM).\nEastern European militants.</Original>
+                <Russian>Ополчение Ливонии.\nВосточноевропейское ополчение.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_ws_tura">
                 <Original>Tura.\nOne of the many militarized tribes of the Sefrawi Desert, almost like famous Turanic Raiders.</Original>
                 <Russian>Тура.\nОдно из многих военизированных племен пустыни Сефрави, почти как знаменитые туранские рейдеры.</Russian>
