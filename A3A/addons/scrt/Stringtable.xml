@@ -6933,10 +6933,10 @@
                 <Korean>근처에 수집할 것이 없습니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_looter_cooldown_text">
-                <Original>The looting ability has been used in the last 15 seconds! Please wait for a bit.</Original>
-                <Russian>Сборщик лута уже был использован недавно. Пожалуйста, подождите 15 секунд.</Russian>
-                <Chinesesimp>战利品收集最近已经用过了。 请等待15秒。</Chinesesimp>
-                <Korean>지난 15초 이내에 수집 능력이 사용되었습니다! 조금만 기다려 주십시오.</Korean>
+                <Original>The looting ability has been used recently! Please wait for a bit.</Original>
+                <Russian>Сборщик лута уже был использован недавно. Пожалуйста, подождите 10 секунд.</Russian>
+                <Chinesesimp>战利品收集最近已经用过了。 请等待10秒。</Chinesesimp>
+                <Korean>지난 10초 이내에 수집 능력이 사용되었습니다! 조금만 기다려 주십시오.</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_looter_enemies_nearby">
                 <Original>Loot gathering is interrupted - the enemies are nearby.</Original>
