@@ -8038,6 +8038,9 @@
                 <Chinesesimp>&lt;br/&gt;按 Q 使用战备恢复包。</Chinesesimp>
                 <Korean>&lt;br/&gt;전투 준비 복구 키트를 사용하려면 Q 키를 누르십시오.</Korean>
             </Key>
+            <Key ID="STR_antistasi_actions_unconscious_action_prompt_withstand">
+                <Original>&lt;br/&gt;Press H to Withstand.</Original>
+            </Key>
             <Key ID="STR_antistasi_actions_common_access_vehicle_marker_text">
                 <Original>Access Vehicle Market</Original>
                 <Russian>Посмотреть чёрный рынок техники</Russian>
