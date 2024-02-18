@@ -80,6 +80,7 @@ if (_radarType != "" && _samType != "" && garrison getVariable [_markerX + "_sam
 			};
 		}];
 	} forEach [_radarType, _samType];
+	}
 };
 
 /////////////////////////////
