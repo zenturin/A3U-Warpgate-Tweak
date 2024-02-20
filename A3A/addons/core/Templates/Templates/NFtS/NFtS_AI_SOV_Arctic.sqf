@@ -206,7 +206,7 @@ _sfLoadoutData set ["Hvests", ["V_NORTH_SOV_SN42"]];
 _sfLoadoutData set ["backpacks", ["NORTH_SOV_Veshmeshok_Gasmaskbag","NORTH_SOV_Veshmeshok_Gasmaskbag_2","NORTH_SOV_Veshmeshok_Gasmaskbag_3"]];
 _sfLoadoutData set ["helmets", ["H_NORTH_SOV_SSh40_Helmet_camo_winter","H_NORTH_SOV_SSh40_Helmet_camo_winter_2","H_NORTH_SOV_SSh40_Helmet_camo_winter_3","H_NORTH_SOV_SSh40_Helmet_camo_winter_4","H_NORTH_SOV_SSh40_Helmet_camo_winter_5","H_NORTH_SOV_SSh40_Helmet_camo_winter_6"]];
 _sfLoadoutData set ["sniHats", ["H_NORTH_SOV_Obr40_Ushanka","H_NORTH_SOV_Obr40_Ushanka_2","H_NORTH_SOV_Obr40_Ushanka_3","H_NORTH_SOV_Obr40_Ushanka_4","H_NORTH_SOV_Obr40_Ushanka_5","H_NORTH_SOV_Obr40_Ushanka_6","H_NORTH_SOV_Obr40_Ushanka_7"]];
-_sfLoadoutData set ["slHat", ["H_NORTH_SOV_Ushanka_fancy"]];
+_sfLoadoutData set ["slHat", ["H_NORTH_SOV_Obr40_Ushanka","H_NORTH_SOV_Obr40_Ushanka_2","H_NORTH_SOV_Obr40_Ushanka_3","H_NORTH_SOV_Obr40_Ushanka_4","H_NORTH_SOV_Obr40_Ushanka_5","H_NORTH_SOV_Obr40_Ushanka_6","H_NORTH_SOV_Obr40_Ushanka_7"]];
 _sfLoadoutData set ["binoculars", ["LIB_Binocular_SU"]];
 
 //SF Weapons
@@ -239,7 +239,7 @@ _eliteLoadoutData set ["Hvests", ["V_NORTH_SOV_SN42"]];
 _eliteLoadoutData set ["backpacks", ["NORTH_SOV_Veshmeshok_Gasmaskbag_Shinel","NORTH_SOV_Veshmeshok_Gasmaskbag_Shinel_2","NORTH_SOV_Veshmeshok_Gasmaskbag_Shinel_3"]];
 _eliteLoadoutData set ["helmets", ["H_NORTH_SOV_SSh40_Helmet_Winter_1","H_NORTH_SOV_SSh40_Helmet_Winter_2","H_NORTH_SOV_SSh40_Helmet_Winter_3","H_NORTH_SOV_SSh40_Helmet_camo_winter","H_NORTH_SOV_SSh40_Helmet_camo_winter_2","H_NORTH_SOV_SSh40_Helmet_camo_winter_3","H_NORTH_SOV_SSh40_Helmet_camo_winter_4","H_NORTH_SOV_SSh40_Helmet_camo_winter_5","H_NORTH_SOV_SSh40_Helmet_camo_winter_6"]];
 _eliteLoadoutData set ["sniHats", ["H_NORTH_SOV_Obr40_Ushanka","H_NORTH_SOV_Obr40_Ushanka_2","H_NORTH_SOV_Obr40_Ushanka_3","H_NORTH_SOV_Obr40_Ushanka_4","H_NORTH_SOV_Obr40_Ushanka_5","H_NORTH_SOV_Obr40_Ushanka_6","H_NORTH_SOV_Obr40_Ushanka_7"]];
-_eliteLoadoutData set ["slHat", ["H_NORTH_SOV_Ushanka_fancy"]];
+_eliteLoadoutData set ["slHat", ["H_NORTH_SOV_Obr40_Ushanka","H_NORTH_SOV_Obr40_Ushanka_2","H_NORTH_SOV_Obr40_Ushanka_3","H_NORTH_SOV_Obr40_Ushanka_4","H_NORTH_SOV_Obr40_Ushanka_5","H_NORTH_SOV_Obr40_Ushanka_6","H_NORTH_SOV_Obr40_Ushanka_7"]];
 _eliteLoadoutData set ["binoculars", ["LIB_Binocular_SU"]];
 
 _eliteLoadoutData set ["rifles", [
@@ -275,7 +275,7 @@ _militaryLoadoutData set ["glVests", ["V_NORTH_SOV_Belt_Late_SVT","V_NORTH_SOV_B
 _militaryLoadoutData set ["Hvests", ["V_NORTH_SOV_Belt_Late_SMG","V_NORTH_SOV_Belt_Late_SMG_2","V_NORTH_SOV_Belt_Late_SMG_3","V_NORTH_SOV_Belt_Late_SMG_4"]];
 _militaryLoadoutData set ["backpacks", ["NORTH_SOV_Veshmeshok_Gasmaskbag","NORTH_SOV_Veshmeshok_Gasmaskbag_2","NORTH_SOV_Veshmeshok_Gasmaskbag_3"]];
 _militaryLoadoutData set ["helmets", ["H_NORTH_SOV_SSh40_Helmet_Winter_1","H_NORTH_SOV_SSh40_Helmet_Winter_2","H_NORTH_SOV_SSh40_Helmet_Winter_3","H_NORTH_SOV_SSh36_Helmet_cover_winter_1","H_NORTH_SOV_SSh36_Helmet_cover_winter_2","H_NORTH_SOV_SSh36_Helmet_cover_winter_3"]];
-_militaryLoadoutData set ["slHat", ["H_NORTH_SOV_Ushanka_fancy"]];
+_militaryLoadoutData set ["slHat", ["H_NORTH_SOV_Obr40_Ushanka","H_NORTH_SOV_Obr40_Ushanka_2","H_NORTH_SOV_Obr40_Ushanka_3","H_NORTH_SOV_Obr40_Ushanka_4","H_NORTH_SOV_Obr40_Ushanka_5","H_NORTH_SOV_Obr40_Ushanka_6","H_NORTH_SOV_Obr40_Ushanka_7"]];
 _militaryLoadoutData set ["sniHats", ["H_NORTH_SOV_Obr40_Ushanka","H_NORTH_SOV_Obr40_Ushanka_2","H_NORTH_SOV_Obr40_Ushanka_3","H_NORTH_SOV_Obr40_Ushanka_4","H_NORTH_SOV_Obr40_Ushanka_5","H_NORTH_SOV_Obr40_Ushanka_6","H_NORTH_SOV_Obr40_Ushanka_7"]];
 _militaryLoadoutData set ["binoculars", ["LIB_Binocular_SU"]];
 
@@ -334,7 +334,7 @@ _militiaLoadoutData set ["Hvests", ["V_NORTH_SOV_Belt_Officer_Assault","V_NORTH_
 _militiaLoadoutData set ["backpacks", ["NORTH_SOV_Veshmeshok","NORTH_SOV_Veshmeshok_2","NORTH_SOV_Veshmeshok_3"]];
 _militiaLoadoutData set ["helmets", ["H_NORTH_SOV_Obr40_Ushanka","H_NORTH_SOV_Obr40_Ushanka_2","H_NORTH_SOV_Obr40_Ushanka_3","H_NORTH_SOV_Obr40_Ushanka_4","H_NORTH_SOV_Obr40_Ushanka_5","H_NORTH_SOV_Obr40_Ushanka_6","H_NORTH_SOV_Obr40_Ushanka_7","H_NORTH_SOV_SSh40_Helmet_Winter_1","H_NORTH_SOV_SSh40_Helmet_Winter_2","H_NORTH_SOV_SSh40_Helmet_Winter_3","H_NORTH_SOV_SSh39_Helmet_Winter_1","H_NORTH_SOV_SSh39_Helmet_Winter_2"]];
 _militiaLoadoutData set ["sniHats", ["H_NORTH_SOV_Obr40_Ushanka","H_NORTH_SOV_Obr40_Ushanka_2","H_NORTH_SOV_Obr40_Ushanka_3","H_NORTH_SOV_Obr40_Ushanka_4","H_NORTH_SOV_Obr40_Ushanka_5","H_NORTH_SOV_Obr40_Ushanka_6","H_NORTH_SOV_Obr40_Ushanka_7"]];
-_militiaLoadoutData set ["slHat", ["H_NORTH_SOV_Ushanka_fancy"]];
+_militiaLoadoutData set ["slHat", ["H_NORTH_SOV_Obr40_Ushanka","H_NORTH_SOV_Obr40_Ushanka_2","H_NORTH_SOV_Obr40_Ushanka_3","H_NORTH_SOV_Obr40_Ushanka_4","H_NORTH_SOV_Obr40_Ushanka_5","H_NORTH_SOV_Obr40_Ushanka_6","H_NORTH_SOV_Obr40_Ushanka_7"]];
 
 _militiaLoadoutData set ["rifles", [["NORTH_sov_M9130", "", "", "", ["NORTH_5Rnd_m39_mag"], [], ""],
         ["NORTH_SOV_M38", "", "", "", ["NORTH_5Rnd_m39_mag"], [], ""]]];
