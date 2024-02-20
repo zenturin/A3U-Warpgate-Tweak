@@ -3973,6 +3973,7 @@
             </Key>
             <Key ID="STR_params_allowUnlockedExplosives">
                 <Original>Allow Unlocked Explosives</Original>
+                <Russian>Разрешить разблокированную взрывчатку</Russian>
             </Key>
             <Key ID="STR_params_startWithLongRangeRadio">
                 <Original>[TFAR] Start with Long Range Radio</Original>
