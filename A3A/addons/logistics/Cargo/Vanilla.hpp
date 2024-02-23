@@ -497,6 +497,36 @@ class A3_Soft_F_Gamma_Offroad_01_Offroad_01_hmg_F : TRIPLES(ADDON,Cargo,Base)
     recoil = 250;
     isWeapon = 1;
 };
+class A3_Soft_F_Bootcamp_Offroad_01_Offroad_01_repair_CIV_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 7;
+};
+class A3_Soft_F_Bootcamp_Offroad_01_Offroad_01_repair_IG_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 7;
+};
+class A3_soft_f_gamma_van_01_Van_01_transport_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 7;
+};
+class A3_soft_f_gamma_van_01_Van_01_box_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 7;
+};
+class A3_soft_f_gamma_van_01_Van_01_fuel_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 7;
+};
 class A3_soft_f_beta_MRAP_03_MRAP_03_gmg_F : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.8};
@@ -578,6 +608,48 @@ class A3_soft_f_gamma_Truck_01_Truck_01_mover_F_p3d : TRIPLES(ADDON,Cargo,Base)
     rotation[] = {0,1,0};
     size = 8;
 };
+class A3_soft_f_gamma_Truck_02_Truck_02_medevac_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
+class A3_soft_f_gamma_Truck_02_Truck_02_box_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
+class A3_soft_f_gamma_Truck_02_Truck_02_fuel_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
+class A3_soft_f_beta_Truck_02_Truck_02_covered_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
+class a3_Soft_F_Orange_Van_02_Van_02_transport_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
+class a3_Soft_F_Orange_Van_02_Van_02_vehicle_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
+class a3_Soft_F_Orange_Van_02_Van_02_medevac_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
 class A3_Soft_F_Gamma_Truck_02_Truck_02_MRL_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.8};
@@ -643,6 +715,62 @@ class A3_armor_f_beta_APC_Tracked_01_APC_Tracked_01_aa_F : TRIPLES(ADDON,Cargo,B
 };
 ////////Size 10
 //All Size 10 and above Vehicles should probably be considered as weapons so they can be transported in capable Vehicles
+class a3_Soft_F_Gamma_Truck_01_Truck_01_cargo_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 10;
+    isWeapon = 1;
+    recoil = 1
+};
+class A3_soft_f_beta_Truck_01_Truck_01_transport_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 10;
+    isWeapon = 1;
+    recoil = 1
+};
+class A3_soft_f_beta_Truck_01_Truck_01_covered_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 10;
+    isWeapon = 1;
+    recoil = 1
+};
+class A3_soft_f_gamma_Truck_01_Truck_01_box_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 10;
+    isWeapon = 1;
+    recoil = 1
+};
+class A3_soft_f_gamma_Truck_01_Truck_01_fuel_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 10;
+    isWeapon = 1;
+    recoil = 1
+};
+class A3_soft_f_gamma_Truck_01_Truck_01_medevac_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 10;
+    isWeapon = 1;
+    recoil = 1
+};
+class A3_soft_f_gamma_Truck_01_Truck_01_ammo_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 10;
+    isWeapon = 1;
+    recoil = 1
+};
 class A3_Air_F_Heli_Light_01_Heli_Light_01_civil_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.8};
