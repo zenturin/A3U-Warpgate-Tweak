@@ -261,6 +261,29 @@ class A3_soft_f_Offroad_01_Offroad_01_unarmed_F : TRIPLES(ADDON,Nodes,Base)
         };
     };
 };
+class A3_Soft_F_Bootcamp_Offroad_01_Offroad_01_repair_CIV_F_p3d : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {-0.05,-2.37,-0.659};
+            seats[]= {1,2};
+        };
+    };
+};
+class A3_Soft_F_Bootcamp_Offroad_01_Offroad_01_repair_IG_F_p3d : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {-0.05,-2.37,-0.659};
+            seats[]= {1,2};
+        };
+    };
+};
+
 ///////////////////4x4
 class A3_Soft_F_Exp_Offroad_02_Offroad_02_F_p3d : TRIPLES(ADDON,Nodes,Base)
 {
