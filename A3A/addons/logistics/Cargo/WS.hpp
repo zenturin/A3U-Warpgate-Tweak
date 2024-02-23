@@ -96,6 +96,12 @@ class lxws_vehicles_f_lxws_APC_Wheeled_01_APC_Wheeled_01_atgm_lxWS_p3d : TRIPLES
     recoil = 550;
     isWeapon = 1;
 };
+class lxws_vehicles_f_lxws_Truck_02_Truck_02_box_lxWS_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
 class lxWS_vehicles_1_f_lxws_APC_Tracked_02_APC_Tracked_02_30mm_lxws_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.8};
