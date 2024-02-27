@@ -51,7 +51,15 @@ class A3_Static_F_Gamma_HMG_01_HMG_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
     recoil = 100;
     isWeapon = 1;
 };
-
+/////size 12
+class A3_Boat_F_Boat_Armed_01_Boat_Armed_01_minigun_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 11;
+    isWeapon = 1;
+    recoil = 1000
+};
 class A3_static_f_Mortar_01_Mortar_01_F : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {-0.1,-0.5,0.74};
@@ -404,6 +412,12 @@ class A3_Soft_F_Exp_Offroad_02_Offroad_02_LMG_F_p3d : TRIPLES(ADDON,Cargo,Base)
     recoil = 500;
 };
 /////////Size 6
+class A3_boat_f_Boat_Transport_01_Boat_Transport_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 6;
+};
 class A3_soft_f_gamma_Hatchback_01_Hatchback_01_F : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.8};
@@ -445,6 +459,12 @@ class A3_Soft_F_Exp_LSV_02_LSV_02_AT_F_p3d : TRIPLES(ADDON,Cargo,Base)
     isWeapon = 1;
 };
 /////////Size 7
+class A3_boat_f_beta_SDV_01_SDV_01_F_p3d: TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 7;
+};
 class A3_soft_f_gamma_SUV_01_SUV_01_F : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.8};
@@ -602,6 +622,18 @@ class A3_armor_f_beta_APC_Wheeled_02_APC_Wheeled_02_rcws_F_p3d : TRIPLES(ADDON,C
     isWeapon = 1;
 };
 ///////Size 8
+class A3_Boat_F_Exp_Boat_Transport_02_Boat_Transport_02_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
+class A3_boat_f_gamma_Boat_Civil_01_Boat_Civil_01_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 8;
+};
 class A3_soft_f_gamma_Truck_01_Truck_01_mover_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.8};
@@ -885,6 +917,15 @@ class A3_Armor_F_Tank_MBT_04_MBT_04_cannon_F_p3d : TRIPLES(ADDON,Cargo,Base)
     recoil = 1000
 };
 class A3_Armor_F_Tank_MBT_04_MBT_04_command_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.8};
+    rotation[] = {0,1,0};
+    size = 11;
+    isWeapon = 1;
+    recoil = 1000
+};
+/////size 12
+class A3_Boat_F_Boat_Armed_01_Boat_Armed_01_minigun_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.8};
     rotation[] = {0,1,0};
