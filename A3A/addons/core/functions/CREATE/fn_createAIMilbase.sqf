@@ -77,7 +77,6 @@ if (_radarType != "" && _samType != "" && garrison getVariable [_markerX + "_sam
 				garrison setVariable [_varName, (_previousValue + 900), true];
 			};
 		}];
-		};
 	} forEach [_radarType, _samType];
 };
 
