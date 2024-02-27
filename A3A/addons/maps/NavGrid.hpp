@@ -39,4 +39,5 @@ class NavGrid {
     gm_weferlingen_summer = QPATHTOFOLDER(Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\navGrid.sqf);
     green_sea = QPATHTOFOLDER(Antistasi_green_sea.green_sea\navGrid.sqf);
 	brf_sumava = QPATHTOFOLDER(Antistasi_brf_sumava.brf_sumava\navGrid.sqf);
+	spex_utah_beach = QPATHTOFOLDER(Antistasi_spex_utah_beach.spex_utah_beach\navGrid.sqf);
 };
