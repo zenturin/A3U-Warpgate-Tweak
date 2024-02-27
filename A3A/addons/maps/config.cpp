@@ -66,6 +66,7 @@ class CfgMissions
     A3A_Mission(green_sea, "Antistasi Ultimate - Green Sea")
 		A3A_Mission(brf_sumava, "Antistasi Ultimate - Sumava")
 		A3A_Mission(namalsk, "Antistasi Ultimate - Namalsk")
+		A3A_Mission(WW2_Omaha_Beach, "Antistasi Ultimate - Omaha Beach")
 		A3A_Mission(UMB_Colombia, "Antistasi Ultimate - Colombia")
 		A3A_Mission(tem_kujari, "Antistasi Ultimate - Kujari")
 #if __A3_DEBUG__
