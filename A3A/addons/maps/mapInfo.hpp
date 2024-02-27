@@ -40,4 +40,6 @@ class mapInfo {
     #include "Antistasi_green_sea.green_sea\mapInfo.hpp"
 	#include "Antistasi_brf_sumava.brf_sumava\mapInfo.hpp"
 	#include "Antistasi_WW2_Omaha_Beach.WW2_Omaha_Beach\mapInfo.hpp"
+	#include "Antistasi_UMB_Colombia.UMB_Colombia\mapInfo.hpp"
+	#include "Antistasi_tem_kujari.tem_kujari\mapInfo.hpp"
 };
