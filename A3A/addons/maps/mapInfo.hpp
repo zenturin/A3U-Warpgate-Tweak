@@ -39,6 +39,7 @@ class mapInfo {
     #include "Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\mapInfo.hpp"
     #include "Antistasi_green_sea.green_sea\mapInfo.hpp"
 	#include "Antistasi_brf_sumava.brf_sumava\mapInfo.hpp"
+	#include "Antistasi_spex_utah_beach.spex_utah_beach\mapInfo.hpp"
 	#include "Antistasi_pja310.pja310\mapInfo.hpp"
 	#include "Antistasi_namalsk.namalsk\mapInfo.hpp"
 	#include "Antistasi_WW2_Omaha_Beach.WW2_Omaha_Beach\mapInfo.hpp"
