@@ -93,11 +93,19 @@ class lxws_vehicles_1_f_lxws_APC_Wheeled_02_APC_Wheeled_02_unarmed_lxws_p3d : TR
     {
         class Node1
         {
-            offset[] = {0.22,-3.2,-0.1};
+            offset[] = {0.215,-1.6,-0.1};
         };
         class Node2
         {
-            offset[] = {0.22,-4,-0.1};
+            offset[] = {0.215,-2.4,-0.1};
+        };
+        class Node3
+        {
+            offset[] = {0.215,-3.2,-0.1};
+        };
+        class Node4
+        {
+            offset[] = {0.215,-4,-0.1};
         };
     };
 };
