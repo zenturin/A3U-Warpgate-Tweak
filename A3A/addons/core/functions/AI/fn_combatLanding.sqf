@@ -34,6 +34,8 @@ _helicopter flyInHeight _midHeight;
 waitUntil {sleep 1; (_helicopter distance2D _landPos) < 600};
 
 _helicopter flyInHeight 0;                  // helps to keep it near the ground after landing
+_helicopter land "LAND"; ///was in C.V. so I added it here, comment from there "also drops the gear on the huron"
+_helicopter action ["LandGear", _helicopter]; ///just to make sure transport uses landgear
 
 // Landing path setup
 private _endPos = getPosASL _landPad;
@@ -112,10 +114,23 @@ while {_interval < 0.9999} do
     _velocityVector = _lineEnd vectorDiff _lineStart;
     _velocityVector = (vectorNormalized _velocityVector) vectorMultiply (_initialSpeed * (1 - _interval));
 
+    ///heli will use flares when it starts the landing procedure, probably not the smartest thing to do but I thought it would be cool
+    ///driver _helicopter forceWeaponFire ['CMFlareLauncher', 'Burst'];
+    ///driver _helicopter forceWeaponFire ["CMFlareLauncher_Triples", 'Burst'];
+    ///driver _helicopter forceWeaponFire ["CMFlareLauncher_Singles", 'Burst']; commented it out because heli uses flares until empty
+    ///and there 3 variants since different aircraft have different flare launchers
+
     if(!canMove _helicopter || !alive _driver) exitWith {};
 };
 
+///_heli addEventHandler ["HandleDamage",{true}]; I wanted to make heli invinsible for a split second when it touches the ground
+/// maybe EventHandler LandedTouchDown will work
+
 _cargoGroup leaveVehicle _helicopter;
+/* forEach (_x, _i) { if (_i % 2 == 0) { _x leaveVehicle _helicopter, true; } else { _x leaveVehicle _helicopter; } }; */
+/* forEach _cargoGroup (_x, _i) { if (_i % 2 == 0) { _x leaveVehicle _helicopter, true; } else { _x leaveVehicle _helicopter; } }; */
+///wanted to make cargo to moveout faster, basicly every other unit in group would moveout instantly
+
 private _cargoWP1 = _cargoGroup addWaypoint [_posDestination, 10];
 _cargoWP1 setWaypointType "MOVE";
 _cargoWP1 setWaypointBehaviour "AWARE";
@@ -139,6 +154,7 @@ private _dismountTime = 5 + count units _cargoGroup;
     deleteVehicle _landPad;
 };
 [_helicopter] call A3A_fnc_smokeCoverAuto;          // Already done by GetOut handler in AIVehInit?
+///smoke cover doesn't work for somereason. In C.V. it does.
 
 sleep _dismountTime;
 
@@ -148,3 +164,12 @@ _vehWP1 setWaypointType "MOVE";
 _vehWP1 setWaypointStatements ["true", "if (local this and alive this) then { deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList }"];
 _vehWP1 setWaypointBehaviour "CARELESS";
 _crewGroup setCurrentWaypoint _vehWP1;
+/* if ((getPosATL _helicopter select 2) == 50) then
+{
+    for '_i' from 1 to (5 + (round random 5 + 5)) do
+    {
+        driver _helicopter forceWeaponFire ['CMFlareLauncher', 'Single'];
+        sleep 1;
+    };
+};*/
+/// wanted to add heli flare usage after it drops troops and reaches certian altitude 
