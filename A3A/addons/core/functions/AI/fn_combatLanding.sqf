@@ -31,11 +31,25 @@ _vehWP0 setWaypointBehaviour "CARELESS";
 private _midHeight = [100, 150] select (A3A_climate isEqualTo "tropical");
 _helicopter flyInHeight _midHeight;
 
+waitUntil {sleep 1; (_helicopter distance2D _landPos) < 850};
+
+/* while {_helicopter distance2D _landPos} != 600 do {
+    driver _helicopter forceWeaponFire ['CMFlareLauncher', 'Burst'],
+    driver _helicopter forceWeaponFire ["CMFlareLauncher_Triples", 'Burst'],
+    driver _helicopter forceWeaponFire ["CMFlareLauncher_Singles", 'Burst'];
+}; */ ///commented out due to Error, my SQF bad
+for '_i' from 1 to (5 + (round random 10 + 5)) do
+    {
+        driver _helicopter forceWeaponFire ['CMFlareLauncher', 'Burst'];
+        driver _helicopter forceWeaponFire ["CMFlareLauncher_Triples", 'Burst'];
+        driver _helicopter forceWeaponFire ["CMFlareLauncher_Singles", 'Burst'];
+        sleep 1;
+    }; 
+
 waitUntil {sleep 1; (_helicopter distance2D _landPos) < 600};
 
 _helicopter flyInHeight 0;                  // helps to keep it near the ground after landing
 _helicopter land "LAND"; ///was in C.V. so I added it here, comment from there "also drops the gear on the huron"
-_helicopter action ["LandGear", _helicopter]; ///just to make sure transport uses landgear
 
 // Landing path setup
 private _endPos = getPosASL _landPad;
@@ -91,6 +105,8 @@ while {_interval < 0.9999} do
     _heightDiff = (sin (_angleIs + _angleDiff)) - (_vectorDir select 2);
     _vectorDir = _vectorDir vectorAdd [0, 0, _heightDiff];
 
+    _helicopter action ["LandGear", _helicopter]; ///just to make sure transport uses landgear
+
     private _lineStart = _startPos vectorAdd (_startToMidVector vectorMultiply _interval);
     private _lineEnd = _midPos vectorAdd (_midToEndVector vectorMultiply _interval);
 
@@ -114,14 +130,10 @@ while {_interval < 0.9999} do
     _velocityVector = _lineEnd vectorDiff _lineStart;
     _velocityVector = (vectorNormalized _velocityVector) vectorMultiply (_initialSpeed * (1 - _interval));
 
-    ///heli will use flares when it starts the landing procedure, probably not the smartest thing to do but I thought it would be cool
-    ///driver _helicopter forceWeaponFire ['CMFlareLauncher', 'Burst'];
-    ///driver _helicopter forceWeaponFire ["CMFlareLauncher_Triples", 'Burst'];
-    ///driver _helicopter forceWeaponFire ["CMFlareLauncher_Singles", 'Burst']; commented it out because heli uses flares until empty
-    ///and there 3 variants since different aircraft have different flare launchers
-
     if(!canMove _helicopter || !alive _driver) exitWith {};
 };
+
+if (!isEngineOn _helicopter) then { _helicopter engineOn true; }; ///tried , didn't work
 
 ///_heli addEventHandler ["HandleDamage",{true}]; I wanted to make heli invinsible for a split second when it touches the ground
 /// maybe EventHandler LandedTouchDown will work
@@ -147,6 +159,7 @@ private _dismountTime = 5 + count units _cargoGroup;
 [_helicopter, time + _dismountTime, _midHeight, _landPad] spawn {
     params ["_heli", "_endTime", "_flyHeight", "_landPad"];
     while { time < _endTime } do {
+        if (!isEngineOn _heli) then { _heli engineOn true; }; ///tried , didn't work
         _heli setVelocity [0,0,-0.5];
         sleep 1;
     };
@@ -157,6 +170,8 @@ private _dismountTime = 5 + count units _cargoGroup;
 ///smoke cover doesn't work for somereason. In C.V. it does.
 
 sleep _dismountTime;
+
+if (!isEngineOn _helicopter) then { _helicopter engineOn true; }; ///also tried here , didn't work
 
 // Heli RTB
 private _vehWP1 = _crewGroup addWaypoint [_originPos, 0];
