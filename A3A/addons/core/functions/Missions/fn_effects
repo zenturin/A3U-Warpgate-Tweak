@@ -50,7 +50,7 @@ _ps2 attachTo [_object, [0, 0, 1]];
 
 sleep 11;
 
-if _object = "SpaceshipCapsule_01_F" then {
+if (typeOf _object == "SpaceshipCapsule_01_F") then {
 	
 	setAperture 10;
 
