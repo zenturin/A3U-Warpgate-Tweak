@@ -54,7 +54,7 @@ if (typeOf _object == "SpaceshipCapsule_01_F") then {
 	
 	setAperture 10;
 
-	playSound3D ["x\A3A\addons\core\Sounds\Misc\Sonic.ogg", _object, false, getPosASL _object, 5, 1, 5000];
+	playSound3D [QPATHTOFOLDER(Sounds\Misc\Sonic.ogg), _object, false, getPosASL _object, 5, 1, 5000];
 
 	player spawn {
 		for "_i" from 0 to 200 do {
