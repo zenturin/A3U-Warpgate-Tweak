@@ -199,6 +199,7 @@ switch (_type) do {
 					} else {
 						[[_site],"A3A_fnc_LOG_Helicrash"] remoteExec ["A3A_fnc_scheduler", 2];
 					};
+					/// something to add here to get the mission, don't know what exactly
                 };
                 default {};
             };
