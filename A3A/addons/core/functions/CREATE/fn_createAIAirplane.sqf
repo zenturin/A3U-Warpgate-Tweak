@@ -66,6 +66,7 @@ if (_radarType != "" && _samType != "" && garrison getVariable [_markerX + "_sam
 						sleep 2.45;
 					} forEach [120, 240, 0];
 				};
+			};
 			_aaVehicle setVehicleRadar 1;
 			_aaVehicle setVehicleReportRemoteTargets true;
 		};
