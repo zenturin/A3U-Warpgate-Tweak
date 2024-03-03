@@ -41,7 +41,7 @@ if (_part == "" && _damage > 0.1) then
 // Let ACE medical handle the rest (inc return value) if it's running
 if (A3A_hasACEMedical) exitWith {
 	if (_unit getVariable ["incapacitated", false]) then {
-		[_unit, _injurer] call _makeUnconscious;
+		[_unit] call A3A_fnc_askHelp;
 	};
 };
 

@@ -57,6 +57,8 @@ private _fnc_doAceHeal = {
     private _cured = if !(_target call ACE_medical_ai_fnc_isInjured) then {
         [_medic, _target] call ACE_medical_ai_fnc_healingLogic;
         true;
+    } else {
+        sleep 10; true;
     };
     if (_cured && _medic != _target && _isPlayerGroup) then {
         _medic groupChat format ["You are ready %1",name _target];
