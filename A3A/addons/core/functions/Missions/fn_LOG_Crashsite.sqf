@@ -78,7 +78,7 @@ private _searchHeliClass =  if (_difficult) then {
     selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
 };
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
-private _boxClass = "_SpaceshipCapsule_01_container_F";
+private _boxClass = "SpaceshipCapsule_01_container_F";
 private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupSpecOpsRandom")} else {selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)};
 
 private _infantrySquadArray = selectRandom ([_faction, "groupsTierMedium"] call SCRT_fnc_unit_flattenTier);
@@ -107,13 +107,14 @@ Debug_1("Crashsite position has been found after %1 iterations.", str _iteration
 Info_1("Crashsite position: %1", str _crashPosition);
 
 _groupPilot = createGroup _sideX;
-_pilot = [_groupPilot, _pilotClass, _crashPosition, [], 0, "NONE"] call A3A_fnc_createUnit;
+/* _pilot = [_groupPilot, _pilotClass, _crashPosition, [], 0, "NONE"] call A3A_fnc_createUnit;
 _pilotPosition = position _pilot;
 _bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1, (_pilotPosition select 2) + 0.05], [], 0,  "CAN_COLLIDE"];
-_pilot setDamage 1;
+_pilot setDamage 1; */
 
 //creating mission marker near crash site
 _satellite = createVehicle [_satellite, [_crashPosition select 0, _crashPosition select 1, 0.9], [], 0, "CAN_COLLIDE"];
+_satellite hideObjectGlobal true;
 private _crashPositionMarker = _satellite getRelPos [random 250,random 360];
 
 //creating Task
@@ -138,83 +139,105 @@ private _rebelTaskText = format [
 ] call BIS_fnc_taskCreate;
 [_taskId, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 
-///вставить новый код здесь
-/* fnc_fg_orderToFall = {
-params ["_crashPosition"];
-position_approved = _crashPosition;
-publicvariable "position_approved"; */
+///тест
+/* sleep 10;
+_crashPosition remoteExec ["SCRT_fnc_effect_createBigExplosionEffect", 0]; */
 
-/* PuskTime = 5*60; // НЕ ЗАБУДЬ УБРАТЬ ТЕСТОВОЕ ВРЕМЯ!!!
-PuskTime = diag_tickTime + PuskTime;
- */
-/* waitUntil { */
-/* sleep 5;  */
-/* (diag_tickTime > ((missionnamespace getVariable ["a3a_var_pausedtime", 0]) + PuskTime))
-}; */
+///вставить новый код здесь
 
 private _xcoord = random [2900, 3300, 3700];
 private _ycoord = random [-300, 1, 300];
 
 private _satellitedummy = "SpaceshipCapsule_01_F" createVehicle [0, 0, 250];
-private _sat_logic ="C_Quadbike_01_F" createVehicle [0, 0, 270];
-_satellitedummy attachTo [_sat_logic, [0, 0, 0]];
-_sat_logic setpos [((_crashPosition select 0) -_xcoord), ((_crashPosition select 1) -_ycoord), 2500];
+
+_satellitedummy setpos [((_crashPosition select 0) -_xcoord), ((_crashPosition select 1) -_ycoord), 3000];
 
 _yaw = 90; _pitch = 30; _roll = 0;
-_sat_logic setVectorDirAndUp [
+_satellitedummy setVectorDirAndUp [
 [sin _yaw * cos _pitch, cos _yaw * cos _pitch, sin _pitch],
 [[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] call BIS_fnc_rotateVector2D
 ];
 
-_vel = velocity _sat_logic;
-_dir = getDir _sat_logic;
+_vel = velocity _satellitedummy;
+_dir = getDir _satellitedummy;
 _additionalSpeed = 150; // in m/s
-_sat_logic setVelocity [
+_satellitedummy setVelocity [
 (_vel select 0) + (sin _dir * _additionalSpeed),
 (_vel select 1) + (cos _dir * _additionalSpeed),
 (_vel select 2) // horizontal only
 ];
-
 [_satellitedummy] call A3A_fnc_Satellitelaunch;
 
-/* waitUntil {sleep 0.3; ((getPosATL _sat_logic select 2) < 60)};
-_position_sat_local = getPosATL _sat_logic;
+_crashsiteactual = getPosATL _satellitedummy;
 
-_bomb = "Sh_155mm_AMOS" createVehicle [(_position_sat_local select 0),(_position_sat_local select 1),0];
-
+_bomb = "ammo_Missile_Cruise_01" createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
+_satellite setPos [_crashsiteactual select 0,_crashsiteactual select 1, 0.6];
+_satellite hideObjectGlobal false;
+_satellite setDir (abs (_dir+124)%360);
 deletevehicle _satellitedummy;
-deletevehicle _sat_logic;
+if (typeOf _satellite == "SpaceshipCapsule_01_wreck_F") then {
+    _additionaldebri = "SpaceshipCapsule_01_debris_F"  createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
+    _offset = [1.5,5,-0.6];
+    _worldPos = _satellite modelToWorld _offset;
+    _additionaldebri setPos _worldPos;
+};
+/* }; */
 
-sleep 0.3;
+/* sleep 0.3;
 
 sleep 2; */
 
-/* }; */
-/* deletevehicle _satellitedummy;
-deletevehicle _sat_logic; */
+
+/* deletevehicle _sat_logic; */
+
 /////
-/* private  */
 
 {  
 	[_x, true] remoteExec ["hideObject", 0, true];
     _x enableSimulationGlobal false;
-} forEach nearestTerrainObjects [_crashPosition, ["ROCKS"], 50, false, true];
+} forEach nearestTerrainObjects [_satellite, ["ROCKS","ROCK"], 50, false, true];
+_terrainObjects = nearestTerrainObjects [_satellite, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 200, false, false];
 {  
-    _x setDamage 1;
-} forEach nearestTerrainObjects [_crashPosition, ["Tree", "Bush", "BUILDING"], 20, false, true];
+    _x setDamage [0.75,true ,_satellite];
+} forEach _terrainObjects;
+_terrainObjects = nearestTerrainObjects [_satellite, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 150, false, false];
+{  
+    _x setDamage [0.5,true ,_satellite];
+} forEach _terrainObjects;
+_terrainObjects2 = nearestTerrainObjects [_satellite, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 100, false, false];
+{  
+    _x setDamage [1, true ,_satellite];
+} forEach _terrainObjects2;
 
-private _smokeEffect = "test_EmptyObjectForSmoke" createVehicle _crashPosition; 
+_fireposition2 = nearestTerrainObjects [_satellite, ["Tree", "Bush", "BUILDING"], 100, true, false];
+{  
+    for "_i" from 0 to (random [5,6,8]) do {
+
+    [_fireposition2, 5000] remoteExec ["SCRT_fnc_effect_createBurningDebrisEffect", 0, _satellite];
+
+    private _fireEffectEmitter = "#particlesource" createVehicle _fireposition2;
+    [_fireEffectEmitter, "BigDestructionFire"] remoteExec ["setParticleClass", 0, _fireEffectEmitter];
+
+    private _lightEffectEmitter = "#lightpoint" createVehicle _fireposition2; 
+    [_lightEffectEmitter, 0.3] remoteExec ["setLightBrightness", 0, _lightEffectEmitter];
+    [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightAmbient", 0, _lightEffectEmitter];
+    [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightColor", 0, _lightEffectEmitter];
+
+    _effectsAndProps append [_fireEffectEmitter, _lightEffectEmitter];};    
+}/*  forEach nearestTerrainObjects [_satellite, ["Tree", "Bush", "BUILDING"], 100, false, true] */;
+
+private _smokeEffect = "test_EmptyObjectForSmoke" createVehicle _crashsiteactual; 
 _smokeEffect attachTo [_satellite,[0,1.5,-1]];
 _effectsAndProps pushBack _smokeEffect;
 
 _effectsAndProps pushBack _satellite;
 _vehicles pushBack _satellite;
 
-for "_i" from 0 to (random [3,5,6]) do {
+for "_i" from 0 to (random [10,12,14]) do {
     _firePosition = [
-        _crashPosition, 
+        _crashsiteactual, 
         2,
-        25,
+        30,
         2
     ] call BIS_fnc_findSafePos;
 
@@ -228,54 +251,12 @@ for "_i" from 0 to (random [3,5,6]) do {
     [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightAmbient", 0, _lightEffectEmitter];
     [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightColor", 0, _lightEffectEmitter];
 
-    _effectsAndProps append [_fireEffectEmitter, _lightEffectEmitter];
-};
-
-
-
-//loiter helicopter
-_searchHeliData = [[(_crashPosition select 0) + random 100, (_crashPosition select 1) + random 100, 300 + random 500], 0, _searchHeliClass, _sideX] call A3A_fnc_spawnVehicle;
-_searchHeliVeh = _searchHeliData select 0;
-[_searchHeliVeh, _sideX] call A3A_fnc_AIVEHinit;
-_searchHeliCrew = _searchHeliData select 1;
-{[_x] call A3A_fnc_NATOinit} forEach _searchHeliCrew;
-_heliVehicleGroup = _searchHeliData select 2;
-
-private _pilot = driver _searchHeliVeh;
-_pilot disableAI "LIGHTS";
-_pilot action ["lightOn", _searchHeliVeh];
-_pilot action ["collisionlightOn", _searchHeliVeh];
-//maybe this should be broadcasted
-_searchHeliVeh setPilotLight true;
-_searchHeliVeh setCollisionLight true;
-
-_groups pushBack _heliVehicleGroup;
-_vehicles pushBack _searchHeliVeh;
-
-if(_searchHeliClass in (_faction get "vehiclesHelisLight")) then {
-    _heliLoiterWaypoint = _heliVehicleGroup addWaypoint [_crashPosition, 0];
-    _heliLoiterWaypoint setWaypointType "LOITER";
-    _heliLoiterWaypoint setWaypointBehaviour "SAFE";
-    [_heliVehicleGroup, 0] setWaypointLoiterRadius 400;
-    [_heliVehicleGroup, 0] setWaypointLoiterType "CIRCLE_L";
-
-    //spawning heli inf
-    private _heliInfGroup = selectRandom ([_faction, "groupsTierMedium"] call SCRT_fnc_unit_flattenTier);
-    private _heliInfgroupX = [_missionOriginPos, _sideX, _heliInfGroup] call A3A_fnc_spawnGroup;
-    {
-        _x assignAsCargo _searchHeliVeh; 
-        _x moveInAny _searchHeliVeh; 
-        [_x] join _heliVehicleGroup; 
-        [_x] call A3A_fnc_NATOinit
-    } forEach units _heliInfgroupX;
-    deleteGroup _heliInfgroupX;
-} else {
-    [_heliVehicleGroup, _crashPosition, 450] call bis_fnc_taskPatrol;
+    _effectsAndProps append [_fireEffectEmitter, _lightEffectEmitter];    
 };
 
 //spawning box
-private _boxPosition = +_crashPosition;
-_boxPosition set [2, (_crashPosition select 2) + 5];
+private _boxPosition = +_crashsiteactual;
+_boxPosition set [2, (_crashsiteactual select 2) + 5];
 private _box = _boxClass createVehicle _boxPosition;
 _box allowDamage false;
 // _box setVectorDirAndUp [[0,0,-1], [0,1,0]];
@@ -314,6 +295,10 @@ private _cargoVehicleCrew = units _cargoVehicleGroup;
 _groups pushBack _cargoVehicleGroup;
 _vehicles pushBack _cargoVehicle;
 
+////
+_cargoGroupSpawnpositon = getPosATL _cargoVehicle;
+////
+
 _cargoGroupX = [_missionOriginPos, _sideX, _infantrySquadArray] call A3A_fnc_spawnGroup;
 {
     _x assignAsCargo _cargoVehicle; 
@@ -327,6 +312,46 @@ deleteGroup _cargoGroupX;
 _cargoVehicleWp = _cargoVehicleGroup addWaypoint [position _box, 1];
 _cargoVehicleWp setWaypointType "GETOUT";
 _cargoVehicleWp setWaypointBehaviour "SAFE";
+
+//loiter helicopter
+_searchHeliData = [[(_cargoGroupSpawnpositon select 0) + random 100, (_cargoGroupSpawnpositon select 1) + random 100, 250 + random 100], 0, _searchHeliClass, _sideX] call A3A_fnc_spawnVehicle;
+_searchHeliVeh = _searchHeliData select 0;
+[_searchHeliVeh, _sideX] call A3A_fnc_AIVEHinit;
+_searchHeliCrew = _searchHeliData select 1;
+{[_x] call A3A_fnc_NATOinit} forEach _searchHeliCrew;
+_heliVehicleGroup = _searchHeliData select 2;
+
+private _pilot = driver _searchHeliVeh;
+_pilot disableAI "LIGHTS";
+_pilot action ["lightOn", _searchHeliVeh];
+_pilot action ["collisionlightOn", _searchHeliVeh];
+//maybe this should be broadcasted
+_searchHeliVeh setPilotLight true;
+_searchHeliVeh setCollisionLight true;
+
+_groups pushBack _heliVehicleGroup;
+_vehicles pushBack _searchHeliVeh;
+
+if(_searchHeliClass in (_faction get "vehiclesHelisLight")) then {
+    _heliLoiterWaypoint = _heliVehicleGroup addWaypoint [_crashsiteactual, 0];
+    _heliLoiterWaypoint setWaypointType "LOITER";
+    _heliLoiterWaypoint setWaypointBehaviour "SAFE";
+    [_heliVehicleGroup, 0] setWaypointLoiterRadius 400;
+    [_heliVehicleGroup, 0] setWaypointLoiterType "CIRCLE_L";
+
+    //spawning heli inf
+    private _heliInfGroup = selectRandom ([_faction, "groupsTierMedium"] call SCRT_fnc_unit_flattenTier);
+    private _heliInfgroupX = [_missionOriginPos, _sideX, _heliInfGroup] call A3A_fnc_spawnGroup;
+    {
+        _x assignAsCargo _searchHeliVeh; 
+        _x moveInAny _searchHeliVeh; 
+        [_x] join _heliVehicleGroup; 
+        [_x] call A3A_fnc_NATOinit
+    } forEach units _heliInfgroupX;
+    deleteGroup _heliInfgroupX;
+} else {
+    [_heliVehicleGroup, _crashsiteactual, 450] call bis_fnc_taskPatrol;
+};
 
 waitUntil {
 	sleep 1;
