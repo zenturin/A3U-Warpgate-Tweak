@@ -15,7 +15,10 @@ FIX_LINE_NUMBERS()
 
 params ["_object"];
 
+
 private _posATL = _object modelToWorld [0,0,0];
+
+/* private _bomb = "ammo_Missile_Cruise_01_Cluster" createVehicle [(_posATL select 0),(_posATL select 1),0]; */
 
 private _ps0 = "#particlesource" createVehicleLocal _posATL;
 _ps0 setParticleParams [
@@ -76,8 +79,8 @@ sleep 0.5;
 setAperture 0;
 
 };
-
-sleep 15;
+waitUntil { sleep 0.01; getPos _object select 2 < 1 }; ///0.01 because we don't wanna bounce
+/* sleep 15; */
 
 deleteVehicle _ps0;
 deleteVehicle _ps1;
