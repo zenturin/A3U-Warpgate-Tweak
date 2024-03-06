@@ -443,6 +443,18 @@
                 <Original>Vive la résistance!</Original>
                 <Russian>Vive la résistance!</Russian>
                 <Korean>레지스탕스 만세!</Korean>
+             </Key>
+            <Key ID="STR_antistasi_mission_info_sumava_mapname_text">
+                <Original>Antistasi Ultimate - Šumava</Original>
+                <Russian>Antistasi Ultimate - Čумава</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_sumava_mapname_short_text">
+                <Original>Antistasi Ultimate - Šumava</Original>
+                <Russian>Antistasi Ultimate - Čумава</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_sumava_blurb_text">
+                <Original>The entire country is counting on us and they don't even know it.</Original>
+                <Russian>На нас рассчитывает вся страна и они даже не знают об этом.</Russian>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_name">
                 <Original>Automatically load last valid save after delay</Original>
