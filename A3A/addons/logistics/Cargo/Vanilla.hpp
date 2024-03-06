@@ -513,7 +513,7 @@ class a3_Armor_F_Tank_LT_01_LT_01_scout_F_p3d : TRIPLES(ADDON,Cargo,Base)
     rotation[] = {0,1,0};
     size = 7;
 };
-class A3_soft_f_Offroad_01_Offroad_01_unarmed_F : TRIPLES(ADDON,Nodes,Base)
+class A3_soft_f_Offroad_01_Offroad_01_unarmed_F : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.38};
     rotation[] = {0,1,0};
