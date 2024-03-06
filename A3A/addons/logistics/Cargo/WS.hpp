@@ -24,7 +24,7 @@ class lxWS_air_1_f_lxWS_UAV_02_Bustard_IED_p3d : TRIPLES(ADDON,Cargo,Base)
 };
 class lxws_vehicles_f_lxws_Offroad_01_Offroad_01_unarmed_lxWS_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.65};
+    offset[] = {0,0,1.62};
     rotation[] = {0,1,0};
     size = 7;
 };
@@ -36,7 +36,7 @@ class lxws_vehicles_f_lxws_Offroad_01_Offroad_01_armor_unarmed_lxWS_p3d : TRIPLE
 };
 class lxws_vehicles_f_lxws_Offroad_01_Offroad_01_armor_AT_lxWS_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.1};
+    offset[] = {0,0,2};
     rotation[] = {0,1,0};
     size = 7;
     recoil = 250;
@@ -44,7 +44,7 @@ class lxws_vehicles_f_lxws_Offroad_01_Offroad_01_armor_AT_lxWS_p3d : TRIPLES(ADD
 };
 class lxws_vehicles_f_lxws_Offroad_01_Offroad_01_armor_hmg_lxWS_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.25};
+    offset[] = {0,0,2.1};
     rotation[] = {0,1,0};
     size = 7;
     recoil = 250;
