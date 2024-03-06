@@ -1,6 +1,6 @@
 ////////////Quadbike
 class A3_Soft_F_Quadbike_01_Quadbike_01_F_p3d : TRIPLES(ADDON,Nodes,Base)
-{
+{   canLoadWeapon = 0;
     class Nodes
     {
         class Node1
@@ -322,7 +322,6 @@ class A3_soft_f_gamma_Hatchback_01_Hatchback_01_F : TRIPLES(ADDON,Nodes,Base)
         };
     };
 };
-
 ////////////////Vans
 class A3_soft_f_gamma_van_01_Van_01_transport_F_p3d : TRIPLES(ADDON,Nodes,Base)
 {
@@ -603,7 +602,6 @@ class A3_Soft_F_EPC_Truck_03_Truck_03_covered_F_p3d : TRIPLES(ADDON,Nodes,Base)
         };
     };
 };
-
 /////////NATO truck
 class A3_soft_f_gamma_Truck_01_Truck_01_mover_F_p3d : TRIPLES(ADDON,Nodes,Base)
 {
@@ -696,38 +694,38 @@ class a3_Soft_F_Gamma_Truck_01_Truck_01_flatbed_F_p3d : TRIPLES(ADDON,Nodes,Base
     class Nodes
     {
         class Node1
-        {
-            offset[] = {0,0.7,-0.8};
+        { //0.055 /////////////////////////////////////////////////////////////////////////поменял тут!
+            offset[] = {0.04,0.7,-0.8};
             seats[] = {};
         };
         class Node2
         {
-            offset[] = {0,-0.1,-0.8};
+            offset[] = {0.04,-0.1,-0.8};
             seats[] = {};
         };
         class Node3
         {
-            offset[] = {0,-0.9,-0.8};
+            offset[] = {0.04,-0.9,-0.8};
             seats[] = {};
         };
         class Node4
         {
-            offset[] = {0,-1.7,-0.8};
+            offset[] = {0.04,-1.7,-0.8};
             seats[] = {};
         };
         class Node5
         {
-            offset[] = {0,-2.5,-0.8};
+            offset[] = {0.04,-2.5,-0.8};
             seats[] = {};
         };
         class Node6
         {
-            offset[] = {0,-3.3,-0.8};
+            offset[] = {0.04,-3.3,-0.8};
             seats[] = {};
         };
         class Node7
         {
-            offset[] = {0,-4.1,-0.8};
+            offset[] = {0.04,-4.1,-0.8};
             seats[] = {};
         };
     };
@@ -1009,6 +1007,17 @@ class A3_Soft_F_Exp_LSV_02_LSV_02_F_p3d : TRIPLES(ADDON,Nodes,Base)
         };
     };
 };
+/* class A3_Soft_F_Exp_LSV_02_LSV_02_F_p3d : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {0.3,-1.85,-0.364};
+            seats[] = {4};
+        };
+    };
+}; */
 /////////jet ski
 class A3_Boat_F_Exp_Scooter_Transport_01_Scooter_Transport_01_F_p3d : TRIPLES(ADDON,Nodes,Base)
 {   canLoadWeapon = 0;
@@ -1021,6 +1030,7 @@ class A3_Boat_F_Exp_Scooter_Transport_01_Scooter_Transport_01_F_p3d : TRIPLES(AD
     };
 };
 
+/////////boats
 class A3_boat_f_gamma_Boat_Civil_01_Boat_Civil_01_F : TRIPLES(ADDON,Nodes,Base)
 {
     class Nodes
@@ -1274,31 +1284,31 @@ class A3_Air_F_Heli_Heli_Transport_04_Heli_Transport_04_F_p3d : TRIPLES(ADDON,No
     {
         class Node1
         {
-            offset[] = {0,1.75,-1.751};
+            offset[] = {0,1.75,-2.4};
         };
         class Node2
         {
-            offset[] = {0,0.95,-1.751};
+            offset[] = {0,0.95,-2.4};
         };
         class Node3
         {
-            offset[] = {0,0.15,-1.751};
+            offset[] = {0,0.15,-2.4};
         };
         class Node4
         {
-            offset[] = {0,-0.65,-1.751};
+            offset[] = {0,-0.65,-2.4};
         };
         class Node5
         {
-            offset[] = {0,-1.45,-1.751};
+            offset[] = {0,-1.45,-2.4};
         };
         class Node6
         {
-            offset[] = {0,-2.25,-1.751};
+            offset[] = {0,-2.25,-2.4};
         };
         class Node7
         {
-            offset[] = {0,-3.05,-1.751};
+            offset[] = {0,-3.05,-2.4};
         };
     };
 };
