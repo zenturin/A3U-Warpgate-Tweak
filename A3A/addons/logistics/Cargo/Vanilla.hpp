@@ -240,9 +240,9 @@ class A3_Air_F_Heli_Heli_Transport_04_Pod_Heli_Transport_04_repair_F_p3d: TRIPLE
 };
 class A3_Air_F_Heli_Heli_Transport_04_Pod_Heli_Transport_04_bench_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0.1,0.93,1.2};
+    offset[] = {0.1,0.93,1.23};
     rotation[] = {0,1,0};
-    size = 7;
+    size = 5;
 };
 class A3_Air_F_Heli_Heli_Transport_04_Pod_Heli_Transport_04_ammo_F_p3d: TRIPLES(ADDON,Cargo,Base)
 {
@@ -396,14 +396,14 @@ class A3_Boat_F_Exp_Scooter_Transport_01_Scooter_Transport_01_F_p3d : TRIPLES(AD
 /////////Size 4
 class A3_Soft_F_Enoch_Tractor_01_Tractor_01_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.78};
+    offset[] = {0,0,1.76};
     rotation[] = {0,1,0};
     size = 4;
 };
 /////////Size 5
 class A3_Soft_F_Exp_Offroad_02_Offroad_02_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.56};
+    offset[] = {0,-0.15,1.53};
     rotation[] = {0,1,0};
     size = 5;
 };
@@ -432,25 +432,26 @@ class A3_boat_f_Boat_Transport_01_Boat_Transport_01_F_p3d : TRIPLES(ADDON,Cargo,
 };
 class A3_soft_f_gamma_Hatchback_01_Hatchback_01_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.44};
+    offset[] = {0,0.05,1.41};
     rotation[] = {0,1,0};
     size = 6;
 };
+
 class A3_Drones_F_soft_f_gamma_UGV_01_UGV_01_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {-0.435,0,2.07};
+    offset[] = {-0.435,0,2.05};
     rotation[] = {0,1,0};
     size = 6;
 };
 class A3_Soft_F_Exp_LSV_01_LSV_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.15};
+    offset[] = {0,0,2.11};
     rotation[] = {0,1,0};
     size = 6;
 };
 class A3_Soft_F_Exp_LSV_01_LSV_01_AT_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.85};
+    offset[] = {0,0,1.8};
     rotation[] = {0,1,0};
     size = 6;
     recoil = 250;
@@ -458,13 +459,13 @@ class A3_Soft_F_Exp_LSV_01_LSV_01_AT_F_p3d : TRIPLES(ADDON,Cargo,Base)
 };
 class A3_Soft_F_Exp_LSV_02_LSV_02_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.72};
+    offset[] = {0,0,1.68};
     rotation[] = {0,1,0};
     size = 6;
 };
 class A3_Soft_F_Exp_LSV_02_LSV_02_AT_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.72};
+    offset[] = {0,0,1.68};
     rotation[] = {0,1,0};
     size = 6;
     recoil = 250;
@@ -473,19 +474,19 @@ class A3_Soft_F_Exp_LSV_02_LSV_02_AT_F_p3d : TRIPLES(ADDON,Cargo,Base)
 /////////Size 7
 class A3_boat_f_beta_SDV_01_SDV_01_F_p3d: TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.82};
+    offset[] = {0,0.8,1.84};
     rotation[] = {0,1,0};
     size = 7;
 };
 class A3_soft_f_gamma_SUV_01_SUV_01_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.605};
+    offset[] = {0,0,1.405};
     rotation[] = {0,1,0};
     size = 7;
 };
 class a3_Armor_F_Tank_LT_01_LT_01_AA_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.16};
+    offset[] = {0,0,2.05};
     rotation[] = {0,1,0};
     size = 7;
     recoil = 250;
@@ -493,7 +494,7 @@ class a3_Armor_F_Tank_LT_01_LT_01_AA_F : TRIPLES(ADDON,Cargo,Base)
 };
 class a3_Armor_F_Tank_LT_01_LT_01_AT_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.16};
+    offset[] = {0,0,2.05};
     rotation[] = {0,1,0};
     size = 7;
     recoil = 250;
@@ -501,7 +502,7 @@ class a3_Armor_F_Tank_LT_01_LT_01_AT_F : TRIPLES(ADDON,Cargo,Base)
 };
 class a3_Armor_F_Tank_LT_01_LT_01_cannon_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.12};
+    offset[] = {0,0,2.02};
     rotation[] = {0,1,0};
     size = 7;
     recoil = 250;
@@ -509,7 +510,7 @@ class a3_Armor_F_Tank_LT_01_LT_01_cannon_F : TRIPLES(ADDON,Cargo,Base)
 };
 class a3_Armor_F_Tank_LT_01_LT_01_scout_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.11};
+    offset[] = {0,0,2.01};
     rotation[] = {0,1,0};
     size = 7;
 };
@@ -549,27 +550,33 @@ class A3_Soft_F_Bootcamp_Offroad_01_Offroad_01_repair_IG_F_p3d : TRIPLES(ADDON,C
     rotation[] = {0,1,0};
     size = 7;
 };
+class A3_soft_f_enoch_Offroad_01_Offroad_01_covered_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.51};
+    rotation[] = {0,1,0};
+    size = 7;
+};
 class A3_soft_f_gamma_van_01_Van_01_transport_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.58};
+    offset[] = {0,0.35,1.62};
     rotation[] = {0,1,0};
     size = 7;
 };
 class A3_soft_f_gamma_van_01_Van_01_box_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.58};
+    offset[] = {0,0.35,1.62};
     rotation[] = {0,1,0};
     size = 7;
 };
 class A3_soft_f_gamma_van_01_Van_01_fuel_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.58};
+    offset[] = {0,0.35,1.62};
     rotation[] = {0,1,0};
     size = 7;
 };
 class A3_soft_f_beta_MRAP_03_MRAP_03_gmg_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.15};
+    offset[] = {0,0.2,2.2};
     rotation[] = {0,1,0};
     size = 7;
     recoil = 250;
@@ -577,15 +584,21 @@ class A3_soft_f_beta_MRAP_03_MRAP_03_gmg_F : TRIPLES(ADDON,Cargo,Base)
 };
 class A3_soft_f_beta_MRAP_03_MRAP_03_hmg_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.15};
+    offset[] = {0,0.2,2.2};
     rotation[] = {0,1,0};
     size = 7;
     recoil = 250;
     isWeapon = 1;
 };
+class A3_soft_f_beta_MRAP_03_MRAP_03_unarmed_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0.2,1.58};
+    rotation[] = {0,1,0};
+    size = 7;
+};///доделано
 class A3_soft_f_MRAP_02_MRAP_02_hmg_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.5};
+    offset[] = {0,0.7,2.7};
     rotation[] = {0,1,0};
     size = 7;
     recoil = 250;
@@ -593,23 +606,7 @@ class A3_soft_f_MRAP_02_MRAP_02_hmg_F : TRIPLES(ADDON,Cargo,Base)
 };
 class A3_soft_f_MRAP_02_MRAP_02_gmg_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.5};
-    rotation[] = {0,1,0};
-    size = 7;
-    recoil = 250;
-    isWeapon = 1;
-};
-class A3_soft_f_MRAP_01_MRAP_01_gmg_F : TRIPLES(ADDON,Cargo,Base)
-{
-    offset[] = {0,0,2.55};
-    rotation[] = {0,1,0};
-    size = 7;
-    recoil = 250;
-    isWeapon = 1;
-};///доделано
-class A3_soft_f_MRAP_01_MRAP_01_hmg_F : TRIPLES(ADDON,Cargo,Base)
-{
-    offset[] = {0,0,2.55};
+    offset[] = {0,0.7,2.7};
     rotation[] = {0,1,0};
     size = 7;
     recoil = 250;
@@ -617,19 +614,28 @@ class A3_soft_f_MRAP_01_MRAP_01_hmg_F : TRIPLES(ADDON,Cargo,Base)
 };///доделано
 class A3_soft_f_MRAP_02_MRAP_02_unarmed_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,2.14};
+    offset[] = {0,0.5,2.32};
     rotation[] = {0,1,0};
     size = 7;
 };///доделано
-class A3_soft_f_beta_MRAP_03_MRAP_03_unarmed_F : TRIPLES(ADDON,Cargo,Base)
+class A3_soft_f_MRAP_01_MRAP_01_gmg_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.53};
+    offset[] = {0,0.5,2.57};
     rotation[] = {0,1,0};
     size = 7;
+    recoil = 250;
+    isWeapon = 1;
 };///доделано
-class A3_soft_f_MRAP_01_MRAP_01_unarmed_F : TRIPLES(ADDON,Cargo,Base)
+class A3_soft_f_MRAP_01_MRAP_01_hmg_F : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,1.5};
+    offset[] = {0,0.5,2.57};
+    rotation[] = {0,1,0};
+    size = 7;
+    recoil = 250;
+    isWeapon = 1;
+};class A3_soft_f_MRAP_01_MRAP_01_unarmed_F : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0.5,1.9};
     rotation[] = {0,1,0};
     size = 7;
 };///доделано
