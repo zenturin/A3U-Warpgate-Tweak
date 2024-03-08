@@ -127,7 +127,7 @@ while {_interval < 0.9999} do
     _velocityVector = (vectorNormalized _velocityVector) vectorMultiply (_initialSpeed * (1 - _interval));
 
     if(!canMove _helicopter || !alive _driver) exitWith {};
-    _dam = Damage _helicopter;
+    _dam = damage _helicopter;
     if ((getPos _helicopter select 2) < 0.25 ) exitwith{_helicopter setdamage 0; sleep 1; _helicopter setdamage _dam;};
 };
 _helicopter engineOn true; ///keep the engine running
