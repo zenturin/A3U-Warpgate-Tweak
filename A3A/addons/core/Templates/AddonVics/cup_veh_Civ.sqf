@@ -100,7 +100,7 @@ _addon set ["vehiclesCivBoat", [
 	,"CUP_C_PBX_CIV" , 1.0
 ]];
 
-_addon set ["vehiclesCivHeli", [    //planes for test
+_addon set ["vehiclesCivHeli", [
 	"CUP_C_MI6A_RU"
 	,"CUP_C_MI6T_RU"
 	,"CUP_C_Mi17_Civilian_RU"
@@ -129,6 +129,12 @@ _addon set ["vehiclesCivHeli", [    //planes for test
 	,"CUP_C_Cessna_172_CIV_GREEN" //Ambient
 	,"CUP_C_Cessna_172_CIV" //Ambient
 ]];
+
+_addon set ["vehiclesCivPlanes", [
+	"CUP_C_C47_CIV" , 0.3
+	,
+]];
+
 
 //"CUP_C_A300_CIV" //Ambient
 //,"CUP_C_B737_CIV" //Ambient
