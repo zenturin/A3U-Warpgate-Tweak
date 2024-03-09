@@ -21,25 +21,28 @@ private _diveParams = [];
 
 private _cfgPath = (configfile >> "A3U" >> "planeLoadouts");
 private _cfgAA = (_cfgPath >> "AA");
+private _cfgCASDIVE = (_cfgPath >> "CASDIVE");
 private _cfgCAS = (_cfgPath >> "CAS");
 private _cfgAAClasses = _cfgAA call BIS_fnc_getCfgSubClasses;
+private _cfgCASDIVEClasses = _cfgCASDIVE call BIS_fnc_getCfgSubClasses;
 private _cfgCASClasses = _cfgCAS call BIS_fnc_getCfgSubClasses;
 
-private _cfg = _cfgAAClasses + _cfgCASClasses; // may be worth caching this on init, we'll see
 
-if ((typeOf _plane) in _cfg) exitWith
+private _cfg = _cfgAAClasses + _cfgCASDIVEClasses + _cfgCASClasses ; // may be worth caching this on init, we'll see
+
+if ((typeOf _plane) in _cfg) exitWith 
 {
     switch (_type) do
     {	
-	case "CASDIVE":
+	    case "CASDIVE":
         {
-            _loadout = getArray (_cfgCAS >> (typeOf _plane) >> "loadout");
+            _loadout = getArray (_cfgCASDIVE >> (typeOf _plane) >> "loadout");
 
-            _mainGun            = [(_cfgCAS >> (typeOf _plane)), "mainGun", ""] call BIS_fnc_returnConfigEntry;   //should be _cfgCASDIVE ?
-            _rocketLauncher     = [(_cfgCAS >> (typeOf _plane)), "rocketLauncher", []] call BIS_fnc_returnConfigEntry;
-            _missileLauncher    = [(_cfgCAS >> (typeOf _plane)), "missileLauncher", []] call BIS_fnc_returnConfigEntry;
-            _bombRacks          = [(_cfgCAS >> (typeOf _plane)), "bombRacks", []] call BIS_fnc_returnConfigEntry;
-            _diveParams         = [(_cfgCAS >> (typeOf _plane)), "diveParams", []] call BIS_fnc_returnConfigEntry;
+            _mainGun            = [(_cfgCASDIVE >> (typeOf _plane)), "mainGun", ""] call BIS_fnc_returnConfigEntry;   //should be _cfgCASDIVE ?
+            _rocketLauncher     = [(_cfgCASDIVE >> (typeOf _plane)), "rocketLauncher", []] call BIS_fnc_returnConfigEntry;
+            _missileLauncher    = [(_cfgCASDIVE >> (typeOf _plane)), "missileLauncher", []] call BIS_fnc_returnConfigEntry;
+            _bombRacks          = [(_cfgCASDIVE >> (typeOf _plane)), "bombRacks", []] call BIS_fnc_returnConfigEntry;
+            _diveParams         = [(_cfgCASDIVE >> (typeOf _plane)), "diveParams", []] call BIS_fnc_returnConfigEntry;
         };
         case "CAS":
         {
@@ -76,7 +79,24 @@ if ((typeOf _plane) in _cfg) exitWith
     };
     if !(_diveParams isEqualTo []) then {
         _plane setVariable ["diveParams", _diveParams];
+   };
+
+    if !(_loadout isEqualTo []) then
+    {
+        Debug("Selected new loadout for plane, now equiping plane with it");
+        {
+            _plane setPylonLoadout [_forEachIndex + 1, _x, true];
+            _plane setVariable ["loadout", _loadout];
+        } forEach _loadout;
+    } else {
+        _loadout = getPylonMagazines _plane; // hacky fix, but better than the alternative
+        Debug(format["Selected default loadout for %1, now equiping plane with it. Consider giving it an actual loadout in ultimate\config\plane\cfgPlaneLoadouts.hpp", typeOf _plane]);
+        {
+            _plane setPylonLoadout [_forEachIndex + 1, _x, true];
+            _plane setVariable ["loadout", _loadout];
+        } forEach _loadout;
     };
+
     [format["Given plane class %1 a loadout of %2, from config", typeOf _plane, _loadout], _fnc_scriptName] call A3U_fnc_log;
 };
 
