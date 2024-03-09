@@ -141,6 +141,44 @@ if (_type == "CASDIVE") then
             _plane setVariable ["bombRacks", ["Mk82BombLauncher"]];
             _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
         };
+        //Vanilla NATO JETS CAS
+        case "Atlas_B_G_Plane_Fighter_01_F";
+        case "Atlas_B_G_Plane_Fighter_01_ard_F";
+        case "B_T_Plane_Fighter_01_F";
+        case "B_USMC_Plane_Fighter_01_F";
+        case "B_Plane_Fighter_01_F":
+        {
+            _loadout = ["","","","","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_BombCluster_03_F","","","",""];
+            _plane setVariable ["mainGun", "Gatling_30mm_Plane_CAS_01_F"];
+            _plane setVariable ["bombRacks", ["Bomb_04_Plane_CAS_01_F", "BombCluster_03_F"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        //Vanilla CSAT JETS CAS
+        case "O_T_Plane_Fighter_02_ghex_F";
+        case "O_R_Plane_Fighter_02_F";
+        case "O_R_Plane_Fighter_02_ard_F";
+        case "O_Plane_Fighter_02_F":
+        {
+            _loadout = ["","","","","PylonMissile_1Rnd_BombCluster_02_cap_F","PylonMissile_1Rnd_Bomb_03_F","","","",""];
+            _plane setVariable ["mainGun", "Cannon_30mm_Plane_CAS_02_F"];
+            _plane setVariable ["bombRacks", ["Bomb_03_Plane_CAS_02_F", "BombCluster_02_F"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+        //Vanilla IND JETS CAS
+        case "CUP_I_JAS_39_RACS";
+        case "CUP_I_JAS_39_HIL";
+        case "UK3CB_AAF_B_Gripen";
+        case "Aegis_B_E_Plane_Fighter_04_F"; 
+        case "Atlas_B_M_Plane_Fighter_04_F";
+        case "I_Plane_Fighter_04_F":
+        {
+            _loadout = ["PylonRack_12Rnd_missiles","PylonRack_3Rnd_LG_scalpel","PylonMissile_1Rnd_Mk82_F","PylonWeapon_300Rnd_20mm_shells","PylonMissile_1Rnd_Mk82_F","PylonRack_3Rnd_LG_scalpel","PylonRack_12Rnd_missiles"];
+            _plane setVariable ["mainGun", "Twin_Cannon_20mm"];
+            _plane setVariable ["rocketLauncher", ["Rocket_04_AP_Plane_CAS_01_F"]];
+            _plane setVariable ["missileLauncher", ["Missile_AGM_02_Plane_CAS_01_F", "missiles_SCALPEL"]];
+            _plane setVariable ["bombRacks", ["Mk82BombLauncher"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
         //Aegis F-35
         case "Atlas_B_A_Plane_Fighter_05_ard_F";
         case "Atlas_B_A_Plane_Fighter_05_trp_F";
@@ -263,6 +301,7 @@ if (_type == "CASDIVE") then
         };
     };
 };
+
 if (_type == "CAS") then
 {
     _validInput = true;
@@ -296,7 +335,42 @@ if (_type == "CAS") then
         case "Atlas_O_T_Plane_Fighter_03_dynamicLoadout_F";
         case "I_Plane_Fighter_03_dynamicLoadout_F":
         {
-//            _loadout = ["PylonRack_1Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_1Rnd_LG_scalpel"];
+            _loadout = ["PylonRack_7Rnd_Rocket_04_AP_F","PylonRack_3Rnd_LG_scalpel","PylonRack_1Rnd_Missile_AGM_02_F","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_Missile_AGM_02_F","PylonRack_3Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_AP_F"];
+            _plane setVariable ["mainGun", "Twin_Cannon_20mm"];
+            _plane setVariable ["rocketLauncher", ["Rocket_04_AP_Plane_CAS_01_F"]];
+            _plane setVariable ["missileLauncher", ["Missile_AGM_02_Plane_CAS_01_F", "missiles_SCALPEL"]];
+        };
+        //Vanilla NATO JETS CAS
+        case "Atlas_B_G_Plane_Fighter_01_F";
+        case "Atlas_B_G_Plane_Fighter_01_ard_F";
+        case "B_T_Plane_Fighter_01_F";
+        case "B_USMC_Plane_Fighter_01_F";
+        case "B_Plane_Fighter_01_F":
+        {
+            _loadout = ["PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F"];
+            _plane setVariable ["mainGun", "Gatling_30mm_Plane_CAS_01_F"];
+            _plane setVariable ["rocketLauncher", ["Rocket_04_HE_Plane_CAS_01_F"]];
+            _plane setVariable ["missileLauncher", ["Missile_AGM_02_Plane_CAS_01_F", "missiles_SCALPEL"]];
+        };
+        //Vanilla CSAT JETS CAS
+        case "O_T_Plane_Fighter_02_ghex_F";
+        case "O_R_Plane_Fighter_02_F";
+        case "O_R_Plane_Fighter_02_ard_F";
+        case "O_Plane_Fighter_02_F":
+        {
+            _loadout = ["PylonMissile_1Rnd_LG_scalpel","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_20Rnd_Rocket_03_AP_F","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_20Rnd_Rocket_03_AP_F","PylonRack_19Rnd_Rocket_Skyfire","PylonMissile_1Rnd_LG_scalpel"];
+            _plane setVariable ["mainGun", "Cannon_30mm_Plane_CAS_02_F"];
+            _plane setVariable ["rocketLauncher", ["Rocket_03_AP_Plane_CAS_02_F", "rockets_Skyfire"]];
+            _plane setVariable ["missileLauncher", ["missiles_SCALPEL"]];
+        };
+        //Vanilla IND JETS CAS
+        case "CUP_I_JAS_39_RACS";
+        case "CUP_I_JAS_39_HIL";
+        case "UK3CB_AAF_B_Gripen";
+        case "Aegis_B_E_Plane_Fighter_04_F"; 
+        case "Atlas_B_M_Plane_Fighter_04_F";
+        case "I_Plane_Fighter_04_F":
+        {
             _loadout = ["PylonRack_7Rnd_Rocket_04_AP_F","PylonRack_3Rnd_LG_scalpel","PylonRack_1Rnd_Missile_AGM_02_F","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_Missile_AGM_02_F","PylonRack_3Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_AP_F"];
             _plane setVariable ["mainGun", "Twin_Cannon_20mm"];
             _plane setVariable ["rocketLauncher", ["Rocket_04_AP_Plane_CAS_01_F"]];
