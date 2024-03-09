@@ -8,15 +8,14 @@ class planeLoadouts
     // diveParams[]
     class CASDIVE
     {
-       class B_Plane_CAS_01_dynamicLoadout_F
+        class B_Plane_CAS_01_dynamicLoadout_F
         {
             loadout[] = {"","","","","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_BombCluster_03_F","","","",""};
             mainGun = "Gatling_30mm_Plane_CAS_01_F";
-            bombRacks[] = {"Bomb_03_Plane_CAS_02_F", "BombCluster_02_F"};
+            bombRacks[] = {"Bomb_04_Plane_CAS_01_F", "BombCluster_03_F"};
             diveParams[] = {1200, 600, 180, 55, 15, {0,0}};
         };
     };
-
     class CAS
     {
        class B_Plane_CAS_01_dynamicLoadout_F
