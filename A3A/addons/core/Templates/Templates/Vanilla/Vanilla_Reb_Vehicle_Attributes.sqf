@@ -1,5 +1,5 @@
 ["attributesVehicles", [
-    ["SCEXT_Grizzly_AC", ["cost", 500]] // what is that?
+    ["SCEXT_Grizzly_AC", ["cost", 500]], // what is that? Is it from SCION or something?
     ["I_C_Offroad_02_LMG_F", ["rebCost", 500]],
     ["I_G_Offroad_01_armor_base_lxWS", ["rebCost", 500]],
     ["I_G_Offroad_01_armor_armed_lxWS", ["rebCost", 1100]],
