@@ -11,6 +11,105 @@ class AddonVics
         loadedMessage = ""; // a short description of the effects of loading the mod
     };
 */
+    class Vanilla
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"soft_f"};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "vanilla_Civ.sqf"} };
+        displayName = "Vanilla vehicle pack";
+        description = "Vanilla vehicle pack";
+        loadedMessage = "Vanilla loaded, civilian vehicle pool expanded";
+    };
+
+    class Apex
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"soft_f_exp"};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "apex_Civ.sqf"} };
+        displayName = "Apex vehicle pack";
+        description = "Apex vehicle pack(if you want only civilian vehicles from dlc)";
+        loadedMessage = "Apex loaded, civilian vehicle pool expanded";
+    };
+
+    class Lawsofwar
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"soft_f_orange"};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "lawsofwar_Civ.sqf"} };
+        displayName = "Laws of war vehicle pack";
+        description = "Laws of war vehicle pack(if you want only civilian vehicles from dlc)";
+        loadedMessage = "Lawsofwar loaded, civilian vehicle pool expanded";
+    };
+
+    class Contact
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"soft_f_contact"};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "contact_Civ.sqf"} };
+        displayName = "Contact vehicle pack";
+        description = "Contact vehicle pack(if you want only civilian vehicles from dlc)";
+        loadedMessage = "Contact loaded, civilian vehicle pool expanded";
+    };
+
+    class Kart
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"soft_f_kart"};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "kart_Civ.sqf"} };
+        displayName = "Kart(kart)";
+        description = "Kart";
+        loadedMessage = "Kart";
+    };
+
+    class WesternSahara
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"vehicles_f_lxws"};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "westernsahara_Civ.sqf"} };
+        displayName = "Western Sahara vehicle pack";
+        description = "Western Sahara vehicle pack(if you want only civilian vehicles from cdlc)";
+        loadedMessage = "Western Sahara loaded, civilian vehicle pool expanded";
+    };
+
+    class S.O.G.
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"vn_wheeled2"};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "S.O.G._Civ.sqf"} };
+        displayName = "S.O.G. vehicle pack";
+        description = "S.O.G. vehicle pack(if you want only civilian vehicles from cdlc)";
+        loadedMessage = "S.O.G. loaded, civilian vehicle pool expanded";
+    };
+
+    class GlobalMobilization
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"gm_bicycle"};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "globalmobilization_Civ.sqf"} };
+        displayName = "Global Mobilization vehicle pack";
+        description = "Global Mobilization vehicle pack(if you want only civilian vehicles from cdlc)";
+        loadedMessage = "Global Mobilization loaded, civilian vehicle pool expanded";
+    };
+
+    class CLSAIronCurtian
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"vehicles_f_lxws"};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "clsaironcurtian_Civ.sqf"} };
+        displayName = "CLSA Iron Curtian vehicle pack";
+        description = "CLSA Iron Curtian vehicle pack(if you want only civilian vehicles from cdlc)";
+        loadedMessage = "CLSA Iron Curtian loaded, civilian vehicle pool expanded";
+    };
+
     class D3S
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
