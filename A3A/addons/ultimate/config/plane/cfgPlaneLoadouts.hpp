@@ -6,9 +6,20 @@ class planeLoadouts
     // missileLauncher[]
     // bombRacks[]
     // diveParams[]
+    class CASDIVE
+    {
+       class B_Plane_CAS_01_dynamicLoadout_F
+        {
+            loadout[] = {"","","","","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_BombCluster_03_F","","","",""};
+            mainGun = "Gatling_30mm_Plane_CAS_01_F";
+            bombRacks[] = {"Bomb_03_Plane_CAS_02_F", "BombCluster_02_F"};
+            diveParams[] = {1200, 600, 180, 55, 15, {0,0}};
+        };
+    };
+
     class CAS
     {
-        class B_Plane_CAS_01_dynamicLoadout_F
+       class B_Plane_CAS_01_dynamicLoadout_F
         {
             loadout[] = {"PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F"};
         };
@@ -21,6 +32,7 @@ class planeLoadouts
             loadout[] = {"PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonMissile_Bomb_GBU12_x1","PylonMissile_Bomb_GBU12_x1",""};
         };
     };
+   
     class AA
     {
         class B_Plane_Fighter_01_F
