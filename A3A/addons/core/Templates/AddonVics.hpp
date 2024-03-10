@@ -77,7 +77,7 @@ class AddonVics
         loadedMessage = "Western Sahara loaded, civilian vehicle pool expanded";
     };
 
-    class S.O.G.
+    class SOG
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
         requiredAddons[] = {"vn_wheeled2"};
