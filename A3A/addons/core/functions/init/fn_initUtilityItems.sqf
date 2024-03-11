@@ -40,8 +40,8 @@ _items append [
     [_lightSource#0, _lightSource#1, localize "STR_A3AP_buyvehdialog_light", "", ["move"]],
     ["Land_PlasticCase_01_medium_F", 100, "buildboxsmall", "", ["place", "move", "build"]],
     ["Land_PlasticCase_01_large_F", 500, "buildboxlarge", "", ["place", "move", "build"]],
-    ["Land_PlasticCase_01_large_black_F", 1000, "buildboxhuge", "", ["place", "move", "build"]],
-    ["CargoNet_01_box_F", 5000, "buildboxgigantic", "", ["place", "move", "build"]]
+    ["Land_PlasticCase_01_medium_black_F", 1000, "buildboxhuge", "", ["place", "move", "build"]],
+    ["Land_PlasticCase_01_large_black_F", 5000, "buildboxgigantic", "", ["place", "move", "build"]]
     // TODO: get larger box from somewhere
 ];
 
