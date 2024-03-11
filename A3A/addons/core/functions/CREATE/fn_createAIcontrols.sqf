@@ -27,7 +27,7 @@ A3A_hasIFA = false;
 //IFA Detection
 if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
   A3A_hasIFA = true;
-  [2,"Iront Front Detected.",_fileName] call A3A_fnc_log;
+  [2,"Iront Front Detected.",_fnc_scriptName] call A3A_fnc_log;
 };
 
 _isControl = if (isOnRoad _positionX) then {true} else {false};
