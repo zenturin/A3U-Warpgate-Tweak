@@ -82,7 +82,7 @@ class AddonVics
         path = QPATHTOFOLDER(Templates\AddonVics);
         requiredAddons[] = {"data_f_vietnam"};
         //format {side, file relative to path}
-        files[] = { {"Civ", "S.O.G._Civ.sqf"} };
+        files[] = { {"Civ", "SOG_Civ.sqf"} };
         displayName = "S.O.G. vehicle pack";
         description = "S.O.G. vehicle pack(if you want only civilian vehicles from cdlc)";
         loadedMessage = "S.O.G. loaded, civilian vehicle pool expanded";
