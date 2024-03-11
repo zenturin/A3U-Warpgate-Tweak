@@ -14,7 +14,7 @@ class AddonVics
     class Vanilla
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"soft_f"};
+        requiredAddons[] = {"A3_Soft_F_Offroad_01"};
         //format {side, file relative to path}
         files[] = { {"Civ", "vanilla_Civ.sqf"} };
         displayName = "Vanilla vehicle pack";
@@ -25,7 +25,7 @@ class AddonVics
     class Apex
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"soft_f_exp"};
+        requiredAddons[] = {"A3_Soft_F_Exp_Offroad_02"};
         //format {side, file relative to path}
         files[] = { {"Civ", "apex_Civ.sqf"} };
         displayName = "Apex vehicle pack";
@@ -36,7 +36,7 @@ class AddonVics
     class Lawsofwar
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"soft_f_orange"};
+        requiredAddons[] = {"A3_Soft_F_Orange_Van_02"};
         //format {side, file relative to path}
         files[] = { {"Civ", "lawsofwar_Civ.sqf"} };
         displayName = "Laws of war vehicle pack";
@@ -47,7 +47,7 @@ class AddonVics
     class Contact
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"soft_f_contact"};
+        requiredAddons[] = {"A3_Soft_F_Enoch_Offroad_01"};
         //format {side, file relative to path}
         files[] = { {"Civ", "contact_Civ.sqf"} };
         displayName = "Contact vehicle pack";
@@ -58,7 +58,7 @@ class AddonVics
     class Kart
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"soft_f_kart"};
+        requiredAddons[] = {"A3_Soft_F_Kart_Kart_01"};
         //format {side, file relative to path}
         files[] = { {"Civ", "kart_Civ.sqf"} };
         displayName = "Kart(kart)";
@@ -69,7 +69,7 @@ class AddonVics
     class WesternSahara
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"vehicles_f_lxws"};
+        requiredAddons[] = {"Vehicles_F_lxWS_Offroad_01"};
         //format {side, file relative to path}
         files[] = { {"Civ", "westernsahara_Civ.sqf"} };
         displayName = "Western Sahara vehicle pack";
@@ -80,7 +80,7 @@ class AddonVics
     class SOG
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"vn_wheeled2"};
+        requiredAddons[] = {"data_f_vietnam"};
         //format {side, file relative to path}
         files[] = { {"Civ", "S.O.G._Civ.sqf"} };
         displayName = "S.O.G. vehicle pack";
@@ -91,7 +91,7 @@ class AddonVics
     class GlobalMobilization
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"gm_bicycle"};
+        requiredAddons[] = {"gm_u1300l"};
         //format {side, file relative to path}
         files[] = { {"Civ", "globalmobilization_Civ.sqf"} };
         displayName = "Global Mobilization vehicle pack";
@@ -102,7 +102,7 @@ class AddonVics
     class CLSAIronCurtian
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"vehicles_f_lxws"};
+        requiredAddons[] = {"CSLA_CIV"};
         //format {side, file relative to path}
         files[] = { {"Civ", "clsaironcurtian_Civ.sqf"} };
         displayName = "CLSA Iron Curtian vehicle pack";
