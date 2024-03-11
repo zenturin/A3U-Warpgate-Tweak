@@ -91,7 +91,7 @@ class AddonVics
     class GlobalMobilization
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"gm_u1300l"};
+        requiredAddons[] = {"gm_vehicles_land_wheeled_w123_ge_civ_w123"};
         //format {side, file relative to path}
         files[] = { {"Civ", "globalmobilization_Civ.sqf"} };
         displayName = "Global Mobilization vehicle pack";
