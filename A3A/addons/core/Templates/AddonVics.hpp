@@ -80,7 +80,7 @@ class AddonVics
     class SOG
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"data_f_vietnam"};
+        requiredAddons[] = {"wheeled_f_vietnam_02_c"};
         //format {side, file relative to path}
         files[] = { {"Civ", "SOG_Civ.sqf"} };
         displayName = "S.O.G. vehicle pack";
