@@ -389,7 +389,7 @@ _militaryLoadoutData set ["grenadeLaunchers", [
     ["rhs_weap_m4_carryhandle_m203", "", "rhsusf_acc_wmx_bk", "", ["rhs_mag_30Rnd_556x45_M855_Stanag", "rhs_mag_30Rnd_556x45_M855_Stanag", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red"], ["rhs_mag_M441_HE", "rhs_mag_M441_HE", "rhs_mag_M441_HE", "rhs_mag_m714_White"], ""]
 ]];
 _militaryLoadoutData set ["machineGuns", [
-    ["TFC_W_c9a2", "", "", "", ["rhsusf_100Rnd_556x45_M200_soft_pouch"], [], ""]
+    ["TFC_W_c9a2", "", "", "", ["rhsusf_100Rnd_556x45_M855_soft_pouch"], [], ""]
 ]];
 _militaryLoadoutData set ["marksmanRifles", [
     ["rhs_weap_sr25", "", "", "rhsusf_acc_ACOG2", ["rhsusf_20Rnd_762x51_SR25_m118_special_Mag"], [], ""],
@@ -454,7 +454,7 @@ _militiaLoadoutData set ["SMGs", [
     ["rhsusf_weap_MP7A2", "", "rhsusf_acc_wmx_bk", "", [], [], ""]
 ]];
 _militiaLoadoutData set ["machineGuns", [
-    ["TFC_W_c9a2", "", "", "", ["rhsusf_100Rnd_556x45_M200_soft_pouch"], [], ""]
+    ["TFC_W_c9a2", "", "", "", ["rhsusf_100Rnd_556x45_M855_soft_pouch"], [], ""]
 ]];
 _militiaLoadoutData set ["marksmanRifles", [
     ["rhs_weap_sr25", "", "", "rhsusf_acc_ACOG2", ["rhsusf_20Rnd_762x51_SR25_m118_special_Mag"], [], ""]
