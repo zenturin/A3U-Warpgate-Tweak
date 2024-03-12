@@ -8914,7 +8914,7 @@
                 <Korean>%1 자원채취소</Korean>
             </Key>
             <Key ID="STR_A3A_cityinfo_resources_rebel">
-                <Original>%2 Airport%1</Original>
+                <Original>%2 Resources%1</Original>
                 <Russian>Ресурсы %2%1</Russian>
                 <Chinesesimp>资源%2%1</Chinesesimp>
                 <Korean>%2 자원채취소는 %1 소속이다</Korean>
