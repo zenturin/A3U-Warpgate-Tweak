@@ -48,6 +48,7 @@ private _originalBody = player;
 
 private _playerEh = player addEventHandler ["HandleDamage", {
 	private _player = _this select 0;
+	if (_player getVariable ["incapacitated", false]) then {} else {
 	_player removeEventHandler ["HandleDamage",_thisEventHandler];
 	selectPlayer _player;
 	(units group player) joinsilent group player;
@@ -72,6 +73,7 @@ private _unitEh = _unit addEventHandler ["HandleDamage", {
 }];
 
 selectPlayer _unit;
+group player selectLeader _unit; ///control should remain in player hands
 //otherwise unit will lose his identity
 [_unit, _face, _speaker] call A3A_fnc_setIdentity;
 
