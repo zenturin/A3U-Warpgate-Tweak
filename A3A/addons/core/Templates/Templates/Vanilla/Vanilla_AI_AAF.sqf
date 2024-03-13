@@ -44,7 +44,7 @@ private _aa = ["I_LT_01_AA_F"];
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["I_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["I_Plane_Fighter_03_dynamicLoadout_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["I_Plane_Fighter_03_dynamicLoadout_F","I_Plane_Fighter_04_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["I_Plane_Fighter_04_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
