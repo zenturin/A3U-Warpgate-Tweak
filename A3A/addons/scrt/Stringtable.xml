@@ -5870,7 +5870,7 @@
             </Key>
             <Key ID="STR_antistasi_dialogs_moveout_crew_tooltip">
                 <Original>Moves out crew from vehicle you loking at.</Original>
-                <Russian>Выгоняет экипаж из техники на которую вы.</Russian>
+                <Russian>Выгоняет экипаж из техники на которую вы смотрите.</Russian>
             </Key>>
             <Key ID="STR_antistasi_dialogs_arsenal_limits_title">
                 <Original>Arsenal Limits</Original>
