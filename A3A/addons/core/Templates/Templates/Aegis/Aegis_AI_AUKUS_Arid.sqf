@@ -45,8 +45,8 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["vehiclesTransportBoats", ["B_A_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["B_A_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["B_Plane_CAS_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["B_A_Plane_Fighter_05_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["B_Plane_CAS_01_dynamicLoadout_F","B_Plane_Fighter_01_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["B_Plane_Fighter_01_Stealth_F","B_A_Plane_Fighter_05_Stealth_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["Atlas_B_A_Plane_Transport_01_infantry_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisTransport", ["B_A_Heli_Transport_02_F", "Aegis_B_UN_lxWS_Heli_Transport_02_Heavy_F"]] call _fnc_saveToTemplate;
