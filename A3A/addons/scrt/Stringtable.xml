@@ -10952,6 +10952,10 @@
                 <Chinesesimp>卖载具</Chinesesimp>
                 <Korean>차량 판매</Korean>
             </Key>
+            <Key ID="STR_A3A_Base_moveOutCrew_header">
+                <Original>Move out crew</Original>
+                <Russian>Выгнать экипаж из техники</Russian>
+            </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err0">
                 <Original>Vehicle must be closer than 50 meters to the headquarters marker.</Original>
                 <Russian>Техника должна быть ближе 50 метров чтобы её можно было продать.</Russian>
@@ -10987,6 +10991,10 @@
                 <Russian>Транспортное средство продано.</Russian>
                 <Chinesesimp>载具已出售</Chinesesimp>
                 <Korean>차량 판매 완료.</Korean>
+            </Key>
+            <Key ID="STR_A3A_Base_moveOutCrew_success">
+                <Original>Crew moved out.</Original>
+                <Russian>Экипаж покинул технику.</Russian>
             </Key>
         </Container>
         <Container name="A3A_CREATE">
