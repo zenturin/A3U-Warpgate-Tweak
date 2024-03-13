@@ -5864,6 +5864,14 @@
                 <Chinesesimp>卖掉你正在看的载具，然后把钱存入派系的账户。</Chinesesimp>
                 <Korean>차량을 보고 돈을 받고 파십시오.</Korean>
             </Key>
+            <Key ID="STR_antistasi_dialogs_moveout_crew_title">
+                <Original>Moveout vehicle crew</Original>
+                <Russian>Выгнать экипаж их техники</Russian>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_moveout_crew_tooltip">
+                <Original>Moves out crew from vehicle you loking at.</Original>
+                <Russian>Выгоняет экипаж из техники на которую вы.</Russian>
+            </Key>>
             <Key ID="STR_antistasi_dialogs_arsenal_limits_title">
                 <Original>Arsenal Limits</Original>
                 <Russian>Лимиты арсенала</Russian>
