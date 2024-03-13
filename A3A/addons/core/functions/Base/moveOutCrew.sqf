@@ -63,7 +63,7 @@ _veh setVariable ["A3A_moveOutCrew_inProgress",true,false];   */ // Only process
 } forEach units crew _veh;
 
 {
-    _x leaveVehicle _helicopter;
+    _x leaveVehicle _veh;
 } forEach units crew _veh;
 
 [localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_success"] remoteExecCall ["A3A_fnc_customHint",_player];
