@@ -53,8 +53,8 @@ private _tanks = ["O_T_MBT_02_cannon_ghex_F"];
 ["vehiclesTransportBoats", ["O_T_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["O_T_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["O_Plane_CAS_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["O_Plane_Fighter_02_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["O_Plane_CAS_02_dynamicLoadout_F","O_Plane_Fighter_02_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["O_Plane_Fighter_02_Stealth_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["O_T_VTOL_02_infantry_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 
 private _lightHelicopters = ["O_Heli_Light_02_unarmed_F"];
@@ -150,6 +150,7 @@ if (_hasWs) then {
 
 ["variants", [
     ["O_Plane_Fighter_02_F", ["CamoGreyHex",1]],
+    ["O_Plane_Fighter_02_Stealth_F", ["CamoGreyHex",1]],
     ["O_Heli_Transport_04_bench_F", ["Black",1]],
     ["O_Heli_Light_02_dynamicLoadout_F", ["Black",1]],
     ["O_Heli_Transport_04_bench_F", ["Black",1]],
