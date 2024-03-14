@@ -876,7 +876,7 @@ if (_type == "AA") then
         case "Atlas_B_G_Plane_Fighter_01_Stealth_ard_F";
         case "B_D_Plane_Fighter_01_Stealth_F";
         case "B_T_Plane_Fighter_01_Stealth_F";
-        case "B_W_Plane_Fighter_01_Stealth_F"
+        case "B_W_Plane_Fighter_01_Stealth_F";
         case "B_Plane_Fighter_01_Stealth_F":
         {
             _loadout = ["PylonRack_Missile_BIM9X_x2","PylonRack_Missile_BIM9X_x2","PylonRack_Missile_BIM9X_x2","PylonRack_Missile_BIM9X_x2","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1"];
