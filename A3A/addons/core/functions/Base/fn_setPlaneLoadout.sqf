@@ -146,6 +146,7 @@ if (_type == "CASDIVE") then
         case "Atlas_B_G_Plane_Fighter_01_ard_F";
         case "B_T_Plane_Fighter_01_F";
         case "B_USMC_Plane_Fighter_01_F";
+        case "B_D_Plane_Fighter_01_F";
         case "B_Plane_Fighter_01_F":
         {
             _loadout = ["magazine_Fighter01_Gun20mm_AA_x450","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","PylonRack_Bomb_SDB_x4","PylonMissile_1Rnd_BombCluster_01_F","PylonMissile_Bomb_GBU12_x1"];
