@@ -2,7 +2,6 @@ private _hasWs = "ws" in A3A_enabledDLC;
 private _hasMarksman = "mark" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasTanks = "tank" in A3A_enabledDLC;
-private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
 private _hasHelicopters = "heli" A3A_enabledDLC;
@@ -30,7 +29,7 @@ private _hasApex = "expansion" A3A_enabledDLC;
 
 ["vehiclesBasic", ["I_Quadbike_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["I_MRAP_03_F"]] call _fnc_saveToTemplate;
-private _lightArmed = ["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F"];
+["vehiclesLightArmed"["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["I_Truck_02_transport_F", "I_Truck_02_covered_F"]] call _fnc_saveToTemplate;
 private _cargoTrucks = ["I_Truck_02_transport_F", "I_Truck_02_covered_F"];
 ["vehiclesAmmoTrucks", ["I_Truck_02_ammo_F"]] call _fnc_saveToTemplate;
@@ -50,6 +49,10 @@ private _aa = [];
 
 private _planeCAS = ["I_Plane_Fighter_03_dynamicLoadout_F"];
 private _planeAA = [];
+if (_hasJets) then {
+	_planeCAS pushback ["I_Plane_Fighter_04_F"]
+	_planeAA pushback ["I_Plane_Fighter_04_F"]
+};
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["I_Heli_light_03_unarmed_F"]] call _fnc_saveToTemplate;
@@ -79,7 +82,9 @@ private _policeVehs = if (_hasContact) then {
 } else {
     ["B_GEN_Offroad_01_gen_F"]
 };
-
+if (_hasLawsOfWar) then {
+    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+};
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
 ["staticMGs", ["I_HMG_02_high_F","I_HMG_01_high_F"]] call _fnc_saveToTemplate;
@@ -134,6 +139,7 @@ if (_hasWs) then {
     ["I_LT_01_cannon_F", ["Indep_Olive", 0]],
     ["I_LT_01_AT_F", ["Indep_Olive", 0]],
     ["I_LT_01_scout_F",["Indep_Olive", 0]],
+    ["I_Plane_Fighter_04_F",["CamoGrey",0.3,"DigitalCamoGrey",0.3]]
     ["I_Heli_light_03_unarmed_F",["Indep",0.5]
 ]] call _fnc_saveToTemplate;
 /////////////////////
