@@ -118,9 +118,13 @@ if (_hasWs) then {
     _cargoTrucks = ["I_Truck_02_flatbed_lxWS", "I_Truck_02_cargo_lxWS"];
     _aa pushBack "I_A_Truck_02_aa_lxWS";
 };
+
 ["vehiclesCargoTrucks", _cargoTrucks] call _fnc_saveToTemplate;
-["vehiclesLightArmed", _lightArmed] call _fnc_saveToTemplate;
 ["vehiclesAA", _aa] call _fnc_saveToTemplate;
+["vehicleRadar", _radar] call _fnc_saveToTemplate;
+["vehicleSam", _SAM] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", _planeCAS] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", _planeAA] call _fnc_saveToTemplate;
 
 #include "Vanilla_Vehicle_Attributes.sqf"
 
