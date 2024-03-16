@@ -625,7 +625,7 @@ if (_type == "CASDIVE") then
         };
         default
         {
-            Error_1("Plane type %1 currently not supported for CAS, please add the case!", typeOf _plane);
+            Error_1("Plane type %1 currently not supported for CASDIVE, please add the case!", typeOf _plane);
         };
     };
 };
@@ -1646,7 +1646,7 @@ if (_type == "AA") then
         };
         default
         {
-            Error_1("Plane type %1 currently not supported for CAS, please add the case!", typeOf _plane);
+            Error_1("Plane type %1 currently not supported for AA, please add the case!", typeOf _plane);
         };
     };
 };
