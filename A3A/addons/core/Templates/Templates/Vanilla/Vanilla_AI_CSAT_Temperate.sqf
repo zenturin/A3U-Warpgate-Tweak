@@ -165,14 +165,15 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["O_Plane_Fighter_02_F", ["CamoGreyHex",1]],
-    ["O_Plane_Fighter_02_Stealth_F", ["CamoGreyHex",1]],
-    ["O_Heli_Attack_02_dynamicLoadout_F", ["Black",1]],
-    ["O_T_LSV_02_armed_F", ["Black",0.3]],
-    ["O_T_LSV_02_unarmed_F", ["Black",0.3]],
-    ["O_T_LSV_02_AT_F", ["Black",0.3]],
-    ["O_Heli_Transport_04_bench_F", ["Black",1]],
-    ["O_Heli_Light_02_dynamicLoadout_F", ["Black",1]],
+    ["O_Plane_Fighter_02_F", ["CamoGreyHex",0.5 , "CamoBlue",0.5 ,"CamoAridHex",0],
+    ["O_Plane_Fighter_02_Stealth_F", ["CamoGreyHex",0.5 , "CamoBlue",0.5 ,"CamoAridHex",0],
+    ["O_T_VTOL_02_infantry_dynamicLoadout_F", ["Grey", 0.5],
+    ["O_Heli_Attack_02_dynamicLoadout_F", ["Black", 1]],
+    ["O_T_LSV_02_armed_F", ["Black", 0.3]],
+    ["O_T_LSV_02_unarmed_F", ["Black", 0.3]],
+    ["O_T_LSV_02_AT_F", ["Black", 0.3]],
+    ["O_Heli_Transport_04_bench_F", ["Black", 1]],
+    ["O_Heli_Light_02_dynamicLoadout_F", ["Black", 1]],
     ["O_Heli_Transport_04_bench_F", ["Black",1]],
     ["O_Heli_Transport_04_covered_F", ["Black",1]],
     ["O_T_MBT_02_railgun_ghex_F", ["Grey",0.4]],
