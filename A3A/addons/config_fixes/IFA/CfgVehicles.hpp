@@ -5,9 +5,10 @@
 		displayName="C-47 Skytrain (German)";
         scope = 2;
         side = -1;
+        faction = "LIB_WEHRMACHT";
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOFOLDER(data\dc3_body_01_bob_co.paa)
-			QPATHTOFOLDER(data\dc3_body_02_co.paa)
+			QPATHTOFOLDER(IFA\data\dc3_body_01_bob_co.paa),
+			QPATHTOFOLDER(IFA\data\dc3_body_02_co.paa)
 		};
 	};
