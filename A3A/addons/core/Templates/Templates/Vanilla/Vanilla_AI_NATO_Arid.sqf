@@ -307,7 +307,7 @@ _loadoutData set ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalS
 _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 
 //Unit type specific item sets. Add or remove these, depending on the unit types in use.
-private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
+private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries", "B_IR_Grenade"];
 private _eeItems = ["ToolKit", "MineDetector"];
 private _mmItems = [];
 
@@ -352,8 +352,11 @@ _loadoutData set ["glasses", [
     "G_Tactical_Clear",
     "G_Tactical_Black"
 ]];
-_loadoutData set ["goggles", ["G_Combat"]];
-
+if (_hasContact) then {
+    _loadoutData set ["goggles", ["G_Combat", "G_AirPurifyingRespirator_01_F"]];
+} else {
+    _loadoutData set ["goggles", ["G_Combat"]];
+};
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
 ///////////////////////////////////////
@@ -361,7 +364,6 @@ _loadoutData set ["goggles", ["G_Combat"]];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["U_B_CTRG_Soldier_Arid_F", "U_B_CTRG_Soldier_3_Arid_F", "U_B_CTRG_Soldier_2_Arid_F"]];
 _sfLoadoutData set ["vests", ["V_PlateCarrierL_CTRG"]];
 _sfLoadoutData set ["Hvests", ["V_PlateCarrierH_CTRG"]];
 _sfLoadoutData set ["backpacks", ["B_Kitbag_cbr", "B_Carryall_cbr", "B_AssaultPack_cbr"]];
@@ -369,6 +371,11 @@ _sfLoadoutData set ["atBackpacks", ["B_Kitbag_cbr", "B_Carryall_cbr"]];
 _sfLoadoutData set ["helmets", ["H_HelmetB_light_black", "H_HelmetSpecB_blk", "H_HelmetB_black", "H_HelmetB_camo","H_Watchcap_khk"]];
 _sfLoadoutData set ["binoculars", ["Laserdesignator"]];
 
+if (_hasContact) then {
+    _sfLoadoutData set ["uniforms", ["U_B_CTRG_Soldier_Arid_F", "U_B_CTRG_Soldier_3_Arid_F", "U_B_CTRG_Soldier_2_Arid_F", "U_B_CBRN_Suit_01_MTP_F"]];
+} else {
+    _sfLoadoutData set ["uniforms", ["U_B_CTRG_Soldier_Arid_F", "U_B_CTRG_Soldier_3_Arid_F", "U_B_CTRG_Soldier_2_Arid_F"]];
+};
 private _slRifles = [
     ["arifle_MX_F", "muzzle_snds_H", "acc_pointer_IR", "optic_MRCO", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""],
     ["arifle_MX_F", "muzzle_snds_H", "acc_pointer_IR", "optic_Hamr", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""],
