@@ -306,8 +306,8 @@ class RscDisplayMain: RscStandardDisplay //main menu
 			type = 1;
 			idc = -1;
 			style = 48;
-			x = "safeZoneX + safeZoneW - 0.18";
-			y = "safeZoneY + safeZoneH - 0.27";
+			x = "safeZoneX + safeZoneW - 0.187";
+			y = "safeZoneY + safeZoneH - 0.28";
 			w = 0.18;
 			h = 0.05;
 			text = QPATHTOFOLDER(data\DevB.paa); // No text needed for an image button
@@ -347,7 +347,7 @@ class RscDisplayMain: RscStandardDisplay //main menu
 		class GitHubButton2: base_side_btn 
         {
 			onLoad = "(_this # 0) ctrlEnable true";
-			y = "safeZoneY + safeZoneH - 0.33";
+			y = "safeZoneY + safeZoneH - 0.34";
 			text = QPATHTOFOLDER(data\GitB.paa); // Path to button image
 			tooltip="GitHub Page";
 			url = "https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate";
@@ -359,7 +359,7 @@ class RscDisplayMain: RscStandardDisplay //main menu
 		class ServerButton3: base_side_btn 
         {
 			onLoad = "(_this # 0) ctrlEnable true";
-			y = "safeZoneY + safeZoneH - 0.39";
+			y = "safeZoneY + safeZoneH - 0.4";
 			text = QPATHTOFOLDER(data\ServerB.paa); // No text needed for an image button
 			tooltip="Connect to our community server!";
 			onMouseButtonClick = "connectToServer ['stutpip123.ddns.net', 2302, '1221']";
@@ -371,7 +371,7 @@ class RscDisplayMain: RscStandardDisplay //main menu
 		class ArmaCreditsButton4: base_side_btn 
         {
 			onLoad = "(_this # 0) ctrlEnable true";
-			x = "safeZoneX";
+			x = "safeZoneX + 0.007";
 			text = QPATHTOFOLDER(data\ArmaCredits.paa); // No text needed for an image button
 			tooltip="ArmA 3 Credits";
 			onMouseButtonClick = "if (scriptdone (missionnamespace getvariable ['RscDisplayMain_credits',scriptnull])) then {RscDisplayMain_credits = _this spawn (uinamespace getvariable 'bis_fnc_credits');};";
