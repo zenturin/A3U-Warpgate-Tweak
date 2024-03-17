@@ -149,23 +149,47 @@ if (_hasLawsOfWar) then {
     _initialRebelEquipment append [
         "V_Pocketed_olive_F", 
         "V_Pocketed_coyote_F", 
-        "V_Pocketed_black_F"
+        "V_Pocketed_black_F",
+        "V_Plain_crystal_F",
+        "B_LegStrapBag_black_F", 
+        "V_LegStrapBag_coyote_F",
+        "V_LegStrapBag_olive_F",
+        "V_Safety_blue_F",
+        "V_Safety_orange_F",
+        "V_Safety_yellow_F"
     ];
 };
 
-private _backpacks =  [];
+if (_hasApex) then {
+    _initialRebelEquipment append [
+        "V_BandollierB_ghex_F",
+        "V_TacChestrig_cbr_F",
+        "V_TacChestrig_grn_F",
+        "V_TacChestrig_oli_F"
+    ];
+};
+
+private _backpacks = [];
 if (_hasLawsOfWar) then {
     _backpacks append [
         "B_Messenger_Black_F", 
         "B_Messenger_Coyote_F", 
         "B_Messenger_Gray_F",
-        "B_Messenger_Olive_F", 
-        "B_LegStrapBag_black_F", 
-        "B_LegStrapBag_coyote_F", 
-        "B_LegStrapBag_olive_F"
+        "B_Messenger_Olive_F"
     ];
 } else {
     _backpacks append ["B_FieldPack_blk","B_AssaultPack_blk"];
+};
+
+if (_hasArtOfWar) then {
+    _backpacks append [
+        "B_CivilianBackpack_01_Everyday_Astra_F",
+        "B_CivilianBackpack_01_Everyday_Black_F",
+        "B_CivilianBackpack_01_Everyday_Vrana_F",
+        "B_CivilianBackpack_01_Sport_Blue_F",
+        "B_CivilianBackpack_01_Sport_Green_F",
+        "B_CivilianBackpack_01_Sport_Red_F"
+    ];
 };
 
 _initialRebelEquipment append _backpacks;
@@ -210,6 +234,17 @@ private _rebUniforms = [
 
 private _dlcUniforms = [];
 
+if (_hasContact) then {
+    _dlcUniforms append [
+        "U_I_L_Uniform_01_camo_F",
+        "U_I_L_Uniform_01_tshirt_black_F",
+        "U_I_L_Uniform_01_tshirt_olive_F",
+        "U_I_L_Uniform_01_tshirt_skull_F",
+        "U_I_L_Uniform_01_tshirt_sport_F",
+        "U_I_L_Uniform_01_deserter_F",
+        "U_C_E_LooterJacket_01_F"
+    ];
+};
 if (_hasWs) then {
     _dlcUniforms append [
         "U_lxWS_ION_Casual1",
@@ -217,19 +252,164 @@ if (_hasWs) then {
         "U_lxWS_ION_Casual3",
         "U_lxWS_ION_Casual4",
         "U_lxWS_ION_Casual5",
-        "U_lxWS_SFIA_deserter"
+        "U_lxWS_SFIA_deserter",
+        "U_lxWS_Djella_02_Brown",
+        "U_lxWS_Djella_02_Gray",
+        "U_lxWS_Djella_02_Green",
+        "U_lxWS_Djella_02_Sand"
+    ];
+};
+if (_hasApex) then {
+    _dlcUniforms append [
+        "U_I_C_Soldier_Bandit_1_F",
+        "U_I_C_Soldier_Bandit_2_F",
+        "U_I_C_Soldier_Bandit_3_F",
+        "U_I_C_Soldier_Bandit_4_F",
+        "U_I_C_Soldier_Bandit_5_F",
+        "U_I_C_Soldier_Camo_F",
+        "U_I_C_Soldier_Para_1_F",
+        "U_I_C_Soldier_Para_2_F",
+        "U_I_C_Soldier_Para_3_F",
+        "U_I_C_Soldier_Para_4_F",
+        "U_I_C_Soldier_Para_5_F"
+    ];
+};
+if (_hasLawsOfWar) then {
+    _dlcUniforms append [
+        "U_C_ConstructionCoverall_Black_F",
+        "U_C_ConstructionCoverall_Blue_F",
+        "U_C_ConstructionCoverall_Red_F",
+        "U_C_ConstructionCoverall_Vrana_F",
+        "U_BG_Guerilla1_2_F",
+        "U_C_Paramedic_01_F"
+    ];
+};
+if (_hasArtOfWar) then {
+    _dlcUniforms append [
+        "U_C_ArtTShirt_01_v1_F",
+        "U_C_ArtTShirt_01_v2_F",
+        "U_C_ArtTShirt_01_v3_F",
+        "U_C_ArtTShirt_01_v4_F",
+        "U_C_ArtTShirt_01_v5_F",
+        "U_C_ArtTShirt_01_v6_F"
+    ];
+};
+["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
+
+private _rebUniforms = [
+    "H_Booniehat_khk_hs",
+    "H_Booniehat_khk",
+    "H_Booniehat_tan",
+    "H_Booniehat_oli",    
+    "H_Bandanna_gry",
+    "H_Bandanna_blu",
+    "H_Bandanna_cbr",    
+    "H_Bandanna_khk_hs",
+    "H_Bandanna_khk",
+    "H_Bandanna_sgg",
+    "H_Bandanna_sand",
+    "H_Bandanna_surfer",
+    "H_Bandanna_surfer_blk",
+    "H_Bandanna_surfer_grn",
+    "H_Bandanna_camo",
+    "H_Watchcap_blk",
+    "H_Watchcap_cbr",
+    "H_Watchcap_camo",
+    "H_Watchcap_khk",
+    "H_Beret_blk",
+    "H_Booniehat_khk_hs",
+    "H_Booniehat_khk",
+    "H_Booniehat_oli",
+    "H_Booniehat_tan",
+    "H_Cap_oli",
+    "H_Cap_surfer",
+    "H_Cap_tan",
+    "H_Cap_oli_hs",
+    "H_Cap_blk",
+    "H_Cap_headphones",
+    "H_Hat_blue",
+    "H_Hat_brown",
+    "H_Hat_camo",
+    "H_Hat_checker",
+    "H_Hat_grey",
+    "H_Hat_tan",
+    "H_Cap_marshal",
+    "H_MilCap_blue",
+    "H_MilCap_gry",
+    "H_ShemagOpen_tan",
+    "H_ShemagOpen_khk",
+    "H_ShemagOpen_tan",
+    "H_Shemag_olive_hs",
+    "H_StrawHat",
+    "H_StrawHat_dark"
+];
+
+private _dlcheadgear = [];
+
+if (_hasContact) then {
+    _dlcheadgear append [
+        "H_Booniehat_mgrn",
+        "H_Booniehat_taiga",
+        "H_Tank_eaf_F",
+        "H_MilCap_grn",
+        "H_MilCap_taiga",
+        "H_Hat_Tinfoil_F"
+    ];
+};
+if (_hasWs) then {
+    _dlcheadgear append [
+        "lxWS_H_Bandanna_blk_hs",
+        "H_Cap_headphones_ion_lxws",
+        "lxWS_H_CapB_rvs_blk_ION",
+        "lxWS_H_Headset"
+    ];
+};
+if (_hasApex) then {
+    _dlcheadgear append [
+        "H_Helmet_Skate"
+    ];
+};
+if (_hasLawsOfWar) then {
+    _dlcheadgear append [
+        "H_EarProtectors_black_F",
+        "H_EarProtectors_orange_F",
+        "H_EarProtectors_red_F",
+        "H_EarProtectors_white_F",
+        "H_EarProtectors_yellow_F",
+        "U_C_Paramedic_01_F"///
+        "H_Construction_basic_black_F",
+        "H_Construction_basic_orange_F",
+        "H_Construction_basic_red_F",
+        "H_Construction_basic_vrana_F",
+        "H_Construction_basic_white_F",
+        "H_Construction_basic_yellow_F",///
+        "H_Construction_earprot_black_F",
+        "H_Construction_earprot_orange_F",
+        "H_Construction_earprot_red_F",
+        "H_Construction_earprot_vrana_F",
+        "H_Construction_earprot_white_F",
+        "H_Construction_earprot_yellow_F",///
+        "H_Construction_headset_black_F",
+        "H_Construction_headset_orange_F",
+        "H_Construction_headset_red_F",
+        "H_Construction_headset_vrana_F",
+        "H_Construction_headset_white_F",
+        "H_Construction_headset_yellow_F",///
+        "H_HeadBandage_clean_F",
+        "H_HeadBandage_stained_F",
+        "H_HeadBandage_bloody_F",
+        "H_HeadSet_black_F",
+        "H_HeadSet_orange_F",
+        "H_HeadSet_red_F",
+        "H_HeadSet_white_F",
+        "H_HeadSet_yellow_F",
+        "H_Hat_Safari_olive_F",
+        "H_Hat_Safari_sand_F",
+        "H_WirelessEarpiece_F"
     ];
 };
 
-["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
-
-["headgear", [
-    "H_Cap_oli",
-    "H_Cap_grn",
-    "H_Booniehat_oli",
-    "H_Bandanna_sgg",
-    "H_Bandanna_khk"
-]] call _fnc_saveToTemplate;
+["headgear", _headgear + _dlcheadgear] call _fnc_saveToTemplate;
 
 /////////////////////
 ///  Identities   ///
