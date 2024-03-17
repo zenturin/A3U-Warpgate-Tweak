@@ -56,7 +56,7 @@ private _tanks = ["O_T_MBT_02_cannon_ghex_F","O_T_MBT_02_railgun_ghex_F"];
 ["vehiclesGunBoats", ["O_T_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
 private _planeCAS = ["O_Plane_CAS_02_dynamicLoadout_F"];
-private _planeAA = [];
+private _planeAA = ["O_Plane_CAS_02_dynamicLoadout_F];
 ["vehiclesPlanesTransport", ["O_T_VTOL_02_infantry_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 
 private _lightHelicopters = ["O_Heli_Light_02_unarmed_F"];
