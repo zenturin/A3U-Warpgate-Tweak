@@ -49,7 +49,7 @@ private _lightTanks = [];
 ["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
 private _planeCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
-private _planeAA = [];
+private _planeAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
 
 private _planesTransport = [];
 if (_hasApex) then {
