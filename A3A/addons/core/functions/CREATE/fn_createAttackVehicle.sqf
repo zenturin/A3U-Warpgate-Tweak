@@ -59,7 +59,7 @@ if (_expectedCargo >= 2 and !_isAttackHeli) then
         } forEach ("true" configClasses (_config >> "Turrets"));
     };
     private _cargoTurrets = [];
-    if !(_vehicleType in ["LIB_C47_Skytrain", "LIB_C47_RAF", "LIB_Li2"]) then {
+    if !(_vehicleType in ["LIB_C47_Skytrain", "LIB_C47_RAF", "LIB_Li2", "A3U_LIB_C47_German"]) then {
         [configFile >> "CfgVehicles" >> _vehicleType] call _fnc_addCargoTurrets;
     };
 
