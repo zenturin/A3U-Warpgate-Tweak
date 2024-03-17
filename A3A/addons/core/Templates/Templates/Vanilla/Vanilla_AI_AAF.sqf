@@ -227,10 +227,16 @@ _loadoutData set ["traitorUniforms", ["U_BG_Guerrilla_6_1"]];
 _loadoutData set ["traitorVests", ["V_TacVest_oli", "V_TacVest_camo", "V_BandollierB_oli"]];
 _loadoutData set ["traitorHats", ["H_Cap_grn","H_Cap_oli"]];
 
-_loadoutData set ["officerUniforms", ["U_I_OfficerUniform"]];
-_loadoutData set ["officerVests", ["V_Rangemaster_belt"]];
-_loadoutData set ["officerHats", ["H_MilCap_dgtl", "H_Beret_grn"]];
 
+if (_hasArtOfWar) then {
+	_loadoutData set ["officerUniforms", ["U_I_ParadeUniform_01_AAF_F","U_I_ParadeUniform_01_AAF_decorated_F","U_I_OfficerUniform"]];
+	_loadoutData set ["officerVests", ["V_TacVest_oli"]];
+	_loadoutData set ["officerHats", ["H_ParadeDressCap_01_AAF_F", "H_Beret_grn"]];
+} else {
+	_loadoutData set ["officerUniforms", ["U_I_OfficerUniform"]];
+	_loadoutData set ["officerVests", ["V_Rangemaster_belt"]];
+	_loadoutData set ["officerHats", ["H_MilCap_dgtl", "H_Beret_grn"]];
+};
 _loadoutData set ["cloakUniforms", ["U_I_FullGhillie_ard", "U_I_FullGhillie_lsh", "U_I_FullGhillie_sard", "U_I_GhillieSuit"]];
 _loadoutData set ["cloakVests", ["V_PlateCarrierIA1_dgtl", "V_BandollierB_oli", "V_Chestrig_oli", "V_TacVest_oli"]];
 
