@@ -48,7 +48,7 @@ private _aa = [];
 ["vehiclesGunBoats", ["I_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
 private _planeCAS = ["I_Plane_Fighter_03_dynamicLoadout_F"];
-private _planeAA = [];
+private _planeAA = ["I_Plane_Fighter_03_dynamicLoadout_F"];
 if (_hasJets) then {
 	_planesCAS pushback ["I_Plane_Fighter_04_F"]
 	_planesAA pushback ["I_Plane_Fighter_04_F"]
