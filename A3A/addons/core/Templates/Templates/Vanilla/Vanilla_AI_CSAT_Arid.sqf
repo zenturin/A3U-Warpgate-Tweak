@@ -356,7 +356,6 @@ if (_hasContact) then {
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["U_O_SpecopsUniform_ocamo"]];
 _sfLoadoutData set ["vests", ["V_HarnessO_brn"]];
 _sfLoadoutData set ["glVests", ["V_HarnessOGL_brn"]];
 _sfLoadoutData set ["Hvests", ["V_TacVest_brn"]];
