@@ -8,6 +8,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
+
 ///////////////////////////
 //   Rebel Information   //
 ///////////////////////////
@@ -272,7 +273,8 @@ private _rebUniforms = [
     "U_IG_leader",
     "U_IG_Guerrilla_6_1",
     "U_I_G_resistanceLeader_F",
-    "U_I_L_Uniform_01_deserter_F"
+    "U_I_L_Uniform_01_deserter_F",
+    "U_C_HunterBody_grn"
 ];
 
 private _dlcUniforms = [];
