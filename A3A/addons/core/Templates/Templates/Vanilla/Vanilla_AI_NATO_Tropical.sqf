@@ -295,7 +295,7 @@ _loadoutData set ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalS
 _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 
 //Unit type specific item sets. Add or remove these, depending on the unit types in use.
-private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
+private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries", "B_IR_Grenade"];
 private _eeItems = ["ToolKit", "MineDetector"];
 private _mmItems = [];
 
@@ -340,7 +340,11 @@ _loadoutData set ["glasses", [
     "G_Tactical_Clear",
     "G_Tactical_Black"
 ]];
-_loadoutData set ["goggles", ["G_Combat"]];
+if (_hasContact) then {
+    _loadoutData set ["goggles", ["G_Combat", "G_AirPurifyingRespirator_01_F"]];
+} else {
+    _loadoutData set ["goggles", ["G_Combat"]];
+};
 
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
@@ -349,12 +353,17 @@ _loadoutData set ["goggles", ["G_Combat"]];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["U_B_CTRG_Soldier_F", "U_B_CTRG_Soldier_3_F", "U_B_CTRG_Soldier_2_F"]];
 _sfLoadoutData set ["vests", ["V_TacVest_oli"]];
 _sfLoadoutData set ["backpacks", ["B_Kitbag_rgr", "B_AssaultPack_tna_F", "B_Carryall_oli", "B_Carryall_green_F"]];
 _sfLoadoutData set ["atBackpacks", ["B_Kitbag_rgr","B_Carryall_oli", "B_Carryall_green_F"]];
 _sfLoadoutData set ["helmets", ["H_HelmetSpecB", "H_HelmetB_light_black", "H_Bandanna_khk_hs","H_Watchcap_camo", "H_HelmetB_TI_tna_F"]];
 _sfLoadoutData set ["binoculars", ["Laserdesignator"]];
+
+if (_hasContact) then {
+    _sfLoadoutData set ["uniforms", ["U_B_CTRG_Soldier_F", "U_B_CTRG_Soldier_3_F", "U_B_CTRG_Soldier_2_F", "U_B_CBRN_Suit_01_MTP_F"]];
+} else {
+    _sfLoadoutData set ["uniforms", ["U_B_CTRG_Soldier_F", "U_B_CTRG_Soldier_3_F", "U_B_CTRG_Soldier_2_F"]];
+};
 
 private _slRifles = [
     ["arifle_MX_Black_F", "muzzle_snds_H", "acc_pointer_IR", "optic_MRCO", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
