@@ -46,7 +46,6 @@ private _cargoTrucks = ["O_Truck_02_transport_F", "O_Truck_02_covered_F", "O_Tru
 ["vehiclesMedical", ["O_Truck_02_medical_F", "O_Truck_03_medical_F"]] call _fnc_saveToTemplate;
 private _lightAPCs = ["O_APC_Wheeled_02_rcws_v2_F"];
 ["vehiclesAPCs", [ "O_APC_Wheeled_02_rcws_v2_F"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", []] call _fnc_saveToTemplate;
 private _IFVs = ["O_APC_Tracked_02_cannon_F"];
 private _Airborne = ["O_APC_Wheeled_02_rcws_v2_F"];
 ["vehiclesLightTanks", []] call _fnc_saveToTemplate;
