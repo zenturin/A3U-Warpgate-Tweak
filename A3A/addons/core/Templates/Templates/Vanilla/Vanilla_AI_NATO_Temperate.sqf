@@ -501,9 +501,14 @@ _eliteLoadoutData set ["helmets", ["H_HelmetB_plain_wdl", "H_HelmetSpecB_wdl", "
 _eliteLoadoutData set ["vests", ["V_PlateCarrier1_wdl", "V_PlateCarrier2_wdl", "V_PlateCarrierSpec_wdl"]];
 _eliteLoadoutData set ["Hvests", ["V_PlateCarrierSpec_wdl"]];
 _eliteLoadoutData set ["glVests", ["V_PlateCarrierGL_wdl"]];
-_eliteLoadoutData set ["backpacks", ["B_Carryall_wdl_F", "B_Kitbag_sgg"]];
 _eliteLoadoutData set ["helmets", ["H_HelmetB_plain_wdl", "H_HelmetSpecB_wdl", "H_HelmetB_light_wdl"]];
 _eliteLoadoutData set ["binoculars", ["Laserdesignator"]];
+
+if (_hasWs) then {
+   _eliteLoadoutData set ["backpacks", ["B_Carryall_wdl_F", "B_Kitbag_sgg", "B_shield_backpack_lxWS"]]
+} else {
+   _eliteLoadoutData set ["backpacks", ["B_Carryall_wdl_F", "B_Kitbag_sgg"]]
+};
 
 _eliteLoadoutData set ["rifles", [
 ["arifle_MX_Black_F", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
