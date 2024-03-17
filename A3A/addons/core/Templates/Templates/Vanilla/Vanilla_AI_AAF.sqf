@@ -255,7 +255,7 @@ _loadoutData set ["sniHats", ["H_Booniehat_dgtl"]];
 _loadoutData set ["glasses", ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"]];
 
 if (_hasContact) then {
-    _loadoutData set ["goggles", ["G_Combat", "G_Lowprofile","G_AirPurifyingRespirator_02_olive_F"]];
+    _loadoutData set ["goggles", ["G_Combat", "G_Lowprofile", "G_AirPurifyingRespirator_02_olive_F", "G_RegulatorMask_F"]];
 } else {
     _loadoutData set ["goggles", ["G_Combat", "G_Lowprofile"]];
 };
