@@ -180,9 +180,9 @@ if (_hasWs) then {
     ["O_MBT_02_railgun_F", ["Grey",0.4]],
     ["O_MBT_04_command_F", ["Grey",0.4]],
     ["O_MBT_04_cannon_F", ["Grey",0.4]],
-    ["O_MBT_02_cannon_F", []],
-    ["B_ION_Heli_Light_02_unarmed_lxWS", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2]],
-    ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2]],
+    ["O_MBT_02_cannon_F", ["Grey",0.4]],
+    ["B_ION_Heli_Light_02_unarmed_lxWS", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2 ,"ION_BLACK",0]],
+    ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2 ,"ION_BLACK",0]],
     ["O_Heli_Light_02_unarmed_F", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2]],
     ["O_Heli_Light_02_dynamicLoadout_F", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2]],
     ["O_T_VTOL_02_infantry_dynamicLoadout_F", ["Hex",1]
@@ -481,7 +481,7 @@ if (_hasWs) then {
     ];
 };
 if (_hasWs) then {
-   _eliteLoadoutData set ["backpacks", ["B_TacticalPack_ocamo", "B_Carryall_ocamo", "B_FieldPack_ocamo", "B_Carryall_cbr", "B_Kitbag_cbr", O_shield_backpack_lxWS]];
+   _eliteLoadoutData set ["backpacks", ["B_TacticalPack_ocamo", "B_Carryall_ocamo", "B_FieldPack_ocamo", "B_Carryall_cbr", "B_Kitbag_cbr", O_shield_backpack_lxWS]]
 } else {
    _eliteLoadoutData set ["backpacks", ["B_TacticalPack_ocamo", "B_Carryall_ocamo", "B_FieldPack_ocamo", "B_Carryall_cbr", "B_Kitbag_cbr"]]
 };
