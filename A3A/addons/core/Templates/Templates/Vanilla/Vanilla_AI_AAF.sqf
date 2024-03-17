@@ -262,7 +262,7 @@ _loadoutData set ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalS
 _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 
 //Unit type specific item sets. Add or remove these, depending on the unit types in use.
-private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
+private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries", "I_IR_Grenade"];
 private _eeItems = ["ToolKit", "MineDetector"];
 private _mmItems = [];
 
@@ -301,6 +301,12 @@ _sfLoadoutData set ["Hvests", ["V_PlateCarrierIAGL_dgtl"]];
 _sfLoadoutData set ["backpacks", ["B_TacticalPack_oli", "B_FieldPack_oli", "B_Carryall_oli", "B_AssaultPack_dgtl"]];
 _sfLoadoutData set ["helmets", ["H_HelmetIA", "H_HelmetIA", "H_HelmetIA", "H_Cap_blk_Raven"]];
 _sfLoadoutData set ["binoculars", ["Laserdesignator_03"]];
+
+if (_hasContact) then {
+    _sfLoadoutData set ["uniforms", ["U_I_CombatUniform", "U_I_CombatUniform_shortsleeve","U_I_CBRN_Suit_01_AAF_F"]];
+} else {
+    _sfLoadoutData set ["uniforms", ["U_I_CombatUniform", "U_I_CombatUniform_shortsleeve"]];
+};
 
 _sfLoadoutData set ["slRifles", [
 ["arifle_Mk20_F", "muzzle_snds_M", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Yellow"], [], ""],
