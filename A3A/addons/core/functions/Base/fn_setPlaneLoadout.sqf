@@ -1235,6 +1235,34 @@ if (_type == "AA") then
 {
     switch (typeOf _plane) do
     {
+        //Vanilla NATO CAS (A-10)
+        case "B_D_Plane_CAS_01_dynamicLoadout_lxWS";
+        case "B_W_Plane_CAS_01_dynamicLoadout_F"; 
+        case "B_T_Plane_CAS_01_dynamicLoadout_F";
+        case "B_Plane_CAS_01_dynamicLoadout_F":
+        {
+            _loadout = ["PylonRack_1Rnd_Missile_AA_04_F","","PylonRack_1Rnd_AAA_missiles","","","","","PylonRack_1Rnd_AAA_missiles","","PylonRack_1Rnd_Missile_AA_04_F"];
+            _plane setVariable ["mainGun", "Gatling_30mm_Plane_CAS_01_F"];
+        };
+        //Vanilla CSAT CAS
+        case "Atlas_O_W_Plane_CAS_02_dynamicLoadout_ghex_F";
+        case "O_T_Plane_CAS_02_dynamicLoadout_ghex_F";
+        case "O_R_Plane_CAS_02_dynamicLoadout_F";
+        case "O_R_Plane_CAS_02_dynamicLoadout_ard_F";
+        case "O_Plane_CAS_02_dynamicLoadout_F":
+        {
+            _loadout = ["PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F","","","","","","","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F"];
+            _plane setVariable ["mainGun", "Cannon_30mm_Plane_CAS_02_F"];
+        };
+
+        //Vanilla IND CAS
+        case "O_A_Plane_Fighter_03_dynamicLoadout_F";
+        case "Atlas_O_T_Plane_Fighter_03_dynamicLoadout_F";
+        case "I_Plane_Fighter_03_dynamicLoadout_F":
+        {
+            _loadout = ["PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_AAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_AAA_missiles","PylonRack_1Rnd_Missile_AA_04_F"];
+            _plane setVariable ["mainGun", "Twin_Cannon_20mm"];
+        };
         //Vanilla NATO Air superiority fighter
         case "Atlas_B_G_Plane_Fighter_01_Stealth_F";
         case "Atlas_B_G_Plane_Fighter_01_Stealth_ard_F";
@@ -1268,6 +1296,30 @@ if (_type == "AA") then
             _loadout = ["magazine_Fighter04_Gun20mm_AA_x250","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonRack_Missile_BIM9X_x1","PylonRack_Missile_BIM9X_x1","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_C_x2"];
             _plane setVariable ["mainGun", "weapon_Fighter_Gun20mm_AA"];
             _plane setVariable ["missileLauncher", ["weapon_BIM9xLauncher","weapon_AMRAAMLauncher"]];
+        };
+	///Aegis/Atlas
+        case "Atlas_B_A_Plane_Fighter_05_Stealth_F";
+        case "Atlas_B_A_Plane_Fighter_05_Stealth_ard_F";
+        case "Atlas_B_A_Plane_Fighter_05_Stealth_trp_F";
+        case "B_A_Plane_Fighter_05_Stealth_F";
+        case "B_A_Plane_Fighter_05_Stealth_tna_F";
+        case "B_A_Plane_Fighter_05_Stealth_wdl_F";
+        case "B_Plane_Fighter_05_Stealth_F";
+        case "B_D_Plane_Fighter_05_Stealth_F";
+        case "B_T_Plane_Fighter_05_Stealth_F";
+        case "B_W_Plane_Fighter_05_Stealth_F";
+        case "Atlas_I_I_Plane_Fighter_05_Stealth_F":
+        {
+            _loadout = [/* "Laserbatteries","240Rnd_CMFlare_Chaff_Magazine", */"PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1"/* ,"PylonWeapon_220Rnd_25mm_shells" */];
+            _plane setVariable ["mainGun", "gatling_25mm"];
+            _plane setVariable ["missileLauncher", ["weapon_AMRAAMLauncher"]];
+        };
+        //Vanilla-Aegis IND CAS //different case due to additional weapons not present in vanilla //in templates should use one of these classnames with proper variant skin
+        case "O_A_Plane_Fighter_03_dynamicLoadout_F";
+        case "Atlas_O_T_Plane_Fighter_03_dynamicLoadout_F":
+        {
+            _loadout = ["PylonRack_19Rnd_Rocket_Skyfire","PylonRack_20Rnd_Rocket_03_HE_F","PylonRack_7Rnd_Rocket_50mm","PylonWeapon_300Rnd_20mm_shells","PylonRack_6Rnd_Vikhr_missiles"];
+            _plane setVariable ["mainGun", "Twin_Cannon_20mm_gunpod"];
         };
         //RHS US Air superiority fighter
         case "rhsusf_f22":
@@ -1387,22 +1439,6 @@ if (_type == "AA") then
         {
             _loadout = ["uns_pylonRack_1Rnd_K13","uns_pylonRack_1Rnd_K13","uns_pylonRack_1Rnd_K13","uns_pylonRack_1Rnd_K13","uns_pylonRack_1rnd_fuel_mig21","uns_pylonRack_1rnd_fuel_mig21","uns_pylonRack_1rnd_fuel_mig21"];
 
-        };
-        case "Atlas_B_A_Plane_Fighter_05_Stealth_F";
-        case "Atlas_B_A_Plane_Fighter_05_Stealth_ard_F";
-        case "Atlas_B_A_Plane_Fighter_05_Stealth_trp_F";
-        case "B_A_Plane_Fighter_05_Stealth_F";
-        case "B_A_Plane_Fighter_05_Stealth_tna_F";
-        case "B_A_Plane_Fighter_05_Stealth_wdl_F";
-        case "B_Plane_Fighter_05_Stealth_F";
-        case "B_D_Plane_Fighter_05_Stealth_F";
-        case "B_T_Plane_Fighter_05_Stealth_F";
-        case "B_W_Plane_Fighter_05_Stealth_F";
-        case "Atlas_I_I_Plane_Fighter_05_Stealth_F":
-        {
-            _loadout = [/* "Laserbatteries","240Rnd_CMFlare_Chaff_Magazine", */"PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1"/* ,"PylonWeapon_220Rnd_25mm_shells" */];
-            _plane setVariable ["mainGun", "gatling_25mm"];
-            _plane setVariable ["missileLauncher", ["weapon_AMRAAMLauncher"]];
         };
         //SEAD but no other Ground Weapons so AA
         case "Tornado_AWS_ecr_ger":
