@@ -47,8 +47,8 @@ private _aa = ["B_T_APC_Tracked_01_AA_F"];
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["I_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["B_Plane_CAS_01_dynamicLoadout_F","B_Plane_Fighter_01_F"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["B_Plane_Fighter_01_Stealth_F"]] call _fnc_saveToTemplate;
+private _planeCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
+private _planeAA = [];
 ["vehiclesPlanesTransport", ["B_T_VTOL_01_infantry_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["I_E_Heli_light_03_unarmed_F", "B_Heli_Light_01_F"]] call _fnc_saveToTemplate;
@@ -76,18 +76,28 @@ private _militiaAPCs = ["I_E_APC_tracked_03_cannon_F"];
 
 private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
+} else {
+    ["B_GEN_Offroad_01_gen_F"]
 };
-
+if (_hasLawsOfWar) then {
+    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+};
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
-["staticMGs", ["I_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["I_G_HMG_02_high_F","I_E_HMG_01_high_F"]] call _fnc_saveToTemplate;
 ["staticAT", ["I_E_Static_AT_F"]] call _fnc_saveToTemplate;
 ["staticAA", ["I_E_Static_AA_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["B_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 
-["vehicleRadar", "I_E_Radar_System_01_F"] call _fnc_saveToTemplate;
-["vehicleSam", "I_E_SAM_System_03_F"] call _fnc_saveToTemplate;
+private _radar = [];
+private _SAM = [];
+if (_hasJets) then {
+	_planesCAS pushback ["O_Plane_Fighter_02_F"]
+	_planesAA pushback ["O_Plane_Fighter_02_Stealth_F"]
+	_radar pushback ["I_E_Radar_System_01_F"]
+	_SAM pushback ["I_E_SAM_System_03_F"]
+};
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
@@ -106,6 +116,10 @@ if (_hasTanks) then {
 ["vehiclesCargoTrucks", _cargoTrucks] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", _lightArmed] call _fnc_saveToTemplate;
 ["vehiclesAA", _aa] call _fnc_saveToTemplate;
+["vehicleRadar", _radar] call _fnc_saveToTemplate;
+["vehicleSam", _SAM] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", _planesCAS] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", _planesAA] call _fnc_saveToTemplate;
 
 #include "Vanilla_Vehicle_Attributes.sqf"
 
@@ -172,12 +186,18 @@ _loadoutData set ["traitorUniforms", ["U_BG_Guerrilla_6_1"]];
 _loadoutData set ["traitorVests", ["V_TacVest_oli", "V_TacVest_camo", "V_BandollierB_oli"]];
 _loadoutData set ["traitorHats", ["H_Cap_grn","H_Cap_oli"]];
 
-_loadoutData set ["officerUniforms", ["U_I_OfficerUniform"]];
-_loadoutData set ["officerVests", ["V_Rangemaster_belt"]];
-_loadoutData set ["officerHats", ["H_MilCap_dgtl", "H_Beret_grn"]];
+if (_hasArtOfWar) then {
+	_loadoutData set ["officerUniforms", ["U_I_E_ParadeUniform_01_LDF_F", "U_I_E_ParadeUniform_01_LDF_decorated_F"]];
+	_loadoutData set ["officerVests", ["V_TacVest_oli"]];
+	_loadoutData set ["officerHats", ["H_Beret_grn", "H_ParadeDressCap_01_LDF_F"]];
+} else {
+	_loadoutData set ["officerUniforms", ["U_I_OfficerUniform"]];
+	_loadoutData set ["officerVests", ["V_Rangemaster_belt"]];
+	_loadoutData set ["officerHats", ["H_MilCap_dgtl", "H_Beret_grn"]];
+};
 
-_loadoutData set ["cloakUniforms", []];
-_loadoutData set ["cloakVests", []];
+_loadoutData set ["cloakUniforms", ["U_I_FullGhillie_lsh"]];
+_loadoutData set ["cloakVests", ["V_TacVest_oli"]];
 
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
