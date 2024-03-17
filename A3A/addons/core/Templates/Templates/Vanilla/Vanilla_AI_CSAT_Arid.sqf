@@ -75,8 +75,9 @@ if (_hasHelicopters) then {
 private _lightAttackHelicopters = ["O_Heli_Light_02_dynamicLoadout_F"];
 ["vehiclesHelisAttack", ["O_Heli_Attack_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["O_MBT_02_arty_F"]] call _fnc_saveToTemplate;
+["vehiclesArtillery", ["O_MBT_02_arty_F", I_Truck_02_MRL_F]] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [
+["I_Truck_02_MRL_F", ["12Rnd_230mm_rockets"]],
 ["O_MBT_02_arty_F",["32Rnd_155mm_Mo_shells_O", "2Rnd_155mm_Mo_Cluster_O", "6Rnd_155mm_Mo_mine_O"]]
 ]] call _fnc_saveToTemplate;
 
@@ -171,6 +172,7 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
+    ["I_Truck_02_MRL_F", ["Opfor",1]]
     ["O_Heli_Transport_04_bench_F", ["Black",0.4]],
     ["O_Heli_Transport_04_covered_F", ["Black",0.4]],
     ["O_Heli_Attack_02_dynamicLoadout_F", ["Black",0.4]],
