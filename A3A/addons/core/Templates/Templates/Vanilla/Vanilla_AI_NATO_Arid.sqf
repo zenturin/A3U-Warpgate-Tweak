@@ -99,18 +99,18 @@ if (_hasLawsOfWar) then {
 ["staticAT", ["B_static_AT_F"]] call _fnc_saveToTemplate;
 ["staticAA", ["B_static_AA_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["B_Mortar_01_F"]] call _fnc_saveToTemplate;
-["staticHowitzers", []] call _fnc_saveToTemplate;
+private _howitzers = [];
 
 private _radar = [];
 private _SAM = [];
 if (_hasJets) then {
-	_planesCAS pushback ["B_Plane_Fighter_01_F"]
-	_planesAA pushback ["B_Plane_Fighter_01_Stealth_F"]
-	_radar pushback ["B_Radar_System_01_F"]
+	_planesCAS pushback "B_Plane_Fighter_01_F"
+	_planesAA pushback "B_Plane_Fighter_01_Stealth_F"
+	_radar pushback "B_Radar_System_01_F"
 	_SAM pushback ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"]
+	_howitzers pushBack "B_Ship_Gun_01_F"
 };
-
-["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
+["howitzerMagazineHE", "magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_cluster_shells_x2"] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
@@ -146,6 +146,7 @@ if (_hasWs) then {
 ["vehiclesHelisLightAttack", _helisLightAttack] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", _helisAttack] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", _transportHelicopters] call _fnc_saveToTemplate;
+["staticHowitzers", _howitzers] call _fnc_saveToTemplate;
 ["vehicleRadar", _radar] call _fnc_saveToTemplate;
 ["vehicleSam", _SAM] call _fnc_saveToTemplate;
 ["vehiclesPlanesCAS", _planesCAS] call _fnc_saveToTemplate;
