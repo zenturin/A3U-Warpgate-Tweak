@@ -304,7 +304,7 @@ _loadoutData set ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalS
 _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 
 //Unit type specific item sets. Add or remove these, depending on the unit types in use.
-private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
+private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries", "O_IR_Grenade"];
 private _eeItems = ["ToolKit", "MineDetector"];
 private _mmItems = [];
 
@@ -343,8 +343,12 @@ _loadoutData set ["glasses", [
     "G_Sport_Blackred",
     "G_Sport_Greenblack"
 ]];
-_loadoutData set ["goggles", ["G_Lowprofile"]];
 
+if (_hasContact) then {
+    _loadoutData set ["goggles", ["G_Lowprofile", "G_AirPurifyingRespirator_02_black_F" , "G_AirPurifyingRespirator_02_sand_F"]];
+} else {
+    _loadoutData set ["goggles", ["G_Lowprofile"]];
+};
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
 ///////////////////////////////////////
@@ -359,6 +363,12 @@ _sfLoadoutData set ["Hvests", ["V_TacVest_brn"]];
 _sfLoadoutData set ["backpacks", ["B_TacticalPack_ocamo", "B_Carryall_ocamo", "B_FieldPack_ocamo", "B_Carryall_cbr", "B_Kitbag_cbr"]];
 _sfLoadoutData set ["helmets", ["H_HelmetSpecO_ocamo"]];
 _sfLoadoutData set ["binoculars", ["Laserdesignator_02"]];
+
+if (_hasContact) then {
+    _sfLoadoutData set ["uniforms", ["U_O_SpecopsUniform_ocamo" , "U_C_CBRN_Suit_01_Blue_F"]];
+} else {
+    _sfLoadoutData set ["uniforms", ["U_O_SpecopsUniform_ocamo"]];
+};
 
 _sfLoadoutData set ["slRifles", [
 ["arifle_Katiba_F", "muzzle_snds_H", "acc_pointer_IR", "optic_Arco_blk_F", ["30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green_mag_Tracer"], [], ""],
