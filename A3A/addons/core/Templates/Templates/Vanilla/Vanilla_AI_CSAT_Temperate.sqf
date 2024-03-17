@@ -301,7 +301,7 @@ _loadoutData set ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalS
 _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 
 //Unit type specific item sets. Add or remove these, depending on the unit types in use.
-private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
+private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries", "O_IR_Grenade"];
 private _eeItems = ["ToolKit", "MineDetector"];
 private _mmItems = [];
 
@@ -340,7 +340,11 @@ _loadoutData set ["glasses", [
     "G_Sport_Blackred",
     "G_Sport_Greenblack"
 ]];
-_loadoutData set ["goggles", ["G_Lowprofile"]];
+if (_hasContact) then {
+    _loadoutData set ["goggles", ["G_Lowprofile", "G_AirPurifyingRespirator_02_black_F" , "G_AirPurifyingRespirator_02_olive_F"]];
+} else {
+    _loadoutData set ["goggles", ["G_Lowprofile"]];
+};
 
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
