@@ -269,7 +269,7 @@ _loadoutData set ["rangefinders", ["Rangefinder"]];
 
 
 if (_hasArtOfWar) then {
-	_loadoutData set ["officerUniforms", [U_O_ParadeUniform_01_CSAT_decorated_F,"U_O_ParadeUniform_01_CSAT_F"]];
+	_loadoutData set ["officerUniforms", ["U_O_ParadeUniform_01_CSAT_decorated_F","U_O_ParadeUniform_01_CSAT_F"]];
 	_loadoutData set ["officerVests", ["V_TacVest_khk",V_TacVest_brn"]];
 	_loadoutData set ["officerHats", ["H_ParadeDressCap_01_CSAT_F", "H_Beret_CSAT_01_F"]];
 } else {
@@ -481,7 +481,7 @@ if (_hasWs) then {
     ];
 };
 if (_hasWs) then {
-   _eliteLoadoutData set ["backpacks", ["B_TacticalPack_ocamo", "B_Carryall_ocamo", "B_FieldPack_ocamo", "B_Carryall_cbr", "B_Kitbag_cbr", O_shield_backpack_lxWS]]
+   _eliteLoadoutData set ["backpacks", ["B_TacticalPack_ocamo", "B_Carryall_ocamo", "B_FieldPack_ocamo", "B_Carryall_cbr", "B_Kitbag_cbr", "O_shield_backpack_lxWS"]]
 } else {
    _eliteLoadoutData set ["backpacks", ["B_TacticalPack_ocamo", "B_Carryall_ocamo", "B_FieldPack_ocamo", "B_Carryall_cbr", "B_Kitbag_cbr"]]
 };
