@@ -56,7 +56,7 @@ private _tanks = ["O_MBT_02_cannon_F","O_MBT_02_railgun_F"];
 ["vehiclesGunBoats", ["O_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
 private _planeCAS = ["O_Plane_CAS_02_dynamicLoadout_F"];
-private _planeAA = [];
+private _planeAA = ["O_Plane_CAS_02_dynamicLoadout_F"];
 
 private _planesTransport = [];
 if (_hasApex) then {
