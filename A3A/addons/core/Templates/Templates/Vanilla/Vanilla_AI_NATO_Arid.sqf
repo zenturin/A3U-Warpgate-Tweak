@@ -107,7 +107,7 @@ if (_hasJets) then {
 	_planesCAS pushback ["B_Plane_Fighter_01_F"]
 	_planesAA pushback ["B_Plane_Fighter_01_Stealth_F"]
 	_radar pushback ["B_Radar_System_01_F"]
-	_SAM pushback ["B_SAM_System_03_F"]
+	_SAM pushback ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"]
 };
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
@@ -173,6 +173,7 @@ if (_hasWs) then {
     ["B_LSV_01_unarmed_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
     ["B_LSV_01_AT_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
     ["B_CTRG_LSV_01_light_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
+    ["B_Plane_Fighter_01_F", ["wing_fold_l",1],
     ["APC_Wheeled_01_command_base_lxWS", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["APC_Wheeled_01_atgm_base_lxWS", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["APC_Wheeled_01_mortar_base_lxWS",["showBags",0.3,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3],
@@ -181,15 +182,19 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["I_MRAP_03_F", ["Blufor",1],
-    ["I_MRAP_03_gmg_F", ["Blufor",1],
-    ["I_MRAP_03_hmg_F", ["Blufor",1],
+    ["B_AAA_System_01_F",position player, ["Sand",0.7]],
+    ["B_SAM_System_01_F", ["Sand", 0.7]],
+    ["B_SAM_System_02_F", ["Sand", 0.7]],
+    ["B_Plane_Fighter_01_F", ["DarkGreyCamo", 0.5]],
+    ["I_MRAP_03_F", ["Blufor",1]],
+    ["I_MRAP_03_gmg_F", ["Blufor", 1]],
+    ["I_MRAP_03_hmg_F", ["Blufor", 1]],
     ["APC_Wheeled_01_command_base_lxWS", ["BLACK", 0.3]],
     ["APC_Wheeled_01_atgm_base_lxWS", ["BLACK", 0.3]],
     ["APC_Wheeled_01_mortar_base_lxWS", ["BLACK", 0.3]],
-    ["B_Heli_Transport_03_F", ["Black",0.5]],
-    ["B_Heli_Transport_03_unarmed_F", ["Green",0.5]],
-    ["B_Heli_Transport_01_F", ["Green",0.5]],
+    ["B_Heli_Transport_03_F", ["Black", 0.5]],
+    ["B_Heli_Transport_03_unarmed_F", ["Green", 0.5]],
+    ["B_Heli_Transport_01_F", ["Green", 0.5]],
     ["B_LSV_01_AT_F", ["Black",0.4]],
     ["B_LSV_01_unarmed_F", ["Black",0.4]],
     ["B_LSV_01_AT_F", ["Black",0.4]]
