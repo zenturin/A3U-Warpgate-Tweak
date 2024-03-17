@@ -48,7 +48,7 @@ private _aa = ["B_T_APC_Tracked_01_AA_F"];
 ["vehiclesGunBoats", ["I_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
 private _planeCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
-private _planeAA = [];
+private _planeAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
 ["vehiclesPlanesTransport", ["B_T_VTOL_01_infantry_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["I_E_Heli_light_03_unarmed_F", "B_Heli_Light_01_F"]] call _fnc_saveToTemplate;
