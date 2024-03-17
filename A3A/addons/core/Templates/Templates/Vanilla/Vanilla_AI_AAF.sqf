@@ -50,8 +50,8 @@ private _aa = [];
 private _planeCAS = ["I_Plane_Fighter_03_dynamicLoadout_F"];
 private _planeAA = [];
 if (_hasJets) then {
-	_planeCAS pushback ["I_Plane_Fighter_04_F"]
-	_planeAA pushback ["I_Plane_Fighter_04_F"]
+	_planesCAS pushback ["I_Plane_Fighter_04_F"]
+	_planesAA pushback ["I_Plane_Fighter_04_F"]
 };
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
@@ -123,8 +123,8 @@ if (_hasWs) then {
 ["vehiclesAA", _aa] call _fnc_saveToTemplate;
 ["vehicleRadar", _radar] call _fnc_saveToTemplate;
 ["vehicleSam", _SAM] call _fnc_saveToTemplate;
-["vehiclesPlanesCAS", _planeCAS] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", _planeAA] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", _planesCAS] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", _planesAA] call _fnc_saveToTemplate;
 
 #include "Vanilla_Vehicle_Attributes.sqf"
 
