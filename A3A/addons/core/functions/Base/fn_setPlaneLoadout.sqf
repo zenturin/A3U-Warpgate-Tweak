@@ -1207,14 +1207,14 @@ if (_type == "CAS") then
         {
             _loadout = ["","","rhs_mag_ub16_s5ko","rhs_mag_b13l_s13df","PRACS_Kh35_X1","rhs_mag_ub16_s5ko"];
             _plane setVariable ["mainGun", "PRACS_NR23_23mm"];
-            _plane setVariable ["rocketLauncher", [,"rhs_weap_s5ko","rhs_weap_s13df"]];
+            _plane setVariable ["rocketLauncher", ["rhs_weap_s5ko","rhs_weap_s13df"]];
             _plane setVariable ["missileLauncher", ["PRACS_KH35_launcher"]];
         };
         case "PRACS_SLA_SU22":
         {
             _loadout = ["","","rhs_mag_ub32_s5m1","rhs_mag_ub32_s5ko","rhs_mag_ub32_s5","PRACS_KH29D_X1","PRACS_Kh25_mp_X1","PRACS_Kh25_ml_X1","","","","","",""];
             _plane setVariable ["mainGun", "PRACS_NR30_30mm"];
-            _plane setVariable ["rocketLauncher", [,"rhs_weap_s5ko","rhs_weap_s5m1","rhs_weap_s5"]];
+            _plane setVariable ["rocketLauncher", ["rhs_weap_s5ko","rhs_weap_s5m1","rhs_weap_s5"]];
             _plane setVariable ["missileLauncher", ["PRACS_KH29_D_launcher","PRACS_Kh25_mp_launcher","PRACS_Kh25_ml_launcher"]];
         };
         case "PRACS_SLA_Su25":
