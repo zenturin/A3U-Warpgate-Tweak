@@ -4,9 +4,9 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasTanks = "tank" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
-private _hasHelicopters = "heli" A3A_enabledDLC;
-private _hasArtOfWar = "aow" A3A_enabledDLC;
-private _hasApex = "expansion" A3A_enabledDLC;
+private _hasHelicopters = "heli" in A3A_enabledDLC;
+private _hasArtOfWar = "aow" in A3A_enabledDLC;
+private _hasApex = "expansion" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
