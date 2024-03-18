@@ -1011,12 +1011,12 @@ if (_type == "CAS") then
             _plane setVariable ["mainGun", "3AS_T47_20mm_AA_Cannon"];
         };
         case "3AS_VWing_Imperial";
-        case "3as_Vwing_base"
+        case "3as_Vwing_base":
         {
             _loadout = ["","","","","","","","","3as_Vwing_700Rnd_Medium_shells","3as_Vwing_700Rnd_Medium_shells","3as_Vwing_700Rnd_Medium_shells"];
             _plane setVariable ["mainGun", "3as_Vwing_Medium_Cannon"];
         };
-        case "3as_V19_base"
+        case "3as_V19_base":
         {
             _loadout = ["","","","","","","","","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells"];
             _plane setVariable ["mainGun", "3as_V19_Medium_Cannon"];
@@ -1494,13 +1494,13 @@ if (_type == "AA") then
             _plane setVariable ["mainGun", "3AS_T47_20mm_AA_Cannon"];
         };
         case "3AS_VWing_Imperial";
-        case "3as_Vwing_base"
+        case "3as_Vwing_base":
         {
             _loadout = ["3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_C_x2"];
             _plane setVariable ["mainGun", "3as_Vwing_Medium_Cannon"];            
             _plane setVariable ["missileLauncher", ["3AS_ARC_Missile_AA","weapon_AMRAAMLauncher"]];
         };
-        case "3as_V19_base"
+        case "3as_V19_base":
         {
             _loadout = ["3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_C_x2"];
             _plane setVariable ["mainGun", "3as_V19_Medium_Cannon"];
