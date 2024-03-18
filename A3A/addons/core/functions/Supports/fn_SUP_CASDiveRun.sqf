@@ -1,7 +1,5 @@
 /*  CAS routine to perform a low-level attack run
-
 Environment: Server, scheduled, internal
-
 Arguments:
     <OBJECT> Aircraft object to use
     <OBJECT> Target object for attack run
@@ -191,6 +189,5 @@ for '_i' from 1 to 3 do
         [_plane, _fireParams#2] spawn _fireFnc;
         (_fireParams#2) set [0, false];
     };
-
 Debug_3("Rounds unfired in third phase: %1, %2, %3", _plane getVariable "mainGunShots", _plane getVariable "rocketShots", _plane getVariable "missileShots");
 */

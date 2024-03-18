@@ -1,3 +1,4 @@
+//PLEASE CHECK
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 if (!isServer and hasInterface) exitWith{};
