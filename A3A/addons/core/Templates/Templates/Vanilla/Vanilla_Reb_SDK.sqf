@@ -69,7 +69,7 @@ private _shopWs = if (_hasWs) then {
 } else {
     []
 };
-private _shopLawsOfWar = if (_hasWs) then {
+private _shopLawsOfWar = if (_hasLawsOfWar) then {
     [
         ["I_UAV_06_F", 2500, "UAV", {tierWar > 2}], 
         ["I_UAV_06_medical_F", 3500, "UAV", {tierWar > 3}]
