@@ -301,7 +301,7 @@ if (_hasWs) then {
         "U_lxWS_SFIA_deserter",
         "U_lxWS_Djella_02_Brown",
         "U_lxWS_Djella_02_Grey",
-        "U_lxWS_Djella_02_Green",
+        "U_lxWS_Djella_03_Green",
         "U_lxWS_Djella_02_Sand"
     ];
 };
