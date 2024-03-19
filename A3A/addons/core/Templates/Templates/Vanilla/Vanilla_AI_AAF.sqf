@@ -142,9 +142,9 @@ if (_hasWs) then {
     ["I_LT_01_AA_F", ["Indep_Olive", 0]],
     ["I_LT_01_cannon_F", ["Indep_Olive", 0]],
     ["I_LT_01_AT_F", ["Indep_Olive", 0]],
-    ["I_LT_01_scout_F",["Indep_Olive", 0]],
-    ["I_Plane_Fighter_04_F",["CamoGrey",0.3,"DigitalCamoGrey",0.3]]
-    ["I_Heli_light_03_unarmed_F",["Indep",0.5]]
+    ["I_LT_01_scout_F", ["Indep_Olive", 0]],
+    ["I_Plane_Fighter_04_F", ["CamoGrey",0.3, "DigitalCamoGrey", 0.4]]
+    ["I_Heli_light_03_unarmed_F", ["Indep", 0.5]]
 ]] call _fnc_saveToTemplate;
 /////////////////////
 ///  Identities   ///
