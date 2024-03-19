@@ -184,7 +184,7 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["B_AAA_System_01_F",position player, ["Sand",0.7]],
+    ["B_AAA_System_01_F", ["Sand",0.7]],
     ["B_SAM_System_01_F", ["Sand", 0.7]],
     ["B_SAM_System_02_F", ["Sand", 0.7]],
     ["B_Plane_Fighter_01_F", ["DarkGreyCamo",0.5]],
