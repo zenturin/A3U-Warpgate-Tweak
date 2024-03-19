@@ -66,7 +66,7 @@ private _artillery = ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"];
 
 ["magazines", createHashMapFromArray [
     ["B_T_MBT_01_arty_F",["32Rnd_155mm_Mo_shells", "2Rnd_155mm_Mo_Cluster", "6Rnd_155mm_Mo_mine"]],
-    ["B_T_MBT_01_mlrs_F",["12Rnd_230mm_rockets", "12Rnd_230mm_rockets_cluster"]],
+    ["B_T_MBT_01_mlrs_F",["12Rnd_230mm_rockets", "12Rnd_230mm_rockets_cluster"]]
     ["APC_Wheeled_01_mortar_base_lxWS",["64Rnd_60mm_Mo_Shells_lxWS"]]
 ]] call _fnc_saveToTemplate;
 
@@ -86,7 +86,7 @@ private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_gen_F"]
 };
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+    _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
 };
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
@@ -99,11 +99,11 @@ private _howitzers = [];
 private _radar = [];
 private _SAM = [];
 if (_hasJets) then {
-	_planesCAS pushback "B_Plane_Fighter_01_F"
-	_planesAA pushback "B_Plane_Fighter_01_Stealth_F"
-	_radar pushback "B_Radar_System_01_F"
-	_SAM pushback ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"]
-	_howitzers pushBack "B_Ship_Gun_01_F"
+	_planesCAS pushback "B_Plane_Fighter_01_F";
+	_planesAA pushback "B_Plane_Fighter_01_Stealth_F";
+	_radar pushback "B_Radar_System_01_F";
+	_SAM pushback ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"];
+	_howitzers pushBack "B_Ship_Gun_01_F";
 };
 ["howitzerMagazineHE", "magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_cluster_shells_x2"] call _fnc_saveToTemplate;
 
@@ -116,7 +116,7 @@ if (_hasJets) then {
 ["minefieldAPERS", ["APERSMine"]] call _fnc_saveToTemplate;
 
 if (_hasApex) then {
-    _unarmedVehicles pushBack ["B_T_LSV_01_unarmed_F", "B_CTRG_LSV_01_light_F"];
+    _unarmedVehicles append ["B_T_LSV_01_unarmed_F", "B_CTRG_LSV_01_light_F"];
     _armedVehicles append ["B_T_LSV_01_AT_F", "B_T_LSV_01_armed_F"];
 };
 
