@@ -19,7 +19,7 @@ private _hasKart = "kart" in A3A_enabledDLC;
 ["flagTexture", "\A3\Data_F\Flags\Flag_green_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_EnochLooters"] call _fnc_saveToTemplate;
 
-private _vehicleBasic = ["I_G_Quadbike_01_F"];
+private _vehiclesBasic = ["I_G_Quadbike_01_F"];
 private _vehiclesLightUnarmed = ["I_G_Offroad_01_F"];
 private _vehiclesLightArmed = ["I_G_Offroad_01_armed_F"];
 private _vehiclesAt = ["I_G_Offroad_01_AT_F"];
