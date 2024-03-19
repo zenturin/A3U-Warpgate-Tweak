@@ -94,12 +94,12 @@ if (_hasApex) then {
 
 ["vehiclesCivHeli", ["C_Heli_Light_01_civil_F" , "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"]] call _fnc_saveToTemplate;
 
-["vehiclesCivIndustrial", _civCarsWithWeights] call _fnc_saveToTemplate;
-["vehiclesCivBoat", _civCarsWithWeights] call _fnc_saveToTemplate;
-["vehiclesCivRepair", _civCarsWithWeights] call _fnc_saveToTemplate;
-["vehiclesCivMedical", _civCarsWithWeights] call _fnc_saveToTemplate;
-["vehiclesCivFuel", _civCarsWithWeights] call _fnc_saveToTemplate;
-["vehiclesCivPlanes", _civCarsWithWeights] call _fnc_saveToTemplate;
+["vehiclesCivIndustrial", _civIndustrial] call _fnc_saveToTemplate;
+["vehiclesCivBoat", _civBoat] call _fnc_saveToTemplate;
+["vehiclesCivRepair", _civRepair] call _fnc_saveToTemplate;
+["vehiclesCivMedical", _civMedical] call _fnc_saveToTemplate;
+["vehiclesCivFuel", _civFuel] call _fnc_saveToTemplate;
+["vehiclesCivPlanes", _civPlanes] call _fnc_saveToTemplate;
 
 ["variants", [
     ["I_Heli_Transport_02_F", ["Dahoman", 1]],
