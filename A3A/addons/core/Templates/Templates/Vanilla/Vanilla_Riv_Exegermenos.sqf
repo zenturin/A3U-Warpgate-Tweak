@@ -284,7 +284,7 @@ if (_hasLawsOfWar) then {
 private _heavyVests = ["V_TacVestIR_blk", "V_Press_F", "V_PlateCarrierIAGL_oli", "V_I_G_resistanceLeader_F", "V_TacVest_blk_POLICE"];
 
 if (_hasApex) then {
-	_vests append ["V_TacVest_gen_F"];
+	_heavyVests append ["V_TacVest_gen_F"];
 };
 
 if (_hasWs) then {
