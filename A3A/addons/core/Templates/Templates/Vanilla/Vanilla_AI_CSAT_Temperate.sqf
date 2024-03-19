@@ -91,7 +91,7 @@ private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_gen_F"]
 };
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
@@ -104,10 +104,10 @@ if (_hasLawsOfWar) then {
 private _radar = [];
 private _SAM = [];
 if (_hasJets) then {
-	_planesCAS pushback ["O_Plane_Fighter_02_F"]
-	_planesAA pushback ["O_Plane_Fighter_02_Stealth_F"]
-	_radar pushback ["O_Radar_System_02_F"]
-	_SAM pushback ["O_SAM_System_04_F"]
+	_planesCAS pushback ["O_Plane_Fighter_02_F"];
+	_planesAA pushback ["O_Plane_Fighter_02_Stealth_F"];
+	_radar pushback ["O_Radar_System_02_F"];
+	_SAM pushback ["O_SAM_System_04_F"];
 };
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
