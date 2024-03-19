@@ -38,7 +38,7 @@ private _cargoTrucks = ["I_E_Truck_02_transport_F", "I_E_Truck_02_F"];
 ["vehiclesMedical", ["I_E_Truck_02_medical_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["B_T_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", ["I_E_APC_tracked_03_cannon_F",]] call _fnc_saveToTemplate;
+["vehiclesIFVs", ["I_E_APC_tracked_03_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesAirborne", ["I_E_APC_tracked_03_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["B_T_MBT_01_TUSK_F", "B_T_MBT_01_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightTanks", ["B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_CRV_F"]] call _fnc_saveToTemplate;
