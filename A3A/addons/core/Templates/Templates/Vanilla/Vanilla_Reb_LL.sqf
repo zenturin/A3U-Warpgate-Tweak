@@ -422,7 +422,7 @@ if (_hasLawsOfWar) then {
         "H_EarProtectors_red_F",
         "H_EarProtectors_white_F",
         "H_EarProtectors_yellow_F",
-        "U_C_Paramedic_01_F"///
+        "U_C_Paramedic_01_F",///
         "H_Construction_basic_black_F",
         "H_Construction_basic_orange_F",
         "H_Construction_basic_red_F",
