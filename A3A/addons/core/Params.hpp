@@ -536,6 +536,7 @@ class Params
         values[] = {1,0};
         texts[] = {$STR_antistasi_dialogs_generic_button_yes_text, $STR_antistasi_dialogs_generic_button_no_text};
         default = 1;
+
     };
     class allowUnlockedExplosives
     {
@@ -544,6 +545,7 @@ class Params
         values[] = {1,0};
         texts[] = {$STR_antistasi_dialogs_generic_button_yes_text,$STR_antistasi_dialogs_generic_button_no_text};
         default = 0;
+
     };
     class startWithLongRangeRadio
     {
