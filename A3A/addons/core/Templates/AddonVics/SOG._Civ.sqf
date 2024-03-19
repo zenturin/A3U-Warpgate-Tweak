@@ -27,6 +27,6 @@ _addon set ["vehiclesCivBoat", [
 	,"vn_c_boat_02_01" , 0.3
 ]];
 
-_addon set ["vehiclesCivHeli", [    //planes for test
+_addon set ["vehiclesCivHeli", [
 	"vn_o_air_mi2_02_02", 0.3
 ]];
