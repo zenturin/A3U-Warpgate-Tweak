@@ -276,7 +276,7 @@ if (_hasArtOfWar) then {
 	_loadoutData set ["officerHats", ["H_MilCap_tna_F", "H_Beret_Colonel", "H_Beret_02"]];
 };
 
-_loadoutData set ["cloakUniforms", ["U_B_T_FullGhillie_tna_F", "U_B_FullGhillie_lsh", "U_B_T_Sniper_F"]];
+_loadoutData set ["cloakUniforms", ["U_B_T_Sniper_F", "U_B_T_FullGhillie_tna_F"]];
 _loadoutData set ["cloakVests", ["V_Chestrig_oli"]];
 
 _loadoutData set ["uniforms", []];
