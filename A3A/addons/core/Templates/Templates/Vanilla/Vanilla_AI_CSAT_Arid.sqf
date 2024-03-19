@@ -132,8 +132,8 @@ if (_hasTanks) then {
 if (_hasWs) then {
     _Airborne pushback "O_APC_Wheeled_02_hmg_lxWS";
     _cargoTrucks = ["O_Truck_02_cargo_lxWS", "O_Truck_02_flatbed_lxWS"];
-    _lightAPCs = ["O_APC_Wheeled_02_hmg_lxWS",O_APC_Wheeled_02_unarmed_lxWS];
-    _militiaAPCs = ["O_APC_Wheeled_02_hmg_lxWS",O_APC_Wheeled_02_unarmed_lxWS];
+    _lightAPCs = ["O_APC_Wheeled_02_hmg_lxWS","O_APC_Wheeled_02_unarmed_lxWS"];
+    _militiaAPCs = ["O_APC_Wheeled_02_hmg_lxWS","O_APC_Wheeled_02_unarmed_lxWS"];
     _IFVs pushBack "O_APC_Tracked_02_30mm_lxWS";
     _lightHelicopters pushBack "B_ION_Heli_Light_02_unarmed_lxWS";
     _lightAttackHelicopters pushBack "B_ION_Heli_Light_02_dynamicLoadout_lxWS";
