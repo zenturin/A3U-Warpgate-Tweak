@@ -57,6 +57,7 @@ private _timeBetweenBombs = (_metersPerBomb / _speedInMeters) - 0.05;
 if (!_isRivals) then {
     sleep ((_timeBetweenBombs / 2) + (_bombOffset / _speedInMeters));
 };
+
 if (_bombType isEqualTo "CHEMICAL") then {
     for "_i" from 1 to _bombCount do {
         if (isNil "_plane" || {!(alive _plane)}) exitWith {};
