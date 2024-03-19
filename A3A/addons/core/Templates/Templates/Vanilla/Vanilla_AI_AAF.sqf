@@ -29,7 +29,7 @@ private _hasApex = "expansion" in A3A_enabledDLC;
 
 ["vehiclesBasic", ["I_Quadbike_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["I_MRAP_03_F"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed"["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["I_Truck_02_transport_F", "I_Truck_02_covered_F"]] call _fnc_saveToTemplate;
 private _cargoTrucks = ["I_Truck_02_transport_F", "I_Truck_02_covered_F"];
 ["vehiclesAmmoTrucks", ["I_Truck_02_ammo_F"]] call _fnc_saveToTemplate;
@@ -37,7 +37,7 @@ private _cargoTrucks = ["I_Truck_02_transport_F", "I_Truck_02_covered_F"];
 ["vehiclesFuelTrucks", ["I_Truck_02_fuel_F"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["I_Truck_02_medical_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
-["vehiclesAPCs", [ "I_APC_Wheeled_03_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["I_APC_Wheeled_03_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["I_APC_tracked_03_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesAirborne", ["I_APC_Wheeled_03_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["I_MBT_03_cannon_F"]] call _fnc_saveToTemplate;
@@ -50,8 +50,8 @@ private _aa = [];
 private _planesCAS = ["I_Plane_Fighter_03_dynamicLoadout_F"];
 private _planesAA = ["I_Plane_Fighter_03_dynamicLoadout_F"];
 if (_hasJets) then {
-	_planesCAS pushback ["I_Plane_Fighter_04_F"];
-	_planesAA pushback ["I_Plane_Fighter_04_F"];
+	_planesCAS pushback "I_Plane_Fighter_04_F";
+	_planesAA pushback "I_Plane_Fighter_04_F";
 };
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
@@ -83,7 +83,7 @@ private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_gen_F"]
 };
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
+    _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
 };
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
@@ -108,10 +108,10 @@ private _SAM = [];
 
 //If Tank DLC
 if (_hasTanks) then {
-    _lightTanks pushback ["I_LT_01_AT_F", "I_LT_01_cannon_F"];
-    _aa pushback ["I_LT_01_AA_F"];
-    _radar pushback ["I_LT_01_scout_F"];
-    _SAM pushback ["I_LT_01_AA_F"];
+    _lightTanks append ["I_LT_01_AT_F", "I_LT_01_cannon_F"];
+    _aa pushback "I_LT_01_AA_F";
+    _radar pushback "I_LT_01_scout_F";
+    _SAM pushback "I_LT_01_AA_F";
 };
 //If Western Sahara DLC
 if (_hasWs) then {
@@ -143,7 +143,7 @@ if (_hasWs) then {
     ["I_LT_01_cannon_F", ["Indep_Olive", 0]],
     ["I_LT_01_AT_F", ["Indep_Olive", 0]],
     ["I_LT_01_scout_F",["Indep_Olive", 0]],
-    ["I_Plane_Fighter_04_F",["CamoGrey",0.3,"DigitalCamoGrey",0.3]]
+    ["I_Plane_Fighter_04_F",["CamoGrey",0.3,"DigitalCamoGrey",0.3]],
     ["I_Heli_light_03_unarmed_F",["Indep",0.5]]
 ]] call _fnc_saveToTemplate;
 /////////////////////
