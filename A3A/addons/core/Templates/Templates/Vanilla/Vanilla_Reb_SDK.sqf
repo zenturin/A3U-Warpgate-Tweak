@@ -72,7 +72,7 @@ private _shopWs = if (_hasWs) then {
 private _shopLawsOfWar = if (_hasLawsOfWar) then {
     [
         ["I_UAV_06_F", 2500, "UAV", {tierWar > 2}], 
-        ["I_UAV_06_medical_F", 3500, "UAV", {tierWar > 3}]
+        ["I_UAV_06_medical_F", 3500, "UAV", {tierWar > 3}],
         ["C_IDAP_UAV_06_antimine_F", 3500, "UAV", {tierWar > 3}]
     ]
 } else {
@@ -89,7 +89,7 @@ private _shopContact = if (_hasContact) then {
 private _shopJets = if (_hasJets) then {
     [
         ["C_IDAP_UGV_02_Demining_F", 2500, "UAV", {tierWar > 2}],
-        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}], 
+        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}]
     ]
 } else {
     []
@@ -97,7 +97,7 @@ private _shopJets = if (_hasJets) then {
 private _shopMarksman = if (_hasMarksman) then {
     [
         ["B_Static_Designator_01_F", 1500, "UAV", {tierWar > 2}],
-        ["O_Static_Designator_02_F", 1500, "UAV", {tierWar > 2}], 
+        ["O_Static_Designator_02_F", 1500, "UAV", {tierWar > 2}]
     ]
 } else {
     []
