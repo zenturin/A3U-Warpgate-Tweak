@@ -50,8 +50,8 @@ private _aa = [];
 private _planesCAS = ["I_Plane_Fighter_03_dynamicLoadout_F"];
 private _planesAA = ["I_Plane_Fighter_03_dynamicLoadout_F"];
 if (_hasJets) then {
-	_planesCAS pushback ["I_Plane_Fighter_04_F"]
-	_planesAA pushback ["I_Plane_Fighter_04_F"]
+	_planesCAS pushback ["I_Plane_Fighter_04_F"];
+	_planesAA pushback ["I_Plane_Fighter_04_F"];
 };
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
@@ -83,7 +83,7 @@ private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_gen_F"]
 };
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
@@ -109,9 +109,9 @@ private _SAM = [];
 //If Tank DLC
 if (_hasTanks) then {
     _lightTanks pushback ["I_LT_01_AT_F", "I_LT_01_cannon_F"];
-    _aa pushback ["I_LT_01_AA_F"]
+    _aa pushback ["I_LT_01_AA_F"];
     _radar pushback ["I_LT_01_scout_F"];
-    _SAM pushback ["I_LT_01_AA_F"]
+    _SAM pushback ["I_LT_01_AA_F"];
 };
 //If Western Sahara DLC
 if (_hasWs) then {
