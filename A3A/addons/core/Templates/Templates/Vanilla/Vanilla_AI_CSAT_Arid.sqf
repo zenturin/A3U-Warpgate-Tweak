@@ -271,7 +271,7 @@ _loadoutData set ["rangefinders", ["Rangefinder"]];
 
 if (_hasArtOfWar) then {
 	_loadoutData set ["officerUniforms", ["U_O_ParadeUniform_01_CSAT_decorated_F","U_O_ParadeUniform_01_CSAT_F"]];
-	_loadoutData set ["officerVests", ["V_TacVest_khk",V_TacVest_brn"]];
+	_loadoutData set ["officerVests", ["V_TacVest_khk","V_TacVest_brn"]];
 	_loadoutData set ["officerHats", ["H_ParadeDressCap_01_CSAT_F", "H_Beret_CSAT_01_F"]];
 } else {
 	_loadoutData set ["officerUniforms", ["U_O_OfficerUniform_ocamo"]];
