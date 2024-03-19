@@ -50,6 +50,7 @@ class DOUBLES(ADDON,Cargo)
 
     #include "Cargo\3CBFactions.hpp"
     #include "Cargo\ACE.hpp"
+    #include "Cargo\Aegis.hpp"
     #include "Cargo\BWA3.hpp"
     #include "Cargo\CUP.hpp"
     #include "Cargo\GM.hpp"
