@@ -46,7 +46,7 @@ private _cargoTrucks = ["O_T_Truck_02_F", "O_T_Truck_02_transport_F", "O_T_Truck
 ["vehiclesMedical", ["O_T_Truck_02_Medical_F", "O_T_Truck_03_medical_ghex_F"]] call _fnc_saveToTemplate;
 private _lightAPCs = ["O_T_APC_Wheeled_02_rcws_v2_ghex_F"];
 ["vehiclesAPCs", ["O_T_APC_Wheeled_02_rcws_v2_ghex_F"]] call _fnc_saveToTemplate;
-private _IFVs = ["O_T_APC_Tracked_02_cannon_ghex_F",];
+private _IFVs = ["O_T_APC_Tracked_02_cannon_ghex_F"];
 private _Airborne = ["O_T_APC_Wheeled_02_rcws_v2_ghex_F"];
 ["vehiclesLightTanks", []] call _fnc_saveToTemplate;
 private _tanks = ["O_T_MBT_02_cannon_ghex_F","O_T_MBT_02_railgun_ghex_F"];
