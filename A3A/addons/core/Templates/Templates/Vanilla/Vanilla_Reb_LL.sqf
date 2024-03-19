@@ -89,7 +89,7 @@ if (_hasKart) then {
 ["vehiclesBasic", _vehiclesBasic] call _fnc_saveToTemplate;
 ["vehiclesPlane", _vehiclePlane] call _fnc_saveToTemplate;
 ["vehiclesCivTruck", _CivTruck] call _fnc_saveToTemplate;
-["vehiclesTruck", _VehTruck]] call _fnc_saveToTemplate;
+["vehiclesTruck", _VehTruck] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", _CivBoat] call _fnc_saveToTemplate;
 ["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
