@@ -7,7 +7,7 @@ _addon set ["vehiclesCivBoat", [
 	,"C_Scooter_Transport_01_F" , 0.3
 ]];
 
-_addon set ["vehiclesCivPlanes", [    //planes for test
+_addon set ["vehiclesCivPlanes", [
 	"C_Plane_Civil_01_F" , 0.3
 	,"C_Plane_Civil_01_racing_F" , 0.2
 ]];
