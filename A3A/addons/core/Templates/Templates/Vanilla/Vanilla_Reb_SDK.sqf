@@ -81,7 +81,7 @@ private _shopLawsOfWar = if (_hasLawsOfWar) then {
 private _shopContact = if (_hasContact) then {
     [
         ["C_IDAP_UGV_02_Demining_F", 2500, "UAV", {tierWar > 2}],
-        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}], 
+        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}]
     ]
 } else {
     []
