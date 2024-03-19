@@ -53,12 +53,12 @@ private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
 
 private _planesTransport = [];
 if (_hasApex) then {
-     _planesTransport pushback ["B_T_VTOL_01_infantry_F"]
+     _planesTransport pushback ["B_T_VTOL_01_infantry_F"];
 };
 
 private _transportHelicopters = ["B_Heli_Transport_01_F"];
 if (_hasApex) then {
-    _transportHelicopters pushback ["B_CTRG_Heli_Transport_01_sand_F"]
+    _transportHelicopters pushback ["B_CTRG_Heli_Transport_01_sand_F"];
 };
 if (_hasHelicopters) then {
     _transportHelicopters append ["B_Heli_Transport_03_F", "B_Heli_Transport_03_unarmed_F"];
@@ -91,7 +91,7 @@ private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_gen_F"]
 };
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
@@ -104,11 +104,11 @@ private _howitzers = [];
 private _radar = [];
 private _SAM = [];
 if (_hasJets) then {
-	_planesCAS pushback "B_Plane_Fighter_01_F"
-	_planesAA pushback "B_Plane_Fighter_01_Stealth_F"
-	_radar pushback "B_Radar_System_01_F"
-	_SAM pushback ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"]
-	_howitzers pushBack "B_Ship_Gun_01_F"
+	_planesCAS pushback "B_Plane_Fighter_01_F";
+	_planesAA pushback "B_Plane_Fighter_01_Stealth_F";
+	_radar pushback "B_Radar_System_01_F";
+	_SAM pushback ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"];
+	_howitzers pushBack "B_Ship_Gun_01_F";
 };
 ["howitzerMagazineHE", "magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_cluster_shells_x2"] call _fnc_saveToTemplate;
 
