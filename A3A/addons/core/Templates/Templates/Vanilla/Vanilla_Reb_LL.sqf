@@ -30,7 +30,7 @@ private _vehicleAA = [];
 
 private _vehiclePlane = [];
 if (_hasApex) then {
-    _vehiclePlane pushBack ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
+    _vehiclePlane append ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
 };
 
 private _vehiclesCivCar = ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_SUV_01_F"];
@@ -57,23 +57,23 @@ if (_hasApex) then {
     _vehiclesLightUnarmed pushBack "I_C_Offroad_02_unarmed_F";
     _vehiclesLightArmed pushBack "I_C_Offroad_02_LMG_F";
     _vehiclesAt pushBack "I_C_Offroad_02_AT_F";
-    _CivBoat pushBack ["C_Boat_Transport_02_F", "C_Scooter_Transport_01_F"]
+    _CivBoat append ["C_Boat_Transport_02_F", "C_Scooter_Transport_01_F"];
 };
 
 if (_hasLawsOfWar) then {
-    _CivTruck pushBack ["C_Van_02_vehicle_F", "C_Van_02_transport_F"];
-    _VehTruck pushBack ["I_G_Van_02_transport_F", "I_G_Van_02_vehicle_F"];
+    _CivTruck append ["C_Van_02_vehicle_F", "C_Van_02_transport_F"];
+    _VehTruck append ["I_G_Van_02_transport_F", "I_G_Van_02_vehicle_F"];
     _vehiclesLightUnarmed pushBack "I_C_Offroad_02_unarmed_F";
     _vehiclesLightArmed pushBack "I_C_Offroad_02_LMG_F";
     _vehiclesAt pushBack "I_C_Offroad_02_AT_F";
 };
 
 if (_hasContact) then {
-    _vehiclesCivCar pushBack ["C_Offroad_01_covered_F", "C_Offroad_01_comms_F", "C_Tractor_01_F"];
+    _vehiclesCivCar append ["C_Offroad_01_covered_F", "C_Offroad_01_comms_F", "C_Tractor_01_F"];
 };
 
 if (_hasWs) then {
-    _CivTruck pushBack ["C_Truck_02_cargo_lxWS", "C_Truck_02_flatbed_lxWS"];
+    _CivTruck append ["C_Truck_02_cargo_lxWS", "C_Truck_02_flatbed_lxWS"];
     _vehiclesCivCar pushBack ["C_Offroad_lxWS","C_Truck_02_racing_lxWS"];
     _vehiclesLightUnarmed pushBack "I_G_Offroad_01_armor_base_lxWS";
     _vehiclesLightArmed pushBack "I_G_Offroad_01_armor_armed_lxWS";
@@ -157,7 +157,7 @@ private _vehiclesBlackMarket = _shopWs + _shopLawsOfWar + _shopContact + _shopJe
     ["I_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
     ["B_Heli_Light_01_F", 7000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["I_Heli_light_03_unarmed_F", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["B_Heli_Light_01_dynamicLoadout_F", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["B_Heli_Light_01_dynamicLoadout_F", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
     ["I_Heli_light_03_dynamicLoadout_F", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
 ];
 ["blackMarketStock", _vehiclesBlackMarket] call _fnc_saveToTemplate;
@@ -301,7 +301,7 @@ if (_hasWs) then {
         "U_lxWS_SFIA_deserter",
         "U_lxWS_Djella_02_Brown",
         "U_lxWS_Djella_02_Gray",
-        "U_lxWS_Djella_03_Green",
+        "U_lxWS_Djella_02_Green",
         "U_lxWS_Djella_02_Sand"
     ];
 };
