@@ -62,7 +62,7 @@ if (_hasHelicopters) then {
 ["vehiclesHelisLightAttack", ["B_Heli_Light_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["B_Heli_Attack_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 
-private _arillery = ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"];
+private _artillery = ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"];
 
 ["magazines", createHashMapFromArray [
     ["B_T_MBT_01_arty_F",["32Rnd_155mm_Mo_shells", "2Rnd_155mm_Mo_Cluster", "6Rnd_155mm_Mo_mine"]],
@@ -126,7 +126,7 @@ if (_hasTanks) then {
 
 //If Western Sahara DLC
 if (_hasWs) then {
-    _arillery pushBack "B_T_APC_Wheeled_01_mortar_lxWS";
+    _artillery pushBack "B_T_APC_Wheeled_01_mortar_lxWS";
     _APCs pushBack "B_T_APC_Wheeled_01_atgm_lxWS";
     _lightAPCs = ["B_T_APC_Wheeled_01_command_lxWS"];
     _airborneVehicles pushBack "B_T_APC_Wheeled_01_command_lxWS";
