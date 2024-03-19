@@ -344,7 +344,7 @@ if (_hasArtOfWar) then {
 };
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
 
-private _rebUniforms = [
+private _headgear = [
     "H_Booniehat_khk_hs",
     "H_Booniehat_khk",
     "H_Booniehat_tan",
