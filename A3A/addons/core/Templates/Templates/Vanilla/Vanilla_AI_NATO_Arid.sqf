@@ -68,7 +68,7 @@ private _helisLight = ["B_Heli_Light_01_F"];
 private _helisLightAttack = ["B_Heli_Light_01_dynamicLoadout_F"];
 private _helisAttack = ["B_Heli_Attack_01_dynamicLoadout_F"];
 
-private _arillery = ["B_MBT_01_arty_F","B_MBT_01_mlrs_F"];
+private _artillery = ["B_MBT_01_arty_F","B_MBT_01_mlrs_F"];
 ["magazines", createHashMapFromArray [
     ["B_MBT_01_arty_F",["32Rnd_155mm_Mo_shells", "2Rnd_155mm_Mo_Cluster", "6Rnd_155mm_Mo_mine"]],
     ["B_MBT_01_mlrs_F",["12Rnd_230mm_rockets", "12Rnd_230mm_rockets_cluster"]],
@@ -135,7 +135,7 @@ if (_hasWs) then {
     _lightAPCs = ["APC_Wheeled_01_command_base_lxWS"];
     _airborneVehicles pushBack "APC_Wheeled_01_command_base_lxWS";
     _militiaAPCs pushBack "APC_Wheeled_01_command_base_lxWS";
-    _arillery pushBack "APC_Wheeled_01_mortar_base_lxWS";
+    _artillery pushBack "APC_Wheeled_01_mortar_base_lxWS";
     _helisLight pushback "B_D_Heli_Light_01_lxWS";
     _helisLightAttack pushback "B_D_Heli_Light_01_dynamicLoadout_lxWS";
     _helisAttack pushback "B_D_Heli_Attack_01_dynamicLoadout_lxWS";
