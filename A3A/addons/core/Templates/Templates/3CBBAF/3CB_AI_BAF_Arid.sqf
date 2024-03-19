@@ -308,8 +308,7 @@ _eliteLoadoutData set ["vests", ["UK3CB_BAF_V_Osprey_DDPM7"]];
 _eliteLoadoutData set ["slVests", ["UK3CB_BAF_V_Osprey_DDPM2"]];
 _eliteLoadoutData set ["medVests", ["UK3CB_BAF_V_Osprey_DDPM8", "UK3CB_BAF_V_Osprey_DDPM9"]];
 _eliteLoadoutData set ["glVests", ["UK3CB_BAF_V_Osprey_DDPM3"]];
-_eliteLoadoutData set ["backpacks", ["UK3CB_BAF_B_Kitbag_DDPM", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A",
-"UK3CB_BAF_B_Bergen_DDPM_Rifleman_B"]];
+_eliteLoadoutData set ["backpacks", ["UK3CB_BAF_B_Kitbag_DDPM", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A","UK3CB_BAF_B_Bergen_DDPM_Rifleman_B"]];
 _eliteLoadoutData set ["aaBackpacks", ["UK3CB_BAF_B_Carryall_DDPM"]];
 _eliteLoadoutData set ["helmets", ["UK3CB_BAF_H_Mk6_DDPM_D", "UK3CB_BAF_H_Mk6_DDPM_F", "UK3CB_BAF_H_Mk6_DDPM_B", "UK3CB_BAF_H_Mk6_DDPM_A"]];
 _eliteLoadoutData set ["binoculars", ["UK3CB_BAF_Soflam_Laserdesignator"]];
@@ -384,8 +383,7 @@ _militaryLoadoutData set ["vests", ["UK3CB_BAF_V_Osprey_DDPM7"]];
 _militaryLoadoutData set ["slVests", ["UK3CB_BAF_V_Osprey_DDPM2"]];
 _militaryLoadoutData set ["medVests", ["UK3CB_BAF_V_Osprey_DDPM8", "UK3CB_BAF_V_Osprey_DDPM9"]];
 _militaryLoadoutData set ["glVests", ["UK3CB_BAF_V_Osprey_DDPM3"]];
-_militaryLoadoutData set ["backpacks", ["UK3CB_BAF_B_Kitbag_DDPM", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A",
-"UK3CB_BAF_B_Bergen_DDPM_Rifleman_B"]];
+_militaryLoadoutData set ["backpacks", ["UK3CB_BAF_B_Kitbag_DDPM", "UK3CB_BAF_B_Bergen_DDPM_Rifleman_A","UK3CB_BAF_B_Bergen_DDPM_Rifleman_B"]];
 _militaryLoadoutData set ["aaBackpacks", ["UK3CB_BAF_B_Carryall_DDPM"]];
 _militaryLoadoutData set ["helmets", ["UK3CB_BAF_H_Mk6_DDPM_D", "UK3CB_BAF_H_Mk6_DDPM_F", "UK3CB_BAF_H_Mk6_DDPM_B", "UK3CB_BAF_H_Mk6_DDPM_A"]];
 _militaryLoadoutData set ["binoculars", ["UK3CB_BAF_Soflam_Laserdesignator"]];
