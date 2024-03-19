@@ -38,7 +38,7 @@ private _cargoTrucks = ["I_E_Truck_02_transport_F", "I_E_Truck_02_F"];
 ["vehiclesMedical", ["I_E_Truck_02_medical_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["B_T_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", ["I_E_APC_tracked_03_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesIFVs", ["I_E_APC_tracked_03_cannon_F",]] call _fnc_saveToTemplate;
 ["vehiclesAirborne", ["I_E_APC_tracked_03_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["B_T_MBT_01_TUSK_F", "B_T_MBT_01_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightTanks", ["B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_CRV_F"]] call _fnc_saveToTemplate;
@@ -47,8 +47,8 @@ private _aa = ["B_T_APC_Tracked_01_AA_F"];
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["I_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
-private _planesCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
-private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
+private _planeCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
+private _planeAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
 ["vehiclesPlanesTransport", ["B_T_VTOL_01_infantry_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["I_E_Heli_light_03_unarmed_F", "B_Heli_Light_01_F"]] call _fnc_saveToTemplate;
@@ -80,7 +80,7 @@ private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_gen_F"]
 };
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
+    _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
 };
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
@@ -93,10 +93,10 @@ if (_hasLawsOfWar) then {
 private _radar = [];
 private _SAM = [];
 if (_hasJets) then {
-	_planesCAS pushback ["O_Plane_Fighter_02_F"];
-	_planesAA pushback ["O_Plane_Fighter_02_Stealth_F"];
-	_radar pushback ["I_E_Radar_System_01_F"];
-	_SAM pushback ["I_E_SAM_System_03_F"];
+	_planesCAS pushback "O_Plane_Fighter_02_F";
+	_planesAA pushback "O_Plane_Fighter_02_Stealth_F";
+	_radar pushback "I_E_Radar_System_01_F";
+	_SAM pushback "I_E_SAM_System_03_F";
 };
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
