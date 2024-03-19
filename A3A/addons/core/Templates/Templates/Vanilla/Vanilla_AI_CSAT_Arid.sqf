@@ -137,6 +137,7 @@ if (_hasWs) then {
     _lightHelicopters pushBack "B_ION_Heli_Light_02_unarmed_lxWS";
     _lightAttackHelicopters pushBack "B_ION_Heli_Light_02_dynamicLoadout_lxWS";
 };
+
 ["vehicleRadar", _radar] call _fnc_saveToTemplate;
 ["vehicleSam", _SAM] call _fnc_saveToTemplate;
 ["vehiclesPlanesCAS", _planesCAS] call _fnc_saveToTemplate;
@@ -148,7 +149,6 @@ if (_hasWs) then {
 ["vehiclesCargoTrucks", _cargoTrucks] call _fnc_saveToTemplate;
 ["vehiclesMilitiaAPCs", _militiaAPCs] call _fnc_saveToTemplate;
 ["vehiclesTanks", _tanks] call _fnc_saveToTemplate;
-["vehiclesAPCs", _apcs] call _fnc_saveToTemplate;
 ["vehiclesHelisLight", _lightHelicopters] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", _lightAttackHelicopters] call _fnc_saveToTemplate;
 
