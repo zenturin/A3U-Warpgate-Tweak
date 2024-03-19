@@ -131,7 +131,6 @@ if (_hasWs) then {
     _militiaAPCs pushBack "B_T_APC_Wheeled_01_command_lxWS";
 };
 
-["vehiclesPlanesTransport", _planesTransport] call _fnc_saveToTemplate;
 ["staticHowitzers", _howitzers] call _fnc_saveToTemplate;
 ["vehicleRadar", _radar] call _fnc_saveToTemplate;
 ["vehicleSam", _SAM] call _fnc_saveToTemplate;
