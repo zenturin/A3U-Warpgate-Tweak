@@ -30,6 +30,6 @@ _addon set ["vehiclesCivBoat", [
 	,"C_Boat_Civil_01_F" , 0.3
 ]];
 
-_addon set ["vehiclesCivHeli", [    //planes for test
+_addon set ["vehiclesCivHeli", [
 	"C_Heli_Light_01_civil_F", 0.3
 ]];
