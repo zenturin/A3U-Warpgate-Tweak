@@ -167,24 +167,24 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["B_UAV_05_F", ["DarkGreyCamo",0.5]], 
-    ["B_AAA_System_01_F", ["Green",0.7]],
-    ["B_SAM_System_01_F", ["Green",0.7]],
-    ["B_SAM_System_02_F", ["Green",0.7]],
-    ["B_T_VTOL_01_infantry_F", ["Blue",0.4]],
-    ["B_Plane_Fighter_01_F", ["DarkGreyCamo",0.4, "DarkGrey",0.6]],
-    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo",0.4, "DarkGrey",0.6]]],
-    ["B_Radar_System_01_F", ["Olive",1]],
-    ["B_SAM_System_03_F", ["Olive",1]],
-    ["B_T_APC_Wheeled_01_command_lxWS", ["BLACK", 0.3]],
-    ["B_T_APC_Wheeled_01_atgm_lxWS", ["BLACK", 0.3]],
-    ["B_T_APC_Wheeled_01_mortar_lxWS", ["BLACK", 0.3]],
-    ["B_Heli_Transport_03_F", ["Black",0.5]],
-    ["B_Heli_Transport_03_unarmed_F", ["Green",0.5]],
-    ["B_Heli_Transport_01_F", ["Green",0.5]],
-    ["B_LSV_01_AT_F", ["Black",0.4]],
-    ["B_LSV_01_unarmed_F", ["Black",0.4]],
-    ["B_LSV_01_AT_F", ["Black",0.4]]
+    ["B_UAV_05_F", ["DarkGreyCamo", 0.5, "DarkGrey", 0.5]], 
+    ["B_AAA_System_01_F", ["Green", 1.0]],
+    ["B_SAM_System_01_F", ["Green", 1.0]],
+    ["B_SAM_System_02_F", ["Green", 1.0]],
+    ["B_T_VTOL_01_infantry_F", ["Blue",0.4 , "Olive", 0.6]],
+    ["B_Plane_Fighter_01_F", ["DarkGreyCamo", 0.4, "DarkGrey", 0.6]],
+    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo", 0.4, "DarkGrey", 0.6]]],
+    ["B_Radar_System_01_F", ["Olive", 1]],
+    ["B_SAM_System_03_F", ["Olive", 1]],
+    ["B_T_APC_Wheeled_01_command_lxWS", ["BLACK", 0.3, "Olive", 0.7]],
+    ["B_T_APC_Wheeled_01_atgm_lxWS", ["BLACK", 0.3, "Olive", 0.7],
+    ["B_T_APC_Wheeled_01_mortar_lxWS", ["BLACK", 0.3, "Olive", 0.7]],
+    ["B_Heli_Transport_03_F", ["Black", 0.5, "Green", 0.5]],
+    ["B_Heli_Transport_03_unarmed_F", ["Black", 0.5, "Green", 0.5]],
+    ["B_Heli_Transport_01_F", ["Green", 0.4, "Black", 0.2 , "Sand", 0]],
+    ["B_T_LSV_01_AT_F", ["Black", 0.3, "Olive", 0.5, "Dazzle", 0.2]],
+    ["B_T_LSV_01_unarmed_F", ["Black", 0.3, "Olive", 0.5, "Dazzle", 0.2]],
+    ["B_T_LSV_01_AT_F", ["Black", 0.3, "Olive", 0.5, "Dazzle", 0.2]]
 ]] call _fnc_saveToTemplate;
 
 
