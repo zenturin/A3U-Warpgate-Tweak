@@ -6,7 +6,7 @@ private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
-private _hasArtOfWar = "aow" A3A_enabledDLC;
+private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 
 ////////////////////////////
@@ -56,7 +56,7 @@ private _trucks = ["O_G_Van_01_transport_F"];
 
 if (_hasApex) then {
 	_lightArmedVehicles append ["I_C_Offroad_02_AT_F", "I_C_Offroad_02_LMG_F", "O_G_Offroad_01_AT_F", "O_G_Offroad_01_armed_F"];
-	_lightUnarmedVehicles pushBack ["I_C_Offroad_02_unarmed_F","B_G_Offroad_01_F"];
+	_lightUnarmedVehicles append ["I_C_Offroad_02_unarmed_F","B_G_Offroad_01_F"];
 } else {
 	_lightArmedVehicles append ["O_G_Offroad_01_AT_F", "O_G_Offroad_01_armed_F"];
 	_lightUnarmedVehicles pushBack "I_G_Offroad_01_F";
@@ -65,17 +65,17 @@ if (_hasApex) then {
 if (_hasWs) then {
 	_lightArmedVehicles append ["O_G_Offroad_01_armor_AT_lxWS", "O_G_Offroad_01_armor_armed_lxWS"];
 	_lightUnarmedVehicles pushBack "O_G_Offroad_01_armor_base_lxWS";
-	_apc pushback ["O_SFIA_APC_Wheeled_02_hmg_lxWS","O_SFIA_APC_Wheeled_02_unarmed_lxWS"];
-        _uav pushback ["O_UAV_02_lxWS","O_Tura_UAV_02_IED_lxWS"]
+	_apc append ["O_SFIA_APC_Wheeled_02_hmg_lxWS","O_SFIA_APC_Wheeled_02_unarmed_lxWS"];
+    _uav append ["O_UAV_02_lxWS","O_Tura_UAV_02_IED_lxWS"];
 };
 
 if (_hasLawsOfWar) then {
-	_trucks pushBack ["O_G_Van_02_transport_F", "O_G_Van_02_vehicle_F"];
-        _uav pushback ["O_UAV_06_F","O_UAV_06_medical_F","C_IDAP_UAV_06_antimine_F"];
+	_trucks append ["O_G_Van_02_transport_F", "O_G_Van_02_vehicle_F"];
+    _uav append ["O_UAV_06_F","O_UAV_06_medical_F","C_IDAP_UAV_06_antimine_F"];
 };
 
 if (_hasTanks) then {
-	_tanks pushBack ["I_LT_01_cannon_F"];
+	_tanks pushBack "I_LT_01_cannon_F";
 };
 
 ["vehiclesRivalsLightArmed", _lightArmedVehicles] call _fnc_saveToTemplate;
@@ -270,21 +270,21 @@ if (_hasApex) then {
 };
 
 if (_hasWs) then {
-	_vests append ["V_lxWS_HarnessO_oli"];
+	_vests pushback "V_lxWS_HarnessO_oli";
 };
 
 if (_hasContact) then {
-	_vests pushBack ["V_SmershVest_01_F", "V_SmershVest_01_radio_F"];
+	_vests append ["V_SmershVest_01_F", "V_SmershVest_01_radio_F"];
 };
 
 if (_hasLawsOfWar) then {
-	_vests pushBack ["V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F"];
+	_vests append ["V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F"];
 };
 
 private _heavyVests = ["V_TacVestIR_blk", "V_Press_F", "V_PlateCarrierIAGL_oli", "V_I_G_resistanceLeader_F", "V_TacVest_blk_POLICE"];
 
 if (_hasApex) then {
-	_vests append ["V_TacVest_gen_F"];
+	_heavyVests append ["V_TacVest_gen_F"];
 };
 
 if (_hasWs) then {
@@ -292,7 +292,7 @@ if (_hasWs) then {
 };
 
 if (_hasContact) then {
-	_heavyVests pushBack ["V_CarrierRigKBT_01_EAF_F", "V_CarrierRigKBT_01_Olive_F"];
+	_heavyVests append ["V_CarrierRigKBT_01_EAF_F", "V_CarrierRigKBT_01_Olive_F"];
 };
 
 if (_hasJets) then {
@@ -317,11 +317,11 @@ if (_hasWs) then {
 };
 
 if (_hasContact) then {
-	_helmets pushBack ["H_Booniehat_mgrn", "H_Booniehat_taiga", "H_Booniehat_wdl", "H_Booniehat_eaf", "H_MilCap_grn", "H_MilCap_taiga", "H_MilCap_wdl", "H_MilCap_eaf"];
+	_helmets append ["H_Booniehat_mgrn", "H_Booniehat_taiga", "H_Booniehat_wdl", "H_Booniehat_eaf", "H_MilCap_grn", "H_MilCap_taiga", "H_MilCap_wdl", "H_MilCap_eaf"];
 };
 
 if (_hasLawsOfWar) then {
-	_helmets pushBack ["H_PASGT_basic_black_F", "H_PASGT_basic_blue_F", "H_PASGT_basic_olive_F", "H_PASGT_neckprot_blue_press_F", "H_PASGT_basic_blue_press_F","H_HeadBandage_clean_F", "H_HeadBandage_stained_F", "H_HeadBandage_bloody_F"];
+	_helmets append ["H_PASGT_basic_black_F", "H_PASGT_basic_blue_F", "H_PASGT_basic_olive_F", "H_PASGT_neckprot_blue_press_F", "H_PASGT_basic_blue_press_F","H_HeadBandage_clean_F", "H_HeadBandage_stained_F", "H_HeadBandage_bloody_F"];
 };
 
 private _crewhelmets = ["H_Tank_black_F"];
@@ -331,7 +331,7 @@ if (_hasWs) then {
 };
 
 if (_hasContact) then {
-	_crewhelmets pushBack ["H_Tank_eaf_F", "H_HelmetCrew_I_E", "H_Booniehat_wdl", "H_Booniehat_eaf"];
+	_crewhelmets append ["H_Tank_eaf_F", "H_HelmetCrew_I_E", "H_Booniehat_wdl", "H_Booniehat_eaf"];
 };
 
 if (_hasLawsOfWar) then {
