@@ -190,7 +190,7 @@ if (_hasWs) then {
     ["B_SAM_System_01_F", ["Sand", 1]],
     ["B_SAM_System_02_F", ["Sand", 1]],
     ["B_Plane_Fighter_01_F", ["DarkGreyCamo", 0.4, "DarkGrey", 0.6]],
-    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo", 0.4, "DarkGrey", 0.6]]],
+    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo", 0.4, "DarkGrey", 0.6]],
     ["I_MRAP_03_F", ["Blufor", 1]],
     ["I_MRAP_03_gmg_F", ["Blufor", 1]],
     ["I_MRAP_03_hmg_F", ["Blufor", 1]],
