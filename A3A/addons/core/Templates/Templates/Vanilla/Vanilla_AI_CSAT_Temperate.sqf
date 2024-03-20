@@ -46,7 +46,7 @@ private _cargoTrucks = ["O_T_Truck_02_F", "O_T_Truck_02_transport_F", "O_T_Truck
 ["vehiclesMedical", ["O_T_Truck_02_Medical_F", "O_T_Truck_03_medical_ghex_F"]] call _fnc_saveToTemplate;
 private _lightAPCs = ["O_T_APC_Wheeled_02_rcws_v2_ghex_F"];
 ["vehiclesAPCs", ["O_T_APC_Wheeled_02_rcws_v2_ghex_F"]] call _fnc_saveToTemplate;
-private _IFVs = ["O_T_APC_Tracked_02_cannon_ghex_F",];
+private _IFVs = ["O_T_APC_Tracked_02_cannon_ghex_F"];
 private _Airborne = ["O_T_APC_Wheeled_02_rcws_v2_ghex_F"];
 ["vehiclesLightTanks", []] call _fnc_saveToTemplate;
 private _tanks = ["O_T_MBT_02_cannon_ghex_F","O_T_MBT_02_railgun_ghex_F"];
@@ -180,8 +180,8 @@ if (_hasWs) then {
     ["O_T_MBT_04_command_F", ["Grey",0.4, "Jungle",0.4]],
     ["O_T_MBT_04_cannon_F", ["Grey",0.4, "Jungle",0.4]],
     ["O_T_MBT_02_cannon_ghex_F", ["Grey",0.4]],
-    ["O_Heli_Light_02_unarmed_F", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0]],
-    ["O_Heli_Light_02_dynamicLoadout_F", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0]],
+    ["O_Heli_Light_02_unarmed_F", ["Black", 0.4 , "Blackcustom", 0.2, "Opfor",0]],
+    ["O_Heli_Light_02_dynamicLoadout_F", ["Black", 0.4 , "Blackcustom", 0.2, "Opfor",0]],
     ["B_ION_Heli_Light_02_unarmed_lxWS", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0 ,"ION_BLACK",0]],
     ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0 ,"ION_BLACK",0]]
 ]] call _fnc_saveToTemplate;
