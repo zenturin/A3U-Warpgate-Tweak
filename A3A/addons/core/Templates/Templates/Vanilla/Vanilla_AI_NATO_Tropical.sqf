@@ -5,6 +5,8 @@ private _hasTanks = "tank" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
+private _hasJets = "jets" in A3A_enabledDLC;
+private _hasArtOfWar = "aow" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
@@ -46,8 +48,8 @@ private _lightTanks = [];
 ["vehiclesTransportBoats", ["B_T_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["B_T_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
-private _planeCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
-private _planeAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
+private _planesCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
+private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
 ["vehiclesPlanesTransport", ["B_T_VTOL_01_infantry_F"]] call _fnc_saveToTemplate;
 
 private _transportHelicopters = ["B_Heli_Transport_01_F", "B_CTRG_Heli_Transport_01_tropic_F"];
@@ -60,11 +62,11 @@ if (_hasHelicopters) then {
 ["vehiclesHelisLightAttack", ["B_Heli_Light_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["B_Heli_Attack_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 
-private _arillery = ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"];
+private _artillery = ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"];
 
 ["magazines", createHashMapFromArray [
     ["B_T_MBT_01_arty_F",["32Rnd_155mm_Mo_shells", "2Rnd_155mm_Mo_Cluster", "6Rnd_155mm_Mo_mine"]],
-    ["B_T_MBT_01_mlrs_F",["12Rnd_230mm_rockets", "12Rnd_230mm_rockets_cluster"]]
+    ["B_T_MBT_01_mlrs_F",["12Rnd_230mm_rockets", "12Rnd_230mm_rockets_cluster"]],
     ["APC_Wheeled_01_mortar_base_lxWS",["64Rnd_60mm_Mo_Shells_lxWS"]]
 ]] call _fnc_saveToTemplate;
 
@@ -84,7 +86,7 @@ private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_gen_F"]
 };
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+    _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
@@ -97,11 +99,11 @@ private _howitzers = [];
 private _radar = [];
 private _SAM = [];
 if (_hasJets) then {
-	_planesCAS pushback "B_Plane_Fighter_01_F"
-	_planesAA pushback "B_Plane_Fighter_01_Stealth_F"
-	_radar pushback "B_Radar_System_01_F"
-	_SAM pushback ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"]
-	_howitzers pushBack "B_Ship_Gun_01_F"
+	_planesCAS pushback "B_Plane_Fighter_01_F";
+	_planesAA pushback "B_Plane_Fighter_01_Stealth_F";
+	_radar pushback "B_Radar_System_01_F";
+	_SAM append ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"];
+	_howitzers pushBack "B_Ship_Gun_01_F";
 };
 ["howitzerMagazineHE", "magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_cluster_shells_x2"] call _fnc_saveToTemplate;
 
@@ -114,7 +116,7 @@ if (_hasJets) then {
 ["minefieldAPERS", ["APERSMine"]] call _fnc_saveToTemplate;
 
 if (_hasApex) then {
-    _unarmedVehicles pushBack ["B_T_LSV_01_unarmed_F", "B_CTRG_LSV_01_light_F"];
+    _unarmedVehicles append ["B_T_LSV_01_unarmed_F", "B_CTRG_LSV_01_light_F"];
     _armedVehicles append ["B_T_LSV_01_AT_F", "B_T_LSV_01_armed_F"];
 };
 
@@ -124,7 +126,7 @@ if (_hasTanks) then {
 
 //If Western Sahara DLC
 if (_hasWs) then {
-    _arillery pushBack "B_T_APC_Wheeled_01_mortar_lxWS";
+    _artillery pushBack "B_T_APC_Wheeled_01_mortar_lxWS";
     _APCs pushBack "B_T_APC_Wheeled_01_atgm_lxWS";
     _lightAPCs = ["B_T_APC_Wheeled_01_command_lxWS"];
     _airborneVehicles pushBack "B_T_APC_Wheeled_01_command_lxWS";
@@ -165,24 +167,24 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["B_UAV_05_F", ["DarkGreyCamo",0.5]], 
-    ["B_AAA_System_01_F", ["Green",0.7]],
-    ["B_SAM_System_01_F", ["Green",0.7]],
-    ["B_SAM_System_02_F", ["Green",0.7]],
-    ["B_T_VTOL_01_infantry_F", ["Blue",0.4]],
-    ["B_Plane_Fighter_01_F", ["DarkGreyCamo",0.5]],
-    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo",0.5]],
-    ["B_Radar_System_01_F", ["Olive",1]],
-    ["B_SAM_System_03_F", ["Olive",1]],
-    ["B_T_APC_Wheeled_01_command_lxWS", ["BLACK", 0.3]],
-    ["B_T_APC_Wheeled_01_atgm_lxWS", ["BLACK", 0.3]],
-    ["B_T_APC_Wheeled_01_mortar_lxWS", ["BLACK", 0.3]],
-    ["B_Heli_Transport_03_F", ["Black",0.5]],
-    ["B_Heli_Transport_03_unarmed_F", ["Green",0.5]],
-    ["B_Heli_Transport_01_F", ["Green",0.5]],
-    ["B_LSV_01_AT_F", ["Black",0.4]],
-    ["B_LSV_01_unarmed_F", ["Black",0.4]],
-    ["B_LSV_01_AT_F", ["Black",0.4]]
+    ["B_UAV_05_F", ["DarkGreyCamo", 0.5, "DarkGrey", 0.5]], 
+    ["B_AAA_System_01_F", ["Green", 1.0]],
+    ["B_SAM_System_01_F", ["Green", 1.0]],
+    ["B_SAM_System_02_F", ["Green", 1.0]],
+    ["B_T_VTOL_01_infantry_F", ["Blue",0.4 , "Olive", 0.6]],
+    ["B_Plane_Fighter_01_F", ["DarkGreyCamo", 0.4, "DarkGrey", 0.6]],
+    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo", 0.4, "DarkGrey", 0.6]]],
+    ["B_Radar_System_01_F", ["Olive", 1]],
+    ["B_SAM_System_03_F", ["Olive", 1]],
+    ["B_T_APC_Wheeled_01_command_lxWS", ["BLACK", 0.3, "Olive", 0.7]],
+    ["B_T_APC_Wheeled_01_atgm_lxWS", ["BLACK", 0.3, "Olive", 0.7],
+    ["B_T_APC_Wheeled_01_mortar_lxWS", ["BLACK", 0.3, "Olive", 0.7]],
+    ["B_Heli_Transport_03_F", ["Black", 0.5, "Green", 0.5]],
+    ["B_Heli_Transport_03_unarmed_F", ["Black", 0.5, "Green", 0.5]],
+    ["B_Heli_Transport_01_F", ["Green", 0.4, "Black", 0.2 , "Sand", 0]],
+    ["B_T_LSV_01_AT_F", ["Black", 0.3, "Olive", 0.5, "Dazzle", 0.2]],
+    ["B_T_LSV_01_unarmed_F", ["Black", 0.3, "Olive", 0.5, "Dazzle", 0.2]],
+    ["B_T_LSV_01_AT_F", ["Black", 0.3, "Olive", 0.5, "Dazzle", 0.2]]
 ]] call _fnc_saveToTemplate;
 
 
@@ -271,7 +273,7 @@ if (_hasArtOfWar) then {
 	_loadoutData set ["officerHats", ["H_MilCap_tna_F", "H_Beret_Colonel", "H_Beret_02"]];
 };
 
-_loadoutData set ["cloakUniforms", ["U_B_T_FullGhillie_tna_F", "U_B_FullGhillie_lsh", "U_B_T_Sniper_F"]];
+_loadoutData set ["cloakUniforms", ["U_B_T_Sniper_F", "U_B_T_FullGhillie_tna_F"]];
 _loadoutData set ["cloakVests", ["V_Chestrig_oli"]];
 
 _loadoutData set ["uniforms", []];

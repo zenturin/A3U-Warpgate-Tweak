@@ -2,6 +2,7 @@ private _hasWs = "ws" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
+private _hasArtOfWar = "aow" in A3A_enabledDLC;
 
 ///////////////////////////
 //   Rebel Information   //
@@ -26,7 +27,7 @@ private _vehicleAA = [];
 
 ["vehiclesCivCar", ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_Offroad_02_unarmed_F", "C_SUV_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesCivTruck", ["C_Truck_02_transport_F", "C_Van_01_transport_F", "C_Van_02_transport_F", "C_Van_02_vehicle_F"]] call _fnc_saveToTemplate;
-["vehiclesCivHeli", ["C_Heli_Light_01_civil_F", "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"]] call _fnc_saveToTemplate
+["vehiclesCivHeli", ["C_Heli_Light_01_civil_F", "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"]] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", ["C_Boat_Civil_01_F", "C_Rubberboat"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["I_G_HMG_02_high_F", "I_G_HMG_02_F"]] call _fnc_saveToTemplate;
@@ -69,10 +70,10 @@ private _shopWs = if (_hasWs) then {
 } else {
     []
 };
-private _shopLawsOfWar = if (_hasWs) then {
+private _shopLawsOfWar = if (_hasLawsOfWar) then {
     [
         ["I_UAV_06_F", 2500, "UAV", {tierWar > 2}], 
-        ["I_UAV_06_medical_F", 3500, "UAV", {tierWar > 3}]
+        ["I_UAV_06_medical_F", 3500, "UAV", {tierWar > 3}],
         ["C_IDAP_UAV_06_antimine_F", 3500, "UAV", {tierWar > 3}]
     ]
 } else {
@@ -81,7 +82,7 @@ private _shopLawsOfWar = if (_hasWs) then {
 private _shopContact = if (_hasContact) then {
     [
         ["C_IDAP_UGV_02_Demining_F", 2500, "UAV", {tierWar > 2}],
-        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}], 
+        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}]
     ]
 } else {
     []
@@ -89,7 +90,7 @@ private _shopContact = if (_hasContact) then {
 private _shopJets = if (_hasJets) then {
     [
         ["C_IDAP_UGV_02_Demining_F", 2500, "UAV", {tierWar > 2}],
-        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}], 
+        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}]
     ]
 } else {
     []
@@ -97,7 +98,7 @@ private _shopJets = if (_hasJets) then {
 private _shopMarksman = if (_hasMarksman) then {
     [
         ["B_Static_Designator_01_F", 1500, "UAV", {tierWar > 2}],
-        ["O_Static_Designator_02_F", 1500, "UAV", {tierWar > 2}], 
+        ["O_Static_Designator_02_F", 1500, "UAV", {tierWar > 2}]
     ]
 } else {
     []
@@ -115,7 +116,7 @@ private _vehiclesBlackMarket = _shopWs + _shopLawsOfWar + _shopContact + _shopJe
     ["I_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
     ["B_Heli_Light_01_F", 7000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["I_Heli_light_03_unarmed_F", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["B_Heli_Light_01_dynamicLoadout_F", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
+    ["B_Heli_Light_01_dynamicLoadout_F", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["I_Heli_light_03_dynamicLoadout_F", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
 ];
 ["blackMarketStock", _vehiclesBlackMarket] call _fnc_saveToTemplate;
@@ -257,8 +258,8 @@ if (_hasWs) then {
         "U_lxWS_ION_Casual5",
         "U_lxWS_SFIA_deserter",
         "U_lxWS_Djella_02_Brown",
-        "U_lxWS_Djella_02_Gray",
-        "U_lxWS_Djella_02_Green",
+        "U_lxWS_Djella_02_Grey",
+        "U_lxWS_Djella_03_Green",
         "U_lxWS_Djella_02_Sand"
     ];
 };
@@ -379,7 +380,7 @@ if (_hasLawsOfWar) then {
         "H_EarProtectors_red_F",
         "H_EarProtectors_white_F",
         "H_EarProtectors_yellow_F",
-        "U_C_Paramedic_01_F"///
+        "U_C_Paramedic_01_F",///
         "H_Construction_basic_black_F",
         "H_Construction_basic_orange_F",
         "H_Construction_basic_red_F",

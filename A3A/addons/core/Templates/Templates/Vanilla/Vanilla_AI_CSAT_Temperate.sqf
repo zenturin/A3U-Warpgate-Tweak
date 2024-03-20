@@ -6,7 +6,7 @@ private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
-private _hasArtOfWar = "aow" A3A_enabledDLC;
+private _hasArtOfWar = "aow" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
@@ -55,8 +55,8 @@ private _tanks = ["O_T_MBT_02_cannon_ghex_F","O_T_MBT_02_railgun_ghex_F"];
 ["vehiclesTransportBoats", ["O_T_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["O_T_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
-private _planeCAS = ["O_Plane_CAS_02_dynamicLoadout_F"];
-private _planeAA = ["O_Plane_CAS_02_dynamicLoadout_F"];
+private _planesCAS = ["O_Plane_CAS_02_dynamicLoadout_F"];
+private _planesAA = ["O_Plane_CAS_02_dynamicLoadout_F"];
 ["vehiclesPlanesTransport", ["O_T_VTOL_02_infantry_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 
 private _lightHelicopters = ["O_Heli_Light_02_unarmed_F"];
@@ -91,7 +91,7 @@ private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_gen_F"]
 };
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+    _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
@@ -104,10 +104,10 @@ if (_hasLawsOfWar) then {
 private _radar = [];
 private _SAM = [];
 if (_hasJets) then {
-	_planesCAS pushback ["O_Plane_Fighter_02_F"]
-	_planesAA pushback ["O_Plane_Fighter_02_Stealth_F"]
-	_radar pushback ["O_Radar_System_02_F"]
-	_SAM pushback ["O_SAM_System_04_F"]
+	_planesCAS pushback "O_Plane_Fighter_02_F";
+	_planesAA pushback "O_Plane_Fighter_02_Stealth_F";
+	_radar pushback "O_Radar_System_02_F";
+	_SAM pushback "O_SAM_System_04_F";
 };
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
@@ -165,25 +165,27 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["O_Plane_Fighter_02_F", ["CamoGreyHex",0.5 , "CamoBlue",0.5 ,"CamoAridHex",0]],
-    ["O_Plane_Fighter_02_Stealth_F", ["CamoGreyHex",0.5 , "CamoBlue",0.5 ,"CamoAridHex",0]],
-    ["O_T_VTOL_02_infantry_dynamicLoadout_F", ["Grey", 0.5]],
+    ["O_Plane_Fighter_02_F", ["CamoGreyHex", 0.5 , "CamoBlue", 0.5, "CamoAridHex", 0]],
+    ["O_Plane_Fighter_02_Stealth_F", ["CamoGreyHex", 0.5 , "CamoBlue", 0.5, "CamoAridHex", 0]],
+    ["O_T_VTOL_02_infantry_dynamicLoadout_F", ["Grey", 0.4, "Hex", 0, "GreenHex", 0.6]],
     ["O_Heli_Attack_02_dynamicLoadout_F", ["Black", 1]],
-    ["O_T_LSV_02_armed_F", ["Black", 0.3]],
-    ["O_T_LSV_02_unarmed_F", ["Black", 0.3]],
-    ["O_T_LSV_02_AT_F", ["Black", 0.3]],
-    ["O_Heli_Transport_04_bench_F", ["Black", 1]],
+    ["O_T_LSV_02_armed_F", ["Black", 0.3, "GreenHex", 0.7]],
+    ["O_T_LSV_02_unarmed_F", ["Black", 0.3, "GreenHex", 0.7]],
+    ["O_T_LSV_02_AT_F", ["Black", 0.3, "GreenHex", 0.7]],
     ["O_Heli_Light_02_dynamicLoadout_F", ["Black", 1]],
-    ["O_Heli_Transport_04_bench_F", ["Black",1]],
-    ["O_Heli_Transport_04_covered_F", ["Black",1]],
-    ["O_T_MBT_02_railgun_ghex_F", ["Grey",0.4]],
-    ["O_T_MBT_04_command_F", ["Grey",0.4, "Jungle",0.4]],
-    ["O_T_MBT_04_cannon_F", ["Grey",0.4, "Jungle",0.4]],
-    ["O_T_MBT_02_cannon_ghex_F", ["Grey",0.4]],
-    ["O_Heli_Light_02_unarmed_F", ["Black", 0.2 , "Blackcustom", 0.2, "Opfor",0,]],
-    ["O_Heli_Light_02_dynamicLoadout_F", ["Black", 0.2 , "Blackcustom", 0.2, "Opfor",0,]],
-    ["B_ION_Heli_Light_02_unarmed_lxWS", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0, ,"ION_BLACK",0]],
-    ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0, ,"ION_BLACK",0]]
+    ["O_Heli_Transport_04_bench_F", ["Black", 1]],
+    ["O_Heli_Transport_04_covered_F", ["Black", 1]],
+    ["O_T_MBT_02_railgun_ghex_F", ["Grey", 0.4, "Hex", 0, "GreenHex", 0.6]],
+    ["O_T_MBT_04_command_F", ["Grey", 0.2, "Jungle", 0.4, "Hex", 0, "GreenHex", 0.4]],
+    ["O_T_MBT_04_cannon_F", ["Grey", 0.2, "Jungle", 0.4, "Hex", 0, "GreenHex", 0.4]],
+    ["O_T_MBT_02_cannon_ghex_F", ["Grey", 0.4, "Hex", 0, "GreenHex", 0.6]],
+    ["O_Heli_Light_02_unarmed_F", ["Black", 0.4 , "Blackcustom", 0.2, "Opfor",0]],
+    ["O_Heli_Light_02_dynamicLoadout_F", ["Black", 0.4 , "Blackcustom", 0.2, "Opfor",0]],
+    ["O_T_APC_Tracked_02_30mm_lxWS", ["Hex", 0, "Black", 0.3, "GreenHex", 0.7]],
+    ["O_T_APC_Wheeled_02_hmg_lxWS", ["Hex", 0, "Black", 0.3, "GreenHex", 0.7]],
+    ["O_T_APC_Wheeled_02_unarmed_lxWS", ["Hex", 0, "Black", 0.3, "GreenHex", 0.7]],
+    ["B_ION_Heli_Light_02_unarmed_lxWS", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0 ,"ION_BLACK",0]],
+    ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0 ,"ION_BLACK",0]]
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
