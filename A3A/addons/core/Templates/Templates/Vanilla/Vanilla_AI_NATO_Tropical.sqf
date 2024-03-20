@@ -150,7 +150,6 @@ if (_hasWs) then {
 #include "Vanilla_Vehicle_Attributes.sqf"
 
 ["animations", [
-    ["B_UAV_05_F", ["wing_fold_l",1]], 
     ["B_T_MBT_01_cannon_F", ["showCamonetTurret", 0.3, "showCamonetHull", 0.3]],
     ["B_T_MBT_01_TUSK_F", ["showCamonetTurret", 0.3, "showCamonetHull", 0.3]],
     ["B_T_AFV_Wheeled_01_up_cannon_F", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3]],
@@ -160,8 +159,6 @@ if (_hasWs) then {
     ["B_LSV_01_unarmed_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
     ["B_LSV_01_AT_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
     ["B_CTRG_LSV_01_light_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
-    ["B_Plane_Fighter_01_F", ["wing_fold_l",1]],
-    ["B_Plane_Fighter_01_Stealth_F", ["wing_fold_l",1]],
     ["B_T_APC_Wheeled_01_command_lxWS", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["B_T_APC_Wheeled_01_atgm_lxWS", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["B_T_APC_Wheeled_01_mortar_lxWS",["showBags",0.3,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
@@ -175,8 +172,8 @@ if (_hasWs) then {
     ["B_SAM_System_01_F", ["Green",0.7]],
     ["B_SAM_System_02_F", ["Green",0.7]],
     ["B_T_VTOL_01_infantry_F", ["Blue",0.4]],
-    ["B_Plane_Fighter_01_F", ["DarkGreyCamo",0.5]],
-    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo",0.5]],
+    ["B_Plane_Fighter_01_F", ["DarkGreyCamo",0.4, "DarkGrey",0.6]],
+    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo",0.4, "DarkGrey",0.6]]],
     ["B_Radar_System_01_F", ["Olive",1]],
     ["B_SAM_System_03_F", ["Olive",1]],
     ["B_T_APC_Wheeled_01_command_lxWS", ["BLACK", 0.3]],
