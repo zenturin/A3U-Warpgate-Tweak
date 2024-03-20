@@ -199,9 +199,9 @@ if (_hasWs) then {
     ["B_Heli_Transport_03_F", ["Black", 0.5]],
     ["B_Heli_Transport_03_unarmed_F", ["Green", 0.5]],
     ["B_Heli_Transport_01_F", ["Green", 0.5]],
-    ["B_LSV_01_AT_F", ["Black",0.4]],
-    ["B_LSV_01_unarmed_F", ["Black",0.4]],
-    ["B_LSV_01_AT_F", ["Black",0.4]]
+    ["B_LSV_01_AT_F", ["Black", 0.3, "Sand",0.5 , "Dazzle",0.2]],
+    ["B_LSV_01_unarmed_F", ["Black", 0.4]],
+    ["B_LSV_01_AT_F", ["Black", 0.4]]
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
