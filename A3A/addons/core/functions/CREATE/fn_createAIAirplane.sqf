@@ -1,4 +1,3 @@
-//PLEASE CHECK
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 if (!isServer and hasInterface) exitWith{};
@@ -36,8 +35,13 @@ private _faction = Faction(_sideX);
 private _radarType = _faction getOrDefault ["vehicleRadar", ""];
 private _samType = _faction getOrDefault ["vehicleSam", ""];
 
+// In case of array
 if (_radarType isEqualType [] && {_radarType isNotEqualTo []}) then {_radarType = selectRandom _radarType};
 if (_samType isEqualType [] && {_samType isNotEqualTo []}) then {_samType = selectRandom _samType};
+
+// In case of empty array
+if (_samType isEqualType [] && {_samType isEqualTo []}) then {_samType = ""};
+if (_radarType isEqualType [] && {_radarType isEqualTo []}) then {_radarType = ""};
 
 diag_log _radarType;
 diag_log _samType;
