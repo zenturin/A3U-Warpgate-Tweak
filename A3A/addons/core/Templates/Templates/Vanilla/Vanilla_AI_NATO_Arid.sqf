@@ -185,6 +185,7 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
+    ["B_UAV_05_F", ["DarkGreyCamo", 0.5, "DarkGrey", 0.5]], 
     ["B_AAA_System_01_F", ["Sand", 1]],
     ["B_SAM_System_01_F", ["Sand", 1]],
     ["B_SAM_System_02_F", ["Sand", 1]],
