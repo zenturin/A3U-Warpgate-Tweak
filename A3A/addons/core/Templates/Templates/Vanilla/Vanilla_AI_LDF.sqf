@@ -112,7 +112,7 @@ if (_hasJets) then {
 if (_hasTanks) then {
     _lightArmed append ["I_LT_01_AT_F", "I_LT_01_cannon_F"];
 };
-//If Western Sahara DLC
+
 ["vehiclesCargoTrucks", _cargoTrucks] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", _lightArmed] call _fnc_saveToTemplate;
 ["vehiclesAA", _aa] call _fnc_saveToTemplate;
