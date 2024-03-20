@@ -1,4 +1,6 @@
 ["attributesVehicles", [
+    ["I_SDV_01_F", ["rebCost", 3000]],
+    ["I_Boat_Armed_01_minigun_F", ["rebCost", 5000]],
     ["I_C_Offroad_02_LMG_F", ["rebCost", 500]],
     ["I_G_Offroad_01_armor_base_lxWS", ["rebCost", 500]],
     ["I_G_Offroad_01_armor_armed_lxWS", ["rebCost", 1100]],
