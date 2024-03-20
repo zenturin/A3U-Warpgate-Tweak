@@ -144,6 +144,7 @@ if (_hasWs) then {
     _transportHelicopters pushback "B_D_Heli_Transport_01_lxWS";
 };
 
+["vehiclesPlanesTransport", _planesTransport] call _fnc_saveToTemplate;
 ["vehiclesHelisLight", _helisLight] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", _helisLightAttack] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", _helisAttack] call _fnc_saveToTemplate;
