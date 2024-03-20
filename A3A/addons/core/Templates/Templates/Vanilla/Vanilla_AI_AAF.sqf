@@ -119,6 +119,7 @@ if (_hasWs) then {
     _aa pushBack "I_A_Truck_02_aa_lxWS";
 };
 
+["vehiclesLightTanks",  _lightTanks] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", _cargoTrucks] call _fnc_saveToTemplate;
 ["vehiclesAA", _aa] call _fnc_saveToTemplate;
 ["vehicleRadar", _radar] call _fnc_saveToTemplate;
