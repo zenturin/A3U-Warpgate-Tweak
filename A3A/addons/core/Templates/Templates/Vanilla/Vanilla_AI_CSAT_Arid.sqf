@@ -6,7 +6,7 @@ private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
-private _hasArtOfWar = "aow" A3A_enabledDLC;
+private _hasArtOfWar = "aow" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
@@ -55,19 +55,18 @@ private _tanks = ["O_MBT_02_cannon_F","O_MBT_02_railgun_F"];
 ["vehiclesTransportBoats", ["O_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["O_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
-private _planeCAS = ["O_Plane_CAS_02_dynamicLoadout_F"];
-private _planeAA = ["O_Plane_CAS_02_dynamicLoadout_F"];
+private _planesCAS = ["O_Plane_CAS_02_dynamicLoadout_F"];
+private _planesAA = ["O_Plane_CAS_02_dynamicLoadout_F"];
 
 private _planesTransport = [];
 if (_hasApex) then {
-	_planesTransport pushback ["O_T_VTOL_02_infantry_dynamicLoadout_F"]
+	_planesTransport pushback "O_T_VTOL_02_infantry_dynamicLoadout_F";
 };
 
 private _lightHelicopters = ["O_Heli_Light_02_unarmed_F"];
 private _transportHelicopters = ["O_Heli_Light_02_unarmed_F"];
 
 if (_hasHelicopters) then {
-    _lightHelicopters pushBack "O_Heli_Transport_04_bench_F";
     _transportHelicopters = ["O_Heli_Transport_04_covered_F", "O_Heli_Transport_04_bench_F"]; 
 };
 
@@ -75,7 +74,7 @@ if (_hasHelicopters) then {
 private _lightAttackHelicopters = ["O_Heli_Light_02_dynamicLoadout_F"];
 ["vehiclesHelisAttack", ["O_Heli_Attack_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["O_MBT_02_arty_F", I_Truck_02_MRL_F]] call _fnc_saveToTemplate;
+["vehiclesArtillery", ["O_MBT_02_arty_F", "I_Truck_02_MRL_F"]] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [
 ["I_Truck_02_MRL_F", ["12Rnd_230mm_rockets"]],
 ["O_MBT_02_arty_F",["32Rnd_155mm_Mo_shells_O", "2Rnd_155mm_Mo_Cluster_O", "6Rnd_155mm_Mo_mine_O"]]
@@ -96,9 +95,11 @@ private _policeVehs = if (_hasContact) then {
 } else {
     ["B_GEN_Offroad_01_gen_F"]
 };
+
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+    _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
+
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
 ["staticMGs", ["I_HMG_02_high_F","O_HMG_01_high_F"]] call _fnc_saveToTemplate;
@@ -110,10 +111,10 @@ if (_hasLawsOfWar) then {
 private _radar = [];
 private _SAM = [];
 if (_hasJets) then {
-	_planesCAS pushback ["O_Plane_Fighter_02_F"]
-	_planesAA pushback ["O_Plane_Fighter_02_Stealth_F"]
-	_radar pushback ["O_Radar_System_02_F"]
-	_SAM pushback ["O_SAM_System_04_F"]
+	_planesCAS pushback "O_Plane_Fighter_02_F";
+	_planesAA pushback "O_Plane_Fighter_02_Stealth_F";
+	_radar pushback "O_Radar_System_02_F";
+	_SAM pushback "O_SAM_System_04_F";
 };
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
@@ -132,12 +133,14 @@ if (_hasTanks) then {
 if (_hasWs) then {
     _Airborne pushback "O_APC_Wheeled_02_hmg_lxWS";
     _cargoTrucks = ["O_Truck_02_cargo_lxWS", "O_Truck_02_flatbed_lxWS"];
-    _lightAPCs = ["O_APC_Wheeled_02_hmg_lxWS",O_APC_Wheeled_02_unarmed_lxWS];
-    _militiaAPCs = ["O_APC_Wheeled_02_hmg_lxWS",O_APC_Wheeled_02_unarmed_lxWS];
+    _lightAPCs = ["O_APC_Wheeled_02_hmg_lxWS","O_APC_Wheeled_02_unarmed_lxWS"];
+    _militiaAPCs = ["O_APC_Wheeled_02_hmg_lxWS","O_APC_Wheeled_02_unarmed_lxWS"];
     _IFVs pushBack "O_APC_Tracked_02_30mm_lxWS";
     _lightHelicopters pushBack "B_ION_Heli_Light_02_unarmed_lxWS";
     _lightAttackHelicopters pushBack "B_ION_Heli_Light_02_dynamicLoadout_lxWS";
 };
+
+["vehiclesPlanesTransport", _planesTransport] call _fnc_saveToTemplate;
 ["vehicleRadar", _radar] call _fnc_saveToTemplate;
 ["vehicleSam", _SAM] call _fnc_saveToTemplate;
 ["vehiclesPlanesCAS", _planesCAS] call _fnc_saveToTemplate;
@@ -149,7 +152,6 @@ if (_hasWs) then {
 ["vehiclesCargoTrucks", _cargoTrucks] call _fnc_saveToTemplate;
 ["vehiclesMilitiaAPCs", _militiaAPCs] call _fnc_saveToTemplate;
 ["vehiclesTanks", _tanks] call _fnc_saveToTemplate;
-["vehiclesAPCs", _apcs] call _fnc_saveToTemplate;
 ["vehiclesHelisLight", _lightHelicopters] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", _lightAttackHelicopters] call _fnc_saveToTemplate;
 
@@ -172,22 +174,25 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["I_Truck_02_MRL_F", ["Opfor",1]]
-    ["O_Heli_Transport_04_bench_F", ["Black",0.4]],
-    ["O_Heli_Transport_04_covered_F", ["Black",0.4]],
-    ["O_Heli_Attack_02_dynamicLoadout_F", ["Black",0.4]],
-    ["O_LSV_02_armed_F", ["Black",0.3]],
-    ["O_LSV_02_unarmed_F", ["Black",0.3]],
-    ["O_LSV_02_AT_F", ["Black",0.3]],
-    ["O_MBT_02_railgun_F", ["Grey",0.4]],
-    ["O_MBT_04_command_F", ["Grey",0.4]],
-    ["O_MBT_04_cannon_F", ["Grey",0.4]],
-    ["O_MBT_02_cannon_F", ["Grey",0.4]],
-    ["B_ION_Heli_Light_02_unarmed_lxWS", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2 ,"ION_BLACK",0]],
-    ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2 ,"ION_BLACK",0]],
+    ["I_Truck_02_MRL_F", ["Opfor", 1]],
+    ["O_Heli_Transport_04_bench_F", ["Black", 0.4, "Opfor", 0.6]],
+    ["O_Heli_Transport_04_covered_F", ["Black", 0.4, "Opfor", 0.6]],
+    ["O_Heli_Attack_02_dynamicLoadout_F", ["Black", 0.4, "Opfor", 0.6]],
+    ["O_LSV_02_armed_F", ["Black", 0.3, "Arid",0.7]],
+    ["O_LSV_02_unarmed_F", ["Black", 0.3, "Arid",0.7]],
+    ["O_LSV_02_AT_F", ["Black", 0.3, "Arid",0.7]],
+    ["O_MBT_02_railgun_F", ["Grey", 0.4, "Hex", 0.6]],
+    ["O_MBT_04_command_F", ["Grey", 0.4, "Hex", 0.6]],
+    ["O_MBT_04_cannon_F", ["Grey", 0.4, "Hex", 0.6]],
+    ["O_MBT_02_cannon_F", ["Grey", 0.4, "Hex", 0.6]],
+    ["O_APC_Tracked_02_30mm_lxWS", ["Grey", 0.4, "Hex", 0.6]],
+    ["O_APC_Wheeled_02_hmg_lxWS", ["Hex", 0.7, "Black", 0.3]],
+    ["O_APC_Wheeled_02_unarmed_lxWS", ["Hex", 0.7, "Black", 0.3]],
+    ["B_ION_Heli_Light_02_unarmed_lxWS", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2 ,"ION_BLACK", 0]],
+    ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2 ,"ION_BLACK", 0]],
     ["O_Heli_Light_02_unarmed_F", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2]],
     ["O_Heli_Light_02_dynamicLoadout_F", ["Opfor",0.6, "Black", 0.2 , "Blackcustom", 0.2]],
-    ["O_T_VTOL_02_infantry_dynamicLoadout_F", ["Hex",1]]
+    ["O_T_VTOL_02_infantry_dynamicLoadout_F", ["Hex", 1]]
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
@@ -272,7 +277,7 @@ _loadoutData set ["rangefinders", ["Rangefinder"]];
 
 if (_hasArtOfWar) then {
 	_loadoutData set ["officerUniforms", ["U_O_ParadeUniform_01_CSAT_decorated_F","U_O_ParadeUniform_01_CSAT_F"]];
-	_loadoutData set ["officerVests", ["V_TacVest_khk",V_TacVest_brn"]];
+	_loadoutData set ["officerVests", ["V_TacVest_khk", "V_TacVest_brn"]];
 	_loadoutData set ["officerHats", ["H_ParadeDressCap_01_CSAT_F", "H_Beret_CSAT_01_F"]];
 } else {
 	_loadoutData set ["officerUniforms", ["U_O_OfficerUniform_ocamo"]];

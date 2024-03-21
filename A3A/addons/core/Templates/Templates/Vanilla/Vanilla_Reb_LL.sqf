@@ -6,7 +6,7 @@ private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
-private _hasArtOfWar = "aow" A3A_enabledDLC;
+private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 
 ///////////////////////////
@@ -19,7 +19,7 @@ private _hasKart = "kart" in A3A_enabledDLC;
 ["flagTexture", "\A3\Data_F\Flags\Flag_green_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_EnochLooters"] call _fnc_saveToTemplate;
 
-private _vehicleBasic = ["I_G_Quadbike_01_F"];
+private _vehiclesBasic = ["I_G_Quadbike_01_F"];
 private _vehiclesLightUnarmed = ["I_G_Offroad_01_F"];
 private _vehiclesLightArmed = ["I_G_Offroad_01_armed_F"];
 private _vehiclesAt = ["I_G_Offroad_01_AT_F"];
@@ -30,7 +30,7 @@ private _vehicleAA = [];
 
 private _vehiclePlane = [];
 if (_hasApex) then {
-    _vehiclePlane pushBack ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
+    _vehiclePlane append ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
 };
 
 private _vehiclesCivCar = ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_SUV_01_F"];
@@ -57,24 +57,24 @@ if (_hasApex) then {
     _vehiclesLightUnarmed pushBack "I_C_Offroad_02_unarmed_F";
     _vehiclesLightArmed pushBack "I_C_Offroad_02_LMG_F";
     _vehiclesAt pushBack "I_C_Offroad_02_AT_F";
-    _CivBoat pushBack ["C_Boat_Transport_02_F", "C_Scooter_Transport_01_F"]
+    _CivBoat append ["C_Boat_Transport_02_F", "C_Scooter_Transport_01_F"];
 };
 
 if (_hasLawsOfWar) then {
-    _CivTruck pushBack ["C_Van_02_vehicle_F", "C_Van_02_transport_F"];
-    _VehTruck pushBack ["I_G_Van_02_transport_F", "I_G_Van_02_vehicle_F"];
+    _CivTruck append ["C_Van_02_vehicle_F", "C_Van_02_transport_F"];
+    _VehTruck append ["I_G_Van_02_transport_F", "I_G_Van_02_vehicle_F"];
     _vehiclesLightUnarmed pushBack "I_C_Offroad_02_unarmed_F";
     _vehiclesLightArmed pushBack "I_C_Offroad_02_LMG_F";
     _vehiclesAt pushBack "I_C_Offroad_02_AT_F";
 };
 
 if (_hasContact) then {
-    _vehiclesCivCar pushBack ["C_Offroad_01_covered_F", "C_Offroad_01_comms_F", "C_Tractor_01_F"];
+    _vehiclesCivCar append ["C_Offroad_01_covered_F", "C_Offroad_01_comms_F", "C_Tractor_01_F"];
 };
 
 if (_hasWs) then {
-    _CivTruck pushBack ["C_Truck_02_cargo_lxWS", "C_Truck_02_flatbed_lxWS"];
-    _vehiclesCivCar pushBack ["C_Offroad_lxWS","C_Truck_02_racing_lxWS"];
+    _CivTruck append ["C_Truck_02_cargo_lxWS", "C_Truck_02_flatbed_lxWS"];
+    _vehiclesCivCar append ["C_Offroad_lxWS","C_Truck_02_racing_lxWS"];
     _vehiclesLightUnarmed pushBack "I_G_Offroad_01_armor_base_lxWS";
     _vehiclesLightArmed pushBack "I_G_Offroad_01_armor_armed_lxWS";
     _vehiclesAt pushBack "I_G_Offroad_01_armor_AT_lxWS";
@@ -89,7 +89,7 @@ if (_hasKart) then {
 ["vehiclesBasic", _vehiclesBasic] call _fnc_saveToTemplate;
 ["vehiclesPlane", _vehiclePlane] call _fnc_saveToTemplate;
 ["vehiclesCivTruck", _CivTruck] call _fnc_saveToTemplate;
-["vehiclesTruck", _VehTruck]] call _fnc_saveToTemplate;
+["vehiclesTruck", _VehTruck] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", _CivBoat] call _fnc_saveToTemplate;
 ["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
@@ -111,10 +111,10 @@ private _shopWs = if (_hasWs) then {
 } else {
     []
 };
-private _shopLawsOfWar = if (_hasWs) then {
+private _shopLawsOfWar = if (_hasLawsOfWar) then {
     [
         ["I_UAV_06_F", 2500, "UAV", {tierWar > 2}], 
-        ["I_UAV_06_medical_F", 3500, "UAV", {tierWar > 3}]
+        ["I_UAV_06_medical_F", 3500, "UAV", {tierWar > 3}],
         ["C_IDAP_UAV_06_antimine_F", 3500, "UAV", {tierWar > 3}]
     ]
 } else {
@@ -123,7 +123,7 @@ private _shopLawsOfWar = if (_hasWs) then {
 private _shopContact = if (_hasContact) then {
     [
         ["C_IDAP_UGV_02_Demining_F", 2500, "UAV", {tierWar > 2}],
-        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}], 
+        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}]
     ]
 } else {
     []
@@ -131,7 +131,7 @@ private _shopContact = if (_hasContact) then {
 private _shopJets = if (_hasJets) then {
     [
         ["C_IDAP_UGV_02_Demining_F", 2500, "UAV", {tierWar > 2}],
-        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}], 
+        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}]
     ]
 } else {
     []
@@ -139,7 +139,7 @@ private _shopJets = if (_hasJets) then {
 private _shopMarksman = if (_hasMarksman) then {
     [
         ["B_Static_Designator_01_F", 1500, "UAV", {tierWar > 2}],
-        ["O_Static_Designator_02_F", 1500, "UAV", {tierWar > 2}], 
+        ["O_Static_Designator_02_F", 1500, "UAV", {tierWar > 2}]
     ]
 } else {
     []
@@ -157,7 +157,7 @@ private _vehiclesBlackMarket = _shopWs + _shopLawsOfWar + _shopContact + _shopJe
     ["I_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
     ["B_Heli_Light_01_F", 7000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["I_Heli_light_03_unarmed_F", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["B_Heli_Light_01_dynamicLoadout_F", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
+    ["B_Heli_Light_01_dynamicLoadout_F", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["I_Heli_light_03_dynamicLoadout_F", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
 ];
 ["blackMarketStock", _vehiclesBlackMarket] call _fnc_saveToTemplate;
@@ -300,8 +300,8 @@ if (_hasWs) then {
         "U_lxWS_ION_Casual5",
         "U_lxWS_SFIA_deserter",
         "U_lxWS_Djella_02_Brown",
-        "U_lxWS_Djella_02_Gray",
-        "U_lxWS_Djella_02_Green",
+        "U_lxWS_Djella_02_Grey",
+        "U_lxWS_Djella_03_Green",
         "U_lxWS_Djella_02_Sand"
     ];
 };
@@ -342,7 +342,7 @@ if (_hasArtOfWar) then {
 };
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
 
-private _rebUniforms = [
+private _headgear = [
     "H_Booniehat_khk_hs",
     "H_Booniehat_khk",
     "H_Booniehat_tan",
@@ -422,7 +422,7 @@ if (_hasLawsOfWar) then {
         "H_EarProtectors_red_F",
         "H_EarProtectors_white_F",
         "H_EarProtectors_yellow_F",
-        "U_C_Paramedic_01_F"///
+        "U_C_Paramedic_01_F",///
         "H_Construction_basic_black_F",
         "H_Construction_basic_orange_F",
         "H_Construction_basic_red_F",

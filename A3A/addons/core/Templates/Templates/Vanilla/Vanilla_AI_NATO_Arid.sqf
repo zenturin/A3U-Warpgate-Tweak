@@ -6,7 +6,7 @@ private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
-private _hasArtOfWar = "aow" A3A_enabledDLC;
+private _hasArtOfWar = "aow" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
@@ -48,17 +48,17 @@ private _lightTanks = [];
 ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
-private _planeCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
-private _planeAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
+private _planesCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
+private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
 
 private _planesTransport = [];
 if (_hasApex) then {
-     _planesTransport pushback ["B_T_VTOL_01_infantry_F"]
+     _planesTransport pushback "B_T_VTOL_01_infantry_F";
 };
 
 private _transportHelicopters = ["B_Heli_Transport_01_F"];
 if (_hasApex) then {
-    _transportHelicopters pushback ["B_CTRG_Heli_Transport_01_sand_F"]
+    _transportHelicopters pushback "B_CTRG_Heli_Transport_01_sand_F";
 };
 if (_hasHelicopters) then {
     _transportHelicopters append ["B_Heli_Transport_03_F", "B_Heli_Transport_03_unarmed_F"];
@@ -68,11 +68,11 @@ private _helisLight = ["B_Heli_Light_01_F"];
 private _helisLightAttack = ["B_Heli_Light_01_dynamicLoadout_F"];
 private _helisAttack = ["B_Heli_Attack_01_dynamicLoadout_F"];
 
-private _arillery = ["B_MBT_01_arty_F","B_MBT_01_mlrs_F"];
+private _artillery = ["B_MBT_01_arty_F","B_MBT_01_mlrs_F"];
 ["magazines", createHashMapFromArray [
     ["B_MBT_01_arty_F",["32Rnd_155mm_Mo_shells", "2Rnd_155mm_Mo_Cluster", "6Rnd_155mm_Mo_mine"]],
     ["B_MBT_01_mlrs_F",["12Rnd_230mm_rockets", "12Rnd_230mm_rockets_cluster"]],
-    ["APC_Wheeled_01_mortar_base_lxWS",["64Rnd_60mm_Mo_Shells_lxWS"]]
+    ["APC_Wheeled_01_mortar_base_lxWS", "64Rnd_60mm_Mo_Shells_lxWS"]
 ]] call _fnc_saveToTemplate;
 
 ["uavsAttack", ["B_UAV_02_dynamicLoadout_F", "B_UAV_05_F", "B_T_UAV_03_dynamicLoadout_F"]] call _fnc_saveToTemplate;
@@ -91,7 +91,7 @@ private _policeVehs = if (_hasContact) then {
     ["B_GEN_Offroad_01_gen_F"]
 };
 if (_hasLawsOfWar) then {
-    _policeVehs pushback ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"]
+    _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
 ["vehiclesPolice", _policeVehs] call _fnc_saveToTemplate;
 
@@ -103,13 +103,15 @@ private _howitzers = [];
 
 private _radar = [];
 private _SAM = [];
+
 if (_hasJets) then {
-	_planesCAS pushback "B_Plane_Fighter_01_F"
-	_planesAA pushback "B_Plane_Fighter_01_Stealth_F"
-	_radar pushback "B_Radar_System_01_F"
-	_SAM pushback ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"]
-	_howitzers pushBack "B_Ship_Gun_01_F"
+	_planesCAS pushback "B_Plane_Fighter_01_F";
+	_planesAA pushback "B_Plane_Fighter_01_Stealth_F";
+	_radar pushback "B_Radar_System_01_F";
+	_SAM append ["B_SAM_System_03_F","B_SAM_System_02_F","B_SAM_System_01_F","B_AAA_System_01_F"];
+	_howitzers pushBack "B_Ship_Gun_01_F";
 };
+
 ["howitzerMagazineHE", "magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_cluster_shells_x2"] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
@@ -121,7 +123,7 @@ if (_hasJets) then {
 ["minefieldAPERS", ["APERSMine"]] call _fnc_saveToTemplate;
 
 if (_hasApex) then {
-    _unarmedVehicles pushBack ["B_LSV_01_unarmed_F", "B_CTRG_LSV_01_light_F"];
+    _unarmedVehicles append ["B_LSV_01_unarmed_F", "B_CTRG_LSV_01_light_F"];
     _armedVehicles append ["B_LSV_01_armed_F", "B_LSV_01_AT_F"];
 };
 
@@ -135,13 +137,14 @@ if (_hasWs) then {
     _lightAPCs = ["APC_Wheeled_01_command_base_lxWS"];
     _airborneVehicles pushBack "APC_Wheeled_01_command_base_lxWS";
     _militiaAPCs pushBack "APC_Wheeled_01_command_base_lxWS";
-    _arillery pushBack "APC_Wheeled_01_mortar_base_lxWS";
+    _artillery pushBack "APC_Wheeled_01_mortar_base_lxWS";
     _helisLight pushback "B_D_Heli_Light_01_lxWS";
     _helisLightAttack pushback "B_D_Heli_Light_01_dynamicLoadout_lxWS";
     _helisAttack pushback "B_D_Heli_Attack_01_dynamicLoadout_lxWS";
     _transportHelicopters pushback "B_D_Heli_Transport_01_lxWS";
 };
 
+["vehiclesPlanesTransport", _planesTransport] call _fnc_saveToTemplate;
 ["vehiclesHelisLight", _helisLight] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", _helisLightAttack] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", _helisAttack] call _fnc_saveToTemplate;
@@ -174,8 +177,6 @@ if (_hasWs) then {
     ["B_LSV_01_unarmed_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
     ["B_LSV_01_AT_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
     ["B_CTRG_LSV_01_light_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
-    ["B_Plane_Fighter_01_F", ["wing_fold_l",1]],
-    ["B_Plane_Fighter_01_Stealth_F", ["wing_fold_l",1]],
     ["APC_Wheeled_01_command_base_lxWS", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["APC_Wheeled_01_atgm_base_lxWS", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["APC_Wheeled_01_mortar_base_lxWS",["showBags",0.3,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
@@ -184,24 +185,26 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["B_AAA_System_01_F",position player, ["Sand",0.7]],
-    ["B_SAM_System_01_F", ["Sand", 0.7]],
-    ["B_SAM_System_02_F", ["Sand", 0.7]],
-    ["B_Plane_Fighter_01_F", ["DarkGreyCamo",0.5]],
-    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo",0.5]],
-    ["I_MRAP_03_F", ["Blufor",1]],
+    ["B_UAV_05_F", ["DarkGreyCamo", 0.5, "DarkGrey", 0.5]], 
+    ["B_AAA_System_01_F", ["Sand", 1]],
+    ["B_SAM_System_01_F", ["Sand", 1]],
+    ["B_SAM_System_02_F", ["Sand", 1]],
+    ["B_Plane_Fighter_01_F", ["DarkGreyCamo", 0.4, "DarkGrey", 0.6]],
+    ["B_Plane_Fighter_01_Stealth_F", ["DarkGreyCamo", 0.4, "DarkGrey", 0.6]],
+    ["I_MRAP_03_F", ["Blufor", 1]],
     ["I_MRAP_03_gmg_F", ["Blufor", 1]],
     ["I_MRAP_03_hmg_F", ["Blufor", 1]],
-    ["APC_Wheeled_01_command_base_lxWS", ["BLACK", 0.3]],
-    ["APC_Wheeled_01_atgm_base_lxWS", ["BLACK", 0.3]],
-    ["APC_Wheeled_01_mortar_base_lxWS", ["BLACK", 0.3]],
-    ["B_Heli_Transport_03_F", ["Black", 0.5]],
-    ["B_Heli_Transport_03_unarmed_F", ["Green", 0.5]],
-    ["B_Heli_Transport_01_F", ["Green", 0.5]],
-    ["B_LSV_01_AT_F", ["Black",0.4]],
-    ["B_LSV_01_unarmed_F", ["Black",0.4]],
-    ["B_LSV_01_AT_F", ["Black",0.4]]
+    ["APC_Wheeled_01_command_base_lxWS", ["BLACK", 0.3, "Sand", 0.7]],
+    ["APC_Wheeled_01_atgm_base_lxWS", ["BLACK", 0.3, "Sand", 0.7]],
+    ["APC_Wheeled_01_mortar_base_lxWS", ["BLACK", 0.3, "Sand", 0.7]],
+    ["B_Heli_Transport_03_F", ["Black", 0.5, "Green", 0.5]],
+    ["B_Heli_Transport_03_unarmed_F", ["Black", 0.5, "Green", 0.5]],
+    ["B_Heli_Transport_01_F", ["Green", 0.4, "Black", 0.2 , "Sand", 0.4]],
+    ["B_LSV_01_AT_F", ["Black", 0.3, "Sand", 0.5, "Dazzle", 0.2]],
+    ["B_LSV_01_unarmed_F", ["Black", 0.3, "Sand", 0.5, "Dazzle", 0.2]],
+    ["B_LSV_01_AT_F", ["Black", 0.3, "Sand", 0.5, "Dazzle", 0.2]]
 ]] call _fnc_saveToTemplate;
+
 /////////////////////
 ///  Identities   ///
 /////////////////////
