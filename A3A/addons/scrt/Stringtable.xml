@@ -243,6 +243,10 @@
                 <Chinesesimp>布尔什维克。\不要问它是什么。</Chinesesimp>
                 <Korean>볼셰비키.\n뭔지 절대 묻지 마시오.</Korean>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_lm">
+                <Original>Livonian Militia (LM).\nEastern European militants.</Original>
+                <Russian>Ополчение Ливонии.\nВосточноевропейское ополчение.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_ws_tura">
                 <Original>Tura.\nOne of the many militarized tribes of the Sefrawi Desert, almost like famous Turanic Raiders.</Original>
                 <Russian>Тура.\nОдно из многих военизированных племен пустыни Сефрави, почти как знаменитые туранские рейдеры.</Russian>
@@ -994,6 +998,12 @@
             <Key ID="STR_veh_callback_constructions">
                 <Original>Light and heavy fortifications can only be built off roads, in friendly areas.</Original>
                 <Russian>Лёгкие и тяжелые фортификации могут быть построены только вне дорог, а также в дружественных зонах.</Russian>
+                <Chinesesimp>轻型和重型防御工事只能建在友好地区的公路旁。</Chinesesimp>
+                <Korean>경량과 중량 요새화 진지는 우호적인 지역의 오프로드에서만 건설 가능합니다.</Korean>
+            </Key>
+            <Key ID="STR_veh_callback_constructions_rb">
+                <Original>Roadblocks can only be built on roads.</Original>
+                <Russian>Блокпосты могут быть построены только на дорогах.</Russian>
                 <Chinesesimp>轻型和重型防御工事只能建在友好地区的公路旁。</Chinesesimp>
                 <Korean>경량과 중량 요새화 진지는 우호적인 지역의 오프로드에서만 건설 가능합니다.</Korean>
             </Key>
@@ -3971,6 +3981,10 @@
                 <Chinesesimp>制导筒子应该解锁吗？</Chinesesimp>
                 <Korean>유도탄 발사기의 언락을 허용합니까?</Korean>
             </Key>
+            <Key ID="STR_params_allowUnlockedExplosives">
+                <Original>Allow Unlocked Explosives</Original>
+                <Russian>Разрешить разблокированную взрывчатку</Russian>
+            </Key>
             <Key ID="STR_params_startWithLongRangeRadio">
                 <Original>[TFAR] Start with Long Range Radio</Original>
                 <Russian>[TFAR] Начинать с рюкзаков ДВ-радиосвязи </Russian>
@@ -4689,6 +4703,7 @@
                 <Chinesesimp>[实验]真随机箱: 移除箱子上的所有平衡检查</Chinesesimp>
                 <Korean>[실험용] 완전히 랜덤한 상자: 상자에 대한 밸런스 확인 없음</Korean>
             </Key>
+
         </Container>
         <Container name="roles">
             <Key ID="STR_role_default_commander_role_name">
@@ -6923,10 +6938,10 @@
                 <Korean>근처에 수집할 것이 없습니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_looter_cooldown_text">
-                <Original>The looting ability has been used in the last 15 seconds! Please wait for a bit.</Original>
-                <Russian>Сборщик лута уже был использован недавно. Пожалуйста, подождите 15 секунд.</Russian>
-                <Chinesesimp>战利品收集最近已经用过了。 请等待15秒。</Chinesesimp>
-                <Korean>지난 15초 이내에 수집 능력이 사용되었습니다! 조금만 기다려 주십시오.</Korean>
+                <Original>The looting ability has been used recently! Please wait for a bit.</Original>
+                <Russian>Сборщик лута уже был использован недавно. Пожалуйста, подождите 10 секунд.</Russian>
+                <Chinesesimp>战利品收集最近已经用过了。 请等待10秒。</Chinesesimp>
+                <Korean>지난 10초 이내에 수집 능력이 사용되었습니다! 조금만 기다려 주십시오.</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_looter_enemies_nearby">
                 <Original>Loot gathering is interrupted - the enemies are nearby.</Original>
@@ -7319,7 +7334,7 @@
                 <Korean>%1은 방어 예비 병력이 하나도 없습니다!</Korean>
             </Key>
             <Key ID="STR_intel_key_pack">
-                <Original>You found a package of %1 decryption keys!&lt;br/&gt;They allow your faction to decrypt support calls.</Original>
+                <Original>You found a package of %1 decryption keys!&lt;br/&gt;This will allow your faction to decrypt support calls.</Original>
                 <Russian>Вы нашли упаковку с %1 ключами расшифровки!&lt;br/&gt;Это позволит вашей фракции расшифровывать вражеские вызовы поддержки.</Russian>
                 <Chinesesimp>您找到了 %1 个解密密钥包！&lt;br/&gt;这将允许你的派系破译敌人的支援通信。</Chinesesimp>
                 <Korean>%1의 암호 해독 키 패키지를 찾았습니다!&lt;br/&gt;그것들은 당신의 팩션이 지원 요청을 해독할 수 있게 해줍니다.</Korean>
@@ -8037,6 +8052,9 @@
                 <Russian>&lt;br/&gt;Нажмите Q, чтобы использовать набор восстановления боеспособности.</Russian>
                 <Chinesesimp>&lt;br/&gt;按 Q 使用战备恢复包。</Chinesesimp>
                 <Korean>&lt;br/&gt;전투 준비 복구 키트를 사용하려면 Q 키를 누르십시오.</Korean>
+            </Key>
+            <Key ID="STR_antistasi_actions_unconscious_action_prompt_withstand">
+                <Original>&lt;br/&gt;Press H to Withstand.</Original>
             </Key>
             <Key ID="STR_antistasi_actions_common_access_vehicle_marker_text">
                 <Original>Access Vehicle Market</Original>
@@ -8795,6 +8813,10 @@
                 <Chinesesimp>无人机来袭，躲起来！</Chinesesimp>
                 <Korean>무인기 공격이 임박했습니다! 엄폐하십시오!</Korean>
             </Key>
+            <Key ID="STR_rivals_activity_heli_raid_description">
+                <Original>&lt;t color='#800000'&gt;%1 helicopter&lt;/t&gt; is near us!</Original>
+                <Russian>&lt;t color='#800000'&gt;Вертолёт %1&lt;/t&gt; рядом с нами!</Russian>
+            </Key>
         </Container>
     </Package>
     <Package name="A3-Antistasi-Namespace">
@@ -8892,7 +8914,7 @@
                 <Korean>%1 자원채취소</Korean>
             </Key>
             <Key ID="STR_A3A_cityinfo_resources_rebel">
-                <Original>%2 Airport%1</Original>
+                <Original>%2 Resources%1</Original>
                 <Russian>Ресурсы %2%1</Russian>
                 <Chinesesimp>资源%2%1</Chinesesimp>
                 <Korean>%2 자원채취소는 %1 소속이다</Korean>

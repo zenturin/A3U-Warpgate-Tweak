@@ -31,7 +31,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["vehiclesRivalsTrucks", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesRivalsTanks", []] call _fnc_saveToTemplate;
-["vehiclesRivalsHelis", []] call _fnc_saveToTemplate;			
+["vehiclesRivalsHelis", ["I_C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
 ["staticLowWeapons", ["O_G_HMG_02_F"]] call _fnc_saveToTemplate;
