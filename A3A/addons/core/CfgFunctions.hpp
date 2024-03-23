@@ -401,7 +401,8 @@ class CfgFunctions
             class SUPP_Supplies {};
             class LOG_Salvage {};
             class LOG_Airdrop {};
-            class LOG_Helicrash {};
+            class LOG_Crashsite {};
+            class LOG_Helicrash {};;
             class missionRequest {};
             class fn_effects {};
             class REP_Antenna {};
