@@ -404,7 +404,6 @@ class CfgFunctions
             class LOG_Crashsite {};
             class LOG_Helicrash {};;
             class missionRequest {};
-            class fn_effects {};
             class REP_Antenna {};
             class RES_Prisoners {};
             class RES_Refugees {};
