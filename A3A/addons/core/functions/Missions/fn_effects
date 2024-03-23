@@ -15,7 +15,7 @@ FIX_LINE_NUMBERS()
 
 params ["_object"];
 
-
+private _object = _object;
 private _posATL = _object modelToWorld [0,0,0];
 
 /* private _bomb = "ammo_Missile_Cruise_01_Cluster" createVehicle [(_posATL select 0),(_posATL select 1),0]; */
@@ -53,11 +53,11 @@ _ps2 attachTo [_object, [0, 0, 1]];
 
 sleep 11;
 
-if (typeOf _object == "SpaceshipCapsule_01_F") then {
+/* if (typeOf _object == "vehiclesDroppod") then { */
 	
 	setAperture 10;
-
-	playSound3D [QPATHTOFOLDER(Sounds\Misc\Sonic.ogg), _object, false, getPosASL _object, 5, 1, 5000];
+	waitUntil {sleep 0.1; getPos _object select 2 < 2500};
+	playSound3D [QPATHTOFOLDER(Sounds\Misc\Sonic.ogg), _object, false, getPosASL _object, 5, 1, 7000];
 
 	player spawn {
 		for "_i" from 0 to 200 do {
@@ -74,11 +74,11 @@ if (typeOf _object == "SpaceshipCapsule_01_F") then {
 		};
 	};
 
-sleep 0.5;
+	sleep 0.5;
 
-setAperture 0;
+	setAperture 0;
+/* }; */
 
-};
 waitUntil { sleep 0.01; getPos _object select 2 < 1 }; ///0.01 because we don't wanna bounce
 /* sleep 15; */
 
