@@ -49,6 +49,7 @@ class CfgFunctions {
 
 		class Effect {
 			file = QPATHTOFOLDER(Effect);
+                        class fn_effects {};
 			class effect_createBurningDebrisEffect {};
 			class effect_createGasEffect {};
 			class effect_createSmallExplosionEffect {};
