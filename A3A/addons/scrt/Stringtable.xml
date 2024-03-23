@@ -7766,7 +7766,7 @@
                 <Russian>Направляйтесь на предпологаемое место крушения</Russian>
             </Key>
             <Key ID="STR_A3A_Missions_LOG_crashsite_task_desc">
-                <Original>%1 The reconnaissance vehicle was shot down. Go to the supposed crash site in %2. Collect the data and bring it to the HQ before enemy rescue team. We must get it before %3. Enemy frontline troops are on their way.</Original>
+                <Original>%1 helicopter with some valueable cargo has been shot down in %2. Bring helicopter's cargo to the HQ before enemy's rescue team. We must get it before %3. Enemy frontline troops already found the crashsite and guarding it.</Original>
                 <Russian>Транспорт %1 c разведданными был подбит в %2. Соберите их и доставьте в штаб до того как их заберёт вражеская эвакуационная команда. Мы должны сделать это %3. Вражеские передовые отряды уже в пути.</Russian>
             </Key>
             <Key ID="STR_A3A_Missions_LOG_crashsite_task_alt">
