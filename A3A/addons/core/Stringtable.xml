@@ -5202,9 +5202,9 @@
         </Key>
         <Key ID="STR_A3A_Params_selfReviveMethods_withstand">
             <Original>Withstand</Original>
-            <French>Résister</French>
-            <Korean>저항하다</Korean>
-            <Chinesesimp>抗</Chinesesimp>
+            <French>Endurer</French>
+            <Korean>견디기</Korean>
+            <Chinesesimp>自我复苏</Chinesesimp>
         </Key>
         <Key ID="STR_A3A_selfRevive_noFAK">
             <Original>You don't have a first aid kit for self-revive.</Original>
@@ -5321,6 +5321,11 @@
                 <Original>Support Caller</Original>
                 <English>Support Caller</English>
                 <Russian>Вызывающий поддержку</Russian>
+            </Key>
+            <Key ID="STR_A3AU_hide_enemy_markers">
+                <Original>Hide Enemy Markers</Original>
+                <English>Hide Enemy Markers</English>
+                <Russian>Placeholder</Russian>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>

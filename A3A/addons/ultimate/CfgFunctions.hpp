@@ -19,6 +19,7 @@ class CfgFunctions
             file = QPATHTOFOLDER(functions\init);
             class checkMods {};
             class init {};
+            class initZones {};
             class popup {};
         };
         class patches
