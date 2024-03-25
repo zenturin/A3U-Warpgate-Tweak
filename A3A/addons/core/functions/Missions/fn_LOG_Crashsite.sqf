@@ -189,7 +189,7 @@ _targetVector = [-cos (getDir _reconvehicledummy + 90), sin (getDir _reconvehicl
 _reconvehicledummy setVelocity (_targetVector vectorMultiply _additionalSpeed);
 
 ///VFX
-[_reconvehicledummy] call A3A_fnc_Satellitelaunch;
+[_reconvehicledummy] call A3A_fnc_effects;
 
 private _crashsiteactual = getPosATL _reconvehicledummy;
 
