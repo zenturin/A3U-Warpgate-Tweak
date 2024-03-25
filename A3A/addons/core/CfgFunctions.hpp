@@ -402,6 +402,7 @@ class CfgFunctions
             class LOG_Salvage {};
             class LOG_Airdrop {};
             class LOG_Crashsite {};
+            class LOG_Crashsite_Satelite{};
             class LOG_Helicrash {};;
             class missionRequest {};
             class REP_Antenna {};
