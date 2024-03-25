@@ -5202,9 +5202,9 @@
         </Key>
         <Key ID="STR_A3A_Params_selfReviveMethods_withstand">
             <Original>Withstand</Original>
-            <French>Endurer</French>
-            <Korean>견디기</Korean>
-            <Chinesesimp>自我复苏</Chinesesimp>
+            <French>Résister</French>
+            <Korean>저항하다</Korean>
+            <Chinesesimp>抗</Chinesesimp>
         </Key>
         <Key ID="STR_A3A_selfRevive_noFAK">
             <Original>You don't have a first aid kit for self-revive.</Original>
