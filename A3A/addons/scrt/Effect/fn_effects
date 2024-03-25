@@ -18,8 +18,6 @@ params ["_object"];
 private _object = _object;
 private _posATL = _object modelToWorld [0,0,0];
 
-/* private _bomb = "ammo_Missile_Cruise_01_Cluster" createVehicle [(_posATL select 0),(_posATL select 1),0]; */
-
 private _ps0 = "#particlesource" createVehicleLocal _posATL;
 _ps0 setParticleParams [
 ["\A3\Data_F\ParticleEffects\Universal\Universal", 16, 10, 32], "", "Billboard",
@@ -53,7 +51,7 @@ _ps2 attachTo [_object, [0, 0, 1]];
 
 sleep 11;
 
-/* if (typeOf _object == "vehiclesDroppod") then { */
+if (_object isKindOf "vehiclesDroppod") then {
 	
 	setAperture 10;
 	waitUntil {sleep 0.1; getPos _object select 2 < 2500};
@@ -77,10 +75,9 @@ sleep 11;
 	sleep 0.5;
 
 	setAperture 0;
-/* }; */
+};
 
 waitUntil { sleep 0.01; getPos _object select 2 < 1 }; ///0.01 because we don't wanna bounce
-/* sleep 15; */
 
 deleteVehicle _ps0;
 deleteVehicle _ps1;
