@@ -83,7 +83,7 @@ private _searchHeliClass =  if (_difficult) then {
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
 
 ///our blackbox
-private _blackboxClass = "Box_Syndicate_Ammo_F" ///should be something else;
+private _blackboxClass = "Box_Syndicate_Ammo_F"; ///should be something else;
 ///
 
 private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupSpecOpsRandom")} else {selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)};
