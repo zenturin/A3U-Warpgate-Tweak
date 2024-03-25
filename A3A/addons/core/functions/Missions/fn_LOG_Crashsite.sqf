@@ -68,24 +68,24 @@ while {true} do {
 };
 
 // selecting classnames
-/* private _reconvehicle = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") + (_faction get "vehiclesDroppod")) */ ///uncomment later
-private _reconvehicle = "SpaceshipCapsule_01_wreck_F";
+private _reconvehicle = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") + (_faction get "vehiclesDroppod"));
 private _pilotClass = _faction get "unitPilot";
 
+if (_reconvehicle isKindOf  "vehiclesDroppod") exitWith { 
+   [_markerX] call A3A_fnc_LOG_Crashsite_Satelite;
+};
+
 private _searchHeliClass =  if (_difficult) then {
-    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLight")) ///"vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
+    selectRandom ((_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack")) ///"vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
 } else {
-    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLight")) ////vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
+    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLight")) ////"vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
 };
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
-///new
-/* private _blackboxClass = if (typeOf _reconvehicle == "SpaceshipCapsule_01_F") then {
-    _blackboxClass = "SpaceshipCapsule_01_container_F"
-} else {
-    _blackboxClass = "Box_Syndicate_Ammo_F" ///should be something else
-}; */
-///new
-private _blackboxClass = "SpaceshipCapsule_01_container_F";
+
+///our blackbox
+private _blackboxClass = "Box_Syndicate_Ammo_F" ///should be something else;
+///
+
 private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupSpecOpsRandom")} else {selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)};
 ///new
 private _infantrySquadArray = selectRandom ([_faction, "groupsTierMedium"] call SCRT_fnc_unit_flattenTier);
@@ -113,15 +113,6 @@ if (count _crashPosition == 0) then {_crashPosition = _posCrashOrigin};
 
 Debug_1("Crashsite position has been found after %1 iterations.", str _iterations);
 Info_1("Crashsite position: %1", str _crashPosition);
-
-_groupPilot = createGroup _sideX;
-/* if !(typeOf _reconvehicle == "vehiclesDroppod") then {
-_pilot = [_groupPilot, _pilotClass, _crashPosition, [], 0, "NONE"] call A3A_fnc_createUnit;
-_pilotPosition = position _pilot;
-_bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1, (_pilotPosition select 2) + 0.05], [], 0,  "CAN_COLLIDE"];
-_pilot setDamage 1;
-}; */
-
 
 //creating mission marker near crash site
 _reconvehicle = createVehicle [_reconvehicle, [_crashPosition select 0, _crashPosition select 1, 0.9], [], 0, "CAN_COLLIDE"];
@@ -167,59 +158,13 @@ if (!isNil "traderMarker") then { ///checking if trader is spawned
 [_taskId, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 };
 
-///new
-diag_log 1;
+///checking if players reached minimum distance to start vfx or if time limit has passed
 private _missionstart = serverTime;
 waitUntil {sleep 1; (player distance2D _crashPosition) < 1500 || _missionstart >= serverTime + 600 };
-diag_log 2;
 ///
 
 _vehicles pushBack _reconvehicle;
-///вставить новый код здесь
-_reconvehicledummy = createVehicle ["SpaceshipCapsule_01_F", [0, 0, 250], [], 0, "NONE"];
-
-_initPos = _crashPosition getPos [4500, random 360];
-_angleOffset = -30;
-_reconvehicledummy setPos (_initPos vectorAdd [0,0,2500]);
-
-_forwardVector = vectorDir _reconvehicledummy;
-_upVector = vectorUp _reconvehicledummy;
-
-_targetVector = (getPos _reconvehicledummy) vectorFromTo _crashPosition;
-_reconvehicledummy setVectorDir _targetVector;
-_newForwardVector = vectorDir _reconvehicledummy;
-_angleCos = _newForwardVector vectorCos _targetVector;
-_angle = acos(_angleCos) + _angleOffset;
-
-_reconvehicledummy setVectorUp [-cos (getDir _reconvehicledummy + 90), sin (getDir _reconvehicledummy + 90), 1 / (tan _angle)];
-_reconvehicledummy setVectorDirAndUp [vectorUp _reconvehicledummy, vectorDir _reconvehicledummy vectorMultiply -1];
-
-_vel = velocity _reconvehicledummy;
-_dir = vectorDir _reconvehicledummy;
-_additionalSpeed = 200; // in m/s
-_targetVector = [-cos (getDir _reconvehicledummy + 90), sin (getDir _reconvehicledummy + 90), 1 / (tan (_angle - 90))];
-_reconvehicledummy setVelocity (_targetVector vectorMultiply _additionalSpeed);
-
-_dir = getDir _reconvehicledummy;
-
-[_reconvehicledummy] call A3A_fnc_Satellitelaunch;
-
-private _crashsiteactual = getPosATL _reconvehicledummy;
-_reconvehicle setPos _crashsiteactual;
-_bomb = "ammo_Missile_Cruise_01" createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
-_reconvehicle hideObjectGlobal false;
-deletevehicle _reconvehicledummy;
-_debri = "SpaceshipCapsule_01_debris_F" createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
-_debri setPos [_crashsiteactual select 0,_crashsiteactual select 1, 0.6];
-_debri setDir (abs (_dir+124)%360);
-/* _additionaldebri = "SpaceshipCapsule_01_debris_F"  createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0]; */
-_offset = [1.5, 5, -0.8];
-_worldPos = _reconvehicle modelToWorld _offset;
-_debri setPos _worldPos;
-_vehicles pushBack _debri;
-/* _vehicles pushBack _additionaldebri; */
-
-/* } else {
+///
 _reconvehicledummy = createVehicle [_reconvehicle, [0, 0, 250], [], 0, "NONE"];
 _initPos = _crashPosition getPos [4500, random 360];
 _angleOffset = -20;
@@ -242,157 +187,62 @@ _dir = vectorDir _reconvehicledummy;
 _additionalSpeed = 200; // in m/s
 _targetVector = [-cos (getDir _reconvehicledummy + 90), sin (getDir _reconvehicledummy + 90), 1 / (tan (_angle - 90))];
 _reconvehicledummy setVelocity (_targetVector vectorMultiply _additionalSpeed);
+
+///VFX
+[_reconvehicledummy] call A3A_fnc_Satellitelaunch;
+
+private _crashsiteactual = getPosATL _reconvehicledummy;
+
 clearWeaponCargoGlobal _reconvehicle;
 clearMagazineCargoGlobal _reconvehicle;
 _bomb = "Sh_155mm_AMOS" createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
-private _crater = "CraterLong_02_F" createVehicle _crashPosition;
+private _crater = "CraterLong_02_F" createVehicle _crashsiteactual;
+_reconvehicle setPos [_crashsiteactual select 0, _crashsiteactual select 1, 0.2];
 _reconvehicle animateDoor ["Door_rear_source", 1, true];
 
-private _smokeEffect = "test_EmptyObjectForSmoke" createVehicle _crashPosition; 
+private _smokeEffect = "test_EmptyObjectForSmoke" createVehicle _crashsiteactual; 
 _smokeEffect attachTo [_reconvehicle,[0,1.5,-1]];
 _effectsAndProps pushBack _smokeEffect;
 
 _effectsAndProps pushBack _crater;
 
-}; */
-
-
-
-/* private _crashsiteactual = getPosATL _reconvehicledummy; */
-
-/* if (typeOf _reconvehicle == "SpaceshipCapsule_01_F") then {
-    _bomb = "ammo_Missile_Cruise_01" createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
-    _reconvehicle hideObjectGlobal false;
-    deletevehicle _reconvehicledummy;
-    _debri = "SpaceshipCapsule_01_wreck_F"  createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
-    _debri setPos [_crashsiteactual select 0,_crashsiteactual select 1, 0.6];
-    _debri setDir (abs (_dir+124)%360);
-    _additionaldebri = "SpaceshipCapsule_01_debris_F"  createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
-    _offset = [1.5,5,-0.6];
-    _worldPos = _reconvehicle modelToWorld _offset;
-    _additionaldebri setPos _worldPos;
-
-} else {    
-    clearWeaponCargoGlobal _reconvehicle;
-    clearMagazineCargoGlobal _reconvehicle;
-    _bomb = "Sh_155mm_AMOS" createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
-    private _crater = "CraterLong_02_F" createVehicle _crashPosition;
-    _reconvehicle animateDoor ["Door_rear_source", 1, true];
-
-    private _smokeEffect = "test_EmptyObjectForSmoke" createVehicle _crashPosition; 
-    _smokeEffect attachTo [_reconvehicle,[0,1.5,-1]];
-    _effectsAndProps pushBack _smokeEffect;
-
-    _effectsAndProps pushBack _crater;
-}; */
-
-
-/////
-/* if (typeOf _reconvehicle == "SpaceshipCapsule_01_F") then { ///change to droppod later */
-
 {  
 	[_x, true] remoteExec ["hideObject", 0, true];
     _x enableSimulationGlobal false;
 } forEach nearestTerrainObjects [_reconvehicle, ["ROCKS","ROCK"], 50, false, true];
-
-_terrainObjects = nearestTerrainObjects [_reconvehicle, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 200, false, false];
 {  
-    _x setDamage [0.75,true ,_reconvehicle];
-} forEach _terrainObjects;
+    _x setDamage 1;
+} forEach nearestTerrainObjects [_reconvehicle, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 20, false, true];
 
-_terrainObjects2 = nearestTerrainObjects [_reconvehicle, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 150, false, false];
-{  
-    _x setDamage [0.5,true ,_reconvehicle];
-} forEach _terrainObjects2;
+Info_2("Crash Location: %1, Aircraft: %2", _crashsiteactual, _reconvehicle);
+_groupPilot = createGroup _sideX;
+_pilot = [_groupPilot, _pilotClass, _reconvehicle, [], 0, "NONE"] call A3A_fnc_createUnit;
+_pilotPosition = position _pilot;
+_bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1, (_pilotPosition select 2) + 0.05], [], 0,  "CAN_COLLIDE"];
+_pilot setDamage 1;
 
-_terrainObjects3 = nearestTerrainObjects [_reconvehicle, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 100, false, false];
-{  
-    _x setDamage [1, true ,_reconvehicle];
-} forEach _terrainObjects3;
+_effectsAndProps append [_pilot, _bloodSplatter];
 
-_fireposition2 = nearestTerrainObjects [_reconvehicle, ["Tree", "Bush", "BUILDING"], 100, true, false];
-    {  
-    for "_i" from 0 to (random [5,6,8]) do {
-
-    [_fireposition2, 5000] remoteExec ["SCRT_fnc_effect_createBurningDebrisEffect", 0, _reconvehicle];
-
-    private _fireEffectEmitter = "#particlesource" createVehicle _fireposition2;
-    [_fireEffectEmitter, "BigDestructionFire"] remoteExec ["setParticleClass", 0, _fireEffectEmitter];
-
-    private _lightEffectEmitter = "#lightpoint" createVehicle _fireposition2; 
-    [_lightEffectEmitter, 0.3] remoteExec ["setLightBrightness", 0, _lightEffectEmitter];
-    [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightAmbient", 0, _lightEffectEmitter];
-    [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightColor", 0, _lightEffectEmitter];
-
-    _effectsAndProps append [_fireEffectEmitter, _lightEffectEmitter];};    
-    }/*  forEach nearestTerrainObjects [_reconvehicle, ["Tree", "Bush", "BUILDING"], 100, false, true] */;
-
-   private _smokeEffect = "test_EmptyObjectForSmoke" createVehicle _crashsiteactual; 
-   _smokeEffect attachTo [_reconvehicle,[0,1.5,-1]];
-   _effectsAndProps pushBack _smokeEffect;
-
-   _effectsAndProps pushBack _reconvehicle;
-   _vehicles pushBack _reconvehicle;
-
-    for "_i" from 0 to (random [10,12,14]) do {
+for "_i" from 0 to (random [3,5,6]) do {
     _firePosition = [
         _crashsiteactual, 
-        1,
-        30,
-        1
-    ] call BIS_fnc_findSafePos;
+        2,
+        25,
+        2
+        ] call BIS_fnc_findSafePos;
 
-    [_firePosition, 5000] remoteExec ["SCRT_fnc_effect_createBurningDebrisEffect", 0, _reconvehicle];
+        [_firePosition, 5000] remoteExec ["SCRT_fnc_effect_createBurningDebrisEffect", 0, _reconvehicle];
 
-    private _fireEffectEmitter = "#particlesource" createVehicle _firePosition;
-    [_fireEffectEmitter, "SmallDestructionFire"] remoteExec ["setParticleClass", 0, _fireEffectEmitter];
+        private _fireEffectEmitter = "#particlesource" createVehicle _firePosition;
+        [_fireEffectEmitter, "SmallDestructionFire"] remoteExec ["setParticleClass", 0, _fireEffectEmitter];
 
-    private _lightEffectEmitter = "#lightpoint" createVehicle _firePosition; 
-    [_lightEffectEmitter, 0.3] remoteExec ["setLightBrightness", 0, _lightEffectEmitter];
-    [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightAmbient", 0, _lightEffectEmitter];
-    [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightColor", 0, _lightEffectEmitter];
+        private _lightEffectEmitter = "#lightpoint" createVehicle _firePosition; 
+        [_lightEffectEmitter, 0.3] remoteExec ["setLightBrightness", 0, _lightEffectEmitter];
+        [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightAmbient", 0, _lightEffectEmitter];
+        [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightColor", 0, _lightEffectEmitter];
 
-    _effectsAndProps append [_fireEffectEmitter, _lightEffectEmitter];    
-    };
-/* } else {
-    {  
-	  [_x, true] remoteExec ["hideObject", 0, true];
-      _x enableSimulationGlobal false;
-    } forEach nearestTerrainObjects [_crashPosition, ["ROCKS","ROCK"], 50, false, true];
-    {  
-    _x setDamage 1;
-    } forEach nearestTerrainObjects [_crashPosition, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 20, false, true];
-
-    Info_2("Crash Location: %1, Aircraft: %2", _crashPosition, _helicopterClass);
-    _groupPilot = createGroup _sideX;
-    _pilot = [_groupPilot, _pilotClass, _crashPosition, [], 0, "NONE"] call A3A_fnc_createUnit;
-    _pilotPosition = position _pilot;
-    _bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1, (_pilotPosition select 2) + 0.05], [], 0,  "CAN_COLLIDE"];
-    _pilot setDamage 1;
-
-    _effectsAndProps append [_pilot, _bloodSplatter];
-
-    for "_i" from 0 to (random [3,5,6]) do {
-        _firePosition = [
-             _crashPosition, 
-            2,
-            25,
-            2
-            ] call BIS_fnc_findSafePos;
-
-            [_firePosition, 5000] remoteExec ["SCRT_fnc_effect_createBurningDebrisEffect", 0, _helicopter];
-
-            private _fireEffectEmitter = "#particlesource" createVehicle _firePosition;
-            [_fireEffectEmitter, "SmallDestructionFire"] remoteExec ["setParticleClass", 0, _fireEffectEmitter];
-
-            private _lightEffectEmitter = "#lightpoint" createVehicle _firePosition; 
-            [_lightEffectEmitter, 0.3] remoteExec ["setLightBrightness", 0, _lightEffectEmitter];
-            [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightAmbient", 0, _lightEffectEmitter];
-            [_lightEffectEmitter, [0.70, 0.3, 0.3]] remoteExec ["setLightColor", 0, _lightEffectEmitter];
-
-            _effectsAndProps append [_fireEffectEmitter, _lightEffectEmitter];
-    };
-}; */
+        _effectsAndProps append [_fireEffectEmitter, _lightEffectEmitter];
+};
 ///
 
 //spawning box
@@ -427,7 +277,7 @@ sleep 1;
 //creating cargo vehicle
 private _cargoVehicleData = [position _roadR, 0, _cargoTruckClass, _sideX] call A3A_fnc_spawnVehicle;
 private _cargoVehicle = _cargoVehicleData select 0;
-_cargoVehicle limitSpeed 50;
+_cargoVehicle limitSpeed 85;
 [_cargoVehicle, _sideX] call A3A_fnc_AIVEHinit;
 [_cargoVehicle,"Cargo Truck"] spawn A3A_fnc_inmuneConvoy;
 private _cargoVehicleGroup = _cargoVehicleData select 2;
@@ -438,6 +288,8 @@ _vehicles pushBack _cargoVehicle;
 
 ////
 _cargoGroupSpawnpositon = getPosATL _cargoVehicle;
+private _cargoVehicle2 = objNull;
+private _cargoVehicle2driver = "";
 ////
 
 _cargoGroupX = [_missionOriginPos, _sideX, _specOpsArray] call A3A_fnc_spawnGroup;
@@ -455,7 +307,7 @@ _cargoVehicleWp setWaypointType "GETOUT";
 _cargoVehicleWp setWaypointBehaviour "SAFE";
 
 //loiter helicopter
-_searchHeliData = [[(_cargoGroupSpawnpositon select 0) + random 100, (_cargoGroupSpawnpositon select 1) + random 100, 250 + random 100], 0, _searchHeliClass, _sideX] call A3A_fnc_spawnVehicle;
+_searchHeliData = [[(_cargoGroupSpawnpositon select 0) + random 100, (_cargoGroupSpawnpositon select 1) + random 100, 75 + random 75], 0, _searchHeliClass, _sideX] call A3A_fnc_spawnVehicle;
 _searchHeliVeh = _searchHeliData select 0;
 [_searchHeliVeh, _sideX] call A3A_fnc_AIVEHinit;
 _searchHeliCrew = _searchHeliData select 1;
@@ -479,44 +331,78 @@ _heliInfGroup = [_missionOriginPos, _sideX, _specOpsArray] call A3A_fnc_spawnGro
 {
     _x assignAsCargo _searchHeliVeh; 
     _x moveInCargo _searchHeliVeh; 
-    [_x] join _heliVehicleGroup; 
+    [_x] join _heliInfGroup; /// _heliVehicleGroup
     [_x] call A3A_fnc_NATOinit;
 } forEach units _heliInfGroup;
+{
+    private _index = _searchHeliVeh getCargoIndex _x;
+    if (_index == -1) then {
+        deleteVehicle _x;
+    };
+} forEach units _heliInfGroup;
 
-private _totalSeats = [_cargoVehicle, false] call BIS_fnc_crewCount; 
+_landPos = [_crashsiteactual, 30, 100, 10, 0, 0.25, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
+private _totalSeats = [typeOf _cargoVehicle, false] call BIS_fnc_crewCount; 
+private _heliInfGroupSize = count units _heliInfGroup;
 if(_searchHeliClass in (_faction get "vehiclesHelisLight")) then {
-    _landPos = [_crashsiteactual, 200, 400, 10, 0, 0.12, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
 
     if ((typeOf _searchHeliVeh) in vehFastRope) then {
-        [_searchHeliVeh, _heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _searchHeliCrew] spawn A3A_fnc_fastrope;
+        [_searchHeliVeh, _heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _searchHeliVeh] spawn A3A_fnc_fastrope;
     } else {
-        [_searchHeliVeh, _searchHeliCrew, _heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _landPos] spawn A3A_fnc_combatLanding;
+        [_searchHeliVeh, _heliVehicleGroup,_heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _landPos] spawn A3A_fnc_combatLanding;    
     };
-    _heliInfGroupSize = count units _heliInfGroup;
-/*     private _totalSeats = [_cargoVehicle, true] call BIS_fnc_crewCount;  */
+
     if (_totalSeats - 2 < _heliInfGroupSize) then { /// -2 because cargo will take at most 2 seats
-        private _cargoVehicleData2 = [position _roadR, 0, _cargoTruckClass, _sideX] call A3A_fnc_spawnVehicle;
-        private _cargoVehicle2 = _cargoVehicleData select 0;
-        _cargoVehicle2 limitSpeed 50;
+        sleep 8; /// just to make sure cargovehicles won't collide
+        private _cargoVehicleData2 = [_cargoGroupSpawnpositon , 0, _cargoTruckClass, _sideX] call A3A_fnc_spawnVehicle; ///Just to make sure that everyone can RTB
+        _cargoVehicle2 = _cargoVehicleData2 select 0;
+        _cargoVehicle2 limitSpeed 85;
         [_cargoVehicle2, _sideX] call A3A_fnc_AIVEHinit;
-        [_cargoVehicle2,"Cargo Truck"] spawn A3A_fnc_inmuneConvoy; ///Just to make sure that everyone can RTB
+        ///[_cargoVehicle2,"Cargo Truck"] spawn A3A_fnc_inmuneConvoy;
         _vehicles pushBack _cargoVehicle2;
+        _cargoVehicle2Wp = group driver _cargoVehicle2 addWaypoint [position _box, 1];
+        _cargoVehicle2Wp setWaypointType "GETOUT";
+        _cargoVehicle2Wp setWaypointBehaviour "SAFE";
+        _cargoVehicle2Wp setWaypointCompletionRadius 20;
+        _cargoVehicle2driver = driver _cargoVehicle2;
     };
 } else {
-    [_heliVehicleGroup, _crashsiteactual, 400] call BIS_fnc_taskPatrol;
+    _heliVehicleGroupWP2 = _heliVehicleGroup  addWaypoint [position _box, 1];
+    _heliVehicleGroupWP2 setWaypointType "LOITER";
+    _heliVehicleGroupWP2 setWaypointBehaviour "SAFE";
+    [_heliVehicleGroup, 0] setWaypointLoiterRadius 400;
+    [_heliVehicleGroup, 0] setWaypointLoiterType "CIRCLE_L";
 };
 
-waitUntil {
-	sleep 1;
-	!alive _box ||
-	{_cargoVehicle distance _box < 50 ||
-    {_box distance (getMarkerPos respawnTeamPlayer) < 50 ||
-	{dateToNumber date > _dateLimitNum
-}}}};
+if (!isNull _cargoVehicle2 || alive _cargoVehicle2) then {
+    waitUntil {
+        sleep 1;
+        !alive _box 
+        ||
+        {_cargoVehicle distance _box < 50} 
+        ||
+        {_cargoVehicle2 distance _box < 50} 
+        ||
+        {_box distance (getMarkerPos respawnTeamPlayer) < 50} 
+        ||
+        {dateToNumber date > _dateLimitNum}
+    };
+} else {
+        waitUntil {
+        sleep 1;
+        !alive _box 
+        ||
+        {_cargoVehicle distance _box < 50} 
+        ||
+        {_box distance (getMarkerPos respawnTeamPlayer) < 50} 
+        ||
+        {dateToNumber date > _dateLimitNum}
+    };
+};
 
 _groups pushBack _heliInfGroup;
 
-if(_cargoVehicle distance _box < 50 && ({alive _cargoVehicle} || {alive _cargoVehicle2}) && ({!isNull (driver _cargoVehicle)} || {!isNull (driver _cargoVehicle2)})) then {
+if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (alive _cargoVehicle || alive _cargoVehicle2) && (!isNull (driver _cargoVehicle) || !isNull (driver _cargoVehicle2))) then {
     _allParticipatingUnits = [];
     {
         _allParticipatingUnits append (units _x);
@@ -532,7 +418,7 @@ if(_cargoVehicle distance _box < 50 && ({alive _cargoVehicle} || {alive _cargoVe
     } forEach ([500, 0, _cargoVehicle, teamPlayer] call A3A_fnc_distanceUnits);
 
     if(_isEnemyKnowsAboutTeamplayer) then {
-        Info("Cargo truck has reached helicopter, they know about enemies, so starting doing some actions aware...");
+        Info("One of Cargo trucks has reached recon vehicle, they know about enemies, so starting doing some actions aware...");
 
 
         _cargoVehicleGroup setCombatMode "YELLOW";
@@ -545,7 +431,7 @@ if(_cargoVehicle distance _box < 50 && ({alive _cargoVehicle} || {alive _cargoVe
         _heliVehicleGroup setBehaviour "AWARE";
     };
 
-    Info("Cargo truck has reached helicopter, starting doing some actions...");
+    Info("One of Cargo trucks has reached recon vehicle, starting doing some actions...");
 
     _waypointTimeout = time + 15;
     waitUntil{sleep 1; time > _waypointTimeout };
@@ -555,32 +441,32 @@ if(_cargoVehicle distance _box < 50 && ({alive _cargoVehicle} || {alive _cargoVe
         moveOut _x;
     } forEach _cargoSquad;
 
-    _cargoTimeout = time + (random [40,60,80]);
+    _cargoTimeout = time + (random [4,6,8]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
-    if(({alive _x} count units _cargoVehicleGroup) > 3 && {alive _cargoVehicle}) then {
-        Info("Putting ammobox inside truck");
-
+    if(({alive _x} count units _cargoVehicleGroup) > 3 && {alive _cargoVehicle} && _cargoVehicle distance _box < 50) then {
+        Info("Putting blackbox inside truck");
         private _return = [_cargoVehicle, _box] call A3A_Logistics_fnc_canLoad;
         if !(_return isEqualType 0) exitWith {
             _return remoteExec ["A3A_Logistics_fnc_load", 2];
         };
-    } else (!{alive _cargoVehicle} && {alive _cargoVehicle2}) then {
-        Info("Putting ammobox inside second truck");
-
-        private _return = [_cargoVehicle2, _box] call A3A_Logistics_fnc_canLoad;
-        if !(_return isEqualType 0) exitWith {
-            _return remoteExec ["A3A_Logistics_fnc_load", 2];
-        };
     } else {
-        Info("Players disrupt cargo operation.");
+        if (alive _cargoVehicle2) then {
+          Info("Putting blackbox inside second truck");
+          private _return = [_cargoVehicle2, _box] call A3A_Logistics_fnc_canLoad;
+          if !(_return isEqualType 0) then {
+            _return remoteExec ["A3A_Logistics_fnc_load", 2];
+          } else {
+            Info("Players disrupt cargo operation.");
+          };
+        };
     };
 
-    _cargoTimeout = time + (random [40,60,80]);
+    _cargoTimeout = time + (random [4,6,7]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     if(({alive _x} count units _cargoVehicleGroup) > 2) then {
-        Info("Putting satchel into helicopter");
+        Info("Putting satchel into recon vehicle");
         //cargo team will plant the explosive on reconvehicle
         [_crashPosition, _reconvehicle, _cargoVehicle] spawn {
             params ["_crashPosition", "_reconvehicle", "_cargoVehicle"];
@@ -589,21 +475,23 @@ if(_cargoVehicle distance _box < 50 && ({alive _cargoVehicle} || {alive _cargoVe
             _shell setVelocity [0,1,-1];
             _reconvehicle setDamage 1;
         };
-    } else (({alive _x} count units _heliInfGroup) > 2) then {
-        Info("Putting satchel into helicopter");
-        //heli team will plant the explosive on reconvehicle
-        [_crashPosition, _reconvehicle, _cargoVehicle] spawn {
+    } else {
+        if (({alive _x} count units _heliInfGroup) > 2) then {
+            Info("Putting satchel into recon vehicle");
+            //heli team will plant the explosive on reconvehicle
+            [_crashPosition, _reconvehicle, _cargoVehicle] spawn {
             params ["_crashPosition", "_reconvehicle", "_cargoVehicle"];
             waitUntil {sleep 1; _cargoVehicle distance _crashPosition > 150};
             _shell = "Sh_155mm_AMOS" createVehicle position _reconvehicle;
             _shell setVelocity [0,1,-1];
             _reconvehicle setDamage 1;
+            };
+        } else {
+            Info("Players disrupt satchel operation.");
         };
-    } else {
-        Info("Players disrupt satchel operation.");
     };
 
-    _cargoTimeout = time + (random [20,40,60]);
+    _cargoTimeout = time + (random [2,4,5]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     Info("Departing.");
@@ -614,54 +502,90 @@ if(_cargoVehicle distance _box < 50 && ({alive _cargoVehicle} || {alive _cargoVe
         };
     };
 
-    if !(_cargoVehicle2 == objNull) || (alive _cargoVehicle2) then {
-    {
-        _x assignAsCargo _cargoVehicle2;  
-        [_x] join _cargoVehicleGroup; 
-        [_x] call A3A_fnc_NATOinit;
-    } forEach units _heliInfGroup;
-
-    _heliInfWp1 = _heliInfGroup addWaypoint [_cargoVehicle2, 0];
-    _heliInfWp1 setWaypointType "GETIN";
-    _heliInfWp1 setWaypointBehaviour "SAFE";
-
-    _heliInfWp2 = _heliInfGroup addWaypoint [_deliverySite, 1];
-    _heliInfWp2 setWaypointType "MOVE"; 
-
-    _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0];
-    _cargoWp1 setWaypointType "GETIN";
-    _cargoWp1 setWaypointBehaviour "SAFE";
-
-    _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
-    _cargoWp2 setWaypointType "MOVE";   
-    } else {
-    {
-        _x assignAsCargo _cargoVehicle;  
-        [_x] join _cargoVehicleGroup; 
-        [_x] call A3A_fnc_NATOinit;
-    } forEach units _heliInfGroup;
-
-    _heliInfWp1 = _heliInfGroup addWaypoint [_box, 0];
-    _heliInfWp1 setWaypointType "GETIN";
-    _heliInfWp1 setWaypointBehaviour "SAFE";
-
-    _heliInfWp2 = _heliInfGroup addWaypoint [_deliverySite, 1];
-    _heliInfWp2 setWaypointType "MOVE"; 
-
-    _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0];
-    _cargoWp1 setWaypointType "GETIN";
-    _cargoWp1 setWaypointBehaviour "SAFE";
-
-    _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
-    _cargoWp2 setWaypointType "MOVE";   
+    if(count waypoints _heliInfGroup  > 0) then {
+        for "_i" from count waypoints _heliInfGroup  - 1 to 0 step -1 do {
+            deleteWaypoint [_heliInfGroup , _i];
+        };
     };
-    
-    if(_isEnemyKnowsAboutTeamplayer) then {
-        _cargoWp2 setWaypointBehaviour "AWARE";
-        _heliInfWp2 setWaypointBehaviour "AWARE";
+
+
+    if ((!isNull _cargoVehicle2 || alive _cargoVehicle2) && (_cargoVehicle2 distance2D _reconvehicle < 50)) then {
+        {
+            /*  if (leader _heliInfGroup == _x) then {
+                _x assignAsDriver _cargoVehicle2;
+                [_x] orderGetIn true;
+                [_x] call A3A_fnc_NATOinit;
+            } else { */
+                _x assignAsCargo _cargoVehicle2;  
+                ///[_x] join _cargoVehicleGroup;
+                [_x] call A3A_fnc_NATOinit;
+            //};
+        } forEach units _heliInfGroup;
+        [_cargoVehicle2driver] join _heliInfGroup;
+        _heliInfWp1 = _heliInfGroup addWaypoint [_cargoVehicle2, 0];
+        _heliInfWp1 setWaypointType "GETIN";
+        _heliInfWp1 setWaypointBehaviour "SAFE";
+
+        _heliInfWp2 = _heliInfGroup addWaypoint [_deliverySite, 1];
+        _heliInfWp2 setWaypointType "MOVE";
+
+        if (_cargoVehicle distance2D _reconvehicle > 50) then{
+                {
+                    _x assignAsCargo _cargoVehicle2;
+                    [_x] join _heliInfGroup;  
+                    [_x] call A3A_fnc_NATOinit;
+                } forEach units _cargoVehicleGroup;
+            _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle2 ///I don't know why _box is used
+            _cargoWp1 setWaypointType "GETIN";
+            _cargoWp1 setWaypointBehaviour "SAFE";
+
+            _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
+            _cargoWp2 setWaypointType "MOVE";
+        } else {
+            _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle
+            _cargoWp1 setWaypointType "GETIN";
+            _cargoWp1 setWaypointBehaviour "SAFE";
+
+            _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
+            _cargoWp2 setWaypointType "MOVE";
+        };
+
+        if(_isEnemyKnowsAboutTeamplayer) then {
+            _cargoWp2 setWaypointBehaviour "AWARE";
+            _heliInfWp2 setWaypointBehaviour "AWARE";
+        } else {
+            _cargoWp2 setWaypointBehaviour "SAFE";
+            _heliInfWp2 setWaypointBehaviour "SAFE";
+        };
+
     } else {
-       _cargoWp2 setWaypointBehaviour "SAFE";
-       _heliInfWp2 setWaypointBehaviour "SAFE";
+        {
+            _x assignAsCargo _cargoVehicle;  
+            [_x] join _cargoVehicleGroup; 
+            [_x] call A3A_fnc_NATOinit;
+        } forEach units _heliInfGroup;
+
+        _heliInfWp1 = _heliInfGroup addWaypoint [_box, 0]; ///_cargoVehicle
+        _heliInfWp1 setWaypointType "GETIN";
+        _heliInfWp1 setWaypointBehaviour "SAFE";
+
+        _heliInfWp2 = _heliInfGroup addWaypoint [_deliverySite, 1];
+        _heliInfWp2 setWaypointType "MOVE"; 
+
+        _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle
+        _cargoWp1 setWaypointType "GETIN";
+        _cargoWp1 setWaypointBehaviour "SAFE";
+
+        _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
+        _cargoWp2 setWaypointType "MOVE";
+            
+        if(_isEnemyKnowsAboutTeamplayer) then {
+            _cargoWp2 setWaypointBehaviour "AWARE";
+            _heliInfWp2 setWaypointBehaviour "AWARE";
+        } else {
+            _cargoWp2 setWaypointBehaviour "SAFE";
+            _heliInfWp2 setWaypointBehaviour "SAFE";
+        };   
     };
 
     if(count waypoints _heliVehicleGroup > 0) then {
@@ -674,15 +598,18 @@ if(_cargoVehicle distance _box < 50 && ({alive _cargoVehicle} || {alive _cargoVe
     if(_isEnemyKnowsAboutTeamplayer) then {
         _searchHeliWp1 setWaypointBehaviour "AWARE";
     } else {
-        _searchHeliWp1 setWaypointBehaviour "SAFE";
+        _searchHeliWp1 setWaypointBehaviour "SAFE"; 
     };
 };
 
 waitUntil {
 	sleep 1;
-	!alive _box ||
-	_box distance _deliverySite < 50 ||
-	_box distance (getMarkerPos respawnTeamPlayer) < 50 ||
+	!alive _box 
+    ||
+	_box distance _deliverySite < 50 
+    ||
+	_box distance (getMarkerPos respawnTeamPlayer) < 50
+    ||
 	dateToNumber date > _dateLimitNum
 };
 
@@ -719,8 +646,8 @@ switch(true) do {
         } forEach (call SCRT_fnc_misc_getRebelPlayers);
         [10*_bonus,theBoss] call A3A_fnc_addScorePlayer;
         [250*_bonus,theBoss, true] call A3A_fnc_addMoneyPlayer;
-        ["Large", _side] remoteExec ["A3A_fnc_selectIntel", 2];
-        [(position respawnTeamPlayer), 4000, 1200, true] spawn SCRT_fnc_common_recon; ///params ["_position", "_radius", "_revealTime", ["_isInterrogation", false]];
+        ["Large", _sideX] remoteExec ["A3A_fnc_selectIntel", 2];
+        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon; ///params ["_position", "_radius", "_revealTime", ["_isInterrogation", false]]; ///revels enemy location only once, which is not good?, dunno maybe it should do it every 2-5 minutes
     };
     case(_box distance (getMarkerPos traderMarker) < 50): {
         Info("Box has been delivered to arms traider, mission completed.");
