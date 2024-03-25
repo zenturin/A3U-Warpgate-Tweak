@@ -206,7 +206,7 @@ _reconvehicledummy setVelocity (_targetVector vectorMultiply _additionalSpeed);
 _dir = getDir _reconvehicledummy;
 
 ///VFX
-[_reconvehicledummy] call A3A_fnc_Satellitelaunch;
+[_reconvehicledummy] call A3A_fnc_effects;;
 
 private _crashsiteactual = getPosATL _reconvehicledummy;
 _reconvehicle setPos [_crashsiteactual select 0, _crashsiteactual select 1, 0.2];
