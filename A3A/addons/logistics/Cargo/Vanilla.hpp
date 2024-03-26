@@ -33,12 +33,21 @@ class A3_Static_F_Gamma_HMG_01_HMG_01_high_F_p3d : TRIPLES(ADDON,Cargo,Base)
     recoil = 100;
     isWeapon = 1;
 };
+
 class a3_Props_F_Decade_Spaceship_SpaceshipCapsule_01_container_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,0.53};
     rotation[] = {0,1,0};
     size = 2;
 };
+
+class a3_Props_F_Decade_Spaceship_SpaceshipCapsule_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 8;
+};
+
 class A3_Static_F_Gamma_GMG_01_GMG_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.2};
