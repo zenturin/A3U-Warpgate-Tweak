@@ -68,10 +68,10 @@ while {true} do {
 };
 
 // selecting classnames
-private _reconvehicle = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") + (_faction get "vehiclesDroppod"));
+private _reconvehicle = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") +  */(_faction get "vehiclesDropPod"));
 private _pilotClass = _faction get "unitPilot";
 
-if (_reconvehicle isKindOf  "vehiclesDroppod") exitWith { 
+if (_reconvehicle in (_faction get "vehiclesDropPod") ) exitWith { 
    [_markerX] call A3A_fnc_LOG_Crashsite_Satelite;
 };
 
@@ -117,7 +117,8 @@ Info_1("Crashsite position: %1", str _crashPosition);
 //creating mission marker near crash site
 _reconvehicle = createVehicle [_reconvehicle, [_crashPosition select 0, _crashPosition select 1, 0.9], [], 0, "CAN_COLLIDE"];
 
-/* _reconvehicle hideObjectGlobal true; */ ///uncomment later
+///hide
+_reconvehicle hideObjectGlobal true;
 
 private _crashPositionMarker = _reconvehicle getRelPos [random 1,random 1];
 
@@ -189,7 +190,7 @@ _targetVector = [-cos (getDir _reconvehicledummy + 90), sin (getDir _reconvehicl
 _reconvehicledummy setVelocity (_targetVector vectorMultiply _additionalSpeed);
 
 ///VFX
-[_reconvehicledummy] call A3A_fnc_effects;
+[_reconvehicledummy] call A3A_fnc_Satellitelaunch;
 
 private _crashsiteactual = getPosATL _reconvehicledummy;
 
@@ -324,8 +325,6 @@ _searchHeliVeh setCollisionLight true;
 
 _groups pushBack _heliVehicleGroup;
 _vehicles pushBack _searchHeliVeh;
-
-/* private _heliInfGroup = _specOpsArray call SCRT_fnc_unit_flattenTier ;  */
 
 _heliInfGroup = [_missionOriginPos, _sideX, _specOpsArray] call A3A_fnc_spawnGroup;
 {
