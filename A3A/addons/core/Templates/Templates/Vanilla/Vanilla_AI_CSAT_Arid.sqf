@@ -12,6 +12,8 @@ private _hasArtOfWar = "aow" in A3A_enabledDLC;
 //   Side Information   //
 //////////////////////////
 
+["vehiclesDropPod", ["Land_Pod_Heli_Transport_04_covered_F"]] call _fnc_saveToTemplate; 
+
 ["name", "CSAT"] call _fnc_saveToTemplate;
 ["spawnMarkerName", format [localize "STR_supportcorridor", "CSAT"]] call _fnc_saveToTemplate;
 
