@@ -51,8 +51,8 @@ _ps2 attachTo [_object, [0, 0, 1]];
 
 sleep 11;
 
-if (_object isKindOf "vehiclesDroppod") then {
-	
+if (typeOf _object in (_faction get "vehiclesDropPod") ) then {
+
 	setAperture 10;
 	waitUntil {sleep 0.1; getPos _object select 2 < 2500};
 	playSound3D [QPATHTOFOLDER(Sounds\Misc\Sonic.ogg), _object, false, getPosASL _object, 5, 1, 7000];
@@ -77,7 +77,7 @@ if (_object isKindOf "vehiclesDroppod") then {
 	setAperture 0;
 };
 
-waitUntil { sleep 0.01; getPos _object select 2 < 1 }; ///0.01 because we don't wanna bounce
+waitUntil { sleep 0.01; getPos _object select 2 < 2 }; ///0.01 because we don't wanna bounce
 
 deleteVehicle _ps0;
 deleteVehicle _ps1;
