@@ -163,6 +163,55 @@ class A3_Supplies_F_Heli_Fuel_FlexibleTank_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
     size = 1;
 };
 
+class a3_Props_F_Enoch_Military_Equipment_PortableServer_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class a3_Props_F_Enoch_Military_Decontamination_CBRNContainer_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class A3_Structures_F_Heli_Items_Luggage_MetalCase_01_small_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class A3_Structures_F_Heli_Items_Luggage_MetalCase_01_medium_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class A3_Structures_F_Heli_Items_Luggage_MetalCase_01_large_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 2;
+};
+
+class A3_Weapons_F_Ammoboxes_Proxy_UsBasicWeaponBox_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class A3_Weapons_F_Ammoboxes_Proxy_UsLouncherBox_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 2;
+};
+
 class A3_Supplies_F_Heli_Slingload_Slingload_01_Fuel_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,-0.25,1.35};
