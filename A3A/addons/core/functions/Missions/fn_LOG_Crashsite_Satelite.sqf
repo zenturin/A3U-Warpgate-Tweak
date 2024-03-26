@@ -66,14 +66,14 @@ while {true} do {
 		_distance = _distance - 500;
 	};
 };
-
+diag_log 333;
 // selecting classnames
-/* private _reconvehicle = selectRandom (_faction get "vehiclesDroppod") */ ///uncomment later
-private _reconvehicle = "SpaceshipCapsule_01_F";
+private _reconvehicle = selectRandom (_faction get "vehiclesDropPod"); ///uncomment later
 
-if (typeOf _reconvehicle == "SpaceshipCapsule_01_F") then{
+if (_reconvehicle == "SpaceshipCapsule_01_F") then {
 	_reconvehicle = "SpaceshipCapsule_01_wreck_F";
 };
+
 
 private _pilotClass = _faction get "unitPilot";
 
@@ -84,14 +84,15 @@ private _searchHeliClass =  if (_difficult) then {
 };
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
 
-///selecting blackbox
-private _blackboxClass = "SpaceshipCapsule_01_container_F";
+//selecting blackbox
+private _blackboxClass = "";
 
-private _blackboxClass = if (typeOf _reconvehicle == "SpaceshipCapsule_01_wreck_F") then {
+if (_reconvehicle == "SpaceshipCapsule_01_wreck_F") then {
     _blackboxClass = "SpaceshipCapsule_01_container_F";
 } else {
     _blackboxClass = "Box_Syndicate_Ammo_F"; ///should be something else
 };
+
 
 ///new
 private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupSpecOpsRandom")} else {selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)};
@@ -127,8 +128,8 @@ _groupPilot = createGroup _sideX;
 //creating mission marker near crash site
 _reconvehicle = createVehicle [_reconvehicle, [_crashPosition select 0, _crashPosition select 1, 0.9], [], 0, "CAN_COLLIDE"];
 
-/* _reconvehicle hideObjectGlobal true; */ ///uncomment later
-
+///hide
+_reconvehicle hideObjectGlobal true;
 private _crashPositionMarker = _reconvehicle getRelPos [random 1,random 1];
 
 //creating Task
@@ -175,9 +176,11 @@ waitUntil {sleep 1; (player distance2D _crashPosition) < 1500 || _missionstart >
 
 _vehicles pushBack _reconvehicle;
 ///lauching our dummy
-_reconvehicledummy = "";
+_reconvehicledummy = [];
 if (typeOf _reconvehicle == "SpaceshipCapsule_01_wreck_F") then {
-	_reconvehicledummy = "SpaceshipCapsule_01_wreck_F";
+	_reconvehicledummy = "SpaceshipCapsule_01_F";
+} else{
+    _reconvehicledummy = _reconvehicle;
 };
 _reconvehicledummy = createVehicle [_reconvehicledummy, [0, 0, 250], [], 0, "NONE"];
 
@@ -206,7 +209,7 @@ _reconvehicledummy setVelocity (_targetVector vectorMultiply _additionalSpeed);
 _dir = getDir _reconvehicledummy;
 
 ///VFX
-[_reconvehicledummy] call A3A_fnc_effects;;
+[_reconvehicledummy] call A3A_fnc_Satellitelaunch;
 
 private _crashsiteactual = getPosATL _reconvehicledummy;
 _reconvehicle setPos [_crashsiteactual select 0, _crashsiteactual select 1, 0.2];
@@ -512,9 +515,9 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
     if(({alive _x} count units _cargoVehicleGroup) > 2) then {
         Info("Putting satchel into recon vehicle");
         //cargo team will plant the explosive on reconvehicle
-        [_crashsiteactua, _reconvehicle, _cargoVehicle] spawn {
-            params ["_crashsiteactua", "_reconvehicle", "_cargoVehicle"];
-            waitUntil {sleep 1; _cargoVehicle distance _crashsiteactua > 150};
+        [_crashsiteactual, _reconvehicle, _cargoVehicle] spawn {
+            params ["_crashsiteactual", "_reconvehicle", "_cargoVehicle"];
+            waitUntil {sleep 1; _cargoVehicle distance _crashsiteactual > 150};
             _shell = "Sh_155mm_AMOS" createVehicle position _reconvehicle;
             _shell setVelocity [0,1,-1];
             _reconvehicle setDamage 1;
@@ -523,9 +526,9 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         if (({alive _x} count units _heliInfGroup) > 2) then {
             Info("Putting satchel into recon vehicle");
             //heli team will plant the explosive on reconvehicle
-            [_crashsiteactua, _reconvehicle, _cargoVehicle] spawn {
-            params ["_crashsiteactua", "_reconvehicle", "_cargoVehicle"];
-            waitUntil {sleep 1; _cargoVehicle distance _crashsiteactua > 150};
+            [_crashsiteactual, _reconvehicle, _cargoVehicle] spawn {
+            params ["_crashsiteactual", "_reconvehicle", "_cargoVehicle"];
+            waitUntil {sleep 1; _cargoVehicle distance _crashsiteactual > 150};
             _shell = "Sh_155mm_AMOS" createVehicle position _reconvehicle;
             _shell setVelocity [0,1,-1];
             _reconvehicle setDamage 1;
