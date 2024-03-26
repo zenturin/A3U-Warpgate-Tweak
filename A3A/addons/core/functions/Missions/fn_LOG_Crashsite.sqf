@@ -68,7 +68,7 @@ while {true} do {
 };
 
 // selecting classnames
-private _reconvehicle = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") +  */(_faction get "vehiclesDropPod"));
+private _reconvehicle = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") + (_faction get "vehiclesDropPod"));
 private _pilotClass = _faction get "unitPilot";
 
 if (_reconvehicle in (_faction get "vehiclesDropPod") ) exitWith { 
