@@ -174,7 +174,7 @@ class A3_Supplies_F_Heli_Fuel_FlexibleTank_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
 
 class a3_Props_F_Enoch_Military_Equipment_PortableServer_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
-    offset[] = {0,0,0};
+    offset[] = {0,0,0.12};
     rotation[] = {0,1,0};
     size = 1;
 };
