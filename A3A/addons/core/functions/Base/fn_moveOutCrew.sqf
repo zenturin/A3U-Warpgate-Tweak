@@ -41,15 +41,15 @@ private _crewdriver = _crewgroup select 0;
 private _crewdgunner = _crewgroup select 1;
 if (isNull _player) exitWith { Error("_player is null.") };
 if (isNull _vehicle) exitWith {
-    [localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_reinf_airstrike_not_looking_at_veh"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
+    [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_reinf_airstrike_not_looking_at_veh"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
 _owner = _vehicle getVariable ["ownerX",""];
 if !(_owner isEqualTo "" || {getPlayerUID _player isEqualTo _owner}) exitWith {  // Vehicle cannot be sold if owned by another player.
-    [localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_err2"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
+    [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_Base_sellVehicle_err2"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
 
 if (((side driver _vehicle==  west) || (side _vehicle == east)) && alive driver _vehicle) exitWith {
-    [localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_err1"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
+    [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_Base_sellVehicle_err1"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
 /* if (_veh getVariable ["A3A_moveOutCrew_inProgress",false]) exitWith {[localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_err3"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];};
 _veh setVariable ["A3A_moveOutCrew_inProgress",true,false];   */ // Only processed on the server. It is absolutely pointless trying to network this due to race conditions.
