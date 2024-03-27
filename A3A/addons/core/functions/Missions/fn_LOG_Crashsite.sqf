@@ -68,22 +68,24 @@ while {true} do {
 };
 
 // selecting classnames
-private _reconvehicle = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") + (_faction get "vehiclesDropPod"));
+private _reconvehicleClass = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack")/*  + (_faction get "vehiclesDropPod") */);
 private _pilotClass = _faction get "unitPilot";
 
-if (_reconvehicle in (_faction get "vehiclesDropPod") ) exitWith { 
+if (_reconvehicleClass in (_faction get "vehiclesDropPod") ) exitWith { 
    [_markerX] call A3A_fnc_LOG_Crashsite_Satelite;
 };
 
 private _searchHeliClass =  if (_difficult) then {
-    selectRandom ((_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
+    selectRandom ((_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack")) ///"vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
 } else {
-    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
+    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLight")) ////"vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
 };
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
 
+private _blackboxClass = "";
+
 ///our blackbox
- if ("lowTech" in A3A_factionEquipFlags) then {
+if ("lowTech" in A3A_factionEquipFlags) then {
    _blackboxClass = "Land_MetalCase_01_medium_F";
 }else{
    _blackboxClass = "Land_PortableServer_01_black_F";
@@ -94,7 +96,7 @@ private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupS
 ///new
 private _infantrySquadArray = selectRandom ([_faction, "groupsTierMedium"] call SCRT_fnc_unit_flattenTier);
 
-if (isNil "_reconvehicle" || 
+if (isNil "_reconvehicleClass" || 
     {isNil "_cargoTruckClass"} || 
     {isNil "_specOpsArray"}) 
 exitWith {
@@ -104,12 +106,12 @@ exitWith {
 
 //refining crash spawn position, to avoid exploding on spawn or "Armaing" during mission
 private _flatPosition = [_posCrashOrigin, 0, 1000, 0, 0, 0.4] call BIS_fnc_findSafePos;
-private _crashPosition = _flatPosition findEmptyPosition [0, 100, _reconvehicle];
+private _crashPosition = _flatPosition findEmptyPosition [0, 100, _reconvehicleClass];
 private _iterations = 0;
 //crash position could be too close to petros, lets find out it again
 while {_iterations < 30} do {
     _flatPosition = [_posCrashOrigin, 0, 1000, 0, 0, 0.4] call BIS_fnc_findSafePos;
-    _crashPosition = _flatPosition findEmptyPosition [0, 100, _reconvehicle];
+    _crashPosition = _flatPosition findEmptyPosition [0, 100, _reconvehicleClass];
     if(_crashPosition distance _respawnTeamPlayerMarkerPos < 2000 && _crashPosition distance _respawnTeamPlayerMarkerPos > 4000) exitWith {};
     _iterations = _iterations + 1; 
 };
@@ -119,10 +121,11 @@ Debug_1("Crashsite position has been found after %1 iterations.", str _iteration
 Info_1("Crashsite position: %1", str _crashPosition);
 
 //creating mission marker near crash site
-_reconvehicle = createVehicle [_reconvehicle, [_crashPosition select 0, _crashPosition select 1, 0.9], [], 0, "CAN_COLLIDE"];
 
+private _reconvehicle = createVehicle [_reconvehicleClass, [_crashPosition select 0, _crashPosition select 1, 0.9], [], 0, "CAN_COLLIDE"];
+diag_log _reconvehicle;
 ///hide
-_reconvehicle hideObjectGlobal true;
+/* _reconvehicle hideObjectGlobal true; */
 
 private _crashPositionMarker = _reconvehicle getRelPos [random 1,random 1];
 
@@ -168,12 +171,14 @@ private _missionstart = serverTime;
 waitUntil {sleep 1; (player distance2D _crashPosition) < 1500 || _missionstart >= serverTime + 600 };
 ///
 
+diag_log _reconvehicle;
 _vehicles pushBack _reconvehicle;
 ///
-_reconvehicledummy = createVehicle [_reconvehicle, [0, 0, 250], [], 0, "NONE"];
-_initPos = _crashPosition getPos [4500, random 360];
-_angleOffset = -20;
-_reconvehicledummy setPos (_initPos vectorAdd [0,0,2500]);
+private _reconvehicledummy = createVehicle [_reconvehicleClass, [0, 0, 250], [], 0, "NONE"];
+_reconvehicledummy setDamage 0.2;
+_initPos = _crashPosition getPos [1500, random 360];
+_angleOffset = -35;
+_reconvehicledummy setPos (_initPos vectorAdd [0,0,600]);
 
 _forwardVector = vectorDir _reconvehicledummy;
 _upVector = vectorUp _reconvehicledummy;
@@ -189,20 +194,25 @@ _reconvehicledummy setVectorDirAndUp [vectorUp _reconvehicledummy, vectorDir _re
 
 _vel = velocity _reconvehicledummy;
 _dir = vectorDir _reconvehicledummy;
-_additionalSpeed = 200; // in m/s
+_additionalSpeed = 500; // in m/s
 _targetVector = [-cos (getDir _reconvehicledummy + 90), sin (getDir _reconvehicledummy + 90), 1 / (tan (_angle - 90))];
 _reconvehicledummy setVelocity (_targetVector vectorMultiply _additionalSpeed);
 
 ///VFX
+_bomb1 = "Sh_155mm_AMOS" createVehicle [getPos _reconvehicledummy select 0, getPos _reconvehicledummy select 1 ,10];
 [_reconvehicledummy] call A3A_fnc_Satellitelaunch;
 
 private _crashsiteactual = getPosATL _reconvehicledummy;
 
 clearWeaponCargoGlobal _reconvehicle;
 clearMagazineCargoGlobal _reconvehicle;
-_bomb = "Sh_155mm_AMOS" createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),0];
+_bomb2 = "Sh_155mm_AMOS" createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),2];
+
 private _crater = "CraterLong_02_F" createVehicle _crashsiteactual;
-_reconvehicle setPos [_crashsiteactual select 0, _crashsiteactual select 1, 0.2];
+deletevehicle _reconvehicledummy;
+sleep 1;
+_reconvehicle setPos [_crashsiteactual select 0, _crashsiteactual select 1, 1];
+_reconvehicle setDamage 0.6;
 _reconvehicle animateDoor ["Door_rear_source", 1, true];
 
 private _smokeEffect = "test_EmptyObjectForSmoke" createVehicle _crashsiteactual; 
@@ -219,12 +229,20 @@ _effectsAndProps pushBack _crater;
     _x setDamage 1;
 } forEach nearestTerrainObjects [_reconvehicle, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 20, false, true];
 
+
 Info_2("Crash Location: %1, Aircraft: %2", _crashsiteactual, _reconvehicle);
+
 _groupPilot = createGroup _sideX;
-_pilot = [_groupPilot, _pilotClass, _reconvehicle, [], 0, "NONE"] call A3A_fnc_createUnit;
-_pilotPosition = position _pilot;
-_bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1, (_pilotPosition select 2) + 0.05], [], 0,  "CAN_COLLIDE"];
-_pilot setDamage 1;
+_pilot = "";
+_pilotPosition = "";
+_bloodSplatter = "";
+
+if (_reconvehicle in (_faction get "vehiclesPlanesTransport") ) then { 
+    _pilot = [_groupPilot, _pilotClass, _reconvehicle, [], 0, "NONE"] call A3A_fnc_createUnit;
+    _pilotPosition = position _pilot;
+    _bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1, (_pilotPosition select 2) + 0.05], [], 0,  "CAN_COLLIDE"];
+    _pilot setDamage 1;
+};
 
 _effectsAndProps append [_pilot, _bloodSplatter];
 
@@ -691,4 +709,4 @@ if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50}) then {
     deleteVehicle _box;
 };
 
-Info("Helicrash clean up complete.");
+Info("crashsite clean up complete.");
