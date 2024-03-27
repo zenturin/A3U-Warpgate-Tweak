@@ -77,6 +77,17 @@ class AddonVics
         loadedMessage = "Western Sahara loaded, civilian vehicle pool expanded";
     };
 
+    class ReactionForces
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"RF_Vehicles_Pickup_01"/* ,"RF_Vehicles_Truck_03","C_Truck_01_water_rf","RF_Air_heli_medium_ec" */};
+        //format {side, file relative to path}
+        files[] = { {"Civ", "reactionforces_Civ.sqf"} };
+        displayName = "Reaction Forces vehicle pack";
+        description = "Reaction Forces vehicle pack(if you want only civilian vehicles from cdlc(don't forget to enable cdlc above!))";
+        loadedMessage = "Reaction Forces loaded, civilian vehicle pool expanded";
+    };
+
     class SOG
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
