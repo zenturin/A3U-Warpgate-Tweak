@@ -17,8 +17,8 @@ class AddonVics
         requiredAddons[] = {"A3_Soft_F_Offroad_01"};
         //format {side, file relative to path}
         files[] = { {"Civ", "vanilla_Civ.sqf"} };
-        displayName = "Vanilla vehicle pack";
-        description = "Vanilla vehicle pack";
+        displayName = "Vanilla Vehicle Pack";
+        description = "Vanilla civilian vehicle pack";
         loadedMessage = "Vanilla loaded, civilian vehicle pool expanded";
     };
 
@@ -28,8 +28,8 @@ class AddonVics
         requiredAddons[] = {"A3_Soft_F_Exp_Offroad_02"};
         //format {side, file relative to path}
         files[] = { {"Civ", "apex_Civ.sqf"} };
-        displayName = "Apex vehicle pack";
-        description = "Apex vehicle pack(civillian vehicles (don't forget to enable dlc above!))";
+        displayName = "Apex Vehicle Pack";
+        description = "Apex civilian vehicle pack(civillian vehicles (don't forget to enable dlc above!))";
         loadedMessage = "Apex loaded, civilian vehicle pool expanded";
     };
 
@@ -39,8 +39,8 @@ class AddonVics
         requiredAddons[] = {"A3_Soft_F_Orange_Van_02"};
         //format {side, file relative to path}
         files[] = { {"Civ", "lawsofwar_Civ.sqf"} };
-        displayName = "Laws of war vehicle pack";
-        description = "Laws of war vehicle pack(if you want only civilian vehicles from dlc(don't forget to enable dlc above!))";
+        displayName = "Laws of war Vehicle Pack";
+        description = "Laws of war civilian vehicle pack(don't forget to enable dlc above!)";
         loadedMessage = "Lawsofwar loaded, civilian vehicle pool expanded";
     };
 
@@ -50,8 +50,8 @@ class AddonVics
         requiredAddons[] = {"A3_Soft_F_Enoch_Offroad_01"};
         //format {side, file relative to path}
         files[] = { {"Civ", "contact_Civ.sqf"} };
-        displayName = "Contact vehicle pack";
-        description = "Contact vehicle pack(if you want only civilian vehicles from dlc(don't forget to enable dlc above!))";
+        displayName = "Contact Vehicle Pack";
+        description = "Contact civilian vehicle pack(don't forget to enable dlc above!)";
         loadedMessage = "Contact loaded, civilian vehicle pool expanded";
     };
 
@@ -72,8 +72,8 @@ class AddonVics
         requiredAddons[] = {"Vehicles_F_lxWS_Offroad_01"};
         //format {side, file relative to path}
         files[] = { {"Civ", "westernsahara_Civ.sqf"} };
-        displayName = "Western Sahara vehicle pack";
-        description = "Western Sahara vehicle pack(if you want only civilian vehicles from cdlc(don't forget to enable cdlc above!))";
+        displayName = "Western Sahara Vehicle Pack";
+        description = "Western Sahara civilian vehicle pack(don't forget to enable cdlc above!)";
         loadedMessage = "Western Sahara loaded, civilian vehicle pool expanded";
     };
 
@@ -84,7 +84,7 @@ class AddonVics
         //format {side, file relative to path}
         files[] = { {"Civ", "reactionforces_Civ.sqf"} };
         displayName = "Reaction Forces Vehicle Pack";
-        description = "Reaction Forces vehicle pack(if you want only civilian vehicles from cdlc(don't forget to enable cdlc above!))";
+        description = "Reaction Forces civilian vehicle pack(don't forget to enable cdlc above!)";
         loadedMessage = "Reaction Forces loaded, civilian vehicle pool expanded";
     };
 
@@ -94,8 +94,8 @@ class AddonVics
         requiredAddons[] = {"wheeled_f_vietnam_02_c"};
         //format {side, file relative to path}
         files[] = { {"Civ", "SOG_Civ.sqf"} };
-        displayName = "S.O.G. vehicle pack";
-        description = "S.O.G. vehicle pack(if you want only civilian vehicles from cdlc(don't forget to enable cdlc above!))";
+        displayName = "S.O.G. Vehicle Pack";
+        description = "S.O.G. civilian vehicle pack(don't forget to enable cdlc above!)";
         loadedMessage = "S.O.G. loaded, civilian vehicle pool expanded";
     };
 
@@ -105,8 +105,8 @@ class AddonVics
         requiredAddons[] = {"gm_vehicles_land_wheeled_w123_ge_civ_w123"};
         //format {side, file relative to path}
         files[] = { {"Civ", "globalmobilization_Civ.sqf"} };
-        displayName = "Global Mobilization vehicle pack";
-        description = "Global Mobilization vehicle pack(if you want only civilian vehicles from cdlc(don't forget to enable cdlc above!))";
+        displayName = "Global Mobilization Vehicle Pack";
+        description = "Global Mobilization civilian vehicle pack(don't forget to enable cdlc above!)";
         loadedMessage = "Global Mobilization loaded, civilian vehicle pool expanded";
     };
 
@@ -116,8 +116,8 @@ class AddonVics
         requiredAddons[] = {"CSLA_CIV"};
         //format {side, file relative to path}
         files[] = { {"Civ", "clsaironcurtian_Civ.sqf"} };
-        displayName = "CLSA Iron Curtian vehicle pack";
-        description = "CLSA Iron Curtian vehicle pack(if you want only civilian vehicles from cdlc(don't forget to enable cdlc above!))";
+        displayName = "CLSA Iron Curtian Vehicle Pack";
+        description = "CLSA Iron Curtian civilian vehicle pack(don't forget to enable cdlc above!)";
         loadedMessage = "CLSA Iron Curtian loaded, civilian vehicle pool expanded";
     };
 
