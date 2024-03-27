@@ -37,11 +37,12 @@ FIX_LINE_NUMBERS()
 #define OccAndInv(VAR) (FactionGet(occ, VAR) + FactionGet(inv, VAR))
 private _vehicle = _veh;
 private _crewgroup = crew _vehicle;
+private _crewdriver = _crewgroup select 0;
+private _crewdgunner = _crewgroup select 1;
 if (isNull _player) exitWith { Error("_player is null.") };
 if (isNull _vehicle) exitWith {
     [localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_reinf_airstrike_not_looking_at_veh"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
-
 _owner = _vehicle getVariable ["ownerX",""];
 if !(_owner isEqualTo "" || {getPlayerUID _player isEqualTo _owner}) exitWith {  // Vehicle cannot be sold if owned by another player.
     [localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_err2"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
@@ -50,21 +51,22 @@ if !(_owner isEqualTo "" || {getPlayerUID _player isEqualTo _owner}) exitWith { 
 if (((side driver _vehicle==  west) || (side _vehicle == east)) && alive driver _vehicle) exitWith {
     [localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_err1"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
-
 /* if (_veh getVariable ["A3A_moveOutCrew_inProgress",false]) exitWith {[localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_err3"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];};
 _veh setVariable ["A3A_moveOutCrew_inProgress",true,false];   */ // Only processed on the server. It is absolutely pointless trying to network this due to race conditions.
 
-
-{
-	moveOut _x 
-} forEach units _vehicle;
-
+if (unitIsUAV _vehicle) then {
+    deleteVehicle _crewdriver;
+    deleteVehicle _crewgunner;
+};
 
 {
 	_x action ["Eject", _vehicle];
     unassignVehicle _x;
 } forEach units _vehicle;
 
+{
+	moveOut _x 
+} forEach units _vehicle;
 
 {
     _x leaveVehicle _vehicle;
