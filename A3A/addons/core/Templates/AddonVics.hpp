@@ -83,7 +83,7 @@ class AddonVics
         requiredAddons[] = {"RF_Vehicles_Pickup_01"};
         //format {side, file relative to path}
         files[] = { {"Civ", "reactionforces_Civ.sqf"} };
-        displayName = "Reaction Forces vehicle pack";
+        displayName = "Reaction Forces Vehicle Pack";
         description = "Reaction Forces vehicle pack(if you want only civilian vehicles from cdlc(don't forget to enable cdlc above!))";
         loadedMessage = "Reaction Forces loaded, civilian vehicle pool expanded";
     };
