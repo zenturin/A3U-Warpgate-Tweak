@@ -80,7 +80,7 @@ class AddonVics
     class ReactionForces
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
-        requiredAddons[] = {"RF_Vehicles_Pickup_01"/* ,"RF_Vehicles_Truck_03","C_Truck_01_water_rf","RF_Air_heli_medium_ec" */};
+        requiredAddons[] = {"RF_Vehicles_Pickup_01"};
         //format {side, file relative to path}
         files[] = { {"Civ", "reactionforces_Civ.sqf"} };
         displayName = "Reaction Forces vehicle pack";
