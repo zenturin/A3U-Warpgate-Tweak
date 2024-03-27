@@ -78,9 +78,9 @@ if (_reconvehicle == "SpaceshipCapsule_01_F") then {
 private _pilotClass = _faction get "unitPilot";
 
 private _searchHeliClass =  if (_difficult) then {
-    selectRandom ((_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
+    selectRandom ((_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack")) ///"vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
 } else {
-    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
+    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack")) ////"vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
 };
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
 
@@ -184,7 +184,7 @@ if (typeOf _reconvehicle == "SpaceshipCapsule_01_wreck_F") then {
 };
 _reconvehicledummy = createVehicle [_reconvehicledummy, [0, 0, 250], [], 0, "NONE"];
 
-_initPos = _crashPosition getPos [4500, random 360];
+_initPos = _crashPosition getPos [4500, random -180];
 _angleOffset = -28;
 _reconvehicledummy setPos (_initPos vectorAdd [0,0,2500]);
 
