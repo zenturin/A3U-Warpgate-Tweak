@@ -46,5 +46,12 @@ class CfgFunctions
             class logisticsGrabSeats {};
             class weightTest {};
         };
+        class zones
+        {
+            file = QPATHTOFOLDER(functions\zones);
+            class revealRandomZones {};
+            class revealZone {};
+            class revealZones {};
+        };
     };
 };
