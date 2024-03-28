@@ -68,7 +68,7 @@ while {true} do {
 };
 
 // selecting classnames
-private _reconvehicleClass = selectRandom ((_faction get "vehiclesPlanesTransport")/*  + (_faction get "uavsAttack") + (_faction get "vehiclesDropPod") */);
+private _reconvehicleClass = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") + (_faction get "vehiclesDropPod"));
 private _pilotClass = _faction get "unitPilot";
 
 if (_reconvehicleClass in (_faction get "vehiclesDropPod") ) exitWith { 
@@ -76,9 +76,9 @@ if (_reconvehicleClass in (_faction get "vehiclesDropPod") ) exitWith {
 };
 
 private _searchHeliClass =  if (_difficult) then {
-    selectRandom ((_faction get "vehiclesHelisLight") +(_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack")) ///"vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
+    selectRandom ((_faction get "vehiclesHelisLight") +(_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
 } else {
-    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack")) ////"vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
+    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
 };
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
 
