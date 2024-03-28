@@ -78,9 +78,9 @@ if (_reconvehicle == "SpaceshipCapsule_01_F") then {
 private _pilotClass = _faction get "unitPilot";
 
 private _searchHeliClass =  if (_difficult) then {
-    selectRandom ((_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack")) ///"vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
+    selectRandom ((_faction get "vehiclesHelisLight") +(_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
 } else {
-    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack")) ////"vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
+    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
 };
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
 
