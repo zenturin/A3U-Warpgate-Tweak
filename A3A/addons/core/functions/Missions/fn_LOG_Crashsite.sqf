@@ -68,7 +68,7 @@ while {true} do {
 };
 
 // selecting classnames
-private _reconvehicleClass = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack")/*  + (_faction get "vehiclesDropPod") */);
+private _reconvehicleClass = selectRandom ((_faction get "vehiclesPlanesTransport")/*  + (_faction get "uavsAttack") + (_faction get "vehiclesDropPod") */);
 private _pilotClass = _faction get "unitPilot";
 
 if (_reconvehicleClass in (_faction get "vehiclesDropPod") ) exitWith { 
@@ -123,9 +123,8 @@ Info_1("Crashsite position: %1", str _crashPosition);
 //creating mission marker near crash site
 
 private _reconvehicle = createVehicle [_reconvehicleClass, [_crashPosition select 0, _crashPosition select 1, 0.9], [], 0, "CAN_COLLIDE"];
-diag_log _reconvehicle;
 ///hide
-/* _reconvehicle hideObjectGlobal true; */
+_reconvehicle hideObjectGlobal true;
 
 private _crashPositionMarker = _reconvehicle getRelPos [random 1,random 1];
 
@@ -171,47 +170,52 @@ private _missionstart = serverTime;
 waitUntil {sleep 1; (player distance2D _crashPosition) < 1500 || _missionstart >= serverTime + 600 };
 ///
 
-diag_log _reconvehicle;
 _vehicles pushBack _reconvehicle;
 ///
 private _reconvehicledummy = createVehicle [_reconvehicleClass, [0, 0, 250], [], 0, "NONE"];
+private _quad = createVehicle ["I_Quadbike_01_F", [0, 0, 250], [], 0, "NONE"];
+_reconvehicledummy attachTo [_quad];
+/* _quad hideObjectGlobal true; */
 _reconvehicledummy setDamage 0.2;
-_initPos = _crashPosition getPos [1500, random 360];
-_angleOffset = -35;
-_reconvehicledummy setPos (_initPos vectorAdd [0,0,600]);
+_initPos = _crashPosition getPos [2500, random 360];
+_angleOffset = -32;
+_quad setPos (_initPos vectorAdd [0,0,1000]);
 
-_forwardVector = vectorDir _reconvehicledummy;
-_upVector = vectorUp _reconvehicledummy;
+_forwardVector = vectorDir _quad;
+_upVector = vectorUp _quad;
 
-_targetVector = (getPos _reconvehicledummy) vectorFromTo _crashPosition;
-_reconvehicledummy setVectorDir _targetVector;
-_newForwardVector = vectorDir _reconvehicledummy;
+_targetVector = (getPos _quad) vectorFromTo _crashPosition;
+_quad setVectorDir _targetVector;
+_newForwardVector = vectorDir _quad;
 _angleCos = _newForwardVector vectorCos _targetVector;
 _angle = acos(_angleCos) + _angleOffset;
 
-_reconvehicledummy setVectorUp [-cos (getDir _reconvehicledummy + 90), sin (getDir _reconvehicledummy + 90), 1 / (tan _angle)];
-_reconvehicledummy setVectorDirAndUp [vectorUp _reconvehicledummy, vectorDir _reconvehicledummy vectorMultiply -1];
+_quad setVectorUp [-cos (getDir _quad + 90), sin (getDir _quad + 90), 1 / (tan _angle)];
+_quad setVectorDirAndUp [vectorUp _quad, vectorDir _quad vectorMultiply -1];
 
-_vel = velocity _reconvehicledummy;
-_dir = vectorDir _reconvehicledummy;
-_additionalSpeed = 500; // in m/s
-_targetVector = [-cos (getDir _reconvehicledummy + 90), sin (getDir _reconvehicledummy + 90), 1 / (tan (_angle - 90))];
-_reconvehicledummy setVelocity (_targetVector vectorMultiply _additionalSpeed);
-
+_vel = velocity _quad;
+_dir = vectorDir _quad;
+_additionalSpeed = 130; // in m/s
+_targetVector = [-cos (getDir _quad + 90), sin (getDir _quad + 90), 1 / (tan (_angle - 90))];
+_quad setVelocity (_targetVector vectorMultiply _additionalSpeed);
+_reconvehicledummy setVectorUp _targetVector;
 ///VFX
-_bomb1 = "Sh_155mm_AMOS" createVehicle [getPos _reconvehicledummy select 0, getPos _reconvehicledummy select 1 ,10];
-[_reconvehicledummy] call A3A_fnc_Satellitelaunch;
+_bomb1 = "ammo_Missile_Cruise_01" createVehicle [getPos _quad select 0, getPos _quad select 1 ,0];
+[_quad] call A3A_fnc_Satellitelaunch;
 
-private _crashsiteactual = getPosATL _reconvehicledummy;
 
+private _crashsiteactual = getPosATL _quad;
+_bomb2 = "ammo_Missile_Cruise_01" createVehicle [(_crashsiteactual  select 0),(_crashsiteactual  select 1),0];
 clearWeaponCargoGlobal _reconvehicle;
 clearMagazineCargoGlobal _reconvehicle;
-_bomb2 = "Sh_155mm_AMOS" createVehicle [(_crashsiteactual select 0),(_crashsiteactual select 1),2];
 
 private _crater = "CraterLong_02_F" createVehicle _crashsiteactual;
+sleep 0.5;
 deletevehicle _reconvehicledummy;
-sleep 1;
+deletevehicle _quad;
+
 _reconvehicle setPos [_crashsiteactual select 0, _crashsiteactual select 1, 1];
+_reconvehicle hideObjectGlobal false;
 _reconvehicle setDamage 0.6;
 _reconvehicle animateDoor ["Door_rear_source", 1, true];
 
@@ -237,7 +241,7 @@ _pilot = "";
 _pilotPosition = "";
 _bloodSplatter = "";
 
-if (_reconvehicle in (_faction get "vehiclesPlanesTransport") ) then { 
+if (typeOf _reconvehicle in (_faction get "vehiclesPlanesTransport") ) then { 
     _pilot = [_groupPilot, _pilotClass, _reconvehicle, [], 0, "NONE"] call A3A_fnc_createUnit;
     _pilotPosition = position _pilot;
     _bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1, (_pilotPosition select 2) + 0.05], [], 0,  "CAN_COLLIDE"];
@@ -273,7 +277,7 @@ private _boxPosition = +_crashsiteactual;
 _boxPosition set [2, (_crashsiteactual select 2) + 5];
 private _box = _blackboxClass createVehicle _boxPosition;
 _box allowDamage false;
-// _box setVectorDirAndUp [[0,0,-1], [0,1,0]];
+_box setVectorDirAndUp [[0,0,-1], [0,1,0]];
 
 [_box] call A3A_Logistics_fnc_addLoadAction;
 
@@ -330,7 +334,7 @@ _cargoVehicleWp setWaypointType "GETOUT";
 _cargoVehicleWp setWaypointBehaviour "SAFE";
 
 //loiter helicopter
-_searchHeliData = [[(_cargoGroupSpawnpositon select 0) + random 100, (_cargoGroupSpawnpositon select 1) + random 100, 75 + random 75], 0, _searchHeliClass, _sideX] call A3A_fnc_spawnVehicle;
+_searchHeliData = [[(_cargoGroupSpawnpositon select 0) + random 100, (_cargoGroupSpawnpositon select 1) + random 100, 50 + random 75], 0, _searchHeliClass, _sideX] call A3A_fnc_spawnVehicle;
 _searchHeliVeh = _searchHeliData select 0;
 [_searchHeliVeh, _sideX] call A3A_fnc_AIVEHinit;
 _searchHeliCrew = _searchHeliData select 1;
@@ -462,7 +466,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         moveOut _x;
     } forEach _cargoSquad;
 
-    _cargoTimeout = time + (random [4,6,8]);
+    _cargoTimeout = time + (random [40,60,75]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     if(({alive _x} count units _cargoVehicleGroup) > 3 && {alive _cargoVehicle} && _cargoVehicle distance _box < 50) then {
@@ -483,7 +487,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    _cargoTimeout = time + (random [4,6,7]);
+    _cargoTimeout = time + (random [40,60,65]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     if(({alive _x} count units _cargoVehicleGroup) > 2) then {
@@ -512,7 +516,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    _cargoTimeout = time + (random [2,4,5]);
+    _cargoTimeout = time + (random [20,40,50]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     Info("Departing.");
@@ -669,6 +673,12 @@ switch(true) do {
         [250*_bonus,theBoss, true] call A3A_fnc_addMoneyPlayer;
         ["Large", _sideX] remoteExec ["A3A_fnc_selectIntel", 2];
         [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon; ///params ["_position", "_radius", "_revealTime", ["_isInterrogation", false]]; ///revels enemy location only once, which is not good?, dunno maybe it should do it every 2-5 minutes
+        sleep 60;
+        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
+        sleep 80;
+        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
+        sleep 100;
+        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
     };
     case(_box distance (getMarkerPos traderMarker) < 50): {
         Info("Box has been delivered to arms traider, mission completed.");
@@ -709,4 +719,4 @@ if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50}) then {
     deleteVehicle _box;
 };
 
-Info("crashsite clean up complete.");
+Info("Helicrash clean up complete.");
