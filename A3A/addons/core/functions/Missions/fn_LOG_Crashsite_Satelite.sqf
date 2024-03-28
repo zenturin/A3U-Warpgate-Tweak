@@ -488,7 +488,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         moveOut _x;
     } forEach _cargoSquad;
 
-    _cargoTimeout = time + (random [4,6,8]);
+    _cargoTimeout = time + (random [40,60,75]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     if(({alive _x} count units _cargoVehicleGroup) > 3 && {alive _cargoVehicle} && _cargoVehicle distance _box < 50) then {
@@ -509,7 +509,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    _cargoTimeout = time + (random [4,6,7]);
+    _cargoTimeout = time + (random [40,60,65]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     if(({alive _x} count units _cargoVehicleGroup) > 2) then {
@@ -538,7 +538,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    _cargoTimeout = time + (random [2,4,5]);
+    _cargoTimeout = time + (random [20,40,50]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     Info("Departing.");
@@ -695,6 +695,12 @@ switch(true) do {
         [250*_bonus,theBoss, true] call A3A_fnc_addMoneyPlayer;
         ["Large", _sideX] remoteExec ["A3A_fnc_selectIntel", 2];
         [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon; ///params ["_position", "_radius", "_revealTime", ["_isInterrogation", false]]; ///revels enemy location only once, which is not good?, dunno maybe it should do it every 2-5 minutes
+        sleep 60;
+        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
+        sleep 80;
+        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
+        sleep 100;
+        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
     };
     case(_box distance (getMarkerPos traderMarker) < 50): {
         Info("Box has been delivered to arms traider, mission completed.");
