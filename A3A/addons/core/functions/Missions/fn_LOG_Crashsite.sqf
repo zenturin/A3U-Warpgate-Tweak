@@ -76,9 +76,9 @@ if (_reconvehicleClass in (_faction get "vehiclesDropPod") ) exitWith {
 };
 
 private _searchHeliClass =  if (_difficult) then {
-    selectRandom ((_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack")) ///"vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
+    selectRandom ((_faction get "vehiclesHelisLight") +(_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack")) ///"vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
 } else {
-    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLight")) ////"vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
+    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack")) ////"vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
 };
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
 
@@ -210,7 +210,6 @@ clearWeaponCargoGlobal _reconvehicle;
 clearMagazineCargoGlobal _reconvehicle;
 
 private _crater = "CraterLong_02_F" createVehicle _crashsiteactual;
-sleep 0.5;
 deletevehicle _reconvehicledummy;
 deletevehicle _quad;
 
@@ -242,9 +241,9 @@ _pilotPosition = "";
 _bloodSplatter = "";
 
 if (typeOf _reconvehicle in (_faction get "vehiclesPlanesTransport") ) then { 
-    _pilot = [_groupPilot, _pilotClass, _reconvehicle, [], 0, "NONE"] call A3A_fnc_createUnit;
+    _pilot = [_groupPilot, _pilotClass, _crashsiteactual, [], 0, "NONE"] call A3A_fnc_createUnit;
     _pilotPosition = position _pilot;
-    _bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1, (_pilotPosition select 2) + 0.05], [], 0,  "CAN_COLLIDE"];
+    _bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1,0/*  + 0.05 */], [], 0,  "CAN_COLLIDE"];
     _pilot setDamage 1;
 };
 
@@ -719,4 +718,4 @@ if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50}) then {
     deleteVehicle _box;
 };
 
-Info("Helicrash clean up complete.");
+Info("crashsite clean up complete.");
