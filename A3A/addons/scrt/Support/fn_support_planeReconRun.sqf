@@ -12,7 +12,7 @@ private _planeCrew = _planeData select 1;
 private _groupPlane = _planeData select 2;
 
 if (hideEnemyMarkers) then {
-    [_positionDestination, 1500, _plane] spawn A3U_fnc_revealZonesDistance;
+    [_positionDestination, 2250, _plane] spawn A3U_fnc_revealZonesDistance;
 };
 
 _plane setPosATL [getPosATL _plane select 0, getPosATL _plane select 1, 1000];
