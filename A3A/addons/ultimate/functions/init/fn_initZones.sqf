@@ -3,6 +3,8 @@ params [["_markersX", markersX]];
 // private _hideEnemyMarkers = missionNamespace getVariable ["A3U_setting_hideEnemyMarkers",false];
 if !(hideEnemyMarkers) exitWith {};
 
+markersImmune = markersX select {("cont" in _x) || {(_x in citiesX)} || {(_x in airportsX)}}; // this var should in theory only be seen by the server
+
 {
     private _markerSide = sidesX getVariable [_x, sideUnknown];
     if (_markerSide isNotEqualTo sideUnknown && {_markerSide isNotEqualTo resistance}) then 

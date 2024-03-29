@@ -52,6 +52,7 @@ class CfgFunctions
             class revealRandomZones {};
             class revealZone {};
             class revealZones {};
+            class revealZonesDistance {};
         };
     };
 };

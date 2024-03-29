@@ -3,6 +3,10 @@ params [
     ["_message", ""]
 ];
 
+if !(isServer) exitWith {
+    [_amount, _message] remoteExec ["A3U_fnc_revealRandomZones", 2];
+};
+
 if (_amount isEqualTo 0) then {
     _amount = 1;
 };
@@ -20,7 +24,7 @@ private _unhiddenMarkers = [];
 
 {
     private _markerSide = sidesX getVariable [_x, sideUnknown];
-    if (("cont" in _x) || {(_x in citiesX)} || {(_x in airportsX)}) then {} else {
+    if (_x in markersImmune) then {} else {
         if (_markerSide isNotEqualTo resistance) then {
             _availableMarkers pushBack _x;
         };
