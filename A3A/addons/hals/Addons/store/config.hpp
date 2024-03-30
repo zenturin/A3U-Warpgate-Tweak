@@ -55,6 +55,14 @@ class cfgHALsStore
 		#include "config\tow.hpp"
 		#include "config\unsung.hpp"
 		#include "config\vanilla.hpp"
+		#include "config\apex.hpp"
+		#include "config\lawsofwar.hpp"
+		#include "config\contact.hpp"
+		#include "config\marksmen.hpp"
+		#include "config\jets.hpp"
+		#include "config\kart.hpp"
+		#include "config\tanks.hpp"
+		#include "config\artofwar.hpp"
 		#include "config\vn.hpp"
 		#include "config\wrs.hpp"
 		#include "config\ws.hpp"
@@ -79,6 +87,105 @@ class cfgHALsStore
 				"pointersVanilla", 
 				"navigationVanilla", 
 				"miscVanilla"
+			};
+		};
+
+		class apex 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesApex", 
+				"sniperRiflesApex", 
+				"mgApex",
+				"smgApex",
+				"launchersApex", 
+				"magazinesApex", 
+				"opticsApex", 
+				"muzzlesApex", 
+				"underbarrelApex", 
+				"pointersApex", 
+				"navigationApex", 
+				"miscApex"
+			};
+		};
+
+		class lawsofwar 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"navigationVanilla", 
+				"miscVanilla"
+			};
+		};
+
+		class contact
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesContact", 
+				"sniperRiflesContact", 
+				"mgContact",
+				"smgContact",
+				"launchersContact", 
+				"magazinesContact", 
+				"opticsContact", 
+				"muzzlesContact", 
+				"underbarrelContact", 
+				"pointersContact", 
+				"navigationContact", 
+				"miscContact"
+			};
+		};
+
+		class marksmen
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesMarksmen", 
+				"sniperRiflesMarksmen", 
+				"mgMarksmen",
+				"magazinesMarksmen", 
+				"opticsMarksmen", 
+				"muzzlesMarksmen", 
+				"underbarrelMarksmen", 
+				"navigationMarksmen", 
+				"miscMarksmen"
+			};
+		};
+
+		class jets 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"miscJets"
+			};
+		};
+
+		class kart
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsKart", 
+				"magazinesKart",
+				"miscVanilla"
+			};
+		};
+
+		class tanks
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"launchersTanks", 
+				"magazinesTanks", 
+				"miscTanks"
+			};
+		};
+
+		class artofwar
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"miscArtofwar"
 			};
 		};
 
