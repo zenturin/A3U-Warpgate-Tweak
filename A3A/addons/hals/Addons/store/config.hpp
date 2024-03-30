@@ -79,7 +79,9 @@ class cfgHALsStore
 				"riflesVanilla", 
 				"sniperRiflesVanilla", 
 				"mgVanilla",
-				"smgVanilla", 
+				"smgVanilla",
+				"launchersVanilla",
+				"launcherMagazinesVanilla",
 				"magazinesVanilla", 
 				"opticsVanilla", 
 				"muzzlesVanilla", 
@@ -98,7 +100,8 @@ class cfgHALsStore
 				"sniperRiflesApex", 
 				"mgApex",
 				"smgApex",
-				"launchersApex", 
+				"launchersApex",
+				"launcherMagazinesApex",
 				"magazinesApex", 
 				"opticsApex", 
 				"muzzlesApex", 
@@ -126,7 +129,7 @@ class cfgHALsStore
 				"sniperRiflesContact", 
 				"mgContact",
 				"smgContact",
-				"launchersContact", 
+				"launchersContact",
 				"magazinesContact", 
 				"opticsContact", 
 				"muzzlesContact", 
@@ -175,7 +178,8 @@ class cfgHALsStore
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
-				"launchersTanks", 
+				"launchersTanks",
+				"launcherMagazinesTanks",
 				"magazinesTanks", 
 				"miscTanks"
 			};
