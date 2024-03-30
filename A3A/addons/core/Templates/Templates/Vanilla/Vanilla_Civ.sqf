@@ -220,7 +220,8 @@ if ("rf" in A3A_enabledDLC) then {
         "U_C_PilotJacket_lbrown_RF",
         "U_C_PilotJacket_open_black_RF",
         "U_C_PilotJacket_open_brown_RF",
-        "U_C_PilotJacket_open_lbrown_RF"];
+        "U_C_PilotJacket_open_lbrown_RF"
+    ];
     _dlcUniforms append _RFleatherJackets;
     if (A3A_climate in ["temperate","arctic"]) then {
         _civUniforms append _RFleatherJackets;

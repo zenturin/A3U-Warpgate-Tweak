@@ -1,8 +1,13 @@
 private _hasWs = "ws" in A3A_enabledDLC;
+private _hasMarksman = "mark" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
+private _hasTanks = "tank" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
+private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
+private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
+private _hasKart = "kart" in A3A_enabledDLC;
 
 ///////////////////////////
 //   Rebel Information   //
@@ -18,7 +23,7 @@ private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _vehiclesLightUnarmed = ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F"]; 
 private _vehiclesLightArmed = ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F"];
 ["vehiclesTruck", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
-private _vehiclesAt = ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F"];
+private _vehiclesAT = ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F"];
 private _vehicleAA = [];
 
 ["vehiclesBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
@@ -47,7 +52,7 @@ if (_hasWs) then {
     _vehiclesLightUnarmed pushBack "I_G_Offroad_01_armor_base_lxWS";
     _vehiclesLightArmed pushBack "I_G_Offroad_01_armor_armed_lxWS";
     _vehiclesAt pushBack "I_G_Offroad_01_armor_AT_lxWS";
-    _vehiclesAA pushBack "I_Tura_Truck_02_aa_lxWS";
+    _vehicleAA pushBack "I_Tura_Truck_02_aa_lxWS";
     _staticAA = ["I_Tura_ZU23_lxWS"];
 };
 
@@ -64,8 +69,8 @@ if ("rf" in A3A_enabledDLC) then {
 ["vehiclesCivCar", _vehiclesCivCar] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", _vehiclesLightUnarmed] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", _vehiclesLightArmed] call _fnc_saveToTemplate;
-["vehiclesAT", _vehiclesAt] call _fnc_saveToTemplate;
-["vehiclesAA", _vehiclesAA] call _fnc_saveToTemplate;
+["vehiclesAT", _vehiclesAT] call _fnc_saveToTemplate;
+["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
@@ -431,7 +436,7 @@ if (_hasLawsOfWar) then {
     ];
 };
 
-["headgear", _headgear + _dlcheadgear] call _fnc_saveToTemplate;
+["headgear", _dlcheadgear] call _fnc_saveToTemplate;
 
 /////////////////////
 ///  Identities   ///

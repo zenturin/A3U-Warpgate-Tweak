@@ -503,46 +503,6 @@ _sfLoadoutData set ["sidearms", [
 ["hgun_ACPC2_F", "muzzle_snds_acp", "acc_flashlight_pistol", "", [], [], ""]
 ]];
 
-if ("rf" in A3A_enabledDLC) then {
-    (_sfLoadoutData get "sidearms") append [
-        ["hgun_Glock19_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],
-        ["hgun_Glock19_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],
-        ["hgun_Glock19_auto_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],
-        ["hgun_Glock19_auto_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],
-        ["hgun_Glock19_auto_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""]
-    ];
-    (_militaryLoadoutData get "sidearms") append [
-        ["hgun_Glock19_khk_RF", "", "acc_flashlight_pistol", "", [], [], ""],
-        ["hgun_Glock19_khk_RF", "", "acc_flashlight_pistol", "", [], [], ""],
-        ["hgun_Glock19_khk_RF", "", "acc_flashlight_pistol", "", [], [], ""],
-        ["hgun_Glock19_khk_RF", "", "acc_flashlight_pistol", "optic_MRD_khk_RF", [], [], ""],
-        ["hgun_Glock19_auto_khk_RF", "", "acc_flashlight_pistol", "", [], [], ""]
-    ];
-    (_policeLoadoutData get "sidearms") append ["hgun_Glock19_RF"];
-    (_pilotLoadoutData get "uniforms") append ["U_B_HeliPilotCoveralls_MTP_RF"];
-    (_sfLoadoutData get "SMGs") append [
-        ["SMG_01_black_RF", "muzzle_snds_acp", "", "optic_Holosight", [], [], ""]
-    ];
-    (_militaryLoadoutData get "SMGs") append [
-        ["SMG_01_black_RF", "", "", "optic_Holosight", [], [], ""],
-        ["SMG_01_black_RF", "", "", "optic_Aco_smg", [], [], ""]
-    ];
-    (_militiaLoadoutData get "SMGs") append [
-        ["SMG_01_black_RF", "", "acc_flashlight_smg_01", "", [], [], ""]
-    ];
-    (_policeLoadoutData get "SMGs") append [
-        ["SMG_01_black_RF", "", "acc_flashlight_smg_01", "optic_Holosight", [], [], ""],
-        ["SMG_01_black_RF", "", "acc_flashlight_smg_01", "optic_Aco_smg", [], [], ""]
-    ];
-    (_sfLoadoutData get "helmets") append [
-        "H_HelmetB_plain_sb_tna_RF",
-        "H_HelmetHeavy_Olive_RF",
-        "H_HelmetHeavy_Simple_Olive_RF",
-        "H_HelmetHeavy_VisorUp_Olive_RF"
-    ];
-    (_militaryLoadoutData get "helmets") append ["H_HelmetB_plain_sb_tna_RF"];
-};
-
 /////////////////////////////////
 //    Elite Loadout Data       //
 /////////////////////////////////
@@ -835,8 +795,45 @@ _pilotLoadoutData set ["uniforms", ["U_B_HeliPilotCoveralls"]];
 _pilotLoadoutData set ["vests", ["V_TacVest_oli"]];
 _pilotLoadoutData set ["helmets", ["H_CrewHelmetHeli_B", "H_PilotHelmetHeli_B"]];
 
-
-
+if ("rf" in A3A_enabledDLC) then {
+    (_sfLoadoutData get "sidearms") append [
+        ["hgun_Glock19_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],
+        ["hgun_Glock19_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],
+        ["hgun_Glock19_auto_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],
+        ["hgun_Glock19_auto_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],
+        ["hgun_Glock19_auto_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""]
+    ];
+    (_militaryLoadoutData get "sidearms") append [
+        ["hgun_Glock19_khk_RF", "", "acc_flashlight_pistol", "", [], [], ""],
+        ["hgun_Glock19_khk_RF", "", "acc_flashlight_pistol", "", [], [], ""],
+        ["hgun_Glock19_khk_RF", "", "acc_flashlight_pistol", "", [], [], ""],
+        ["hgun_Glock19_khk_RF", "", "acc_flashlight_pistol", "optic_MRD_khk_RF", [], [], ""],
+        ["hgun_Glock19_auto_khk_RF", "", "acc_flashlight_pistol", "", [], [], ""]
+    ];
+    (_policeLoadoutData get "sidearms") append ["hgun_Glock19_RF"];
+    (_pilotLoadoutData get "uniforms") append ["U_B_HeliPilotCoveralls_MTP_RF"];
+    (_sfLoadoutData get "SMGs") append [
+        ["SMG_01_black_RF", "muzzle_snds_acp", "", "optic_Holosight", [], [], ""]
+    ];
+    (_militaryLoadoutData get "SMGs") append [
+        ["SMG_01_black_RF", "", "", "optic_Holosight", [], [], ""],
+        ["SMG_01_black_RF", "", "", "optic_Aco_smg", [], [], ""]
+    ];
+    (_militiaLoadoutData get "SMGs") append [
+        ["SMG_01_black_RF", "", "acc_flashlight_smg_01", "", [], [], ""]
+    ];
+    (_policeLoadoutData get "SMGs") append [
+        ["SMG_01_black_RF", "", "acc_flashlight_smg_01", "optic_Holosight", [], [], ""],
+        ["SMG_01_black_RF", "", "acc_flashlight_smg_01", "optic_Aco_smg", [], [], ""]
+    ];
+    (_sfLoadoutData get "helmets") append [
+        "H_HelmetB_plain_sb_tna_RF",
+        "H_HelmetHeavy_Olive_RF",
+        "H_HelmetHeavy_Simple_Olive_RF",
+        "H_HelmetHeavy_VisorUp_Olive_RF"
+    ];
+    (_militaryLoadoutData get "helmets") append ["H_HelmetB_plain_sb_tna_RF"];
+};
 
 /////////////////////////////////
 //    Unit Type Definitions    //
