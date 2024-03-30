@@ -15,7 +15,7 @@ _addon set ["vehiclesCivRepair", [
 ]];
 
 _addon set ["vehiclesCivFuel", [
-	"C_IDAP_Pickup_fuel_rf" , 0.1
+	"a3a_civ_Pickup_fuel_rf" , 0.1
 ]];
 
 _addon set ["vehiclesCivHeli", [
