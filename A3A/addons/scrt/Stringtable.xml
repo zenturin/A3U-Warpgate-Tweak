@@ -6764,7 +6764,7 @@
                 <Original>%1 operates through a network of cells and hideouts. You and your allies can obtain data that increase your knowledge about this network through interrogations, cell leader laptop data mining and completing tasks. When progress bar fully fills, another hideout or cell will be revealed, so you can start an attack on it.</Original>
                 <Russian>%1 действуют через сеть ячеек и укрытий. Вы и ваши союзники можете получать данные, расширяющие ваши знания об этой сети, посредством допросов, сбора данных с ноутбука лидера ячейки и выполнения заданий. Когда полоса прогресса полностью заполнится, откроется еще одно убежище или ячейка, чтобы вы могли начать атаку на нее.</Russian>
                 <Chinesesimp>%1 通过密室和藏身处网络运作。 您和您的盟友可以通过审讯、小组组长笔记本电脑数据挖掘和完成任务来获取增加您对该网络了解的数据。 当进度条完全填满时，将显示另一个藏身处或单元格，因此您可以对其发起攻击。</Chinesesimp>
-                <Korean>%1은 셀과 은신처의 연락망을 통해 작전을 수행합니다. 당신과 당신의 아군들은 심문, 국가정보원 요원의 노트북 데이터 채굴 및 완료 과업을 통해 이 연락망에 대한 지식을 상승시키는 데이터를 얻을 수 있습니다. 진행 표시줄이 완전히 채워지면 다른 은신처나 셀이 나타나므로 이에 대한 공격을 시작할 수 있습니다.</Korean>
+                <Korean>%1은(는) 셀과 은신처의 연락망을 통해 작전을 수행합니다. 당신과 당신의 아군들은 심문, 셀 리더의 노트북 데이터 채굴 및 완료 과업을 통해 이 연락망에 대한 지식을 상승시키는 데이터를 얻을 수 있습니다. 진행 표시줄이 완전히 채워지면 다른 은신처나 셀이 나타나므로 이에 대한 공격을 시작할 수 있습니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_rivals_network_progress_bar_tooltip">
                 <Original>Next %1 Location Reveal.</Original>
@@ -6912,7 +6912,7 @@
                 <Original>Antistasi Ultimate Team</Original>
                 <Russian>Antistasi Ultimate Team</Russian>
                 <Chinesesimp>Antistasi Ultimate Team</Chinesesimp>
-                <Korean>Antistasi Ultimate Team</Korean>
+                <Korean>안티스타시 얼티밋 팀</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_cw_mode">
                 <Original>Cold War Mode</Original>
