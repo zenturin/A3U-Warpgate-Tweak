@@ -170,7 +170,6 @@ class cfgHALsStore
 			categories[] = {
 				"handgunsKart", 
 				"magazinesKart",
-				"miscVanilla"
 			};
 		};
 
