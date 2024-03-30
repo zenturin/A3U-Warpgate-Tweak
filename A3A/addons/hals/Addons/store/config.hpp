@@ -179,8 +179,7 @@ class cfgHALsStore
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
 				"launchersTanks",
-				"launcherMagazinesTanks",
-				"magazinesTanks", 
+				"launcherMagazinesTanks", 
 				"miscTanks"
 			};
 		};
