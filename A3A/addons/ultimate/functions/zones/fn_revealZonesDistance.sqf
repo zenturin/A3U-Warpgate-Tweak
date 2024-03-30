@@ -15,7 +15,7 @@ if (_vehicle isNotEqualTo objNull) then {
 };
 
 if (_pos isNotEqualTo [] && {_distance isNotEqualTo 0}) then {
-    _markers = markersX select { !(_x in markersImmune) && { ( (getMarkerPos _x) distance2D _pos ) <= _distance} };
+    _markers = markersX select { ((sidesX getVariable [_x, sideUnknown]) isNotEqualTo resistance) && {!(_x in markersImmune)} && { ( (getMarkerPos _x) distance2D _pos ) <= _distance} };
 };
 
 if (_markers isEqualTo []) exitWith {
