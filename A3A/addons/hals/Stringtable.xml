@@ -507,6 +507,11 @@
                 <English>Apex</English>
                 <Russian>Apex</Russian>
             </Key>
+            <Key ID="STR_A3AU_Artofwar">
+                <Original>Art of war</Original>
+                <English>Art of war</English>
+                <Russian>Art of war</Russian>
+            </Key>
             <Key ID="STR_A3AU_Contact">
                 <Original>Contact</Original>
                 <English>Contact</English>
@@ -523,9 +528,9 @@
                 <Russian>Kart</Russian>
             </Key>
             <Key ID="STR_A3AU_Lawsofwar">
-                <Original>Lawsofwa</Original>
-                <English>Lawsofwa</English>
-                <Russian>Lawsofwa</Russian>
+                <Original>Laws of war</Original>
+                <English>Laws of war</English>
+                <Russian>Laws of war</Russian>
             </Key>
             <Key ID="STR_A3AU_Marksmen">
                 <Original>Marksmen</Original>
