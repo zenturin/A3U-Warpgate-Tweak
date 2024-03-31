@@ -10956,6 +10956,10 @@
                 <Original>Move out crew</Original>
                 <Russian>Выгнать экипаж из техники</Russian>
             </Key>
+            <Key ID="STR_A3A_Base_moveOutCrew_err0">
+                <Original>Vehicle must contain rebel crew or civillian crew.</Original>
+                <Russian>В транспортном средстве должен находиться экипаж повстанцев или гражданских.</Russian>
+            </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err0">
                 <Original>Vehicle must be closer than 50 meters to the headquarters marker.</Original>
                 <Russian>Техника должна быть ближе 50 метров чтобы её можно было продать.</Russian>
