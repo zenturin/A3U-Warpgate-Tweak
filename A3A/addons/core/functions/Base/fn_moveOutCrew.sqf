@@ -10,11 +10,11 @@ Return Value:
 <NIL> nil
 
 Scope: Server/HC, All calls need to be executed on one machine, using an HC is also possible.
-Environment: Unscheduled, is used to sell vehicles, execution cannot be stacked and exploited.
+Environment: Unscheduled, is used to moveout crew, execution cannot be stacked and exploited.
 Public: No
 Dependencies:
 <STRING> ownerX found on vehicles, contains UID of player who bought it.
-<ARRAY> Template vehicle arrays, see costs = call {}.
+<ARRAY> Template vehicle arrays.
 
 Example:
 // From a button control:
@@ -49,8 +49,9 @@ if !(_owner isEqualTo "" || {getPlayerUID _player isEqualTo _owner}) exitWith { 
 };
 
 if (((side driver _vehicle==  west) || (side _vehicle == east)) && alive driver _vehicle) exitWith {
-    [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_Base_sellVehicle_err1"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
+    [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_Base_moveOutCrew_err0"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
+
 /* if (_veh getVariable ["A3A_moveOutCrew_inProgress",false]) exitWith {[localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_err3"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];};
 _veh setVariable ["A3A_moveOutCrew_inProgress",true,false];   */ // Only processed on the server. It is absolutely pointless trying to network this due to race conditions.
 
@@ -60,7 +61,7 @@ if (unitIsUAV _vehicle) then {
 };
 
 {
-	_x action ["Eject", _vehicle];
+    _x action ["Eject", _vehicle];
     unassignVehicle _x;
 } forEach units _vehicle;
 
