@@ -500,7 +500,46 @@
                 <Original>Arma 3</Original>
                 <English>Arma 3</English>
                 <Russian>Арма 3</Russian>
-                <Korean>아르마 3</Korean>
+            </Key>
+            <Key ID="STR_A3AU_Apex">
+                <Original>Apex</Original>
+                <English>Apex</English>
+                <Russian>Apex</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Contact">
+                <Original>Contact</Original>
+                <English>Contact</English>
+                <Russian>Contact</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Jets">
+                <Original>Jets</Original>
+                <English>Jets</English>
+                <Russian>Jets</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Kart">
+                <Original>Kart</Original>
+                <English>Kart</English>
+                <Russian>Kart</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Lawsofwar">
+                <Original>Lawsofwa</Original>
+                <English>Lawsofwa</English>
+                <Russian>Lawsofwa</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Marksmen">
+                <Original>Marksmen</Original>
+                <English>Marksmen</English>
+                <Russian>Marksmen</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Tanks">
+                <Original>Tanks</Original>
+                <English>Tanks</English>
+                <Russian>Tanks</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Kkiv2035">
+                <Original>Kkiv 2035</Original>
+                <English>Kkiv 2035</English>
+                <Russian>Kkiv 2035</Russian>
             </Key>
             <Key ID="STR_A3AU_3cbbaf">
                 <Original>3CBBAF</Original>
