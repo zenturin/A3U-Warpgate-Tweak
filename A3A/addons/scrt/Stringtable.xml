@@ -5867,6 +5867,14 @@
                 <Chinesesimp>卖掉你正在看的载具，然后把钱存入派系的账户。</Chinesesimp>
                 <Korean>차량을 보고 돈을 받고 파십시오.</Korean>
             </Key>
+            <Key ID="STR_antistasi_dialogs_moveout_crew_title">
+                <Original>Moveout vehicle crew</Original>
+                <Russian>Выгнать экипаж их техники</Russian>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_moveout_crew_tooltip">
+                <Original>Moves out crew from vehicle you loking at.</Original>
+                <Russian>Выгоняет экипаж из техники на которую вы смотрите.</Russian>
+            </Key>>
             <Key ID="STR_antistasi_dialogs_arsenal_limits_title">
                 <Original>Arsenal Limits</Original>
                 <Russian>Лимиты арсенала</Russian>
@@ -10954,6 +10962,14 @@
                 <Chinesesimp>卖载具</Chinesesimp>
                 <Korean>차량 판매</Korean>
             </Key>
+            <Key ID="STR_A3A_Base_moveOutCrew_header">
+                <Original>Move out crew</Original>
+                <Russian>Выгнать экипаж из техники</Russian>
+            </Key>
+            <Key ID="STR_A3A_Base_moveOutCrew_err0">
+                <Original>Vehicle must contain rebel crew or civillian crew.</Original>
+                <Russian>В транспортном средстве должен находиться экипаж повстанцев или гражданских.</Russian>
+            </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err0">
                 <Original>Vehicle must be closer than 50 meters to the headquarters marker.</Original>
                 <Russian>Техника должна быть ближе 50 метров чтобы её можно было продать.</Russian>
@@ -10989,6 +11005,10 @@
                 <Russian>Транспортное средство продано.</Russian>
                 <Chinesesimp>载具已出售</Chinesesimp>
                 <Korean>차량 판매 완료.</Korean>
+            </Key>
+            <Key ID="STR_A3A_Base_moveOutCrew_success">
+                <Original>Crew moved out.</Original>
+                <Russian>Экипаж покинул технику.</Russian>
             </Key>
         </Container>
         <Container name="A3A_CREATE">
