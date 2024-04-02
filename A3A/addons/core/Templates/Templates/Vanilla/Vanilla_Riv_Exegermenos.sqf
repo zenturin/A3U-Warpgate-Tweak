@@ -499,6 +499,42 @@ if (_hasLawsOfWar) then {
 	_vests append ["V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F"];
 };
 
+if (_hasGM) then {
+	_vests append [
+	"gm_ge_vest_90_crew_flk", 
+	"gm_ge_vest_90_demolition_flk", 
+	"gm_ge_vest_90_leader_flk", 
+	"gm_ge_vest_90_machinegunner_flk", 
+	"gm_ge_vest_90_medic_flk", 
+	"gm_ge_vest_90_officer_flk" ,
+	"gm_ge_vest_90_rifleman_flk",
+	"gm_gc_vest_combatvest3_str",
+	"gm_gc_army_vest_80_at_str",
+	"gm_gc_bgs_vest_80_border_str",
+	"gm_ge_bgs_vest_80_rifleman",
+	"gm_dk_army_vest_54_crew",
+	"gm_ge_army_vest_80_demolition",
+	"gm_ge_army_vest_80_leader",
+	"gm_gc_army_vest_80_leader_str",
+	"gm_ge_army_vest_80_leader_smg",
+	"gm_ge_army_vest_80_machinegunner",
+	"gm_gc_army_vest_80_lmg_str",
+	"gm_dk_army_vest_54_machinegunner",
+	"gm_ge_army_vest_80_medic",
+	"gm_ge_army_vest_80_rifleman",
+	"gm_gc_army_vest_80_rifleman_str",
+	"gm_dk_army_vest_54_rifleman",
+	"gm_ge_vest_sov_80_blk",
+	"gm_ge_vest_sov_80_oli",
+	"gm_ge_vest_sov_80_wdl",
+	"gm_pl_army_vest_80_at_gry",
+	"gm_pl_army_vest_80_leader_gry",
+	"gm_pl_army_vest_80_mg_gry",
+	"gm_pl_army_vest_80_rifleman_gry",
+	"gm_pl_army_vest_80_rifleman_smg_gry"
+	];
+};
+
 private _heavyVests = ["V_TacVestIR_blk", "V_Press_F", "V_PlateCarrierIAGL_oli", "V_I_G_resistanceLeader_F", "V_TacVest_blk_POLICE"];
 
 if (_hasApex) then {
@@ -517,6 +553,35 @@ if (_hasJets) then {
 	_heavyVests pushBack "V_DeckCrew_brown_F";
 };
 
+if (_hasGM) then {
+	_heavyVests append [
+	"gm_ge_army_vest_pilot_oli", 
+	"gm_ge_vest_armor_90_flk", 
+	"gm_ge_vest_armor_90_crew_flk",
+	"gm_ge_vest_armor_90_demolition_flk",
+	"gm_ge_vest_armor_90_leader_flk",
+	"gm_ge_vest_armor_90_machinegunner_flk",
+	"gm_ge_vest_armor_90_medic_flk",
+	"gm_ge_vest_armor_90_officer_flk",
+	"gm_ge_vest_armor_90_rifleman_flk",
+	"gm_dk_army_vest_m00_m84",
+	"gm_dk_army_vest_m00_wdl",
+	"gm_dk_army_vest_m00_m84_machinegunner",
+	"gm_dk_army_vest_m00_m84_rifleman",
+	"gm_dk_army_vest_m00_wdl_rifleman",
+	"gm_ge_vest_sov_armor_80_blk",
+	"gm_ge_vest_sov_armor_80_oli",
+	"gm_ge_vest_sov_armor_80_wdl",
+	"gm_ge_army_vest_type18_dpm",
+	"gm_ge_bgs_vest_type18_blk",
+	"gm_ge_bgs_vest_type18_grn",
+	"gm_ge_bgs_vest_type3_oli",
+	"gm_ge_bgs_vest_type3_gry",
+	"gm_ge_bgs_vest_type3a1_oli",
+	"gm_ge_bgs_vest_type3a1_gry"
+	];
+};
+
 /////Uniforms
 _loadoutData set ["uniforms", [
 	"U_I_C_Soldier_Para_4_F",
@@ -525,7 +590,58 @@ _loadoutData set ["uniforms", [
 	"U_I_C_Soldier_Para_1_F",
 	"U_I_C_Soldier_Camo_F"
 ]];
+
+if (_hasWS) then {
+	(_loadoutData get "uniforms") append [
+        "U_lxWS_SFIA_soldier_2_O",
+        "U_lxWS_SFIA_soldier_1_O",
+        "U_lxWS_ION_Casual3",
+        "U_lxWS_ION_Casual6",
+		"U_lxWS_ION_Casual5",
+		"U_SFIA_deserter_lxWS",
+		"U_lxWS_SFIA_deserter",
+		"U_lxWS_SFIA_pilot_O",
+		"U_lxWS_SFIA_Tanker_O"
+    ];
+};
+
+if (_hasContact) then {
+	(_loadoutData get "uniforms") append [
+        "U_I_E_Uniform_01_sweater_F",
+        "U_I_E_Uniform_01_tanktop_F",
+        "U_I_L_Uniform_01_camo_F",
+        "U_I_L_Uniform_01_deserter_F",
+		"U_C_E_LooterJacket_01_F",
+		"U_I_L_Uniform_01_tshirt_olive_F"
+    ];
+};
+
+if (_hasGM) then {
+	(_loadoutData get "uniforms") append [
+        "gm_ge_uniform_soldier_tshirt_90_oli",
+        "gm_ge_uniform_soldier_tshirt_90_flk",
+        "gm_xx_uniform_soldier_bdu_80_oli",
+        "gm_xx_uniform_soldier_bdu_nogloves_80_oli",
+		"gm_xx_uniform_soldier_bdu_rolled_80_oli",
+		"gm_pl_army_uniform_soldier_80_moro",
+		"gm_pl_army_uniform_soldier_autumn_80_moro",
+		"gm_pl_army_uniform_soldier_rolled_80_moro",
+		"gm_xx_army_uniform_fighter_04_grn",
+		"gm_xx_army_uniform_fighter_02_oli",
+		"gm_xx_army_uniform_fighter_02_wdl",
+		"gm_xx_army_uniform_fighter_04_wdl"
+    ];
+};
+
 _loadoutData set ["heavyUniforms", []]; ///don't know why it's here but could be useful in the future
+
+if (_hasContact) then {
+	(_loadoutData get "heavyUniforms") append [
+        "U_O_R_Gorka_01_F",
+        "U_O_R_Gorka_01_brown_F",
+        "U_O_R_Gorka_01_camo_F"
+    ];
+};
 
 /////Helmets
 private _helmets = ["H_HelmetB"];
@@ -676,7 +792,7 @@ private _mercenaryTemplate = {
 	["helmets"] call _fnc_setHelmet;
 	[selectRandomWeighted [[], 1.5, "facewear", 1, "fullmask", 1]] call _fnc_setFacewear;
 	["heavyVests"] call _fnc_setVest;
-	["uniforms"] call _fnc_setUniform;
+	[["heavyUniforms", "uniforms"]] call _fnc_setUniform;
 
 	[selectRandom ["grenadeLaunchers", "rifles", "tunedRifles"]] call _fnc_setPrimary;
 	["primary", 6] call _fnc_addMagazines;
@@ -839,7 +955,7 @@ private _saboteurTemplate = {
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
 	};
 	[selectRandom ["vests", "heavyVests"]] call _fnc_setVest;
-	["uniforms"] call _fnc_setUniform;
+	[["heavyUniforms", "uniforms"]] call _fnc_setUniform;
 	["backpacks"] call _fnc_setBackpack;
 
 	["grenadeLaunchers"] call _fnc_setPrimary;
@@ -876,7 +992,7 @@ private _explosivesExpertTemplate = {
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
 	};
 	["heavyVests"] call _fnc_setVest;
-	["uniforms"] call _fnc_setUniform;
+	[["heavyUniforms", "uniforms"]] call _fnc_setUniform;
 	["backpacks"] call _fnc_setBackpack;
 
 	[selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
