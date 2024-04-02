@@ -88,7 +88,7 @@ if (_hasKart) then {
     _vehiclesCivCar pushBack "C_Kart_01_F";
 };
 
-if (_hasWs) then {
+if (_hasGM) then {
     _staticMG append ["gm_dk_army_mg3_aatripod", "gm_gc_army_dshkm_aatripod", "gm_gc_bgs_searchlight_01"];
     _staticAT append ["gm_ge_army_milan_launcher_tripod", "gm_gc_army_fagot_launcher_tripod", "gm_gc_army_spg9_tripod"];
     _civHelicopters append ["gm_gc_civ_mi2p", "gm_ge_adak_bo105m_vbh"];
