@@ -203,7 +203,7 @@ private _shopGM = if (_hasGM) then {
     ["gm_pl_airforce_mi2urp", 12000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["gm_pl_airforce_mi2urpg", 13500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["gm_pl_airforce_mi2urs", 11000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2us", 9500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["gm_pl_airforce_mi2us", 9500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
     ]
 } else {
     []
