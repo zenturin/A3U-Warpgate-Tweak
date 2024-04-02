@@ -98,7 +98,7 @@ if (_hasWs) then {
     _vehiclesLightUnarmed append ["gm_ge_army_iltis_cargo","gm_pl_army_uaz469_cargo"];
     _vehiclesLightArmed append ["gm_pl_army_uaz469_dshkm","gm_ge_army_iltis_mg3"];
     _vehiclesAt append ["gm_gc_bgs_uaz469_spg9","gm_ge_army_iltis_milan"];
-    _vehiclesBasic = ["gm_ge_army_k125"];
+    _vehiclesBasic append ["gm_ge_army_k125"];
 };
 
 ["staticMGs", _staticMG] call _fnc_saveToTemplate;
