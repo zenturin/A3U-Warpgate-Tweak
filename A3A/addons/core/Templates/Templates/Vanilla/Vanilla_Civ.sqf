@@ -4,6 +4,8 @@ private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
+private _hasGM = "gm" in A3A_enabledDLC;
+private _hasCLSA = "csla" in A3A_enabledDLC;
 
 //////////////////////////////
 //   Civilian Information   //
