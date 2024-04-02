@@ -42,7 +42,7 @@ private _civHelicopters = ["C_Heli_Light_01_civil_F", "O_Heli_Light_02_unarmed_F
 private _CivBoat = ["C_Boat_Civil_01_F", "C_Rubberboat"];
 
 private _staticMG = ["I_G_HMG_02_high_F", "I_G_HMG_02_F"];
-private _staticAT ["I_static_AT_F"];
+private _staticAT = ["I_static_AT_F"];
 private _staticAA = ["I_static_AA_F"];
 ["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
