@@ -1,3 +1,20 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Reveals multiple zones.
+
+    Params:
+	_markers    <ARRAY> <DEFAULT: []>
+
+    Usage:
+    [["outpost_1", "outpost_2"]] call A3U_fnc_revealZones;
+
+    Return:
+    true or false respectively  <BOOL>
+*/
+
 params [
     ["_markers", []]
 ];

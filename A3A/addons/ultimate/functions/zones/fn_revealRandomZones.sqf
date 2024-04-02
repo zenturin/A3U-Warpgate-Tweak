@@ -1,3 +1,21 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Reveals random military zones.
+
+    Params:
+	_amount    <INT> <DEFAULT: 2>
+	_message   <STRING> <DEFAULT: ""> <Gives random message if value == "">
+
+    Usage:
+    [5, "A developer has revealed some zones."] call A3U_fnc_revealRandomZones;
+
+    Return:
+    _message   <STRING>
+*/
+
 params [
     ["_amount", 2],
     ["_message", ""]

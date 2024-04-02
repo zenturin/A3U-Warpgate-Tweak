@@ -1,3 +1,22 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Reveals multiple zones by distance from pos.
+
+    Params:
+	_pos        <ARRAY> <DEFAULT: []>
+	_distance   <INT> <DEFAULT: 0>
+	_vehicle    <OBJECT> <DEFAULT: objNull>
+
+    Usage:
+    [[0,0,0], 50000] call A3U_fnc_revealZonesDistance;
+
+    Return:
+    true or false respectively  <BOOL>
+*/
+
 params [
     ["_pos", []],
     ["_distance", 0],

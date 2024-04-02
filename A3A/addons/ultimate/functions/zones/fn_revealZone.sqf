@@ -1,3 +1,20 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Reveals a zone.
+
+    Params:
+	_marker    <STRING>
+
+    Usage:
+    ["outpost_1"] call A3U_fnc_revealZone;
+
+    Return:
+    N/A
+*/
+
 params ["_marker"];
 
 if !(hideEnemyMarkers) exitWith {["Aborting function, hideEnemyMarkers is not enabled.", _fnc_scriptName] call A3U_fnc_log};
