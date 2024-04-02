@@ -293,7 +293,7 @@ if (_hasGM) then {
         "gm_smokeshell_blk_gc","gm_smokeshell_blu_gc","gm_smokeshell_grn_gc","gm_smokeshell_org_gc","gm_smokeshell_red_gc","gm_smokeshell_wht_gc","gm_smokeshell_yel_gc","gm_smokeshell_grn_dm21",
         "gm_smokeshell_red_dm23","gm_smokeshell_wht_dm25","gm_smokeshell_yel_dm26","gm_smokeshell_org_dm32",
         ["gm_explosive_petn_charge", 10], ["gm_explosive_plnp_charge", 10],
-        "gm_boltcutter"
+        "gm_boltcutter",
         ["launch_RPG7_F", 3], 
         ["RPG7_F", 9]
     ];
