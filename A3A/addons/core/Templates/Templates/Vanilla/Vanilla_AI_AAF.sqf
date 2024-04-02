@@ -116,20 +116,13 @@ if (_hasTanks) then {
     _radar pushback "I_LT_01_scout_F";
     _SAM pushback "I_LT_01_AA_F";
 };
-//If Western Sahara CDLC
+//If Western Sahara DLC
 if (_hasWs) then {
     _cargoTrucks = ["I_Truck_02_flatbed_lxWS", "I_Truck_02_cargo_lxWS"];
     _aa pushBack "I_A_Truck_02_aa_lxWS";
 };
-//If has Reaction Forced CDLC
-if ("rf" in A3A_enabledDLC) then {
-    _policeVehs append ["a3a_police_Pickup_rf", "B_GEN_Pickup_covered_rf", "a3a_police_Pickup_comms_rf"];
-    _vehiclesHelisTransport append ["a3a_AAF_Heli_light_03_unarmed_RF", "I_Heli_EC_01A_military_RF"];
-    _vehiclesHelisLightAttack append ["a3a_AAF_Heli_light_03_dynamicLoadout_RF"];
-    _vehiclesHelisAttack = ["a3a_Heli_EC_02_RF"];
-};
 
-//If GM CDLC + extra AAF mod
+//If GM cdlc + extra AAF mod
 if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) then {
     _staticMG pushBack "gmx_aaf_mg3_aatripod";
     _staticAT pushBack "gmx_aaf_milan_launcher_tripod";
@@ -723,39 +716,6 @@ _pilotLoadoutData set ["uniforms", ["U_I_HeliPilotCoveralls"]];
 _pilotLoadoutData set ["vests", ["V_TacVest_oli"]];
 _pilotLoadoutData set ["helmets", ["H_PilotHelmetHeli_I", "H_CrewHelmetHeli_I"]];
 
-if ("rf" in A3A_enabledDLC) then {
-    (_sfLoadoutData get "sidearms") append [
-        ["hgun_Glock19_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", [], [], ""],
-        ["hgun_Glock19_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", [], [], ""],
-        ["hgun_Glock19_auto_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", [], [], ""],
-        ["hgun_Glock19_auto_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", [], [], ""],
-        ["hgun_Glock19_auto_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", [], [], ""]
-    ];
-    (_policeLoadoutData get "sidearms") append ["hgun_Glock19_RF"];
-    (_sfLoadoutData get "SMGs") append [
-        ["SMG_01_black_RF", "muzzle_snds_acp", "", "optic_Holosight", [], [], ""],
-        ["SMG_01_black_RF", "muzzle_snds_acp", "", "optic_Aco_smg", [], [], ""]
-    ];
-    (_militaryLoadoutData get "SMGs") append [
-        ["SMG_01_black_RF", "", "", "optic_Holosight", [], [], ""],
-        ["SMG_01_black_RF", "", "", "optic_Aco_smg", [], [], ""]
-    ];
-    (_militiaLoadoutData get "SMGs") append [
-        ["SMG_01_black_RF", "", "acc_flashlight_smg_01", "", [], [], ""]
-    ];
-    (_policeLoadoutData get "SMGs") append [
-        ["SMG_01_black_RF", "", "acc_flashlight_smg_01", "optic_Holosight", [], [], ""],
-        ["SMG_01_black_RF", "", "acc_flashlight_smg_01", "optic_Aco_smg", [], [], ""]
-    ];
-    (_sfLoadoutData get "helmets") append [
-        "H_HelmetIA_sb_digital_RF",
-        "H_HelmetHeavy_Olive_RF",
-        "H_HelmetHeavy_Simple_Olive_RF",
-        "H_HelmetHeavy_VisorUp_Olive_RF"
-    ];
-    (_militaryLoadoutData get "helmets") append ["H_HelmetIA_sb_digital_RF"];
-    (_militiaLoadoutData get "helmets") append ["H_HelmetIA_sb_digital_RF"];
-};
 
 if (_hasGM) then {
     (_militiaLoadoutData get "uniforms") append ["gm_ge_uniform_soldier_tshirt_90_oli"];
@@ -787,19 +747,9 @@ if (_hasGM) then {
     (_sfLoadoutData get "sniperRifles") append [
         ["gm_psg1_blk","","","gm_zf6x42_psg1_stanag_blk",["gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk","gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk"], [], "gm_msg90_bipod_blk"]
     ];
-    (_sfLoadoutData get "helmets") append [
-        "gm_ge_headgear_headset_crew_oli",
-        "gm_ge_headgear_beret_crew_blk",
-        "gm_xx_headgear_headwrap_crew_01_grn",
-        "gm_ge_headgear_hat_beanie_crew_blk"
-    ];    
     (_sfLoadoutData get "designatedGrenadeLaunchers") append [
         ["gm_hk69a1_blk", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_HE_Grenade_shell"], ["1Rnd_Smoke_Grenade_shell"], ""],
         ["gm_pallad_d_brn", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_HE_Grenade_shell"], [], ""]
-    ];
-    (_sfLoadoutData get "SMGs") append [
-        ["gm_mp5n_surefire_blk", "", "gm_surefire_l60_wht_surefire_blk", "gm_rv_stanagClaw_blk", ["gm_60Rnd_9x19mm_B_DM11_mp5a3_blk","gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""],
-        ["gm_mp5sd6_blk", "", "gm_surefire_l60_ir_hoseclamp_blk", "gm_rv_stanagClaw_blk", ["gm_60Rnd_9x19mm_B_DM11_mp5a3_blk","gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""]
     ];
     (_eliteLoadoutData get "slRifles") append [
         ["gm_g11k2_ris_blk","","acc_pointer_IR","optic_Nightstalker",["gm_50Rnd_473x33mm_B_DM11_g11_blk","gm_50Rnd_473x33mm_B_DM11_g11_blk","gm_50Rnd_473x33mm_B_DM11_g11_blk"], [], ""],
@@ -815,13 +765,7 @@ if (_hasGM) then {
     ];
     (_eliteLoadoutData get "sniperRifles") append [
         ["gm_psg1_blk","","","gm_zf6x42_psg1_stanag_blk",["gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk","gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk"], [], "gm_msg90_bipod_blk"]
-    ];
-    (_eliteLoadoutData get "helmets") append [
-        "gm_ge_headgear_headset_crew_oli",
-        "gm_ge_headgear_beret_crew_blk",
-        "gm_xx_headgear_headwrap_crew_01_grn",
-        "gm_ge_headgear_hat_beanie_crew_blk"
-    ];    
+    ];   
     (_eliteLoadoutData get "designatedGrenadeLaunchers") append [
         ["gm_hk69a1_blk", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_HE_Grenade_shell"], ["1Rnd_Smoke_Grenade_shell"], ""],
         ["gm_pallad_d_brn", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_HE_Grenade_shell"], [], ""]
@@ -837,10 +781,6 @@ if (_hasGM) then {
         ["gm_g3a4a1_ris_oli", "", "", "optic_MRCO", ["gm_40Rnd_762x51mm_B_T_DM21_g3_blk","gm_40Rnd_762x51mm_B_T_DM21A1_g3_blk","gm_40Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk"], ["gm_1rnd_67mm_heat_dm22a1_g3"], ""],
         ["gm_g3ka4a1_ris_blk", "", "", "gm_c79a1_blk", ["gm_40Rnd_762x51mm_AP_DM151_g3_blk","gm_40Rnd_762x51mm_B_DM41_g3_blk","gm_40Rnd_762x51mm_B_DM111_g3_blk","gm_40Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], ""]
     ];
-    (_militaryLoadoutData get "SMGs") append [
-        ["gm_mp5n_surefire_blk", "", "gm_surefire_l60_wht_surefire_blk", "gm_rv_stanagClaw_blk", ["gm_60Rnd_9x19mm_B_DM11_mp5a3_blk","gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""],
-        ["gm_mp5a2_blk", "", "", "gm_rv_stanagClaw_blk", ["gm_30Rnd_9x19mm_B_DM51_mp5_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk","gm_30Rnd_9x19mm_B_DM11_mp5_blk","gm_30Rnd_9x19mm_AP_DM91_mp5_blk"], [], ""]
-    ];
     (_militaryLoadoutData get "machineGuns") append [
         ["gm_mg3_blk", "", "", "", ["gm_120Rnd_762x51mm_B_T_DM21_mg3_grn","gm_120Rnd_762x51mm_B_T_DM21A2_mg3_grn"], [], ""],
         ["gm_mg8a2_blk", "", "", "gm_blits_stanagHK_blk", ["gm_100Rnd_762x51mm_B_T_DM21_mg8_oli","gm_100Rnd_762x51mm_B_T_DM21A2_mg8_oli"], [], "gm_g8_bipod_blk"]
@@ -852,7 +792,6 @@ if (_hasGM) then {
         ["gm_psg1_blk","","","gm_zf6x42_psg1_stanag_blk",["gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk","gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk"], [], "gm_msg90_bipod_blk"]
     ];
     (_militiaLoadoutData get "SMGs") append [
-        ["gm_mp5n_surefire_blk", "", "gm_surefire_l60_wht_surefire_blk", "gm_rv_stanagClaw_blk", ["gm_60Rnd_9x19mm_B_DM11_mp5a3_blk","gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""],
         ["gm_mp5n_surefire_blk", "", "gm_surefire_l60_wht_surefire_blk", "", ["gm_60Rnd_9x19mm_B_DM11_mp5a3_blk","gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""],
         ["gm_mp5a2_blk", "", "", "", ["gm_30Rnd_9x19mm_B_DM51_mp5_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk","gm_30Rnd_9x19mm_B_DM11_mp5_blk","gm_30Rnd_9x19mm_AP_DM91_mp5_blk"], [], ""]
     ];
@@ -864,19 +803,33 @@ if (_hasGM) then {
     ];
     (_militaryLoadoutData get "sniperRifles") append [
         ["gm_psg1_blk","","","gm_zf6x42_psg1_stanag_blk",["gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk","gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk"], [], "gm_msg90_bipod_blk"]
-    ];     
-    (_militaryLoadoutData get "helmets") append [
-        "gm_ge_headgear_headset_crew_oli"
     ];
     (_militiaLoadoutData get "helmets") append [
         "gm_ge_headgear_headset_crew_oli",
         "gm_gc_headgear_fjh_model4_oli",
         "gm_ge_headgear_m92_cover_glasses_oli",
-        "gm_ge_headgear_m92_cover_oli",
+        "gm_ge_headgear_m92_cover_oli"
+    ];     
+    (_militaryLoadoutData get "helmets") append [
+        "gm_ge_headgear_headset_crew_oli",
+        "gm_ge_headgear_m92_cover_glasses_oli",
+        "gm_ge_headgear_m92_cover_oli"
+    ];
+    (_eliteLoadoutData get "helmets") append [
+        "gm_ge_headgear_headset_crew_oli",
+        "gm_ge_headgear_beret_crew_blk",
+        "gm_xx_headgear_headwrap_crew_01_grn",
+        "gm_ge_headgear_hat_beanie_crew_blk",
         "gm_ge_headgear_psh77_oli",
         "gm_ge_headgear_psh77_up_oli",
         "gm_ge_headgear_psh77_down_oli"
     ];
+    (_sfLoadoutData get "helmets") append [
+        "gm_ge_headgear_headset_crew_oli",
+        "gm_ge_headgear_beret_crew_blk",
+        "gm_xx_headgear_headwrap_crew_01_grn",
+        "gm_ge_headgear_hat_beanie_crew_blk"
+    ];     
     (_policeLoadoutData get "sidearms") append [
         ["gm_m49_blk", "", "", "", ["gm_8Rnd_9x19mm_B_DM51_p210_blk","gm_8Rnd_9x19mm_B_DM11_p210_blk"], [], ""],
         ["gm_p1_blk", "", "", "", ["gm_8Rnd_9x19mm_B_DM11_p1_blk","gm_8Rnd_9x19mm_B_DM51_p1_blk","gm_8Rnd_9x19mm_BSD_DM81_p1_blk"], [], ""],
