@@ -136,8 +136,7 @@ if (_hasGM) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["I_LT_01_cannon_F", ["Indep_Olive",1]],
-
+    ["I_LT_01_cannon_F", ["Indep_Olive",1]]
 ]] call _fnc_saveToTemplate;
 
 //////////////////////////
