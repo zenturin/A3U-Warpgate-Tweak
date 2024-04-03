@@ -8,7 +8,7 @@ private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
-private _hasCLSA = "csla" in A3A_enabledDLC;
+private _hasCSLA = "csla" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
@@ -153,7 +153,7 @@ if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) t
     _medicalTrucks append ["gmx_aaf_u1300l_medic_wdl","gmx_aaf_m113a1g_medic_wdl"];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     _staticMG pushBack "US85_M2h";
     _staticAT pushBack "US85_TOW_Stat";
     _basic append ["CSLA_JARA250","US85_M1030","US85_M1008_S250","US85_M923a1_s280"];
