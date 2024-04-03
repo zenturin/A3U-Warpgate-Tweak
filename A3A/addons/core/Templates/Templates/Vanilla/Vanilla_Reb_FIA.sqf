@@ -9,7 +9,7 @@ private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
-private _hasCLSA = "csla" in A3A_enabledDLC;
+private _hasCSLA = "csla" in A3A_enabledDLC;
 
 ///////////////////////////
 //   Rebel Information   //
@@ -101,7 +101,7 @@ if (_hasGM) then {
     _vehiclesBasic append ["gm_ge_army_k125"];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     _staticMG append ["AFMC_infFALf", "AFMC_M2l","CSLA_UK59L_Stat","CSLA_UK59T_Stat"];
     _staticAT append ["AFMC_TOW_Stat", "CSLA_rT21","CSLA_9K113_Stat"];
     _staticAA pushback "CSLA_PLdvK59_Stat";
@@ -224,7 +224,7 @@ private _shopGM = if (_hasGM) then {
     []
 };
 
-private _shopCLSA = if (_hasCLSA) then {
+private _shopCLSA = if (_hasCSLA) then {
     [
     ["AFMC_M163", 7000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
     ["US85_M1A1", 18000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
@@ -520,7 +520,7 @@ if (_hasGM) then {
         "gm_gc_civ_uniform_man_01_80_blk"
     ];
 };
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     _dlcUniforms append [
         "FIA_uniwld11",
         "FIA_uniwld",
@@ -691,7 +691,7 @@ if (_hasGM) then {
     ];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     _dlcheadgear append [
         "AFMC_booniehatLizard",
         "US85_hat",
