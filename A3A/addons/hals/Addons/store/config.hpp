@@ -204,6 +204,19 @@ class cfgHALsStore
 			};
 		};
 
+		class wmemp
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunswmemp",
+				"rifleswmemp",
+				"launcherswmemp",
+				"magazineswmemp",
+				"opticswmemp"
+
+			};
+		};
+
 		class vn
 		{
 			displayName = $STR_ARMS_DEALER_STORE;

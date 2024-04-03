@@ -290,7 +290,7 @@ _eliteLoadoutData set ["marksmanRifles", [
 ["WM_DLT19D", "", "", "", ["WM_DLT19D_Magazine"], [], ""]
 ]];
 _eliteLoadoutData set ["sniperRifles", [
-["WM_DLT_19X", "", "", "", ["WM_DLT19X_Magazine"], [], ""]
+["WM_DLT_19X", "", "", "", ["WM_DLT19X_Magazine"], [], "WM_DLT_Bipod"]
 ]];
 _eliteLoadoutData set ["sidearms", [
 ["WM_RK3", "", "", "", ["WM_RK3_Mag"], [], ""]
@@ -332,7 +332,7 @@ _militaryLoadoutData set ["marksmanRifles", [
 ["WM_DLT19D", "", "", "", ["WM_DLT19D_Magazine"], [], ""]
 ]];
 _militaryLoadoutData set ["sniperRifles", [
-["WM_DLT_19X", "", "", "", ["WM_DLT19X_Magazine"], [], ""]
+["WM_DLT_19X", "", "", "", ["WM_DLT19X_Magazine"], [], "WM_DLT_Bipod"]
 ]];
 _militaryLoadoutData set ["sidearms", [
 ["WM_SE14C", "", "", "WM_SE14C_Scope", ["WM_SE14C_Mag"], [], ""]
@@ -343,7 +343,7 @@ _militaryLoadoutData set ["sidearms", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_policeLoadoutData set ["uniforms", ["WM_ScountArmor"]];
+_policeLoadoutData set ["uniforms", ["WM_ScoutArmor"]];
 _policeLoadoutData set ["vests", ["WM_Pauldron","WM_ScoutVest","WM_ScoutVest","WM_ScoutVest"]];
 _policeLoadoutData set ["helmets", ["WM_ScoutHelmet"]];
 _policeLoadoutData set ["smgs", [

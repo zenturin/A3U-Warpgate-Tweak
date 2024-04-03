@@ -39,7 +39,7 @@
 ["breachingExplosivesAPC", [["SWLW_clones_spec_demo_mag", 1], ["SWLW_clones_spec_breach_mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["SWLW_clones_spec_demo_mag", 1], ["SWLW_clones_spec_breach_mag", 2]]] call _fnc_saveToTemplate;
 
-#include "CW_Reb_Vehicle_Attributes.sqf"
+#include "WM_Reb_Vehicle_Attributes.sqf"
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
@@ -82,7 +82,7 @@ private _initialRebelEquipment = [
     "3AS_ThermalDetonator","SmokeShell",
     "V_HarnessO_brn","V_HarnessO_gry",
     "WM_ParaMilitary_Helmet","WM_ParaMilitary_Helmet_Urban","WM_ParaMilitary_Helmet_Winter","WM_ParaMilitary_Helmet_Wood",
-    "Endor_Rebel_bag", "Black_WM_Rebel_bag"
+    "Endor_Rebel_bag", "Black_WM_Rebel_bag",
     "JLTS_CloneBinocular_black"
 ];
 
