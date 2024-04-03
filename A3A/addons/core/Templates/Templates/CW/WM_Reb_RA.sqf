@@ -2,10 +2,12 @@
 //   Rebel Information   //
 ///////////////////////////
 
+#include "..\..\..\script_component.hpp"
+
 ["name", "Rebel Alliance"] call _fnc_saveToTemplate;
 
 ["flag", "ls_flag_rebelAlliance"] call _fnc_saveToTemplate;
-["flagTexture", "\LS_statics_props\flags\data\flag_mandalorian.paa"] call _fnc_saveToTemplate;
+["flagTexture", QPATHTOFOLDER(Templates\Templates\CW\flag_rebellion.paa)] call _fnc_saveToTemplate;
 ["flagMarkerType", "rebel_marker_white"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["CW_Quadbike"]] call _fnc_saveToTemplate;
