@@ -99,3 +99,27 @@
         name = "EMP Civ";
         file = "EMP_Civ";
     };
+	
+    class WEMP_Base
+    {
+        requiredAddons[] = {"3AS_Characters", "442_equipment", "SWLB_clones", "JLTS_core", "CWDependencies", "WM_Rebels"};
+        basepath = QPATHTOFOLDER(Templates\Templates\CW);
+        logo = QPATHTOFOLDER(Templates\Templates\CW\flag_Empire.paa);
+        priority = 110;
+    };
+	
+    class WM_EMP : WEMP_Base
+    {
+        side = "Occ";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_Empire.paa);
+        name = "Empire";
+        file = "WM_AI_EMP";
+    };
+	
+    class WM_REB : WEMP_Base
+    {
+        side = "Reb";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_rebellion.paa);
+        name = "Rebel Alliance";
+        file = "WM_Reb_RA";
+    };
