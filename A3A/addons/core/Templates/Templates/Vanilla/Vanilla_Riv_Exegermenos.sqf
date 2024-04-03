@@ -9,7 +9,7 @@ private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
-private _hasCLSA = "csla" in A3A_enabledDLC;
+private _hasCSLA = "csla" in A3A_enabledDLC;
 
 ////////////////////////////
 //   Rivals Information   //
@@ -94,7 +94,7 @@ if (_hasGM) then {
 	_apc append ["gm_pl_army_ot64a","gm_dk_army_m113a1dk_apc","gm_dk_army_m113a2dk","gm_gc_army_bmp1sp2","gm_gc_army_brdm2rkh","gm_pl_army_brdm2","gm_gc_army_btr60pb","gm_gc_army_btr60pa_dshkm"];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
 	_staticLowWeapons append ["AFMC_infFALf", "AFMC_M2l","CSLA_UK59L_Stat","CSLA_UK59T_Stat"];
 	_staticAT append ["AFMC_TOW_Stat", "CSLA_rT21","CSLA_9K113_Stat"];
 	_staticMortars append ["US85_M252_Stat","CSLA_M52_Stat"];
@@ -247,22 +247,22 @@ if (_hasGM) then {
     ];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     (_loadoutData get "antiInfantryGrenades") append [
         "CSLA_F1","CSLA_RG4o","CSLA_RG4u","CSLA_URG86u","CSLA_URG86o"
     ];
 };
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     (_loadoutData get "lightExplosives") append [
         "CSLA_TNT0100g"
     ];
 };
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     (_loadoutData get "APMines") append [
         "CSLA_F1m_mag","US85_M67m_mag","CSLA_NO2","CSLA_RG4m_mag","CSLA_URG86m_mag","CSLA_PPMiNa_mag"
     ];
 };
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     (_loadoutData get "ATMines") append [
         "CSLA_PtMiBa3_mag"
     ];
@@ -415,7 +415,7 @@ if (_hasGM) then {
     ];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     _rpgs append [
         ["US85_M136", "", "", "", ["US85_M136_Mag"], [], ""],
         ["US85_M47", "", "", "", ["US85_M47_Mag"], [], ""],
@@ -574,7 +574,7 @@ if (_hasGM) then {
     ];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
 	(_loadoutData get "headgear") append [
         "US85_beanie",
         "CSLA_beretM",
@@ -658,7 +658,7 @@ if (_hasGM) then {
 	];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
 	_vests append [
 	"CSLA_gr60brr", 
 	"CSLA_gr60base", 
@@ -739,7 +739,7 @@ if (_hasGM) then {
 	];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
 	_heavyVests append [
 	"AFMC_grVest", 
 	"AFMC_grV_M16", 
@@ -815,7 +815,7 @@ if (_hasGM) then {
     ];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
 	(_loadoutData get "uniforms") append [
         "FIA_uniwld11",
         "FIA_uniwld",
@@ -866,7 +866,7 @@ if (_hasGM) then {
 		];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
 	_helmets append [        
 		"US85_helmetM1g",
         "AFMC_helmetM1c",
@@ -906,7 +906,7 @@ if (_hasGM) then {
 	_crewhelmets pushBack "gm_ge_headgear_headset_crew_oli";
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
 	_crewhelmets append ["US85_helmetDH132", "US85_helmetDH132G", "US85_helmetDH132G_on"];
 };
 
