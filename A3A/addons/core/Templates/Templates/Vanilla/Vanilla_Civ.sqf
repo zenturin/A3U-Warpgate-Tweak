@@ -5,7 +5,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
-private _hasCLSA = "csla" in A3A_enabledDLC;
+private _hasCSLA = "csla" in A3A_enabledDLC;
 
 //////////////////////////////
 //   Civilian Information   //
@@ -106,7 +106,7 @@ if (_hasGM) then {
     _civCarsWithWeights append ["gm_ge_army_iltis_cargo", 0.2, "gm_pl_army_uaz469_cargo", 0.2, "gm_ge_civ_typ1200", 0.2, "gm_gc_civ_p601", 0.2, "gm_ge_civ_typ253", 0.3, "gm_ge_taxi_typ253", 0.1, "gm_ge_civ_w123", 0.4, "gm_ge_taxi_w123", 0.3, "gm_ge_army_k125", 0.1, "gm_xx_civ_bicycle_01", 0.05, "gm_ge_dbp_bicycle_01_ylw", 0.05];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
     _civPlanes pushBack "CSLA_CIV_An2_1";
     _civRepair append ["CSLA_CIV_V3Sr", 0.2];
     _civIndustrial append ["CSLA_CIV_V3S" , 0.2];
@@ -245,7 +245,7 @@ if (_hasGM) then {
   ];
 };
 
-if (_hasCLSA) then {
+if (_hasCSLA) then {
   _dlcUniforms append [
     "FIA_uniCitizen",
     "FIA_uniFunctionary",
