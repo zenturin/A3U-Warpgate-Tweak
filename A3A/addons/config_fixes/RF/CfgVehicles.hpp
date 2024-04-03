@@ -16,10 +16,22 @@ class CfgVehicles
         textureList[] = {};
         hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_black_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_black_co.paa"};
     };
+    class a3u_black_Pickup_rival_rf : a3a_black_Pickup_rf
+    {
+        animationList[] = {"hide_rack",0,"hide_antenna",1,"hide_bullbar",0,"hide_snorkel",1,"hide_armor_window_armor_top",1,"hide_trunk_cover",0,"hide_sidesteps",0,"trunk_door_open",0};
+    };
     class a3a_black_Pickup_mmg_rf : I_G_Pickup_mmg_rf
     {
         textureList[] = {};
         hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_black_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_black_co.paa"};
+    };
+    class a3u_black_Pickup_mmg_frame_rf : a3a_black_Pickup_mmg_rf
+    {
+        animationList[] = {"hide_antenna",1,"hide_bullbar",0,"hide_snorkel",1,"hide_armor_window_armor_top",1,"hide_frame",1,"hide_frame_full",0,"hide_sidesteps",0,"trunk_door_open",1};
+    };
+    class a3u_black_Pickup_mmg_alt_rf : a3a_black_Pickup_mmg_rf
+    {
+        animationList[] = {"hide_antenna",0,"hide_bullbar",0,"hide_snorkel",1,"hide_armor_window_armor_top",1,"hide_frame",0,"hide_frame_full",0,"hide_sidesteps",0,"trunk_door_open",0};
     };
     class a3a_civ_Pickup_fuel_rf : C_IDAP_Pickup_fuel_rf
     {
