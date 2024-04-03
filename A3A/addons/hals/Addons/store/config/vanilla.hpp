@@ -107,9 +107,9 @@
 
 		};
 
-		class launchersAegis 
+		class launchersVanilla 
 		{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_launchers"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(launch_NLAW_F, 2000, LAUNCHER_STOCK);
