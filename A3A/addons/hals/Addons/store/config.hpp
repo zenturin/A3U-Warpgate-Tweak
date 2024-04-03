@@ -91,6 +91,37 @@ class cfgHALsStore
 			};
 		};
 
+		class ws 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesWs",
+				"sniperRiflesWs",
+				"mgWs",
+				"magazinesWs",
+				"navigationWs",
+				"pointersWs",
+				"muzzlesWs",
+				"opticsWs",
+				"miscWs",
+			};
+		};
+
+		class csla 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesCSLA",
+				"sniperRiflesCSLA",
+				"mgCSLA",
+				"launchersCSLA",
+				"magazineslaunchersCSLA",
+				"magazinesCSLA",
+				"navigationCSLA",
+				"attachmentsCSLA",
+				"miscCSLA",
+			};
+		};
 		class aegis 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
