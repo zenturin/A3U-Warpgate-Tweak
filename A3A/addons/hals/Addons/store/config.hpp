@@ -82,12 +82,12 @@ class cfgHALsStore
 				"mgVanilla",
 				"smgVanilla",
 				"launchersVanilla",
-				"launcherMagazinesVanilla",  
-				"magazinesVanilla", 
-				"opticsVanilla", 
-				"muzzlesVanilla", 
-				"pointersVanilla", 
-				"navigationVanilla", 
+				"launcherMagazinesVanilla",
+				"navigationVanilla",
+				"pointersVanilla",
+				"muzzlesVanilla",
+				"opticsVanilla",
+				"magazinesVanilla",  
 				"miscVanilla"
 			};
 		};
@@ -102,7 +102,7 @@ class cfgHALsStore
 				"mgApex",
 				"smgApex",
 				"launchersApex",
-				"launcherMagazinesApex" 
+				"launcherMagazinesApex",
 				"opticsApex", 
 				"muzzlesApex", 
 				"underbarrelApex", 
@@ -168,7 +168,7 @@ class cfgHALsStore
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
 				"handgunsKart", 
-				"magazinesKart",
+				"magazinesKart"
 			};
 		};
 
@@ -211,7 +211,7 @@ class cfgHALsStore
 				"pointersWs",
 				"muzzlesWs",
 				"opticsWs",
-				"miscWs",
+				"miscWs"
 			};
 		};
 
