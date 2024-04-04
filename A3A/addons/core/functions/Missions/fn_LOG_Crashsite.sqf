@@ -68,10 +68,12 @@ while {true} do {
 };
 
 // selecting classnames
-private _reconvehicleClass = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") + (_faction get "vehiclesDropPod"));
+private _reconVehicleDroppod = _faction getOrDefault ["vehiclesDropPod", []];
+
+private _reconVehicleClass = selectRandom ((_faction get "vehiclesPlanesTransport") + (_faction get "uavsAttack") + _reconVehicleDroppod);
 private _pilotClass = _faction get "unitPilot";
 
-if (_reconvehicleClass in (_faction get "vehiclesDropPod") ) exitWith { 
+if (_reconVehicleClass in _reconVehicleDroppod) exitWith { 
    [_markerX] call A3A_fnc_LOG_Crashsite_Satelite;
 };
 
