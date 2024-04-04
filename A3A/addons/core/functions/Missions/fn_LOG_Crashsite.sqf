@@ -96,10 +96,7 @@ private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupS
 ///new
 private _infantrySquadArray = selectRandom ([_faction, "groupsTierMedium"] call SCRT_fnc_unit_flattenTier);
 
-if (isNil "_reconvehicleClass" || 
-    {isNil "_cargoTruckClass"} || 
-    {isNil "_specOpsArray"}) 
-exitWith {
+if (isNil "_reconvehicleClass" || {isNil "_cargoTruckClass"} || {isNil "_specOpsArray"}) exitWith {
 	["LOG"] remoteExec ["A3A_fnc_missionRequest",2];
     Error("Problems with faction template, rerequesting new logistics mission.");
 };
