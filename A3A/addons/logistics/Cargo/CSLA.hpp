@@ -49,7 +49,7 @@ class csla_artillery_pldvk_pldvk_m59_kanon_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.96};
     rotation[] = {0,1,0};
-    size = 5;
+    size = 4;
     recoil = 1250;
     isWeapon = 1;
 };
@@ -60,5 +60,32 @@ class csla_weapons_t21_t21_static : TRIPLES(ADDON,Cargo,Base)
     rotation[] = {0,1,0};
     size = 2;
     recoil = 2000;
+    isWeapon = 1;
+};
+
+class csla_weapons_tripod_uk59l_tripod_high_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {-0.1,-0.5,0.74};
+    rotation[] = {0,1,0};
+    size = 2;
+    recoil = 2000;
+    isWeapon = 1;
+};
+
+class csla_weapons_tripod_uk59t_tripod_low_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.24};
+    rotation[] = {0,-1,0};
+    size = 4;
+    recoil = 100;
+    isWeapon = 1;
+};
+
+class csla_weapons_at5_csla_at5 : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,1.24};
+    rotation[] = {0,-1,0};
+    size = 4;
+    recoil = 100;
     isWeapon = 1;
 };
