@@ -13,7 +13,7 @@
 
 			ITEM(V_EOD_blue_F, 900, MISC_STOCK);
 			ITEM(V_EOD_coyote_F, 900, MISC_STOCK);
-			ITEM(V_EOD_coyote_F, 900, MISC_STOCK);
+			ITEM(V_EOD_olive_F, 900, MISC_STOCK);
 
 			ITEM(APERSMineDispenser_Mag, 400, MISC_STOCK);
 
