@@ -94,11 +94,6 @@
 				stock = 50;
 			};
 
-			class MRAWS_HEAT_F {
-				price = 300;
-				stock = 50;
-			};
-
 			class RPG32_F {
 				price = 300;
 				stock = 50;
