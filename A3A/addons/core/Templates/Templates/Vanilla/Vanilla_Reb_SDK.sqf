@@ -8,6 +8,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 ///////////////////////////
 //   Rebel Information   //
@@ -56,7 +57,7 @@ if (_hasWs) then {
     _staticAA = ["I_Tura_ZU23_lxWS"];
 };
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _vehiclesCivCar append ["C_Pickup_rf","C_Pickup_covered_rf"];
     _vehiclesLightUnarmed append ["I_C_Pickup_rf"];
     _vehiclesLightArmed append ["I_C_Pickup_mmg_rf"];
@@ -165,7 +166,7 @@ private _initialRebelEquipment = [
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
 ];
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _initialRebelEquipment append ["srifle_h6_oli_rf","10Rnd_556x45_AP_Stanag_red_khk_RF","10Rnd_556x45_AP_Stanag_khk_RF","10Rnd_556x45_AP_Stanag_green_khk_RF"];
     _initialRebelEquipment = _initialRebelEquipment - ["SMG_05_F","hgun_PDW2000_F","30Rnd_9x21_Mag_SMG_02"];
 };
@@ -315,7 +316,7 @@ if (_hasArtOfWar) then {
         "U_C_ArtTShirt_01_v6_F"
     ];
 };
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _dlcUniforms append [
         "U_IG_Guerrilla_RF",
         "U_IG_leader_RF"

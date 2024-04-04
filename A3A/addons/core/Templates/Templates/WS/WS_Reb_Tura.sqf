@@ -2,6 +2,7 @@ private _hasWs = "ws" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 ///////////////////////////
 //   Rebel Information   //
@@ -50,7 +51,7 @@ if ("expansion" in A3A_enabledDLC) then {
 	_vehiclesAT append ["I_C_Offroad_02_AT_F"];
 };
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _vehiclesCivCar append ["C_Pickup_rf"];
     _vehiclesLightUnarmed append ["I_Tura_Pickup_01_RF"];
     _vehiclesLightArmed append ["I_Tura_Pickup_01_mmg_rf"];
@@ -103,7 +104,7 @@ private _initialRebelEquipment = [
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
 ];
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _initialRebelEquipment append ["srifle_h6_tan_rf","10Rnd_556x45_AP_Stanag_red_Tan_RF","10Rnd_556x45_AP_Stanag_Tan_RF","10Rnd_556x45_AP_Stanag_green_Tan_RF"];
     _initialRebelEquipment = _initialRebelEquipment - ["hgun_PDW2000_F","SMG_02_F","30Rnd_9x21_Mag_SMG_02","SMG_05_F"];
 };
@@ -193,7 +194,7 @@ if (_hasApex) then {
     ];
 };
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _dlcUniforms append [
         "U_IG_Guerrilla_RF",
         "U_IG_leader_RF"

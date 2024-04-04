@@ -7,6 +7,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
@@ -90,7 +91,7 @@ private _policeVehs = if (_hasContact) then {
 } else {
     ["B_GEN_Offroad_01_gen_F"]
 };
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _policeVehs append ["a3a_police_Pickup_rf", "B_GEN_Pickup_covered_rf", "a3a_police_Pickup_comms_rf"];
 };
 if (_hasLawsOfWar) then {
@@ -694,7 +695,7 @@ _pilotLoadoutData set ["uniforms", ["U_O_PilotCoveralls"]];
 _pilotLoadoutData set ["vests", ["V_BandollierB_khk"]];
 _pilotLoadoutData set ["helmets", ["H_CrewHelmetHeli_O", "H_PilotHelmetHeli_O"]];
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     (_sfLoadoutData get "slRifles") append [
         ["arifle_ash12_wood_RF","suppressor_127x55_small_wood_RF","acc_pointer_IR","optic_Arco_ghex_F",["20Rnd_127x55_Mag_wood_RF","20Rnd_127x55_Mag_wood_RF","20Rnd_127x55_Mag_wood_RF"], [], ""],
         ["arifle_ash12_wood_RF","suppressor_127x55_small_wood_RF","acc_pointer_IR","optic_Arco_ghex_F",["20Rnd_127x55_Mag_wood_RF","20Rnd_127x55_Mag_wood_RF","20Rnd_127x55_Mag_wood_RF"], [], ""]

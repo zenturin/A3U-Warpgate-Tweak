@@ -4,6 +4,7 @@ private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 //////////////////////////////
 //   Civilian Information   //
@@ -90,7 +91,7 @@ if (_hasApex) then {
     _civPlanes append ["C_Plane_Civil_01_racing_F", "C_Plane_Civil_01_F"]
 };
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _civCarsWithWeights append ["C_Pickup_rf", 2.0, "C_Pickup_covered_rf", 0.1];
     _civRepair append ["C_Pickup_repair_rf", 0.3];
     _civFuel append ["a3a_civ_Pickup_fuel_rf", 0.1];
@@ -213,7 +214,7 @@ if (_hasWs && {(toLowerANSI worldName) in ["sefrouramal", "takistan"]}) then {
   ];
 };
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     private _RFleatherJackets = [
         "U_C_PilotJacket_black_RF",
         "U_C_PilotJacket_brown_RF",

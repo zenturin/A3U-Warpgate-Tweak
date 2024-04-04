@@ -7,6 +7,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
@@ -82,7 +83,7 @@ private _policeVehs = if (_hasContact) then {
 if (_hasLawsOfWar) then {
     _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _policeVehs append ["a3a_police_Pickup_rf", "B_GEN_Pickup_covered_rf", "a3a_police_Pickup_comms_rf"];
     _transportHelicopters append ["I_E_Heli_light_03_unarmed_RF","I_E_Heli_EC_01A_military_RF"];
     _vehiclesHelisLightAttack append ["a3a_LDF_Heli_light_03_dynamicLoadout_RF"];
@@ -618,7 +619,7 @@ _pilotLoadoutData set ["uniforms", ["U_I_E_Uniform_01_coveralls_F"]];
 _pilotLoadoutData set ["vests", ["V_CarrierRigKBT_01_EAF_F"]];
 _pilotLoadoutData set ["helmets", ["H_CrewHelmetHeli_I_E", "H_PilotHelmetHeli_I_E"]];
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _sfLoadoutData set ["sidearms", [
         ["hgun_Glock19_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", [], [], ""],
         ["hgun_Glock19_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", [], [], ""],

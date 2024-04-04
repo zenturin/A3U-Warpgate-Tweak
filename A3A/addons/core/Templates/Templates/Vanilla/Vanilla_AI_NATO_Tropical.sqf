@@ -7,6 +7,7 @@ private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 //////////////////////////
 //   Side Information   //
@@ -131,7 +132,7 @@ if (_hasWs) then {
     _militiaAPCs pushBack "B_T_APC_Wheeled_01_command_lxWS";
 };
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _policeVehs append ["a3a_police_Pickup_rf", "B_GEN_Pickup_covered_rf", "a3a_police_Pickup_comms_rf"];
     _transportHelicopters append ["B_Heli_light_03_unarmed_RF","B_Heli_EC_03_RF"];
     _vehiclesHelisLightAttack append ["a3a_Heli_light_03_dynamicLoadout_RF","B_Heli_EC_04_military_RF"];
@@ -795,7 +796,7 @@ _pilotLoadoutData set ["uniforms", ["U_B_HeliPilotCoveralls"]];
 _pilotLoadoutData set ["vests", ["V_TacVest_oli"]];
 _pilotLoadoutData set ["helmets", ["H_CrewHelmetHeli_B", "H_PilotHelmetHeli_B"]];
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     (_sfLoadoutData get "sidearms") append [
         ["hgun_Glock19_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],
         ["hgun_Glock19_khk_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_khk_RF", [], [], ""],

@@ -8,6 +8,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 ///////////////////////////
 //   Rebel Information   //
@@ -52,7 +53,7 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 ["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _vehiclesCivCar = ["C_Pickup_rf", "C_Pickup_covered_rf"];
     _vehiclesCivHeli = ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF"];
     _vehiclesLightArmed = ["a3u_black_Pickup_mmg_alt_rf", "a3u_black_Pickup_mmg_frame_rf"];
@@ -200,7 +201,7 @@ private _initialRebelEquipment = [
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
 ];
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _initialRebelEquipment append ["srifle_h6_tan_rf","10Rnd_556x45_AP_Stanag_red_Tan_RF","10Rnd_556x45_AP_Stanag_Tan_RF","10Rnd_556x45_AP_Stanag_green_Tan_RF"];
     _initialRebelEquipment = _initialRebelEquipment - ["SMG_05_F","SMG_01_F","hgun_PDW2000_F","SMG_02_F","30Rnd_45ACP_Mag_SMG_01","30Rnd_9x21_Mag_SMG_02"];
 };
@@ -356,7 +357,7 @@ if (_hasArtOfWar) then {
         "U_C_ArtTShirt_01_v6_F"
     ];
 };
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _dlcUniforms append [
         "U_IG_Guerrilla_RF",
         "U_IG_leader_RF"

@@ -2,6 +2,7 @@ private _hasWs = "ws" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 ////////////////////////////
 //   Rivals Information   //
@@ -44,7 +45,7 @@ private _vehiclesRivalsHelis = ["I_C_Heli_Light_01_civil_F"];
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
 	_vehiclesRivalsLightArmed append ["I_C_Pickup_mmg_rf", "B_T_Pickup_mmg_rf"];
 	_vehiclesRivalsCars append ["I_C_Pickup_rf", "B_T_Pickup_rf", "B_T_Pickup_Comms_rf", "C_Pickup_rf"];
 	_vehiclesRivalsHelis append ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF"];
@@ -89,7 +90,7 @@ private _pistols = ["hgun_Pistol_01_F"];
 
 private _helmets = ["H_Helmet_Skate"];
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
 	_marksmanRifles pushBack ["srifle_DMR_01_black_RF", "", "acc_flashlight", "optic_VRCO_RF", ["10Rnd_762x54_Mag"], [], ""];
 	_gls pushBack ["arifle_ash12_GL_wood_RF", "", "acc_flashlight", "optic_VRCO_khk_RF", ["10Rnd_127x55_Mag_wood_RF", "20Rnd_127x55_Mag_wood_RF"], ["1Rnd_HE_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "UGL_FlareGreen_F"], ""];
 	_pistols append ["hgun_Glock19_auto_khk_RF", "hgun_DEagle_classic_RF"];

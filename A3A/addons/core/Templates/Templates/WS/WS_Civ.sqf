@@ -2,6 +2,8 @@
 //   Civilian Information   //
 //////////////////////////////
 
+private _hasRF = "rf" in A3A_enabledDLC;
+
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
@@ -53,7 +55,7 @@ private _vehiclesCivFuel = [
     ,"C_Truck_02_fuel_F", 0.1
 ];
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     _vehiclesCivCar append ["C_Pickup_rf", 1.25, "C_Pickup_covered_rf", 0.2];
     _vehiclesCivRepair append ["C_Pickup_repair_rf", 0.2];
     _vehiclesCivFuel append ["a3a_civ_Pickup_fuel_rf", 0.1];
@@ -119,7 +121,7 @@ if (allowDLCOrange) then {
   ];
 };
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
     private _RFleatherJackets = [
         "U_C_PilotJacket_black_RF",
         "U_C_PilotJacket_brown_RF",

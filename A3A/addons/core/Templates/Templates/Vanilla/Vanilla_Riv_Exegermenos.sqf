@@ -8,6 +8,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 ////////////////////////////
 //   Rivals Information   //
@@ -78,7 +79,7 @@ if (_hasTanks) then {
 	_tanks pushBack "I_LT_01_cannon_F";
 };
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
 	_lightArmedVehicles append ["a3a_black_Pickup_mmg_rf", "a3u_black_Pickup_mmg_frame_rf", "a3u_black_Pickup_mmg_alt_rf"];
 	_lightUnarmedVehicles pushBack "a3u_black_Pickup_rival_rf";
 };
@@ -157,7 +158,7 @@ private _rpgs = [
 
 private _pistols = ["hgun_Rook40_F"];
 
-if ("rf" in A3A_enabledDLC) then {
+if (_hasRF) then {
 	_marksmanRifles pushBack ["srifle_DMR_01_black_RF", "", "acc_flashlight", "optic_VRCO_RF", ["10Rnd_762x54_Mag"], [], ""];
 	_enforcerRifles pushBack ["arifle_ash12_LR_blk_RF", "", "", "optic_VRCO_RF", ["20Rnd_127x55_Mag_RF"], [], ""];
 	_gls pushBack ["arifle_ash12_GL_blk_RF", "", "acc_flashlight", "optic_VRCO_khk_RF", ["10Rnd_127x55_Mag_RF", "20Rnd_127x55_Mag_RF"], ["1Rnd_HE_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "UGL_FlareGreen_F"], ""];
