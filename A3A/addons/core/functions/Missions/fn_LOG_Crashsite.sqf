@@ -201,7 +201,7 @@ _quad setVelocity (_targetVector vectorMultiply _additionalSpeed);
 _reconvehicledummy setVectorUp _targetVector;
 ///VFX
 _bomb1 = "ammo_Missile_Cruise_01" createVehicle [getPos _quad select 0, getPos _quad select 1 ,0];
-[_quad] call A3A_fnc_effect_crashingEffects;
+[_quad] call SCRT_fnc_effect_crashingEffects;
 
 
 private _crashsiteactual = getPosATL _quad;
