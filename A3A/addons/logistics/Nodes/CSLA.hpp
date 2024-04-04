@@ -372,7 +372,7 @@ class csla_cars_UAZ_csla_uaz469 : TRIPLES(ADDON,Nodes,Base)
     {
         class Node1
         {
-            offset[] = {0,-1.2,-0.9};
+            offset[] = {0,-1.23,-0.9};
         };
     };
 };
@@ -560,14 +560,14 @@ class csla_cars_UAZ_csla_uaz469f : TRIPLES(ADDON,Nodes,Base)
         };
     };
 };
-
+//civ
 class csla_civ_veh_Lada_Lada_p3d : TRIPLES(ADDON,Nodes,Base)
 {
     class Nodes
     {
         class Node1
         {
-            offset[] = {0.02,-1.3,-1.3};
+            offset[] = {0.02,-1.3,-1.43};
         };
     };
 };
@@ -590,7 +590,7 @@ class csla_civ_veh_sarka1200_csla_sarka1200_p3d : TRIPLES(ADDON,Nodes,Base)
     {
         class Node1
         {
-            offset[] = {0.02,-1.2,-1.3};
+            offset[] = {0.02,-1.2,-1.43};
         };
     };
 };
