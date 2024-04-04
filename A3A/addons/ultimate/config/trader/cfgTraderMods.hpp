@@ -75,6 +75,11 @@ class traderMods
         addons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core"};
         prefix = "cup";
     };
+    class csla : base
+    {
+        addons[] = {"CSLA"};
+        prefix = "csla";
+    };
     class 3CBBAF : base
     {
         addons[] = {"UK3CB_BAF_Weapons", "UK3CB_BAF_Vehicles", "UK3CB_BAF_Units_Common", "UK3CB_BAF_Equipment"};
