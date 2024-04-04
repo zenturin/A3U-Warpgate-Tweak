@@ -57,7 +57,7 @@
 			ITEM(arifle_MSBS65_Mark_camo_F, 1500, RIFLE_STOCK);
 			ITEM(arifle_MSBS65_Mark_sand_F, 1500, RIFLE_STOCK);
 
-			ITEM(srifle_DMR_06_hunter_F; , 1300, RIFLE_STOCK);
+			ITEM(srifle_DMR_06_hunter_F, 1300, RIFLE_STOCK);
 
 		};
 
