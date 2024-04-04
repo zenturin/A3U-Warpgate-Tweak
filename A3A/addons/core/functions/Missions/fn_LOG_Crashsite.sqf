@@ -275,7 +275,7 @@ private _boxPosition = +_crashsiteactual;
 _boxPosition set [2, (_crashsiteactual select 2) + 5];
 private _box = _blackboxClass createVehicle _boxPosition;
 _box allowDamage false;
-_box setVectorDirAndUp [[0,0,-1], [0,1,0]];
+_box setVectorDirAndUp [[0,0,0], [0,1,0]];
 
 [_box] call A3A_Logistics_fnc_addLoadAction;
 
