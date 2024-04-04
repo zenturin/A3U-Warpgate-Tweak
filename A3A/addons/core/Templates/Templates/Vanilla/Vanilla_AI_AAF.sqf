@@ -123,7 +123,8 @@ if (_hasWs) then {
 };
 
 //If GM cdlc + extra AAF mod
-if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) then {
+private _hasAAFGM = ["gmx_aaf_m113a2dk_wdl"] call A3U_fnc_hasAddon;
+if (_hasGM && _hasAAFGM) then {
     _staticMG pushBack "gmx_aaf_mg3_aatripod";
     _staticAT pushBack "gmx_aaf_milan_launcher_tripod";
     _basic append ["gm_ge_army_k125","gmx_aaf_brpz1_wdl"];
