@@ -204,7 +204,7 @@
 			ITEM(saber_light_ir_khaki_lxWS, 75, PN_STOCK);
 			ITEM(saber_light_ir_lush_lxWS, 75, PN_STOCK);
 			ITEM(saber_light_ir_sand_lxWS, 75, PN_STOCK);
-			ITEM(saber_light_ir_sand_lxWS, 75, PN_STOCK);
+			ITEM(saber_light_ir_snake_lxWS, 75, PN_STOCK);
 
 		};
 
