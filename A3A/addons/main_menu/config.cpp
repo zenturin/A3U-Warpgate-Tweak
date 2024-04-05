@@ -217,25 +217,22 @@ class RscTitles //loading screen
 	{
 		idd=-1;
 		movingEnable=0;
-		duration=2;
-		fadein=0;
-		fadeout=2;
+		duration=3;
+		fadein=1;
+		fadeout=1;
 		name="-";
 		controls[]=
 		{
-			"TextPresents"
+			"Picture"
 		};
-		class TextPresents: RscText
+		class Picture: RscPicture
 		{
-			idc=1000;
-			text="Loading...";
-			style=2;
-			sizeEx="0.03*SafezoneH";
-			shadow=0;
-			x = "safeZoneX + (safeZoneW / 2) - ((48 * (0.01875 * safeZoneH)) / 2)"; // Center horizontally
-            y = "safeZoneY + safeZoneH - (0.03 * safeZoneH)"; // Bottom of the screen
-			w="48 * (0.01875 * SafezoneH)";
-			h="0.03 * SafezoneH";
+			text = QPATHTOFOLDER(data\backgrounds\AUC_Updates_co.jpg);
+			colorText[]={1,1,1,1};
+			x="safezoneX";
+			y="safezoneY";
+			w="safezoneW";
+			h="safezoneH";
 		};
 	};
 	class SplashESRB
@@ -362,7 +359,7 @@ class RscDisplayMain: RscStandardDisplay //main menu
 			y = "safeZoneY + safeZoneH - 0.4";
 			text = QPATHTOFOLDER(data\ServerB.paa); // No text needed for an image button
 			tooltip="Connect to our community server!";
-			onMouseButtonClick = "connectToServer ['stutpip123.ddns.net', 2302, '1221']";
+			onMouseButtonClick = "connectToServer ['138.201.62.114', 2402, '1221']";
 			onMouseEnter = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\ServerB_Hov.paa""";
 			onMouseExit = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\ServerB.paa""";
 			onMouseButtonUp = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\ServerB_Hov.paa""";
