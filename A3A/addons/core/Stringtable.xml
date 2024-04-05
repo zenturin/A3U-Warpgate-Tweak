@@ -5328,7 +5328,7 @@
             <Key ID="STR_A3AU_hide_enemy_markers">
                 <Original>Hide Enemy Markers</Original>
                 <English>Hide Enemy Markers</English>
-                <Russian>Placeholder</Russian>
+                <Russian>Спрятать вражеские маркеры</Russian>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>
