@@ -136,22 +136,21 @@ if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) t
     _staticMG pushBack "gmx_aaf_mg3_aatripod";
     _staticAT pushBack "gmx_aaf_milan_launcher_tripod";
     _basic append ["gm_ge_army_k125","gmx_aaf_brpz1_wdl"];
-    _planesTransport append ["gmx_aaf_do28d2_wdl","gm_gc_airforce_l410t"];
+    _planesTransport append ["gmx_aaf_do28d2_wdl"];
     _helisLight append ["gmx_aaf_bo105m_vbh_wdl","gmx_aaf_bo105p1m_vbh_wdl","gmx_aaf_bo105p1m_vbh_swooper_wdl"];
     _helisLightAttack pushback "gmx_aaf_bo105p_pah1_wdl";
-    _helisAttack = ["gmx_aaf_bo105p_pah1a1_wdl","gm_pl_airforce_mi2urpg"];
+    _helisAttack append ["gmx_aaf_bo105p_pah1a1_wdl"];
     _transportHelicopters append ["gmx_aaf_ch53g_wdl","gmx_aaf_ch53gs_wdl"];
-    _artillery append ["gm_pl_army_2s1","gm_pl_army_ural375d_mlrs","gmx_aaf_m109_wdl","gmx_aaf_kat1_463_mlrs_wdl"];
+    _artillery append ["gmx_aaf_m109_wdl","gmx_aaf_kat1_463_mlrs_wdl"];
     _lightAPCs append ["gmx_aaf_fuchsa0_command_wdl","gmx_aaf_fuchsa0_engineer_wdl","gmx_aaf_fuchsa0_reconnaissance_wdl"];
-    _militiaAPCs append ["gm_gc_army_btr60pa","gm_gc_army_btr60pa_dshkm","gm_gc_army_btr60pb","gm_gc_army_btr60pu12","gm_pl_army_ot64a"];
-    _APCs append ["gmx_aaf_luchsa1_wdl","gmx_aaf_luchsa2_wdl","gm_pl_army_brdm2","gm_gc_army_brdm2rkh"];
+    _militiaAPCs append ["gmx_aaf_fuchsa0_reconnaissance_wdl"];
+    _APCs append ["gmx_aaf_luchsa1_wdl","gmx_aaf_luchsa2_wdl"];
     _IFVs append ["gmx_aaf_m113a1g_apc_wdl","gmx_aaf_m113a1g_apc_milan_wdl","gmx_aaf_m113a1g_command_wdl","gmx_aaf_marder1a1plus_wdl","gmx_aaf_marder1a1a_wdl","gmx_aaf_marder1a2_wdl","gmx_aaf_m113a2dk_wdl"];
-    _unarmedVehicles append ["gm_gc_army_brdm2um","gmx_aaf_iltis_cargo_wdl","gm_dk_army_typ253_cargo","gm_dk_army_typ1200_cargo"];
+    _unarmedVehicles append ["gmx_aaf_iltis_cargo_wdl"];
     _armedVehicles append ["gmx_aaf_iltis_milan_wdl","gm_ge_army_iltis_mg3"];
     _militiaCars append ["gm_dk_army_typ1200_cargo","gm_dk_army_typ253_cargo","gm_dk_army_typ253_mp"];
     _policeVehs append ["gm_gc_pol_p601","gm_ge_pol_typ1200","gm_ge_pol_typ253","gm_ge_pol_w123"];
-    _lightTanks append ["gm_pl_army_bmp1sp2","gm_gc_army_pt76b"];
-    _airborneVehicles = ["gmx_aaf_luchsa1_wdl","gmx_aaf_luchsa2_wdl","gmx_aaf_fuchsa0_reconnaissance_wdl","gmx_aaf_fuchsa0_command_wdl"];
+    _airborneVehicles append ["gmx_aaf_luchsa1_wdl","gmx_aaf_luchsa2_wdl","gmx_aaf_fuchsa0_reconnaissance_wdl","gmx_aaf_fuchsa0_command_wdl"];
     _aa pushback "gmx_aaf_gepard1a1_wdl";
     _Trucks append ["gmx_aaf_kat1_451_cargo_wdl","gmx_aaf_u1300l_cargo_wdl"];
     _cargoTrucks append ["gmx_aaf_kat1_451_container_wdl","gmx_aaf_kat1_454_cargo_wdl","gmx_aaf_u1300l_container_wdl","gm_dk_army_typ247_cargo"];
@@ -160,6 +159,7 @@ if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) t
     _repairTrucks append ["gmx_aaf_u1300l_repair_wdl","gmx_aaf_bpz2a0_wdl"];
     _fuelTrucks pushBack "gmx_aaf_kat1_451_refuel_wdl";
     _medicalTrucks append ["gmx_aaf_u1300l_medic_wdl","gmx_aaf_m113a1g_medic_wdl"];
+};
 };
 
 ["staticMGs", _staticMG] call _fnc_saveToTemplate;
