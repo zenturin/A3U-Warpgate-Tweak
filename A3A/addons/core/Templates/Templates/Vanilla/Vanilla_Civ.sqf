@@ -6,6 +6,8 @@ private _hasKart = "kart" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
 private _hasCLSA = "csla" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
+
 
 //////////////////////////////
 //   Civilian Information   //
@@ -37,8 +39,6 @@ if (_hasLawsOfWar) then {
 if (_hasWs) then {
     _civCarsWithWeights append ["C_Truck_02_racing_lxWS" , 0.1 , "C_Offroad_lxWS", 0.5];
 };
-
-["vehiclesCivCar", _civCarsWithWeights] call _fnc_saveToTemplate;
 
 private _civIndustrial = [
     "C_Van_01_transport_F", 1.0
@@ -106,7 +106,14 @@ if (_hasGM) then {
     _civCarsWithWeights append ["gm_ge_army_iltis_cargo", 0.2, "gm_pl_army_uaz469_cargo", 0.2, "gm_ge_civ_typ1200", 0.2, "gm_gc_civ_p601", 0.2, "gm_ge_civ_typ253", 0.3, "gm_ge_taxi_typ253", 0.1, "gm_ge_civ_w123", 0.4, "gm_ge_taxi_w123", 0.3, "gm_ge_army_k125", 0.1, "gm_xx_civ_bicycle_01", 0.05, "gm_ge_dbp_bicycle_01_ylw", 0.05];
 };
 
+if (_hasRF) then {
+    _civCarsWithWeights append ["C_Pickup_rf", 2.0, "C_Pickup_covered_rf", 0.1];
+    _civRepair append ["C_Pickup_repair_rf", 0.3];
+    _civFuel append ["a3a_civ_Pickup_fuel_rf", 0.1];
+};
+
 ["vehiclesCivHeli", _civHelicopter] call _fnc_saveToTemplate;
+["vehiclesCivCar", _civCarsWithWeights] call _fnc_saveToTemplate;
 ["vehiclesCivIndustrial", _civIndustrial] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", _civBoat] call _fnc_saveToTemplate;
 ["vehiclesCivRepair", _civRepair] call _fnc_saveToTemplate;
@@ -257,6 +264,21 @@ if (_hasWs && {(toLowerANSI worldName) in ["sefrouramal", "takistan"]}) then {
     "U_lxWS_Tak_03_B",
     "U_lxWS_Tak_03_C"
   ];
+};
+
+if (_hasRF) then {
+    private _RFleatherJackets = [
+        "U_C_PilotJacket_black_RF",
+        "U_C_PilotJacket_brown_RF",
+        "U_C_PilotJacket_lbrown_RF",
+        "U_C_PilotJacket_open_black_RF",
+        "U_C_PilotJacket_open_brown_RF",
+        "U_C_PilotJacket_open_lbrown_RF"
+    ];
+    _dlcUniforms append _RFleatherJackets;
+    if (A3A_climate in ["temperate","arctic"]) then {
+        _civUniforms append _RFleatherJackets;
+    };
 };
 
 ["uniforms", _civUniforms + _pressUniforms + _workerUniforms + _dlcUniforms] call _fnc_saveToTemplate;
