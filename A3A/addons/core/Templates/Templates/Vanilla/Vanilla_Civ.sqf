@@ -6,6 +6,8 @@ private _hasKart = "kart" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
 private _hasCSLA = "csla" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
+
 
 //////////////////////////////
 //   Civilian Information   //
@@ -37,8 +39,6 @@ if (_hasLawsOfWar) then {
 if (_hasWs) then {
     _civCarsWithWeights append ["C_Truck_02_racing_lxWS" , 0.1 , "C_Offroad_lxWS", 0.5];
 };
-
-["vehiclesCivCar", _civCarsWithWeights] call _fnc_saveToTemplate;
 
 private _civIndustrial = [
     "C_Van_01_transport_F", 1.0
@@ -112,6 +112,12 @@ if (_hasCSLA) then {
     _civIndustrial append ["CSLA_CIV_V3S" , 0.2];
     _civCarsWithWeights append ["CSLA_CIV_AZU", 0.2, "CSLA_CIV_ADA1600", 0.2, "CSLA_CIV_Sarka1200", 0.2, "CSLA_civ_CATOR", 0.1, "CSLA_CIV_JARA250", 0.1, "US85_TT650", 0.1];
     _civBoat append ["CSLA_lodka", 0.1];
+};
+
+if (_hasRF) then {
+    _civCarsWithWeights append ["C_Pickup_rf", 2.0, "C_Pickup_covered_rf", 0.1];
+    _civRepair append ["C_Pickup_repair_rf", 0.3];
+    _civFuel append ["a3a_civ_Pickup_fuel_rf", 0.1];
 };
 
 ["vehiclesCivHeli", _civHelicopter] call _fnc_saveToTemplate;
@@ -285,6 +291,21 @@ if (_hasWs && {(toLowerANSI worldName) in ["sefrouramal", "takistan"]}) then {
     "U_lxWS_Tak_03_B",
     "U_lxWS_Tak_03_C"
   ];
+};
+
+if (_hasRF) then {
+    private _RFleatherJackets = [
+        "U_C_PilotJacket_black_RF",
+        "U_C_PilotJacket_brown_RF",
+        "U_C_PilotJacket_lbrown_RF",
+        "U_C_PilotJacket_open_black_RF",
+        "U_C_PilotJacket_open_brown_RF",
+        "U_C_PilotJacket_open_lbrown_RF"
+    ];
+    _dlcUniforms append _RFleatherJackets;
+    if (A3A_climate in ["temperate","arctic"]) then {
+        _civUniforms append _RFleatherJackets;
+    };
 };
 
 ["uniforms", _civUniforms + _pressUniforms + _workerUniforms + _dlcUniforms] call _fnc_saveToTemplate;

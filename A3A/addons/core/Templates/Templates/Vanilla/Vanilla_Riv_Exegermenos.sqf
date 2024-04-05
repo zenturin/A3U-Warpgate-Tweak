@@ -10,6 +10,7 @@ private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
 private _hasCSLA = "csla" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 ////////////////////////////
 //   Rivals Information   //
@@ -80,6 +81,7 @@ if (_hasTanks) then {
 	_tanks pushBack "I_LT_01_cannon_F";
 };
 
+
 private _staticLowWeapons = ["O_G_HMG_02_F"];
 private _staticAT = ["O_static_AT_F"];
 private _staticMortars = ["O_Mortar_01_F"];
@@ -92,6 +94,11 @@ if (_hasGM) then {
 	_tanks append ["gm_dk_army_Leopard1a3","gm_pl_army_pt76b","gm_pl_army_t55","gm_pl_army_t55a","gm_pl_army_t55ak","gm_gc_army_t55am2","gm_gc_army_t55am2b"];
 	_helis append ["gm_pl_airforce_mi2t","gm_pl_airforce_mi2urn","gm_pl_airforce_mi2us"];
 	_apc append ["gm_pl_army_ot64a","gm_dk_army_m113a1dk_apc","gm_dk_army_m113a2dk","gm_gc_army_bmp1sp2","gm_gc_army_brdm2rkh","gm_pl_army_brdm2","gm_gc_army_btr60pb","gm_gc_army_btr60pa_dshkm"];
+};
+
+if (_hasRF) then {
+	_lightArmedVehicles append ["a3a_black_Pickup_mmg_rf", "a3u_black_Pickup_mmg_frame_rf", "a3u_black_Pickup_mmg_alt_rf"];
+	_lightUnarmedVehicles pushBack "a3u_black_Pickup_rival_rf";
 };
 
 if (_hasCSLA) then {
@@ -192,6 +199,7 @@ private _rpgs = [
 
 private _pistols = ["hgun_Rook40_F"];
 
+
 _loadoutData set ["lightHELaunchers", [
 ["launch_RPG32_F", "", "", "", ["RPG32_HE_F", "RPG32_HE_F"], [], ""]
 ]];
@@ -267,6 +275,14 @@ if (_hasCSLA) then {
         "CSLA_PtMiBa3_mag"
     ];
 };
+
+if (_hasRF) then {
+	_marksmanRifles pushBack ["srifle_DMR_01_black_RF", "", "acc_flashlight", "optic_VRCO_RF", ["10Rnd_762x54_Mag"], [], ""];
+	_enforcerRifles pushBack ["arifle_ash12_LR_blk_RF", "", "", "optic_VRCO_RF", ["20Rnd_127x55_Mag_RF"], [], ""];
+	_gls pushBack ["arifle_ash12_GL_blk_RF", "", "acc_flashlight", "optic_VRCO_khk_RF", ["10Rnd_127x55_Mag_RF", "20Rnd_127x55_Mag_RF"], ["1Rnd_HE_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "UGL_FlareGreen_F"], ""];
+	_pistols append ["hgun_Glock19_RF", "hgun_Glock19_auto_RF", "hgun_DEagle_RF"];
+};
+
 if (_hasContact) then {
 	_carbines pushBack ["arifle_AK12U_F", "", "", "", ["30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Tracer_Green_F"], [], ""];
 	_tunedRifles pushBack ["arifle_AK12U_F", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Tracer_Green_F"], [], ""];
