@@ -47,6 +47,7 @@ class cfgHALsStore
 		#include "config\niarms.hpp"
 		#include "config\optre.hpp"
 		#include "config\pla.hpp"
+		#include "config\rf.hpp"
 		#include "config\rhs.hpp"
 		#include "config\scion.hpp"
 		#include "config\sfp.hpp"
@@ -91,7 +92,7 @@ class cfgHALsStore
 				"miscVanilla"
 			};
 		};
-
+    
 		class apex 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -198,7 +199,24 @@ class cfgHALsStore
 				"magazinesKkiv2035"
 			};
 		};
-
+    
+		class rf 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesRF", 
+				"sniperRiflesRF", 
+				"smgRF", 
+				"handgunsRF", 
+				"magazinesRF", 
+				"navigationRF", 
+				"pointersRF", 
+				"muzzlesRF", 
+				"opticsRF", 
+				"miscRF"
+			};
+		};
+    
 		class ws 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;

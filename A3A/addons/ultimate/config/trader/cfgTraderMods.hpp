@@ -105,6 +105,11 @@ class traderMods
         addons[] = {"mas_chi_army"};
         prefix = "plastock";
     };
+    class rf : base
+    {
+        addons[] = {"RF_Weapons"};
+        prefix = "rf";
+    };
     class BWA3 : base
     {
         addons[] = {"bwa3_common"};
