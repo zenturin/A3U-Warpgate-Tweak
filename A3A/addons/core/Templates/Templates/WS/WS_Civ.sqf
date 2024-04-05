@@ -114,13 +114,6 @@ private _workerUniforms = [
 
 private _dlcUniforms = [];
 
-if (allowDLCOrange) then {
-  _dlcUniforms append [
-    "U_C_Paramedic_01_F",
-    "U_C_Mechanic_01_F"
-  ];
-};
-
 if (_hasRF) then {
     private _RFleatherJackets = [
         "U_C_PilotJacket_black_RF",
