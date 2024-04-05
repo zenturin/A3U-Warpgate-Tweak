@@ -77,10 +77,18 @@ if (_reconVehicleClass in _reconVehicleDroppod) exitWith {
    [_markerX] call A3A_fnc_LOG_Crashsite_Satelite;
 };
 
-private _searchHeliClass =  if (_difficult) then {
-    selectRandom ((_faction get "vehiclesHelisLight") +(_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
+private _searchHeliClassLight = _faction getOrDefault ["vehiclesHelisLight", []];
+private _searchHeliClassLightAttack = _faction getOrDefault ["vehiclesHelisLightAttack", []];
+private _searchHeliClassAttack = _faction getOrDefault ["vehiclesHelisAttack", []];
+private _searchHeliClass = [];
+if (_searchHeliClassLight isEqualTo [] && {_searchHeliClassLightAttack isEqualTo []} && {_searchHeliClassAttack isEqualTo []}) then {
+  _searchHeliClass = [];
 } else {
-    selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
+    private _searchHeliClass =  if (_difficult) then {
+        selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
+    } else {
+        selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
+    };
 };
 private _cargoTruckClass = selectRandom (_faction get "vehiclesTrucks");
 
@@ -331,70 +339,85 @@ _cargoVehicleWp = _cargoVehicleGroup addWaypoint [position _box, 1];
 _cargoVehicleWp setWaypointType "GETOUT";
 _cargoVehicleWp setWaypointBehaviour "SAFE";
 
-//loiter helicopter
-_searchHeliData = [[(_cargoGroupSpawnpositon select 0) + random 100, (_cargoGroupSpawnpositon select 1) + random 100, 50 + random 75], 0, _searchHeliClass, _sideX] call A3A_fnc_spawnVehicle;
-_searchHeliVeh = _searchHeliData select 0;
-[_searchHeliVeh, _sideX] call A3A_fnc_AIVEHinit;
-_searchHeliCrew = _searchHeliData select 1;
-{[_x] call A3A_fnc_NATOinit} forEach _searchHeliCrew;
-_heliVehicleGroup = _searchHeliData select 2;
 
-private _pilot = driver _searchHeliVeh;
-_pilot disableAI "LIGHTS";
-_pilot action ["lightOn", _searchHeliVeh];
-_pilot action ["collisionlightOn", _searchHeliVeh];
-//maybe this should be broadcasted
-_searchHeliVeh setPilotLight true;
-_searchHeliVeh setCollisionLight true;
+private _searchHeliData = [];
+private _searchHeliVeh = [];
+private _searchHeliCrew = [];
+private _heliVehicleGroup = [];
+private _pilot = "";
+if (_searchHeliClass isNotEqualTo []) then {
+    //loiter helicopter
+    _searchHeliData = [[(_cargoGroupSpawnpositon select 0) + random 100, (_cargoGroupSpawnpositon select 1) + random 100, 50 + random 75], 0, _searchHeliClass, _sideX] call A3A_fnc_spawnVehicle;
+    _searchHeliVeh = _searchHeliData select 0;
+    [_searchHeliVeh, _sideX] call A3A_fnc_AIVEHinit;
+    _searchHeliCrew = _searchHeliData select 1;
+    {[_x] call A3A_fnc_NATOinit} forEach _searchHeliCrew;
+    _heliVehicleGroup = _searchHeliData select 2;
 
-_groups pushBack _heliVehicleGroup;
-_vehicles pushBack _searchHeliVeh;
+    private _pilot = driver _searchHeliVeh;
+    _pilot disableAI "LIGHTS";
+    _pilot action ["lightOn", _searchHeliVeh];
+    _pilot action ["collisionlightOn", _searchHeliVeh];
+    //maybe this should be broadcasted
+    _searchHeliVeh setPilotLight true;
+    _searchHeliVeh setCollisionLight true;
 
-_heliInfGroup = [_missionOriginPos, _sideX, _specOpsArray] call A3A_fnc_spawnGroup;
-{
-    _x assignAsCargo _searchHeliVeh; 
-    _x moveInCargo _searchHeliVeh; 
-    [_x] join _heliInfGroup; /// _heliVehicleGroup
-    [_x] call A3A_fnc_NATOinit;
-} forEach units _heliInfGroup;
-{
+    _groups pushBack _heliVehicleGroup;
+    _vehicles pushBack _searchHeliVeh;
+};
+
+private _heliInfGroup = [];
+private _totalSeats = [];
+private _heliInfGroupSize = [];
+if (_searchHeliClass isNotEqualTo []) then {
+   _heliInfGroup = [_missionOriginPos, _sideX, _specOpsArray] call A3A_fnc_spawnGroup;
+   _groups pushBack _heliInfGroup;
+   {
+        _x assignAsCargo _searchHeliVeh; 
+        _x moveInCargo _searchHeliVeh; 
+        [_x] join _heliInfGroup; /// _heliVehicleGroup
+        [_x] call A3A_fnc_NATOinit;
+    } forEach units _heliInfGroup;
+    {
     private _index = _searchHeliVeh getCargoIndex _x;
     if (_index == -1) then {
         deleteVehicle _x;
     };
-} forEach units _heliInfGroup;
+    } forEach units _heliInfGroup;
+    _landPos = [_crashsiteactual, 30, 100, 10, 0, 0.25, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
+    _totalSeats = [typeOf _cargoVehicle, false] call BIS_fnc_crewCount; 
+    _heliInfGroupSize = count units _heliInfGroup;
+    if(_searchHeliClass in (_faction get "vehiclesHelisLight")) then {
 
-_landPos = [_crashsiteactual, 30, 100, 10, 0, 0.25, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
-private _totalSeats = [typeOf _cargoVehicle, false] call BIS_fnc_crewCount; 
-private _heliInfGroupSize = count units _heliInfGroup;
-if(_searchHeliClass in (_faction get "vehiclesHelisLight")) then {
+        if ((typeOf _searchHeliVeh) in vehFastRope) then {
+            [_searchHeliVeh, _heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _searchHeliVeh] spawn A3A_fnc_fastrope;
+        } else {
+            [_searchHeliVeh, _heliVehicleGroup,_heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _landPos] spawn A3A_fnc_combatLanding;    
+        };
 
-    if ((typeOf _searchHeliVeh) in vehFastRope) then {
-        [_searchHeliVeh, _heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _searchHeliVeh] spawn A3A_fnc_fastrope;
+        if (_totalSeats - 2 < _heliInfGroupSize) then { /// -2 because cargo will take at most 2 seats
+            sleep 8; /// just to make sure cargovehicles won't collide
+            private _cargoVehicleData2 = [_cargoGroupSpawnpositon , 0, _cargoTruckClass, _sideX] call A3A_fnc_spawnVehicle; ///Just to make sure that everyone can RTB
+            _cargoVehicle2 = _cargoVehicleData2 select 0;
+            _cargoVehicle2 limitSpeed 85;
+            [_cargoVehicle2, _sideX] call A3A_fnc_AIVEHinit;
+            ///[_cargoVehicle2,"Cargo Truck"] spawn A3A_fnc_inmuneConvoy;
+            _vehicles pushBack _cargoVehicle2;
+            _cargoVehicle2Wp = group driver _cargoVehicle2 addWaypoint [position _box, 1];
+            _cargoVehicle2Wp setWaypointType "GETOUT";
+            _cargoVehicle2Wp setWaypointBehaviour "SAFE";
+            _cargoVehicle2Wp setWaypointCompletionRadius 20;
+            _cargoVehicle2driver = driver _cargoVehicle2;
+        };
     } else {
-        [_searchHeliVeh, _heliVehicleGroup,_heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _landPos] spawn A3A_fnc_combatLanding;    
-    };
-
-    if (_totalSeats - 2 < _heliInfGroupSize) then { /// -2 because cargo will take at most 2 seats
-        sleep 8; /// just to make sure cargovehicles won't collide
-        private _cargoVehicleData2 = [_cargoGroupSpawnpositon , 0, _cargoTruckClass, _sideX] call A3A_fnc_spawnVehicle; ///Just to make sure that everyone can RTB
-        _cargoVehicle2 = _cargoVehicleData2 select 0;
-        _cargoVehicle2 limitSpeed 85;
-        [_cargoVehicle2, _sideX] call A3A_fnc_AIVEHinit;
-        ///[_cargoVehicle2,"Cargo Truck"] spawn A3A_fnc_inmuneConvoy;
-        _vehicles pushBack _cargoVehicle2;
-        _cargoVehicle2Wp = group driver _cargoVehicle2 addWaypoint [position _box, 1];
-        _cargoVehicle2Wp setWaypointType "GETOUT";
-        _cargoVehicle2Wp setWaypointBehaviour "SAFE";
-        _cargoVehicle2Wp setWaypointCompletionRadius 20;
-        _cargoVehicle2driver = driver _cargoVehicle2;
-    };
-} else {
     _heliVehicleGroupWP2 = _heliVehicleGroup  addWaypoint [position _box, 1];
     _heliVehicleGroupWP2 setWaypointType "LOITER";
     _heliVehicleGroupWP2 setWaypointBehaviour "SAFE";
     [_heliVehicleGroup, 0] setWaypointLoiterRadius 400;
     [_heliVehicleGroup, 0] setWaypointLoiterType "CIRCLE_L";
+    };
+} else {
+    
 };
 
 if (!isNull _cargoVehicle2 || alive _cargoVehicle2) then {
@@ -525,11 +548,13 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    if(count waypoints _heliInfGroup  > 0) then {
-        for "_i" from count waypoints _heliInfGroup  - 1 to 0 step -1 do {
-            deleteWaypoint [_heliInfGroup , _i];
+    if (_searchHeliClass isNotEqualTo []) then {
+        if(count waypoints _heliInfGroup  > 0) then {
+            for "_i" from count waypoints _heliInfGroup  - 1 to 0 step -1 do {
+                deleteWaypoint [_heliInfGroup , _i];
+            };
         };
-    };
+    }else{};
 
 
     if ((!isNull _cargoVehicle2 || alive _cargoVehicle2) && (_cargoVehicle2 distance2D _reconvehicle < 50)) then {
@@ -582,18 +607,19 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
 
     } else {
-        {
-            _x assignAsCargo _cargoVehicle;  
-            [_x] join _cargoVehicleGroup; 
-            [_x] call A3A_fnc_NATOinit;
-        } forEach units _heliInfGroup;
+        if (_searchHeliClass isNotEqualTo []) then {
+            {
+                _x assignAsCargo _cargoVehicle;  
+                [_x] join _cargoVehicleGroup; 
+                [_x] call A3A_fnc_NATOinit;
+            } forEach units _heliInfGroup;
+            _heliInfWp1 = _heliInfGroup addWaypoint [_box, 0]; ///_cargoVehicle
+            _heliInfWp1 setWaypointType "GETIN";
+            _heliInfWp1 setWaypointBehaviour "SAFE";
 
-        _heliInfWp1 = _heliInfGroup addWaypoint [_box, 0]; ///_cargoVehicle
-        _heliInfWp1 setWaypointType "GETIN";
-        _heliInfWp1 setWaypointBehaviour "SAFE";
-
-        _heliInfWp2 = _heliInfGroup addWaypoint [_deliverySite, 1];
-        _heliInfWp2 setWaypointType "MOVE"; 
+            _heliInfWp2 = _heliInfGroup addWaypoint [_deliverySite, 1];
+            _heliInfWp2 setWaypointType "MOVE"; 
+        } else {};
 
         _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle
         _cargoWp1 setWaypointType "GETIN";
@@ -601,28 +627,38 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
 
         _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
         _cargoWp2 setWaypointType "MOVE";
-            
-        if(_isEnemyKnowsAboutTeamplayer) then {
-            _cargoWp2 setWaypointBehaviour "AWARE";
-            _heliInfWp2 setWaypointBehaviour "AWARE";
+
+        if (_searchHeliClass isNotEqualTo []) then {    
+            if(_isEnemyKnowsAboutTeamplayer) then {
+                _cargoWp2 setWaypointBehaviour "AWARE";
+                _heliInfWp2 setWaypointBehaviour "AWARE";
+            } else {
+                _cargoWp2 setWaypointBehaviour "SAFE";
+                _heliInfWp2 setWaypointBehaviour "SAFE";
+            };
         } else {
-            _cargoWp2 setWaypointBehaviour "SAFE";
-            _heliInfWp2 setWaypointBehaviour "SAFE";
-        };   
+            if(_isEnemyKnowsAboutTeamplayer) then {
+                _cargoWp2 setWaypointBehaviour "AWARE";
+            } else {
+                _cargoWp2 setWaypointBehaviour "SAFE";
+            };
+        }   
     };
 
-    if(count waypoints _heliVehicleGroup > 0) then {
-        for "_i" from count waypoints _heliVehicleGroup - 1 to 0 step -1 do {
-            deleteWaypoint [_heliVehicleGroup, _i];
+    if (_searchHeliClass isNotEqualTo []) then {  
+        if(count waypoints _heliVehicleGroup > 0) then {
+            for "_i" from count waypoints _heliVehicleGroup - 1 to 0 step -1 do {
+                deleteWaypoint [_heliVehicleGroup, _i];
+            };
         };
-    };
-    _searchHeliWp1 = _heliVehicleGroup addWaypoint [_deliverySite, 2];
-    _searchHeliWp1 setWaypointType "MOVE";
-    if(_isEnemyKnowsAboutTeamplayer) then {
-        _searchHeliWp1 setWaypointBehaviour "AWARE";
-    } else {
-        _searchHeliWp1 setWaypointBehaviour "SAFE"; 
-    };
+        _searchHeliWp1 = _heliVehicleGroup addWaypoint [_deliverySite, 2];
+        _searchHeliWp1 setWaypointType "MOVE";
+        if(_isEnemyKnowsAboutTeamplayer) then {
+            _searchHeliWp1 setWaypointBehaviour "AWARE";
+        } else {
+            _searchHeliWp1 setWaypointBehaviour "SAFE"; 
+        };
+    } else {};
 };
 
 waitUntil {
