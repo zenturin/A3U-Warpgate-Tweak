@@ -84,7 +84,7 @@ private _searchHeliClass = [];
 if (_searchHeliClassLight isEqualTo [] && {_searchHeliClassLightAttack isEqualTo []} && {_searchHeliClassAttack isEqualTo []}) then {
   _searchHeliClass = [];
 } else {
-    private _searchHeliClass =  if (_difficult) then {
+    _searchHeliClass =  if (_difficult) then {
         selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack") + (_faction get "vehiclesHelisAttack"))
     } else {
         selectRandom ((_faction get "vehiclesHelisLight") + (_faction get "vehiclesHelisLightAttack"))
