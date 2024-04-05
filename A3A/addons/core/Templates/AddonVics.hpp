@@ -104,7 +104,7 @@ class AddonVics
         path = QPATHTOFOLDER(Templates\AddonVics);
         requiredAddons[] = {"gm_vehicles_land_wheeled_w123_ge_civ_w123"};
         //format {side, file relative to path}
-        files[] = { {"Civ", "globalmobilization_Civ.sqf"} };
+        files[] = { {"Civ", "gm_Civ.sqf"} };
         displayName = "Global Mobilization Vehicle Pack";
         description = "Global Mobilization civilian vehicle pack(don't forget to enable cdlc above!)";
         loadedMessage = "Global Mobilization loaded, civilian vehicle pool expanded";
@@ -115,10 +115,10 @@ class AddonVics
         path = QPATHTOFOLDER(Templates\AddonVics);
         requiredAddons[] = {"CSLA_CIV"};
         //format {side, file relative to path}
-        files[] = { {"Civ", "clsaironcurtian_Civ.sqf"} };
-        displayName = "CLSA Iron Curtian Vehicle Pack";
-        description = "CLSA Iron Curtian civilian vehicle pack(don't forget to enable cdlc above!)";
-        loadedMessage = "CLSA Iron Curtian loaded, civilian vehicle pool expanded";
+        files[] = { {"Civ", "csla_Civ.sqf"} };
+        displayName = "CSLA Iron Curtian Vehicle Pack";
+        description = "CSLA Iron Curtian civilian vehicle pack(don't forget to enable cdlc above!)";
+        loadedMessage = "CSLA Iron Curtian loaded, civilian vehicle pool expanded";
     };
 
     class D3S
