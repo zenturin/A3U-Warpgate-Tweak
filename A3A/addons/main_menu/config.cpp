@@ -40,7 +40,7 @@ class RANDOM_NUMBER
 #endif
 
 #if RANDOM_NUMBER > 68
-    #define BACKGROUND data\backgrounds\clone_wars_co.jpg
+    #define BACKGROUND data\backgrounds\rebels2_co.jpg
 #endif
 
 #if RANDOM_NUMBER > 85
@@ -83,12 +83,8 @@ class RANDOM_NUMBER
     #define BACKGROUND data\backgrounds\vietnarm_co.jpg
 #endif
 
-#if RANDOM_NUMBER == 255
-    #define BACKGROUND data\backgrounds\testbg_co.jpg
-#endif
-
 #ifndef BACKGROUND
-    #define BACKGROUND data\backgrounds\us_army_co.jpg
+    #define BACKGROUND data\backgrounds\usmc_co.jpg
 #endif
 
 class RscActivePicture;
@@ -96,8 +92,8 @@ class RscStandardDisplay;
 class RscPicture;
 class RscText;
 class RscStructuredText;
-class RscTitles //loading screen
-{
+class RscTitles
+{ //loading screen
 	class SplashNoise
 	{
 		idd=-1;
