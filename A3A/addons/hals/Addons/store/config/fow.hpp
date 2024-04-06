@@ -53,9 +53,9 @@
 			ITEM(fow_w_leeenfield_no4mk1_redwood, 210, RIFLE_STOCK); // fow_10Rnd_303
 			ITEM(fow_w_leeenfield_no5mk1_junglecarbine, 200, RIFLE_STOCK); // fow_10Rnd_303
 			ITEM(fow_w_m1_carbine, 250, RIFLE_STOCK); // fow_15Rnd_762x33
-			ITEM(fow_w_m1_garand, 300, RIFLE_STOCK); // fow_8Rnd_762x73
-			ITEM(fow_w_m1_garand_2, 300, RIFLE_STOCK); // fow_8Rnd_762x73
-			ITEM(fow_w_m1_garand_l, 300, RIFLE_STOCK); // fow_8Rnd_762x73
+			ITEM(fow_w_m1_garand, 300, RIFLE_STOCK); // fow_8Rnd_762x63
+			ITEM(fow_w_m1_garand_2, 300, RIFLE_STOCK); // fow_8Rnd_762x63
+			ITEM(fow_w_m1_garand_l, 300, RIFLE_STOCK); // fow_8Rnd_762x63
 			ITEM(fow_w_m1903A1, 200, RIFLE_STOCK); // fow_5Rnd_762x63
 			ITEM(fow_w_k98, 210, RIFLE_STOCK); // fow_5Rnd_792x57
 			ITEM(fow_w_type99, 190, RIFLE_STOCK); // fow_5Rnd_77x58
@@ -123,7 +123,7 @@
 			ITEM(fow_50Rnd_792x57, 120, MZ_STOCK);
 			ITEM(fow_10Rnd_303, 35, MZ_STOCK);
 			ITEM(fow_15Rnd_762x33, 25, MZ_STOCK);
-            ITEM(fow_8Rnd_762x73, 35, MZ_STOCK);
+            ITEM(fow_8Rnd_762x63, 35, MZ_STOCK);
 			ITEM(fow_5Rnd_762x63, 30, MZ_STOCK);
 			ITEM(fow_5Rnd_792x57, 30, MZ_STOCK);
 			ITEM(fow_5Rnd_77x58, 30, MZ_STOCK);
