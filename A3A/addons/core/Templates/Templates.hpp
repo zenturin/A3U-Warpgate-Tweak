@@ -683,5 +683,9 @@ class Templates
     // ***************************** TMT - Turkish Forces *****************************
 
     #include "Templates\TMT\templates.hpp"
+	
+    // ***************************** Faces of War *****************************
+
+    #include "Templates\FoW\templates.hpp"
 
 };
