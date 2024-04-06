@@ -682,6 +682,7 @@
                 <Russian>Этот предмет содержит в себе некоторое количество наборов восстановления боеспособности.</Russian>
                 <Chinesesimp>这个物品包含一定数量的战备恢复包。</Chinesesimp>
                 <Korean>이 아이템은 일정량의 전투 준비 복구 키트가 들어 있습니다.</Korean>
+                <French>Cet objet contient un certain nombre de kits de récupération de l'état de préparation au combat.</French>
             </Key>
         </Container>
         <Container name="dialog_main_player">
