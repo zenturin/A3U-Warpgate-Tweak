@@ -7,49 +7,59 @@
                 <Russian>Ящик-сборщик добычи</Russian>
                 <Chinesesimp>战利品箱</Chinesesimp>
                 <Korean>전리품 상자</Korean>
+                <French>Caisse de Loot</French>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_fuel_tank">
                 <Original>Fuel Tank</Original>
                 <Russian>Топливная цистерна</Russian>
                 <Chinesesimp>油箱</Chinesesimp>
                 <Korean>연료통 (연료탱크)</Korean>
+                <French>Réservoir de carburant</French>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_fuel_drum">
                 <Original>Fuel Drum</Original>
                 <Russian>Бочка с топливом</Russian>
                 <Korean>연료통 (드럼통)</Korean>
+                <French>Fût de carburant</French>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_light">
                 <Original>Light</Original>
                 <Russian>Уличный фонарь</Russian>
                 <Chinesesimp>灯</Chinesesimp>
                 <Korean>조명</Korean>
+                <French>Lumière
+</French>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_revive_kit_box">
                 <Original>Box with Combat Readiness Recovery Kits</Original>
                 <Russian>Ящик c наборами восстановления боеспособности</Russian>
                 <Chinesesimp>装有战备恢复包的盒子</Chinesesimp>
                 <Korean>전투 준비 복구 키트가 든 상자</Korean>
+                <French>Boîte contenant des kits de récupération pour la préparation au combat</French>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_medical_tent">
                 <Original>Medical Tent</Original>
                 <Russian>Медицинская палатка</Russian>
                 <Korean>의료텐트</Korean>
+                <French>Tente médicale</French>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_ammo_station">
                 <Original>Ammo Station</Original>
                 <Russian>Пункт боепитания</Russian>
                 <Korean>탄약고</Korean>
+                <French>Station de munitions</French>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_repair_station">
                 <Original>Repair Station</Original>
                 <Russian>Пункт ремонта</Russian>
                 <Korean>수리소</Korean>
+                <French>Station de réparation</French>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_medical_box">
                 <Original>Medical Box</Original>
                 <Russian>Коробка с медициной</Russian>
                 <Korean>의료 상자</Korean>
+                <French>Boite médicale</French>
             </Key>
         </Container>
         <Container name="arsenal">
@@ -58,72 +68,84 @@
                 <Russian>Выберите транспортное средство чтобы открыть арсенал для него и наполнить инвентарь техники любыми предметами из арсенала.</Russian>
                 <Chinesesimp>选择车辆为其打开武器库，以便将其货物与武器库中的任何物品一起装满。</Chinesesimp>
                 <Korean>아스널의 모든 아이템으로 화물을 채울 수 있도록 아스널을 열 차량을 선택하십시오.</Korean>
+                <French>Sélectionnez un véhicule pour ouvrir son inventaire et remplissez-le avec les objets de l'arsenal.</French>
             </Key>
             <Key ID="STR_A3AP_vehArsenal_header">
                 <Original>Vehicle Arsenal</Original>
                 <Russian>Арсенал (Техника)</Russian>
                 <Chinesesimp>载具库</Chinesesimp>
                 <Korean>차량 아스널</Korean>
+                <French>Arsenal de véhicule</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_0">
                 <Original>Looks like I am the only one using this today</Original>
                 <Russian>Похоже, что я буду единственным, кто сможет использовать это сегодня</Russian>
                 <Chinesesimp>看来今天只有我在用这个了</Chinesesimp>
                 <Korean>오늘은 나만 이걸 사용할 것 같군</Korean>
+                <French>On dirait que je suis le seul à l'utiliser aujourd'hui.</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_1">
                 <Original>More than enough for a whole army</Original>
                 <Russian>Более чем достаточно для целой армии</Russian>
                 <Chinesesimp>对于武装整个军队来说绰绰有余</Chinesesimp>
                 <Korean>전군이 감당하기에 충분하다</Korean>
+                <French>Plus qu'il n'en faut pour toute une armée</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_2">
                 <Original>Many of these left</Original>
                 <Russian>Этого ещё много</Russian>
                 <Chinesesimp>还剩下很多</Chinesesimp>
                 <Korean>많이 남았다</Korean>
+                <French>Beaucoup d'entre eux ont quitté</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_3">
                 <Original>Some of these left</Original>
                 <Russian>Что-то из этого ещё есть</Russian>
                 <Chinesesimp>还剩下一些</Chinesesimp>
                 <Korean>조금 남았다</Korean>
+                <French>Certains d'entre eux ont quitté</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_4">
                 <Original>If I want one I need to take it before some one else does</Original>
                 <Russian>Если я хочу этим пользоваться, мне надо этот предмет взять в руки до того как его возьмут другие</Russian>
                 <Chinesesimp>如果你想拿到这些装备得趁早</Chinesesimp>
                 <Korean>만약 내가 뭘 원한다면 다른 사람이 가져가기 전에 내가 먼저 가져야 한다</Korean>
+                <French>Si j'en veux un, je dois le prendre avant que quelqu'un d'autre ne le fasse.</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_5">
                 <Original>The last one in the box</Original>
                 <Russian>Последний предмет в ящике</Russian>
                 <Chinesesimp>箱子里的最后一个</Chinesesimp>
                 <Korean>상자 안에 있는 마지막 물품이다</Korean>
+                <French>Le dernier dans la boîte</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_ammo_0">
                 <Original>, but there is no ammo for it</Original>
                 <Russian>, но нет подходящих боеприпасов.</Russian>
                 <Chinesesimp>，但是没有弹药</Chinesesimp>
                 <Korean>. 하지만 그걸 위한 탄약이 없다</Korean>
+                <French>mais il n'y a pas de munitions pour ça</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_ammo_1">
                 <Original>, and there is enough ammo for it</Original>
                 <Russian> и для него достаточно боеприпасов.</Russian>
                 <Chinesesimp>，有足够的弹药</Chinesesimp>
                 <Korean>. 그리고 탄약도 충분하다</Korean>
+                <French>et il y a assez de munitions pour cela</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_ammo_2">
                 <Original>, and there is still some ammo for it</Original>
                 <Russian> и есть подходящие боеприпасы в каком-то количестве.</Russian>
                 <Chinesesimp>，还剩点弹药</Chinesesimp>
                 <Korean>. 그래도 아직 탄약은 조금 남아 있다</Korean>
+                <French>et il y a encore des munitions pour ça</French>
             </Key>
             <Key ID="STR_A3AP_arsenal_scarcity_ammo_3">
                 <Original>, but there are only a few shots for it</Original>
                 <Russian>, но подходящих боеприпасов совсем немного.</Russian>
                 <Chinesesimp>，只有一点弹药</Chinesesimp>
                 <Korean>. 하지만 몇 번만 쏠 양 밖에 없다</Korean>
+                <French>mais il n'y a que peu de photos pour cela</French>
             </Key>
         </Container>
         <Container name="blackmarket">
@@ -132,18 +154,21 @@
                 <Russian>Повстанцам необходимо контроллировать хотя бы один морской порт для получения доступа к чёрному рынку.</Russian>
                 <Chinesesimp>至少需要控制一个海港才能进入黑市</Chinesesimp>
                 <Korean>반군은 암시장에 접근하기 위해 적어도 하나의 항구를 통제할 필요가 있습니다.</Korean>
+                <French>Les rebelles doivent contrôler au moins un port maritime pour accéder au marché noir.</French>
             </Key>
             <Key ID="STR_A3AP_blackmarket_res">
                 <Original>Rebels need to control at least one resource to access the black market.</Original>
                 <Russian>Повстанцам необходимо контроллировать хотя бы одну ресурсную точку для получения доступа к чёрному рынку.</Russian>
                 <Chinesesimp>至少需要控制一种资源才能进入黑市。</Chinesesimp>
                 <Korean>반군은 암시장에 접근하기 위해 적어도 하나의 자원채취소를 통제할 필요가 있습니다.</Korean>
+                <French>Les rebelles doivent contrôler au moins une ressource pour accéder au marché noir.</French>
             </Key>
             <Key ID="STR_A3AP_blackmarket_header">
                 <Original>Vehicle Black Market Is Not Available</Original>
                 <Russian>Чёрный рынок бронетехники недоступен</Russian>
                 <Chinesesimp>载具黑市不可用</Chinesesimp>
                 <Korean>차량 암시장을 사용할 수 없음</Korean>
+                <French>Le marché noir des véhicules n'est pas disponible</French>
             </Key>
         </Container>
         <Container name="setupFactionsTab">
@@ -152,113 +177,132 @@
                 <Russian>Эта фракция недоступна в текущей конфигурации игры. Проверьте свои моды или CDLC если вы хотите её использовать.\nТребуемые аддоны: %1</Russian>
                 <Chinesesimp>该派系在当前游戏设置中不可用。如果您想使用它，请检查您的 CDLC 或模组。\n所需的插件: %1</Chinesesimp>
                 <Korean>이 팩션은 현재 게임 설정에서 사용할 수 없습니다. 사용하길 원한다면 CDLC 와/나 모드를 확인하십시오.\n필요 애드온: %1</Korean>
+                <French>Cette faction n'est pas disponible dans la configuration actuelle du jeu. Vérifiez vos CDLCs et/ou vos mods si vous souhaitez l'utiliser.\nAddons nécessaires : %1</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_vanilla_generic">
                 <Original>Standard faction from base game.</Original>
                 <Russian>Стандартная фракция из базовой игры.</Russian>
                 <Chinesesimp>来自基础游戏的标准派系。</Chinesesimp>
                 <Korean>바닐라의 표준 팩션입니다.</Korean>
+                <French>Faction standard du jeu de base.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_vanilla_civ">
                 <Original>Standard civilians.</Original>
                 <Russian>Стандартные гражданские.</Russian>
                 <Chinesesimp>标准平民。</Chinesesimp>
                 <Korean>일반 시민입니다.</Korean>
+                <French>Civils standard.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_easterneuropean">
                 <Original>Eastern European civilians.</Original>
                 <Russian>Восточноевропейские гражданские.</Russian>
                 <Chinesesimp>东欧平民。</Chinesesimp>
                 <Korean>동유럽계 시민입니다.</Korean>
+                <French>Civils d'Europe de l'Est.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_a">
                 <Original>Arid Climate Civlians.</Original>
                 <Russian>Гражданские засушливого климата.</Russian>
                 <Chinesesimp>干旱气候平民。</Chinesesimp>
                 <Korean>건조 기후쪽 시민입니다.</Korean>
+                <French>Civils de climat aride.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_takistan">
                 <Original>Takistan civilians.</Original>
                 <Russian>Такистанские гражданские.</Russian>
                 <Chinesesimp>塔克斯坦平民。</Chinesesimp>
                 <Korean>타키스탄 국민입니다.</Korean>
+                <French>Civils du Takistan.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_csat">
                 <Original>Canton Protocol Strategic Alliance Treaty (CSAT).\nEastern alliance that relies on mix of Russian-made equipment and it's own developments.</Original>
                 <Russian>Стратегический Альянс по Договору Гуанчжоу (CSAT).\nВосточный альянс, делающий ставку на сочетание техники российского производства и собственных разработок.</Russian>
                 <Chinesesimp>(CSAT)\n依赖于俄制装备以及自制装备的东方联盟。</Chinesesimp>
                 <Korean>광둥 의정서 전략 동맹 조약(CSAT).\n러시아제 장비와 자체 개발품의 혼합에 의존하는 동구권 동맹입니다.</Korean>
+                <French>Canton Protocol Strategic Alliance Treaty (CSAT).\nAlliance de l'Est qui s'appuie sur un mélange d'équipements de fabrication russe et sur ses propres développements.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_nato">
                 <Original>North Atlantic Treaty Organization (NATO).\nMulti-national Western faction which has a plenty of unified vehicle platforms and wide nomenclature of guided munitions.</Original>
                 <Russian>Организация Североатлантического договора (НАТО).\nМногонациональная западная фракция, имеющая множество унифицированных транспортных платформ и широкую номенклатуру управляемых боеприпасов.</Russian>
                 <Chinesesimp>北大西洋公约组织 (NATO)\n多国西方派系，拥有大量统一载具和广泛的制导弹药。</Chinesesimp>
                 <Korean>북대서양 조약기구(NATO).\n수많은 통일된 차량 플랫폼과 다양한 이름의 유도탄을 가진 다국적 서방 진영입니다.</Korean>
+                <French>Organisation du traité de l'Atlantique Nord (OTAN) : faction occidentale multinationale qui dispose d'un grand nombre de plates-formes de véhicules unifiées et d'une large nomenclature de munitions guidées.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_aaf">
                 <Original>Altis Armed Forces (AAF).\nSmall, but highly motivated force which effectively uses a wide range of decomissioned and outdated yet still effective Western equipment.</Original>
                 <Russian>Вооруженные силы Алтиса (AAF).\nНебольшая, но высокомотивированная сила, эффективно использующая широкий спектр хоть и выведенной из эксплуатации и устаревшей, но все еще эффективной западной номеклатуры вооружений.</Russian>
                 <Chinesesimp>阿尔蒂斯武装部队 (AAF)\n规模小但士气高涨的部队，能有效地使用各种退役的、过时的但仍然有效的西方装备。</Chinesesimp>
                 <Korean>알티스군(AAF).\n퇴역되었고 구식이지만 여전히 효과적인 서방 장비를 광범위하게 효과적으로 사용하는 작지만 사기가 높은 군대입니다.</Korean>
+                <French>Forces armées d'Altis (AAF).\nPetite force, mais très motivée, qui utilise efficacement une large gamme d'équipements occidentaux déclassés et obsolètes, mais toujours efficaces.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_aaf_3cbf">
                 <Original>Altis Armed Forces (AAF).\nSmall, but highly motivated force which effectively uses a wide range of decomissioned and outdated yet still effective equipment around the world.</Original>
                 <Russian>Вооруженные силы Алтиса (AAF).\nНебольшая, но высокомотивированная сила, эффективно использующая широкий спектр хоть и выведенной из эксплуатации и устаревшей, но все еще эффективной номеклатуры вооружений со всего света.</Russian>
                 <Chinesesimp>阿尔蒂斯武装部队 (AAF)\n规模小但士气高涨的部队，能有效地使用各种退役的、过时的但仍然有效的各国装备。</Chinesesimp>
                 <Korean>알티스군(AAF).\n전 세계적으로 퇴역되었고 구식이지만 여전히 효과적인 서방 장비를 광범위하게 효과적으로 사용하는 작지만 사기가 높은 군대입니다.</Korean>
+                <French>Forces armées d'Altis (AAF).\nPetite, mais très motivée, force qui utilise efficacement une large gamme d'équipements déclassés et obsolètes, mais toujours efficaces, dans le monde entier.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_tka">
                 <Original>Takistan Army (TKA).\nA mix of military and paramilitary forces using dated equipment all around the world.</Original>
                 <Russian>Армия Такистана (TKA).\nСочетание военных и парамилитари-сил, использующих, в основном, устаревшее вооружение со всего мира.</Russian>
                 <Chinesesimp>塔克斯坦军队 (TKA)。\n使用世界各地陈旧装备的军事和准军事部队混合体。</Chinesesimp>
                 <Korean>타키스탄군(TKA).\n전 세계의 구식 장비를 사용하는 군대와 준군사조직이 섞인 군대입니다.</Korean>
+                <French>Armée du Takistan (TKA).\nUn mélange de forces militaires et paramilitaires utilisant des équipements datés dans le monde entier.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_ard">
                 <Original>Ardistan Army (ARD).\nArmy of former Soviet client state still using a lot of their equipment.</Original>
                 <Russian>Армия Ардистана (ARD).\nАрмия одного из бывших саттелитов Советского Союза, до сих использующая его вооружение и экипировку.</Russian>
                 <Chinesesimp>阿迪斯坦军队 (ARD)。\n前苏联加盟国的军队，仍在使用大量苏联装备。</Chinesesimp>
                 <Korean>아르디스탄군(ARD).\n구 소련 위성국의 군대로 여전히 많은 장비를 사용하고 있습니다.</Korean>
+                <French>Armée de l'Ardistan (ARD).\nL'armée de l'ancien État client de l'Union soviétique utilise encore une grande partie de son équipement.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_fia">
                 <Original>Freedom and Independence Army (FIA).\nStandard issue guerilla faction. Smoothbore rifles and a little bit of courage will pave your way to freedom.</Original>
                 <Russian>Армия свободы и независимости (FIA).\nСтандартная партизанская фракция. Гладкоствольные ружья и немного отваги проложат путь к свободе. </Russian>
                 <Chinesesimp>自由独立军 (FIA)\n标准游击队派系。滑膛枪和一点点的勇气将为你铺平通往自由的道路。 </Chinesesimp>
                 <Korean>자유독립군(FIA).\n표준 게릴라 팩션. 무강선총과 약간의 용기가 당신의 자유를 위한 길을 열어줄 것입니다.</Korean>
+                <French>Armée de la liberté et de l'indépendance (FIA).\nFaction de guérilla standard. Des fusils à canon lisse et un peu de courage vous permettront d'accéder à la liberté.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_sdk">
                 <Original>Syndikat (SDK).\nHorizon Islands paramilitary force.</Original>
                 <Russian>Синдикат (SDK).\nВоенизированная организация, действующая главным образом на островах Горизонта.</Russian>
                 <Chinesesimp>辛迪加 (SDK)。\n地平线群岛准军事部队。</Chinesesimp>
                 <Korean>신디캣(SDK).\n호라이즌 제도의 준군사조직입니다.</Korean>
+                <French>Syndikat (SDK).\nForce paramilitaire des Îles de l'Horizon.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_ll">
                 <Original>Livonian Looters (LL).\nEastern European militants.</Original>
                 <Russian>Ливонские Лутеры (LL).\nВосточноевропейское ополчение.</Russian>
                 <Chinesesimp>利沃尼亚掠夺者 (LL)。\n东欧武装分子。</Chinesesimp>
                 <Korean>리보니아 약탈자(LL).\n동유럽계 무장세력입니다.</Korean>
+                <French>Livonian Looters (LL). Militants d'Europe de l'Est.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_borsheviks">
                 <Original>Borsheviks.\nDon't even ask what is it.</Original>
                 <Russian>Борщевики.\nДаже не спрашивайте что это.</Russian>
                 <Chinesesimp>布尔什维克。\不要问它是什么。</Chinesesimp>
                 <Korean>볼셰비키.\n뭔지 절대 묻지 마시오.</Korean>
+                <French>Borsheviks.\nNe demandez même pas ce que c'est.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_lm">
                 <Original>Livonian Militia (LM).\nEastern European militants.</Original>
                 <Russian>Ополчение Ливонии.\nВосточноевропейское ополчение.</Russian>
                 <Korean>리보니아 민병대(LM).\n동유럽계 무장세력입니다.</Korean>
+                <French>Milice livonienne (LM).\nMilitants d'Europe de l'Est.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_ws_tura">
                 <Original>Tura.\nOne of the many militarized tribes of the Sefrawi Desert, almost like famous Turanic Raiders.</Original>
                 <Russian>Тура.\nОдно из многих военизированных племен пустыни Сефрави, почти как знаменитые туранские рейдеры.</Russian>
                 <Chinesesimp>图拉。\n塞夫拉维沙漠的众多军事化部落之一，几乎与著名的图拉尼海盗一样。</Chinesesimp>
                 <Korean>투라.\n세프라위 사막의 군사화된 많은 부족들 중 하나로, 유명한 투란 레이더스와 거의 유사합니다.</Korean>
+                <French>Tura.\nl'une des nombreuses tribus militarisées du désert de Sefrawi, à l'image des célèbres Turanic Raiders.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_aegis_aukus">
                 <Original>A trilateral security pact between Australia, United Kingdom, United States (AUKUS).\nVery versatile faction with best military equipment from three worlds.</Original>
                 <Russian>Тройственный оборонный пакт между Австралией, Объединённым Королевством и США (AUKUS).\nОчень разносторонняя фракция с лучшими вещами из трех миров.</Russian>
                 <Chinesesimp>澳大利亚、英国、美国（AUKUS）的三边安全条约。\n非常全面的派别，拥有三个世界最好的军事装备。</Chinesesimp>
                 <Korean>호주, 영국, 미국 간의 3자 안보 협정(AUKUS).\n3세계 최고의 군사 장비를 가진 매우 다재다능한 팩션입니다.</Korean>
+                <French>Un pacte de sécurité trilatéral entre l'Australie, le Royaume-Uni et les États-Unis (AUKUS).\nUne faction très polyvalente dotée des meilleurs équipements militaires des trois mondes.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_aegis_afrf">
                 <Original>Armed Forces of Russia.\nModern nomenclature of weapons and vehicles strangely synergizes with archaic mid-20th century's equipment.</Original>
@@ -441,36 +485,42 @@
                 <Russian>Понятно</Russian>
                 <Chinesesimp>Mmkay</Chinesesimp>
                 <Korean>Mmkay</Korean>
+                <French>Mm ok</French>
             </Key>
             <Key ID="STR_magRepack_author">
                 <Original>Author: Outlawled</Original>
                 <Russian>Автор: Outlawled</Russian>
                 <Chinesesimp>作者:Outlawled</Chinesesimp>
                 <Korean>제작자: Outlawled</Korean>
+                <French>Auteur : Outlawled</French>
             </Key>
             <Key ID="STR_magRepack_version">
                 <Original>Version:</Original>
                 <Russian>Версия:</Russian>
                 <Chinesesimp>版本：</Chinesesimp>
                 <Korean>버전:</Korean>
+                <French>Version:</French>
             </Key>
             <Key ID="STR_magRepack_updated">
                 <Original>Updated:</Original>
                 <Russian>Обновлено:</Russian>
                 <Chinesesimp>更新：</Chinesesimp>
                 <Korean>업데이트:</Korean>
+                <French>Mis à jour:</French>
             </Key>
             <Key ID="STR_magRepack_cancel">
                 <Original>Cancel</Original>
                 <Russian>Отмена</Russian>
                 <Chinesesimp>取消</Chinesesimp>
                 <Korean>취소</Korean>
+                <French>Annuler</French>
             </Key>
             <Key ID="STR_magRepack_apply">
                 <Original>Apply</Original>
                 <Russian>Применить</Russian>
                 <Chinesesimp>应用</Chinesesimp>
                 <Korean>적용</Korean>
+                <French>Appliquer</French>
             </Key>
             <Key ID="STR_magRepack_keybinding">
                 <Original>Keybinding</Original>
@@ -5874,633 +5924,8 @@
             <Key ID="STR_antistasi_dialogs_moveout_crew_tooltip">
                 <Original>Moves out crew from vehicle you loking at.</Original>
                 <Russian>Выгоняет экипаж из техники на которую вы смотрите.</Russian>
-            </Key>>
-            <Key ID="STR_antistasi_dialogs_arsenal_limits_title">
-                <Original>Arsenal Limits</Original>
-                <Russian>Лимиты арсенала</Russian>
-                <Chinesesimp>军火库限制</Chinesesimp>
-                <Korean>아스널 제한</Korean>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_arsenal_limits_tooltip">
-                <Original>Manage arsenal limitations of guests.</Original>
-                <Russian>Настройки лимитов в арсенале для гостей.</Russian>
-                <Chinesesimp>游客的武器库限制设置。</Chinesesimp>
-                <Korean>게스트의 아스널 제한을 관리합니다.</Korean>
-            </Key>
-            <Key ID="STR_antistasi_dialogs_not_commander_generic">
-                <Original>You're not the Commander!</Original>
-                <Russian>Вы не командир!</Russian>
-                <Chinesesimp>你不是指挥官！</Chinesesimp>
-                <Korean>당신은 지휘관이 아닙니다!</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_header">
-                <Original>Support</Original>
-                <Russian>Поддержка</Russian>
-                <Chinesesimp>支援</Chinesesimp>
-                <Korean>지원</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_smoke_barrage_title">
-                <Original>Smoke Barrage</Original>
-                <Russian>Дымовая завеса</Russian>
-                <Chinesesimp>烟雾弹幕</Chinesesimp>
-                <Korean>연막탄 연발 포격</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_smoke_barrage_tooltip">
-                <Original>Covers the selected position with smoke.</Original>
-                <Russian>Покрывает выбранную позицию дымовыми снарядами.</Russian>
-                <Chinesesimp>用烟雾弹覆盖选定的位置。</Chinesesimp>
-                <Korean>선택한 위치를 연막으로 덮습니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_flare_barrage_title">
-                <Original>Flare Barrage</Original>
-                <Russian>Залп осветитетльными снарядами</Russian>
-                <Chinesesimp>照明弹齐射</Chinesesimp>
-                <Korean>조명탄 연발 포격</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_flare_barrage_tooltip">
-                <Original>Illuminates the selected position with flare rounds.</Original>
-                <Russian>Обстреливает выбранную позицию осветительными снарядами для лучшей видимости в тёмное время суток.</Russian>
-                <Chinesesimp>用照明射弹发射选定位置，以便在夜间获得更好的能见度。</Chinesesimp>
-                <Korean>선택한 위치를 조명탄으로 비춥니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_lva_title">
-                <Original>Light Vehicle Airdrop</Original>
-                <Russian>Сброс лёгкой техники с самолёта</Russian>
-                <Chinesesimp>空投轻型载具</Chinesesimp>
-                <Korean>경차량 공수</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_lva_tooltip">
-                <Original>Plane flies over and drops two-seated light vehicle to the specified position.</Original>
-                <Russian>Самолет пролетает и сбрасывает двухместное транспортное средство в указанное место.</Russian>
-                <Chinesesimp>飞机飞过，将两辆轻型载具投放到指定位置。</Chinesesimp>
-                <Korean>비행기가 상공을 비행해서 2인승 경차량을 지정한 위치로 떨어뜨립니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_lca_title">
-                <Original>Loot Crate Airdrop</Original>
-                <Russian>Сброс ящика-сборщика добычи</Russian>
-                <Chinesesimp>空投战利品箱</Chinesesimp>
-                <Korean>전리품 상자 공수</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_lca_tooltip">
-                <Original>Plane flies over and drops loot crate to the specified position.</Original>
-                <Russian>Самолет пролетает и сбрасывает ящик-сборщик лута в указанное место.</Russian>
-                <Chinesesimp>飞机飞过，将战利品箱丢到指定位置。</Chinesesimp>
-                <Korean>비행기가 상공을 비행해서 전리품 상자를 지정한 위치로 떨어뜨립니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_hmga_title">
-                <Original>HMG Airdrop</Original>
-                <Russian>Сброс тяжелого пулемёта</Russian>
-                <Chinesesimp>空投重机枪</Chinesesimp>
-                <Korean>중기관총 공수</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_hmga_tooltip">
-                <Original>Plane flies over and drops crate with HMG to the specified position.</Original>
-                <Russian>Самолет пролетает и сбрасывает ящик с крупнокалиберным пулеметом в указанное место.</Russian>
-                <Chinesesimp>飞机飞过，将装有重机枪的箱子丢到指定位置。</Chinesesimp>
-                <Korean>비행기가 상공을 비행해서 중기관총을 지정한 위치로 떨어뜨립니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_rpr_title">
-                <Original>Recon Plane Run</Original>
-                <Russian>Пролёт самолёта-разведчика</Russian>
-                <Chinesesimp>侦察机掠过</Chinesesimp>
-                <Korean>정찰기 비행</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_rpr_tooltip">
-                <Original>Reconnaissance plane flies over and marks enemy positions at the specified location.</Original>
-                <Russian>Самолет-разведчик пролетает и отмечает позиции противника в указанном месте.</Russian>
-                <Chinesesimp>侦察机飞过，在指定地点标记敌方大概位置。</Chinesesimp>
-                <Korean>정찰기가 상공을 비행해서 지정한 위치에 적 위치를 표시합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_sca_title">
-                <Original>Supply Crate Airdrop</Original>
-                <Russian>Сброс ящика со снабжением</Russian>
-                <Chinesesimp>空投补给箱</Chinesesimp>
-                <Korean>보급상자 공수</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_sca_tooltip">
-                <Original>Plane flies over and drops crate with ammunition and medical supplies to the specified position.</Original>
-                <Russian>Самолет пролетает и сбрасывает в указанную позицию ящик с боеприпасами и медикаментами.</Russian>
-                <Chinesesimp>飞机飞过，在指定位置投下一箱弹药和医疗物资。</Chinesesimp>
-                <Korean>비행기가 상공을 비행해서 보급상자를 지정한 위치로 떨어뜨립니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_hba_title">
-                <Original>HE Bomb Airstrike</Original>
-                <Russian>Авиаудар фугасными бомбами</Russian>
-                <Chinesesimp>高爆炸弹空袭</Chinesesimp>
-                <Korean>고폭탄 투하</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_hba_tooltip">
-                <Original>Plane flies over and drops HE bombs at the specified location.</Original>
-                <Russian>Самолет пролетает и сбрасывает фугасные бомбы в указанном месте.</Russian>
-                <Chinesesimp>飞机飞过，指定地点投下高爆弹。</Chinesesimp>
-                <Korean>비행기가 상공에서 날아와서 지정한 장소에 고폭탄을 투하합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_cba_title">
-                <Original>Cluster Bomb Airstrike</Original>
-                <Russian>Авиаудар кассетными бомбами</Russian>
-                <Chinesesimp>集束炸弹空袭</Chinesesimp>
-                <Korean>집속탄 투하</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_cba_tooltip">
-                <Original>Plane flies over and drops cluster bombs at the specified location</Original>
-                <Russian>Самолет пролетает и сбрасывает кассетные бомбы в указанном месте.</Russian>
-                <Chinesesimp>飞机飞过，指定地点投下集束炸弹</Chinesesimp>
-                <Korean>비행기가 상공에서 날아와서 지정한 장소에 집속탄을 투하합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_chemba_title">
-                <Original>Chemical Bomb Airstrike</Original>
-                <Russian>Авиаудар химическим оружием</Russian>
-                <Chinesesimp>化学武器空袭</Chinesesimp>
-                <Korean>화학탄 투하</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_chemba_tooltip">
-                <Original>Plane flies over and drops bombs with hazardous chemicals at the specified location. Violates Geneva Protocol, raises aggression.</Original>
-                <Russian>Самолет пролетает и сбрасывает бомбы с опасными химическими веществами в указанном месте. Нарушает Женевскую Конвенцию, вызывает агрессию противников.</Russian>
-                <Chinesesimp>飞机飞过，指定地点并投下装有危险化学品的炸弹。 违反日内瓦议定书，提高侵略性。</Chinesesimp>
-                <Korean>비행기가 상공에서 날아와서 지정한 장소에 화학탄을 투하합니다. 제네바 협약 위반이며, 어그로를 증가시킵니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_na_title">
-                <Original>Napalm Airstrike</Original>
-                <Russian>Авиаудар напалмом</Russian>
-                <Chinesesimp>凝固汽油弹空袭</Chinesesimp>
-                <Korean>네이팜탄 투하</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_na_tooltip">
-                <Original>Plane flies over and drops napalm bombs with incendiary effect.</Original>
-                <Russian>Самолет пролетает и покрывает указанную область напалмом.</Russian>
-                <Chinesesimp>飞机飞过，指定区域并用凝固汽油弹覆盖。</Chinesesimp>
-                <Korean>비행기가 상공에서 날아와서 지정한 장소에 네이팜탄을 투하합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_paradrop_title">
-                <Original>Paradrop Plane Run</Original>
-                <Russian>Пролёт десантного самолёта</Russian>
-                <Chinesesimp>空降</Chinesesimp>
-                <Korean>공수강하 비행기 비행</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_paradrop_tooltip">
-                <Original>Plane flies over and drops players with parachutes at the specified location. Players must turn on paradrop attendance (if it's turned off before) in game settings and be at rebel HQ to be successfully paradropped. If there are less seats in plane than players, it will choose them randomly.</Original>
-                <Russian>Самолет пролетает и сбрасывает игроков с парашютами в указанном месте. Игроки должны находиться в штаб-квартире повстанцев и не сидеть в технике, чтобы их успешно сбросили с парашюта. Если мест в самолете меньше, чем игроков, игроки выберутся случайным образом.</Russian>
-                <Chinesesimp>飞机飞过，把带降落伞的玩家丢到指定位置。 玩家必须在游戏设置中打开空降ON（如果关闭了的情况下）并且在抵抗军总部才能成功空降。 如果飞机上的座位少于玩家，它会随机选择。</Chinesesimp>
-                <Korean>비행기가 상공을 비행해서 낙하산을 맨 플레이어를 지정한 위치로 떨어뜨립니다. 플레이어는 게임 설정에서 공수강하 참여를 켜고 (이전에 해제됐다면) 공수강하를 성공적으로 수행하기 위해선 아군 본부에 있어야 합니다. 플레이어보다 비행기 좌석이 적으면 무작위로 선택됩니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_loot_heli_title">
-                <Original>Loot Helicopter Run</Original>
-                <Russian>Пролёт вертолёта-сборщика добычи</Russian>
-                <Chinesesimp>掠夺直升机飞越上空</Chinesesimp>
-                <Korean>전리품 헬리콥터 비행</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_loot_heli_tooltip">
-                <Original>Rebel helicopter arrives and helps with collecting scattered loot and drops crate with gathered loot at the marked zone.</Original>
-                <Russian>Прилетает вертолет повстанцев, помогает собрать разбросанную добычу и сбрасывает ящик с собранной добычей в отмеченной зоне.</Russian>
-                <Chinesesimp>抵抗军直升机抵达并帮助收集散落的战利品，并将装有收集到的战利品的箱子丢在标记区域。</Chinesesimp>
-                <Korean>아군 헬리콥터가 도착하여 흩어진 전리품을 모으는 것을 돕고 표시된 구역이 모인 전리품과 함께 상자를 떨어뜨립니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_watchpost_title">
-                <Original>Watchpost</Original>
-                <Russian>Пункт наблюдения</Russian>
-                <Chinesesimp>观察哨</Chinesesimp>
-                <Korean>감시초소</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_roadblock_title">
-                <Original>Roadblock</Original>
-                <Russian>Блокпост</Russian>
-                <Chinesesimp>路障</Chinesesimp>
-                <Korean>검문소</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_hmge_title">
-                <Original>HMG Emplacement</Original>
-                <Russian>Пулеметное гнездо</Russian>
-                <Chinesesimp>重机枪阵地</Chinesesimp>
-                <Korean>중기관총 포대</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_aae_title">
-                <Original>AA Emplacement</Original>
-                <Russian>Зенитная огневая точка</Russian>
-                <Chinesesimp>防空阵地</Chinesesimp>
-                <Korean>대공화기 포대</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_ate_title">
-                <Original>AT Emplacement</Original>
-                <Russian>Противотанковая огневая точка</Russian>
-                <Chinesesimp>反坦克阵地</Chinesesimp>
-                <Korean>대전차화기 포대</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_apersminefield_title">
-                <Original>APERS Mines</Original>
-                <Russian>Противопехотные мины</Russian>
-                <Chinesesimp>反人员杀伤地雷</Chinesesimp>
-                <Korean>대인지뢰</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_minefield_cost">
-                <Original>Cost: 5 %1s, %2 HR and %3%4</Original>
-                <Russian>Стоимость: 5 мин, %2 HR и %3%4</Russian>
-                <Chinesesimp>成本: 5 %1, %2 人力 和 %3%4</Chinesesimp>
-                <Korean>가격: 5개의 %1, %2 인력과 %3%4</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_atminefield_title">
-                <Original>AT Mines</Original>
-                <Russian>Противотанковые мины</Russian>
-                <Chinesesimp>反坦克地雷</Chinesesimp>
-                <Korean>대전차지뢰</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_fog_title">
-                <Original>Fog: %1</Original>
-                <Russian>Туман: %1</Russian>
-                <Chinesesimp>雾：%1</Chinesesimp>
-                <Korean>안개: %1</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_fog_title_default">
-                <Original>Fog: 0.5</Original>
-                <Russian>Туман: 0.5</Russian>
-                <Chinesesimp>雾：0.5</Chinesesimp>
-                <Korean>안개: 0.5</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_fog_title_tooltip">
-                <Original>Tunes general fog level.</Original>
-                <Russian>Настраивает общий уровень тумана.</Russian>
-                <Chinesesimp>调整整体雾度。</Chinesesimp>
-                <Korean>일반적인 안개 레벨을 조정합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_fog_button">
-                <Original>SET FOG LEVEL</Original>
-                <Russian>ЗАДАТЬ УРОВЕНЬ ТУМАНА</Russian>
-                <Chinesesimp>设置雾级别</Chinesesimp>
-                <Korean>안개 레벨 설정</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_overcast_title">
-                <Original>Overcast: %1</Original>
-                <Russian>Облачность: %1</Russian>
-                <Chinesesimp>阴天：%1</Chinesesimp>
-                <Korean>날씨: %1</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_overcast_title_default">
-                <Original>Overcast: 0.5</Original>
-                <Russian>Облачность: 0.5</Russian>
-                <Chinesesimp>阴天：0.5</Chinesesimp>
-                <Korean>날씨: 0.5</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_overcast_title_tooltip">
-                <Original>Tunes general overcast level.</Original>
-                <Russian>Настраивает общий уровень облачности.</Russian>
-                <Chinesesimp>调整整体的阴天程度。</Chinesesimp>
-                <Korean>일반적인 날씨 레벨을 조정합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_overcast_button">
-                <Original>SET OVERCAST LEVEL</Original>
-                <Russian>ЗАДАТЬ УРОВЕНЬ ОБЛАЧНОСТИ</Russian>
-                <Chinesesimp>设置阴天水平</Chinesesimp>
-                <Korean>날씨 레벨 설정</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_clear_forest_button">
-                <Original>CLEAR FOREST NEAR HQ</Original>
-                <Russian>ОЧИСТИТЬ РАСТИТЕЛЬНОСТЬ У ШТАБА</Russian>
-                <Chinesesimp>总部附近的森林</Chinesesimp>
-                <Korean>본부 근처 숲 제거</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_clear_forest_tooltip">
-                <Original>Clears bushes and trees near the HQ.</Original>
-                <Russian>Очищает кусты и деревья возле штаб-квартиры.</Russian>
-                <Chinesesimp>清理总部附近的灌木和树木。</Chinesesimp>
-                <Korean>본부 근처의 덤불과 나무를 제거합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_clear_garbage_button">
-                <Original>CLEAR GARBAGE</Original>
-                <Russian>ОЧИСТИТЬ МУСОР</Russian>
-                <Chinesesimp>清除垃圾</Chinesesimp>
-                <Korean>쓰레기 청소</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_clear_garbage_tooltip">
-                <Original>Clears garbage (bodies, unused crates, wrecks, weapons et cetera) across the map. Increases performance.</Original>
-                <Russian>Убирает мусор (тела, неиспользуемые ящики, обломки, оружие и т. д.) по всей карте. Повышает производительность.</Russian>
-                <Chinesesimp>清理地图上的垃圾（尸体、未使用的箱子、碎片、武器等）。 提高游戏性能。</Chinesesimp>
-                <Korean>지도 전체의 쓰레기(시체, 사용하지 않는 상자, 파괴된 물체, 무기 등)를 청소합니다. 성능이 향상됩니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_rest_tooltip">
-                <Original>Skips 8 hours of in-game time. Requires every player to be near HQ.</Original>
-                <Russian>Пропускает 8 часов игрового времени. Требуется, чтобы каждый игрок находился рядом со штаб-квартирой.</Russian>
-                <Chinesesimp>跳过8小时的游戏时间。 要求每个玩家都在总部附近。</Chinesesimp>
-                <Korean>8시간의 게임 내 시간을 건너뜁니다. 모든 플레이어가 본부 근처에 있어야 합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_max_persistent_contstructions">
-                <Original>Maximum persistent constuctions: %1</Original>
-                <Russian>Макс. кол-во персистентных конструкций: %1</Russian>
-                <Chinesesimp>最大永久建筑：%1</Chinesesimp>
-                <Korean>최대 영구 건축물 수: %1</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_max_persistent_contstructions_tooltip">
-                <Original>Allows you to set how many persistent (saveable) constructions will be allowed. Affects performance, Last In-First Out principle.</Original>
-                <Russian>Позволяет вам установить, сколько постоянных (сохраняемых, устанавливаемых через меню Zeus) конструкций будет разрешено. Влияет на производительность, принцип Last In-First Out.</Russian>
-                <Chinesesimp>允许您设置允许多少个永久（可保存的，通过 Zeus 菜单设置）建筑。 影响性能，后进先出原则。</Chinesesimp>
-                <Korean>허용되는 (저장 가능한) 영구 건축물의 수를 설정하도록 허용합니다. 성능에 영향을 미치며, 후입선출 법칙을 따릅니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_ai_limit">
-                <Original>Maximum Quantity of AI Units: %1</Original>
-                <Russian>Максимальное количество юнитов ИИ: %1</Russian>
-                <Chinesesimp>最大 AI 单位：%1</Chinesesimp>
-                <Korean>최대 인공지능 유닛 수: %1</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_ai_limit_tooltip">
-                <Original>Sets how much local and simulated AI can spawn in the map. Affects performance and AI ""intelligence"". Use with EXTREME caution, as on very high values performance may tank for everyone. This is not an exact number as vehicles and squad leaders will allways spawn.</Original>
-                <Russian>Устанавливает, сколько локального и смоделированного ИИ может появиться на карте. Влияет на производительность и «интеллектуальность» ИИ. Используйте с ЧРЕЗВЫЧАЙНОЙ осторожностью, так как при очень высоких значениях производительность может ухудшиться для всех. Это не точное число, так как транспортные средства и командиры отрядов будут появляться всегда.</Russian>
-                <Chinesesimp>设置地图中可以生成多少本地和模拟 AI。 影响性能和 AI“智能”。 使用时要格外小心，因为在非常高的数值下，可能对每个人性能都不利。 这不是一个确切的数字，因为载具和班长总是会刷出来。</Chinesesimp>
-                <Korean>지도에서 로컬 및 시뮬레이션된 인공지능이 생성할 수 있는 양을 설정합니다. 성능 및 인공지능의 ""지능""에 영향을 미칩니다. 매우 높은 값을 사용할 경우 성능이 저하될 수 있으므로 극도로 주의하여 사용하십시오. 이는 차량과 분대장들이 항상 스폰되기 때문에 정확한 숫자는 아닙니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_max_spawn_distance">
-                <Original>Maximum Spawn Distance: %1</Original>
-                <Russian>Макс. дистанция спавна ИИ-акторов: %1</Russian>
-                <Chinesesimp>最大生成距离：%1</Chinesesimp>
-                <Korean>최대 스폰 거리: %1</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_max_spawn_distance_tooltip">
-                <Original>Affects at which distance from player enemy will spawn. Use this with caution. Set it to lower distances if you feel that you have low performance.</Original>
-                <Russian>Влияет на то, на каком расстоянии от игрока появится враг. Используйте это с осторожностью. Установите его на более низкие расстояния, если вы чувствуете, что у вас низкая производительность.</Russian>
-                <Chinesesimp>玩家敌人生成的距离。 请谨慎使用。 如果你觉得你的电脑性能表现不佳，请将它设置为较低的距离。</Chinesesimp>
-                <Korean>플레이어와 적과의 거리에 영향을 미칩니다. 주의하여 사용하십시오. 성능이 저하된다고 생각되면 더 낮은 거리로 설정하십시오.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_about_text">
-                <Original>Antistasi Ultimate - %1, Version: %2, Unlock Weapon Number: %3, Limited Fast Travel: %4, Rivals: %5, Time since GC: %6</Original>
-                <Russian>Antistasi Ultimate - %1, Версия: %2, Кол-во орудий для разблок-ки: %3, Ограниченное быстрое перемещение по карте: %4, Инсургенты: %5, Прошло времени с момента сборки мусора: %6</Russian>
-                <Chinesesimp>Antistasi Ultimate - %1, 版本: %2, 解锁武器数量: %3, 是否限制快速旅行: %4, 对手: %5, GC之后经过的时间: %6</Chinesesimp>
-                <Korean>안티스타시 플러스 - %1, 버전: %2, 무기 언락 수: 53, 빠른 이동 제한: %4 라이벌: %5, 쓰레기 청소 이후 지난 시간:%6</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_skill_level_title">
-                <Original>%1 Skill Level: %2/%3</Original>
-                <Russian>Уровень навыков %1: %2/%3</Russian>
-                <Chinesesimp>%1 技能等级：%2/%3</Chinesesimp>
-                <Korean>%1 숙련도 레벨: %2/%3</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_randomize_unfiroms_header">
-                <Original>RANDOMIZE UNIFORMS</Original>
-                <Russian>СЛУЧАЙНАЯ УНИФОРМА</Russian>
-                <Chinesesimp>随机制服</Chinesesimp>
-                <Korean>군복 랜덤화</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_switch_enabled">
-                <Original>ON</Original>
-                <Russian>ВКЛ</Russian>
-                <Chinesesimp>开</Chinesesimp>
-                <Korean>켬</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_switch_disabled">
-                <Original>OFF</Original>
-                <Russian>ВЫКЛ</Russian>
-                <Chinesesimp>关</Chinesesimp>
-                <Korean>끔</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_randomize_unfiroms_tooltip">
-                <Original>Disables/Enables uniform and unarmored headgear randomization on custom rebel loadouts.</Original>
-                <Russian>Отключает/включает рандомизацию униформ и небронированных головных уборов в пользовательских снаряжениях повстанцев.</Russian>
-                <Chinesesimp>禁用/启用自定义抵抗军装载的统一和非装甲头饰随机化。</Chinesesimp>
-                <Korean>커스텀 아군 로드아웃에서 유니폼과 비-방탄 헤드기어의 랜덤화를 비활성화/활성화합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_global_options_title">
-                <Original>Global Options</Original>
-                <Russian>Глобальные настройки</Russian>
-                <Chinesesimp>全局选项</Chinesesimp>
-                <Korean>글로벌 설정</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_global_options_tooltip">
-                <Original>Options below affect all players.</Original>
-                <Russian>Параметры ниже влияют на всех игроков.</Russian>
-                <Chinesesimp>以下选项影响所有玩家。</Chinesesimp>
-                <Korean>아래 옵션은 모든 플레이어에게 적용됩니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_local_options_title">
-                <Original>Local options</Original>
-                <Russian>Локальные настройки</Russian>
-                <Chinesesimp>本地选项</Chinesesimp>
-                <Korean>로컬 설정</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_local_options_tooltip">
-                <Original>Options below affect only you.</Original>
-                <Russian>Параметры ниже влияют только на вас.</Russian>
-                <Chinesesimp>以下选项仅影响您。</Chinesesimp>
-                <Korean>아래 옵션은 당신에게만 적용됩니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_music_switch">
-                <Original>MUSIC</Original>
-                <Russian>МУЗЫКА</Russian>
-                <Chinesesimp>音乐</Chinesesimp>
-                <Korean>음악</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_music_switch_tooltip">
-                <Original>Disables/Enables situational music.</Original>
-                <Russian>Выключает/включает ситуативную музыку.</Russian>
-                <Chinesesimp>禁用/启用情境音乐。</Chinesesimp>
-                <Korean>상황에 맞는 음악을 비활성화/활성화합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_persistent_save_button">
-                <Original>PERSISTENT SAVE</Original>
-                <Russian>ПОСТОЯННОЕ СОХРАНЕНИЕ</Russian>
-                <Chinesesimp>永久保存</Chinesesimp>
-                <Korean>영구저장</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_persistent_save_button_tooltip">
-                <Original>Use this option to save your current game. It does save the most important data in a ""Grand Theft Auto"" way.</Original>
-                <Russian>Используйте эту опцию, чтобы сохранить текущую игру. Сохраняются самые важные данные в стиле «Grand Theft Auto».</Russian>
-                <Chinesesimp>使用这个选项来保存你当前的游戏。 最重要的数据以“侠盗猎车手”的风格保存。</Chinesesimp>
-                <Korean>현재 게임을 저장하려면 이 옵션을 사용하십시오. ""GTA"" 방식으로 가장 중요한 데이터를 저장합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_personal_save_button">
-                <Original>PERSONAL SAVE</Original>
-                <Russian>ЛИЧНОЕ СОХРАНЕНИЕ</Russian>
-                <Chinesesimp>个人存档</Chinesesimp>
-                <Korean>개인저장</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_personal_save_button_tooltip">
-                <Original>Use this option to save your current character. It does save the most important data in a ""Grand Theft Auto"" way.</Original>
-                <Russian>Используйте эту опцию, чтобы сохранить вашего текущего персонажа. Он сохраняет самые важные данные в стиле «Grand Theft Auto».</Russian>
-                <Chinesesimp>使用这个选项来保存你当前的角色。 它以“侠盗猎车手”风格保存最重要的数据。</Chinesesimp>
-                <Korean>현재 캐릭터를 저장하려면 이 옵션을 사용하십시오. ""GTA"" 방식으로 가장 중요한 데이터를 저장합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_paradrop_switch">
-                <Original>PARADROP</Original>
-                <Russian>ДЕСАНТИРОВАНИЕ</Russian>
-                <Chinesesimp>空投伞降</Chinesesimp>
-                <Korean>공수강하</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_paradrop_tooltip_noncomm">
-                <Original>To attend in paradrop, you must be at rebel HQ and turn on this switch button to be able to be transfered to aircraft.</Original>
-                <Russian>Чтобы принять участие в парашютном десантировании, вы должны находиться в штаб-квартире повстанцев и включить эту кнопку-переключатель, чтобы иметь возможность переместиться на самолет.</Russian>
-                <Chinesesimp>要参加空投伞降，您必须在抵抗军总部并打开此切换按钮才能转移到飞机上。</Chinesesimp>
-                <Korean>공수강하에 참여하려면 아군 본부에 있어야 하며 항공기로 이동하려면 이 버튼을 켜야 합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_game_info_header">
-                <Original>Game Info</Original>
-                <Russian>Информация об игре</Russian>
-                <Chinesesimp>游戏信息</Chinesesimp>
-                <Korean>게임 정보</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_server_members_header">
-                <Original>Server Members</Original>
-                <Russian>Участники сервера</Russian>
-                <Chinesesimp>服务器成员</Chinesesimp>
-                <Korean>서버 멤버</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_server_members_disabled">
-                <Original>Server Members feature is disabled.</Original>
-                <Russian>Функция участников сервера отключена.</Russian>
-                <Chinesesimp>服务器会员功能被禁用</Chinesesimp>
-                <Korean>서버 멤버 기능을 사용할 수 없습니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_server_members_guests">
-                <Original>%1Guests: %2</Original>
-                <Russian>%1Гости: %2</Russian>
-                <Chinesesimp>%1游客：%2</Chinesesimp>
-                <Korean>%1 게스트: %2</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_redo_arms_dealer_task">
-                <Original>Redo Find Arms Dealer task</Original>
-                <Russian>Повтор задания «Найти торговца оружием»</Russian>
-                <Chinesesimp>重做寻找军火商任务</Chinesesimp>
-                <Korean>암거래상 찾기 과업 재실행</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_redo_arms_dealer_task_tooltip">
-                <Original>Rollbacks the Arms Dealer's state and allows to redo task about his whereabouts. Helps in situations when Arms Dealer stuck in some undesired location. Costs 1000 to prevent exploiting.</Original>
-                <Russian>Откатывает состояние торговца оружием и позволяет переделать задание о его местонахождении. Помогает в ситуациях, когда торговец оружием застрял в каком-то нежелательном месте. Стоит 1000 денег, чтобы предотвратить использование.</Russian>
-                <Chinesesimp>重置军火商的状态，并允许重做关于军火商的下落任务。在军火商被困在不想要的地方的情况下有所帮助。要花1000块才能使用。</Chinesesimp>
-                <Korean>암거래상의 상태를 롤백하고 그의 행방에 대한 과업을 다시 수행할 수 있도록 허용합니다. 암거래상이 원치 않는 장소에 갇혔을 때 도움이 됩니다. 악용 방지를 위해 1000 자금을 내야 합니다.</Korean>
-            </Key>
-            <!-- for some reason ST_UPPERCASE is not working for tab headers -->
-            <Key ID="STR_commander_menu_abilities_header_upper">
-                <Original>SUPPORT</Original>
-                <Russian>ПОДДЕРЖКА</Russian>
-                <Chinesesimp>支援</Chinesesimp>
-                <Korean>지원</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_garrison_header_upper">
-                <Original>GARRISON MANAGEMENT</Original>
-                <Russian>УПРАВЛЕНИЕ ГАРНИЗОНАМИ</Russian>
-                <Chinesesimp>驻军管理</Chinesesimp>
-                <Korean>주둔지 관리</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_hq_header_upper">
-                <Original>%1 HQ</Original>
-                <Russian>ШТАБ-КВАРТИРА %1</Russian>
-                <Chinesesimp>总部 %1</Chinesesimp>
-                <Korean>%1의 본부</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_environment_header_upper">
-                <Original>ENVIRONMENT</Original>
-                <Russian>ОКРУЖАЮЩАЯ СРЕДА</Russian>
-                <Chinesesimp>周围环境</Chinesesimp>
-                <Korean>환경</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_game_options_header_upper">
-                <Original>GAME OPTIONS</Original>
-                <Russian>ИГРОВЫЕ НАСТРОЙКИ</Russian>
-                <Chinesesimp>游戏选项</Chinesesimp>
-                <Korean>게임 설정</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_game_info_header_upper">
-                <Original>ABOUT</Original>
-                <Russian>ОБ ИГРЕ</Russian>
-                <Chinesesimp>关于</Chinesesimp>
-                <Korean>정보</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_text">
-                <Original>Select support type, click on desired position on the map and press Launch. Some call-ins require 1 captured airport. Support points will gain automatically starting War Level 3.</Original>
-                <Russian>Выберите тип поддержки, нажмите на место на карте и нажмите Вызвать Поддержку. Для некоторых вызовов требуется 1 захваченный аэропорт. Очки поддержки будут начисляться автоматически начиная с 3-го уровня войны.</Russian>
-                <Chinesesimp>选择支援类型，点击地图上所需的位置，然后按启动。有些呼叫需要占领一个机场。战争等级3开始支援点数将自动增加。</Chinesesimp>
-                <Korean>지원 유형을 선택하고 지도에서 원하는 위치를 클릭한 후 실행을 누르십시오. 일부 호출에는 점령한 공항이 최소 1개 이상이 필요합니다. 지원 포인트는 전쟁 레벨 3에 자동으로 획득합니다.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_costs">
-                <Original>Costs</Original>
-                <Russian>Стоимость вызова:</Russian>
-                <Chinesesimp>费用</Chinesesimp>
-                <Korean>가격</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_available_supports">
-                <Original>Available Support Points: </Original>
-                <Russian>Доступные очки поддержки: </Russian>
-                <Chinesesimp>可用的支援点：</Chinesesimp>
-                <Korean>사용 가능한 지원 포인트: </Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_available_airstrikes">
-                <Original>Available Airstrikes:</Original>
-                <Russian>Доступные авиаудары:</Russian>
-                <Chinesesimp>可用空袭：</Chinesesimp>
-                <Korean>사용 가능한 공습 포인트: </Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_captured_airports">
-                <Original>Captured Airbases: </Original>
-                <Russian>Захваченные авиабазы: </Russian>
-                <Chinesesimp>占领的空军基地：</Chinesesimp>
-                <Korean>점령한 공군 기지: </Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_reset_button">
-                <Original>Reset</Original>
-                <Russian>Сбросить</Russian>
-                <Chinesesimp>重置</Chinesesimp>
-                <Korean>초기화</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_launch_button">
-                <Original>Launch</Original>
-                <Russian>Вызвать</Russian>
-                <Chinesesimp>启动</Chinesesimp>
-                <Korean>발사</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_cost_support_point">
-                <Original>Costs %1 support points</Original>
-                <Russian>Стоимость: %1 очков поддержки</Russian>
-                <Chinesesimp>花费%1支援点</Chinesesimp>
-                <Korean>%1 지원 포인트를 소모합니다</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_cost_support_point_and_money">
-                <Original>Costs %1 support points and %2%3</Original>
-                <Russian>Стоимость: %1 очков поддержки и %2%3</Russian>
-                <Chinesesimp>花费 %1 支援点和 %2%3</Chinesesimp>
-                <Korean>%1 지원 포인트와 %2%3를 소모합니다</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_abilities_cost_airstrike">
-                <Original>Costs 1 Airstrike</Original>
-                <Russian>Стоимость: 1 авиаудар</Russian>
-                <Chinesesimp>花费 1 空袭</Chinesesimp>
-                <Korean>1 공습 포인트를 소모합니다</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_establish_garrison_text">
-                <Original>Select outpost type, press Establish button and click on desired position on the map.</Original>
-                <Russian>Выберите тип аванпоста, нажмите кнопку «Создать» и щелкните желаемое место на карте.</Russian>
-                <Chinesesimp>选择哨站类型，点击“创建”按钮，在地图上点击需要的位置。</Chinesesimp>
-                <Korean>전초 기지 유형을 선택하고 설립 버튼을 누른 다음 지도에 원하는 위치를 클릭하십시오.</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_establish_garrison_cost">
-                <Original>Costs %1 HR and %2%3</Original>
-                <Russian>Стоимость: %1 HR и %2%3</Russian>
-                <Chinesesimp>花费 %1 人力 和 %2%3</Chinesesimp>
-                <Korean>%1 인력과 %2%3를 소모합니다</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_establish_garrison_Cancel">
-                <Original>Cancel Task</Original>
-                <Russian>Отменить задачу</Russian>
-                <Chinesesimp>取消任务</Chinesesimp>
-                <Korean>과업 취소</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_establish_garrison_establish">
-                <Original>Establish</Original>
-                <Russian>Создать</Russian>
-                <Chinesesimp>创建</Chinesesimp>
-                <Korean>설립</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_create_minefield">
-                <Original>Create Minefield</Original>
-                <Russian>Создать минное поле</Russian>
-                <Chinesesimp>制造雷区</Chinesesimp>
-                <Korean>지뢰지대 생성</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_environment_options_header">
-                <Original>Environment Options</Original>
-                <Russian>Параметры окружающей среды</Russian>
-                <Chinesesimp>环境选项</Chinesesimp>
-                <Korean>환경 설정</Korean>
-            </Key>
-            <Key ID="STR_commander_menu_environment_options_text">
-                <Original>Use options below to tune environmental conditions.</Original>
-                <Russian>Используйте параметры ниже, чтобы настроить условия окружающей среды.</Russian>
-                <Chinesesimp>使用以下选项调整环境条件。</Chinesesimp>
-                <Korean>환경 조건을 조정하려면 아래 옵션을 사용하십시오.</Korean>
-            </Key>
-        </Container>
+            </Key>&gt;
+            <Key ID="STR_antistasi_dialogs_arsenal_limits_title"><Original>Arsenal Limits</Original><Russian>Лимиты арсенала</Russian><Chinesesimp>军火库限制</Chinesesimp><Korean>아스널 제한</Korean></Key><Key ID="STR_antistasi_dialogs_arsenal_limits_tooltip"><Original>Manage arsenal limitations of guests.</Original><Russian>Настройки лимитов в арсенале для гостей.</Russian><Chinesesimp>游客的武器库限制设置。</Chinesesimp><Korean>게스트의 아스널 제한을 관리합니다.</Korean></Key><Key ID="STR_antistasi_dialogs_not_commander_generic"><Original>You're not the Commander!</Original><Russian>Вы не командир!</Russian><Chinesesimp>你不是指挥官！</Chinesesimp><Korean>당신은 지휘관이 아닙니다!</Korean></Key><Key ID="STR_commander_menu_abilities_header"><Original>Support</Original><Russian>Поддержка</Russian><Chinesesimp>支援</Chinesesimp><Korean>지원</Korean></Key><Key ID="STR_commander_menu_smoke_barrage_title"><Original>Smoke Barrage</Original><Russian>Дымовая завеса</Russian><Chinesesimp>烟雾弹幕</Chinesesimp><Korean>연막탄 연발 포격</Korean></Key><Key ID="STR_commander_menu_smoke_barrage_tooltip"><Original>Covers the selected position with smoke.</Original><Russian>Покрывает выбранную позицию дымовыми снарядами.</Russian><Chinesesimp>用烟雾弹覆盖选定的位置。</Chinesesimp><Korean>선택한 위치를 연막으로 덮습니다.</Korean></Key><Key ID="STR_commander_menu_flare_barrage_title"><Original>Flare Barrage</Original><Russian>Залп осветитетльными снарядами</Russian><Chinesesimp>照明弹齐射</Chinesesimp><Korean>조명탄 연발 포격</Korean></Key><Key ID="STR_commander_menu_flare_barrage_tooltip"><Original>Illuminates the selected position with flare rounds.</Original><Russian>Обстреливает выбранную позицию осветительными снарядами для лучшей видимости в тёмное время суток.</Russian><Chinesesimp>用照明射弹发射选定位置，以便在夜间获得更好的能见度。</Chinesesimp><Korean>선택한 위치를 조명탄으로 비춥니다.</Korean></Key><Key ID="STR_commander_menu_lva_title"><Original>Light Vehicle Airdrop</Original><Russian>Сброс лёгкой техники с самолёта</Russian><Chinesesimp>空投轻型载具</Chinesesimp><Korean>경차량 공수</Korean></Key><Key ID="STR_commander_menu_lva_tooltip"><Original>Plane flies over and drops two-seated light vehicle to the specified position.</Original><Russian>Самолет пролетает и сбрасывает двухместное транспортное средство в указанное место.</Russian><Chinesesimp>飞机飞过，将两辆轻型载具投放到指定位置。</Chinesesimp><Korean>비행기가 상공을 비행해서 2인승 경차량을 지정한 위치로 떨어뜨립니다.</Korean></Key><Key ID="STR_commander_menu_lca_title"><Original>Loot Crate Airdrop</Original><Russian>Сброс ящика-сборщика добычи</Russian><Chinesesimp>空投战利品箱</Chinesesimp><Korean>전리품 상자 공수</Korean></Key><Key ID="STR_commander_menu_lca_tooltip"><Original>Plane flies over and drops loot crate to the specified position.</Original><Russian>Самолет пролетает и сбрасывает ящик-сборщик лута в указанное место.</Russian><Chinesesimp>飞机飞过，将战利品箱丢到指定位置。</Chinesesimp><Korean>비행기가 상공을 비행해서 전리품 상자를 지정한 위치로 떨어뜨립니다.</Korean></Key><Key ID="STR_commander_menu_hmga_title"><Original>HMG Airdrop</Original><Russian>Сброс тяжелого пулемёта</Russian><Chinesesimp>空投重机枪</Chinesesimp><Korean>중기관총 공수</Korean></Key><Key ID="STR_commander_menu_hmga_tooltip"><Original>Plane flies over and drops crate with HMG to the specified position.</Original><Russian>Самолет пролетает и сбрасывает ящик с крупнокалиберным пулеметом в указанное место.</Russian><Chinesesimp>飞机飞过，将装有重机枪的箱子丢到指定位置。</Chinesesimp><Korean>비행기가 상공을 비행해서 중기관총을 지정한 위치로 떨어뜨립니다.</Korean></Key><Key ID="STR_commander_menu_rpr_title"><Original>Recon Plane Run</Original><Russian>Пролёт самолёта-разведчика</Russian><Chinesesimp>侦察机掠过</Chinesesimp><Korean>정찰기 비행</Korean></Key><Key ID="STR_commander_menu_rpr_tooltip"><Original>Reconnaissance plane flies over and marks enemy positions at the specified location.</Original><Russian>Самолет-разведчик пролетает и отмечает позиции противника в указанном месте.</Russian><Chinesesimp>侦察机飞过，在指定地点标记敌方大概位置。</Chinesesimp><Korean>정찰기가 상공을 비행해서 지정한 위치에 적 위치를 표시합니다.</Korean></Key><Key ID="STR_commander_menu_sca_title"><Original>Supply Crate Airdrop</Original><Russian>Сброс ящика со снабжением</Russian><Chinesesimp>空投补给箱</Chinesesimp><Korean>보급상자 공수</Korean></Key><Key ID="STR_commander_menu_sca_tooltip"><Original>Plane flies over and drops crate with ammunition and medical supplies to the specified position.</Original><Russian>Самолет пролетает и сбрасывает в указанную позицию ящик с боеприпасами и медикаментами.</Russian><Chinesesimp>飞机飞过，在指定位置投下一箱弹药和医疗物资。</Chinesesimp><Korean>비행기가 상공을 비행해서 보급상자를 지정한 위치로 떨어뜨립니다.</Korean></Key><Key ID="STR_commander_menu_hba_title"><Original>HE Bomb Airstrike</Original><Russian>Авиаудар фугасными бомбами</Russian><Chinesesimp>高爆炸弹空袭</Chinesesimp><Korean>고폭탄 투하</Korean></Key><Key ID="STR_commander_menu_hba_tooltip"><Original>Plane flies over and drops HE bombs at the specified location.</Original><Russian>Самолет пролетает и сбрасывает фугасные бомбы в указанном месте.</Russian><Chinesesimp>飞机飞过，指定地点投下高爆弹。</Chinesesimp><Korean>비행기가 상공에서 날아와서 지정한 장소에 고폭탄을 투하합니다.</Korean></Key><Key ID="STR_commander_menu_cba_title"><Original>Cluster Bomb Airstrike</Original><Russian>Авиаудар кассетными бомбами</Russian><Chinesesimp>集束炸弹空袭</Chinesesimp><Korean>집속탄 투하</Korean></Key><Key ID="STR_commander_menu_cba_tooltip"><Original>Plane flies over and drops cluster bombs at the specified location</Original><Russian>Самолет пролетает и сбрасывает кассетные бомбы в указанном месте.</Russian><Chinesesimp>飞机飞过，指定地点投下集束炸弹</Chinesesimp><Korean>비행기가 상공에서 날아와서 지정한 장소에 집속탄을 투하합니다.</Korean></Key><Key ID="STR_commander_menu_chemba_title"><Original>Chemical Bomb Airstrike</Original><Russian>Авиаудар химическим оружием</Russian><Chinesesimp>化学武器空袭</Chinesesimp><Korean>화학탄 투하</Korean></Key><Key ID="STR_commander_menu_chemba_tooltip"><Original>Plane flies over and drops bombs with hazardous chemicals at the specified location. Violates Geneva Protocol, raises aggression.</Original><Russian>Самолет пролетает и сбрасывает бомбы с опасными химическими веществами в указанном месте. Нарушает Женевскую Конвенцию, вызывает агрессию противников.</Russian><Chinesesimp>飞机飞过，指定地点并投下装有危险化学品的炸弹。 违反日内瓦议定书，提高侵略性。</Chinesesimp><Korean>비행기가 상공에서 날아와서 지정한 장소에 화학탄을 투하합니다. 제네바 협약 위반이며, 어그로를 증가시킵니다.</Korean></Key><Key ID="STR_commander_menu_na_title"><Original>Napalm Airstrike</Original><Russian>Авиаудар напалмом</Russian><Chinesesimp>凝固汽油弹空袭</Chinesesimp><Korean>네이팜탄 투하</Korean></Key><Key ID="STR_commander_menu_na_tooltip"><Original>Plane flies over and drops napalm bombs with incendiary effect.</Original><Russian>Самолет пролетает и покрывает указанную область напалмом.</Russian><Chinesesimp>飞机飞过，指定区域并用凝固汽油弹覆盖。</Chinesesimp><Korean>비행기가 상공에서 날아와서 지정한 장소에 네이팜탄을 투하합니다.</Korean></Key><Key ID="STR_commander_menu_paradrop_title"><Original>Paradrop Plane Run</Original><Russian>Пролёт десантного самолёта</Russian><Chinesesimp>空降</Chinesesimp><Korean>공수강하 비행기 비행</Korean></Key><Key ID="STR_commander_menu_paradrop_tooltip"><Original>Plane flies over and drops players with parachutes at the specified location. Players must turn on paradrop attendance (if it's turned off before) in game settings and be at rebel HQ to be successfully paradropped. If there are less seats in plane than players, it will choose them randomly.</Original><Russian>Самолет пролетает и сбрасывает игроков с парашютами в указанном месте. Игроки должны находиться в штаб-квартире повстанцев и не сидеть в технике, чтобы их успешно сбросили с парашюта. Если мест в самолете меньше, чем игроков, игроки выберутся случайным образом.</Russian><Chinesesimp>飞机飞过，把带降落伞的玩家丢到指定位置。 玩家必须在游戏设置中打开空降ON（如果关闭了的情况下）并且在抵抗军总部才能成功空降。 如果飞机上的座位少于玩家，它会随机选择。</Chinesesimp><Korean>비행기가 상공을 비행해서 낙하산을 맨 플레이어를 지정한 위치로 떨어뜨립니다. 플레이어는 게임 설정에서 공수강하 참여를 켜고 (이전에 해제됐다면) 공수강하를 성공적으로 수행하기 위해선 아군 본부에 있어야 합니다. 플레이어보다 비행기 좌석이 적으면 무작위로 선택됩니다.</Korean></Key><Key ID="STR_commander_menu_loot_heli_title"><Original>Loot Helicopter Run</Original><Russian>Пролёт вертолёта-сборщика добычи</Russian><Chinesesimp>掠夺直升机飞越上空</Chinesesimp><Korean>전리품 헬리콥터 비행</Korean></Key><Key ID="STR_commander_menu_loot_heli_tooltip"><Original>Rebel helicopter arrives and helps with collecting scattered loot and drops crate with gathered loot at the marked zone.</Original><Russian>Прилетает вертолет повстанцев, помогает собрать разбросанную добычу и сбрасывает ящик с собранной добычей в отмеченной зоне.</Russian><Chinesesimp>抵抗军直升机抵达并帮助收集散落的战利品，并将装有收集到的战利品的箱子丢在标记区域。</Chinesesimp><Korean>아군 헬리콥터가 도착하여 흩어진 전리품을 모으는 것을 돕고 표시된 구역이 모인 전리품과 함께 상자를 떨어뜨립니다.</Korean></Key><Key ID="STR_commander_menu_watchpost_title"><Original>Watchpost</Original><Russian>Пункт наблюдения</Russian><Chinesesimp>观察哨</Chinesesimp><Korean>감시초소</Korean></Key><Key ID="STR_commander_menu_roadblock_title"><Original>Roadblock</Original><Russian>Блокпост</Russian><Chinesesimp>路障</Chinesesimp><Korean>검문소</Korean></Key><Key ID="STR_commander_menu_hmge_title"><Original>HMG Emplacement</Original><Russian>Пулеметное гнездо</Russian><Chinesesimp>重机枪阵地</Chinesesimp><Korean>중기관총 포대</Korean></Key><Key ID="STR_commander_menu_aae_title"><Original>AA Emplacement</Original><Russian>Зенитная огневая точка</Russian><Chinesesimp>防空阵地</Chinesesimp><Korean>대공화기 포대</Korean></Key><Key ID="STR_commander_menu_ate_title"><Original>AT Emplacement</Original><Russian>Противотанковая огневая точка</Russian><Chinesesimp>反坦克阵地</Chinesesimp><Korean>대전차화기 포대</Korean></Key><Key ID="STR_commander_menu_apersminefield_title"><Original>APERS Mines</Original><Russian>Противопехотные мины</Russian><Chinesesimp>反人员杀伤地雷</Chinesesimp><Korean>대인지뢰</Korean></Key><Key ID="STR_commander_menu_minefield_cost"><Original>Cost: 5 %1s, %2 HR and %3%4</Original><Russian>Стоимость: 5 мин, %2 HR и %3%4</Russian><Chinesesimp>成本: 5 %1, %2 人力 和 %3%4</Chinesesimp><Korean>가격: 5개의 %1, %2 인력과 %3%4</Korean></Key><Key ID="STR_commander_menu_atminefield_title"><Original>AT Mines</Original><Russian>Противотанковые мины</Russian><Chinesesimp>反坦克地雷</Chinesesimp><Korean>대전차지뢰</Korean></Key><Key ID="STR_commander_menu_fog_title"><Original>Fog: %1</Original><Russian>Туман: %1</Russian><Chinesesimp>雾：%1</Chinesesimp><Korean>안개: %1</Korean></Key><Key ID="STR_commander_menu_fog_title_default"><Original>Fog: 0.5</Original><Russian>Туман: 0.5</Russian><Chinesesimp>雾：0.5</Chinesesimp><Korean>안개: 0.5</Korean></Key><Key ID="STR_commander_menu_fog_title_tooltip"><Original>Tunes general fog level.</Original><Russian>Настраивает общий уровень тумана.</Russian><Chinesesimp>调整整体雾度。</Chinesesimp><Korean>일반적인 안개 레벨을 조정합니다.</Korean></Key><Key ID="STR_commander_menu_fog_button"><Original>SET FOG LEVEL</Original><Russian>ЗАДАТЬ УРОВЕНЬ ТУМАНА</Russian><Chinesesimp>设置雾级别</Chinesesimp><Korean>안개 레벨 설정</Korean></Key><Key ID="STR_commander_menu_overcast_title"><Original>Overcast: %1</Original><Russian>Облачность: %1</Russian><Chinesesimp>阴天：%1</Chinesesimp><Korean>날씨: %1</Korean></Key><Key ID="STR_commander_menu_overcast_title_default"><Original>Overcast: 0.5</Original><Russian>Облачность: 0.5</Russian><Chinesesimp>阴天：0.5</Chinesesimp><Korean>날씨: 0.5</Korean></Key><Key ID="STR_commander_menu_overcast_title_tooltip"><Original>Tunes general overcast level.</Original><Russian>Настраивает общий уровень облачности.</Russian><Chinesesimp>调整整体的阴天程度。</Chinesesimp><Korean>일반적인 날씨 레벨을 조정합니다.</Korean></Key><Key ID="STR_commander_menu_overcast_button"><Original>SET OVERCAST LEVEL</Original><Russian>ЗАДАТЬ УРОВЕНЬ ОБЛАЧНОСТИ</Russian><Chinesesimp>设置阴天水平</Chinesesimp><Korean>날씨 레벨 설정</Korean></Key><Key ID="STR_commander_menu_clear_forest_button"><Original>CLEAR FOREST NEAR HQ</Original><Russian>ОЧИСТИТЬ РАСТИТЕЛЬНОСТЬ У ШТАБА</Russian><Chinesesimp>总部附近的森林</Chinesesimp><Korean>본부 근처 숲 제거</Korean></Key><Key ID="STR_commander_menu_clear_forest_tooltip"><Original>Clears bushes and trees near the HQ.</Original><Russian>Очищает кусты и деревья возле штаб-квартиры.</Russian><Chinesesimp>清理总部附近的灌木和树木。</Chinesesimp><Korean>본부 근처의 덤불과 나무를 제거합니다.</Korean></Key><Key ID="STR_commander_menu_clear_garbage_button"><Original>CLEAR GARBAGE</Original><Russian>ОЧИСТИТЬ МУСОР</Russian><Chinesesimp>清除垃圾</Chinesesimp><Korean>쓰레기 청소</Korean></Key><Key ID="STR_commander_menu_clear_garbage_tooltip"><Original>Clears garbage (bodies, unused crates, wrecks, weapons et cetera) across the map. Increases performance.</Original><Russian>Убирает мусор (тела, неиспользуемые ящики, обломки, оружие и т. д.) по всей карте. Повышает производительность.</Russian><Chinesesimp>清理地图上的垃圾（尸体、未使用的箱子、碎片、武器等）。 提高游戏性能。</Chinesesimp><Korean>지도 전체의 쓰레기(시체, 사용하지 않는 상자, 파괴된 물체, 무기 등)를 청소합니다. 성능이 향상됩니다.</Korean></Key><Key ID="STR_commander_menu_rest_tooltip"><Original>Skips 8 hours of in-game time. Requires every player to be near HQ.</Original><Russian>Пропускает 8 часов игрового времени. Требуется, чтобы каждый игрок находился рядом со штаб-квартирой.</Russian><Chinesesimp>跳过8小时的游戏时间。 要求每个玩家都在总部附近。</Chinesesimp><Korean>8시간의 게임 내 시간을 건너뜁니다. 모든 플레이어가 본부 근처에 있어야 합니다.</Korean></Key><Key ID="STR_commander_menu_max_persistent_contstructions"><Original>Maximum persistent constuctions: %1</Original><Russian>Макс. кол-во персистентных конструкций: %1</Russian><Chinesesimp>最大永久建筑：%1</Chinesesimp><Korean>최대 영구 건축물 수: %1</Korean></Key><Key ID="STR_commander_menu_max_persistent_contstructions_tooltip"><Original>Allows you to set how many persistent (saveable) constructions will be allowed. Affects performance, Last In-First Out principle.</Original><Russian>Позволяет вам установить, сколько постоянных (сохраняемых, устанавливаемых через меню Zeus) конструкций будет разрешено. Влияет на производительность, принцип Last In-First Out.</Russian><Chinesesimp>允许您设置允许多少个永久（可保存的，通过 Zeus 菜单设置）建筑。 影响性能，后进先出原则。</Chinesesimp><Korean>허용되는 (저장 가능한) 영구 건축물의 수를 설정하도록 허용합니다. 성능에 영향을 미치며, 후입선출 법칙을 따릅니다.</Korean></Key><Key ID="STR_commander_menu_ai_limit"><Original>Maximum Quantity of AI Units: %1</Original><Russian>Максимальное количество юнитов ИИ: %1</Russian><Chinesesimp>最大 AI 单位：%1</Chinesesimp><Korean>최대 인공지능 유닛 수: %1</Korean></Key><Key ID="STR_commander_menu_ai_limit_tooltip"><Original>Sets how much local and simulated AI can spawn in the map. Affects performance and AI ""intelligence"". Use with EXTREME caution, as on very high values performance may tank for everyone. This is not an exact number as vehicles and squad leaders will allways spawn.</Original><Russian>Устанавливает, сколько локального и смоделированного ИИ может появиться на карте. Влияет на производительность и «интеллектуальность» ИИ. Используйте с ЧРЕЗВЫЧАЙНОЙ осторожностью, так как при очень высоких значениях производительность может ухудшиться для всех. Это не точное число, так как транспортные средства и командиры отрядов будут появляться всегда.</Russian><Chinesesimp>设置地图中可以生成多少本地和模拟 AI。 影响性能和 AI“智能”。 使用时要格外小心，因为在非常高的数值下，可能对每个人性能都不利。 这不是一个确切的数字，因为载具和班长总是会刷出来。</Chinesesimp><Korean>지도에서 로컬 및 시뮬레이션된 인공지능이 생성할 수 있는 양을 설정합니다. 성능 및 인공지능의 ""지능""에 영향을 미칩니다. 매우 높은 값을 사용할 경우 성능이 저하될 수 있으므로 극도로 주의하여 사용하십시오. 이는 차량과 분대장들이 항상 스폰되기 때문에 정확한 숫자는 아닙니다.</Korean></Key><Key ID="STR_commander_menu_max_spawn_distance"><Original>Maximum Spawn Distance: %1</Original><Russian>Макс. дистанция спавна ИИ-акторов: %1</Russian><Chinesesimp>最大生成距离：%1</Chinesesimp><Korean>최대 스폰 거리: %1</Korean></Key><Key ID="STR_commander_menu_max_spawn_distance_tooltip"><Original>Affects at which distance from player enemy will spawn. Use this with caution. Set it to lower distances if you feel that you have low performance.</Original><Russian>Влияет на то, на каком расстоянии от игрока появится враг. Используйте это с осторожностью. Установите его на более низкие расстояния, если вы чувствуете, что у вас низкая производительность.</Russian><Chinesesimp>玩家敌人生成的距离。 请谨慎使用。 如果你觉得你的电脑性能表现不佳，请将它设置为较低的距离。</Chinesesimp><Korean>플레이어와 적과의 거리에 영향을 미칩니다. 주의하여 사용하십시오. 성능이 저하된다고 생각되면 더 낮은 거리로 설정하십시오.</Korean></Key><Key ID="STR_commander_menu_about_text"><Original>Antistasi Ultimate - %1, Version: %2, Unlock Weapon Number: %3, Limited Fast Travel: %4, Rivals: %5, Time since GC: %6</Original><Russian>Antistasi Ultimate - %1, Версия: %2, Кол-во орудий для разблок-ки: %3, Ограниченное быстрое перемещение по карте: %4, Инсургенты: %5, Прошло времени с момента сборки мусора: %6</Russian><Chinesesimp>Antistasi Ultimate - %1, 版本: %2, 解锁武器数量: %3, 是否限制快速旅行: %4, 对手: %5, GC之后经过的时间: %6</Chinesesimp><Korean>안티스타시 플러스 - %1, 버전: %2, 무기 언락 수: 53, 빠른 이동 제한: %4 라이벌: %5, 쓰레기 청소 이후 지난 시간:%6</Korean></Key><Key ID="STR_commander_menu_skill_level_title"><Original>%1 Skill Level: %2/%3</Original><Russian>Уровень навыков %1: %2/%3</Russian><Chinesesimp>%1 技能等级：%2/%3</Chinesesimp><Korean>%1 숙련도 레벨: %2/%3</Korean></Key><Key ID="STR_commander_menu_randomize_unfiroms_header"><Original>RANDOMIZE UNIFORMS</Original><Russian>СЛУЧАЙНАЯ УНИФОРМА</Russian><Chinesesimp>随机制服</Chinesesimp><Korean>군복 랜덤화</Korean></Key><Key ID="STR_commander_menu_switch_enabled"><Original>ON</Original><Russian>ВКЛ</Russian><Chinesesimp>开</Chinesesimp><Korean>켬</Korean></Key><Key ID="STR_commander_menu_switch_disabled"><Original>OFF</Original><Russian>ВЫКЛ</Russian><Chinesesimp>关</Chinesesimp><Korean>끔</Korean></Key><Key ID="STR_commander_menu_randomize_unfiroms_tooltip"><Original>Disables/Enables uniform and unarmored headgear randomization on custom rebel loadouts.</Original><Russian>Отключает/включает рандомизацию униформ и небронированных головных уборов в пользовательских снаряжениях повстанцев.</Russian><Chinesesimp>禁用/启用自定义抵抗军装载的统一和非装甲头饰随机化。</Chinesesimp><Korean>커스텀 아군 로드아웃에서 유니폼과 비-방탄 헤드기어의 랜덤화를 비활성화/활성화합니다.</Korean></Key><Key ID="STR_commander_menu_global_options_title"><Original>Global Options</Original><Russian>Глобальные настройки</Russian><Chinesesimp>全局选项</Chinesesimp><Korean>글로벌 설정</Korean></Key><Key ID="STR_commander_menu_global_options_tooltip"><Original>Options below affect all players.</Original><Russian>Параметры ниже влияют на всех игроков.</Russian><Chinesesimp>以下选项影响所有玩家。</Chinesesimp><Korean>아래 옵션은 모든 플레이어에게 적용됩니다.</Korean></Key><Key ID="STR_commander_menu_local_options_title"><Original>Local options</Original><Russian>Локальные настройки</Russian><Chinesesimp>本地选项</Chinesesimp><Korean>로컬 설정</Korean></Key><Key ID="STR_commander_menu_local_options_tooltip"><Original>Options below affect only you.</Original><Russian>Параметры ниже влияют только на вас.</Russian><Chinesesimp>以下选项仅影响您。</Chinesesimp><Korean>아래 옵션은 당신에게만 적용됩니다.</Korean></Key><Key ID="STR_commander_menu_music_switch"><Original>MUSIC</Original><Russian>МУЗЫКА</Russian><Chinesesimp>音乐</Chinesesimp><Korean>음악</Korean></Key><Key ID="STR_commander_menu_music_switch_tooltip"><Original>Disables/Enables situational music.</Original><Russian>Выключает/включает ситуативную музыку.</Russian><Chinesesimp>禁用/启用情境音乐。</Chinesesimp><Korean>상황에 맞는 음악을 비활성화/활성화합니다.</Korean></Key><Key ID="STR_commander_menu_persistent_save_button"><Original>PERSISTENT SAVE</Original><Russian>ПОСТОЯННОЕ СОХРАНЕНИЕ</Russian><Chinesesimp>永久保存</Chinesesimp><Korean>영구저장</Korean></Key><Key ID="STR_commander_menu_persistent_save_button_tooltip"><Original>Use this option to save your current game. It does save the most important data in a ""Grand Theft Auto"" way.</Original><Russian>Используйте эту опцию, чтобы сохранить текущую игру. Сохраняются самые важные данные в стиле «Grand Theft Auto».</Russian><Chinesesimp>使用这个选项来保存你当前的游戏。 最重要的数据以“侠盗猎车手”的风格保存。</Chinesesimp><Korean>현재 게임을 저장하려면 이 옵션을 사용하십시오. ""GTA"" 방식으로 가장 중요한 데이터를 저장합니다.</Korean></Key><Key ID="STR_commander_menu_personal_save_button"><Original>PERSONAL SAVE</Original><Russian>ЛИЧНОЕ СОХРАНЕНИЕ</Russian><Chinesesimp>个人存档</Chinesesimp><Korean>개인저장</Korean></Key><Key ID="STR_commander_menu_personal_save_button_tooltip"><Original>Use this option to save your current character. It does save the most important data in a ""Grand Theft Auto"" way.</Original><Russian>Используйте эту опцию, чтобы сохранить вашего текущего персонажа. Он сохраняет самые важные данные в стиле «Grand Theft Auto».</Russian><Chinesesimp>使用这个选项来保存你当前的角色。 它以“侠盗猎车手”风格保存最重要的数据。</Chinesesimp><Korean>현재 캐릭터를 저장하려면 이 옵션을 사용하십시오. ""GTA"" 방식으로 가장 중요한 데이터를 저장합니다.</Korean></Key><Key ID="STR_commander_paradrop_switch"><Original>PARADROP</Original><Russian>ДЕСАНТИРОВАНИЕ</Russian><Chinesesimp>空投伞降</Chinesesimp><Korean>공수강하</Korean></Key><Key ID="STR_commander_menu_paradrop_tooltip_noncomm"><Original>To attend in paradrop, you must be at rebel HQ and turn on this switch button to be able to be transfered to aircraft.</Original><Russian>Чтобы принять участие в парашютном десантировании, вы должны находиться в штаб-квартире повстанцев и включить эту кнопку-переключатель, чтобы иметь возможность переместиться на самолет.</Russian><Chinesesimp>要参加空投伞降，您必须在抵抗军总部并打开此切换按钮才能转移到飞机上。</Chinesesimp><Korean>공수강하에 참여하려면 아군 본부에 있어야 하며 항공기로 이동하려면 이 버튼을 켜야 합니다.</Korean></Key><Key ID="STR_commander_menu_game_info_header"><Original>Game Info</Original><Russian>Информация об игре</Russian><Chinesesimp>游戏信息</Chinesesimp><Korean>게임 정보</Korean></Key><Key ID="STR_commander_menu_server_members_header"><Original>Server Members</Original><Russian>Участники сервера</Russian><Chinesesimp>服务器成员</Chinesesimp><Korean>서버 멤버</Korean></Key><Key ID="STR_commander_menu_server_members_disabled"><Original>Server Members feature is disabled.</Original><Russian>Функция участников сервера отключена.</Russian><Chinesesimp>服务器会员功能被禁用</Chinesesimp><Korean>서버 멤버 기능을 사용할 수 없습니다.</Korean></Key><Key ID="STR_commander_menu_server_members_guests"><Original>%1Guests: %2</Original><Russian>%1Гости: %2</Russian><Chinesesimp>%1游客：%2</Chinesesimp><Korean>%1 게스트: %2</Korean></Key><Key ID="STR_commander_menu_redo_arms_dealer_task"><Original>Redo Find Arms Dealer task</Original><Russian>Повтор задания «Найти торговца оружием»</Russian><Chinesesimp>重做寻找军火商任务</Chinesesimp><Korean>암거래상 찾기 과업 재실행</Korean></Key><Key ID="STR_commander_menu_redo_arms_dealer_task_tooltip"><Original>Rollbacks the Arms Dealer's state and allows to redo task about his whereabouts. Helps in situations when Arms Dealer stuck in some undesired location. Costs 1000 to prevent exploiting.</Original><Russian>Откатывает состояние торговца оружием и позволяет переделать задание о его местонахождении. Помогает в ситуациях, когда торговец оружием застрял в каком-то нежелательном месте. Стоит 1000 денег, чтобы предотвратить использование.</Russian><Chinesesimp>重置军火商的状态，并允许重做关于军火商的下落任务。在军火商被困在不想要的地方的情况下有所帮助。要花1000块才能使用。</Chinesesimp><Korean>암거래상의 상태를 롤백하고 그의 행방에 대한 과업을 다시 수행할 수 있도록 허용합니다. 암거래상이 원치 않는 장소에 갇혔을 때 도움이 됩니다. 악용 방지를 위해 1000 자금을 내야 합니다.</Korean></Key><!-- for some reason ST_UPPERCASE is not working for tab headers --><Key ID="STR_commander_menu_abilities_header_upper"><Original>SUPPORT</Original><Russian>ПОДДЕРЖКА</Russian><Chinesesimp>支援</Chinesesimp><Korean>지원</Korean></Key><Key ID="STR_commander_menu_garrison_header_upper"><Original>GARRISON MANAGEMENT</Original><Russian>УПРАВЛЕНИЕ ГАРНИЗОНАМИ</Russian><Chinesesimp>驻军管理</Chinesesimp><Korean>주둔지 관리</Korean></Key><Key ID="STR_commander_menu_hq_header_upper"><Original>%1 HQ</Original><Russian>ШТАБ-КВАРТИРА %1</Russian><Chinesesimp>总部 %1</Chinesesimp><Korean>%1의 본부</Korean></Key><Key ID="STR_commander_menu_environment_header_upper"><Original>ENVIRONMENT</Original><Russian>ОКРУЖАЮЩАЯ СРЕДА</Russian><Chinesesimp>周围环境</Chinesesimp><Korean>환경</Korean></Key><Key ID="STR_commander_menu_game_options_header_upper"><Original>GAME OPTIONS</Original><Russian>ИГРОВЫЕ НАСТРОЙКИ</Russian><Chinesesimp>游戏选项</Chinesesimp><Korean>게임 설정</Korean></Key><Key ID="STR_commander_menu_game_info_header_upper"><Original>ABOUT</Original><Russian>ОБ ИГРЕ</Russian><Chinesesimp>关于</Chinesesimp><Korean>정보</Korean></Key><Key ID="STR_commander_menu_abilities_text"><Original>Select support type, click on desired position on the map and press Launch. Some call-ins require 1 captured airport. Support points will gain automatically starting War Level 3.</Original><Russian>Выберите тип поддержки, нажмите на место на карте и нажмите Вызвать Поддержку. Для некоторых вызовов требуется 1 захваченный аэропорт. Очки поддержки будут начисляться автоматически начиная с 3-го уровня войны.</Russian><Chinesesimp>选择支援类型，点击地图上所需的位置，然后按启动。有些呼叫需要占领一个机场。战争等级3开始支援点数将自动增加。</Chinesesimp><Korean>지원 유형을 선택하고 지도에서 원하는 위치를 클릭한 후 실행을 누르십시오. 일부 호출에는 점령한 공항이 최소 1개 이상이 필요합니다. 지원 포인트는 전쟁 레벨 3에 자동으로 획득합니다.</Korean></Key><Key ID="STR_commander_menu_abilities_costs"><Original>Costs</Original><Russian>Стоимость вызова:</Russian><Chinesesimp>费用</Chinesesimp><Korean>가격</Korean></Key><Key ID="STR_commander_menu_abilities_available_supports"><Original>Available Support Points: </Original><Russian>Доступные очки поддержки: </Russian><Chinesesimp>可用的支援点：</Chinesesimp><Korean>사용 가능한 지원 포인트: </Korean></Key><Key ID="STR_commander_menu_abilities_available_airstrikes"><Original>Available Airstrikes:</Original><Russian>Доступные авиаудары:</Russian><Chinesesimp>可用空袭：</Chinesesimp><Korean>사용 가능한 공습 포인트: </Korean></Key><Key ID="STR_commander_menu_abilities_captured_airports"><Original>Captured Airbases: </Original><Russian>Захваченные авиабазы: </Russian><Chinesesimp>占领的空军基地：</Chinesesimp><Korean>점령한 공군 기지: </Korean></Key><Key ID="STR_commander_menu_abilities_reset_button"><Original>Reset</Original><Russian>Сбросить</Russian><Chinesesimp>重置</Chinesesimp><Korean>초기화</Korean></Key><Key ID="STR_commander_menu_abilities_launch_button"><Original>Launch</Original><Russian>Вызвать</Russian><Chinesesimp>启动</Chinesesimp><Korean>발사</Korean></Key><Key ID="STR_commander_menu_abilities_cost_support_point"><Original>Costs %1 support points</Original><Russian>Стоимость: %1 очков поддержки</Russian><Chinesesimp>花费%1支援点</Chinesesimp><Korean>%1 지원 포인트를 소모합니다</Korean></Key><Key ID="STR_commander_menu_abilities_cost_support_point_and_money"><Original>Costs %1 support points and %2%3</Original><Russian>Стоимость: %1 очков поддержки и %2%3</Russian><Chinesesimp>花费 %1 支援点和 %2%3</Chinesesimp><Korean>%1 지원 포인트와 %2%3를 소모합니다</Korean></Key><Key ID="STR_commander_menu_abilities_cost_airstrike"><Original>Costs 1 Airstrike</Original><Russian>Стоимость: 1 авиаудар</Russian><Chinesesimp>花费 1 空袭</Chinesesimp><Korean>1 공습 포인트를 소모합니다</Korean></Key><Key ID="STR_commander_menu_establish_garrison_text"><Original>Select outpost type, press Establish button and click on desired position on the map.</Original><Russian>Выберите тип аванпоста, нажмите кнопку «Создать» и щелкните желаемое место на карте.</Russian><Chinesesimp>选择哨站类型，点击“创建”按钮，在地图上点击需要的位置。</Chinesesimp><Korean>전초 기지 유형을 선택하고 설립 버튼을 누른 다음 지도에 원하는 위치를 클릭하십시오.</Korean></Key><Key ID="STR_commander_menu_establish_garrison_cost"><Original>Costs %1 HR and %2%3</Original><Russian>Стоимость: %1 HR и %2%3</Russian><Chinesesimp>花费 %1 人力 和 %2%3</Chinesesimp><Korean>%1 인력과 %2%3를 소모합니다</Korean></Key><Key ID="STR_commander_menu_establish_garrison_Cancel"><Original>Cancel Task</Original><Russian>Отменить задачу</Russian><Chinesesimp>取消任务</Chinesesimp><Korean>과업 취소</Korean></Key><Key ID="STR_commander_menu_establish_garrison_establish"><Original>Establish</Original><Russian>Создать</Russian><Chinesesimp>创建</Chinesesimp><Korean>설립</Korean></Key><Key ID="STR_commander_menu_create_minefield"><Original>Create Minefield</Original><Russian>Создать минное поле</Russian><Chinesesimp>制造雷区</Chinesesimp><Korean>지뢰지대 생성</Korean></Key><Key ID="STR_commander_menu_environment_options_header"><Original>Environment Options</Original><Russian>Параметры окружающей среды</Russian><Chinesesimp>环境选项</Chinesesimp><Korean>환경 설정</Korean></Key><Key ID="STR_commander_menu_environment_options_text"><Original>Use options below to tune environmental conditions.</Original><Russian>Используйте параметры ниже, чтобы настроить условия окружающей среды.</Russian><Chinesesimp>使用以下选项调整环境条件。</Chinesesimp><Korean>환경 조건을 조정하려면 아래 옵션을 사용하십시오.</Korean></Key></Container>
         <Container name="simple_menu_actions_and_tooltips">
             <Key ID="STR_antistasi_dialogs_build">
                 <Original>Build Construction</Original>
