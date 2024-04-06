@@ -86,14 +86,14 @@
                 <Original>Antistasi Ultimate - Green Sea</Original>
                 <Russian>Antistasi Ultimate - Green Sea</Russian>
                 <Chinesesimp>Antistasi Ultimate - Green Sea</Chinesesimp>
-                <French>Antistasi Ultimate - Green Sea</French>
+                <French>Antistasi Ultimate - Mer verte</French>
                 <Korean>안티스타시 얼티밋 - Green Sea</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Greensea_mapname_text">
                 <Original>Antistasi Ultimate - Green Sea</Original>
                 <Chinesesimp>Antistasi Ultimate - Green Sea</Chinesesimp>
                 <Russian>Antistasi Ultimate - Green Sea</Russian>
-                <French>Antistasi Ultimate - Green Sea</French>
+                <French>Antistasi Ultimate - Mer verte</French>
                 <Korean>안티스타시 얼티밋 - Green Sea</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Greensea_blurb_text">
@@ -220,14 +220,14 @@
                 <Russian>Верните все, что было утрачено.</Russian>
                 <Chinesesimp>找回曾经失去的一切</Chinesesimp>
                 <Korean>잃어버린 모든 것을 되찾으십시오.</Korean>
-                <French>Retrouver tout ce qui a été perdu.</French>
+                <French>Regagner tout ce qui a été perdu.</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_chernarus2020_mapname_text">
                 <Original>Antistasi Ultimate - Harvest Red</Original>
                 <German>Antistasi Ultimate - Rote Ernte</German>
                 <Russian>Antistasi Ultimate - Красная жатва</Russian>
                 <Chinesesimp>Antistasi Ultimate - 蓝色收获</Chinesesimp>
-                <French>Antistasi Ultimate - Récolte rouge</French>
+                <French>Antistasi Ultimate - Rouge moisson</French>
                 <Korean>안티스타시 얼티밋 - 하베스트 레드</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_chernarus2020_mapname_short_text">
@@ -235,7 +235,7 @@
                 <German>Antistasi Ultimate - Rote Ernte</German>
                 <Russian>Antistasi Ultimate - Красная жатва</Russian>
                 <Chinesesimp>Antistasi Ultimate - 蓝色收获</Chinesesimp>
-                <French>Antistasi Ultimate - Récolte rouge</French>
+                <French>Antistasi Ultimate - Rouge moisson</French>
                 <Korean>안티스타시 얼티밋 - 하베스트 레드</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_chernarus2020_blurb_text">
@@ -251,7 +251,7 @@
                 <German>Antistasi Ultimate -  Horizontscan</German>
                 <Russian>Antistasi Ultimate - Ливония</Russian>
                 <Chinesesimp>Antistasi Ultimate - 扫视地平线</Chinesesimp>
-                <French>Antistasis Ultimate - Analyse de l'horizon</French>
+                <French>Antistasi Ultimate - Analyse de l'horizon</French>
                 <Korean>안티스타시 얼티밋 - 지평선 경계</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_livonia_mapname_text">
@@ -259,7 +259,7 @@
                 <Russian>Antistasi Ultimate - Сканирование Горизонта</Russian>
                 <German>Antistasi Ultimate - Horizontscan</German>
                 <Chinesesimp>Antistasi Ultimate - 扫视地平线</Chinesesimp>
-                <French>Antistasis Ultimate - Analyse de l'horizon</French>
+                <French>Antistasi Ultimate - Analyse de l'horizon</French>
                 <Korean>안티스타시 얼티밋 - 지평선 경계</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_livonia_description_text">
@@ -276,7 +276,7 @@
                 <German>"... es ist nur ein weites Feld."</German>
                 <Chinesesimp>"……这是一片开阔的原野。"</Chinesesimp>
                 <Korean>"... 그냥 넓게 펼쳐진 들판일 뿐이야."</Korean>
-                <French>"...c'est un champ largement ouvert."</French>
+                <French>"...c'est un grand champ d'action."</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_napf_mapname_text">
                 <Original>Antistasi Ultimate - Amber Insurgency</Original>
@@ -300,7 +300,7 @@
                 <Russian>Желтая почва у нас под ногами.</Russian>
                 <Chinesesimp>黄土地就在我们脚下。</Chinesesimp>
                 <Korean>황토는 우리 신발 밑에 있습니다.</Korean>
-                <French>La terre jaune est sous nos bottes.</French>
+                <French>Un sol jaune sous nos bottes.</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_vt7_mapname_text">
                 <Original>Antistasi Ultimate - Kesäsota</Original>
@@ -373,14 +373,14 @@
                 <Original>Antistasi Ultimate - Horizon Islands</Original>
                 <Russian>Antistasi Ultimate - Острова Горизонта</Russian>
                 <Chinesesimp>Antistasi Ultimate - 地平线群岛</Chinesesimp>
-                <French>Antistasi Ultimate - Îles de l'Horizon</French>
+                <French>Antistasi Ultimate - Les îles de l'Horizon</French>
                 <Korean>안티스타시 얼티밋 - 호라이즌 제도</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_tanoa_mapname_text">
                 <Original>Antistasi Ultimate - Horizon Islands</Original>
                 <Russian>Antistasi Ultimate - Острова Горизонта</Russian>
                 <Chinesesimp>Antistasi Ultimate - 地平线群岛</Chinesesimp>
-                <French>Antistasi Ultimate - Îles de l'Horizon</French>
+                <French>Antistasi Ultimate - Les îles de l'Horizon</French>
                 <Korean>안티스타시 얼티밋 - 호라이즌 제도</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_tanoa_blurb_text">
@@ -394,14 +394,14 @@
                 <Original>Antistasi Ultimate - Agent Orange</Original>
                 <Russian>Antistasi Ultimate - Агент Оранж</Russian>
                 <Chinesesimp>Antistasi Ultimate - 橙剂</Chinesesimp>
-                <French>Antistasi Ultimate - L'agent orange</French>
+                <French>Antistasi Ultimate - Agent Orange</French>
                 <Korean>안티스타시 얼티밋 - 오렌지 요원</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_camlaonam_mapname_text">
                 <Original>Antistasi Ultimate - Agent Orange</Original>
                 <Russian>Antistasi Ultimate - Агент Оранж</Russian>
                 <Chinesesimp>Antistasi Ultimate - 橙剂</Chinesesimp>
-                <French>Antistasi Ultimate - L'agent orange</French>
+                <French>Antistasi Ultimate - Agent Orange</French>
                 <Korean>안티스타시 얼티밋 - 오렌지 요원</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_camlaonam_blurb_text">
@@ -409,21 +409,21 @@
                 <Russian>Доброе утро, Вьетнам.</Russian>
                 <Chinesesimp>早安，越南</Chinesesimp>
                 <Korean>좋은 아침입니다, 베트남.</Korean>
-                <French>Good morning, Vietnam.</French>
+                <French>Bonjour, Vietnam.</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_khesanh_mapname_text">
                 <Original>Antistasi Ultimate - Battle of Khe Sanh</Original>
                 <Russian>Antistasi Ultimate - Битва при Кшешани</Russian>
                 <Chinesesimp>Antistasi Ultimate - 溪生之战</Chinesesimp>
                 <Czech>Antistasi Ultimate - Bitva u Khe Sanh</Czech>
-                <French>Antistasi Ultimate - Bataille de Khe Sanh</French>
+                <French>Antistasi Ultimate - La bataille de Khe Sanh</French>
                 <Korean>안티스타시 얼티밋 - 케산 전투</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_khesanh_mapname_short_text">
                 <Original>Antistasi Ultimate - Battle of KS</Original>
                 <Russian>Antistasi Ultimate - Битви при Кшешани</Russian>
                 <Chinesesimp>Antistasi Ultimate - 溪生之战</Chinesesimp>
-                <French>Antistasi Ultimate - Bataille de KS</French>
+                <French>Antistasi Ultimate - La bataille de Khe Sanh</French>
                 <Korean>안티스타시 얼티밋 - 케산 전투</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_khesanh_blurb_text">
@@ -437,14 +437,14 @@
                 <Original>Antistasi Ultimate - Unity</Original>
                 <Russian>Antistasi Ultimate - Единство</Russian>
                 <Chinesesimp>Antistasi Ultimate - 联盟</Chinesesimp>
-                <French>Antistasi Ultimate - Unity</French>
+                <French>Antistasi Ultimate - Unité</French>
                 <Korean>안티스타시 얼티밋 - 통일</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_sehreno_mapname_short_text">
                 <Original>Antistasi Ultimate - Unity</Original>
                 <Russian>Antistasi Ultimate - Единство</Russian>
                 <Chinesesimp>Antistasi Ultimate - 联盟</Chinesesimp>
-                <French>Antistasi Ultimate - Unity</French>
+                <French>Antistasi Ultimate - Unité</French>
                 <Korean>안티스타시 얼티밋 - 통일</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_sehreno_blurb_text">
@@ -498,22 +498,25 @@
                 <Original>Vive la résistance!</Original>
                 <Russian>Vive la résistance!</Russian>
                 <Korean>레지스탕스 만세!</Korean>
-                <French>Vive la résistance!</French>
+                <French>Vive la résistance !</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_sumava_mapname_text">
                 <Original>Antistasi Ultimate - Šumava</Original>
                 <Russian>Antistasi Ultimate - Čумава</Russian>
                 <Korean>안티스타시 얼티밋 - Šumava</Korean>
+                <French>Antistasi Ultimate - Šumava</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_sumava_blurb_text">
                 <Original>The entire country is counting on us and they don't even know it.</Original>
                 <Russian>На нас рассчитывает вся страна и они даже не знают об этом.</Russian>
                 <Korean>온 나라가 우리를 믿고 있지만 그들은 그걸 모르고 있습니다.</Korean>
+                <French>Le pays tout entier compte sur nous et ne le sait même pas.</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_sumava_mapname_short_text">
                 <Original>Antistasi Ultimate - Šumava</Original>
                 <Russian>Antistasi Ultimate - Čумава</Russian>
                 <Korean>안티스타시 얼티밋 - Šumava</Korean>
+                <French>Antistasi Ultimate - Šumava</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_name">
                 <Original>Automatically load last valid save after delay</Original>
@@ -561,32 +564,31 @@
                 <Original>Logging Level during setup</Original>
                 <Russian>Уровень логгирования</Russian>
                 <Korean>설정 중 로그 작성 수준</Korean>
-                <French>Niveau d'enregistrement pendant l'installation
-</French>
+                <French>Niveau d'enregistrement</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_LogLevel_Error">
                 <Original>Error</Original>
                 <Russian>Ошибки</Russian>
                 <Korean>오류</Korean>
-                <French>Erreur</French>
+                <French>Erreurs</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_LogLevel_Info">
                 <Original>Info</Original>
                 <Russian>Информация</Russian>
                 <Korean>정보</Korean>
-                <French>Info</French>
+                <French>Informations</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_LogLevel_Debug">
                 <Original>Debug</Original>
                 <Russian>Дебаг</Russian>
                 <Korean>디버그</Korean>
-                <French>Debug</French>
+                <French>Débogage</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_LogLevel_Verbose">
                 <Original>Verbose</Original>
                 <Russian>Подробный</Russian>
                 <Korean>세부 정보</Korean>
-                <French>Verbeux</French>
+                <French>Détaillé</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_name">
                 <Original>Log debug console use during setup</Original>
@@ -598,19 +600,20 @@
                 <Original>None</Original>
                 <Russian>Не логировать никого</Russian>
                 <Korean>없음</Korean>
-                <French>Aucun</French>
+                <French>N'enregistrez personne
+</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_All_none_dev">
                 <Original>All none dev</Original>
                 <Russian>Логгировать не-разработчиков</Russian>
                 <Korean>모두(개발자 버전 제외)</Korean>
-                <French>Tous aucun dev</French>
+                <French>Enregistrer les non-développeurs</French>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_Dev">
                 <Original>Dev</Original>
                 <Russian>Логгировать всех</Russian>
                 <Korean>개발자 버전</Korean>
-                <French>Dev</French>
+                <French>Enregistrer tout le monde</French>
             </Key>
         </Container>
     </Package>
