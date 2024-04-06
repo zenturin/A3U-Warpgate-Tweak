@@ -41,7 +41,7 @@
 ["vehiclesAmphibious", ["fow_v_lvta2_usa"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["LIB_P47"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["LIB_US_P39"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["fow_va_f6f_c"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["LIB_C47_Skytrain"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", []] call _fnc_saveToTemplate;
@@ -215,14 +215,14 @@ _sfLoadoutData set ["slHat", ["H_LIB_US_AB_Helmet_Clear_1"]];
 _sfLoadoutData set ["binoculars", ["LIB_Binocular_US"]];
 
 //SF Weapons
-_sfLoadoutData set ["rifles", [["LIB_M1A1_Carbine", "", "", "", ["LIB_15Rnd_762x33"], [], ""]]];
-_sfLoadoutData set ["carbines", [["LIB_M1928_Thompson", "", "", "", ["LIB_50Rnd_45ACP"], [], ""]]];
+_sfLoadoutData set ["rifles", [["fow_w_m1_carbine", "", "", "", ["fow_15Rnd_762x33"], [], ""]]];
+_sfLoadoutData set ["carbines", [["fow_w_m1_thompson", "", "", "", ["fow_30Rnd_45acp"], [], ""]]];
 _sfLoadoutData set ["grenadeLaunchers", [["LIB_M1_Garand", "lib_acc_gl_m7", "", "", ["LIB_8Rnd_762x63"], ["LIB_1Rnd_G_M9A1","LIB_1Rnd_G_Mk2"], ""]]];
-_sfLoadoutData set ["SMGs", [["LIB_M1928_Thompson", "", "", "", ["LIB_50Rnd_45ACP"], [], ""]]];
-_sfLoadoutData set ["machineGuns", [["LIB_M1919A4", "", "", "", ["LIB_50Rnd_762x63"], [], ""]]];
-_sfLoadoutData set ["marksmanRifles", [["LIB_M1A1_Carbine", "", "", "", ["LIB_15Rnd_762x33"], [], ""]]];
-_sfLoadoutData set ["sniperRifles", [["LIB_M1903A4_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""]]];
-_sfLoadoutData set ["sidearms", [["LIB_Colt_M1911", "", "", "", ["LIB_7Rnd_45ACP"], [], ""]]];
+_sfLoadoutData set ["SMGs", [["fow_w_m1_thompson", "", "", "", ["fow_30Rnd_45acp"], [], ""]]];
+_sfLoadoutData set ["machineGuns", [["fow_w_m1919a4", "", "", "", ["fow_50Rnd_762x63"], [], ""]]];
+_sfLoadoutData set ["marksmanRifles", [["fow_w_m1_carbine", "", "", "", ["fow_15Rnd_762x33"], [], ""]]];
+_sfLoadoutData set ["sniperRifles", [["fow_w_m1903A1_sniper", "", "", "", ["fow_5Rnd_762x63"], [], ""]]];
+_sfLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45acp"], [], ""]]];
 
 /////////////////////////////////
 //    Elite Loadout Data    //
@@ -240,17 +240,17 @@ _eliteLoadoutData set ["sniHats", ["H_LIB_US_Rangers_Helmet","H_LIB_US_Rangers_H
 _eliteLoadoutData set ["slHat", ["H_LIB_US_Rangers_Helmet"]];
 _eliteLoadoutData set ["binoculars", ["LIB_Binocular_US"]];
 
-_eliteLoadoutData set ["rifles", [["LIB_M1_Garand", "", "", "", ["LIB_8Rnd_762x63"], [], ""]]];
-_eliteLoadoutData set ["carbines", [["LIB_M1_Carbine", "", "", "", ["LIB_15Rnd_762x33"], [], ""]]];
+_eliteLoadoutData set ["rifles", [["fow_w_m1_garand", "", "", "", ["fow_8Rnd_762x63"], [], ""]]];
+_eliteLoadoutData set ["carbines", [["fow_w_m1_carbine", "", "", "", ["fow_15Rnd_762x33"], [], ""]]];
 _eliteLoadoutData set ["grenadeLaunchers", [["LIB_M1_Garand", "lib_acc_gl_m7", "", "", ["LIB_8Rnd_762x63"], ["LIB_1Rnd_G_M9A1","LIB_1Rnd_G_Mk2"], ""]]];
-_eliteLoadoutData set ["SMGs", [["LIB_M1A1_Thompson", "", "", "", ["LIB_30Rnd_45ACP"], [], ""],
-	["LIB_M3_GreaseGun", "", "", "", ["LIB_30Rnd_M3_GreaseGun_45ACP"], [], ""]]];
-_eliteLoadoutData set ["machineGuns", [["LIB_M1918A2_BAR", "", "", "", ["LIB_20Rnd_762x63"], [], ""],
-        ["LIB_M1919A6", "", "", "", ["LIB_50Rnd_762x63"], [], ""]]];
-_eliteLoadoutData set ["marksmanRifles", [["LIB_M1903A3_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""],
-        ["LIB_M1_Garand", "", "", "", ["LIB_8Rnd_762x63"], [], ""]]];
-_eliteLoadoutData set ["sniperRifles", [["LIB_M1903A4_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""]]];
-_eliteLoadoutData set ["sidearms", [["LIB_Colt_M1911", "", "", "", ["LIB_7Rnd_45ACP"], [], ""]]];
+_eliteLoadoutData set ["SMGs", [["fow_w_m1a1_thompson", "", "", "", ["fow_30Rnd_45acp"], [], ""],
+	["fow_w_m3", "", "", "", ["fow_30Rnd_45acp"], [], ""]]];
+_eliteLoadoutData set ["machineGuns", [["fow_w_m1918a2", "", "", "", ["fow_20Rnd_762x63"], [], ""],
+        ["fow_w_m1919a6", "", "", "", ["fow_50Rnd_762x63"], [], ""]]];
+_eliteLoadoutData set ["marksmanRifles", [["fow_w_m1903A1", "", "", "", ["fow_5Rnd_762x63"], [], ""],
+        ["fow_w_m1_garand", "", "", "", ["fow_8Rnd_762x63"], [], ""]]];
+_eliteLoadoutData set ["sniperRifles", [["fow_w_m1903A1_sniper", "", "", "", ["fow_5Rnd_762x63"], [], ""]]];
+_eliteLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45acp"], [], ""]]];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -268,17 +268,17 @@ _militaryLoadoutData set ["sniHats", ["H_LIB_US_Rangers_Helmet","H_LIB_US_Ranger
 _militaryLoadoutData set ["slHat", ["H_LIB_US_Rangers_Helmet"]];
 _militaryLoadoutData set ["binoculars", ["LIB_Binocular_US"]];
 
-_militaryLoadoutData set ["rifles", [["LIB_M1_Garand", "", "", "", ["LIB_8Rnd_762x63"], [], ""]]];
-_militaryLoadoutData set ["carbines", [["LIB_M1_Carbine", "", "", "", ["LIB_15Rnd_762x33"], [], ""]]];
+_militaryLoadoutData set ["rifles", [["fow_w_m1_garand", "", "", "", ["fow_8Rnd_762x63"], [], ""]]];
+_militaryLoadoutData set ["carbines", [["fow_w_m1_carbine", "", "", "", ["fow_15Rnd_762x33"], [], ""]]];
 _militaryLoadoutData set ["grenadeLaunchers", [["LIB_M1_Garand", "lib_acc_gl_m7", "", "", ["LIB_8Rnd_762x63"], ["LIB_1Rnd_G_M9A1","LIB_1Rnd_G_Mk2"], ""]]];
-_militaryLoadoutData set ["SMGs", [["LIB_M1A1_Thompson", "", "", "", ["LIB_30Rnd_45ACP"], [], ""],
-	["LIB_M3_GreaseGun", "", "", "", ["LIB_30Rnd_M3_GreaseGun_45ACP"], [], ""]]];
-_militaryLoadoutData set ["machineGuns", [["LIB_M1918A2_BAR", "", "", "", ["LIB_20Rnd_762x63"], [], ""],
-        ["LIB_M1919A6", "", "", "", ["LIB_50Rnd_762x63"], [], ""]]];
-_militaryLoadoutData set ["marksmanRifles", [["LIB_M1903A3_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""],
-        ["LIB_M1_Garand", "", "", "", ["LIB_8Rnd_762x63"], [], ""]]];
-_militaryLoadoutData set ["sniperRifles", [["LIB_M1903A4_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""]]];
-_militaryLoadoutData set ["sidearms", [["LIB_Colt_M1911", "", "", "", ["LIB_7Rnd_45ACP"], [], ""]]];
+_militaryLoadoutData set ["SMGs", [["fow_w_m1a1_thompson", "", "", "", ["fow_30Rnd_45acp"], [], ""],
+	["fow_w_m3", "", "", "", ["fow_30Rnd_45acp"], [], ""]]];
+_militaryLoadoutData set ["machineGuns", [["fow_w_m1918a2", "", "", "", ["fow_20Rnd_762x63"], [], ""],
+        ["fow_w_m1919a6", "", "", "", ["fow_30Rnd_762x63"], [], ""]]];
+_militaryLoadoutData set ["marksmanRifles", [["fow_w_m1903A1", "", "", "", ["fow_5Rnd_762x63"], [], ""],
+        ["fow_w_m1_garand", "", "", "", ["fow_8Rnd_762x63"], [], ""]]];
+_militaryLoadoutData set ["sniperRifles", [["fow_w_m1903A1_sniper", "", "", "", ["fow_5Rnd_762x63"], [], ""]]];
+_militaryLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45acp"], [], ""]]];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -288,9 +288,9 @@ private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch an
 _policeLoadoutData set ["uniforms", ["U_LIB_US_Private"]];
 _policeLoadoutData set ["vests", ["V_LIB_US_Vest_Carbine_nco"]];
 _policeLoadoutData set ["helmets", ["H_LIB_US_Pilot_Cap"]];
-_policeLoadoutData set ["SMGs", [["LIB_M1A1_Thompson", "", "", "", ["LIB_30Rnd_45ACP"], [], ""],
-	["LIB_M3_GreaseGun", "", "", "", ["LIB_30Rnd_M3_GreaseGun_45ACP"], [], ""]]];
-_policeLoadoutData set ["sidearms", [["LIB_Colt_M1911", "", "", "", ["LIB_7Rnd_45ACP"], [], ""]]];
+_policeLoadoutData set ["SMGs", [["fow_w_m1a1_thompson", "", "", "", ["fow_30Rnd_45acp"], [], ""],
+	["fow_w_m3", "", "", "", ["fow_30Rnd_45acp"], [], ""]]];
+_policeLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45acp"], [], ""]]];
 
 ////////////////////////////////
 //    Militia Loadout Data    //
@@ -307,18 +307,18 @@ _militiaLoadoutData set ["helmets", ["H_LIB_US_Helmet","H_LIB_US_Helmet_ns","H_L
 _militiaLoadoutData set ["sniHats", ["H_LIB_US_Helmet","H_LIB_US_Helmet_ns","H_LIB_US_Helmet_os","H_LIB_US_Helmet_Net","H_LIB_US_Helmet_Net_ns","H_LIB_US_Helmet_Net_os"]];
 _militiaLoadoutData set ["slHat", ["H_LIB_US_Helmet"]];
 
-_militiaLoadoutData set ["rifles", [["LIB_M1_Garand", "", "", "", ["LIB_8Rnd_762x63"], [], ""],
-	["LIB_M1903A3_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""]]];
-_militiaLoadoutData set ["carbines", [["LIB_M1_Carbine", "", "", "", ["LIB_15Rnd_762x33"], [], ""],
-	["LIB_M1903A3_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""]]];
+_militiaLoadoutData set ["rifles", [["fow_w_m1_garand", "", "", "", ["fow_8Rnd_762x63"], [], ""],
+	["fow_w_m1903A1", "", "", "", ["fow_5Rnd_762x63"], [], ""]]];
+_militiaLoadoutData set ["carbines", [["fow_w_m1_carbine", "", "", "", ["fow_15Rnd_762x33"], [], ""],
+	["fow_w_m1903A1", "", "", "", ["fow_5Rnd_762x63"], [], ""]]];
 _militiaLoadoutData set ["grenadeLaunchers", [["LIB_M1_Garand", "lib_acc_gl_m7", "", "", ["LIB_8Rnd_762x63"], ["LIB_1Rnd_G_M9A1","LIB_1Rnd_G_Mk2"], ""]]];
-_militiaLoadoutData set ["SMGs", [["LIB_M1A1_Thompson", "", "", "", ["LIB_30Rnd_45ACP"], [], ""],
-	["LIB_M3_GreaseGun", "", "", "", ["LIB_30Rnd_M3_GreaseGun_45ACP"], [], ""]]];
-_militiaLoadoutData set ["machineGuns", [["LIB_M1918A2_BAR", "", "", "", ["LIB_20Rnd_762x63"], [], ""]]];
-_militiaLoadoutData set ["marksmanRifles", [["LIB_M1903A3_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""]]];
-_militiaLoadoutData set ["sniperRifles", [["LIB_M1903A3_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""],
-	["LIB_M1903A4_Springfield", "", "", "", ["LIB_5Rnd_762x63"], [], ""]]];
-_militiaLoadoutData set ["sidearms", [["LIB_Colt_M1911", "", "", "", ["LIB_7Rnd_45ACP"], [], ""]]];
+_militiaLoadoutData set ["SMGs", [["fow_w_m1a1_thompson", "", "", "", ["fow_30Rnd_45acp"], [], ""],
+	["fow_w_m3", "", "", "", ["fow_30Rnd_45acp"], [], ""]]];
+_militiaLoadoutData set ["machineGuns", [["fow_w_m1918a2", "", "", "", ["fow_20Rnd_762x63"], [], ""]]];
+_militiaLoadoutData set ["marksmanRifles", [["fow_w_m1903A1", "", "", "", ["fow_5Rnd_762x63"], [], ""]]];
+_militiaLoadoutData set ["sniperRifles", [["fow_w_m1903A1", "", "", "", ["fow_5Rnd_762x63"], [], ""],
+	["fow_w_m1903A1_sniper", "", "", "", ["fow_5Rnd_762x63"], [], ""]]];
+_militiaLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45acp"], [], ""]]];
 //////////////////////////
 //    Misc Loadouts     //
 //////////////////////////
@@ -329,7 +329,7 @@ _crewLoadoutData set ["uniforms", ["U_LIB_US_Tank_Crew","U_LIB_US_Tank_Crew2"]];
 _crewLoadoutData set ["vests", ["V_LIB_US_Vest_Carbine"]];
 _crewLoadoutData set ["helmets", ["H_LIB_US_Helmet_Tank"]];
 _crewLoadoutData set ["carbines", [
-    ["LIB_M3_GreaseGun", "", "", "", ["LIB_30Rnd_M3_GreaseGun_45ACP"], [], ""]
+    ["fow_w_m3", "", "", "", ["fow_30Rnd_45acp"], [], ""]
 ]];	
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
@@ -337,7 +337,7 @@ _pilotLoadoutData set ["uniforms", ["U_LIB_US_Pilot","U_LIB_US_Bomber_Pilot"]];
 _pilotLoadoutData set ["vests", ["V_LIB_US_LifeVest"]];
 _pilotLoadoutData set ["helmets", ["H_LIB_US_Helmet_Pilot","H_LIB_US_Pilot_Glasses_Down","H_LIB_US_Helmet_Glasses_Up","H_LIB_US_Helmet_Pilot_Respirator_Glasses_Down","H_LIB_US_Helmet_Pilot_Respirator_Glasses_Up","H_LIB_US_Helmet_Pilot_Respirator"]];
 _pilotLoadoutData set ["carbines", [
-    ["LIB_M3_GreaseGun", "", "", "", ["LIB_30Rnd_M3_GreaseGun_45ACP"], [], ""]
+    ["fow_w_m3", "", "", "", ["fow_30Rnd_45acp"], [], ""]
 ]];	
 
 
