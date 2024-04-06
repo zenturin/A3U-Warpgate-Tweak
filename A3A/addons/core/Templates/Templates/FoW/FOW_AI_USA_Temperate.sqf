@@ -65,7 +65,7 @@
 
 ["vehiclesPolice", ["LIB_GazM1_SOV"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["I_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["fow_w_m1919a6_deployed_high_usa_p"]] call _fnc_saveToTemplate;
 ["staticAT", ["fow_w_6Pounder_usa"]] call _fnc_saveToTemplate;
 ["staticAA", ["LIB_61k"]] call _fnc_saveToTemplate;
 ["staticMortars", ["LIB_M2_60"]] call _fnc_saveToTemplate;
@@ -205,7 +205,7 @@ _loadoutData set ["items_unarmed_extras", []];
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
 _sfLoadoutData set ["uniforms", ["fow_u_us_m42_ab_01_private", "fow_u_us_m42_ab_01_corporal", "fow_u_us_m42_ab_01_sergeant","fow_u_us_m42_ab_01_staffsergeant"]];
-_sfLoadoutData set ["vests", ["fow_v_us_ab_garand","fow_v_ab_carbine","fow_v_us_ab_bar"]];
+_sfLoadoutData set ["vests", ["fow_v_us_ab_garand","fow_v_us_ab_carbine","fow_v_us_ab_bar"]];
 _sfLoadoutData set ["glVests", ["fow_v_us_ab_thompson"]];
 _sfLoadoutData set ["Hvests", ["fow_v_us_ab_thompson_nco_scr"]];
 _sfLoadoutData set ["backpacks", ["fow_b_us_bandoleer","fow_b_us_m1944","fow_b_us_m1944_ropes"]];

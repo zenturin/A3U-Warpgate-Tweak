@@ -65,7 +65,7 @@
 
 ["vehiclesPolice", ["LIB_Kfz1_sernyt"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["LIB_MG34_Lafette_Deployed","LIB_MG42_Lafette_Deployed"]] call _fnc_saveToTemplate;
+["staticMGs", ["fow_w_mg42_deployed_high_ger_heer"]] call _fnc_saveToTemplate;
 ["staticAT", ["fow_w_pak40_camo_ger_heer"]] call _fnc_saveToTemplate;
 ["staticAA", ["LIB_FlaK_38"]] call _fnc_saveToTemplate;
 ["staticMortars", ["LIB_GrWr34"]] call _fnc_saveToTemplate;
