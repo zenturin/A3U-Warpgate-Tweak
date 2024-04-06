@@ -5415,6 +5415,7 @@
                 <Original>Hide Enemy Markers</Original>
                 <English>Hide Enemy Markers</English>
                 <Russian>Спрятать вражеские маркеры</Russian>
+                <French>Cacher les marqueurs ennemis</French>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>
