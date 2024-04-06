@@ -83,7 +83,7 @@
 ["minefieldAT", ["LIB_US_M1A1_ATMINE"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["LIB_M3_MINE"]] call _fnc_saveToTemplate;
 
-#include "IFA_Vehicle_Attributes.sqf"
+#include "FOW_Vehicle_Attributes.sqf"
 
 /////////////////////
 ///  Identities   ///
@@ -112,7 +112,7 @@ _loadoutData set ["marksmanRifles", []];
 _loadoutData set ["sniperRifles", []];
 _loadoutData set ["lightATLaunchers", []];
 _loadoutData set ["ATLaunchers", [
-["LIB_M1A1_Bazooka", "", "", "",["LIB_1Rnd_60mm_M6"], [], ""]]];
+["fow_w_m1a1_bazooka", "", "", "",["fow_1Rnd_m6a1"], [], ""]]];
 _loadoutData set ["missileATLaunchers", []];
 _loadoutData set ["AALaunchers", []];
 _loadoutData set ["sidearms", []];
@@ -139,13 +139,13 @@ _loadoutData set ["NVGs", []];
 _loadoutData set ["binoculars", ["LIB_Binocular_US"]];
 _loadoutData set ["rangefinders", ["LIB_Binocular_US"]];
 
-_loadoutData set ["traitorUniforms", ["U_LIB_US_Rangers_Uniform"]];
-_loadoutData set ["traitorVests", ["V_LIB_US_AB_Vest_Padded_Carbine"]];
-_loadoutData set ["traitorHats", ["H_LIB_US_Rangers_Helmet"]];
+_loadoutData set ["traitorUniforms", ["fow_u_us_m41_01_private"]];
+_loadoutData set ["traitorVests", ["fow_v_us_ab_45"]];
+_loadoutData set ["traitorHats", ["fow_h_us_m1_nco"]];
 
-_loadoutData set ["officerUniforms", ["U_LIB_US_Rangers_Sergeant"]];
-_loadoutData set ["officerVests", ["V_LIB_US_AB_Vest_Padded_Carbine"]];
-_loadoutData set ["officerHats", ["H_LIB_US_Rangers_Helmet"]];
+_loadoutData set ["officerUniforms", ["fow_u_us_m41_01_private"]];
+_loadoutData set ["officerVests", ["fow_v_us_ab_45"]];
+_loadoutData set ["officerHats", ["fow_h_us_m1_officer"]];
 
 _loadoutData set ["cloakUniforms", []];
 _loadoutData set ["cloakVests", []];
@@ -204,14 +204,14 @@ _loadoutData set ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_sfLoadoutData set ["uniforms", ["U_LIB_US_AB_Uniform_M43", "U_LIB_US_AB_Uniform_M43_corporal", "U_LIB_US_AB_Uniform_M43_NCO"]];
-_sfLoadoutData set ["vests", ["V_LIB_US_Assault_Vest","V_LIB_US_Assault_Vest_Light","V_LIB_US_Assault_Vest_Thompson"]];
-_sfLoadoutData set ["glVests", ["V_LIB_US_Assault_Vest_dday"]];
-_sfLoadoutData set ["Hvests", ["V_LIB_US_Assault_Vest_Thompson"]];
-_sfLoadoutData set ["backpacks", ["B_LIB_US_M36","B_LIB_US_M36_Bandoleer","B_LIB_US_M36_Rocketbag_Empty","B_LIB_US_M36_Rope"]];
-_sfLoadoutData set ["helmets", ["H_LIB_US_AB_Helmet_Clear_1","H_LIB_US_AB_Helmet_Clear_2","H_LIB_US_AB_Helmet_Clear_3","H_LIB_US_AB_Helmet_Plain_1","H_LIB_US_AB_Helmet_Plain_2","H_LIB_US_AB_Helmet_Plain_3"]];
-_sfLoadoutData set ["sniHats", ["H_LIB_US_AB_Helmet_Clear_1","H_LIB_US_AB_Helmet_Clear_2","H_LIB_US_AB_Helmet_Clear_3","H_LIB_US_AB_Helmet_Plain_1","H_LIB_US_AB_Helmet_Plain_2","H_LIB_US_AB_Helmet_Plain_3"]];
-_sfLoadoutData set ["slHat", ["H_LIB_US_AB_Helmet_Clear_1"]];
+_sfLoadoutData set ["uniforms", ["fow_u_us_m42_ab_01_private", "fow_u_us_m42_ab_01_corporal", "fow_u_us_m42_ab_01_sergeant","fow_u_us_m42_ab_01_staffsergeant"]];
+_sfLoadoutData set ["vests", ["fow_v_us_ab_garand","fow_v_ab_carbine","fow_v_us_ab_bar"]];
+_sfLoadoutData set ["glVests", ["fow_v_us_ab_thompson"]];
+_sfLoadoutData set ["Hvests", ["fow_v_us_ab_thompson_nco_scr"]];
+_sfLoadoutData set ["backpacks", ["fow_b_us_bandoleer","fow_b_us_m1944","fow_b_us_m1944_ropes"]];
+_sfLoadoutData set ["helmets", ["fow_h_us_m2","fow_h_us_m2_camo","fow_h_us_m2_camo_open","fow_h_us_m2_fak_net","fow_h_us_m2_fak_camo","fow_h_us_m2_net"]];
+_sfLoadoutData set ["sniHats", ["fow_h_us_m2_camo","fow_h_us_m2_camo_open","fow_h_us_m2_fak_camo"]];
+_sfLoadoutData set ["slHat", ["fow_h_us_m2_ace","fow_h_us_m2_clover","fow_h_us_m2_diamond","fow_h_us_m2_heart"]];
 _sfLoadoutData set ["binoculars", ["LIB_Binocular_US"]];
 
 //SF Weapons
@@ -229,15 +229,15 @@ _sfLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45acp"],
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_eliteLoadoutData set ["uniforms", ["U_LIB_US_Rangers_Uniform", "U_LIB_US_Rangers_Corp", "U_LIB_US_Rangers_Private_1st"]];
-_eliteLoadoutData set ["slUniforms", ["U_LIB_US_Rangers_Sergeant"]];
-_eliteLoadoutData set ["vests", ["V_LIB_US_AB_Vest_Padded_Garand","V_LIB_US_AB_Vest_Padded_Carbine","V_LIB_US_AB_Vest_Padded_Bar","V_LIB_US_AB_Vest_Padded_Thompson"]];
-_eliteLoadoutData set ["glVests", ["V_LIB_US_AB_Vest_Padded_Grenadier"]];
-_eliteLoadoutData set ["Hvests", ["V_LIB_US_AB_Vest_Padded_M1919"]];
-_eliteLoadoutData set ["backpacks", ["B_LIB_US_M36","B_LIB_US_M36_Bandoleer","B_LIB_US_M36_Rocketbag_Empty","B_LIB_US_M36_Rope","B_LIB_US_Backpack","B_LIB_US_Backpack_Bandoleer","B_LIB_US_Backpack_dday","B_LIB_US_Backpack_RocketBag_Empty","B_LIB_US_Backpack_Mk2"]];
-_eliteLoadoutData set ["helmets", ["H_LIB_US_Rangers_Helmet","H_LIB_US_Rangers_Helmet_os","H_LIB_US_Rangers_Helmet_ns"]];
-_eliteLoadoutData set ["sniHats", ["H_LIB_US_Rangers_Helmet","H_LIB_US_Rangers_Helmet_os","H_LIB_US_Rangers_Helmet_ns"]];
-_eliteLoadoutData set ["slHat", ["H_LIB_US_Rangers_Helmet"]];
+_eliteLoadoutData set ["uniforms", ["fow_u_us_m41_01_private", "fow_u_us_m41_02_private", "fow_u_us_m41_03_private"]];
+_eliteLoadoutData set ["slUniforms", ["fow_u_us_m41_04_private"]];
+_eliteLoadoutData set ["vests", ["fow_v_us_garand","fow_v_us_carbine","fow_v_us_bar"]];
+_eliteLoadoutData set ["glVests", ["fow_v_us_thompson"]];
+_eliteLoadoutData set ["Hvests", ["fow_v_us_thompson_nco_scr"]];
+_eliteLoadoutData set ["backpacks", ["fow_b_us_bandoleer","fow_b_us_m1944","fow_b_us_m1944_ropes"]];
+_eliteLoadoutData set ["helmets", ["fow_h_us_m1","fow_h_us_m1_closed","fow_h_us_m1_folded"]];
+_eliteLoadoutData set ["sniHats", ["fow_h_us_m1_net"]];
+_eliteLoadoutData set ["slHat", ["fow_h_us_m1_officer"]];
 _eliteLoadoutData set ["binoculars", ["LIB_Binocular_US"]];
 
 _eliteLoadoutData set ["rifles", [["fow_w_m1_garand", "", "", "", ["fow_8Rnd_762x63"], [], ""]]];
@@ -257,15 +257,15 @@ _eliteLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45acp
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_militaryLoadoutData set ["uniforms", ["U_LIB_US_Rangers_Uniform", "U_LIB_US_Rangers_Corp", "U_LIB_US_Rangers_Private_1st"]];
-_militaryLoadoutData set ["slUniforms", ["U_LIB_US_Rangers_Sergeant"]];
-_militaryLoadoutData set ["vests", ["V_LIB_US_AB_Vest_Padded_Garand","V_LIB_US_AB_Vest_Padded_Carbine","V_LIB_US_AB_Vest_Padded_Bar","V_LIB_US_AB_Vest_Padded_Thompson"]];
-_militaryLoadoutData set ["glVests", ["V_LIB_US_AB_Vest_Padded_Grenadier"]];
-_militaryLoadoutData set ["Hvests", ["V_LIB_US_AB_Vest_Padded_M1919"]];
-_militaryLoadoutData set ["backpacks", ["B_LIB_US_M36","B_LIB_US_M36_Bandoleer","B_LIB_US_M36_Rocketbag_Empty","B_LIB_US_M36_Rope","B_LIB_US_Backpack","B_LIB_US_Backpack_Bandoleer","B_LIB_US_Backpack_dday","B_LIB_US_Backpack_RocketBag_Empty","B_LIB_US_Backpack_Mk2"]];
-_militaryLoadoutData set ["helmets", ["H_LIB_US_Rangers_Helmet","H_LIB_US_Rangers_Helmet_os","H_LIB_US_Rangers_Helmet_ns"]];
-_militaryLoadoutData set ["sniHats", ["H_LIB_US_Rangers_Helmet","H_LIB_US_Rangers_Helmet_os","H_LIB_US_Rangers_Helmet_ns"]];
-_militaryLoadoutData set ["slHat", ["H_LIB_US_Rangers_Helmet"]];
+_militaryLoadoutData set ["uniforms", ["fow_u_us_m41_01_private", "fow_u_us_m41_02_private", "fow_u_us_m41_03_private"]];
+_militaryLoadoutData set ["slUniforms", ["fow_u_us_m41_04_private"]];
+_militaryLoadoutData set ["vests", ["fow_v_us_garand","fow_v_us_carbine","fow_v_us_bar"]];
+_militaryLoadoutData set ["glVests", ["fow_v_us_thompson"]];
+_militaryLoadoutData set ["Hvests", ["fow_v_us_thompson_nco_scr"]];
+_militaryLoadoutData set ["backpacks", ["fow_b_us_bandoleer","fow_b_us_m1944","fow_b_us_m1944_ropes"]];
+_militaryLoadoutData set ["helmets", ["fow_h_us_m1","fow_h_us_m1_closed","fow_h_us_m1_folded"]];
+_militaryLoadoutData set ["sniHats", ["fow_h_us_m1_net"]];
+_militaryLoadoutData set ["slHat", ["fow_h_us_m1_officer"]];
 _militaryLoadoutData set ["binoculars", ["LIB_Binocular_US"]];
 
 _militaryLoadoutData set ["rifles", [["fow_w_m1_garand", "", "", "", ["fow_8Rnd_762x63"], [], ""]]];
@@ -285,11 +285,13 @@ _militaryLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_policeLoadoutData set ["uniforms", ["U_LIB_US_Private"]];
-_policeLoadoutData set ["vests", ["V_LIB_US_Vest_Carbine_nco"]];
-_policeLoadoutData set ["helmets", ["H_LIB_US_Pilot_Cap"]];
+_policeLoadoutData set ["uniforms", ["fow_u_us_m42_ab_01_82_flag_private","fow_u_us_m42_ab_01_82_flag_sergeant","fow_u_us_m42_ab_01_82_flag_corporal"]];
+_policeLoadoutData set ["vests", ["fow_v_us_ab_45"]];
+_policeLoadoutData set ["helmets", ["fow_h_us_m2"]];
 _policeLoadoutData set ["SMGs", [["fow_w_m1a1_thompson", "", "", "", ["fow_30Rnd_45acp"], [], ""],
-	["fow_w_m3", "", "", "", ["fow_30Rnd_45acp"], [], ""]]];
+	["fow_w_m3", "", "", "", ["fow_30Rnd_45acp"], [], ""],
+	["fow_w_M1912", "", "", "", ["fow_6Rnd_12G_Pellets"], [], ""],
+	["fow_w_ithaca37", "", "", "", ["fow_5Rnd_12G_Pellets"], [], ""]]];
 _policeLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45acp"], [], ""]]];
 
 ////////////////////////////////
@@ -297,15 +299,15 @@ _policeLoadoutData set ["sidearms", [["fow_w_m1911", "", "", "", ["fow_7Rnd_45ac
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_militiaLoadoutData set ["uniforms", ["U_LIB_US_Private","U_LIB_US_Private_1st","U_LIB_US_Corp"]];
-_militiaLoadoutData set ["slUniforms", ["U_LIB_US_Sergeant"]];
-_militiaLoadoutData set ["vests", ["V_LIB_US_Vest_Garand","V_LIB_US_Vest_Carbine","V_LIB_US_Vest_Bar"]];
-_militiaLoadoutData set ["glVests", ["V_LIB_US_Vest_Grenadier"]];
-_militiaLoadoutData set ["Hvests", ["V_LIB_US_Vest_Thompson"]];
-_militiaLoadoutData set ["backpacks", ["B_LIB_US_Backpack","B_LIB_US_Backpack_Bandoleer","B_LIB_US_Backpack_dday","B_LIB_US_Backpack_RocketBag_Empty","B_LIB_US_Backpack_Mk2"]];
-_militiaLoadoutData set ["helmets", ["H_LIB_US_Helmet","H_LIB_US_Helmet_ns","H_LIB_US_Helmet_os","H_LIB_US_Helmet_Net","H_LIB_US_Helmet_Net_ns","H_LIB_US_Helmet_Net_os"]];
-_militiaLoadoutData set ["sniHats", ["H_LIB_US_Helmet","H_LIB_US_Helmet_ns","H_LIB_US_Helmet_os","H_LIB_US_Helmet_Net","H_LIB_US_Helmet_Net_ns","H_LIB_US_Helmet_Net_os"]];
-_militiaLoadoutData set ["slHat", ["H_LIB_US_Helmet"]];
+_militiaLoadoutData set ["uniforms", ["fow_u_us_m37_02_private"]];
+_militiaLoadoutData set ["slUniforms", ["fow_u_us_m37_01_private"]];
+_militiaLoadoutData set ["vests", ["fow_v_us_garand","fow_v_us_carbine","fow_v_us_bar"]];
+_militiaLoadoutData set ["glVests", ["fow_v_us_thompson"]];
+_militiaLoadoutData set ["Hvests", ["fow_v_us_thompson_nco_scr"]];
+_militiaLoadoutData set ["backpacks", ["fow_b_us_bandoleer","fow_b_us_m1928"]];
+_militiaLoadoutData set ["helmets", ["fow_h_us_m1","fow_h_us_m1_closed","fow_h_us_m1_folded"]];
+_militiaLoadoutData set ["sniHats", ["fow_h_us_m1_net"]];
+_militiaLoadoutData set ["slHat", ["fow_h_us_m1_nco"]];
 
 _militiaLoadoutData set ["rifles", [["fow_w_m1_garand", "", "", "", ["fow_8Rnd_762x63"], [], ""],
 	["fow_w_m1903A1", "", "", "", ["fow_5Rnd_762x63"], [], ""]]];
@@ -333,9 +335,9 @@ _crewLoadoutData set ["carbines", [
 ]];	
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", ["U_LIB_US_Pilot","U_LIB_US_Bomber_Pilot"]];
-_pilotLoadoutData set ["vests", ["V_LIB_US_LifeVest"]];
-_pilotLoadoutData set ["helmets", ["H_LIB_US_Helmet_Pilot","H_LIB_US_Pilot_Glasses_Down","H_LIB_US_Helmet_Glasses_Up","H_LIB_US_Helmet_Pilot_Respirator_Glasses_Down","H_LIB_US_Helmet_Pilot_Respirator_Glasses_Up","H_LIB_US_Helmet_Pilot_Respirator"]];
+_pilotLoadoutData set ["uniforms", ["fow_u_us_pilot_02","fow_u_us_pilot_01"]];
+_pilotLoadoutData set ["vests", ["fow_v_us_45"]];
+_pilotLoadoutData set ["helmets", ["fow_h_us_flight_helmet"]];
 _pilotLoadoutData set ["carbines", [
     ["fow_w_m3", "", "", "", ["fow_30Rnd_45acp"], [], ""]
 ]];	
