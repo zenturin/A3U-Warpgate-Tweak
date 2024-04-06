@@ -15,6 +15,11 @@ class traderMods
         addons[] = {"JMSLLTE_empire_mod"};
         prefix = "emp";
     };
+    class ww2fow : base
+    {
+        addons[] = {"fow_tanks"};
+        prefix = "fowstore";
+    };
     class unsung : base
     {
         addons[] = {"uns_weap_w"};

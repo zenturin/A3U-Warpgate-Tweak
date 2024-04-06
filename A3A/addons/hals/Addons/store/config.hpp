@@ -248,6 +248,23 @@ class cfgHALsStore
 			};
 		};
 
+		class fowstore
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsfow",
+				"smgfow",
+				"mgfow",
+				"riflesfow",
+				"sniperriflesfow",
+				"launchersfow",
+				"muzzlesfow",
+				"magazinesfow", 
+				"pointersfow",
+				"underbarrelfow"
+			};
+		};
+
 		class ww2mod
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
