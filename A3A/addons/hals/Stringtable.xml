@@ -586,6 +586,12 @@
                 <Russian>IFA</Russian>
                 <Korean>IFA</Korean>
             </Key>
+			<Key ID="STR_A3AU_fow">
+                <Original>FoW</Original>
+                <English>FoW</English>
+                <Russian>FoW</Russian>
+                <Korean>FoW</Korean>
+            </Key>
             <Key ID="STR_A3AU_italy">
                 <Original>Pedagne</Original>
                 <English>Pedagne</English>

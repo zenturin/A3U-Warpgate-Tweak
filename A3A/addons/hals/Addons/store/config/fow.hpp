@@ -1,5 +1,5 @@
 		class handgunsfow{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_handguns"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fow", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(fow_w_type10, 50, PISTOL_STOCK); //AMMO: fow_1Rnd_type10
@@ -14,7 +14,7 @@
 		};
 
 		class smgfow{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_smgs"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fow", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(fow_w_ithaca37, 165, RIFLE_STOCK); // fow_5Rnd_12G_Pellets
@@ -32,7 +32,7 @@
 		};
 		
 		class mgfow{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_mgs"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fow", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(fow_w_m1919a4, 550, RIFLE_STOCK); // fow_30Rnd_762x63
@@ -47,7 +47,7 @@
 		};
 
 		class riflesfow{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_rifles"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fow", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(fow_w_leeenfield_no4mk1, 210, RIFLE_STOCK); // fow_10Rnd_303
 			ITEM(fow_w_leeenfield_no4mk1_redwood, 210, RIFLE_STOCK); // fow_10Rnd_303
@@ -63,7 +63,7 @@
 		};
 
 		class sniperriflesfow{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_sniperRifles"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fow", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(fow_w_m1903A1_sniper, 570, RIFLE_STOCK); // fow_5Rnd_762x63
@@ -72,7 +72,7 @@
 		};
 
 		class launchersfow{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_launchers"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fow", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(fow_w_pzfaust_100, 275, 25); 
@@ -83,7 +83,7 @@
 		}; 
 
 		class muzzlesfow{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_muzzles"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fow", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(fow_w_acc_type30_bayo, 75, MZ_STOCK);
@@ -94,7 +94,7 @@
 		};
 
 		class magazinesfow{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_magazines"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fow", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(fow_1Rnd_m6a1, 200, MZ_STOCK);
@@ -132,7 +132,7 @@
 		};
 
 		class pointersfow{
-			displayName = __EVAL(formatText ["%1 %2 %3 %4 %5", localize "STR_A3AU_ifa", localize "STR_A3AU_barret", localize "STR_A3AU_handles", localize "STR_A3AU_and", localize "STR_A3AU_bipods"]);
+			displayName = __EVAL(formatText ["%1 %2 %3 %4 %5", localize "STR_A3AU_fow", localize "STR_A3AU_barret", localize "STR_A3AU_handles", localize "STR_A3AU_and", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(fow_w_acc_m1918a2_handle, 70, PN_STOCK);
@@ -140,7 +140,7 @@
 		};
 
 		class underbarrelfow{
-	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_bagsStatics"]);
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fow", localize "STR_A3AU_bagsStatics"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(fow_b_uk_vickers_support, 300, 20);
