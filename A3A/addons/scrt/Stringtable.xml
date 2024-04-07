@@ -492,234 +492,273 @@
                 <Russian>Перепаковка магазинов инициализирована.</Russian>
                 <Chinesesimp>Mag Repack 初始化</Chinesesimp>
                 <Korean>탄약 재포장 초기화됨.</Korean>
+                <French>Repack des chargeurs en cours.</French>
             </Key>
             <Key ID="STR_magRepack_keybind">
                 <Original>Keybinding: </Original>
                 <Russian>Связка клавиш: </Russian>
                 <Chinesesimp>按键绑定: </Chinesesimp>
                 <Korean>키 설정: </Korean>
+                <French>Raccourcis clavier: </French>                
             </Key>
             <Key ID="STR_magRepack_about">
                 <Original>Mag Repack: About</Original>
                 <Russian>Mag Repack: о аддоне</Russian>
                 <Chinesesimp>Mag Repack：关于</Chinesesimp>
                 <Korean>탄약 재포장: 정보</Korean>
+                <French>Repack des chargeurs: À propos</French>
             </Key>
             <Key ID="STR_magRepack_mkay">
                 <Original>Mmkay</Original>
                 <Russian>Понятно</Russian>
                 <Chinesesimp>Mmkay</Chinesesimp>
                 <Korean>Mmkay</Korean>
+                <French>Mm okay</French>
             </Key>
             <Key ID="STR_magRepack_author">
                 <Original>Author: Outlawled</Original>
                 <Russian>Автор: Outlawled</Russian>
                 <Chinesesimp>作者:Outlawled</Chinesesimp>
                 <Korean>제작자: Outlawled</Korean>
+                <French>Auteur: Outlawled</French>
             </Key>
             <Key ID="STR_magRepack_version">
                 <Original>Version:</Original>
                 <Russian>Версия:</Russian>
                 <Chinesesimp>版本：</Chinesesimp>
                 <Korean>버전:</Korean>
+                <French>Version :</French>
             </Key>
             <Key ID="STR_magRepack_updated">
                 <Original>Updated:</Original>
                 <Russian>Обновлено:</Russian>
                 <Chinesesimp>更新：</Chinesesimp>
                 <Korean>업데이트:</Korean>
+                <French>Mise à jour:</French>
             </Key>
             <Key ID="STR_magRepack_cancel">
                 <Original>Cancel</Original>
                 <Russian>Отмена</Russian>
                 <Chinesesimp>取消</Chinesesimp>
                 <Korean>취소</Korean>
+                <French>Annuler</French>
             </Key>
             <Key ID="STR_magRepack_apply">
                 <Original>Apply</Original>
                 <Russian>Применить</Russian>
                 <Chinesesimp>应用</Chinesesimp>
                 <Korean>적용</Korean>
+                <French>Appliquer</French>
             </Key>
             <Key ID="STR_magRepack_keybinding">
                 <Original>Keybinding</Original>
                 <Russian>Назначение клавиш</Russian>
                 <Chinesesimp>按键绑定</Chinesesimp>
                 <Korean>키 설정</Korean>
+                <French>Raccourcis clavier</French>
             </Key>
             <Key ID="STR_magRepack_modifiers">
                 <Original>Modifiers</Original>
                 <Russian>Модификаторы</Russian>
                 <Chinesesimp>修改</Chinesesimp>
                 <Korean>변경자</Korean>
+                <French>Modificateurs</French>
             </Key>
             <Key ID="STR_magRepack_keybinds">
                 <Original>Mag Repack: Keybindings</Original>
                 <Russian>Mag Repack: назначения клавиш</Russian>
                 <Chinesesimp>Mag Repack: 按键绑定</Chinesesimp>
                 <Korean>탄약 재포장: 키 설정</Korean>
+                <French>Repack des chargeurs: Raccourcis clavier</French>
             </Key>
             <Key ID="STR_magRepack_allmags">
                 <Original>All Magazines</Original>
                 <Russian>Все магазины</Russian>
                 <Chinesesimp>所有弹匣</Chinesesimp>
                 <Korean>모든 탄창</Korean>
+                <French>Tous les chargeurs</French>
             </Key>
             <Key ID="STR_magRepack_source">
                 <Original> Source</Original>
                 <Russian> Источник</Russian>
                 <Chinesesimp> 来源</Chinesesimp>
                 <Korean> 원본</Korean>
+                <French> Source</French>
             </Key>
             <Key ID="STR_magRepack_target">
                 <Original>Target </Original>
                 <Russian>Цель </Russian>
                 <Chinesesimp>目标 </Chinesesimp>
                 <Korean>대상 </Korean>
+                <French>Cible </French>
             </Key>
             <Key ID="STR_magRepack_options">
                 <Original>Options</Original>
                 <Russian>Настройки</Russian>
                 <Chinesesimp>选项</Chinesesimp>
                 <Korean>설정</Korean>
+                <French>Options</French>
             </Key>
             <Key ID="STR_magRepack_options2">
                 <Original>OPTIONS</Original>
                 <Russian>НАСТРОЙКИ</Russian>
                 <Chinesesimp>选项</Chinesesimp>
                 <Korean>설정</Korean>
+                <French>OPTIONS</French>
             </Key>
             <Key ID="STR_magRepack_debug">
                 <Original>Debug</Original>
                 <Russian>Режим отладки</Russian>
                 <Chinesesimp>除错</Chinesesimp>
                 <Korean>디버그</Korean>
+                <French>Mode de débogage</French>
             </Key>
             <Key ID="STR_magRepack_full">
                 <Original>Show Full</Original>
                 <Russian>Показать всё</Russian>
                 <Chinesesimp>显示已满</Chinesesimp>
                 <Korean>모두 보이기</Korean>
+                <French>Afficher tout</French>
             </Key>
             <Key ID="STR_magRepack_keybindings">
                 <Original>Keybindings</Original>
                 <Russian>Назначения клавиш</Russian>
                 <Chinesesimp>按键绑定</Chinesesimp>
                 <Korean>키 설정</Korean>
+                <French>Raccourcis clavier</French>
             </Key>
             <Key ID="STR_magRepack_about_header">
                 <Original>About</Original>
                 <Russian>О аддоне</Russian>
                 <Chinesesimp>关于</Chinesesimp>
                 <Korean>정보</Korean>
+                <French>À propos</French>
             </Key>
             <Key ID="STR_magRepack_hide">
                 <Original>Hide</Original>
                 <Russian>Скрыть</Russian>
                 <Chinesesimp>隐藏</Chinesesimp>
                 <Korean>숨기기</Korean>
+                <French>Cacher</French>
             </Key>
             <Key ID="STR_magRepack_keybind_reset">
                 <Original>Mag Repack keybinding has been reset to </Original>
                 <Russian>Назначение клавиш Mag Repack'а было сброшено на </Russian>
                 <Chinesesimp>Mag Repack 按键绑定已重置为 </Chinesesimp>
                 <Korean>탄약 재포장 키 설정이 다음 키로 초기화 되었습니다: </Korean>
+                <French>Le raccourci clavier de la réorganisation des chargeurs a été réinitialisé</French>
             </Key>
             <Key ID="STR_magRepack_keybind_update">
                 <Original>Mag Repack keybinding has been updated to </Original>
                 <Russian>Назначение клавиш Mag Repack'а было обновлено на </Russian>
                 <Chinesesimp>Mag Repack 按键绑定已更新为 </Chinesesimp>
                 <Korean>탄약 재포장 키 설정이 다음 키로 업데이트되었습니다: </Korean>
+                <French>Le raccourci clavier de la réorganisation des chargeurs a été mis à jour</French>
             </Key>
             <Key ID="STR_magRepack_all_ammo">
                 <Original>All Ammo Types</Original>
                 <Russian>Все типы боеприпасов</Russian>
                 <Chinesesimp>所有弹药类型</Chinesesimp>
                 <Korean>모든 탄약 유형</Korean>
+                <French>Tous les types de munitions</French>
             </Key>
             <Key ID="STR_magRepack_all_mags">
                 <Original>All Magazines</Original>
                 <Russian>Все магазины</Russian>
                 <Chinesesimp>所有弹匣</Chinesesimp>
                 <Korean>모든 탄창</Korean>
+                <French>Tout les chargeurs</French>
             </Key>
             <Key ID="STR_magRepack_compatible_mags">
                 <Original>Compatible Magazines</Original>
                 <Russian>Совместимые магазины</Russian>
                 <Chinesesimp>兼容的弹匣</Chinesesimp>
                 <Korean>호환되는 탄창</Korean>
+                <French>Chargeurs compatible</French>
             </Key>
             <Key ID="STR_magRepack_nonfull_mags">
                 <Original>Non-Full Magazines</Original>
                 <Russian>Неполные магазины</Russian>
                 <Chinesesimp>不满的弹匣</Chinesesimp>
                 <Korean>꽉 차지 않은 탄창</Korean>
+                <French>Magasins non remplis</French>
             </Key>
             <Key ID="STR_magRepack_nonfullcompat_mags">
                 <Original>Compatible, Non-Full</Original>
                 <Russian>Совместимые, неполные</Russian>
                 <Chinesesimp>可共用，不满</Chinesesimp>
                 <Korean>호환되고 꽉 차지 않은 탄창</Korean>
+                <French>Compatible, non complet</French>
             </Key>
             <Key ID="STR_magRepack_repacking">
                 <Original>Repacking...</Original>
                 <Russian>Перепаковка...</Russian>
                 <Chinesesimp>重新打包中...</Chinesesimp>
                 <Korean>재포장 중...</Korean>
+                <French>Remballage...</French>
             </Key>
             <Key ID="STR_magRepack_repacking2">
                 <Original>Repacking</Original>
                 <Russian>Перепаковка</Russian>
                 <Chinesesimp>重新打包</Chinesesimp>
                 <Korean>재포장 중</Korean>
+                <French>Remballage</French>
             </Key>
             <Key ID="STR_magRepack_target_belt">
                 <Original>The Target requires a belt, not individual bullets!</Original>
                 <Russian>Цели требуется лента, а не индивидуальные пули!</Russian>
                 <Chinesesimp>目标需要弹链，而不是单独的子弹！</Chinesesimp>
                 <Korean>대상에게 필요한 것은 개개의 탄환이 아니라 벨트입니다!</Korean>
+                <French></French>
             </Key>
             <Key ID="STR_magRepack_source_defined">
                 <Original>Source is already defined!</Original>
                 <Russian>Источник уже определён!</Russian>
                 <Chinesesimp>来源已定义！</Chinesesimp>
                 <Korean>원본이 이미 정의되었습니다!</Korean>
+                <French>La source est déjà définie !</French>
             </Key>
             <Key ID="STR_magRepack_source_notempty">
                 <Original>Source can't be empty!</Original>
                 <Russian>Источник не может быть пустым!</Russian>
                 <Chinesesimp>来源不能为空！</Chinesesimp>
                 <Korean>원본은 비울 수 없습니다!</Korean>
+                <French>La source ne peut pas être vide !</French>
             </Key>
             <Key ID="STR_magRepack_target_defined">
                 <Original>Target is already defined!</Original>
                 <Russian>Цель уже определена!</Russian>
                 <Chinesesimp>目标准备好了</Chinesesimp>
                 <Korean>대상이 이미 정의되었습니다!</Korean>
+                <French>La cible est déjà définie !</French>
             </Key>
             <Key ID="STR_magRepack_target_notfull">
                 <Original>Target can't be full!</Original>
                 <Russian>Цель не может быть полной!</Russian>
                 <Chinesesimp>目标不能为空！</Chinesesimp>
                 <Korean>대상이 꽉 찰 수 없습니다!</Korean>
+                <French>La cible ne peut pas être pleine !</French>
             </Key>
             <Key ID="STR_magRepack_ammo">
                 <Original>Ammo:</Original>
                 <Russian>Боеприпасы:</Russian>
                 <Chinesesimp>弹药:</Chinesesimp>
                 <Korean>탄약:</Korean>
+                <French>Munitions :</French>
             </Key>
             <Key ID="STR_magRepack_ammo_nochange">
                 <Original>Ammo: No Change</Original>
                 <Russian>Боеприпасы: без изменений</Russian>
                 <Chinesesimp>弹药：无变化</Chinesesimp>
                 <Korean>탄약: 바뀌지 않음</Korean>
+                <French>Munitions : Pas de changement</French>
             </Key>
             <Key ID="STR_magRepack_nochange">
                 <Original>No Change</Original>
                 <Russian>Без изменений</Russian>
                 <Chinesesimp>无变化</Chinesesimp>
                 <Korean>바뀌지 않음</Korean>
+                <French>Pas de changement</French>
             </Key>
         </Container>
         <Container name="scrt_paradrop">
@@ -4167,6 +4206,7 @@
                 <Russian>Включить Mag Repack?</Russian>
                 <Chinesesimp>启用Mag Repack？</Chinesesimp>
                 <Korean>탄약 재포장을 활성화합니까?</Korean>
+                <French>Activer le reconditionnement des chargeurs?</French>
             </Key>
             <Key ID="STR_params_playerIcons">
                 <Original>Show 3D icons above unconscious players?</Original>
