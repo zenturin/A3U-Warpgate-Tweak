@@ -1020,54 +1020,63 @@
                 <Russian>Переворачивание не удалось</Russian>
                 <Chinesesimp>翻正失败</Chinesesimp>
                 <Korean>뒤집기 실패</Korean>
+                <French>Échec du retournement</French>
             </Key>
             <Key ID="STR_unflip_fail_wrong_type">
                 <Original>This kind of vehicle can't be flipped.</Original>
                 <Russian>Этот тип транспортного средства не может быть перевёрнут.</Russian>
                 <Chinesesimp>这种载具不能翻正。</Chinesesimp>
                 <Korean>이런 종류의 차량은 뒤집을 수 없습니다.</Korean>
+                <French>Ce type de véhicule ne peut pas être retourné.</French>
             </Key>
             <Key ID="STR_unflip_fail_veh_destroyed">
                 <Original>Vehicle is destroyed.</Original>
                 <Russian>Транспортное средство уничтожено.</Russian>
                 <Chinesesimp>载具被毁。</Chinesesimp>
                 <Korean>차량이 파괴되었습니다.</Korean>
+                <French>Le véhicule est détruit.</French>
             </Key>
             <Key ID="STR_unflip_fail_veh_occupied">
                 <Original>Vehicle is occupied by someone, clear crew before unflip.</Original>
                 <Russian>В транспортном средстве кто-то сидит, высадите всех перед тем как переворачивать транспорт.</Russian>
                 <Chinesesimp>载具里有人，翻正之前载具必须没有人。</Chinesesimp>
                 <Korean>차량에 누군가가 탑승하고 있으며, 뒤집기 전에 좌석을 비워야 합니다.</Korean>
+                <French>Le véhicule est occupé par quelqu'un, évacuez l'équipage avant de le retourner.</French>
             </Key>
             <Key ID="STR_unflip_fail_not_enough_people">
                 <Original>Not enough people to unflip vehicle, %1 required.</Original>
                 <Russian>Недостаточное количество людей для переворота транспортного средства, требуется %1.</Russian>
                 <Chinesesimp>没有足够的人来翻转车辆，需要 %1 。</Chinesesimp>
                 <Korean>차량을 뒤집을 인원이 부족하며, %1명이 필요합니다.</Korean>
+                <French>Il n'y a pas assez de personnes pour retourner le véhicule, %1 requis.</French>
             </Key>
             <Key ID="STR_unflip_fail_too_heavy">
                 <Original>Vehicle is too heavy, additional car is required to perform unflip.</Original>
                 <Russian>Транспортное средство слишком тяжелое, требуется помощь дополнительного транспортного средства или ремонтной машины.</Russian>
                 <Chinesesimp>载具太重，需要额外的载具进行翻正。</Chinesesimp>
                 <Korean>차량이 너무 무거워서 뒤집으려면 추가적인 차량이 필요합니다.</Korean>
+                <French>Le véhicule est trop lourd, un véhicule supplémentaire est nécessaire pour effectuer le retourner.</French>
             </Key>
             <Key ID="STR_cover_before_revive_header">
                 <Original>Cover Before Revive</Original>
                 <Russian>Укрытие перед восстановлением</Russian>
                 <Chinesesimp>复活队友之前找掩护</Chinesesimp>
                 <Korean>소생 전 엄폐</Korean>
+                <French>S'abriter avant la réanimation</French>
             </Key>
             <Key ID="STR_cover_before_revive_desc_1">
                 <Original>AI soldiers will not take you to cover before healing, they will attempt to revive you in place.</Original>
                 <Russian>ИИ-соотрядники не будут тащить вас в укрытие перед тем как поднять, они будут пытаться лечитсья вас сразу на месте ранения.</Russian>
                 <Chinesesimp>AI 士兵在治疗前不会带你去掩体，他们会尝试在原地复活你。</Chinesesimp>
                 <Korean>인공지능 병사들이 치료 전에 엄호하지 않고 제자리에서 당신을 소생하려고 시도할 것입니다.</Korean>
+                <French>Les soldats IA ne vous mettront pas à l'abri avant de vous soigner, ils tenteront de vous réanimer sur place.</French>
             </Key>
             <Key ID="STR_cover_before_revive_desc_2">
                 <Original>AI will take you to nearby cover before attempting to revive you.</Original>
                 <Russian>ИИ-соотрядники будут тащить вас в ближайшее укрытие перед тем как поднять.</Russian>
                 <Chinesesimp>AI 会带你到附近的掩体，然后再尝试救你。</Chinesesimp>
                 <Korean>인공지능은 당신을 소생하려고 시도하기 전에 당신을 근처 엄폐물로 옮길 것입니다.</Korean>
+                <French>L'IA vous emmènera à l'abri avant de tenter de vous réanimer.</French>
             </Key>
         </Container>
         <Container name="scrt_outpost">
@@ -1076,60 +1085,70 @@
                 <Russian>Развёртывание пункта наблюдения</Russian>
                 <Chinesesimp>哨站部署</Chinesesimp>
                 <Korean>감시초소 배치</Korean>
+                <French>Déploiement d'un poste de surveillance</French>
             </Key>
             <Key ID="STR_watchpost_deploy_desc">
                 <Original>We are sending a team to establish a watchpost. Use HC to send the team to their destination. Do this before %1</Original>
                 <Russian>Мы отправляем отряд для создания пункта наблюдения. Используйте High Command-меню для отправки отряда в их пункт назначения. Сделайте это до %1</Russian>
                 <Chinesesimp>我们正派遣一个小组去建立一个哨所。 使用 HC 将团队发送到目的地。 在 %1 之前执行此任务</Chinesesimp>
                 <Korean>우린 감시초소를 배치하기 위해 팀을 보낼 것입니다. 하이 커맨드를 사용하여 팀을 목적지로 보내십시오. %1 안에 완료하십시오.</Korean>
+                <French>Nous envoyons une équipe pour établir un poste de surveillance. Utilisez HC pour envoyer l'équipe à destination. Faites-le avant %1</French>
             </Key>
             <Key ID="STR_roadblock_deploy_header">
                 <Original>Roadblock Deploy</Original>
                 <Russian>Развёртывание блокпоста</Russian>
                 <Chinesesimp>路障部署</Chinesesimp>
                 <Korean>검문소 배치</Korean>
+                <French>Déploiement des barrages routiers</French>
             </Key>
             <Key ID="STR_roadblock_deploy_desc">
                 <Original>We are sending a team to establish a roadblock. Use HC to send the team to their destination. Do this before %1</Original>
                 <Russian>Мы отправляем отряд для развёртывания блокпоста. Используйте High Command-меню для отправки отряда в их пункт назначения. Сделайте это до %1</Russian>
                 <Chinesesimp>我们正派出一个小组去设置路障。 使用 HC 将团队发送到目的地。 在 %1 之前执行此任务</Chinesesimp>
                 <Korean>우린 검문소를 배치하기 위해 팀을 보낼 것입니다. 하이 커맨드를 사용하여 팀을 목적지로 보내십시오. %1 안에 완료하십시오.</Korean>
+                <French>Nous envoyons une équipe pour établir un barrage routier. Utilisez HC pour envoyer l'équipe à destination. Faites-le avant %1</French>
             </Key>
             <Key ID="STR_hmgempl_deploy_header">
                 <Original>HMG Emplacement Deploy</Original>
                 <Russian>Развёртывание пулемётного гнезда</Russian>
                 <Chinesesimp>重机枪阵地部署</Chinesesimp>
                 <Korean>중기관총 포대 배치</Korean>
+                <French>Déploiement de l'emplacement des HMG</French>
             </Key>
             <Key ID="STR_hmgempl_deploy_desc">
                 <Original>We are sending a team to establish a HMG Emplacement. Use HC to send the team to their destination. Do this before %1</Original>
                 <Russian>Мы отправляем отряд для развёртывания пулемётного гнезда. Используйте High Command-меню для отправки отряда в их пункт назначения. Сделайте это до %1</Russian>
                 <Chinesesimp>我们正在派遣一个团队去建立一个重机枪阵地。 使用 HC 将团队发送到目的地。 在 %1 之前执行此任务</Chinesesimp>
                 <Korean>우린 중기관총 포대를 배치하기 위해 팀을 보낼 것입니다. 하이 커맨드를 사용하여 팀을 목적지로 보내십시오. %1 안에 완료하십시오.</Korean>
+                <French>Nous envoyons une équipe pour établir un emplacement de HMG. Utilisez HC pour envoyer l'équipe à destination. Faites-le avant %1</French>
             </Key>
             <Key ID="STR_atempl_deploy_header">
                 <Original>AT Emplacement Deploy</Original>
                 <Russian>Развёртывание противотанковой огневой точки</Russian>
                 <Chinesesimp>反坦克阵地部署</Chinesesimp>
                 <Korean>대전차화기 포대 배치</Korean>
+                <French>Déploiement de l'emplacement de l'AT</French>
             </Key>
             <Key ID="STR_atempl_deploy_desc">
                 <Original>We are sending a team to establish a AT Emplacement. Use HC to send the team to their destination. Do this before %1</Original>
                 <Russian>Мы отправляем отряд для развёртывания ПТ-огневой точки. Используйте High Command-меню для отправки отряда в их пункт назначения. Сделайте это до %1</Russian>
                 <Chinesesimp>我们正在派遣一个团队去建立一个反坦克阵地。 使用 HC 将团队发送到目的地。 在 %1 之前执行此任务</Chinesesimp>
                 <Korean>우린 대전차화기 포대를 배치하기 위해 팀을 보낼 것입니다. 하이 커맨드를 사용하여 팀을 목적지로 보내십시오. %1 안에 완료하십시오.</Korean>
+                <French>Nous envoyons une équipe pour établir une position AT. Utilisez HC pour envoyer l'équipe à destination. Faites-le avant %1</French>
             </Key>
             <Key ID="STR_aaempl_deploy_header">
                 <Original>AA Emplacement Deploy</Original>
                 <Russian>Развёртывание зенитной огневой точки</Russian>
                 <Chinesesimp>防空阵地部署</Chinesesimp>
                 <Korean>대공화기 포대 배치</Korean>
+                <French>Déploiement de l'emplacement de l'AA</French>
             </Key>
             <Key ID="STR_aaempl_deploy_desc">
                 <Original>We are sending a team to establish a AA Emplacement. Use HC to send the team to their destination. Do this before %1</Original>
                 <Russian>Мы отправляем отряд для развёртывания зенитной огневой точки. Используйте High Command-меню для отправки отряда в их пункт назначения. Сделайте это до %1</Russian>
                 <Chinesesimp>我们正在派遣一个团队去建立一个防空阵地。 使用 HC 将团队发送到目的地。 在 %1 之前执行此任务</Chinesesimp>
                 <Korean>우린 대공화기 포대를 배치하기 위해 팀을 보낼 것입니다. 하이 커맨드를 사용하여 팀을 목적지로 보내십시오. %1 안에 완료하십시오.</Korean>
+                <French>Nous envoyons une équipe pour établir une position AA. Utilisez HC pour envoyer l'équipe à destination. Faites-le avant %1</French>
             </Key>
         </Container>
         <Container name="veh_callbacks">
@@ -1138,6 +1157,7 @@
                 <Russian>Транспортное средство должно быть размещено в радиусе не более %1 метров от флага.</Russian>
                 <Chinesesimp>载具必须位于旗帜的 %1m 范围内。</Chinesesimp>
                 <Korean>차량은 깃발에서 %1m 이내에 배치해야 합니다.</Korean>
+                <French>Le véhicule doit être placé à moins de 1 mètre du drapeau.</French>
             </Key>
             <Key ID="STR_veh_callback_constructions">
                 <Original>Light and heavy fortifications can only be built off roads, in friendly areas.</Original>
