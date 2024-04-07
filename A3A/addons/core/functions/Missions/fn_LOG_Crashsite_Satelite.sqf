@@ -744,6 +744,9 @@ switch(true) do {
         sleep 10;
         [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
         deleteVehicle _box;
+	if (hideEnemyMarkers) then {
+  		[amount] call A3U_fnc_revealRandomZones;
+	};
     };
     case(_box distance (getMarkerPos traderMarker) < 50 || _box distance (getMarkerPos traderMarker) < 50): {
         Info("Box has been delivered to arms traider, mission completed.");
