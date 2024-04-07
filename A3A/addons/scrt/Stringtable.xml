@@ -709,7 +709,7 @@
                 <Russian>Цели требуется лента, а не индивидуальные пули!</Russian>
                 <Chinesesimp>目标需要弹链，而不是单独的子弹！</Chinesesimp>
                 <Korean>대상에게 필요한 것은 개개의 탄환이 아니라 벨트입니다!</Korean>
-                <French></French>
+                <French>La cible nécessite une rafale, pas de coup par coup !</French>
             </Key>
             <Key ID="STR_magRepack_source_defined">
                 <Original>Source is already defined!</Original>
