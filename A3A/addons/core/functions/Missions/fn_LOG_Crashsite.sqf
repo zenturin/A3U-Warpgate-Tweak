@@ -324,7 +324,6 @@ _cargoVehicleWp = _cargoVehicleGroup addWaypoint [position _box, 1];
 _cargoVehicleWp setWaypointType "GETOUT";
 _cargoVehicleWp setWaypointBehaviour "SAFE";
 
-
 private _searchHeliData = [];
 private _searchHeliVeh = [];
 private _searchHeliCrew = [];
@@ -515,7 +514,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         moveOut _x;
     } forEach _cargoSquad;
 
-    _cargoTimeout = time + (random [4,6,7]);
+    _cargoTimeout = time + (random [25,30,35]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     if(({alive _x} count units _cargoVehicleGroup) > 3 && {alive _cargoVehicle} && _cargoVehicle distance _box < 50) then {
@@ -536,7 +535,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    _cargoTimeout = time + (random [4,6,6]);
+    _cargoTimeout = time + (random [25,30,35]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     if(({alive _x} count units _cargoVehicleGroup) > 2) then {
@@ -565,7 +564,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    _cargoTimeout = time + (random [2,4,5]);
+    _cargoTimeout = time + (random [20,25,30]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     Info("Departing.");
@@ -597,41 +596,75 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
             //};
         } forEach units _heliInfGroup;
         [_cargoVehicle2driver] join _heliInfGroup;
-        _heliInfWp1 = _heliInfGroup addWaypoint [_cargoVehicle2, 0];
-        _heliInfWp1 setWaypointType "GETIN";
-        _heliInfWp1 setWaypointBehaviour "SAFE";
+        _cargoVehicle2driver assignAsDriver _cargoVehicle2
+        if (_searchHeliClass isNotEqualTo []) then {
+            _heliInfWp1 = _heliInfGroup addWaypoint [_cargoVehicle2, 0];
+            _heliInfWp1 setWaypointType "GETIN";
+            _heliInfWp1 setWaypointBehaviour "SAFE";
 
-        _heliInfWp2 = _heliInfGroup addWaypoint [_deliverySite, 1];
-        _heliInfWp2 setWaypointType "MOVE";
+            _heliInfWp2 = _heliInfGroup addWaypoint [_deliverySite, 1];
+            _heliInfWp2 setWaypointType "MOVE";
 
-        if (_cargoVehicle distance2D _reconvehicle > 50) then{
+            if (_cargoVehicle distance2D _reconvehicle > 50) then{
                 {
                     _x assignAsCargo _cargoVehicle2;
                     [_x] join _heliInfGroup;  
                     [_x] call A3A_fnc_NATOinit;
                 } forEach units _cargoVehicleGroup;
-            _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle2 ///I don't know why _box is used
-            _cargoWp1 setWaypointType "GETIN";
-            _cargoWp1 setWaypointBehaviour "SAFE";
+                _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle2 ///I don't know why _box is used
+                _cargoWp1 setWaypointType "GETIN";
+                _cargoWp1 setWaypointBehaviour "SAFE";
 
-            _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
-            _cargoWp2 setWaypointType "MOVE";
+                _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
+                _cargoWp2 setWaypointType "MOVE";
+            } else {
+                _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle
+                _cargoWp1 setWaypointType "GETIN";
+                _cargoWp1 setWaypointBehaviour "SAFE";
+
+                _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
+                _cargoWp2 setWaypointType "MOVE";
+            };
+
+            if(_isEnemyKnowsAboutTeamplayer) then {
+                _cargoWp2 setWaypointBehaviour "AWARE";
+                _heliInfWp2 setWaypointBehaviour "AWARE";
+            } else {
+                _cargoWp2 setWaypointBehaviour "SAFE";
+                _heliInfWp2 setWaypointBehaviour "SAFE";
+            };
         } else {
-            _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle
-            _cargoWp1 setWaypointType "GETIN";
-            _cargoWp1 setWaypointBehaviour "SAFE";
+            
+            if (_cargoVehicle distance2D _reconvehicle > 50) then{
+                    {
+                        _x assignAsCargo _cargoVehicle2;
+                        [_x] join _heliInfGroup;  
+                        [_x] call A3A_fnc_NATOinit;
+                    } forEach units _cargoVehicleGroup;
+                _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle2 ///I don't know why _box is used
+                _cargoWp1 setWaypointType "GETIN";
+                _cargoWp1 setWaypointBehaviour "SAFE";
 
-            _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
-            _cargoWp2 setWaypointType "MOVE";
+                _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
+                _cargoWp2 setWaypointType "MOVE";
+            } else {
+                _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle
+                _cargoWp1 setWaypointType "GETIN";
+                _cargoWp1 setWaypointBehaviour "SAFE";
+
+                _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
+                _cargoWp2 setWaypointType "MOVE";
+            };
+
+            if(_isEnemyKnowsAboutTeamplayer) then {
+                _cargoWp2 setWaypointBehaviour "AWARE";
+                _heliInfWp2 setWaypointBehaviour "AWARE";
+            } else {
+                _cargoWp2 setWaypointBehaviour "SAFE";
+                _heliInfWp2 setWaypointBehaviour "SAFE";
+            };
         };
 
-        if(_isEnemyKnowsAboutTeamplayer) then {
-            _cargoWp2 setWaypointBehaviour "AWARE";
-            _heliInfWp2 setWaypointBehaviour "AWARE";
-        } else {
-            _cargoWp2 setWaypointBehaviour "SAFE";
-            _heliInfWp2 setWaypointBehaviour "SAFE";
-        };
 
     } else {
         if (_searchHeliClass isNotEqualTo []) then {
@@ -646,16 +679,14 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
 
             _heliInfWp2 = _heliInfGroup addWaypoint [_deliverySite, 1];
             _heliInfWp2 setWaypointType "MOVE"; 
-        } else {};
 
-        _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle
-        _cargoWp1 setWaypointType "GETIN";
-        _cargoWp1 setWaypointBehaviour "SAFE";
+            _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle
+            _cargoWp1 setWaypointType "GETIN";
+            _cargoWp1 setWaypointBehaviour "SAFE";
 
-        _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
-        _cargoWp2 setWaypointType "MOVE";
+            _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
+            _cargoWp2 setWaypointType "MOVE";
 
-        if (_searchHeliClass isNotEqualTo []) then {    
             if(_isEnemyKnowsAboutTeamplayer) then {
                 _cargoWp2 setWaypointBehaviour "AWARE";
                 _heliInfWp2 setWaypointBehaviour "AWARE";
@@ -663,29 +694,34 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
                 _cargoWp2 setWaypointBehaviour "SAFE";
                 _heliInfWp2 setWaypointBehaviour "SAFE";
             };
+
+            if(count waypoints _heliVehicleGroup > 0) then {
+                for "_i" from count waypoints _heliVehicleGroup - 1 to 0 step -1 do {
+                    deleteWaypoint [_heliVehicleGroup, _i];
+                };
+            };
+            _searchHeliWp1 = _heliVehicleGroup addWaypoint [_deliverySite, 2];
+            _searchHeliWp1 setWaypointType "MOVE";
+            if(_isEnemyKnowsAboutTeamplayer) then {
+                _searchHeliWp1 setWaypointBehaviour "AWARE";
+            } else {
+                _searchHeliWp1 setWaypointBehaviour "SAFE"; 
+            };
         } else {
+            _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle
+            _cargoWp1 setWaypointType "GETIN";
+            _cargoWp1 setWaypointBehaviour "SAFE";
+
+            _cargoWp2 = _cargoVehicleGroup addWaypoint [_deliverySite, 1];
+            _cargoWp2 setWaypointType "MOVE";
+
             if(_isEnemyKnowsAboutTeamplayer) then {
                 _cargoWp2 setWaypointBehaviour "AWARE";
             } else {
                 _cargoWp2 setWaypointBehaviour "SAFE";
             };
-        }   
+        } 
     };
-
-    if (_searchHeliClass isNotEqualTo []) then {  
-        if(count waypoints _heliVehicleGroup > 0) then {
-            for "_i" from count waypoints _heliVehicleGroup - 1 to 0 step -1 do {
-                deleteWaypoint [_heliVehicleGroup, _i];
-            };
-        };
-        _searchHeliWp1 = _heliVehicleGroup addWaypoint [_deliverySite, 2];
-        _searchHeliWp1 setWaypointType "MOVE";
-        if(_isEnemyKnowsAboutTeamplayer) then {
-            _searchHeliWp1 setWaypointBehaviour "AWARE";
-        } else {
-            _searchHeliWp1 setWaypointBehaviour "SAFE"; 
-        };
-    } else {};
 };
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
@@ -747,13 +783,14 @@ switch(true) do {
         [10*_bonus,theBoss] call A3A_fnc_addScorePlayer;
         [250*_bonus,theBoss, true] call A3A_fnc_addMoneyPlayer;
         ["Large", _sideX] remoteExec ["A3A_fnc_selectIntel", 2];
-        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon; ///params ["_position", "_radius", "_revealTime", ["_isInterrogation", false]]; ///revels enemy location only once, which is not good?, dunno maybe it should do it every 2-5 minutes
-        sleep 60;
-        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
-        sleep 80;
-        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
-        sleep 100;
-        [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
+        [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon; ///params ["_position", "_radius", "_revealTime", ["_isInterrogation", false]]; ///revels enemy location only once, which is not good?, dunno maybe it should do it every 2-5 minutes
+        sleep 6;
+        [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
+        sleep 8;
+        [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
+        sleep 10;
+        [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
+        deleteVehicle _box;
     };
     case(_box distance (getMarkerPos traderMarker) < 50 || _box distance (getMarkerPos traderMarker) < 50): {
         Info("Box has been delivered to arms traider, mission completed.");
@@ -779,17 +816,20 @@ switch(true) do {
 //Clean up//
 ////////////
 
-sleep 30;
+sleep 3;
 
 {
     deleteVehicle _x;
 } forEach _effectsAndProps;
 
+{
+    deleteVehicle _x;
+} forEach _vehicles;
+
 [_taskId, "LOG", 1200] spawn A3A_fnc_taskDelete;
 
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
-
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
     if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50} || _box distance (getMarkerPos traderMarker) < 50) then {
