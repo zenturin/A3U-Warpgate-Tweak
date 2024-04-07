@@ -8,7 +8,7 @@
 
 ["flag", "Flag_Red_F"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Templates\Templates\EAW\roc_flag.paa)] call _fnc_saveToTemplate;
-["flagMarkerType", "Faction_INDFOR_EP1"] call _fnc_saveToTemplate;
+["flagMarkerType", "a3u_flag_roc"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["fow_v_truppenfahrrad_ger_heer"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["LIB_Willys_MB"]] call _fnc_saveToTemplate;
