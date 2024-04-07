@@ -9,7 +9,7 @@
 
 ["flag", "fow_Flag_Japan01"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Templates\Templates\EAW\ija_flag.paa)] call _fnc_saveToTemplate;
-["flagMarkerType", "RedCrystal"] call _fnc_saveToTemplate;
+["flagMarkerType", "a3u_flag_ija"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
