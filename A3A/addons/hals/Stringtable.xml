@@ -682,6 +682,12 @@
                 <Russian>Northern Fronts</Russian>
                 <Korean>Northern Fronts</Korean>
             </Key>
+            <Key ID="STR_A3AU_eaw">
+                <Original>East Asia War</Original>
+                <English>East Asia War</English>
+                <Russian>East Asia War</Russian>
+                <Korean>East Asia War</Korean>
+            </Key>
         </Container>
     </Package>
 </Project>

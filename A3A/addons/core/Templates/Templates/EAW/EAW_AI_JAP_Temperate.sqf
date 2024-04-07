@@ -247,7 +247,7 @@ _sfLoadoutData set ["sniperRifles", [
 	]];
 	
 _sfLoadoutData set ["sidearms", [
-	["fow_w_type14", "", "", "", ["fow_8Rnd_8x22"], [], ""]
+	["EAW_Type14", "", "", "", ["EAW_Type14_Magazine"], [], ""]
     ]];
 		
 /////////////////////////////////
@@ -322,7 +322,7 @@ _eliteLoadoutData set ["sniperRifles", [
 	]];
 
 _eliteLoadoutData set ["sidearms", [
-	["fow_w_type14", "", "", "", ["fow_8Rnd_8x22"], [], ""]
+	["EAW_Type14", "", "", "", ["EAW_Type14_Magazine"], [], ""]
 	]];
 		
 /////////////////////////////////
@@ -403,7 +403,7 @@ _militaryLoadoutData set ["sniperRifles", [
 	]];
 
 _militaryLoadoutData set ["sidearms", [
-	["fow_w_type14", "", "", "", ["fow_8Rnd_8x22"], [], ""]
+	["EAW_Type14", "", "", "", ["EAW_Type14_Magazine"], [], ""]
 	]];
 
 ///////////////////////////////
@@ -421,7 +421,7 @@ _policeLoadoutData set ["SMGs", [
 	["EAW_Type38_Carbine_NoCover", "", "", "", ["EAW_Type38_Magazine"], [], ""]
 	]];
 _policeLoadoutData set ["sidearms", [
-	["fow_w_type14", "", "", "", ["fow_8Rnd_8x22"], [], ""]
+	["EAW_Type14", "", "", "", ["EAW_Type14_Magazine"], [], ""]
 ]];
 
 ////////////////////////////////
@@ -502,7 +502,7 @@ _militiaLoadoutData set ["sniperRifles", [
 	]];
 
 _militiaLoadoutData set ["sidearms", [
-	["fow_w_type14", "", "", "", ["fow_8Rnd_8x22"], [], ""]
+	["EAW_Type14", "", "", "", ["EAW_Type14_Magazine"], [], ""]
 	]];
 //////////////////////////
 //    Misc Loadouts     //

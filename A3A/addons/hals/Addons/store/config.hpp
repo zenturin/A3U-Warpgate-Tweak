@@ -607,5 +607,19 @@ class cfgHALsStore
 				"underbarrelnfts"
 			};
 		};
+		class ww2eaw
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunseaw",
+				"smgeaw",
+				"mgeaw",
+				"rifleseaw",
+				"muzzleseaw",
+				"magazineseaw", 
+				"specialweaponseaw",
+				"opticseaw",
+			};
+		};
 	};
 };
