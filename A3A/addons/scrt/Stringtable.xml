@@ -767,42 +767,49 @@
                 <Russian>Прыжок с парашютом</Russian>
                 <Chinesesimp>空投</Chinesesimp>
                 <Korean>공수강하</Korean>
+                <French>Paradrop</French>
             </Key>
             <Key ID="STR_A3AP_paradrop_no_players">
                 <Original>No players are ready for jump. Make sure that players pressed PARADROP switch button in Game Options tab (TAB key or map on tripod action).</Original>
                 <Russian>Ни один игрок не готов к прыжку. Проверьте, чтобы игроки нажали свитч-кнопку прыжка с парашютом в вкладке игровых опций (клавиша TAB по умолчанию или меню в карте треноге).</Russian>
                 <Chinesesimp>没有玩家准备好空投。 确保有玩家开启了游戏选项卡中的 空投 开关按钮（TAB 键或地图操作）。</Chinesesimp>
                 <Korean>점프할 준비가 된 플레이어가 없습니다. 플레이어가 게임 옵션 탭에서 공수강하 스위치 버튼을 눌렀는지 확인하십시오.(탭 키 또는 삼각대 행동의 지도).</Korean>
+                <French>Aucun joueur n'est prêt à sauter. Assurez-vous que les joueurs ont appuyé sur le bouton PARADROP dans l'onglet Options du jeu (touche TAB ou carte sur l'action du trépied).</French>
             </Key>
             <Key ID="STR_A3AP_paradrop_players_condition">
                 <Original>Players that ready to be paradropped must be alive, not in vehicle and be at HQ.</Original>
                 <Russian>Игроки, готовящиеся к прыжку, должны быть живы, находиться у штаба и не находиться в технике.</Russian>
                 <Chinesesimp>准备空降的玩家必须活着，而不是在车辆中，并且待在总部。</Chinesesimp>
                 <Korean>공수강하할 준비가 된 플레이어들은 차 안이 아닌 본부에 있어야 합니다.</Korean>
+                <French>Les joueurs prêts à être paradés doivent être en vie, ne pas être dans un véhicule et être au QG.</French>
             </Key>
             <Key ID="STR_A3AP_paradrop_abort_plane">
                 <Original>Something happened to plane, aborting paradrop.</Original>
                 <Russian>Что-то случилось с самолётом, отмена прыжка.</Russian>
                 <Chinesesimp>飞机出事了，跳伞失败。</Chinesesimp>
                 <Korean>비행기에 무슨 일이 일어나서 공수강하가 취소되었습니다.</Korean>
+                <French>Il est arrivé quelque chose à l'avion, interruption du paradrop.</French>
             </Key>
             <Key ID="STR_A3AP_paradrop_abort_plane_noncapable">
                 <Original>Plane is not capable to do the mission, aborting paradrop.</Original>
                 <Russian>Самолёт не имеет возможности выполнить сброс, отмена прыжка.</Russian>
                 <Chinesesimp>飞机无法执行任务，跳伞失败。</Chinesesimp>
                 <Korean>비행기가 임무를 수행할 수 없기 때문에 공수강하가 취소되었습니다.</Korean>
+                <French>L'avion n'est pas en mesure d'effectuer la mission, interruption du paradrop.</French>
             </Key>
             <Key ID="STR_A3AP_paradrop_abort_plane_no_free_seats">
                 <Original>Plane has no free seats, aborting paradrop.</Original>
                 <Russian>Самолёт не имеет свободных мест, отмена прыжка.</Russian>
                 <Chinesesimp>飞机没有空位，跳伞失败。</Chinesesimp>
                 <Korean>비행기에 빈 좌석이 없어서 공수강하가 취소되었습니다.</Korean>
+                <French>L'avion n'a pas de sièges libres, interruption du paradrop.</French>
             </Key>
             <Key ID="STR_A3AP_paradrop_abort_plane_something_wrong">
                 <Original>Something went wrong.</Original>
                 <Russian>Что-то пошло не так.</Russian>
                 <Chinesesimp>出了点问题。</Chinesesimp>
                 <Korean>뭔가가 잘못되었습니다.</Korean>
+                <French>Quelque chose n'a pas fonctionné.</French>
             </Key>
         </Container>
         <Container name="scrt_rally">
@@ -811,54 +818,63 @@
                 <Russian>Точка сбора</Russian>
                 <Chinesesimp>集结点</Chinesesimp>
                 <Korean>집결 지점</Korean>
+                <French>Point de ralliement</French>
             </Key>
             <Key ID="STR_A3AP_rally_does_not_exists">
                 <Original>Rally point does not exist.</Original>
                 <Russian>Точка сбора не существует.</Russian>
                 <Chinesesimp>集结点不存在。</Chinesesimp>
                 <Korean>집결 지점이 존재하지 않습니다.</Korean>
+                <French>Le point de ralliement n'existe pas.</French>
             </Key>
             <Key ID="STR_A3AP_rally_occupied_veh">
                 <Original>You can't travel to rally point while being in vehicle.</Original>
                 <Russian>Вы не можете путешествовать к точке сбора сидя в транспортном средстве.</Russian>
                 <Chinesesimp>你不能在车上前往集合点。</Chinesesimp>
                 <Korean>차량 내에서는 집결 지점까지 이동할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous déplacer au point de ralliement lorsque vous êtes dans un véhicule.</French>
             </Key>
             <Key ID="STR_A3AP_rally_tow_rope">
                 <Original>You can't travel with your Tow Rope out or a Vehicle attached.</Original>
                 <Russian>Вы не можете путешествовать к точке сбора с буксировочным тросом в руках или прикрепленным к транспортному средству.</Russian>
                 <Chinesesimp>您不能在拉出拖车绳或连接车辆的情况下旅行。</Chinesesimp>
                 <Korean>견인 로프를 빼거나 차량을 연결한 상태로는 이동할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous déplacer avec votre câble d'attelage détaché ou un véhicule attaché.</French>
             </Key>
             <Key ID="STR_A3AP_rally_no_aicontrol">
                 <Original>You can't travel to rally point while you are controlling AI.</Original>
                 <Russian>Вы не можете путешествовать к точке сбора пока контроллируете другой ИИ-юнит.</Russian>
                 <Chinesesimp>当您控制 AI 时，您无法前往集结点。</Chinesesimp>
                 <Korean>인공지능을 조종하는 동안에는 집결 지점으로 이동할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous déplacer au point de ralliement lorsque vous contrôlez l'IA.</French>
             </Key>
             <Key ID="STR_A3AP_rally_unconscious">
                 <Original>You can't travel to rally point while being unconscious.</Original>
                 <Russian>Вы не можете путешествовать к точке сбора будучи в тяжело раненом состоянии.</Russian>
                 <Chinesesimp>你不能在失去知觉的情况下前往集结点。</Chinesesimp>
                 <Korean>의식불명 상태로는 집결 지점으로 이동할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous déplacer au point de ralliement si vous êtes inconscient.</French>
             </Key>
             <Key ID="STR_A3AP_rally_hq">
                 <Original>You can't travel to rally point outside the HQ.</Original>
                 <Russian>Вы не можете путешествовать к точке сбора находясь за пределами штаба.</Russian>
                 <Chinesesimp>您不能前往总部外的集结点。</Chinesesimp>
                 <Korean>본부 밖의 집결 지점으로 이동할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous rendre à un point de ralliement en dehors du QG.</French>
             </Key>
             <Key ID="STR_A3AP_rally_not_enough_points">
                 <Original>Not enough rally point points to travel.</Original>
                 <Russian>Недостаточно очков точки сбора для путешествия.</Russian>
                 <Chinesesimp>集结点数不足，无法快速旅行。</Chinesesimp>
                 <Korean>집결 지점이 부족하여 이동할 수 없습니다.</Korean>
+                <French>Il n'y a pas assez de points de ralliement pour voyager.</French>
             </Key>
             <Key ID="STR_A3AP_rally_enemy_surrounding">
                 <Original>You can't travel when enemies are surrounding rally point.</Original>
                 <Russian>Вы не можете путешествовать к точке сбора так как её окружают враги.</Russian>
                 <Chinesesimp>当敌人包围集结点时，您无法快速旅行。</Chinesesimp>
                 <Korean>적들이 집결 지점을 포위하고 있을 때는 이동할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous déplacer lorsque des ennemis encerclent le point de ralliement.</French>
             </Key>
         </Container>
         <Container name="scrt_stores">
@@ -867,12 +883,14 @@
                 <Russian>Недостаточно средств</Russian>
                 <Chinesesimp>资金不足</Chinesesimp>
                 <Korean>자금 부족</Korean>
+                <French>Fonds insuffisants</French>
             </Key>
             <Key ID="STR_scrt_stores_buy_item_not_enough">
                 <Original>You have not enough money to buy this item. %1%2 needed.</Original>
                 <Russian>У вас недостаточно денег для покупки этого предмета. Необходимо %1%2.</Russian>
                 <Chinesesimp>您没有足够的钱购买此物品，需要 %1%2 。</Chinesesimp>
                 <Korean>이 아이템을 구매할 돈이 부족합니다. %1%2이(가) 필요합니다.</Korean>
+                <French>Vous n'avez pas assez d'argent pour acheter cet article. %1%2 nécessaire.</French>
             </Key>
         </Container>
         <Container name="scrt_generic">
@@ -881,102 +899,119 @@
                 <Russian>Вам нужно быть поближе к флагу чтобы иметь возможность покупать технику.</Russian>
                 <Chinesesimp>您需要靠近旗子才能购买车辆。</Chinesesimp>
                 <Korean>자량을 구매하려면 깃발에 가까이 있어야 합니다.</Korean>
+                <French>Il faut être proche du drapeau pour pouvoir acheter un véhicule.</French>
             </Key>
             <Key ID="STR_A3AP_error_veh_not_enough_money_generic">
                 <Original>You do not have enough money for this vehicle: %1%2 required.</Original>
                 <Russian>У вас недостаточно денег дял покупки этой техники: нужно %1%2.</Russian>
                 <Chinesesimp>您没有足够的钱购买这辆车，需要 %1%2 。</Chinesesimp>
                 <Korean>이 차량을 사는 데 필요한 자금이 부족합니다: %1%2 필요.</Korean>
+                <French>Vous n'avez pas assez d'argent pour ce véhicule : %1%2 requis.</French>
             </Key>
             <Key ID="STR_A3AP_error_empty_generic">
                 <Original>The element you're selected is not supported in current modset.</Original>
                 <Russian>То, что вы выбрали, не поддерживается в текущей конфигурации игры.</Russian>
                 <Chinesesimp>当前模组不支持您选择的元素。</Chinesesimp>
                 <Korean>선택한 요소는 현재 모드셋에서 지원하지 않습니다.</Korean>
+                <French>L'élément sélectionné n'est pas pris en charge dans le modset actuel.</French>
             </Key>
             <Key ID="STR_A3AP_error_already_placing_generic">
                 <Original>You're already placing something.</Original>
                 <Russian>Вы уже что-то размещаете.</Russian>
                 <Chinesesimp>你已经在放东西了</Chinesesimp>
                 <Korean>이미 무언가를 배치하고 있습니다.</Korean>
+                <French>Vous placez déjà quelque chose.</French>
             </Key>
             <Key ID="STR_A3AP_error_aicontrol_generic">
                 <Original>You can't do that while you are controlling AI.</Original>
                 <Russian>Вы не может делать это пока контроллируете ИИ-юнита.</Russian>
                 <Chinesesimp>在你控制AI的时候，你不能这么做。</Chinesesimp>
                 <Korean>당신이 인공지능을 조종하는 동안에는 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas le faire lorsque vous contrôlez l'IA.</French>
             </Key>
             <Key ID="STR_A3AP_error_enemynear_generic">
                 <Original>You can't do that while enemies are nearby.</Original>
                 <Russian>Вы не может делать это пока рядом враги.</Russian>
                 <Chinesesimp>当敌人在附近时，你不能这样做。</Chinesesimp>
                 <Korean>적들이 근처에 있을 때는 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas le faire lorsque des ennemis sont à proximité.</French>
             </Key>
             <Key ID="STR_generic_commander_none">
                 <Original>None</Original>
                 <Russian>Никто</Russian>
                 <Chinesesimp>无</Chinesesimp>
                 <Korean>없음</Korean>
+                <French>Aucun</French>
             </Key>
             <Key ID="STR_generic_commander_only">
                 <Original>Only Commander has access to this function.</Original>
                 <Russian>Только командир имеет доступ к этой функции.</Russian>
                 <Chinesesimp>只有指挥官才能使用这个功能</Chinesesimp>
                 <Korean>지휘관만 이 기능에 액세스할 수 있습니다.</Korean>
+                <French>Seul le commandant a accès à cette fonction.</French>
             </Key>
             <Key ID="STR_generic_commander_reroll">
                 <Original>Reroll</Original>
                 <Russian>Реролл</Russian>
                 <Chinesesimp>初始化</Chinesesimp>
                 <Korean>초기화</Korean>
+                <French>Relancer</French>
             </Key>
             <Key ID="STR_generic_group_leader_only">
                 <Original>Only Group Leaders have access to this function.</Original>
                 <Russian>Только командиры групп имеют доступ к этой функции.</Russian>
                 <Chinesesimp>只有组长才能使用这个功能</Chinesesimp>
                 <Korean>그룹 리더만 이 기능에 액세스할 수 있습니다.</Korean>
+                <French>Seuls les chefs de groupe ont accès à cette fonction.</French>
             </Key>
             <Key ID="STR_generic_ai_control_one_only">
                 <Original>You must select from HC or Squad Bars, not both.</Original>
                 <Russian>Вы должны выбрать единицу управления либо через HC-меню, либо панель отряда, но не через оба одновременно.</Russian>
                 <Chinesesimp>您必须从 HC 或 Squad Bars 中选择，不能同时选择。</Chinesesimp>
                 <Korean>둘 다가 아닌 하이 커맨드 또는 분대 표시줄에서 선택해야 합니다.</Korean>
+                <French>Vous devez sélectionner HC ou Squad Bars, pas les deux.</French>
             </Key>
             <Key ID="STR_generic_no_units_squads_selected">
                 <Original>No units or squads selected.</Original>
                 <Russian>Отряды или юниты не выбраны.</Russian>
                 <Chinesesimp>没有选择单位或小队。</Chinesesimp>
                 <Korean>유닛 또는 분대를 선택하지 않았습니다.</Korean>
+                <French>Aucune unité ou escouade sélectionnée.</French>
             </Key>
             <Key ID="STR_mission_request_header">
                 <Original>Mission Request</Original>
                 <Russian>Запрос Миссий</Russian>
                 <Chinesesimp>任务要求</Chinesesimp>
                 <Korean>임무 요청</Korean>
+                <French>Demander une mission</French>
             </Key>
             <Key ID="STR_generic_dismiss_squads">
                 <Original>Dismiss Squad</Original>
                 <Russian>Роспуск отряда</Russian>
                 <Chinesesimp>解散小队</Chinesesimp>
                 <Korean>분대 해산</Korean>
+                <French>Renvoyer la brigade</French>
             </Key>
             <Key ID="STR_generic_ai_auto_heal">
                 <Original>AI Auto Heal</Original>
                 <Russian>Автолечение ИИ</Russian>
                 <Chinesesimp>AI自动治疗</Chinesesimp>
                 <Korean>인공지능 자동 치료</Korean>
+                <French>Soins automatiques AI</French>
             </Key>
             <Key ID="STR_generic_ai_auto_heal_off">
                 <Original>Auto Healing disabled.</Original>
                 <Russian>Автолечение ИИ-соотрядников отключено.</Russian>
                 <Chinesesimp>自动治疗禁用。</Chinesesimp>
                 <Korean>자동 치료 비활성화됨.</Korean>
+                <French>Guérison automatique désactivée.</French>
             </Key>
             <Key ID="STR_generic_ai_auto_heal_on">
                 <Original>Auto Healing enabled.</Original>
                 <Russian>Автолечение ИИ-соотрядников включено.</Russian>
                 <Chinesesimp>自动治疗启用</Chinesesimp>
                 <Korean>자동 치료 활성화됨.</Korean>
+                <French>Guérison automatique activée.</French>
             </Key>
         </Container>
         <Container name="scrt_common">
