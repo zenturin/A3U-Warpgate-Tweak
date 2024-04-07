@@ -10,7 +10,7 @@
         _object - vehicle or a prop to apply effects to
 
 */
-#include "..\..\script_component.hpp"
+#include "..\script_component.hpp"
 FIX_LINE_NUMBERS()
 
 params ["_object"];
