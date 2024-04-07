@@ -7779,7 +7779,7 @@
                 <Korean>%2에서 가치 있는 화물을 적재한 %1의 헬리콥터가 격추되었습니다. 헬리콥터의 화물을 적 구조대보다 먼저 본부로 가져오십시오. %3 이전에 확보해야 합니다. 적의 최전선 부대가 이미 추락 지점을 발견하고 지키는 중입니다.</Korean>
             </Key>
             <Key ID="STR_A3A_Missions_LOG_crashsite_task_header">
-                <Original>Reconnaissance vehicle crash site</Original>
+                <Original>Reconnaissance Vehicle Crash Site</Original>
                 <Russian>Направляйтесь на предпологаемое место крушения</Russian>
             </Key>
             <Key ID="STR_A3A_Missions_LOG_crashsite_task_desc">
