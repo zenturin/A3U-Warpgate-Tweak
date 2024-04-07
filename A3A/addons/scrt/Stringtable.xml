@@ -7787,7 +7787,7 @@
                 <Russian>Транспорт %1 c разведданными был подбит в %2. Соберите их и доставьте в штаб до того как их заберёт вражеская эвакуационная команда. Мы должны сделать это %3. Вражеские передовые отряды уже в пути.</Russian>
             </Key>
             <Key ID="STR_A3A_Missions_LOG_crashsite_task_alt">
-                <Original>Deliver the data to arms dealer. He will pay handsomely (Petros won't be too upset).</Original>
+                <Original>Deliver the crashsite data to the arms dealer. He will pay handsomely! Petros won't be too upset about it.</Original>
                 <Russian>Доставьте данные торговцу оружием. Он щедро за них заплатит (Петрос не сильно расстроится).</Russian>
             </Key>
             <Key ID="STR_A3A_Missions_SUPP_Supplies_task_header">
