@@ -737,11 +737,11 @@ switch(true) do {
         [250*_bonus,theBoss, true] call A3A_fnc_addMoneyPlayer;
         ["Large", _sideX] remoteExec ["A3A_fnc_selectIntel", 2];
         [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon; ///params ["_position", "_radius", "_revealTime", ["_isInterrogation", false]]; ///revels enemy location only once, which is not good?, dunno maybe it should do it every 2-5 minutes
-        sleep 6;
+        sleep 60;
         [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
-        sleep 8;
+        sleep 60;
         [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
-        sleep 10;
+        sleep 60;
         [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
         deleteVehicle _box;
 	if (hideEnemyMarkers) then {
@@ -772,7 +772,8 @@ switch(true) do {
 //Clean up//
 ////////////
 
-sleep 3;
+sleep 20;
+
 
 {
     deleteVehicle _x;
