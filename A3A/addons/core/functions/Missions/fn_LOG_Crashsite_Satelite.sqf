@@ -745,7 +745,7 @@ switch(true) do {
         [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
         deleteVehicle _box;
 	if (hideEnemyMarkers) then {
-  		[round (random [5, 7, 10])] call A3U_fnc_revealRandomZones;
+  		[(selectRandom [5,7])] call A3U_fnc_revealRandomZones;
 	};
     };
     case(_box distance (getMarkerPos traderMarker) < 50 || _box distance (getMarkerPos traderMarker) < 50): {
