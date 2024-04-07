@@ -61,6 +61,7 @@ class cfgHALsStore
 		#include "config\braf.hpp"
 		#include "config\nfts.hpp"
 		#include "config\fow.hpp"
+		#include "config\eaw.hpp"
 	};
 
 	class stores 
