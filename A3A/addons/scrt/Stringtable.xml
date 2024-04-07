@@ -1220,174 +1220,203 @@
                 <Russian>&lt;t size='0.6'&gt;Силы &lt;t size='0.6' color='%1'&gt;%2&lt;/t&gt; на %3 сдались. Их коридор поддержки будет закрыт и они больше не будут атаковать нас. Поздравляем!&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='%1'&gt;%2&lt;/t&gt; %3 上的部队投降。 他们的部队支援被关闭，他们不再对我们发动任何攻击。 恭喜！&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%3의 &lt;t size='0.6' color='%1'&gt;%2&lt;/t&gt;이 항복했습니다. 그들의 지원 경로는 차단될 것이고 더 이상 우리를 공격하지 않을 것입니다. 축하합니다!&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='%1'&gt;%2&lt;/t&gt; sur %3 se sont rendues. Leur axe de soutien sera fermé et elles ne lanceront plus d'attaque contre nous. Félicitations !&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_recon_prisoner_success">
                 <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;Interrogated combatant&lt;/t&gt; shares approximate enemy positions.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;Допрошенный солдат&lt;/t&gt; делится примерным местоположением противника в округе.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;被审问的士兵&lt;/t&gt; 透露了大致的敌人位置。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;심문당한 대원&lt;/t&gt;이 대략적인 적 위치를 공유했습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;Le combattant interrogé&lt;/t&gt; communique les positions approximatives de l'ennemi.</French>
             </Key>
             <Key ID="STR_comms_mp_recon_plane_success">
                 <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&gt;Reconnaissance&lt;/t&gt; shares approximate enemy positions with rebel ground forces.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&gt;Воздушная разведка&lt;/t&gt; делится примерным местоположением противника с наземными силами повстанцев.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&gt;侦查&lt;/t&gt; 与抵抗军地面部队共享大致的敌人位置。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&gt;정찰기&lt;/t&gt;가 아군의 지상군에게 대략적인 적 위치를 공유했습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&gt;La reconnaissance&lt;/t&gt; partage les positions approximatives de l'ennemi avec les forces terrestres rebelles.</French>
             </Key>
             <Key ID="STR_comms_mp_recon_prisoner_fail">
                 <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;Interrogated combatant&lt;/t&gt; does not know anything.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;Допрошенный солдат&lt;/t&gt; ничего не знает.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;被审问的士兵&lt;/t&gt; 什么都不知道。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;심문당한 대원&lt;/t&gt;은 아무것도 모릅니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;Le combattant interrogé&lt;/t&gt; ne sait rien.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_recon_plane_fail">
                 <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&lt;Reconnaissance&lt;/t&gt; has not detected any enemy activity.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&lt;Воздушная разведка&lt;/t&gt; не обнаружила какой-либо активности противника.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&lt;侦查&lt;/t&gt; 没有发现任何敌人活动。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&gt;정찰기&lt;/t&gt;는 적의 활동을 감지하지 못했습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#D96600'&lt;La reconnaissance&lt;/t&gt; n'a pas détecté d'activité ennemie.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_prisoner_release">
                 <Original>&lt;t size='0.6'&gt;Due to humanitarian agreements with &lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt;, %1 recieves &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; for released prisoner.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Ввиду гуманитарного соглашения с &lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt;, %1 получает &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; за освобождение пленного.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;根据与 &lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt;的人道主义协定, %1 收到 &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; 由于释放囚犯。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;t size='0.6'&gt;의 인도주의적 합의 때문에 &lt;/t&gt;, %1&lt;t size='0.6'&gt;은 석방된 포로에 대해&lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt;을(를) 받았습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;En raison d'accords humanitaires avec&lt;t size='0.6' color='#FFA500'&gt;l'IDAP&lt;/t&gt;, %1 reçoit des fonds &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; pour les prisonniers libérés.</French>
             </Key>
             <Key ID="STR_comms_mp_money_share">
                 <Original>&lt;t size='0.6'&gt;Commander %1 shares rebel money equally among all members. %2 recieves his share - &lt;t color='#00FF00'&gt;%3%4&lt;/t&gt;.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Командир %1 делит казну фракции на всех. %2 получает свою долю - &lt;t color='#00FF00'&gt;%3%4&lt;/t&gt;.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt; %1 指挥官在所有成员中平均分配抵抗军资金。 %2 获得他的份额 - &lt;t color='#00FF00'&gt;%3%4&lt;/t&gt;.&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%1의 지휘관은 모든 멤버에게 동등하게 아군의 자금을 분배했습니다. %2은(는) 몫을 받았습니다 - &lt;t color='#00FF00'&gt;%3%4&lt;/t&gt;.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Le commandant %1 partage l'argent du rebelle à parts égales entre tous les membres. %2 reçoit sa part - &lt;t color='#00FF00'&gt;%3%4&lt;/t&gt;.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_ironman_defeat">
                 <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#e60000'&gt;%1 has failed - Petros has been killed by enemy.&lt;/t&gt; Without a leader resistance can't survive. Mission will end shortly...&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;У &lt;t size='0.6' color='#e60000'&gt;%1 потерпели неудачу - Петрос был убит врагом.&lt;/t&gt; Без лидера сопротивление не выживет. Миссия скоро закончится.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#e60000'&gt;%1 任务失败 - Petros 已经被敌方杀死。&lt;/t&gt; 没有领袖，反抗军无法生存，任务很快就会失败...&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#e60000'&gt;%1 실패 - 페트로스가 적에게 사살되었습니다.&lt;/t&gt;저항군 지도자 없이는 살아남을 수 없습니다. 임무가 곧 끝날 것입니다...&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#e60000'&gt;%1 a échoué - Petros a été tué par l'ennemi.&lt;/t&gt; Sans chef, la résistance ne peut pas survivre. La mission se terminera bientôt...&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_RP_ran_out">
                 <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;Rally point&lt;/t&gt; ran out of remaining travels.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;У &lt;t size='0.6' color='#008000'&gt;точки сбора&lt;/t&gt; кончились очки перемещения.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;集结点&lt;/t&gt; 剩下的快速旅行已经用完了。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;집결 지점&lt;/t&gt;에 남은 빠른 이동이 모두 소진되었습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;Le point de ralliement&lt;/t&gt; a manqué de voyages.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_loot_heli">
                 <Original>&lt;t size='0.6'&gt;%1 helicopter and it's crew helps us with the scattered &lt;t size='0.6' color='#660080'&gt;loot&lt;/t&gt;. They will drop the crate with gathered loot near your position.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Вертолет %1 и его экипаж поможет нам с разбросанной вокруг &lt;t size='0.6' color='#660080'&gt;добычей&lt;/t&gt;. Они бросят ящик с собранной добычей рядом с вашей позицией.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;%1 直升机和它的乘员会帮助我们 &lt;t size='0.6' color='#660080'&gt;loot&lt;/t&gt;. 他们会把装满战利品的板条箱扔到你的位置附近。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%1의 헬리콥터와 승무원들이 흩어진 &lt;t size='0.6' color='#660080'&gt;전리품&lt;/t&gt;을 모으기 위해 도와줍니다. 그들은 당신 위치 근처에 모은 전리품과 함께 상자를 떨어뜨릴 것입니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;L'hélicoptère %1 et son équipage nous aident à récupérer &lt;t size='0.6' color='#660080'&gt;le butin&lt;/t&gt;. Ils déposeront la caisse contenant le butin près de votre position.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_arsenal_updated">
                 <Original>%1&lt;br/&gt;Arsenal Updated&lt;br/&gt;&lt;br/&gt;%2</Original>
                 <Russian>%1&lt;br/&gt;Обновление Арсенала&lt;br/&gt;&lt;br/&gt;%2</Russian>
                 <Chinesesimp>%1&lt;br/&gt;兵工厂升级&lt;br/&gt;&lt;br/&gt;%2</Chinesesimp>
                 <Korean>%1&lt;br/&gt;아스널 업데이트&lt;br/&gt;&lt;br/&gt;%2</Korean>
+                <French>%1&lt;br/&gt;Arsenal mis à jour&lt;br/&gt;&lt;br/&gt;%2</French>
             </Key>
             <Key ID="STR_comms_mp_taxes_income">
                 <Original>&lt;t size='0.6' color='#C1C0BB'&gt;Income&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: +%1&lt;br/&gt;Money: +%2%3</Original>
                 <Russian>&lt;t size='0.6' color='#C1C0BB'&gt;Доход&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: +%1&lt;br/&gt;Деньги: +%2%3</Russian>
                 <Chinesesimp>&lt;t size='0.6' color='#C1C0BB'&gt;收入&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: +%1&lt;br/&gt;钱: +%2%3</Chinesesimp>
                 <Korean>&lt;t size='0.6' color='#C1C0BB'&gt;소득&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;인력: +%1&lt;br/&gt;자금: +%2%3</Korean>
+                <French>&lt;t size='0.6' color='#C1C0BB'&gt;Revenu&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: +%1&lt;br/&gt;Argent: +%2%3</French>
             </Key>
             <Key ID="STR_comms_mp_paycheck">
                 <Original>&lt;t size='0.6'&gt;%1 receieves &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; for fighting for %4!&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;%1 получает &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; на борьбу за %4!&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;%1 收到了 &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt;，因为为%4!而战！&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%1이(가) %4을(를) 위해 싸운 것에 대해 &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt;을(를) 받았습니다!&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;%1 reçoit &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; pour avoir lutté pour %4 !&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_hmg_airdrop">
                 <Original>&lt;t size='0.6'&gt;Rebel aircraft drops the &lt;t size='0.6' color='#804000'&gt;HMG&lt;/t&gt; near your position.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Самолёт повстанцев сбрасывает &lt;t size='0.6' color='#804000'&gt;тяжелый пулемёт&lt;/t&gt; рядом с вашей позицией.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;抵抗军飞机空投 &lt;t size='0.6' color='#804000'&gt;HMG&lt;/t&gt; 到你的位置附近。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;아군 항공기가 당신 위치 근처에 &lt;t size='0.6' color='#804000'&gt;중기관총&lt;/t&gt;을 투하했습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Un avion rebelle largue le &lt;t size='0.6' color='#804000'&gt;HMG&lt;/t&gt;près de votre position.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_supply">
                 <Original>&lt;t size='0.6'&gt;Rebel aircraft drops the &lt;t size='0.6' color='#0000ff'&gt;supply crate&lt;/t&gt; near your position.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Самолёт повстанцев сбрасывает &lt;t size='0.6' color='#0000ff'&gt;ящик с припасами&lt;/t&gt; рядом с вашей позицией.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;抵抗军飞机空投&lt;t size='0.6' color='#0000ff'&gt;补给箱&lt;/t&gt; 到你的位置附近。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;아군 항공기가 당신 위치 근처에 &lt;t size='0.6' color='#0000ff'&gt;보급상자&lt;/t&gt;를 투하했습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Un avion rebelle largue la &lt;t size='0.6' color='#0000ff'&gt;caisse de ravitaillement&lt;/t&gt; près de votre position.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_light_veh">
                 <Original>&lt;t size='0.6'&gt;Rebel aircraft drops the &lt;t size='0.6' color='#804000'&gt;light vehicle&lt;/t&gt; near your position.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Самолёт повстанцев сбрасывает &lt;t size='0.6' color='#804000'&gt;лёгкий транспорт&lt;/t&gt; рядом с вашей позицией.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;抵抗军飞机空投&lt;t size='0.6' color='#804000'&gt;轻型载具&lt;/t&gt; 到你的位置附近。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;아군 항공기가 당신 위치 근처에 &lt;t size='0.6' color='#804000'&gt;경차량&lt;/t&gt;을 투하했습니다.</Korean>
+                <French>&lt;t size='0.6'&gt;Un avion rebelle largue un &lt;t size='0.6' color='#0000ff'&gt;véhicule léger&lt;/t&gt; près de votre position.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_lootcrate">
                 <Original>&lt;t size='0.6'&gt;Rebel aircraft drops the &lt;t size='0.6' color='#010100'&gt;loot crate&lt;/t&gt; near your position.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Самолёт повстанцев сбрасывает &lt;t size='0.6' color='#010100'&gt;ящик-сборщик лута&lt;/t&gt; рядом с вашей позицией.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;抵抗军飞机空投&lt;t size='0.6' color='#010100'&gt;战利品箱&lt;/t&gt; 到你的位置附近。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;아군 항공기가 당신 위치 근처에 &lt;t size='0.6' color='#010100'&gt;전리품 상자&lt;/t&gt;를 투하했습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Un avion rebelle largue une &lt;t size='0.6' color='#0000ff'&gt;caisse de butin&lt;/t&gt; près de votre position.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_airstrike">
                 <Original>&lt;t size='0.6'&gt;Rebel aircraft is about to drop some &lt;t size='0.6' color='#010100'&gt;%1 bombs&lt;/t&gt; near your position, take cover.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Самолёт повстанцев скоро сбросит &lt;t size='0.6' color='#010100'&gt;бомбы типа %1&lt;/t&gt; рядом с позицией, все в укрытие.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;抵抗军飞机马上就会投下一些&lt;t size='0.6' color='#010100'&gt;%1 炸弹&lt;/t&gt; 到你的位置附近，找掩护。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;아군 항공기가 당신 위치 근처에 &lt;t size='0.6' color='#010100'&gt;%1 항공 폭탄&lt;/t&gt;을 투하할 예정입니다. 엄폐하십시오.</Korean>
+                <French>&lt;t size='0.6'&gt;Un avion rebelle largue des &lt;t size='0.6' color='#0000ff'&gt;bombes&lt;/t&gt; près de votre position.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_calc_aggr_changed">
                 <Original>&lt;t size='0.6' color='#C1C0BB'&gt;Aggression level changed&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</Original>
                 <Russian>&lt;t size='0.6' color='#C1C0BB'&gt;Уровень агрессии изменился&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</Russian>
                 <Chinesesimp>&lt;t size='0.6' color='#C1C0BB'&gt;攻击等级改变至&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</Chinesesimp>
                 <Korean>&lt;t size='0.6' color='#C1C0BB'&gt;어그로 레벨 변경&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</Korean>
+                <French>&lt;t size='0.6' color='#C1C0BB'&gt;Le niveau d'agression a changé&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</French>
             </Key>
             <Key ID="STR_comms_calc_aggr_reduced_occ">
                 <Original>%1 aggression level reduced to %2&lt;br/&gt;</Original>
                 <Russian>Уровень агрессии %1 снизился до %2&lt;br/&gt;</Russian>
                 <Chinesesimp>%1 攻击等级降低至 %2&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 어그로 레벨이 %2(으)로 감소됨&lt;br/&gt;</Korean>
+                <French>%1 niveau d'agression réduit à %2&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_comms_calc_aggr_increased_occ">
                 <Original>%1 aggression level increased to %2&lt;br/&gt;</Original>
                 <Russian>Уровень агрессии %1 повысился до %2&lt;br/&gt;</Russian>
                 <Chinesesimp>%1 攻击等级提升至 %2&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 어그로 레벨이 %2(으)로 증가됨&lt;br/&gt;</Korean>
+                <French>%1 niveau d'agression a augmenté à %2&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_comms_calc_aggr_reduced_inv">
                 <Original>%1%2 aggression level reduced to %3</Original>
                 <Russian>%1 Уровень агрессии %2 понизился до %3</Russian>
                 <Chinesesimp>%1%2 攻击等级降低至 %3</Chinesesimp>
                 <Korean>%1%2 어그로 레벨이 %3(으)로 감소됨&lt;br/&gt;</Korean>
+                <French>%1%2 niveau d'agression réduit à %3</French>
             </Key>
             <Key ID="STR_comms_calc_aggr_increased_inv">
                 <Original>%1%2 aggression level increased to %3&lt;br/&gt;</Original>
                 <Russian>%1 Уровень агрессии %2 повысился до %3&lt;br/&gt;</Russian>
                 <Chinesesimp>%1%2 攻击等级提升至 %3&lt;br/&gt;</Chinesesimp>
                 <Korean>%1%2 어그로 레벨이 %3(으)로 증가됨&lt;br/&gt;</Korean>
+                <French>%1%2 niveau d'agression augmenté à %3&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_comms_riv_activity_increased">
                 <Original>%1 activity level increased to %2&lt;br/&gt;</Original>
                 <Russian>Уровень активности %1 повысился до %2&lt;br/&gt;</Russian>
                 <Chinesesimp>%1 活动水平增加至 %2&lt;br/&gt;</Chinesesimp>
                 <Korean>%1 활동 레벨이 %2(으)로 증가함&lt;br/&gt;</Korean>
+                <French>%1 niveau d'activité augmenté à %2&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_comms_riv_activity_reduced">
                 <Original>%1 activity level reduced to %2&lt;br/&gt;</Original>
                 <Russian>Уровень активности %1 понизился до %2&lt;br/&gt;</Russian>
                 <Chinesesimp>%1 活动水平降至 %2&lt;br/&gt;</Chinesesimp>
                 <Korean>%1 활동 레벨이 %2(으)로 감소함&lt;br/&gt;</Korean>
+                <French>%1 le niveau d'activité est réduit à %2&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_comms_riv_activity_change">
                 <Original>&lt;t size='0.6' color='#C1C0BB'&gt;Activity level changed&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</Original>
                 <Russian>&lt;t size='0.6' color='#C1C0BB'&gt;Уровень активности изменился&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</Russian>
                 <Chinesesimp>&lt;t size='0.6' color='#C1C0BB'&gt;活动水平改变至&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</Chinesesimp>
                 <Korean>&lt;t size='0.6' color='#C1C0BB'&gt;활동 레벨 변경됨&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</Korean>
+                <French>&lt;t size='0.6' color='#C1C0BB'&gt;Changement du niveau d'activité&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;%1</French>
             </Key>
             <Key ID="STR_comms_res_FIA_1">
                 <Original>&lt;t size='0.6' color='#C1C0BB'&gt;%5 Resources&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: %3%1&lt;br/&gt;Money: %4%2 %6</Original>
                 <Russian>&lt;t size='0.6' color='#C1C0BB'&gt;Ресурсы %5&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: %3%1&lt;br/&gt;Деньги: %4%2 %6</Russian>
                 <Chinesesimp>&lt;t size='0.6' color='#C1C0BB'&gt;%5 资源&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: %3%1&lt;br/&gt;钱: %4%2 %6</Chinesesimp>
                 <Korean>&lt;t size='0.6' color='#C1C0BB'&gt;%5 자원채취소&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;인력: %3%1&lt;br/&gt;자금: %4%2 %6</Korean>
+                <French>&lt;t size='0.6' color='#C1C0BB'&gt;%5 Ressources&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: %3%1&lt;br/&gt;Argent: %4%2 %6</French>
             </Key>
             <Key ID="STR_comms_res_FIA_2">
                 <Original>&lt;t size='0.6' color='#C1C0BB'&gt;%3 Resources&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: %2%1</Original>
                 <Russian>&lt;t size='0.6' color='#C1C0BB'&gt;Ресурсы %3.&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: %2%1</Russian>
                 <Chinesesimp>&lt;t size='0.6' color='#C1C0BB'&gt;%3 资源&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: %2%1</Chinesesimp>
                 <Korean>&lt;t size='0.6' color='#C1C0BB'&gt;%3 자원채취소&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;인력: %2%1</Korean>
+                <French>&lt;t size='0.6' color='#C1C0BB'&gt;%3 Resources&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;HR: %2%1</French>
             </Key>
             <Key ID="STR_comms_res_FIA_3">
                 <Original>&lt;t size='0.6' color='#C1C0BB'&gt;%5 Resources&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;Money: %4%2 %6</Original>
                 <Russian>&lt;t size='0.6' color='#C1C0BB'&gt;Ресурсы %5&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;Деньги: %4%2 %6</Russian>
                 <Chinesesimp>&lt;t size='0.6' color='#C1C0BB'&gt;%5 资源&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;钱: %4%2 %6</Chinesesimp>
                 <Korean>&lt;t size='0.6' color='#C1C0BB'&gt;%5 자원채취소&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;자금: %4%2 %6</Korean>
+                <French>&lt;t size='0.6' color='#C1C0BB'&gt;%5 Resources&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;Argent: %4%2 %6</French>
             </Key>
         </Container>
         <Container name="end_missions">
@@ -1396,138 +1425,161 @@
                 <Russian>Несовместимые моды</Russian>
                 <Chinesesimp>不兼容的插件</Chinesesimp>
                 <Korean>호환되지 않는 모드</Korean>
+                <French>Mods incompatibles</French>
             </Key>
             <Key ID="STR_end_mission_modUnautorized_subtitle">
                 <Original>Incompatible Mods detected</Original>
                 <Russian>Обнаружены несовместимые моды</Russian>
                 <Chinesesimp>检测到不兼容的mod</Chinesesimp>
                 <Korean>호환되지 않는 모드 감지됨</Korean>
+                <French>Mods incompatibles détectés</French>
             </Key>
             <Key ID="STR_end_mission_modUnautorized_desc">
                 <Original>An incompatible mod or incompatible set of supported mods (for example, usage of both RHS and CUP Weapons/Vehicles/Units) installed on the server or your PC has been detected. To avoid support problems the mission is finished. Please turn off unsupported (IFA, ASR AI, aLIVE, MCC or any AI behaviour) mods from your computer or server to be able to play Antistasi. See server .rpt log for more information.</Original>
                 <Russian>Обнаружен несовместимый мод или несовместимый набор поддерживаемых модов (например, одновременное использование как RHS, так и CUP Weapons/Vehicles/Weapons), установленных на сервере или на вашем ПК. Во избежание проблем с поддержкой миссия завершена. Пожалуйста, отключите неподдерживаемые моды (IFA, ASR AI, aLIVE, MCC или любое поведение AI) на вашем компьютере или сервере, чтобы иметь возможность играть в Antistasi. Дополнительную информацию см. в журнале .rpt сервера.</Russian>
                 <Chinesesimp>检测到服务器或您的电脑上安装了不兼容的MOD或不兼容的支持MOD集（例如，同时使用RHS和CUP武器/车辆/单位）。为了避免支持问题，任务已经完成。请关闭你的电脑或服务器上不支持的（IFA、ASR AI、aLIVE、MCC或任何AI行为）MOD，以便能够玩Antistasi。更多信息请参见服务器.rpt日志。</Chinesesimp>
                 <Korean>서버 또는 PC에 설치된 호환되지 않는 모드나 모드 세트가 감지되었습니다. 지원 문제를 피하기 위해 임무가 종료되었습니다. 안티스타시를 플레이하려면 컴퓨터 또는 서버에서 지원하지 않는 모드(IFA3, ASR AI, ALIVE, MCC 또는 인공지능 동작 개선 모드 등)를 해제하십시오. 자세한 내용은 서버의 .rpt 로그를 참조하십시오.</Korean>
+                <French>Un mod incompatible ou un ensemble incompatible de mods pris en charge (par exemple, l'utilisation d'armes/véhicules/unités RHS et CUP) installé sur le serveur ou sur votre PC a été détecté. Pour éviter tout problème de support, la mission est terminée. Veuillez désactiver les mods non pris en charge (IFA, ASR AI, aLIVE, MCC ou tout autre comportement de l'IA) de votre ordinateur ou de votre serveur pour éviter tout problème d'assistance. de votre ordinateur ou de votre serveur pour pouvoir jouer à Antistasi. Voir le journal .rpt du serveur pour plus d'informations.</French>
             </Key>
             <Key ID="STR_end_mission_noPvP_title">
                 <Original>PvP Disabled</Original>
                 <Russian>Режим PVP отключен</Russian>
                 <Chinesesimp>PvP 开启</Chinesesimp>
                 <Korean>PvP 비활성화됨</Korean>
+                <French>PvP désactivé</French>
             </Key>
             <Key ID="STR_end_mission_noPvP_subtitle">
                 <Original>This slot is unavailable</Original>
                 <Russian>Выбранный слот недоступен</Russian>
                 <Chinesesimp>此插槽不可用</Chinesesimp>
                 <Korean>해당 슬롯은 사용할 수 없습니다</Korean>
+                <French>Cet emplacement n'est pas disponible</French>
             </Key>
             <Key ID="STR_end_mission_noPvP_desc">
                 <Original>PvP is not enabled on this server.</Original>
                 <Russian>PVP отключено на этом сервере.</Russian>
                 <Chinesesimp>此服务器未启用PvP。</Chinesesimp>
                 <Korean>이 서버에서 PvP는 비활성화되었습니다.</Korean>
+                <French>Le PvP n'est pas activé sur ce serveur.</French>
             </Key>
             <Key ID="STR_end_mission_factionDefeat_title">
                 <Original>Faction Defeat</Original>
                 <Russian>Фракция побеждена</Russian>
                 <Chinesesimp>派系失败</Chinesesimp>
                 <Korean>팩션 패배</Korean>
+                <French>Défaite de la faction</French>
             </Key>
             <Key ID="STR_end_mission_factionDefeat_subtitle">
                 <Original>Faction was defeated</Original>
                 <Russian>Фракции нанесли поражение</Russian>
                 <Chinesesimp>派系被击败</Chinesesimp>
                 <Korean>팩션이 패배해였습니다</Korean>
+                <French>La faction a été vaincue</French>
             </Key>
             <Key ID="STR_end_mission_factionDefeat_desc">
                 <Original>This faction was defeated earlier thus making slot unavailable.</Original>
                 <Russian>Эта фракция была побеждена ранее, что сделало слот недоступным.</Russian>
                 <Chinesesimp>这个阵营在早些时候被击败，因此插槽不可用。</Chinesesimp>
                 <Korean>해당 팩션은 이전에 패배하여 슬롯을 사용할 수 없습니다.</Korean>
+                <French>Cette faction a été vaincue plus tôt, ce qui rend l'emplacement indisponible.</French>
             </Key>
             <Key ID="STR_end_mission_noJip_title">
                 <Original>Can't startup as PvP</Original>
                 <Russian>Не могу запустить как PvP</Russian>
                 <Chinesesimp>不能作为PvP启动</Chinesesimp>
                 <Korean>PvP로 시작할 수 없음</Korean>
+                <French>Ne peut pas démarrer en PvP</French>
             </Key>
             <Key ID="STR_end_mission_noJip_desc">
                 <Original>You can't choose PvP until the mission has been started. If you didn't intentionally choose a PvP role, make sure you pick the rebel side (usually green).</Original>
                 <Russian>Вы не можете выбрать PvP-слот, пока миссия не будет начата. Если вы намеренно не выбрали роль PvP, убедитесь, что вы выбрали сторону повстанцев (обычно зеленую).</Russian>
                 <Chinesesimp>在任务开始之前，你不能选择PvP。如果你没有刻意选择PvP角色，请确保你选择叛军一方（通常是绿色）。</Chinesesimp>
                 <Korean>미션이 시작될 때까지 PvP를 선택할 수 없습니다. 일부러 PvP 역할을 선택한 게 아니라면 아군 진영(일반적으로 녹색)을 선택해야 합니다.</Korean>
+                <French>Vous ne pouvez pas choisir le PVP tant que la mission n'a pas commencé. Si vous n'avez pas choisi intentionnellement un rôle PVP, assurez-vous de choisir le côté rebelle (généralement vert).</French>
             </Key>
             <Key ID="STR_end_mission_BossMiss_title">
                 <Original>Rebel Commander is missing</Original>
                 <Russian>Командир повстанцев отсутствует</Russian>
                 <Chinesesimp>抵抗军指挥官失踪</Chinesesimp>
                 <Korean>반군 지휘관 부재</Korean>
+                <French>Rebel Commander a disparu</French>
             </Key>
             <Key ID="STR_end_mission_BossMiss_desc">
                 <Original>PvP is not available as there is no Commander for the Rebels.</Original>
                 <Russian>PVP недоступен так как у повстанцев отсутствует командир.</Russian>
                 <Chinesesimp>由于叛军没有指挥官，所以无法进行PvP。</Chinesesimp>
                 <Korean>반군 측에 지휘관이 없기 때문에 PvP를 사용할 수 없습니다.</Korean>
+                <French>Le PVP n'est pas disponible car il n'y a pas de commandant pour les Rebelles.</French>
             </Key>
             <Key ID="STR_end_mission_noSingleplayer_title">
                 <Original>Singleplayer Is Not Supported</Original>
                 <Russian>Одиночная игра не поддерживается</Russian>
                 <Chinesesimp>不支持单人模式</Chinesesimp>
                 <Korean>싱글 플레이어 미지원</Korean>
+                <French>Le jeu en solo n'est pas pris en charge</French>
             </Key>
             <Key ID="STR_end_mission_noSingleplayer_desc">
                 <Original>Start LAN server to play as single player.</Original>
                 <Russian>Запустите сервер локальной сети, чтобы играть в одиночном режиме.</Russian>
                 <Chinesesimp>启动局域网服务器进行单人游戏。</Chinesesimp>
                 <Korean>싱글 플레이어로 플레이하려면 LAN 서버로 시작하십시오.</Korean>
+                <French>Démarrer le serveur LAN pour jouer en solo.</French>
             </Key>
             <Key ID="STR_end_mission_ironManPetros_title">
                 <Original>Petros Is Dead</Original>
                 <Russian>Петрос мертв</Russian>
                 <Chinesesimp>Petros 死了</Chinesesimp>
                 <Korean>페트로스 사망</Korean>
+                <French>Petros est mort</French>
             </Key>
             <Key ID="STR_end_mission_ironManPetros_desc">
                 <Original>Without a leader resistance can't survive.</Original>
                 <Russian>Без лидера сопротивление не выживет.</Russian>
                 <Chinesesimp>没有领袖，抵抗就无法生存。</Chinesesimp>
                 <Korean>저항군 지도자 없이는 살아남을 수 없습니다.</Korean>
+                <French>Sans leader, la résistance ne peut pas survivre.</French>
             </Key>
             <Key ID="STR_end_mission_victory_generic_title">
                 <Original>V I C T O R Y</Original>
                 <Russian>П О Б Е Д А</Russian>
                 <Chinesesimp>胜    利</Chinesesimp>
                 <Korean>승    리</Korean>
+                <French>V I C T O I R E</French>
             </Key>
             <Key ID="STR_end_mission_victory_subtitle">
                 <Original>Country is under our control!</Original>
                 <Russian>Страна под нашим контролем!</Russian>
                 <Chinesesimp>国家在我们的控制之下!</Chinesesimp>
                 <Korean>이제 나라는 우리 것입니다!</Korean>
+                <French>Le pays est sous notre contrôle !</French>
             </Key>
             <Key ID="STR_end_mission_victory_desc">
                 <Original>The population of the country loves you!&lt;br/&gt;The brave soldiers have proven their valour, and Petros, the elected new Prime Minister, could at last to have a nice holidays. A deserved rest and honor for all participated soldiers too.</Original>
                 <Russian>Население страны любит вас!&lt;br/&gt;Отважные солдаты доказали свою доблесть и Петрос, избранный новым премьер-министром, наконец-то сможет хорошо провести отпуск. Заслуженный отдых и почёт всем участвовавшим бойцам тоже.</Russian>
                 <Chinesesimp>全国人民都爱你!&lt;br/&gt;勇敢的士兵们已经证明了他们的英勇，当选的新总理Petros也终于可以过一个愉快的假期。所有参战士兵也得到了应有的休息和荣誉。</Chinesesimp>
                 <Korean>국민들이 당신들을 좋아합니다!&lt;br/&gt;용감한 군인들은 그들의 용기를 증명해냈고, 선출된 새 총리인 페트로스는 마침내 멋진 휴일을 보낼 수 있었습니다. 참가한 모든 병사들에게도 마땅히 휴식과 명예가 주어져야 합니다.</Korean>
+                <French>La population du pays vous aime!&lt;br/&gt;Les braves soldats ont prouvé leur courage, et Petros, le nouveau Premier ministre élu, a enfin pu passer de bonnes vacances. Un repos mérité et des honneurs pour tous les soldats qui y ont participé.</French>
             </Key>
             <Key ID="STR_end_mission_defeat_title">
                 <Original>Country is Destroyed</Original>
                 <Russian>Страна уничтожена</Russian>
                 <Chinesesimp>国家被摧毁</Chinesesimp>
                 <Korean>나라가 파괴됨</Korean>
+                <French>Le pays est détruit</French>
             </Key>
             <Key ID="STR_end_mission_defeat_subtitle">
                 <Original>Country was Destroyed by OPFOR</Original>
                 <Russian>Страна была уничтожена OPFOR'ом</Russian>
                 <Chinesesimp>国家被OPFOR摧毁</Chinesesimp>
                 <Korean>나라가 침략군에 의해 파괴되었습니다</Korean>
+                <French>Le pays a été détruit par l'OPFOR</French>
             </Key>
             <Key ID="STR_end_mission_defeat_desc">
                 <Original>Humanitarian catastrophe had ruined the country, nobody wants to live there.</Original>
                 <Russian>Гуманитарная катастрофа разорила страну, никто не хочет там жить.</Russian>
                 <Chinesesimp>人道主义灾难毁了这个国家，没有人愿意住在那里。</Chinesesimp>
                 <Korean>인도주의적 재앙이 나라를 망쳤고, 아무도 그 곳에서 살려고 하지 않습니다.</Korean>
+                <French>La catastrophe humanitaire a ruiné le pays, personne ne veut y vivre.</French>
             </Key>
         </Container>
         <Container name="markers">
