@@ -1,6 +1,6 @@
     class EAW_Base
     {
-        requiredAddons[] = {"IFA3_Core","fow_tanks","IFA3_FOW_Compat"};
+        requiredAddons[] = {"IFA3_Core","fow_tanks","IFA3_FOW_Compat","EAW_Air","WBK_MeleeMechanics"};
         basepath = QPATHTOFOLDER(Templates\Templates\EAW);
         logo = QPATHTOFOLDER(Templates\Templates\EAW\eaw_logo.paa);
         priority = 16;
