@@ -157,21 +157,6 @@ private _rebelTaskText = format [
 ] call BIS_fnc_taskCreate;
 [_taskId, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 
-if (!isNil "traderMarker") then { ///checking if trader is spawned
-    [
-    [teamPlayer,civilian],
-    _taskId,
-    [format [localize "STR_A3A_Missions_LOG_crashsite_task_alt", _faction get "name", _destinationName, _displayTime], localize "STR_A3A_Missions_LOG_crashsite_task_header", _markerX],
-    traderMarker,
-    false,
-    0,
-    true,
-    "whiteboard",
-    true
-] call BIS_fnc_taskCreate;
-[_taskId, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
-};
-
 ///checking if players reached minimum distance to start vfx or if time limit has passed
 private _missionstart = serverTime;
 waitUntil {sleep 1; (player distance2D _crashPosition) < 1500 || _missionstart >= serverTime + 600 };
@@ -420,33 +405,76 @@ if (_searchHeliClass isNotEqualTo []) then {
     
 };
 
-if (!isNull _cargoVehicle2 || alive _cargoVehicle2) then {
-    waitUntil {
-        sleep 1;
-        !alive _box 
-        ||
-        {_cargoVehicle distance _box < 50} 
-        ||
-        {_cargoVehicle2 distance _box < 50} 
-        ||
-        {_box distance (getMarkerPos respawnTeamPlayer) < 50} 
-        ||
-        {dateToNumber date > _dateLimitNum}
-    };
-} else {
-        waitUntil {
-        sleep 1;
-        !alive _box 
-        ||
-        {_cargoVehicle distance _box < 50} 
-        ||
-        {_box distance (getMarkerPos respawnTeamPlayer) < 50} 
-        ||
-        {dateToNumber date > _dateLimitNum}
-    };
+if (!isNil "traderMarker") then { ///checking if trader is spawned
+    [
+    [teamPlayer,civilian],
+    _taskId,
+    [format [localize "STR_A3A_Missions_LOG_crashsite_task_alt", _faction get "name", _destinationName, _displayTime], localize "STR_A3A_Missions_LOG_crashsite_task_header", _markerX],
+    traderMarker,
+    false,
+    0,
+    true,
+    "whiteboard",
+    true
+] call BIS_fnc_taskCreate;
+[_taskId, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 };
 
-_groups pushBack _heliInfGroup;
+if (!isNil "traderMarker") then { ///checking if trader is spawned
+    if (!isNull _cargoVehicle2 || alive _cargoVehicle2) then {
+        waitUntil {
+            sleep 1;
+            !alive _box 
+            ||
+            {_cargoVehicle distance _box < 50} 
+            ||
+            {_cargoVehicle2 distance _box < 50} 
+            ||
+            {_box distance (getMarkerPos respawnTeamPlayer) < 50} 
+            ||
+            {_box distance (getMarkerPos traderMarker) < 50}
+            ||
+            {dateToNumber date > _dateLimitNum}
+        };
+    } else {
+            waitUntil {
+            sleep 1;
+            !alive _box 
+            ||
+            {_cargoVehicle distance _box < 50} 
+            ||
+            {_box distance (getMarkerPos respawnTeamPlayer) < 50} 
+            ||
+            {dateToNumber date > _dateLimitNum}
+        };
+    };
+}else {
+    if (!isNull _cargoVehicle2 || alive _cargoVehicle2) then {
+        waitUntil {
+            sleep 1;
+            !alive _box 
+            ||
+            {_cargoVehicle distance _box < 50} 
+            ||
+            {_cargoVehicle2 distance _box < 50} 
+            ||
+            {_box distance (getMarkerPos respawnTeamPlayer) < 50} 
+            ||
+            {dateToNumber date > _dateLimitNum}
+        };
+    } else {
+        waitUntil {
+            sleep 1;
+            !alive _box 
+            ||
+            {_cargoVehicle distance _box < 50} 
+            ||
+            {_box distance (getMarkerPos respawnTeamPlayer) < 50} 
+            ||
+            {dateToNumber date > _dateLimitNum}
+        };
+    };
+};
 
 if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (alive _cargoVehicle || alive _cargoVehicle2) && (!isNull (driver _cargoVehicle) || !isNull (driver _cargoVehicle2))) then {
     _allParticipatingUnits = [];
@@ -487,7 +515,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         moveOut _x;
     } forEach _cargoSquad;
 
-    _cargoTimeout = time + (random [40,60,75]);
+    _cargoTimeout = time + (random [4,6,7]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     if(({alive _x} count units _cargoVehicleGroup) > 3 && {alive _cargoVehicle} && _cargoVehicle distance _box < 50) then {
@@ -508,7 +536,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    _cargoTimeout = time + (random [40,60,65]);
+    _cargoTimeout = time + (random [4,6,6]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     if(({alive _x} count units _cargoVehicleGroup) > 2) then {
@@ -537,7 +565,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    _cargoTimeout = time + (random [20,40,50]);
+    _cargoTimeout = time + (random [2,4,5]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     Info("Departing.");
@@ -547,7 +575,6 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
             deleteWaypoint [_cargoVehicleGroup, _i];
         };
     };
-
     if (_searchHeliClass isNotEqualTo []) then {
         if(count waypoints _heliInfGroup  > 0) then {
             for "_i" from count waypoints _heliInfGroup  - 1 to 0 step -1 do {
@@ -661,17 +688,31 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
     } else {};
 };
 
-waitUntil {
-	sleep 1;
-	!alive _box 
-    ||
-	_box distance _deliverySite < 50 
-    ||
-	_box distance (getMarkerPos respawnTeamPlayer) < 50
-    ||
-	dateToNumber date > _dateLimitNum
+if (!isNil "traderMarker") then { ///checking if trader is spawned
+    waitUntil {
+	    sleep 1;
+	    !alive _box 
+        ||
+	    _box distance _deliverySite < 50 
+        ||
+	    _box distance (getMarkerPos respawnTeamPlayer) < 50
+        ||
+        _box distance (getMarkerPos traderMarker) < 50
+        ||
+	    dateToNumber date > _dateLimitNum
+    };
+} else {
+    waitUntil {
+	    sleep 1;
+	    !alive _box 
+        ||
+	    _box distance _deliverySite < 50 
+        ||
+	    _box distance (getMarkerPos respawnTeamPlayer) < 50
+        ||
+	    dateToNumber date > _dateLimitNum
+    };
 };
-
 switch(true) do {
     case(_box distance _deliverySite < 50 || {dateToNumber date > _dateLimitNum}): {
         Info("Box has been recovered by enemy, mission falied.");
@@ -714,7 +755,7 @@ switch(true) do {
         sleep 100;
         [(position _box), 4000, 1200, true] spawn SCRT_fnc_common_recon;
     };
-    case(_box distance (getMarkerPos traderMarker) < 50): {
+    case(_box distance (getMarkerPos traderMarker) < 50 || _box distance (getMarkerPos traderMarker) < 50): {
         Info("Box has been delivered to arms traider, mission completed.");
         [_taskId, "LOG", "SUCCEEDED"] call A3A_fnc_taskSetState;
 
@@ -749,8 +790,15 @@ sleep 30;
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
 
-if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50}) then {
+
+if (!isNil "traderMarker") then { ///checking if trader is spawned
+    if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50} || _box distance (getMarkerPos traderMarker) < 50) then {
     deleteVehicle _box;
+    };
+} else {
+    if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50}) then {
+    deleteVehicle _box;
+    };
 };
 
-Info("crashsite clean up complete.");
+Info("Helicrash clean up complete.");
