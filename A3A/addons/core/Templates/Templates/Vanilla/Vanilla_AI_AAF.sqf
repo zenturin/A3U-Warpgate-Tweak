@@ -95,9 +95,9 @@ if (_hasLawsOfWar) then {
 
 if (_hasRF) then {
     _policeVehs append ["a3a_police_Pickup_rf", "B_GEN_Pickup_covered_rf", "a3a_police_Pickup_comms_rf"];
-    _vehiclesHelisTransport append ["a3a_AAF_Heli_light_03_unarmed_RF", "I_Heli_EC_01A_military_RF"];
-    _vehiclesHelisLightAttack append ["a3a_AAF_Heli_light_03_dynamicLoadout_RF"];
-    _vehiclesHelisAttack = ["a3a_Heli_EC_02_RF"];
+    _transportHelicopters append ["a3a_AAF_Heli_light_03_unarmed_RF", "I_Heli_EC_01A_military_RF"];
+    _helisLightAttack append ["a3a_AAF_Heli_light_03_dynamicLoadout_RF"];
+    _helisAttack = ["a3a_Heli_EC_02_RF"];
 };
 
 private _staticMG = ["I_HMG_02_high_F","I_HMG_01_high_F"];
@@ -918,7 +918,8 @@ if (_hasGM) then {
         ["gm_mp2a1_blk", "", "", "", ["gm_32Rnd_9x19mm_B_DM51_mp2_blk","gm_32Rnd_9x19mm_B_DM11_mp2_blk","gm_32Rnd_9x19mm_AP_DM91_mp2_blk"], [], ""],
         ["gm_pm63_blk", "", "", "", ["gm_25Rnd_9x18mm_B_pst_pm63_blk","gm_15Rnd_9x18mm_B_pst_pm63_blk"], [], ""]
     ];
-    
+};
+
 if (_hasRF) then {
     (_sfLoadoutData get "sidearms") append [
         ["hgun_Glock19_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", [], [], ""],

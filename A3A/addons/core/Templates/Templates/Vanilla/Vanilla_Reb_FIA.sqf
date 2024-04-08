@@ -38,7 +38,7 @@ if (_hasApex) then {
 
 private _vehiclesCivCar = ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_SUV_01_F"];
 private _CivTruck = ["C_Truck_02_transport_F", "C_Truck_02_covered_F"];
-private _civHelicopters = ["C_Heli_Light_01_civil_F", "a3a_C_Heli_Transport_02_F"];
+private _civHelicopters = ["C_Heli_Light_01_civil_F", "a3a_C_Heli_Transport_02_F", "a3a_C_Heli_Light_02_blue_F"];
 
 private _CivBoat = ["C_Boat_Civil_01_F", "C_Rubberboat"];
 
@@ -56,9 +56,9 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
 if (_hasRF) then {
-    _vehiclesCivCar = ["C_Pickup_rf", "C_Pickup_covered_rf"];
-    _vehiclesCivHeli = ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF"];
-    _vehiclesLightArmed = ["a3u_black_Pickup_mmg_alt_rf", "a3u_black_Pickup_mmg_frame_rf"];
+    _vehiclesCivCar append ["C_Pickup_rf", "C_Pickup_covered_rf"];
+    _civHelicopters append ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF"];
+    _vehiclesLightArmed append ["a3u_black_Pickup_mmg_alt_rf", "a3u_black_Pickup_mmg_frame_rf"];
     _vehiclesLightUnarmed append ["a3a_black_Pickup_rf"];
 };
 
@@ -111,93 +111,7 @@ if (_hasGM) then {
 };
 
 if (_hasCSLA) then {
-    _staticMG append ["AFMC_infFALf", "AFMC_M2l","CSLA_UK59L_Stat","CSLA_UK59T_Stat"];
-    _staticAT append ["AFMC_TOW_Stat", "CSLA_rT21","CSLA_9K113_Stat"];
-    _staticAA pushback "CSLA_PLdvK59_Stat";
-    _vehiclePlane pushBack "CSLA_CIV_An2_1";
-    _vehiclesCivCar append ["CSLA_CIV_Sarka1200","CSLA_CIV_ADA1600","CSLA_CIV_AZU","CSLA_civ_CATOR"];
-    _CivTruck append ["CSLA_CIV_V3S"];
-    _VehTruck append ["CSLA_F813o", "CSLA_F813"];
-    _vehiclesLightUnarmed append ["US85_M1008c","US85_M1008","US85_M1025_ua","US85_M1043_ua","FIA_AZU_para","CSLA_AZU_R2","CSLA_AZU"];
-    _vehiclesLightArmed append ["US85_M1025_M2","US85_M1025_M60","US85_M1043_M2","US85_M1043_M60","US85_M998SFGT","FIA_AZU_DSKM"];
-    _vehiclesAt pushback "FIA_AZU_T21";
-    _vehiclesBasic append ["CSLA_CIV_JARA250","US85_TT650"];
-    _vehicleAA pushBack "CSLA_PLdvK59V3S";
-    _CivBoat pushback "CSLA_lodka";
-};
-
-["staticMGs", _staticMG] call _fnc_saveToTemplate;
-["staticAT", _staticAT] call _fnc_saveToTemplate;
-["vehiclesCivHeli", _civHelicopters] call _fnc_saveToTemplate;
-["vehiclesBasic", _vehiclesBasic] call _fnc_saveToTemplate;
-["vehiclesPlane", _vehiclePlane] call _fnc_saveToTemplate;
-["vehiclesCivTruck", _CivTruck] call _fnc_saveToTemplate;
-["vehiclesCivHeli", _vehiclesCivHeli] call _fnc_saveToTemplate;
-["vehiclesTruck", _VehTruck] call _fnc_saveToTemplate;
-["vehiclesCivBoat", _CivBoat] call _fnc_saveToTemplate;
-["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
-["staticAA", _staticAA] call _fnc_saveToTemplate;
-["staticMortars", _staticMortars] call _fnc_saveToTemplate;
-["vehiclesCivCar", _vehiclesCivCar] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", _vehiclesLightUnarmed] call _fnc_saveToTemplate;
-["vehiclesLightArmed", _vehiclesLightArmed] call _fnc_saveToTemplate;
-["vehiclesAT", _vehiclesAt] call _fnc_saveToTemplate;
-
-//////////////////////////////////////
-//       Antistasi Plus Stuff       //
-//////////////////////////////////////
-
-//classname, price, type, availability condition
-if (_hasApex) then {
-    _vehiclesCivCar pushBack "C_Offroad_02_unarmed_F";
-    _vehiclesLightUnarmed pushBack "I_C_Offroad_02_unarmed_F";
-    _vehiclesLightArmed pushBack "I_C_Offroad_02_LMG_F";
-    _vehiclesAt pushBack "I_C_Offroad_02_AT_F";
-    _CivBoat append ["C_Boat_Transport_02_F", "C_Scooter_Transport_01_F"];
-};
-
-if (_hasLawsOfWar) then {
-    _CivTruck append ["C_Van_02_vehicle_F", "C_Van_02_transport_F"];
-    _VehTruck append ["I_G_Van_02_transport_F", "I_G_Van_02_vehicle_F"];
-    _vehiclesLightUnarmed pushBack "I_C_Offroad_02_unarmed_F";
-    _vehiclesLightArmed pushBack "I_C_Offroad_02_LMG_F";
-    _vehiclesAt pushBack "I_C_Offroad_02_AT_F";
-};
-
-if (_hasContact) then {
-    _vehiclesCivCar append ["C_Offroad_01_covered_F", "C_Offroad_01_comms_F", "C_Tractor_01_F"];
-};
-
-if (_hasWs) then {
-    _CivTruck append ["C_Truck_02_cargo_lxWS", "C_Truck_02_flatbed_lxWS"];
-    _vehiclesCivCar append ["C_Offroad_lxWS","C_Truck_02_racing_lxWS"];
-    _vehiclesLightUnarmed pushBack "I_G_Offroad_01_armor_base_lxWS";
-    _vehiclesLightArmed pushBack "I_G_Offroad_01_armor_armed_lxWS";
-    _vehiclesAt pushBack "I_G_Offroad_01_armor_AT_lxWS";
-    _vehicleAA pushBack "I_Tura_Truck_02_aa_lxWS";
-    _staticAA = ["I_Tura_ZU23_lxWS"];
-};
-
-if (_hasKart) then {
-    _vehiclesCivCar pushBack "C_Kart_01_F";
-};
-
-if (_hasGM) then {
-    _staticMG append ["gm_dk_army_mg3_aatripod", "gm_gc_army_dshkm_aatripod", "gm_gc_bgs_searchlight_01"];
-    _staticAT append ["gm_ge_army_milan_launcher_tripod", "gm_gc_army_fagot_launcher_tripod", "gm_gc_army_spg9_tripod"];
-    _civHelicopters append ["gm_gc_civ_mi2p", "gm_ge_adak_bo105m_vbh"];
-    _vehiclePlane append ["gm_gc_civ_l410s_passenger", "gm_gc_civ_l410s_salon" , "gm_ge_airforce_do28d2"];
-    _vehiclesCivCar append ["gm_ge_civ_typ1200","gm_gc_civ_p601","gm_ge_civ_typ253","gm_ge_civ_w123""gm_xx_civ_bicycle_01","gm_ge_dbp_bicycle_01_ylw"];
-    _CivTruck append ["gm_gc_civ_ural375d_cargo", "gm_ge_civ_u1300l", "gm_ge_civ_typ247", "gm_ge_civ_typ251"];
-    _VehTruck append ["gm_pl_army_ural4320_cargo","gm_ge_army_kat1_451_container","gm_dk_army_u1300l_container","gm_ge_army_kat1_451_cargo"];
-    _vehiclesLightUnarmed append ["gm_ge_army_iltis_cargo","gm_pl_army_uaz469_cargo"];
-    _vehiclesLightArmed append ["gm_pl_army_uaz469_dshkm","gm_ge_army_iltis_mg3"];
-    _vehiclesAt append ["gm_gc_bgs_uaz469_spg9","gm_ge_army_iltis_milan"];
-    _vehiclesBasic append ["gm_ge_army_k125"];
-};
-
-if (_hasCLSA) then {
-    _staticMG append ["AFMC_infFALf", "AFMC_M2l","CSLA_UK59L_Stat","CSLA_UK59T_Stat"];
+    _staticMG append ["AFMC_M2h", "AFMC_M2l","CSLA_UK59L_Stat","CSLA_UK59T_Stat"];
     _staticAT append ["AFMC_TOW_Stat", "CSLA_rT21","CSLA_9K113_Stat"];
     _staticAA pushback "CSLA_PLdvK59_Stat";
     _vehiclePlane pushBack "CSLA_CIV_An2_1";
@@ -245,7 +159,7 @@ private _shopTanks = if (_hasTanks) then {
 };
 private _shopApex = if (_hasApex) then {
     [
-        ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
+        ["O_T_UAV_04_CAS_F", 20000, "UAV", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
     ]
 } else {
     []
@@ -253,7 +167,7 @@ private _shopApex = if (_hasApex) then {
 private _shopWs = if (_hasWs) then {
     [
         ["I_UAV_02_lxWS", 3500, "UAV", {tierWar > 2}], 
-        ["I_G_UAV_02_IED_lxWS", 4500, "UAV", {tierWar > 3}]
+        ["I_G_UAV_02_IED_lxWS", 4500, "UAV", {tierWar > 3}],
         ["B_D_APC_Wheeled_01_mortar_lxWS", 25000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
         ["B_ION_APC_Wheeled_01_command_lxWS", 6000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
         ["O_SFIA_APC_Wheeled_02_unarmed_lxWS", 2000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
@@ -348,7 +262,7 @@ private _shopGM = if (_hasGM) then {
     []
 };
 
-private _shopCLSA = if (_hasCLSA) then {
+private _shopCLSA = if (_hasCSLA) then {
     [
     ["AFMC_M252_Stat", 5000, "STATICMORTAR", {tierWar > 3}],
     ["CSLA_M52_Stat", 4000, "STATICMORTAR", {tierWar > 3}],
@@ -464,6 +378,7 @@ if (_hasApex) then {
     ];
 };
 
+
 if (_hasGM) then {
     _initialRebelEquipment append [
         "gm_pm_blk",
@@ -479,8 +394,9 @@ if (_hasGM) then {
         "gm_smokeshell_red_dm23","gm_smokeshell_wht_dm25","gm_smokeshell_yel_dm26","gm_smokeshell_org_dm32",
         ["gm_explosive_petn_charge", 10], ["gm_explosive_plnp_charge", 10],
         "gm_boltcutter",
-        ["launch_RPG7_F", 3], 
-        ["RPG7_F", 9]
+        ["gm_rpg7_wud", 3], 
+        ["gm_1Rnd_40mm_heat_pg7v_rpg7", 9],
+        ["gm_1Rnd_40mm_heat_pg7vl_rpg7", 9]
     ];
 };
 

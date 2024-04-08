@@ -115,11 +115,12 @@ if (_hasCSLA) then {
 };
 
 if (_hasRF) then {
-    _civCarsWithWeights append ["C_Pickup_rf", 2.0, "C_Pickup_covered_rf", 0.1];
+    _civCarsWithWeights append ["C_Pickup_rf", 1.0, "C_Pickup_covered_rf", 0.5];
     _civRepair append ["C_Pickup_repair_rf", 0.3];
     _civFuel append ["a3a_civ_Pickup_fuel_rf", 0.1];
 };
 
+["vehiclesCivCar", _civCarsWithWeights] call _fnc_saveToTemplate;
 ["vehiclesCivHeli", _civHelicopter] call _fnc_saveToTemplate;
 ["vehiclesCivIndustrial", _civIndustrial] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", _civBoat] call _fnc_saveToTemplate;
