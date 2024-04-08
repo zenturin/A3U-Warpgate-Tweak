@@ -596,7 +596,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
             //};
         } forEach units _heliInfGroup;
         [_cargoVehicle2driver] join _heliInfGroup;
-        _cargoVehicle2driver assignAsDriver _cargoVehicle2
+        _cargoVehicle2driver assignAsDriver _cargoVehicle2;
         if (_searchHeliClass isNotEqualTo []) then {
             _heliInfWp1 = _heliInfGroup addWaypoint [_cargoVehicle2, 0];
             _heliInfWp1 setWaypointType "GETIN";
