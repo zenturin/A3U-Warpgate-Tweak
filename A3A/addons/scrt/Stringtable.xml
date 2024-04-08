@@ -1164,54 +1164,63 @@
                 <Russian>Лёгкие и тяжелые фортификации могут быть построены только вне дорог, а также в дружественных зонах.</Russian>
                 <Chinesesimp>轻型和重型防御工事只能建在友好地区的公路旁。</Chinesesimp>
                 <Korean>경량과 중량 요새화 진지는 우호적인 지역의 오프로드에서만 건설 가능합니다.</Korean>
+                <French>Les fortifications légères et lourdes ne peuvent être construites qu'en dehors des routes, dans des zones amies.</French>
             </Key>
             <Key ID="STR_veh_callback_constructions_rb">
                 <Original>Roadblocks can only be built on roads.</Original>
                 <Russian>Блокпосты могут быть построены только на дорогах.</Russian>
                 <Chinesesimp>轻型和重型防御工事只能建在友好地区的公路旁。</Chinesesimp>
                 <Korean>경량과 중량 요새화 진지는 우호적인 지역의 오프로드에서만 건설 가능합니다.</Korean>
+                <French>Les barrages routiers ne peuvent être construits que sur des routes.</French>
             </Key>
             <Key ID="STR_veh_callback_placement_text">
                 <Original>&lt;t size='0.6'&gt;Select %1 position.&lt;br/&gt;Price: %2%3&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Выберите позицию для %1.&lt;br/&gt;Цена: %2%3&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;选择 %1 位置。&lt;br/&gt;价格: %2%3&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6' color='#008000'&gt;집결 지점&lt;/t&gt; 위치를&lt;t size='0.6'&gt;선택하십시오&lt;/t&gt;.&lt;br/&gt;가격: %1%2&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Sélectionnez %1 position.&lt;br/&gt;Prix : %2%3&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_veh_callback_placement_text_additive_lootcrate">
                 <Original>loot crate</Original>
                 <Russian>ящика-сборщика добычи</Russian>
                 <Chinesesimp>战利品箱</Chinesesimp>
                 <Korean>전리품 상자</Korean>
+                <French>caisse de butin</French>
             </Key>
             <Key ID="STR_veh_callback_placement_text_additive_revivekitbox">
                 <Original>box with Combat Readiness Recovery kits</Original>
                 <Russian>ящика c наборами восстановления боеспособности</Russian>
                 <Chinesesimp>装有战备恢复包的盒子</Chinesesimp>
                 <Korean>전투 준비 복구 키트가 든 상자</Korean>
+                <French>boîte contenant des kits de récupération pour la préparation au combat</French>
             </Key>
             <Key ID="STR_dialogs_RP_select_pos">
                 <Original>&lt;t size='0.6'&gt;Select &lt;t size='0.6' color='#008000'&gt;rally point&lt;/t&gt; position.&lt;br/&gt;Cost: %1%2&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Выберите позицию для &lt;t size='0.6' color='#008000'&gt;точки сбора.&lt;/t&gt;&lt;br/&gt;Стоимость: %1%2&lt;br/&gt;&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;选择 &lt;t size='0.6' color='#008000'&gt;集结点&lt;/t&gt; 费用。&lt;br/&gt;Cost: %1%2&lt;/t&gt;</Chinesesimp>
                 <Korean>탄약 재포장 키 설정이 다음 키로 초기화 되었습니다:</Korean>
+                <French>&lt;t size='0.6'&gt;Select &lt;t size='0.6' color='#008000'&gt;point de ralliement&lt;/t&gt; position.&lt;br/&gt;Coût: %1%2&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_veh_callback_constructions_text">
                 <Original>&lt;t size='0.6'&gt;Select construction position.&lt;br/&gt;Price: %1%2&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Выберите позицию для постройки.&lt;br/&gt;Цена: %1%2&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;选择施工位置。&lt;br/&gt;价格: %1%2&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;건설 위치를 선택하십시오.&lt;br/&gt;가격: %1%2&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Sélectionner la position de construction.&lt;br/&gt;Prix: %1%2&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_veh_callback_select_veh_generic">
                 <Original>&lt;t size='0.6'&gt;Select vehicle position.&lt;br/&gt;Price: %1%2&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Выберите позицию для транспортного средства.&lt;br/&gt;Цена: %1%2&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;选择载具位置。&lt;br/&gt;价格: %1%2&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;차량 위치를 선택하십시오.&lt;br/&gt;가격: %1%2&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Sélectionner la position du véhicule.&lt;br/&gt;Prix: %1%2&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_veh_callback_arms_dealer_close">
                 <Original>You need to be close to the Arms Dealer to be able to purchase a vehicle.</Original>
                 <Russian>Вы должны стоять близко к оружейному торговцу, чтобы иметь возможность покупать технику.</Russian>
                 <Chinesesimp>您需要靠近军火商才能购买车辆。</Chinesesimp>
                 <Korean>차량을 구매하려면 암거래상과 가까이 있어야 합니다.</Korean>
+                <French>Vous devez être proche du concessionnaire d'armes pour pouvoir acheter un véhicule.</French>
             </Key>
         </Container>
         <Container name="comms_mp">
@@ -2158,60 +2167,70 @@
                 <Russian>Перемещение к точке сбора, время перемещения: %1 сек, пожалуйста, подождите...</Russian>
                 <Chinesesimp>前往集合点，旅行时间：%1s，请稍候...</Chinesesimp>
                 <Korean>집결 지점으로 빠른 이동 중, 이동 시간: %1초, 잠시 기다려 주십시오...</Korean>
+                <French>Voyage vers le point de ralliement, durée du voyage : %1s, veuillez patienter...</French>
             </Key>
             <Key ID="STR_cut_RP_FT_success">
                 <Original>You have arrived to rally point.</Original>
                 <Russian>Вы прибыли на точку сбора.</Russian>
                 <Chinesesimp>您已到达集结点。</Chinesesimp>
                 <Korean>집결 지점에 도착했습니다.</Korean>
+                <French>Vous êtes arrivés au point de rassemblement.</French>
             </Key>
             <Key ID="STR_cut_text_init_waiting">
                 <Original>Waiting for players and server init...</Original>
                 <Russian>Ожидание игроков и инициализации сервера...</Russian>
                 <Chinesesimp>等待玩家和服务器初始化...</Chinesesimp>
                 <Korean>플레이어 및 서버 초기화를 기다리는 중...</Korean>
+                <French>En attente de joueurs et du démarrage du serveur...</French>
             </Key>
             <Key ID="STR_cut_text_init_mission">
                 <Original>Starting Mission...</Original>
                 <Russian>Начинаем миссию...</Russian>
                 <Chinesesimp>开始任务...</Chinesesimp>
                 <Korean>임무 시작 중...</Korean>
+                <French>Début de la mission...</French>
             </Key>
             <Key ID="STR_hints_FT_NATO">
                 <Original>Fast traveling, please wait...</Original>
                 <Russian>Быстрое путешествие, пожалуйста, подождите...</Russian>
                 <Chinesesimp>正在快速旅行，请稍候...</Chinesesimp>
                 <Korean>빠른 이동 중, 잠시만 기다려 주십시오...</Korean>
+                <French>Voyage rapide, veuillez patienter...</French>
             </Key>
             <Key ID="STR_hints_FT_timer">
                 <Original>Fast traveling, travel time: %1s, please wait...</Original>
                 <Russian>Быстрое путешествие, время путешествия: %1 секунд, пожалуйста, подождите...</Russian>
                 <Chinesesimp>快速行驶，行驶时间：%1s，请稍候...</Chinesesimp>
                 <Korean>빠른 이동 중, 이동 시간: %1초, 잠시 기다려 주십시오...</Korean>
+                <French>Voyage rapide, durée du voyage : %1s, veuillez patienter...</French>
             </Key>
             <Key ID="STR_hints_FT_dest">
                 <Original>You have arrived at the destination.</Original>
                 <Russian>Вы прибыли к месту назначения.</Russian>
                 <Chinesesimp>您已到达目的地。</Chinesesimp>
                 <Korean>목적지에 도착했습니다.</Korean>
+                <French>Vous êtes arrivé à destination.</French>
             </Key>
             <Key ID="STR_cut_text_paradrop_notification_1">
                 <Original>&lt;t color='#d3d9df' size='2'&gt;Commander uses paradrop insertion at some location. You're about to be moved into plane in %1 seconds. Press ESCAPE if you don't want to be moved into airplane. Parachutes will be automatically applied on jump from plane.&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#d3d9df' size='2'&gt;Командир испольует десантирование с парашютами на определенную позицию. Вас переместит в самолёт через %1 секунд. Нажмите ESCAPE если вы не хотите перемещаться в самолёт и остаться на земле. Парашют будет автоматически прикреплен после прыжка с парашютом, нет нужды его брать отдельно.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#d3d9df' size='2'&gt;指挥官在某些位置使用集体空投。 您将在 %1 秒后进入飞机。 如果您不想进入飞机，请按 ESCAPE ，跳伞时降落伞会自动携带，不需要自己带。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#d3d9df' size='2'&gt;지휘관이 특정 위치에 공수강하 진입을 사용합니다. %1초 후에 비행기로 이동합니다. 비행기 안으로 이동하지 않으려면 ESC를 누르십시오. 낙하산은 비행기에서 점프할 때 자동으로 펼쳐집니다.&lt;/t&gt;</Korean>
+                <French>&lt;t color='#d3d9df' size='2'&gt;Le commandant utilise l'insertion de paradrop à un endroit donné. Vous allez être déplacé dans l'avion dans %1 secondes. Appuyez sur ESCAPE si vous ne voulez pas être déplacé dans l'avion. Les parachutes seront automatiquement appliqués lors du saut de l'avion.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_cut_text_paradrop_notification_2">
                 <Original>&lt;t color='#d3d9df' size='2'&gt;You will stay at HQ.&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#d3d9df' size='2'&gt;Вы останетесь у штаба.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#d3d9df' size='2'&gt;你会留在总部。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#d3d9df' size='2'&gt;당신은 본부에 남을 것입니다.&lt;/t&gt;</Korean>
+                <French>&lt;t color='#d3d9df' size='2'&gt;Vous resterez au QG.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_cut_text_paradrop_notification_3">
                 <Original>&lt;t color='#d3d9df' size='2'&gt;You have been moved to airplane to attend in paradrop.&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#d3d9df' size='2'&gt;Вы были перемещены в самолёт для принятия участия в парашютной высадке.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#d3d9df' size='2'&gt;您已被转移到飞机上以参加空降。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#d3d9df' size='2'&gt;공수강하에 참여하기 위해 비행기로 이동하였습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t color='#d3d9df' size='2'&gt;Vous avez été déplacé vers l'avion pour assister à paradrop.&lt;/t&gt;</French>
             </Key>
         </Container>
         <Container name="hints">
@@ -4742,6 +4761,7 @@
                 <Russian>Включить наборы восстановления боеспособности</Russian>
                 <Chinesesimp>启用战备恢复包</Chinesesimp>
                 <Korean>전투 준비 복구 키트 활성화</Korean>
+                <French>Activé les kits de récupération pour la préparation au combat</French>
             </Key>
             <Key ID="STR_params_lootCrateHeli">
                 <Original>Enable loot gather crates and loot helicopter commander ability</Original>
