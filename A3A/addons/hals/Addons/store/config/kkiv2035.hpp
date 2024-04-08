@@ -1,4 +1,4 @@
-class sniperRiflesVanilla 
+class sniperRiflesKkiv2035 
 		{
 			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Kkiv2035", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
@@ -7,9 +7,9 @@ class sniperRiflesVanilla
 
 		};
 
-class magazinesVanilla 
+class magazinesKkiv2035 
 		{
-			displayName = __EVAL(formatText["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_magazines"]);
+			displayName = __EVAL(formatText["%1 %2", localize "STR_A3AU_Kkiv2035", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			///////////////////////////////////////////////////////

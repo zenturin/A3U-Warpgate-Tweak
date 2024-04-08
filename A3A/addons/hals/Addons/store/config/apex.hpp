@@ -95,11 +95,10 @@
 
 		class smgApex  
 		{
-			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Apex ", localize "STR_A3AU_smgs"]);
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Apex", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SMG_05_F, 200, RIFLE_STOCK);
-
 		};
 
 		class launchersApex

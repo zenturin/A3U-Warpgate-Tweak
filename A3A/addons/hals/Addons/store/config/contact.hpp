@@ -122,8 +122,7 @@
 
 			ITEM(muzzle_antenna_01_f, 500, MZ_STOCK); //should be different prices after added functionality
 			ITEM(muzzle_antenna_02_f, 500, MZ_STOCK);
-			ITEM(muzzle_antenna_03_f, 500, MZ_STOCK);
-
+			ITEM(muzzle_antenna_03_f, 500, MZ_STOCK);///doesn't show up for some reason
 		};
 
 		class opticsContact 
@@ -366,7 +365,7 @@
 
 			ITEM(H_HelmetB_light_wdl, 700, MISC_STOCK);
 			ITEM(H_HelmetB_plain_wdl, 750, MISC_STOCK);
-			ITEM(H_HelmetSpecB_wd, 900, MISC_STOCK);
+			ITEM(H_HelmetSpecB_wdl, 900, MISC_STOCK);
 
 			ITEM(G_RegulatorMask_F, 200, MISC_STOCK);
 			ITEM(G_AirPurifyingRespirator_01_F, 200, MISC_STOCK);

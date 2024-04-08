@@ -161,7 +161,7 @@
 
 		};
 
-		class navigationVanilla 
+		class navigationVanilla
 		{
 			displayName = __EVAL(formatText ["%1 %2, %3 %4 %5", localize "STR_A3AU_Vanilla", localize "STR_A3AU_gps", localize "STR_A3AU_binoculars", localize "STR_A3AU_and", localize "STR_A3AU_nvgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
@@ -730,11 +730,11 @@
 
 			ITEM(U_I_FullGhillie_lsh, 1000, MISC_STOCK);
 			ITEM(U_B_FullGhillie_lsh, 1000, MISC_STOCK);
-			ITEM(U_0_FullGhillie_lsh, 3000, MISC_STOCK);
+			ITEM(U_O_FullGhillie_lsh, 3000, MISC_STOCK);
 
 			ITEM(U_I_FullGhillie_sard, 1000, MISC_STOCK);
 			ITEM(U_B_FullGhillie_sard, 1000, MISC_STOCK);
-			ITEM(U_0_FullGhillie_sard, 3000, MISC_STOCK);
+			ITEM(U_O_FullGhillie_sard, 3000, MISC_STOCK);
 
 			ITEM(U_I_GhillieSuit, 750, MISC_STOCK);
 			ITEM(U_O_GhillieSuit, 1500, MISC_STOCK);
