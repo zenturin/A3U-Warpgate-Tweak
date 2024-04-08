@@ -64,6 +64,7 @@ class cfgHALsStore
 		#include "config\kart.hpp"
 		#include "config\tanks.hpp"
 		#include "config\artofwar.hpp"
+		#include "config\kkiv2035.hpp"
 		#include "config\vn.hpp"
 		#include "config\wrs.hpp"
 		#include "config\ws.hpp"
