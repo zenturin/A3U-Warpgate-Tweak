@@ -45,10 +45,10 @@ class traderMods
         addons[] = {"A3_Weapons_F_Tank"};
         prefix = "tanks";
     };
-    class kkiv : base
+    class kkiv2035 : base
     {
         addons[] = {"Kio_Kkiv_2035"};
-        prefix = "kkiv";
+        prefix = "kkiv2035";
     };
     class aegis : base
     {
