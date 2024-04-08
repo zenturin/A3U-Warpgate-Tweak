@@ -2957,636 +2957,742 @@
                 <Russian>Миномёт поддержки уничтожен</Russian>
                 <Chinesesimp>迫击炮支援被摧毁</Chinesesimp>
                 <Korean>박격포 지원이 파괴되었습니다</Korean>
+                <French>Support de mortier détruit</French>
             </Key>
             <Key ID="STR_notifiers_mortar_crew_killed">
                 <Original>Mortar Support crew killed</Original>
                 <Russian>Экипаж миномёта поддержки учичтожен</Russian>
                 <Chinesesimp>迫击炮支援人员阵亡</Chinesesimp>
                 <Korean>박격포 지원 사수가 죽었습니다</Korean>
+                <French>L'équipe de soutien du mortier a été tuée</French>
             </Key>
             <Key ID="STR_notifiers_gunship_killed">
                 <Original>Gunship Destroyed</Original>
                 <Russian>Летающая батарея поддержки уничтожена</Russian>
                 <Chinesesimp>直升机被摧毁</Chinesesimp>
                 <Korean>건쉽이 파괴되었습니다</Korean>
+                <French>Soutien aérien Détruit</French>
             </Key>
             <Key ID="STR_notifiers_orbitalStrike_destruct">
                 <Original>%1 destroyed</Original>
                 <Russian>%1 уничтожен</Russian>
                 <Chinesesimp>%1 已摧毁</Chinesesimp>
                 <Korean>%1이(가) 파괴되었습니다</Korean>
+                <French>%1 détruit</French>
             </Key>
             <Key ID="STR_notifiers_cas_killed">
                 <Original>CAS Aircraft Destroyed</Original>
                 <Russian>Авиация поддержки с воздуха уничтожена</Russian>
                 <Chinesesimp>CAS 飞机被毁</Chinesesimp>
                 <Korean>근접지원항공기가 파괴되었습니다</Korean>
+                <French>Avion CAS détruit</French>
             </Key>
             <Key ID="STR_notifiers_cas_crew_killed">
                 <Original>CAS aircraft crew killed</Original>
                 <Russian>Экипаж авиации поддержки с воздуха уничтожен</Russian>
                 <Chinesesimp>CAS 机组人员阵亡</Chinesesimp>
                 <Korean>근접지원항공기 조종사가 죽었습니다</Korean>
+                <French>L'équipage de l'avion de combat est mort</French>
             </Key>
             <Key ID="STR_notifiers_fighter_killed">
                 <Original>Fighter Destroyed</Original>
                 <Russian>Истребитель-перехватчик уничтожен</Russian>
                 <Chinesesimp>战斗机被摧毁</Chinesesimp>
                 <Korean>전투기가 파괴되었습니다</Korean>
+                <French>Chasseur détruit</French>           
             </Key>
             <Key ID="STR_notifiers_fighter_crew_killed">
                 <Original>Fighter crew killed</Original>
                 <Russian>Экипаж истребитель-перехватчика уничтожен</Russian>
                 <Chinesesimp>战斗机机组人员阵亡</Chinesesimp>
                 <Korean>전투기 조종사가 죽었습니다</Korean>
+                <French>L'équipage du chasseur est mort</French>
             </Key>
             <Key ID="STR_notifiers_airstrike_vessel_crew_killed">
                 <Original>Airstrike vessel crew killed</Original>
                 <Russian>Экипаж самолёта авиаудара уничтожен</Russian>
                 <Chinesesimp>空袭机组人员遇难</Chinesesimp>
                 <Korean>공습함선 조종사가 죽었습니다</Korean>
+                <French>L'équipage d'un navire d'attaque aérienne tué</French>
             </Key>
             <Key ID="STR_notifiers_airstrike_vessel_killed">
                 <Original>Airstrike Vessel Destroyed</Original>
                 <Russian>Самолёт авиаудара уничтожен</Russian>
                 <Chinesesimp>空袭机被摧毁</Chinesesimp>
                 <Korean>공습함선이 파괴되었습니다</Korean>
+                <French>Destruction d'un navire de frappe aérienne</French>
             </Key>
             <Key ID="STR_notifiers_airdrop_killed">
                 <Original>Airdrop Plane Destroyed</Original>
                 <Russian>Парашютно-десантный самолёт уничтожен</Russian>
                 <Chinesesimp>空投飞机被摧毁</Chinesesimp>
                 <Korean>공수 항공기가 파괴되었습니다</Korean>
+                <French>Destruction d'un avion de parachutage</French>
             </Key>
             <Key ID="STR_notifiers_airdrop_crew_killed">
                 <Original>Airdrop plane crew killed</Original>
                 <Russian>Экипаж парашютно-десантного самолёта уничтожен</Russian>
                 <Chinesesimp>空投机组人员阵亡</Chinesesimp>
                 <Korean>공수 항공기 조종사가 죽었습니다</Korean>
+                <French>L'équipage d'un avion de parachutage est mort</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_marker">
                 <Original>%1. Target marked on map!</Original>
                 <Russian>%1. Цель отмечена на карте!</Russian>
                 <Chinesesimp>%1。目标在地图上被标记！</Chinesesimp>
                 <Korean>%1. 목표가 지도에 표시되었습니다!</Korean>
+                <French>%1. Cible marquée sur la carte !</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_QRF">
                 <Original>A land %1 QRF just arrived</Original>
                 <Russian>Наземные силы быстрого реагирования %1 прибыли</Russian>
                 <Chinesesimp>%1 地面快速反应部队到达</Chinesesimp>
                 <Korean>%1의 지상 신속대응군이 방금 도착했습니다</Korean>
+                <French>QRF terrestre %1 vient d'arriver</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_QRF_marker">
                 <Original>Land QRF</Original>
                 <Russian>Наземные СБР</Russian>
                 <Chinesesimp>地面快速反应部队</Chinesesimp>
                 <Korean>지상 신속대응군</Korean>
+                <French>QRF terrestre</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_QRFAir">
                 <Original>A %1 air QRF just arrived</Original>
                 <Russian>Десантные силы быстрого реагирования %1 прибыли</Russian>
                 <Chinesesimp>%1 空中快速反应部队到达</Chinesesimp>
                 <Korean>%1의 공수부대 신속대응군이 방금 도착했습니다</Korean>
+                <French>Une QRF aérienne %1 vient d'arriver</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_QRFAir_marker">
                 <Original>Air QRF</Original>
                 <Russian>Десантные СБР</Russian>
                 <Chinesesimp>空中快速反应部队</Chinesesimp>
                 <Korean>공수부대 신속대응군</Korean>
+                <French>QRF aérienne</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_QRFAirdrop">
                 <Original>A %1 air mechanized QRF just arrived</Original>
                 <Russian>Десантные механизированные силы быстрого реагирования %1 прибыли</Russian>
                 <Chinesesimp>%1 空中机械化快速反应部队到达</Chinesesimp>
                 <Korean>%1의 공수 기계화 신속대응군이 방금 도착했습니다</Korean>
+                <French></French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_QRFAirdrop_marker">
                 <Original>Mechanized Air QRF</Original>
                 <Russian>Десантные мех. СБР</Russian>
                 <Chinesesimp>机械化空中快速反应部队</Chinesesimp>
                 <Korean>공수 기계화 신속대응군</Korean>
+                <French>Une %1 QRF mécanisée aérienne vient d'arriver</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_airstrike">
                 <Original>%1 is about to execute an airstrike</Original>
                 <Russian>%1 собирается нанести авиаудар</Russian>
                 <Chinesesimp>%1 即将执行空袭</Chinesesimp>
                 <Korean>%1이(가) 공습을 실행하려고 합니다</Korean>
+                <French>%1 est sur le point d'exécuter une frappe aérienne</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_airstrike_marker">
                 <Original>Airstrike</Original>
                 <Russian>Авиудар</Russian>
                 <Chinesesimp>空袭</Chinesesimp>
                 <Korean>공습</Korean>
+                <French>Frappe aérienne</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_artillery">
                 <Original>A %1 artillery piece has opened fire</Original>
                 <Russian>Артиллерийское орудие %1 открыло огонь</Russian>
                 <Chinesesimp>%1 炮兵部队开火了</Chinesesimp>
                 <Korean>%1의 포탄이 발사되었습니다</Korean>
+                <French>Une %1 pièce d'artillerie a ouvert le feu</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_artillery_marker">
                 <Original>Artillery strike</Original>
                 <Russian>Артиллерийский удар</Russian>
                 <Chinesesimp>炮击</Chinesesimp>
                 <Korean>포격</Korean>
+                <French>Frappe d'artillerie</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_mortar">
                 <Original>A %1 mortar has opened fire</Original>
                 <Russian>Миномёт %1 открыл огонь</Russian>
                 <Chinesesimp>%1 迫击炮已经开火</Chinesesimp>
                 <Korean>%1의 박격포가 발사되었습니다</Korean>
+                <French>Un mortier %1 a ouvert le feu</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_mortar_marker">
                 <Original>Mortar strike</Original>
                 <Russian>Миномётный удар</Russian>
                 <Chinesesimp>迫击炮打击</Chinesesimp>
                 <Korean>박격포 포격</Korean>
+                <French>Frappe de mortier</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_howitzer">
                 <Original>A %1 howitzer has opened fire</Original>
                 <Russian>Лёгкая гаубица %1 открыла огонь</Russian>
                 <Chinesesimp>%1 榴弹炮开火了</Chinesesimp>
                 <Korean>%1의 야포가 발사되었습니다</Korean>
+                <French>Un obusier %1 a ouvert le feu</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_howitzer_marker">
                 <Original>Howitzer strike</Original>
                 <Russian>Гаубичный удар</Russian>
                 <Chinesesimp>榴弹炮炮击</Chinesesimp>
                 <Korean>야포 포격</Korean>
+                <French>Attaque d'obusier</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_orbitalStrike">
                 <Original>A %1 satellite has fired the orbital strike</Original>
                 <Russian>Спутник %1 нанёс орбитальный удар</Russian>
                 <Chinesesimp>%1 卫星发射了轨道攻击</Chinesesimp>
                 <Korean>%1의 위성이 궤도 폭격을 시작했습니다</Korean>
+                <French>Un satellite %1 a lancé la frappe orbitale</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_orbitalStrike_marker">
                 <Original>Orbital strike</Original>
                 <Russian>Орбитальный удар</Russian>
                 <Chinesesimp>轨道打击</Chinesesimp>
                 <Korean>궤도 폭격</Korean>
+                <French>Frappe orbitale</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_cruise_missile">
                 <Original>%1 cruise missile launched</Original>
                 <Russian>Крылатая ракета %1 запущена</Russian>
                 <Chinesesimp>%1 巡航导弹发射</Chinesesimp>
                 <Korean>%1의 순항미사일이 발사되었습니다</Korean>
+                <French>%1 missile de croisière lancé</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_cruise_missile_marker">
                 <Original>Cruise missile</Original>
                 <Russian>Удар крылатой ракетой</Russian>
                 <Chinesesimp>巡航导弹</Chinesesimp>
                 <Korean>순항미사일</Korean>
+                <French>Missile de croisière</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_SAM">
                 <Original>%1 SAM launcher is acquiring a target</Original>
                 <Russian>ЗРК %1 наводится на цель</Russian>
                 <Chinesesimp>%1 SAM 正在锁定目标</Chinesesimp>
                 <Korean>%1의 지대공미사일이 발사되었습니다</Korean>
+                <French>%1 Le lanceur SAM est en train d'acquérir une cible</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_SAM_marker">
                 <Original>SAM target</Original>
                 <Russian>Цель ЗРК</Russian>
                 <Chinesesimp>地对空导弹目标</Chinesesimp>
                 <Korean>지대공미사일 목표</Korean>
+                <French>Cible SAM</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_carpet_bombing">
                 <Original>%1 bomber is carrying out a carpet bombing</Original>
                 <Russian>Бомбардировщик %1 осуществляет ковровую бомбардировку</Russian>
                 <Chinesesimp>%1 轰炸机正在进行地毯式轰炸</Chinesesimp>
                 <Korean>%1의 폭격기가 융단폭격을 수행 중입니다</Korean>
+                <French>%1 bombardier effectue un bombardements</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_carpet_bombing_marker">
                 <Original>Carpet bombing</Original>
                 <Russian>Ковровая бомбардировка</Russian>
                 <Chinesesimp>轰炸机地毯轰炸</Chinesesimp>
                 <Korean>융단폭격</Korean>
+                <French>Bombardements</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_ASF">
                 <Original>A %1 fighter started chasing a target</Original>
                 <Russian>Истребитель %1 начал преследовать цель</Russian>
                 <Chinesesimp>%1 战斗机开始追击目标</Chinesesimp>
                 <Korean>%1의 전투기가 목표물을 추격하기 시작했습니다</Korean>
+                <French>Un chasseur %1 a commencé à poursuivre une cible</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_ASF_target">
                 <Original>Air superiority target</Original>
                 <Russian>Цель истребителя</Russian>
                 <Chinesesimp>战斗机追击目标</Chinesesimp>
                 <Korean>제공전투기</Korean>
+                <French>Objectif de supériorité aérienne</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_CAS">
                 <Original>A %1 CAS aircraft is acquiring a target</Original>
                 <Russian>Авиация непосредственной поддержки %1 ищет цель</Russian>
                 <Chinesesimp>%1 近程空中支援飞机正在瞄准目标</Chinesesimp>
                 <Korean>%1의 근접지원항공기가 표적을 획득 중입니다</Korean>
+                <French>Un avion CAS %1 est en train d'acquérir une cible</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_CAS_marker">
                 <Original>CAS target</Original>
                 <Russian>Цель поддержки с воздуха</Russian>
                 <Chinesesimp>近程空中支援目标</Chinesesimp>
                 <Korean>근접지원항공기 목표</Korean>
+                <French>Cible CAS</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_gunship">
                 <Original>A %1 heavy gunship started circling the area</Original>
                 <Russian>Летающая батарея поддержки %1 барражирует над локацией</Russian>
                 <Chinesesimp>%1 重型武装直升机开始在附近盘旋</Chinesesimp>
                 <Korean>%1의 중무장 건쉽이 해당 지역을 선회하기 시작했습니다</Korean>
+                <French>Un %1 soutien aérien lourd a commencé à tourner autour de la zone.</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_gunship_marker">
                 <Original>Gunship Area</Original>
                 <Russian>Зона действия летающей батареи поддержки</Russian>
                 <Chinesesimp>武装直升机行动区</Chinesesimp>
                 <Korean>건쉽 지역</Korean>
+                <French>Zone des canons</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_generic">
                 <Original>%1 is executing %2 support now</Original>
                 <Russian>%1 оказывают %2 поддержку</Russian>
                 <Chinesesimp>%1 正在执行 %2 支援</Chinesesimp>
                 <Korean>%1이(가) 현재 %2 지원을 요청 중입니다</Korean>
+                <French>%1 exécute actuellement le support %2</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_generic_marker">
                 <Original>%1 support</Original>
                 <Russian>%1 поддержка</Russian>
                 <Chinesesimp>%1 支援</Chinesesimp>
                 <Korean>%1 지원</Korean>
+                <French>%1 support</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_unknown">
                 <Original>%1 is executing an unknown support now</Original>
                 <Russian>%1 оказывает поддержку неустановленного типа</Russian>
                 <Chinesesimp>%1 正在对未知目标支援</Chinesesimp>
                 <Korean>%1이(가) 현재 알 수 없는 지원을 요청 중입니다</Korean>
+                <French>%1 fournit actuellement un support inconnu</French>
             </Key>
             <Key ID="STR_notifiers_SUP_QRF_setup_arrival">
                 <Original>%1. Estimated arrival: %2 minutes</Original>
                 <Russian>%1. Время прибытия: %2 минут</Russian>
                 <Chinesesimp>%1. 预计到达：%2 分钟</Chinesesimp>
                 <Korean>%1. 예상 도착 시간: %2분</Korean>
+                <French>%1. Arrivée estimée: %2 minutes</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_generic_arrival">
                 <Original>%1. Estimated setup: %2 minutes</Original>
                 <Russian>%1. Время подлёта/прибытия: %2 минут</Russian>
                 <Chinesesimp>%1. 预计出发时间：%2 分钟</Chinesesimp>
                 <Korean>%1. 예상 준비 시간: %2분</Korean>
+                <French>%1. Estimation de l'installation : %2 minutes</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_generic">
                 <Original>%1 is setting up %2 support</Original>
                 <Russian>%1 готовятся оказать %2 поддержку</Russian>
                 <Chinesesimp>%1 正在准备 %2 支援</Chinesesimp>
                 <Korean>%1이(가) %2 지원을 준비 중입니다</Korean>
+                <French>%1 met en place le support %2</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_gunship">
                 <Original>%1 is loading up a heavy gunship</Original>
                 <Russian>%1 готовят летающую батарею поддержки к вылету</Russian>
                 <Chinesesimp>%1 正在准备载重型武装直升机</Chinesesimp>
                 <Korean>%1이(가) 중무장 건쉽을 준비 중입니다</Korean>
+                <French>%1 est en train de charger un canon lourd</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_CAS">
                 <Original>%1 is readying a close air support</Original>
                 <Russian>%1 готовятся оказать поддержку с воздуха</Russian>
                 <Chinesesimp>%1 正在准备近距离空中支援</Chinesesimp>
                 <Korean>%1이(가) 근접항공지원을 준비하는 중입니다</Korean>
+                <French>%1 est en train de préparer un appui aérien rapproché</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_ASF">
                 <Original>%1 is readying an air superiority fighter</Original>
                 <Russian>Истребитель-перехватчик %1 готовится к вылету</Russian>
                 <Chinesesimp>%1 正在准备制空战斗机</Chinesesimp>
                 <Korean>%1이(가) 제공전투기를 준비하는 중입니다</Korean>
+                <French>%1 prépare un chasseur aérienne supérieur</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_carpeting">
                 <Original>A heavy %1 bomber is on the way</Original>
                 <Russian>Тяжелый бомбардировщик %1 вылетел на задание</Russian>
                 <Chinesesimp>%1 重型轰炸机正在路上</Chinesesimp>
                 <Korean>%1의 중폭격기가 접근 중입니다</Korean>
+                <French>Un bombardier lourd %1 est en route</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_SAM">
                 <Original>%1 is setting up a SAM launcher</Original>
                 <Russian>%1 разворачивают ЗРК</Russian>
                 <Chinesesimp>%1 正在准备地对空导弹发射器</Chinesesimp>
                 <Korean>%1이(가) 지대공미사일 발사기를 준비하는 중입니다</Korean>
+                <French>%1 met en place un lanceur SAM</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_cruise_missile">
                 <Original>A %1 cruiser is readying a cruise missile</Original>
                 <Russian>Крейсер %1 готовится нанести удар крылатой ракетой</Russian>
                 <Chinesesimp>%1 巡洋舰正准备发射巡航导弹</Chinesesimp>
                 <Korean>%1의 순양함이 순항미사일을 준비하는 중입니다</Korean>
+                <French>Un croiseur %1 prépare un missile de croisière</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_orbital_strike">
                 <Original>A %1 satellite is preparing an orbital strike</Original>
                 <Russian>Спутник %1 готовится нанести орбитальный удар</Russian>
                 <Chinesesimp>%1 卫星正在准备轨道攻击</Chinesesimp>
                 <Korean>%1의 위성이 궤도폭격을 준비하는 중입니다</Korean>
+                <French>Un satellite %1 prépare une frappe orbitale</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_mortar">
                 <Original>%1 is setting up a mortar position</Original>
                 <Russian>%1 готовят минометный обстрел</Russian>
                 <Chinesesimp>%1 卫星正在准备轨道攻击</Chinesesimp>
                 <Korean>%1이(가) 박격포 위치를 잡는 중입니다</Korean>
+                <French>%1 met en place une position de mortier</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_howitzer">
                 <Original>%1 is deploying a howitzer</Original>
                 <Russian>%1 разворачивают лёгкую гаубицу</Russian>
                 <Chinesesimp>%1 正在部署榴弹炮</Chinesesimp>
                 <Korean>%1이(가) 야포를 배치하는 중입니다</Korean>
+                <French>%1 déploie un obusier</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_artillery">
                 <Original>%1 is preparing an artillery position</Original>
                 <Russian>%1 готовят артиллерийский обстрел</Russian>
                 <Chinesesimp>%1 正在准备炮兵阵地</Chinesesimp>
                 <Korean>%1이(가) 포병 위치를 잡는 중입니다</Korean>
+                <French>%1 prépare une position d'artillerie</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_orbitalStrike">
                 <Original>A %1 satellite is preparing an orbital strike</Original>
                 <Russian>Спутник %1 готовит орбитальный удар</Russian>
                 <Chinesesimp>%1 卫星正在准备轨道攻击</Chinesesimp>
                 <Korean>%1의 위성이 궤도폭격을 준비하는 중입니다</Korean>
+                <French>Un satellite %1 prépare une frappe orbitale</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_airstrike">
                 <Original>%1 is preparing an airstrike</Original>
                 <Russian>%1 готовятся нанести авиаудар</Russian>
                 <Chinesesimp>%1 正在准备空袭</Chinesesimp>
                 <Korean>%1이(가) 공습을 준비하는 중입니다</Korean>
+                <French>%1 prépare une attaque aérienne</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_UAV">
                 <Original>%1 is sending a spotting UAV</Original>
                 <Russian>%1 запускают разведывательный БПЛА</Russian>
                 <Chinesesimp>%1 派出侦察无人机</Chinesesimp>
                 <Korean>%1이(가) 감적무인기를 보내는 중입니다</Korean>
+                <French>%1 envoie un drone de repérage</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_unknown">
                 <Original>%1 is setting up %2 support</Original>
                 <Russian>%1 готовятся оказать поддержку %2 типа</Russian>
                 <Chinesesimp>%1 正在准备 %2 支援</Chinesesimp>
                 <Korean>%1이(가) %2 지원을 준비 중입니다</Korean>
+                <French>%1 met en place le support %2</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_unknown2">
                 <Original>%1 is setting up an unknown support</Original>
                 <Russian>%1 готовятся оказать поддержку неизвестного типа</Russian>
                 <Chinesesimp>%1 正在对未知目标支援</Chinesesimp>
                 <Korean>%1이(가) 알 수 없는 지원을 준비하는 중입니다</Korean>
+                <French>%1 met en place un support inconnu</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_QRFAir">
                 <Original>%1 just sent an airborne QRF</Original>
                 <Russian>%1 отправили десантные силы быстрого реагирования</Russian>
                 <Chinesesimp>%1 派出了一支空中快速反应部队</Chinesesimp>
                 <Korean>%1이(가) 방금 신속대응군을 보냈습니다</Korean>
+                <French></French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_QRFLand">
                 <Original>%1 just sent a land QRF</Original>
                 <Russian>%1 отправили наземные силы быстрого реагирования</Russian>
                 <Chinesesimp>%1 派出了一支地面快速反应部队</Chinesesimp>
                 <Korean>%1이(가) 지상 신속대응군을 보냈습니다</Korean>
+                <French>%1 vient d'envoyer une QRF aéroportée</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_QRFVehAirdrop">
                 <Original>%1 just sent a airborne mechanized QRF</Original>
                 <Russian>%1 отправили десантные механизированные силы быстрого реагирования</Russian>
                 <Chinesesimp>%1 派出了一支机械化快速反应部队</Chinesesimp>
                 <Korean>%1이(가) 방금 공수 기계화 신속대응군을 보냈습니다</Korean>
+                <French>%1 vient d'envoyer une QRF mécanisée aéroportée</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_wavedAttack">
                 <Original>%1 just sent a major attack wave</Original>
                 <Russian>%1 отправили крупные силы в атаку</Russian>
                 <Chinesesimp>%1 派出了一波攻击</Chinesesimp>
                 <Korean>%1이(가) 방금 대규모 공격 웨이브를 보냈습니다</Korean>
+                <French></French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_counterAttack">
                 <Original>%1 just sent a counterattack force</Original>
                 <Russian>%1 отправили контратакующие силы</Russian>
                 <Chinesesimp>%1 派出了一支反击部队</Chinesesimp>
                 <Korean>%1이(가) 방금 반격군을 보냈습니다</Korean>
+                <French>%1 vient d'envoyer une vague d'attaque majeure</French>
             </Key>
             <Key ID="STR_notifiers_attack_destination_update">
                 <Original>Attack Destination Updated</Original>
                 <Russian>Направление атаки обновлено</Russian>
                 <Chinesesimp>攻击目的地更新</Chinesesimp>
                 <Korean>공격 목표 업데이트</Korean>
+                <French>Destination de l'attaque mise à jour</French>
             </Key>
             <Key ID="STR_notifiers_radiotower_destroyed">
                 <Original>Radiotower Destroyed</Original>
                 <Russian>Радиовышка была уничтожена</Russian>
                 <Chinesesimp>无线电塔被摧毁</Chinesesimp>
                 <Korean>통신탑 파괴됨</Korean>
+                <French></French>
             </Key>
             <Key ID="STR_notifiers_resourcefactory_destoyed">
                 <Original>%1 Destroyed</Original>
                 <Russian>%1 уничтожен</Russian>
                 <Chinesesimp>%1 已摧毁</Chinesesimp>
                 <Korean>%1 파괴됨</Korean>
+                <French>Destruction de la tour de radiodiffusion</French>
             </Key>
             <Key ID="STR_notifiers_resource_lost_other">
                 <Original>%1 has lost a Resource</Original>
                 <Russian>%1 потеряли контроль над ресурсом</Russian>
                 <Chinesesimp>%1 丢失了一个资源点</Chinesesimp>
                 <Korean>%1이(가) 자원채취소를 잃었습니다</Korean>
+                <French>%1 a perdu une ressource</French>
             </Key>
             <Key ID="STR_notifiers_resource_taken">
                 <Original>Resource Taken</Original>
                 <Russian>Ресурс захвачен</Russian>
                 <Chinesesimp>占领资源点</Chinesesimp>
                 <Korean>자원채취소 점령</Korean>
+                <French>Ressources prises</French>
             </Key>
             <Key ID="STR_notifiers_resource_lost">
                 <Original>Resource Lost</Original>
                 <Russian>Ресурс потерян</Russian>
                 <Chinesesimp>丢失资源点</Chinesesimp>
                 <Korean>자원채취소 잃음</Korean>
+                <French>Ressources perdues</French>
             </Key>
             <Key ID="STR_notifiers_factory_lost_other">
                 <Original>%1 has lost a Factory</Original>
                 <Russian>%1 потеряли контроль над фабрикой</Russian>
                 <Chinesesimp>%1 丢失了一个工厂</Chinesesimp>
                 <Korean>%1이(가) 공장을 잃었습니다</Korean>
+                <French>%1 a perdu une usine</French>
             </Key>
             <Key ID="STR_notifiers_factory_taken">
                 <Original>Factory Taken</Original>
                 <Russian>Фабрика захвачена</Russian>
                 <Chinesesimp>占领工厂</Chinesesimp>
                 <Korean>공장 점령</Korean>
+                <French>Usine prise</French>
             </Key>
             <Key ID="STR_notifiers_factory_lost">
                 <Original>Factory Lost</Original>
                 <Russian>Фабрика потеряна</Russian>
                 <Chinesesimp>丢失工厂</Chinesesimp>
                 <Korean>공장 잃음</Korean>
+                <French>Usine perdue</French>
             </Key>
             <Key ID="STR_notifiers_riverport_lost_other">
                 <Original>%1 has lost a River Port</Original>
                 <Russian>%1 потеряли контроль над речным портом</Russian>
                 <Chinesesimp>%1 丢失了一个河港</Chinesesimp>
                 <Korean>%1이(가) 강항을 잃었습니다</Korean>
+                <French>%1 a perdu un port fluvial</French>
             </Key>
             <Key ID="STR_notifiers_riverport_taken">
                 <Original>River port Taken</Original>
                 <Russian>Речной порт захвачен</Russian>
                 <Chinesesimp>占领河港</Chinesesimp>
                 <Korean>강항 점령</Korean>
+                <French>Port fluvial pris</French>
             </Key>
             <Key ID="STR_notifiers_riverport_lost">
                 <Original>River port Lost</Original>
                 <Russian>Речной порт потерян</Russian>
                 <Chinesesimp>丢失河港</Chinesesimp>
                 <Korean>강항 잃음</Korean>
+                <French>Port fluvial perdu</French>
             </Key>
             <Key ID="STR_notifiers_seaport_lost_other">
                 <Original>%1 has lost a Sea Port</Original>
                 <Russian>%1 потеряли контроль над морским портом</Russian>
                 <Chinesesimp>%1 丢失了海港</Chinesesimp>
                 <Korean>%1이(가) 항구를 잃었습니다</Korean>
+                <French>%1 a perdu un port maritime</French>
             </Key>
             <Key ID="STR_notifiers_seaport_taken">
                 <Original>Seaport Taken</Original>
                 <Russian>Морской порт захвачен</Russian>
                 <Chinesesimp>占领海港</Chinesesimp>
                 <Korean>항구 점령</Korean>
+                <French>Port maritime pris</French>
             </Key>
             <Key ID="STR_notifiers_seaport_lost">
                 <Original>Seaport Lost</Original>
                 <Russian>Морской порт потерян</Russian>
                 <Chinesesimp>丢失海港</Chinesesimp>
                 <Korean>항구 잃음</Korean>
+                <French>Port maritime perdu</French>
             </Key>
             <Key ID="STR_notifiers_outpost_lost_other">
                 <Original>%1 has lost a Outpost</Original>
                 <Russian>%1 потеряли контроль над военной базой</Russian>
                 <Chinesesimp>%1 丢失一个军事基地</Chinesesimp>
                 <Korean>%1이(가) 전초 기지를 잃었습니다</Korean>
+                <French>%1 a perdu un avant-poste</French>
             </Key>
             <Key ID="STR_notifiers_outpost_taken">
                 <Original>Outpost Taken</Original>
                 <Russian>Аванпост захвачен</Russian>
                 <Chinesesimp>占领前哨</Chinesesimp>
                 <Korean>전초 기지 점령</Korean>
+                <French>Avant-poste pris</French>
             </Key>
             <Key ID="STR_notifiers_outpost_lost">
                 <Original>Outpost Lost</Original>
                 <Russian>Аванпост потерян</Russian>
                 <Chinesesimp>丢失前哨</Chinesesimp>
                 <Korean>전초 기지 잃음</Korean>
+                <French>Avant-poste perdu</French>
             </Key>
             <Key ID="STR_notifiers_milbase_lost_other">
                 <Original>%1 has lost a Military Base</Original>
                 <Russian>%1 потеряли контроль над военной базой</Russian>
                 <Chinesesimp>%1 失去了一个军事基地</Chinesesimp>
                 <Korean>%1이(가) 군사 기지를 잃었습니다</Korean>
+                <French>%1 a perdu une base militaire</French>
             </Key>
             <Key ID="STR_notifiers_milbase_taken">
                 <Original>Military Base Taken</Original>
                 <Russian>Военная база захвачена</Russian>
                 <Chinesesimp>占领军事基地</Chinesesimp>
                 <Korean>군사 기지 점령</Korean>
+                <French>Prise de la base militaire</French>
             </Key>
             <Key ID="STR_notifiers_milbase_lost">
                 <Original>Military Base Lost</Original>
                 <Russian>Военная база потеряна</Russian>
                 <Chinesesimp>丢失军事基地</Chinesesimp>
                 <Korean>군사 기지 잃음</Korean>
+                <French>Base militaire perdue</French>
             </Key>
             <Key ID="STR_notifiers_airbase_lost_other">
                 <Original>%1 has lost an Airbase</Original>
                 <Russian>%1 потеряли контроль над авиабазой</Russian>
                 <Chinesesimp>%1 失去了一个机场</Chinesesimp>
                 <Korean>%1이(가) 공군 기지를 잃었습니다</Korean>
+                <French>%1 a perdu une base aérienne</French>
             </Key>
             <Key ID="STR_notifiers_airbase_taken">
                 <Original>Airbase Taken</Original>
                 <Russian>Авиабаза захвачена</Russian>
                 <Chinesesimp>占领机场</Chinesesimp>
                 <Korean>공군 기지 점령</Korean>
+                <French>Base aérienne prise</French>
             </Key>
             <Key ID="STR_notifiers_airbase_lost">
                 <Original>Airbase Lost</Original>
                 <Russian>Авиабаза потеряна</Russian>
                 <Chinesesimp>丢失机场</Chinesesimp>
                 <Korean>공군 기지 잃음</Korean>
+                <French>Base aérienne perdue</French>
             </Key>
             <Key ID="STR_notifiers_comms_lost">
                 <Original>Enemy Comms Lost</Original>
                 <Russian>Радиоперехват не удался</Russian>
                 <Chinesesimp>敌方通讯丢失</Chinesesimp>
                 <Korean>적군 통신 놓침</Korean>
+                <French>Communications ennemies perdues</French>
             </Key>
             <Key ID="STR_notifiers_comms_intercept">
                 <Original>Enemy Comms Intercepted</Original>
                 <Russian>Радиосвязь противника перехвачена</Russian>
                 <Chinesesimp>截获敌人通讯</Chinesesimp>
                 <Korean>적군 통신 도청 완료</Korean>
+                <French>Communications ennemies interceptées</French>
             </Key>
             <Key ID="STR_notifiers_emplacement_lost">
                 <Original>Emplacement Lost</Original>
                 <Russian>Огневая точка потеряна</Russian>
                 <Chinesesimp>丢失炮台</Chinesesimp>
                 <Korean>포대 잃음</Korean>
+                <French>Emplacement perdu</French>
             </Key>
             <Key ID="STR_notifiers_roadblock_lost">
                 <Original>Roadblock Lost</Original>
                 <Russian>Блокпост потерян</Russian>
                 <Chinesesimp>丢失路障</Chinesesimp>
                 <Korean>검문소 잃음</Korean>
+                <French>Barrage routier perdu</French>
             </Key>
             <Key ID="STR_notifiers_watchpost_lost">
                 <Original>Watchpost Lost</Original>
                 <Russian>Пункт наблюдения потерян</Russian>
                 <Chinesesimp>丢失哨所</Chinesesimp>
                 <Korean>감시초소 잃음</Korean>
+                <French>Poste de garde perdu</French>
             </Key>
             <Key ID="STR_notifiers_roving_mortar_crew_destroyed">
                 <Original>%1's roving mortar destroyed</Original>
                 <Russian>Кочующий миномет %1 уничтожен</Russian>
                 <Chinesesimp>%1 的机动迫击炮被摧毁</Chinesesimp>
                 <Korean>%1의 이동식 박격포가 파괴되었습니다</Korean>
+                <French>Le mortier itinérant de %1 a été détruit</French>
             </Key>
             <Key ID="STR_notifiers_roving_mortar_stolen">
                 <Original>%1's roving mortar has been stolen</Original>
                 <Russian>Кочующий миномет %1 был украден</Russian>
                 <Chinesesimp>%1 的机动迫击炮被偷了</Chinesesimp>
                 <Korean>%1의 이동식 박격포가 도난당했습니다</Korean>
+                <French></French>
             </Key>
             <Key ID="STR_notifiers_roving_mortar_crew_killed">
                 <Original>%1's roving mortar crew killed</Original>
                 <Russian>Расчёт кочующего миномета %1 был уничтожен</Russian>
                 <Chinesesimp>%1 的迫击炮手阵亡了</Chinesesimp>
                 <Korean>%1의 이동식 박격포 사수가 죽었습니다</Korean>
+                <French>L'équipe de mortiers itinérante de %1 a été tuée</French>
             </Key>
             <Key ID="STR_notifiers_vehicle_spotted">
                 <Original>%1 spotted</Original>
                 <Russian>Замечен %1</Russian>
                 <Chinesesimp>发现 %1</Chinesesimp>
                 <Korean>%1 발견</Korean>
+                <French>%1 repéré</French>
             </Key>
             <Key ID="STR_notifiers_city_rebuilt">
                 <Original>%1 rebuilt</Original>
                 <Russian>%1 отстроен</Russian>
                 <Chinesesimp>重建 %1</Chinesesimp>
                 <Korean>%1 재건축</Korean>
+                <French>%1 reconstruit</French>
             </Key>
             <Key ID="STR_notifiers_city_joined">
                 <Original>%1 has joined %2</Original>
                 <Russian>%1 присоединился к %2</Russian>
                 <Chinesesimp>%1 已加入 %2</Chinesesimp>
                 <Korean>%1이(가) %2에 가입했습니다</Korean>
+                <French>%1 a rejoint %2</French>
             </Key>
             <Key ID="STR_notifiers_roadblock_destroyed">
                 <Original>Roadblock destroyed</Original>
                 <Russian>Блокпост уничтожен</Russian>
                 <Chinesesimp>路障被摧毁</Chinesesimp>
                 <Korean>검문소 파괴됨</Korean>
+                <French>Barrage routier détruit</French>
             </Key>
             <Key ID="STR_notifiers_miladmin_destroyed">
                 <Original>Military Administration Destroyed</Original>
                 <Russian>Администрация уничтожена</Russian>
                 <Chinesesimp>军事管理机构被摧毁</Chinesesimp>
                 <Korean>군 행정부 파괴됨</Korean>
+                <French>Destruction de l'administration militaire</French>
             </Key>
             <Key ID="STR_notifiers_miladmin_captured">
                 <Original>Military Administration Captured</Original>
                 <Russian>Администрация захвачена</Russian>
                 <Chinesesimp>军事管理机构被占领</Chinesesimp>
                 <Korean>군 행정부 점령</Korean>
+                <French>L'administration militaire capturée</French>
             </Key>
             <Key ID="STR_notifiers_wavedattack">
                 <Original>%1 is attacking the %2 garrison at %3.</Original>
                 <Russian>%1 атакует гарнизон %2 в %3.</Russian>
                 <Chinesesimp>%1 正在攻击 %3 的 %2 驻军</Chinesesimp>
                 <Korean>%1이(가) %3에서 %2의 주둔군을 공격하고 있습니다.</Korean>
+                <French>%1 attaque la garnison %2 à %3.</French>
             </Key>
         </Container>
         <Container name="notifiers">
@@ -6785,6 +6891,7 @@
                 <Russian>ПОДДЕРЖКА</Russian>
                 <Chinesesimp>支援</Chinesesimp>
                 <Korean>지원</Korean>
+                <French>SUPPORT</French>
             </Key>
             <Key ID="STR_commander_menu_garrison_header_upper">
                 <Original>GARRISON MANAGEMENT</Original>
