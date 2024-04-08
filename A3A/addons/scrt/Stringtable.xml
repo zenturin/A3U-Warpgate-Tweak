@@ -2239,222 +2239,259 @@
                 <Russian>&lt;t size='0.5' color='#C1C0BB'&gt;Арсенал обновился&lt;br/&gt;&lt;br/&gt;%1</Russian>
                 <Chinesesimp>&lt;t size='0.5' color='#C1C0BB'&gt;军火库更新&lt;br/&gt;&lt;br/&gt;%1</Chinesesimp>
                 <Korean>&lt;t size='0.5' color='#C1C0BB'&gt;아스널 업데이트&lt;br/&gt;&lt;br/&gt;%1</Korean>
+                <French>&lt;t size='0.5' color='#C1C0BB'&gt;Arsenal mis à jour&lt;br/&gt;&lt;br/&gt;%1</French>
             </Key>
             <Key ID="STR_hints_arsenal_transfer_header">
                 <Original>Cargo</Original>
                 <Russian>Груз</Russian>
                 <Chinesesimp>货物</Chinesesimp>
                 <Korean>화물</Korean>
+                <French>Cargaison</French>
             </Key>
             <Key ID="STR_hints_arsenal_transfer_success">
                 <Original>Cargo has been loaded into arsenal.</Original>
                 <Russian>Груз был загружен в арсенал.</Russian>
                 <Chinesesimp>货物已装进军火库。</Chinesesimp>
                 <Korean>화물이 아스널에 넣어졌습니다.</Korean>
+                <French>La cargaison a été chargée dans l'arsenal.</French>
             </Key>
             <Key ID="STR_hints_hc_header">
                 <Original>Headless Client</Original>
                 <Russian>Headless-клиент</Russian>
                 <Chinesesimp>无头客户端</Chinesesimp>
                 <Korean>헤드리스 클라이언트</Korean>
+                <French>Headless Client</French>
             </Key>
             <Key ID="STR_hints_hc_restart">
                 <Original>A Headless Client has been disconnected. This will cause malfunctions. Head back to HQ for saving ASAP and ask and Admin for a restart.</Original>
                 <Russian>Headless-клиент отсоединился. Это приведёт к проблемам и неработоспособности миссии. Вернитесь в штаб, сохранитесь и перезапустите сервер (или попросите администратора сервера сделать это).</Russian>
                 <Chinesesimp>无头客户端已断开连接。 这会导致故障。 尽快返回总部进行保存，并要求管理员重新启动。</Chinesesimp>
                 <Korean>헤드리스 클라이언트의 연결이 끊어졌습니다. 이로 인해 오작동이 발생할 것입니다. 본부로 돌아가서 최대한 빨리 저장하고 관리자에게 재시작을 요청하십시오.</Korean>
+                <French>Un client sans tête a été déconnecté. Cela entraînera des dysfonctionnements. Retournez au QG pour le sauvegarder au plus vite et demandez à l'administrateur de le redémarrer.</French>
             </Key>
             <Key ID="STR_hints_membership_header">
                 <Original>Server Membership</Original>
                 <Russian>Членство на сервере</Russian>
                 <Chinesesimp>服务器会员</Chinesesimp>
                 <Korean>서버 멤버십</Korean>
+                <French>Membres du serveur</French>
             </Key>
             <Key ID="STR_hints_membership_all">
                 <Original>Membership is enabled but members list is empty. Current players will be added to the member list.</Original>
                 <Russian>Членство включено, но в списке никого нет. Текущие игроки будут добавлены в список членов сервера.</Russian>
                 <Chinesesimp>成员资格已启用，但成员列表为空。 当前玩家将被添加到成员列表中。</Chinesesimp>
                 <Korean>멤버십을 사용할 수 있지만 멤버 목록이 비어 있습니다. 현재 플레이어가 멤버 목록에 추가됩니다.</Korean>
+                <French>L'adhésion est activée mais la liste des membres est vide. Les joueurs actuels seront ajoutés à la liste des membres.</French>
             </Key>
             <Key ID="STR_hints_intel_no_one_in_range">
                 <Original>No one in range of the intel, need to start from scratch.</Original>
                 <Russian>Нет никакого рядом с разведданными, придётся начать заново.</Russian>
                 <Chinesesimp>没有人在情报范围内，需要从头开始。</Chinesesimp>
                 <Korean>인텔 범위 안에 아무도 없으며, 처음부터 시작해야 합니다.</Korean>
+                <French>Personne n'est à portée de l'information, il faut repartir de zéro.</French>
             </Key>
             <Key ID="STR_hints_AS_traitor_intel">
                 <Original>Someone found some intel on the traitors family, he will not cause any problems any more!</Original>
                 <Russian>Кто-то нашёл информацию о семье предателя, он понял намёк и от него больше не будет проблем.</Russian>
                 <Chinesesimp>有人找到了叛徒家族的情报，他不会再惹事了！</Chinesesimp>
                 <Korean>누군가 배신자 가족에 대한 정보를 발견했기 때문에, 그는 더 이상 문제를 일으키지 않을 것입니다.</Korean>
+                <French>Quelqu'un a trouvé des informations sur la famille du traître, il ne causera plus de problèmes !</French>
             </Key>
             <Key ID="STR_hints_LOG_Bank_header">
                 <Original>Bank Mission</Original>
                 <Russian>Миссия о банке</Russian>
                 <Chinesesimp>银行任务</Chinesesimp>
                 <Korean>은행 임무</Korean>
+                <French>Mission de la Banque</French>
             </Key>
             <Key ID="STR_hints_LOG_drive_back">
                 <Original>Drive the truck with money back to base to finish this mission.</Original>
                 <Russian>Отвезите грузовик с деньгами обратно на базу, чтобы завершить эту миссию.</Russian>
                 <Chinesesimp>带着钱把卡车开回基地完成这个任务。</Chinesesimp>
                 <Korean>돈을 가지고 트럭을 몰고 기지로 돌아가 임무를 완료하십시오.</Korean>
+                <French>Conduisez le camion avec l'argent jusqu'à la base pour terminer cette mission.</French>
             </Key>
             <Key ID="STR_hints_LOG_close_truck">
                 <Original>Don't get the truck far from the bank until timer is out.</Original>
                 <Russian>Не отвозите грузовик далеко от банка пока процесс не будет завершён.</Russian>
                 <Chinesesimp>在计时器结束之前，不要让卡车远离银行。</Chinesesimp>
                 <Korean>타이머가 끝날 때까지 트럭을 은행에서 멀리 떨어뜨리지 마십시오.</Korean>
+                <French>N'éloignez pas le camion de la banque tant que le délai n'est pas écoulé.</French>
             </Key>
             <Key ID="STR_hints_LOG_objective">
                 <Original>Bring this truck to %1 Bank and park it in the main entrance.</Original>
                 <Russian>Привезите этот грузовик до банка %1 и припаркуйте его у главного входа.</Russian>
                 <Chinesesimp>将这辆卡车开到 %1 银行，并将其停在正门。</Chinesesimp>
                 <Korean>이 트럭을 %1 은행으로 가져가서 정문에 주차하십시오.</Korean>
+                <French>Apportez ce camion à la banque %1 et garez-le dans l'entrée principale.</French>
             </Key>
             <Key ID="STR_hints_LOG_supplies_header">
                 <Original>Logistics Mission</Original>
                 <Russian>Миссия логистики</Russian>
                 <Chinesesimp>后勤任务</Chinesesimp>
                 <Korean>병참 임무</Korean>
+                <French>Mission logistique</French>
             </Key>
             <Key ID="STR_hints_LOG_supplies_success">
                 <Original>Supplies delivered.</Original>
                 <Russian>Припасы доставлены.</Russian>
                 <Chinesesimp>物资送达。</Chinesesimp>
                 <Korean>보급품이 배달되었습니다.</Korean>
+                <French>Fournitures livrées.</French>
             </Key>
             <Key ID="STR_hints_LOG_supplies_objective">
                 <Original>Stay close to the crate and clean all BLUFOR presence in the surroundings.</Original>
                 <Russian>Держитесь поближе к ящику и очистите окрестности от врагов.</Russian>
                 <Chinesesimp>靠近箱子并清除周围的所有 蓝方部队 存在。</Chinesesimp>
                 <Korean>상자 가까이 가서 주변에 있는 점령군을 모두 청소하십시오.</Korean>
+                <French>Restez près de la caisse et nettoyez toute présence de BLUFOR dans les environs.</French>
             </Key>
             <Key ID="STR_hints_LOG_supplies_timer">
                 <Original>Keep the area clear of hostiles for %1 more seconds.</Original>
                 <Russian>Держите область вокруг припасов свободной от врагов еще %1 секунд.</Russian>
                 <Chinesesimp>在%1秒内保持该区域远离敌人。</Chinesesimp>
                 <Korean>%1초 더 해당 영역에 적이 없도록 하십시오.</Korean>
+                <French>Gardez la zone exempte d'hostiles pendant %1 secondes supplémentaires.</French>
             </Key>
             <Key ID="STR_hints_promotion_header">
                 <Original>Promotion</Original>
                 <Russian>Повышение</Russian>
                 <Chinesesimp>晋升</Chinesesimp>
                 <Korean>진급</Korean>
+                <French>Promotion</French>
             </Key>
             <Key ID="STR_hints_promotion_congrats">
                 <Original>%1&lt;br/&gt;&lt;br/&gt;CONGRATULATIONS!!</Original>
                 <Russian>%1&lt;br/&gt;&lt;br/&gt;ПОЗДРАВЛЯЕМ!!</Russian>
                 <Chinesesimp>%1&lt;br/&gt;&lt;br/&gt;恭喜!!</Chinesesimp>
                 <Korean>%1&lt;br/&gt;&lt;br/&gt;축하드립니다!!</Korean>
+                <French>%1&lt;br/&gt;&lt;br/&gt;FÉLICITATIONS!!</French>
             </Key>
             <Key ID="STR_hints_commander_transfer_header">
                 <Original>New Commander</Original>
                 <Russian>Новый командир</Russian>
                 <Chinesesimp>新指挥官</Chinesesimp>
                 <Korean>새 지휘관</Korean>
+                <French>Nouveau commandant</French>
             </Key>
             <Key ID="STR_hints_commander_transfer_new_comm">
                 <Original>%1 is the new commander of our forces. Greet them!</Original>
                 <Russian>%1 стал новым командиром наших сил. Поприветствуем!</Russian>
                 <Chinesesimp>%1 是我们部队的新指挥官。敬礼！</Chinesesimp>
                 <Korean>%1이 이제 우리 군대의 지휘관입니다. 인사하십시오!</Korean>
+                <French>%1 est le nouveau commandant de nos forces. Saluez-le !</French>
             </Key>
             <Key ID="STR_hints_commander_transfer_no_comm">
                 <Original>The commander has resigned. There is no eligible commander.</Original>
                 <Russian>Командир ушел в отставку. Подходящего командира нет.</Russian>
                 <Chinesesimp>指挥官已辞职。没有合格的指挥官。</Chinesesimp>
                 <Korean>지휘관이 사임했습니다. 적합한 지휘관이 없습니다.</Korean>
+                <French>Le commandant a démissionné. Il n'y a pas de commandant éligible.</French>
             </Key>
             <Key ID="STR_hints_build_minefield_engie_start">
                 <Original>Engineer Team has started deploying mines.</Original>
                 <Russian>Отряд инженеров начал класть мины.</Russian>
                 <Chinesesimp>工程部队已经开始部署地雷。</Chinesesimp>
                 <Korean>공병 팀이 지뢰를 배치하기 시작했습니다.</Korean>
+                <French>L'équipe du génie a commencé à déployer des mines.</French>
             </Key>
             <Key ID="STR_hints_hc_transfer_header">
                 <Original>High Command Transfer</Original>
                 <Russian>Перевод в High Command</Russian>
                 <Chinesesimp>高级指挥转移</Chinesesimp>
                 <Korean>하이 커맨드 전송</Korean>
+                <French>Transfert du haut commandement</French>
             </Key>
             <Key ID="STR_hints_hc_transfer_success">
                 <Original>Group %1 has been transfered to be under your command.&lt;br/&gt;&lt;br/&gt;Groups are managed from the High Command bar (Default: CTRL+SPACE)&lt;br/&gt;&lt;br/&gt;</Original>
                 <Russian>Группа %1 была переведена под ваше коммандование.&lt;br/&gt;&lt;br/&gt;Группами можно управлять через High Command-меню (По умолчанию:CTRL+Пробел)&lt;br/&gt;&lt;br/&gt;</Russian>
                 <Chinesesimp> %1 组已转移到您的指挥下。&lt;br/&gt;&lt;br/&gt;从高级命令栏管理（默认：CTRL+SPACE）&lt;br/&gt;&lt;br/&gt;</Chinesesimp>
                 <Korean>%1 그룹이 당신 지휘 하에 들어갔습니다.&lt;br/&gt;&lt;br/&gt;그룹은 하이 커맨드 표시줄(기본값: 컨트롤 + 스페이스)에서 관리됩니다.&lt;br/&gt;&lt;br/&gt;</Korean>
+                <French>Le groupe %1 a été transféré sous votre commandement.&lt;br/&gt;&lt;br/&gt;Les groupes sont gérés à partir de la barre de commande supérieure (par défaut : CTRL+ESPACE)&lt;br/&gt;&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_hints_hc_transfer_no_comm">
                 <Original>You need to have a commander to perform this action.</Original>
                 <Russian>Нужен действующий командир чтобы совершить это действие.</Russian>
                 <Chinesesimp>你需要有一个指挥官来执行这个动作。</Chinesesimp>
                 <Korean>이 작업을 수행하려면 지휘관이 있어야 합니다.</Korean>
+                <French>Vous devez avoir un commandant pour effectuer cette action.</French>
             </Key>
             <Key ID="STR_hints_hc_transfer_no_radio_comm">
                 <Original>Your commander need to have a radio to perform this action.</Original>
                 <Russian>Вашему командиру нужно иметь рацию при себе для совершения этого действия.</Russian>
                 <Chinesesimp>您的指挥官需要有无线电才能执行此操作。</Chinesesimp>
                 <Korean>이 작업을 수행하려면 지휘관에게 무전기가 있어야 합니다.</Korean>
+                <French>Votre commandant doit disposer d'une radio pour effectuer cette action.</French>
             </Key>
             <Key ID="STR_hints_hc_transfer_no_radio">
                 <Original>You need to have a radio to perform this action.</Original>
                 <Russian>Вам нужно иметь при себе рацию для совершения этого действия.</Russian>
                 <Chinesesimp>你需要一个无线电来执行这个动作。</Chinesesimp>
                 <Korean>이 작업을 수행하려면 라디오가 있어야 합니다.</Korean>
+                <French>Vous devez disposer d'une radio pour effectuer cette action.</French>
             </Key>
             <Key ID="STR_hints_hc_transfer_combat_ready">
                 <Original>You have to be combat-ready to perform this action.</Original>
                 <Russian>Вам нужно быть готовым к бою для совершения этого действия.</Russian>
                 <Chinesesimp>你必须做好战斗准备才能执行这个动作。</Chinesesimp>
                 <Korean>이 작업을 수행하려면 전투 준비가 되어 있어야 합니다.</Korean>
+                <French>Vous devez être prêt au combat pour effectuer cette action.</French>
             </Key>
             <Key ID="STR_hints_hc_transfer_no_ai">
                 <Original>You have no active AI squadmates.</Original>
                 <Russian>У вас нет активных ИИ-соотрядников для совершения этого действия.</Russian>
                 <Chinesesimp>你没有活跃的 AI 队友。</Chinesesimp>
                 <Korean>활성화된 인공지능 분대원이 없습니다.</Korean>
+                <French>Vous n'avez pas de coéquipiers IA actifs.</French>
             </Key>
             <Key ID="STR_hints_new_game_header">
                 <Original>Initial HQ Placement Selection</Original>
                 <Russian>Первичное размещение штаба</Russian>
                 <Chinesesimp>初始总部安置选择</Chinesesimp>
                 <Korean>최초 본부 배치 선택</Korean>
+                <French>Sélection initiale de l'emplacement du QG</French>
             </Key>
             <Key ID="STR_hints_new_game_1">
                 <Original>Click on the Map Position you want to start the Game.</Original>
                 <Russian>Выберите кликом позицию на карте где вы хотите начать игру.</Russian>
                 <Chinesesimp>单击您要开始游戏的地图位置。</Chinesesimp>
                 <Korean>게임을 시작할 지도 위치를 클릭하십시오.</Korean>
+                <French>Cliquez sur l'endroit de la carte où vous voulez commencer le jeu.</French>
             </Key>
             <Key ID="STR_hints_new_game_2">
                 <Original>Close the map with M to start in the default position.</Original>
                 <Russian>Нажмите M, если вы хотите начать игру на позиции по умолчанию.</Russian>
                 <Chinesesimp>使用 M 关闭地图以从默认位置开始。</Chinesesimp>
                 <Korean>M으로 지도를 닫으면 기본 위치에서 시작합니다.</Korean>
+                <French>Fermez la carte avec M pour revenir à la position par défaut.</French>
             </Key>
             <Key ID="STR_hints_new_game_3">
                 <Original>Don't select areas with enemies nearby!\n\nGame experience changes a lot on different starting positions.</Original>
                 <Russian>Не выбирайте позиции рядом с врагами!\n\n Игровой опыт значительно различается на разных стартовых позициях.</Russian>
                 <Chinesesimp>不要选择附近有敌人的区域！\n\n不同的起始位置，游戏体验变化很大。</Chinesesimp>
                 <Korean>근처에 적이 있는 지역을 선택하지 마십시오!\n\n게임 경험은 시작 위치에 따라 많이 달라집니다.</Korean>
+                <French>Ne sélectionnez pas de zones avec des ennemis à proximité !\n\nL'expérience de jeu change beaucoup en fonction de la position de départ.</French>
             </Key>
             <Key ID="STR_hints_new_game_petros_dead_header">
                 <Original>%1 is Dead</Original>
                 <Russian>%1 умер</Russian>
                 <Chinesesimp>%1 已死</Chinesesimp>
                 <Korean>%1가 죽었습니다</Korean>
+                <French>%1 est mort</French>
             </Key>
             <Key ID="STR_hints_new_game_petros_dead_text">
                 <Original>%1 has been killed. You lost part of your assets and need to select a new HQ position far from the enemies.</Original>
                 <Russian>%1 был убит. Вы потеряете большую часть своих денег. Необходимо выбрать новую позицию штаба подальше от врагов.</Russian>
                 <Chinesesimp>%1 已被杀死。 你失去了部分资产，需要选择一个远离敌人的新总部位置。</Chinesesimp>
                 <Korean>%1가 사살되었습니다. 자산의 일부를 잃었으므로 적으로부터 멀리 떨어진 새 본부 위치를 선택해야 합니다.</Korean>
+                <French>%1 a été tué. Vous avez perdu une partie de vos ressources et devez sélectionner une nouvelle position de QG loin des ennemis.</French>
             </Key>
             <Key ID="STR_hints_personal_save_success">
                 <Original>Personal Stats Saved.</Original>
                 <Russian>Персональное сохранение прошло успешно.</Russian>
                 <Chinesesimp>个人数据已保存。</Chinesesimp>
                 <Korean>개인 통계가 저장되었습니다.</Korean>
+                <French>Statistiques personnelles Sauvegarde.</French>
             </Key>
         </Container>
         <Container name="chats">
