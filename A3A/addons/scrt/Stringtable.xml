@@ -2500,390 +2500,455 @@
                 <Russian>Вам или %1 требуется иметь медпакет или аптечку при себе, чтобы лечить.</Russian>
                 <Chinesesimp>您 %1 需要急救包或医疗箱才能复活。</Chinesesimp>
                 <Korean>당신 또는 %1이(가) 구급상자 또는 응급처치도구가 있어야 소생시킬 수 있습니다.</Korean>
+                <French>Vous ou %1 avez besoin d'une trousse de premiers soins ou d'un médikit pour pouvoir être réanimé.</French>
             </Key>
             <Key ID="STR_chats_action_revive_no_fak_me">
                 <Original>I'm out of First Aid kits and I have no Medikit!</Original>
                 <Russian>У меня нет медпакето и нет аптечки!</Russian>
                 <Chinesesimp>我没有急救包了，也没有医疗箱！</Chinesesimp>
                 <Korean>구급상자도 응급처치도구도 다 떨어졌습니다!</Korean>
+                <French>Je n'ai plus de trousses de premiers secours et je n'ai pas de Medikit !</French>
             </Key>
             <Key ID="STR_chats_action_revive_already_healed_you">
                 <Original>%1 no longer needs your help.</Original>
                 <Russian>%1 больше не требуется ваша помощь.</Russian>
                 <Chinesesimp>%1 不再需要你的帮助。</Chinesesimp>
                 <Korean>%1은(는) 더 이상 당신의 도움이 필요하지 않습니다.</Korean>
+                <French>%1 n'a plus besoin de votre aide.</French>
             </Key>
             <Key ID="STR_chats_action_revive_already_healed_me">
                 <Original>%1 no longer needs my help.</Original>
                 <Russian>%1 больше не требуется моя помощь.</Russian>
                 <Chinesesimp>%1不再需要我的帮助。</Chinesesimp>
                 <Korean>%1은(는) 더 이상 내 도움이 필요하지 않습니다.</Korean>
+                <French>%1 n'a plus besoin de mon aide.</French>
             </Key>
             <Key ID="STR_chats_action_revive_already_dead">
                 <Original>%1 is already dead.</Original>
                 <Russian>%1 уже умер.</Russian>
                 <Chinesesimp>%1已经死了。</Chinesesimp>
                 <Korean>%1은(는) 이미 사망했습니다.</Korean>
+                <French>%1 est déjà mort.</French>
             </Key>
             <Key ID="STR_chats_action_revive_carried_fail">
                 <Original>%1 is being carried or transported, he can't be healed.</Original>
                 <Russian>Кто-то тащит или транспортирует раненого, лечение невозможно.</Russian>
                 <Chinesesimp>%1 正在被携带或运输，他无法被治愈。</Chinesesimp>
                 <Korean>%1이(가) 끌려가거나 이송되고 있습니다. 치료할 수 없습니다.</Korean>
+                <French>%1 est porté ou transporté, il ne peut pas être soigné.</French>
             </Key>
             <Key ID="STR_chats_radiocheck">
                 <Original>This is %1, radiocheck OK.</Original>
                 <Russian>Это %1, как слышно, приём? Проверка связи.</Russian>
                 <Chinesesimp>这是%1，无线电检查正常。</Chinesesimp>
                 <Korean>여기는 %1, 무전 체크 양호.</Korean>
+                <French>Il s'agit de %1, contrôle radio OK.</French>
             </Key>
             <Key ID="STR_chats_help_success">
                 <Original>You are ready %1.</Original>
                 <Russian>Всё, ты снова готов к бою, %1.</Russian>
                 <Chinesesimp>你准备好了战斗了，%1。</Chinesesimp>
                 <Korean>치료 끝났습니다, %1.</Korean>
+                <French>Vous êtes prêt %1.</French>
             </Key>
             <Key ID="STR_chats_help_response">
                 <Original>Wait a minute comrade %1, I will patch you up.</Original>
                 <Russian>Подожди немного, %1, я тебя подлатаю.</Russian>
                 <Chinesesimp>等一下,%1同志，我给你包扎一下。</Chinesesimp>
                 <Korean>잠깐 기다려시오 %1 동지, 내가 치료하겠소.</Korean>
+                <French>Attendez une minute camarade %1, je vais vous rafistoler.</French>
             </Key>
             <Key ID="STR_chats_help_ask">
                 <Original>Comrades, this is %1. I'm wounded!</Original>
                 <Russian>Соотрядники, это %1. Я ранен!</Russian>
                 <Chinesesimp>同志们，这里是%1，我受伤了！</Chinesesimp>
                 <Korean>동지들, 여기는 %1이다. 부상당했다!</Korean>
+                <French>Camarades, ici %1. Je suis blessé !</French>
             </Key>
             <Key ID="STR_chats_help_notification_desc">
                 <Original>%1 is on the way to help you.</Original>
                 <Russian>%1 спешит вам на помощь.</Russian>
                 <Chinesesimp>%1正在来帮助您的路上。</Chinesesimp>
                 <Korean>%1이(가) 당신을 도우러 갑니다.</Korean>
+                <French>%1 est en route pour vous aider.</French>
             </Key>
             <Key ID="STR_chats_help_notification_header">
                 <Original>Medical Help</Original>
                 <Russian>Медицинская помощь</Russian>
                 <Chinesesimp>医疗救助</Chinesesimp>
                 <Korean>의료 지원</Korean>
+                <French>Aide médicale</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearm_heal_in_progress">
                 <Original>I can't rearm right now. I'm healing a comrade!</Original>
                 <Russian>Я не могу перевооружиться прямо сейчас. Я лечу товарища!</Russian>
                 <Chinesesimp>我现在不能重新武装，我在治疗一个同志！</Chinesesimp>
                 <Korean>당장 재무장할 수 없습니다. 다른 사람을 치료 중입니다!</Korean>
+                <French>Je ne peux pas réarmer maintenant. Je soigne un camarade !</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearm_in_progress">
                 <Original>I am currently rearming. Cancelling.</Original>
                 <Russian>Я уже перевооружаюсь. Галя, отмена.</Russian>
                 <Chinesesimp>我正在重新武装，取消。</Chinesesimp>
                 <Korean>현재 재무장 중입니다. 취소합니다.</Korean>
+                <French>Je suis en train de réarmer. Annulation.</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearm_gun_manning">
                 <Original>I can't rearm right now. I'm manning this gun.</Original>
                 <Russian>Я не могу перевооружиться сейчас. Я стрелок-наводчик этой техники.</Russian>
                 <Chinesesimp>我现在不能重新武装，我在操作这把枪。</Chinesesimp>
                 <Korean>당장 재무장할 수 없습니다. 이 총을 잡고 있습니다.</Korean>
+                <French>Je ne peux pas réarmer maintenant. Je m'occupe de cette arme.</French>
             </Key>
             <Key ID="STR_chats_autoloot_load_vehicle">
                 <Original>It is useless to load my vehicle, as it needs repairs.</Original>
                 <Russian>Бесполезно загружать моё транспортное средство, оно нуждается в ремонте.</Russian>
                 <Chinesesimp>我的车子需要修理，不然装不了货物。</Chinesesimp>
                 <Korean>수리가 필요하기 때문에 내 차에 짐을 싣는 것은 쓸모가 없습니다.</Korean>
+                <French>Il est inutile de charger mon véhicule, car il a besoin de réparations.</French>
             </Key>
             <Key ID="STR_chats_autoloot_no_bodies">
                 <Original>I see no bodies to loot here.</Original>
                 <Russian>Не вижу тел для обыска здесь.</Russian>
                 <Chinesesimp>这里没有尸体可以搜刮。</Chinesesimp>
                 <Korean>노획할 시체가 보이지 않습니다.</Korean>
+                <French>Je ne vois aucun corps à piller ici.</French>
             </Key>
             <Key ID="STR_chats_autoloot_no_loot">
                 <Original>There's nothing to loot.</Original>
                 <Russian>Здесь нет добычи.</Russian>
                 <Chinesesimp>没什么好搜刮的。</Chinesesimp>
                 <Korean>노획할 게 없습니다.</Korean>
+                <French>Il n'y a rien à piller.</French>
             </Key>
             <Key ID="STR_chats_autoloot_start_looting">
                 <Original>Starting looting.</Original>
                 <Russian>Начинаю сбор добычи.</Russian>
                 <Chinesesimp>开始搜刮中。</Chinesesimp>
                 <Korean>노획 시작 중.</Korean>
+                <French>Début du pillage.</French>
             </Key>
             <Key ID="STR_chats_autoloot_no_more_weapons">
                 <Original>No more weapons to loot.</Original>
                 <Russian>Больше нечего собирать.</Russian>
                 <Chinesesimp>没有武器可搜刮了。</Chinesesimp>
                 <Korean>더 이상 노획할 무기가 없습니다.</Korean>
+                <French>Il n'y a plus d'armes à piller.</French>
             </Key>
             <Key ID="STR_chats_autoloot_better_weapon">
                 <Original>Picking up a better weapon.</Original>
                 <Russian>Подбираю оружие получше.</Russian>
                 <Chinesesimp>搜刮到更好的武器了。</Chinesesimp>
                 <Korean>더 나은 무기를 줍는 중.</Korean>
+                <French>Prendre une meilleure arme.</French>
             </Key>
             <Key ID="STR_chats_autoloot_better_weapon_confirm">
                 <Original>I have a better weapon now.</Original>
                 <Russian>Теперь у меня оружие получше.</Russian>
                 <Chinesesimp>我现在有更好的武器了。</Chinesesimp>
                 <Korean>이제 더 나은 무기를 가지고 있습니다.</Korean>
+                <French>J'ai une meilleure arme maintenant.</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearming">
                 <Original>Rearming.</Original>
                 <Russian>Пополняю боекомплект.</Russian>
                 <Chinesesimp>重新武装中。</Chinesesimp>
                 <Korean>재무장 중.</Korean>
+                <French>Réarmement.</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearming_confirm">
                 <Original>Rearmed.</Original>
                 <Russian>Боекомплект пополнен.</Russian>
                 <Chinesesimp>重新武装。</Chinesesimp>
                 <Korean>재무장 완료.</Korean>
+                <French>Réarmé.</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearming_confirm_partially">
                 <Original>Partially Rearmed.</Original>
                 <Russian>Боекомплект пополнен частично.</Russian>
                 <Chinesesimp>部分重新武装。</Chinesesimp>
                 <Korean>부분적으로 재무장 완료.</Korean>
+                <French>Partiellement réarmé.</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearming_fail">
                 <Original>No source to rearm my primary weapon.</Original>
                 <Russian>Нет подходящего источника боекомплекта для моего основного оружия.</Russian>
                 <Chinesesimp>没有资源可以重新武装我的主要武器。</Chinesesimp>
                 <Korean>내 주무기를 재무장할 곳이 없습니다.</Korean>
+                <French>Pas de source pour réarmer mon arme principale.</French>
             </Key>
             <Key ID="STR_chats_mission_request_success">
                 <Original>I have a mission for you!</Original>
                 <Russian>У меня есть задача для тебя!</Russian>
                 <Chinesesimp>我有一个任务要交给你！</Chinesesimp>
                 <Korean>임무를 드리겠습니다!</Korean>
+                <French>J'ai une mission pour vous !</French>
             </Key>
             <Key ID="STR_chats_autoloot_secondary_weapon">
                 <Original>Picking up a secondary weapon.</Original>
                 <Russian>Подбираю вспомогательное оружие.</Russian>
                 <Chinesesimp>拿起副武器。</Chinesesimp>
                 <Korean>부무기를 줍는 중.</Korean>
+                <French>Ramassage d'une arme secondaire.</French>
             </Key>
             <Key ID="STR_chats_autoloot_secondary_weapon_confirm">
                 <Original>I have a secondary weapon now.</Original>
                 <Russian>У меня теперь есть вспомогательное оружие.</Russian>
                 <Chinesesimp>我现在有副武器了。</Chinesesimp>
                 <Korean>이제 부무기를 가지고 있습니다.</Korean>
+                <French>J'ai une arme secondaire maintenant.</French>
             </Key>
             <Key ID="STR_chats_autoloot_secondary_weapon_fail">
                 <Original>No source to rearm my secondary weapon.</Original>
                 <Russian>Нет подходящего источника боекомплекта для моего вспомогательного оружия.</Russian>
                 <Chinesesimp>没有资源可以重新武装我的副武器。</Chinesesimp>
                 <Korean>내 부무기를 재무장할 곳이 없습니다.</Korean>
+                <French>Pas de source pour réarmer mon arme secondaire.</French>
             </Key>
             <Key ID="STR_chats_autoloot_radio">
                 <Original>Picking up a radio.</Original>
                 <Russian>Подбираю рацию.</Russian>
                 <Chinesesimp>拿起无线电。</Chinesesimp>
                 <Korean>무전기를 줍는 중.</Korean>
+                <French>Ramasser une radio.</French>
             </Key>
             <Key ID="STR_chats_autoloot_nv_goggles">
                 <Original>Picking up NV Googles.</Original>
                 <Russian>Подбираю ПНВ.</Russian>
                 <Chinesesimp>拿起夜视仪。</Chinesesimp>
                 <Korean>야시경을 줍는 중.</Korean>
+                <French>Ramasser les lunettes de vision nocturne.</French>
             </Key>
             <Key ID="STR_chats_autoloot_helmet">
                 <Original>Picking up a helmet.</Original>
                 <Russian>Подбираю шлем.</Russian>
                 <Chinesesimp>拿起头盔。</Chinesesimp>
                 <Korean>헬멧을 줍는 중.</Korean>
+                <French>Ramasser un casque.</French>
             </Key>
             <Key ID="STR_chats_autoloot_fak">
                 <Original>Picking up a First Aid Kit.</Original>
                 <Russian>Подбираю медпакет.</Russian>
                 <Chinesesimp>拿起医疗箱。</Chinesesimp>
                 <Korean>구급상자를 줍는 중.</Korean>
+                <French>Ramasser une trousse de premiers secours.</French>
             </Key>
             <Key ID="STR_chats_autoloot_vest">
                 <Original>Picking up a vest.</Original>
                 <Russian>Подбираю бронежилет.</Russian>
                 <Chinesesimp>拿起急救包。</Chinesesimp>
                 <Korean>방탄복을 줍는 중.</Korean>
+                <French>Ramasser un gilet</French>
             </Key>
             <Key ID="STR_chats_autoloot_backpack">
                 <Original>Picking up a backpack.</Original>
                 <Russian>Подбираю рюкзак.</Russian>
                 <Chinesesimp>拿起背包。</Chinesesimp>
                 <Korean>가방을 줍는 중.</Korean>
+                <French>Ramasser un sac</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearm_no_need">
                 <Original>No need to rearm.</Original>
                 <Russian>Нет нужды в переснаряжении.</Russian>
                 <Chinesesimp>无需重新武装。</Chinesesimp>
                 <Korean>재무장할 필요가 없습니다.</Korean>
+                <French>Il n'est pas nécessaire de réarmer.</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearm_done">
                 <Original>Rearming Done.</Original>
                 <Russian>Переснаряжение завершено.</Russian>
                 <Chinesesimp>重新武装完成。</Chinesesimp>
                 <Korean>재무장 완료.</Korean>
+                <French>Réarmement effectué.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_CONVOY">
                 <Original>I have no Convoy missions for you. Move our HQ closer to the enemy.</Original>
                 <Russian>Нет конвоев поблизости. Передвинь штаб ближе к врагу.</Russian>
                 <Chinesesimp>我没有车队任务给你。 将我们的总部移到离敌人更近的地方。</Chinesesimp>
                 <Korean>줄 수 있는 호송 임무가 없습니다. 우리 본부를 적에게 더 가까이 옮기십시오.</Korean>
+                <French>Je n'ai pas de missions de convoi à vous confier. Rapprochez notre QG de l'ennemi.</French>
             </Key>
             <Key ID="STR_chats_mission_request_big_battle">
                 <Original>There is a big battle around, I don't think the enemy will send any convoy.</Original>
                 <Russian>В настоящий момент идёт довольно крупная битва. Не думаю, что враг отправит конвой в такое время.</Russian>
                 <Chinesesimp>周围有大战，估计敌人不会派车队过来。</Chinesesimp>
                 <Korean>주변에 큰 전투가 벌어져서 적군이 호송대를 보내지 않을 것 같습니다.</Korean>
+                <French>Il y a une grande bataille autour, je ne pense pas que l'ennemi enverra un convoi.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_RES">
                 <Original>I have no rescue missions for you. Move our HQ closer to the enemy.</Original>
                 <Russian>У меня нет спасательных миссий в настоящее время. Передвинь штаб ближе к врагу.</Russian>
                 <Chinesesimp>我没有救援任务给你，把我们的总部移到离敌人更近的地方。</Chinesesimp>
                 <Korean>줄 수 있는 구출 임무가 없습니다. 우리 본부를 적에게 더 가까이 옮기십시오.</Korean>
+                <French>Je n'ai pas de missions de sauvetage pour vous. Rapprochez notre QG de l'ennemi.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_SUPP">
                 <Original>I have no support missions for you. Move our HQ closer to the enemy.</Original>
                 <Russian>У меня нет задач поддержки в настоящее время. Передвинь штаб ближе к врагу.</Russian>
                 <Chinesesimp>我没有支援任务给你。 将我们的总部移到离敌人更近的地方。</Chinesesimp>
                 <Korean>줄 수 있는 지원 임무가 없습니다. 우리 본부를 적에게 더 가까이 옮기십시오.</Korean>
+                <French>Je n'ai pas de missions de soutien pour vous. Rapprochez notre QG de l'ennemi.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_LOG">
                 <Original>I have no Logistics missions for you. Move our HQ closer to the enemy.</Original>
                 <Russian>У меня нет задач логистики в настоящее время. Передвинь штаб ближе к врагу.</Russian>
                 <Chinesesimp>我没有后勤任务给你。 将我们的总部移到离敌人更近的地方。</Chinesesimp>
                 <Korean>줄 수 있는 병참 임무가 없습니다. 우리 본부를 적에게 더 가까이 옮기십시오.</Korean>
+                <French>Je n'ai pas de missions logistiques à vous confier. Rapprochez notre QG de l'ennemi.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_DES">
                 <Original>I have no Destroy missions for you. Move our HQ closer to the enemy.</Original>
                 <Russian>У меня нет задач по уничтожению в настоящее время. Передвинь штаб ближе к врагу.</Russian>
                 <Chinesesimp>我没有摧毁任务给你。 将我们的总部移到离敌人更近的地方。</Chinesesimp>
                 <Korean>줄 수 있는 파괴 임무가 없습니다. 우리 본부를 적에게 더 가까이 옮기십시오.</Korean>
+                <French>Je n'ai pas de mission de destruction à vous confier. Rapprochez notre QG de l'ennemi.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_CON">
                 <Original>I have no Conquest missions for you. Move our HQ closer to the enemy.</Original>
                 <Russian>У меня нет задач по захвату в настоящее время. Передвинь штаб ближе к врагу.</Russian>
                 <Chinesesimp>我没有征服任务给你。 将我们的总部移到离敌人更近的地方。</Chinesesimp>
                 <Korean>줄 수 있는 점령 임무가 없습니다. 우리 본부를 적에게 더 가까이 옮기십시오.</Korean>
+                <French>Je n'ai pas de missions de conquête pour vous. Rapprochez notre QG de l'ennemi.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_AS">
                 <Original>I have no assassination missions for you. Move our HQ closer to the enemy.</Original>
                 <Russian>У меня нет задач по устранению в настоящее время. Передвинь штаб ближе к врагу.</Russian>
                 <Chinesesimp>我没有暗杀任务给你。 将我们的总部移到离敌人更近的地方。</Chinesesimp>
                 <Korean>줄 수 있는 암살 임무가 없습니다. 우리 본부를 적에게 더 가까이 옮기십시오.</Korean>
+                <French>Je n'ai pas de missions d'assassinat pour vous. Rapprochez notre QG de l'ennemi.</French>
             </Key>
             <Key ID="STR_chats_mission_request_already_type">
                 <Original>I already gave you a mission of this type.</Original>
                 <Russian>Я уже выдал тебе подобную задачу.</Russian>
                 <Chinesesimp>我已经给了你一个相同的任务。</Chinesesimp>
                 <Korean>이미 해당 유형의 임무를 주었습니다.</Korean>
+                <French>Je vous ai déjà donné une mission de ce type.</French>
             </Key>
             <Key ID="STR_chats_loot_flee_response">
                 <Original>Thank you. I owe you my life!</Original>
                 <Russian>Спасибо. Я обязан тебе жизнью!</Russian>
                 <Chinesesimp>谢谢。 我欠你一条命！</Chinesesimp>
                 <Korean>감사합니다. 당신은 생명의 은인이에요!</Korean>
+                <French>Je vous remercie. Je vous dois la vie !</French>
             </Key>
             <Key ID="STR_chats_loot_flee_player">
                 <Original>You are free!</Original>
                 <Russian>Ты теперь свободен!</Russian>
                 <Chinesesimp>你自由了！</Chinesesimp>
                 <Korean>당신은 자유입니다!</Korean>
+                <French>Vous êtes libre !</French>
             </Key>
             <Key ID="STR_chats_loot_run">
                 <Original>Starting loot helicopter run. ETA 30 seconds.</Original>
                 <Russian>Начинается пролёт вертолёта-сборщика добычи. Ожидайте 30 секунд.</Russian>
                 <Chinesesimp>开始战利品直升机搜刮。 预计到达时间 30 秒。</Chinesesimp>
                 <Korean>전리품 헬리콥터 진입 시작. 도착 예정 시간 30초.</Korean>
+                <French>Départ de l'hélicoptère de ramassage du butin. Temps estimé à 30 secondes.</French>
             </Key>
             <Key ID="STR_chats_plane_paradrop_run">
                 <Original>Starting paradrop run. Get ready to jump!</Original>
                 <Russian>Начинается пролёт парашютно-десантного самолёта. Готовьтесь к прыжку!</Russian>
                 <Chinesesimp>开始跳伞。 准备好跳跃！</Chinesesimp>
                 <Korean>공수강하 시작. 강하 준비!</Korean>
+                <French>Début du saut en parachute. Préparez-vous à sauter !</French>
             </Key>
             <Key ID="STR_chats_plane_run">
                 <Original>Starting plane run. ETA 30 seconds.</Original>
                 <Russian>Начинается пролёт самолёта. Ожидайте 30 секунд.</Russian>
                 <Chinesesimp>正在起飞，预计到达时间30秒。</Chinesesimp>
                 <Korean>항공기 진입 시작. 도착 예정 시간 30초.</Korean>
+                <French>L'avion commence à survoler la région. Temps estimé à 30 secondes.</French>
             </Key>
             <Key ID="STR_chats_barrage_flare">
                 <Original>Starting flare barrage. ETA 30 seconds.</Original>
                 <Russian>Начинается обстрел осветительными. Ожидайте 30 секунд.</Russian>
                 <Chinesesimp>开始发射照明弹，预计30秒到达。</Chinesesimp>
                 <Korean>조명탄 탄막 전개 시작. 도달 예정 시간 30초.</Korean>
+                <French>Lancement du barrage de fusées éclairantes. Temps estimé à 30 secondes.</French>
             </Key>
             <Key ID="STR_chats_barrage_smoke">
                 <Original>Starting smoke barrage. ETA 30 seconds.</Original>
                 <Russian>Начинается обстрел дымовыми. Ожидайте 30 секунд.</Russian>
                 <Chinesesimp>发射烟幕弹，预计30秒到达。</Chinesesimp>
                 <Korean>연막탄 탄막 전개 시작. 도달 예정 시간 30초.</Korean>
+                <French>Lancement du barrage de fumigènes. Temps estimé à 30 secondes.</French>
             </Key>
             <Key ID="STR_chats_airdrop_pilot_smoke">
                 <Original>This is the pilot. I see your smoke in the drop zone. I'm about to paradrop my cargo on %1 position, please wait.</Original>
                 <Russian>Пилот на связи. Вижу дым в зоне высадки. Я скоро выброшу груз на парашюте на %1 позицию, ожидайте.</Russian>
                 <Chinesesimp>我是飞行员。我在降落区看到你的烟了。我要在%1位置空投货物，请稍等。</Chinesesimp>
                 <Korean>여기는 조종사다. 공수 지역에서 연막이 보인다. %1 위치에 화물을 공수하려 하니 대기하라.</Korean>
+                <French>Ici le pilote. Je vois votre fumée dans la zone de largage. Je suis sur le point de larguer ma cargaison sur la position %1, veuillez patienter.</French>
             </Key>
             <Key ID="STR_chats_airdrop_pilot_drop_cargo_zone">
                 <Original>It seems that you're in the airdrop area! Drop any smoke grenade to confirm that it's actually you and then the pilot will drop the cargo.</Original>
                 <Russian>Похоже, что в точке сброса груза! Бросьте любую дымовую гранату для подтверждения, что это действительно вы и затем пилот сбросит груз.</Russian>
                 <Chinesesimp>看来你在空投区！ 放下任何烟雾弹以确认它确实是你，然后飞行员将放下货物。</Chinesesimp>
                 <Korean>당신은 공수 지역에 있는 것 같습니다! 연막 수류탄을 떨어뜨려서 정말로 당신인지 확인하면 조종사가 화물을 떨어뜨릴 것입니다.</Korean>
+                <French>Il semble que tu sois dans la zone de largage ! Lâchez une grenade fumigène pour confirmer que c'est bien vous, et ensuite le pilote larguera la cargaison.</French>
             </Key>
             <Key ID="STR_chats_airdrop_pilot_drop_cargo">
                 <Original>Dropping cargo.</Original>
                 <Russian>Сбрасываю груз.</Russian>
                 <Chinesesimp>卸货。</Chinesesimp>
                 <Korean>화물 공수 중.</Korean>
+                <French>Largage de la cargaison</French>
             </Key>
             <Key ID="STR_chats_airdrop_pilot_drop_cargo_end">
                 <Original>Cargo has been dropped, I hope it will help the resistance. Good luck, lads!</Original>
                 <Russian>Груз сброшен, надеюсь, это поможет сопротивлению. Удачи, парни!</Russian>
                 <Chinesesimp>货物已经卸下，希望能帮助抵抗军，祝你们好运，小伙子们！</Chinesesimp>
                 <Korean>화물이 떨어졌다, 그게 당신들에게 도움이 됐으면 좋겠군. 행운을 빈다, 친구들!</Korean>
+                <French>La cargaison a été larguée, j'espère qu'elle aidera la résistance. Bonne chance, les gars !</French>
             </Key>
             <Key ID="STR_chats_send_back_to_base">
                 <Original>%2, I'm sending %1 back to base.</Original>
                 <Russian>%2, Я отправляю %1 обратно на базу.</Russian>
                 <Chinesesimp>%2，我要将 %1 送回基地。</Chinesesimp>
                 <Korean>%2, %1을(를) 기지로 돌려보내는 중입니다.</Korean>
+                <French>%2, je renvoie %1 à la base.</French>
             </Key>
             <Key ID="STR_chats_prisoner_free_1">
                 <Original>I'm free, thank you!</Original>
                 <Russian>Я свободен, спасибо!</Russian>
                 <Chinesesimp>我自由了，谢谢！</Chinesesimp>
                 <Korean>이제 자유다...! 감사합니다!</Korean>
+                <French>Je suis libre, merci !</French>
             </Key>
             <Key ID="STR_chats_prisoner_free_2">
                 <Original>Thank you for liberating me.</Original>
                 <Russian>Спасибо что освободил меня.</Russian>
                 <Chinesesimp>谢谢你解放了我。</Chinesesimp>
                 <Korean>구해주셔서 감사합니다!</Korean>
+                <French>Merci de m'avoir libéré.</French>
             </Key>
             <Key ID="STR_chats_prisoner_free_3">
                 <Original>I'm finally free!</Original>
                 <Russian>Наконец-то я свободен!</Russian>
                 <Chinesesimp>我终于自由了！</Chinesesimp>
                 <Korean>드디어 자유다!</Korean>
+                <French>Je suis enfin libre !</French>
             </Key>
             <Key ID="STR_chats_splash_out">
                 <Original>Splash. Out.</Original>
                 <Russian>Попадание.</Russian>
                 <Chinesesimp>弹着，完毕。</Chinesesimp>
                 <Korean>착탄 확인바람, 이상.</Korean>
+                <French></French>
             </Key>
             <Key ID="STR_chats_mortar_barrage_confirm">
                 <Original>Acknowledged. Fire mission is inbound. ETA %1 secs for the first impact.</Original>
                 <Russian>Подтверждаю. Огневая задача принята. %1 секунд до первого попадания.</Russian>
                 <Chinesesimp>收到，准备执行火力支援，首发预计抵达时间 %1 秒。</Chinesesimp>
                 <Korean>알겠다. 사격 임무를 받았다. 초탄 착탄까지 앞으로 %1초.</Korean>
+                <French>Accusé de réception. Mission d'incendie en cours. ETA %1 secondes pour le premier impact.</French>
             </Key>
             <Key ID="STR_chats_mortar_barrage">
                 <Original>Requesting fire support on Grid %1. %2 Rounds.</Original>
                 <Russian>Запрашиваю поддержку по координатам %1. %2 снарядов.</Russian>
                 <Chinesesimp>请求对网格 %1 提供 %2 轮火力支援。</Chinesesimp>
                 <Korean>%1 좌표에 %2발의 화력 지원을 요청한다.</Korean>
+                <French>Demande d'appui feu sur la Grille %1. %2 tirs.</French>
             </Key>
         </Container>
         <Container name="task_notifiers">
