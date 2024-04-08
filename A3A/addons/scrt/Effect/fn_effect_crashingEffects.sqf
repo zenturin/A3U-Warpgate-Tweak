@@ -55,7 +55,7 @@ if (typeOf _object in (_faction get "vehiclesDropPod") ) then {
 
 	setAperture 10;
 	waitUntil {sleep 0.1; getPos _object select 2 < 2500};
-	playSound3D [QPATHTOFOLDER(Sounds\Misc\sonic.ogg), _object, false, getPosASL _object, 5, 1, 7000];
+	playSound3D [QPATHTOFOLDER(Sounds\Misc\Sonic.ogg), _object, false, getPosASL _object, 5, 1, 7000];
 
 	player spawn {
 		for "_i" from 0 to 200 do {
