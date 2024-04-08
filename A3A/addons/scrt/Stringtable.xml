@@ -1588,330 +1588,385 @@
                 <Russian>бронеавтомобиль</Russian>
                 <Chinesesimp>反地雷伏击车</Chinesesimp>
                 <Korean>MRAP</Korean>
+                <French>MRAP</French>
             </Key>
             <Key ID="STR_qrf_marker_apc">
                 <Original>APC</Original>
                 <Russian>БТР</Russian>
                 <Chinesesimp>装甲运兵车</Chinesesimp>
                 <Korean>장갑차</Korean>
+                <French>APC</French>
             </Key>
             <Key ID="STR_qrf_marker_tank">
                 <Original>Tank</Original>
                 <Russian>танк</Russian>
                 <Chinesesimp>坦克</Chinesesimp>
                 <Korean>전차</Korean>
+                <French>Char</French>
             </Key>
             <Key ID="STR_qrf_marker_light_tank">
                 <Original>Light Tank</Original>
                 <Russian>лёгкий танк</Russian>
                 <Chinesesimp>轻型坦克</Chinesesimp>
                 <Korean>경전차</Korean>
+                <French>Char léger</French>
             </Key>
             <Key ID="STR_qrf_marker_light_apc">
                 <Original>Light APC</Original>
                 <Russian>лёгкий бронетранспортёр</Russian>
                 <Chinesesimp>轻型装甲运兵车</Chinesesimp>
                 <Korean>경장갑차</Korean>
+                <French>APC léger</French>
             </Key>
             <Key ID="STR_qrf_marker_aa">
                 <Original>AA</Original>
                 <Russian>самоходный зенитный комплекс</Russian>
                 <Chinesesimp>防空</Chinesesimp>
                 <Korean>대공</Korean>
+                <French>AA</French>
             </Key>
             <Key ID="STR_qrf_marker_truck">
                 <Original>Truck</Original>
                 <Russian>грузовик</Russian>
                 <Chinesesimp>卡车</Chinesesimp>
                 <Korean>트럭</Korean>
+                <French>Camion</French>
             </Key>
             <Key ID="STR_markers_arty_strike">
                 <Original>Artillery Strike</Original>
                 <Russian>Артиллерийский удар</Russian>
                 <Chinesesimp>炮击</Chinesesimp>
                 <Korean>포격</Korean>
+                <French>Frappe d'artillerie</French>
             </Key>
             <Key ID="STR_markers_arty_barrage_starting_pos">
                 <Original>Artillery Barrage Start</Original>
                 <Russian>Начало артиллерийского обстрела</Russian>
                 <Chinesesimp>炮击开始</Chinesesimp>
                 <Korean>포격 시작</Korean>
+                <French>Début du barrage d'artillerie</French>
             </Key>
             <Key ID="STR_markers_arty_barrage_ending_pos">
                 <Original>Artillery Barrage End</Original>
                 <Russian>Конец артиллерийского обстрела</Russian>
                 <Chinesesimp>炮击结束</Chinesesimp>
                 <Korean>포격 끝</Korean>
+                <French>Fin du barrage d'artillerie</French>
             </Key>
             <Key ID="STR_markers_convoy_tracker">
                 <Original>[%4-%3] %1 %2 Convoy</Original>
                 <Russian>[%4-%3] %1 %2 Конвой</Russian>
                 <Chinesesimp>[%4-%3] %1 %2 车队</Chinesesimp>
                 <Korean>[%4-%3] %1 %2 호송대</Korean>
+                <French>[%4-%3] %1 %2 Convoi</French>
             </Key>
             <Key ID="STR_markers_injured_player">
                 <Original>Injured %1</Original>
                 <Russian>Раненый %1</Russian>
                 <Chinesesimp>%1 受伤</Chinesesimp>
                 <Korean>다친 %1</Korean>
+                <French>Blessé %1</French>
             </Key>
             <Key ID="STR_officer_dest_pos">
                 <Original>Officer's Destination</Original>
                 <Russian>Пункт назначения офицера</Russian>
                 <Chinesesimp>军官目的地</Chinesesimp>
                 <Korean>장교 목적지</Korean>
+                <French>Destination de l'officier</French>
             </Key>
             <Key ID="STR_marker_informer_pos">
                 <Original>Informer Location</Original>
                 <Russian>Местоположение информатора</Russian>
                 <Chinesesimp>告密者的位置</Chinesesimp>
                 <Korean>정보제공자 위치</Korean>
+                <French>Emplacement de l'informateur</French>
             </Key>
             <Key ID="STR_marker_airdrop">
                 <Original>Vehicle Paradrop</Original>
                 <Russian>Сброс десанта с техникой</Russian>
                 <Chinesesimp>载具空投</Chinesesimp>
                 <Korean>차량 공수</Korean>
+                <French>Véhicule parachuté</French>
             </Key>
             <Key ID="STR_marker_airstrike">
                 <Original>Airstrike</Original>
                 <Russian>Удар с воздуха</Russian>
                 <Chinesesimp>空袭</Chinesesimp>
                 <Korean>공습</Korean>
+                <French>Frappe aérienne</French>
             </Key>
             <Key ID="STR_marker_asf_target">
                 <Original>ASF Target</Original>
                 <Russian>Цель воздушного перехвата</Russian>
                 <Chinesesimp>空优战斗机目标</Chinesesimp>
                 <Korean>제공전투기 표적</Korean>
+                <French>Cible ASF</French>
             </Key>
             <Key ID="STR_marker_carpet_bombing">
                 <Original>Carpet Bombing</Original>
                 <Russian>Ковровая бомбардировка</Russian>
                 <Chinesesimp>地毯式空袭</Chinesesimp>
                 <Korean>융단폭격</Korean>
+                <French>Tapis de bombes</French>
             </Key>
             <Key ID="STR_marker_cas_target">
                 <Original>CAS Target</Original>
                 <Russian>Цель поддержки с воздуха</Russian>
                 <Chinesesimp>近距离空中支援目标</Chinesesimp>
                 <Korean>근접항공지원 표적</Korean>
+                <French>Cible CAS</French>
             </Key>
             <Key ID="STR_marker_cruise_missile_target">
                 <Original>Cruise Missile Target</Original>
                 <Russian>Цель крылатой ракеты</Russian>
                 <Chinesesimp>巡航导弹目标</Chinesesimp>
                 <Korean>순항미사일 표적</Korean>
+                <French>Cible du missile de croisière</French>
             </Key>
             <Key ID="STR_marker_gunship">
                 <Original>Gunship</Original>
                 <Russian>Летающая батарея поддержки</Russian>
                 <Chinesesimp>武装直升机</Chinesesimp>
                 <Korean>건쉽</Korean>
+                <French>Batterie de soutien aérien (Gunship)</French>
             </Key>
             <Key ID="STR_marker_arty_target">
                 <Original>Artillery Target</Original>
                 <Russian>Цель артиллерии</Russian>
                 <Chinesesimp>炮兵目标</Chinesesimp>
                 <Korean>포병 표적</Korean>
+                <French>Cible d'artillerie</French>
             </Key>
             <Key ID="STR_marker_qrf">
                 <Original>Quick Reaction Force</Original>
                 <Russian>Силы быстрого реагирования</Russian>
                 <Chinesesimp>快速反应部队</Chinesesimp>
                 <Korean>신속대응군</Korean>
+                <French>Force de réaction rapide</French>
             </Key>
             <Key ID="STR_marker_sam_target">
                 <Original>SAM Target</Original>
                 <Russian>Цель ПВО</Russian>
                 <Chinesesimp>防空导弹目标</Chinesesimp>
                 <Korean>지대공미사일 표적</Korean>
+                <French>Cible SAM</French>
             </Key>
             <Key ID="STR_marker_minefield">
                 <Original>%1 Minefield</Original>
                 <Russian>Минное поле %1</Russian>
                 <Chinesesimp> %1 雷区</Chinesesimp>
                 <Korean>%1 지뢰지대</Korean>
+                <French>%1 Champ de mines</French>
             </Key>
             <Key ID="STR_marker_aa_empl">
                 <Original>%1 AA Emplacement</Original>
                 <Russian>Зенитная огневая точка %1</Russian>
                 <Chinesesimp>%1 反坦克阵地</Chinesesimp>
                 <Korean>%1 대공화기 포대</Korean>
+                <French>%1 Emplacement AA</French>
             </Key>
             <Key ID="STR_marker_at_empl">
                 <Original>%1 AT Emplacement</Original>
                 <Russian>Противотанковая огневая точка %1</Russian>
                 <Chinesesimp>%1 防空阵地</Chinesesimp>
                 <Korean>%1 대전차화기 포대</Korean>
+                <French>%1 Emplacement AT</French>
             </Key>
             <Key ID="STR_marker_hmg_empl">
                 <Original>%1 HMG Emplacement</Original>
                 <Russian>Пулемётная огневая точка %1</Russian>
                 <Chinesesimp>%1 重机枪阵地</Chinesesimp>
                 <Korean>%1 중기관총 포대</Korean>
+                <French>%1 Emplacement HMG</French>
             </Key>
             <Key ID="STR_marker_mortar_empl">
                 <Original>%1 Mortar Emplacement</Original>
                 <Russian>Миномётная огневая точка %1</Russian>
                 <Chinesesimp>%1 迫击炮阵地</Chinesesimp>
                 <Korean>%1 박격포 포대</Korean>
+                <French>%1 Emplacement mortier</French>
             </Key>
             <Key ID="STR_marker_roadblock">
                 <Original>%1 Roadblock</Original>
                 <Russian>Блокпост %1</Russian>
                 <Chinesesimp>%1 路障</Chinesesimp>
                 <Korean>%1 검문소</Korean>
+                <French>%1 Barrage routier</French>
             </Key>
             <Key ID="STR_marker_watchpost">
                 <Original>%1 Observation Post</Original>
                 <Russian>Пункт наблюдения %1</Russian>
                 <Chinesesimp>%1 观察哨</Chinesesimp>
                 <Korean>%1 관측 지점</Korean>
+                <French>%1 Poste d'observation</French>
             </Key>
             <Key ID="STR_marker_roving_mortar_target">
                 <Original>Roving Mortar Target</Original>
                 <Russian>Цель кочующего миномёта</Russian>
                 <Chinesesimp>机动迫击炮目标</Chinesesimp>
                 <Korean>이동식 박격포 표적</Korean>
+                <French>Cible de mortier mobile</French>
             </Key>
             <Key ID="STR_marker_arms_dealer">
                 <Original>Arms Dealer</Original>
                 <Russian>Оружейный Торговец</Russian>
                 <Chinesesimp>军火商</Chinesesimp>
                 <Korean>암거래상</Korean>
+                <French>Marchand d'armes</French>
             </Key>
             <Key ID="STR_marker_convoy_objective">
                 <Original>Convoy Objective</Original>
                 <Russian>Конвой (цель)</Russian>
                 <Chinesesimp>车队目标</Chinesesimp>
                 <Korean>호송대 목표</Korean>
+                <French>Objectif du convoi</French>
             </Key>
             <Key ID="STR_marker_convoy_objective_space">
                 <Original> Convoy Objective</Original>
                 <Russian> Конвой (цель)</Russian>
                 <Chinesesimp> 车队目标</Chinesesimp>
                 <Korean> 호송대 목표</Korean>
+                <French> Objectif du convoi</French>
             </Key>
             <Key ID="STR_marker_mission_vehicle">
                 <Original>Mission Vehicle</Original>
                 <Russian>Транспортное средство (миссия)</Russian>
                 <Chinesesimp>任务车辆</Chinesesimp>
                 <Korean>임무 차량</Korean>
+                <French>Véhicule de mission</French>
             </Key>
             <Key ID="STR_marker_supply_box">
                 <Original>Supply Box</Original>
                 <Russian>Ящик с припасами</Russian>
                 <Chinesesimp>补给箱</Chinesesimp>
                 <Korean>보급상자</Korean>
+                <French>Caisse de ravitaillement</French>
             </Key>
             <Key ID="STR_marker_RP">
                 <Original>Rally Point (Remaining Travels: %1)</Original>
                 <Russian>Точка сбора (Ост. кол-во перемещений: %1)</Russian>
                 <Chinesesimp>集结点（剩余旅行：%1）</Chinesesimp>
                 <Korean>집결 지점 (남은 빠른 이동: %1)</Korean>
+                <French>Point de ralliement (voyages restants: %1)</French>
             </Key>
             <Key ID="STR_support_supply_run_init">
                 <Original>Supply Run Entry Point</Original>
                 <Russian>Точка входа (сброс снабжения)</Russian>
                 <Chinesesimp>补给转运（进入点）</Chinesesimp>
                 <Korean>보급 실행 진입 지점</Korean>
+                <French>Début de l'approvisionnement</French>
             </Key>
             <Key ID="STR_support_supply_run_exit">
                 <Original>Supply Run Exit</Original>
                 <Russian>Точка выхода (сброс снабжения)</Russian>
                 <Chinesesimp>补给转运（结束点）</Chinesesimp>
                 <Korean>보급 실행 퇴출 지점</Korean>
+                <French>Fin de l'approvisionnement</French>
             </Key>
             <Key ID="STR_support_barrage">
                 <Original>Barrage</Original>
                 <Russian>Обстрел</Russian>
                 <Chinesesimp>炮击</Chinesesimp>
                 <Korean>집중 포화</Korean>
+                <French>Barrage</French>
             </Key>
             <Key ID="STR_support_hmg_airdrop_init">
                 <Original>HMG Airdrop Entry Point</Original>
                 <Russian>Точка входа (сброс тяжелого пулемета)</Russian>
                 <Chinesesimp>空投HMG（进入点）</Chinesesimp>
                 <Korean>중기관총 공수 진입 지점</Korean>
+                <French>Début de largage HMG</French>
             </Key>
             <Key ID="STR_support_hmg_airdrop_exit">
                 <Original>HMG Airdrop Exit Point</Original>
                 <Russian>Точка выхода (сброс тяжелого пулемета)</Russian>
                 <Chinesesimp>空投HMG（结束点）</Chinesesimp>
                 <Korean>중기관총 공수 퇴출 지점</Korean>
+                <French>Fin de largage de HMG</French>
             </Key>
             <Key ID="STR_support_light_veh_init">
                 <Original>Light Vehicle Airdrop Entry Point</Original>
                 <Russian>Точка входа (сброс лёгкой техники)</Russian>
                 <Chinesesimp>空投轻型载具（进入点）</Chinesesimp>
                 <Korean>경차량 공수 진입 지점</Korean>
+                <French>Début de largage de véhicules léger</French>
             </Key>
             <Key ID="STR_support_light_veh_exit">
                 <Original>Light Vehicle Airdrop Exit Point</Original>
                 <Russian>Точка выхода (сброс лёгкой техники)</Russian>
                 <Chinesesimp>空投轻型载具（结束点）</Chinesesimp>
                 <Korean>경차량 공수 퇴출 지점</Korean>
+                <French>Fin de largage de véhicules léger</French>
             </Key>
             <Key ID="STR_support_recon_plane_init">
                 <Original>Recon Plane Entry Point</Original>
                 <Russian>Точка входа (самолёт-разведчик)</Russian>
                 <Chinesesimp>侦察机（进入点）</Chinesesimp>
                 <Korean>정찰기 진입 지점</Korean>
+                <French>Soutien de l'avion de reconnaissance</French>
             </Key>
             <Key ID="STR_support_recon_plane_search_area">
                 <Original>Recon plane Search Area</Original>
                 <Russian>Место осмотра (самолёт-разведчик)</Russian>
                 <Chinesesimp>侦察机（搜索区）</Chinesesimp>
                 <Korean>정찰기 수색 지역</Korean>
+                <French>Avion de reconnaissance dans la zone de recherche</French>
             </Key>
             <Key ID="STR_support_paradrop_init">
                 <Original>Paradrop Plane Entry Point</Original>
                 <Russian>Точка входа (парашютно-десантный самолёт)</Russian>
                 <Chinesesimp>伞降飞机（进入点）</Chinesesimp>
                 <Korean>항공기 공수 진입 지점</Korean>
+                <French>Début du parachutage</French>
             </Key>
             <Key ID="STR_support_paradrop_exit">
                 <Original>Paradrop Plane Exit Point</Original>
                 <Russian>Точка выхода (парашютно-десантный самолет)</Russian>
                 <Chinesesimp>伞降飞机（结束点）</Chinesesimp>
                 <Korean>항공기 공수 퇴출 지점</Korean>
+                <French>Fin du parachutage</French>
             </Key>
             <Key ID="STR_support_loot_helicopter_init">
                 <Original>Loot Helicopter Entry Point</Original>
                 <Russian>Точка входа (вертолёт-сборщик добычи)</Russian>
                 <Chinesesimp>掠夺战利品直升机（进入点）</Chinesesimp>
                 <Korean>전리품 헬리콥터 진입 지점</Korean>
+                <French>Début de l'hélicoptère de récupération</French>
             </Key>
             <Key ID="STR_support_loot_helicopter_search_area">
                 <Original>Loot Helicopter Search Area</Original>
                 <Russian>Зона сбора добычи (вертолета-сборщик добычи)</Russian>
                 <Chinesesimp>掠夺战利品直升机（搜索区）</Chinesesimp>
                 <Korean>전리품 헬리콥터 수색 지역</Korean>
+                <French>Zone de recherche de l'hélicoptère de récupération</French>
             </Key>
             <Key ID="STR_support_loot_crate_airdrop_init">
                 <Original>Loot Crate Airdrop Entry Point</Original>
                 <Russian>Точка входа (сброс ящика-сборщика добычи)</Russian>
                 <Chinesesimp>空投战利品箱（进入点）</Chinesesimp>
                 <Korean>전리품 상자 공수 진입 지점</Korean>
+                <French>Début du parachutage de la Caisse de butin</French>
             </Key>
             <Key ID="STR_support_loot_crate_airdrop_exit">
                 <Original>Loot Crate Airdrop Entry Point</Original>
                 <Russian>Точка выхода (сброс ящика-сборщика добычи)</Russian>
                 <Chinesesimp>空投战利品箱（结束点）</Chinesesimp>
                 <Korean>전리품 상자 공수 퇴출 지점</Korean>
+                <French>Fin du parachutage de la Caisse de butin</French>
             </Key>
             <Key ID="STR_support_bomb_run_init">
                 <Original>Bomb Run Entry Point</Original>
                 <Russian>Точка входа (сброс бомб)</Russian>
                 <Chinesesimp>炸弹空袭点（进入点）</Chinesesimp>
                 <Korean>폭격 진입 지점</Korean>
+                <French>Début du Bombardement</French>
             </Key>
             <Key ID="STR_support_bomb_run_exit">
                 <Original>Bomb Run Exit Point</Original>
                 <Russian>Точка выхода (сброс бомб)</Russian>
                 <Chinesesimp>炸弹空袭点（结束点）</Chinesesimp>
                 <Korean>폭격 퇴출 지점</Korean>
+                <French>Fin du Bombardement</French>
             </Key>
         </Container>
         <Container name="localizar">
@@ -1920,60 +1975,70 @@
                 <Russian>Авиабаза %1</Russian>
                 <Chinesesimp>%1 空军基地</Chinesesimp>
                 <Korean>%1 공군 기지</Korean>
+                <French>Base aérienne %1</French>
             </Key>
             <Key ID="STR_localizar_milbase">
                 <Original>Military base near %1</Original>
                 <Russian>Военная база недалеко от %1</Russian>
                 <Chinesesimp>%1 附近的军事基地</Chinesesimp>
                 <Korean>%1 인근 군사 기지</Korean>
+                <French>Base militaire à proximité de %1</French>
             </Key>
             <Key ID="STR_localizar_resource">
                 <Original>Resource near %1</Original>
                 <Russian>Ресурс рядом с %1</Russian>
                 <Chinesesimp>%1 附近的资源点</Chinesesimp>
                 <Korean>%1 인근 자원채취소</Korean>
+                <French>Ressource à proximité de %1</French>
             </Key>
             <Key ID="STR_localizar_factory">
                 <Original>Factory near %1</Original>
                 <Russian>Фабрика недалеко от %1</Russian>
                 <Chinesesimp>%1 附近工厂</Chinesesimp>
                 <Korean>%1 인근 공장</Korean>
+                <French>Usine à proximité de %1</French>
             </Key>
             <Key ID="STR_localizar_outpost">
                 <Original>Outpost near %1</Original>
                 <Russian>Аванпост недалеко от %1</Russian>
                 <Chinesesimp>%1 附近的哨站</Chinesesimp>
                 <Korean>%1 인근 전초 기지</Korean>
+                <French>Avant-poste à proximité de %1</French>
             </Key>
             <Key ID="STR_localizar_seaport">
                 <Original>Seaport near %1</Original>
                 <Russian>Морской порт недалеко от %1</Russian>
                 <Chinesesimp> %1 附近的海港</Chinesesimp>
                 <Korean>%1 인근 항구</Korean>
+                <French>Port maritime à proximité de %1</French>
             </Key>
             <Key ID="STR_localizar_riverport">
                 <Original>River port near %1</Original>
                 <Russian>Речной порт недалеко от %1</Russian>
                 <Chinesesimp> %1 附近的河港</Chinesesimp>
                 <Korean>%1 인근 강항</Korean>
+                <French>Port fluvial à proximité de %1</French>
             </Key>
             <Key ID="STR_localizar_roadblock">
                 <Original>Roadblock near %1</Original>
                 <Russian>Блокпост возле %1</Russian>
                 <Chinesesimp> %1 附近的路障</Chinesesimp>
                 <Korean>%1 인근 검문소</Korean>
+                <French>Barrage routier à proximité de %1</French>
             </Key>
             <Key ID="STR_localizar_outskirts">
                 <Original>%1 outskirts</Original>
                 <Russian>Окрестности %1</Russian>
                 <Chinesesimp>%1 郊区</Chinesesimp>
                 <Korean>%1 외곽</Korean>
+                <French>%1 périphérie</French>
             </Key>
             <Key ID="STR_localizar_supportcorridor">
                 <Original>their support corridor</Original>
                 <Russian>рядом с их коридором поддержки</Russian>
                 <Chinesesimp>他们的支援通道</Chinesesimp>
                 <Korean>그들의 지원 경로</Korean>
+                <French>leur couloir de soutien</French>
             </Key>
         </Container>
         <Container name="notifiers_types">
@@ -1982,24 +2047,28 @@
                 <Russian>УСПЕХ</Russian>
                 <Chinesesimp>成功</Chinesesimp>
                 <Korean>성공</Korean>
+                <French>SUCCÈS</French>
             </Key>
             <Key ID="STR_notifiers_fail_type">
                 <Original>FAIL</Original>
                 <Russian>ПРОВАЛ</Russian>
                 <Chinesesimp>失败</Chinesesimp>
                 <Korean>실패</Korean>
+                <French>ÉCHEC</French>
             </Key>
             <Key ID="STR_notifiers_info_type">
                 <Original>INFO</Original>
                 <Russian>ИНФОРМАЦИЯ</Russian>
                 <Chinesesimp>情报</Chinesesimp>
                 <Korean>정보</Korean>
+                <French>INFORMATION</French>
             </Key>
             <Key ID="STR_notifiers_warning_type">
                 <Original>WARNING</Original>
                 <Russian>ВНИМАНИЕ</Russian>
                 <Chinesesimp>警告</Chinesesimp>
                 <Korean>경고</Korean>
+                <French>ATTENTION</French>
             </Key>
         </Container>
         <Container name="comms_mp">
@@ -2008,12 +2077,14 @@
                 <Russian>&lt;t size='0.6'&gt;Наш миномет стреляет &lt;t size='0.6' color='#808080'&gt;дымовыми снарядами&lt;/t&gt; для создания дымовой завесы рядом с вашей позицией.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;我们的迫击炮发射了 &lt;t size='0.6' color='#808080'&gt;烟雾弹&lt;/t&gt; 到你的位置。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;아군 박격포가 당신의 위치를 엄호하기 위해 &lt;t size='0.6' color='#808080'&gt;연막탄&lt;/t&gt;을 발사합니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Notre mortier tire quelques &lt;t size='0.6' color='#808080'&gt;obus fumigènes&lt;/t&gt; pour couvrir votre position.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_comms_mp_flares">
                 <Original>&lt;t size='0.6'&gt;Our mortar fires some &lt;t size='0.6' color='#808080'&gt;flares&lt;/t&gt; to illuminate the battlefield near your position.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Наш миномет стреляет &lt;t size='0.6' color='#808080'&gt;осветительными&lt;/t&gt; для улучшения условий видимости на поле боя рядом с вашим местоположением.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;我们的迫击炮发射了 &lt;t size='0.6' color='#808080'&gt;照明弹&lt;/t&gt; 来照亮你位置附近的战场。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;아군 박격포가 당신의 위치 근처 전장을 비추기 위해 &lt;t size='0.6' color='#808080'&gt;조명탄&lt;/t&gt;을 발사합니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Notre mortier tire quelques &lt;t size='0.6' color='#808080'&gt;fusées éclairantes&lt;/t&gt; pour éclairer le champ de bataille près de votre position.&lt;/t&gt;</French>
             </Key>
         </Container>
         <Container name="chats">
@@ -2022,54 +2093,63 @@
                 <Russian>Миссии</Russian>
                 <Chinesesimp>任务</Chinesesimp>
                 <Korean>임무</Korean>
+                <French>Missions</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_AS_hint_text">
                 <Original>Assassination Missions require cities, patrolled forests, open plains or airports closer than %1m from your HQ.</Original>
                 <Russian>Миссиям по устранению требуются города, патрулируемые лесы, открытые пространства или авиабазы ближе %1 метров от вашего штаба.</Russian>
                 <Chinesesimp>暗杀任务需要城市、巡逻的森林、开阔的平原或距离总部不到 %1m 的机场。</Chinesesimp>
                 <Korean>암살 임무를 수행하려면 본부로부터 %1m 가까운 도시, 순찰된 숲, 개방된 평원이나 공항이 필요합니다.</Korean>
+                <French>Les missions d'assassinat nécessitent des villes, des forêts patrouillées, des plaines ouvertes ou des aéroports situés à moins de %1m de votre QG.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_CON_hint_text">
                 <Original>Conquest Missions require roadblocks or outposts closer than %1m from your HQ.</Original>
                 <Russian>Миссиям по захвату требуются блокпосты или аванпосты ближе %1 метров от вашего штаба.</Russian>
                 <Chinesesimp>征服任务需要距离总部 %1m 以内的路障或哨站。</Chinesesimp>
                 <Korean>점령 임무를 수행하려면 본부로부터 %1m 가까운 곳에 바리케이드나 전초 기지가 있어야 합니다.</Korean>
+                <French>Les missions de conquête nécessitent des barrages routiers ou des avant-postes à moins de %1m de votre QG.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_DES_hint_text">
                 <Original>Destroy Missions require Airbases or Radio Towers closer than %1 from your HQ.</Original>
                 <Russian>Миссиям по уничтожению требуются авиабазы или радиовышки ближе %1 метров от вашего штаба.</Russian>
                 <Chinesesimp>摧毁任务需要空军基地或无线电塔距离您的总部不超过 %1。</Chinesesimp>
                 <Korean>파괴 임무를 수행하려면 본부로부터 %1m 가까운 곳에 공군 기지 또는 통신탑이 필요합니다.</Korean>
+                <French>Les missions de destruction nécessitent des bases aériennes ou des tours radio situées à moins de %1 de votre QG.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_LOG_hint_text">
                 <Original>Logistics Missions require Outposts, Seaports or Banks closer than %1m from your HQ.</Original>
                 <Russian>Миссиям логистики требуются аванпосты, порты или банки ближе %1 метров от вашего штаба.</Russian>
                 <Chinesesimp>后勤任务需要前哨站、海港或银行离总部不超过 %1m。</Chinesesimp>
                 <Korean>병참 임무를 수행하려면 본부로부터 %1m 가까운 곳에 전초 기지, 항구 또는 은행이 필요합니다.</Korean>
+                <French>Les missions logistiques nécessitent des avant-postes, des ports maritimes ou des banques situés à moins de %1m de votre QG.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_SUPP_hint_text">
                 <Original>Support Missions require Cities closer than %1m from your HQ.</Original>
                 <Russian>Миссиям поддержки требуются города ближе %1 метров от вашего штаба.</Russian>
                 <Chinesesimp>支持任务需要距离您总部 %1m 以内的城市。</Chinesesimp>
                 <Korean>지원 임무를 수행하려면 본부로부터 %1m 가까운 곳에 도시가 필요합니다.</Korean>
+                <French>Les missions de soutien nécessitent des villes situées à moins de %1m de votre QG.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_RES_hint_text">
                 <Original>Rescue Missions require Cities, airports or beaches closer than %1m from your HQ.</Original>
                 <Russian>Спасательным миссиям требуются требуются города, авиабазы или пляжи ближе %1 метров от вашего штаба.</Russian>
                 <Chinesesimp>救援任务要求城市、机场或海滩距离您的总部不超过 %1m。</Chinesesimp>
                 <Korean>구출 임무를 수행하려면 본부로부터 %1m 가까운 도시, 공항 또는 해변이 필요합니다.</Korean>
+                <French>Les missions de sauvetage nécessitent des villes, des aéroports ou des plages situés à moins de %1m de votre QG.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_CONVOY_battack_hint_text">
                 <Original>Convoy Missions require a calmed status around the island, and now it is not the proper time.</Original>
                 <Russian>Засады на конвои требуют нормализации обстановки и спокойного статуса на местности, сейчас не время.</Russian>
                 <Chinesesimp>车队任务需要岛上保持平静的状态，现在不是合适的时间。</Chinesesimp>
                 <Korean>호송 임무를 수행하려면 섬 주변이 평화로운 상태여야 하며, 지금은 적절한 시기가 아닙니다.</Korean>
+                <French>Les missions de convoi nécessitent un état calme autour de l'île, et ce n'est pas le bon moment.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_CONVOY_hint_text">
                 <Original>Convoy Missions require nearby enemy facilities, with a road route to an idle base within 3km.</Original>
                 <Russian>Засады на конвои требуют близлежащих вражеских объектов, с дорогой к бездействующей базе в пределах 3 км.</Russian>
                 <Chinesesimp>车队任务需要附近有敌方设施，并在 3 公里范围内有通往闲置基地的道路。</Chinesesimp>
                 <Korean>호송 임무를 수행하려면 3km 이내의 평시 상태의 기지로 가는 도로 경로를 가진 인근의 적군 시설이 필요합니다.</Korean>
+                <French>Les missions de convoi nécessitent des installations ennemies proches, avec une route vers une base inactive dans un rayon de 3 km.</French>
             </Key>
         </Container>
         <Container name="cut_texts">
