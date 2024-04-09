@@ -4100,7 +4100,7 @@
                 <Russian>У вас недостаточно ресурсов для установки нового минного поля.&lt;br/&gt;Требуется %1 HR и %2%3.</Russian>
                 <Chinesesimp>你没有足够的资源来建立新的雷区。&lt;br/&gt; 需要 %1 HR 和 %2%3。</Chinesesimp>
                 <Korean>자원이 부족하여 새 지뢰지대를 설립할 수 없습니다.&lt;br/&gt; %1 인력과 %2%3이(가) 필요합니다.</Korean>
-                <French>Vous n'avez pas assez de ressources pour créer un nouveau champ de mines.&lt;br/&gt ; %1 HR et %2%3 nécessaires.</French>
+                <French>Vous n'avez pas assez de ressources pour créer un nouveau champ de mines.&lt;br/&gt; %1 HR et %2%3 nécessaires.</French>
             </Key>
             <Key ID="STR_notifiers_minefield_only_one">
                 <Original>We can only deploy one minefield at a time.</Original>
