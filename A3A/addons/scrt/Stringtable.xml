@@ -3701,372 +3701,434 @@
                 <Russian>Восстановление построек</Russian>
                 <Chinesesimp>重建资产</Chinesesimp>
                 <Korean>자산 재건축</Korean>
+                <French>Reconstitution des actifs</French>
             </Key>
             <Key ID="STR_notifiers_rebuild_assets_success">
                 <Original>%1 rebuilt.</Original>
                 <Russian>%1 восстановлен.</Russian>
                 <Chinesesimp>重建 %1。</Chinesesimp>
                 <Korean>%1이(가) 재건축되었습니다.</Korean>
+                <French>%1 reconstruit.</French>
             </Key>
             <Key ID="STR_notifiers_rebuild_assets_info">
                 <Original>Click on any friendly marker to rebuild radio towers and military buildings there.&lt;br/&gt;Cost: %1%2.</Original>
                 <Russian>Нажмите на любой дружественный маркер, чтобы восстановить там радиовышки и военные здания/укрепления.&lt;br/&gt;Стоимость: %1%2</Russian>
                 <Chinesesimp>单击任何友方标记以重建那里的无线电塔和军事建筑。&lt;br/&gt;成本: %1%2.</Chinesesimp>
                 <Korean>통신탑과 군용 건물을 재건축하려면 아무 마커를 클릭하십시오.&lt;br/&gt;가격: %1%2.</Korean>
+                <French>Cliquez sur un marqueur ami pour y reconstruire des tours radio et des bâtiments militaires.&lt;br/&gt;Coût: %1%2.</French>
             </Key>
             <Key ID="STR_notifiers_rebuild_assets_radiotower_success">
                 <Original>%1 and it's radiotower has been rebuilt.</Original>
                 <Russian>%1 и его радиовышка были восстановлены.</Russian>
                 <Chinesesimp>%1 的无线电塔已经重建。</Chinesesimp>
                 <Korean>%1와(과) 그 곳의 통신탑은 재건축되었습니다.</Korean>
+                <French>%1 et sa tour de transmission a été reconstruite.</French>
             </Key>
             <Key ID="STR_notifiers_rebuild_assets_not_enough_money">
                 <Original>Not enough money to rebuild assets there.&lt;br/&gt;Cost: 5000%1</Original>
                 <Russian>Не хватает денег, чтобы восстановить постройки и радиовышки на этом месте.&lt;br/&gt;Стоимость: 5000%1.</Russian>
                 <Chinesesimp>没有足够的钱在那里重建资产。&lt;br/&gt;成本: 5000%1</Chinesesimp>
                 <Korean>그 곳에 자산을 재건축할 자금이 부족합니다.&lt;br/&gt;가격: 5000%1</Korean>
+                <French>Pas assez d'argent pour reconstruire les actifs sur place.&lt;br/&gt;Coût: 5000%1</French>
             </Key>
             <Key ID="STR_notifiers_rebuild_assets_not_belong">
                 <Original>Selected location does not belong to %1.</Original>
                 <Russian>Выбранное местоположение не принадлежит %1.</Russian>
                 <Chinesesimp>所选位置不属于 %1 。</Chinesesimp>
                 <Korean>선택한 위치가 %1의 소속이 아닙니다.</Korean>
+                <French>L'emplacement sélectionné n'appartient pas à %1.</French>
             </Key>
             <Key ID="STR_notifiers_rebuild_assets_friendly_marker">
                 <Original>You must click on friendly map marker.</Original>
                 <Russian>Вы должны кликнуть по дружественной локации на карте.</Russian>
                 <Chinesesimp>你必须在地图上点击一个友好的位置。</Chinesesimp>
                 <Korean>반드시 아군의 맵 마커를 클릭해야 합니다.</Korean>
+                <French>Vous devez cliquer sur un lieu ami sur la carte.</French>
             </Key>
             <Key ID="STR_notifiers_friendly_outpost_recruit">
                 <Original>Click on any friendly outpost to recruit units for it.</Original>
                 <Russian>Нажмите на любой дружественный аванпост, чтобы набрать для него юнитов.</Russian>
                 <Chinesesimp>点击任何友方哨站为其招募单位。</Chinesesimp>
                 <Korean>유닛을 모집하려면 아무 전초 기지나 클릭하십시오.</Korean>
+                <French>Cliquez sur un avant-poste ami pour y recruter des unités.</French>
             </Key>
             <Key ID="STR_notifiers_boss_steal_header">
                 <Original>Taking money from %1 funds</Original>
                 <Russian>Взятие денег из фондов %1</Russian>
                 <Chinesesimp>从%1储蓄里拿钱</Chinesesimp>
                 <Korean>%1 자금에서 돈 가져가기</Korean>
+                <French>Prélèvement sur les fonds %1</French>
             </Key>
             <Key ID="STR_notifiers_boss_steal_fail">
                 <Original>%1 has not enough money to transfer.</Original>
                 <Russian>У %1 недостаточно денег для перевода.</Russian>
                 <Chinesesimp>%1没有足够的钱转账。</Chinesesimp>
                 <Korean>%1에게 송금할 자금이 부족합니다.</Korean>
+                <French>%1 n'a pas assez d'argent pour effectuer un transfert.</French>
             </Key>
             <Key ID="STR_notifiers_boss_steal_success">
                 <Original>You grabbed %1%3 from the %2 Money Pool.&lt;br/&gt;&lt;br/&gt;This will affect your prestige and status amongst our forces.</Original>
                 <Russian>Вы получили %1%3 из денежного фонда %2.&lt;br/&gt;&lt;br/&gt;Это повлияет на ваш престиж и статус среди наших сил.</Russian>
                 <Chinesesimp>您从%2储蓄中获取%1%3。&lt;br/&gt;&lt;br/&gt;这将影响你在我们部队中的声望和地位。</Chinesesimp>
                 <Korean>%2의 공동자산에서 %1%3을(를) 가져왔습니다.&lt;br/&gt;&lt;br/&gt;이 행위는 우리 군대에서 당신의 위신과 지위에 영향을 끼칠 것입니다.</Korean>
+                <French>Vous avez pris %1%3 de la réserve d'argent %2.&lt;br/&gt;&lt;br/&gt;Cela affectera votre prestige et votre statut au sein de nos forces.</French>
             </Key>
             <Key ID="STR_notifiers_skill_header">
                 <Original>%1 Units Skill</Original>
                 <Russian>Навык юнитов %1</Russian>
                 <Chinesesimp>单位技能 %1</Chinesesimp>
                 <Korean>%1 유닛 숙련도</Korean>
+                <French>%1 Compétences des unités</French>
             </Key>
             <Key ID="STR_notifiers_skill_tooltip">
                 <Original>Current level: %2. Next Level Training Cost: %1%3</Original>
                 <Russian>Текущий уровень: %2. Стоимость тренировки до следующего уровня: %1%3</Russian>
                 <Chinesesimp>当前等级：%2。 下一级培训费用：%1%3</Chinesesimp>
                 <Korean>현재 레벨: %2. 다음 레벨 훈련 가격: %1%3</Korean>
+                <French>Niveau actuel: %2. Coût de la formation au niveau suivant: %1%3</French>
             </Key>
             <Key ID="STR_notifiers_skill_add_error_no_commander">
                 <Original>Only commander has access to this function.</Original>
                 <Russian>Только командир имеет доступ к этой функции.</Russian>
                 <Chinesesimp>只有指挥官可以访问此功能。</Chinesesimp>
                 <Korean>이 기능에는 지휘관만 액세스할 수 있습니다.</Korean>
+                <French>Seul le commandant a accès à cette fonction.</French>
             </Key>
             <Key ID="STR_notifiers_skill_add_error_max">
                 <Original>Your troops have the maximum training.</Original>
                 <Russian>Ваши войска имеют максимальную подготовку.</Russian>
                 <Chinesesimp>你的部队接受了最高程度的训练。</Chinesesimp>
                 <Korean>당신 대원들은 훈련이 최대치에 도달했습니다.</Korean>
+                <French>Vos troupes bénéficient d'un entraînement maximal.</French>
             </Key>
             <Key ID="STR_notifiers_skill_add_no_money">
                 <Original>%1 do not have enough money to afford additional training. %2%3 needed.</Original>
                 <Russian>У %1 нет денег на дополнительное подготовку. Необходимо %2%3.</Russian>
                 <Chinesesimp>%1 没有足够的钱来支付额外的培训费用。需要 %2%3 。</Chinesesimp>
                 <Korean>%1은 추가 훈련을 받을 충분한 자금이 없습니다. %2%3이(가) 필요합니다.</Korean>
+                <French>%1 n'ont pas assez d'argent pour s'offrir une formation supplémentaire. %2%3 nécessaires.</French>
             </Key>
             <Key ID="STR_notifiers_skill_success">
                 <Original>%2 Skill Level has been upgraded.&lt;br/&gt;Current level is %1.</Original>
                 <Russian>Навыки юнитов %2 были повышены.&lt;br/&gt;Текущий уровень %1.</Russian>
                 <Chinesesimp>%2技能等级已升级。&lt;br/&gt;当前等级为%1。</Chinesesimp>
                 <Korean>%2의 숙련도 레벨이 업그레이드되었습니다.&lt;br/&gt;현재 레벨은 %1입니다.</Korean>
+                <French>Le niveau de compétence %2 a été augmenté.&lt;br/&gt;Le niveau actuel est %1.</French>
             </Key>
             <Key ID="STR_notifiers_disband_header">
                 <Original>Disband</Original>
                 <Russian>Роспуск</Russian>
                 <Chinesesimp>解散</Chinesesimp>
                 <Korean>해산</Korean>
+                <French>Dissolution</French>
             </Key>
             <Key ID="STR_notifiers_disband_tip">
                 <Original>Click on any friendly marker to disband and refund some part of it's cost.</Original>
                 <Russian>Кликните по любому дружественному маркеру, чтобы распустить гарнизон и возместить часть его стоимости.</Russian>
                 <Chinesesimp>点击任何友方标记解散驻军并退还部分费用。</Chinesesimp>
                 <Korean>원하는 마커를 클릭하여 해산시키고 비용의 일부를 환불하십시오.</Korean>
+                <French>Cliquez sur un marqueur ami pour le dissoudre et rembourser une partie de son coût.</French>
             </Key>
             <Key ID="STR_notifiers_disband_click">
                 <Original>You must click on a friendly outpost.</Original>
                 <Russian>Вы должны кликнуть по дружественному аванпосту.</Russian>
                 <Chinesesimp>你必须点击一个友好的哨站。</Chinesesimp>
                 <Korean>아군 전초 기지를 클릭해야 합니다.</Korean>
+                <French>Vous devez cliquer sur un avant-poste ami.</French>
             </Key>
             <Key ID="STR_notifiers_disband_not_belong">
                 <Original>Selected outpost does not belong to %1.</Original>
                 <Russian>Выбранный аванпост не принадлежит %1.</Russian>
                 <Chinesesimp>所选前哨站不属于 %1。</Chinesesimp>
                 <Korean>선택한 전초 기지가 %1의 소속이 아닙니다.</Korean>
+                <French>L'avant-poste sélectionné n'appartient pas à %1.</French>
             </Key>
             <Key ID="STR_notifiers_disband_enemies_nearby">
                 <Original>You can't manage this garrison while there are enemies nearby.</Original>
                 <Russian>Вы не можете работать с этим гарнизоном, пока поблизости есть враги.</Russian>
                 <Chinesesimp>当附近有敌人时，你无法管理这个驻军。</Chinesesimp>
                 <Korean>근처에 적이 있는 동안에는 이 주둔군을 관리할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas gérer cette garnison tant qu'il y a des ennemis à proximité.</French>
             </Key>
             <Key ID="STR_notifiers_disband_no_garrison">
                 <Original>This place has no garrisoned troops to remove.</Original>
                 <Russian>В этом месте нет гарнизона, которые можно было бы убрать.</Russian>
                 <Chinesesimp>此地无驻军可撤。</Chinesesimp>
                 <Korean>이 곳은 제거할 주둔군이 없습니다.</Korean>
+                <French>Ce lieu n'a pas de troupes en garnison à retirer.</French>
             </Key>
             <Key ID="STR_notifiers_disband_success">
                 <Original>Garrison removed.&lt;br/&gt;Recovered Money: %1%3.&lt;br/&gt;Recovered HR: %2</Original>
                 <Russian>Гарнизон удален.&lt;br/&gt;Возвращенные деньги: %1%3.&lt;br/&gt;Возвращенные HR: %2.</Russian>
                 <Chinesesimp>驻军已被撤走。&lt;br/&gt;返回的钱：%1%3.&lt;br/&gt;返回的HR：%2</Chinesesimp>
                 <Korean>주둔군을 제거했습니다.&lt;br/&gt;환불된 자금: %1%3.&lt;br/&gt;환불된 인력: %2</Korean>
+                <French>Garnison enlevée.&lt;br/&gt;Argent récupéré: %1%3.&lt;br/&gt;RH récupérée: %2</French>
             </Key>
             <Key ID="STR_notifiers_trader_position_reroll_trader_header">
                 <Original>Arms Dealer Position Reroll</Original>
                 <Russian>Изменение позиции торговца оружием</Russian>
                 <Chinesesimp>改变军火商的位置</Chinesesimp>
                 <Korean>암거래상 위치 초기화</Korean>
+                <French>Renouvellement de la position des marchands d'armes</French>
             </Key>
             <Key ID="STR_notifiers_trader_position_reroll_trader_no_money">
                 <Original>Not enough money.</Original>
                 <Russian>Недостаточно средств.</Russian>
                 <Chinesesimp>钱不够。</Chinesesimp>
                 <Korean>자금이 부족합니다.</Korean>
+                <French>Pas assez d'argent.</French>
             </Key>
             <Key ID="STR_notifiers_trader_establish_outpost_header">
                 <Original>Establish Outpost</Original>
                 <Russian>Создание аванпоста</Russian>
                 <Chinesesimp>建立哨所</Chinesesimp>
                 <Korean>전초 기지 설립</Korean>
+                <French>Établir un avant-poste</French>
             </Key>
             <Key ID="STR_notifiers_trader_establish_outpost_watchpost_warning">
                 <Original>Watchpost should be not on road.</Original>
                 <Russian>Пункт наблюдения не должен стоять на дороге.</Russian>
                 <Chinesesimp>观察哨不能设在马路上。</Chinesesimp>
                 <Korean>감시초소는 도로에 있으면 안됩니다.</Korean>
+                <French>Le poste de surveillance ne doit pas se trouver sur la route.</French>
             </Key>
             <Key ID="STR_notifiers_trader_establish_outpost_roadblock_warning">
                 <Original>Roadblock should be on road.</Original>
                 <Russian>Блокпост должен быть на дороге.</Russian>
                 <Chinesesimp>路障必须设在马路上。</Chinesesimp>
                 <Korean>검문소는 반드시 도로에 있어야 합니다.</Korean>
+                <French>Le barrage routier doit être sur la route.</French>
             </Key>
             <Key ID="STR_notifiers_trader_establish_outpost_set_direction">
                 <Original>Roadblock should be on road.</Original>
                 <Russian>Установить направление аванпоста.</Russian>
                 <Chinesesimp>设置路障的方向。</Chinesesimp>
                 <Korean>검문소의 방향을 설정하십시오.</Korean>
+                <French>Établir la direction de l'avant-poste.</French>
             </Key>
             <Key ID="STR_notifiers_establish_outpost_not_enough">
                 <Original>You have not enough resources to establish new outpost.&lt;br/&gt;%1 HR and %2%3 needed.</Original>
                 <Russian>Недостаточно ресурсов для установления своей локации/огневой точки.&lt;br/&gt;Необходимо %1 HR и %2%3.</Russian>
                 <Chinesesimp>您没有足够的资源来建立新的前哨站。&lt;br/&gt;需要 %1 人力 和 %2%3</Chinesesimp>
                 <Korean>새 전초 기지를 구축하기에 충분한 자원을 가지고 있지 않습니다.&lt;br/&gt;%1 인력과 %2%3이(가) 필요합니다.</Korean>
+                <French>Vous n'avez pas assez de ressources pour établir un nouvel avant-poste.&lt;br/&gt;%1 HR et %2%3 nécessaires.</French>
             </Key>
             <Key ID="STR_notifiers_establish_outpost_only_one">
                 <Original>We can only establish / delete one outpost at time.</Original>
                 <Russian>Мы можем установить/удалить только одну локацию/огневую точку за раз.</Russian>
                 <Chinesesimp>我们一次只能建立/删除一个哨站。</Chinesesimp>
                 <Korean>한 번에 하나의 전초 기지만 설립/제거할 수 있습니다.</Korean>
+                <French>Nous ne pouvons établir / supprimer qu'un seul avant-poste à la fois.</French>
             </Key>
             <Key ID="STR_notifiers_establish_need_radio">
                 <Original>You need a radio in your inventory to be able to give orders to other squads while establishing outpost.</Original>
                 <Russian>Необходимо иметь с собой рацию чтобы давать другим отрядам приказы при установке локации/огневой точки.</Russian>
                 <Chinesesimp>您的物品栏中需要一台无线电，以便能够在建立前哨站时向其他小队下达命令。</Chinesesimp>
                 <Korean>전초 기지를 설립하는 동안 다른 분대에 명령을 내리려면 소지품에 무전기가 필요합니다.</Korean>
+                <French>Vous avez besoin d'une radio dans votre inventaire pour pouvoir donner des ordres aux autres escouades lors de l'établissement d'un avant-poste.</French>
             </Key>
             <Key ID="STR_notifiers_establish_wl3">
                 <Original>You need to be at War Level 3 to be able to establish roadblocks or HMG emplacements.</Original>
                 <Russian>Необходим Уровень Войны (WL) 3 для установки блокпостов или пулеметных гнёзд.</Russian>
                 <Chinesesimp>您需要达到战争等级 3 才能建立路障或 重机枪 阵地。</Chinesesimp>
                 <Korean>검문소나 중기관총 포대를 설립하려면 전쟁 레벨이 3 이상이어야 합니다.</Korean>
+                <French>Le niveau de guerre (WL) 3 est nécessaire pour établir des barrages routiers ou des nids de mitrailleuses.</French>
             </Key>
             <Key ID="STR_notifiers_establish_wl4">
                 <Original>You need to be at War Level 4 to be able to establish AA/AT emplacement.</Original>
                 <Russian>Необходим Уровень Войны (WL) 4 для установки зенитных или противотанковых огневых точек.</Russian>
                 <Chinesesimp>您需要达到战争等级 4 才能建立 反坦克/防空 阵地。</Chinesesimp>
                 <Korean>대공/대전차화기 포대를 설립하려면 전쟁 레벨 4 이상이어야 합니다.</Korean>
+                <French>Nécessite un niveau de guerre (WL) 4 pour mettre en place des points de tir antiaériens ou antichars.</French>
             </Key>
             <Key ID="STR_notifiers_establish_wl5">
                 <Original>You need to be at War Level 5 to be able to establish mortar emplacement.</Original>
                 <Russian>Необходим Уровень Войны (WL) 5 для установки миномётных огневых точек.</Russian>
                 <Chinesesimp>你需要达到战争等级5才能建立迫击炮阵地。</Chinesesimp>
                 <Korean>박격포 포대를 설립하려면 전쟁 레벨 5 이상이어야 합니다.</Korean>
+                <French>Nécessite un niveau de guerre (WL) 5 pour mettre en place des points de tir de mortier.</French>
             </Key>
             <Key ID="STR_notifiers_establish_success">
                 <Original>Click on a desired position on map to establish outpost there.</Original>
                 <Russian>Кликните на желаемом позиции для начала процесса установки локации/огневой точки там.</Russian>
                 <Chinesesimp>在地图上点击想要的位置，可以在那里建立哨站。</Chinesesimp>
                 <Korean>지도에서 원하는 위치를 클릭하여 전초 기지를 설립하십시오.</Korean>
+                <French>Cliquez sur une position souhaitée sur la carte pour y établir un avant-poste.</French>
             </Key>
             <Key ID="STR_marker_outpost_position">
                 <Original>%1 Position</Original>
                 <Russian>Позиция %1</Russian>
                 <Chinesesimp>%1 位置</Chinesesimp>
                 <Korean>%1의 위치</Korean>
+                <French>Position %1</French>
             </Key>
             <Key ID="STR_marker_outpost_direction">
                 <Original>%1 Direction</Original>
                 <Russian>Направление %1</Russian>
                 <Chinesesimp>%1 方向</Chinesesimp>
                 <Korean>%1의 방향</Korean>
+                <French>%1 Direction</French>
             </Key>
             <Key ID="STR_notifiers_support_header">
                 <Original>Support</Original>
                 <Russian>Поддержка</Russian>
                 <Chinesesimp>支援</Chinesesimp>
                 <Korean>지원</Korean>
+                <French>Soutien</French>
             </Key>
             <Key ID="STR_notifiers_support_inprogress">
                 <Original>Support in progress, please wait.</Original>
                 <Russian>Поддержка в процессе, пожалуйста, подождите.</Russian>
                 <Chinesesimp>支援中，请稍等</Chinesesimp>
                 <Korean>지원이 진행 중입니다, 잠시 기다려 주십시오.</Korean>
+                <French>Soutien en cours, veuillez patienter.</French>
             </Key>
             <Key ID="STR_notifiers_support_overwhelmed">
                 <Original>Support regiment is overwhelmed with support requests, wait for a bit.</Original>
                 <Russian>Поддержка перегружена запросами, подождите немного.</Russian>
                 <Chinesesimp>支援团队已经被支援请求淹没了，稍等一下。</Chinesesimp>
                 <Korean>지원 부대가 지원 요청으로 꽉 찼습니다, 잠시 기다려 주십시오.</Korean>
+                <French>Le régiment de soutien est submergé de demandes de soutien, attendez un peu.</French>
             </Key>
             <Key ID="STR_notifiers_support_not_enough_airstrikes">
                 <Original>You have not enough available airstrikes to make this request.</Original>
                 <Russian>У вас недостаточно доступных авиаударов, чтобы сделать этот запрос поддержки.</Russian>
                 <Chinesesimp>你没有足够的可用空袭来提出这个请求。</Chinesesimp>
                 <Korean>이 요청을 수행할 수 있는 충분한 공습 포인트가 없습니다.</Korean>
+                <French>Vous n'avez pas assez de frappes aériennes disponibles pour effectuer cette demande de soutien.</French>
             </Key>
             <Key ID="STR_notifiers_support_not_enough_support">
                 <Original>You have not enough available support to make this request.</Original>
                 <Russian>У вас недостаточно поддержки, чтобы сделать этот запрос.</Russian>
                 <Chinesesimp>您没有足够的可用支援来提出此请求。</Chinesesimp>
                 <Korean>이 요청을 수행할 수 있는 충분한 지원 포인트가 없습니다.</Korean>
+                <French>Vous n'avez pas assez de soutien disponible pour faire cette demande.</French>
             </Key>
             <Key ID="STR_notifiers_support_airport_needed">
                 <Original>You need to capture at least one airbase to make this request.</Original>
                 <Russian>Вам нужно захватить хотя бы одну авиабазу, чтобы сделать этот запрос поддержки.</Russian>
                 <Chinesesimp>你需要占领至少一个空军基地才能提出这个请求。</Chinesesimp>
                 <Korean>이 요청을 하려면 최소 하나 이상의 공군 기지를 점령해야 합니다.</Korean>
+                <French>Vous devez capturer au moins une base aérienne pour faire cette demande.</French>
             </Key>
             <Key ID="STR_notifiers_support_need_money">
                 <Original>%1 needs to have at least %2%3 to make this support request.</Original>
                 <Russian>%1 необходимо иметь не менее %2%3, чтобы сделать этот запрос в службу поддержки.</Russian>
                 <Chinesesimp>%1 至少需要 %2%3 才能提出此支持请求。</Chinesesimp>
                 <Korean>이 지원 요청을 하려면 %1에 %2%3 이상 있어야 합니다.</Korean>
+                <French>%1 doit avoir au moins %2%3 pour faire cette demande d'assistance.</French>
             </Key>
             <Key ID="STR_notifiers_support_need_radio">
                 <Original>You need a radio in your inventory to be able to make support requests.</Original>
                 <Russian>Для запрашивания поддержки необходимо иметь с собой рацию.</Russian>
                 <Chinesesimp>您的库存中需要一台无线电才能提出支持请求。</Chinesesimp>
                 <Korean>지원 요청을 하려면 소지품에 무전기가 필요합니다.</Korean>
+                <French>Vous avez besoin d'une radio dans votre inventaire pour pouvoir faire des demandes d'assistance.</French>
             </Key>
             <Key ID="STR_notifiers_support_specify_origin">
                 <Original>You need to specify a destination for support.</Original>
                 <Russian>Необходимо выбрать место входа оказания поддержки на карте.</Russian>
                 <Chinesesimp>你需要指定一个目的地才能支援。</Chinesesimp>
                 <Korean>지원 대상을 지정해야 합니다.</Korean>
+                <French>Vous devez spécifier une destination pour l'assistance.</French>
             </Key>
             <Key ID="STR_notifiers_support_specify_dest">
                 <Original>You need to specify a second point for airplane to perform support action.</Original>
                 <Russian>Необходимо указать вторую точку, чтобы самолет мог выполнять действия поддержки.</Russian>
                 <Chinesesimp>飞机执行支援动作需要指定第二个点。</Chinesesimp>
                 <Korean>지원 작업을 수행하려면 비행기의 두 번째 지점을 지정해야 합니다.</Korean>
+                <French>Vous devez spécifier un deuxième point pour que l'avion effectue une action de soutien.</French>
             </Key>
             <Key ID="STR_notifiers_paradrop_header">
                 <Original>Paradrop</Original>
                 <Russian>Десантирование с самолёта</Russian>
                 <Chinesesimp>空投</Chinesesimp>
                 <Korean>공수강하</Korean>
+                <French>Paradrop</French>
             </Key>
             <Key ID="STR_notifiers_paradrop_commander_on_hq">
                 <Original>Commander should be at rebel HQ to be able to launch paradrop plane run.</Original>
                 <Russian>Командир должен находиться у штаба, чтобы иметь возможность запустить парашютную высадку с самолета.</Russian>
                 <Chinesesimp>指挥官应该在反抗军总部才能启动空降飞行。</Chinesesimp>
                 <Korean>지휘관은 본부에 있어야만 공수강하 비행기를 띄울 수 있습니다.</Korean>
+                <French>Le commandant doit être au quartier général pour pouvoir lancer un parachutage depuis l'avion.</French>
             </Key>
             <Key ID="STR_notifiers_paradrop_enemies_on_hq">
                 <Original>You can't paradrop when enemies are near rebel HQ.</Original>
                 <Russian>Вы не можете запустить парашютную высадку, пока рядом со штабом враги.</Russian>
                 <Chinesesimp>当敌人靠近抵抗军总部时，你不能空投。</Chinesesimp>
                 <Korean>적들이 아군 본부 근처에 있을 땐은 공수강하를 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas effectuer un parachutage lorsque des ennemis se trouvent à proximité du QG.</French>
             </Key>
             <Key ID="STR_notifiers_paradrop_no_players_ready">
                 <Original>No players are ready for jump. Make sure that players pressed PARADROP switch button in Game Options menu (TAB key by default or map-on-tripod action).</Original>
                 <Russian>Ни один игрок не готов к прыжку с парашюта. Убедитесь, что игроки нажали кнопку-переключатель ДЕСАНТИРОВАНИЕ в меню параметров игры (клавиша TAB по умолчанию или действие карты на штативе).</Russian>
                 <Chinesesimp>没有玩家准备跳跃。 确保玩家按下游戏选项菜单中的 PARADROP 开关按钮（默认 TAB 键）。</Chinesesimp>
                 <Korean>점프할 준비가 된 플레이어가 없습니다. 플레이어가 게임 옵션 메뉴에서 공수강하 버튼을 눌렀는지 확인하십시오.(기본적으로 탭 키 또는 삼각대 지도 행동)</Korean>
+                <French>Aucun joueur n'est prêt à sauter. Assurez-vous que les joueurs ont appuyé sur le bouton PARADROP dans le menu Options du jeu (touche TAB par défaut ou action de la carte sur le trépied).</French>
             </Key>
             <Key ID="STR_notifiers_paradrop_no_players_ready_2">
                 <Original>Players who are ready to jump should be alive, on their feet, not doing anything with vehicles and be at the rebel HQ.</Original>
                 <Russian>Игроки, готовящиеся к прыжку с парашюта, должны быть живы, на ногах, ничего не делать с техникой и находиться в штабе повстанцев.</Russian>
                 <Chinesesimp>准备跳伞的玩家必须活着，并且站着，不能在车上，并且在抵抗军总部。</Chinesesimp>
                 <Korean>점프할 준비가 된 플레이어들은 살아 있어야 하고, 발로 서 있어야 하며, 차량으로 아무것도 하지 말아야 하며, 아군 본부에 있어야 합니다.</Korean>
+                <French>Les joueurs prêts à sauter doivent être vivants, debout, ne rien faire avec les véhicules et se trouver au QG des rebelles.</French>
             </Key>
             <Key ID="STR_notifiers_paradrop_too_close">
                 <Original>Too close to enemy marker, choose different location.</Original>
                 <Russian>Слишком близко к вражескому местоположению, выберите другое место.</Russian>
                 <Chinesesimp>离敌人标记太近，选择不同的位置。</Chinesesimp>
                 <Korean>적 마커와 너무 가깝습니다. 다른 위치를 선택하십시오</Korean>
+                <French>Trop près du marqueur ennemi, choisissez un autre emplacement.</French>
             </Key>
             <Key ID="STR_notifiers_support_success">
                 <Original>Support is on it's way.</Original>
                 <Russian>Поддержка в пути, ожидайте.</Russian>
                 <Chinesesimp>支援正在路上</Chinesesimp>
                 <Korean>지원이 오는 중입니다.</Korean>
+                <French>Le soutien est en cours d'acheminement.</French>
             </Key>
             <Key ID="STR_notifiers_minefield_header">
                 <Original>Minefield</Original>
                 <Russian>Минное поле</Russian>
                 <Chinesesimp>雷区</Chinesesimp>
                 <Korean>지뢰지대</Korean>
+                <French>Champ de mines</French>
             </Key>
             <Key ID="STR_notifiers_minefield_enough_resources">
                 <Original>You have not enough resources to establish new minefield.&lt;br/&gt; %1 HR and %2%3 needed.</Original>
                 <Russian>У вас недостаточно ресурсов для установки нового минного поля.&lt;br/&gt;Требуется %1 HR и %2%3.</Russian>
                 <Chinesesimp>你没有足够的资源来建立新的雷区。&lt;br/&gt; 需要 %1 HR 和 %2%3。</Chinesesimp>
                 <Korean>자원이 부족하여 새 지뢰지대를 설립할 수 없습니다.&lt;br/&gt; %1 인력과 %2%3이(가) 필요합니다.</Korean>
+                <French>Vous n'avez pas assez de ressources pour créer un nouveau champ de mines.&lt;br/&gt ; %1 HR et %2%3 nécessaires.</French>
             </Key>
             <Key ID="STR_notifiers_minefield_only_one">
                 <Original>We can only deploy one minefield at a time.</Original>
                 <Russian>Мы можем устанавливать только одно минное поле одновременно.</Russian>
                 <Chinesesimp>我们一次只能部署一个雷区。</Chinesesimp>
                 <Korean>한 번의 하나의 지뢰지대만 배치할 수 있습니다.</Korean>
+                <French>Nous ne pouvons déployer qu'un seul champ de mines à la fois.</French>
             </Key>
             <Key ID="STR_notifiers_minefield_need_radio">
                 <Original>You need a radio in your inventory to be able to give orders to minefield establishment squad.</Original>
                 <Russian>Необходимо иметь с собой рацию, чтобы иметь возможность отдавать приказы отряду установки минного поля.</Russian>
                 <Chinesesimp>您的物品栏中需要一台无线电，以便能够向雷区建立小队下达命令。</Chinesesimp>
                 <Korean>지뢰지대 설치 분대에 명령을 내리려면 소지품에 무전기가 필요합니다.</Korean>
+                <French>Vous avez besoin d'une radio dans votre inventaire pour pouvoir donner des ordres à l'équipe pour posé des champs de mines.</French>
             </Key>
             <Key ID="STR_notifiers_minefield_need_mines">
                 <Original>You need at least 5 mines of selected type to build minefield.</Original>
                 <Russian>Вам нужно как минимум 5 мин выбранного типа, чтобы установить минное поле.</Russian>
                 <Chinesesimp>你至少需要5个选定类型的地雷来建造雷区。</Chinesesimp>
                 <Korean>지뢰지대를 만들려면 선택한 유형의 지뢰가 5개 이상 필요합니다.</Korean>
+                <French>Il faut au moins 5 mines du type sélectionné pour construire un champ de mines.</French>
             </Key>
             <Key ID="STR_notifiers_minefield_click">
                 <Original>Click on desired position on map to build minefield there.</Original>
                 <Russian>Кликните по желаемой позиции на кеарте для начала процесса создания минного поля там.</Russian>
                 <Chinesesimp>在地图上点击想要的位置，在那里建立雷区。</Chinesesimp>
                 <Korean>지도에 원하는 위치를 클릭하여 지뢰지대를 생성합니다.</Korean>
+                <French>Cliquez sur la position souhaitée sur la carte pour construire un champ de mines à cet endroit.</French>
             </Key>
         </Container>
         <Container name="skip_time_rest">
@@ -6842,6 +6904,7 @@
                 <Russian>ДЕСАНТИРОВАНИЕ</Russian>
                 <Chinesesimp>空投伞降</Chinesesimp>
                 <Korean>공수강하</Korean>
+                <French>PARADROP</French>
             </Key>
             <Key ID="STR_commander_menu_paradrop_tooltip_noncomm">
                 <Original>To attend in paradrop, you must be at rebel HQ and turn on this switch button to be able to be transfered to aircraft.</Original>
