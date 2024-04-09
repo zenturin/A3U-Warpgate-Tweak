@@ -2717,7 +2717,7 @@
                 <Russian>Подбираю ПНВ.</Russian>
                 <Chinesesimp>拿起夜视仪。</Chinesesimp>
                 <Korean>야시경을 줍는 중.</Korean>
-                <French>Ramasser les lunettes de vision nocturne.</French>
+                <French>Ramasser des lunettes de vision nocturne.</French>
             </Key>
             <Key ID="STR_chats_autoloot_helmet">
                 <Original>Picking up a helmet.</Original>
@@ -2794,7 +2794,7 @@
                 <Russian>У меня нет задач логистики в настоящее время. Передвинь штаб ближе к врагу.</Russian>
                 <Chinesesimp>我没有后勤任务给你。 将我们的总部移到离敌人更近的地方。</Chinesesimp>
                 <Korean>줄 수 있는 병참 임무가 없습니다. 우리 본부를 적에게 더 가까이 옮기십시오.</Korean>
-                <French>Je n'ai pas de missions logistiques à vous confier. Rapprochez notre QG de l'ennemi.</French>
+                <French>Je n'ai pas de missions de logistiques à vous confier. Rapprochez notre QG de l'ennemi.</French>
             </Key>
             <Key ID="STR_chats_mission_request_no_DES">
                 <Original>I have no Destroy missions for you. Move our HQ closer to the enemy.</Original>
@@ -2934,14 +2934,14 @@
                 <Russian>Попадание.</Russian>
                 <Chinesesimp>弹着，完毕。</Chinesesimp>
                 <Korean>착탄 확인바람, 이상.</Korean>
-                <French></French>
+                <French>Impact</French>
             </Key>
             <Key ID="STR_chats_mortar_barrage_confirm">
                 <Original>Acknowledged. Fire mission is inbound. ETA %1 secs for the first impact.</Original>
                 <Russian>Подтверждаю. Огневая задача принята. %1 секунд до первого попадания.</Russian>
                 <Chinesesimp>收到，准备执行火力支援，首发预计抵达时间 %1 秒。</Chinesesimp>
                 <Korean>알겠다. 사격 임무를 받았다. 초탄 착탄까지 앞으로 %1초.</Korean>
-                <French>Accusé de réception. Mission d'incendie en cours. ETA %1 secondes pour le premier impact.</French>
+                <French>Reçus. Mission d'incendie en cours. ETA %1 secondes pour le premier impact.</French>
             </Key>
             <Key ID="STR_chats_mortar_barrage">
                 <Original>Requesting fire support on Grid %1. %2 Rounds.</Original>
@@ -2992,7 +2992,7 @@
                 <Russian>Экипаж авиации поддержки с воздуха уничтожен</Russian>
                 <Chinesesimp>CAS 机组人员阵亡</Chinesesimp>
                 <Korean>근접지원항공기 조종사가 죽었습니다</Korean>
-                <French>L'équipage de l'avion de combat est mort</French>
+                <French>L'équipage de l'avion de CAS est mort</French>
             </Key>
             <Key ID="STR_notifiers_fighter_killed">
                 <Original>Fighter Destroyed</Original>
@@ -3013,14 +3013,14 @@
                 <Russian>Экипаж самолёта авиаудара уничтожен</Russian>
                 <Chinesesimp>空袭机组人员遇难</Chinesesimp>
                 <Korean>공습함선 조종사가 죽었습니다</Korean>
-                <French>L'équipage d'un navire d'attaque aérienne tué</French>
+                <French>L'équipage du navire d'attaque aérienne est mort</French>
             </Key>
             <Key ID="STR_notifiers_airstrike_vessel_killed">
                 <Original>Airstrike Vessel Destroyed</Original>
                 <Russian>Самолёт авиаудара уничтожен</Russian>
                 <Chinesesimp>空袭机被摧毁</Chinesesimp>
                 <Korean>공습함선이 파괴되었습니다</Korean>
-                <French>Destruction d'un navire de frappe aérienne</French>
+                <French>Destruction du navire de frappe aérienne</French>
             </Key>
             <Key ID="STR_notifiers_airdrop_killed">
                 <Original>Airdrop Plane Destroyed</Original>
@@ -3076,14 +3076,14 @@
                 <Russian>Десантные механизированные силы быстрого реагирования %1 прибыли</Russian>
                 <Chinesesimp>%1 空中机械化快速反应部队到达</Chinesesimp>
                 <Korean>%1의 공수 기계화 신속대응군이 방금 도착했습니다</Korean>
-                <French></French>
+                <French>Une %1 QRF aéro-mécanisée vient d'arrivée</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_QRFAirdrop_marker">
                 <Original>Mechanized Air QRF</Original>
                 <Russian>Десантные мех. СБР</Russian>
                 <Chinesesimp>机械化空中快速反应部队</Chinesesimp>
                 <Korean>공수 기계화 신속대응군</Korean>
-                <French>Une %1 QRF mécanisée aérienne vient d'arriver</French>
+                <French>QRF aérienne mécanisée</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_airstrike">
                 <Original>%1 is about to execute an airstrike</Original>
@@ -3174,7 +3174,7 @@
                 <Russian>ЗРК %1 наводится на цель</Russian>
                 <Chinesesimp>%1 SAM 正在锁定目标</Chinesesimp>
                 <Korean>%1의 지대공미사일이 발사되었습니다</Korean>
-                <French>%1 Le lanceur SAM est en train d'acquérir une cible</French>
+                <French>%1 le lanceur SAM est en train d'acquérir une cible</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_SAM_marker">
                 <Original>SAM target</Original>
@@ -3209,7 +3209,7 @@
                 <Russian>Цель истребителя</Russian>
                 <Chinesesimp>战斗机追击目标</Chinesesimp>
                 <Korean>제공전투기</Korean>
-                <French>Objectif de supériorité aérienne</French>
+                <French>Cible de la supériorité aérienne</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_CAS">
                 <Original>A %1 CAS aircraft is acquiring a target</Original>
@@ -3237,7 +3237,7 @@
                 <Russian>Зона действия летающей батареи поддержки</Russian>
                 <Chinesesimp>武装直升机行动区</Chinesesimp>
                 <Korean>건쉽 지역</Korean>
-                <French>Zone des canons</French>
+                <French>Zone de tirs d'appui feu</French>
             </Key>
             <Key ID="STR_notifiers_SUP_execute_generic">
                 <Original>%1 is executing %2 support now</Original>
@@ -3272,7 +3272,7 @@
                 <Russian>%1. Время подлёта/прибытия: %2 минут</Russian>
                 <Chinesesimp>%1. 预计出发时间：%2 分钟</Chinesesimp>
                 <Korean>%1. 예상 준비 시간: %2분</Korean>
-                <French>%1. Estimation de l'installation : %2 minutes</French>
+                <French>%1. Estimation de l'installation: %2 minutes</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_generic">
                 <Original>%1 is setting up %2 support</Original>
@@ -3391,14 +3391,14 @@
                 <Russian>%1 отправили десантные силы быстрого реагирования</Russian>
                 <Chinesesimp>%1 派出了一支空中快速反应部队</Chinesesimp>
                 <Korean>%1이(가) 방금 신속대응군을 보냈습니다</Korean>
-                <French></French>
+                <French>%1 vient d'envoyer une QRF aéroportée</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_QRFLand">
                 <Original>%1 just sent a land QRF</Original>
                 <Russian>%1 отправили наземные силы быстрого реагирования</Russian>
                 <Chinesesimp>%1 派出了一支地面快速反应部队</Chinesesimp>
                 <Korean>%1이(가) 지상 신속대응군을 보냈습니다</Korean>
-                <French>%1 vient d'envoyer une QRF aéroportée</French>
+                <French>%1 vient d'envoyer une QRF terrestre</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_QRFVehAirdrop">
                 <Original>%1 just sent a airborne mechanized QRF</Original>
@@ -3412,7 +3412,7 @@
                 <Russian>%1 отправили крупные силы в атаку</Russian>
                 <Chinesesimp>%1 派出了一波攻击</Chinesesimp>
                 <Korean>%1이(가) 방금 대규모 공격 웨이브를 보냈습니다</Korean>
-                <French></French>
+                <French>%1 vient d'envoyer une vague d'attaque majeure</French>
             </Key>
             <Key ID="STR_notifiers_SUP_setup_counterAttack">
                 <Original>%1 just sent a counterattack force</Original>
@@ -3433,14 +3433,14 @@
                 <Russian>Радиовышка была уничтожена</Russian>
                 <Chinesesimp>无线电塔被摧毁</Chinesesimp>
                 <Korean>통신탑 파괴됨</Korean>
-                <French></French>
+                <French>Destruction de la tour de radiodiffusion</French>
             </Key>
             <Key ID="STR_notifiers_resourcefactory_destoyed">
                 <Original>%1 Destroyed</Original>
                 <Russian>%1 уничтожен</Russian>
                 <Chinesesimp>%1 已摧毁</Chinesesimp>
                 <Korean>%1 파괴됨</Korean>
-                <French>Destruction de la tour de radiodiffusion</French>
+                <French>%1 Détruite</French>
             </Key>
             <Key ID="STR_notifiers_resource_lost_other">
                 <Original>%1 has lost a Resource</Original>
@@ -3629,14 +3629,14 @@
                 <Russian>Кочующий миномет %1 уничтожен</Russian>
                 <Chinesesimp>%1 的机动迫击炮被摧毁</Chinesesimp>
                 <Korean>%1의 이동식 박격포가 파괴되었습니다</Korean>
-                <French>Le mortier itinérant de %1 a été détruit</French>
+                <French>Le mortier mobile de %1 a été détruit</French>
             </Key>
             <Key ID="STR_notifiers_roving_mortar_stolen">
                 <Original>%1's roving mortar has been stolen</Original>
                 <Russian>Кочующий миномет %1 был украден</Russian>
                 <Chinesesimp>%1 的机动迫击炮被偷了</Chinesesimp>
                 <Korean>%1의 이동식 박격포가 도난당했습니다</Korean>
-                <French></French>
+                <French>Le mortier mobile de %1 a été volé</French>
             </Key>
             <Key ID="STR_notifiers_roving_mortar_crew_killed">
                 <Original>%1's roving mortar crew killed</Original>
