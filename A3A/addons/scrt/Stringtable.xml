@@ -4400,319 +4400,373 @@
                 <Russian>Режим игры - НЕ менять в процессе игровой кампании</Russian>
                 <Chinesesimp>游戏模式 - 游戏活动期间请勿更改</Chinesesimp>
                 <Korean>게임 모드 - 임무 진행 중간에 "절대" 변경하지 마십시오</Korean>
+                <French>Mode de jeu - Ne PAS changer ce mode en cours de mission</French>
             </Key>
             <Key ID="STR_params_game_mode_1">
                 <Original>Reb. vs Occ. vs Inv.</Original>
                 <Russian>Повст. vs Оккуп. vs Захват.</Russian>
                 <Chinesesimp>反抗军 vs 占领军 vs 入侵者</Chinesesimp>
                 <Korean>반란군 vs 점령군 vs 침략군</Korean>
+                <French>Reb. vs Occ. vs Inv.</French>
             </Key>
             <Key ID="STR_params_game_mode_2">
                 <Original>Reb. vs Occ. and Inv.</Original>
                 <Russian>Повст. vs Оккуп. и Захват.</Russian>
                 <Chinesesimp>反抗军 vs 占领军 and I入侵者</Chinesesimp>
                 <Korean>반란군 vs 점령군과 침략군</Korean>
+                <French>Reb. vs Occ. and Inv.</French>
             </Key>
             <Key ID="STR_params_game_mode_3">
                 <Original>Reb. vs Occ.</Original>
                 <Russian>Повст. vs Оккуп.</Russian>
                 <Chinesesimp>反抗军 vs 占领军</Chinesesimp>
                 <Korean>반란군 vs 점령군</Korean>
+                <French>Reb. vs Occ.</French>
             </Key>
             <Key ID="STR_params_autosave_title">
                 <Original>Enable Autosave (every X minutes)</Original>
                 <Russian>Включить автосохранение (каждые X минут)</Russian>
                 <Chinesesimp>启用自动保存（每隔 X 分钟）</Chinesesimp>
                 <Korean>자동저장 활성화 (매 X분마다)</Korean>
+                <French>Activer la sauvegarde automatique (toutes les X minutes)</French>
             </Key>
             <Key ID="STR_params_time_between_autosave_title">
                 <Original>Time between autosaves (in minutes)</Original>
                 <Russian>Время между автосохранением (в минутах)</Russian>
                 <Chinesesimp>自动保存之间的时间（以分钟为单位）</Chinesesimp>
                 <Korean>자동저장 간격 (분)</Korean>
+                <French>Délai entre les sauvegardes automatiques (en minutes)</French>
             </Key>
             <Key ID="STR_params_server_membership_title">
                 <Original>Enable Server Membership</Original>
                 <Russian>Включить членство на сервере</Russian>
                 <Chinesesimp>启用服务器成员资格</Chinesesimp>
                 <Korean>서버 멤버십 활성화</Korean>
+                <French>Activer l'appartenance à un serveur</French>
             </Key>
             <Key ID="STR_params_server_friendlymarkers_title">
                 <Original>Enable Friendly Player Markers</Original>
                 <Russian>Включить метки на дружественных игроках</Russian>
                 <Chinesesimp>在友方玩家身上启用标记</Chinesesimp>
                 <Korean>아군 플레이어 마커 활성화</Korean>
+                <French>Activer les marqueurs de joueurs amicaux</French>
             </Key>
             <Key ID="STR_params_server_teamkill_title">
                 <Original>Enable Teamkill Punish</Original>
                 <Russian>Включить наказание за убийство своих</Russian>
                 <Chinesesimp>开启友伤惩罚</Chinesesimp>
                 <Korean>팀킬 처벌 활성화</Korean>
+                <French>Prévoir une sanction pour le meurtre des siens</French>
             </Key>
             <Key ID="STR_params_server_max_task_distance">
                 <Original>Max distance from HQ for tasks</Original>
                 <Russian>Максимальное расстояние от штаб-квартиры для задач</Russian>
                 <Chinesesimp>任务与HQ的最大距离</Chinesesimp>
                 <Korean>과업이 활성화되는 본부로부터의 최대 거리</Korean>
+                <French>Distance maximale du siège pour les tâches</French>
             </Key>
             <Key ID="STR_params_server_allow_pvp">
                 <Original>Allow PvP Slots</Original>
                 <Russian>Разрешить PvP-слоты</Russian>
                 <Chinesesimp>允许 PvP</Chinesesimp>
                 <Korean>PvP 슬롯 활성화</Korean>
+                <French>Autoriser les emplacements PvP</French>
             </Key>
             <Key ID="STR_params_server_allow_pMarkers">
                 <Original>Allow Friendly Player Markers</Original>
                 <Russian>Разрешить метки на дружественных игроках</Russian>
                 <Chinesesimp>允许友方玩家标记</Chinesesimp>
                 <Korean>아군 플레이어 마커 허용</Korean>
+                <French>Autoriser les tags sur les joueurs amis</French>
             </Key>
             <Key ID="STR_params_server_riv_difficulty">
                 <Original>Rivals Difficulty (Activity)</Original>
                 <Russian>Уровень сложности (активности) соперников-повстанцев</Russian>
                 <Chinesesimp>敌对难度（活动水平）</Chinesesimp>
                 <Korean>라이벌 난이도 (활동성 기준)</Korean>
+                <French>Difficulté des rivaux (en fonction de l'activité)</French>
             </Key>
             <Key ID="STR_params_server_riv_difficulty_easy">
                 <Original>Easy</Original>
                 <Russian>Лёгкий</Russian>
                 <Chinesesimp>简单</Chinesesimp>
                 <Korean>쉬움</Korean>
+                <French>Facile</French>
             </Key>
             <Key ID="STR_params_server_riv_difficulty_medium">
                 <Original>Medium</Original>
                 <Russian>Обычный</Russian>
                 <Chinesesimp>普通</Chinesesimp>
                 <Korean>중간</Korean>
+                <French>Moyen</French>
             </Key>
             <Key ID="STR_params_server_riv_difficulty_hard">
                 <Original>Hard</Original>
                 <Russian>Тяжелый</Russian>
                 <Chinesesimp>困难</Chinesesimp>
                 <Korean>어려움</Korean>
+                <French>Dur</French>
             </Key>
             <Key ID="STR_params_server_unlock_threshold">
                 <Original>Number of the same item required to unlock</Original>
                 <Russian>Сколько предметов одного типа необходимо собрать для разблокировки</Russian>
                 <Chinesesimp>必须收集多少相同类型的物品才能解锁</Chinesesimp>
                 <Korean>언락에 필요한 동일 아이템 갯수</Korean>
+                <French>Nombre d'articles identiques requis pour débloquer</French>
             </Key>
             <Key ID="STR_params_server_unlock_no_unlocks">
                 <Original>No unlocks</Original>
                 <Russian>Разблокировка отсутствует</Russian>
                 <Chinesesimp>永不解锁</Chinesesimp>
                 <Korean>언락 금지</Korean>
+                <French>Pas débloqué</French>
             </Key>
             <Key ID="STR_params_server_member_only_mag">
                 <Original>Number of weapon magazines needed for guests to be able to use them</Original>
                 <Russian>Количество магазинов к оружию, необходимых для того, чтобы гости могли ими пользоваться</Russian>
                 <Chinesesimp>游客能使用的弹夹数量</Chinesesimp>
                 <Korean>게스트가 사용할 수 있도록 필요한 무기 탄창의 갯수</Korean>
+                <French>Nombre de chargeurs d'armes nécessaires pour que les invités puissent les utiliser</French>
             </Key>
             <Key ID="STR_params_civ_traffic">
                 <Original>Civilian traffic</Original>
                 <Russian>Уровень гражданского автомобильного трафика</Russian>
                 <Chinesesimp>民用交通</Chinesesimp>
                 <Korean>민간인 밀집도</Korean>
+                <French>Trafic civil</French>
             </Key>
             <Key ID="STR_params_global_civilian_max">
                 <Original>Maximum civilians on server</Original>
                 <Russian>Максимальное количество гражданских на сервере</Russian>
                 <Korean>서버 내 최대 민간인 수</Korean>
+                <French>Nombre maximal de civils sur le serveur</French>
             </Key>
             <Key ID="STR_params_civ_per_town">
                 <Original>Maximum civilians per town</Original>
                 <Russian>Максимальное количество гражданских на населенный пункт</Russian>
                 <Korean>마을 당 최대 민간인 수</Korean>
+                <French>Nombre maximum de civils par ville</French>
             </Key>
             <Key ID="STR_params_civ_traffic_none">
                 <Original>None</Original>
                 <Russian>Отсутствует</Russian>
                 <Chinesesimp>无</Chinesesimp>
                 <Korean>없음</Korean>
+                <French>Aucun</French>
             </Key>
             <Key ID="STR_params_civ_traffic_low">
                 <Original>Low</Original>
                 <Russian>Низкий</Russian>
                 <Chinesesimp>少</Chinesesimp>
                 <Korean>낮음</Korean>
+                <French>Faible</French>
             </Key>
             <Key ID="STR_params_civ_traffic_medium">
                 <Original>Medium</Original>
                 <Russian>Средний</Russian>
                 <Chinesesimp>中</Chinesesimp>
                 <Korean>중간</Korean>
+                <French>Moyen</French>
             </Key>
             <Key ID="STR_params_civ_traffic_high">
                 <Original>High</Original>
                 <Russian>Высокий</Russian>
                 <Chinesesimp>多</Chinesesimp>
                 <Korean>높음</Korean>
+                <French>Elevé</French>
             </Key>
             <Key ID="STR_params_civPedestrians">
                 <Original>Maximum number of pedestrians</Original>
                 <Russian>Максимальное количество пешеходов</Russian>
                 <Chinesesimp>最大一般路过平民数量</Chinesesimp>
                 <Korean>최대 보행자 수</Korean>
+                <French>Nombre maximal de pedestrians</French>
             </Key>
             <Key ID="STR_params_allowFT">
                 <Original>Fast travel allowed targets</Original>
                 <Russian>Цели с быстрым перемещением</Russian>
                 <Chinesesimp>允许快速移动的目标</Chinesesimp>
                 <Korean>빠른 이동이 허용되는 대상</Korean>
+                <French>Les déplacements rapides permettent d'atteindre des objectifs</French>
             </Key>
             <Key ID="STR_params_allowFT_0">
                 <Original>Any friendly position</Original>
                 <Russian>Любая дружественная позиция</Russian>
                 <Chinesesimp>任意友好位置</Chinesesimp>
                 <Korean>아무 아군 위치</Korean>
+                <French>Toute position amicale</French>
             </Key>
             <Key ID="STR_params_allowFT_1">
                 <Original>Only airports, military bases and HQ</Original>
                 <Russian>Только аэропорты, военные базы и штаб</Russian>
                 <Chinesesimp>只有机场、军事基地和HQ</Chinesesimp>
                 <Korean>공항, 군사 기지와 본부만</Korean>
+                <French>Uniquement les aéroports, les bases militaires et les QG</French>
             </Key>
             <Key ID="STR_params_napalmEnabled">
                 <Original>Enable Napalm Bombing for AI</Original>
                 <Russian>Включить бомбардировки напалмом для ИИ</Russian>
                 <Chinesesimp>AI启用凝固汽油弹轰炸</Chinesesimp>
                 <Korean>인공지능에게 네이팜탄 폭격 활성화</Korean>
+                <French>Activer le bombardement au napalm pour l'IA</French>
             </Key>
             <Key ID="STR_params_teamSwitchDelay">
                 <Original>Delay After Leaving Before a Player Can Join Another Team (PVP, minutes)</Original>
                 <Russian>Задержка после ухода, прежде чем игрок сможет присоединиться к другой команде (PVP, в минутах)</Russian>
                 <Chinesesimp>离开后在玩家可以加入另一支队伍之前的延迟（PVP，分钟）</Chinesesimp>
                 <Korean>플레이어가 다른 팀에 가입하기 전에 떠난 뒤의 딜레이 시간 (PvP, 분)</Korean>
+                <French>Délai après le départ avant qu'un joueur puisse rejoindre une autre équipe (PVP, minutes)</French>
             </Key>
             <Key ID="STR_params_teamSwitchDelay_nodelay">
                 <Original>No delay</Original>
                 <Russian>Без задержки</Russian>
                 <Chinesesimp>不设延迟</Chinesesimp>
                 <Korean>딜레이 없음</Korean>
+                <French>Pas de délai</French>
             </Key>
             <Key ID="STR_params_unlockedUnlimitedAmmo">
                 <Original>Do unlocked weapons automatically unlock their standard magazine?</Original>
                 <Russian>Разблокировка оружия автоматически открывает стандартный магазин для него?</Russian>
                 <Chinesesimp>解锁的武器会自动解锁他们的标准弹夹吗？</Chinesesimp>
                 <Korean>언락된 무기는 자동으로 기본 탄창을 언락합니까?</Korean>
+                <French>Les armes débloquées débloquent-elles automatiquement leur chargeur standard ?</French>
             </Key>
             <Key ID="STR_params_allowGuidedLaunchers">
                 <Original>Should guided launchers become unlocked?</Original>
                 <Russian>Должны ли управляемые пусковые установки разблокироваться?</Russian>
                 <Chinesesimp>制导筒子应该解锁吗？</Chinesesimp>
                 <Korean>유도탄 발사기의 언락을 허용합니까?</Korean>
+                <French>Les lanceurs guidés devraient-ils être débloqués ?</French>
             </Key>
             <Key ID="STR_params_allowUnlockedExplosives">
                 <Original>Allow Unlocked Explosives</Original>
                 <Russian>Разрешить разблокированную взрывчатку</Russian>
                 <Korean>폭발물 해금 허용</Korean>
+                <French>Autoriser les explosifs déverrouillés</French>
             </Key>
             <Key ID="STR_params_startWithLongRangeRadio">
                 <Original>[TFAR] Start with Long Range Radio</Original>
                 <Russian>[TFAR] Начинать с рюкзаков ДВ-радиосвязи </Russian>
                 <Chinesesimp>(TFAR)从远程无线电开始</Chinesesimp>
                 <Korean>[TFAR] 장파 무전기 기본 지급</Korean>
+                <French>[TFAR] Commencer avec la radio longue portée</French>
             </Key>
             <Key ID="STR_params_aceFood">
                 <Original>[ACE] Start with Food Items?</Original>
                 <Russian>[ACE] Начинать игру с предметами пищи?</Russian>
                 <Chinesesimp>[ACE]开启食物？</Chinesesimp>
                 <Korean>[ACE] 음식 아이템을 기본으로 지급합니까?</Korean>
+                <French>[ACE] Commencer avec des objets alimentaires ?</French>
             </Key>
             <Key ID="STR_params_helmetLossChance">
                 <Original>Chance of helmet loss on headshots</Original>
                 <Russian>Шанс потери шлема при попадании в голову</Russian>
                 <Chinesesimp>爆头掉头盔的几率</Chinesesimp>
                 <Korean>헤드샷 당할 시 헬멧을 잃을 확률</Korean>
+                <French>Risque de perte de casque lors des tirs à la tête</French>
             </Key>
             <Key ID="STR_params_helmetLossChance_0">
                 <Original>Never</Original>
                 <Russian>Никогда</Russian>
                 <Chinesesimp>从不</Chinesesimp>
                 <Korean>없음</Korean>
+                <French>Jamais</French>
             </Key>
             <Key ID="STR_params_helmetLossChance_1">
                 <Original>Sometimes</Original>
                 <Russian>Иногда</Russian>
                 <Chinesesimp>有时</Chinesesimp>
                 <Korean>가끔</Korean>
+                <French>Parfois</French>
             </Key>
             <Key ID="STR_params_helmetLossChance_2">
                 <Original>Often</Original>
                 <Russian>Часто</Russian>
                 <Chinesesimp>经常</Chinesesimp>
                 <Korean>자주</Korean>
+                <French>Souvent</French>
             </Key>
             <Key ID="STR_params_helmetLossChance_3">
                 <Original>Always</Original>
                 <Russian>Всегда</Russian>
                 <Chinesesimp>永远</Chinesesimp>
                 <Korean>항상</Korean>
+                <French>Toujours</French>
             </Key>
             <Key ID="STR_params_gc_threshold">
                 <Original>Garbage Cleaner Threshold for Automatic Garbage Collection (in hours)</Original>
                 <Russian>Порог активации сборщика мусора (в часах)</Russian>
                 <Korean>자동 쓰레기 청소에 대한 쓰레기 청소 프로그램 임계점 (시간)</Korean>
+                <French>Seuil de nettoyage des ordures pour le ramassage automatique des ordures (en heures)</French>
             </Key>
             <Key ID="STR_params_revive_time">
                 <Original>Revive time for players (in seconds)</Original>
                 <Russian>Время до поднятия игрока на ноги (в секундах)</Russian>
                 <Korean>플레이어 소생 시간 (초)</Korean>
+                <French>Temps de réanimation des joueurs (en secondes)</French>
             </Key>
             <Key ID="STR_params_antistasi_plus">
                 <Original>ANTISTASI PLUS PARAMETERS</Original>
                 <Russian>ПАРАМЕТРЫ ANTISTASI PLUS</Russian>
                 <Chinesesimp>ANTISTASI PLUS参数</Chinesesimp>
                 <Korean>안티스타시 플러스 매개변수</Korean>
+                <French>PARAMÈTRES ANTISTASI PLUS</French>
             </Key>
             <Key ID="STR_params_timeMultiplier">
                 <Original>Time Multiplier</Original>
                 <Russian>Множитель времени</Russian>
                 <Chinesesimp>时间倍增器</Chinesesimp>
                 <Korean>시간 가속</Korean>
+                <French>Multiplicateur de temps</French>
             </Key>
             <Key ID="STR_params_timeMultiplier_0">
                 <Original>1:1 (Normal)</Original>
                 <Russian>1:1 (Нормальный)</Russian>
                 <Chinesesimp>1:1（正常）</Chinesesimp>
                 <Korean>1:1 (일반)</Korean>
+                <French>1:1 (Normal)</French>
             </Key>
             <Key ID="STR_params_timeMultiplier_1">
                 <Original>1:4 (Day = 6 Hours)</Original>
                 <Russian>1:4 (день = 6 часов)</Russian>
                 <Chinesesimp>1:4（一天=6小时）</Chinesesimp>
                 <Korean>1:4 (1일 = 6시간)</Korean>
+                <French>1:4 (1 jour = 6 heures)</French>
             </Key>
             <Key ID="STR_params_timeMultiplier_2">
                 <Original>1:6 (Day = 4 Hours)</Original>
                 <Russian>1:6 (день = 4 часа)</Russian>
                 <Chinesesimp>1:6（一天=4小时）</Chinesesimp>
                 <Korean>1:6 (1일 = 4시간)</Korean>
+                <French>1:6 (1 jour = 4 heures)</French>
             </Key>
             <Key ID="STR_params_timeMultiplier_3">
                 <Original>1:8 (Day = 3 Hours)</Original>
                 <Russian>1:8 (день = 3 часа)</Russian>
                 <Chinesesimp>1:8（一天=3小时）</Chinesesimp>
                 <Korean>1:8 (1일 = 3시간)</Korean>
+                <French>1:8 (1 jour = 3 heures)</French>
             </Key>
             <Key ID="STR_params_timeMultiplier_4">
                 <Original>1:12 (Day = 2 Hours)</Original>
                 <Russian>1:12 (день = 2 часа)</Russian>
                 <Chinesesimp>1:12（一天=2小时）</Chinesesimp>
                 <Korean>1:12 (1일 = 2시간)</Korean>
+                <French>1:12 (1 jour = 2 heures)</French>
             </Key>
             <Key ID="STR_params_timeMultiplier_5">
                 <Original>1:24 (Day = 1 Hour)</Original>
                 <Russian>1:24 (день = 1 час)</Russian>
                 <Chinesesimp>1:24（一天=1小时）</Chinesesimp>
                 <Korean>1:24 (1일 = 1시간)</Korean>
+                <French>1:24 (1 jour = 1 heures)</French>
             </Key>
             <Key ID="STR_params_unflipPersonCount">
                 <Original>How many people required to unflip vehicle?</Original>
                 <Russian>Сколько человек требуется, чтобы перевернуть транспортное средство?</Russian>
                 <Chinesesimp>翻正载具需要多少人？</Chinesesimp>
                 <Korean>차량을 뒤집으려면 몇 명의 사람이 필요합니까?</Korean>
+                <French>Combien de personnes sont nécessaires pour retourner le véhicule ?</French>
             </Key>
             <Key ID="STR_params_magRepack">
                 <Original>Enable Mag Repack?</Original>
@@ -4726,342 +4780,399 @@
                 <Russian>Показывать 3D-иконки над игроками, которым требуется медицинская помощь?</Russian>
                 <Chinesesimp>在昏迷玩家上方显示3D图标？</Chinesesimp>
                 <Korean>의식불명 플레이어 위에 3D 아이콘을 보이게 합니까?</Korean>
+                <French>Afficher des icônes 3D au-dessus des joueurs inconscients ?</French>
             </Key>
             <Key ID="STR_params_fastTravelEnemyCheck">
                 <Original>Fast Travel Enemies Check</Original>
                 <Russian>Проверка на врагов поблизости при быстром перемещении</Russian>
                 <Chinesesimp>快速旅行敌人检查</Chinesesimp>
                 <Korean>빠른 이동 시 적군 확인</Korean>
+                <French>Vérification de la présence d'ennemis proches lors d'un déplacement rapide</French>
             </Key>
             <Key ID="STR_params_fastTravelEnemyCheck_player">
                 <Original>Check for player only</Original>
                 <Russian>Проверять только путешествующих игроков</Russian>
                 <Chinesesimp>检查玩家</Chinesesimp>
                 <Korean>플레이어만 확인</Korean>
+                <French>Vérification pour le joueur uniquement</French>
             </Key>
             <Key ID="STR_params_fastTravelEnemyCheck_team">
                 <Original>Check for player squad (Vanilla Antistasi Style)</Original>
                 <Russian>Проверять весь отряд игрока (стиль обычного Antistasi)</Russian>
                 <Chinesesimp>检查玩家小队（原版Antistasi风格）</Chinesesimp>
                 <Korean>플레이어 분대 확인(바닐라 안티스타시 유형)</Korean>
+                <French>Vérification de l'escouade des joueurs (Vanilla Antistasi Style)</French>
             </Key>
             <Key ID="STR_params_playerStartingMoney">
                 <Original>Initial Player Money</Original>
                 <Russian>Начальные деньги игрока</Russian>
                 <Chinesesimp>初始玩家金钱</Chinesesimp>
                 <Korean>플레이어 초기 자금</Korean>
+                <French>Argent initial des joueurs</French>
             </Key>
             <Key ID="STR_params_rebelFactionStartingMoney">
                 <Original>Initial Rebel Faction Money</Original>
                 <Russian>Начальные деньги фракции повстанцев</Russian>
                 <Chinesesimp>初始抵抗军派系的钱</Chinesesimp>
                 <Korean>반란군 팩션 초기 자금</Korean>
+                <French>Argent initial de la faction rebelle</French>
             </Key>
             <Key ID="STR_params_initialHr">
                 <Original>Initial Rebel Faction Manpower</Original>
                 <Russian>Начальные людские ресурсы</Russian>
                 <Chinesesimp>初始抵抗军派系的人力</Chinesesimp>
                 <Korean>반란군 팩션 초기 인력</Korean>
+                <French>Ressources humaines initiales de la faction rebelle</French>
             </Key>
             <Key ID="STR_params_newCarTowing">
                 <Original>Improved towing of wheeled vehicles</Original>
                 <Russian>Улучшенная буксировка колёсного транспорта</Russian>
                 <Chinesesimp>改进了轮式车辆的牵引</Chinesesimp>
                 <Korean>차륜형 차량의 견인 능력 향상</Korean>
+                <French>Amélioration du remorquage des véhicules à roues</French>
             </Key>
             <Key ID="STR_params_rallyPointSpawnCount">
                 <Original>How many times Rally Point can be used?</Original>
                 <Russian>Сколько раз можно использовать точку сбора?</Russian>
                 <Chinesesimp>集结点可以使用多少次？</Chinesesimp>
                 <Korean>집결 지점은 몇 번 사용 가능합니까?</Korean>
+                <French>Combien de fois le point de ralliement peut-il être utilisé ?</French>
             </Key>
             <Key ID="STR_params_aiControlTime">
                 <Original>AI Control Time Limit (in seconds)</Original>
                 <Russian>Ограничение времени управления ИИ (в секундах)</Russian>
                 <Chinesesimp>AI控制时限（秒）</Chinesesimp>
                 <Korean>인공지능 조종 시간 제한 (초)</Korean>
+                <French>Limite de temps du contrôle de l'IA (en secondes)</French>
             </Key>
             <Key ID="STR_params_deathPenalty">
                 <Original>Player penalty on death (How many money will be lost on death)</Original>
                 <Russian>Штраф игроку при смерти (Сколько денег будет потеряно при смерти)</Russian>
                 <Chinesesimp>玩家死亡惩罚（死亡会损失多少金钱）</Chinesesimp>
                 <Korean>플레이어 사망 시 패널티 (사망 시 손실되는 금액은 얼마입니까?)</Korean>
+                <French>Pénalité du joueur en cas de décès (combien d'argent sera perdu en cas de décès)</French>
             </Key>
             <Key ID="STR_params_attackTiming">
                 <Original>Attack Timing - enemy massive attack frequency (in minutes, base value affected by various conditions and modifiers)</Original>
                 <Russian>Частота массивной атаки противника (в минутах, базовое значение зависит от различных условий и модификаторов).</Russian>
                 <Chinesesimp>敌人的大规模攻击频率（以分钟为单位，基础值受各种条件和修改器影响）</Chinesesimp>
                 <Korean>공격 타이밍 - 적의 대규모 공격 빈도 (분 단위, 다양한 조건과 변형에 영향에 따라 기본값이 달라짐)</Korean>
+                <French>Fréquence des attaques massives de l'ennemi (en minutes, la valeur de base dépend de différentes conditions et modificateurs)</French>
             </Key>
             <Key ID="STR_params_ironManMode">
                 <Original>Iron Man Mode - Petros will have single life and game will end if he dies, save will be erased too</Original>
                 <Russian>Режим Железной Воли - У Петроса одна жизнь, игра закончится и сохранение затрётся при его смерти</Russian>
                 <Chinesesimp>钢铁侠模式-Petros只有一条命，死亡就游戏结束，存档也会被清空</Chinesesimp>
                 <Korean>아이언맨 모드 - 페트로스는 목숨이 하나 뿐이며 그가 죽으면 게임은 끝날 것이며, 세이브도 지워집니다</Korean>
+                <French>Mode Iron Man - Petros n'aura qu'une seule vie et le jeu se terminera s'il meurt, les sauvegardes seront également effacées.</French>
             </Key>
             <Key ID="STR_params_ironManMode_1">
                 <Original>Yes (Warning - irreversible for current save)</Original>
                 <Russian>Да (Внимание! Необратимо для текущего сохранения)</Russian>
                 <Chinesesimp>是（警告-当前保存不可逆）</Chinesesimp>
                 <Korean>예 (경고 - 현재 저장을 되돌릴 수 없습니다)</Korean>
+                <French>Oui (Attention - irréversible pour la sauvegarde actuelle)</French>
             </Key>
             <Key ID="STR_params_randomEvents">
                 <Original>Enable Random Events</Original>
                 <Russian>Включить случайные события</Russian>
                 <Chinesesimp>开启随机事件</Chinesesimp>
                 <Korean>랜덤 이벤트 활성화</Korean>
+                <French>Activer les événements aléatoires</French>
             </Key>
             <Key ID="STR_params_areRivalsEnabled">
                 <Original>Rival Rebel Subfaction</Original>
                 <Russian>Соперничая субфракция повстанцев</Russian>
                 <Chinesesimp>敌对的抵抗军子派系</Chinesesimp>
                 <Korean>라이벌 반란군 서브팩션 활성화</Korean>
+                <French>Sous-faction rivale des rebelles</French>
             </Key>
             <Key ID="STR_params_areRivalsEnabled_0">
                 <Original>No (Classic Antitasi Plus experience)</Original>
                 <Russian>Нет (классический Antitasi Plus)</Russian>
                 <Chinesesimp>无（经典 Antitasi Plus体验）</Chinesesimp>
                 <Korean>아니오 (클래식 안티스타시 플러스 경험)</Korean>
+                <French>Non (expérience Classic Antitasi Plus)</French>
             </Key>
             <Key ID="STR_params_aiAccuracyCeiling">
                 <Original>Enemy AI units maximum accuracy</Original>
                 <Russian>Максимальная точность вражеских ИИ-юнитов</Russian>
                 <Chinesesimp>敌方AI单位最大精度</Chinesesimp>
                 <Korean>적 인공지능 유닛 최대 정확도</Korean>
+                <French>Précision maximale des unités IA ennemies</French>
             </Key>
             <Key ID="STR_params_occupantFaction_generic">
                 <Original>Occupants faction</Original>
                 <Russian>Фракция оккупантов</Russian>
                 <Chinesesimp>占领者派系</Chinesesimp>
                 <Korean>점령군 팩션</Korean>
+                <French>Faction des occupants</French>
             </Key>
             <Key ID="STR_params_invadersFaction_generic">
                 <Original>Invaders faction</Original>
                 <Russian>Фракция захватчиков</Russian>
                 <Chinesesimp>侵略者派系</Chinesesimp>
                 <Korean>침략군 팩션</Korean>
+                <French>Faction des envahisseurs</French>
             </Key>
             <Key ID="STR_params_coldWarMode">
                 <Original>Cold War mode (US Army and Red Army factions, roughly first half of 1990s, overrides faction settings above)</Original>
                 <Russian>Режим Холодной Войны (армия США и Красная Армия, примерно первая половина 1990-х годов, переопределяет настройки фракции, указанные выше)</Russian>
                 <Chinesesimp>冷战模式（美国陆军和红军派系，大致在1990年代上半叶，覆盖上面的派系设置）</Chinesesimp>
                 <Korean>냉전 모드 (미 육군과 붉은 군대 팩션, 약 1990년대 전반 배경으로 위의 팩션 설정을 재정의함)</Korean>
+                <French>Mode Guerre froide (factions de l'armée américaine et de l'armée rouge, à peu près dans la première moitié des années 1990 ; les paramètres de faction ci-dessus sont ignorés)</French>
             </Key>
             <Key ID="STR_params_advancedParams">
                 <Original>FOR ADVANCED USERS ONLY</Original>
                 <Russian>ТОЛЬКО ДЛЯ ПРОДВИНУТЫХ ПОЛЬЗОВАТЕЛЕЙ</Russian>
                 <Chinesesimp>仅限高级用户</Chinesesimp>
                 <Korean>고급 유저 전용</Korean>
+                <French>POUR LES UTILISATEURS AVANCÉS UNIQUEMENT</French>
             </Key>
             <Key ID="STR_params_LogLevel">
                 <Original>Logging Level (Amount of detail in .rpt file)</Original>
                 <Russian>Уровень ведения журнала (количество деталей в файле .rpt)</Russian>
                 <Chinesesimp>日志级别（.rpt文件中的细节数量）。</Chinesesimp>
                 <Korean>로그 레벨 (.rpt 파일의 세부 정보량)</Korean>
+                <French>Niveau de journalisation (quantité de détails dans le fichier .rpt)</French>
             </Key>
             <Key ID="STR_params_A3A_logDebugConsole">
                 <Original>Log debug console use</Original>
                 <Russian>Логгировать использование отладочной консоли</Russian>
                 <Chinesesimp>记录调试控制台的使用情况</Chinesesimp>
                 <Korean>디버그 콘솔 사용 기록</Korean>
+                <French>Utilisation de la console de débogage</French>
             </Key>
             <Key ID="STR_params_A3A_logDebugConsole_none">
                 <Original>None</Original>
                 <Russian>Не логгировать никого</Russian>
                 <Chinesesimp>无</Chinesesimp>
                 <Korean>없음</Korean>
+                <French>Aucun</French>
             </Key>
             <Key ID="STR_params_A3A_logDebugConsole_allnondev">
                 <Original>Log Non-Developers</Original>
                 <Russian>Логгировать не-разработчиков</Russian>
                 <Chinesesimp>记录非开发者</Chinesesimp>
                 <Korean>비개발자 로그</Korean>
+                <French>Log Non-Développeurs</French>
             </Key>
             <Key ID="STR_params_A3A_logDebugConsole_all">
                 <Original>All</Original>
                 <Russian>Логгировать всех</Russian>
                 <Chinesesimp>全部</Chinesesimp>
                 <Korean>모두</Korean>
+                <French>Tout</French>
             </Key>
             <Key ID="STR_params_SupportOptions">
                 <Original>SUPPORT SETTINGS</Original>
                 <Russian>НАСТРОЙКИ ПОДДЕРЖКИ</Russian>
                 <Chinesesimp>支援设置</Chinesesimp>
                 <Korean>지원 설정</Korean>
+                <French>PARAMÈTRES DE SOUTIEN</French>
             </Key>
             <Key ID="STR_params_allowUnfairSupports">
                 <Original>Allow unfair (unbalanced) supports to be used by the enemy</Original>
                 <Russian>Разрешить использование противником несправедливых (несбалансированных) вариантов поддержки</Russian>
                 <Chinesesimp>允许不公平（不平衡）支援被敌人使用</Chinesesimp>
                 <Korean>적군이 불공평한(언밸런스한) 지원을 사용하도록 허용</Korean>
+                <French>Permettre à l'ennemi d'utiliser des supports injustes (déséquilibrés)</French>
             </Key>
             <Key ID="STR_params_allowFuturisticSupports">
                 <Original>[Experimental] Allow futuristic supports to be used by the enemy</Original>
                 <Russian>[Экспериментально] Разрешить использование противником футуристичной поддержки</Russian>
                 <Chinesesimp>[实验性]允许敌人使用未来支援</Chinesesimp>
                 <Korean>[실험용] 적군이 미래적인 지원을 사용하도록 허용</Korean>
+                <French>[Expérimental] Permettre à l'ennemi d'utiliser des supports futuristes</French>
             </Key>
             <Key ID="STR_params_CrateOptions">
                 <Original>LOOT CRATE SETTINGS</Original>
                 <Russian>НАСТРОЙКИ ЯЩИКОВ С ЛУТОМ</Russian>
                 <Chinesesimp>战利品箱设置</Chinesesimp>
                 <Korean>전리품 상자 설정</Korean>
+                <French>PARAMÈTRES DES CAISSES DE BUTIN</French>
             </Key>
             <Key ID="STR_params_truelyRandomCrates">
                 <Original>[Experimental] Truely Random Crates: No balance checks for crates</Original>
                 <Russian>[Экспериментально] Истинно случайные ящики: проверки баланса для ящиков не производится.</Russian>
                 <Chinesesimp>[实验性]真正随机的战利品箱：箱子没有平衡性检查</Chinesesimp>
                 <Korean>[실험용] 완전히 랜덤한 상자: 상자에 대한 밸런스 확인 없음</Korean>
+                <French>[Expérimental] Des caisses vraiment aléatoires : Pas de vérification de l'équilibre des caisses</French>
             </Key>
             <Key ID="STR_params_crateWepTypeMax">
                 <Original>Maximum Weapon Types in Crates</Original>
                 <Russian>Максимальное количество типов оружия в ящиках</Russian>
                 <Chinesesimp>箱子中最大武器类型的数量</Chinesesimp>
                 <Korean>상자의 무기 최대 유형 갯수</Korean>
+                <French>Types d'armes maximum dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateWepNumMax">
                 <Original>Maximum Weapon Quantity in Crates</Original>
                 <Russian>Максимальное количество оружия в ящиках</Russian>
                 <Chinesesimp>箱子里的最大武器数量</Chinesesimp>
                 <Korean>상자의 무기 최대 수량</Korean>
+                <French>Quantité maximale d'armes dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateItemTypeMax">
                 <Original>Maximum Item Types in Crates</Original>
                 <Russian>Максимальное количество типов предметов в ящиках</Russian>
                 <Chinesesimp>箱子里的最大物品类型的数量</Chinesesimp>
                 <Korean>상자의 아이템 최대 유형 갯수</Korean>
+                <French>Types d'objets maximums dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateItemNumMax">
                 <Original>Maximum Item Quantity in Crates</Original>
                 <Russian>Максимальное количество предметов в ящиках</Russian>
                 <Chinesesimp>箱子里的最大物品数</Chinesesimp>
                 <Korean>상자의 아이템 최대 수량</Korean>
+                <French>Quantité maximale d'articles dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateAmmoTypeMax">
                 <Original>Maximum Ammo Types in Crates</Original>
                 <Russian>Максимальное количество типов боеприпасов в ящиках</Russian>
                 <Chinesesimp>箱子里的最大弹药类型</Chinesesimp>
                 <Korean>상자의 탄약 최대 유형 갯수</Korean>
+                <French>Types de munitions maximum dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateAmmoNumMax">
                 <Original>Maximum Ammo Quantity in Crates</Original>
                 <Russian>Максимальное количество боеприпасов в ящиках</Russian>
                 <Chinesesimp>箱子里的最大弹药量</Chinesesimp>
                 <Korean>상자의 탄약 최대 수량</Korean>
+                <French>Quantité maximale de munitions dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateExplosiveTypeMax">
                 <Original>Maximum Explosive Types in Crates</Original>
                 <Russian>Максимальное количество взрывчатки в ящиках</Russian>
                 <Chinesesimp>箱子里的最大炸药类型</Chinesesimp>
                 <Korean>상자의 폭발물 최대 유형 갯수</Korean>
+                <French>Types d'explosifs maximums dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateExplosiveNumMax">
                 <Original>Maximum Explosive Quantity in Crates</Original>
                 <Russian>Максимальное количество взрывчатки в ящиках</Russian>
                 <Chinesesimp>箱子里的最大药数量</Chinesesimp>
                 <Korean>상자의 폭발물 최대 수량</Korean>
+                <French>Quantité maximale d'explosifs dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateAttachmentTypeMax">
                 <Original>Maximum Attachment Types in Crates</Original>
                 <Russian>Максимальное количество типов аттачментов для оружия в ящиках</Russian>
                 <Chinesesimp>箱子里的最大武器附件类型</Chinesesimp>
                 <Korean>상자의 부착물 최대 유형 갯수</Korean>
+                <French>Types d'attaches maximales dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateAttachmentNumMax">
                 <Original>Maximum Attachment Quantity in Crates</Original>
                 <Russian>Максимальное количество аттачментов для оружия в ящиках</Russian>
                 <Chinesesimp>箱子里的最大武器附件数量</Chinesesimp>
                 <Korean>상자의 부착물 최대 수량</Korean>
+                <French>Quantité maximale de pièces jointes dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateBackpackTypeMax">
                 <Original>Maximum Backpack Types in Crates</Original>
                 <Russian>Максимальное количество типов рюкзаков в ящиках</Russian>
                 <Chinesesimp>箱子里的最大背包类型</Chinesesimp>
                 <Korean>상자의 가방 최대 유형 갯수</Korean>
+                <French>Types de sacs à dos maximum dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateBackpackNumMax">
                 <Original>Maximum Backpack Quantity in Crates</Original>
                 <Russian>Максимальное количество рюкзаков в ящиках</Russian>
                 <Chinesesimp>箱子里的最大背包数量</Chinesesimp>
                 <Korean>상자의 가방 최대 수량</Korean>
+                <French>Quantité maximale de sacs à dos dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateHelmetTypeMax">
                 <Original>Maximum Helmet Types in Crates</Original>
                 <Russian>Максимальное количество типов шлемов в ящиках</Russian>
                 <Chinesesimp>箱子里的头盔类型</Chinesesimp>
                 <Korean>상자의 헬멧 최대 유형 갯수</Korean>
+                <French>Types de casques maximums dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateHelmetNumMax">
                 <Original>Maximum Helmet Quantity in Crates</Original>
                 <Russian>Максимальное количество шлемов в ящиках</Russian>
                 <Chinesesimp>箱子里的头盔数量</Chinesesimp>
                 <Korean>상자의 헬멧 최대 수량</Korean>
+                <French>Quantité maximale de casques dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateVestTypeMax">
                 <Original>Maximum Vest Types in Crates</Original>
                 <Russian>Максимальное количество типов жилетов в ящиках</Russian>
                 <Chinesesimp>箱子里的背心类型</Chinesesimp>
                 <Korean>상자의 조끼 최대 유형 갯수</Korean>
+                <French>Types de gilets maximums dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateVestNumMax">
                 <Original>Maximum Vest Quantity in Crates</Original>
                 <Russian>Максимальное количество жилетов в ящиках</Russian>
                 <Chinesesimp>箱子里的背心数量</Chinesesimp>
                 <Korean>상자의 조끼 최대 수량</Korean>
+                <French>Quantité maximale de gilets dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateDeviceTypeMax">
                 <Original>Maximum Device Backpack Types in Crates</Original>
                 <Russian>Максимальное количество типов рюкзаков устройств в ящиках</Russian>
                 <Chinesesimp>箱子里的设备背包类型</Chinesesimp>
                 <Korean>상자의 장비 가방 최대 유형 갯수</Korean>
+                <French>Nombre maximal de types de sacs à dos dans les caisses</French>
             </Key>
             <Key ID="STR_params_crateDeviceNumMax">
                 <Original>Maximum Device Backpack Quantity in Crates</Original>
                 <Russian>Максимальное количество рюкзаков устройств в ящиках</Russian>
                 <Chinesesimp>箱子里的设备背包数量</Chinesesimp>
                 <Korean>상자의 장비 가방 최대 수량</Korean>
+                <French>Quantité maximale de sacs à dos dans les caisses</French>
             </Key>
             <Key ID="STR_params_rebelGarrisonLimit">
                 <Original>How many rebels can be garrisoned (1.5x for airports and milbases, 0.5x for resources and factories)?</Original>
                 <Russian>Сколько повстанцев может в гарнизоне (1,5x для аэропортов и военных баз, 0,5x для ресурсов и заводов)?</Russian>
                 <Chinesesimp>抵抗军可以驻守多少（机场和军事基地1.5x，资源和工厂0.5x）？</Chinesesimp>
                 <Korean>얼마나 많은 아군을 주둔시킬 수 있습니까? (공항과 군사 가지의 경우 1.5배, 자원채취소와 공장의 경우 0.5배)</Korean>
+                <French>Combien de rebelles peuvent être mis en garnison (1,5x pour les aéroports et les bases militaires, 0,5x pour les ressources et les usines) ?</French>
             </Key>
             <Key ID="STR_params_rebelGarrisonLimit_desc">
                 <Original>How many rebel troops can be in garrison. Note that No limit option may affect performance as there might be too many troops for CPU to handle.</Original>
                 <Russian>Настраивает максимальное количество солдат-повстанцев, которое может быть в гарнизоне. Опция "No Limit" может влиять на производительность так как в гарнизонах может быть слишком много солдат.</Russian>
                 <Chinesesimp>有多少反抗军可以驻守。 请注意，无限制选项可能会影响性能，因为 CPU 可能无法处理太多部队。</Chinesesimp>
                 <Korean>주둔지에 얼마나 많은 아군을 주둔시킬 수 있습니까? 무제한 옵션은 CPU가 처리하기에 너무 많은 병력이 있을 수 있으므로 성능에 영향을 미칠 수 있습니다.</Korean>
+                <French>Nombre de troupes rebelles pouvant se trouver en garnison. Notez que l'option Pas de limite peut affecter les performances car il pourrait y avoir trop de troupes pour que le CPU puisse les gérer.</French>
             </Key>
             <Key ID="STR_params_saveZeusBuildings">
                 <Original>Persistent Save for Zeus-placed Constructions</Original>
                 <Russian>Постоянное сохранение для построек, размещенных Зевсом</Russian>
                 <Chinesesimp>宙斯放置的建筑物的永久保存</Chinesesimp>
                 <Korean>제우스가 배치한 건축물을 영구 저장</Korean>
+                <French>Une sauvegarde persistante pour les constructions placées par Zeus</French>
             </Key>
             <Key ID="STR_params_unconsciousAiPossess">
                 <Original>[Experimental] Allow players to take control on AI units while laying unconscious</Original>
                 <Russian>[Экспериментально] Разрешить игрокам управлять ИИ-соотрядниками находясь в бессознательном состоянии</Russian>
                 <Chinesesimp>允许玩家在失去行动的情况下控制AI队友</Chinesesimp>
                 <Korean>[실험용] 플레이어가 의식불명인 상태에서 인공지능 유닛을 조종할 수 있도록 허용</Korean>
+                <French>[Expérimental] Permettre aux joueurs de prendre le contrôle des unités de l'IA lorsqu'ils sont inconscients</French>
             </Key>
             <Key ID="STR_params_maxConstructions">
                 <Original>Maximum quantity of Persistent Constructions</Original>
                 <Russian>Максимальное количество сохраняемых сооружений</Russian>
                 <Chinesesimp>最大多少数量的永久建筑</Chinesesimp>
                 <Korean>영구 건축물의 최대 수량</Korean>
+                <French>Quantité maximale de constructions permanentes</French>
             </Key>
             <Key ID="STR_params_maxSupportPoints">
                 <Original>Support Points Cap</Original>
                 <Russian>Максимальное количество очков поддержки</Russian>
                 <Chinesesimp>最大支援点数</Chinesesimp>
                 <Korean>지원 포인트 갯수</Korean>
+                <French>Nombre maximal de points d'appui</French>
             </Key>
             <Key ID="STR_params_maxUnits">
                 <Original>Maximum quantity of simultaneosly spawnable units</Original>
                 <Russian>Максимальное количество одновременно спавнящихся юнитов</Russian>
                 <Chinesesimp>同时生成单位的最大数量</Chinesesimp>
                 <Korean>동시에 생성 가능한 유닛의 최대 수량</Korean>
+                <French>Nombre maximum d'unités pouvant être produites simultanément</French>
             </Key>
             <Key ID="STR_params_reviveKitsEnabled">
                 <Original>Enable Combat Readiness Recovery kits</Original>
@@ -5075,260 +5186,304 @@
                 <Russian>Включить ящики-сборщики добычи и вызов вертолёта-сборщика добычи</Russian>
                 <Chinesesimp>启用战利品箱和召唤战利品直升机</Chinesesimp>
                 <Korean>전리품 상자 및 전리품 헬리콥터의 지휘관 기능 활성화</Korean>
+                <French>Activation de la fonction Commandant pour les caisses de butin et les hélicoptères de butin</French>
             </Key>
             <Key ID="STR_params_lootCrateDistance">
                 <Original>Loot crate gather distance</Original>
                 <Russian>Расстояние сбора предметов у ящика-сборщика добычи</Russian>
                 <Chinesesimp>战利品箱收集距离</Chinesesimp>
                 <Korean>전리품 수집 거리</Korean>
+                <French>Distance de collecte des caisses de butin</French>
             </Key>
             <Key ID="STR_params_lootCratePrice">
                 <Original>Loot crate price</Original>
                 <Korean>전리품 상자 가격</Korean>
+                <French>Prix de la caisse de butin</French>
             </Key>
             <Key ID="STR_params_lootCrateUnlockedItems">
                 <Original>Loot crate ignore unlocked items</Original>
                 <Korean>전리품 상자가 해금된 아이템 무시</Korean>
+                <French>La caisse de butin ignore les objets débloqués</French>
             </Key>
             <Key ID="STR_params_spawnDistance">
                 <Original>Enemy spawn distance</Original>
                 <Russian>Радиус спавна противников, событий и.т.д.</Russian>
                 <Chinesesimp>生成敌人、事件等的半径</Chinesesimp>
                 <Korean>적군 스폰 거리</Korean>
+                <French>Distance d'apparition des ennemis</French>
             </Key>
             <Key ID="STR_params_distanceMission">
                 <Original>Mission Distance</Original>
                 <Russian>Максимальная дистанция для миссий</Russian>
                 <Chinesesimp>任务距离</Chinesesimp>
                 <Korean>임무 거리</Korean>
+                <French>Distance de la mission</French>
             </Key>
             <Key ID="STR_params_enemyCheckDistance">
                 <Original>Distance used to check for nearby enemies</Original>
                 <Russian>Расстояние, на которое проверяется наличие врагов</Russian>
                 <Chinesesimp>用于检查附近敌人的距离</Chinesesimp>
                 <Korean>인근 적을 확인하는 데 사용되는 거리</Korean>
+                <French>Distance utilisée pour vérifier la présence d'ennemis à proximité</French>
             </Key>
             <Key ID="STR_params_afk">
                 <Original>Time before a player is considered AFK (in minutes)</Original>
                 <Russian>Время до признания игрока отошедшим (в минутах)</Russian>
                 <Chinesesimp>玩家被视为AFK之前的时间（以分钟为单位）</Chinesesimp>
                 <Korean>플레이어가 잠수로 간주될 때까지의 시간 (분)</Korean>
+                <French>Temps avant qu'un joueur soit considéré comme AFK (en minutes)</French>
             </Key>
             <Key ID="STR_params_afk_disabled">
                 <Original>Disabled</Original>
                 <Russian>Отключено</Russian>
                 <Chinesesimp>禁用</Chinesesimp>
                 <Korean>비활성화</Korean>
+                <French>Désactivé</French>
             </Key>
             <Key ID="STR_params_guestCommander">
                 <Original>Allow guests to become commander when no members are eligible</Original>
                 <Russian>Позволить гостям становиться командирами когда отсутствуют члены сервера</Russian>
                 <Chinesesimp>允许客人在没有成员符合条件时成为指挥官</Chinesesimp>
                 <Korean>자격이 있는 멤버가 없을 때 게스트가 지휘관이 될 수 있도록 허용</Korean>
+                <French>Permettre aux invités de devenir commandant lorsqu'aucun membre n'est éligible</French>
             </Key>
             <Key ID="STR_params_memberSlots">
                 <Original>Percentage of Reserved Slots for Members</Original>
                 <Russian>Количество зарезервированных слотов для членов сервера</Russian>
                 <Chinesesimp>会员预留名额百分比</Chinesesimp>
                 <Korean>멤버를 위한 예비 슬롯 백분율</Korean>
+                <French>Pourcentage de créneaux réservés aux membres</French>
             </Key>
             <Key ID="STR_params_memberSlots_all">
                 <Original>All</Original>
                 <Russian>Все</Russian>
                 <Chinesesimp>全部</Chinesesimp>
                 <Korean>모두</Korean>
+                <French>Tous</French>
             </Key>
             <Key ID="STR_params_max_distance_to_member_hq">
                 <Original>Max distance of guests from the closest member or HQ (in kilometers)</Original>
                 <Russian>Макс. расстояние от гостей до ближайшего члена сервера (в километрах)</Russian>
                 <Chinesesimp>游客与最近的成员或HQ的最大距离（以公里为单位）</Chinesesimp>
                 <Korean>가장 가까운 멤버 또는 본부로부터의 최대 게스트 거리 (km)</Korean>
+                <French>Distance maximale des invités par rapport au membre ou au siège le plus proche (en kilomètres)</French>
             </Key>
             <Key ID="STR_params_max_distance_to_member_unlimited">
                 <Original>Unlimited</Original>
                 <Russian>Безгранично</Russian>
                 <Chinesesimp>无限制</Chinesesimp>
                 <Korean>무제한</Korean>
+                <French>Illimité</French>
             </Key>
             <Key ID="STR_params_balance_header">
                 <Original>BALANCE OPTIONS</Original>
                 <Russian>НАСТРОЙКИ БАЛАНСА</Russian>
                 <Chinesesimp>平衡设置</Chinesesimp>
                 <Korean>밸런스 설정</Korean>
+                <French>OPTIONS D'ÉQUILIBRAGE</French>
             </Key>
             <Key ID="STR_params_membership_header">
                 <Original>MEMBERSHIP OPTIONS</Original>
                 <Russian>НАСТРОЙКИ ЧЛЕНСТВА НА СЕРВЕРЕ</Russian>
                 <Chinesesimp>服务器会员设置</Chinesesimp>
                 <Korean>멤버쉽 설정</Korean>
+                <French>OPTIONS D'ADHÉSION</French>
             </Key>
             <Key ID="STR_params_overall_enemy_res_balance">
                 <Original>Overall enemy resource balance</Original>
                 <Russian>Общий баланс вражеских ресурсов</Russian>
                 <Chinesesimp>敌方资源总体平衡</Chinesesimp>
                 <Korean>전체적인 적군 자원 밸런스</Korean>
+                <French>Équilibre général des ressources de l'ennemi</French>
             </Key>
             <Key ID="STR_params_difficulty_trivial">
                 <Original>Trivial</Original>
                 <Russian>Тривиально</Russian>
                 <Chinesesimp>微不足道</Chinesesimp>
                 <Korean>초보</Korean>
+                <French>Trivial</French>
             </Key>
             <Key ID="STR_params_difficulty_veasy">
                 <Original>Very Easy</Original>
                 <Russian>Очень легко</Russian>
                 <Chinesesimp>非常简单</Chinesesimp>
                 <Korean>매우 쉬움</Korean>
+                <French>Très facile</French>
             </Key>
             <Key ID="STR_params_difficulty_easy">
                 <Original>Easy</Original>
                 <Russian>Легко</Russian>
                 <Chinesesimp>简单</Chinesesimp>
                 <Korean>쉬움</Korean>
+                <French>Facile</French>
             </Key>
             <Key ID="STR_params_difficulty_easymedium">
                 <Original>Below Normal</Original>
                 <Russian>Ниже Обычного</Russian>
                 <Chinesesimp>低于普通</Chinesesimp>
                 <Korean>조금 쉬움</Korean>
+                <French>Inférieur à la normale</French>
             </Key>
             <Key ID="STR_params_difficulty_medium">
                 <Original>Normal</Original>
                 <Russian>Обычно</Russian>
                 <Chinesesimp>普通</Chinesesimp>
                 <Korean>중간</Korean>
+                <French>Normale</French>
             </Key>
             <Key ID="STR_params_difficulty_mediumhigh">
                 <Original>Above Normal</Original>
                 <Russian>Выше Обычного</Russian>
                 <Chinesesimp>高于普通</Chinesesimp>
                 <Korean>조금 어려움</Korean>
+                <French>Supérieure à la normale</French>
             </Key>
             <Key ID="STR_params_difficulty_hard">
                 <Original>Hard</Original>
                 <Russian>Тяжело</Russian>
                 <Chinesesimp>困难</Chinesesimp>
                 <Korean>어려움</Korean>
+                <French>Très difficile</French>
             </Key>
             <Key ID="STR_params_difficulty_vhard">
                 <Original>Very Hard</Original>
                 <Russian>Очень тяжело</Russian>
                 <Chinesesimp>非常困难</Chinesesimp>
                 <Korean>매우 어려움</Korean>
+                <French>Très difficile</French>
             </Key>
             <Key ID="STR_params_difficulty_extreme">
                 <Original>Extreme</Original>
                 <Russian>Экстремально</Russian>
                 <Chinesesimp>地狱</Chinesesimp>
                 <Korean>고수</Korean>
+                <French>Extrême</French>
             </Key>
             <Key ID="STR_params_response_balance">
                 <Original>Enemy attack resource balance (relative to overall balance)</Original>
                 <Russian>Баланс вражеских атак (относительно общего баланса)</Russian>
                 <Chinesesimp>敌方攻击资源平衡（相对于整体平衡）</Chinesesimp>
                 <Korean>적의 공격 자원 밸런스 (전체적인 밸런스와 관련됨)</Korean>
+                <French>Équilibre des ressources pour les attaques ennemies (par rapport à l'équilibre global)</French>
             </Key>
             <Key ID="STR_params_resource_balance_inv">
                 <Original>Resource multiplier for invaders relative to occupants</Original>
                 <Russian>Множитель ресурсов для захватчиков относительно оккупантов</Russian>
                 <Chinesesimp>侵略者相对于占领者的资源倍增器</Chinesesimp>
                 <Korean>침략군에 대한 자원 배수 (점령군과 관련됨)</Korean>
+                <French>Multiplicateur de ressources pour les envahisseurs par rapport aux occupants</French>
             </Key>
             <Key ID="STR_params_enemyPref">
                 <Original>Enemy preference for attacking rebel targets closer to HQ</Original>
                 <Russian>Предпочтение врага атаковать цели повстанцев ближе к их штабу</Russian>
                 <Chinesesimp>敌人更喜欢攻击靠近总部的抵抗军目标</Chinesesimp>
                 <Korean>본부에 가까운 적의 아군을 대상으로 하는 공격 선호도</Korean>
+                <French>L'ennemi préfère attaquer les cibles rebelles plus proches du QG</French>
             </Key>
             <Key ID="STR_params_enemyPref_nc">
                 <Original>No change</Original>
                 <Russian>Без изменений</Russian>
                 <Chinesesimp>无变化</Chinesesimp>
                 <Korean>변경하지 않음</Korean>
+                <French>Pas de changement</French>
             </Key>
             <Key ID="STR_params_A3A_enemySkillMul">
                 <Original>Enemy AI skill (also affected by server skill)</Original>
                 <Russian>Навык вражеских ИИ-юнитов (также под влиянием общих настроек игры или сервера)</Russian>
                 <Chinesesimp>敌方 AI 单位的技能（也受一般游戏或服务器设置的影响）</Chinesesimp>
                 <Korean>적 인공지능 숙련도 (서버 숙련도의 영향도 있음)</Korean>
+                <French>Compétence de l'IA ennemie (également affectée par la compétence du serveur)</French>
             </Key>
             <Key ID="STR_params_A3A_enemySkillMul_veasy">
                 <Original>Very Low</Original>
                 <Russian>Очень низкий</Russian>
                 <Chinesesimp>非常低</Chinesesimp>
                 <Korean>매우 낮음</Korean>
+                <French>Très faible</French>
             </Key>
             <Key ID="STR_params_A3A_enemySkillMul_easy">
                 <Original>Low</Original>
                 <Russian>Низкий</Russian>
                 <Chinesesimp>低</Chinesesimp>
                 <Korean>낮음</Korean>
+                <French>Faible</French>
             </Key>
             <Key ID="STR_params_A3A_enemySkillMul_medium">
                 <Original>Normal</Original>
                 <Russian>Обычный</Russian>
                 <Chinesesimp>正常</Chinesesimp>
                 <Korean>중간</Korean>
+                <French>Normal</French>
             </Key>
             <Key ID="STR_params_A3A_enemySkillMul_hard">
                 <Original>High</Original>
                 <Russian>Высокий</Russian>
                 <Chinesesimp>高</Chinesesimp>
                 <Korean>높음</Korean>
+                <French>Élevée</French>
             </Key>
             <Key ID="STR_params_A3A_enemySkillMul_vhard">
                 <Original>Very High</Original>
                 <Russian>Очень высокий</Russian>
                 <Chinesesimp>非常高</Chinesesimp>
                 <Korean>매우 높음</Korean>
+                <French>Très élevé</French>
             </Key>
             <Key ID="STR_params_A3A_rebelSkillMul">
                 <Original>Friendly AI skill (also affected by server skill)</Original>
                 <Russian>Навык дружественных ИИ-юнитов (также под влиянием общих настроек игры или сервера)</Russian>
                 <Chinesesimp>友好AI单位的技能（也受一般游戏或服务器设置的影响）</Chinesesimp>
                 <Korean>아군 인공지능 숙련도 (서버 숙련도의 영향도 있음)</Korean>
+                <French>Compétence de l'IA amie (également affectée par la compétence du serveur)</French>
             </Key>
             <Key ID="STR_params_equipment_header">
                 <Original>EQUIPMENT OPTIONS</Original>
                 <Russian>НАСТРОЙКИ ЭКИПИРОВКИ</Russian>
                 <Chinesesimp>设备选择</Chinesesimp>
                 <Korean>장비 설정</Korean>
+                <French>OPTIONS D'ÉQUIPEMENT</French>
             </Key>
             <Key ID="STR_params_A3A_guestItemLimit">
                 <Original>Default number of items needed for guests to be able to use them</Original>
                 <Russian>Минимальное количество предмета для гостей</Russian>
                 <Chinesesimp>游客可以使用的默认物品数量</Chinesesimp>
                 <Korean>게스트가 사용할 수 있도록 필요한 기본 아이템 갯수</Korean>
+                <French>Nombre par défaut d'articles nécessaires pour que les invités puissent les utiliser</French>
             </Key>
             <Key ID="STR_params_A3A_no_limit">
                 <Original>No limit</Original>
                 <Russian>Без ограничений</Russian>
                 <Chinesesimp>不限制</Chinesesimp>
                 <Korean>무제한</Korean>
+                <French>Aucune limite</French>
             </Key>
             <Key ID="STR_params_dev_header">
                 <Original>DEVELOPMENT OPTIONS</Original>
                 <Russian>НАСТРОЙКИ РАЗРАБОТКИ И ОТЛАДКИ</Russian>
                 <Chinesesimp>开发者选项</Chinesesimp>
                 <Korean>개발자 설정</Korean>
+                <French>OPTIONS DE DÉVELOPPEMENT</French>
             </Key>
             <Key ID="STR_params_A3A_GUIDevPreview">
                 <Original>Use In-Development UI Preview.</Original>
                 <Russian>Использовать превью пользовательского интерфейса (в разработке)</Russian>
                 <Chinesesimp>使用预览界面（开发中）</Chinesesimp>
                 <Korean>개발 중인 UI의 미리 보기를 사용합니다.</Korean>
+                <French>Utiliser l'aperçu de l'interface utilisateur (en cours de développement).</French>
             </Key>
             <Key ID="STR_params_TitleLoot">
                 <Original>LOOT CRATE OPTIONS</Original>
                 <Russian>НАСТРОЙКИ ДОБЫЧИ</Russian>
                 <Chinesesimp>战利品箱选项</Chinesesimp>
                 <Korean>전리품 상자 설정</Korean>
+                <French>OPTIONS POUR LES CAISSES DE BUTIN</French>
             </Key>
             <Key ID="STR_params_bobChaosCrates">
                 <Original>[Experimental] Truely Random Crates: Remove all balance checks from Crates</Original>
                 <Russian>[Экспериментально] Случайное содержимое ящиков: удаление всех проверок баланса</Russian>
                 <Chinesesimp>[实验]真随机箱: 移除箱子上的所有平衡检查</Chinesesimp>
                 <Korean>[실험용] 완전히 랜덤한 상자: 상자에 대한 밸런스 확인 없음</Korean>
+                <French>[Expérimental] Des caisses vraiment aléatoires : Suppression de toutes les vérifications d'équilibre dans les caisses</French>
             </Key>
         </Container>
         <Container name="roles">
