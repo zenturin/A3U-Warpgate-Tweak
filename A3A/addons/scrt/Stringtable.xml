@@ -4137,66 +4137,77 @@
                 <Russian>ОТДОХНУТЬ 8 ЧАСОВ</Russian>
                 <Chinesesimp>摸鱼休息8小时</Chinesesimp>
                 <Korean>8시간 휴식</Korean>
+                <French>SE REPOSER PENDANT 8 HEURES</French>
             </Key>
             <Key ID="STR_params_rest_header">
                 <Original>Skip Time / Rest</Original>
                 <Russian>Пропуск времени / Отдых</Russian>
                 <Chinesesimp>跳过时间/休息</Chinesesimp>
                 <Korean>시간 넘기기/휴식</Korean>
+                <French>Sauter le temps / Repos</French>
             </Key>
             <Key ID="STR_params_rest_commander_only">
                 <Original>Only commander can order to rest.</Original>
                 <Russian>Только командир может приказать отдохнуть.</Russian>
                 <Chinesesimp>只有指挥官才能命令休息。</Chinesesimp>
                 <Korean>지휘관만이 휴식을 명령할 수 있습니다.</Korean>
+                <French>Seul le commandant peut ordonner le repos.</French>
             </Key>
             <Key ID="STR_params_rest_enemies_near">
                 <Original>You can't rest while enemies are near our HQ.</Original>
                 <Russian>Нельзя отдыхать, пока враги рядом с нашим штабом.</Russian>
                 <Chinesesimp>当敌人靠近我们的总部时，你不能休息。</Chinesesimp>
                 <Korean>적들이 본부 근처에 있을 때는 쉴 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous reposer tant que des ennemis se trouvent à proximité de notre QG.</French>
             </Key>
             <Key ID="STR_params_rest_counterattack_in_progress">
                 <Original>You can't rest while the enemy is counterattacking.</Original>
                 <Russian>Нельзя отдыхать, пока противник контратакует.</Russian>
                 <Chinesesimp>敌人反击的时候你不能休息</Chinesesimp>
                 <Korean>적이 반격하는 동안에는 쉴 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous reposer pendant que l'ennemi contre-attaque.</French>
             </Key>
             <Key ID="STR_params_rest_punishment_in_progress">
                 <Original>You can't rest while citizens are under attack.</Original>
                 <Russian>Нельзя отдыхать, пока на граждан нападают.</Russian>
                 <Chinesesimp>市民受袭时你不能休息。</Chinesesimp>
                 <Korean>시민들이 공격받는 동안에는 쉴 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous reposer lorsque les citoyens sont attaqués.</French>
             </Key>
             <Key ID="STR_params_rest_hq_under_attack">
                 <Original>You can't rest while your HQ is under attack.</Original>
                 <Russian>Нельзя отдыхать, пока наш штаб находится под атакой.</Russian>
                 <Chinesesimp>当你的总部受到攻击时，你不能休息。</Chinesesimp>
                 <Korean>본부가 공격받는 동안에는 쉴 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous reposer tant que votre QG est attaqué.</French>
             </Key>
             <Key ID="STR_params_rest_rivals">
                 <Original>You can't rest while %1 has active operation against %2.</Original>
                 <Russian>Нельзя отдыхать, пока %1 ведет активную работу против %2.</Russian>
                 <Chinesesimp>当 %1 对 %2 发起行动时，你不能休息。</Chinesesimp>
                 <Korean>%1이(가) %2에 대해 작전을 수행하는 동안에는 쉴 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous reposer tant que %1 mène une opération active contre %2.</French>
             </Key>
             <Key ID="STR_params_all_players_near">
                 <Original>All players must be in a 100m radius from HQ to be able to rest.</Original>
                 <Russian>Все игроки должны находиться в радиусе 100 м от штаб-квартиры, чтобы иметь возможность отдохнуть.</Russian>
                 <Chinesesimp>所有玩家必须在总部100m半径内才能休息。</Chinesesimp>
                 <Korean>모든 플레이어가 본부에서 반경 100m 이내에 있어야 휴식이 가능합니다.</Korean>
+                <French>Tous les joueurs doivent se trouver dans un rayon de 100 m autour du QG pour pouvoir se reposer.</French>
             </Key>
             <Key ID="STR_params_rest">
                 <Original>You decided to rest for 8 hours...</Original>
                 <Russian>Вы решили отдохнуть 8 часов...</Russian>
                 <Chinesesimp>你决定摸鱼休息8小时...</Chinesesimp>
                 <Korean>당신은 8시간 동안 쉬기로 했습니다...</Korean>
+                <French>Vous avez décidé de vous reposer pendant 8 heures...</French>
             </Key>
             <Key ID="STR_params_time_to_go">
                 <Original>Time to go.</Original>
                 <Russian>Пора выдвигаться.</Russian>
                 <Chinesesimp>起床别过少爷生活</Chinesesimp>
                 <Korean>다시 시작할 시간이다.</Korean>
+                <French>Il est temps de partir.</French>
             </Key>
         </Container>
         <Container name="garrison">
@@ -4205,156 +4216,182 @@
                 <Russian>&lt;br/&gt;&lt;br/&gt;Гарнизон: %1/%13&lt;br/&gt;&lt;br/&gt;Командиры отделений: %2&lt;br/&gt;%12: %3&lt;br/&gt;Стрелки: %4&lt;br/&gt;Пулеметчики: %5&lt;br/&gt;Медики: %6&lt;br/&gt;Гренадёры: %7&lt;br/&gt;Снайперы: %8&lt;br/&gt;Гранатомётчики: %9&lt;br/&gt;Другие: %10&lt;br/&gt;Стац. орудия: %11</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;br/&gt;驻军人员：%1/%13&lt;br/&gt;&lt;br/&gt;班长：%2&lt;br/&gt;%12: %3&lt;br/&gt;步枪兵：%4&lt;br/&gt;自动步枪兵：%5&lt;br/&gt;医疗兵：%6&lt;br/&gt;掷弹兵：%7&lt;br/&gt;狙击手手：%8&lt;br/&gt;反坦克兵: %9&lt;br/&gt;其他：%10&lt;br/&gt;固定武器：%11</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;br/&gt;주둔 인원: %1/%13&lt;br/&gt;&lt;br/&gt;분대장: %2&lt;br/&gt;%12: %3&lt;br/&gt;소총수: %4&lt;br/&gt;기관총사수: %5&lt;br/&gt;의무병: %6&lt;br/&gt;유탄수: %7&lt;br/&gt;지정사수: %8&lt;br/&gt;대전차병: %9&lt;br/&gt;그 외: %10&lt;br/&gt;고정화기: %11</Korean>
+                <French>&lt;br/&gt;&lt;br/&gt;Hommes en garnison : %1/%13&lt;br/&gt;&lt;br/&gt;Chefs d'escouade: %2&lt;br/&gt;%12: %3&lt;br/&gt;Fusiliers : %4&lt;br/&gt;Fusiliers automatiques: %5&lt;br/&gt;Médecins: %6&lt;br/&gt;Grenadiers : %7&lt;br/&gt;Tireurs d'élite : %8&lt;br/&gt;Hommes AT : %9&lt;br/&gt;Autres : %10&lt;br/&gt;Armes statiques : %11</French>
             </Key>
             <Key ID="STR_garrison_info_technicals">
                 <Original>Technicals</Original>
                 <Russian>Технички</Russian>
                 <Chinesesimp>技术人员</Chinesesimp>
                 <Korean>테크니컬</Korean>
+                <French>Techniques</French>
             </Key>
             <Key ID="STR_garrison_info_statics">
                 <Original>Static Weapons</Original>
                 <Russian>Стац. орудия</Russian>
                 <Chinesesimp>固定武器</Chinesesimp>
                 <Korean>고정화기</Korean>
+                <French>Armes statiques</French>
             </Key>
             <Key ID="STR_garrison_garrison_header">
                 <Original>Garrison</Original>
                 <Russian>Гарнизон</Russian>
                 <Chinesesimp>驻军</Chinesesimp>
                 <Korean>주둔</Korean>
+                <French>Garnison</French>
             </Key>
             <Key ID="STR_garrison_select_zone">
                 <Original>Select the zone on where you will send the selected troops as garrison.</Original>
                 <Russian>Выберите зону, куда вы отправите выбранные войска в качестве гарнизона.</Russian>
                 <Chinesesimp>选择您所在的区域，将派遣选定的部队作为驻军。</Chinesesimp>
                 <Korean>선택한 대원을 주둔지로 보낼 구역을 선택하십시오.</Korean>
+                <French>Sélectionnez la zone dans laquelle vous enverrez les troupes sélectionnées en garnison.</French>
             </Key>
             <Key ID="STR_garrison_error_not_markerzone">
                 <Original>You must select a any %1 zone with marker.</Original>
                 <Russian>Вы должны выбрать любую зону %1 с маркером.</Russian>
                 <Chinesesimp>您必须选择带有标记的任何%1区域。</Chinesesimp>
                 <Korean>마커가 있는 %1 영역을 선택해야 합니다.</Korean>
+                <French>Vous devez sélectionner une zone %1 quelconque avec un marqueur.</French>
             </Key>
             <Key ID="STR_garrison_error_not_teamplayer">
                 <Original>Selected zone does not belong to %1.</Original>
                 <Russian>Выбранная зона не принадлежит %1.</Russian>
                 <Chinesesimp>所选区域不属于 %1。</Chinesesimp>
                 <Korean>선택한 영역이 %1의 소속이 아닙니다.</Korean>
+                <French>La zone sélectionnée n'appartient pas à %1.</French>
             </Key>
             <Key ID="STR_garrison_error_already_in_garrison">
                 <Original>The selected units are already in garrison.</Original>
                 <Russian>Выбранные юниты уже в гарнизоне.</Russian>
                 <Chinesesimp>被选中的单位已经进驻了。</Chinesesimp>
                 <Korean>선택한 유닛이 이미 주둔지에 있습니다.</Korean>
+                <French>Les unités sélectionnées sont déjà en garnison.</French>
             </Key>
             <Key ID="STR_garrison_error_no_specific_squads">
                 <Original>You can't add units to player led, Watchpost, Roadblocks or Minefield building squads.</Original>
                 <Russian>Вы не можете добавлять юниты в ведомые игроком отряды, сторожевые посты, блокпосты и отряды строителей минных полей.</Russian>
                 <Chinesesimp>你不能添加单位到玩家领导的小队，观察哨，路障或雷区建造小队。</Chinesesimp>
                 <Korean>플레이어 주도, 감시초소, 검문소 또는 지뢰지대 건설 부대에는 유닛을 추가할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas ajouter d'unités aux unités dirigées par un joueur, aux postes de garde, aux barrages routiers ou aux unités de construction de champs de mines.</French>
             </Key>
             <Key ID="STR_garrison_error_dead_units">
                 <Original>Dead or player-controlled units can't be added to any garrison.</Original>
                 <Russian>Мертвые или контролируемые игроком юниты не могут быть добавлены ни в один гарнизон.</Russian>
                 <Chinesesimp>死亡或玩家控制的单位不能添加到任何驻军。</Chinesesimp>
                 <Korean>사망하거나 플레이어가 조종하는 부대는 주둔지에 추가할 수 없습니다.</Korean>
+                <French>Les unités mortes ou contrôlées par le joueur ne peuvent pas être ajoutées à une garnison.</French>
             </Key>
             <Key ID="STR_garrison_error_no_specific_units">
                 <Original>Static crewmen, prisoners, refugees, Petros or unknown units can can't be added to any garrison.</Original>
                 <Russian>Статические члены экипажа, пленные, беженцы, Петрос или неизвестные юниты не могут быть добавлены ни в один гарнизон.</Russian>
                 <Chinesesimp>机组、囚犯、难民、Petros或未知单位不能添加到任何驻军。</Chinesesimp>
                 <Korean>고정화기 사수, 죄수, 난민, 페트로스 또는 알려지지 않은 부대는 어떤 주둔지에도 추가될 수 없습니다.</Korean>
+                <French>Les membres d'équipage statiques, les prisonniers, les réfugiés, Petros ou les unités inconnues ne peuvent pas être ajoutés à une garnison.</French>
             </Key>
             <Key ID="STR_garrison_error_add_to_garrison">
                 <Original>Adding units to garrison...</Original>
                 <Russian>Добавление юнитов в гарнизон...</Russian>
                 <Chinesesimp>增设部队驻军...</Chinesesimp>
                 <Korean>주둔지에 유닛 추가 중...</Korean>
+                <French>Ajouter des unités à la garnison...</French>
             </Key>
             <Key ID="STR_garrison_error_add_to_garrison_hcsquads">
                 <Original>Adding %1 squad to garrison...</Original>
                 <Russian>Добавление отряда %1 в гарнизон...</Russian>
                 <Chinesesimp>正在将%1小队加入驻军...</Chinesesimp>
                 <Korean>주둔지에 %1 분대 추가 중...</Korean>
+                <French>Ajouter l'escouade %1 à la garnison...</French>
             </Key>
             <Key ID="STR_garrison_error_zone_lost">
                 <Original>%1 group is back to HC control because the zone which was pointed to garrison has been lost.</Original>
                 <Russian>Группа %1 вернулась под контроль HC, т.к. зона, указанная для гарнизона, утрачена.</Russian>
                 <Chinesesimp>%1 组返回 HC 控制，因为指向驻军的区域已经丢失。</Chinesesimp>
                 <Korean>%1 그룹은 주둔지로 지정된 구역을 잃었기 때문에 하이 커맨드 통제로 돌아갔습니다.</Korean>
+                <French>Le groupe %1 est revenu sous le contrôle de HC car la zone qui était pointée vers la garnison a été perdue.</French>
             </Key>
             <Key ID="STR_garrison_error_no_hr">
                 <Original>You lack of HR to make a new recruitment.</Original>
                 <Russian>Вам не хватает HR, чтобы добавить новый юнит в гарнизон.</Russian>
                 <Chinesesimp>您没有足够的人力来向你的驻军添加新的单位。</Chinesesimp>
                 <Korean>신병 모집을 위한 인력이 부족합니다.</Korean>
+                <French>Vous manquez de ressources humaines pour procéder à un nouveau recrutement.</French>
             </Key>
             <Key ID="STR_garrison_error_no_money">
                 <Original>You do not have enough money for adding this kind of unit (%1%2 needed).</Original>
                 <Russian>У вас недостаточно денег для добавления такого юнита (необходимо %1%2).</Russian>
                 <Chinesesimp>您没有足够的钱来添加这种单位（需要 %1%2）</Chinesesimp>
                 <Korean>이 종류의 유닛을 추가할 충분한 자금이 부족합니다.(%1%2 필요)</Korean>
+                <French>Vous n'avez pas assez d'argent pour ajouter ce type d'unité (%1%2 nécessaire).</French>
             </Key>
             <Key ID="STR_garrison_error_limit">
                 <Original>Garrison limit has reached, you can't add new units anymore.</Original>
                 <Russian>Достигнут лимит гарнизона, вы больше не можете добавлять новые юниты.</Russian>
                 <Chinesesimp>驻军上限已到，不能再添加新单位</Chinesesimp>
                 <Korean>주둔지가 한계에 도달했으며, 더 이상 새 유닛을 추가할 수 없습니다.</Korean>
+                <French>La limite de garnison a été atteinte, vous ne pouvez plus ajouter de nouvelles unités.</French>
             </Key>
             <Key ID="STR_garrison_error_no_mortar">
                 <Original>You can't add mortars to a Roadblock, Watchpost, AA, AT, Mortar, HMG emplacement garrisons.</Original>
                 <Russian>Вы не можете добавлять минометы в гарнизоны огневых точек блокпостов, сторожевых постов, ПВО, ПТ, минометов и крупнокалиберных пулеметов.</Russian>
                 <Chinesesimp>路障、观察哨、防空、反坦克、迫击炮、重机枪阵地驻军不能添加迫击炮。</Chinesesimp>
                 <Korean>검문소, 감시초소, 대공화기, 대전차화기, 박격포, 중기관총 포대에는 주둔군을 추가할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas ajouter de mortiers à un barrage routier, à un poste de guet, à une garnison AA, AT, mortier, HMG.</French>
             </Key>
             <Key ID="STR_garrison_error_still_updating">
                 <Original>This garrison is still updating, please try again in a few seconds.</Original>
                 <Russian>Этот гарнизон все еще обновляется, повторите попытку через несколько секунд.</Russian>
                 <Chinesesimp>驻军还在刷新中，请过几秒再试。</Chinesesimp>
                 <Korean>이 주둔지는 아직 업데이트 중이니 잠시 후에 다시 시도하십시오.</Korean>
+                <French>Cette garnison est en cours de mise à jour, veuillez réessayer dans quelques secondes.</French>
             </Key>
             <Key ID="STR_garrison_error_enemies_near">
                 <Original>You can't recruit units into garrison when enemies are near the zone.</Original>
                 <Russian>Вы не можете набирать юниты в гарнизон, когда враги находятся рядом с зоной.</Russian>
                 <Chinesesimp>当敌人靠近该区域时，你不能招募单位进入驻军。</Chinesesimp>
                 <Korean>적이 근처에 있을 때는 주둔지에 유닛을 모집할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas recruter d'unités en garnison lorsque des ennemis se trouvent à proximité de la zone.</French>
             </Key>
             <Key ID="STR_garrison_error_no_mg_gl_sniper_wl">
                 <Original>You can't recruit this type of unit before reaching War Level 2.</Original>
                 <Russian>Вы не можете нанять этот тип юнитов, пока не достигнете 2-го уровня войны.</Russian>
                 <Chinesesimp>在达到战争等级2之前，你不能招募这种类型的单位。</Chinesesimp>
                 <Korean>전쟁 레벨 2에 도달하기 전에는 해당 유형의 유닛을 모집할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas recruter ce type d'unité avant d'avoir atteint le niveau de guerre 2.</French>
             </Key>
             <Key ID="STR_garrison_error_no_at_wl">
                 <Original>You can't recruit this type of unit before reaching War Level 4.</Original>
                 <Russian>Вы не можете нанять этот тип юнитов, пока не достигнете 4-го уровня войны.</Russian>
                 <Chinesesimp>在达到战争等级4之前，你不能招募这种类型的单位。</Chinesesimp>
                 <Korean>전쟁 레벨 4에 도달하기 전에는 해당 유형의 유닛을 모집할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas engager ce type d'unité avant d'avoir atteint le niveau de guerre 4.</French>
             </Key>
             <Key ID="STR_garrison_error_no_at_mortar">
                 <Original>You can't recruit this type of unit before reaching War Level 5.</Original>
                 <Russian>Вы не можете нанять этот тип юнитов, пока не достигнете 5-го уровня войны.</Russian>
                 <Chinesesimp>达到战争等级5之前，你不能招募这种类型的单位。</Chinesesimp>
                 <Korean>전쟁 레벨 5에 도달하기 전에는 해당 유형의 유닛을 모집할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas engager ce type d'unité avant d'avoir atteint le niveau de guerre 5.</French>
             </Key>
             <Key ID="STR_garrison_error_exceed_limit">
                 <Original>Adding this squad to garrison will exceed garrison limit.</Original>
                 <Russian>Добавление этого отряда в гарнизон превысит лимит гарнизона.</Russian>
                 <Chinesesimp>将此小队加入驻军会超出驻军上限</Chinesesimp>
                 <Korean>이 분대를 주둔지에 추가하면 주둔 수량 제한을 초과하게 됩니다.</Korean>
+                <French>L'ajout de cette escouade à la garnison dépassera la limite de la garnison.</French>
             </Key>
             <Key ID="STR_garrison_error_guest">
                 <Original>You can't add any more troops to this garrison as a guest.</Original>
                 <Russian>Вы больше не можете добавлять юнитов в этот гарнизон как гость.</Russian>
                 <Chinesesimp>你不能再以访客身份向这个驻军添加任何部队。</Chinesesimp>
                 <Korean>이 주둔지에 게스트로서 더 이상 병력을 추가할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas ajouter de troupes à cette garnison en tant qu'invité.</French>
             </Key>
             <Key ID="STR_garrison_recruit_success">
                 <Original>Unit has been recruited.%1</Original>
                 <Russian>Юнит успешно нанят в гарнизон.%1</Russian>
                 <Chinesesimp>单位成功招募至驻军。%1</Chinesesimp>
                 <Korean>유닛이 모집되었습니다.%1</Korean>
+                <French>L'unité a été recrutée.%1</French>
             </Key>
         </Container>
         <Container name="params">
