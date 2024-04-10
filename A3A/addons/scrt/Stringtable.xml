@@ -5765,13 +5765,13 @@
                 <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform!</Original>
                 <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме!</Russian>
                 <Korean>다음과 같은 경우에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음!</Korean>
-                <French>Vous ne pouvez pas rester sous couverture si:<br/><br/>Une arme est visible<br/>Vous portez un gilet<br/>Vous portez un casque<br/>Vous portez des JVN&lt;br/&gt;Vous portez un uniforme militaire!</French>
+                <French>Vous ne pouvez pas rester sous couverture si:&lt;br/&gt;&lt;br/&gt;Une arme est visible&lt;br/&gt;Vous portez un gilet&lt;br/&gt;Vous portez un casque&lt;br/&gt;Vous portez des JVN&lt;br/&gt;Vous portez un uniforme militaire!</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_items_2">
                 <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform&lt;br/&gt;Enemy have added you to Wanted list!</Original>
                 <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
                 <Korean>다음과 같은 경우에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음!&lt;br/&gt;적이 당신을 수배 목록에 추가했습니다!</Korean>
-                <French>Vous ne pouvez pas rester sous couverture si:<br/><br/>Une arme est visible<br/>Vous portez un gilet<br/>Vous portez un casque<br/>Vous portez des JVN&lt;br/&gt;Vous portez un uniforme militaire&lt;br/&gt;L'ennemi vous a ajouté à la liste des personnes recherchées!</French>
+                <French>Vous ne pouvez pas rester sous couverture si:&lt;br/&gt;&lt;br/&gt;Une arme est visible&lt;br/&gt;Vous portez un gilet&lt;br/&gt;Vous portez un casque&lt;br/&gt;Vous portez des JVN&lt;br/&gt;Vous portez un uniforme militaire&lt;br/&gt;L'ennemi vous a ajouté à la liste des personnes recherchées!</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_carry">
                 <Original>You're looking very suspicious while carrying military-grade items, and the enemy has noticed it.</Original>
