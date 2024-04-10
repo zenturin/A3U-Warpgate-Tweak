@@ -54,7 +54,7 @@ private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
 
 private _planesTransport = [];
 if (_hasApex) then {
-     _planesTransport pushback "B_T_VTOL_01_infantry_F";
+    _planesTransport pushback "B_T_VTOL_01_infantry_F";
 };
 
 private _transportHelicopters = ["B_Heli_Transport_01_F"];
