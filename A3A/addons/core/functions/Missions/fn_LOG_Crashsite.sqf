@@ -404,10 +404,18 @@ if (_searchHeliClass isNotEqualTo []) then {
     
 };
 
+private _taskId2 = "LOG" + str A3A_taskCount;
+private _rebelTaskText = format [
+    localize "STR_A3A_Missions_LOG_crashsite_task_header", 
+    _faction get "name", 
+    _destinationName,
+    _displayTime
+];
+
 if (!isNil "traderMarker") then { ///checking if trader is spawned
     [
     [teamPlayer,civilian],
-    _taskId,
+    _taskId2,
     [format [localize "STR_A3A_Missions_LOG_crashsite_task_alt", _faction get "name", _destinationName, _displayTime], localize "STR_A3A_Missions_LOG_crashsite_task_header", _markerX],
     traderMarker,
     false,
@@ -416,7 +424,7 @@ if (!isNil "traderMarker") then { ///checking if trader is spawned
     "whiteboard",
     true
 ] call BIS_fnc_taskCreate;
-[_taskId, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
+[_taskId2, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 };
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
@@ -564,7 +572,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         };
     };
 
-    _cargoTimeout = time + (random [20,25,30]);
+    _cargoTimeout = time + (random [15,20,25]);
     waitUntil{sleep 1; time > _cargoTimeout };
 
     Info("Departing.");
@@ -754,6 +762,7 @@ switch(true) do {
         Info("Box has been recovered by enemy, mission falied.");
 
         [_taskId, "LOG", "FAILED"] call A3A_fnc_taskSetState;
+        [_taskId2, "LOG", "FAILED"] call A3A_fnc_taskSetState;
 
         [-900, _sideX] remoteExec ["A3A_fnc_timingCA",2];
         [-10,theBoss] call A3A_fnc_addScorePlayer;
@@ -768,11 +777,13 @@ switch(true) do {
     case(!alive _box): {
         Info("Box has been destroyed, mission canceled.");
         [_taskId, "LOG", "CANCELED"] call A3A_fnc_taskSetState;
+        [_taskId2, "LOG", "CANCELED"] call A3A_fnc_taskSetState;
         [-300, _sideX] remoteExec ["A3A_fnc_timingCA",2];
     };
     case(_box distance (getMarkerPos respawnTeamPlayer) < 50): {
         Info("Box has been delivered to HQ, mission completed.");
         [_taskId, "LOG", "SUCCEEDED"] call A3A_fnc_taskSetState;
+        [_taskId2, "LOG", "CANCELED"] call A3A_fnc_taskSetState;
 
         [0, 600] remoteExec ["A3A_fnc_resourcesFIA",2];
         [1800, _sideX] remoteExec ["A3A_fnc_timingCA",2];
@@ -791,18 +802,19 @@ switch(true) do {
         sleep 60;
         [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
         deleteVehicle _box;
-	if (hideEnemyMarkers) then {
-  		[(selectRandom [5,7])] call A3U_fnc_revealRandomZones;
-	};
+	    if (hideEnemyMarkers) then {
+  		    [(selectRandom [5,7])] call A3U_fnc_revealRandomZones;
+	    };
     };
     case(_box distance (getMarkerPos traderMarker) < 50 || _box distance (getMarkerPos traderMarker) < 50): {
         Info("Box has been delivered to arms traider, mission completed.");
-        [_taskId, "LOG", "SUCCEEDED"] call A3A_fnc_taskSetState;
+        [_taskId, "LOG", "CANCELED"] call A3A_fnc_taskSetState;
+        [_taskId2, "LOG", "SUCCEEDED"] call A3A_fnc_taskSetState;
 
         [0, 1200] remoteExec ["A3A_fnc_resourcesFIA",2];
         [3600, _sideX] remoteExec ["A3A_fnc_timingCA",2];
         { 
-            [20*_bonus,_x] call A3A_fnc_addScorePlayer;
+            [30*_bonus,_x] call A3A_fnc_addScorePlayer;
             [700*_bonus,_x] call A3A_fnc_addMoneyPlayer;
         } forEach (call SCRT_fnc_misc_getRebelPlayers);
         [20*_bonus,theBoss] call A3A_fnc_addScorePlayer;
@@ -812,6 +824,7 @@ switch(true) do {
     default {
         Error("Undefined mission outcome.");
         [_taskId, "LOG", "CANCELED"] call A3A_fnc_taskSetState;
+        [_taskId2, "LOG", "CANCELED"] call A3A_fnc_taskSetState;
     };
 };
 
@@ -830,6 +843,7 @@ sleep 20;
 } forEach _vehicles;
 
 [_taskId, "LOG", 1200] spawn A3A_fnc_taskDelete;
+[_taskId2, "LOG", 1200] spawn A3A_fnc_taskDelete;
 
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
