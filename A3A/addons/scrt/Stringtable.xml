@@ -1085,7 +1085,7 @@
                 <Russian>Развёртывание пункта наблюдения</Russian>
                 <Chinesesimp>哨站部署</Chinesesimp>
                 <Korean>감시초소 배치</Korean>
-                <French>Déploiement d'un poste de surveillance</French>
+                <French>Déploiement d'un poste de guet</French>
             </Key>
             <Key ID="STR_watchpost_deploy_desc">
                 <Original>We are sending a team to establish a watchpost. Use HC to send the team to their destination. Do this before %1</Original>
@@ -3622,7 +3622,7 @@
                 <Russian>Пункт наблюдения потерян</Russian>
                 <Chinesesimp>丢失哨所</Chinesesimp>
                 <Korean>감시초소 잃음</Korean>
-                <French>Poste de garde perdu</French>
+                <French>Poste de guet perdu</French>
             </Key>
             <Key ID="STR_notifiers_roving_mortar_crew_destroyed">
                 <Original>%1's roving mortar destroyed</Original>
@@ -3890,7 +3890,7 @@
                 <Russian>Пункт наблюдения не должен стоять на дороге.</Russian>
                 <Chinesesimp>观察哨不能设在马路上。</Chinesesimp>
                 <Korean>감시초소는 도로에 있으면 안됩니다.</Korean>
-                <French>Le poste de surveillance ne doit pas se trouver sur la route.</French>
+                <French>Le poste de guet ne doit pas se trouver sur la route.</French>
             </Key>
             <Key ID="STR_notifiers_trader_establish_outpost_roadblock_warning">
                 <Original>Roadblock should be on road.</Original>
@@ -3904,7 +3904,7 @@
                 <Russian>Установить направление аванпоста.</Russian>
                 <Chinesesimp>设置路障的方向。</Chinesesimp>
                 <Korean>검문소의 방향을 설정하십시오.</Korean>
-                <French>Établir la direction de l'avant-poste.</French>
+                <French>Établir la direction du barrage routier.</French>
             </Key>
             <Key ID="STR_notifiers_establish_outpost_not_enough">
                 <Original>You have not enough resources to establish new outpost.&lt;br/&gt;%1 HR and %2%3 needed.</Original>
@@ -4272,7 +4272,7 @@
                 <Russian>Вы не можете добавлять юниты в ведомые игроком отряды, сторожевые посты, блокпосты и отряды строителей минных полей.</Russian>
                 <Chinesesimp>你不能添加单位到玩家领导的小队，观察哨，路障或雷区建造小队。</Chinesesimp>
                 <Korean>플레이어 주도, 감시초소, 검문소 또는 지뢰지대 건설 부대에는 유닛을 추가할 수 없습니다.</Korean>
-                <French>Vous ne pouvez pas ajouter d'unités aux unités dirigées par un joueur, aux postes de garde, aux barrages routiers ou aux unités de construction de champs de mines.</French>
+                <French>Vous ne pouvez pas ajouter d'unités aux unités dirigées par un joueur, aux postes de guet, aux barrages routiers ou aux unités de construction de champs de mines.</French>
             </Key>
             <Key ID="STR_garrison_error_dead_units">
                 <Original>Dead or player-controlled units can't be added to any garrison.</Original>
@@ -6206,276 +6206,322 @@
                 <Russian>Выберите количество выстрелов</Russian>
                 <Chinesesimp>选择要发射的炮弹数</Chinesesimp>
                 <Korean>발사할 수 선택</Korean>
+                <French>Sélectionner le nombre de coups à tirer</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_build_tooltip">
                 <Original>Enters building construction mode where you can select construction type, it's position and then build it. Use arrow keys to switch construction type. Commander or Engineer only.</Original>
                 <Russian>Переходит в режим постройки, где вы можете выбрать тип конструкции, её позицию и затем построить её. Используйте клавиши стрелок для смены типа конструкции. Доступно только для инженера или командира.</Russian>
                 <Chinesesimp>进入建筑施工模式，你可以选择建筑类型，它的位置，然后建造它。 使用箭头键切换构造类型。 仅限指挥官或工程师。</Chinesesimp>
                 <Korean>건축물 유형과 위치를 선택한 다음 건설할 수 있는 건축물 건설 모드로 들어갑니다. 화살표 키를 사용하여 건축물 유형을 전환합니다. 지휘관 또는 공병 전용.</Korean>
+                <French>Entre dans le mode de construction d'un bâtiment où vous pouvez sélectionner le type de construction, sa position et ensuite le construire. Utilisez les touches fléchées pour changer de type de construction. Commandant ou ingénieur uniquement.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_remove_construction_tooltip">
                 <Original>Removes construction you're looking at. Commander or Engineer only.</Original>
                 <Russian>Убирает строение, на которое вы смотрите. Доступно только для командира или инженера.</Russian>
                 <Chinesesimp>移除您正在查看的建筑物。 仅指挥官或工程师可用。</Chinesesimp>
                 <Korean>현재 보고 있는 건축물을 제거합니다. 지휘관 또는 공병 전용.</Korean>
+                <French>Supprime la construction que vous regardez. Commandant ou ingénieur uniquement.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_select_strike_type">
                 <Original>Select type of strike</Original>
                 <Russian>Выберите тип артналёта</Russian>
                 <Chinesesimp>选择火炮攻击类型</Chinesesimp>
                 <Korean>타격 유형 선택</Korean>
+                <French>Sélectionner le type de frappe</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_single_point_strike">
                 <Original>Single Point Strike</Original>
                 <Russian>Одиночный</Russian>
                 <Chinesesimp>单发打击</Chinesesimp>
                 <Korean>단발 사격</Korean>
+                <French>Unique</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_barrage_strike">
                 <Original>Barrage</Original>
                 <Russian>Заградительный огонь</Russian>
                 <Chinesesimp>弹幕打击</Chinesesimp>
                 <Korean>연발 사격</Korean>
+                <French>Barrage</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_garage">
                 <Original>Garage</Original>
                 <Russian>Гараж</Russian>
                 <Chinesesimp>载具库</Chinesesimp>
                 <Korean>차고</Korean>
+                <French>Garage</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_add_server_member_title">
                 <Original>Add Server Member</Original>
                 <Russian>Добавить участника сервера</Russian>
                 <Chinesesimp>添加服务器成员</Chinesesimp>
                 <Korean>서버 멤버 추가</Korean>
+                <French>Ajouter un membre du serveur</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_add_server_member_tooltip">
                 <Original>Use this option to add the player which you are currently looking to the member's list.</Original>
                 <Russian>Используйте эту опцию для добавления игрока, на которого вы в текущий момент смотрите, в список участников сервера.</Russian>
                 <Chinesesimp>使用此选项将您当前看的玩家添加到服务器成员列表中。</Chinesesimp>
                 <Korean>현재 보고 있는 플레이어를 멤버 목록에 추가하려면 이 옵션을 사용하십시오.</Korean>
+                <French>Utilisez cette option pour ajouter le joueur que vous êtes en train de regarder à la liste des membres du serveur.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_remove_server_member_title">
                 <Original>Remove Server Member</Original>
                 <Russian>Удалить участника сервера</Russian>
                 <Chinesesimp>移除服务器成员</Chinesesimp>
                 <Korean>서버 멤버 제거</Korean>
+                <French>Supprimer un membre du serveur</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_remove_server_member_tooltip">
                 <Original>Use this option to remove the player which you are currently looking to the member's list.</Original>
                 <Russian>Используйте эту опцию для удаления игрока, на которого вы в текущий момент смотрите, из списка участников сервера.</Russian>
                 <Chinesesimp>使用此选项从服务器成员列表中删除您当前正在看的玩家。</Chinesesimp>
                 <Korean>현재 보고 있는 플레이어를 멤버 목록에 제거하려면 이 옵션을 사용하십시오.</Korean>
+                <French>Utilisez cette option pour supprimer le joueur que vous êtes en train de regarder de la liste des membres.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_donate_faction_title">
                 <Original>Donate 250 Money to faction</Original>
                 <Russian>Передать 250 денег фракции</Russian>
                 <Chinesesimp>捐250块给派系</Chinesesimp>
                 <Korean>팩션에 자금 250 기부</Korean>
+                <French>Faire un don de 250 euros à la faction</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_donate_faction_tooltip">
                 <Original>Donates your personal money to rebel faction. It will increase your prestige among rebels.</Original>
                 <Russian>Передаёт ваши персональные деньги на счёт фракции. Это действие увеличивает ваш престиж среди других повстанцев.</Russian>
                 <Chinesesimp>将您的私人资金捐赠给叛乱派系。 这会增加你在抵抗军中的声望。</Chinesesimp>
                 <Korean>당신의 개인 자금을 아군 팩션에 기부합니다. 그것은 반란군 내에서 당신의 위신을 높여줄 것입니다.</Korean>
+                <French>Fait don de votre argent personnel à la faction rebelle. Cela augmentera votre prestige parmi les rebelles.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_donate_player_title">
                 <Original>Donate 250 money to player</Original>
                 <Russian>Передать 250 денег игроку</Russian>
                 <Chinesesimp>捐250钱给玩家</Chinesesimp>
                 <Korean>플레이어에게 자금 250 기부</Korean>
+                <French>Faire un don de 250 euros au joueur</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_donate_player_tooltip">
                 <Original>Donates your personal money to player you're looking at.</Original>
                 <Russian>Передаёт ваши персональные деньги на счёт игрока, на которого вы смотрите в текущий момент.</Russian>
                 <Chinesesimp>将您的个人资金捐赠给您正在看的玩家。</Chinesesimp>
                 <Korean>보고 있는 플레이어에게 개인 자금을 기부합니다.</Korean>
+                <French>Fait don de votre argent personnel au joueur que vous regardez.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_quadbike">
                 <Original>Quadbike</Original>
                 <Russian>Квадроцикл</Russian>
                 <Chinesesimp>四轮摩托</Chinesesimp>
                 <Korean>4륜 오토바이</Korean>
+                <French>Quads</French>
             </Key>
             <Key ID="STR_antistasi_actions_commander_text">
                 <Original>Commander</Original>
                 <Russian>Командир</Russian>
                 <Chinesesimp>指挥官</Chinesesimp>
                 <Korean>지휘관</Korean>
+                <French>Commandant</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_commander_tooltip">
                 <Original>Accesses various commander options.</Original>
                 <Russian>Различные опции только для командира.</Russian>
                 <Chinesesimp>访问各种指挥官选项。</Chinesesimp>
                 <Korean>다양한 지휘관 설정에 액세스합니다.</Korean>
+                <French>Permet d'accéder à diverses options du commandant.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_construction_menu_frame_text">
                 <Original>Construction</Original>
                 <Russian>Строительство</Russian>
                 <Chinesesimp>建设</Chinesesimp>
                 <Korean>건축물</Korean>
+                <French>Construction</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_construction_tooltip">
                 <Original>Accesses construction menu.</Original>
                 <Russian>Меню строительства.</Russian>
                 <Chinesesimp>建筑菜单</Chinesesimp>
                 <Korean>건축물 메뉴에 액세스합니다</Korean>
+                <French>Accède au menu de construction.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_ai_control_title">
                 <Original>AI Control</Original>
                 <Russian>Прямое управление</Russian>
                 <Chinesesimp>直接控制AI</Chinesesimp>
                 <Korean>인공지능 조종</Korean>
+                <French>Contrôle de l'IA</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_ai_control_tooltip">
                 <Original>Take temporary personal control of the selected squad member or HC squad leader and be able to perform any kind of actions for 60 seconds. Control state will be cancelled if the player or the controlled unit receives any kind of damage.</Original>
                 <Russian>Берёт прямое управление над ИИ-юнитом на 60 секунд. Если игрок или управляемый юнит получит урон, прямой контроль будет отменён.</Russian>
                 <Chinesesimp>对选定的小队成员或HC小队长进行临时个人控制，并能够执行任何类型的动作，持续60秒。 如果玩家或被控制的单位受到任何类型的伤害，控制状态将被取消。</Chinesesimp>
                 <Korean>선택된 분대원이나 하이 커맨드 분대장을 일시적으로 개인적으로 조종하고 60초 동안 어떠한 종류의 행동할 수 있습니다. 플레이어 또는 조종되는 유닛에 아무 종류의 데미지를 입으면 조종이 취소됩니다.</Korean>
+                <French>Prendre temporairement le contrôle personnel du membre de l'escouade sélectionné ou du chef d'escouade HC et être capable d'effectuer n'importe quel type d'action pendant 60 secondes. L'état de contrôle sera annulé si le joueur ou l'unité contrôlée reçoit des dégâts.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_move_veh_title">
                 <Original>Move Static/Loot Crate</Original>
                 <Russian>Переместить стат. орудие/ящик</Russian>
                 <Chinesesimp>移动静态/战利品箱</Chinesesimp>
                 <Korean>고정화기/전리품 상자 이동</Korean>
+                <French>Bouger Statique/Caisse de butin</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_move_veh_tooltip">
                 <Original>Moves static weapon or loot crate you're pointing at.</Original>
                 <Russian>Двигает орудие на станке или ящик, на который направлен взгляд.</Russian>
                 <Chinesesimp>移动你指向的固定武器或战利品箱。</Chinesesimp>
                 <Korean>당신이 가리키는 고정화기나 전리품 상자를 옮깁니다.</Korean>
+                <French>Déplace l'arme statique ou la caisse de butin que vous pointez.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_unlock_vehicle_title">
                 <Original>Unlock Vehicle</Original>
                 <Russian>Закрыть машину</Russian>
                 <Chinesesimp>解锁载具</Chinesesimp>
                 <Korean>차량 잠금해제</Korean>
+                <French>Déverrouiller le véhicule</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_unlock_vehicle_tooltip">
                 <Original>Locks/unlocks vehicle you're pointing at.</Original>
                 <Russian>Открывает/закрывает технику, на которую вы смотрите.</Russian>
                 <Chinesesimp>锁定/解锁您指向的车辆。</Chinesesimp>
                 <Korean>가리키는 차량을 잠그거나 해제합니다.</Korean>
+                <French>Verrouille/déverrouille le véhicule que vous pointez.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_ai_management_title">
                 <Original>AI Management</Original>
                 <Russian>Управление ИИ</Russian>
                 <Chinesesimp>AI管理</Chinesesimp>
                 <Korean>인공지능 관리</Korean>
+                <French>Gestion de l'IA</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_ai_management_tooltip">
                 <Original>Several AI options.</Original>
                 <Russian>Некоторые опции для управления ИИ.</Russian>
                 <Chinesesimp>设置AI行为</Chinesesimp>
                 <Korean>몇 가지 인공지능 설정입니다.</Korean>
+                <French>Plusieurs options d'IA.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_flip_vehicle_title">
                 <Original>Flip Vehicle</Original>
                 <Russian>Перевернуть автомобиль</Russian>
                 <Chinesesimp>翻转载具</Chinesesimp>
                 <Korean>차량 뒤집기</Korean>
+                <French>Retourner le véhicule</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_flip_vehicle_tooltip">
                 <Original>Flips the vehicle you're pointing at. Requires 3 people to successfully perform, heavy vehicles requires repair truck in proximity.</Original>
                 <Russian>Переворачивает автомобиль, на который вы указываете, обратно на колёса. Для выполнения требуется 3 человека, для тяжелых транспортных средств требуется ремонтная машина в непосредственной близости.</Russian>
                 <Chinesesimp>翻转你指向的载具。 需要3个人才能成功完成，重型车辆需要附近的维修车。</Chinesesimp>
                 <Korean>가리키고 있는 차량을 뒤집습니다. 3명이 성공적으로 수행해야 하며, 무거운 차량은 근처에 수리 트럭이 필요합니다.</Korean>
+                <French>Retourner le véhicule que vous pointez du doigt. Nécessite 3 personnes pour être exécuté avec succès, les véhicules lourds nécessitent un camion de réparation à proximité.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_players_money_title">
                 <Original>Players and Money</Original>
                 <Russian>Игроки и Деньги</Russian>
                 <Chinesesimp>玩家和钱</Chinesesimp>
                 <Korean>플레이어와 자금</Korean>
+                <French>Joueurs et argent</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_players_money_tooltip">
                 <Original>Various operations with money and players. To transfer money to player you must look at him.</Original>
                 <Russian>Различные операции с деньгами и игроками. Чтобы перевести деньги игроку, вы должны смотреть на него.</Russian>
                 <Chinesesimp>钱和玩家的各种操作。 给玩家转钱，必须看着他。</Chinesesimp>
                 <Korean>자금과 플레이어에 대한 다양한 기능들입니다. 플레이어에게 돈을 송금하려면 해당 플레이어를 봐야 합니다.</Korean>
+                <French>Diverses opérations avec l'argent et les joueurs. Pour transférer de l'argent à un joueur, vous devez le regarder.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_put_garage_title">
                 <Original>Put Vehicle into Garage</Original>
                 <Russian>Поставить технику в гараж</Russian>
                 <Chinesesimp>把载具放进载具库</Chinesesimp>
                 <Korean>차량을 차고에 보관</Korean>
+                <French>Mettre le véhicule au garage</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_put_garage_tooltip">
                 <Original>Vehicle or Static gun you're looking at will be garaged, interact with Flag to retrieve from garage.</Original>
                 <Russian>Автомобиль или статическое орудие, на которое вы смотрите, будет положен в гараж. Взаимодействуйте с флагом или ящиком, чтобы получить его из гаража.</Russian>
                 <Chinesesimp>载具或固定武器以放进载具库，与旗杆互动从载具库中取回。</Chinesesimp>
                 <Korean>현재 보고 있는 차량 또는 고정화기는 차고에 보관되며, 차고에서 꺼내려면 깃발과 상호작용을 하십시오.</Korean>
+                <French>Le véhicule ou l'arme statique que vous regardez sera placé dans le garage. Interagissez avec le drapeau ou la caisse pour le récupérer dans le garage.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_undercover_title">
                 <Original>Turn on Undercover</Original>
                 <Russian>Включить маскировку</Russian>
                 <Chinesesimp>开启伪装</Chinesesimp>
                 <Korean>위장 활성화</Korean>
+                <French>Passer sous couverture (Undercover)</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_undercover_tooltip">
                 <Original>Become Undercover if you match the requirements. Enemy AI won't attack you until they discover you.</Original>
                 <Russian>Противник не узнает вас, если вы соответствуеете требованиям. Вражеские солдаты не будут атаковать вас, пока не раскроют вашу истинную сущность.</Russian>
                 <Chinesesimp>如果你符合要求，敌人就不会认出你。 敌人的士兵不会攻击你，直到你暴露为止。</Chinesesimp>
                 <Korean>조건과 일치할 경우 위장이 됩니다. 적 인공지능은 그들이 당신의 정체를 발견할 때까지 당신을 공격하지 않을 것입니다.</Korean>
+                <French>Devenez infiltré si vous remplissez les conditions requises. L'IA ennemie ne vous attaquera pas tant qu'elle ne vous aura pas découvert.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_fast_travel_tooltip">
                 <Original>Teleport you and/or your squad or a HC selected squad to a friendly zone depending on several factors.</Original>
                 <Russian>Телепортируйте себя и/или свой отряд или отряд, выбранный через High Command, в дружественную зону в зависимости от нескольких факторов.</Russian>
                 <Chinesesimp>根据你的选择，传送你或你的小队或指挥部所选择的小队到友好区域。</Chinesesimp>
                 <Korean>몇 가지 요소에 따라 당신과 당신의 분대 또는 하이 커맨드가 선택한 분대를 우호 지역으로 순간이동시킵니다.</Korean>
+                <French>Téléportez vous et/ou votre escouade ou une escouade sélectionnée par HC vers une zone amie en fonction de plusieurs facteurs.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_squad_recruitment_menu_frame_text">
                 <Original>Squad Recruitment</Original>
                 <Russian>Набор отрядов</Russian>
                 <Chinesesimp>小队设置</Chinesesimp>
                 <Korean>분대 모집</Korean>
+                <French>Recrutement de l'escouade</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_squad_money_player_interaction_menu_frame_text">
                 <Original>Player and Money</Original>
                 <Russian>Игроки и деньги</Russian>
                 <Chinesesimp>玩家和钱</Chinesesimp>
                 <Korean>플레이어와 자금</Korean>
+                <French>Joueur et argent</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_battle_options_frame_text">
                 <Original>Battle Options</Original>
                 <Russian>Быстрые действия</Russian>
                 <Chinesesimp>战斗选项</Chinesesimp>
                 <Korean>전투 설정</Korean>
+                <French>Options de combat</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_commander_battle_options_frame_text">
                 <Original>Commander Battle Options</Original>
                 <Russian>Командирские быстрые действия</Russian>
                 <Chinesesimp>指挥官战斗选项</Chinesesimp>
                 <Korean>지휘관 전투 설정</Korean>
+                <French>Options de combat du commandant</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_add_vehicle_to_squad_frame_text">
                 <Original>Add Vehicle To Squad?</Original>
                 <Russian>Придать технику отряду?</Russian>
                 <Chinesesimp>将载具添加到小队？</Chinesesimp>
                 <Korean>분대에 차량을 추가합니까?</Korean>
+                <French>Ajouter un véhicule à l'escouade ?</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_ai_management_frame_text">
                 <Original>AI Management</Original>
                 <Russian>Менеджмент ИИ</Russian>
                 <Chinesesimp>AI管理</Chinesesimp>
                 <Korean>인공지능 관리</Korean>
+                <French>Gestion de l'IA</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_frame_text">
                 <Original>Buy Vehicle</Original>
                 <Russian>Покупка техники</Russian>
                 <Chinesesimp>购买载具</Chinesesimp>
                 <Korean>차량 구입</Korean>
+                <French>Acheter un véhicule</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_note_text">
                 <Original>Note that rebel vehicle roster will expand as war evolves.</Original>
                 <Russian>Обратите внимание, что список доступной для повстанцев техники будет расширяться по мере развития войны.</Russian>
                 <Chinesesimp>请注意，抵抗军的载具种类会随着战争的发展而扩大。</Chinesesimp>
                 <Korean>전쟁이 진행될 때마다 아군 차량 보관량이 확대될 것이라는 점에 참고하십시오.</Korean>
+                <French>Notez que la liste des véhicules rebelles s'étoffera au fur et à mesure de l'évolution de la guerre.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_available_missions_frame_text">
                 <Original>Available Missions</Original>
                 <Russian>Доступные миссии</Russian>
                 <Chinesesimp>可用任务</Chinesesimp>
                 <Korean>수행 가능 미션</Korean>
+                <French>Missions disponibles</French>
             </Key>
         </Container>
         <Container name="simple_menu_infantry_recruitment">
@@ -6484,114 +6530,133 @@
                 <Russian>Обычный отряд</Russian>
                 <Chinesesimp>普通小队</Chinesesimp>
                 <Korean>소총분대</Korean>
+                <French>Escouade régulière</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_engineer_squad_title">
                 <Original>Engineer Squad</Original>
                 <Russian>Инженерный отряд</Russian>
                 <Chinesesimp>工程师小队</Chinesesimp>
                 <Korean>공병분대</Korean>
+                <French>Escouade d'ingénieurs</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_mg_squad_title">
                 <Original>MG Squad</Original>
                 <Russian>Пулемётный отряд</Russian>
                 <Chinesesimp>机枪小队</Chinesesimp>
                 <Korean>기관총분대</Korean>
+                <French>Escouade de mitrailleurs</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_mortar_squad_title">
                 <Original>Mortar Squad</Original>
                 <Russian>Миномётный отряд</Russian>
                 <Chinesesimp>迫击炮小队</Chinesesimp>
                 <Korean>박격포반</Korean>
+                <French>Escouade de mortiers</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_infantry_squad_title">
                 <Original>Recruit Infantry Squad</Original>
                 <Russian>Набрать отряд пехоты</Russian>
                 <Chinesesimp>招募步兵小队</Chinesesimp>
                 <Korean>소총분대 모집</Korean>
+                <French>Recruter une escouade d'infanterie</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_at_team_title">
                 <Original>Recruit AT Team</Original>
                 <Russian>Набрать ПТ-команду</Russian>
                 <Chinesesimp>招募反坦克小队</Chinesesimp>
                 <Korean>대전차팀 모집</Korean>
+                <French>Recruter une escouade d'AT</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_sniper_team_title">
                 <Original>Recruit Snipers</Original>
                 <Russian>Набрать снайперов</Russian>
                 <Chinesesimp>招募狙击手</Chinesesimp>
                 <Korean>저격조 모집</Korean>
+                <French>Recruter des snipers</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_mg_team_title">
                 <Original>Recruit MG Team</Original>
                 <Russian>Набрать пулемётное звено</Russian>
                 <Chinesesimp>招募机枪小队</Chinesesimp>
                 <Korean>기관총팀 모집</Korean>
+                <French>Recruter une escouade de mitrailleurs</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_veh_crew_title">
                 <Original>Recruit Vehicle Crew</Original>
                 <Russian>Набрать экипаж машины</Russian>
                 <Chinesesimp>招募载具乘员</Chinesesimp>
                 <Korean>차량 승무원 모집</Korean>
+                <French>Recruter un équipage de véhicule</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_inf_team_title">
                 <Original>Recruit Inf. Team</Original>
                 <Russian>Набрать пехотное звено</Russian>
                 <Chinesesimp>招募步兵载具小队</Chinesesimp>
                 <Korean>소총조 모집</Korean>
+                <French>Recruter une unité d'infanterie</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_at_car_title">
                 <Original>Recruit AT Car</Original>
                 <Russian>Набрать ПТ-машину</Russian>
                 <Chinesesimp>招募反坦克卡车小队</Chinesesimp>
                 <Korean>대전차 차량 모집</Korean>
+                <French>Recruter un véhicule AT</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_mg_car_title">
                 <Original>Recruit MG Car</Original>
                 <Russian>Набрать машину с пулеметом</Russian>
                 <Chinesesimp>招募机枪卡车小队</Chinesesimp>
                 <Korean>기관총 차량 모집</Korean>
+                <French>Recruter un véhicule MG</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_aa_car_title">
                 <Original>Recruit AA Truck</Original>
                 <Russian>Набрать зенитную машину</Russian>
                 <Chinesesimp>招募防空卡车小队</Chinesesimp>
                 <Korean>대공트럭 모집</Korean>
+                <French>Recruter un véhicule AA</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_mortar_team_title">
                 <Original>Recruit Mortar Team</Original>
                 <Russian>Набрать миномётный расчёт</Russian>
                 <Chinesesimp>招募迫击炮卡车小队</Chinesesimp>
                 <Korean>박격포반 모집</Korean>
+                <French>Recruter une équipe de mortiers</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_trenches">
                 <Original>Trenches, small covers</Original>
                 <Russian>Траншеи, небольшие укрытия</Russian>
                 <Chinesesimp>战壕、小型避难所</Chinesesimp>
                 <Korean>참호, 작은 엄폐물</Korean>
+                <French>Tranchées, petites couvertures</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_veh_obstacles">
                 <Original>Vehicle obstacles</Original>
                 <Russian>Препятствия для техники</Russian>
                 <Chinesesimp>障碍物(废弃载具)</Chinesesimp>
                 <Korean>차량 장애물</Korean>
+                <French>Obstacles aux véhicule</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_light_bunkers">
                 <Original>Light fortifications</Original>
                 <Russian>Лёгкие фортификации</Russian>
                 <Chinesesimp>简单的轻型防御工事</Chinesesimp>
                 <Korean>경량 요새</Korean>
+                <French>Fortifications légères</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_heavy_bunkers">
                 <Original>Heavy fortifications</Original>
                 <Russian>Основательные фортификации</Russian>
                 <Chinesesimp>坚固的重型防御工事</Chinesesimp>
                 <Korean>중량 요새</Korean>
+                <French>Fortifications lourdes</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_misc">
                 <Original>Misc</Original>
                 <Russian>Разное</Russian>
                 <Chinesesimp>杂项</Chinesesimp>
                 <Korean>기타</Korean>
+                <French>Divers</French>
             </Key>
         </Container>
         <Container name="simple_menu_commander_menu">
@@ -6600,494 +6665,577 @@
                 <Russian>Меню командира</Russian>
                 <Chinesesimp>指挥官菜单</Chinesesimp>
                 <Korean>지휘관 메뉴</Korean>
+                <French>Menu du commandant</French>
             </Key>
             <Key ID="STR_rebel_menu_header">
                 <Original>Rebel Menu</Original>
                 <Russian>Меню повстанца</Russian>
                 <Chinesesimp>抵抗军菜单</Chinesesimp>
                 <Korean>반군 메뉴</Korean>
+                <French>Menu Rebelle</French>
             </Key>
             <Key ID="STR_options_header">
                 <Original>Options</Original>
                 <Russian>Опции</Russian>
                 <Chinesesimp>选项</Chinesesimp>
                 <Korean>설정</Korean>
+                <French>Options</French>
             </Key>
             <Key ID="STR_commander_menu_options_header">
                 <Original>Commander Menu Tabs</Original>
                 <Russian>Вкладки (меню командира)</Russian>
                 <Chinesesimp>指挥官选项菜单</Chinesesimp>
                 <Korean>지휘관 메뉴 탭</Korean>
+                <French>Onglets du menu du commandant</French>
             </Key>
             <Key ID="STR_commander_menu_options_some_tabs">
                 <Original>Some tabs can be accessible only at rebel HQ.</Original>
                 <Russian>Некоторые вкладки могут быть доступны только при нахождении командира в штабе.</Russian>
                 <Chinesesimp>某些选项只能在抵抗军总部访问。</Chinesesimp>
                 <Korean>일부 탭은 아군 본부에서만 액세스할 수 있습니다.</Korean>
+                <French>Certains onglets ne sont accessibles qu'au QG des rebelles.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_recruit_squad_title">
                 <Original>Recruit Squad</Original>
                 <Russian>Найм отряда</Russian>
                 <Chinesesimp>招募分队</Chinesesimp>
                 <Korean>분대 모집</Korean>
+                <French>Recruter une escouade</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_recruit_squad_success">
                 <Original>Group %1 at your command.&lt;br/&gt;&lt;br/&gt;Groups are managed from the High Command bar (Default: CTRL+SPACE)&lt;br/&gt;&lt;br/&gt;If the group gets stuck, use the AI Control feature to make them start moving. Mounted Static teams tend to get stuck (solving this is WiP)&lt;br/&gt;&lt;br/&gt;To assign a vehicle for this group, look at some vehicle, and use Vehicle Squad Mngmt option in Y menu.</Original>
                 <Russian>Отряд %1 теперь под вашим командованием.&lt;br/&gt;&lt;br/&gt;Отрядами можно управлять из High Command-панели (По умолчанию:CTRL+Пробел).&lt;br/&gt;&lt;br/&gt;Если отряд застрял где-либо, используйте функцию прямого управления чтобы "раскукожить" их и заставить двигаться дальше.&lt;br/&gt;&lt;br/&gt;Чтобы назначить технику конкеретному отряду, посмотрите на технику, затем воспользуйтесь соответствующей опцией в Y-меню.</Russian>
                 <Chinesesimp>第 %1 组听您指挥。&lt;br/&gt;&lt;br/&gt;如果小组卡住了，使用 AI 控制功能让他们开始移动。&lt;br/&gt;&lt;br/&gt;如果AI小组卡住了，使用 AI 控制功能让他们开始移动。已部署不动的小队经常会有这个问题。(解决这个问题的方法是 WiP)&lt;br/&gt;&lt;br/&gt;如果要给这个小组分配一辆载具，看着一辆载具，对它按 Y 在菜单中使用 分配小队车辆 。</Chinesesimp>
                 <Korean>%1 그룹은 이제 당신 휘하입니다.&lt;br/&gt;&lt;br/&gt;그룹은 하이 커맨드 표시줄(기본값: 컨트롤 + 스페이스)에서 관리할 수 있습니다.&lt;br/&gt;&lt;br/&gt;그룹이 끼었다면 인공지능 조종 기능을 사용하여 옮기십시오. 고정화기 팀이 끼이는 경향이 있습니다(현재 이 문제를 해결 중입니다).&lt;br/&gt;&lt;br/&gt;이 그룹에 차량을 할당하려면 차랑을 보고 Y 메뉴의 차량 분대 관리 설정을 사용하십시오.</Korean>
+                <French>Les escouades sont gérés à partir de la barre de commande supérieure (par défaut : CTRL+Espace).&lt;br/&gt;&lt;br/&gt;Si une escouade est bloqué, utilisez la fonction de contrôle de l'IA pour qu'il se mette en mouvement. Les équipes statiques montées ont tendance à rester bloquées (résoudre ce problème est WiP).&lt;br/&gt;&lt;br/&gt;Pour assigner un véhicule à ce groupe, utilisez les paramètres de gestion de l'escouade de véhicules dans le menu Y.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_add_recruit_squad_tooltip">
                 <Original>Recruit new squads and manage them with the HC Module (CTRL + SPACE).</Original>
                 <Russian>Нанимайте новые отряды и управляйте ими через High Command-меню (CTRL + SPACE).</Russian>
                 <Chinesesimp>招募新小队并使用 HC 模块（CTRL + SPACE）管理他们。</Chinesesimp>
                 <Korean>새 분대를 모집하고 하이 커맨드 모듈(컨트롤 + 스페이스)로 관리합니다.</Korean>
+                <French>Recrutez de nouvelles escouades et gérez-les avec le module HC (CTRL + ESPACE).</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_rally_point_title">
                 <Original>Place / Remove Rally Point</Original>
                 <Russian>Поставить / удалить точку сбора</Russian>
                 <Chinesesimp>放置/移除集结点</Chinesesimp>
                 <Korean>집결 지점 배치/제거</Korean>
+                <French>Placer / supprimer un point de ralliement</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_add_rally_point_tooltip">
                 <Original>Places or removes temporary rally spawn point.</Original>
                 <Russian>Ставит или убирает временную точку сбора.</Russian>
                 <Chinesesimp>放置或移除临时集结生成点。</Chinesesimp>
                 <Korean>임시 집결 지점을 배치하거나 제거합니다.</Korean>
+                <French>Place ou supprime temporairement un point de ralliement.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_share_faction_money_title">
                 <Original>Share Faction Money</Original>
                 <Russian>Раздать деньги фракции</Russian>
                 <Chinesesimp>分享阵营金钱</Chinesesimp>
                 <Korean>팩션 자금 공유</Korean>
+                <French>Partager l'argent de la faction</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_share_faction_money_tooltip">
                 <Original>Shares faction money between server members.</Original>
                 <Russian>Распределяет деньги фракции между участниками сервера.</Russian>
                 <Chinesesimp>服务器成员之间分享派系金钱。</Chinesesimp>
                 <Korean>서버 멤버 간에 팩션 자금을 공유합니다.</Korean>
+                <French>Partage de l'argent des factions entre les membres du serveur.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_resign_title">
                 <Original>Resign / Eligible</Original>
                 <Russian>Отставка / Право на командира</Russian>
                 <Chinesesimp>辞职/符合资格</Chinesesimp>
                 <Korean>사임/인계</Korean>
+                <French>Démission / Eligible</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_resign_tooltip">
                 <Original>Step down from commander or toggle eligibility.</Original>
                 <Russian>Перестать быть командиром или поставить право быть им.</Russian>
                 <Chinesesimp>退出指挥官职务或改变资格。</Chinesesimp>
                 <Korean>지휘관에서 물러나거나 자격을 위임합니다.</Korean>
+                <French>Se retirer du poste de commandant ou basculer l'éligibilité.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_open_comm_menu_title">
                 <Original>Open Commander Menu</Original>
                 <Russian>Открыть меню командира</Russian>
                 <Chinesesimp>打开指挥官菜单</Chinesesimp>
                 <Korean>지휘관 메뉴 열기</Korean>
+                <French>Ouvrir le menu du commandant</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_open_comm_menu_tooltip">
                 <Original>Opens commander menu. Also can be accessed via TAB key by default (can be changed via general control settings).</Original>
                 <Russian>Открывает командирское меню. Также доступно через сочетание клавиш TAB (по умолчанию, может быть изменено в настройках).</Russian>
                 <Chinesesimp>打开指挥官菜单。 也可以默认通过TAB键访问（可以通过通用控件设置更改）。</Chinesesimp>
                 <Korean>지휘관 메뉴를 엽니다. 또한 기본 설정인 탭 키로 액세스할 수 있습니다(일반 조작 설정에서 단축키 변경 가능).</Korean>
+                <French>Ouvre le menu du commandant. Par défaut, il est également possible d'y accéder via la touche TAB (cette option peut être modifiée via les paramètres de contrôle généraux).</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_open_add_to_air_title">
                 <Original>Add to Air Support</Original>
                 <Russian>Добавить в авиаподдержку</Russian>
                 <Chinesesimp>加入空中支援</Chinesesimp>
                 <Korean>공중 지원에 추가</Korean>
+                <French>Ajouter au support aérien</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_open_add_to_air_tooltip">
                 <Original>Gain Airstrike points giving this vehicle to the faction Air pool.</Original>
                 <Russian>Добавляет Airstrike-очки путём передачи самолёта, на который вы смотрите, на нужды фракции.</Russian>
                 <Chinesesimp>把当前看的空中载具交给我方派系，以此增加空中支援打击点数。</Chinesesimp>
                 <Korean>해당 차량을 팩션 항공 자산에 제공하여 공습 포인트를 획득합니다.</Korean>
+                <French>Gagnez des points Airstrike en ajoutant ce véhicule à la réserve d'air de la faction.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_open_clean_garbage_title">
                 <Original>Clean Garbage</Original>
                 <Russian>Чистка мусора</Russian>
                 <Chinesesimp>垃圾清理</Chinesesimp>
                 <Korean>쓰레기 청소</Korean>
+                <French>Nettoyer les ordures</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_open_clean_garbage_exit">
                 <Original>Please wait for GC to finish.&lt;br/&gt;Last GC was %1 ago.</Original>
                 <Russian>Пожалуйста, подождите пока сборщик мусора работает.&lt;br/&gt;Предыдущая сборка мусора была %1 назад.</Russian>
                 <Chinesesimp>请等待 GC 完成。&lt;br/&gt;上次 GC 是在 %1 之前。</Chinesesimp>
                 <Korean>쓰레기 청소가 완료될 때까지 기다리십시오.&lt;br/&gt;마지막 쓰레기 청소는 %1 전입니다.</Korean>
+                <French>Veuillez patienter jusqu'à la fin de l'opération.&lt;br/&gt;Le dernier nettoyage remonte à %1.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_open_clean_garbage_success">
                 <Original>Garbage Deleted.&lt;br/&gt;Last GC was %1 ago.</Original>
                 <Russian>Мусор собран и удалён.&lt;br/&gt;Предыдущая сборка мусора была %1 назад.</Russian>
                 <Chinesesimp>垃圾已删除。&lt;br/&gt;上次 GC 是 %1 前。</Chinesesimp>
                 <Korean>쓰레기가 삭제되었습니다.&lt;br/&gt;마지막 쓰레기 청소는 %1 전입니다.</Korean>
+                <French>Ordures supprimées.&lt;br/&gt;Le dernier nettoyage remonte à %1.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_open_clean_garbage_tooltip">
                 <Original>Cleans several things in game. Use with caution as it freezes the mission.</Original>
                 <Russian>Чистит некоторые вещи - тела, остовы, предметы и так далее. Использовать с осторожностью - при применении наблюдается краткосрочное падение производительности.</Russian>
                 <Chinesesimp>清理一些东西——尸体、弹壳、物体等等。 谨慎使用 - 应用时性能会出现短期下降。</Chinesesimp>
                 <Korean>게임에서 여러 가지를 청소합니다. 임무를 동결시키므로 주의하여 사용하십시오.</Korean>
+                <French>Nettoie plusieurs choses dans le jeu. A utiliser avec précaution car il fige la mission.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_open_faction_garage_tooltip">
                 <Original>Look at a vehicle and garage it into faction garage (shared among commanders).</Original>
                 <Russian>Машина, на которую вы смотрите будет поставлена в фракционный гараж (общий для всех командиров).</Russian>
                 <Chinesesimp>查看一辆载具并将其停入派系车库（所有指挥官共享）。</Chinesesimp>
                 <Korean>차량을 보고 팩션 차고에 넣으십시오. (지휘관이 공유)</Korean>
+                <French>Regardez un véhicule et mettez-le dans le garage de la faction (partagé par les commandants).</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_sell_vehicle_title">
                 <Original>Sell Vehicle</Original>
                 <Russian>Продать технику</Russian>
                 <Chinesesimp>出售载具</Chinesesimp>
                 <Korean>차량 판매</Korean>
+                <French>Vendre un véhicule</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_sell_vehicle_tooltip">
                 <Original>Look at a vehicle and sell it for money.</Original>
                 <Russian>Продаёт машину, на которую вы смотрите и зачисляет деньги на счёт фракции.</Russian>
                 <Chinesesimp>卖掉你正在看的载具，然后把钱存入派系的账户。</Chinesesimp>
                 <Korean>차량을 보고 돈을 받고 파십시오.</Korean>
+                <French>Regarder un véhicule et le vendre pour de l'argent.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_moveout_crew_title">
                 <Original>Moveout vehicle crew</Original>
                 <Russian>Выгнать экипаж их техники</Russian>
+                <French>Déplace l'équipage du véhicule</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_moveout_crew_tooltip">
                 <Original>Moves out crew from vehicle you loking at.</Original>
                 <Russian>Выгоняет экипаж из техники на которую вы смотрите.</Russian>
-            </Key>>
+                <French>Déplace l'équipage du véhicule que vous regardez.</French>
+            </Key>
             <Key ID="STR_antistasi_dialogs_arsenal_limits_title">
                 <Original>Arsenal Limits</Original>
                 <Russian>Лимиты арсенала</Russian>
                 <Chinesesimp>军火库限制</Chinesesimp>
                 <Korean>아스널 제한</Korean>
+                <French>Arsenal limité</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_arsenal_limits_tooltip">
                 <Original>Manage arsenal limitations of guests.</Original>
                 <Russian>Настройки лимитов в арсенале для гостей.</Russian>
                 <Chinesesimp>游客的武器库限制设置。</Chinesesimp>
                 <Korean>게스트의 아스널 제한을 관리합니다.</Korean>
+                <French>Limiter les paramètres dans l'arsenal des invités.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_not_commander_generic">
                 <Original>You're not the Commander!</Original>
                 <Russian>Вы не командир!</Russian>
                 <Chinesesimp>你不是指挥官！</Chinesesimp>
                 <Korean>당신은 지휘관이 아닙니다!</Korean>
+                <French>Vous n'êtes pas le commandant !</French>
             </Key>
             <Key ID="STR_commander_menu_abilities_header">
                 <Original>Support</Original>
                 <Russian>Поддержка</Russian>
                 <Chinesesimp>支援</Chinesesimp>
                 <Korean>지원</Korean>
+                <French>Soutien</French>
             </Key>
             <Key ID="STR_commander_menu_smoke_barrage_title">
                 <Original>Smoke Barrage</Original>
                 <Russian>Дымовая завеса</Russian>
                 <Chinesesimp>烟雾弹幕</Chinesesimp>
                 <Korean>연막탄 연발 포격</Korean>
+                <French>Barrage fumigène</French>
             </Key>
             <Key ID="STR_commander_menu_smoke_barrage_tooltip">
                 <Original>Covers the selected position with smoke.</Original>
                 <Russian>Покрывает выбранную позицию дымовыми снарядами.</Russian>
                 <Chinesesimp>用烟雾弹覆盖选定的位置。</Chinesesimp>
                 <Korean>선택한 위치를 연막으로 덮습니다.</Korean>
+                <French>Couvre de fumée la position sélectionnée.</French>
             </Key>
             <Key ID="STR_commander_menu_flare_barrage_title">
                 <Original>Flare Barrage</Original>
                 <Russian>Залп осветитетльными снарядами</Russian>
                 <Chinesesimp>照明弹齐射</Chinesesimp>
                 <Korean>조명탄 연발 포격</Korean>
+                <French>Barrage de fusées</French>
             </Key>
             <Key ID="STR_commander_menu_flare_barrage_tooltip">
                 <Original>Illuminates the selected position with flare rounds.</Original>
                 <Russian>Обстреливает выбранную позицию осветительными снарядами для лучшей видимости в тёмное время суток.</Russian>
                 <Chinesesimp>用照明射弹发射选定位置，以便在夜间获得更好的能见度。</Chinesesimp>
                 <Korean>선택한 위치를 조명탄으로 비춥니다.</Korean>
+                <French>Illumine la position sélectionnée à l'aide de fusées éclairantes.</French>
             </Key>
             <Key ID="STR_commander_menu_lva_title">
                 <Original>Light Vehicle Airdrop</Original>
                 <Russian>Сброс лёгкой техники с самолёта</Russian>
                 <Chinesesimp>空投轻型载具</Chinesesimp>
                 <Korean>경차량 공수</Korean>
+                <French>Largage de véhicules légers</French>
             </Key>
             <Key ID="STR_commander_menu_lva_tooltip">
                 <Original>Plane flies over and drops two-seated light vehicle to the specified position.</Original>
                 <Russian>Самолет пролетает и сбрасывает двухместное транспортное средство в указанное место.</Russian>
                 <Chinesesimp>飞机飞过，将两辆轻型载具投放到指定位置。</Chinesesimp>
                 <Korean>비행기가 상공을 비행해서 2인승 경차량을 지정한 위치로 떨어뜨립니다.</Korean>
+                <French>L'avion survole et dépose un véhicule léger à deux places à l'endroit spécifié.</French>
             </Key>
             <Key ID="STR_commander_menu_lca_title">
                 <Original>Loot Crate Airdrop</Original>
                 <Russian>Сброс ящика-сборщика добычи</Russian>
                 <Chinesesimp>空投战利品箱</Chinesesimp>
                 <Korean>전리품 상자 공수</Korean>
+                <French>Caisse de butin parachutée</French>
             </Key>
             <Key ID="STR_commander_menu_lca_tooltip">
                 <Original>Plane flies over and drops loot crate to the specified position.</Original>
                 <Russian>Самолет пролетает и сбрасывает ящик-сборщик лута в указанное место.</Russian>
                 <Chinesesimp>飞机飞过，将战利品箱丢到指定位置。</Chinesesimp>
                 <Korean>비행기가 상공을 비행해서 전리품 상자를 지정한 위치로 떨어뜨립니다.</Korean>
+                <French>L'avion survole et parachute une caisse de butin à la position spécifiée.</French>
             </Key>
             <Key ID="STR_commander_menu_hmga_title">
                 <Original>HMG Airdrop</Original>
                 <Russian>Сброс тяжелого пулемёта</Russian>
                 <Chinesesimp>空投重机枪</Chinesesimp>
                 <Korean>중기관총 공수</Korean>
+                <French>L'avion survole et dépose une caisse de butin à la position spécifiée.</French>
             </Key>
             <Key ID="STR_commander_menu_hmga_tooltip">
                 <Original>Plane flies over and drops crate with HMG to the specified position.</Original>
                 <Russian>Самолет пролетает и сбрасывает ящик с крупнокалиберным пулеметом в указанное место.</Russian>
                 <Chinesesimp>飞机飞过，将装有重机枪的箱子丢到指定位置。</Chinesesimp>
                 <Korean>비행기가 상공을 비행해서 중기관총을 지정한 위치로 떨어뜨립니다.</Korean>
+                <French>L'avion survole et largue une caisse avec un HMG à la position spécifiée.</French>
             </Key>
             <Key ID="STR_commander_menu_rpr_title">
                 <Original>Recon Plane Run</Original>
                 <Russian>Пролёт самолёта-разведчика</Russian>
                 <Chinesesimp>侦察机掠过</Chinesesimp>
                 <Korean>정찰기 비행</Korean>
+                <French>Survol d'un avion de reconnaissance</French>
             </Key>
             <Key ID="STR_commander_menu_rpr_tooltip">
                 <Original>Reconnaissance plane flies over and marks enemy positions at the specified location.</Original>
                 <Russian>Самолет-разведчик пролетает и отмечает позиции противника в указанном месте.</Russian>
                 <Chinesesimp>侦察机飞过，在指定地点标记敌方大概位置。</Chinesesimp>
                 <Korean>정찰기가 상공을 비행해서 지정한 위치에 적 위치를 표시합니다.</Korean>
+                <French>L'avion de reconnaissance survole et marque les positions ennemies à l'endroit spécifié.</French>
             </Key>
             <Key ID="STR_commander_menu_sca_title">
                 <Original>Supply Crate Airdrop</Original>
                 <Russian>Сброс ящика со снабжением</Russian>
                 <Chinesesimp>空投补给箱</Chinesesimp>
                 <Korean>보급상자 공수</Korean>
+                <French>Caisse de ravitaillement parachutée</French>
             </Key>
             <Key ID="STR_commander_menu_sca_tooltip">
                 <Original>Plane flies over and drops crate with ammunition and medical supplies to the specified position.</Original>
                 <Russian>Самолет пролетает и сбрасывает в указанную позицию ящик с боеприпасами и медикаментами.</Russian>
                 <Chinesesimp>飞机飞过，在指定位置投下一箱弹药和医疗物资。</Chinesesimp>
                 <Korean>비행기가 상공을 비행해서 보급상자를 지정한 위치로 떨어뜨립니다.</Korean>
+                <French>L'avion survole et largue une caisse contenant des munitions et des fournitures médicales à la position spécifiée.</French>
             </Key>
             <Key ID="STR_commander_menu_hba_title">
                 <Original>HE Bomb Airstrike</Original>
                 <Russian>Авиаудар фугасными бомбами</Russian>
                 <Chinesesimp>高爆炸弹空袭</Chinesesimp>
                 <Korean>고폭탄 투하</Korean>
+                <French>Attaque aérienne avec des bombes HE</French>
             </Key>
             <Key ID="STR_commander_menu_hba_tooltip">
                 <Original>Plane flies over and drops HE bombs at the specified location.</Original>
                 <Russian>Самолет пролетает и сбрасывает фугасные бомбы в указанном месте.</Russian>
                 <Chinesesimp>飞机飞过，指定地点投下高爆弹。</Chinesesimp>
                 <Korean>비행기가 상공에서 날아와서 지정한 장소에 고폭탄을 투하합니다.</Korean>
+                <French>L'avion survole et largue des bombes HE à l'endroit spécifié.</French>
             </Key>
             <Key ID="STR_commander_menu_cba_title">
                 <Original>Cluster Bomb Airstrike</Original>
                 <Russian>Авиаудар кассетными бомбами</Russian>
                 <Chinesesimp>集束炸弹空袭</Chinesesimp>
                 <Korean>집속탄 투하</Korean>
+                <French>Attaque aérienne avec bombes à fragmentation</French>
             </Key>
             <Key ID="STR_commander_menu_cba_tooltip">
                 <Original>Plane flies over and drops cluster bombs at the specified location</Original>
                 <Russian>Самолет пролетает и сбрасывает кассетные бомбы в указанном месте.</Russian>
                 <Chinesesimp>飞机飞过，指定地点投下集束炸弹</Chinesesimp>
                 <Korean>비행기가 상공에서 날아와서 지정한 장소에 집속탄을 투하합니다.</Korean>
+                <French>Un avion survole et largue des bombes à fragmentation à l'endroit spécifié</French>
             </Key>
             <Key ID="STR_commander_menu_chemba_title">
                 <Original>Chemical Bomb Airstrike</Original>
                 <Russian>Авиаудар химическим оружием</Russian>
                 <Chinesesimp>化学武器空袭</Chinesesimp>
                 <Korean>화학탄 투하</Korean>
+                <French>Attaque aérienne de bombes chimiques</French>
             </Key>
             <Key ID="STR_commander_menu_chemba_tooltip">
                 <Original>Plane flies over and drops bombs with hazardous chemicals at the specified location. Violates Geneva Protocol, raises aggression.</Original>
                 <Russian>Самолет пролетает и сбрасывает бомбы с опасными химическими веществами в указанном месте. Нарушает Женевскую Конвенцию, вызывает агрессию противников.</Russian>
                 <Chinesesimp>飞机飞过，指定地点并投下装有危险化学品的炸弹。 违反日内瓦议定书，提高侵略性。</Chinesesimp>
                 <Korean>비행기가 상공에서 날아와서 지정한 장소에 화학탄을 투하합니다. 제네바 협약 위반이며, 어그로를 증가시킵니다.</Korean>
+                <French>Un avion survole et largue des bombes contenant des produits chimiques dangereux à l'endroit spécifié. Violation de la Convention de Genève, augmentation de l'agressivité.</French>
             </Key>
             <Key ID="STR_commander_menu_na_title">
                 <Original>Napalm Airstrike</Original>
                 <Russian>Авиаудар напалмом</Russian>
                 <Chinesesimp>凝固汽油弹空袭</Chinesesimp>
                 <Korean>네이팜탄 투하</Korean>
+                <French>Frappe aérienne au napalm</French>
             </Key>
             <Key ID="STR_commander_menu_na_tooltip">
                 <Original>Plane flies over and drops napalm bombs with incendiary effect.</Original>
                 <Russian>Самолет пролетает и покрывает указанную область напалмом.</Russian>
                 <Chinesesimp>飞机飞过，指定区域并用凝固汽油弹覆盖。</Chinesesimp>
                 <Korean>비행기가 상공에서 날아와서 지정한 장소에 네이팜탄을 투하합니다.</Korean>
+                <French>Un avion survole la région et largue des bombes au napalm qui ont un effet incendiaire.</French>
             </Key>
             <Key ID="STR_commander_menu_paradrop_title">
                 <Original>Paradrop Plane Run</Original>
                 <Russian>Пролёт десантного самолёта</Russian>
                 <Chinesesimp>空降</Chinesesimp>
                 <Korean>공수강하 비행기 비행</Korean>
+                <French>Survol aérien</French>
             </Key>
             <Key ID="STR_commander_menu_paradrop_tooltip">
                 <Original>Plane flies over and drops players with parachutes at the specified location. Players must turn on paradrop attendance (if it's turned off before) in game settings and be at rebel HQ to be successfully paradropped. If there are less seats in plane than players, it will choose them randomly.</Original>
                 <Russian>Самолет пролетает и сбрасывает игроков с парашютами в указанном месте. Игроки должны находиться в штаб-квартире повстанцев и не сидеть в технике, чтобы их успешно сбросили с парашюта. Если мест в самолете меньше, чем игроков, игроки выберутся случайным образом.</Russian>
                 <Chinesesimp>飞机飞过，把带降落伞的玩家丢到指定位置。 玩家必须在游戏设置中打开空降ON（如果关闭了的情况下）并且在抵抗军总部才能成功空降。 如果飞机上的座位少于玩家，它会随机选择。</Chinesesimp>
                 <Korean>비행기가 상공을 비행해서 낙하산을 맨 플레이어를 지정한 위치로 떨어뜨립니다. 플레이어는 게임 설정에서 공수강하 참여를 켜고 (이전에 해제됐다면) 공수강하를 성공적으로 수행하기 위해선 아군 본부에 있어야 합니다. 플레이어보다 비행기 좌석이 적으면 무작위로 선택됩니다.</Korean>
+                <French>L'avion survole et largue les joueurs avec des parachutes à l'endroit spécifié. Les joueurs doivent activer l'assistance au parachutage (si elle a été désactivée auparavant) dans les paramètres du jeu et se trouver au QG des rebelles pour que le parachutage réussisse. S'il y a moins de places dans l'avion que de joueurs, l'avion les choisira au hasard.</French>
             </Key>
             <Key ID="STR_commander_menu_loot_heli_title">
                 <Original>Loot Helicopter Run</Original>
                 <Russian>Пролёт вертолёта-сборщика добычи</Russian>
                 <Chinesesimp>掠夺直升机飞越上空</Chinesesimp>
                 <Korean>전리품 헬리콥터 비행</Korean>
+                <French>Vol de l'hélicoptère à butin</French>
             </Key>
             <Key ID="STR_commander_menu_loot_heli_tooltip">
                 <Original>Rebel helicopter arrives and helps with collecting scattered loot and drops crate with gathered loot at the marked zone.</Original>
                 <Russian>Прилетает вертолет повстанцев, помогает собрать разбросанную добычу и сбрасывает ящик с собранной добычей в отмеченной зоне.</Russian>
                 <Chinesesimp>抵抗军直升机抵达并帮助收集散落的战利品，并将装有收集到的战利品的箱子丢在标记区域。</Chinesesimp>
                 <Korean>아군 헬리콥터가 도착하여 흩어진 전리품을 모으는 것을 돕고 표시된 구역이 모인 전리품과 함께 상자를 떨어뜨립니다.</Korean>
+                <French>L'hélicoptère des rebelles arrive et aide à collecter le butin dispersé et dépose une caisse avec le butin collecté dans la zone marquée.</French>
             </Key>
             <Key ID="STR_commander_menu_watchpost_title">
                 <Original>Watchpost</Original>
                 <Russian>Пункт наблюдения</Russian>
                 <Chinesesimp>观察哨</Chinesesimp>
                 <Korean>감시초소</Korean>
+                <French>Poste de guet</French>
             </Key>
             <Key ID="STR_commander_menu_roadblock_title">
                 <Original>Roadblock</Original>
                 <Russian>Блокпост</Russian>
                 <Chinesesimp>路障</Chinesesimp>
                 <Korean>검문소</Korean>
+                <French>Barrage routier</French>
             </Key>
             <Key ID="STR_commander_menu_hmge_title">
                 <Original>HMG Emplacement</Original>
                 <Russian>Пулеметное гнездо</Russian>
                 <Chinesesimp>重机枪阵地</Chinesesimp>
                 <Korean>중기관총 포대</Korean>
+                <French>Emplacement des HMG</French>
             </Key>
             <Key ID="STR_commander_menu_aae_title">
                 <Original>AA Emplacement</Original>
                 <Russian>Зенитная огневая точка</Russian>
                 <Chinesesimp>防空阵地</Chinesesimp>
                 <Korean>대공화기 포대</Korean>
+                <French>Emplacement AA</French>
             </Key>
             <Key ID="STR_commander_menu_ate_title">
                 <Original>AT Emplacement</Original>
                 <Russian>Противотанковая огневая точка</Russian>
                 <Chinesesimp>反坦克阵地</Chinesesimp>
                 <Korean>대전차화기 포대</Korean>
+                <French>Emplacement AT</French>
             </Key>
             <Key ID="STR_commander_menu_apersminefield_title">
                 <Original>APERS Mines</Original>
                 <Russian>Противопехотные мины</Russian>
                 <Chinesesimp>反人员杀伤地雷</Chinesesimp>
                 <Korean>대인지뢰</Korean>
+                <French>APERS Mines</French>
             </Key>
             <Key ID="STR_commander_menu_minefield_cost">
                 <Original>Cost: 5 %1s, %2 HR and %3%4</Original>
                 <Russian>Стоимость: 5 мин, %2 HR и %3%4</Russian>
                 <Chinesesimp>成本: 5 %1, %2 人力 和 %3%4</Chinesesimp>
                 <Korean>가격: 5개의 %1, %2 인력과 %3%4</Korean>
+                <French>Coût: 5 %1s, %2 HR et %3%4</French>
             </Key>
             <Key ID="STR_commander_menu_atminefield_title">
                 <Original>AT Mines</Original>
                 <Russian>Противотанковые мины</Russian>
                 <Chinesesimp>反坦克地雷</Chinesesimp>
                 <Korean>대전차지뢰</Korean>
+                <French>Mines AT</French>
             </Key>
             <Key ID="STR_commander_menu_fog_title">
                 <Original>Fog: %1</Original>
                 <Russian>Туман: %1</Russian>
                 <Chinesesimp>雾：%1</Chinesesimp>
                 <Korean>안개: %1</Korean>
+                <French>Brouillard: %1</French>
             </Key>
             <Key ID="STR_commander_menu_fog_title_default">
                 <Original>Fog: 0.5</Original>
                 <Russian>Туман: 0.5</Russian>
                 <Chinesesimp>雾：0.5</Chinesesimp>
                 <Korean>안개: 0.5</Korean>
+                <French>Brouillard: 0.5</French>
             </Key>
             <Key ID="STR_commander_menu_fog_title_tooltip">
                 <Original>Tunes general fog level.</Original>
                 <Russian>Настраивает общий уровень тумана.</Russian>
                 <Chinesesimp>调整整体雾度。</Chinesesimp>
                 <Korean>일반적인 안개 레벨을 조정합니다.</Korean>
+                <French>Accorde le niveau général du brouillard.</French>
             </Key>
             <Key ID="STR_commander_menu_fog_button">
                 <Original>SET FOG LEVEL</Original>
                 <Russian>ЗАДАТЬ УРОВЕНЬ ТУМАНА</Russian>
                 <Chinesesimp>设置雾级别</Chinesesimp>
                 <Korean>안개 레벨 설정</Korean>
+                <French>RÉGLAGE DU NIVEAU DE BROUILLARD</French>
             </Key>
             <Key ID="STR_commander_menu_overcast_title">
                 <Original>Overcast: %1</Original>
                 <Russian>Облачность: %1</Russian>
                 <Chinesesimp>阴天：%1</Chinesesimp>
                 <Korean>날씨: %1</Korean>
+                <French>Couvert: %1</French>
             </Key>
             <Key ID="STR_commander_menu_overcast_title_default">
                 <Original>Overcast: 0.5</Original>
                 <Russian>Облачность: 0.5</Russian>
                 <Chinesesimp>阴天：0.5</Chinesesimp>
                 <Korean>날씨: 0.5</Korean>
+                <French>Couvert: 0.5</French>
             </Key>
             <Key ID="STR_commander_menu_overcast_title_tooltip">
                 <Original>Tunes general overcast level.</Original>
                 <Russian>Настраивает общий уровень облачности.</Russian>
                 <Chinesesimp>调整整体的阴天程度。</Chinesesimp>
                 <Korean>일반적인 날씨 레벨을 조정합니다.</Korean>
+                <French>Accorde le niveau général de la couverture nuageuse.</French>
             </Key>
             <Key ID="STR_commander_menu_overcast_button">
                 <Original>SET OVERCAST LEVEL</Original>
                 <Russian>ЗАДАТЬ УРОВЕНЬ ОБЛАЧНОСТИ</Russian>
                 <Chinesesimp>设置阴天水平</Chinesesimp>
                 <Korean>날씨 레벨 설정</Korean>
+                <French>DÉFINIR LE NIVEAU DE COUVERTURE</French>
             </Key>
             <Key ID="STR_commander_menu_clear_forest_button">
                 <Original>CLEAR FOREST NEAR HQ</Original>
                 <Russian>ОЧИСТИТЬ РАСТИТЕЛЬНОСТЬ У ШТАБА</Russian>
                 <Chinesesimp>总部附近的森林</Chinesesimp>
                 <Korean>본부 근처 숲 제거</Korean>
+                <French>FORÊT CLAIRE PRÈS DU SIÈGE</French>
             </Key>
             <Key ID="STR_commander_menu_clear_forest_tooltip">
                 <Original>Clears bushes and trees near the HQ.</Original>
                 <Russian>Очищает кусты и деревья возле штаб-квартиры.</Russian>
                 <Chinesesimp>清理总部附近的灌木和树木。</Chinesesimp>
                 <Korean>본부 근처의 덤불과 나무를 제거합니다.</Korean>
+                <French>Débroussaille les buissons et les arbres près du QG.</French>
             </Key>
             <Key ID="STR_commander_menu_clear_garbage_button">
                 <Original>CLEAR GARBAGE</Original>
                 <Russian>ОЧИСТИТЬ МУСОР</Russian>
                 <Chinesesimp>清除垃圾</Chinesesimp>
                 <Korean>쓰레기 청소</Korean>
+                <French>NETTOYER LES ORDURES</French>
             </Key>
             <Key ID="STR_commander_menu_clear_garbage_tooltip">
                 <Original>Clears garbage (bodies, unused crates, wrecks, weapons et cetera) across the map. Increases performance.</Original>
                 <Russian>Убирает мусор (тела, неиспользуемые ящики, обломки, оружие и т. д.) по всей карте. Повышает производительность.</Russian>
                 <Chinesesimp>清理地图上的垃圾（尸体、未使用的箱子、碎片、武器等）。 提高游戏性能。</Chinesesimp>
                 <Korean>지도 전체의 쓰레기(시체, 사용하지 않는 상자, 파괴된 물체, 무기 등)를 청소합니다. 성능이 향상됩니다.</Korean>
+                <French>Nettoie les déchets (corps, caisses inutilisées, épaves, armes, etc.) sur la carte. Améliore les performances.</French>
             </Key>
             <Key ID="STR_commander_menu_rest_tooltip">
                 <Original>Skips 8 hours of in-game time. Requires every player to be near HQ.</Original>
                 <Russian>Пропускает 8 часов игрового времени. Требуется, чтобы каждый игрок находился рядом со штаб-квартирой.</Russian>
                 <Chinesesimp>跳过8小时的游戏时间。 要求每个玩家都在总部附近。</Chinesesimp>
                 <Korean>8시간의 게임 내 시간을 건너뜁니다. 모든 플레이어가 본부 근처에 있어야 합니다.</Korean>
+                <French>Passe 8 heures de temps dans le jeu. Exige que chaque joueur soit près du QG.</French>
             </Key>
             <Key ID="STR_commander_menu_max_persistent_contstructions">
                 <Original>Maximum persistent constuctions: %1</Original>
                 <Russian>Макс. кол-во персистентных конструкций: %1</Russian>
                 <Chinesesimp>最大永久建筑：%1</Chinesesimp>
                 <Korean>최대 영구 건축물 수: %1</Korean>
+                <French>Constuctions persistantes maximales : %1</French>
             </Key>
             <Key ID="STR_commander_menu_max_persistent_contstructions_tooltip">
                 <Original>Allows you to set how many persistent (saveable) constructions will be allowed. Affects performance, Last In-First Out principle.</Original>
                 <Russian>Позволяет вам установить, сколько постоянных (сохраняемых, устанавливаемых через меню Zeus) конструкций будет разрешено. Влияет на производительность, принцип Last In-First Out.</Russian>
                 <Chinesesimp>允许您设置允许多少个永久（可保存的，通过 Zeus 菜单设置）建筑。 影响性能，后进先出原则。</Chinesesimp>
                 <Korean>허용되는 (저장 가능한) 영구 건축물의 수를 설정하도록 허용합니다. 성능에 영향을 미치며, 후입선출 법칙을 따릅니다.</Korean>
+                <French>Permet de définir le nombre de constructions persistantes (sauvegardables) autorisées. Affecte les performances, le principe du "dernier entré, premier sorti".</French>
             </Key>
             <Key ID="STR_commander_menu_ai_limit">
                 <Original>Maximum Quantity of AI Units: %1</Original>
                 <Russian>Максимальное количество юнитов ИИ: %1</Russian>
                 <Chinesesimp>最大 AI 单位：%1</Chinesesimp>
                 <Korean>최대 인공지능 유닛 수: %1</Korean>
+                <French>Quantité maximale d'IA : %1</French>
             </Key>
             <Key ID="STR_commander_menu_ai_limit_tooltip">
                 <Original>Sets how much local and simulated AI can spawn in the map. Affects performance and AI ""intelligence"". Use with EXTREME caution, as on very high values performance may tank for everyone. This is not an exact number as vehicles and squad leaders will allways spawn.</Original>
                 <Russian>Устанавливает, сколько локального и смоделированного ИИ может появиться на карте. Влияет на производительность и «интеллектуальность» ИИ. Используйте с ЧРЕЗВЫЧАЙНОЙ осторожностью, так как при очень высоких значениях производительность может ухудшиться для всех. Это не точное число, так как транспортные средства и командиры отрядов будут появляться всегда.</Russian>
                 <Chinesesimp>设置地图中可以生成多少本地和模拟 AI。 影响性能和 AI“智能”。 使用时要格外小心，因为在非常高的数值下，可能对每个人性能都不利。 这不是一个确切的数字，因为载具和班长总是会刷出来。</Chinesesimp>
                 <Korean>지도에서 로컬 및 시뮬레이션된 인공지능이 생성할 수 있는 양을 설정합니다. 성능 및 인공지능의 ""지능""에 영향을 미칩니다. 매우 높은 값을 사용할 경우 성능이 저하될 수 있으므로 극도로 주의하여 사용하십시오. 이는 차량과 분대장들이 항상 스폰되기 때문에 정확한 숫자는 아닙니다.</Korean>
+                <French>Définit la quantité d'IA locale et simulée pouvant apparaître sur la carte. Affecte les performances et l'"intelligence" de l'IA. A utiliser avec une prudence EXTRÊME, car avec des valeurs très élevées, les performances peuvent chuter pour tout le monde. Il ne s'agit pas d'un chiffre exact, car des véhicules et des chefs d'escouade apparaîtront toujours.</French>
             </Key>
             <Key ID="STR_commander_menu_max_spawn_distance">
                 <Original>Maximum Spawn Distance: %1</Original>
                 <Russian>Макс. дистанция спавна ИИ-акторов: %1</Russian>
                 <Chinesesimp>最大生成距离：%1</Chinesesimp>
                 <Korean>최대 스폰 거리: %1</Korean>
+                <French>Distance maximale de spawn: %1</French>
             </Key>
             <Key ID="STR_commander_menu_max_spawn_distance_tooltip">
                 <Original>Affects at which distance from player enemy will spawn. Use this with caution. Set it to lower distances if you feel that you have low performance.</Original>
@@ -7379,6 +7527,7 @@
                 <Russian>Используйте параметры ниже, чтобы настроить условия окружающей среды.</Russian>
                 <Chinesesimp>使用以下选项调整环境条件。</Chinesesimp>
                 <Korean>환경 조건을 조정하려면 아래 옵션을 사용하십시오.</Korean>
+                <French>Utilisez les options ci-dessous pour régler les conditions environnementales.</French>
             </Key>
         </Container>
         <Container name="simple_menu_actions_and_tooltips">
@@ -8327,6 +8476,7 @@
                 <Russian>Уничтожьте блокпост</Russian>
                 <Chinesesimp>破坏检查站</Chinesesimp>
                 <Korean>검문소 파괴</Korean>
+                <French>Détruire le barrage routier</French>
             </Key>
             <Key ID="STR_CON_Outpost_controls_desc">
                 <Original>A %1 interferes with our operations in the area. Go there and destroy it before %2.</Original>
@@ -9150,6 +9300,7 @@
                 <Russian>Купить технику и предметы</Russian>
                 <Chinesesimp>购买载具和物品</Chinesesimp>
                 <Korean>차량 및 아이템 구입</Korean>
+                <French>Acheter des véhicules et des articles</French>
             </Key>
             <Key ID="STR_antistasi_actions_buy_loot_crate">
                 <Original>Buy loot crate</Original>
@@ -9870,12 +10021,14 @@
                 <Russian>Пункт наблюдения %1</Russian>
                 <Chinesesimp>%1 观察哨</Chinesesimp>
                 <Korean>%1 감시초소</Korean>
+                <French>%1 poste de guet</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_roadblock">
                 <Original>%2 Roadblock%1</Original>
                 <Russian>Блокпост %1%2</Russian>
                 <Chinesesimp>%1 路障 %2</Chinesesimp>
                 <Korean>%2 검문소는 %1 소속이다</Korean>
+                <French>%2 Barrage routier%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_aaempl">
                 <Original>%2 AA Emplacement%1</Original>
@@ -10328,6 +10481,7 @@
                 <Russian>Вы не можете маскироваться рядом с авиабазами, военными базами, аванпостами, портами или блокпостами.</Russian>
                 <Chinesesimp>你不能在机场、军事基地、哨所、海港或路障附近伪装。</Chinesesimp>
                 <Korean>공항, 군사 기지, 전초 기지, 항구 또는 검문소에서는 위장이 불가능합니다.</Korean>
+                <French>Vous ne pouvez pas vous infiltrer près des aéroports, des bases militaires, des avant-postes, des ports maritimes ou des barrages routiers.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_securebases_output">
                 <Original>Near enemy territory</Original>
@@ -10774,6 +10928,7 @@
                 <Russian>Вы не можете распустить отряды, ведомых игроками, пунктов наблюдения, установщиков минных полей, любых гнезд или огневых точек.</Russian>
                 <Chinesesimp>你不能解散由玩家领导的小队、观察哨小队、路障小队、任何炮台小队或雷区建筑小队。</Chinesesimp>
                 <Korean>당신은 플레이어 주도, 감시초소, 검문소, 아무 포대나 지뢰지대 건설 분대를 해산시킬 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas licencier une escouade dirigée par un joueur, un poste de guet, un barrage routier, un emplacement ou un champ de mines.</French>
             </Key>
             <Key ID="STR_A3A_reinf_dismiss_group_header">
                 <Original>Dismiss Group</Original>
@@ -10996,84 +11151,98 @@
                 <Russian>Техника придана к %1 отряду.</Russian>
                 <Chinesesimp>分配给 %1 小队的载具。</Chinesesimp>
                 <Korean>%1 분대에 차량이 할당되었습니다.</Korean>
+                <French>Véhicule affecté à l'escouade %1.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_header">
                 <Original>Recruit Squad</Original>
                 <Russian>Рекрутировать отряд</Russian>
                 <Chinesesimp>招募小分队</Chinesesimp>
                 <Korean>분대 모집</Korean>
+                <French>Recruter une escouade</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_moveHq">
                 <Original>You can't recruit a new squad while you are moving your HQ.</Original>
                 <Russian>Вы не можете рекрутировать новый отряд пока вы двигаете свой штаб.</Russian>
                 <Chinesesimp>您在移动总部时不能招募新单位。</Chinesesimp>
                 <Korean>본부를 옮기는 동안에는 새 분대를 모집할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas recruter une nouvelle escouade pendant que vous déplacez votre QG.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_radio">
                 <Original>You need a radio in your inventory to be able to give orders to other squads.</Original>
                 <Russian>Вам необходимо иметь рацию чтобы отдавать приказы отрядам.</Russian>
                 <Chinesesimp>你的物品栏中需要一台无线电才能向其他小队下达命令。</Chinesesimp>
                 <Korean>다른 분대에 명령을 내리려면 소지품에 무전기가 필요합니다.</Korean>
+                <French>Vous avez besoin d'une radio dans votre inventaire pour pouvoir donner des ordres aux autres escouades.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_enemynear">
                 <Original>You can't recruit squads with enemies near your HQ.</Original>
                 <Russian>Вы не можете рекрутировать отряды пока рядом враги.</Russian>
                 <Chinesesimp>当附近有敌人时，你不能招募单位。</Chinesesimp>
                 <Korean>본부 근처에 적이 있는 동안에는 분대를 모집할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas recruter d'escouades avec des ennemis près de votre QG.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_too_many_hc">
                 <Original>You have too many high command squads active. Disband or garrison some to recruit more.</Original>
                 <Russian>У вас слишком много отрядов High Command. Распустите или засуньте некоторые из них в гарнизон чтобы иметь возможность нанять новый отряд.</Russian>
                 <Chinesesimp>你激活了太多的高级指挥小队。 解散或驻军一些以招募更多。</Chinesesimp>
                 <Korean>활성화된 하이 커맨드 분대가 너무 많습니다. 더 모집하려면 일부를 해산시키거나 주둔시키십시오.</Korean>
+                <French>Vous avez trop d'escouades de haut commandement actives. Dissolvez ou mettez en garnison certaines d'entre elles pour en recruter d'autres.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_not_supported">
                 <Original>The group or vehicle type you requested is not supported in your modset.</Original>
                 <Russian>Отряд, который вы запросили, не поддерживается в вашем текущем наборе модов.</Russian>
                 <Chinesesimp>您的模组不支持您请求的小队或载具类型。</Chinesesimp>
                 <Korean>요청한 그룹 또는 차량은 모드셋에서 지원하지 않습니다.</Korean>
+                <French>Le groupe ou le type de véhicule que vous avez demandé n'est pas pris en charge dans votre modset.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_AT_restr">
                 <Original>War Level 3 has to be reached to be able to hire AT Teams.</Original>
                 <Russian>3 уровень войны должен быть достигнут прежде чем появится возможность нанимать ПТ-отряд.</Russian>
                 <Chinesesimp>必须达到 战争等级 3才能雇佣AT小队。</Chinesesimp>
                 <Korean>대전차 팀을 모집하려면 전쟁 레벨 3 이상이어야 합니다.</Korean>
+                <French>Le niveau de guerre 3 doit être atteint pour pouvoir engager des équipes AT.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_MG_restr">
                 <Original>War Level 2 has to be reached to be able to hire MG Squads and MG Cars.</Original>
                 <Russian>2 уровень войны должен быть достигнут прежде чем появится возможность нанимать отряды пулеметчиков или машину с тяжелым пулемётом.</Russian>
                 <Chinesesimp>必须达到 战争等级 3才能雇佣机枪小队以及机枪卡车小队。</Chinesesimp>
                 <Korean>기관총 분대와 기관총 차량을 모집하려면 전쟁 레벨 2 이상이어야 합니다.</Korean>
+                <French>Le niveau de guerre 2 doit être atteint pour pouvoir engager des escouades et des voitures MG.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_ATAA_restr">
                 <Original>War Level 4 has to be reached to be able to hire AT, AA cars and statics and Support Squad.</Original>
                 <Russian>4 уровень войны должен быть достигнут прежде чем появится возможность нанимать зенитные или противотанковые расчёты и соответствующую технику, а также отряд поддержки.</Russian>
                 <Chinesesimp>必须达到 战争等级 4才能雇佣AT和AA小队以及AA卡车小队。</Chinesesimp>
                 <Korean>대전차, 대공차량 및 고정화기 지원 분대를 모집하려면 전쟁 레벨 4 이상이어야 합니다.</Korean>
+                <French>Le niveau de guerre 4 doit être atteint pour pouvoir engager des véhicules AT, AA et statiques ainsi que des escouades de soutien.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_mortar_restr">
                 <Original>War Level 5 has to be reached to be able to hire Mortar Teams.</Original>
                 <Russian>5 уровень войны должен быть достигнут прежде чем появится возможность нанимать миномётный расчёт.</Russian>
                 <Chinesesimp>必须达到 战争等级 5才能雇佣迫击炮小队。</Chinesesimp>
                 <Korean>박격포 팀을 모집하려면 전쟁 레벨 5 이상이어야 합니다.</Korean>
+                <French>Le niveau de guerre 5 doit être atteint pour pouvoir engager des équipes de mortiers.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_not_enough_hr">
                 <Original>You do not have enough HR for this request. %1 required.</Original>
                 <Russian>У вас недостаточно людских ресурсов чтобы сделать этот запрос. Требуется %1.</Russian>
                 <Chinesesimp>您没有足够的HR来提出这个请求。 需要 %1。</Chinesesimp>
                 <Korean>해당 요청에 필요한 인력이 부족합니다. %1명이 필요합니다.</Korean>
+                <French>Vous n'avez pas assez de RH pour cette demande. %1 requis.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_not_enough_money">
                 <Original>You do not have enough money for this request. %1%2 required.</Original>
                 <Russian>У вас недостаточно денег чтобы сделать этот запрос. Требуется %1%2.</Russian>
                 <Chinesesimp>您没有足够的钱来提出这个请求。 需要 %1%2。</Chinesesimp>
                 <Korean>해당 요청에 필요한 자금이 부족합니다. %1%2가 필요합니다.</Korean>
+                <French>Vous n'avez pas assez d'argent pour cette demande. %1%2 requis.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addFIASquadHC_error_not_enough_money_barefoot">
                 <Original>No money left to buy a transport vehicle (%1%2 required), creating barefoot squad.</Original>
                 <Russian>Недостаточно денег чтобы купить транспортное средство для отряда (требуется %1%2). Отряд будет пешим.</Russian>
                 <Chinesesimp>没有足够的钱为小队购买载具（需要 %1%2）。 分队将步行。</Chinesesimp>
                 <Korean>수송 차량을 살 자금이 부족하기 때문에(%1%2 필요), 보병분대를 생성합니다.</Korean>
+                <French>Il ne reste plus d'argent pour acheter un véhicule de transport (%1%2 requis), ce qui crée une escouade de va-nu-pieds.</French>
             </Key>
         </Container>
         <Container name="A3A_punishment">
@@ -11619,6 +11788,7 @@
                 <Russian>&lt;br/&gt;&lt;t size='0.6'&gt;Блокпосты доступны для постройки, также появляется возможность нанимать отряды и группы пулеметчиков.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;t size='0.6'&gt;路障可建造，机枪班和小队可招募。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;t size='0.6'&gt;이제 검문소를 지을 수 있고, 기관총 분대와 팀을 모집할 수 있습니다.&lt;/t&gt;</Korean>
+                <French>&lt;br/&gt;&lt;t size='0.6'&gt;Les barrages routiers sont disponibles pour la construction, les escouades et les équipes de MG sont disponibles pour le recrutement.&lt;/t&gt ;</French>
             </Key>
             <Key ID="STR_A3A_Base_commsMp_unlock_tier4_theBoss">
                 <Original>&lt;br/&gt;&lt;t size='0.6'&gt;AA, AT Emplacements are available for building, AA/AT squads and teams are available for recruitment.&lt;/t&gt;</Original>
