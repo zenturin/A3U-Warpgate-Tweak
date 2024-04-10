@@ -5492,42 +5492,49 @@
                 <Russian>Командир по умолчанию</Russian>
                 <Chinesesimp>默认指挥官</Chinesesimp>
                 <Korean>기본 지휘관</Korean>
+                <French>Commandant par défaut</French>
             </Key>
             <Key ID="STR_role_unit_traits">
                 <Original>Role</Original>
                 <Russian>Роль</Russian>
                 <Chinesesimp>角色</Chinesesimp>
                 <Korean>역할</Korean>
+                <French>Rôle</French>
             </Key>
             <Key ID="STR_role_default_commander">
                 <Original>You have selected a Commander role.&lt;br/&gt;&lt;br/&gt;The commander is a unit with increased camouflage, medical, UAV hacking and engineering capabilities with the access to exclusive Commander Menu (TAB key by default).</Original>
                 <Russian>Вы выбрали роль командира.&lt;br/&gt;&lt;br/&gt;Командир — это боевая единица с усиленной маскировкой с усиленными медицинскими и инженерными возможностями, а также умением взламывать БПЛА, с доступом к эксклюзивному меню командира (клавиша TAB по умолчанию).</Russian>
                 <Chinesesimp>您选择了指挥官角色。&lt;br/&gt;&lt;br/&gt;指挥官是一个具有增强伪装、医疗、无人机黑客和工程能力的单位，可以访问专属指挥官菜单（默认为 TAB 键）。</Chinesesimp>
                 <Korean>당신은 지휘관 역할을 선택했습니다.&lt;br/&gt;&lt;br/&gt;지휘관은 위장, 의료, 무인기 해킹, 공병 능력이 향상된 유닛으로 전용 지휘관 메뉴(기본 키는 탭 키)에 접근할 수 있습니다.</Korean>
+                <French>Vous avez sélectionné un rôle de commandant.&lt;br/&gt;&lt;br/&gt;Le commandant est une unité avec des capacités accrues de camouflage, de médecine, de piratage de drones et d'ingénierie avec l'accès au menu exclusif du commandant (touche TAB par défaut).</French>
             </Key>
             <Key ID="STR_role_medic">
                 <Original>You have selected a Medic role.&lt;br/&gt;&lt;br/&gt;Medics do not have any bonus or penalties, but have the ability to use certain medical items for full health restoration.</Original>
                 <Russian>Вы выбрали роль медика.&lt;br/&gt;&lt;br/&gt;Медики не имеют никаких бонусов или штрафов, но могут использовать определенные медицинские предметы для полного восстановления здоровья.</Russian>
                 <Chinesesimp>您选择了一个医生角色。&lt;br/&gt;&lt;br/&gt;医生没有任何加成或惩罚，但可以使用某些医疗物品来完全恢复健康。</Chinesesimp>
                 <Korean>당신은 의무병 역할을 선택했습니다.&lt;br/&gt;&lt;br/&gt;의무병은 보너스나 패널티가 없지만, 완전한 회복을 위해 특정 의료 아이템을 사용할 수 있는 능력이 있습니다.</Korean>
+                <French>Vous avez choisi le rôle de Médecin.&lt;br/&gt;&lt;br/&gt;Les Médecins n'ont pas de bonus ou de pénalités, mais ont la possibilité d'utiliser certains objets médicaux pour restaurer complètement leur santé.</French>
             </Key>
             <Key ID="STR_role_teamleader">
                 <Original>You have selected a Team Leader role.&lt;br/&gt;&lt;br/&gt;Team Leaders are more lightweight units with increased camouflage capabilities who can hire AI units into their squad.</Original>
                 <Russian>Вы выбрали роль лидера отряда.&lt;br/&gt;&lt;br/&gt;Лидеры отряда - это более легкие юниты с улучшенными возможностями маскировки, которые могут нанимать ИИ-юнитов в свой отряд.</Russian>
                 <Chinesesimp>你选择了一个小队长角色。&lt;br/&gt;&lt;br/&gt;队长是更轻量级的单位，具有更强的伪装能力，可以在他们的小队中雇佣 AI 单位。</Chinesesimp>
                 <Korean>당신은 조장 역할을 선택했습니다.&lt;br/&gt;&lt;br/&gt;조장은 위장 능력이 향상된 경보병 유닛으로 인공지능 유닛을 분대에 고용할 수 있습니다.</Korean>
+                <French>Vous avez sélectionné un rôle de chef d'équipe.&lt;br/&gt;&lt;br/&gt;Les chefs d'équipe sont des unités plus légères avec des capacités de camouflage accrues qui peuvent engager des unités IA dans leur escouade.</French>
             </Key>
             <Key ID="STR_role_rifleman">
                 <Original>You have selected a Rifleman role.&lt;br/&gt;&lt;br/&gt;Riflemen have a 25% bonus on carry capacity but are easy to spot and make more noise when they move.</Original>
                 <Russian>Вы выбрали роль стрелка.&lt;br/&gt;&lt;br/&gt;Стрелки имеют 25% бонус к грузоподъемности, но их легче заметить, а также они издают больше шума при движении.</Russian>
                 <Chinesesimp>你选择了步枪兵角色。&lt;br/&gt;&lt;br/&gt;步枪兵的运载能力提升25%，但移动时容易被发现并发出更大的噪音。</Chinesesimp>
                 <Korean>당신은 소총수 역할을 선택했습니다.&lt;br/&gt;&lt;br/&gt;소총수는 운반량에 25%의 보너스가 있지만, 움직일 때 발견되기 더 쉽고 더 많은 소음을 냅니다.</Korean>
+                <French>Vous avez choisi un rôle de Fusilier.&lt;br/&gt;&lt;br/&gt;Les Fusiliers ont un bonus de 25% sur la capacité de transport mais sont faciles à repérer et font plus de bruit lorsqu'ils se déplacent.</French>
             </Key>
             <Key ID="STR_role_engineer">
                 <Original>You have selected a Engineer role.&lt;br/&gt;&lt;br/&gt;Engineers do not have any bonus or penalties, but have the ability to use repair Kits for vehicle repair, also they can hack UAV drones.</Original>
                 <Russian>Вы выбрали роль инженера.&lt;br/&gt;&lt;br/&gt;Инженеры не имеют бонусов и штрафов, но имеют возможность использовать ремкомплекты для более основательного ремонта техники, а также взламывать дроны БПЛА.</Russian>
                 <Chinesesimp>您选择了工程师角色。&lt;br/&gt;&lt;br/&gt;工程师没有任何奖励或惩罚，但可以使用维修工具包进行车辆维修，还可以破解无人机。</Chinesesimp>
                 <Korean>당신은 공병 역할을 선택했습니다.&lt;br/&gt;&lt;br/&gt;공병은 보너스나 패널티가 없지만 차량 수리를 위해 도구모음을 사용할 수 있으며 무인기를 해킹할 수 있습니다.</Korean>
+                <French>Vous avez choisi un rôle d'ingénieur.&lt;br/&gt;&lt;br/&gt;Les ingénieurs n'ont pas de bonus ou de pénalités, mais ils ont la possibilité d'utiliser des kits de réparation pour réparer les véhicules, et ils peuvent également pirater les drones.</French>
             </Key>
         </Container>
         <Container name="misc_reactions">
@@ -5536,18 +5543,21 @@
                 <Russian>Черт, они заметили меня!</Russian>
                 <Chinesesimp>靠，他们发现我了！</Chinesesimp>
                 <Korean>제길, 놈들이 우릴 발견했다!</Korean>
+                <French>Mince, ils m'ont repéré !</French>
             </Key>
             <Key ID="STR_outpost_ai_spotted_2">
                 <Original>Our disguise has broken, get ready for firefight!</Original>
                 <Russian>Наша маскировка нарушена, готовьтесь к перестрелке!</Russian>
                 <Chinesesimp>潜入敌后结束，准备战斗！</Chinesesimp>
                 <Korean>위장이 들통났으니 사격할 준비를 해라!</Korean>
+                <French>Notre déguisement est brisé, préparez-vous à une fusillade !</French>
             </Key>
             <Key ID="STR_outpost_ai_spotted_3">
                 <Original>I have been compromised!</Original>
                 <Russian>Я был скомпрометирован!</Russian>
                 <Chinesesimp>我已经暴露了！</Chinesesimp>
                 <Korean>들통났다!</Korean>
+                <French>J'ai été compromis !</French>
             </Key>
         </Container>
         <Container name="marker_names">
@@ -5556,72 +5566,84 @@
                 <Russian>Аванпост %1</Russian>
                 <Chinesesimp>%1 哨站</Chinesesimp>
                 <Korean>%1 전초 기지</Korean>
+                <French>%1 Avant-poste</French>
             </Key>
             <Key ID="STR_airbase">
                 <Original>%1 Airbase</Original>
                 <Russian>Авиабаза %1</Russian>
                 <Chinesesimp>%1 空军基地</Chinesesimp>
                 <Korean>%1 공군 기지</Korean>
+                <French>Base aérienne %1</French>
             </Key>
             <Key ID="STR_resources">
                 <Original>Resources</Original>
                 <Russian>Ресурсы</Russian>
                 <Chinesesimp>资源</Chinesesimp>
                 <Korean>자원채취소</Korean>
+                <French>Ressources</French>
             </Key>
             <Key ID="STR_factory">
                 <Original>Factory</Original>
                 <Russian>Фабрика</Russian>
                 <Chinesesimp>工厂</Chinesesimp>
                 <Korean>공장</Korean>
+                <French>Usine</French>
             </Key>
             <Key ID="STR_port_river">
                 <Original>River Port</Original>
                 <Russian>Речной порт</Russian>
                 <Chinesesimp>河港</Chinesesimp>
                 <Korean>강항</Korean>
+                <French>Port fluvial</French>
             </Key>
             <Key ID="STR_port_sea">
                 <Original>Sea Port</Original>
                 <Russian>Морской порт</Russian>
                 <Chinesesimp>海港</Chinesesimp>
                 <Korean>항구</Korean>
+                <French>Port maritime</French>
             </Key>
             <Key ID="STR_milbase">
                 <Original>%1 Military Base</Original>
                 <Russian>Военная база %1</Russian>
                 <Chinesesimp>%1 军事基地</Chinesesimp>
                 <Korean>%1 군사 기지</Korean>
+                <French>%1 Base militaire</French>
             </Key>
             <Key ID="STR_radiotower">
                 <Original>Radio Tower</Original>
                 <Russian>Радиовышка</Russian>
                 <Chinesesimp>无线电塔</Chinesesimp>
                 <Korean>통신탑</Korean>
+                <French>Tour radio</French>
             </Key>
             <Key ID="STR_supportcorridor">
                 <Original>%1 Support Corridor</Original>
                 <Russian>Коридор поддержки %1</Russian>
                 <Chinesesimp>%1 支援通道</Chinesesimp>
                 <Korean>%1 지원 방향</Korean>
+                <French>Couloir de soutien %1</French>
             </Key>
             <Key ID="STR_fuelstation">
                 <Original>Fuel Station</Original>
                 <Russian>Заправка</Russian>
                 <Chinesesimp>加油站</Chinesesimp>
                 <Korean>주유소</Korean>
+                <French>Ravitaillement en carburant</French>
             </Key>
             <Key ID="STR_milAdministration">
                 <Original>Military Administration</Original>
                 <Russian>Военная администрация</Russian>
                 <Chinesesimp>军事管理机构</Chinesesimp>
                 <Korean>군 행정부</Korean>
+                <French>Administration militaire</French>
             </Key>
             <Key ID="STR_headquarters">
                 <Original>Your Headquarters</Original>
                 <English>Your Headquarters</English>
                 <Russian>Штаб</Russian>
                 <Korean>당신의 본부</Korean>
+                <French>Votre QG</French>
             </Key>
         </Container>
         <Container name="system_chats">
@@ -5630,12 +5652,14 @@
                 <Russian>Погрузка груза</Russian>
                 <Chinesesimp>装货</Chinesesimp>
                 <Korean>화물 적재 중</Korean>
+                <French>Chargement de la cargaison</French>
             </Key>
             <Key ID="STR_antistasi_schat_disconnect_ff">
                 <Original>FF: %1 disconnected/died while being punished.</Original>
                 <Russian>FF: %1 умер или отключился во время наказания.</Russian>
                 <Chinesesimp>%1 在被惩罚时掉线/死亡。</Chinesesimp>
                 <Korean>팀킬: %1이(가) 처벌을 받는 동안 연결을 끊거나 사망했습니다.</Korean>
+                <French>FF : %1 s'est déconnecté/est mort pendant qu'il était puni.</French>
             </Key>
         </Container>
         <Container name="undercover">
@@ -5644,122 +5668,143 @@
                 <Russian>Маскировка: &lt;t color='#43A047'&gt;Вкл&lt;/t&gt;</Russian>
                 <Chinesesimp>伪装：&lt;t color='#43A047'&gt;On&lt;/t&gt;</Chinesesimp>
                 <Korean>위장: &lt;t color='#43A047'&gt;켜짐&lt;/t&gt;</Korean>
+                <French>Sous couverture: &lt;t color='#43A047'&gt;On&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_undercover_off">
                 <Original>Undercover: Off</Original>
                 <Russian>Маскировка: Выкл</Russian>
                 <Chinesesimp>伪装：关闭</Chinesesimp>
                 <Korean>위장: 꺼짐</Korean>
+                <French>Sous couverture: Off</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_title">
                 <Original>Undercover</Original>
                 <Russian>Маскировка</Russian>
                 <Chinesesimp>伪装</Chinesesimp>
                 <Korean>위장</Korean>
+                <French>Sous couverture</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_unknown">
                 <Original>Undercover has been compromised by unknown reason.</Original>
                 <Russian>Ваша маскировка была скомпрометирована по неизвестным причинам.</Russian>
                 <Chinesesimp>伪装因不明原因暴露</Chinesesimp>
                 <Korean>알 수 없는 이유로 위장이 탄로났습니다.</Korean>
+                <French>La couverture a été compromise pour une raison inconnue.</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_garrison_recognition">
                 <Original>Garrison has recognised you!</Original>
                 <Russian>Гарнизон узнал вас!</Russian>
                 <Chinesesimp>驻兵认出了你！</Chinesesimp>
                 <Korean>주둔군이 당신을 알아봤습니다!</Korean>
+                <French>La garnison vous a reconnu !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_airspace_violation">
                 <Original>You have violated the airspace of %1!</Original>
                 <Russian>Вы нарушили воздушное пространство %1!</Russian>
                 <Chinesesimp>你侵入了%1的领空！</Chinesesimp>
                 <Korean>당신은 %1의 영공을 침범했습니다!</Korean>
+                <French>Vous avez enfreint l'espace aérien de %1 !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_too_close">
                 <Original>You have gotten too close to an enemy base, outpost or roadblock!</Original>
                 <Russian>Вы подошли слишком близко к вражеской базе, аванпосту или блокпосту!</Russian>
                 <Chinesesimp>你离敌方基地、前哨站或路障太近了！</Chinesesimp>
                 <Korean>적 기지, 전초 기지, 검문소에 너무 가까이 접근했습니다!</Korean>
+                <French>Vous vous êtes approché trop près d'une base, d'un avant-poste ou d'un barrage ennemi !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_left_wanted">
                 <Original>You left your vehicle and you are still on the Wanted List!</Original>
                 <Russian>Вы вышли из техники, и вы все еще в розыске!</Russian>
                 <Chinesesimp>你离开了你的车，你仍然在通缉名单上！</Chinesesimp>
                 <Korean>차량에 내렸지만 여전히 수배 중입니다!</Korean>
+                <French>Vous avez laissé votre véhicule et vous êtes toujours sur la liste des personnes recherchées !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_spotted_by_enemy">
                 <Original>You have been reported or spotted by the enemy!</Original>
                 <Russian>О вас доложили или вас заметили враги!</Russian>
                 <Chinesesimp>你被敌人报告或发现了！</Chinesesimp>
                 <Korean>적에게 보고되거나 발견되었습니다!</Korean>
+                <French>Vous avez été signalé ou repéré par l'ennemi !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_non_civilian_veh">
                 <Original>You have entered a non civilian vehicle!</Original>
                 <Russian>Вы сели в негражданское транспортное средство!</Russian>
                 <Chinesesimp>你进入了非民用车辆！</Chinesesimp>
                 <Korean>민수용이 아닌 차량에 탑승했습니다!</Korean>
+                <French>Vous êtes entré dans un véhicule non civil !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_compromised">
                 <Original>You have entered a compromised vehicle!</Original>
                 <Russian>Вы сели в скомпрометированное транспортное средство!</Russian>
                 <Chinesesimp>你进入了一辆受损车辆！</Chinesesimp>
                 <Korean>위장이 들통난 차량에 탑승했습니다!</Korean>
+                <French>Vous avez pénétré dans un véhicule compromis !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_explosives">
                 <Original>Enemy has spotted explosives on your vehicle!</Original>
                 <Russian>Враг заметил взрывчатку на вашем транспортном средстве!</Russian>
                 <Chinesesimp>敌人在你的车上发现了炸药！</Chinesesimp>
                 <Korean>적이 차량에서 폭발물을 발견했습니다!</Korean>
+                <French>L'ennemi a repéré des explosifs sur votre véhicule !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_towing_suspicious">
                 <Original>You're towing military or previously reported vehicle!</Original>
                 <Russian>Вы буксируете военное транспортное средство или разыскиваемое гражданское транспортное средство!</Russian>
                 <Chinesesimp>拖的是一辆军用车辆或一辆通缉的民用车辆！</Chinesesimp>
                 <Korean>군용 차량 또는 이전에 보고된 차량을 견인 중입니다!</Korean>
+                <French>Vous remorquez un véhicule militaire ou un véhicule déjà signalé !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_far_away_roads">
                 <Original>You have went too far away from any roads!</Original>
                 <Russian>Вы слишком отъехали или ушли от любых дорог!</Russian>
                 <Chinesesimp>你离得太远或偏离任何道路！</Chinesesimp>
                 <Korean>당신은 도로로부터 너무 멀리 떨어져 있습니다!</Korean>
+                <French>Vous vous êtes trop éloigné de toute route !</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_items_1">
                 <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform!</Original>
                 <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме!</Russian>
                 <Korean>다음과 같은 경우에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음!</Korean>
+                <French>Vous ne pouvez pas rester sous couverture si:<br/><br/>Une arme est visible<br/>Vous portez un gilet<br/>Vous portez un casque<br/>Vous portez des JVN&lt;br/&gt;Vous portez un uniforme militaire!</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_items_2">
                 <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform&lt;br/&gt;Enemy have added you to Wanted list!</Original>
                 <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
                 <Korean>다음과 같은 경우에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음!&lt;br/&gt;적이 당신을 수배 목록에 추가했습니다!</Korean>
+                <French>Vous ne pouvez pas rester sous couverture si:<br/><br/>Une arme est visible<br/>Vous portez un gilet<br/>Vous portez un casque<br/>Vous portez des JVN&lt;br/&gt;Vous portez un uniforme militaire&lt;br/&gt;L'ennemi vous a ajouté à la liste des personnes recherchées!</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_carry">
                 <Original>You're looking very suspicious while carrying military-grade items, and the enemy has noticed it.</Original>
                 <Russian>Вы выглядите очень подозрительно, когда носите предметы военного назначения, и враг это заметил.</Russian>
                 <Chinesesimp>你在携带军事级别的物品时显得非常可疑，被敌人发现了。</Chinesesimp>
                 <Korean>당신은 군용 아이템을 들고 있는 동안 매우 수상해보였고, 적이 그걸 알아차렸습니다.</Korean>
+                <French>Vous avez l'air très suspect lorsque vous transportez des objets de qualité militaire, et l'ennemi l'a remarqué.</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_bad_medic_1">
                 <Original>You can't stay in undercover state while healing a compromised resistance member!</Original>
                 <Russian>Вы не можете оставаться под прикрытием во время лечения скомпрометированного члена сопротивления!</Russian>
                 <Chinesesimp>你不能一边伪装一边治疗一个受伤的反抗军成员！</Chinesesimp>
                 <Korean>당신은 위험에 처한 저항군을 치료하는 동안 위장 상태에 있을 수 없습니다!</Korean>
+                <French>Vous ne pouvez pas rester en état d'infiltration tout en soignant un membre de la résistance compromis!</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_bad_medic_2">
                 <Original>You can't stay Undercover while healing a compromised resistance member&lt;br/&gt;The enemy added you to Wanted List!</Original>
                 <Russian>Вы не можете оставаться под прикрытием во время лечения скомпрометированного члена сопротивления!&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
                 <Chinesesimp>你不能一边伪装一边治疗一个受伤的反抗军成员！&lt;br/&gt;敌人已将你加入通缉名单！</Chinesesimp>
                 <Korean>당신은 위험에 처한 저항군을 치료하는 동안 위장 상태에 있을 수 없습니다&lt;br/&gt;적군이 당신을 수배자 목록에 추가했습니다!</Korean>
+                <French>Vous ne pouvez pas rester sous couverture tout en soignant un membre de la résistance compromis&lt;br/&gt;L'ennemi vous a ajouté à la liste des personnes recherchées!</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_vtow_ropes">
                 <Original>You can't be undercover while tow ropes are attached to your vehicle!</Original>
                 <Russian>Вы не можете оставаться под прикрытием пока к вашей технике прикреплен буксировочный трос!</Russian>
                 <Korean>견인 로프를 차량에 부착한 상태로 위장 상태에 있을 수 없습니다!</Korean>
+                <French>Vous ne pouvez pas être sous couverture lorsque des câbles de remorquage sont attachés à votre véhicule!</French>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_tow_ropes">
                 <Original>You can't be undercover and use tow ropes!</Original>
                 <Russian>Вы не можете оставаться под прикрытием пока у вас в руках буксировочный трос!</Russian>
                 <Korean>위장 상태에서 견인 로프를 사용할 수 없습니다!</Korean>
+                <French>On ne peut pas être sous couverture et utiliser des câbles de remorquage!</French>
             </Key>
         </Container>
         <Container name="info_bar">
@@ -5768,120 +5813,140 @@
                 <Russian>&lt;t color='#43A047'&gt;Вкл&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#43A047'&gt;开启&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#43A047'&gt;켜짐&lt;/t&gt;</Korean>
+                <French>&lt;t color='#43A047'&gt;On&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_on2">
                 <Original>On</Original>
                 <Russian>Вкл</Russian>
                 <Chinesesimp>开启</Chinesesimp>
                 <Korean>켜짐</Korean>
+                <French>On</French>
             </Key>
             <Key ID="STR_info_bar_off">
                 <Original>Off</Original>
                 <Russian>Выкл</Russian>
                 <Chinesesimp>关闭</Chinesesimp>
                 <Korean>꺼짐</Korean>
+                <French>Off</French>
             </Key>
             <Key ID="STR_info_bar_absent">
                 <Original>Absent</Original>
                 <Russian>Нет</Russian>
                 <Chinesesimp>不存在</Chinesesimp>
                 <Korean>부재 중</Korean>
+                <French>Absent</French>
             </Key>
             <Key ID="STR_info_bar_deployed">
                 <Original>&lt;t color='#43A047'&gt;Deployed&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#43A047'&gt;Развер-та&lt;/t&gt;</Russian>
                 <Chinesesimp>已部署</Chinesesimp>
                 <Korean>&lt;t color='#43A047'&gt;배치됨&lt;/t&gt;</Korean>
+                <French>&lt;t color='#43A047'&gt;Déployé&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_rivals_activity">
                 <Original> %1 Act.: %2 |</Original>
                 <Russian> Акт. %1: %2 |</Russian>
                 <Chinesesimp> %1 活动水平: %2 |</Chinesesimp>
                 <Korean> %1 활동: %2 |</Korean>
+                <French> %1 Acte: %2 |</French>
             </Key>
             <Key ID="STR_info_bar_aggr">
                 <Original>| %1 Aggr: %2 | </Original>
                 <Russian>| Агр. %1: %2 | </Russian>
                 <Chinesesimp>| %1 侵略性: %2 | </Chinesesimp>
                 <Korean>| %1 어그로: %2 | </Korean>
+                <French>| %1 Aggr : %2</French>
             </Key>
             <Key ID="STR_info_bar_aggr_double">
                 <Original>| %1 Aggr: %2 | %3 Aggr: %4 |</Original>
                 <Russian>| Агр. %1: %2 | Агр. %3: %4 |</Russian>
                 <Chinesesimp>| %1 侵略性: %2 | %3 侵略性: %4 |</Chinesesimp>
                 <Korean>| %1 어그로: %2 | %3 어그로: %4 |</Korean>
+                <French>| %1 Aggr: %2 | %3 Aggr: %4 |</French>
             </Key>
             <Key ID="STR_info_bar_final_string_1">
                 <Original>Commander: %3 | %2 | HR: %1 | Money: %4 %9 %5 War Level: %6 | Undercover: %7 | Rally Point: %8&lt;/t&gt;</Original>
                 <Russian>Командир: %3 | %2 | HR: %1 | Деньги: %4 %9 %5 Уровень войны: %6 | Маскировка: %7 | Точка сбора: %8&lt;/t&gt;</Russian>
                 <Chinesesimp>指挥官: %3 | %2 | 人力: %1 | 钱: %4 %9 %5 战争等级: %6 | 伪装: %7 | 集结点: %8&lt;/t&gt;</Chinesesimp>
                 <Korean>지휘관: %3 | %2 | 인력: %1 | 자금: %4 %9 %5 전쟁 레벨: %6 | 위장: %7 | 집결 지점: %8&lt;/t&gt;</Korean>
+                <French>Commandant: %3 | %2 | HR: %1 | Argent: %4 %9 %5 Niveau de guerre: %6 | Sous couverture: %7 | Point de ralliement: %8</French>
             </Key>
             <Key ID="STR_info_bar_final_string_2">
                 <Original>%1 | HR: %2 | %3 Money: %4 %10 | Money: %5 %10 %6 War Level: %7 | Undercover: %8 | Rally Point: %9&lt;/t&gt;</Original>
                 <Russian>%1 | HR: %2 | Деньги %3: %4 %10 | Деньги: %5 %10 %6 Уровень войны: %7 | Маскировка: %8 | Точка сбора: %9&lt;/t&gt;</Russian>
                 <Chinesesimp>%1 | 人力: %2 | %3 钱: %4 %10 | 钱: %5 %10 %6 战争等级: %7 | 伪装: %8 | 集结点: %9&lt;/t&gt;</Chinesesimp>
                 <Korean>%1 | 인력: %2 | %3 자금: %4 %10 | 자금: %5 %10 %6 전쟁 레벨: %7 | 위장: %8 | 집결 지점: %9&lt;/t&gt;</Korean>
+                <French>%1 | HR: %2 | %3 Money: %4 %10 | Argent: %5 %10 %6 Niveau de guerre: %7 | Sous couverture: %8 | Point de ralliement: %9&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_rivals_activity_1">
                 <Original>&lt;t color='#AE1330'&gt;Omnipresent&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#AE1330'&gt;Вездесущая&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#AE1330'&gt;无处不在&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#AE1330'&gt;지속 활동&lt;/t&gt;</Korean>
+                <French>&lt;t color='#AE1330'&gt;Omniprésent&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_rivals_activity_2">
                 <Original>&lt;t color='#CB5C30'&gt;Intrusive&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#CB5C30'&gt;Назойливая&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#CB5C30'&gt;烦人&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#CB5C30'&gt;방해 수준&lt;/t&gt;</Korean>
+                <French>&lt;t color='#CB5C30'&gt;Intrusif&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_rivals_activity_3">
                 <Original>&lt;t color='#E8A430'&gt;Conspicuous&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#E8A430'&gt;Заметная&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#E8A430'&gt;显而易见&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#E8A430'&gt;눈에 띔&lt;/t&gt;</Korean>
+                <French>&lt;t color='#E8A430'&gt;Remarquable&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_rivals_activity_4">
                 <Original>&lt;t color='#D5B276'&gt;Moderate&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#D5B276'&gt;Умеренная&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#D5B276'&gt;一般&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#D5B276'&gt;적당함&lt;/t&gt;</Korean>
+                <French>&lt;t color='#E8A430'&gt;Modéré&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_rivals_activity_5">
                 <Original>Insignificant</Original>
                 <Russian>Незначительная</Russian>
                 <Chinesesimp>微不足道</Chinesesimp>
                 <Korean>미미한 활동</Korean>
+                <French>Insignificant</French>
             </Key>
             <Key ID="STR_info_bar_aggr_5">
                 <Original>&lt;t color='#AE1330'&gt;Extreme&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#AE1330'&gt;Экстремальная&lt;/t&gt;</Russian>
                 <Chinesesimp>草木皆兵</Chinesesimp>
                 <Korean>&lt;t color='#AE1330'&gt;최대&lt;/t&gt;</Korean>
+                <French>&lt;t color='#AE1330'&gt;Extrême&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_aggr_4">
                 <Original>&lt;t color='#CB5C30'&gt;Very High&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#CB5C30'&gt;Очень высокая&lt;/t&gt;</Russian>
                 <Chinesesimp>全面警戒</Chinesesimp>
                 <Korean>&lt;t color='#CB5C30'&gt;매우 높음&lt;/t&gt;</Korean>
+                <French>&lt;t color='#CB5C30'&gt;Très élevé&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_aggr_3">
                 <Original>&lt;t color='#E8A430'&gt;High&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#E8A430'&gt;Высокая&lt;/t&gt;</Russian>
                 <Chinesesimp>高度警戒</Chinesesimp>
                 <Korean>&lt;t color='#E8A430'&gt;높음&lt;/t&gt;</Korean>
+                <French>&lt;t color='#E8A430'&gt;Élevé&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_aggr_2">
                 <Original>&lt;t color='#D5B276'&gt;Medium&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#D5B276'&gt;Средняя&lt;/t&gt;</Russian>
                 <Chinesesimp>警戒</Chinesesimp>
                 <Korean>&lt;t color='#D5B276'&gt;중간&lt;/t&gt;</Korean>
+                <French>&lt;t color='#D5B276'&gt;Moyen&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_aggr_1">
                 <Original>Low</Original>
                 <Russian>Низкая</Russian>
                 <Chinesesimp>松懈</Chinesesimp>
                 <Korean>낮음</Korean>
+                <French>Faible</French>
             </Key>
         </Container>
         <Container name="ranks">
@@ -5890,42 +5955,49 @@
                 <Russian>Рядовой</Russian>
                 <Chinesesimp>列兵</Chinesesimp>
                 <Korean>이등병</Korean>
+                <French>Soldat</French>
             </Key>
             <Key ID="CORPORAL">
                 <Original>Corporal</Original>
                 <Russian>Ефрейтор</Russian>
                 <Chinesesimp>下士</Chinesesimp>
                 <Korean>상병</Korean>
+                <French>Caporal</French>
             </Key>
             <Key ID="SERGEANT">
                 <Original>Sergeant</Original>
                 <Russian>Сержант</Russian>
                 <Chinesesimp>中士</Chinesesimp>
                 <Korean>하사</Korean>
+                <French>Sergent</French>
             </Key>
             <Key ID="LIEUTENANT">
                 <Original>Lieutenant</Original>
                 <Russian>Лейтенант</Russian>
                 <Chinesesimp>中尉</Chinesesimp>
                 <Korean>중위</Korean>
+                <French>Lieutenant</French>
             </Key>
             <Key ID="CAPTAIN">
                 <Original>Captain</Original>
                 <Russian>Капитан</Russian>
                 <Chinesesimp>上尉</Chinesesimp>
                 <Korean>대위</Korean>
+                <French>Capitaine</French>
             </Key>
             <Key ID="MAJOR">
                 <Original>Major</Original>
                 <Russian>Майор</Russian>
                 <Chinesesimp>少校</Chinesesimp>
                 <Korean>소령</Korean>
+                <French>Major</French>
             </Key>
             <Key ID="COLONEL">
                 <Original>Colonel</Original>
                 <Russian>Полковник</Russian>
                 <Chinesesimp>上校</Chinesesimp>
                 <Korean>중령</Korean>
+                <French>Colonel</French>
             </Key>
         </Container>
         <Container name="dialogs">
@@ -5934,72 +6006,84 @@
                 <Russian>Купить транспортное средство для этого отряда за %1%2.</Russian>
                 <Chinesesimp>以 %1%2 的价格为该小队购买车辆。</Chinesesimp>
                 <Korean>이 분대에 %1%2 가격의 차량을 구입하십시오.</Korean>
+                <French>Acheter un véhicule pour cette escouade pour %1%2.</French>
             </Key>
             <Key ID="STR_dialog_fia_squad_hc_barefoot">
                 <Original>Barefoot Infantry</Original>
                 <Russian>Пехота без техники</Russian>
                 <Chinesesimp>没有车辆的步兵</Chinesesimp>
                 <Korean>보병</Korean>
+                <French>Infanterie sans équipement</French>
             </Key>
             <Key ID="STR_dialog_cost_hire">
                 <Original>Cost: %1%3. HR: %2.</Original>
                 <Russian>Стоимость: %1%3. HR: %2.</Russian>
                 <Chinesesimp>成本：%1%3 人力资源部：%2</Chinesesimp>
                 <Korean>가격: %1%3. 인력: %2.</Korean>
+                <French>Coût: %1%3. RH : %2.</French>
             </Key>
             <Key ID="STR_dialog_cost_hire_no_HR">
                 <Original>Cost: %1%2.</Original>
                 <Russian>Стоимость: %1%2.</Russian>
                 <Chinesesimp>成本: %1%2</Chinesesimp>
                 <Korean>가격: %1%2.</Korean>
+                <French>Coût: %1%2.</French>
             </Key>
             <Key ID="STR_dialogs_RP_header">
                 <Original>Rally Point</Original>
                 <Russian>Точка сбора</Russian>
                 <Chinesesimp>集结点</Chinesesimp>
                 <Korean>집결 지점</Korean>
+                <French>Point de ralliement</French>
             </Key>
             <Key ID="STR_dialogs_RP_abolish_fail">
                 <Original>Rally point can be abolished only on HQ or near the Rally Point itself.</Original>
                 <Russian>Точка сбора может быть упразднена только рядом с штабом или самим пунктом сбора.</Russian>
                 <Chinesesimp>集结点只能在总部或集结点本身附近取消。</Chinesesimp>
                 <Korean>집결 지점은 본부 또는 집결 지점 자체 근처에서만 제거 가능합니다.</Korean>
+                <French>Le point de ralliement ne peut être supprimé que sur le QG ou à proximité du point de ralliement lui-même.</French>
             </Key>
             <Key ID="STR_dialogs_RP_enemies_near_fail">
                 <Original>You can't establish rally point when enemies are surrounding you.</Original>
                 <Russian>Не получится установить точку сбору пока рядом с вами враги.</Russian>
                 <Chinesesimp>当你附近有敌人时，你将无法设置集结点。</Chinesesimp>
                 <Korean>적들이 당신을 포위하고 있을 때는 집결 지점을 만들 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas établir un point de ralliement lorsque des ennemis vous encerclent.</French>
             </Key>
             <Key ID="STR_dialogs_RP_enemies_near_placement_fail">
                 <Original>The surrounding area is occupied by enemy, find different place.</Original>
                 <Russian>Окрестности полны врагов, найдите другое место.</Russian>
                 <Chinesesimp>这片区域到处都是敌人，换个地方吧。</Chinesesimp>
                 <Korean>주변 지역이 적에게 점령당했으니 다른 곳을 찾으십시오.</Korean>
+                <French>La zone environnante est occupée par l'ennemi, trouvez un autre endroit.</French>
             </Key>
             <Key ID="STR_dialogs_RP_comm_only_fail">
                 <Original>Rally point can be established by commander only.</Original>
                 <Russian>Только командир может ставить точку сбора.</Russian>
                 <Chinesesimp>只有指挥官可以设置集结点。</Chinesesimp>
                 <Korean>집결 지점은 지휘관만 설정할 수 있습니다.</Korean>
+                <French>Le point de ralliement ne peut être établi que par le commandant.</French>
             </Key>
             <Key ID="STR_dialogs_RP_no_money_fail">
                 <Original>Not enough money to place rally point, need %1 to proceed.</Original>
                 <Russian>Не хватает денег чтобы разместить точку сбора, нужно %1.</Russian>
                 <Chinesesimp>没有足够的钱来设置集结点，您需要 %1。</Chinesesimp>
                 <Korean>자금이 부족하여 집결 지점을 배치할 수 없습니다. 배치하려면 %1이(가) 필요합니다.</Korean>
+                <French>Pas assez d'argent pour placer le point de ralliement, besoin de %1 pour continuer.</French>
             </Key>
             <Key ID="STR_dialogs_RP_success">
                 <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;Rally point&lt;/t&gt; has been successfully established.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;Точка сбора&lt;/t&gt; была успешно установлена.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;集结点&lt;/t&gt; 已成功建立。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;집결 지점&lt;/t&gt;이 성공적으로 배치되었습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;Le point de ralliement&lt;/t&gt; a été établi avec succès.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_dialogs_RP_abolish_success">
                 <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;Rally point&lt;/t&gt; has been successfully abolished.&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;Точка сбора&lt;/t&gt; была успешно упразднена.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;集结点&lt;/t&gt; 已成功取消。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;집결 지점&lt;/t&gt;이 성공적으로 제거되었습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#008000'&gt;Le point de ralliement&lt;/t&gt; a été aboli avec succès.&lt;/t&gt;</French>
             </Key>
         </Container>
         <Container name="construction_removal">
@@ -6008,24 +6092,28 @@
                 <Russian>Удаление постройки</Russian>
                 <Chinesesimp>拆除建筑物</Chinesesimp>
                 <Korean>건축물 제거</Korean>
+                <French>Suppression de la construction</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_construction_removal_no_trait">
                 <Original>Only engineers and commander can remove constructions.</Original>
                 <Russian>Удалять постройки могут только инженеры и командир.</Russian>
                 <Chinesesimp>只有工程师和指挥官才能拆除建筑。</Chinesesimp>
                 <Korean>공병과 지휘관만이 건축물을 제거할 수 있습니다.</Korean>
+                <French>Seuls les ingénieurs et les commandants peuvent supprimer des constructions.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_construction_removal_no_valid_construction">
                 <Original>You're not looking at removable construction.</Original>
                 <Russian>Вы смотрите на невалидный объект для удаления.</Russian>
                 <Chinesesimp>你看的不是可拆卸建筑。</Chinesesimp>
                 <Korean>제거 가능한 구조를 보고 있지 않습니다.</Korean>
+                <French>Il ne s'agit pas d'une construction amovible.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_construction_removal_success">
                 <Original>Construction has been successfully removed.</Original>
                 <Russian>Постройка успешно удалена.</Russian>
                 <Chinesesimp>建筑物被成功拆除。</Chinesesimp>
                 <Korean>건축물이 성공적으로 제거되었습니다.</Korean>
+                <French>La construction a été supprimée avec succès.</French>
             </Key>
         </Container>
         <Container name="rebel_classes">
@@ -6034,70 +6122,82 @@
                 <Russian>Стрелок</Russian>
                 <Chinesesimp>步枪兵</Chinesesimp>
                 <Korean>소총수</Korean>
+                <French>Fusilier</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_autorifleman_title">
                 <Original>Autorifleman</Original>
                 <Russian>Пулеметчик</Russian>
                 <Chinesesimp>自动步枪兵</Chinesesimp>
                 <Korean>자동소총수</Korean>
+                <French>Mitrailleur</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_medic_title">
                 <Original>Medic</Original>
                 <Russian>Медик</Russian>
                 <Chinesesimp>医疗兵</Chinesesimp>
                 <Korean>의무병</Korean>
+                <French>Médecin</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_engineer_title">
                 <Original>Engineer</Original>
                 <Russian>Инженер</Russian>
                 <Chinesesimp>工程师</Chinesesimp>
                 <Korean>공병</Korean>
+                <French>Ingénieur</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_grenadier_title">
                 <Original>Grenadier</Original>
                 <Russian>Гренадёр</Russian>
                 <Chinesesimp>掷弹兵</Chinesesimp>
                 <Korean>유탄수</Korean>
+                <French>Grenadier</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_marksman_title">
                 <Original>Marksman</Original>
                 <Russian>Снайпер</Russian>
                 <Chinesesimp>狙击手</Chinesesimp>
                 <Korean>지정사수</Korean>
+                <French>Tireur d'élite</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_lat_title">
                 <Original>Light AT</Original>
                 <Russian>Лёгкий гранатомётчик</Russian>
                 <Chinesesimp>AT兵</Chinesesimp>
                 <Korean>대전차병</Korean>
+                <French>AT léger</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_crewman_title">
                 <Original>Crewman</Original>
                 <Russian>Член экипажа</Russian>
                 <Chinesesimp>机组成员</Chinesesimp>
                 <Korean>승무원</Korean>
+                <French>Homme d'équipage</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_squad_leader_title">
                 <Original>Squad Leader</Original>
                 <Russian>Лидер отряда</Russian>
                 <Chinesesimp>班长</Chinesesimp>
                 <Korean>분대장</Korean>
+                <French>Chef d'escouade</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_sapper_title">
                 <Original>Sapper</Original>
                 <Russian>Сапёр</Russian>
                 <Chinesesimp>炸弹专家</Chinesesimp>
                 <Korean>폭파전문가</Korean>
+                <French>Sapeur</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_at_title">
                 <Original>AT Specialist</Original>
                 <Russian>ПТ-специалист</Russian>
                 <Korean>대전차전문가</Korean>
+                <French>AT Spécialiste</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_aa_title">
                 <Original>AA Specialist</Original>
                 <Russian>Оператор ПЗРК</Russian>
                 <Korean>대공전문가</Korean>
+                <French>AA Spécialiste</French>
             </Key>
         </Container>
         <Container name="simple_menu_dialogs">
