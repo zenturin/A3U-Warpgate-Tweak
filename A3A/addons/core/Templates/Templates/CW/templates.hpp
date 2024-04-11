@@ -123,3 +123,21 @@
         name = "Rebel Alliance";
         file = "WM_Reb_RA";
     };
+	
+    class WM_RCU : WEMP_Base
+    {
+        side = "Reb";
+        flagTexture = "\LS_statics_props\flags\data\flag_republic.paa";
+        name = "Rex's Clone Uprising";
+        file = "WM_Reb_RCU";
+		description = "Captain Rex and other disgruntled Clones attempt to start an Uprising against the Empire";
+    };
+	
+    class WM_RIV_GP : WEMP_Base
+    {
+        side = "Riv";
+		flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_partisans.paa);
+        name = "Gerrera's Partisans";
+        file = "WM_Riv_GP";
+        description = "Saw Gerrera's Partisans are an extremely militant, anti-imperial group, willing to use any and all tactics against their enemies.";
+    };
