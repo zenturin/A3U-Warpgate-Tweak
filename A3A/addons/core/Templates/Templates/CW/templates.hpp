@@ -116,14 +116,6 @@
         file = "WM_AI_EMP";
     };
 	
-    class WM_REB : WEMP_Base
-    {
-        side = "Reb";
-        flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_rebellion.paa);
-        name = "Rebel Alliance";
-        file = "WM_Reb_RA";
-    };
-	
     class WM_RCU : WEMP_Base
     {
         side = "Reb";
@@ -131,6 +123,14 @@
         name = "Rex's Clone Uprising";
         file = "WM_Reb_RCU";
 		description = "Captain Rex and other disgruntled Clones attempt to start an Uprising against the Empire";
+    };
+	
+    class WM_REB : WEMP_Base
+    {
+        side = "Reb";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_rebellion.paa);
+        name = "Rebel Alliance";
+        file = "WM_Reb_RA";
     };
 	
     class WM_RIV_GP : WEMP_Base
