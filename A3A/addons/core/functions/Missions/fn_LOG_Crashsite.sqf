@@ -850,12 +850,11 @@ sleep 20;
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
     if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50} || {_box distance (getMarkerPos traderMarker) < 50}) then {
-
-    deleteVehicle _box;
+    	deleteVehicle _box;
     };
 } else {
     if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50}) then {
-    deleteVehicle _box;
+    	deleteVehicle _box;
     };
 };
 
