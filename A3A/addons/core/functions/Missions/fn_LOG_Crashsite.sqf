@@ -849,7 +849,8 @@ sleep 20;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
-    if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50} || _box distance (getMarkerPos traderMarker) < 50) then {
+    if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50} || {_box distance (getMarkerPos traderMarker) < 50}) then {
+
     deleteVehicle _box;
     };
 } else {
