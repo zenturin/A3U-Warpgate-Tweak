@@ -741,7 +741,7 @@ if (!isNil "traderMarker") then { ///checking if trader is spawned
         ||
 	    _box distance (getMarkerPos respawnTeamPlayer) < 50
         ||
-        _box distance (getMarkerPos traderMarker) < 50
+            _box distance (getMarkerPos traderMarker) < 50
         ||
 	    dateToNumber date > _dateLimitNum
     };
