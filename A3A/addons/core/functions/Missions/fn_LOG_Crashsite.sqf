@@ -806,7 +806,7 @@ switch(true) do {
   		    [(selectRandom [5,7])] call A3U_fnc_revealRandomZones;
 	    };
     };
-    case(_box distance (getMarkerPos traderMarker) < 50 || _box distance (getMarkerPos traderMarker) < 50): {
+    case(_box distance (getMarkerPos traderMarker) < 50): {
         Info("Box has been delivered to arms traider, mission completed.");
         [_taskId, "LOG", "CANCELED"] call A3A_fnc_taskSetState;
         [_taskId2, "LOG", "SUCCEEDED"] call A3A_fnc_taskSetState;
@@ -848,14 +848,6 @@ sleep 20;
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _groups;
 
-if (!isNil "traderMarker") then { ///checking if trader is spawned
-    if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50} || {_box distance (getMarkerPos traderMarker) < 50}) then {
-    	deleteVehicle _box;
-    };
-} else {
-    if (alive _box && {_box distance (getMarkerPos respawnTeamPlayer) > 50}) then {
-    	deleteVehicle _box;
-    };
-};
+deleteVehicle _box;
 
 Info("Helicrash clean up complete.");
