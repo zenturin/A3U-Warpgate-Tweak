@@ -734,27 +734,27 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
     waitUntil {
-	    sleep 1;
-	    !alive _box 
+	sleep 1;
+	!alive _box 
         ||
-	    _box distance _deliverySite < 50 
+	_box distance _deliverySite < 50 
         ||
-	    _box distance (getMarkerPos respawnTeamPlayer) < 50
+	_box distance (getMarkerPos respawnTeamPlayer) < 50
         ||
-            _box distance (getMarkerPos traderMarker) < 50
+        _box distance (getMarkerPos traderMarker) < 50
         ||
-	    dateToNumber date > _dateLimitNum
+	dateToNumber date > _dateLimitNum
     };
 } else {
     waitUntil {
-	    sleep 1;
-	    !alive _box 
+	sleep 1;
+	!alive _box 
         ||
-	    _box distance _deliverySite < 50 
+	_box distance _deliverySite < 50 
         ||
-	    _box distance (getMarkerPos respawnTeamPlayer) < 50
+	_box distance (getMarkerPos respawnTeamPlayer) < 50
         ||
-	    dateToNumber date > _dateLimitNum
+	dateToNumber date > _dateLimitNum
     };
 };
 switch(true) do {
@@ -803,7 +803,7 @@ switch(true) do {
         [(position _box), 4000, 1200, false] spawn SCRT_fnc_common_recon;
         deleteVehicle _box;
 	    if (hideEnemyMarkers) then {
-  		    [(selectRandom [5,7])] call A3U_fnc_revealRandomZones;
+  		[(selectRandom [5,7])] call A3U_fnc_revealRandomZones;
 	    };
     };
     case(_box distance (getMarkerPos traderMarker) < 50): {
