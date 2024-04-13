@@ -231,5 +231,9 @@ class planeLoadouts
         {
             mainGun = "fow_w_type99_cannon_2x";
         };
+        class fow_va_f6f_c
+        {
+            mainGun = "fow_w_m2_cannon_2x";
+        };
     };
 };
