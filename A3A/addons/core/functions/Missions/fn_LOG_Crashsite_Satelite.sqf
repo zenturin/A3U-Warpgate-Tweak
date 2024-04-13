@@ -414,17 +414,17 @@ private _rebelTaskText = format [
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
     [
-    [teamPlayer,civilian],
-    _taskId2,
-    [format [localize "STR_A3A_Missions_LOG_crashsite_task_alt", _faction get "name", _destinationName, _displayTime], localize "STR_A3A_Missions_LOG_crashsite_task_header", _markerX],
-    traderMarker,
-    false,
-    0,
-    true,
-    "whiteboard",
-    true
-] call BIS_fnc_taskCreate;
-[_taskId2, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
+        [teamPlayer,civilian],
+        _taskId2,
+        [format [localize "STR_A3A_Missions_LOG_crashsite_task_alt", _faction get "name", _destinationName, _displayTime], localize "STR_A3A_Missions_LOG_crashsite_task_header", _markerX],
+        traderMarker,
+        false,
+        0,
+        true,
+        "whiteboard",
+        true
+    ] call BIS_fnc_taskCreate;
+    [_taskId2, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 };
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
@@ -491,7 +491,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
 
     _isEnemyKnowsAboutTeamplayer = false;
     {
-        _rebel = _x;
+        private _rebel = _x;
         {
             if(_x knowsAbout _rebel > 1.4) exitWith { _isEnemyKnowsAboutTeamplayer = true; };
         } forEach _allParticipatingUnits;
@@ -644,11 +644,11 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         } else {
             
             if (_cargoVehicle distance2D _reconvehicle > 50) then{
-                    {
-                        _x assignAsCargo _cargoVehicle2;
-                        [_x] join _heliInfGroup;  
-                        [_x] call A3A_fnc_NATOinit;
-                    } forEach units _cargoVehicleGroup;
+                {
+                    _x assignAsCargo _cargoVehicle2;
+                    [_x] join _heliInfGroup;  
+                    [_x] call A3A_fnc_NATOinit;
+                } forEach units _cargoVehicleGroup;
                 _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle2 ///I don't know why _box is used
                 _cargoWp1 setWaypointType "GETIN";
                 _cargoWp1 setWaypointBehaviour "SAFE";
