@@ -414,18 +414,19 @@ private _rebelTaskText = format [
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
     [
-    [teamPlayer,civilian],
-    _taskId2,
-    [format [localize "STR_A3A_Missions_LOG_crashsite_task_alt", _faction get "name", _destinationName, _displayTime], localize "STR_A3A_Missions_LOG_crashsite_task_header", _markerX],
-    traderMarker,
-    false,
-    0,
-    true,
-    "whiteboard",
-    true
-] call BIS_fnc_taskCreate;
-[_taskId2, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
+        [teamPlayer,civilian],
+        _taskId2,
+        [format [localize "STR_A3A_Missions_LOG_crashsite_task_alt", _faction get "name", _destinationName, _displayTime], localize "STR_A3A_Missions_LOG_crashsite_task_header", _markerX],
+        traderMarker,
+        false,
+        0,
+        true,
+        "whiteboard",
+        true
+    ] call BIS_fnc_taskCreate;
+    [_taskId2, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 };
+
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
     if (!isNull _cargoVehicle2 || alive _cargoVehicle2) then {
