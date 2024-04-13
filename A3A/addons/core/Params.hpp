@@ -197,6 +197,13 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
     };
+    class hideEnemyMarkersReconPlaneDistance
+    {
+        title = $STR_A3AU_hide_enemy_markers_recon_plane_distance;
+        values[] = {100, 300, 500, 1000, 1500, 2000};
+        texts[] = {"100", "300", "500", "1000", "1500", "2000"};
+        default = 2;
+    };
     class staminaEnabled
     {
         title = $STR_A3AU_stamina_enabled;
