@@ -1609,7 +1609,7 @@ _militiaLoadoutData set ["slHat", ["H_Beret_02"]];
 _militiaLoadoutData set ["sniHats", ["lH_Booniehat_khk_hs","H_Booniehat_tan","H_Booniehat_mcamo","H_Cap_oli_hs","H_Cap_headphones"]];
 
 if (_hasWs) then {
-    _uniforms append ["U_lxWS_B_CombatUniform_desert", "U_lxWS_B_CombatUniform_desert_tshirt", "U_lxWS_B_CombatUniform_desert_vest","U_lxWS_ION_Casual6","U_lxWS_ION_Casual2"];
+    _uniforms append ["U_lxWS_B_CombatUniform_desert", "U_lxWS_B_CombatUniform_desert_tshirt", "U_lxWS_B_CombatUniform_desert_vest","U_lxWS_ION_Casual6","U_lxWS_ION_Casual2","U_lxWS_ION_Casual4"];
     _vests append ["V_Chestrig_khk", "V_TacVest_brn","V_lxWS_TacVestIR_oli","V_lxWS_PlateCarrier1_desert"];
     _hVests pushBack "V_lxWS_PlateCarrier2_desert";
     _glVests pushBack "V_lxWS_PlateCarrier2_desert";
