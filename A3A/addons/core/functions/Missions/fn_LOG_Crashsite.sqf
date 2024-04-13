@@ -645,11 +645,11 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
         } else {
             
             if (_cargoVehicle distance2D _reconvehicle > 50) then{
-                    {
-                        _x assignAsCargo _cargoVehicle2;
-                        [_x] join _heliInfGroup;  
-                        [_x] call A3A_fnc_NATOinit;
-                    } forEach units _cargoVehicleGroup;
+                {
+                   _x assignAsCargo _cargoVehicle2;
+                   [_x] join _heliInfGroup;  
+                   [_x] call A3A_fnc_NATOinit;
+                } forEach units _cargoVehicleGroup;
                 _cargoWp1 = _cargoVehicleGroup addWaypoint [_box, 0]; ///_cargoVehicle2 ///I don't know why _box is used
                 _cargoWp1 setWaypointType "GETIN";
                 _cargoWp1 setWaypointBehaviour "SAFE";
