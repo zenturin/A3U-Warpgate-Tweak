@@ -24,77 +24,52 @@ private _civCarsWithWeights = [
     ,"C_Offroad_01_F", 1.0
     ,"C_SUV_01_F", 1.0
 ];
-if (_hasKart) then {
-    _civCarsWithWeights append ["C_Kart_01_F", 0.01, "C_Kart_01_Blu_F", 0.01, "C_Kart_01_Fuel_F", 0.01, "C_Kart_01_Red_F", 0.01, "C_Kart_01_Vrana_F", 0.01];
-};
-if (_hasApex) then {
-    _civCarsWithWeights append ["C_Offroad_02_unarmed_F", 0.7];
-};
-if (_hasContact) then {
-    _civCarsWithWeights append ["C_Offroad_01_comms_F", 0.4 , "C_Offroad_01_covered_F", 0.4];
-};
-if (_hasLawsOfWar) then {
-    _civCarsWithWeights append ["C_Van_02_transport_F", 0.2];
-};
-if (_hasWs) then {
-    _civCarsWithWeights append ["C_Truck_02_racing_lxWS" , 0.1 , "C_Offroad_lxWS", 0.5];
-};
-
-private _civIndustrial = [
-    "C_Van_01_transport_F", 1.0
-    ,"C_Van_01_box_F", 0.8
-    ,"C_Truck_02_transport_F", 0.5
-    ,"C_Truck_02_covered_F", 0.5
-];
-
-if (_hasContact) then {
-    _civIndustrial append ["C_Tractor_01_F", 0.2];
-};
-if (_hasLawsOfWar) then {
-    _civIndustrial append ["C_Van_02_vehicle_F", 0.8];
-};
-if (_hasWs) then {
-    _civIndustrial append ["C_Truck_02_cargo_lxWS" , 0.4 , "C_Truck_02_flatbed_lxWS" , 0.4];
-};
-
 private _civBoat = [
     "C_Boat_Civil_01_rescue_F", 0.1            // motorboats
     ,"C_Boat_Civil_01_police_F", 0.1
     ,"C_Boat_Civil_01_F", 1.0
     ,"C_Rubberboat", 1.0                    // rescue boat
 ];
-
-if (_hasApex) then {
-    _civBoat append ["C_Boat_Transport_02_F", 1.0 ,"C_Scooter_Transport_01_F", 0.5];
-};
-
+private _civIndustrial = [
+    "C_Van_01_transport_F", 1.0
+    ,"C_Van_01_box_F", 0.8
+    ,"C_Truck_02_transport_F", 0.5
+    ,"C_Truck_02_covered_F", 0.5
+];
 private _civRepair = [
     "C_Offroad_01_repair_F", 0.3
     ,"C_Truck_02_box_F", 0.1
 ];
-
-if (_hasLawsOfWar) then {
-    _civRepair append ["C_Van_02_service_F", 0.3];
-};
-
 private _civMedical = [];
-
-if (_hasLawsOfWar) then {
-    _civMedical append ["C_Van_02_medevac_F", 0.3];
-};
-
 private _civFuel = [
     "C_Van_01_fuel_F", 0.2
     ,"C_Truck_02_fuel_F", 0.1
 ];
 
 private _civPlanes = [];
-
-if (_hasApex) then {
-    _civPlanes append ["C_Plane_Civil_01_racing_F", "C_Plane_Civil_01_F"]
-};
-
 private _civHelicopter = ["C_Heli_Light_01_civil_F" , "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"];
+if (_hasKart) then {
+    _civCarsWithWeights append ["C_Kart_01_F", 0.01, "C_Kart_01_Blu_F", 0.01, "C_Kart_01_Fuel_F", 0.01, "C_Kart_01_Red_F", 0.01, "C_Kart_01_Vrana_F", 0.01];
+};
+if (_hasApex) then {
+    _civCarsWithWeights append ["C_Offroad_02_unarmed_F", 0.7];
+    _civBoat append ["C_Boat_Transport_02_F", 1.0 ,"C_Scooter_Transport_01_F", 0.5];
+    _civPlanes append ["C_Plane_Civil_01_racing_F", "C_Plane_Civil_01_F"];
+};
+if (_hasContact) then {
+    _civCarsWithWeights append ["C_Offroad_01_comms_F", 0.4 , "C_Offroad_01_covered_F", 0.4];
+    _civIndustrial append ["C_Tractor_01_F", 0.2];
+};
+if (_hasLawsOfWar) then {
+    _civCarsWithWeights append ["C_Van_02_transport_F", 0.2];
+    _civRepair append ["C_Van_02_service_F", 0.3];
+    _civMedical append ["C_Van_02_medevac_F", 0.3];
+    _civIndustrial append ["C_Van_02_vehicle_F", 0.8];
+};
+if (_hasWs) then {
+    _civCarsWithWeights append ["C_Truck_02_racing_lxWS" , 0.1 , "C_Offroad_lxWS", 0.5];
+    _civIndustrial append ["C_Truck_02_cargo_lxWS" , 0.4 , "C_Truck_02_flatbed_lxWS" , 0.4];
+};
 
 if (_hasGM) then {
     _civHelicopter append ["gm_gc_civ_mi2p", "gm_gc_civ_mi2r", "gm_gc_civ_mi2sr", "gm_ge_adak_bo105m_vbh"];
@@ -115,7 +90,8 @@ if (_hasCSLA) then {
 };
 
 if (_hasRF) then {
-    _civCarsWithWeights append ["C_Pickup_rf", 1.0, "C_Pickup_covered_rf", 0.5];
+    _civHelicopter append ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF", "C_Heli_EC_04_rescue_RF"];
+    _civCarsWithWeights append ["C_Pickup_rf", 0.6, "C_Pickup_covered_rf", 0.5, "C_Truck_03_water_rf", 0.1, "C_Truck_01_water_rf", 0.1];
     _civRepair append ["C_Pickup_repair_rf", 0.3];
     _civFuel append ["a3a_civ_Pickup_fuel_rf", 0.1];
 };
@@ -295,6 +271,15 @@ if (_hasWs && {(toLowerANSI worldName) in ["sefrouramal", "takistan"]}) then {
 };
 
 if (_hasRF) then {
+    _dlcUniforms append [
+        "U_C_FirefighterFatigues_RF",
+        "U_C_FirefighterFatigues_RolledUp_RF",
+        "U_C_HeliPilotCoveralls_Yellow_RF",
+        "U_C_HeliPilotCoveralls_Green_RF",
+        "U_C_HeliPilotCoveralls_Rescue_RF",
+        "U_C_HeliPilotCoveralls_Blue_RF",
+        "U_C_HeliPilotCoveralls_Black_RF"
+    ];
     private _RFleatherJackets = [
         "U_C_PilotJacket_black_RF",
         "U_C_PilotJacket_brown_RF",
@@ -336,15 +321,116 @@ private _civhats = [
     "H_Hat_Safari_sand_F"
 ];
 
-["headgear", _civHats] call _fnc_saveToTemplate;
+private _workerHelmets = ["H_Cap_marshal"];
+
+private _dlchats = [];
+
+if (_hasApex) then {_dlchats append [
+    "H_Helmet_Skate",
+    "H_Booniehat_tna_F"
+];
+};
+
+if (_hasContact) then {_dlchats append [
+    "H_Booniehat_mgrn",
+    "H_Hat_Tinfoil_F"
+];
+};
+
+if (_hasLawsOfWar) then {
+  _dlchats append [
+    "H_Hat_Safari_olive_F",
+    "H_Hat_Safari_sand_F",
+    "H_HeadBandage_clean_F",
+    "H_HeadBandage_bloody_F",
+    "H_HeadBandage_stained_F",
+    "H_WirelessEarpiece_F"
+];
+  _workerHelmets append [
+    "H_HeadBandage_clean_F",
+    "H_HeadBandage_bloody_F",
+    "H_HeadBandage_stained_F",
+    "H_HeadSet_white_F",
+    "H_HeadSet_yellow_F",
+    "H_HeadSet_red_F",
+    "H_HeadSet_orange_F",
+    "H_HeadSet_black_F",
+    "H_EarProtectors_white_F",
+    "H_EarProtectors_yellow_F",
+    "H_EarProtectors_red_F",
+    "H_EarProtectors_orange_F",
+    "H_EarProtectors_black_F",
+    "H_Construction_basic_white_F",
+    "H_Construction_headset_white_F",
+    "H_Construction_earprot_white_F",
+    "H_Construction_basic_yellow_F",
+    "H_Construction_headset_yellow_F",
+    "H_Construction_earprot_yellow_F",
+    "H_Construction_basic_red_F",
+    "H_Construction_headset_red_F",
+    "H_Construction_earprot_red_F",
+    "H_Construction_basic_orange_F",
+    "H_Construction_headset_orange_F",
+    "H_Construction_earprot_orange_F",
+    "H_Construction_basic_black_F",
+    "H_Construction_headset_black_F",
+    "H_Construction_earprot_black_F",
+    "H_Construction_basic_vrana_F",
+    "H_Construction_headset_vrana_F",
+    "H_Construction_earprot_vrana_F"
+];
+};
+
+if (_hasGM) then {
+  _dlchats append [
+    "gm_dk_headgear_hat_boonie_m84",
+    "gm_ge_headgear_hat_boonie_oli",
+    "gm_ge_headgear_hat_boonie_wdl",
+    "gm_xx_headgear_headwrap_01_blk",
+    "gm_xx_headgear_headwrap_01_blu",
+    "gm_xx_headgear_headwrap_01_grn",
+    "gm_xx_headgear_headwrap_01_oli",
+    "gm_xx_headgear_headwrap_01_wht",
+    "gm_xx_headgear_headwrap_01_dino",
+    "gm_ge_headgear_hat_beanie_blk"
+  ];
+};
+
+if (_hasWs) then {
+  _dlchats append [
+    "lxWS_H_Booniehat_desert",
+    "lxWS_H_cloth_5_B",
+    "lxWS_H_cloth_5_C",
+    "lxWS_H_cloth_5_A"
+  ];
+};
+
+if (_hasRF) then {
+  _dlchats append [
+    "H_Cap_marshal_blue_RF"
+  ];
+  _workerHelmets append [
+    "H_Cap_marshal_blue_RF",
+    "H_Helmet_HardHat_White_RF",
+    "H_Helmet_HardHat_Yellow_RF",
+    "H_Helmet_HardHat_Green_RF",
+    "H_Helmet_HardHat_Red_RF",
+    "H_Helmet_HardHat_Orange_RF",
+    "H_Helmet_HardHat_Blue_RF",
+    "H_Helmet_HardHat_Black_RF"
+];
+};
+
+["headgear", _civHats + _dlchats] call _fnc_saveToTemplate;
 
 private _loadoutData = call _fnc_createLoadoutData;
 
-_loadoutData set ["uniforms", _civUniforms];
+_loadoutData set ["uniforms", _civUniforms + _dlcUniforms];
 _loadoutData set ["pressUniforms", _pressUniforms];
 _loadoutData set ["workerUniforms", _workerUniforms];
 _loadoutData set ["pressVests", ["V_Press_F"]];
-_loadoutData set ["helmets", _civHats];
+_loadoutData set ["helmets", _civHats + _dlchats];
+_loadoutData set ["workerHelmets", _workerHelmets];
 private _pressHelmets = if (_hasLawsOfWar) then {
     ["H_Cap_press", "H_PASGT_basic_blue_press_F", "H_PASGT_neckprot_blue_press_F"];
 } else {
@@ -367,7 +453,7 @@ private _manTemplate = {
     ["compasses"] call _fnc_addCompass;
 };
 private _workerTemplate = {
-    ["helmets"] call _fnc_setHelmet;
+    [["workerHelmets", "helmets"] call _fnc_fallback] call _fnc_setHelmet;
     ["workerUniforms"] call _fnc_setUniform;
 
     ["items_medical_standard"] call _fnc_addItemSet;

@@ -1,10 +1,14 @@
 ["attributesVehicles", [
+    ["I_SDV_01_F", ["rebCost", 3000]],
+    ["I_Boat_Armed_01_minigun_F", ["rebCost", 5000]],
+    ["O_Boat_Armed_01_hmg_F", ["rebCost", 4000]],
     ["I_C_Offroad_02_LMG_F", ["rebCost", 500]],
     ["I_G_Offroad_01_armor_base_lxWS", ["rebCost", 500]],
     ["I_G_Offroad_01_armor_armed_lxWS", ["rebCost", 1100]],
     ["I_G_Offroad_01_armor_AT_lxWS", ["rebCost", 1500]],
 
-    ["a3a_C_Heli_Transport_02_F", ["rebCost", 8000]]
+    ["a3a_C_Heli_Transport_02_F", ["rebCost", 8000]],
+    ["a3a_C_Heli_Light_02_blue_F", ["rebCost", 6500]]
 ]] call _fnc_saveToTemplate;
 
 if (isClass (configFile >> "CfgPatches" >> "RF_Vehicles")) then {

@@ -221,36 +221,24 @@ if (_hasGM) then {
         "gm_handgrenade_conc_dm51","gm_handgrenade_conc_dm51a1","gm_handgrenade_frag_dm41","gm_handgrenade_frag_dm41a1","gm_handgrenade_frag_dm51","gm_handgrenade_frag_dm51a1","gm_handgrenade_frag_m26",
         "gm_handgrenade_frag_m26a1", "gm_handgrenade_frag_rgd5"
     ];
-};
-if (_hasGM) then {
-    (_loadoutData get "smokeGrenades") append [
+	(_loadoutData get "smokeGrenades") append [
         "gm_smokeshell_wht_gc",
         "gm_smokeshell_wht_dm25"
     ];
-};
-if (_hasGM) then {
-    (_loadoutData get "signalsmokeGrenades") append [
+	(_loadoutData get "signalsmokeGrenades") append [
         "gm_smokeshell_blk_gc","gm_smokeshell_blu_gc","gm_smokeshell_grn_gc","gm_smokeshell_org_gc","gm_smokeshell_red_gc","gm_smokeshell_yel_gc","gm_smokeshell_grn_dm21",
         "gm_smokeshell_red_dm23","gm_smokeshell_yel_dm26","gm_smokeshell_org_dm32"
     ];
-};
-if (_hasGM) then {
-    (_loadoutData get "lightExplosives") append [
+	(_loadoutData get "lightExplosives") append [
         "gm_explosive_plnp_charge"
     ];
-};
-if (_hasGM) then {
-    (_loadoutData get "heavyExplosives") append [
+	(_loadoutData get "heavyExplosives") append [
         "gm_explosive_petn_charge"
     ];
-};
-if (_hasGM) then {
-    (_loadoutData get "ATMines") append [
+	(_loadoutData get "ATMines") append [
         "gm_mine_at_dm21","gm_mine_at_tm46"
     ];
-};
-if (_hasGM) then {
-    (_loadoutData get "APMines") append [
+	(_loadoutData get "APMines") append [
         "gm_mine_ap_dm31"
     ];
 };
@@ -259,28 +247,29 @@ if (_hasCSLA) then {
     (_loadoutData get "antiInfantryGrenades") append [
         "CSLA_F1","CSLA_RG4o","CSLA_RG4u","CSLA_URG86u","CSLA_URG86o"
     ];
-};
-if (_hasCSLA) then {
-    (_loadoutData get "lightExplosives") append [
+	(_loadoutData get "lightExplosives") append [
         "CSLA_TNT0100g"
     ];
-};
-if (_hasCSLA) then {
-    (_loadoutData get "APMines") append [
+	(_loadoutData get "APMines") append [
         "CSLA_F1m_mag","US85_M67m_mag","CSLA_NO2","CSLA_RG4m_mag","CSLA_URG86m_mag","CSLA_PPMiNa_mag"
     ];
-};
-if (_hasCSLA) then {
-    (_loadoutData get "ATMines") append [
+	(_loadoutData get "ATMines") append [
         "CSLA_PtMiBa3_mag"
     ];
 };
 
 if (_hasRF) then {
-	_marksmanRifles pushBack ["srifle_DMR_01_black_RF", "", "acc_flashlight", "optic_VRCO_RF", ["10Rnd_762x54_Mag"], [], ""];
-	_enforcerRifles pushBack ["arifle_ash12_LR_blk_RF", "", "", "optic_VRCO_RF", ["20Rnd_127x55_Mag_RF"], [], ""];
+	_marksmanRifles pushBack ["srifle_DMR_01_black_RF", "", "acc_flashlight", "optic_VRCO_RF", ["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"], [], ""];
+	_rifles pushBack ["arifle_ash12_blk_RF", "", "", "", ["20Rnd_127x55_Mag_RF","20Rnd_127x55_Mag_RF"], [], ""];
+	_enforcerRifles pushBack ["arifle_ash12_LR_blk_RF", "", "optic_VRCO_RF", "", ["20Rnd_127x55_Mag_RF","20Rnd_127x55_Mag_RF"], [], ""];
+	_tunedRifles pushBack ["arifle_ash12_LR_blk_RF", "", "", "optic_VRCO_RF", ["20Rnd_127x55_Mag_RF","20Rnd_127x55_Mag_RF"], [], ""];
 	_gls pushBack ["arifle_ash12_GL_blk_RF", "", "acc_flashlight", "optic_VRCO_khk_RF", ["10Rnd_127x55_Mag_RF", "20Rnd_127x55_Mag_RF"], ["1Rnd_HE_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "UGL_FlareGreen_F"], ""];
-	_pistols append ["hgun_Glock19_RF", "hgun_Glock19_auto_RF", "hgun_DEagle_RF"];
+	_pistols append ["hgun_Glock19_RF", "hgun_Glock19_auto_RF", "hgun_DEagle_RF", "hgun_Glock19_auto_khk_RF", "hgun_DEagle_classic_RF"];
+
+	if (random 100 <= 25) then {
+		_tunedRifles pushBack ["srifle_h6_gold_rf", "muzzle_snds_M", "", "optic_VRCO_RF", ["30Rnd_556x45_AP_Stanag_green_RF"], [], ""];
+		_pistols append ["hgun_DEagle_gold_RF"];
+	};
 };
 
 if (_hasContact) then {
@@ -560,6 +549,14 @@ if (_hasGM) then {
         "gm_xx_facewear_scarf_01_wht",
         "gm_ge_facewear_sunglasses"
         ];
+};
+
+if (_hasRF) then {
+    (_loadoutData get "facewear") append [
+        "G_Bandanna_yellow_RF",
+        "G_Glasses_black_RF",
+        "G_Glasses_white_RF"
+        ];
 }; 
 
 _loadoutData set ["fullmask", [	"G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_blk"]];
@@ -708,18 +705,22 @@ if (_hasCSLA) then {
 	];
 };
 
-private _heavyVests = ["V_TacVestIR_blk", "V_Press_F", "V_PlateCarrierIAGL_oli", "V_I_G_resistanceLeader_F", "V_TacVest_blk_POLICE"];
+private _heavyVests = ["V_TacVestIR_blk", "V_Press_F", "V_PlateCarrierIAGL_oli", "V_I_G_resistanceLeader_F", "V_TacVest_blk_POLICE","V_PlateCarrier1_blk","V_PlateCarrier2_blk"];
 
 if (_hasApex) then {
-	_heavyVests append ["V_TacVest_gen_F"];
+	_heavyVests append ["V_TacVest_gen_F","V_PlateCarrier1_rgr_noflag_F","V_PlateCarrier2_rgr_noflag_F"];
 };
 
 if (_hasWs) then {
-	_heavyVests append ["V_lxWS_TacVestIR_oli"];
+	_heavyVests pushBack "V_lxWS_TacVestIR_oli";
+};
+
+if (_hasRF) then {
+	_heavyVests append ["V_PlateCarrierLite_black_noFlag_RF","V_TacVest_rig_oli_RF","V_TacVest_rig_khk_RF","V_TacVest_rig_blk_RF"];
 };
 
 if (_hasContact) then {
-	_heavyVests append ["V_CarrierRigKBT_01_EAF_F", "V_CarrierRigKBT_01_Olive_F"];
+	_heavyVests append ["V_CarrierRigKBT_01_EAF_F", "V_CarrierRigKBT_01_Olive_F","V_CarrierRigKBT_01_light_Olive_F","V_CarrierRigKBT_01_heavy_Olive_F"];
 };
 
 if (_hasJets) then {
@@ -786,10 +787,12 @@ _loadoutData set ["uniforms", [
 	"U_I_C_Soldier_Para_2_F",
 	"U_I_C_Soldier_Para_3_F",
 	"U_I_C_Soldier_Para_1_F",
-	"U_I_C_Soldier_Camo_F"
+	"U_I_C_Soldier_Camo_F",
+	"U_I_C_Soldier_Bandit_3_F",
+    "U_I_C_Soldier_Bandit_2_F"
 ]];
 
-if (_hasWS) then {
+if (_hasWs) then {
 	(_loadoutData get "uniforms") append [
         "U_lxWS_SFIA_soldier_2_O",
         "U_lxWS_SFIA_soldier_1_O",
@@ -859,7 +862,42 @@ if (_hasContact) then {
 private _helmets = ["H_HelmetB"];
 
 if (_hasWs) then {
-	_helmets append ["lxWS_H_Headset", "lxWS_H_ssh40_black", "lxWS_H_ssh40_green", "lxWS_H_ssh40_sand","lxWS_H_bmask_base", "H_turban_02_mask_black_lxws", "lxWS_H_bmask_camo01", "H_bmask_snake_lxws","H_turban_02_mask_snake_lxws", "lxWS_H_bmask_white", "lxWS_H_bmask_camo02", "lxWS_H_bmask_yellow", "lxWS_H_PASGT_goggles_black_F", "lxWS_H_PASGT_goggles_olive_F", "lxWS_H_HelmetCrew_I"];
+	_helmets append [
+		"lxWS_H_Headset",
+		"lxWS_H_ssh40_black",
+		"lxWS_H_ssh40_green",
+		"lxWS_H_ssh40_sand",
+		"lxWS_H_bmask_base",
+		"H_turban_02_mask_black_lxws",
+		"lxWS_H_bmask_camo01",
+		"H_bmask_snake_lxws",
+		"H_turban_02_mask_snake_lxws",
+		"lxWS_H_bmask_white", 
+		"lxWS_H_bmask_camo02", 
+		"lxWS_H_bmask_yellow", 
+		"lxWS_H_PASGT_goggles_black_F", 
+		"lxWS_H_PASGT_goggles_olive_F", 
+		"lxWS_H_HelmetCrew_I"
+		];
+};
+
+if (_hasRF) then {
+	_helmets append [
+		"H_HelmetHeavy_White_RF",
+		"H_HelmetHeavy_Simple_White_RF",
+		"H_HelmetHeavy_VisorUp_White_RF",
+		"H_HelmetHeavy_Olive_RF",
+		"H_HelmetHeavy_Simple_Olive_RF",
+		"H_HelmetHeavy_VisorUp_Olive_RF",
+		"H_HelmetHeavy_Sand_RF",
+		"H_HelmetHeavy_Simple_Sand_RF",
+		"H_HelmetHeavy_VisorUp_Sand_RF",
+		"H_HelmetHeavy_Black_RF", 
+		"H_HelmetHeavy_Simple_Black_RF", 
+		"H_HelmetHeavy_VisorUp_Black_RF",
+		"H_HelmetB_plain_sb_wdl_RF",
+		"H_HelmetB_plain_sb_tna_RF"
+		];
 };
 
 if (_hasContact) then {
@@ -976,9 +1014,38 @@ _crewLoadoutData set ["vests", _vests];
 _crewLoadoutData set ["crewHelmets", _crewhelmets];
 
 private _pilotLoadoutData = _loadoutData call _fnc_copyLoadoutData;
+_pilotLoadoutData set ["uniforms", ["U_Marshal","U_C_WorkerCoveralls","U_Rangemaster"]];
 _pilotLoadoutData set ["vests", _vests];
 _pilotLoadoutData set ["helmets", ["H_PilotHelmetHeli_O", "H_CrewHelmetHeli_O", "H_PilotHelmetHeli_B", "H_CrewHelmetHeli_B"]];
 
+if (_hasRF) then {
+	(_pilotLoadoutData get "uniforms") append [
+        "U_C_PilotJacket_brown_RF",
+        "U_C_PilotJacket_open_brown_RF",
+        "U_C_PilotJacket_lbrown_RF",
+        "U_C_PilotJacket_open_lbrown_RF",
+        "U_C_PilotJacket_black_RF",
+        "U_C_PilotJacket_open_black_RF",
+        "U_C_HeliPilotCoveralls_Yellow_RF",
+        "U_C_HeliPilotCoveralls_Green_RF",
+        "U_C_HeliPilotCoveralls_Rescue_RF",
+        "U_C_HeliPilotCoveralls_Blue_RF",
+        "U_C_HeliPilotCoveralls_Black_RF"
+    ];
+};
+
+if (_hasRF) then {
+	(_pilotLoadoutData get "helmets") append [
+        "H_PilotHelmetHeli_White_RF",
+        "H_PilotHelmetHeli_Yellow_RF",
+        "H_PilotHelmetHeli_Green_RF",
+        "H_PilotHelmetHeli_Red_RF",
+		"H_PilotHelmetHeli_MilGreen_RF",
+		"H_PilotHelmetHeli_Orange_RF",
+		"H_PilotHelmetHeli_Blue_RF",
+		"H_PilotHelmetHeli_Black_RF"
+    ];
+};
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################
 

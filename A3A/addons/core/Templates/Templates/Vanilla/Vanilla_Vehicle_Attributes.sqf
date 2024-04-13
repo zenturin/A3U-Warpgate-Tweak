@@ -15,6 +15,23 @@
 
     ///GM AAF mod
     //GM IFVs are all too fragile to get the full value
+    ["gmx_aaf_marder1a1plus_wdl", ["cost", 120], ["threat", 150]],
+    ["gmx_aaf_marder1a1a_wdl", ["cost", 120], ["threat", 150]],
+    ["gmx_aaf_marder1a2_wdl", ["cost", 120], ["threat", 150]],
+    ["gmx_aaf_m113a2dk_wdl", ["cost", 120], ["threat", 150]],
+
+    // Autocannons in light-armed
+    ["gmx_aaf_luchsa1_wdl", ["cost", 75], ["threat", 120]],
+    ["gmx_aaf_luchsa2_wdl", ["cost", 75], ["threat", 120]],
+    ["gm_ge_army_marder1a2_wiw", ["cost", 75], ["threat", 120]],
+
+    // Fragile tanks
+    ["gmx_aaf_leopard1a1a1_wdl", ["cost", 170], ["threat", 230]],
+    ["gmx_aaf_leopard1a3_wdl", ["cost", 170], ["threat", 230]],
+    ["gmx_aaf_leopard1a5_wdl", ["cost", 170], ["threat", 230]],
+
+    ///GM
+    //GM IFVs are all too fragile to get the full value
     ["gm_gc_army_bmp1sp2", ["cost", 120], ["threat", 150]],
     ["gm_gc_army_bmp1sp2_olw", ["cost", 120], ["threat", 150]],
     ["gm_gc_army_bmp1sp2_un", ["cost", 120], ["threat", 150]],
@@ -65,5 +82,4 @@
     ["gm_ge_army_leopard1a5_wiw", ["cost", 170], ["threat", 230]],
     ["gm_ge_army_leopard1a5_win", ["cost", 170], ["threat", 230]],
     ["gm_ge_army_leopard1a5_un", ["cost", 170], ["threat", 230]]
-
 ]] call _fnc_saveToTemplate;

@@ -39,7 +39,7 @@ while {_helicopter distance2D _landPos > 600} do {
     [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
     [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
     [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
-    sleep 0.5;
+    sleep 0.3;
 };
 
 waitUntil {sleep 1; (_helicopter distance2D _landPos) < 600};
@@ -134,6 +134,21 @@ _helicopter engineOn true; ///keep the engine running
 
 _cargoGroup leaveVehicle _helicopter;
 
+if(canMove _helicopter || alive _driver) then{
+   _helicopter animateDoor ["door_cargo_left", 1];   // Cougar
+   _helicopter animateDoor ["Door_L", 1];            // Ghosthawk
+   _helicopter animateDoor ["Door_L_source", 1];     // Huron front door
+   _helicopter animateDoor ["Door_rear_source", 1];  // Huron rear door
+   _helicopter animateDoor ["door_1", 1];            // Wildcat
+   _helicopter animate ["dvere1_posunZ", 1];          // Orca
+   sleep 0.5;
+   _helicopter animateDoor ["door_cargo_right", 1];  // Cougar
+   _helicopter animateDoor ["Door_R", 1];            // Ghosthawk
+   _helicopter animateDoor ["Door_R_source", 1];     // Huron front door
+   _helicopter animateDoor ["door_2", 1];            // Wildcat
+   _helicopter animate ["dvere2_posunZ", 1];          // Orca
+};
+
 private _second = false;
 {
   if (_second) then {
@@ -174,9 +189,24 @@ private _dismountTime = count units _cargoGroup - 4;
 [_helicopter] call A3A_fnc_smokeCoverAuto;          // Already done by GetOut handler in AIVehInit?
 
 
+
 _helicopter engineOn true;  ///still keeping the engine running
-sleep _dismountTime;
+sleep _dismountTime + 1;
 _helicopter engineOn true;  ///we must keep the engine running
+if(canMove _helicopter || alive _driver) then{
+   _helicopter animateDoor ["door_cargo_left", 0];   // Cougar
+   _helicopter animateDoor ["Door_L", 0];            // Ghosthawk
+   _helicopter animateDoor ["Door_L_source", 0];     // Huron front door
+   _helicopter animateDoor ["Door_rear_source", 0];  // Huron rear door
+   _helicopter animateDoor ["door_1", 0];            // Wildcat
+   _helicopter animate ["dvere1_posunZ", 0];          // Orca
+   sleep 0.5;
+   _helicopter animateDoor ["door_cargo_right", 0];  // Cougar
+   _helicopter animateDoor ["Door_R", 0];            // Ghosthawk
+   _helicopter animateDoor ["Door_R_source", 0];     // Huron front door
+   _helicopter animateDoor ["door_2", 0];            // Wildcat
+   _helicopter animate ["dvere2_posunZ", 0];          // Orca
+};
 // Heli RTB
 private _vehWP1 = _crewGroup addWaypoint [_originPos, 0];
 _vehWP1 setWaypointType "MOVE";
