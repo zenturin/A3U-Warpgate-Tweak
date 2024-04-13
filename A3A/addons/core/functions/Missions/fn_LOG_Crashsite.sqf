@@ -492,7 +492,7 @@ if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (al
 
     _isEnemyKnowsAboutTeamplayer = false;
     {
-        _rebel = _x;
+        private _rebel = _x;
         {
             if(_x knowsAbout _rebel > 1.4) exitWith { _isEnemyKnowsAboutTeamplayer = true; };
         } forEach _allParticipatingUnits;
