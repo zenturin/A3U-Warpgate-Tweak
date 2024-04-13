@@ -555,7 +555,8 @@ private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData set ["NVGs", ["NVGoggles"]];
 _sfLoadoutData set ["uniforms", ["U_B_CTRG_1", "U_B_CTRG_3", "U_B_CTRG_2"]];  
 _sfLoadoutData set ["vests", ["V_PlateCarrierL_CTRG","V_PlateCarrierH_CTRG","V_PlateCarrier1_blk","V_PlateCarrier2_blk"]];
-_sfLoadoutData set ["Hvests", ["V_PlateCarrierH_CTRG","V_PlateCarrier2_blk","V_PlateCarrierIAGL_oli"]];
+_sfLoadoutData set ["Hvests", ["V_PlateCarrierH_CTRG","V_PlateCarrier2_blk"]];
+_sfLoadoutData set ["glVests", ["V_PlateCarrierH_CTRG","V_PlateCarrier2_blk","V_PlateCarrierIAGL_oli"]];
 _sfLoadoutData set ["backpacks", ["B_Kitbag_rgr", "B_AssaultPack_rgr", "B_Carryall_wdl_F", "B_Carryall_green_F"]];
 _sfLoadoutData set ["atBackpacks", ["B_Kitbag_rgr","B_Carryall_wdl_F", "B_Carryall_green_F"]];
 _sfLoadoutData set ["helmets", ["H_HelmetSpecB", "H_HelmetB_light_black", "H_Bandanna_khk_hs","H_Watchcap_camo", "H_HelmetB_TI_tna_F"]];
@@ -610,8 +611,7 @@ if (_hasWs) then {
 if (_hasRF) then {
 (_sfLoadoutData get "NVGs") append ["TiGoggles_grn_RF","TiGoggles_RF"];
 (_sfLoadoutData get "helmets") pushBack "H_HelmetB_plain_sb_tna_RF";
-(_sfLoadoutData get "vests") append ["V_TacVest_rig_oli_RF","V_TacVest_rig_blk_RF"];
-(_sfLoadoutData get "Hvests") pushBack "V_PlateCarrierLite_black_noFlag_RF";
+(_sfLoadoutData get "glVests") pushBack "V_PlateCarrierLite_black_noFlag_RF";
 };
 
 private _slRifles = [
@@ -875,7 +875,6 @@ _eliteLoadoutData set ["helmets", ["H_HelmetB_plain_wdl", "H_HelmetSpecB_wdl", "
 _eliteLoadoutData set ["vests", ["V_PlateCarrier1_wdl", "V_PlateCarrier2_wdl", "V_PlateCarrierSpec_wdl"]];
 _eliteLoadoutData set ["Hvests", ["V_PlateCarrierSpec_wdl"]];
 _eliteLoadoutData set ["glVests", ["V_PlateCarrierGL_wdl"]];
-_eliteLoadoutData set ["helmets", ["H_HelmetB_plain_wdl", "H_HelmetSpecB_wdl", "H_HelmetB_light_wdl"]];
 _eliteLoadoutData set ["backpacks", ["B_Carryall_wdl_F", "B_Kitbag_sgg"]];
 _eliteLoadoutData set ["binoculars", ["Laserdesignator"]];
 
@@ -883,7 +882,7 @@ if (_hasApex) then {
     _eliteLoadoutData set ["goggles", ["G_Balaclava_Skull1", "G_Balaclava_blk","G_Bandanna_aviator","G_Bandanna_sport","G_Bandanna_shades","G_Combat","G_Goggles_VR","G_Tactical_Clear","G_Tactical_Black","G_Balaclava_TI_blk_F","G_Balaclava_TI_G_blk_F"]];
     _eliteLoadoutData set ["glasses", ["G_Balaclava_Skull1", "G_Balaclava_blk","G_Bandanna_aviator","G_Bandanna_sport","G_Bandanna_shades","G_Combat","G_Goggles_VR","G_Tactical_Clear","G_Tactical_Black","G_Balaclava_TI_blk_F","G_Balaclava_TI_G_blk_F"]];
 }else{
-    _loadoutData set ["glasses", [
+    _eliteLoadoutData set ["glasses", [
     "G_Aviator",
     "G_Shades_Black",
     "G_Shades_Blue",
@@ -927,7 +926,7 @@ if (_hasRF) then {
 (_eliteLoadoutData get "NVGs") append ["TiGoggles_grn_RF","TiGoggles_RF"];
 (_eliteLoadoutData get "helmets") pushBack "H_HelmetB_plain_sb_tna_RF";
 (_eliteLoadoutData get "vests") append ["V_TacVest_rig_oli_RF","V_TacVest_rig_blk_RF"];
-(_eliteLoadoutData get "Hvests") pushBack "V_PlateCarrierLite_black_noFlag_RF";
+(_eliteLoadoutData get "glVests") pushBack "V_PlateCarrierLite_black_noFlag_RF";
 };
 
 _eliteLoadoutData set ["sniperRifles", [

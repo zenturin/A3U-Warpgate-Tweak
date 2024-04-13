@@ -584,7 +584,8 @@ private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData set ["NVGs", ["NVGoggles"]];
 _sfLoadoutData set ["uniforms", ["U_B_CTRG_1", "U_B_CTRG_3", "U_B_CTRG_2"]]; 
 _sfLoadoutData set ["vests", ["V_PlateCarrierL_CTRG","V_PlateCarrier1_blk"]];
-_sfLoadoutData set ["Hvests", ["V_PlateCarrierH_CTRG","V_PlateCarrier2_blk","V_PlateCarrierIAGL_oli"]];
+_sfLoadoutData set ["Hvests", ["V_PlateCarrierH_CTRG","V_PlateCarrier2_blk","V_PlateCarrierSpec_blk"]];
+_sfLoadoutData set ["glVests", ["V_PlateCarrierH_CTRG","V_PlateCarrier2_blk","V_PlateCarrierIAGL_oli"]];
 _sfLoadoutData set ["backpacks", ["B_Carryall_cbr", "B_Kitbag_rgr", "B_Kitbag_mcamo","B_Kitbag_cbr","B_AssaultPack_cbr","B_AssaultPack_blk","B_Carryall_blk","B_TacticalPack_mcamo","B_TacticalPack_blk","B_TacticalPack_oli"]];
 _sfLoadoutData set ["atBackpacks", ["B_Kitbag_cbr", "B_Carryall_cbr","B_Carryall_blk"]];
 _sfLoadoutData set ["helmets", ["H_HelmetB_light_black", "H_HelmetSpecB_blk", "H_HelmetB_black", "H_HelmetB_camo","H_Watchcap_khk","H_Shemag_olive_hs","H_Cap_oli_hs","H_Cap_headphones","H_Booniehat_khk_hs","H_Cap_khaki_specops_UK"]];
@@ -640,7 +641,7 @@ if (_hasRF) then {
 (_sfLoadoutData get "NVGs") append ["TiGoggles_tan_RF","TiGoggles_RF"];
 (_sfLoadoutData get "helmets") append ["H_HelmetB_plain_sb_khaki_RF","H_HelmetB_plain_sb_mtp_RF"];
 (_sfLoadoutData get "vests") append ["V_TacVest_rig_oli_RF","V_TacVest_rig_blk_RF"];
-(_sfLoadoutData get "Hvests") pushBack "V_PlateCarrierLite_black_noFlag_RF";
+(_sfLoadoutData get "glVests") pushBack "V_PlateCarrierLite_black_noFlag_RF";
 };
 
 _sfLoadoutData set ["SMGs", [
