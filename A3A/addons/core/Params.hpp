@@ -202,7 +202,7 @@ class Params
         title = $STR_A3AU_hide_enemy_markers_recon_plane_distance;
         values[] = {100, 300, 500, 1000, 1500, 2000};
         texts[] = {"100", "300", "500", "1000", "1500", "2000"};
-        default = 2;
+        default = 500;
     };
     class staminaEnabled
     {
