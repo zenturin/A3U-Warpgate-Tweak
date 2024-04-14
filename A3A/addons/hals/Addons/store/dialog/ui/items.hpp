@@ -76,9 +76,9 @@ class ItemCheckboxSell: RscItemCheckboxGreen {
 
 class ItemListbox: RscItemListBox {
 	idc = IDC_LISTBOX;
-	x = GRID_X + (0.438);
+	x = GRID_X(STORE_W/4.16);
 	y = GRID_Y(LIST_Y);
-	w = GRID_X(LIST_W); 
+	w = GRID_X(67.6);
 	h = GRID_Y(LIST_H);
 	sizeEx = FONT(0.8);
 	font = "PuristaMedium";

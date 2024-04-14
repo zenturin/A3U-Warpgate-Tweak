@@ -42,12 +42,12 @@
 #define BAR_H 3
 #define COMBO_W 88
 #define CARGO_W 44
-#define LIST_W (COMBO_W + SPACE_W*4 + BAR_W*4) //51
+#define LIST_W (COMBO_W + SPACE_W*4 + BAR_W*4)
 #define LIST_H (STORE_H - (BAR_H*2 + SPACE_H2*3 + SPACE_H)) 
 #define LIST_Y (BAR_H + SPACE_H2)
 
 // Selected Item 
-#define ITEM_W 53.8
+#define ITEM_W 54
 #define ITEM_X (SPACE_W2 + LIST_W + SPACE_W)
 #define ITEM_Y (BAR_H*2 + SPACE_H2*4)
 #define PIC_H 21
