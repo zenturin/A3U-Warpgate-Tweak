@@ -61,6 +61,8 @@ class cfgHALsStore
 		#include "config\ws.hpp"
 		#include "config\braf.hpp"
 		#include "config\nfts.hpp"
+		#include "config\fow.hpp"
+		#include "config\eaw.hpp"
 	};
 
 	class stores 
@@ -263,6 +265,23 @@ class cfgHALsStore
 			"pointersCup", 
 			"navigationCup", 
 			"miscCup"
+			};
+		};
+
+		class fowstore
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsfow",
+				"smgfow",
+				"mgfow",
+				"riflesfow",
+				"sniperriflesfow",
+				"launchersfow",
+				"muzzlesfow",
+				"magazinesfow", 
+				"pointersfow",
+				"underbarrelfow"
 			};
 		};
 
@@ -605,6 +624,20 @@ class cfgHALsStore
 				"launchermagazinesnfts",
 				"magazinesnfts", 
 				"underbarrelnfts"
+			};
+		};
+		class ww2eaw
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunseaw",
+				"smgeaw",
+				"mgeaw",
+				"rifleseaw",
+				"muzzleseaw",
+				"magazineseaw", 
+				"specialweaponseaw",
+				"opticseaw",
 			};
 		};
 	};
