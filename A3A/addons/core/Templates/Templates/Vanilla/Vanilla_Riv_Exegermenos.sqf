@@ -81,7 +81,6 @@ if (_hasTanks) then {
 	_tanks pushBack "I_LT_01_cannon_F";
 };
 
-
 private _staticLowWeapons = ["O_G_HMG_02_F"];
 private _staticAT = ["O_static_AT_F"];
 private _staticMortars = ["O_Mortar_01_F"];
@@ -755,6 +754,7 @@ if (_hasGM) then {
 	"gm_ge_bgs_vest_type3a1_gry"
 	];
 };
+
 
 if (_hasCSLA) then {
 	_heavyVests append [
