@@ -10,10 +10,25 @@ class traderMods
         addons[] = {"Weapons_1_F_lxWS","A3_Aegis_Armor_F_Aegis_APC_Tracked_02", "A3_Atlas_Armor_F_Atlas_APC_Tracked_02", "A3_Opf_Armor_F_Opf_APC_Tracked_02"};
         prefix = "aegis";
     };
+    class wmempire : base
+    {
+        addons[] = {"WM_Rebels"};
+        prefix = "wmemp";
+    };
     class empire : base
     {
         addons[] = {"JMSLLTE_empire_mod"};
         prefix = "emp";
+    };
+    class eaw : base
+    {
+        addons[] = {"EAW_Air","WBK_MeleeMechanics"};
+        prefix = "ww2eaw";
+    };
+    class ww2fow : base
+    {
+        addons[] = {"fow_tanks"};
+        prefix = "fowstore";
     };
     class unsung : base
     {
