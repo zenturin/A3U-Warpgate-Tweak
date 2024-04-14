@@ -1,4 +1,3 @@
-#include "BIS_AddonInfo.hpp"
 #include "script_component.hpp"
 
 class CfgPatches {
