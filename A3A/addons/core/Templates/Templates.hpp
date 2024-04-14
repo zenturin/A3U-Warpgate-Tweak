@@ -687,5 +687,9 @@ class Templates
     // ***************************** Faces of War *****************************
 
     #include "Templates\FoW\templates.hpp"
+	
+    // ***************************** East Asia War *****************************
+
+    #include "Templates\EAW\templates.hpp"
 
 };
