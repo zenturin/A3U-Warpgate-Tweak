@@ -1,12 +1,16 @@
 #define CURRENT_Y GRID_Y(0)
 
-class ComboCategories: RscItemComboBox {
+class ListCategories: RscItemListBoxCategories {
 	idc = IDC_COMBO_CATEGORY;
-	x = GRID_X(SPACE_W2);
+	x = GRID_X;
+	y = GRID_Y(LIST_Y);
+	w = GRID_X(38); 
+	h = GRID_Y(LIST_H);
+	/* x = GRID_X(SPACE_W2);
 	y = CURRENT_Y;
 	w = GRID_X(COMBO_W);
-	h = GRID_Y(BAR_H);
-	sizeEx = FONT(1);
+	h = GRID_Y(BAR_H); */
+	sizeEx = FONT(0.9);
 	colorBackground[] = {0.1, 0.1, 0.1, 1};
 };
 
@@ -72,7 +76,7 @@ class ItemCheckboxSell: RscItemCheckboxGreen {
 
 class ItemListbox: RscItemListBox {
 	idc = IDC_LISTBOX;
-	x = GRID_X(SPACE_W2);
+	x = GRID_X + (0.438);
 	y = GRID_Y(LIST_Y);
 	w = GRID_X(LIST_W); 
 	h = GRID_Y(LIST_H);
