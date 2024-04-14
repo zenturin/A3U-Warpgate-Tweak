@@ -5,7 +5,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
-private _hasCLSA = "csla" in A3A_enabledDLC;
+private _hasCSLA = "csla" in A3A_enabledDLC;
 private _hasRF = "rf" in A3A_enabledDLC;
 
 
@@ -106,14 +106,23 @@ if (_hasGM) then {
     _civCarsWithWeights append ["gm_ge_army_iltis_cargo", 0.2, "gm_pl_army_uaz469_cargo", 0.2, "gm_ge_civ_typ1200", 0.2, "gm_gc_civ_p601", 0.2, "gm_ge_civ_typ253", 0.3, "gm_ge_taxi_typ253", 0.1, "gm_ge_civ_w123", 0.4, "gm_ge_taxi_w123", 0.3, "gm_ge_army_k125", 0.1, "gm_xx_civ_bicycle_01", 0.05, "gm_ge_dbp_bicycle_01_ylw", 0.05];
 };
 
+if (_hasCSLA) then {
+    _civPlanes pushBack "CSLA_CIV_An2_1";
+    _civRepair append ["CSLA_CIV_V3Sr", 0.2];
+    _civIndustrial append ["CSLA_CIV_V3S" , 0.2];
+    _civCarsWithWeights append ["CSLA_CIV_AZU", 0.2, "CSLA_CIV_ADA1600", 0.2, "CSLA_CIV_Sarka1200", 0.2, "CSLA_civ_CATOR", 0.1, "CSLA_CIV_JARA250", 0.1, "US85_TT650", 0.1];
+    _civBoat append ["CSLA_lodka", 0.1];
+};
+
 if (_hasRF) then {
-    _civCarsWithWeights append ["C_Pickup_rf", 2.0, "C_Pickup_covered_rf", 0.1];
+    _civCarsWithWeights append ["C_Pickup_rf", 1.0, "C_Pickup_covered_rf", 0.5];
     _civRepair append ["C_Pickup_repair_rf", 0.3];
     _civFuel append ["a3a_civ_Pickup_fuel_rf", 0.1];
 };
 
 ["vehiclesCivHeli", _civHelicopter] call _fnc_saveToTemplate;
 ["vehiclesCivCar", _civCarsWithWeights] call _fnc_saveToTemplate;
+["vehiclesCivHeli", _civHelicopter] call _fnc_saveToTemplate;
 ["vehiclesCivIndustrial", _civIndustrial] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", _civBoat] call _fnc_saveToTemplate;
 ["vehiclesCivRepair", _civRepair] call _fnc_saveToTemplate;
@@ -241,6 +250,27 @@ if (_hasGM) then {
     "gm_ge_uniform_pilot_commando_rolled_oli",
     "gm_gc_civ_uniform_man_04_80_blu",
     "gm_gc_civ_uniform_man_04_80_gry"
+  ];
+};
+
+
+if (_hasCSLA) then {
+  _dlcUniforms append [
+    "FIA_uniCitizen",
+    "FIA_uniFunctionary",
+    "FIA_uniFunctionary2",
+    "CSLA_uniPlt",
+    "FIA_uniVillager",
+    "FIA_uniVillager2",
+    "FIA_uniVillager3",
+    "FIA_uniVillager4",
+    "FIA_uniWorker2",
+    "FIA_uniWorker3"
+  ];
+  _workerUniforms append [
+    "CSLA_uniSrv",
+    "FIA_uniForeman",
+    "FIA_uniForeman2"
   ];
 };
 

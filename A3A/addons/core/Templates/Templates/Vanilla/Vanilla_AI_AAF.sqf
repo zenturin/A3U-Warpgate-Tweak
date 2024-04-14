@@ -8,7 +8,7 @@ private _hasHelicopters = "heli" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
-private _hasCLSA = "csla" in A3A_enabledDLC;
+private _hasCSLA = "csla" in A3A_enabledDLC;
 private _hasRF = "rf" in A3A_enabledDLC;
 
 
@@ -59,11 +59,11 @@ if (_hasJets) then {
 };
 private _planesTransport = [];
 
+
 private _helisLight = ["I_Heli_light_03_unarmed_F"];
 private _transportHelicopters = ["I_Heli_Transport_02_F"];
 private _helisLightAttack =  ["I_Heli_light_03_dynamicLoadout_F"];
 private _helisAttack = [];
-
 
 private _artillery = ["I_Truck_02_MRL_F"];
 ["magazines", createHashMapFromArray [
@@ -90,14 +90,16 @@ private _policeVehs = if (_hasContact) then {
 } else {
     ["B_GEN_Offroad_01_gen_F"]
 };
+
 if (_hasLawsOfWar) then {
     _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
+
 if (_hasRF) then {
     _policeVehs append ["a3a_police_Pickup_rf", "B_GEN_Pickup_covered_rf", "a3a_police_Pickup_comms_rf"];
-    _vehiclesHelisTransport append ["a3a_AAF_Heli_light_03_unarmed_RF", "I_Heli_EC_01A_military_RF"];
-    _vehiclesHelisLightAttack append ["a3a_AAF_Heli_light_03_dynamicLoadout_RF"];
-    _vehiclesHelisAttack = ["a3a_Heli_EC_02_RF"];
+    _transportHelicopters append ["a3a_AAF_Heli_light_03_unarmed_RF", "I_Heli_EC_01A_military_RF"];
+    _helisLightAttack append ["a3a_AAF_Heli_light_03_dynamicLoadout_RF"];
+    _helisAttack = ["a3a_Heli_EC_02_RF"];
 };
 
 private _staticMG = ["I_HMG_02_high_F","I_HMG_01_high_F"];
@@ -132,24 +134,27 @@ if (_hasWs) then {
 };
 
 //If GM cdlc + extra AAF mod
+
+private _hasAAFGM = ["gmx_aaf_m113a2dk_wdl"] call A3U_fnc_hasAddon;
 if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) then {
     _staticMG pushBack "gmx_aaf_mg3_aatripod";
     _staticAT pushBack "gmx_aaf_milan_launcher_tripod";
     _basic append ["gm_ge_army_k125","gmx_aaf_brpz1_wdl"];
-    _planesTransport append ["gmx_aaf_do28d2_wdl"];
+    _planesTransport append ["gmx_aaf_do28d2_wdl","gm_gc_airforce_l410t"];
     _helisLight append ["gmx_aaf_bo105m_vbh_wdl","gmx_aaf_bo105p1m_vbh_wdl","gmx_aaf_bo105p1m_vbh_swooper_wdl"];
     _helisLightAttack pushback "gmx_aaf_bo105p_pah1_wdl";
-    _helisAttack append ["gmx_aaf_bo105p_pah1a1_wdl"];
+    _helisAttack append ["gmx_aaf_bo105p_pah1a1_wdl","gm_pl_airforce_mi2urpg"];
     _transportHelicopters append ["gmx_aaf_ch53g_wdl","gmx_aaf_ch53gs_wdl"];
-    _artillery append ["gmx_aaf_m109_wdl","gmx_aaf_kat1_463_mlrs_wdl"];
+    _artillery append ["gm_pl_army_2s1","gm_pl_army_ural375d_mlrs","gmx_aaf_m109_wdl","gmx_aaf_kat1_463_mlrs_wdl"];
     _lightAPCs append ["gmx_aaf_fuchsa0_command_wdl","gmx_aaf_fuchsa0_engineer_wdl","gmx_aaf_fuchsa0_reconnaissance_wdl"];
-    _militiaAPCs append ["gmx_aaf_fuchsa0_reconnaissance_wdl"];
-    _APCs append ["gmx_aaf_luchsa1_wdl","gmx_aaf_luchsa2_wdl"];
+    _militiaAPCs append ["gm_gc_army_btr60pa","gm_gc_army_btr60pa_dshkm","gm_gc_army_btr60pb","gm_gc_army_btr60pu12","gm_pl_army_ot64a"];
+    _APCs append ["gmx_aaf_luchsa1_wdl","gmx_aaf_luchsa2_wdl","gm_pl_army_brdm2","gm_gc_army_brdm2rkh"];
     _IFVs append ["gmx_aaf_m113a1g_apc_wdl","gmx_aaf_m113a1g_apc_milan_wdl","gmx_aaf_m113a1g_command_wdl","gmx_aaf_marder1a1plus_wdl","gmx_aaf_marder1a1a_wdl","gmx_aaf_marder1a2_wdl","gmx_aaf_m113a2dk_wdl"];
-    _unarmedVehicles append ["gmx_aaf_iltis_cargo_wdl"];
+    _unarmedVehicles append ["gm_gc_army_brdm2um","gmx_aaf_iltis_cargo_wdl","gm_dk_army_typ253_cargo","gm_dk_army_typ1200_cargo"];
     _armedVehicles append ["gmx_aaf_iltis_milan_wdl","gm_ge_army_iltis_mg3"];
     _militiaCars append ["gm_dk_army_typ1200_cargo","gm_dk_army_typ253_cargo","gm_dk_army_typ253_mp"];
     _policeVehs append ["gm_gc_pol_p601","gm_ge_pol_typ1200","gm_ge_pol_typ253","gm_ge_pol_w123"];
+    _lightTanks append ["gm_pl_army_bmp1sp2","gm_gc_army_pt76b"];
     _airborneVehicles append ["gmx_aaf_luchsa1_wdl","gmx_aaf_luchsa2_wdl","gmx_aaf_fuchsa0_reconnaissance_wdl","gmx_aaf_fuchsa0_command_wdl"];
     _aa pushback "gmx_aaf_gepard1a1_wdl";
     _Trucks append ["gmx_aaf_kat1_451_cargo_wdl","gmx_aaf_u1300l_cargo_wdl"];
@@ -159,6 +164,30 @@ if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) t
     _repairTrucks append ["gmx_aaf_u1300l_repair_wdl","gmx_aaf_bpz2a0_wdl"];
     _fuelTrucks pushBack "gmx_aaf_kat1_451_refuel_wdl";
     _medicalTrucks append ["gmx_aaf_u1300l_medic_wdl","gmx_aaf_m113a1g_medic_wdl"];
+};
+
+if (_hasCSLA) then {
+    _staticMG pushBack "US85_M2h";
+    _staticAT pushBack "US85_TOW_Stat";
+    _basic append ["CSLA_JARA250","US85_M1030","US85_M1008_S250","US85_M923a1_s280"];
+    _helisLightAttack pushback "US85_MH60FFAR";
+    _helisAttack append ["CSLA_Mi24V","US85_AH1F"];
+    _transportHelicopters append ["US85_MH60M134","US85_UH60","US85_UH60M240"];
+    _lightAPCs append ["US85_M113","AFMC_M113A2ext"];
+    _militiaAPCs append ["US85_M113","AFMC_M113A2ext"];
+    _APCs pushBack "US85_LAV25";
+    _unarmedVehicles append ["US85_M1025_ua","US85_M1043_ua"];
+    _armedVehicles append ["US85_M1025_M2","US85_M1025_M60","US85_M1043_M2","US85_M1043_M60","US85_M998SFGT"];
+    _militiaCars append ["US85_M1008c","US85_M1008","US85_M998SFGT"];
+    _airborneVehicles append ["US85_LAV25","US85_M113"];
+    _aa pushback "US85_M163";
+    _Trucks append ["US85_M923a1c","US85_M923o","US85_M923c","US85_M923a1o","US85_M923a1cm2","US85_M923a1om2"];
+    _cargoTrucks append ["US85_M923cargo","US85_M923a1_cargo"];
+    _tanks append ["US85_M1IP","US85_M1A1"];
+    _ammoTrucks append ["US85_M923a","US85_M923a1_a"];
+    _repairTrucks append ["US85_M113_DTP","US85_M923r"];
+    _fuelTrucks append ["US85_M923f","US85_M923a1_f"];
+    _medicalTrucks pushBack "US85_M113_AMB";
 };
 
 ["staticMGs", _staticMG] call _fnc_saveToTemplate;
@@ -230,7 +259,9 @@ if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) t
     ["gmx_aaf_marder1a2_wdl", ["beacon_01_org_unhide",0,"sideskirt_unhide",0.3,"CamoNet_01_unhide",0.3,"supply_01_unhide",0.3,"supply_02_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3]],
     ["gmx_aaf_fuchsa0_command_wdl", ["radio_04_unhide",0.3,"antennamast_01_elev_trigger",0.3,"beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"CamoNet_01_unhide",0.3,"CamoNet_02_rack_unhide",0.3,"StowingBox_01_unhide",0.3,"SignsExtraWide_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
     ["gmx_aaf_fuchsa0_engineer_wdl", ["ringbuoy_01_unhide",0.3,"beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"CamoNet_01_unhide",0.3,"CamoNet_02_rack_unhide",0.3,"SignsExtraWide_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
-    ["gmx_aaf_fuchsa0_reconnaissance_wdl", ["beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"CamoNet_01_unhide",0.3,"CamoNet_02_rack_unhide",0.3,"StowingBox_01_unhide",0.3,"SignsExtraWide_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]]
+    ["gmx_aaf_fuchsa0_reconnaissance_wdl", ["beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"CamoNet_01_unhide",0.3,"CamoNet_02_rack_unhide",0.3,"StowingBox_01_unhide",0.3,"SignsExtraWide_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["US85_M1A1", ["ADD_smallAmmobox",0.3,"ADD_medAmmoBox",0.3,"ADD_topStuff",0.3,"ADD_cardBoardBox",0.3,"ADD_trackLink",0.3,"ADD_spareWheel",0.3,"ADD_frontTowRings",0.3,"ADD_rearTowRings",0.3,"ADD_frontTowBar",0.3,"ADD_rearTowBar",0.3,"ADD_leftTowCable",0.3,"ADD_rightTowCable",0.3,"ADD_alice",0.3,"ADD_fuelCan",0.3,"ADD_camoNet",0.3]],
+    ["US85_M1IP", ["ADD_topStuff",0.3,"ADD_cardBoardBox",0.3,"ADD_trackLink",0.3,"ADD_spareWheel",0.3,"ADD_frontTowRings",0.3,"ADD_rearTowRings",0.3,"ADD_frontTowBar",0.3,"ADD_rearTowBar",0.3,"ADD_leftTowCable",0.3,"ADD_rightTowCable",0.3,"ADD_alice",0.3,"ADD_fuelCan",0.3,"ADD_camoNet",0.3]]
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
@@ -239,7 +270,43 @@ if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) t
     ["I_LT_01_AT_F", ["Indep_Olive", 0, "Indep_01", 0.5]],
     ["I_LT_01_scout_F",["Indep_Olive", 0, "Indep_01", 0.5]],
     ["I_Plane_Fighter_04_F", ["CamoGrey",0.1, "DigitalCamoGrey", 0.4, "DigitalCamoGreen",0.5]],
-    ["I_Heli_light_03_unarmed_F", ["Indep", 0.5]]
+    ["I_Heli_light_03_unarmed_F", ["Indep", 0.5]],
+    ["US85_UH60M240", ["NATO",1]],
+    ["US85_UH60", ["NATO",1]],
+    ["US85_MH60FFAR", ["NATO",1]],
+    ["US85_MH60M134", ["NATO",1]],
+    ["US85_AH1F", ["AFMC",1]],
+    ["CSLA_Mi24V", ["camo6",1]],
+    ["US85_M1IP", ["NATOg",1]],
+    ["US85_M1A1", ["NATOg",1]],
+    ["US85_LAV25", ["NATOg",1]],
+    ["US85_M113", ["NATOg",1]],
+    ["US85_M163", ["NATOg",1]],
+    ["AFMC_M113A2ext",["NATOg",1]],
+    ["US85_M113_DTP", ["NATOg",1]],
+    ["US85_M923r", ["NATOg",1]],
+    ["US85_M113_AMB", ["NATOg",1]],
+    ["US85_M923f", ["NATOg",1]],
+    ["US85_M923a1_f", ["NATOg",1]],
+    ["US85_M923a", ["NATOg",1]],
+    ["US85_M923a1_a", ["NATOg",1]],
+    ["US85_M923a1c", ["NATOg",1]],
+    ["US85_M923o", ["NATOg",1]],
+    ["US85_M923c", ["NATOg",1]],
+    ["US85_M923a1o", ["NATOg",1]],
+    ["US85_M923a1cm2", ["NATOg",1]],
+    ["US85_M923a1om2", ["NATOg",1]],
+    ["US85_M923cargo", ["NATOg",1]],
+    ["US85_M923a1_cargo", ["NATOg",1]],
+    ["US85_M1008c", ["NATOg",1]],
+    ["US85_M1008", ["NATOg",1]],
+    ["US85_M1025_ua", ["NATOg",1]],
+    ["US85_M1043_ua", ["NATOg",1]],
+    ["US85_M1025_M2", ["NATOg",1]],
+    ["US85_M1025_M60", ["NATOg",1]],
+    ["US85_M1043_M2", ["NATOg",1]],
+    ["US85_M1043_M60", ["NATOg",1]],
+    ["US85_M998SFGT", ["NATOg",1]]
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
@@ -854,6 +921,7 @@ if (_hasGM) then {
         ["gm_pm63_blk", "", "", "", ["gm_25Rnd_9x18mm_B_pst_pm63_blk","gm_15Rnd_9x18mm_B_pst_pm63_blk"], [], ""]
     ];
 };
+
 if (_hasRF) then {
     (_sfLoadoutData get "sidearms") append [
         ["hgun_Glock19_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", [], [], ""],

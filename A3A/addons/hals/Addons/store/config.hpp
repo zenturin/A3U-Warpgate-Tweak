@@ -111,6 +111,21 @@ class cfgHALsStore
 			};
 		};
 
+		class csla 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesCSLA",
+				"sniperRiflesCSLA",
+				"mgCSLA",
+				"launchersCSLA",
+				"magazineslaunchersCSLA",
+				"magazinesCSLA",
+				"navigationCSLA",
+				"attachmentsCSLA",
+				"miscCSLA"
+			};
+		};
 		class aegis 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
