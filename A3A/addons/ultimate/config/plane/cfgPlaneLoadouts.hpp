@@ -80,7 +80,7 @@ class planeLoadouts
             loadout[] = {"EAW_A4N_60Bomb_Mag_P","EAW_A4N_60Bomb_Mag_P"};
             mainGun = "EAW_A4N_MG";
             bombRacks[] = {"EAW_A4N_Bomb_Pod1","EAW_A4N_Bomb_Pod2"};
-            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
     };
 
@@ -159,7 +159,7 @@ class planeLoadouts
             loadout[] = {"EAW_A4N_60Bomb_Mag_P","EAW_A4N_60Bomb_Mag_P"};
             mainGun = "EAW_A4N_MG";
             bombRacks[] = {"EAW_A4N_Bomb_Pod1","EAW_A4N_Bomb_Pod2"};
-            diveParams[] = {1000, 300, 510, 55, 15, {0,0}};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
     };
    
