@@ -59,6 +59,7 @@ if (_hasJets) then {
 };
 private _planesTransport = [];
 
+
 private _helisLight = ["I_Heli_light_03_unarmed_F"];
 private _transportHelicopters = ["I_Heli_Transport_02_F"];
 private _helisLightAttack =  ["I_Heli_light_03_dynamicLoadout_F"];
@@ -92,7 +93,6 @@ private _policeVehs = if (_hasContact) then {
 if (_hasLawsOfWar) then {
     _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
-
 
 private _staticMG = ["I_HMG_02_high_F","I_HMG_01_high_F"];
 private _staticAT = ["I_static_AT_F"];
@@ -142,6 +142,8 @@ if (_hasWs) then {
 };
 
 //If GM cdlc + extra AAF mod
+
+private _hasAAFGM = ["gmx_aaf_m113a2dk_wdl"] call A3U_fnc_hasAddon;
 if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) then {
     _staticMG pushBack "gmx_aaf_mg3_aatripod";
     _staticAT pushBack "gmx_aaf_milan_launcher_tripod";
@@ -1460,6 +1462,7 @@ if (_hasGM) then {
         ["gm_pm63_blk", "", "", "", ["gm_25Rnd_9x18mm_B_pst_pm63_blk","gm_15Rnd_9x18mm_B_pst_pm63_blk"], [], ""]
     ];
 };
+
 if (_hasRF) then {
     (_pilotLoadoutData get "uniforms") pushBack "U_C_HeliPilotCoveralls_Green_RF";
 };

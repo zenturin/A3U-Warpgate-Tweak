@@ -112,7 +112,6 @@ if (_hasCSLA) then {
 };
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
-
 ["handGrenadeAmmo", ["GrenadeHand"]] call _fnc_saveToTemplate;
 ["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
 
@@ -253,6 +252,27 @@ if (_hasCSLA) then {
         "CSLA_F1m_mag","US85_M67m_mag","CSLA_NO2","CSLA_RG4m_mag","CSLA_URG86m_mag","CSLA_PPMiNa_mag"
     ];
 	(_loadoutData get "ATMines") append [
+        "CSLA_PtMiBa3_mag"
+    ];
+};
+
+if (_hasCSLA) then {
+    (_loadoutData get "antiInfantryGrenades") append [
+        "CSLA_F1","CSLA_RG4o","CSLA_RG4u","CSLA_URG86u","CSLA_URG86o"
+    ];
+};
+if (_hasCSLA) then {
+    (_loadoutData get "lightExplosives") append [
+        "CSLA_TNT0100g"
+    ];
+};
+if (_hasCSLA) then {
+    (_loadoutData get "APMines") append [
+        "CSLA_F1m_mag","US85_M67m_mag","CSLA_NO2","CSLA_RG4m_mag","CSLA_URG86m_mag","CSLA_PPMiNa_mag"
+    ];
+};
+if (_hasCSLA) then {
+    (_loadoutData get "ATMines") append [
         "CSLA_PtMiBa3_mag"
     ];
 };
@@ -754,7 +774,6 @@ if (_hasGM) then {
 	"gm_ge_bgs_vest_type3a1_gry"
 	];
 };
-
 
 if (_hasCSLA) then {
 	_heavyVests append [

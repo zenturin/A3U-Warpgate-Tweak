@@ -40,7 +40,6 @@ private _vehiclesCivCar = ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01
 private _CivTruck = ["C_Truck_02_transport_F", "C_Truck_02_covered_F"];
 private _civHelicopters = ["C_Heli_Light_01_civil_F", "a3a_C_Heli_Transport_02_F", "a3a_C_Heli_Light_02_blue_F"];
 
-
 private _CivBoat = ["C_Boat_Civil_01_F", "C_Rubberboat"];
 
 private _staticMG = ["I_G_HMG_02_high_F", "I_G_HMG_02_F"];
