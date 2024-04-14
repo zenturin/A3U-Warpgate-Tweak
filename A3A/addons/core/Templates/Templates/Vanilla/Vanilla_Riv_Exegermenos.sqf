@@ -9,7 +9,7 @@ private _hasJets = "jets" in A3A_enabledDLC;
 private _hasArtOfWar = "aow" in A3A_enabledDLC;
 private _hasKart = "kart" in A3A_enabledDLC;
 private _hasGM = "gm" in A3A_enabledDLC;
-private _hasCLSA = "csla" in A3A_enabledDLC;
+private _hasCSLA = "csla" in A3A_enabledDLC;
 private _hasRF = "rf" in A3A_enabledDLC;
 
 ////////////////////////////
@@ -100,8 +100,18 @@ if (_hasRF) then {
 	_lightUnarmedVehicles pushBack "a3u_black_Pickup_rival_rf";
 };
 
-["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
+if (_hasCSLA) then {
+	_staticLowWeapons append ["AFMC_infFALf", "AFMC_M2l","CSLA_UK59L_Stat","CSLA_UK59T_Stat"];
+	_staticAT append ["AFMC_TOW_Stat", "CSLA_rT21","CSLA_9K113_Stat"];
+	_staticMortars append ["US85_M252_Stat","CSLA_M52_Stat"];
+	_lightArmedVehicles append ["US85_M1025_M2","US85_M1025_M60","US85_M1043_M2","US85_M1043_M60","US85_M998SFGT","FIA_AZU_DSKM","FIA_AZU_T21"];
+	_lightUnarmedVehicles append  ["US85_M1008c","US85_M1008","US85_M1025_ua","US85_M1043_ua","FIA_AZU_para","CSLA_AZU_R2","CSLA_AZU"];
+	_tanks append ["US85_M1A1","US85_M1IP","CSLA_T72","CSLA_T72M","CSLA_T72M1"];
+	_helis append ["US85_MH60M134","US85_UH60M240","CSLA_Mi17","CSLA_Mi17mg"];
+	_apc append ["AFMC_LAV25","AFMC_M113A1","AFMC_M113A2ext","CSLA_BVP1","CSLA_MU90","CSLA_OT62","CSLA_OT64C","CSLA_OT65A","FIA_BTR40","FIA_BTR40_DSKM"];
+};
 
+["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["handGrenadeAmmo", ["GrenadeHand"]] call _fnc_saveToTemplate;
 ["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
 
@@ -210,42 +220,57 @@ if (_hasGM) then {
         "gm_handgrenade_frag_m26a1", "gm_handgrenade_frag_rgd5"
     ];
 };
-
 if (_hasGM) then {
     (_loadoutData get "smokeGrenades") append [
         "gm_smokeshell_wht_gc",
         "gm_smokeshell_wht_dm25"
     ];
 };
-
 if (_hasGM) then {
     (_loadoutData get "signalsmokeGrenades") append [
         "gm_smokeshell_blk_gc","gm_smokeshell_blu_gc","gm_smokeshell_grn_gc","gm_smokeshell_org_gc","gm_smokeshell_red_gc","gm_smokeshell_yel_gc","gm_smokeshell_grn_dm21",
         "gm_smokeshell_red_dm23","gm_smokeshell_yel_dm26","gm_smokeshell_org_dm32"
     ];
 };
-
 if (_hasGM) then {
     (_loadoutData get "lightExplosives") append [
         "gm_explosive_plnp_charge"
     ];
 };
-
 if (_hasGM) then {
     (_loadoutData get "heavyExplosives") append [
         "gm_explosive_petn_charge"
     ];
 };
-
 if (_hasGM) then {
     (_loadoutData get "ATMines") append [
         "gm_mine_at_dm21","gm_mine_at_tm46"
     ];
 };
-
 if (_hasGM) then {
     (_loadoutData get "APMines") append [
         "gm_mine_ap_dm31"
+    ];
+};
+
+if (_hasCSLA) then {
+    (_loadoutData get "antiInfantryGrenades") append [
+        "CSLA_F1","CSLA_RG4o","CSLA_RG4u","CSLA_URG86u","CSLA_URG86o"
+    ];
+};
+if (_hasCSLA) then {
+    (_loadoutData get "lightExplosives") append [
+        "CSLA_TNT0100g"
+    ];
+};
+if (_hasCSLA) then {
+    (_loadoutData get "APMines") append [
+        "CSLA_F1m_mag","US85_M67m_mag","CSLA_NO2","CSLA_RG4m_mag","CSLA_URG86m_mag","CSLA_PPMiNa_mag"
+    ];
+};
+if (_hasCSLA) then {
+    (_loadoutData get "ATMines") append [
+        "CSLA_PtMiBa3_mag"
     ];
 };
 
@@ -404,6 +429,84 @@ if (_hasGM) then {
     ];
 };
 
+if (_hasCSLA) then {
+    _rpgs append [
+        ["US85_M136", "", "", "", ["US85_M136_Mag"], [], ""],
+        ["US85_M47", "", "", "", ["US85_M47_Mag"], [], ""],
+        ["CSLA_RPG7", "", "", "CSLA_PGO7", ["CSLA_PG7M110V", "CSLA_PG7M110V"], [], ""],
+		["CSLA_RPG75", "", "", "", ["CSLA_RPG75_Mag", "CSLA_RPG75_Mag"], [], ""],
+		["CSLA_RPG7", "", "", "CSLA_PGO7", ["CSLA_PG7M110V", "CSLA_PG7M110V"], [], ""]
+    ];
+    (_loadoutData get "lightHELaunchers") append [
+        ["US85_LAW72", "", "", "", ["US85_LAW72_Mag", "US85_LAW72_Mag"], [], ""],
+        ["US85_MAAWS", "", "", "", ["US85_MAAWS_HEDP","US85_MAAWS_HEDP","US85_MAAWS_HEAT"], [], ""],
+		["US85_SMAW", "", "", "", ["US85_SMAW_HEAA","US85_SMAW_HEAA","US85_SMAW_HEDP"], [], ""]
+    ];
+    (_loadoutData get "AALaunchers") append [
+        ["CSLA_9K32", "", "", "", ["CSLA_9M32M","CSLA_9M32M"], [], ""],
+		["US85_FIM92", "", "", "", ["US85_FIM92_Mag","US85_FIM92_Mag"], [], ""]
+    ];
+	_gls append [
+		["US85_M16A2CARGL", "", "", "US85_sc2000_M16", ["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], ["US85_M406","US85_M406","US85_M406"], ""],
+		["US85_M16A2GL", "", "", "US85_sc2000_M16", ["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], ["US85_M406","US85_M406","US85_M406"], ""],
+		["CSLA_VG70", "", "", "", ["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43","CSLA_Sa58_30rnd_7_62Sv43"], ["CSLA_26_5vz70","CSLA_26_5vz70","CSLA_26_5vz70","CSLA_26_5sigZl1a"], "CSLA_Sa58bnt"]
+	];
+	_rifles append [
+		["US85_FAL", "", "", "",  ["US85_20Rnd_762x51", "US85_20Rnd_762M61", "US85_20Rnd_762M61"], [], ""],
+		["US85_FALf", "", "", "",  ["US85_20Rnd_762x51", "US85_20Rnd_762M61", "US85_20Rnd_762M61"], [], ""],
+		["US85_M14", "", "", "",  ["US85_20Rnd_762x51", "US85_20Rnd_762M61", "US85_20Rnd_762M61"], [], ""],
+		["US85_M16A1", "", "", "",  ["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], [], ""],
+		["US85_M16A2", "", "", "",  ["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], [], ""],
+		["CSLA_Sa58P", "", "", "",  ["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43","CSLA_Sa58_30rnd_7_62Sv43"], [], ""],
+		["CSLA_Sa58V", "", "", "",  ["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43","CSLA_Sa58_30rnd_7_62Sv43"], [], "CSLA_Sa58bpd"]
+	];
+    _carbines append [
+        ["US85_M16A2CAR", "", "", "",  ["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], [], ""],
+        ["US85_MPVN", "", "", "", ["US85_MPV_30Rnd_9Luger","US85_MPV_30Rnd_9Luger","US85_MPV_30Rnd_9Luger"], [], ""],
+		["US85_MPVSD", "", "", "", ["US85_MPV_30Rnd_9Luger","US85_MPV_30Rnd_9Luger","US85_MPV_30Rnd_9Luger"], [], ""],
+        ["CSLA_rSa61", "", "", "", ["CSLA_Sa61_20rnd_7_65Pi27","CSLA_Sa61_20rnd_7_65Pi27","CSLA_Sa61_20rnd_7_65Pi27","CSLA_Sa61_10rnd_7_65Pi27"], [], ""],
+		["CSLA_Sa24", "", "", "",  ["CSLA_Sa24_32rnd_7_62Pi52", "CSLA_Sa24_32rnd_7_62Pi52", "CSLA_Sa24_32rnd_7_62Pi52"], [], ""],
+		["CSLA_Sa26", "", "", "",  ["CSLA_Sa24_32rnd_7_62Pi52", "CSLA_Sa24_32rnd_7_62Pi52", "CSLA_Sa24_32rnd_7_62Pi52"], [], ""]
+    ];
+    _tunedRifles append [
+        ["US85_FAL", "", "", "US85_scFAL",  ["US85_20Rnd_762x51", "US85_20Rnd_762M61", "US85_20Rnd_762M61"], [], "US85_FALbpd"],
+        ["US85_FALf", "", "", "US85_scFAL",  ["US85_20Rnd_762x51", "US85_20Rnd_762M61", "US85_20Rnd_762M61"], [], "US85_FALbpd"],
+		["US85_M16A2CAR", "US85_M16tlm","US85_M16fl","US85_sc4x20_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], [], ""],
+        ["US85_M16A1", "US85_M16tlm", "", "US85_sc4x20_M16",  ["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], [], ""],
+		["US85_M16A2", "US85_M16tlm", "", "US85_sc4x20_M16",  ["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], [], ""],
+		["CSLA_Sa58P", "","","CSLA_ZD4x8",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43","CSLA_Sa58_30rnd_7_62Sv43"], [], "CSLA_Sa58bpd"]
+    ];
+    _marksmanRifles append [
+        ["CSLA_HuntingRifle","","","",["CSLA_10Rnd_762hunt","CSLA_10Rnd_762hunt", "CSLA_10Rnd_762hunt","CSLA_10Rnd_762hunt"], [], "gm_msg90_bipod_blk"],
+        ["US85_M14","","","US85_scM21",["US85_20Rnd_762x51", "US85_20Rnd_762M61", "US85_20Rnd_762M61"], [], "US85_M14bpd"],
+		["US85_M21","","","US85_scM21",["US85_20Rnd_762x51", "US85_20Rnd_762M61", "US85_20Rnd_762M61"], [], "US85_M14bpd"],
+		["CSLA_OP63","","","CSLA_PSO1_OP63",["CSLA_OP63_10rnd_7_62Odst59","CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62Odst59","CSLA_OP63_10rnd_7_62PZ59"], [], ""]
+    ];
+    _enforcerRifles append [
+        ["US85_FAL", "", "", "US85_scFAL",  ["US85_20Rnd_762x51", "US85_20Rnd_762M61", "US85_20Rnd_762M61"], [], "US85_FALbpd"],
+        ["US85_FALf", "", "", "US85_scFAL",  ["US85_20Rnd_762x51", "US85_20Rnd_762M61", "US85_20Rnd_762M61"], [], "US85_FALbpd"],
+		["US85_M16A2CAR", "","US85_M16fl","US85_sc4x20_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], [], ""],
+        ["US85_M16A1", "", "", "US85_sc4x20_M16",  ["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], [], ""],
+		["US85_M16A2", "", "", "US85_sc4x20_M16",  ["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_20Rnd_556x45","US85_20Rnd_556x45"], [], ""],
+		["CSLA_Sa58P", "","","CSLA_ZD4x8",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43","CSLA_Sa58_30rnd_7_62Sv43"], [], "CSLA_Sa58bpd"],
+		["CSLA_Sa58V", "", "", "",  ["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43","CSLA_Sa58_30rnd_7_62Sv43"], [], "CSLA_Sa58bpd"]
+    ];
+    _mgs append [
+        ["US85_M249", "", "", "US85_sc4x20M249", ["US85_200Rnd_556x45","US85_200Rnd_556x45"], [], ""],
+		["US85_M60", "", "", "", ["US85_100Rnd_762x51","US85_100Rnd_762x51"], [], ""],
+        ["CSLA_UK59L", "", "", "CSLA_UK59_ZD4x8", ["CSLA_UK59_50rnd_7_62vz59","CSLA_UK59_50rnd_7_62Sv59","CSLA_UK59_50rnd_7_62PZ59","CSLA_UK59_50rnd_7_62Tz59","CSLA_UK59_50rnd_7_62TzSv59"], [], ""]
+    ];
+	_pistols append [
+        ["US85_1911", "", "", "", ["US85_1911_7Rnd_045ACP","US85_1911_7Rnd_045ACP","US85_1911_7Rnd_045ACP"], [], ""],
+        ["US85_M9", "", "", "", ["US85_M9_15Rnd_9Luger","US85_M9_15Rnd_9Luger","US85_M9_15Rnd_9Luger"], [], ""],
+        ["CSLA_Pi52", "", "", "", ["CSLA_Pi52_8rnd_7_62Pi52","CSLA_Pi52_8rnd_7_62Pi52","CSLA_Pi52_8rnd_7_62Pi52"], [], ""],
+        ["CSLA_Pi75lr", "", "", "", ["CSLA_Pi75_15Rnd_9Luger","CSLA_Pi75_15Rnd_9Luger","CSLA_Pi75_15Rnd_9Luger"], [], ""],
+        ["CSLA_Pi75sr", "", "", "", ["CSLA_Pi75_15Rnd_9Luger","CSLA_Pi75_15Rnd_9Luger","CSLA_Pi75_15Rnd_9Luger"], [], ""],
+        ["CSLA_Pi82", "", "", "", ["CSLA_Pi82_12rnd_9Pi82","CSLA_Pi82_12rnd_9Pi82","CSLA_Pi82_12rnd_9Pi82"], [], ""],
+        ["CSLA_Sa61", "", "", "", ["CSLA_Sa61_10rnd_7_65Pi27","CSLA_Sa61_10rnd_7_65Pi27","CSLA_Sa61_20rnd_7_65Pi27","CSLA_Sa61_20rnd_7_65Pi27"], [], ""]
+    ];
+};
+
 _loadoutData set ["rifles", _rifles];
 _loadoutData set ["tunedRifles", _tunedRifles];
 _loadoutData set ["enforcerRifles", _enforcerRifles];
@@ -485,6 +588,26 @@ if (_hasGM) then {
     ];
 };
 
+if (_hasCSLA) then {
+	(_loadoutData get "headgear") append [
+        "US85_beanie",
+        "CSLA_beretM",
+        "CSLA_beretR",
+        "AFMC_booniehatLizard",
+		"US85_hat",
+		"FIA_hat85Gn",
+		"FIA_hat85bGn",
+		"FIA_hat85Mlok",
+		"FIA_hat85bMlok",
+		"FIA_capBk",
+		"FIA_capGn",
+		"FIA_capMlok",
+		"CSLA_BudajkaBk",
+		"CSLA_BudajkaGy",
+		"FIA_Budajka"
+    ];
+};
+
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
@@ -549,6 +672,40 @@ if (_hasGM) then {
 	];
 };
 
+if (_hasCSLA) then {
+	_vests append [
+	"CSLA_gr60brr", 
+	"CSLA_gr60base", 
+	"CSLA_gr60drv", 
+	"CSLA_gr60crw", 
+	"CSLA_gr60svc", 
+	"CSLA_gr60medic" ,
+	"CSLA_gr60ofc1",
+	"CSLA_gr60OP63",
+	"CSLA_gr60rfl",
+	"CSLA_gr60RPG7",
+	"CSLA_gr60RPG7r",
+	"CSLA_gr60sgt",
+	"CSLA_gr85ptMdc",
+	"CSLA_gr85ptOP63",
+	"CSLA_gr85ptBase",
+	"CSLA_gr85lrrOP63",
+	"CSLA_gr85lrrBase",
+	"CSLA_gr85ptSgt",
+	"CSLA_gr85Uah61",
+	"AFMC_grY_FAL",
+	"US85_grY_M16",
+	"US85_grY_M24",
+	"US85_grY_M9",
+	"AFMC_grY_MG",
+	"FIA_grY_MG",
+	"US85_grY_MG",
+	"FIA_grY_MPV",
+	"US85_grY_MPV",
+	"US85_grY_snp"
+	];
+};
+
 private _heavyVests = ["V_TacVestIR_blk", "V_Press_F", "V_PlateCarrierIAGL_oli", "V_I_G_resistanceLeader_F", "V_TacVest_blk_POLICE"];
 
 if (_hasApex) then {
@@ -593,6 +750,31 @@ if (_hasGM) then {
 	"gm_ge_bgs_vest_type3_gry",
 	"gm_ge_bgs_vest_type3a1_oli",
 	"gm_ge_bgs_vest_type3a1_gry"
+	];
+};
+
+if (_hasCSLA) then {
+	_heavyVests append [
+	"AFMC_grVest", 
+	"AFMC_grV_M16", 
+	"AFMC_grV_M24",
+	"AFMC_grV_MG",
+	"AFMC_grV_ofc",
+	"US85_grVest",
+	"US85_grV_M16GL",
+	"US85_grVm_M16GL",
+	"US85_grV_M16",
+	"US85_grV_M24",
+	"US85_grV_M9",
+	"US85_grV_MG",
+	"US85_grV_MPV",
+	"US85_grV_ofc",
+	"US85_grSF_M16GL",
+	"US85_grSF_M9",
+	"US85_grSF_MG",
+	"US85_grSF_TLBV",
+	"US85_grSF_M16",
+	"US85_grSF_M24"
 	];
 };
 
@@ -647,6 +829,20 @@ if (_hasGM) then {
     ];
 };
 
+if (_hasCSLA) then {
+	(_loadoutData get "uniforms") append [
+        "FIA_uniwld11",
+        "FIA_uniwld",
+        "FIA_uniwld1",
+        "FIA_uniwld10",
+		"FIA_uniwld3",
+		"FIA_uniwld4",
+		"FIA_uniwld6",
+		"FIA_uniwld7",
+		"FIA_uniwld9"
+    ];
+};
+
 _loadoutData set ["heavyUniforms", []]; ///don't know why it's here but could be useful in the future
 
 if (_hasContact) then {
@@ -684,6 +880,28 @@ if (_hasGM) then {
 		];
 };
 
+if (_hasCSLA) then {
+	_helmets append [        
+		"US85_helmetM1g",
+        "AFMC_helmetM1c",
+        "US85_helmetM1c",
+        "AFMC_helmetMk6",
+        "AFMC_helmetMk6para",
+        "AFMC_helmetMk6r",
+        "US85_helmetPASGT",
+		"US85_helmetPASGTr",
+		"US85_helmetPASGTG",
+		"US85_helmetSFL",
+		"US85_helmetSFLG",
+		"US85_helmetSFLG_on",
+		"CSLA_helmet53",
+		"CSLA_helmet53j",
+		"CSLA_helmet53m",
+		"CSLA_helmet53G",
+		"CSLA_helmet53G_on"
+		];
+};
+
 private _crewhelmets = ["H_Tank_black_F"];
 
 if (_hasWs) then {
@@ -700,6 +918,10 @@ if (_hasLawsOfWar) then {
 
 if (_hasGM) then {
 	_crewhelmets pushBack "gm_ge_headgear_headset_crew_oli";
+};
+
+if (_hasCSLA) then {
+	_crewhelmets append ["US85_helmetDH132", "US85_helmetDH132G", "US85_helmetDH132G_on"];
 };
 
 /////
