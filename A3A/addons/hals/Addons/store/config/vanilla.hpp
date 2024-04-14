@@ -1157,9 +1157,8 @@
 
 			ITEM(V_PlateCarrierIA1_dgtl, 1000, MISC_STOCK);
 			ITEM(V_PlateCarrierIA2_dgtl, 1000, MISC_STOCK);
-			ITEM(V_PlateCarrier1_blk, 1400, MISC_STOCK);
+			ITEM(V_PlateCarrier1_blk, 1200, MISC_STOCK);
 			ITEM(V_PlateCarrier2_rgr_noflag_F, 1400, MISC_STOCK);
-			ITEM(V_PlateCarrier1_blk, 900, MISC_STOCK);
 			ITEM(V_PlateCarrier2_blk, 1250, MISC_STOCK);
 			ITEM(V_PlateCarrierIAGL_oli, 1300, MISC_STOCK);
 
@@ -1172,7 +1171,7 @@
 
 			ITEM(V_EOD_blue_F, 900, MISC_STOCK);
 			ITEM(V_EOD_coyote_F, 900, MISC_STOCK);
-			ITEM(V_EOD_coyote_F, 900, MISC_STOCK);
+			ITEM(V_EOD_olive_F, 900, MISC_STOCK);
 
 			ITEM(V_DeckCrew_blue_F, 900, MISC_STOCK);
 			ITEM(V_DeckCrew_brown_F, 900, MISC_STOCK);
