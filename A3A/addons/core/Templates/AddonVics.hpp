@@ -110,7 +110,7 @@ class AddonVics
         loadedMessage = "Global Mobilization loaded, civilian vehicle pool expanded";
     };
 
-    class CLSAIronCurtian
+    class CSLAIronCurtain
     {
         path = QPATHTOFOLDER(Templates\AddonVics);
         requiredAddons[] = {"CSLA_CIV"};
