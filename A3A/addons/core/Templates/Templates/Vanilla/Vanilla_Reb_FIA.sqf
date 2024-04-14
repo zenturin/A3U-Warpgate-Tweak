@@ -212,6 +212,7 @@ private _shopMarksman = if (_hasMarksman) then {
 };
 private _shopGM = if (_hasGM) then {
     [
+
     ["gm_ge_army_kat1_463_mlrs", 55000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
     ["gm_gc_army_2s1", 50000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
     ["gm_dk_army_m109", 50000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
@@ -261,8 +262,7 @@ private _shopGM = if (_hasGM) then {
 } else {
     []
 };
-
-private _shopCLSA = if (_hasCSLA) then {
+private _shopCSLA = if (_hasCSLA) then {
     [
     ["AFMC_M252_Stat", 5000, "STATICMORTAR", {tierWar > 3}],
     ["CSLA_M52_Stat", 4000, "STATICMORTAR", {tierWar > 3}],
@@ -301,7 +301,7 @@ private _shopCLSA = if (_hasCSLA) then {
     []
 };
 
-private _vehiclesBlackMarket = _shopTanks + _shopApex + _shopWs + _shopLawsOfWar + _shopContact + _shopJets + _shopMarksman + _shopGM + _shopCLSA + [
+private _vehiclesBlackMarket = _shopTanks + _shopApex + _shopWs + _shopLawsOfWar + _shopContact + _shopJets + _shopMarksman + _shopGM + _shopCSLA + [
     ["I_HMG_01_high_F", 1000, "STATICMG", {tierWar > 3}],
     ["I_HMG_01_F", 700, "STATICMG", {tierWar > 3}],
     ["I_GMG_01_high_F", 3000, "STATICMG", {tierWar > 3}],
@@ -377,7 +377,6 @@ if (_hasApex) then {
         "V_TacChestrig_oli_F"
     ];
 };
-
 
 if (_hasGM) then {
     _initialRebelEquipment append [
@@ -535,7 +534,6 @@ if (_hasArtOfWar) then {
         "U_C_ArtTShirt_01_v6_F"
     ];
 };
-
 if (_hasGM) then {
     _dlcUniforms append [
         "gm_gc_civ_uniform_man_04_80_gry",
@@ -586,7 +584,6 @@ if (_hasCSLA) then {
         "FIA_uniWld9"
       ];
 };
-
 if (_hasRF) then {
     _dlcUniforms append [
         "U_IG_Guerrilla_RF",
@@ -897,7 +894,7 @@ private _squadLeaderTemplate = {
 
 private _riflemanTemplate = {
     ["uniforms"] call _fnc_setUniform;
-    [selectRandomWeighted [[], 1.25, "glasses", 1, "goggles", 0.75, "facemask", 1, "balaclavas", 1, "argoFacemask", 1 , "facewearWS", 0.75, "facewearContact", 0.3, "facewearLawsOfWar", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 1.25, "glasses", 1, "goggles", 0.75, "facemask", 1, "balaclavas", 1, "argoFacemask", 1 , "facewearWS", 0.75, "facewearContact", 0.3, "facewearLawsOfWar", 0.5, "facewearGM", 0.3, "facewearCLSA", 0.2]] call _fnc_setFacewear;
     
     ["items_medical_standard"] call _fnc_addItemSet;
     ["items_miscEssentials"] call _fnc_addItemSet;

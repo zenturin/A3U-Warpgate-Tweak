@@ -11,6 +11,7 @@ private _hasGM = "gm" in A3A_enabledDLC;
 private _hasCSLA = "csla" in A3A_enabledDLC;
 private _hasRF = "rf" in A3A_enabledDLC;
 
+
 //////////////////////////
 //   Side Information   //
 //////////////////////////
@@ -57,6 +58,7 @@ if (_hasJets) then {
 	_planesAA pushback "I_Plane_Fighter_04_F";
 };
 private _planesTransport = [];
+
 
 private _helisLight = ["I_Heli_light_03_unarmed_F"];
 private _transportHelicopters = ["I_Heli_Transport_02_F"];
@@ -132,8 +134,9 @@ if (_hasWs) then {
 };
 
 //If GM cdlc + extra AAF mod
+
 private _hasAAFGM = ["gmx_aaf_m113a2dk_wdl"] call A3U_fnc_hasAddon;
-if (_hasGM && _hasAAFGM) then {
+if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) then {
     _staticMG pushBack "gmx_aaf_mg3_aatripod";
     _staticAT pushBack "gmx_aaf_milan_launcher_tripod";
     _basic append ["gm_ge_army_k125","gmx_aaf_brpz1_wdl"];
@@ -162,6 +165,7 @@ if (_hasGM && _hasAAFGM) then {
     _fuelTrucks pushBack "gmx_aaf_kat1_451_refuel_wdl";
     _medicalTrucks append ["gmx_aaf_u1300l_medic_wdl","gmx_aaf_m113a1g_medic_wdl"];
 };
+
 
 if (_hasCSLA) then {
     _staticMG pushBack "US85_M2h";
@@ -259,7 +263,6 @@ if (_hasCSLA) then {
     ["gmx_aaf_fuchsa0_reconnaissance_wdl", ["beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"CamoNet_01_unhide",0.3,"CamoNet_02_rack_unhide",0.3,"StowingBox_01_unhide",0.3,"SignsExtraWide_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
     ["US85_M1A1", ["ADD_smallAmmobox",0.3,"ADD_medAmmoBox",0.3,"ADD_topStuff",0.3,"ADD_cardBoardBox",0.3,"ADD_trackLink",0.3,"ADD_spareWheel",0.3,"ADD_frontTowRings",0.3,"ADD_rearTowRings",0.3,"ADD_frontTowBar",0.3,"ADD_rearTowBar",0.3,"ADD_leftTowCable",0.3,"ADD_rightTowCable",0.3,"ADD_alice",0.3,"ADD_fuelCan",0.3,"ADD_camoNet",0.3]],
     ["US85_M1IP", ["ADD_topStuff",0.3,"ADD_cardBoardBox",0.3,"ADD_trackLink",0.3,"ADD_spareWheel",0.3,"ADD_frontTowRings",0.3,"ADD_rearTowRings",0.3,"ADD_frontTowBar",0.3,"ADD_rearTowBar",0.3,"ADD_leftTowCable",0.3,"ADD_rightTowCable",0.3,"ADD_alice",0.3,"ADD_fuelCan",0.3,"ADD_camoNet",0.3]]
-
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
@@ -919,6 +922,7 @@ if (_hasGM) then {
         ["gm_pm63_blk", "", "", "", ["gm_25Rnd_9x18mm_B_pst_pm63_blk","gm_15Rnd_9x18mm_B_pst_pm63_blk"], [], ""]
     ];
 };
+
 
 if (_hasRF) then {
     (_sfLoadoutData get "sidearms") append [

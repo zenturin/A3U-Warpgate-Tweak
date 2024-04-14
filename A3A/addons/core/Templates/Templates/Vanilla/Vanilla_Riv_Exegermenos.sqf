@@ -81,7 +81,6 @@ if (_hasTanks) then {
 	_tanks pushBack "I_LT_01_cannon_F";
 };
 
-
 private _staticLowWeapons = ["O_G_HMG_02_F"];
 private _staticAT = ["O_static_AT_F"];
 private _staticMortars = ["O_Mortar_01_F"];
@@ -113,7 +112,6 @@ if (_hasCSLA) then {
 };
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
-
 ["handGrenadeAmmo", ["GrenadeHand"]] call _fnc_saveToTemplate;
 ["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
 

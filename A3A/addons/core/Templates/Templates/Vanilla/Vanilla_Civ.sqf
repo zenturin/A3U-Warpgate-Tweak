@@ -120,6 +120,7 @@ if (_hasRF) then {
     _civFuel append ["a3a_civ_Pickup_fuel_rf", 0.1];
 };
 
+["vehiclesCivHeli", _civHelicopter] call _fnc_saveToTemplate;
 ["vehiclesCivCar", _civCarsWithWeights] call _fnc_saveToTemplate;
 ["vehiclesCivHeli", _civHelicopter] call _fnc_saveToTemplate;
 ["vehiclesCivIndustrial", _civIndustrial] call _fnc_saveToTemplate;
@@ -251,6 +252,7 @@ if (_hasGM) then {
     "gm_gc_civ_uniform_man_04_80_gry"
   ];
 };
+
 
 if (_hasCSLA) then {
   _dlcUniforms append [
