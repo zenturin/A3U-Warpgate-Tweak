@@ -14,6 +14,33 @@ Parameters:
 
 params ["_helicopter", "_crewGroup", "_cargoGroup", "_posDestination", "_originPos", "_landPos"];
 
+
+private _fnc_HeliDoors = {
+    params ["_helicopter", "_state"];
+
+    private _helicopter = _this#0;
+    private _state = _this#1;
+
+    switch _state do
+    {
+       case "open": { _state = 1; };
+       case "close": { _state = 0; };
+    };
+
+   _helicopter animateDoor ["door_cargo_left", _state];   // Cougar
+   _helicopter animateDoor ["Door_L", _state];            // Ghosthawk
+   _helicopter animateDoor ["Door_L_source", _state];     // Huron front door
+   _helicopter animateDoor ["Door_rear_source", _state];  // Huron rear door
+   _helicopter animateDoor ["door_1", _state];            // Wildcat
+   _helicopter animate ["dvere1_posunZ",_state];          // Orca
+   sleep 0.5;
+   _helicopter animateDoor ["door_cargo_right", _state];  // Cougar
+   _helicopter animateDoor ["Door_R", _state];            // Ghosthawk
+   _helicopter animateDoor ["Door_R_source", _state];     // Huron front door
+   _helicopter animateDoor ["door_2", _state];            // Wildcat
+   _helicopter animate ["dvere2_posunZ",_state];          // Orca
+};
+
 // avoid weird situations where they receive RTB instructions before they finish unloading
 _crewGroup setVariable ["A3A_AIScriptHandle", _thisScript];
 _cargoGroup setVariable ["A3A_AIScriptHandle", _thisScript];
@@ -33,9 +60,9 @@ _vehWP0 setWaypointBehaviour "CARELESS";
 private _midHeight = [100, 150] select (A3A_climate isEqualTo "tropical");
 _helicopter flyInHeight _midHeight;
 
-waitUntil {sleep 1; (_helicopter distance2D _landPos) < 875};
+waitUntil {sleep 1; (_helicopter distance2D _landPos) < 800};
 
-while {_helicopter distance2D _landPos > 600} do {
+while {_helicopter distance2D _landPos > 650} do {
     [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
     [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
     [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
@@ -134,19 +161,8 @@ _helicopter engineOn true; ///keep the engine running
 
 _cargoGroup leaveVehicle _helicopter;
 
-if(canMove _helicopter || alive _driver) then{
-   _helicopter animateDoor ["door_cargo_left", 1];   // Cougar
-   _helicopter animateDoor ["Door_L", 1];            // Ghosthawk
-   _helicopter animateDoor ["Door_L_source", 1];     // Huron front door
-   _helicopter animateDoor ["Door_rear_source", 1];  // Huron rear door
-   _helicopter animateDoor ["door_1", 1];            // Wildcat
-   _helicopter animate ["dvere1_posunZ", 1];          // Orca
-   sleep 0.5;
-   _helicopter animateDoor ["door_cargo_right", 1];  // Cougar
-   _helicopter animateDoor ["Door_R", 1];            // Ghosthawk
-   _helicopter animateDoor ["Door_R_source", 1];     // Huron front door
-   _helicopter animateDoor ["door_2", 1];            // Wildcat
-   _helicopter animate ["dvere2_posunZ", 1];          // Orca
+if(canMove _helicopter || alive _driver) then {
+    [_helicopter, "open"] spawn _fnc_HeliDoors;
 };
 
 private _second = false;
@@ -189,23 +205,13 @@ private _dismountTime = count units _cargoGroup - 4;
 [_helicopter] call A3A_fnc_smokeCoverAuto;          // Already done by GetOut handler in AIVehInit?
 
 
-
 _helicopter engineOn true;  ///still keeping the engine running
+
 sleep _dismountTime + 1;
+
 _helicopter engineOn true;  ///we must keep the engine running
-if(canMove _helicopter || alive _driver) then{
-   _helicopter animateDoor ["door_cargo_left", 0];   // Cougar
-   _helicopter animateDoor ["Door_L", 0];            // Ghosthawk
-   _helicopter animateDoor ["Door_L_source", 0];     // Huron front door
-   _helicopter animateDoor ["Door_rear_source", 0];  // Huron rear door
-   _helicopter animateDoor ["door_1", 0];            // Wildcat
-   _helicopter animate ["dvere1_posunZ", 0];          // Orca
-   sleep 0.5;
-   _helicopter animateDoor ["door_cargo_right", 0];  // Cougar
-   _helicopter animateDoor ["Door_R", 0];            // Ghosthawk
-   _helicopter animateDoor ["Door_R_source", 0];     // Huron front door
-   _helicopter animateDoor ["door_2", 0];            // Wildcat
-   _helicopter animate ["dvere2_posunZ", 0];          // Orca
+if(canMove _helicopter || alive _driver) then {
+    [_helicopter, "close"] spawn _fnc_HeliDoors;
 };
 // Heli RTB
 private _vehWP1 = _crewGroup addWaypoint [_originPos, 0];
@@ -223,5 +229,4 @@ for '_i' from 1 to (5 + (round random 2)) do
         [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
         sleep 1;
     };
-
 _helicopter action ["LandGearUp", _helicopter];
