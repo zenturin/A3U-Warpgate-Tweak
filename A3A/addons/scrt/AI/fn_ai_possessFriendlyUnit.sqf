@@ -49,15 +49,16 @@ private _originalBody = player;
 private _playerEh = player addEventHandler ["HandleDamage", {
 	private _player = _this select 0;
 	if (_player getVariable ["incapacitated", false]) then {} else {
-	_player removeEventHandler ["HandleDamage",_thisEventHandler];
-	selectPlayer _player;
-	(units group player) joinsilent group player;
-	group player selectLeader player;
-	_player setVariable ["controlReturned", true];
+		_player removeEventHandler ["HandleDamage",_thisEventHandler];
+		selectPlayer _player;
+		(units group player) joinsilent group player;
+		group player selectLeader player;
+		_player setVariable ["controlReturned", true];
 
-	[localize "STR_control_unit_hint_header", localize "STR_control_unit_damage_control_return_player"] call A3A_fnc_customHint;
+		[localize "STR_control_unit_hint_header", localize "STR_control_unit_damage_control_return_player"] call A3A_fnc_customHint;
 
-	nil;
+		nil;
+	};
 }];
 private _unitEh = _unit addEventHandler ["HandleDamage", {
 	private _unit = _this select 0;
