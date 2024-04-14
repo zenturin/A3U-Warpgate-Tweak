@@ -166,7 +166,6 @@ if (isClass (configFile >> "cfgVehicles" >> "gmx_aaf_m113a2dk_wdl") && _hasGM) t
     _medicalTrucks append ["gmx_aaf_u1300l_medic_wdl","gmx_aaf_m113a1g_medic_wdl"];
 };
 
-
 if (_hasCSLA) then {
     _staticMG pushBack "US85_M2h";
     _staticAT pushBack "US85_TOW_Stat";
@@ -922,7 +921,6 @@ if (_hasGM) then {
         ["gm_pm63_blk", "", "", "", ["gm_25Rnd_9x18mm_B_pst_pm63_blk","gm_15Rnd_9x18mm_B_pst_pm63_blk"], [], ""]
     ];
 };
-
 
 if (_hasRF) then {
     (_sfLoadoutData get "sidearms") append [
