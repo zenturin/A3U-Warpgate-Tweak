@@ -9936,30 +9936,35 @@
                 <Original>AI Control has already been used, wait %1 seconds.</Original>
                 <Russian>Управление ИИ уже было использовано, подождите %1 секунд.</Russian>
                 <Korean>인공지능 조종이 이미 사용되었습니다. %1초간 기다리십시오.</Korean>
+                <French>Le contrôle de l'IA a déjà été utilisé, attendez %1 secondes.</French>
             </Key>
             <Key ID="STR_antistasi_actions_common_notifications_money_found_title">
                 <Original>Money</Original>
                 <Russian>Деньги</Russian>
                 <Chinesesimp>钱</Chinesesimp>
                 <Korean>자금</Korean>
+                <French>Argent</French>
             </Key>
             <Key ID="STR_antistasi_actions_common_notifications_share_money_title">
                 <Original>Faction money has been shared.</Original>
                 <Russian>Разделение денег фракции</Russian>
                 <Chinesesimp>派系钱已分出</Chinesesimp>
                 <Korean>팩션 자금이 공유되었습니다.</Korean>
+                <French>L'argent de la faction a été partagé.</French>
             </Key>
             <Key ID="STR_antistasi_actions_common_notifications_share_money_not_enough_text">
                 <Original>Not enough money to share.</Original>
                 <Russian>Недостаточно денег для разделения.</Russian>
                 <Chinesesimp>钱不够分</Chinesesimp>
                 <Korean>공유할 자금이 부족합니다.</Korean>
+                <French>Il n'y a pas assez d'argent à partager.</French>
             </Key>
             <Key ID="STR_antistasi_actions_common_notifications_money_found_text">
                 <Original>Money has been found. Found banknotes have been divided equally among all players.</Original>
                 <Russian>В грузе были найдены деньги. Найденная валюта разделена поровну между всеми игроками.</Russian>
                 <Chinesesimp>找到了钱。捡到的纸币已平分给所有玩家。</Chinesesimp>
                 <Korean>돈을 발견했습니다. 발견된 돈은 모든 플레이어에게 동등하게 분배되었습니다.</Korean>
+                <French>De l'argent a été trouvé. Les billets de banque trouvés ont été répartis équitablement entre tous les joueurs.</French>
             </Key>
         </Container>
         <Container name="draw3d_text">
@@ -9968,6 +9973,7 @@
                 <Russian>Раненый</Russian>
                 <Chinesesimp>失去意识</Chinesesimp>
                 <Korean>의식불명</Korean>
+                <French>Inconscient</French>
             </Key>
         </Container>
         <Container name="player_actions">
@@ -9976,216 +9982,252 @@
                 <Russian>Заключить в тюрьму</Russian>
                 <Chinesesimp>监禁</Chinesesimp>
                 <Korean>수감</Korean>
+                <French>Emprisonnement</French>
             </Key>
             <Key ID="STR_imprison_action_request_one_text">
                 <Original>You're either a mercenary or criminal, illegal combatant. We will put you into the pit until your fate will be decided.</Original>
                 <Russian>Ты либо наемник, либо преступник, боевик. Мы посадим тебя в яму, пока будем решать твою судьбу.</Russian>
                 <Chinesesimp>你不是雇佣兵就是罪犯，要么就是非法战斗人员。我们会把你扔进坑里，直到你的命运被决定。</Chinesesimp>
                 <Korean>네놈은 용병이고 범죄자면서 불법 전투원이다. 우리는 네놈의 운명이 결정될 때까지 널 구덩이에 쳐넣겠다.</Korean>
+                <French>Vous êtes soit un mercenaire, soit un criminel, soit un combattant illégal. Nous vous mettrons dans la fosse jusqu'à ce que votre sort soit décidé.</French>
             </Key>
             <Key ID="STR_imprison_action_request_two_text">
                 <Original>You will be imprisoned by our nearest patrol.</Original>
                 <Russian>Вы будете заключены нашим ближайшим патрулем.</Russian>
                 <Chinesesimp>你将被我们最近的巡逻队囚禁。</Chinesesimp>
                 <Korean>넌 가장 가까운 우리 순찰대에게 수감될 것이다.</Korean>
+                <French>Vous serez emprisonnés par la patrouille la plus proche.</French>
             </Key>
             <Key ID="STR_imprison_action_request_three_text">
                 <Original>Your fate has sealed - we will put you into zindan for foreseeable future.</Original>
                 <Russian>Твоя судьба решена - мы посадим тебя в зиндан на обозримое будущее.</Russian>
                 <Chinesesimp>你的刑期注定是遥遥无期，我们将把你关进zindan（监狱）。</Chinesesimp>
                 <Korean>네놈의 운명은 이제 우리가 널 근시일 내에 Zindan 감옥에 쳐넣어질 예정이다.</Korean>
+                <French>Votre destin est désormais scellé : nous vous jetterons dans la prison de Zindan dans un avenir proche.</French>
             </Key>
             <Key ID="STR_imprison_action_response_success_one_text">
                 <Original>You can't do this to me!</Original>
                 <Russian>Вы не можете так со мной поступить!</Russian>
                 <Chinesesimp>你不能这样对我！</Chinesesimp>
                 <Korean>나한테 이럴 순 없어!</Korean>
+                <French>Tu ne peux pas me faire ça !</French>
             </Key>
             <Key ID="STR_imprison_action_response_success_two_text">
                 <Original>I knew what I was getting into...</Original>
                 <Russian>Я знал на что шёл...</Russian>
                 <Chinesesimp>我知道我在做什么…</Chinesesimp>
                 <Korean>이럴 생각은 없었다고...</Korean>
+                <French>Je savais dans quoi je m'embarquais...</French>
             </Key>
             <Key ID="STR_imprison_action_response_success_three_text">
                 <Original>My life is in your hands.</Original>
                 <Russian>Моя жизнь в ваших руках.</Russian>
                 <Chinesesimp>我的命在你手上。</Chinesesimp>
                 <Korean>내 목숨이 네 손에 달렸군.</Korean>
+                <French>Ma vie est entre vos mains.</French>
             </Key>
             <Key ID="STR_imprison_action_response_success_four_text">
                 <Original>Death is my only saving grace.</Original>
                 <Russian>Смерть — моё единственное спасение.</Russian>
                 <Chinesesimp>让我死了吧。</Chinesesimp>
                 <Korean>죽는 게 차라리 내 구원이지.</Korean>
+                <French>La mort est ma seule planche de salut.</French>
             </Key>
             <Key ID="STR_imprison_action_response_failure_one_text">
                 <Original>I won't give up on you!</Original>
                 <Russian>Я вам не сдамся!</Russian>
                 <Chinesesimp>我会记住你的！</Chinesesimp>
                 <Korean>난 절대 포기하지 않는다!</Korean>
+                <French>Je ne vous abandonnerai pas !</French>
             </Key>
             <Key ID="STR_imprison_action_response_failure_two_text">
                 <Original>You can take my freedom only from my cold, dead hands.</Original>
                 <Russian>Ты сможешь забрать мою свободу только из моих холодных, мертвых рук.</Russian>
                 <Chinesesimp>你只能从我冰冷、死去的手上夺走我的自由。</Chinesesimp>
                 <Korean>네놈은 내 차디찬 시체에서만 내 자유를 가져갈 수 있을 거다.</Korean>
+                <French>Vous ne pouvez que prendre ma liberté de mes mains froides et mortes.</French>
             </Key>
             <Key ID="STR_imprison_action_response_failure_three_text">
                 <Original>Your conditions are unacceptable to me. Long live %1!</Original>
                 <Russian>Ваши условия для меня неприемлемы. Да здравствует %1!</Russian>
                 <Chinesesimp>我不能接受条件， %1 万岁！</Chinesesimp>
                 <Korean>난 네놈의 조건을 받아들이지 않겠다. %1 만세!</Korean>
+                <French>Vos conditions sont inacceptables pour moi. Longue vie à %1 !</French>
             </Key>
             <Key ID="STR_release_action">
                 <Original>Release</Original>
                 <Russian>Освободить</Russian>
                 <Chinesesimp>释放</Chinesesimp>
                 <Korean>풀어주기</Korean>
+                <French>Libération</French>
             </Key>
             <Key ID="STR_reveal_action">
                 <Original>Reveal Enemy Positions</Original>
                 <Russian>Выведать вражеские позиции</Russian>
                 <Chinesesimp>显示敌人位置</Chinesesimp>
                 <Korean>적 위치 표시</Korean>
+                <French>Révéler les positions de l'ennemi</French>
             </Key>
             <Key ID="STR_recruit_action">
                 <Original>Recruit</Original>
                 <Russian>Рекрутировать</Russian>
                 <Chinesesimp>招募</Chinesesimp>
                 <Korean>모집하기</Korean>
+                <French>Recruter</French>
             </Key>
             <Key ID="STR_interrogate_action">
                 <Original>Interrogate</Original>
                 <Russian>Допросить</Russian>
                 <Chinesesimp>审讯</Chinesesimp>
                 <Korean>심문</Korean>
+                <French>Interroger</French>
             </Key>
             <Key ID="STR_recruit_text">
                 <Original>How about joining the good guys?</Original>
                 <Russian>Не хочешь присоединиться к сопротивлению?</Russian>
                 <Chinesesimp>你想加入我们吗？</Chinesesimp>
                 <Korean>의로운 이들과 함께 하는 게 어떻겠소?</Korean>
+                <French>Et si vous rejoigniez les gentils ?</French>
             </Key>
             <Key ID="STR_search_intel_text">
                 <Original>Search for Intel</Original>
                 <Russian>Обыскать</Russian>
                 <Chinesesimp>搜索情报</Chinesesimp>
                 <Korean>인텔 찾기</Korean>
+                <French>Recherche d'informations</French>
             </Key>
             <Key ID="STR_recruit_fail_text">
                 <Original>Screw you!</Original>
                 <Russian>Пошёл ты!</Russian>
                 <Chinesesimp>去你妈的！</Chinesesimp>
                 <Korean>좆까!</Korean>
+                <French>Allez vous faire voir !</French>
             </Key>
             <Key ID="STR_recruit_success_text">
                 <Original>Why not? It can't be any worse.</Original>
                 <Russian>Почему бы и нет? Я согласен.</Russian>
                 <Chinesesimp>为什么不呢？已经不能再糟了</Chinesesimp>
                 <Korean>안 될 거 뭐 있습니까? 이것보다 더 나쁘기야 하겠어요?</Korean>
+                <French>Pourquoi pas ? Cela ne peut pas être pire.</French>
             </Key>
             <Key ID="STR_release_request_text">
                 <Original>Go back to your base and tell your comrades we are not enemies. We just want to live in peace.</Original>
                 <Russian>Возвращайся на свою базу и скажи товарищам, что мы не враги. Мы просто хотим жить в мире.</Russian>
                 <Chinesesimp>回到你的基地，告诉你的战友我们不是敌人。 我们只想和平相处。</Chinesesimp>
                 <Korean>기지로 돌아가서 네 동지들에게 우린 적이 아니라고 말해라. 우린 그저 평화롭게 살고 싶을 뿐이다.</Korean>
+                <French>Retournez à votre base et dites à vos camarades que nous ne sommes pas des ennemis. Nous voulons simplement vivre en paix.</French>
             </Key>
             <Key ID="STR_release_response_one_text">
                 <Original>Thank you. I owe you my life.</Original>
                 <Russian>Спасибо. Я обязан тебе жизнью.</Russian>
                 <Chinesesimp>谢谢。 我欠你一条命。</Chinesesimp>
                 <Korean>감사합니다. 당신은 생명의 은인이에요.</Korean>
+                <French>Je vous remercie. Je vous dois la vie.</French>
             </Key>
             <Key ID="STR_release_response_two_text">
                 <Original>Thank you. I swear you won't regret it!</Original>
                 <Russian>Спасибо. Клянусь, ты не пожалеешь об этом!</Russian>
                 <Chinesesimp>谢谢。 我发誓你不会后悔的！</Chinesesimp>
                 <Korean>고맙습니다. 절대 후회하지 않을 겁니다!</Korean>
+                <French>Merci. Je vous jure que vous ne le regretterez pas !</French>
             </Key>
             <Key ID="STR_release_response_three_text">
                 <Original>Thank you, I will definitely remember this when I shoot you next time!</Original>
                 <Russian>Спасибо, я обязательно об этом вспомню, когда буду стрелять в вас в следующий раз!</Russian>
                 <Chinesesimp>谢谢你，我会记住的！</Chinesesimp>
                 <Korean>고맙다, 다음에 널 쏘게 된다면 이 순간을 확실히 기억해주지!</Korean>
+                <French>Merci, je m'en souviendrai la prochaine fois que je vous tirerai dessus!</French>
             </Key>
             <Key ID="STR_interrogate_phrase1_text">
                 <Original>Tell me what you know!</Original>
                 <Russian>Скажи мне, что ты знаешь!</Russian>
                 <Chinesesimp>告诉我你知道的！</Chinesesimp>
                 <Korean>아는 걸 전부 불어라!</Korean>
+                <French>Dites-moi ce que vous savez !</French>
             </Key>
             <Key ID="STR_interrogate_phrase2_text">
                 <Original>Spit it out!</Original>
                 <Russian>Выкладывай всё что знаешь!</Russian>
                 <Chinesesimp>说出你知道的！</Chinesesimp>
                 <Korean>불어!</Korean>
+                <French>Crachez le morceau !</French>
             </Key>
             <Key ID="STR_interrogate_phrase3_text">
                 <Original>Tell everything you know or you will die.</Original>
                 <Russian>Скажи всё что знаешь, иначе ты умрёшь.</Russian>
                 <Chinesesimp>说出你知道的一切，否则你会死。</Chinesesimp>
                 <Korean>알고 있는 모든 걸 안 말하면 넌 죽는다.</Korean>
+                <French>Racontez tout ce que vous savez ou vous mourrez.</French>
             </Key>
             <Key ID="STR_reveal_text">
                 <Original>Tell me where are your comrades!</Original>
                 <Russian>Скажи мне - где твои товарищи?</Russian>
                 <Chinesesimp>告诉我，你的战友们在哪里！</Chinesesimp>
                 <Korean>네놈의 동지들이 어딨는지 불어!</Korean>
+                <French>Dites-moi où sont vos camarades !</French>
             </Key>
             <Key ID="STR_interrogation_success_phrase1_text">
                 <Original>Okay-okay, I tell you what I know, don't shoot!</Original>
                 <Russian>Ладно-ладно, я всё расскажу, только не стреляйте!</Russian>
                 <Chinesesimp>好好好，我告诉你，别开枪！</Chinesesimp>
                 <Korean>알았어, 알았다구! 아는 걸 전부 말할 테니까 쏘지 마!</Korean>
+                <French>D'accord, d'accord, je vous dis ce que je sais, ne tirez pas!</French>
             </Key>
             <Key ID="STR_interrogation_success_phrase2_text">
                 <Original>Here's everything I know.</Original>
                 <Russian>Хорошо, я всё скажу, только не бейте!</Russian>
                 <Chinesesimp>别打我，我全部告诉你。</Chinesesimp>
                 <Korean>이게 내가 아는 전부입니다.</Korean>
+                <French>Voici tout ce que je sais.</French>
             </Key>
             <Key ID="STR_interrogation_success_phrase3_text">
                 <Original>I don't know much, but here's something I can offer in exchange for sparing my life.</Original>
                 <Russian>Я мало что знаю, но вот кое-что, что я могу предложить в обмен на сохранение моей жизни.</Russian>
                 <Chinesesimp>我知道的不多，但是我有能换取我命的东西。</Chinesesimp>
                 <Korean>잘은 모르지만 절 살려준 대가로 줄 수 있는 게 있어요.</Korean>
+                <French>Je ne sais pas grand-chose, mais je peux vous offrir quelque chose en échange de ma vie.</French>
             </Key>
             <Key ID="STR_interrogation_fail_noknowledge_phrase1_text">
                 <Original>I would, but I don't know anything.</Original>
                 <Russian>Я бы рассказал что знаю, но я совершенно ничего не знаю.</Russian>
                 <Chinesesimp>我想，但我什么都不知道。</Chinesesimp>
                 <Korean>나도 그렇고 싶은데 아는 게 없어요.</Korean>
+                <French>J'aimerais bien, mais je ne sais rien.</French>
             </Key>
             <Key ID="STR_interrogation_fail_noknowledge_phrase2_text">
                 <Original>I don't have any intelligence.</Original>
                 <Russian>Никакими разведданными не располагаю.</Russian>
                 <Chinesesimp>我什么情报都没有。</Chinesesimp>
                 <Korean>전 아는 정보가 하나도 없어요.</Korean>
+                <French>Je n'ai aucune intelligence.</French>
             </Key>
             <Key ID="STR_interrogation_fail_noknowledge_phrase3_text">
                 <Original>There was no communication for several days, we do not know anything.</Original>
                 <Russian>Связи не было несколько дней, мы ничего не знаем, командование бросило нас.</Russian>
                 <Chinesesimp>我已经好几天没联系上队友了，我什么都不知道。</Chinesesimp>
                 <Korean>며칠 동안 아무런 연락이 없었어서 우린 아는 게 없어요.</Korean>
+                <French>Il n'y a pas eu de communication pendant plusieurs jours, nous ne savons rien.</French>
             </Key>
             <Key ID="STR_interrogation_fail_refuse_phrase1_text">
                 <Original>Screw you!</Original>
                 <Russian>Пошёл ты!</Russian>
                 <Chinesesimp>滚你妈的！</Chinesesimp>
                 <Korean>좆까!</Korean>
+                <French>Allez vous faire voir !</French>
             </Key>
             <Key ID="STR_interrogation_fail_refuse_phrase2_text">
                 <Original>I don't have to tell you anything.</Original>
                 <Russian>Я ничего не обязан вам говорить.</Russian>
                 <Chinesesimp>我是不会告诉你的。</Chinesesimp>
                 <Korean>네놈에게 말할 이유가 없다.</Korean>
+                <French>Je n'ai rien à vous dire.</French>
             </Key>
             <Key ID="STR_interrogation_fail_refuse_phrase3_text">
                 <Original>I will not betray my country!</Original>
                 <Russian>Я не предам свою страну!</Russian>
                 <Chinesesimp>我永远不会背叛我的祖国！</Chinesesimp>
                 <Korean>난 절대 내 조국을 배신하지 않을 것이다!</Korean>
+                <French>Je ne trahirai pas mon pays !</French>
             </Key>
         </Container>
         <Container name="rivals_notifications">
