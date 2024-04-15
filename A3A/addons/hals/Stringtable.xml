@@ -548,6 +548,11 @@
                 <Korean>아르마 3</Korean>
                 <French>Arma 3</French>
             </Key>
+            <Key ID="STR_A3AU_CSLA">
+                <Original>CSLA</Original>
+                <English>CSLA</English>
+                <Russian>CSLA</Russian>
+            </Key>
             <Key ID="STR_A3AU_RF">
                 <Original>Reaction Force</Original>
                 <English>Reaction Force</English>
@@ -653,6 +658,12 @@
                 <Korean>IFA</Korean>
                 <French>IFA</French>
             </Key>
+			<Key ID="STR_A3AU_fow">
+                <Original>FoW</Original>
+                <English>FoW</English>
+                <Russian>FoW</Russian>
+                <Korean>FoW</Korean>
+            </Key>
             <Key ID="STR_A3AU_italy">
                 <Original>Pedagne</Original>
                 <English>Pedagne</English>
@@ -757,6 +768,12 @@
                 <Russian>Northern Fronts</Russian>
                 <Korean>Northern Fronts</Korean>
                 <French>Northern Fronts</French>
+            </Key>
+            <Key ID="STR_A3AU_eaw">
+                <Original>East Asia War</Original>
+                <English>East Asia War</English>
+                <Russian>East Asia War</Russian>
+                <Korean>East Asia War</Korean>
             </Key>
         </Container>
     </Package>
