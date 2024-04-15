@@ -10302,36 +10302,42 @@
                 <Russian>Покупка предмета</Russian>
                 <Chinesesimp>购买物品</Chinesesimp>
                 <Korean>아이템 구입</Korean>
+                <French>Achat d'articles</French>
             </Key>
             <Key ID="STR_A3A_buy_item_cooldown">
                 <Original>You already bought one, wait %1 seconds before you can buy another.</Original>
                 <Russian>Вы уже купили один такой предмет, подождите %1 секунд перед покупкой нового.</Russian>
                 <Chinesesimp>您已经购买了其中一件商品，请等待 %1 秒，然后再购买一件新商品。</Chinesesimp>
                 <Korean>이미 하나를 구입했습니다. %1초 후에 다른 것을 구입할 수 있습니다.</Korean>
+                <French>Vous en avez déjà acheté un, attendez %1 secondes avant de pouvoir en acheter un autre.</French>
             </Key>
             <Key ID="STR_A3A_buy_item_insuf_funds">
                 <Original>You can't afford this Item.</Original>
                 <Russian>Вам не хватает денег для покупки этого предмета.</Russian>
                 <Chinesesimp>您没有足够的钱购买此商品。</Chinesesimp>
                 <Korean>이 아이템은 구입할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous permettre cet article.</French>
             </Key>
             <Key ID="STR_A3A_dropObject">
                 <Original>Drop object</Original>
                 <Russian>Бросить предмет</Russian>
                 <Chinesesimp>扔掉物品</Chinesesimp>
                 <Korean>오브젝트 떨구기</Korean>
+                <French>Déposer l'objet</French>
             </Key>
             <Key ID="STR_A3A_carryObject">
                 <Original>Carry object</Original>
                 <Russian>Нести предмет</Russian>
                 <Chinesesimp>携带物品</Chinesesimp>
                 <Korean>오브젝트 끌기</Korean>
+                <French>Transporter l'objet</French>
             </Key>
             <Key ID="STR_A3A_rotateObject">
                 <Original>Rotate object</Original>
                 <Russian>Вращать предмет</Russian>
                 <Chinesesimp>旋转物体</Chinesesimp>
                 <Korean>오브젝트 돌리기</Korean>
+                <French>Faire pivoter l'objet</French>
             </Key>
         </Container>
         <Container name="A3A_init">
@@ -10340,108 +10346,126 @@
                 <Russian>Информация о городе</Russian>
                 <Chinesesimp>城市信息</Chinesesimp>
                 <Korean>도시 정보</Korean>
+                <French>Informations sur la ville</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_general_info">
                 <Original>%7&lt;br/&gt;&lt;br/&gt;Total Population: %1&lt;br/&gt;%6 Support: %2&lt;br/&gt;%5 Support: %3 &lt;br/&gt;&lt;br/&gt;Murdered Population: %4&lt;br/&gt;&lt;br/&gt;Click on the zone</Original>
                 <Russian>%7&lt;br/&gt;&lt;br/&gt;Общее население: %1&lt;br/&gt;Поддержка %6: %2&lt;br/&gt;Поддержка %5: %3 &lt;br/&gt;&lt;br/&gt;Убитое население: %4&lt;br/&gt;&lt;br/&gt;Нажмите на любую локацию</Russian>
                 <Chinesesimp>%7&lt;br/&gt;&lt;br/&gt;总人口: %1&lt;br/&gt;%6 支持率: %2&lt;br/&gt;%5 支持率: %3 &lt;br/&gt;&lt;br/&gt;被杀人口: %4&lt;br/&gt;&lt;br/&gt;点击任意位置</Chinesesimp>
                 <Korean>%7&lt;br/&gt;&lt;br/&gt;총 인구: %1&lt;br/&gt;%6 지지: %2&lt;br/&gt;%5 지지: %3 &lt;br/&gt;&lt;br/&gt;살해된 인구: %4&lt;br/&gt;&lt;br/&gt;구역을 클릭하십시오</Korean>
+                <French>%7&lt;br/&gt;&lt;br/&gt;Population totale: %1&lt;br/&gt;%6 Soutien: %2&lt;br/&gt;%5 Soutien: %3 &lt;br/&gt;&lt;br/&gt;Population assassinée: %4&lt;br/&gt;&lt;br/&gt;Cliquez sur la zone</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_zone_click">
                 <Original>Click on the zone</Original>
                 <Russian>Нажмите на любую локацию</Russian>
                 <Chinesesimp>点击任意位置</Chinesesimp>
                 <Korean>구역을 클릭하십시오</Korean>
+                <French>Cliquez sur la zone</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_text_1">
                 <Original>%1&lt;br/&gt;&lt;br/&gt;Population: %2&lt;br/&gt;%6 Support: %3 %5&lt;br/&gt;%7 Support: %4 %5</Original>
                 <Russian>%1&lt;br/&gt;&lt;br/&gt;Популяция: %2&lt;br/&gt;Поддержка %6: %3 %5&lt;br/&gt;Поддержка %7: %4 %5</Russian>
                 <Chinesesimp>%1&lt;br/&gt;&lt;br/&gt;人口: %2&lt;br/&gt;%6 支持率: %3 %5&lt;br/&gt;%7 支持率: %4 %5</Chinesesimp>
                 <Korean>%1&lt;br/&gt;&lt;br/&gt;인구: %2&lt;br/&gt;%6 지지: %3 %5&lt;br/&gt;%7 지지: %4 %5</Korean>
+                <French>%1&lt;br/&gt;&lt;br/&gt;Population: %2&lt;br/&gt;%6 Soutien: %3 %5&lt;br/&gt;%7 Soutien: %4 %5</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_destroyed">
                 <Original>%1&lt;br/&gt;DESTROYED</Original>
                 <Russian>%1&lt;br/&gt;УНИЧТОЖЕН</Russian>
                 <Chinesesimp>%1&lt;br/&gt;已摧毁</Chinesesimp>
                 <Korean>%1&lt;br/&gt;파괴됨</Korean>
+                <French>%1&lt;br/&gt;DÉTRUITS</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_influence">
                 <Original>%1&lt;br/&gt;Influence: %2</Original>
                 <Russian>%1&lt;br/&gt;Влияние: %2</Russian>
                 <Chinesesimp>%1&lt;br/&gt;影响: %2</Chinesesimp>
                 <Korean>%1&lt;br/&gt;영향: %2</Korean>
+                <French>%1&lt;br/&gt;Influence: %2</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_airport">
                 <Original>%1 Airport</Original>
                 <Russian>Авиабаза %1</Russian>
                 <Chinesesimp>空军基地 %1</Chinesesimp>
                 <Korean>%1 공항</Korean>
+                <French>%1 Aéroport</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_airport_rebel">
                 <Original>%2 Airport%1</Original>
                 <Russian>Авиабаза %2%1</Russian>
                 <Chinesesimp>空军基地 %2%1</Chinesesimp>
                 <Korean>%2 공항은 %1 소속이다</Korean>
+                <French>%2 Aéroport%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_resources">
                 <Original>%1 Resources</Original>
                 <Russian>Ресурсы %1</Russian>
                 <Chinesesimp>资源 %1</Chinesesimp>
                 <Korean>%1 자원채취소</Korean>
+                <French>%1 Ressources</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_resources_rebel">
                 <Original>%2 Resources%1</Original>
                 <Russian>Ресурсы %2%1</Russian>
                 <Chinesesimp>资源%2%1</Chinesesimp>
                 <Korean>%2 자원채취소는 %1 소속이다</Korean>
+                <French>%2 Ressources%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_factory">
                 <Original>%1 Factory</Original>
                 <Russian>Фабрика %1</Russian>
                 <Chinesesimp>%1 工厂</Chinesesimp>
                 <Korean>%1 공장</Korean>
+                <French>%1 Usine</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_factory_rebel">
                 <Original>%2 Factory%1</Original>
                 <Russian>Фабрика %2%1</Russian>
                 <Chinesesimp>%2 工厂 %1</Chinesesimp>
                 <Korean>%2 공장은 %1 소속이다</Korean>
+                <French>%2 Usine%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_outpost">
                 <Original>%1 Outpost</Original>
                 <Russian>Аванпост %1</Russian>
                 <Chinesesimp>%1哨站</Chinesesimp>
                 <Korean>%1 전초 기지</Korean>
+                <French>%1 Avant-poste</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_outpost_rebel">
                 <Original>%2 Outpost%1</Original>
                 <Russian>Аванпост %2%1</Russian>
                 <Chinesesimp>%2 哨站 %1</Chinesesimp>
                 <Korean>%2 전초 기지는 %1 소속이다</Korean>
+                <French>%2 Avant-poste%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_seaport">
                 <Original>%1 Seaport</Original>
                 <Russian>Морской порт %1</Russian>
                 <Chinesesimp>%1 海港</Chinesesimp>
                 <Korean>%1 항구</Korean>
+                <French></French>
             </Key>
             <Key ID="STR_A3A_cityinfo_seaport_rebel">
                 <Original>%2 Seaport%1</Original>
                 <Russian>Морской порт %2%1</Russian>
                 <Chinesesimp>%2 海港 %1</Chinesesimp>
                 <Korean>%2 항구는 %1 소속이다</Korean>
+                <French>%2 Port maritime%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_milbase">
                 <Original>%1 Military Base</Original>
                 <Russian>Военная база %1</Russian>
                 <Chinesesimp>%1 军事基地</Chinesesimp>
                 <Korean>%1 군사 기지</Korean>
+                <French>%1 Base militaire</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_milbase_rebel">
                 <Original>%2 Military Base%1</Original>
                 <Russian>Военная база %2%1</Russian>
                 <Chinesesimp>%2 军事基地 %1</Chinesesimp>
                 <Korean>%2 군사 기지는 %1 소속이</Korean>
+                <French>%2 Base militaire%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_watchpost">
                 <Original>%1 Watchpost</Original>
@@ -10462,150 +10486,175 @@
                 <Russian>Зенитная огн. точка %1%2</Russian>
                 <Chinesesimp>%1 防空阵地 %2</Chinesesimp>
                 <Korean>%2 대공화기 포대는 %1 소속이다</Korean>
+                <French>%2 Emplacement AA%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_atempl">
                 <Original>%2 AT Emplacement%1</Original>
                 <Russian>Противотанковая огн. точка %1%2</Russian>
                 <Chinesesimp>%1 反坦克阵地 %2</Chinesesimp>
                 <Korean>%2 대전차화기 포대는 %1 소속이다</Korean>
+                <French>%2 Emplacement AT%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_hmgempl">
                 <Original>%2 HMG Emplacement%1</Original>
                 <Russian>Пулемётная огн. точка %1%2</Russian>
                 <Chinesesimp>%1 重机枪阵地 %2</Chinesesimp>
                 <Korean>%2 중기관총 포대는 %1 소속이다</Korean>
+                <French>%2 Emplacement HMG%1</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_status_idle">
                 <Original>%1&lt;br/&gt;Status: Idle</Original>
                 <Russian>%1&lt;br/&gt;Статус: Бездействие</Russian>
                 <Chinesesimp>%1&lt;br/&gt;状态: 空闲</Chinesesimp>
                 <Korean>%1&lt;br/&gt;상태: 평시</Korean>
+                <French>%1&lt;br/&gt;Statut: Inactif</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_status_busy">
                 <Original>%1&lt;br/&gt;Status: Busy</Original>
                 <Russian>%1&lt;br/&gt;Статус: Оживление</Russian>
                 <Chinesesimp>%1&lt;br/&gt;状态: 忙碌</Chinesesimp>
                 <Korean>%1&lt;br/&gt;상태: 전시</Korean>
+                <French>%1&lt;br/&gt;Statut: Occupé</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_garrison_good">
                 <Original>%1&lt;br/&gt;Garrison: Good</Original>
                 <Russian>%1&lt;br/&gt;Гарнизон: Полный</Russian>
                 <Chinesesimp>%1&lt;br/&gt;驻军: 好</Chinesesimp>
                 <Korean>%1&lt;br/&gt;주둔 상태: 좋음</Korean>
+                <French>%1&lt;br/&gt;Garnison: Bien</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_garrison_weakened">
                 <Original>%1&lt;br/&gt;Garrison: Weakened</Original>
                 <Russian>%1&lt;br/&gt;Гарнизон: Ослаблен</Russian>
                 <Chinesesimp>%1&lt;br/&gt;驻军: 削弱</Chinesesimp>
                 <Korean>%1&lt;br/&gt;주둔 상태: 약해짐</Korean>
+                <French>%1&lt;br/&gt;Garnison: Affaibli</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_garrison_decimated">
                 <Original>%1&lt;br/&gt;Garrison: Decimated</Original>
                 <Russian>%1&lt;br/&gt;Гарнизон: Уничтожен</Russian>
                 <Chinesesimp>%1&lt;br/&gt;驻军: 毁灭</Chinesesimp>
                 <Korean>%1&lt;br/&gt;주둔 상태: 소멸</Korean>
+                <French>%1&lt;br/&gt;Garnison: Décimée</French>
             </Key>
             <Key ID="STR_A3A_clientIdleChecker_header">
                 <Original>Client Idle Checker</Original>
                 <Russian>Проверка простоя игрока</Russian>
                 <Chinesesimp>客户端空闲检查器</Chinesesimp>
                 <Korean>클라이언트 잠수 확인</Korean>
+                <French>Vérificateur d'inactivité du client</French>
             </Key>
             <Key ID="STR_A3A_clientIdleChecker_desc">
                 <Original>You are now considered AFK. You may lose commander if an election is triggered.</Original>
                 <Russian>Система считает вас AFK. Вы можете потерять командирские права если игроки начнут голосование.</Russian>
                 <Chinesesimp>你现在被认为是AFK。 如果触发选举，您可能会失去指挥官。</Chinesesimp>
                 <Korean>당신은 이제 잠수 상태로 간주되었습니다. 투표가 진행되면 지휘관직을 잃을 수 있습니다.</Korean>
+                <French>Vous êtes maintenant considéré comme AFK. Vous pouvez perdre le commandement si une élection est déclenchée.</French>
             </Key>
             <Key ID="STR_A3A_initBases_occ">
                 <Original>Occupant</Original>
                 <Russian>Оккупанта</Russian>
                 <Chinesesimp>占领军</Chinesesimp>
                 <Korean>점령군</Korean>
+                <French>Occupant</French>
             </Key>
             <Key ID="STR_A3A_initBases_inv">
                 <Original>Invader</Original>
                 <Russian>Захватчика</Russian>
                 <Chinesesimp>侵略者</Chinesesimp>
                 <Korean>침략군</Korean>
+                <French>Envahisseur</French>
             </Key>
             <Key ID="STR_A3A_initClient_GetInMan_header">
                 <Original>Warning</Original>
                 <Russian>Предупреждение</Russian>
                 <Chinesesimp>警告</Chinesesimp>
                 <Korean>경고</Korean>
+                <French>Attention</French>
             </Key>
             <Key ID="STR_A3A_initClient_GetInMan_desc">
                 <Original>This Vehicle is locked, ask the Owner to unlock it.</Original>
                 <Russian>Это транспортное средство заблокировано, попросите владельца разблокировать его.</Russian>
                 <Chinesesimp>这辆载具被锁了，请车主解锁。</Chinesesimp>
                 <Korean>이 차량은 잠겨 있으며, 주인에게 해제를 요청하십시오.</Korean>
+                <French>Ce véhicule est verrouillé, demandez au propriétaire de le déverrouiller.</French>
             </Key>
             <Key ID="STR_A3A_initClient_general_info">
                 <Original>General Info</Original>
                 <Russian>Общая Информация</Russian>
                 <Chinesesimp>概况</Chinesesimp>
                 <Korean>일반 정보</Korean>
+                <French>Informations générales</French>
             </Key>
             <Key ID="STR_A3A_initClient_server_admin">
                 <Original>You are not in the member's list, but as you are Server Admin, you have been added. Welcome!</Original>
                 <Russian>Вы не в списке членов сервера, но так как вы являетесь администратором сервера, вас добавили в него. Добро пожаловать!</Russian>
                 <Chinesesimp>您不在会员列表中，但由于您是Server Admin，所以您已被添加。 欢迎光临！</Chinesesimp>
                 <Korean>당신은 멤버 목록에 없지만 서버 관리자이므로 추가되었습니다. 환영합니다!</Korean>
+                <French>Vous n'êtes pas dans la liste des membres, mais comme vous êtes Server Admin, vous avez été ajouté. Bienvenue!</French>
             </Key>
             <Key ID="STR_A3A_initClient_server_guest">
                 <Original>Welcome Guest&lt;br/&gt;&lt;br/&gt;You have joined this server as guest.</Original>
                 <Russian>Добро пожаловать, гость сервера&lt;br/&gt;&lt;br/&gt;Вы присоединились к серверу как гость.</Russian>
                 <Chinesesimp>已作为游客加入本服务器。</Chinesesimp>
                 <Korean>환영합니다, 게스트&lt;br/&gt;&lt;br/&gt;이 서버에 게스트로 참여했습니다.</Korean>
+                <French>Bienvenue Invité&lt;br/&gt;&lt;br/&gt;Vous avez rejoint ce serveur en tant qu'invité.</French>
             </Key>
             <Key ID="STR_A3A_initClient_mods_TFAR">
                 <Original>Players will use TFAR radios.</Original>
                 <Russian>Игроки будут использовать рации TFAR.</Russian>
                 <Chinesesimp>玩家将使用TFAR无线电。</Chinesesimp>
                 <Korean>플레이어들은 TFAR 라디오를 사용할 것입니다.</Korean>
+                <French>Les joueurs utilisent des radios TFAR.</French>
             </Key>
             <Key ID="STR_A3A_initClient_mods_ACRE">
                 <Original>Players will use ACRE radios.</Original>
                 <Russian>Игроки будут использовать рации ACRE.</Russian>
                 <Chinesesimp>玩家将使用ACRE无线电。</Chinesesimp>
                 <Korean>플레이어들은 ACRE 라디오를 사용할 것입니다.</Korean>
+                <French>Les joueurs utilisent des radios ACRE.</French>
             </Key>
             <Key ID="STR_A3A_initClient_mods_ACE">
                 <Original>ACE items added to arsenal and ammo-boxes.</Original>
                 <Russian>Предметы из ACE будут добавлены в арсенал и ящики с припасами.</Russian>
                 <Chinesesimp>来自ACE的物品将被添加到武器库和补给箱中。</Chinesesimp>
                 <Korean>아스널 및 탄약 상자에 ACE 아이템이 추가되었습니다.</Korean>
+                <French>Ajout d'objets ACE à l'arsenal et aux caisses de munitions.</French>
             </Key>
             <Key ID="STR_A3A_initClient_mods_ACEMedical">
                 <Original>Default revive system will be disabled.</Original>
                 <Russian>Стандартная система ревайва будет выключена.</Russian>
                 <Chinesesimp>默认复活系统将被禁用</Chinesesimp>
                 <Korean>기본 소생 시스템이 비활성화되었습니다.</Korean>
+                <French>Le système de réanimation par défaut sera désactivé.</French>
             </Key>
             <Key ID="STR_A3A_initClient_mods_header">
                 <Original>Loaded Mods</Original>
                 <Russian>Загруженные моды</Russian>
                 <Chinesesimp>加载的模组</Chinesesimp>
                 <Korean>로드된 모드</Korean>
+                <French>Mods chargés</French>
             </Key>
             <Key ID="STR_A3A_initClient_purchase_vehicle">
                 <Original>Purchase Vehicle</Original>
                 <Russian>Покупка техники</Russian>
                 <Chinesesimp>购买载具</Chinesesimp>
                 <Korean>차량 구입</Korean>
+                <French>Achat d'un véhicule</French>
             </Key>
             <Key ID="STR_A3A_initClient_purchase_light">
                 <Original>Buy Light For %1%2</Original>
                 <Russian>Купить фонарь за %1%2</Russian>
                 <Chinesesimp>以 %1%2 的价格买一盏灯笼</Chinesesimp>
                 <Korean>%1%2에 조명 구입</Korean>
+                <French>Acheter de la lumière pour %1%2</French>
             </Key>
             <Key ID="STR_A3A_initClient_purchase_generic">
                 <Original>Buy %1 For %2%3</Original>
                 <Russian>Купить %1 за %2%3</Russian>
                 <Chinesesimp>以 %2%3 的价格购买 %1</Chinesesimp>
                 <Korean>%2%3에 %1 구매</Korean>
+                <French>Acheter %1 pour %2%3</French>
             </Key>
         </Container>
         <Container name="A3A_save">
