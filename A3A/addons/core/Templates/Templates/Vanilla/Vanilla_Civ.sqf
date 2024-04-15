@@ -8,7 +8,6 @@ private _hasGM = "gm" in A3A_enabledDLC;
 private _hasCSLA = "csla" in A3A_enabledDLC;
 private _hasRF = "rf" in A3A_enabledDLC;
 
-
 //////////////////////////////
 //   Civilian Information   //
 //////////////////////////////
@@ -47,7 +46,7 @@ private _civFuel = [
 ];
 
 private _civPlanes = [];
-private _civHelicopter = ["C_Heli_Light_01_civil_F" , "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"];
+private _civHelicopter = ["C_Heli_Light_01_civil_F", "a3a_C_Heli_Transport_02_F", "a3a_C_Heli_Light_02_blue_F"];
 if (_hasKart) then {
     _civCarsWithWeights append ["C_Kart_01_F", 0.01, "C_Kart_01_Blu_F", 0.01, "C_Kart_01_Fuel_F", 0.01, "C_Kart_01_Red_F", 0.01, "C_Kart_01_Vrana_F", 0.01];
 };
@@ -131,8 +130,6 @@ if (_hasRF) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["I_Heli_Transport_02_F", ["Dahoman", 1]],
-    ["O_Heli_Light_02_unarmed_F", ["Blue", 1]],
     ["gm_ge_ff_u1300l_medic", ["gm_ge_civ_drk_01",1]],
     ["gm_pl_army_ural375d_medic", ["gm_oilochre",0.5, "gm_pkhv4",0.5]],
     ["gm_pl_army_ural375d_refuel", ["gm_oilochre",0.5, "gm_pkhv4",0.5]],
