@@ -3276,6 +3276,12 @@
                 <Chinesesimp>%2技能等级已升级。&lt;br/&gt;当前等级为%1。</Chinesesimp>
                 <Korean>%2의 숙련도 레벨이 업그레이드되었습니다.&lt;br/&gt;현재 레벨은 %1입니다.</Korean>
             </Key>
+            <Key ID="STR_notifiers_skill_cancelled">
+                <Original>Confirmation was cancelled.</Original>
+                <Russian>Placeholder</Russian>
+                <Chinesesimp>Placeholder</Chinesesimp>
+                <Korean>Placeholder</Korean>
+            </Key>
             <Key ID="STR_notifiers_disband_header">
                 <Original>Disband</Original>
                 <Russian>Роспуск</Russian>
