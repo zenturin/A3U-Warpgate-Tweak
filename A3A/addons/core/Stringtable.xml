@@ -5421,6 +5421,7 @@
                 <Original>Recon Plane Zone Reveal Distance</Original>
                 <English>Recon Plane Zone Reveal Distance</English>
                 <Russian>Дистанция открытыя маркеров самолётом разведки</Russian>
+                <French>Zone révélée par les avions de reconnaissance.</French>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>
