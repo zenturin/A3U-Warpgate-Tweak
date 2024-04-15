@@ -9336,255 +9336,298 @@
                 <Russian>Вы успешно использовали набор восстановления боеспособности.</Russian>
                 <Chinesesimp>您成功使用了战备恢复包。</Chinesesimp>
                 <Korean>전투 준비 복구 키트를 성공적으로 사용했습니다.</Korean>
+                <French>Vous avez utilisé avec succès le kit de récupération de la préparation au combat.</French>
             </Key>
             <Key ID="STR_antistasi_actions_crk_use">
                 <Original>Use Combat Readiness Recovery Kit on %1</Original>
                 <Russian>Использовать набор восстановления боеспособности на %1</Russian>
                 <Chinesesimp>在 %1 上使用战备恢复工具包</Chinesesimp>
                 <Korean>%1 키로 전투 준비 복구 키트 사용</Korean>
+                <French>Utiliser le kit de récupération de l'état de préparation au combat sur %1</French>                
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_revive_holdKey">
                 <Original>To Stand Up</Original>
                 <Russian>чтобы встать</Russian>
                 <Chinesesimp>站起来</Chinesesimp>
                 <Korean>일으키려면</Korean>
+                <French>Se lever</French>
             </Key>
             <Key ID="STR_antistasi_respawn">
                 <Original>Respawning...</Original>
                 <Russian>Возрождение...</Russian>
                 <Chinesesimp>重生中...</Chinesesimp>
                 <Korean>재투입 중...</Korean>
+                <French>Réapparition...</French>
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_possessed">
                 <Original>&lt;t size='0.6'&gt;You are controlling AI unit. Help yourself or return to your original body.&lt;t size='0.5'&gt;&lt;/t&gt;&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Вы управляете ИИ-юнитом. Помогите себе или вернитесь в свое изначальное тело.&lt;t size='0.5'&gt;&lt;/t&gt;&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;你正在控制AI单元。 要么自救，要么回到原来的身体。&lt;t size='0.5'&gt;&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;인공지능 유닛을 조종하고 있습니다. 당신 스스로를 도우거나 원래 몸으로 되돌아가십시오.&lt;t size='0.5'&gt;&lt;/t&gt;&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Vous contrôlez une unité d'intelligence artificielle. Aidez-vous ou retournez dans votre corps d'origine.&lt;t size='0.5'&gt;&lt;/t&gt;&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt0_base">
                 <Original>&lt;t size='0.6'&gt;There is no near AI unit to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%1%2&lt;/t&gt;&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;Поблизости нет дружественных ИИ-юнитов, которые могли бы вам помочь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%1%2&lt;/t&gt;&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;附近没有AI单位可以救你。&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%1%2&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;당신을 도와줄 인공지능 유닛이 근처에 없습니다.&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%1%2&lt;/t&gt;&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;Il n'y a pas d'unité d'IA proche pour vous aider.&lt;t size='0.5'&gt;&lt;br/&gt;Appuyez sur R pour réapparaître.%1%2&lt;/t&gt;&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt1_base">
                 <Original>&lt;t size='0.6'&gt;%1 is on the way to help you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%2%3&lt;/t&gt;&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;%1 спешит вам на помощь.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%2%3&lt;/t&gt;&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt; %1 正在来救你的路上。&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%2%3&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%1이(가) 당신을 도우러 가는 중입니다.&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%2%3&lt;/t&gt;&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;%1 est en route pour vous aider.&lt;t size='0.5'&gt;&lt;br/&gt;Appuyez sur R pour réapparaître.%2%3&lt;/t&gt;&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt2_base">
                 <Original>&lt;t size='0.6'&gt;%1 is helping you.&lt;t size='0.5'&gt;&lt;br/&gt;Press R to Respawn.%2%3&lt;/t&gt;&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;%1 помогает вам.&lt;t size='0.5'&gt;&lt;br/&gt;Нажмите R, чтобы возродиться.%2%3&lt;/t&gt;&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt; %1 正在来救你的路上。&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%2%3&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%1이(가) 당신을 도우러 가는 중입니다.&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%2%3&lt;/t&gt;&lt;/t&gt;</Korean>
+                <French>&lt;t size='0.6'&gt;%1 vous aide.&lt;t size='0.5'&gt;&lt;br/&gt;Appuyez sur R pour réapparaître.%2%3&lt;/t&gt;&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt_possess">
                 <Original>&lt;br/&gt;Press T to possess friendly AI unit to help yourself.</Original>
                 <Russian>&lt;br/&gt;Нажмите T, чтобы вселиться в дружественный ИИ-юнит, чтобы помочь себе.</Russian>
                 <Chinesesimp>&lt;br/&gt;按 T 键呼叫友好的 AI 队友来救助自己。</Chinesesimp>
                 <Korean>&lt;br/&gt;T 키를 눌러서 당신을 도울 수 있는 아군 인공지능 유닛을 보유하십시오.</Korean>
+                <French>&lt;br/&gt;Appuyez sur T pour posséder une unité IA alliée afin de vous aider.</French>
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt_selfrevive">
                 <Original>&lt;br/&gt;Press Q to use Combat Readiness Recovery Kit.</Original>
                 <Russian>&lt;br/&gt;Нажмите Q, чтобы использовать набор восстановления боеспособности.</Russian>
                 <Chinesesimp>&lt;br/&gt;按 Q 使用战备恢复包。</Chinesesimp>
                 <Korean>&lt;br/&gt;전투 준비 복구 키트를 사용하려면 Q 키를 누르십시오.</Korean>
+                <French>&lt;br/&gt;Appuyez sur Q pour utiliser le kit de récupération de l'état de préparation au combat.</French>
             </Key>
             <Key ID="STR_antistasi_actions_unconscious_action_prompt_withstand">
                 <Original>&lt;br/&gt;Press H to Withstand.</Original>
+                <French>&lt;br/&gt;Appuyez sur H pour résister.</French>
             </Key>
             <Key ID="STR_antistasi_actions_common_access_vehicle_marker_text">
                 <Original>Access Vehicle Market</Original>
                 <Russian>Посмотреть чёрный рынок техники</Russian>
                 <Chinesesimp>查看黑市载具</Chinesesimp>
                 <Korean>차량 시장 접속</Korean>
+                <French>Accès au marché des véhicules</French>
             </Key>
             <Key ID="STR_antistasi_actions_drop_here">
                 <Original>Drop here</Original>
                 <Russian>Бросить здесь</Russian>
                 <Chinesesimp>放在这里</Chinesesimp>
                 <Korean>여기에 내려놓기</Korean>
+                <French>Déposer ici</French>
             </Key>
             <Key ID="STR_antistasi_actions_carry_crate">
                 <Original>Carry crate</Original>
                 <Russian>Нести ящик</Russian>
                 <Chinesesimp>搬箱子</Chinesesimp>
                 <Korean>상자 옮기기</Korean>
+                <French>Porter la caisse </French>
             </Key>
             <Key ID="STR_antistasi_actions_towing_hint_header">
                 <Original>Towing</Original>
                 <Russian>Буксировка</Russian>
                 <Chinesesimp>牵引</Chinesesimp>
                 <Korean>견인하기</Korean>
+                <French>Remorquage</French>
             </Key>
             <Key ID="STR_antistasi_actions_driver_towing_notification_hint">
                 <Original>This vehicle is about to be towed.</Original>
                 <Russian>Этот автомобиль собираются отбуксировать.</Russian>
                 <Chinesesimp>这辆载具即将被拖走</Chinesesimp>
                 <Korean>이 차량은 견인되고 있습니다.</Korean>
+                <French>Ce véhicule est sur le point d'être remorqué.</French>
             </Key>
             <Key ID="STR_antistasi_actions_can't_pickup_tow_ropes_hint">
                 <Original>can't pick up tow ropes from locked vehicle.</Original>
                 <Russian>Невозможно подобрать буксирные тросы из запертой техники.</Russian>
                 <Chinesesimp>不能从锁住的车上捡起拖车绳</Chinesesimp>
                 <Korean>잠긴 차량에서는 견인 로프를 집을 수 없습니다.</Korean>
+                <French>impossible de récupérer les câbles de remorquage d'un véhicule verrouillé.</French>
             </Key>
             <Key ID="STR_antistasi_actions_can't_put_away_tow_ropes_hint">
                 <Original>can't put away tow ropes in locked vehicle.</Original>
                 <Russian>Невозможно убрать буксировочные тросы в запертую технику.</Russian>
                 <Chinesesimp>锁车后不能收起拖车绳</Chinesesimp>
                 <Korean>잠긴 차량에 견인 로프를 집어 넣을 수 없습니다.</Korean>
+                <French>ne peut pas ranger les câbles de remorquage dans un véhicule verrouillé.</French>
             </Key>
             <Key ID="STR_antistasi_actions_can't_take_tow_ropes_hint">
                 <Original>can't take tow ropes from locked vehicle.</Original>
                 <Russian>Невозможно взять буксировочные тросы из запертой техники.</Russian>
                 <Chinesesimp>不能从被锁住的车辆上取下拖车绳</Chinesesimp>
                 <Korean>잠긴 차량에서는 견인 로프를 가져갈 수 없습니다.</Korean>
+                <French>ne peut pas prendre les câbles de remorquage d'un véhicule verrouillé.</French>
             </Key>
             <Key ID="STR_antistasi_actions_can't_attach_tow_ropes_hint">
                 <Original>can't attach tow ropes to locked vehicle.</Original>
                 <Russian>Невозможно прикрепить буксировочные тросы к запертому автомобилю.</Russian>
                 <Chinesesimp>无法将牵引绳连接到锁定的车辆上。</Chinesesimp>
                 <Korean>잠긴 차량에 견인 로프를 걸 수 없습니다.</Korean>
+                <French>ne peut pas attacher des câbles de remorquage à un véhicule verrouillé.</French>
             </Key>
             <Key ID="STR_antistasi_actions_short_tow_ropes_hint">
                 <Original>The tow ropes are too short. Move vehicle closer.</Original>
                 <Russian>Буксирные тросы слишком короткие. Подвиньте технику ближе.</Russian>
                 <Chinesesimp>拖车绳太短了。将载具移近。</Chinesesimp>
                 <Korean>견인 로프가 너무 짧습니다. 차량을 더 가까이 대십시오.</Korean>
+                <French>Les câbles de remorquage sont trop courts. Rapprocher le véhicule.</French>
             </Key>
             <Key ID="STR_antistasi_actions_deploy_tow_ropes">
                 <Original>Deploy tow ropes</Original>
                 <Russian>Развернуть буксировочный трос</Russian>
                 <Chinesesimp>布置拖车绳</Chinesesimp>
                 <Korean>견인 로프 배치</Korean>
+                <French>Déployer les câbles de remorquage</French>
             </Key>
             <Key ID="STR_antistasi_actions_put_away_tow_ropes">
                 <Original>Put away tow ropes</Original>
                 <Russian>Убрать буксировочный трос</Russian>
                 <Chinesesimp>收起拖车绳</Chinesesimp>
                 <Korean>견인 로프 집어 넣기</Korean>
+                <French>Ranger les câbles de remorquage</French>
             </Key>
             <Key ID="STR_antistasi_actions_attach_tow_ropes">
                 <Original>Attach to tow ropes</Original>
                 <Russian>Закрепить буксировочный трос</Russian>
                 <Chinesesimp>系上拖车绳</Chinesesimp>
                 <Korean>견인 로프 걸기</Korean>
+                <French>Attacher les câbles de remorquage</French>
             </Key>
             <Key ID="STR_antistasi_actions_drop_tow_ropes">
                 <Original>Drop tow ropes</Original>
                 <Russian>Бросить буксировочный трос</Russian>
                 <Chinesesimp>放下拖车绳</Chinesesimp>
                 <Korean>견인 로프 떨구기</Korean>
+                <French>Lâcher les câbles de remorquage</French>
             </Key>
             <Key ID="STR_antistasi_actions_pickup_tow_ropes">
                 <Original>Pickup tow ropes</Original>
                 <Russian>Подобрать буксировочный трос</Russian>
                 <Chinesesimp>捡起拖车绳</Chinesesimp>
                 <Korean>견인 로프 집기</Korean>
+                <French>Rammasser les câbles de remorquage</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_header_failure">
                 <Original>Move asset</Original>
                 <Russian>Переместить предмет</Russian>
                 <Chinesesimp>移动物品</Chinesesimp>
                 <Korean>자산 옮기기</Korean>
+                <French>Déplacer l'objet</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_only_rebels_failure">
                 <Original>Only rebels are allowed to move assets.</Original>
                 <Russian>Только повстанцам разрешено перемещать предметы.</Russian>
                 <Chinesesimp>只有抵抗军才可以移动物品。</Chinesesimp>
                 <Korean>반군만 자산을 이동시킬 수 있습니다.</Korean>
+                <French>Seuls les rebelles sont autorisés à déplacer des objets</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_another_player_failure">
                 <Original>The asset you want to move is being moved by another player.</Original>
                 <Russian>Предмет, который вы хотите передвинуть, уже двигается другим игроком.</Russian>
                 <Chinesesimp>您要移动的物品正在被其他玩家移动。</Chinesesimp>
                 <Korean>당신이 이동시킬 자산은 다른 플레이어가 이동시키고 있습니다.</Korean>
+                <French>L'objet que vous souhaitez déplacer est en train d'être déplacé par un autre joueur.</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_vehicle_failure">
                 <Original>You can't move assets while being in a vehicle.</Original>
                 <Russian>Вы не можете двигать предметы находясь внутри техники.</Russian>
                 <Chinesesimp>您不能在车里移动物品</Chinesesimp>
                 <Korean>차량에 있는 동안에는 자산을 이동시킬 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas déplacer des objets lorsque vous êtes dans un véhicule.</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_attach_failure">
                 <Original>You have other things attached, you can't move this.</Original>
                 <Russian>К вам уже прикреплены другие вещи, вы не можете двигать ещё и это.</Russian>
                 <Chinesesimp>你身上已经有其他东西了，你不能移动这个。</Chinesesimp>
                 <Korean>당신은 다른 것을 부착하고 있어서 이걸 옮길 수 없습니다.</Korean>
+                <French>Vous avez d'autres choses attachées, vous ne pouvez pas déplacer ceci.</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_vehicle_occupied_failure">
                 <Original>Vehicle is occupied by someone, clear crew before moving it.</Original>
                 <Russian>В технике кто-то сидит, очистите технику перед тем как двигать её.</Russian>
                 <Chinesesimp>载具有人，移动之前要先清理人员。</Chinesesimp>
                 <Korean>차량을 옮기기 전에 해당 차량의 좌석을 비우십시오.</Korean>
+                <French>Le véhicule est occupé par quelqu'un, libérez l'équipage avant de le déplacer.</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_restrictions_failure">
                 <Original>You can move only static weapons or loot crates.</Original>
                 <Russian>Вы можете двигать только стационарные орудия или ящики-сборщики лута.</Russian>
                 <Chinesesimp>你只能移动固定武器或战利品箱。</Chinesesimp>
                 <Korean>고정화기나 전리품 상자만 이동시킬 수 있습니다.</Korean>
+                <French>Vous ne pouvez déplacer que des armes statiques ou des caisses de butin.</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_static_deployed_header">
                 <Original>Static Weapon Deployed</Original>
                 <Russian>Стационарное орудие развёрнуто</Russian>
                 <Chinesesimp>固定武器展开</Chinesesimp>
                 <Korean>고정화기가 배치되었습니다.</Korean>
+                <French>Arme statique déployée</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_static_deployed_hint">
                 <Original>Static weapon has been deployed for use in a nearby zone, and will be used by garrison militia if you leave it here the next time the zone spawns.</Original>
                 <Russian>Стационарное орудие развёрнуто для использования в ближайшей зоне. Оно будет использовано гарнизоном зоны при следующем респавне гарнизона если вы оставите его здесь.</Russian>
                 <Chinesesimp>固定武器已部署在最近区域。 如果你把它留在这里，它会在下一次驻军刷新时被该区域的驻军使用。</Chinesesimp>
                 <Korean>고정화기는 인근 지역에서 사용할 수 있도록 배치되었으며, 다음에 지역이 스폰되면 주둔 중인 아군이 사용할 것입니다.</Korean>
+                <French>L'arme statique a été déployée pour être utilisée dans une zone voisine, et sera utilisée par la milice de la garnison si vous la laissez ici lors du prochain chargement de la zone.</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_static_position_header">
                 <Original>Static Weapon Position</Original>
                 <Russian>Позиция стационарного орудия</Russian>
                 <Chinesesimp>固定武器位置</Chinesesimp>
                 <Korean>고정화기 위치</Korean>
+                <French>Position statique de l'arme</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_static_position_far_away_hint">
                 <Original>This asset can't be moved more far away for its zone center.</Original>
                 <Russian>Этот предмет не может быть далеко передвинут от центра зоны.</Russian>
                 <Chinesesimp>这个物品不能移动到离区域中心太远的地方。</Chinesesimp>
                 <Korean>이 자산은 해당 구역 중심으로부터 더 멀리 옮길 수 없습니다.</Korean>
+                <French>Ce bien ne peut pas être déplacé plus loin de son centre de zone.</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_assets_static_position_saved_hint">
                 <Original>Static position has been saved.</Original>
                 <Russian>Позиция стационарного орудия сохранена.</Russian>
                 <Chinesesimp>固定武器位置已保存</Chinesesimp>
                 <Korean>고정화기 위치가 저장되었습니다.</Korean>
+                <French>La position statique a été sauvegardée.</French>
             </Key>
             <Key ID="STR_antistasi_actions_breach_vehicle">
                 <Original>Breach vehicle</Original>
                 <Russian>Проникнуть в технику с помощью взрывчатки</Russian>
                 <Chinesesimp>破坏载具</Chinesesimp>
                 <Korean>차량 브리칭</Korean>
+                <French>Véhicule d'effraction</French>
             </Key>
             <Key ID="STR_antistasi_actions_take_flag">
                 <Original>Seize</Original>
                 <Russian>Захватить</Russian>
                 <Chinesesimp>夺取</Chinesesimp>
                 <Korean>점령</Korean>
+                <French>Saisir</French>
             </Key>
             <Key ID="STR_antistasi_actions_recruit_units">
                 <Original>Recruit units</Original>
                 <Russian>Набрать юнитов</Russian>
                 <Chinesesimp>招募小组</Chinesesimp>
                 <Korean>유닛 모집</Korean>
+                <French>Recruter des unités</French>
             </Key>
             <Key ID="STR_antistasi_actions_unit_recruitment">
                 <Original>Unit Recruitment</Original>
                 <Russian>Набор юнитов</Russian>
                 <Chinesesimp>招募单位</Chinesesimp>
                 <Korean>유닛 모집</Korean>
+                <French>Unité recrutée</French>
             </Key>
             <Key ID="STR_antistasi_actions_unit_recruitment_distance_check_failure">
                 <Original>You can't recruit units while there are enemies near you.</Original>
                 <Russian>Вы не можете набирать юнитов пока рядом с вами враги.</Russian>
                 <Chinesesimp>当你附近有敌人时，你不能招募单位。</Chinesesimp>
                 <Korean>근처에 적이 있는 동안에는 유닛을 모집할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas recruter d'unités tant que des ennemis sont à proximité.</French>
             </Key>
             <Key ID="STR_antistasi_actions_buy_vehicle">
                 <Original>Buy Vehicles and Items</Original>
@@ -9598,252 +9641,294 @@
                 <Russian>Купить ящик-сборщик лута</Russian>
                 <Chinesesimp>购买战利品箱</Chinesesimp>
                 <Korean>전리품 상자 구입</Korean>
+                <French>Acheter une caisse de butin</French>
             </Key>
             <Key ID="STR_antistasi_actions_loot_crate">
                 <Original>loot crate</Original>
                 <Russian>ящик-сборщик лута</Russian>
                 <Chinesesimp>战利品箱</Chinesesimp>
                 <Korean>전리품 상자</Korean>
+                <French>caisse de butin</French>
             </Key>
             <Key ID="STR_antistasi_actions_load_cargo">
                 <Original>Load %1 into nearest vehicle</Original>
                 <Russian>Загрузить %1 в грузовой отсек</Russian>
                 <Chinesesimp>&gt;将 %1 装入最近的车辆</Chinesesimp>
                 <Korean>가장 가까운 차량에 %1 적재하기</Korean>
+                <French>Chargement de %1 dans le véhicule le plus proche</French>
             </Key>
             <Key ID="STR_antistasi_actions_cancel_revive">
                 <Original>Cancel revive</Original>
                 <Russian>Отменить оживление</Russian>
                 <Chinesesimp>取消复活</Chinesesimp>
                 <Korean>소생 취소</Korean>
+                <French>Annuler la réanimation</French>
             </Key>
             <Key ID="STR_antistasi_actions_release_carry">
                 <Original>Release %1</Original>
                 <Russian>Отпустить %1</Russian>
                 <Chinesesimp>释放 %1</Chinesesimp>
                 <Korean>%1 놓기</Korean>
+                <French>Libération de %1</French>
             </Key>
             <Key ID="STR_antistasi_actions_deploy_winch">
                 <Original>Deploy winch</Original>
                 <Russian>Развернуть лебедку</Russian>
                 <Chinesesimp>展开绞车</Chinesesimp>
                 <Korean>윈치 전개</Korean>
+                <French>Déployer le treuil</French>
             </Key>
             <Key ID="STR_antistasi_actions_stow_winch">
                 <Original>Stow winch</Original>
                 <Russian>Убрать лебедку</Russian>
                 <Chinesesimp>拆除绞车</Chinesesimp>
                 <Korean>윈치 넣기</Korean>
+                <French>Ranger le treuil</French>
             </Key>
             <Key ID="STR_antistasi_actions_attach_winch">
                 <Original>Attach winch</Original>
                 <Russian>Прикрепить лебедку</Russian>
                 <Chinesesimp>系上绞车</Chinesesimp>
                 <Korean>윈치 부착</Korean>
+                <French>Fixer le treuil</French>
             </Key>
             <Key ID="STR_antistasi_actions_get_in_gunner">
                 <Original>Get in %1 as gunner</Original>
                 <Russian>Сесть в %1 как стрелок-наводчик</Russian>
                 <Chinesesimp>作为炮手坐在 %1</Chinesesimp>
                 <Korean>사수석에 탑승: %1</Korean>
+                <French>Entrer dans %1 en tant que tireur</French>
             </Key>
             <Key ID="STR_antistasi_actions_delivery_info">
                 <Original>View delivery information</Original>
                 <Russian>Посмотреть информацию о доставке</Russian>
                 <Chinesesimp>查看交货信息</Chinesesimp>
                 <Korean>배달 정보 보기</Korean>
+                <French>Voir les informations sur la livraison</French>
             </Key>
             <Key ID="STR_antistasi_actions_ff_forgive">
                 <Original>[Forgive Friendly Fire] </Original>
                 <Russian>[Простить дружественный огонь] </Russian>
                 <Chinesesimp>[原谅友军伤害]</Chinesesimp>
                 <Korean>[아군오사 용서] </Korean>
+                <French>[Pardonnez les tirs amis] </French>
             </Key>
             <Key ID="STR_antistasi_actions_unload_cargo">
                 <Original>Unload cargo</Original>
                 <Russian>Выгрузить груз</Russian>
                 <Chinesesimp>卸货</Chinesesimp>
                 <Korean>화물 내리기</Korean>
+                <French>Décharger la cargaison</French>
             </Key>
             <Key ID="STR_antistasi_actions_build_hq">
                 <Original>Build HQ here</Original>
                 <Russian>Поставить штаб здесь</Russian>
                 <Chinesesimp>在这里建立总部</Chinesesimp>
                 <Korean>여기에 본부 짓기</Korean>
+                <French>Construire le QG ici</French>
             </Key>
             <Key ID="STR_antistasi_actions_buy_boat">
                 <Original>Buy boat</Original>
                 <Russian>Купить лодку</Russian>
                 <Chinesesimp>买船</Chinesesimp>
                 <Korean>보트 구입</Korean>
+                <French>Acheter un bateau</French>
             </Key>
             <Key ID="STR_antistasi_actions_take_intel">
                 <Original>Take intel</Original>
                 <Russian>Взять разведданные</Russian>
                 <Chinesesimp>获取情报</Chinesesimp>
                 <Korean>인텔 확보</Korean>
+                <French>Prendre des renseignements</French>
             </Key>
             <Key ID="STR_antistasi_actions_download_intel">
                 <Original>Download intel</Original>
                 <Russian>Скачать разведданные</Russian>
                 <Chinesesimp>下载情报</Chinesesimp>
                 <Korean>인텔 다운로드</Korean>
+                <French>Télécharger des renseignements</French>
             </Key>
             <Key ID="STR_antistasi_actions_decipher_intel">
                 <Original>Decipher intel</Original>
                 <Russian>Расшифровать разведданные</Russian>
                 <Chinesesimp>解密情报</Chinesesimp>
                 <Korean>인텔 해독</Korean>
+                <French>Déchiffrer des renseignements</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_static_weapon_emplacement">
                 <Original>Move emplacement static weapon</Original>
                 <Russian>Передвинуть стационарное орудие огневой точки</Russian>
                 <Chinesesimp>移动放置的固定武器</Chinesesimp>
                 <Korean>포대의 고정화기 이동</Korean>
+                <French>Déplacer l'emplacement de l'arme statique</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_static_allow_ai">
                 <Original>Allow AIs to use this weapon</Original>
                 <Russian>Разрешить ИИ-юнитам использовать это стационарное орудие</Russian>
                 <Chinesesimp>允许AI使用此固定武器</Chinesesimp>
                 <Korean>인공지능이 이 무기를 사용하도록 허용</Korean>
+                <French>Autoriser les IA à utiliser cette arme</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_static_prevent_ai">
                 <Original>Prevent AIs from using this weapon</Original>
                 <Russian>Запретить ИИ-юнитам использовать это стационарное орудие</Russian>
                 <Chinesesimp>禁止AI单位使用这个固定武器</Chinesesimp>
                 <Korean>인공지능이 이 무기 사용을 못하도록 막기</Korean>
+                <French>Empêcher les IA d'utiliser cette arme</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_static_kick_ai">
                 <Original>Kick AI off this weapon</Original>
                 <Russian>Заставить ИИ-юнит покинуть орудие</Russian>
                 <Chinesesimp>把AI踢出这个固定武器</Chinesesimp>
                 <Korean>이 무기에서 인공지능 내보내기</Korean>
+                <French>Faire partir l'IA de cette arme</French>
             </Key>
             <Key ID="STR_antistasi_actions_buy_vehicle_distance_check_failure">
                 <Original>You can't buy vehicles while there are enemies near you.</Original>
                 <Russian>Вы не можете покупать технику пока рядом с вами враги.</Russian>
                 <Chinesesimp>当你附近有敌人时，你不能购买载具。</Chinesesimp>
                 <Korean>처에 적이 있는 동안에는 차량을 구입할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas acheter de véhicules tant qu'il y a des ennemis près de vous.</French>
             </Key>
             <Key ID="STR_antistasi_actions_request_mission">
                 <Original>Request mission</Original>
                 <Russian>Запросить задание</Russian>
                 <Chinesesimp>请求任务</Chinesesimp>
                 <Korean>임무 요청</Korean>
+                <French>Demander une mission</French>
             </Key>
             <Key ID="STR_antistasi_actions_move_this_asset">
                 <Original>Move this asset</Original>
                 <Russian>Переместить</Russian>
                 <Chinesesimp>移动此物品</Chinesesimp>
                 <Korean>이 자산 옮기기</Korean>
+                <French>Déplacer cet objet</French>
             </Key>
             <Key ID="STR_antistasi_actions_return_control_to_ai">
                 <Original>Return control to AI</Original>
                 <Russian>Вернуть управление ИИ</Russian>
                 <Chinesesimp>把控制权还给AI</Chinesesimp>
                 <Korean>인공지능에 대한 조종 취소</Korean>
+                <French>Rendre le contrôle à l'IA</French>
             </Key>
             <Key ID="STR_antistasi_actions_map_info">
                 <Original>Show map info</Original>
                 <Russian>Показать информацию на карте</Russian>
                 <Chinesesimp>显示地图信息</Chinesesimp>
                 <Korean>지도 정보 표시</Korean>
+                <French>Afficher les informations de la carte</French>
             </Key>
             <Key ID="STR_antistasi_actions_game_options">
                 <Original>Game Options</Original>
                 <Russian>Игровые настройки</Russian>
                 <Chinesesimp>游戏选项</Chinesesimp>
                 <Korean>게임 설정</Korean>
+                <French>Options de jeu</French>
             </Key>
             <Key ID="STR_antistasi_actions_ai_load_info">
                 <Original>AI Load Info</Original>
                 <Russian>Нагрузка ИИ на производительность</Russian>
                 <Chinesesimp>AI负载信息</Chinesesimp>
                 <Korean>인공지능 로드 정보</Korean>
+                <French>Informations sur le chargement AI</French>
             </Key>
             <Key ID="STR_antistasi_actions_restore_units">
                 <Original>Restore nearby units</Original>
                 <Russian>Восстановить союзников поблизости</Russian>
                 <Chinesesimp>恢复附近的盟友</Chinesesimp>
                 <Korean>인근 유닛 복구</Korean>
+                <French>Restaurer les unités proches</French>
             </Key>
             <Key ID="STR_antistasi_actions_transfer_to_arsenal">
                 <Original>Transfer cargo to Arsenal</Original>
                 <Russian>Переместить груз в арсенал</Russian>
                 <Chinesesimp>把货物转到军火库</Chinesesimp>
                 <Korean>화물을 아스널로 옮기기</Korean>
+                <French>Déplacer la cargaison vers l'Arsenal</French>
             </Key>
             <Key ID="STR_antistasi_transfer_ammobox_to_truck">
                 <Original>Transfer ammobox to vehicle</Original>
                 <Russian>Переместить ящик с патронами в машину</Russian>
                 <Chinesesimp>将弹药箱转移到车辆上</Chinesesimp>
                 <Korean>차량에 탄약 상자 옮기기</Korean>
+                <French>Déplacer la caisse de munitions dans la voiture</French>
             </Key>
             <Key ID="STR_antistasi_revive_header">
                 <Original>Revive</Original>
                 <Russian>Оживление</Russian>
                 <Chinesesimp>复活</Chinesesimp>
                 <Korean>소생</Korean>
+                <French>Ranimer</French>
             </Key>
             <Key ID="STR_antistasi_revive_error_not_able">
                 <Original>You are not able to revive anyone.</Original>
                 <Russian>Вы не можете кого-либо оживлять.</Russian>
                 <Chinesesimp>你无法复活任何人。</Chinesesimp>
                 <Korean>당신은 아무도 소생시킬 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas réanimer quelqu'un.</French>
             </Key>
             <Key ID="STR_antistasi_revive_lost">
                 <Original>We lost %1.</Original>
                 <Russian>Мы потеряли %1.</Russian>
                 <Chinesesimp>我们失去了 %1。</Chinesesimp>
                 <Korean>%1을(를) 잃었습니다.</Korean>
+                <French>Nous avons perdu %1.</French>
             </Key>
             <Key ID="STR_antistasi_revive_cancelled">
                 <Original>Revive cancelled.</Original>
                 <Russian>Оживление отменено.</Russian>
                 <Chinesesimp>取消复活。</Chinesesimp>
                 <Korean>소생이 취소되었습니다.</Korean>
+                <French>La réanimation a été annulée.</French>
             </Key>
             <Key ID="STR_antistasi_actions_revive">
                 <Original>Revive %1</Original>
                 <Russian>Оживить %1</Russian>
                 <Chinesesimp>复活 %1</Chinesesimp>
                 <Korean>%1을(를) 소생하기</Korean>
+                <French>Réanimation %1</French>
             </Key>
             <Key ID="STR_antistasi_actions_carry">
                 <Original>Carry %1</Original>
                 <Russian>Нести %1</Russian>
                 <Chinesesimp>携带 %1</Chinesesimp>
                 <Korean>%1을(를) 끌기</Korean>
+                <French>Porte %1</French>
             </Key>
             <Key ID="STR_antistasi_actions_free_prisoner">
                 <Original>Free prisoner</Original>
                 <Russian>Освободить пленника</Russian>
                 <Chinesesimp>释放囚犯</Chinesesimp>
                 <Korean>죄수 풀어주기</Korean>
+                <French>Détenu libre</French>
             </Key>
             <Key ID="STR_antistasi_actions_car_bomb_disarm">
                 <Original>Disarm car bomb</Original>
                 <Russian>Обезвредить бомбу в автомобиле</Russian>
                 <Chinesesimp>解除汽车炸弹</Chinesesimp>
                 <Korean>차량의 폭탄 해체</Korean>
+                <French>Désamorcer la voiture piégée</French>
             </Key>
             <Key ID="STR_antistasi_actions_bomb_disarm">
                 <Original>Disarm bomb</Original>
                 <Russian>Обезвредить бомбу</Russian>
                 <Chinesesimp>拆除炸弹</Chinesesimp>
                 <Korean>폭탄 해체</Korean>
+                <French>Désarmer la bombe</French>
             </Key>
             <Key ID="STR_antistasi_actions_cancel_breaching">
                 <Original>Disarm bomb</Original>
                 <Russian>Отменить проникновение в технику</Russian>
                 <Chinesesimp>拆弹</Chinesesimp>
                 <Korean>폭탄 해체</Korean>
+                <French>Désarmer la bombe</French>
             </Key>
             <Key ID="STR_antistasi_actions_rally_point_travel">
                 <Original>Travel to rally point</Original>
                 <Russian>Переместиться к точке сбора</Russian>
                 <Chinesesimp>前往集结地</Chinesesimp>
                 <Korean>집결 지점으로 이동</Korean>
+                <French>Se rendre au point de ralliement</French>
             </Key>
         </Container>
         <Container name="common_notifications">
