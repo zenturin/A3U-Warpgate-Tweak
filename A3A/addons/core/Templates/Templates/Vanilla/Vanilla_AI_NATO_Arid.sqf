@@ -48,21 +48,16 @@ private _lightTanks = [];
 private _tanks = ["B_MBT_01_TUSK_F", "B_MBT_01_cannon_F"];
 private _aa = ["B_APC_Tracked_01_AA_F"];
 
-["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
+private _trasportBoat = ["B_Boat_Transport_01_F"];
+["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F","a3a_Boat_Armed_01_hmg_blufor_F"]] call _fnc_saveToTemplate;
 
 private _planesCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
 private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
 
 private _planesTransport = [];
-if (_hasApex) then {
-    _planesTransport pushback "B_T_VTOL_01_infantry_F";
-};
 
 private _transportHelicopters = ["B_Heli_Transport_01_F"];
-if (_hasApex) then {
-    _transportHelicopters pushback "B_CTRG_Heli_Transport_01_sand_F";
-};
+
 if (_hasHelicopters) then {
     _transportHelicopters append ["B_Heli_Transport_03_F", "B_Heli_Transport_03_unarmed_F"];
 };
@@ -125,6 +120,11 @@ if (_hasJets) then {
 if (_hasApex) then {
     _unarmedVehicles append ["B_LSV_01_unarmed_F", "B_CTRG_LSV_01_light_F"];
     _armedVehicles append ["B_LSV_01_armed_F", "B_LSV_01_AT_F"];
+    _planesTransport pushback "B_T_VTOL_01_infantry_F";
+    _transportHelicopters pushback "B_CTRG_Heli_Transport_01_sand_F";
+    _militiaCars pushBack "I_C_Offroad_02_unarmed_F";
+    _militiaLightArmed pushBack "a3a_Offroad_02_LMG_black_F";
+    _trasportBoat pushBack "I_C_Boat_Transport_02_F";
 };
 
 if (_hasTanks) then {
@@ -200,6 +200,7 @@ if (_hasCSLA) then {
     _policeVehs append ["CSLA_CIV_ADA1600VB","CSLA_CIV_Sarka1200PO","CSLA_CIV_Sarka1200VB","CSLA_AZU_VB"];
 };
 
+["vehiclesTransportBoats", _transportBoat] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", _militiaTrucks] call _fnc_saveToTemplate;
 ["vehiclesMilitiaLightArmed", _militiaLightArmed] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", _militiaCars] call _fnc_saveToTemplate;
@@ -269,6 +270,8 @@ if (_hasCSLA) then {
     ["APC_Wheeled_01_mortar_base_lxWS",["showBags",0.3,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["B_APC_Wheeled_01_cannon_F", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["B_APC_Tracked_01_AA_F", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3]],
+    ["I_C_Offroad_02_unarmed_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideBullbar",0.3,"hideFenders",0.3,"hideHeadSupportRear",0.3,"hideHeadSupportFront",0.3,"hideRollcage",0.3,"hideSeatsRear",0,"hideSpareWheel",0.3]];
+    ["a3a_Offroad_02_LMG_black_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideFenders",0.3,"hideHeadSupportFront",0.3,"hideSpareWheel",0.3]];
     ["gm_dk_army_Leopard1a3", ["CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_03_unhide",0.3,"sideskirt_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3,"camonet_MainTurret_elev_unhide",0.3]],
     ["gm_dk_army_m113a1dk_medic", ["IceCleats_02_unhide",0.3,"SupportPoles_01_unhide",0.3,"storageBox_01_unhide",0.3,"generator_01_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
     ["gm_ge_army_u1300l_medic", ["sign_mlc_unhide",0.3,"sign_medic_unhide",0.3,"camonetpoles_1_1_unhide",0.3,"CamoNet_01_rack_unhide",0.3,"CamoNet_01_unhide",0.3]],
@@ -312,6 +315,8 @@ if (_hasCSLA) then {
     ["B_LSV_01_AT_F", ["Black", 0.3, "Sand", 0.5, "Dazzle", 0.2]],
     ["B_LSV_01_unarmed_F", ["Black", 0.3, "Sand", 0.5, "Dazzle", 0.2]],
     ["B_LSV_01_AT_F", ["Black", 0.3, "Sand", 0.5, "Dazzle", 0.2]],
+    ["a3a_Offroad_02_LMG_black_F", ["Black", 0.3, "Brown", 0.7]],
+    ["I_C_Offroad_02_unarmed_F", ["Black", 0.3, "Brown", 0.7]],
     ["gm_dk_army_bpz2a0", ["gm_drapolive",1]],
     ["gm_dk_army_Leopard1a3", ["gm_drapolive",1]],
     ["gm_dk_army_m113a2dk", ["gm_drapolive",1]],

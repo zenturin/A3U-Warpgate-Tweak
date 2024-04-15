@@ -34,12 +34,6 @@ private _hasRF = "rf" in A3A_enabledDLC;
 
 private _lightUnarmed = ["O_T_MRAP_02_ghex_F"];
 private _lightArmed = ["O_T_MRAP_02_gmg_ghex_F", "O_T_MRAP_02_hmg_ghex_F"];
-if (_hasApex) then {
-    _lightUnarmed pushBack "O_T_LSV_02_unarmed_F";
-    _lightArmed append ["O_T_LSV_02_armed_F", "O_T_LSV_02_AT_F"];
-};
-
-
 ["vehiclesTrucks", ["O_T_Truck_03_covered_ghex_F", "O_T_Truck_03_transport_ghex_F"]] call _fnc_saveToTemplate;
 private _cargoTrucks = ["O_T_Truck_02_F", "O_T_Truck_02_transport_F", "O_T_Truck_03_covered_ghex_F", "O_T_Truck_03_transport_ghex_F"];
 ["vehiclesAmmoTrucks", ["O_T_Truck_03_ammo_ghex_F"]] call _fnc_saveToTemplate;
@@ -54,7 +48,7 @@ private _Airborne = ["O_T_APC_Wheeled_02_rcws_v2_ghex_F"];
 private _tanks = ["O_T_MBT_02_cannon_ghex_F","O_T_MBT_02_railgun_ghex_F"];
 ["vehiclesAA", ["O_T_APC_Tracked_02_AA_ghex_F"]] call _fnc_saveToTemplate;
 
-["vehiclesTransportBoats", ["O_T_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
+private _trasportBoat = ["O_T_Boat_Transport_01_F"];
 ["vehiclesGunBoats", ["O_T_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
 private _planesCAS = ["O_Plane_CAS_02_dynamicLoadout_F"];
@@ -118,6 +112,14 @@ if (_hasJets) then {
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
 
+if (_hasApex) then {
+    _lightUnarmed pushBack "O_T_LSV_02_unarmed_F";
+    _lightArmed append ["O_T_LSV_02_armed_F", "O_T_LSV_02_AT_F"];
+    _militiaCars pushBack "I_C_Offroad_02_unarmed_F";
+    _militiaLightArmed pushBack "a3a_Offroad_02_LMG_black_F";
+    _trasportBoat pushBack "I_C_Boat_Transport_02_F";
+};
+
 if (_hasRF) then {
     _lightUnarmed append ["O_T_Pickup_rf","O_T_Pickup_Comms_rf"];
     _militiaLightArmed pushBack "O_T_G_Pickup_hmg_rf";
@@ -140,6 +142,7 @@ if (_hasWs) then {
     _lightAttackHelicopters pushBack "B_ION_Heli_Light_02_dynamicLoadout_lxWS";
 };
 
+["vehiclesTransportBoats", _transportBoat] call _fnc_saveToTemplate;
 ["staticHowitzers", _howitzers] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", _lightUnarmed] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", _lightArmed] call _fnc_saveToTemplate;
@@ -176,6 +179,8 @@ if (_hasWs) then {
     ["O_LSV_02_armed_F", ["Unarmed_Doors_Hide",0.3]],
     ["O_LSV_02_unarmed_F", ["Unarmed_Doors_Hide",0.3]],
     ["O_LSV_02_AT_F", ["Unarmed_Doors_Hide",0.3]],
+    ["I_C_Offroad_02_unarmed_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideBullbar",0.3,"hideFenders",0.3,"hideHeadSupportRear",0.3,"hideHeadSupportFront",0.3,"hideRollcage",0.3,"hideSeatsRear",0,"hideSpareWheel",0.3]];
+    ["a3a_Offroad_02_LMG_black_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideFenders",0.3,"hideHeadSupportFront",0.3,"hideSpareWheel",0.3]];
     ["O_T_APC_Tracked_02_cannon_ghex_F", ["showTracks",0.3,"showCamonetHull",0.3,"showSLATHull",0.3]],
     ["O_T_APC_Tracked_02_30mm_lxWS", ["showTracks",0.3,"showCamonetHull",0.3,"showSLATHull",0.3]],
     ["O_T_APC_Tracked_02_AA_ghex_F", ["showTracks",0.3,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3]]
@@ -189,6 +194,8 @@ if (_hasWs) then {
     ["O_T_LSV_02_armed_F", ["Black", 0.3, "GreenHex", 0.7]],
     ["O_T_LSV_02_unarmed_F", ["Black", 0.3, "GreenHex", 0.7]],
     ["O_T_LSV_02_AT_F", ["Black", 0.3, "GreenHex", 0.7]],
+    ["a3a_Offroad_02_LMG_black_F", ["Black", 0.3, "Olive", 0.7]],
+    ["I_C_Offroad_02_unarmed_F", ["Black", 0.3, "Olive", 0.7]],
     ["O_Heli_Light_02_dynamicLoadout_F", ["Black", 1]],
     ["O_Heli_Transport_04_bench_F", ["Black", 1]],
     ["O_Heli_Transport_04_covered_F", ["Black", 1]],
@@ -971,11 +978,15 @@ _militiaLoadoutData set ["sidearms", ["hgun_Rook40_F"]];
 
 if (_hasCSLA) then {
     _marksmanRifles append [
-        ["srifle_h6_digi_rf", "", "", "optic_MRCO",["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""],
-        ["srifle_DMR_01_black_RF","","","optic_VRCO_RF",["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"],[],""]
+        ["CSLA_OP63","","","CSLA_PSO1_OP63",["CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62Odst59"],[],""]
     ];
     (_militiaLoadoutData get "sniperRifles") append [
-        ["CSLA_OP63","","","CSLA_PSO1_OP63",["CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62Odst59"],[],""]
+        ["CSLA_OP63","","","CSLA_PSO1_OP63",["CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62Odst59"],[],""],
+        ["CSLA_HuntingRifle","","","",["CSLA_10Rnd_762hunt","CSLA_10Rnd_762hunt","CSLA_10Rnd_762hunt"],[],""]
+    ];
+    _rifles append [
+        ["US85_FAL","","","",["US85_20Rnd_762x51","US85_20Rnd_762x51","US85_20Rnd_762M61"],[],"US85_FALbpd"],
+        ["US85_FALf","","","",["US85_20Rnd_762x51","US85_20Rnd_762x51","US85_20Rnd_762M61"],[],"US85_FALbpd"]
     ];
 };
 

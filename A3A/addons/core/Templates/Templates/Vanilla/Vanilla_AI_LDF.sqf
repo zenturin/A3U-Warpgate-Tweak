@@ -47,7 +47,7 @@ private _tanks =  ["B_T_MBT_01_TUSK_F", "B_T_MBT_01_cannon_F"];
 private _lightTanks = ["B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_CRV_F"];
 private _aa = ["B_T_APC_Tracked_01_AA_F"];
 
-["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
+private _trasportBoat = ["I_Boat_Transport_01_F"];
 ["vehiclesGunBoats", ["I_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
 private _planesCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
@@ -86,6 +86,16 @@ private _policeVehs = if (_hasContact) then {
 if (_hasLawsOfWar) then {
     _policeVehs append ["B_GEN_Van_02_vehicle_F","B_GEN_Van_02_transport_F"];
 };
+
+private _staticMG = ["I_G_HMG_02_high_F","I_E_HMG_01_high_F"];
+private _staticAT = ["I_E_Static_AT_F"];
+private _staticAA = ["I_E_Static_AA_F"];
+["staticMortars", ["B_Mortar_01_F"]] call _fnc_saveToTemplate;
+["staticHowitzers", []] call _fnc_saveToTemplate;
+
+private _radar = [];
+private _SAM = [];
+
 if (_hasRF) then {
     _unarmedVehicles append ["I_E_Pickup_rf","I_E_Pickup_Comms_rf","I_E_Pickup_Covered_rf"];
     _armedVehicles pushBack "I_Pickup_mmg_rf";
@@ -100,14 +110,6 @@ if (_hasRF) then {
     _aa pushback "I_Pickup_aat_rf";
 };
 
-private _staticMG = ["I_G_HMG_02_high_F","I_E_HMG_01_high_F"];
-private _staticAT = ["I_E_Static_AT_F"];
-private _staticAA = ["I_E_Static_AA_F"];
-["staticMortars", ["B_Mortar_01_F"]] call _fnc_saveToTemplate;
-["staticHowitzers", []] call _fnc_saveToTemplate;
-
-private _radar = [];
-private _SAM = [];
 if (_hasJets) then {
 	_planesCAS pushback "B_Plane_Fighter_01_F";
 	_planesAA pushback "B_Plane_Fighter_01_Stealth_F";
@@ -129,6 +131,12 @@ if (_hasWs) then {
 
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["APERSMine"]] call _fnc_saveToTemplate;
+
+if (_hasApex) then {
+    _militiaCars pushBack "I_C_Offroad_02_unarmed_F";
+    _militiaLightArmed pushBack "a3a_Offroad_02_LMG_black_F";
+    _trasportBoat pushBack "I_C_Boat_Transport_02_F";
+};
 
 //If Tank DLC
 if (_hasTanks) then {
@@ -194,6 +202,7 @@ if (_hasCSLA) then {
     _artillery append ["CSLA_ShKH77","CSLA_RM70","CSLA_RM51","US85_M270"];
 };
 
+["vehiclesTransportBoats", _transportBoat] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
 ["uavsPortable", _uavsPortable] call _fnc_saveToTemplate;
 ["staticMGs", _staticMG] call _fnc_saveToTemplate;
@@ -247,6 +256,8 @@ if (_hasCSLA) then {
     ["I_LT_01_AT_F", ["showTools", 0.3,"showCamonetHull", 0.3,"showBags", 0.3,"showSLATHull", 0.3]],
     ["I_LT_01_scout_F", ["showTools", 0.3,"showCamonetHull", 0.3,"showBags", 0.3,"showSLATHull", 0.3]],
     ["I_LT_01_cannon_F", ["showTools", 0.3,"showCamonetHull", 0.3,"showBags", 0.3,"showSLATHull", 0.3]],
+    ["I_C_Offroad_02_unarmed_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideBullbar",0.3,"hideFenders",0.3,"hideHeadSupportRear",0.3,"hideHeadSupportFront",0.3,"hideRollcage",0.3,"hideSeatsRear",0,"hideSpareWheel",0.3]];
+    ["a3a_Offroad_02_LMG_black_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideFenders",0.3,"hideHeadSupportFront",0.3,"hideSpareWheel",0.3]];
     ["gm_dk_army_Leopard1a3", ["CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_03_unhide",0.3,"sideskirt_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3,"camonet_MainTurret_elev_unhide",0.3]],
     ["gm_dk_army_m113a1dk_medic", ["IceCleats_02_unhide",0.3,"SupportPoles_01_unhide",0.3,"storageBox_01_unhide",0.3,"generator_01_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
     ["gm_ge_army_u1300l_medic", ["sign_mlc_unhide",0.3,"sign_medic_unhide",0.3,"camonetpoles_1_1_unhide",0.3,"CamoNet_01_rack_unhide",0.3,"CamoNet_01_unhide",0.3]],
@@ -271,6 +282,8 @@ if (_hasCSLA) then {
     ["gm_ge_pol_typ253",["gm_navyblue_damusowhite",1]],
     ["CSLA_Mi24V",["camo6",1]],
     ["CSLA_AZU_VB", ["vb2",1]],
+    ["a3a_Offroad_02_LMG_black_F", ["Olive",1]],
+    ["I_C_Offroad_02_unarmed_F", ["Olive",1]],
     ["I_Tura_ZU23_lxWS", ["Green",1]],
     ["I_Pickup_aat_rf",["EAF",1]],
     ["I_Pickup_mmg_rf",["EAF",1]],
@@ -1126,7 +1139,15 @@ _militiaLoadoutData set ["grenadeLaunchers", [
     ["arifle_TRG21_GL_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
     ["arifle_MSBS65_GL_F", "", "", "", ["30Rnd_65x39_caseless_msbs_mag", "30Rnd_65x39_caseless_msbs_mag", "30Rnd_65x39_caseless_msbs_mag_Tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
-_militiaLoadoutData set ["SMGs", ["SMG_01_F", "SMG_02_F", "SMG_03_black", "SMG_03C_black"]];
+_militiaLoadoutData set ["SMGs", [
+["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco_smg", [], [], ""],
+["SMG_03_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
+["SMG_03C_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
+["SMG_03_TR_camo", "", "acc_flashlight", "optic_Aco_smg", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
+["SMG_03C_TR_camo", "", "acc_flashlight", "optic_Aco_smg", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
+["SMG_03C_TR_camo", "", "acc_flashlight", "optic_Aco_smg", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
+["SMG_02_F", "", "acc_flashlight", "optic_Aco_smg", [], [], ""]
+]];
 _militiaLoadoutData set ["machineGuns", [
     ["LMG_Mk200_black_F", "", "", "", ["200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Tracer_Red"], [], "bipod_01_F_blk"]
 ]];
@@ -1139,8 +1160,6 @@ if (_hasMarksman) then {
     _marksmanRifles append [["srifle_DMR_06_olive_F", "", "", "optic_MRCO", [], [], ""]];
     _sniperRifles append [["srifle_DMR_06_olive_F", "", "", "optic_SOS", [], [], ""]];
 };
-_militiaLoadoutData set ["marksmanRifles", _marksmanRifles];
-_militiaLoadoutData set ["sniperRifles", _sniperRifles];
 _militiaLoadoutData set ["sidearms", ["hgun_P07_khk_F"]];
 
 if (_hasApex) then {
@@ -1153,12 +1172,46 @@ if (_hasApex) then {
 };
 
 if (_hasCSLA) then {
-    _marksmanRifles append [
-        ["srifle_h6_digi_rf", "", "", "optic_MRCO",["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""],
-        ["srifle_DMR_01_black_RF","","","optic_VRCO_RF",["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"],[],""]
+    (_militiaLoadoutData get "machineGuns") append [
+        ["US85_M60","","","",["US85_100Rnd_762x51","US85_100Rnd_762x51","US85_100Rnd_762x51"],[],""],
+        ["US85_M249","","","US85_sc4x20M249",["US85_200Rnd_556x45","US85_200Rnd_556x45","US85_200Rnd_556x45"],[],""],
+        ["CSLA_UK59L","","","CSLA_UK59_ZD4x8",["CSLA_UK59_50rnd_7_62vz59","CSLA_UK59_50rnd_7_62PZ59","CSLA_UK59_50rnd_7_62Tz59","CSLA_UK59_50rnd_7_62TzSv59","CSLA_UK59_50rnd_7_62Sv59"],[],""],
     ];
-    (_militiaLoadoutData get "sniperRifles") append [
-        ["CSLA_OP63","","","CSLA_PSO1_OP63",["CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62Odst59"],[],""]
+    (_militiaLoadoutData get "slRifles") append [
+        ["US85_M16A2","","","US85_sc4x20_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],[],""],
+        ["US85_M16A1","","","US85_sc4x20_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],[],""],
+        ["US85_FALf","","","US85_scFAL",["US85_20Rnd_762M61","US85_20Rnd_762M61","US85_20Rnd_762x51"],[],"US85_FALbpd"],
+        ["US85_FAL","","","US85_scFAL",["US85_20Rnd_762M61","US85_20Rnd_762M61","US85_20Rnd_762x51"],[],"US85_FALbpd"],
+        ["US85_M16A2GL","","","US85_sc2000_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],["US85_M406","US85_M406","US85_M406","US85_M583A1"],""],
+        ["US85_M16A2CARGL","","","US85_sc2000_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],["US85_M406","US85_M406","US85_M406","US85_M583A1"],""],
+        ["CSLA_VG70","","","",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],["CSLA_26_5vz70","CSLA_26_5vz70","CSLA_26_5sigZl1a","CSLA_26_5sigB1a","CSLA_26_5sigCrD"],""],
+        ["CSLA_Sa58P","","","CSLA_ZD4x8",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],[],"CSLA_Sa58bpd"],
+        ["CSLA_Sa58V","","","",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],[],"CSLA_Sa58bpd"],
+    ];
+    (_militiaLoadoutData get "rifles") append [
+        ["US85_M16A2","","","US85_sc2000_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],[],""],
+        ["US85_M16A1","","","US85_sc2000_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],[],""],
+        ["US85_FALf","","","US85_scFAL",["US85_20Rnd_762M61","US85_20Rnd_762M61","US85_20Rnd_762x51"],[],"US85_FALbpd"],
+        ["US85_FAL","","","US85_scFAL",["US85_20Rnd_762M61","US85_20Rnd_762M61","US85_20Rnd_762x51"],[],"US85_FALbpd"],
+        ["CSLA_Sa58P","","","CSLA_ZD4x8",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],[],""],
+        ["CSLA_Sa58V","","","",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],[],""]
+    ];
+    (_militiaLoadoutData get "grenadeLaunchers") append [
+        ["US85_M16A2GL","","","US85_sc2000_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],["US85_M406","US85_M406","US85_M406","US85_M583A1"],""],
+        ["US85_M16A2CARGL","","","US85_sc2000_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],["US85_M406","US85_M406","US85_M406","US85_M583A1"],""],
+        ["CSLA_VG70","","","",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],["CSLA_26_5vz70","CSLA_26_5vz70","CSLA_26_5vz70","CSLA_26_5vz70"],""]
+    ];
+    (_militiaLoadoutData get "carbines") append [
+        ["US85_M16A2CAR","","US85_M16fl","US85_sc2000_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],[],""]
+    ];
+    _marksmanRifles append [
+        ["US85_M14","","","US85_scM21",["US85_20Rnd_762x51","US85_20Rnd_762x51","US85_20Rnd_762M61"],[],"US85_M14bpd"],
+        ["US85_M21","","","US85_scM21",["US85_20Rnd_762x51","US85_20Rnd_762x51","US85_20Rnd_762M61"],[],"US85_M14bpd"],
+        ["CSLA_OP63","","","CSLA_PSO1_OP63",["CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62Odst59"],[],""],
+    ];
+    _sniperRifles append [
+        ["CSLA_OP63","","","CSLA_PSO1_OP63",["CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62Odst59"],[],""],
+        ["CSLA_HuntingRifle","","","",["CSLA_10Rnd_762hunt","CSLA_10Rnd_762hunt","CSLA_10Rnd_762hunt"],[],""]
     ];
 };
 
@@ -1166,10 +1219,10 @@ if (_hasGM) then {
     _marksmanRifles append [
         ["gm_svd_wud","","","gm_pso1_dovetail_blk",["gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk"],[],""]
     ];
-    (_militiaLoadoutData get "sniperRifles") append [
+    _sniperRifles append append [
         ["gm_svd_wud","","","gm_pso6x36_1_dovetail_gry",["gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk"],[],""]
     ];
-    _mgs append [
+    (_militiaLoadoutData get "machineGuns") append [
         ["gm_rpkn_wud","","","gm_zfk4x25_blk",["gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk","gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk","gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk"],[],""],
         ["gm_rpk74n_wud","","","gm_pka_dovetail_blk",["gm_45Rnd_545x39mm_B_7N6_ak74_prp","gm_45Rnd_545x39mm_B_7N6_ak74_prp","gm_45Rnd_545x39mm_B_7N6_ak74_prp"],[],""],
         ["gm_rpk_wud","","","gm_zvn64_rpk",["gm_75Rnd_762x39mm_B_57N231_ak47_blk","gm_75Rnd_762x39mm_B_57N231_ak47_blk","gm_75Rnd_762x39mm_B_57N231_ak47_blk"],[],""],
@@ -1202,13 +1255,15 @@ if (_hasRF) then {
         ["srifle_h6_blk_rf", "", "", "optic_MRCO",["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""],
         ["srifle_DMR_01_black_RF","","","optic_VRCO_RF",["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"],[],""]
     ];
-    (_militiaLoadoutData get "sniperRifles") append [
+    _sniperRifles append append [
         ["srifle_h6_oli_rf","","","optic_MRCO",["10Rnd_556x45_AP_Stanag_red_khk_RF","10Rnd_556x45_AP_Stanag_red_khk_RF","20Rnd_556x45_AP_Stanag_red_khk_RF"],[],""],
         ["srifle_h6_blk_rf", "", "", "optic_MRCO",["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""],
         ["srifle_DMR_01_black_RF","","","optic_DMS",["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"],[],""]
     ];
 };
 
+_militiaLoadoutData set ["marksmanRifles", _marksmanRifles];
+_militiaLoadoutData set ["sniperRifles", _sniperRifles];
 //////////////////////////
 //    Misc Loadouts     //
 //////////////////////////
