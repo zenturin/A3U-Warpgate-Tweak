@@ -11182,24 +11182,28 @@
                 <Russian>Переноска раненого</Russian>
                 <Chinesesimp>携带/拖拽</Chinesesimp>
                 <Korean>업기/끌기</Korean>
+                <French>Porter/traîner</French>
             </Key>
             <Key ID="STR_A3A_revive_carry_dead">
                 <Original>%1 is dead.</Original>
                 <Russian>%1 умер.</Russian>
                 <Chinesesimp>%1死了。</Chinesesimp>
                 <Korean>%1이(가) 죽었습니다.</Korean>
+                <French>%1 est mort.</French>
             </Key>
             <Key ID="STR_A3A_revive_no_longer_need_help">
                 <Original>%1 no longer needs your help.</Original>
                 <Russian>%1 больше не требуется ваша помощь.</Russian>
                 <Chinesesimp>%1不再需要你的帮助。</Chinesesimp>
                 <Korean>%1은(는) 더 이상 당신의 도움이 필요하지 않습니다.</Korean>
+                <French>%1 n'a plus besoin de votre aide.</French>
             </Key>
             <Key ID="STR_A3A_revive_transported">
                 <Original>%1 is being carried or transported and you can't carry him.</Original>
                 <Russian>%1 уже перетаскивается или транспортируется, вы не можете нести или тащить его.</Russian>
                 <Chinesesimp>%1 已经被拖动或运输，您不能携带或拖动它。</Chinesesimp>
                 <Korean>%1은(는) 끌려가거나 수송되고 있으므로 끌 수 없습니다.</Korean>
+                <French>%1 is being carried or transported and you can't carry him.</French>
             </Key>
         </Container>
         <Container name="A3A_reinf">
@@ -11880,114 +11884,133 @@
                 <Russian>Вне границ</Russian>
                 <Chinesesimp>出界</Chinesesimp>
                 <Korean>범위를 벗어남</Korean>
+                <French>Hors limites</French>
             </Key>
             <Key ID="STR_A3A_punishment_oob">
                 <Original>Return to the AO before your blown up, you have %1 seconds.</Original>
                 <Russian>Вернитесь в границы игры, иначе вы взорвётесь. У вас %1 секунд.</Russian>
                 <Chinesesimp>回到游戏范围内，否则你会爆炸。 你有 %1 秒。</Chinesesimp>
                 <Korean>터지기 전에 작전 구역으로 돌아가십시오. %1초 남았습니다.</Korean>
+                <French>Retournez dans les limites du jeu ou vous exploserez. Vous avez %1 secondes.</French>
             </Key>
             <Key ID="STR_A3A_punishment_no_grenades">
                 <Original>You can't throw grenades or place explosives within 75m of HQ.</Original>
                 <Russian>Вы не можете бросать гранату или устанавливать взрывчатку в 75 метрах от штаба.</Russian>
                 <Chinesesimp>您不得在总部 75 米范围内投掷手榴弹或放置炸药。</Chinesesimp>
                 <Korean>본부에서 75m 이내에 수류탄을 던지거나 폭발물을 놓을 수 없습니다.</Korean>
+                <French>Il est interdit de lancer des grenades ou de placer des explosifs à moins de 75 m du QG.</French>
             </Key>
             <Key ID="STR_A3A_punishment_FF_header">
                 <Original>Friendly Fire Punishment</Original>
                 <Russian>Наказание за дружественный огонь</Russian>
                 <Chinesesimp>对误伤的惩罚</Chinesesimp>
                 <Korean>아군오사 처벌</Korean>
+                <French>Punition pour tir ami</French>
             </Key>
             <Key ID="STR_A3A_punishment_admin_forgive">
                 <Original>An admin looks with pity upon your soul. You have been forgiven.</Original>
                 <Russian>Администратор смотрит с жалостью на твою душу. Ты был прощён.</Russian>
                 <Chinesesimp>管理员很同情你的灵魂。 你已经被原谅了。</Chinesesimp>
                 <Korean>관리자는 당신을 측은히 여겨 용서를 했습니다.</Korean>
+                <French>Un administrateur regarde votre âme avec pitié. Vous avez été pardonné.</French>
             </Key>
             <Key ID="STR_A3A_punishment_enough">
                 <Original>Enough then.</Original>
                 <Russian>С тебя достаточно.</Russian>
                 <Chinesesimp>够了。</Chinesesimp>
                 <Korean>그럼 됐습니다.</Korean>
+                <French>Cela suffit.</French>
             </Key>
             <Key ID="STR_A3A_punishment_client_notification">
                 <Original>Please do not teamkill. Stare at the turtles for %1 more seconds.</Original>
                 <Russian>Пожалуйста, не убивай своих больше. Пока попялься на черепашек ещё %1 секунд.</Russian>
                 <Chinesesimp>请不要再杀自己人了。 又盯着海龟看了 %1 秒。</Chinesesimp>
                 <Korean>팀킬을 하지 마십시오. %1초 동안 거북이나 보고 있으십시오.</Korean>
+                <French>S'il vous plaît, ne tuez plus les vôtres. Pendant que vous survolez les tortues pendant encore %1 secondes.</French>
             </Key>
             <Key ID="STR_A3A_punishment_guilty">
                 <Original> has been found guilty of FF (3+ Strikes).&lt;br/&gt;&lt;br/&gt;If you believe this is a mistake, you can forgive him with the corresponding scroll-menu action.</Original>
                 <Russian> был признан виновным в дружественном огне (3+ случая).&lt;br/&gt;&lt;br/&gt;Если вы думаете, что это ошибка правосудия, вы можете простить его соответствующим действием в контекстном меню на колёсико мыши.</Russian>
                 <Chinesesimp>已被判误伤（3次以上）。&lt;br/&gt;&lt;br/&gt;;如果您认为这是误判，您可以通过鼠标滚轮菜单中的适当操作来原谅它。</Chinesesimp>
                 <Korean>이(가) 아군오사(3회 이상 공격)에 대해 유죄 판결을 받았습니다.&lt;br/&gt;&lt;br/&gt;실수인 것 같다고 생각한다면 그에 대한 스크롤 메뉴 행동으로 그를 용서할 수 있습니다.</Korean>
+                <French> a été reconnu coupable de tirs amis (plus de trois incidents)..&lt;br/&gt;&lt;br/&gt;Si vous pensez qu'il s'agit d'une erreur, vous pouvez lui pardonner avec l'action correspondante du menu déroulant.</French>
             </Key>
             <Key ID="STR_A3A_punishment_damaged_driver">
                 <Original>You damaged a friendly as a driver.</Original>
                 <Russian>Вы нанесли урон дружественному игроку транспортным средством.</Russian>
                 <Chinesesimp>你用载具TK了友方玩家。</Chinesesimp>
                 <Korean>당신은 운전자로서 아군에게 데미지를 입혔습니다.</Korean>
+                <French>Vous avez endommagé un ami en tant que conducteur.</French>
             </Key>
             <Key ID="STR_A3A_punishment_damaged_admin">
                 <Original>You damaged a friendly as admin.</Original>
                 <Russian>Вы нанесли урон дружественному игроку как администратор.</Russian>
                 <Chinesesimp>你以管理员身份伤害了一位友方玩家。</Chinesesimp>
                 <Korean>당신은 관리자로서 아군에게 데미지를 입혔습니다.</Korean>
+                <French>Vous avez causé des dommages à un joueur ami en tant qu'administrateur.</French>
             </Key>
             <Key ID="STR_A3A_punishment_damaged_cas">
                 <Original>You damaged a friendly as CAS support.</Original>
                 <Russian>Вы нанесли урон дружественному игроку с воздуха.</Russian>
                 <Chinesesimp>你从空中对友方玩家造成了伤害。</Chinesesimp>
                 <Korean>당신은 근접항공지원으로 아군에게 데미지를 입혔습니다.</Korean>
+                <French>Vous infligez des dégâts à un joueur ami depuis les airs.</French>
             </Key>
             <Key ID="STR_A3A_punishment_damaged_arty">
                 <Original>You damaged a friendly as arty support.</Original>
                 <Russian>Вы нанесли урон дружественному игроку артиллерией.</Russian>
                 <Chinesesimp>你用大炮伤害了一个友方玩家。</Chinesesimp>
                 <Korean>당신은 포격 지원으로 아군에게 데미지를 입혔습니다.</Korean>
+                <French>Vous endommagez un joueur ami avec de l'artillerie.</French>
             </Key>
             <Key ID="STR_A3A_punishment_ff_notification">
                 <Original>Friendly Fire Notification</Original>
                 <Russian>Уведомление о дружественном огне</Russian>
                 <Chinesesimp>误伤通知</Chinesesimp>
                 <Korean>아군 오사 알림</Korean>
+                <French>Notification de tir ami</French>
             </Key>
             <Key ID="STR_A3A_punishment_ff_notification_desc">
                 <Original>%1 hurt you!</Original>
                 <Russian>%1 нанес вам урон!</Russian>
                 <Chinesesimp>%1 伤害了你！</Chinesesimp>
                 <Korean>%1이(가) 당신을 다치게 했습니다!</Korean>
+                <French>%1 vous a fait du mal!</French>
             </Key>
             <Key ID="STR_A3A_punishment_injured_comrade">
                 <Original>Injured comrade: </Original>
                 <Russian>Раненый товарищ: </Russian>
                 <Chinesesimp>受伤的同志： </Chinesesimp>
                 <Korean>부상당한 아군: </Korean>
+                <French>Camarade blessé:</French>
             </Key>
             <Key ID="STR_A3A_punishment_hurt_you">
                 <Original>  hurt you!</Original>
                 <Russian>  нанёс вам урон!</Russian>
                 <Chinesesimp>  伤害你！</Chinesesimp>
                 <Korean>  이(가) 당신을 다치게 했습니다!</Korean>
+                <French> a fait des dégâts!</French>
             </Key>
             <Key ID="STR_A3A_punishment_watch_your_fire">
                 <Original>Watch your fire!</Original>
                 <Russian>Смотри куда стреляешь!</Russian>
                 <Chinesesimp>看准点！</Chinesesimp>
                 <Korean>사격 주의!</Korean>
+                <French>Attention au feu!</French>
             </Key>
             <Key ID="STR_A3A_punishment_unitcontrol">
                 <Original>Unit Control</Original>
                 <Russian>Контроль над юнитом</Russian>
                 <Chinesesimp>单位控制</Chinesesimp>
                 <Korean>유닛 조종</Korean>
+                <French>Contrôle des unités</French>
             </Key>
             <Key ID="STR_A3A_punishment_unitcontrol_desc">
                 <Original>Returned to original Unit due to FF.</Original>
                 <Russian>Возврат в оригинальное тело из-за дружественного огня.</Russian>
                 <Chinesesimp>因误伤而变回原来的身体。</Chinesesimp>
                 <Korean>아군오사로 인해 원래 유닛으로 되돌아갑니다.</Korean>
+                <French>Retour à l'unité d'origine en raison de tir ami.</French>
             </Key>
         </Container>
         <Container name="A3A_Dialogs">
@@ -11996,54 +12019,63 @@
                 <Russian>Очистить лес вокруг</Russian>
                 <Chinesesimp>清理周围的森林</Chinesesimp>
                 <Korean>숲 제거</Korean>
+                <French>Débroussailler la forêt environnante</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_clear_forest_only_comm">
                 <Original>Only Commander can order to clear the forest around the HQ.</Original>
                 <Russian>Только командир может очистить лес вокруг штаба.</Russian>
                 <Chinesesimp>只有指挥官才能下令清理总部周围的森林。</Chinesesimp>
                 <Korean>지휘관만이 본부 주변의 숲을 정리하라고 명령할 수 있습니다.</Korean>
+                <French>Seul le commandant peut ordonner le débroussaillage de la forêt autour du QG.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_clear_forest_success">
                 <Original>You've cleared the surroundings of HQ from trees and bushes.</Original>
                 <Russian>Вы очистили окрестности штаба от деревьев и кустов.</Russian>
                 <Chinesesimp>你已经清除了总部周围的树木和灌木。</Chinesesimp>
                 <Korean>본부 주변의 나무와 덤불을 정리했습니다.</Korean>
+                <French>Vous avez débarrassé les environs du QG des arbres et des buissons.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_create_dialog_save_personal_save_header">
                 <Original>A T T E N T I O N</Original>
                 <Russian>В Н И М А Н И Е</Russian>
                 <Chinesesimp>注    意</Chinesesimp>
                 <Korean>주    의</Korean>
+                <French>A T T E N T I O N</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_create_dialog_save_personal_save_1">
                 <Original>Antistasi Plus has a custom save system.&lt;br/&gt;&lt;br/&gt;</Original>
                 <Russian>Antistasi Plus использует нестандартную систему сохранений.&lt;br/&gt;&lt;br/&gt;</Russian>
                 <Chinesesimp>Antistasi Plus有一个自定义的保存系统。&lt;br/&gt;&lt;br/&gt;</Chinesesimp>
                 <Korean>안티스타시 플러스는 사용자 지정 저장 시스템을 가졌습니다.&lt;br/&gt;&lt;br/&gt;</Korean>
+                <French>Antistasi Plus dispose d'un système de sauvegarde personnalisé.&lt;br/&gt;&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_create_dialog_save_personal_save_2">
                 <Original>To Save: Your commander needs to go to the &lt;t color='#f0d498'&gt;Map Board&lt;/t&gt; or open Commander Menu (TAB key by default), select &lt;t color='#f0d498'&gt;"Game Options"&lt;/t&gt; tab there and click on the &lt;t color='#f0d498'&gt;"Persistent Save"&lt;/t&gt; button.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</Original>
                 <Russian>Чтобы сохранить игру, ваш командир должен подойти к &lt;t color='#f0d498'&gt;карте на треноге&lt;/t&gt; или открыть Меню Командира (клавишу TAB по умолчанию), выбрать вкладку &lt;t color='#f0d498'&gt;игровых опций&lt;/t&gt; и нажать на кнопку &lt;t color='#f0d498'&gt;"Постоянное сохранение"&lt;/t&gt;.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</Russian>
                 <Chinesesimp>要保存：你的指挥官需要去&lt;t color='#f0d498'&gt;地图板&lt;/t&gt; 或打开指挥官菜单（默认为TAB键），选择&lt;t color='#f0d498'&gt;"游戏选项"&lt;/t&gt; 选项卡并单击 &lt;t color='#f0d498'&gt;"永久保存"&lt;/t&gt; button.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</Chinesesimp>
                 <Korean>저장 방법: 당신의 지휘관이 &lt;t color='#f0d498'&gt;화이트보드&lt;/t&gt;로 이동하거나 지휘관 메뉴(기본: 탭 키)를 열고,&lt;t color='#f0d498'&gt;"게임 설정"&lt;/t&gt; 탭을 선택하고 &lt;t color='#f0d498'&gt;"영구 저장"&lt;/t&gt; 버튼을 클릭해야 합니다.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</Korean>
+                <French>Pour sauvegarder : Votre commandant doit aller sur le &lt;t color='#f0d498'&gt;Tableau de la carte&lt;/t&gt; ou ouvrir le menu du commandant (touche TAB par défaut), sélectionner &lt;t color='#f0d498'&gt; "Options de jeu"&lt;/t&gt; l'onglet et cliquer sur le bouton &lt;t color='#f0d498'&gt; "Sauvegarde persistante"&lt;/t&gt;. &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_create_dialog_save_personal_save_3">
                 <Original>Current parameters are configured to auto-save every &lt;t color='#f0d498'&gt;</Original>
                 <Russian>Текущие параметры настроны на автосохранение каждые &lt;t color='#f0d498'&gt;</Russian>
                 <Chinesesimp>当前设置设置为自动保存每&lt;t color='#f0d498'&gt;</Chinesesimp>
                 <Korean>현재 매개변수가 다음 시간마다 자동 저장되도록 설정되어 있습니다: &lt;t color='#f0d498'&gt;</Korean>
+                <French>Les paramètres actuels sont configurés pour une sauvegarde automatique tous les &lt;t color='#f0d498'&gt;</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_create_dialog_save_personal_save_4">
                 <Original>minutes&lt;/t&gt;.</Original>
                 <Russian>минут&lt;/t&gt;.</Russian>
                 <Chinesesimp>分钟&lt;/t&gt;。</Chinesesimp>
                 <Korean>분&lt;/t&gt;</Korean>
+                <French>minutes&lt;/t&gt;.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_create_dialog_save_personal_save_5">
                 <Original>Auto-save is currently disabled</Original>
                 <Russian>Автосохранение в текущий отключено в опциях миссии.</Russian>
                 <Chinesesimp>自动保存目前已禁用</Chinesesimp>
                 <Korean>현재 자동 저장이 비활성화되었습니다.</Korean>
+                <French>La sauvegarde automatique est actuellement désactivée</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_header">
                 <Original>Fast Travel</Original>can't
@@ -12053,168 +12085,196 @@
                 <Russian>Вы можете выбрать только одну группу для быстрого путешествия.</Russian>
                 <Chinesesimp>只能选择一队进行快速旅行。</Chinesesimp>
                 <Korean>빠른 이동에는 한 그룹만 선택할 수 있습니다.</Korean>
+                <French>Voyage rapide</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_error_player">
                 <Original>You can't Fast Travel groups commanded by players.</Original>
                 <Russian>Вы не можете быстро перемещать группы под руководством игроков.</Russian>
                 <Chinesesimp>玩家指挥的队伍无法快速移动</Chinesesimp>
                 <Korean>플레이어가 지휘하는 그룹은 빠른 이동을 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas faire voyager rapidement des groupes commandés par des joueurs.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_no_controlai">
                 <Original>You can't Fast Travel while you are controlling AI.</Original>
                 <Russian>Вы не можете быстро путешествовать если вы контроллируете ИИ-юнит.</Russian>
                 <Chinesesimp>控制AI时无法快速旅行</Chinesesimp>
                 <Korean>인공지능을 조종하는 동안에는 빠른 이동을 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas voyager rapidement lorsque vous contrôlez l'IA.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_no_towing">
                 <Original>You can't Fast Travel with your Tow Rope out or a Vehicle attached.</Original>
                 <Russian>Вы не можете быстро путешествовать пока у вас в руках или у вашей техники достан буксировочный трос.</Russian>
                 <Chinesesimp>你不能在拉出拖车绳或连接载具的情况下快速行驶。</Chinesesimp>
                 <Korean>견인 로프를 빼거나 차량을 연결한 상태에서는 빠른 이동을 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas effectuer de déplacement rapide si vous avez un câble de remorquage dans les mains ou si un véhicule est attaché.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_no_ff">
                 <Original>You can't fast travel while being FF Punished.</Original>
                 <Russian>Вы не можете быстро путешествовать пока находитесь под наказанием за дружественный огонь.</Russian>
                 <Chinesesimp>被惩罚时不能快速旅行</Chinesesimp>
                 <Korean>아군오사 처벌을 받는 동안에는 빠른 이동을 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas vous déplacer rapidement si vous subissez une pénalité de tir ami.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_enemiesnear_individual">
                 <Original>You can't Fast Travel with enemies near you.</Original>
                 <Russian>Вы не можете быстро путешествовать пока рядом с вами враги.</Russian>
                 <Chinesesimp>你不能在附近有敌人时进行快速旅行。</Chinesesimp>
                 <Korean>당신 근처에 적이 있는 동안에는 빠른 이동을 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas voyager rapidement si des ennemis sont près de vous.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_enemiesnear_group">
                 <Original>You cannot Fast Travel with enemies near the group.</Original>
                 <Russian>Вы не можете быстро путешествовать пока рядом с вашим отрядом враги.</Russian>
                 <Chinesesimp>当你的小队附近有敌人时，你不能快速旅行。</Chinesesimp>
                 <Korean>그룹 근처에 적이 있는 동안에는 빠른 이동을 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas voyager rapidement si des ennemis se trouvent à proximité du groupe.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_no_multiple">
                 <Original>You can't Fast Travel if:&lt;br/&gt;you don't have a driver in all your vehicles or&lt;br/&gt;your vehicles are damaged and can't move or&lt;br/&gt;your group is in a boat.</Original>
                 <Russian>Вы не можете быстро путешествовать пока:&lt;br/&gt;во всех транспортных средствах вашего отряда нет водителей или&lt;br/&gt; ваша техника повреждена и обездвижена или&lt;br/&gt;ваш отряд находится в лодке или ином плавательном средстве.</Russian>
                 <Chinesesimp>如果出现以下情况，您将无法快速旅行：&lt;br/&gt;您的所有车辆都没有驾驶员，或者&lt;br/&gt;您的车辆损坏且无法移动，或者&lt;br/&gt;&gt;你的小队在船上或其他船只上。</Chinesesimp>
                 <Korean>다음의 경우 빠른 이동이 불가능합니다:&lt;br/&gt;해당 차량에 운전수가 없거나&lt;br/&gt;차량이 손상되어 움직일 수 없거나&lt;br/&gt;당신의 그룹이 보트에 있을 경우.</Korean>
+                <French>Vous ne pouvez pas voyager rapidement si:&lt;br/&gt;vous n'avez pas de conducteur dans tous vos véhicules ou&lt;br/&gt;vos véhicules sont endommagés et ne peuvent pas bouger ou&lt;br/&gt;votre groupe est dans un bateau.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_click">
                 <Original>Click on the zone you want to travel.</Original>
                 <Russian>Нажмите на место, куда вы хотите пропутешествовать.</Russian>
                 <Chinesesimp>点击您想去的地方</Chinesesimp>
                 <Korean>빠른 이동할 구역을 클릭하십시오.</Korean>
+                <French>Cliquez sur le lieu où vous souhaitez vous rendre.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_only_drivers">
                 <Original>Only drivers can fast travel in vehicles.</Original>
                 <Russian>Только водители могут быстро путешествовать будучи в транспортном средстве.</Russian>
                 <Chinesesimp>只有司机可以在车内快速行驶。</Chinesesimp>
                 <Korean>운전자만이 차량을 탄 상태로 빠른 이동을 할 수 있습니다.</Korean>
+                <French>Seuls les conducteurs peuvent se déplacer rapidement dans les véhicules.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_missclick">
                 <Original>You must click near a marker under your control.</Original>
                 <Russian>Вы должны нажать на маркер под вашим контролем.</Russian>
                 <Chinesesimp>你必须在你控制的标记附近点击。</Chinesesimp>
                 <Korean>당신 통제 하의 마커 근처를 클릭해야 합니다.</Korean>
+                <French>Vous devez cliquer à proximité d'un marqueur que vous contrôlez.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_limited">
                 <Original>Player groups are only allowed to Fast Travel to HQ, Airbases, Military Bases, Rally Points and Arms Dealer.</Original>
                 <Russian>Группы игроков могут быстро путешествовтаь только до штаба, авиа- и военных баз, а также точек сбора и оружейного торговца.</Russian>
                 <Chinesesimp>玩家组队只能快速前往总部、空军基地、军事基地、集结点和军火商。</Chinesesimp>
                 <Korean>플레이어 그룹은 본부, 공군 기지, 군사 기지, 집결 지점, 암거래상으로만 빠른 이동이 가능합니다.</Korean>
+                <French>Les groupes de joueurs ne sont autorisés à voyager rapidement que vers le QG, les bases aériennes, les bases militaires, les points de ralliement et les marchands d'armes.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_no_enemy_zone">
                 <Original>You can't Fast Travel to an enemy controlled zone.</Original>
                 <Russian>Вы не можете быстро путешествовать в место, контроллируемое врагом.</Russian>
                 <Chinesesimp>你不能快速移动到敌方控制区。</Chinesesimp>
                 <Korean>적의 통제 구역으로 빠른 이동을 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas voyager rapidement vers une zone contrôlée par l'ennemi.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_no_enemy_attack">
                 <Original>You can't Fast Travel to a location that is under attack.</Original>
                 <Russian>Вы не можете быстро путешествовать в место, которое сейчас атакует противник.</Russian>
                 <Chinesesimp>你不能快速旅行到当前正在被敌人攻击的地点。</Chinesesimp>
                 <Korean>공격을 받고 있는 위치로는 빠른 이동을 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas voyager rapidement vers un lieu qui est attaqué.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_no_enemy_surrounding">
                 <Original>You can't Fast Travel to an area under attack or with enemies in the surrounding.</Original>
                 <Russian>Вы не можете быстро путешествовать в место, вокруг которого враги.</Russian>
                 <Chinesesimp>你不能快速旅行到周围有敌人的地方。</Chinesesimp>
                 <Korean>공격을 받거나 주변에 적이 포위한 지역으로는 빠른 이동을 할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas voyager rapidement vers une zone attaquée ou entourée d'ennemis.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_moving_hc_group">
                 <Original>Moving group %1 to destination.</Original>
                 <Russian>Перемещаем %1 отряд в место назначения.</Russian>
                 <Chinesesimp>正在将 %1 小队移动到目的地。</Chinesesimp>
                 <Korean>%1 그룹을 목적지로 이동시키는 중입니다.</Korean>
+                <French>Déplacement du groupe %1 vers la destination.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_cancel">
                 <Original>%1 Fast Travel has been cancelled because some player has boarded their vehicle and the destination is not HQ or an Airbase, Military Base, Rally Point, Arms Dealer.</Original>
                 <Russian>%1 быстрое перемещение было отменено так как какой-то игрок сел в технику и конечное место назначения не штаб, авиа- или военных база, точка сбора или оружейный торговец.</Russian>
                 <Chinesesimp>%1 快速旅行已被取消，因为一些玩家已经登上了他们的车辆并且目的地不是总部或空军基地、军事基地、集结点、军火商。</Chinesesimp>
                 <Korean>일부 플레이어가 차량에 탑승했으며 목적지가 본부나 공군 기지, 군사 기지, 집결 지점, 암거래상이 아니기 때문에 %1의 빠른 이동이 취소되었습니다.</Korean>
+                <French>%1 Le voyage rapide a été annulé parce qu'un joueur est monté à bord de son véhicule et que la destination n'est pas le QG ou une base aérienne, une base militaire, un point de ralliement ou un marchand d'armes.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_arrived_hc">
                 <Original>Group %1 arrived to destination.</Original>
                 <Russian>%1 отряд добрался до места назначения.</Russian>
                 <Chinesesimp>%1小队已经到达目的地。</Chinesesimp>
                 <Korean>%1 그룹이 목적지에 도착했습니다.</Korean>
+                <French>Le groupe %1 est arrivé à destination.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_mineDialog_header">
                 <Original>Minefields</Original>
                 <Russian>Минные поля</Russian>
                 <Chinesesimp>雷区</Chinesesimp>
                 <Korean>지뢰지대</Korean>
+                <French>Champs de mines</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_mineDialog_desc">
                 <Original>An Explosive Specialist is available on your High Command bar.&lt;br/&gt;&lt;br/&gt;Send him anywhere on the map to deactivate mines. He will load his truck with mines he found.&lt;br/&gt;&lt;br/&gt;Upon returning back to HQ he will unload mines stored in his vehicle.</Original>
                 <Russian>Инженер-подрывник доступен в вашей панели High Command.&lt;br/&gt;&lt;br/&gt;Отправьте его куда-либо обезвреживать мины. Он загрузит в своё транспортное средство все мины что найдёт.&lt;br/&gt;&lt;br/&gt;До возвращения в штаб мины будут находиться в его транспортном средстве.</Russian>
                 <Chinesesimp>炸弹工程师在您的高级指挥面板中可用。&lt;br/&gt;&lt;br/&gt;把他派到某个地方去拆除地雷。 他会将他发现的所有地雷装载到他的车辆中。&lt;br/&gt;&lt;br/&gt;在他返回总部之前，这些地雷将留在他的载具中。</Chinesesimp>
                 <Korean>폭파전문가는 하이 커맨드 표시줄에서 사용할 수 있습니다.&lt;br/&gt;&lt;br/&gt;그를 지도상의 아무 곳에나 보내서 지뢰를 제거하게 하십시오. 그가 찾은 지뢰를 트럭에 싣을 것입니다.&lt;br/&gt;&lt;br/&gt;본부로 돌아오자마자 그는 차량에 저장된 지뢰를 내릴 것입니다.</Korean>
+                <French>Un spécialiste des explosifs est disponible sur votre barre de haut commandement.&lt;br/&gt;&lt;br/&gt;Envoyez-le n'importe où sur la carte pour désactiver des mines. Il chargera son camion avec les mines qu'il a trouvées.&lt;br/&gt;&lt;br/&gt;À son retour au QG, il déchargera les mines stockées dans son véhicule.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_moveHQObject_header">
                 <Original>Move HQ Asset</Original>
                 <Russian>Перемещение имущества штаба</Russian>
                 <Chinesesimp>搬总部资产</Chinesesimp>
                 <Korean>본부 자산 옮기기</Korean>
+                <French>Déménagement des ressources du QG</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_moveHQObject_error_only_comm">
                 <Original>Only Commander is allowed to move HQ assets.</Original>
                 <Russian>Только командир может двигать имущество штаба.</Russian>
                 <Chinesesimp>只有指挥官才能移动总部资产。</Chinesesimp>
                 <Korean>지휘관만이 본부 자산을 옮길 수 있습니다.</Korean>
+                <French>Seul le commandant est autorisé à déplacer les ressources du QG.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_moveHQObject_error_already_moved">
                 <Original>The asset you want to move is being moved by another player.</Original>
                 <Russian>Имущество, которое вы хотите передвинуть, уже двигается другим игроком.</Russian>
                 <Chinesesimp>你要移动的资产正在被其他玩家移动。</Chinesesimp>
                 <Korean>옮길 해당 자산을 다른 플레이어가 옮기고 있습니다.</Korean>
+                <French>Le bien que vous souhaitez déplacer est en train d'être déplacé par un autre joueur.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_moveHQObject_error_veh">
                 <Original>You can't move HQ assets while in a vehicle.</Original>
                 <Russian>Вы не можете двигать имущество штаба находясь в транспортном средстве.</Russian>
                 <Chinesesimp>你不能在载具中移动总部资产。</Chinesesimp>
                 <Korean>차량 내에서는 본부 자산을 옮길 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas déplacer les actifs du QG lorsque vous êtes dans un véhicule.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_moveHQObject_error_already_attached">
                 <Original>You have other things attached, you can't move this.</Original>
                 <Russian>Вы уже что-то несёте или двигаете.</Russian>
                 <Chinesesimp>你已经在搬运或移动某物了。</Chinesesimp>
                 <Korean>당신은 다른 것을 부착하고 있어서 이걸 옮길 수 없습니다.</Korean>
+                <French>Vous portez ou déplacez déjà quelque chose.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_moveHQObject_error_closer_center">
                 <Original>This asset needs to be closer to it relative zone center to be able to be moved.</Original>
                 <Russian>Это имущество должно быть ближе к центру штаба чтобы появилась возможность его двигать.</Russian>
                 <Chinesesimp>这处资产应该靠近总部的中心，以便能够移动它。</Chinesesimp>
                 <Korean>이 자산을 옮기려면 해당 구역 중심에 더 가까이 있어야 합니다.</Korean>
+                <French>Ce poste doit être rapproché de son centre de zone relatif pour pouvoir être déplacé.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_moveHQObject_error_far_center">
                 <Original>This asset can't be moved more far away for its zone center.</Original>
                 <Russian>Это имущество не может быть передвинуто дальше от центра штаба.</Russian>
                 <Chinesesimp>不能将此资产移动到离总部中心更远的地方。</Chinesesimp>
                 <Korean>이 자신은 해당 구역 중심에서 더 멀리 옮길 수 없습니다.</Korean>
+                <French>Ce bien ne peut pas être déplacé plus loin de son centre de zone.</French>
             </Key>
             <Key ID="STR_A3A_Dialogs_squadOptions_header">
                 <Original>Infantry Squads</Original>
                 <Russian>Пехотные отряды</Russian>
                 <Chinesesimp>步兵班</Chinesesimp>
                 <Korean>보병 분대</Korean>
+                <French>Escouades d'infanterie</French>
             </Key>
         </Container>
         <Container name="A3A_OrgPlayers">
@@ -12223,120 +12283,140 @@
                 <Russian>Передача денег</Russian>
                 <Chinesesimp>捐钱</Chinesesimp>
                 <Korean>자금 기부</Korean>
+                <French>Faire un don d'argent</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_donateMoney_less250">
                 <Original>You have less than 250%1 to donate.</Original>
                 <Russian>У вас при себе меньше чем 250%1.</Russian>
                 <Chinesesimp>你身上的钱还不到 250%1。</Chinesesimp>
                 <Korean>당신은 250%1보다 적은 돈을 가지고 있습니다.</Korean>
+                <French>Vous avez moins de 250%1 à donner.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_donateMoney_success">
                 <Original>You have donated 250%1 to the cause. This will raise your status among our forces.</Original>
                 <Russian>Вы пожертвовали 250%1 на общее благо. Это поднимет вашу репутацию среди участников нашего движения.</Russian>
                 <Chinesesimp>已为该事业捐赠了 250%1。 这将提高你在我们部队中的地位。</Chinesesimp>
                 <Korean>250%1을(를) 기부하였습니다. 이 행위는 우리 군대에서 당신의 지위를 높일 것입니다.</Korean>
+                <French>Vous avez fait un don de 250%1 à la cause. Cela augmentera votre statut au sein de nos forces.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_donateMoney_no_player">
                 <Original>You must be looking to a player in order to give him money.</Original>
                 <Russian>Вы должны смотреть на игрока чтобы передать ему деньги.</Russian>
                 <Chinesesimp>你得看着玩家给他钱。</Chinesesimp>
                 <Korean>돈을 기부하려면 플레이어를 보고 있어야 합니다.</Korean>
+                <French>Il faut regarder un joueur pour lui donner de l'argent.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_donateMoney_player">
                 <Original>You have donated 250%2 to %1.</Original>
                 <Russian>Вы подарили 250%2 игроку %1.</Russian>
                 <Chinesesimp>您已将 250%2 赠予玩家 %1。</Chinesesimp>
                 <Korean>%1에게 250%2을(를) 기부했습니다.</Korean>
+                <French>Vous avez fait un don de 250%2 à %1.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_header">
                 <Original>Membership</Original>
                 <Russian>Членство на сервере</Russian>
                 <Chinesesimp>服务器成员</Chinesesimp>
                 <Korean>멤버쉽</Korean>
+                <French>Membres du serveur</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_only_admins">
                 <Original>Only Server Admins or hosters can add a new member.</Original>
                 <Russian>Только администраторы сервера или хост могут добавлять новых членов.</Russian>
                 <Chinesesimp>只有服务器管理员或主机才能添加新成员。</Chinesesimp>
                 <Korean>서버 관리자 또는 호스트만 새 멤버를 추가할 수 있습니다.</Korean>
+                <French>Seuls les administrateurs de serveur ou les hébergeurs peuvent ajouter un nouveau membre.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_disabled">
                 <Original>Server Member feature is disabled.</Original>
                 <Russian>Функция членства на сервере выключена.</Russian>
                 <Chinesesimp>服务器会员功能被禁用</Chinesesimp>
                 <Korean>서버 멤버 기능이 비활성화되었습니다.</Korean>
+                <French>La fonction de membre du serveur est désactivée.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_noinit">
                 <Original>Membership feature not yet initialised. Please try again later.</Original>
                 <Russian>Функция членства на сервере ещё не успела инициализироваться. Пожалуйста, попробуйте позже.</Russian>
                 <Chinesesimp>服务器会员功能尚未初始化。 请稍后再试。</Chinesesimp>
                 <Korean>서버 멤버쉽 기능이 아직 초기화되지 않았습니다. 나중에 다시 시도해주십시오.</Korean>
+                <French>La fonction d'adhésion n'a pas encore été initialisée. Veuillez réessayer plus tard.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_notarget">
                 <Original>You are not pointing to anyone.</Original>
                 <Russian>Вы ни на кого не смотрите.</Russian>
                 <Chinesesimp>你没有看向任何人</Chinesesimp>
                 <Korean>당신은 아무도 가리키고 있지 않습니다.</Korean>
+                <French>Vous ne désignez personne.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_alreadymember">
                 <Original>This player is already a member of this server.</Original>
                 <Russian>Этот игрок уже является членом сервера.</Russian>
                 <Chinesesimp>该玩家已经是本服会员</Chinesesimp>
                 <Korean>해당 플레이어는 이미 이 서버의 멤버입니다.</Korean>
+                <French>Ce joueur est déjà membre de ce serveur.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_success_add">
                 <Original>%1 has been added to the Server Members List.</Original>
                 <Russian>%1 был добавлен в список членов сервера.</Russian>
                 <Chinesesimp>%1 已添加到服务器成员列表中。</Chinesesimp>
                 <Korean>%1이(가) 서버 멤버 목록에 추가되었습니다.</Korean>
+                <French>%1 a été ajouté à la liste des membres du serveur.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_success_add_target">
                 <Original>You have been added to the Server Members list.</Original>
                 <Russian>Вы были добавлены в список членов сервера.</Russian>
                 <Chinesesimp>您已被添加到服务器成员列表中。</Chinesesimp>
                 <Korean>당신은 서버 멤버 목록에 추가되었습니다.</Korean>
+                <French>Vous avez été ajouté à la liste des membres du serveur.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_success_remove">
                 <Original>%1 has been removed from the Server Members List.</Original>
                 <Russian>%1 был удалён из списка членов сервера.</Russian>
                 <Chinesesimp>%1 已从服务器成员列表中删除。</Chinesesimp>
                 <Korean>%1이(가) 서버 멤버 목록에서 제거되었습니다.</Korean>
+                <French>%1 a été supprimé de la liste des membres du serveur.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_membership_success_remove_target">
                 <Original>You have been removed from the Server Members list.</Original>
                 <Russian>Вы были удалены из списка членов сервера.</Russian>
                 <Chinesesimp>您已从服务器成员列表中删除。</Chinesesimp>
                 <Korean>당신은 서버 멤버 목록에서 제거되었습니다.</Korean>
+                <French>Vous avez été retiré de la liste des membres du serveur.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_resign_1">
                 <Original>You resign from being commander, choosing %1 as your successor.</Original>
                 <Russian>Вы ушли в отставку с поста командира, выбрав %1 как вашего преемника.</Russian>
                 <Chinesesimp>你辞去指挥官职务，选择 %1 作为你的继任者。</Chinesesimp>
                 <Korean>%1을(를) 다음 지휘관으로 선택하고 지휘관직을 사임합니다.</Korean>
+                <French>Vous démissionnez de votre poste de commandant et choisissez %1 comme successeur.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_resign_2">
                 <Original>You resign from being commander. Your chosen successor (%1) was not eligible.</Original>
                 <Russian>Вы ушли в отставку с поста командира. Ваш преемник (%1) не соответствует требованиям.</Russian>
                 <Chinesesimp>你辞去指挥官职务。 您选择的继任者 (%1) 不符合条件。</Chinesesimp>
                 <Korean>당신은 지휘관직을 사임했습니다. 선택한 플레이어는 지휘관(%1)는 자격이 없습니다.</Korean>
+                <French>Vous démissionnez de votre poste de commandant. Le successeur que vous avez choisi (%1) n'était pas éligible.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_resign_3">
                 <Original>You resign from being commander. Others will take the command if there is someone suitable.</Original>
                 <Russian>Вы ушли в отставку с поста командира. Другие возьмут на себя командование если среди них есть кто-то подходящий.</Russian>
                 <Chinesesimp>你辞去指挥官职务。 有合适的就由别人来指挥。</Chinesesimp>
                 <Korean>당신은 지휘관직을 사임했습니다. 적합한 사람이 있으면 다른 사람들이 지휘를 맡을 것입니다.</Korean>
+                <French>Vous démissionnez de votre poste de commandant. D'autres prendront le commandement s'il y a quelqu'un de compétent.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_resign_4">
                 <Original>You decided not to be eligible for commander.</Original>
                 <Russian>Вы решили, что не подходите на пост командира.</Russian>
                 <Chinesesimp>您已确定自己不适合担任指挥官一职。</Chinesesimp>
                 <Korean>당신은 지휘관 자격이 없다고 결정했습니다.</Korean>
+                <French>Vous avez décidé de ne pas être éligible au poste de commandant.</French>
             </Key>
             <Key ID="STR_A3A_OrgPlayers_resign_5">
                 <Original>You are now eligible to be commander of %1.</Original>
                 <Russian>Теперь вы имеете право быть командующим %1.</Russian>
                 <Chinesesimp>您现在有资格成为 %1 的指挥官。</Chinesesimp>
                 <Korean>이제 당신은 %1의 지휘관이 될 자격이 있습니다.</Korean>
+                <French>Vous êtes maintenant éligible pour devenir commandant de %1.</French>
             </Key>
         </Container>
         <Container name="A3A_Base">
@@ -12696,12 +12776,14 @@
                 <Russian>Общая информация</Russian>
                 <Chinesesimp>一般信息</Chinesesimp>
                 <Korean>일반</Korean>
+                <French>Général</French>
             </Key>
             <Key ID="STR_A3A_Create_AIVEHINIT_only_humans">
                 <Original>Only human pilots can pilot an air vehicle.</Original>
                 <Russian>Только человеческие пилоты могут пилотировать самолёты.</Russian>
                 <Chinesesimp>只有人类飞行员才能驾驶飞行器。</Chinesesimp>
                 <Korean>플레이어 조종사만이 항공기를 조종할 수 있습니다.</Korean>
+                <French>Seuls des pilotes humains peuvent piloter un véhicule aérien.</French>
             </Key>
         </Container>
         <Container name="A3A_proxy">
@@ -12710,12 +12792,14 @@
                 <Russian>Удалённое управление ИИ</Russian>
                 <Chinesesimp>遥控AI</Chinesesimp>
                 <Korean>인공지능 원격 조종</Korean>
+                <French>Contrôle à distance de l'IA</French>
             </Key>
             <Key ID="STR_A3A_proxy_remoteai_desc">
                 <Original>Died while remote controlling AI.</Original>
                 <Russian>Умер во время удалённого управления ИИ.</Russian>
                 <Chinesesimp>在远程控制AI时死亡。</Chinesesimp>
                 <Korean>인공지능 원격 조종 중 사망했습니다.</Korean>
+                <French>Décédé alors qu'il contrôlait l'IA à distance.</French>
             </Key>
         </Container>
         <Container name="A3A_Logistics">
