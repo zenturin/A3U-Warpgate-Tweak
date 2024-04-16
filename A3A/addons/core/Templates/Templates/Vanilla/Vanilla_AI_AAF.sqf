@@ -151,7 +151,6 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["I_Heli_Transport_02_F", ["Indep_Olive", 0, "Indep_01",0.5]],
     ["I_LT_01_AA_F", ["Indep_Olive", 0, "Indep_01",0.5]],
     ["I_LT_01_cannon_F", ["Indep_Olive", 0, "Indep_01",0.5]],
     ["I_LT_01_AT_F", ["Indep_Olive", 0, "Indep_01",0.5]],
