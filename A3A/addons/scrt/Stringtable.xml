@@ -10444,7 +10444,7 @@
                 <Russian>Морской порт %1</Russian>
                 <Chinesesimp>%1 海港</Chinesesimp>
                 <Korean>%1 항구</Korean>
-                <French></French>
+                <French>%1 Port maritime</French>
             </Key>
             <Key ID="STR_A3A_cityinfo_seaport_rebel">
                 <Original>%2 Seaport%1</Original>
@@ -10663,36 +10663,42 @@
                 <Russian>Постоянное сохранение</Russian>
                 <Chinesesimp>永久保存</Chinesesimp>
                 <Korean>영구저장</Korean>
+                <French>Sauvegarde persistante</French>
             </Key>
             <Key ID="STR_A3A_save_persisent_save_0">
                 <Original> Assets:&lt;br/&gt;&lt;t color='#f0d498'&gt;HR: </Original>
                 <Russian> Имущество:&lt;br/&gt;&lt;t color='#f0d498'&gt;HR: </Russian>
                 <Chinesesimp>资产:&lt;br/&gt;&lt;t color='#f0d498'&gt;人力: </Chinesesimp>
                 <Korean> 자산:&lt;br/&gt;&lt;t color='#f0d498'&gt;인력: </Korean>
+                <French> Actifs:&lt;br/&gt;&lt;t color='#f0d498'&gt;HR:</French>
             </Key>
             <Key ID="STR_A3A_save_persisent_save_1">
                 <Original>&lt;br/&gt;Money: </Original>
                 <Russian>&lt;br/&gt;Деньги: </Russian>
                 <Chinesesimp>&lt;br/&gt;钱: </Chinesesimp>
                 <Korean>&lt;br/&gt;자금: </Korean>
+                <French>&lt;br/&gt;Argent :</French>
             </Key>
             <Key ID="STR_A3A_save_save_game_header">
                 <Original>Save Game</Original>
                 <Russian>Сохранение игры</Russian>
                 <Chinesesimp>保存游戏</Chinesesimp>
                 <Korean>게임 저장</Korean>
+                <French>Sauvegarder la partie</French>
             </Key>
             <Key ID="STR_A3A_save_save_game_desc">
                 <Original>Server data save is still in progress...</Original>
                 <Russian>Сохранение игры всё ещё в процессе...</Russian>
                 <Chinesesimp>正在保存游戏...</Chinesesimp>
                 <Korean>서버 데이터 저장이 아직 진행 중입니다...</Korean>
+                <French>La sauvegarde des données du serveur est toujours en cours...</French>
             </Key>
             <Key ID="STR_A3A_save_save_game_starting">
                 <Original>Starting persistent save...</Original>
                 <Russian>Начинаем запись постоянного сохранения...</Russian>
                 <Chinesesimp>开始永久保存...</Chinesesimp>
                 <Korean>영구 저장 시작 중...</Korean>
+                <French>Début de la sauvegarde persistante...</French>
             </Key>
         </Container>
         <Container name="A3A_base">
@@ -10701,6 +10707,7 @@
                 <Russian>Неопознанный вертолёт!&lt;br/&gt;&lt;br/&gt;Вы входите в воздушное пространство %1.&lt;br/&gt;&lt;br/&gt; Измените свой курс или мы примем защитные меры!</Russian>
                 <Chinesesimp>不明直升机！&lt;br/&gt;&lt;br/&gt;您正在逼近%1的领空。&lt;br/&gt;&lt;br/&gt; 改变航向，否则我们将采取防御行动！</Chinesesimp>
                 <Korean>미확인 헬리콥터!&lt;br/&gt;&lt;br/&gt;너는 %1의 영공에 접근 중이다!&lt;br/&gt;&lt;br/&gt;경로를 변경하지 않으면 방어 조치를 취하겠다!</Korean>
+                <French>Hélicoptère non identifié!&lt;br/&gt;&lt;br/&gt;Vous vous rapprochez de l'espace aérien de %1.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt; Changez de cap ou nous prendrons des mesures défensives!</French>
             </Key>
         </Container>
         <Container name="A3A_keyActions">
@@ -10709,90 +10716,105 @@
                 <Russian>Беруши</Russian>
                 <Chinesesimp>耳塞</Chinesesimp>
                 <Korean>귀마개</Korean>
+                <French>Bouchons d'oreille</French>
             </Key>
             <Key ID="STR_A3A_keyActions_ear_plugs_off">
                 <Original>You've taken out your ear plugs.</Original>
                 <Russian>Вы вытащили беруши.</Russian>
                 <Chinesesimp>你的耳塞已经拔掉了</Chinesesimp>
                 <Korean>당신은 귀마개를 뺐습니다.</Korean>
+                <French>Vous avez enlevé vos bouchons d'oreille.</French>
             </Key>
             <Key ID="STR_A3A_keyActions_ear_plugs_on">
                 <Original>You've inserted your ear plugs.</Original>
                 <Russian>Вы вставили беруши.</Russian>
                 <Chinesesimp>你已经戴上了你的耳塞。</Chinesesimp>
                 <Korean>당신은 귀마개를 넣었습니다.</Korean>
+                <French>Vous avez mis vos bouchons d'oreille.</French>
             </Key>
             <Key ID="STR_A3A_keyActions_battleMenu_title">
                 <Original>Battle menu</Original>
                 <Russian>Боевое меню</Russian>
                 <Chinesesimp>战斗菜单</Chinesesimp>
                 <Korean>전투 메뉴</Korean>
+                <French>Menu de combat</French>
             </Key>
             <Key ID="STR_A3A_keyActions_battleMenu_desc">
                 <Original>Open battle menu</Original>
                 <Russian>Открывает боевое меню</Russian>
                 <Chinesesimp>打开战斗菜单</Chinesesimp>
                 <Korean>전투 메뉴 열기</Korean>
+                <French>Ouvrir le menu de combat</French>
             </Key>
             <Key ID="STR_A3A_keyActions_artyMenu_title">
                 <Original>Artillery menu</Original>
                 <Russian>Артиллерийское меню</Russian>
                 <Chinesesimp>火炮菜单</Chinesesimp>
                 <Korean>포병 메뉴</Korean>
+                <French>Menu de l'artillerie</French>
             </Key>
             <Key ID="STR_A3A_keyActions_artyMenu_desc">
                 <Original>Open artillery support menu (commander only)</Original>
                 <Russian>Открыть артиллерийское меню (только командир)</Russian>
                 <Chinesesimp>打开火炮支援菜单（仅限指挥官）</Chinesesimp>
                 <Korean>포병 지원 메뉴를 엽니다 (지휘관 전용)</Korean>
+                <French>Ouvrir le menu de soutien de l'artillerie (commandant uniquement)</French>
             </Key>
             <Key ID="STR_A3A_keyActions_infoBar_title">
                 <Original>Toggle Info Bar</Original>
                 <Russian>Переключить видимость информационной панели</Russian>
                 <Chinesesimp>切换信息栏</Chinesesimp>
                 <Korean>정보 표시줄 토글</Korean>
+                <French>Afficher la barre d'information</French>
             </Key>
             <Key ID="STR_A3A_keyActions_infoBar_desc">
                 <Original>Toggle visibility of Antistasis information bar at the top of the screen</Original>
                 <Russian>Переключает видимость верхней информационной панели</Russian>
                 <Chinesesimp>在屏幕顶部切换 Antistasis 信息栏的可见性</Chinesesimp>
                 <Korean>화면 상단의 안티스타시 정보 표시줄 표시를 전환합니다</Korean>
+                <French>Activer la visibilité de la barre d'information Antistasis en haut de l'écran</French>
             </Key>
             <Key ID="STR_A3A_keyActions_earPlugs_title">
                 <Original>Toggle ear plugs</Original>
                 <Russian>Беруши</Russian>
                 <Chinesesimp>打开耳塞</Chinesesimp>
                 <Korean>귀마개 토글</Korean>
+                <French>Bouchons d'oreille</French>
             </Key>
             <Key ID="STR_A3A_keyActions_earPlugs_desc">
                 <Original>Toggle use of ear plugs (no effect when using ACE)</Original>
                 <Russian>Снять/Вынуть беруши (эффект отсутствует при использовании ACE)</Russian>
                 <Chinesesimp>切换耳塞的使用（使用ACE时无效果）</Chinesesimp>
                 <Korean>귀마개 사용을 전환합니다 (ACE 사용 시 효과 없음)</Korean>
+                <French>Utilisation des bouchons d'oreille (pas d'effet lors de l'utilisation de l'ACE)</French>
             </Key>
             <Key ID="STR_A3A_keyActions_customHintDismiss_title">
                 <Original>Dismiss Previous Hint</Original>
                 <Russian>Закрыть предыдущую подсказку</Russian>
                 <Chinesesimp>关闭上一个提示</Chinesesimp>
                 <Korean>이전 힌트 삭제</Korean>
+                <French>Rejeter l'indice précédent</French>
             </Key>
             <Key ID="STR_A3A_keyActions_customHintDismiss_desc">
                 <Original>Clears the last hint notification</Original>
                 <Russian>Очищает уведомление о последней подсказке</Russian>
                 <Chinesesimp>清除最后提示通知</Chinesesimp>
                 <Korean>마지막 힌트 알림을 지웁니다</Korean>
+                <French>Efface la dernière notification d'indice</French>
             </Key>
             <Key ID="STR_A3A_keyActions_commMenu_title">
                 <Original>Commander/Rebel menu</Original>
                 <Russian>Меню командира/повстанца</Russian>
                 <Chinesesimp>指挥官/抵抗军菜单</Chinesesimp>
                 <Korean>지휘관/반군 메뉴</Korean>
+                <French>Menu Commandant/Rebelle</French>
             </Key>
             <Key ID="STR_A3A_keyActions_commMenu_desc">
                 <Original>Clears the last hint notification</Original>
                 <Russian>Очищает уведомление о последней подсказке</Russian>
                 <Chinesesimp>清除最后提示通知</Chinesesimp>
                 <Korean>반군의 지휘관 메뉴를 엽니다</Korean>
+                <French>Efface la dernière notification d'indice</French>
             </Key>
         </Container>
         <Container name="A3A_goUndercover">
@@ -10801,156 +10823,182 @@
                 <Russian>Маскировка</Russian>
                 <Chinesesimp>伪装</Chinesesimp>
                 <Korean>위장</Korean>
+                <French>Sous couverture</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_controlai">
                 <Original>You can't go Undercover while you are controlling AI.</Original>
                 <Russian>Вы не можете маскироваться пока вы контроллируете ИИ-юнит.</Russian>
                 <Chinesesimp>当你控制一个 AI 单位时你不能伪装。</Chinesesimp>
                 <Korean>인공지능을 조종하는 동안에는 위장이 불가능합니다.</Korean>
+                <French>Vous ne pouvez pas vous infiltrer lorsque vous contrôlez l'IA.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_controlai_output">
                 <Original>No Undercover while controlling AI</Original>
                 <Russian>Нет маскировки пока контроллируется другой ИИ-юнит</Russian>
                 <Chinesesimp>在控制另一个 AI 单元时没有伪装</Chinesesimp>
                 <Korean>인공지능 조종 도중 위장 불가능</Korean>
+                <French>Pas d'infiltration en contrôlant l'IA</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_alreadyundercover">
                 <Original>You are Undercover already.</Original>
                 <Russian>Вы уже замаскированы.</Russian>
                 <Chinesesimp>你已经伪装了。</Chinesesimp>
                 <Korean>이미 위장 상태입니다.</Korean>
+                <French>Vous êtes déjà sous couverture</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_alreadyundercover_output">
                 <Original>Already undercover</Original>
                 <Russian>Уже замаскирован</Russian>
                 <Chinesesimp>已经伪装</Chinesesimp>
                 <Korean>이미 위장 중</Korean>
+                <French>Déjà sous couverture</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_no_civveh">
                 <Original>You are not in a civilian vehicle.</Original>
                 <Russian>Вы не в гражданском транспортном средстве.</Russian>
                 <Chinesesimp>你不是在民用载具里。</Chinesesimp>
                 <Korean>민간 차량에 타고 있지 않습니다.</Korean>
+                <French>Vous n'êtes pas dans un véhicule civil.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_no_civveh_output">
                 <Original>In non-civilian vehicle</Original>
                 <Russian>В негражданском транспортном средстве</Russian>
                 <Chinesesimp>在非民用载具上</Chinesesimp>
                 <Korean>민간 차량 미탑승</Korean>
+                <French>Dans un véhicule non civil</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_reportedveh">
                 <Original>This vehicle has been reported to the enemy. Change or renew your vehicle in the Garage to go Undercover.</Original>
                 <Russian>Это транспортное средство уже было замечено врагом. Смените транспортное средство или обновите его через действие восстановления ящика с техникой в штабе.</Russian>
                 <Chinesesimp>这辆载具已经被敌人发现了。 通过总部载具箱的恢复动作更换载具或升级载具。</Chinesesimp>
                 <Korean>이 차량은 적에게 보고되었습니다. 차고에서 차량을 교환하거나 재도장하여 위장을 하십시오.</Korean>
+                <French>Ce véhicule a été signalé à l'ennemi. Changez ou renouvelez votre véhicule dans le garage pour vous infiltrer.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_reportedveh_output">
                 <Original>In reported vehicle</Original>
                 <Russian>В замеченном врагом транспортном средстве</Russian>
                 <Chinesesimp>被通缉的载具</Chinesesimp>
                 <Korean>적에게 보고된 차량</Korean>
+                <French>Véhicules signalés à l'ennemi</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_reported30">
                 <Original>You have been reported in the last 30 minutes therefore you can't go Undercover.</Original>
                 <Russian>Вы были замечены в последние 30 минут, поэтому вы не можете замаскироваться.</Russian>
                 <Chinesesimp>你在过去 30 分钟内被发现，所以你无法伪装自己。</Chinesesimp>
                 <Korean>지난 30분 동안 적에게 보고되었기 때문에 위장할 수 없습니다.</Korean>
+                <French>Vous avez été signalé au cours des 30 dernières minutes, vous ne pouvez donc pas vous infiltrer.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_reported30_output">
                 <Original>Recently reported</Original>
                 <Russian>Недавно замечен</Russian>
                 <Chinesesimp>近期报道</Chinesesimp>
                 <Korean>최근에 적에게 보고됨</Korean>
+                <French>Récemment signalé</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_header">
                 <Original>You can't go Undercover while:&lt;br/&gt;</Original>
                 <Russian>Вы не можете замаскироваться пока:&lt;br/&gt;</Russian>
                 <Chinesesimp>你还不能伪装：&lt;br/&gt;</Chinesesimp>
                 <Korean>다음 조건 동안에는 위장이 불가능합니다:&lt;br/&gt;</Korean>
+                <French>Vous ne pouvez pas vous infiltrer pendant que vous êtes sous couverture:&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_visible_weapon">
                 <Original>%1&lt;br/&gt;A weapon is visible.</Original>
                 <Russian>%1&lt;br/&gt;Видно оружие.</Russian>
                 <Chinesesimp>%1&lt;br/&gt;的武器可见。</Chinesesimp>
                 <Korean>&lt;br/&gt;무기가 보임.</Korean>
+                <French>%1&lt;br/&gt;Une arme est visible.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_visible_weapon_output">
                 <Original>Weapon visible</Original>
                 <Russian>Видимое оружие</Russian>
                 <Chinesesimp>武器可见</Chinesesimp>
                 <Korean>무기 노출</Korean>
+                <French>Arme visible</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_visible_weapon_veh">
                 <Original>%1&lt;br/&gt;A weapon is visible while not being driver of a vehicle.</Original>
                 <Russian>%1&lt;br/&gt;Видно оружие не у водителя.</Russian>
                 <Chinesesimp>%1&lt;br/&gt;的武器在不是驾驶员的情况下是可见的.</Chinesesimp>
                 <Korean>%1&lt;br/&gt;차량 운전자가 아닌 상태에서 무기가 보임.</Korean>
+                <French>%1&lt;br/&gt;Une arme est visible lorsque l'on n'est pas au volant d'un véhicule.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_visible_weapon_veh_output">
                 <Original>Weapon visible on non-driver person</Original>
                 <Russian>Видимое оружие у не-водителя техники</Russian>
                 <Chinesesimp>非驾驶员身上有可见的武器</Chinesesimp>
                 <Korean>비-운전자의 무기 노출</Korean>
+                <French>Arme visible sur une personne autre que le conducteur</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_vest">
                 <Original>%1&lt;br/&gt;Wearing a vest.</Original>
                 <Russian>%1&lt;br/&gt;Надет бронежилет или разгрузка.</Russian>
                 <Chinesesimp>%1&lt;br/&gt;穿着防弹衣或者军用背心。</Chinesesimp>
                 <Korean>%1&lt;br/&gt;조끼를 입음.</Korean>
+                <French>%1&lt;br/&gt;Port d'un gilet.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_vest_output">
                 <Original>Vest visible</Original>
                 <Russian>Надет бронежилет или разгрузка</Russian>
                 <Chinesesimp>穿着防弹衣或者军用背心</Chinesesimp>
                 <Korean>조끼 착용</Korean>
+                <French>Gilet visible</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_helmet">
                 <Original>%1&lt;br/&gt;Wearing a helmet.</Original>
                 <Russian>%1&lt;br/&gt;Надет шлем.</Russian>
                 <Chinesesimp>%1&lt;br/&gt;戴着头盔。</Chinesesimp>
                 <Korean>%1&lt;br/&gt;헬멧을 착용함.</Korean>
+                <French>%1&lt;br/&gt;Port d'un casque.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_helmet_output">
                 <Original>Helmet visible</Original>
                 <Russian>Надет шлем</Russian>
                 <Chinesesimp>戴着头盔</Chinesesimp>
                 <Korean>헬멧 착용</Korean>
+                <French>Casque visible</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_nvg">
                 <Original>%1&lt;br/&gt;Wearing NVGs.</Original>
                 <Russian>"%1&lt;br/&gt;Надет ПНВ.</Russian>
                 <Chinesesimp>&gt;%1&lt;br/&gt;戴着夜视仪。</Chinesesimp>
                 <Korean>%1&lt;br/&gt;야시경 착용함.</Korean>
+                <French>%1&lt;br/&gt;Porter des lunettes de vision nocturne.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_nvg_output">
                 <Original>NVG visible</Original>
                 <Russian>Надет ПНВ</Russian>
                 <Chinesesimp>戴着夜视仪</Chinesesimp>
                 <Korean>야시경 착용</Korean>
+                <French>Lunettes de vision nocturne visible.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_uniform">
                 <Original>%1&lt;br/&gt;Wearing a suspicious uniform.</Original>
                 <Russian>"%1&lt;br/&gt;Надета подозрительная униформа.</Russian>
                 <Chinesesimp>%1&lt;br/&gt;穿着可疑的制服。</Chinesesimp>
                 <Korean>%1&lt;br/&gt;수상한 복장을 착용함.</Korean>
+                <French>%1&lt;br/&gt;Port d'un uniforme suspect.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_uniform_output">
                 <Original>Suspicious uniform</Original>
                 <Russian>Подозрительная униформа</Russian>
                 <Chinesesimp>可疑的制服</Chinesesimp>
                 <Korean>수상한 복장 착용</Korean>
+                <French>Uniforme suspect</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_naked_uniform">
                 <Original>%1&lt;br/&gt;Being naked. It's, you know, suspicious.</Original>
                 <Russian>"%1&lt;br/&gt;На вас нет одежды. Знаете, это вообще-то подозрительно.</Russian>
                 <Chinesesimp>%1&lt;br/&gt;赤身裸体。 你知道的，这很可疑。</Chinesesimp>
                 <Korean>%1&lt;br/&gt;알몸입니다. 당연히 수상하겠죠?</Korean>
+                <French>%1&lt;br/&gt;Être dévêtus. Vous savez, c'est suspect.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_additive_naked_output">
                 <Original>No clothes</Original>
                 <Russian>Нет одежды</Russian>
                 <Chinesesimp>没穿衣服</Chinesesimp>
                 <Korean>옷 없음</Korean>
+                <French>Pas de vêtements</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_securebases">
                 <Original>You can't go Undercover near Airports, Military Bases, Outposts, Seaports or Roadblocks.</Original>
@@ -10964,38 +11012,45 @@
                 <Russian>Рядом с вражеской территорией</Russian>
                 <Chinesesimp>敌境附近</Chinesesimp>
                 <Korean>적군 영토 근처</Korean>
+                <French>Près du territoire ennemi</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_spotting">
                 <Original>You can't go Undercover while enemies are spotting you.</Original>
                 <Russian>Вы не можете маскироваться пока на вас смотрят или о вас знают враги.</Russian>
                 <Chinesesimp>当敌人发现你时，你不能去伪装。</Chinesesimp>
                 <Korean>적들이 당신을 발견한 동안에는 위장이 불가능합니다.</Korean>
+                <French>Vous ne pouvez pas vous infiltrer lorsque des ennemis vous repèrent.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_spotting_output">
                 <Original>Spotted by enemies</Original>
                 <Russian>Замечен врагом</Russian>
                 <Chinesesimp>被敌人发现</Chinesesimp>
                 <Korean>적에게 포착됨</Korean>
+                <French>Repérés par des ennemis</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes_head">
                 <Original>This vehicle cannot go undercover while it has tow ropes attached</Original>
                 <Russian>Эта техника не может уйти в маскировка пока к ней прикреплен буксировочный трос.</Russian>
                 <Korean>이 차량은 견인줄이 걸려 있는 동안에는 위장이 불가능합니다.</Korean>
+                <French>Ce véhicule ne peut pas être mis à l'abri tant qu'il est équipé de câbles de remorquage.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes">
                 <Original>In vehicle with tow ropes attached</Original>
                 <Russian>В технике с прикрепленным буксировочным тросом</Russian>
                 <Korean>견인줄이 부착된 차량일 경우</Korean>
+                <French>Si le véhicule est équipé d'un câble de remorquage</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes_2">
                 <Original>%1&lt;br/&gt;Holding tow ropes.</Original>
                 <Russian>"%1&lt;br/&gt;В руках буксировочный трос.</Russian>
                 <Korean>%1이(가)&lt;br/&gt;견인줄을 잡고 있습니다.</Korean>
+                <French>%1&lt;br/&gt;Tenez la ligne de remorquage.</French>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes_output">
                 <Original>Holding tow ropes</Original>
                 <Russian>Держит буксировочный трос</Russian>
                 <Korean>견인줄을 잡는 중</Korean>
+                <French>Tient la corde de remorquage</French>
             </Key>
         </Container>
         <Container name="A3A_ai">
@@ -11004,60 +11059,70 @@
                 <Russian>Артиллерийская Поддержка</Russian>
                 <Chinesesimp>炮兵支援</Chinesesimp>
                 <Korean>포격 지원</Korean>
+                <French>Soutien d'artillerie</French>
             </Key>
             <Key ID="STR_A3A_ai_artySupport_must_select">
                 <Original>You must select an artillery group.</Original>
                 <Russian>Вы должны выбрать артиллерийскую группу.</Russian>
                 <Chinesesimp>必须选择一个炮兵小队。</Chinesesimp>
                 <Korean>포병 그룹을 선택해야 합니다.</Korean>
+                <French>Vous devez sélectionner un groupe d'artillerie.</French>
             </Key>
             <Key ID="STR_A3A_ai_artySupport_must_select_2">
                 <Original>You must select an artillery group or it is a Mobile Mortar and it's moving.</Original>
                 <Russian>Вы должны выбрать артиллерийскую группу или это должен быть кочующий миномет и он должен двигаться.</Russian>
                 <Chinesesimp>你必须选择一个炮兵小队，否则它是移动迫击炮并且它正在移动。</Chinesesimp>
                 <Korean>포병 그룹을 선택하거나 이동하는 이동식 박격포를 선택해야 합니다.</Korean>
+                <French>Vous devez sélectionner un groupe d'artillerie ou un mortier mobile qui se déplace.</French>
             </Key>
             <Key ID="STR_A3A_ai_artySupport_no_capability">
                 <Original>All elements in this Battery can't fire or are disabled.</Original>
                 <Russian>Все элементы этой артиллерийской батареи не могут стрелять или были уничтожены/отключены.</Russian>
                 <Chinesesimp>这个炮兵小队的所有元件都无法发射或已被摧毁/失效。</Chinesesimp>
                 <Korean>해당 포대의 모든 부대가 발사할 수 없거나 비활성화되어 있습니다.</Korean>
+                <French>Tous les éléments de cette batterie ne peuvent pas tirer ou sont désactivés.</French>
             </Key>
             <Key ID="STR_A3A_ai_artySupport_no_ammo">
                 <Original>The Battery has no ammo to fire.</Original>
                 <Russian>У батареи закончились боеприпасы.</Russian>
                 <Chinesesimp>炮兵小队没弹了。</Chinesesimp>
                 <Korean>포대에 탄약이 없습니다.</Korean>
+                <French>La batterie n'a pas de munitions à tirer.</French>
             </Key>
             <Key ID="STR_A3A_ai_artySupport_busy">
                 <Original>Selected Battery is busy right now.</Original>
                 <Russian>Выбранная батарея в текущий момент занята.</Russian>
                 <Chinesesimp>所选炮兵小队当前正在忙碌中。</Chinesesimp>
                 <Korean>선택한 포대는 현재 사용 중입니다.</Korean>
+                <French>La batterie sélectionnée est occupée en ce moment.</French>
             </Key>
             <Key ID="STR_A3A_ai_artySupport_modset">
                 <Original>Your current modset doesn't support this strike type.</Original>
                 <Russian>Ваша текущая конфигурация модификаций не позволяет наносить артиллерийские удары данного типа.</Russian>
                 <Chinesesimp>您当前的模组配置不允许这种炮击。</Chinesesimp>
                 <Korean>현재 모드셋은 해당 타격 유형을 지원하지 않습니다.</Korean>
+                <French>Votre modset actuel ne prend pas en charge ce type de frappe.</French>
             </Key>
             <Key ID="STR_A3A_ai_artySupport_select_pos">
                 <Original>Select the position on map where to perform the Artillery strike.</Original>
                 <Russian>Выберите позицию на карте, куда необходимо нанести артиллерийский удар.</Russian>
                 <Chinesesimp>在地图上选择进行炮击的位置。</Chinesesimp>
                 <Korean>지도에 포격을 가할 위치를 선택하십시오.</Korean>
+                <French>Sélectionnez la position sur la carte où effectuer la frappe d'artillerie.</French>
             </Key>
             <Key ID="STR_A3A_ai_artySupport_out_of_bounds">
                 <Original>The position you marked is out of bounds for that Battery.</Original>
                 <Russian>Отмеченная вами позиция находится за пределами досягаемости этой батареи.</Russian>
                 <Chinesesimp>你标记的位置超出了炮兵小队的范围。</Chinesesimp>
                 <Korean>표시한 위치가 해당 포대의 범위를 벗어났습니다.</Korean>
+                <French>The position you marked is out of bounds for that Battery.</French>
             </Key>
             <Key ID="STR_A3A_ai_artySupport_second_pos">
                 <Original>Select the position to finish the barrage.</Original>
                 <Russian>Выберите позицию, где закончится залп.</Russian>
                 <Chinesesimp>选择齐射结束的位置。</Chinesesimp>
                 <Korean>연발포격을 완료할 위치를 선택하십시오.</Korean>
+                <French>Sélectionnez la position pour terminer le barrage.</French>
             </Key>
         </Container>
         <Container name="A3A_ammunition">
@@ -11066,42 +11131,49 @@
                 <Russian>Груз</Russian>
                 <Chinesesimp>货物</Chinesesimp>
                 <Korean>화물</Korean>
+                <French>Cargaison</French>
             </Key>
             <Key ID="STR_A3A_ammunition_transfer_reject_only_commander">
                 <Original>Only Commander` can transfer this ammobox content to any truck.</Original>
                 <Russian>Только командир может переместить содержимое этого ящика с припасами в любое транспортное средство.</Russian>
                 <Chinesesimp>只有指挥官才能将这个补给箱的内容转移到任何载具上。</Chinesesimp>
                 <Korean>지휘관만이 이 탄약상자의 내용물을 아무 트럭에 옮길 수 있습니다.</Korean>
+                <French>Seul le Commander peut transférer le contenu de cette caisse de munitions à n'importe quel camion.</French>
             </Key>
             <Key ID="STR_A3A_ammunition_transfer_reject_closest_ammobox_empty">
                 <Original>Closest Ammobox is empty.</Original>
                 <Russian>Ближайший ящик с припасами пуст.</Russian>
                 <Chinesesimp>最近的补给箱是空的。</Chinesesimp>
                 <Korean>가장 가까운 탄약상자가 비었습니다.</Korean>
+                <French>La caisse de munitions la plus proche est vide.</French>
             </Key>
             <Key ID="STR_A3A_ammunition_transfer_truck_loading">
                 <Original>Truck loading. &lt;br/&gt;&lt;br/&gt;Time remaining: %1 secs.</Original>
                 <Russian>Транспортное средство загружается. &lt;br/&gt;&lt;br/&gt;Осталось времени: %1 сек.</Russian>
                 <Chinesesimp>载具正在装载。&lt;br/&gt;&lt;br/&gt;剩余时间：%1秒。</Chinesesimp>
                 <Korean>트럭에 적재 중.&lt;br/&gt;&lt;br/&gt;남은 시간: %1초.</Korean>
+                <French>Chargement du camion. &lt;br/&gt;&lt;br/&gt;Temps restant: %1 secs.</French>
             </Key>
             <Key ID="STR_A3A_ammunition_transfer_abort_truck_movement">
                 <Original>Transfer cancelled due to movement of Truck or Player.</Original>
                 <Russian>Погрузка отменена из-за движения транспортного средства или игрока.</Russian>
                 <Chinesesimp>装载因载具或玩家移动而取消。</Chinesesimp>
                 <Korean>트럭 또는 플레이어의 이동으로 인해 전송이 취소되었습니다.</Korean>
+                <French>Transfert annulé en raison du déplacement du camion ou du joueur.</French>
             </Key>
             <Key ID="STR_A3A_ammunition_transfer_veh_empty">
                 <Original>Closest vehicle (%1) is empty.</Original>
                 <Russian>Ближайшее транспортное средство (%1) пустое.</Russian>
                 <Chinesesimp>最近的车辆 (%1) 是空的。</Chinesesimp>
                 <Korean>가까운 차량 (%1)이(가) 비었습니다.</Korean>
+                <French>Le véhicule le plus proche (%1) est vide.</French>
             </Key>
             <Key ID="STR_A3A_ammunition_transfer_success">
                 <Original>Transferred cargo from %1 to arsenal.</Original>
                 <Russian>Груз из %1 перемещён в арсенал.</Russian>
                 <Chinesesimp>来自 %1 的货物已经转移到军火库。</Chinesesimp>
                 <Korean>%1에서 아스널로 화물을 옮겼습니다.</Korean>
+                <French>Transfert de la cargaison de %1 à l'arsenal.</French>
             </Key>
         </Container>
         <Container name="A3A_revive">
@@ -11136,268 +11208,313 @@
                 <Russian>Конвертирование в очки авиаударов</Russian>
                 <Chinesesimp>转换为空袭点</Chinesesimp>
                 <Korean>공중 지원으로 전환</Korean>
+                <French>Convertir en points de frappes aériennes</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_not_looking_at_veh">
                 <Original>You are not looking at vehicle.</Original>
                 <Russian>Вы не смотрите на какую-либо технику.</Russian>
                 <Chinesesimp>你不是在看载具</Chinesesimp>
                 <Korean>차량을 보고 있지 않습니다.</Korean>
+                <French>Vous ne regardez pas le véhicule.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_destroyed">
                 <Original>You can't convert destroyed Air vehicle to Airstrikes.</Original>
                 <Russian>Вы не можете конвертировать уничтоженную технику в очки авиаударов.</Russian>
                 <Chinesesimp>你不能将被摧毁的载具转换成空袭点。</Chinesesimp>
                 <Korean>파괴된 항공기를 공습 포인트로 전환할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas convertir les véhicules aériens détruits en points de frappes aériennes.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_enemies_near">
                 <Original>You can't convert destroyed Air vehicle to Airstrikes.</Original>
                 <Russian>Вы не можете конвертировать технику в очки авиаударов пока рядом с вами враги.</Russian>
                 <Chinesesimp>当你附近有敌人时，你不能将车辆转换为空袭点。</Chinesesimp>
                 <Korean>적이 근처에 있는 동안 항공기를 공습 포인트로 전환할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas convertir les véhicules aériens détruits en points de frappes aériennes.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_hq_airp">
                 <Original>You and the Air vehicle need to be in the Area of an %1 Airport or HQ in order to convert it to Airstrikes.</Original>
                 <Russian>Вы должны быть в зоне дружественной %1 авиабазы или штаба чтобы иметь возможность конвертировать технику в авиаудар.</Russian>
                 <Chinesesimp>你必须在友好的 %1 空军基地或总部区域才能将载具转换为空袭。</Chinesesimp>
                 <Korean>항공기를 공습 포인트로 전환하려면 %1 공항 또는 본부 구역에 있어야 합니다.</Korean>
+                <French>Vous et le véhicule aérien devez vous trouver dans la zone d'un aéroport ou d'un QG %1 pour pouvoir le convertir en points d'attaques aériennes.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_reb_planes">
                 <Original>%1 have plenty of these planes, they can't be used to increase Airstrike points.</Original>
                 <Russian>У %1 достаточно техники этого типа, они не могут быть использованы для увеличения числа очков авиаудара.</Russian>
                 <Chinesesimp>%1有足够的这种类型的车辆，它们不能用来增加空袭点数。</Chinesesimp>
                 <Korean>%1은(는) 이 비행기를 많이 보유하고 있으며, 공습 포인트를 높이는 데 사용할 수 없습니다.</Korean>
+                <French>%1 a beaucoup de ces avions, ils ne peuvent pas être utilisés pour augmenter les points d'attaque aérienne.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_veh_empty">
                 <Original>In order to convert, vehicle must be empty.</Original>
                 <Russian>Для конвертации необходимо чтобы в технике никого не было.</Russian>
                 <Chinesesimp>要转换，载具必须没有人。</Chinesesimp>
                 <Korean>전환하려면 해당 차량이 비어 있어야 합니다.</Korean>
+                <French>Pour que la conversion soit possible, le véhicule doit être vide.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_limit">
                 <Original>There can be no more than %1 available airstrikes.</Original>
                 <Russian>Авиаударов не может быть больше чем %1.</Russian>
                 <Chinesesimp>空袭不能超过%1。</Chinesesimp>
                 <Korean>%1 이상의 가용 공습 포인트를 저장할 수 없습니다.</Korean>
+                <French>Il ne peut y avoir plus de %1 frappes aériennes disponibles.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_not_owner">
                 <Original>You are not the owner of this vehicle. Therefore, you can't convert it.</Original>
                 <Russian>Вы не владелец данной техники. Соответственно, вы не можете его конвертировать.</Russian>
                 <Chinesesimp>您不是此载具的所有者。 因此，您不能转换它。</Chinesesimp>
                 <Korean>이 차량의 소유자가 아닙니다. 따라서 전환할 수 없습니다.</Korean>
+                <French>Vous n'êtes pas le propriétaire de ce véhicule. Vous ne pouvez donc pas le convertir.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_air_only">
                 <Original>Only Air Vehicles can be used to increase Airstrike points.</Original>
                 <Russian>Только воздушные транспортные средства могут быть использованы для конвертации.</Russian>
                 <Chinesesimp>只有空中载具可以用来增加空袭点。</Chinesesimp>
                 <Korean>공습 포인트를 높이려면 항공 차량만 사용해야 합니다.</Korean>
+                <French>Seuls les véhicules aériens peuvent être utilisés pour augmenter les points de frappe aérienne.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_backpack_drones">
                 <Original>Backpack drones can't be used to increase Airstrike points.</Original>
                 <Russian>Коптеры и другие БПЛА компактного типа не могут использоваться для конвертации в авиудары.</Russian>
                 <Chinesesimp>直升机和其他背包无人机不能用于转换为空袭。</Chinesesimp>
                 <Korean>배낭 무인기는 공습 포인트를 높이는 데 사용할 수 없습니다.</Korean>
+                <French>Les sacs de drones ne peuvent pas être utilisés pour augmenter les points d'attaque aérienne.</French>
             </Key>
             <Key ID="STR_A3A_reinf_airstrike_success">
                 <Original>Air Support points have been increased.</Original>
                 <Russian>Количество очков авиаударов успешно увеличено.</Russian>
                 <Chinesesimp>空中支援点数已增加</Chinesesimp>
                 <Korean>항공지원 포인트가 올라갔습니다.</Korean>
+                <French>Les points de soutien aérien ont été augmentés.</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_header">
                 <Original>Vehicle Info</Original>
                 <Russian>Информацие о технике</Russian>
                 <Chinesesimp>载具信息</Chinesesimp>
                 <Korean>차량 정보</Korean>
+                <French>Informations sur le véhicule</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_one_group">
                 <Original>You must select only one group on the HC bar.</Original>
                 <Russian>Вы должны выбрать только одну группу на панели High Command.</Russian>
                 <Chinesesimp>您只能在高级指挥面板中选择一个小队。</Chinesesimp>
                 <Korean>하이 커맨드 표시줄에서 그룹을 하나만 선택해야 합니다.</Korean>
+                <French>Vous ne devez sélectionner qu'un seul groupe dans la barre HC.</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_dismounting_1">
                 <Original>%2%1 dismounting&lt;br/&gt;</Original>
                 <Russian>%2%1 спешивается&lt;br/&gt;</Russian>
                 <Chinesesimp>%2%1 下车&lt;br/&gt;</Chinesesimp>
                 <Korean>%2%1 분리 중&lt;br/&gt;</Korean>
+                <French>%2%1 débarquement&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_boarding_1">
                 <Original>%2%1 boarding&lt;br/&gt;</Original>
                 <Russian>%2%1 садится&lt;br/&gt;</Russian>
                 <Chinesesimp>%2%1 登机&lt;br/&gt;</Chinesesimp>
                 <Korean>%2%1 탑승 중&lt;br/&gt;</Korean>
+                <French>%2%1 embarquement&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_sitrep">
                 <Original>%1, SITREP!</Original>
                 <Russian>%1, ДОЛОЖИТЕ ОБСТАНОВКУ!</Russian>
                 <Chinesesimp>%1, 报告情况！</Chinesesimp>
                 <Korean>%1, 상황 보고하라!</Korean>
+                <French>%1, SITREP!</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_sitrep_status">
                 <Original>%1 Status&lt;br/&gt;&lt;br/&gt;Alive members: %2&lt;br/&gt;Able to combat: %3&lt;br/&gt;Current task: %4&lt;br/&gt;Combat Mode:%5&lt;br/&gt;</Original>
                 <Russian>Статус %1&lt;br/&gt;&lt;br/&gt;Живые члены отряда: %2&lt;br/&gt;Способны биться: %3&lt;br/&gt;Текущая задача: %4&lt;br/&gt;Боевой режим:%5&lt;br/&gt;</Russian>
                 <Chinesesimp>%1 状态&lt;br/&gt;&lt;br/&gt;存活成员：%2&lt;br/&gt;可战斗：%3&lt;br/&gt;当前任务：%4&lt;br/&gt;战斗模式：%5&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 상태&lt;br/&gt;&lt;br/&gt;살아 있는 대원: %2&lt;br/&gt;전투 가능 인원: %3&lt;br/&gt;현재 과업: %4&amp;lt&lt;br/&gt;전투 상태:%5&lt;br/&gt;</Korean>
+                <French>%1 Statut&lt;br/&gt;&lt;br/&gt;Membres vivants: %2&lt;br/&gt;Capables de combattre: %3&lt;br/&gt;Tâche actuelle: %4&lt;br/&gt;Mode de combat:%5&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_opmedic">
                 <Original>%1Operative Medic&lt;br/&gt;</Original>
                 <Russian>%1Действующий полевой врач&lt;br/&gt;</Russian>
                 <Chinesesimp>%1有战地医生&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 의무병 작전 가능&lt;br/&gt;</Korean>
+                <French>%1médecin opérationnel&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_no_opmedic">
                 <Original>%1No operative Medic&lt;br/&gt;</Original>
                 <Russian>%1Без действующего полевого врача&lt;br/&gt;</Russian>
                 <Chinesesimp>%1没有战地医生&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 작전 가능 의무병 없음&lt;br/&gt;</Korean>
+                <French>Pas de médecins opérationnels pour %1&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_aa">
                 <Original>%1With AA capabilities&lt;br/&gt;</Original>
                 <Russian>%1С противовоздушными средствами&lt;br/&gt;</Russian>
                 <Chinesesimp>%1具有防空能力&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 대공 기능 포함&lt;br/&gt;</Korean>
+                <French>%1avec des capacités AA</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_at">
                 <Original>%1With AT capabilities&lt;br/&gt;</Original>
                 <Russian>%1С противотанковыми средствами&lt;br/&gt;</Russian>
                 <Chinesesimp>%1具有反坦克功能&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 대전차 기능 포함&lt;br/&gt;</Korean>
+                <French>%1avec des capacités AT</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_mortar">
                 <Original>%1Mortar is deployed&lt;br/&gt;</Original>
                 <Russian>%1Миномёт развёрнут&lt;br/&gt;</Russian>
                 <Chinesesimp>%1迫击炮部署完毕&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 박격포 배치됨&lt;br/&gt;</Korean>
+                <French>%1Mortier déployé&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_no_mortar">
                 <Original>%1Mortar not deployed&lt;br/&gt;</Original>
                 <Russian>%1Миномёт не развёрнут&lt;br/&gt;</Russian>
                 <Chinesesimp>%1迫击炮未部署&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 박격포 배치되지 않음&lt;br/&gt;</Korean>
+                <French>%1Mortier non déployé&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_static">
                 <Original>%1Static is deployed&lt;br/&gt;</Original>
                 <Russian>%1Стац. орудие развёрнуто&lt;br/&gt;</Russian>
                 <Chinesesimp>%1固定武器已部署&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 고정화기 배치됨&lt;br/&gt;</Korean>
+                <French>%1Statique déployée&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_no_static">
                 <Original>%1Static not deployed&lt;br/&gt;</Original>
                 <Russian>%1Стац. орудие не развёрнуто&lt;br/&gt;</Russian>
                 <Chinesesimp>%1固定武器未部署&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 고정화기 배치되지 않음&lt;br/&gt;</Korean>
+                <French>%1Statique non déployé&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_current_veh">
                 <Original>%1Current vehicle:&lt;br/&gt;%2&lt;br/&gt;</Original>
                 <Russian>%1Текущее трансп. средство:&lt;br/&gt;%2&lt;br/&gt;</Russian>
                 <Chinesesimp>%1当前车辆:&lt;br/&gt;%2&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 현재 차량:&lt;br/&gt;%2&lt;br/&gt;</Korean>
+                <French>%1Véhicule actuel:&lt;br/&gt;%2&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_current_veh_disabled">
                 <Original>%1DISABLED&lt;br/&gt;</Original>
                 <Russian>%1ОБЕЗДВИЖЕНО&lt;br/&gt;</Russian>
                 <Chinesesimp>%1失去战斗力&lt;br/&gt;</Chinesesimp>
                 <Korean>%1 비활성화&lt;br/&gt;</Korean>
+                <French>%1DÉSACTIVÉ&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_current_gun_disabled">
                 <Original>%1WEAPON DISABLED&lt;br/&gt;</Original>
                 <Russian>%1ОРУДИЕ НЕ МОЖЕТ СТРЕЛЯТЬ&lt;br/&gt;</Russian>
                 <Chinesesimp>%1武器不能开火&lt;br/&gt;</Chinesesimp>
                 <Korean>%1 무기 비활성화&lt;br/&gt;</Korean>
+                <French>%1ARME DÉSACTIVÉE&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_ammo">
                 <Original>%1MUNITIONED&lt;br/&gt;</Original>
                 <Russian>%1ЕСТЬ БОЕКОМПЛЕКТ&lt;br/&gt;</Russian>
                 <Chinesesimp>%1有弹药&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 탄약 장전됨&lt;br/&gt;</Korean>
+                <French>%1APPROVISIONNER</French>
             </Key>
             <Key ID="STR_A3A_reinf_vehStat_crew">
                 <Original>%1Boarded:%2/%3</Original>
                 <Russian>%1Экипаж:%2/%3</Russian>
                 <Chinesesimp>%1乘员:%2/%3</Chinesesimp>
                 <Korean>%1 탑승함:%2/%3</Korean>
+                <French>%1Equipage:%2%3</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_header">
                 <Original>AI Recruitment</Original>
                 <Russian>Найм ИИ-юнитов</Russian>
                 <Chinesesimp>招募AI单位</Chinesesimp>
                 <Korean>인공지능 모집</Korean>
+                <French>Recrutement IA</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_only_members">
                 <Original>Only Server Members can recruit AI units.</Original>
                 <Russian>Только участники сервера могут нанимать ИИ-юнитов.</Russian>
                 <Chinesesimp>只有服务器会员才能招募AI单位。</Chinesesimp>
                 <Korean>서버 멤버만 인공지능을 모집할 수 있습니다.</Korean>
+                <French>Seuls les membres du serveur peuvent recruter des unités d'IA.</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_cooldown">
                 <Original>You need to wait %1 seconds to be able to recruit units again.</Original>
                 <Russian>Необходимо подождать %1 секунд прежде чем нанимать ещё юнитов.</Russian>
                 <Chinesesimp>您必须等待 %1 秒才能招募更多单位。</Chinesesimp>
                 <Korean>유닛을 다시 모집하려면 %1초를 기다려야 합니다.</Korean>
+                <French>Vous devez attendre %1 secondes pour pouvoir recruter à nouveau des unités.</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_aicontrol">
                 <Original>You can't buy units while you are controlling AI.</Original>
                 <Russian>Вы не можете нанимать юнитов пока контроллируете ИИ-юнит.</Russian>
                 <Chinesesimp>您不能在控制 AI 单位时招募单位。</Chinesesimp>
                 <Korean>인공지능을 조종하는 동안에는 유닛을 살 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas acheter d'unités lorsque vous contrôlez l'IA.</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_enemy_near">
                 <Original>You can't recruit units with enemies nearby.</Original>
                 <Russian>Вы не можете нанимать юнитов пока рядом враги.</Russian>
                 <Chinesesimp>当附近有敌人时，你不能招募单位。</Chinesesimp>
                 <Korean>근처에 적이 있는 때는 유닛을 모집할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas recruter d'unités si des ennemis se trouvent à proximité.</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_no_leader">
                 <Original>You can't recruit units as you are not your group leader.</Original>
                 <Russian>Вы не можете нанимать юнитов так как вы не являетесь лидером вашей группы.</Russian>
                 <Chinesesimp>你不能招募单位，因为你不是你的组长。</Chinesesimp>
                 <Korean>당신은 그룹 리더가 아니기 때문에 유닛을 모집할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas recruter d'unités car vous n'êtes pas le chef de votre groupe.</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_no_hr">
                 <Original>You don't have enough HR for this request.</Original>
                 <Russian>У вас недостаточно людских ресурсов для найма.</Russian>
                 <Chinesesimp>您没有足够的人力来完成此请求。</Chinesesimp>
                 <Korean>이 요청을 수행할 인력이 부족합니다.</Korean>
+                <French>Vous n'avez pas assez de RH pour cette demande.</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_no_money">
                 <Original>You don't have enough money for this kind of unit (%1%2 needed).</Original>
                 <Russian>У вас недостаточно денег для найма этого юнита (требуется %1%2).</Russian>
                 <Chinesesimp>您没有足够的钱购买这种单位（需要 %1%2）。</Chinesesimp>
                 <Korean>이런 종류의 유닛을 사는 데 필요한 자금이 부족합니다. (%1%2 필요)</Korean>
+                <French>Vous n'avez pas assez d'argent pour ce type d'unité (%1%2 nécessaire).</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_no_money_equip">
                 <Original>You don't have enough money to equip this type of unit.</Original>
                 <Russian>У вас недостаточно денег для экипирования данного типа юнита.</Russian>
                 <Korean>이런 종류의 유닛을 장비하는 데 필요한 자금이 부족합니다.</Korean>
+                <French>Vous n'avez pas assez d'argent pour vous équiper de ce type d'unité.</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_no_weapons_equip">
                 <Original>You don't have enough weapons to equip this type of unit.</Original>
                 <Russian>У вас недостаточно оружия для экипирования данного типа юнита.</Russian>
                 <Korean>이런 종류의 유닛을 장비하는 데 필요한 무기가 부족합니다.</Korean>
+                <French>Vous n'avez pas assez d'armes pour équiper ce type d'unité.</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_full_squad">
                 <Original>Your squad is full or you have too many scattered units with no radio contact.</Original>
                 <Russian>Ваш отряд полон или у вас слишком много разбросанных в округе юнитов без радиосвязи с ними.</Russian>
                 <Chinesesimp>你的小队已经满了，或者你有太多的单位分散在这个区域周围而没有与他们的无线电联系。</Chinesesimp>
                 <Korean>분대가 꽉 찼거나 무전기가 없어서 흩어진 유닛이 너무 많습니다.</Korean>
+                <French>Votre équipe est au complet ou vous avez trop d'unités dispersées sans contact radio.</French>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_success">
                 <Original>Soldier Recruited.&lt;br/&gt;&lt;br/&gt;Remember: if you use the group menu to switch groups you will lose control of your recruited AI.</Original>
                 <Russian>Солдат рекрутирован.&lt;br/&gt;&lt;br/&gt;Помните: если вы каким-либо образом смените группу вы потеряете контроль над вашими солдатами.</Russian>
                 <Chinesesimp>一名AI士兵已被招募。&lt;br/&gt;&lt;br/&gt;请记住，如果您以任何方式改变组别，您将失去对AI士兵的控制。</Chinesesimp>
                 <Korean>병사 모집 완료.&lt;br/&gt;&lt;br/&gt;기억하십시오, 그룹 메뉴를 사용하여 그룹을 전환하면 모집한 인공지능을 통제할 수 없게 됩니다.</Korean>
+                <French>Soldat recruté.&lt;br/&gt;&lt;br/&gt;Souvenez-vous : si vous utilisez le menu de groupe pour changer de groupe, vous perdrez le contrôle de votre IA recrutée.</French>
             </Key>
             <Key ID="STR_A3A_reinf_fiainit_radiocheckok">
                 <Original>This is %1, radiocheck OK.</Original>
                 <Russian>Это %1, проверка связи прошла успешно.</Russian>
                 <Chinesesimp>这是%1，测试无线电 正常。</Chinesesimp>
                 <Korean>여기는 %1, 무전 체크 양호.</Korean>
+                <French>Il s'agit de %1, contrôle radio OK.</French>
             </Key>
             <Key ID="STR_A3A_reinf_fiainit_lost_comms">
                 <Original>%1 lost communication, he will come back with you if possible.</Original>
                 <Russian>%1 потерял связь, он попытается вернуться к вам если это возможно.</Russian>
                 <Chinesesimp>%1 失去了联系，如果可能的话，他会尽快回复你。</Chinesesimp>
                 <Korean>%1의 통신이 끊어졌습니다. 가능하다면 당신과 함께 돌아올 것입니다.</Korean>
+                <French>%1 a perdu la communication, il reviendra avec vous si possible.</French>
             </Key>
             <Key ID="STR_A3A_reinf_dismiss_squad_no_special_squads">
                 <Original>You can't dismiss player led, Watchpost, Roadblock, any Emplacement or Minefield building squad.</Original>
@@ -11411,216 +11528,252 @@
                 <Russian>Распустить отряд</Russian>
                 <Chinesesimp>解散小队</Chinesesimp>
                 <Korean>그룹 해산</Korean>
+                <French>Dissoudre l'équipe</French>
             </Key>
             <Key ID="STR_A3A_reinf_dismiss_group_no_leader">
                 <Original>You can't dismiss anyone if you are not the squad leader.</Original>
                 <Russian>Вы не можете распустить отряд если вы не являетесь его лидером.</Russian>
                 <Chinesesimp>不是班长不能开除任何人。</Chinesesimp>
                 <Korean>분대장이 아니면 누구도 해산시킬 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas renvoyer personne si vous n'êtes pas le chef d'escouade.</French>
             </Key>
             <Key ID="STR_A3A_reinf_dismiss_no_special_states">
                 <Original>You can't disband suppressed, undercover or unconscious units.</Original>
                 <Russian>Вы не можете распустить подавленный, замаскированный или сильно раненый отряд.</Russian>
                 <Chinesesimp>你不能解散一个被压制、伪装或重伤的单位。</Chinesesimp>
                 <Korean>진압받거나 위장 중이거나, 의식불명인 유닛은 해산시킬 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas dissoudre les unités supprimées, infiltrées ou inconscientes.</French>
             </Key>
             <Key ID="STR_A3A_reinf_control_squad">
                 <Original>Control Squad</Original>
                 <Russian>Контроль отряда</Russian>
                 <Chinesesimp>小队控制</Chinesesimp>
                 <Korean>분대 통제</Korean>
+                <French>Contrôle de l'escouade</French>
             </Key>
             <Key ID="STR_A3A_reinf_control_squad_only_commander">
                 <Original>Only Commander has the ability to control HC units.</Original>
                 <Russian>Только командир имеет возможность контроллировать High Command-отряды.</Russian>
                 <Chinesesimp>只有指挥官才有能力控制HC单位。</Chinesesimp>
                 <Korean>지휘관만이 하이 커맨드 유닛을 통제할 수 있습니다.</Korean>
+                <French>Seul le commandant a la capacité de contrôler les unités HC.</French>
             </Key>
             <Key ID="STR_A3A_reinf_control_squad_no_undercover">
                 <Original>You can't control squads while undercover.</Original>
                 <Russian>Вы не можете контроллировать отряды пока находитесь в маскировке.</Russian>
                 <Chinesesimp>伪装时无法控制单位小队。</Chinesesimp>
                 <Korean>위장 중에는 분대를 통제할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas contrôler les escouades lorsque vous êtes sous couverture.</French>
             </Key>
             <Key ID="STR_A3A_reinf_control_squad_punishment">
                 <Original>Nope. Not happening (Friendly Fire Punishment).</Original>
                 <Russian>Извини, но нет. (Наказание за дружественный огонь).</Russian>
                 <Chinesesimp>没有，什么事都没有。（对误伤的惩罚）</Chinesesimp>
                 <Korean>아뇨, 그럴 수 없습니다. (아군 오사 처벌)</Korean>
+                <French>Désolé, mais non. (Punition pour tir ami).</French>
             </Key>
             <Key ID="STR_A3A_reinf_control_no_dead">
                 <Original>You can't control an unconscious or dead unit.</Original>
                 <Russian>Вы не можете контроллировать убитый или бессознательный юнит.</Russian>
                 <Chinesesimp>你无法控制被杀死或昏迷的单位。</Chinesesimp>
                 <Korean>의식불명이나 죽은 유닛은 조종할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas contrôler une unité inconsciente ou morte.</French>
             </Key>
             <Key ID="STR_A3A_reinf_control_return_damage_1">
                 <Original>Returned to original Unit as it received damage.</Original>
                 <Russian>Возврат в оригинальное тело так как оно получило повреждения.</Russian>
                 <Chinesesimp>当被控制的AI受到伤害时返回原来的单位。</Chinesesimp>
                 <Korean>데미지를 입었기 때문에 원래 유닛으로 돌아갑니다.</Korean>
+                <French>Retour au corps d'origine s'il a subi des dommages.</French>
             </Key>
             <Key ID="STR_A3A_reinf_control_return_damage_2">
                 <Original>Returned to original Unit as controlled AI received damage.</Original>
                 <Russian>Возврат в оригинальное тело так как контроллируемый ИИ-юнит получил повреждения.</Russian>
                 <Chinesesimp>返回原体，因为被控制的AI单位损坏。</Chinesesimp>
                 <Korean>조종 중인 유닛이 데미지를 입었기 때문에 원래 유닛으로 돌아갑니다.</Korean>
+                <French>Retour à l'unité d'origine car l'IA contrôlée a été endommagée.</French>
             </Key>
             <Key ID="STR_A3A_reinf_minefield_task_header">
                 <Original>Minefield Deploy</Original>
                 <Russian>Развертывание минного поля</Russian>
                 <Chinesesimp>雷区部署</Chinesesimp>
                 <Korean>지뢰지대 배치</Korean>
+                <French>Déploiement de champs de mines</French>
             </Key>
             <Key ID="STR_A3A_reinf_minefield_task_desc">
                 <Original>An Engineer Team has been deployed at your command with High Command Option. Once they reach the position, they will start to deploy %1 mines in the area. Cover them in the meantime.</Original>
                 <Russian>Отряд инженеров был развернут под вашим командованием (High Command-меню). Когда они доедут до отмеченной позиции, они начнут выкладывать %1 мины в этой зоне. Прикройте их пока они это делают.</Russian>
                 <Chinesesimp>一个工程师团队已经部署在你的命令与高级指挥选项。一旦他们到达目的地，他们将开始在该地区部署%1地雷。同时掩护他们。</Chinesesimp>
                 <Korean>하이 커맨드 설정을 사용하여 공병 팀이 당신의 명령에 따라 배치되었습니다. 그들이 위치에 도달하면 해당 지역에 %1 지뢰를 배치하기 시작할 것입니다. 그 동안 그들을 엄호하십시오.</Korean>
+                <French>Une escouade d'ingénieurs a été déployée sous votre commandement (menu Haut Commandement). Lorsqu'ils atteindront la position marquée, ils commenceront à poser %1 mines dans cette zone. Couvrez-les pendant qu'ils le font.</French>
             </Key>
             <Key ID="STR_A3A_reinf_buildCvc_header">
                 <Original>Construction</Original>
                 <Russian>Строительство</Russian>
                 <Chinesesimp>建筑</Chinesesimp>
                 <Korean>건설</Korean>
+                <French>Construction</French>
             </Key>
             <Key ID="STR_A3A_reinf_buildCvc_start">
                 <Original>Walk to the selected position to start building.</Original>
                 <Russian>Подойдите к указанной позиции для начала строительства.</Russian>
                 <Chinesesimp>到指定位置开始施工。</Chinesesimp>
                 <Korean>선택한 위치로 이동하여 건설을 시작하십시오.</Korean>
+                <French>Marchez jusqu'à la position sélectionnée pour commencer la construction.</French>
             </Key>
             <Key ID="STR_A3A_reinf_buildCvc_timeout">
                 <Original>You didn't move to the position, construction has timed out.</Original>
                 <Russian>Вы не подошли к позиции строительства, конструкция протухла.</Russian>
                 <Chinesesimp>你没有接近施工现场，建筑已经超时了。</Chinesesimp>
                 <Korean>위치로 이동하지 않았으며, 건설 시간이 초과되었습니다.</Korean>
+                <French>Vous ne vous êtes pas déplacé vers la position, la construction a pris fin.</French>
             </Key>
             <Key ID="STR_A3A_reinf_buildCvc_cancel">
                 <Original>Construction cancelled.</Original>
                 <Russian>Строительство отменено.</Russian>
                 <Chinesesimp>施工取消。</Chinesesimp>
                 <Korean>건설이 취소되었습니다.</Korean>
+                <French>Construction annulée.</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_error_empty">
                 <Original>Empty construction, aborting.</Original>
                 <Russian>Пустая конструкция, отмена.</Russian>
                 <Chinesesimp>空建筑，中止。</Chinesesimp>
                 <Korean>건축물이 비었으며, 취소합니다.</Korean>
+                <French>Construction vide, abandon.</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_error_empty_type">
                 <Original>Empty construction type, aborting.</Original>
                 <Russian>Пустой тип конструкции, отмена.</Russian>
                 <Chinesesimp>空建筑类型，中止。</Chinesesimp>
                 <Korean>건축물의 유형이 비었으며, 취소합니다.</Korean>
+                <French>Type de construction vide, abandon.</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_no_engie">
                 <Original>You are not an engineer.&lt;br/&gt;</Original>
                 <Russian>Вы не инженер.&lt;br/&gt;</Russian>
                 <Chinesesimp>你不是工程师。&lt;br/&gt;</Chinesesimp>
                 <Korean>당신은 공병이 아닙니다.&lt;br/&gt;</Korean>
+                <French>Vous n'êtes pas ingénieur.&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_engie_not_possible">
                 <Original>You are an engineer, but not in a state to build: you may be unconscious or undercover.&lt;br/&gt;</Original>
                 <Russian>Вы инженер, но не в том состоянии, чтобы строить: вы можете быть либо без сознания, либо в маскировке.&lt;br/&gt;</Russian>
                 <Chinesesimp>你是一名工程师，但不处于建造状态：你可能昏迷了或者还在伪装。&lt;br/&gt;</Chinesesimp>
                 <Korean>당신은 공병이지만 건설할 수 있는 상태가 아닙니다: 의식불명이거나 위장 중입니다.&lt;br/&gt;</Korean>
+                <French>Vous êtes ingénieur, mais vous n'êtes pas en état de construire : vous êtes peut-être inconscient ou sous couverture.&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_engie_human_engie">
                 <Original>There is a human engineer in your squad. Ask them to build.&lt;br/&gt;</Original>
                 <Russian>У вас в отряде есть инженер-человек. Попросите его построить.&lt;br/&gt;</Russian>
                 <Chinesesimp>你的小队中有一名人类工程师。 请他来建造。</Chinesesimp>
                 <Korean>당신 분대에 플레이어 공병이 있습니다. 그들에게 건설을 요청하십시오.&lt;br/&gt;</Korean>
+                <French>Il y a un ingénieur humain dans votre équipe. Demandez-lui de construire.&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_only_sl">
                 <Original>Only squad leaders can order AI to build.</Original>
                 <Russian>Только командиры отрядов могут приказать ИИ строить.</Russian>
                 <Chinesesimp>有班长才能命令AI建造。</Chinesesimp>
                 <Korean>분대장만이 인공지능에게 건설을 명령할 수 있습니다.</Korean>
+                <French>Seuls les chefs d'escouade peuvent ordonner à l'IA de construire.</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_ordering">
                 <Original>Ordering %1 to build.</Original>
                 <Russian>Приказываю %1 строить.</Russian>
                 <Chinesesimp>命令 %1 建造。</Chinesesimp>
                 <Korean>%1에게 건설을 명령하는 중입니다.</Korean>
+                <French>Commande de %1 à construire.</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_no_engies_squad">
                 <Original>You have no available engineers in your squad. They may be unconscious or busy.</Original>
                 <Russian>У вас нет доступных инженеров в отряде. Они могут быть заняты, без сознания или мертвы.</Russian>
                 <Chinesesimp>你的小队中没有可用的工程师。 他们可能很忙，可能昏迷，或者已经死了。</Chinesesimp>
                 <Korean>분대에 사용 가능한 공병이 없습니다.의식불명이거나 바쁠 수 있습니다.</Korean>
+                <French>Vous n'avez pas de sapeurs disponibles dans votre équipe. Ils sont peut-être inconscients ou occupés.</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_fact_required">
                 <Original>Heavy fortifications require 3 captured factories to build.</Original>
                 <Russian>Крупные фортификации требуют 3 захваченных фабрики чтобы их можно было строить.</Russian>
                 <Chinesesimp>重型防御工事需要3个被占领的工厂才能建造。</Chinesesimp>
                 <Korean>중형 요새를 건설하려면 점령한 공장이 최소 3곳 이상이 필요합니다.</Korean>
+                <French>La construction de fortifications lourdes nécessite 3 usines capturées.</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_outside_zone">
                 <Original>You can't build outside of a controlled zone.</Original>
                 <Russian>Вы не можете строить за пределами любой контроллируемой зоны.</Russian>
                 <Chinesesimp>你不能在控制区之外建造。</Chinesesimp>
                 <Korean>통제 구역 밖에서는 건설할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas construire en dehors d'une zone contrôlée.</French>
             </Key>
             <Key ID="STR_A3A_reinf_build_no_money">
                 <Original>You do not have enough money for this fortification: %1%2 required.</Original>
                 <Russian>У вас недостаточно денег для этой фортификации. Нужно %1%2.</Russian>
                 <Chinesesimp>你没有足够的钱来建造这个防御工事：需要 %1%2。</Chinesesimp>
                 <Korean>해당 요새를 건설할 자금이 부족합니다. %1%2가 필요합니다.</Korean>
+                <French>Vous n'avez pas assez d'argent pour cette fortification : %1%2 requis.</French>
             </Key>
             <Key ID="STR_A3A_addFiaVeh_header">
                 <Original>Vehicle Shop</Original>
                 <Russian>Покупка техники</Russian>
                 <Chinesesimp>采购载具</Chinesesimp>
                 <Korean>차량 상점</Korean>
+                <French>Magasin de véhicules</French>
             </Key>
             <Key ID="STR_A3A_reinf_addSquadVeh_header">
                 <Original>Add Squad Vehicle</Original>
                 <Russian>Добавление техники к отряду</Russian>
                 <Chinesesimp>为小队添加载具</Chinesesimp>
                 <Korean>분대 차량 추가</Korean>
+                <French>Ajouter de l'équipement à une équipe</French>
             </Key>
             <Key ID="STR_A3A_reinf_addSquadVeh_select_1hc">
                 <Original>You must select only one group on the HC bar.</Original>
                 <Russian>Вы должны выбрать только одну группу на панели High Command.</Russian>
                 <Chinesesimp>只能在HC栏上选择小队。</Chinesesimp>
                 <Korean>하이 커맨드 표시줄에서 그룹을 하나만 선택해야 합니다.</Korean>
+                <French>Vous ne devez sélectionner qu'un seul groupe dans la barre HC.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addSquadVeh_already_Veh">
                 <Original>This group has a vehicle already and their mission depends on it.</Original>
                 <Russian>Эта группа уже имеет приданную технику к отряду и их задача зависит от её наличия.</Russian>
                 <Chinesesimp>小队已经有一辆车辆附属于小队，他们的任务取决于它的可用性。</Chinesesimp>
                 <Korean>이 그룹은 이미 차량을 보유하고 있으며 그들의 임무는 해당 차량에 달려 있습니다.</Korean>
+                <French>Ce groupe dispose déjà d'un véhicule et sa mission en dépend.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addSquadVeh_destroyed_veh">
                 <Original>The selected vehicle is destroyed or can't move.</Original>
                 <Russian>Выбранная техника либо уничтожена, либо не может двигаться.</Russian>
                 <Chinesesimp>所选载具要么被摧毁要么无法移动。</Chinesesimp>
                 <Korean>선택한 차량이 파괴되었거나 이동할 수 없습니다.</Korean>
+                <French>Le véhicule sélectionné est détruit ou ne peut pas se déplacer.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addSquadVeh_no_empty_veh">
                 <Original>Selected vehicle is not empty.</Original>
                 <Russian>Выбранная техника не пуста.</Russian>
                 <Chinesesimp>所选载具不为空</Chinesesimp>
                 <Korean>선택한 차량이 비어 있지 않습니다.</Korean>
+                <French>Le véhicule sélectionné n'est pas vide.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addSquadVeh_no_static">
                 <Original>You can't assign a Static Weapon to a Squad.</Original>
                 <Russian>Вы не можете придать стационарное орудие отряду.</Russian>
                 <Chinesesimp>你不能为小队分配固定武器。</Chinesesimp>
                 <Korean>분대에 고정화기는 할당할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas assigner une arme statique à une escouade.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addSquadVeh_no_static_2">
                 <Original>Static Weapon Squads can't change of vehicle.</Original>
                 <Russian>Расчёты стационарных орудий не могут менять его.</Russian>
                 <Chinesesimp>固定武器小队无法改变载具。</Chinesesimp>
                 <Korean>고정화기 팀은 차량을 바꿀 수 없습니다.</Korean>
+                <French>Les escouades d'armes statiques ne peuvent pas changer de véhicule.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addSquadVeh_no_room">
                 <Original>The vehicle selected has no room for this squad.</Original>
                 <Russian>Выбранная техника не имеет места под этот отряд.</Russian>
                 <Chinesesimp>所选载具没有空间容纳该小队。</Chinesesimp>
                 <Korean>선택한 차량에는 해당 분대를 위한 자리가 없습니다.</Korean>
+                <French>Le véhicule choisi n'a pas de place pour cette escouade.</French>
             </Key>
             <Key ID="STR_A3A_reinf_addSquadVeh_success">
                 <Original>Vehicle assigned to %1 Squad.</Original>
