@@ -401,9 +401,12 @@ if (_hasGM) then {
         "gm_WhiteHead_19_camo_01",
         "gm_WhiteHead_20_camo_01",
         "gm_WhiteHead_21_camo_01"
-        ];
+    ];
 };
 ["sfVoices", ["Male01ENGB", "Male02ENGB", "Male03ENGB", "Male04ENGB", "Male05ENGB"]] call _fnc_saveToTemplate;
+["eliteVoices", ["Male01ENGB", "Male02ENGB", "Male03ENGB", "Male04ENGB",
+"Male05ENGB","Male01ENG","Male02ENG","Male03ENG","Male04ENG","Male05ENG","Male06ENG","Male07ENG",
+"Male08ENG","Male09ENG","Male10ENG","Male11ENG","Male12ENG","Male01ENGFRE","Male02ENGFRE"]] call _fnc_saveToTemplate;
 ["faces", _faces] call _fnc_saveToTemplate;
 ["insignia", ["111thID", "", ""]] call _fnc_saveToTemplate;
 ["sfInsignia", ["CTRG"]] call _fnc_saveToTemplate;
