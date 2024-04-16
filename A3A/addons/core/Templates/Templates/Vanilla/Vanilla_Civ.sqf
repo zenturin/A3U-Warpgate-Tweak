@@ -97,7 +97,7 @@ if (_hasRF) then {
     _civFuel append ["a3a_civ_Pickup_fuel_rf", 0.1];
 };
 
-["vehiclesCivHeli", ["C_Heli_Light_01_civil_F" , "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["C_Heli_Light_01_civil_F", "a3a_C_Heli_Transport_02_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesCivCar", _civCarsWithWeights] call _fnc_saveToTemplate;
 ["vehiclesCivIndustrial", _civIndustrial] call _fnc_saveToTemplate;

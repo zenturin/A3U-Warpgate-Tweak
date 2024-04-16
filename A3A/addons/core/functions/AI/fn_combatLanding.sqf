@@ -11,8 +11,56 @@ Parameters:
     <POSATL> Position for heli to return to after offloading
     <POSATL> Landing position for heli
 */
-
+#include "..\..\script_component.hpp"
+FIX_LINE_NUMBERS()
 params ["_helicopter", "_crewGroup", "_cargoGroup", "_posDestination", "_originPos", "_landPos"];
+
+private _vehType = typeOf _helicopter;
+
+if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) then {
+    _helicopter setVehicleRadar 1;
+};
+
+private _fnc_HeliDoors = {
+    params ["_helicopter", "_state"];
+
+    private _helicopter = _this#0;
+    private _state = _this#1;
+
+    switch _state do
+    {
+       case "open": { _state = 1; };
+       case "close": { _state = 0; };
+    };
+   _helicopter animateDoor ["Door_Cargo", _state];        // Mi-24V (CSLA) cargo doors
+   _helicopter animateDoor ["door_2_2_source", _state];   // VBH 1 (GM) right door
+   _helicopter animateDoor ["door_2_1_source", _state];   // VBH 1 (GM) left door
+   _helicopter animateDoor ["Door_Back_L", _state];       // Mohawk back door Left
+   _helicopter animateDoor ["Door_Back_R", _state];       // Mohawk back door Right
+   _helicopter animateDoor ["door_cargo_left", _state];   // Cougar
+   _helicopter animateDoor ["Door_L", _state];            // Ghosthawk
+   _helicopter animateDoor ["Door_L_source", _state];     // Huron front door
+   _helicopter animateDoor ["Door_rear_source", _state];  // Huron rear door
+   _helicopter animateDoor ["door_1", _state];            // Wildcat
+   _helicopter animateDoor ["Door_4_source", _state];     // Taru right door
+   _helicopter animateDoor ["Door_5_source", _state];     // Taru left door
+   _helicopter animate ["dvere1_posunZ",_state];          // Orca
+   _helicopter animate ["side_door", _state];             // Mi-17 (CSLA) side door
+   sleep 0.3; 
+   _helicopter animateDoor ["Door_1_source", _state];     // Y-32 Xi'an/V-44X
+   _helicopter animateDoor ["cargoramp_source", _state];  // CH-53G (GM) ramp
+   _helicopter animateDoor ["CargoRamp_Open", _state];    // Cougar
+   _helicopter animateDoor ["door_cargo_right", _state];  // Cougar
+   _helicopter animateDoor ["Door_R", _state];            // Ghosthawk
+   _helicopter animateDoor ["Door_R_source", _state];     // Huron front door
+   _helicopter animateDoor ["door_2", _state];            // Wildcat
+   _helicopter animateDoor ["Door_6_source", _state];     // Taru ramp
+   _helicopter animate ['vrata_right_big', _state];       // Mi-17 (CSLA) rear door
+   _helicopter animate ['vrata_left_big', _state];        // Mi-17 (CSLA) still rear door
+   _helicopter animate ['vrata_right_small', _state];     // Mi-17 (CSLA) yep stil door
+   _helicopter animate ['vrata_left_small', _state];      // Mi-17 (CSLA) reeeeeaaar door
+   _helicopter animate ["dvere2_posunZ",_state];          // Orca
+};
 
 // avoid weird situations where they receive RTB instructions before they finish unloading
 _crewGroup setVariable ["A3A_AIScriptHandle", _thisScript];
@@ -33,13 +81,13 @@ _vehWP0 setWaypointBehaviour "CARELESS";
 private _midHeight = [100, 150] select (A3A_climate isEqualTo "tropical");
 _helicopter flyInHeight _midHeight;
 
-waitUntil {sleep 1; (_helicopter distance2D _landPos) < 875};
+waitUntil {sleep 1; (_helicopter distance2D _landPos) < 800};
 
-while {_helicopter distance2D _landPos > 600} do {
+while {_helicopter distance2D _landPos > 675} do {
     [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
     [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
     [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
-    sleep 0.5;
+    sleep 0.3;
 };
 
 waitUntil {sleep 1; (_helicopter distance2D _landPos) < 600};
@@ -131,6 +179,9 @@ while {_interval < 0.9999} do
     if ((getPos _helicopter select 2) < 0.25 ) exitwith{_helicopter setdamage 0; sleep 1; _helicopter setdamage _dam;};
 };
 _helicopter engineOn true; ///keep the engine running
+if(canMove _helicopter || alive _driver) then {
+    [_helicopter, "open"] spawn _fnc_HeliDoors;
+};
 
 _cargoGroup leaveVehicle _helicopter;
 
@@ -175,8 +226,19 @@ private _dismountTime = count units _cargoGroup - 4;
 
 
 _helicopter engineOn true;  ///still keeping the engine running
-sleep _dismountTime;
+
+sleep _dismountTime + 1;
+
 _helicopter engineOn true;  ///we must keep the engine running
+if(canMove _helicopter || alive _driver) then {
+    [_helicopter, "close"] spawn _fnc_HeliDoors;
+};
+
+if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) exitWith {
+    diag_log 11111111111111;
+    _helicopter action ["LandGearUp", _helicopter];
+    [_helicopter, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
+};
 // Heli RTB
 private _vehWP1 = _crewGroup addWaypoint [_originPos, 0];
 _vehWP1 setWaypointType "MOVE";
@@ -187,11 +249,10 @@ _vehWP1 setWaypointBehaviour "CARELESS";
 _crewGroup setCurrentWaypoint _vehWP1;
 waitUntil {sleep 1; (_helicopter distance2D _landPos) > 165};
 for '_i' from 1 to (5 + (round random 2)) do
-    {
-        [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
-        [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
-        [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
-        sleep 1;
-    };
-
+{
+    [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
+    [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
+    [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
+    sleep 1;
+};
 _helicopter action ["LandGearUp", _helicopter];

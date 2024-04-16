@@ -20,40 +20,95 @@
 FIX_LINE_NUMBERS()
 params ["_vehicle", "_crewGroup", "_cargoGroup", "_posDestination", "_markerOrigin", "_landPosBlacklist", ["_isAirdrop", false], "_resPool"];
 
+_vehicle setVehicleRadar 0;
+_vehicle setVehicleReceiveRemoteTargets true;
+_vehicle setVehicleReportRemoteTargets true;
+_vehicle setVehicleReportOwnPosition true;
 
-private _vehType = typeof _vehicle;
+private _vehType = typeOf _vehicle;
+
+private _vtol = "";
+
+if (getNumber (configOf _vehicle >> "vtol") > 0 && _vehType in FactionGet(all,"vehiclesTransportAir")) then {
+    _vtol = _vehType;
+    _vehicle setVehicleRadar 1;
+};
+
 if (_vehicle isKindOf "Air") then
 {
-    if (_vehType in FactionGet(all,"vehiclesHelisTransport") + FactionGet(all,"vehiclesHelisLight")) exitWith
+    if (_vehType in FactionGet(all,"vehiclesHelisTransport") + FactionGet(all,"vehiclesHelisLight") || _vtol != "") exitWith
     {
-        //Transport helicopter
+        //Transport helicopter or VTOL
         _landPos = [_posDestination, 200, 400, 10, 0, 0.12, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
         private _posOrigin = getMarkerPos _markerOrigin;
         _posOrigin set [2, 50];
+        
+        _landPosVTOL = [_posDestination, 300, 600, 10, 0, 0.12, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
 
         {
             if(_x distance2D _landPos < 20) exitWith { _landPos = [0, 0, 0] };
         } forEach _landPosBlacklist;
 
+        {
+            if(_x distance2D _landPosVTOL < 20) exitWith { _landPos = [0, 0, 0] };
+        } forEach _landPosBlacklist;
+
         if !(_landPos isEqualTo [0,0,0]) then
         {
-            _landPos set [2, 0];
-            _landPosBlacklist pushBack _landPos;
-            [_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPos] spawn A3A_fnc_combatLanding;
+            if (_vtol != "") then {
+                _landPosVTOL set [2, 0];
+                _landPosBlacklist pushBack _landPosVTOL;
+                [_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPosVTOL] spawn A3A_fnc_combatLanding;
+            } else {
+                _landPos set [2, 0];
+                _landPosBlacklist pushBack _landPos;
+                [_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPos] spawn A3A_fnc_combatLanding;
+            };
         }
         else
         {
             if ((typeOf _vehicle) in vehFastRope) then {
                 [_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
             } else {
-                [_vehicle, _cargoGroup, _posDestination, _markerOrigin] spawn A3A_fnc_paradrop;
+                if (_vehType in FactionGet(all,"vehiclesTransportAir") && {!(_vehicle isKindOf "Helicopter") && {_isAirdrop}}) then 
+                    {
+                        //Dropship with para units and airdrop veh
+                        [_vehicle, _cargoGroup, _posDestination, _markerOrigin, _resPool] spawn SCRT_fnc_common_paradropVehicle;
+                    } else {
+                        //Dropship with para units
+                        [_vehicle, _cargoGroup, _posDestination, _markerOrigin] spawn A3A_fnc_paradrop;
+                    };
             };
         };
     };
     if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) exitWith 
-    {
-        //Attack helicopter
-        [_vehicle, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
+    {   //Attack helicopter
+        _landPosAttackheli = [_posDestination, 400, 800, 10, 0, 0.12, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
+        private _posOrigin = getMarkerPos _markerOrigin;
+        _posOrigin set [2, 50];
+
+        {
+            if(_x distance2D _landPosAttackheli < 20) exitWith { _landPosAttackheli = [0, 0, 0] };
+        } forEach _landPosBlacklist;
+
+        if (count units _cargoGroup > 3) then {
+            if !(_landPosAttackheli isEqualTo [0,0,0]) then
+            {
+                _landPosAttackheli set [2, 0];
+                _landPosBlacklist pushBack _landPosAttackheli;
+                [_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPosAttackheli] spawn A3A_fnc_combatLanding;
+            }
+            else
+            {
+                if ((typeOf _vehicle) in vehFastRope) then {
+                    [_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
+                } else {
+                    [_vehicle, _cargoGroup, _posDestination, _markerOrigin] spawn A3A_fnc_paradrop;
+                };
+            };
+        } else {
+            [_vehicle, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
+        };
     };
     if (_vehType in FactionGet(all,"vehiclesTransportAir") && {!(_vehicle isKindOf "Helicopter") && {_isAirdrop}}) exitWith 
     {

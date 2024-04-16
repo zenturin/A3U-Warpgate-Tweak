@@ -268,10 +268,16 @@ if (sunOrMoon < 1) then {
 };
 
 //Reveals all air vehicles to the unit, if it is either gunner of a vehicle or equipped with a launcher
-if (_unit == gunner objectParent _unit or {(secondaryWeapon _unit) in allAA}) then
+if (_unit == gunner objectParent _unit) then
 {
     {
         if (!isNull driver _x) then { _unit reveal [_x, 1.5] };
     } forEach (_unit nearEntities ["Air", distanceSPWN*2]);
+};
+if ({(secondaryWeapon _unit) in allAA}) then
+{
+    {
+        if (!isNull driver _x) then { _unit reveal [_x, 1.5] };
+    } forEach (_unit nearEntities ["Air", distanceSPWN*1]);
 };
 ["AIInit", [_unit, _side, _marker, _unit getVariable "spawner"]] call EFUNC(Events,triggerEvent);
