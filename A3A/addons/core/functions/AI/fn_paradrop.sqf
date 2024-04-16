@@ -32,6 +32,8 @@ params
     ["_isReinforcement", false, [false]]
 ];
 
+private _vehType = typeOf _vehicle;
+
 private _groupPilot = group driver _vehicle;
 {
     _x disableAI "TARGET";
@@ -73,11 +75,6 @@ _wp setWaypointSpeed "NORMAL";          // Blackfish cannot turn at limited?
 private _wp1 = _groupPilot addWaypoint [_exitPos, 0];
 _wp1 setWaypointType "MOVE";
 _wp1 setWaypointSpeed "NORMAL";
-
-private _wp2 = _groupPilot addWaypoint [_originPosition, 0];
-_wp2 setWaypointType "MOVE";
-_wp2 setWaypointSpeed "FULL";
-_wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList"];
 
 waitUntil {sleep 1; (currentWaypoint _groupPilot > 0) || (!alive _vehicle) || (!canMove _vehicle)};
 
@@ -123,3 +120,12 @@ if !(_isReinforcement) then
     _wpClear setWaypointType "SAD";
     _groupJumper spawn A3A_fnc_attackDrillAI;
 };
+
+if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) exitWith {
+    [_vehicle, _groupPilot, _targetPosition] spawn A3A_fnc_attackHeli
+};
+
+private _wp2 = _groupPilot addWaypoint [_originPosition, 0];
+_wp2 setWaypointType "MOVE";
+_wp2 setWaypointSpeed "FULL";
+_wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList"];

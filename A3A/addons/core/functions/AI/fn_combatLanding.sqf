@@ -235,7 +235,6 @@ if(canMove _helicopter || alive _driver) then {
 };
 
 if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) exitWith {
-    diag_log 11111111111111;
     _helicopter action ["LandGearUp", _helicopter];
     [_helicopter, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
 };

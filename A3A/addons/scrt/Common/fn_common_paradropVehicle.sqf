@@ -33,6 +33,8 @@ params
     ["_resPool", nil, [""]]
 ];
 
+private _vehType = typeOf _plane;
+
 private _groupPilot = group driver _plane;
 {
     _x disableAI "TARGET";
@@ -78,10 +80,6 @@ private _wp1 = _groupPilot addWaypoint [_exitPos, -1];
 _wp1 setWaypointType "MOVE";
 _wp1 setWaypointSpeed "NORMAL";
 
-private _wp2 = _groupPilot addWaypoint [_originPosition, -1];
-_wp2 setWaypointType "MOVE";
-_wp2 setWaypointSpeed "FULL";
-_wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList"];
 
 waitUntil {sleep 1; (_plane getVariable ["dropPosReached", false]) || {!alive _plane || {!canMove _plane}}};
 
@@ -193,3 +191,12 @@ if(_plane getVariable ["dropPosReached", false] && {!(_plane getVariable ["plane
         _groupJumper spawn A3A_fnc_attackDrillAI;
     };
 };
+
+if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) exitWith {
+    [_plane, _groupPilot, _targetPosition] spawn A3A_fnc_attackHeli
+};
+
+private _wp2 = _groupPilot addWaypoint [_originPosition, -1];
+_wp2 setWaypointType "MOVE";
+_wp2 setWaypointSpeed "FULL";
+_wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList"];
