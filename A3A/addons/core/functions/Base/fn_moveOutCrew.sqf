@@ -56,8 +56,9 @@ if (((side driver _vehicle==  west) || (side _vehicle == east)) && alive driver 
 _veh setVariable ["A3A_moveOutCrew_inProgress",true,false];   */ // Only processed on the server. It is absolutely pointless trying to network this due to race conditions.
 
 if (unitIsUAV _vehicle) then {
-    deleteVehicle _crewdriver;
-    deleteVehicle _crewgunner;
+    {
+        deleteVehicle _x;  
+    } forEach _crewgroup;
 };
 
 {

@@ -95,8 +95,10 @@ if(currentWaypoint _groupPilot > 0) then
             _this moveInDriver _chute;
             private _smokeGrenade = selectRandom allSmokeGrenades;
             private _smoke = _smokeGrenade createVehicle (getPosATL _this);
+            _smoke attachTo [_this,[0,0,0]];
             waitUntil { sleep 1; isTouchingGround _this};
             deleteVehicle _chute;
+            detach _smoke;
         };
         sleep 0.5;
   	} forEach units _groupJumper;

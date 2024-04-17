@@ -17,7 +17,7 @@ params ["_helicopter", "_crewGroup", "_cargoGroup", "_posDestination", "_originP
 
 private _vehType = typeOf _helicopter;
 
-if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) then {
+if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack") + FactionGet(all,"vehiclesPlanesTransport")) then {
     _helicopter setVehicleRadar 1;
 };
 

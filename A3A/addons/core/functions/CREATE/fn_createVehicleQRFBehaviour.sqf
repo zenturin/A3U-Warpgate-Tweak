@@ -67,7 +67,7 @@ if (_vehicle isKindOf "Air") then
         }
         else
         {
-            if ((typeOf _vehicle) in vehFastRope) then {
+            if ((typeOf _vehicle) in vehFastRope || _vtol != "") then {
                 [_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
             } else {
                 if (_vehType in FactionGet(all,"vehiclesTransportAir") && {!(_vehicle isKindOf "Helicopter") && {_isAirdrop}}) then 
