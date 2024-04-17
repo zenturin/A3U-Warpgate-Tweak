@@ -1394,9 +1394,25 @@
             </Key>
             <Key ID="STR_qrf_marker_light_apc">
                 <Original>Light APC</Original>
-                <Russian>лёгкий бронетранспортёр</Russian>
+                <Russian>лёгкий БТР</Russian>
                 <Chinesesimp>轻型装甲运兵车</Chinesesimp>
                 <Korean>경장갑차</Korean>
+            </Key>
+            <Key ID="STR_qrf_marker_artillery">
+                <Original>Artillery</Original>
+                <Russian>артиллерия</Russian>
+            </Key>
+            <Key ID="STR_qrf_marker_ifv">
+                <Original>IFV</Original>
+                <Russian>БМП</Russian>
+            </Key>
+            <Key ID="STR_qrf_marker_airborne">
+                <Original>airborne</Original>
+                <Russian>самоходный зенитный комплекс</Russian>
+            </Key>
+            <Key ID="STR_qrf_marker_ugv">
+                <Original>UGV</Original>
+                <Russian>БПА</Russian>
             </Key>
             <Key ID="STR_qrf_marker_aa">
                 <Original>AA</Original>
