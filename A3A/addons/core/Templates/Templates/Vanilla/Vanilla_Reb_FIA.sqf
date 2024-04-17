@@ -823,7 +823,7 @@ if (_hasRF) then {
 "GreekHead_A3_05","GreekHead_A3_06","GreekHead_A3_07","GreekHead_A3_08",
 "GreekHead_A3_09","GreekHead_A3_10","GreekHead_A3_11","GreekHead_A3_12","GreekHead_A3_13",
 "GreekHead_A3_14","Ioannou","Mavros","Sturrock"]] call _fnc_saveToTemplate;
-["voices", ["Male01GRE", "Male02GRE", "Male03GRE", "Male04GRE", "Male05GRE", "Male06GRE","Male01GREVR"]] call _fnc_saveToTemplate;
+["voices", ["Male01GRE", "Male02GRE", "Male03GRE", "Male04GRE", "Male05GRE", "Male06GRE"]] call _fnc_saveToTemplate;
 
 #include "Vanilla_Reb_Vehicle_Attributes.sqf"
 
