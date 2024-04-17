@@ -12425,72 +12425,84 @@
                 <Russian>Информация о нагрузке ИИ</Russian>
                 <Chinesesimp>AI负载信息</Chinesesimp>
                 <Korean>인공지능 로드 정보</Korean>
+                <French>Informations sur la dotation de l'IA</French>
             </Key>
             <Key ID="STR_A3A_Base_AI_Load_Information_no_hc">
                 <Original>No Headless Client Detected</Original>
                 <Russian>Headless Client'ы не обнаружены</Russian>
                 <Chinesesimp>未找到无头客户端</Chinesesimp>
                 <Korean>헤드리스 클라이언트 검색되지 않음</Korean>
+                <French>Aucun client sans tête n'est détecté</French>
             </Key>
             <Key ID="STR_A3A_Base_AI_Info_String">
                 <Original>%1Rebels: %2&lt;br/&gt;Occupants:%3&lt;br/&gt;Invaders:%4&lt;br/&gt;Civilians:%5&lt;br/&gt;TOTAL:%6&lt;br/&gt;&lt;br/&gt;</Original>
                 <Russian>%1Повстанцы: %2&lt;br/&gt;Оккупанты:%3&lt;br/&gt;Захватчики:%4&lt;br/&gt;Гражданские:%5&lt;br/&gt;ВСЕГО:%6&lt;br/&gt;&lt;br/&gt;</Russian>
                 <Chinesesimp>%抵抗军: %2&lt;br/&gt;占领着:%3&lt;br/&gt;侵略者:%4&lt;br/&gt;平民:%5&lt;br/&gt;总计:%6&lt;br/&gt;&lt;br/&gt;</Chinesesimp>
                 <Korean>%1의 반군: %2&lt;br/&gt;점령군:%3&lt;br/&gt;침략군:%4&lt;br/&gt;민간인:%5&lt;br/&gt;총 수:%6&lt;br/&gt;&lt;br/&gt;</Korean>
+                <French>%1Rebelles: %2&lt;br/&gt;Occupants:%3&lt;br/&gt;Envahisseurs:%4&lt;br/&gt;Civils:%5&lt;br/&gt;TOTAL:%6&lt;br/&gt;&lt;br/&gt;</French>
             </Key>
             <Key ID="STR_A3A_Base_canMoveHq_only_comm">
                 <Original>Commander only</Original>
                 <Russian>Только командир</Russian>
                 <Chinesesimp>仅限指挥官</Chinesesimp>
                 <Korean>지휘관 전용</Korean>
+                <French>Commandant uniquement</French>
             </Key>
             <Key ID="STR_A3A_Base_canMoveHq_arsenal_empty">
                 <Original>You must first empty your Arsenal inventory in order to move the HQ.</Original>
                 <Russian>Сперва вы должны очистить инвентарь ящика с арсеналом чтобы получить возможность двигать штаб.</Russian>
                 <Chinesesimp>首先，您必须清空军械箱的库存才能移动总部。</Chinesesimp>
                 <Korean>본부를 이동하려면 먼저 아스널 재고를 비워야 합니다.</Korean>
+                <French>Vous devez d'abord vider l'inventaire de l'Arsenal pour pouvoir déplacer le QG.</French>
             </Key>
             <Key ID="STR_A3A_Base_canMoveHq_arsenal_empty_2">
                 <Original>Arsenal inventory must be empty</Original>
                 <Russian>Инвентарь арсенала должен быть пустым</Russian>
                 <Chinesesimp>军火库库存必须为空</Chinesesimp>
                 <Korean>아스널 재고는 비어 있어야 합니다.</Korean>
+                <French>L'inventaire d'Arsenal doit être vide</French>
             </Key>
             <Key ID="STR_A3A_Base_canMoveHq_arsenal_petros_picked">
                 <Original>Put Petros down before you move the HQ!</Original>
                 <Russian>Положите Петроса на место прежде чем двигать штаб!</Russian>
                 <Chinesesimp>搬总部之前先把Petros放下！</Chinesesimp>
                 <Korean>본부를 옮기기 전에 백두로를 내려놓으십시오!</Korean>
+                <French>Déposez Petros avant de déplacer le QG !</French>
             </Key>
             <Key ID="STR_A3A_Base_canMoveHq_arsenal_petros_picked_2">
                 <Original>Petros currently picked up</Original>
                 <Russian>Петрос в настоящее время поднят</Russian>
                 <Chinesesimp>Petros目前正被拾起</Chinesesimp>
                 <Korean>페트로스는 현재 픽업되고 있습니다</Korean>
+                <French>Petros est actuellement levé</French>
             </Key>
             <Key ID="STR_A3A_Base_commsMp_download_error">
                 <Original>Download error:&lt;br/&gt;%1</Original>
                 <Russian>Ошибка скачивания:&lt;br/&gt;%1</Russian>
                 <Chinesesimp>下载错误：:&lt;br/&gt;%1</Chinesesimp>
                 <Korean>다운로드 오류:&lt;br/&gt;%1</Korean>
+                <French>Erreur de téléchargement:&lt;br/&gt;%1</French>
             </Key>
             <Key ID="STR_A3A_Base_commsMp_countdown_header">
                 <Original>Countdown</Original>
                 <Russian>Обратный отсчёт</Russian>
                 <Chinesesimp>倒计时</Chinesesimp>
                 <Korean>카운트다운</Korean>
+                <French>Décompte</French>
             </Key>
             <Key ID="STR_A3A_Base_commsMp_countdown_desc">
                 <Original>Time Remaining: %1 secs</Original>
                 <Russian>Осталось: %1 сек.</Russian>
                 <Chinesesimp>剩余时间：%1 秒</Chinesesimp>
                 <Korean>남은 시간: %1초</Korean>
+                <French>Temps restant: %1 secs</French>
             </Key>
             <Key ID="STR_A3A_Base_commsMp_unlock_tier_general">
                 <Original>&lt;br/&gt;&lt;t size='0.6'&gt;Rebel vehicles stock has been updated with new vehicles.&lt;/t&gt;</Original>
                 <Russian>&lt;br/&gt;&lt;t size='0.6'&gt;В магазине техники в штабе появились новые позиции.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;t size='0.6'&gt;抵抗军载具库更新了新的载具。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;t size='0.6'&gt;새 차량으로 아군 차량 재고가 업데이트되었습니다.&lt;/t&gt;</Korean>
+                <French>&lt;br/&gt;&lt;t size='0.6'&gt;Le stock de véhicules Rebel a été mis à jour avec de nouveaux véhicules.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_A3A_Base_commsMp_unlock_tier3_theBoss">
                 <Original>&lt;br/&gt;&lt;t size='0.6'&gt;Roadblocks are available for building, MG squads and teams are available for recruitment.&lt;/t&gt;</Original>
@@ -12504,270 +12516,316 @@
                 <Russian>&lt;br/&gt;&lt;t size='0.6'&gt;Зенитные и противотанковые огневые точки доступны для постройки, также появляется возможность нанимать ПВО/ПТ-расчёты и отряды.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;t size='0.6'&gt;;防空/反坦克阵地可建设，防空/反坦克班及小队可招募。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;t size='0.6'&gt;대공, 대전차화기 포대를 지을 수 있고, 대공/대전차화기 분대와 팀을 모집할 수 있습니다.&lt;/t&gt;</Korean>
+                <French>&lt;br/&gt;&lt;t size='0.6'&gt;Les emplacements AA, AT sont disponibles à la construction, les escouades et équipes AA/AT sont disponibles au recrutement.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_A3A_Base_commsMp_unlock_tier5_theBoss">
                 <Original>&lt;br/&gt;&lt;t size='0.6'&gt;Mortar teams are available for recruitment.&lt;/t&gt;</Original>
                 <Russian>&lt;br/&gt;&lt;t size='0.6'&gt;Миномётные расчёты доступны для найма.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;t size='0.6'&gt;迫击炮小队开放招募。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;t size='0.6'&gt;박격포 팀을 모집할 수 있습니다.&lt;/t&gt;</Korean>
+                <French>&lt;br/&gt;&lt;t size='0.6'&gt;Des équipes de mortiers sont disponibles pour le recrutement.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_A3A_Base_commsMp_unlock_support_points">
                 <Original>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;Non-offensive support actions are available (Commander Menu).&lt;/t&gt;</Original>
                 <Russian>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;Доступны ненаступательные действия поддержки (меню командира).&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;可用的非进攻性支援行动（指挥官菜单）&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;비-공격적 지원 행동을 사용할 수 있습니다. (지휘관 메뉴)&lt;/t&gt;</Korean>
+                <French>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;Des actions de soutien non offensives sont disponibles (menu du commandant).&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_A3A_Base_commsMp_idap">
                 <Original>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;Resistance has been recognized by &lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt;, a third party humanitarian organization and agreement has been made - &lt;br/&gt;&lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt; will pay &lt;t size='0.6' color='#008000'&gt;%1&lt;/t&gt; for freeing &lt;t size='0.6' color='#0033CC'&gt;%2&lt;/t&gt; soldiers.&lt;/t&gt;</Original>
                 <Russian>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;К сопротивлению на контакт вышла организация &lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt; - некоммерческая гуманитарная организация. При её посредничестве было заключено соглашение - &lt;br/&gt;&lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt; будет платить &lt;t size='0.6' color='#008000'&gt;%1&lt;/t&gt; за освобождение сдавшихся солдат &lt;t size='0.6' color='#0033CC'&gt;%2&lt;/t&gt;.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;抵抗运动得到了 &lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt;, 一个第三方人道主义组织的认可，并达成了协议—— &lt;br/&gt;&lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt; 将支付 &lt;t size='0.6' color='#008000'&gt;%1&lt;/t&gt; 以释放 &lt;t size='0.6' color='#0033CC'&gt;%2&lt;/t&gt; 名投降的士兵.&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;반군은 &lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt;에 의해 제3자 인도주의 단체로 인정받았고 합의가 이루어졌으며, &lt;br/&gt;&lt;t size='0.6' color='#FFA500'&gt;IDAP&lt;/t&gt;은 &lt;t size='0.6' color='#0033CC'&gt;%2&lt;/t&gt;명의 군인을 석방하는 데 &lt;t size='0.6' color='#008000'&gt;%1&lt;/t&gt;를 받았습니다.&lt;/t&gt;</Korean>
+                <French>&lt;br/&gt;&lt;br/&gt;&lt;t size='0.6'&gt;La résistance a été reconnue par &lt;t size='0.6' color='#FFA500'&gt;l'IDAP&lt;/t&gt;, une organisation humanitaire tierce et un accord a été conclu - &lt;br/&gt;&lt;t size='0.6' color='#FFA500'&gt;l'IDAP&lt;/t&gt; paiera &lt;t size='0.6' color='#008000'&gt;%1&lt;/t&gt; pour la libération &lt;t size='0.6' color='#0033CC'&gt;%2&lt;/t&gt; des soldats.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_A3A_Base_moveHq_garrison_1">
                 <Original>HQ Garrison will stay here and distract the enemy.</Original>
                 <Russian>Гарнизон штаба останется здесь и отвлечёт врага.</Russian>
                 <Chinesesimp>总部驻军将留在这里分散敌人的注意力。</Chinesesimp>
                 <Korean>본부의 주둔군이 이 곳에 머물며 적들의 주의를 분산시킬 것입니다.</Korean>
+                <French>Le QG de la garnison restera ici et distraira l'ennemi.</French>
             </Key>
             <Key ID="STR_A3A_Base_moveHq_garrison_2">
                 <Original>HQ Garrison removed&lt;br/&gt;&lt;br/&gt;Recovered Money: %1%3&lt;br/&gt;Recovered HR: %2</Original>
                 <Russian>Гарнизон штаба расформирован&lt;br/&gt;&lt;br/&gt;Возвращённые деньги: %1%3&lt;br/&gt;Возвращённые людские ресурсы: %2</Russian>
                 <Chinesesimp>总部驻军解散&lt;br/&gt;&lt;br/&gt;返还金钱：%1%3&lt;br/&gt;返还人力：%2</Chinesesimp>
                 <Korean>본부의 주둔군이 제거되었습니다&lt;br/&gt;&lt;br/&gt;회수된 자금: %1%3&lt;br/&gt;회수된 인력: %2</Korean>
+                <French>Garnison du QG supprimée&lt;br/&gt;&lt;br/&gt;Argent récupéré: %1%3&lt;br/&gt;RH récupérées: %2</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_header">
                 <Original>Breach Vehicle</Original>
                 <Russian>Вскрытие техники</Russian>
                 <Chinesesimp>攻破载具</Chinesesimp>
                 <Korean>차량 브리칭</Korean>
+                <French>Violation de véhicule</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_only_players">
                 <Original>Only players are able to breach vehicles.</Original>
                 <Russian>Только игроки могут вскрывать технику.</Russian>
                 <Chinesesimp>只有玩家才能破坏载具。</Chinesesimp>
                 <Korean>플레이어만 차량을 브리칭할 수 있습니다.</Korean>
+                <French>Seuls les joueurs peuvent ouvrir des brèches dans les véhicules.</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_only_engie">
                 <Original>You have to be an engineer to breach a vehicle.</Original>
                 <Russian>Вы должны быть инженером или командиром для вскрытия техники.</Russian>
                 <Chinesesimp>您必须是工程师或指挥官才能解锁车辆。</Chinesesimp>
                 <Korean>차량을 브리칭하려면 공병이 필요합니다.</Korean>
+                <French>Il faut être ingénieur pour ouvrir une brèche dans un véhicule.</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_only_alive">
                 <Original>Only non-destroyed vehicles can be breached.</Original>
                 <Russian>Только неуничтоженная техника может быть вскрыта.</Russian>
                 <Chinesesimp>只有未被摧毁的载具才能被攻破。</Chinesesimp>
                 <Korean>파괴되지 않은 차량만 브리칭할 수 있습니다.</Korean>
+                <French>Seuls les véhicules non détruits peuvent être pénétrés.</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_no_crew">
                 <Original>There is no living crew left, no need for breaching.</Original>
                 <Russian>Внутри никто не сидит, нет нужды вскрывать технику.</Russian>
                 <Chinesesimp>没有活着的船员，没有攻破的必要。</Chinesesimp>
                 <Korean>살아 있는 승무원이 없기 때문에 브리칭할 필요 없습니다.</Korean>
+                <French>Il n'y a plus d'équipage vivant, il n'est pas nécessaire de faire une brèche.</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_only_nonrebels">
                 <Original>You can't breach a vehicle which is controlled by the rebels.</Original>
                 <Russian>Вы не можете вскрывать технику, принадлежащую нашей стороне.</Russian>
                 <Chinesesimp>你不能破坏由抵抗军控制的车辆。</Chinesesimp>
                 <Korean>아군이 조종하는 차량은 브리칭할 수 없습니다.</Korean>
+                <French>Il n'est pas possible d'ouvrir une brèche dans un véhicule contrôlé par les rebelles.</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_no_explosives">
                 <Original>You carry no explosives. You will need some to breach vehicles.</Original>
                 <Russian>У вас с собой нет взрывчатки, которая необходима, чтобы вскрывать технику.</Russian>
                 <Chinesesimp>你没有打开载具所需的炸药。</Chinesesimp>
                 <Korean>폭발물을 가지고 있지 않습니다. 차량을 브리칭하려면 몇 개가 필요합니다.</Korean>
+                <French>Vous ne transportez pas d'explosifs. Vous en aurez besoin pour ouvrir une brèche dans les véhicules.</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_no_right_explosives">
                 <Original>You don't have the right explosives, check the briefing notes to see what you need!</Original>
                 <Russian>У вас с собой нет нужного вида взрывчатки, посмотрите во вкладке брифинга какая именно требуется (взрывпакеты).</Russian>
                 <Chinesesimp>您没有随身携带所需的炸药类型，请在简报标签中查找您需要的炸药（炸药包）。</Chinesesimp>
                 <Korean>적절한 폭발물이 없습니다. 필요한 것을 확인하려면 브리핑 노트를 확인하십시오!</Korean>
+                <French>Tu n'as pas les bons explosifs, vérifie les notes de briefing pour savoir ce qu'il te faut !</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_canceled">
                 <Original>Breaching cancelled.</Original>
                 <Russian>Вскрытие техники отменено.</Russian>
                 <Chinesesimp>攻破载具取消</Chinesesimp>
                 <Korean>브리칭이 취소되었습니다.</Korean>
+                <French>Brèche annulée.</French>
             </Key>
             <Key ID="STR_A3A_Base_breachVeh_timer">
                 <Original>Breaching in 10 seconds.</Original>
                 <Russian>Вскрытие техники в течение 10 секунд.</Russian>
                 <Chinesesimp>10秒攻破</Chinesesimp>
                 <Korean>10초 후에 돌파합니다.</Korean>
+                <French>Brèche dans 10 secondes.</French>
             </Key>
             <Key ID="STR_A3A_Base_mrkWin_header">
                 <Original>Capture</Original>
                 <Russian>Захват</Russian>
                 <Chinesesimp>伪装</Chinesesimp>
                 <Korean>점령</Korean>
+                <French>Capture</French>
             </Key>
             <Key ID="STR_A3A_Base_mrkWin_noundercover">
                 <Original>You can't capture the zone while being undercovered.</Original>
                 <Russian>Вы не можете захватывать локации будучи под маскировкой.</Russian>
                 <Chinesesimp>伪装时无法占领位置。</Chinesesimp>
                 <Korean>잠복 중에는 구역을 점령할 수 없습니다.</Korean>
+                <French>On ne peut pas s'emparer de la zone tout en étant sous-couvert.</French>
             </Key>
             <Key ID="STR_A3A_Base_mrkWin_noairpwl3">
                 <Original>You can't capture airbases until you reach War Level 3.</Original>
                 <Russian>Вы не можете захватывать авиабазы до 3-го Уровня Войны.</Russian>
                 <Chinesesimp>只有达到战争等级 3 才能占领空军基地。</Chinesesimp>
                 <Korean>전쟁 레벨 3에 도달하기 전까진 공군 기지를 점령할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas capturer de bases aériennes tant que vous n'avez pas atteint le niveau de guerre 3.</French>
             </Key>
             <Key ID="STR_A3A_Base_mrkWin_nomilwl3">
                 <Original>You can't capture military bases until you reach War Level 3.</Original>
                 <Russian>Вы не можете захватывать военные базы до 3-го Уровня Войны.</Russian>
                 <Chinesesimp>战争等级达到 3 级后才能占领军事基地。</Chinesesimp>
                 <Korean>전쟁 레벨 3에 도달하기 전까진 군사 기지를 점령할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas capturer de bases militaires avant d'avoir atteint le niveau de guerre 3.</French>
             </Key>
             <Key ID="STR_A3A_Base_mrkWin_flagpole_used">
                 <Original>Flag pole being used, wait %1.</Original>
                 <Russian>Флагшток был использован, подождите %1.</Russian>
                 <Chinesesimp>旗杆已被使用，请稍候%1。</Chinesesimp>
                 <Korean>깃대가 사용 중에 있습니다. %1을(를) 기다리십시오.</Korean>
+                <French>Poteau de drapeau utilisé, attendre %1.</French>
             </Key>
             <Key ID="STR_A3A_Base_mrkWin_nearenemy">
                 <Original>The enemy still lurks around. Clear the area from them.</Original>
                 <Russian>Враг всё ещё рядом в округе. Очистите территорию вокруг от присутствия врага.</Russian>
                 <Chinesesimp>敌人还在附近。 清除周围区域的敌人。</Chinesesimp>
                 <Korean>적이 여전히 주변에 잠복해 있습니다. 구역을 청소하십시오.</Korean>
+                <French>L'ennemi rôde toujours dans les parages. Débarrassez-en la zone.</French>
             </Key>
             <Key ID="STR_A3A_Base_mrkWin_abort">
                 <Original>Abort Capture</Original>
                 <Russian>Отменить захват</Russian>
                 <Chinesesimp>撤消伪装</Chinesesimp>
                 <Korean>점령 취소</Korean>
+                <French>Abandonner la capture</French>
             </Key>
             <Key ID="STR_A3A_Base_mrkWin_abort_2">
                 <Original>Aborted capture.</Original>
                 <Russian>Захват отменён.</Russian>
                 <Chinesesimp>取消伪装</Chinesesimp>
                 <Korean>점령이 최소되었습니다.</Korean>
+                <French>Capture interrompue</French>
             </Key>
             <Key ID="STR_A3A_Base_unlockVehicle_header">
                 <Original>Unlock Vehicle</Original>
                 <Russian>Разблокировка техники</Russian>
                 <Chinesesimp>解锁载具</Chinesesimp>
                 <Korean>차량 잠금해제</Korean>
+                <French>Déverrouiller le véhicule</French>
             </Key>
             <Key ID="STR_A3A_Base_unlockVehicle_cantunlock">
                 <Original>Sorry, but you can't unlock %1.</Original>
                 <Russian>Извините, но вы не можете разблокировать %1.</Russian>
                 <Chinesesimp>抱歉，您无法解锁 %1。</Chinesesimp>
                 <Korean>%1의 잠금을 해제할 수 없습니다.</Korean>
+                <French>Désolé, mais vous ne pouvez pas déverrouiller %1.</French>
             </Key>
             <Key ID="STR_A3A_Base_unlockVehicle_noallveh">
                 <Original>The vehicle you are looking at can't be used.</Original>
                 <Russian>Транспортное средство, на которое вы смотрите, не может быть использовано.</Russian>
                 <Chinesesimp>您正在查看的载具无法解锁无法使用。</Chinesesimp>
                 <Korean>당신이 보고 있는 차량은 사용할 수 없습니다.</Korean>
+                <French>Le véhicule que vous recherchez ne peut pas être utilisé.</French>
             </Key>
             <Key ID="STR_A3A_Base_unlockVehicle_noowner">
                 <Original>The vehicle you are looking doesn't belong to anyone.</Original>
                 <Russian>Транспортное средство, на которое вы смотрите, никому не принадлежит.</Russian>
                 <Chinesesimp>您正在查看的载具不属于任何人。</Chinesesimp>
                 <Korean>당신이 보고 있는 차량은 누구의 것도 아닙니다.</Korean>
+                <French>Le véhicule que vous recherchez n'appartient à personne.</French>
             </Key>
             <Key ID="STR_A3A_Base_unlockVehicle_wrongowner">
                 <Original>You can't unlock/lock vehicles which you do not own.</Original>
                 <Russian>Вы не можете блокировать/разблокировать не принадлежащие вам транспортные средства.</Russian>
                 <Chinesesimp>您无法解锁/锁定不属于您的载具。</Chinesesimp>
                 <Korean>소유하지 않은 차량은 잠금/해제할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas déverrouiller/verrouiller des véhicules dont vous n'êtes pas propriétaire.</French>
             </Key>
             <Key ID="STR_A3A_Base_unlockVehicle_lock_success">
                 <Original>Vehicle has been locked.</Original>
                 <Russian>Траснпортное средство было заблокировано.</Russian>
                 <Chinesesimp>祝好运已被锁</Chinesesimp>
                 <Korean>차량이 잠겼습니다.</Korean>
+                <French>Le véhicule a été verrouillé.</French>
             </Key>
             <Key ID="STR_A3A_Base_unlockVehicle_unlock_success">
                 <Original>Vehicle has been unlocked.</Original>
                 <Russian>Траснпортное средство было разблокировано.</Russian>
                 <Chinesesimp>载具已解锁</Chinesesimp>
                 <Korean>차량이 잠금해제되었습니다.</Korean>
+                <French>Le véhicule a été déverrouillé.</French>
             </Key>
             <Key ID="STR_A3A_Base_placementselection_header">
                 <Original>HQ Position</Original>
                 <Russian>Местоположение штаба</Russian>
                 <Chinesesimp>总部所在地</Chinesesimp>
                 <Korean>본부 위치</Korean>
+                <French>Position du QG</French>
             </Key>
             <Key ID="STR_A3A_Base_placementselection_too_close_enemy_zones">
                 <Original>Selected place is too close to enemy zones.</Original>
                 <Russian>Выбранное местоположение слишком близко к вражеским локациям.</Russian>
                 <Chinesesimp>所选位置离敌人位置太近。</Chinesesimp>
                 <Korean>선택한 장소가 적 구역과 너무 가깝습니다.</Korean>
+                <French>Le lieu choisi est trop proche des zones ennemies.</French>
             </Key>
             <Key ID="STR_A3A_Base_placementselection_not_water">
                 <Original>Selected position cannot be in water.</Original>
                 <Russian>Выбранная позиция не может быть в воде.</Russian>
                 <Chinesesimp>所选位置不能在水中</Chinesesimp>
                 <Korean>선택한 위치는 물에 있을 수 없습니다.</Korean>
+                <French>La position sélectionnée ne peut pas être dans l'eau.</French>
             </Key>
             <Key ID="STR_A3A_Base_placementselection_oob">
                 <Original>Selected position cannot be outside the map.</Original>
                 <Russian>Выбранная позиция не может быть за пределами карты.</Russian>
                 <Chinesesimp>所选位置不能在地图外</Chinesesimp>
                 <Korean>선택한 위치는 지도 외부에 있을 수 없습니다.</Korean>
+                <French>La position sélectionnée ne peut pas être en dehors de la carte.</French>
             </Key>
             <Key ID="STR_A3A_Base_placementselection_enemies">
                 <Original>There are enemies in the surroundings of that area, please select another.</Original>
                 <Russian>Выбранная позиция не может быть за пределами карты.</Russian>
                 <Chinesesimp>该区域周围有敌人，请选择其他区域。</Chinesesimp>
                 <Korean>해당 지역 주변에 적이 있습니다. 다른 곳을 선택하십시오.</Korean>
+                <French>Il y a des ennemis dans les environs de cette zone, veuillez en sélectionner une autre.</French>
             </Key>
             <Key ID="STR_A3A_Base_sellVehicle_header">
                 <Original>Sell Vehicle</Original>
                 <Russian>Продажа техники</Russian>
                 <Chinesesimp>卖载具</Chinesesimp>
                 <Korean>차량 판매</Korean>
+                <French>Vendre un véhicule</French>
             </Key>
             <Key ID="STR_A3A_Base_moveOutCrew_header">
                 <Original>Move out crew</Original>
                 <Russian>Выгнать экипаж из техники</Russian>
+                <French>Expulser l'équipage du véhicule</French>
             </Key>
             <Key ID="STR_A3A_Base_moveOutCrew_err0">
                 <Original>Vehicle must contain rebel crew or civillian crew.</Original>
                 <Russian>В транспортном средстве должен находиться экипаж повстанцев или гражданских.</Russian>
+                <French>Le véhicule doit contenir un équipage rebelle ou civil.</French>
             </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err0">
                 <Original>Vehicle must be closer than 50 meters to the headquarters marker.</Original>
                 <Russian>Техника должна быть ближе 50 метров чтобы её можно было продать.</Russian>
                 <Chinesesimp>载具距离总部标志必须小于50米。</Chinesesimp>
                 <Korean>차량은 본부 마커로부터 반경 50m 이하에 있어야 합니다.</Korean>
+                <French>Le véhicule doit être à moins de 50 mètres du quartier général.</French>
             </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err1">
                 <Original>Vehicle must be empty.</Original>
                 <Russian>Техника должна быть пустой.</Russian>
                 <Chinesesimp>载具必须是空的。</Chinesesimp>
                 <Korean>차량이 비어 있어야 합니다.</Korean>
+                <French>Le véhicule doit être vide.</French>
             </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err2">
                 <Original>You're not the owner of this vehicle.</Original>
                 <Russian>Вы не владелец данного транспортного средства.</Russian>
                 <Chinesesimp>你不是这载具的车主</Chinesesimp>
                 <Korean>이 차량의 소유자가 아닙니다.</Korean>
+                <French>Vous n'êtes pas le propriétaire de ce véhicule.</French>
             </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err3">
                 <Original>Vehicle sale already in progress.</Original>
                 <Russian>Продажа этого транспортного средства уже в процессе.</Russian>
                 <Chinesesimp>载具销售已经在进行中。</Chinesesimp>
                 <Korean>차량 판매가 이미 진행 중입니다.</Korean>
+                <French>La vente du véhicule est déjà en cours.</French>
             </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err4">
                 <Original>The vehicle you are looking is not suitable in our marketplace.</Original>
                 <Russian>Транспортное средство, на которое вы смотрите, не подходит для продажи.</Russian>
                 <Chinesesimp>您正在查看的载具不符合销售条件。</Chinesesimp>
                 <Korean>당신이 보고 있는 차량은 우리 시장에 적합하지 않습니다.</Korean>
+                <French>Le véhicule que vous recherchez n'est pas adapté à notre marché.</French>
             </Key>
             <Key ID="STR_A3A_Base_sellVehicle_success">
                 <Original>Vehicle Sold.</Original>
                 <Russian>Транспортное средство продано.</Russian>
                 <Chinesesimp>载具已出售</Chinesesimp>
                 <Korean>차량 판매 완료.</Korean>
+                <French>Véhicule vendu.</French>
             </Key>
             <Key ID="STR_A3A_Base_moveOutCrew_success">
                 <Original>Crew moved out.</Original>
                 <Russian>Экипаж покинул технику.</Russian>
+                <French>L'équipage a abandonné le véhicule.</French>
             </Key>
         </Container>
         <Container name="A3A_CREATE">
@@ -12808,126 +12866,147 @@
                 <Russian>Логистика</Russian>
                 <Chinesesimp>物流</Chinesesimp>
                 <Korean>병참</Korean>
+                <French>Logistique</French>
             </Key>
             <Key ID="STR_A3A_Logistics_unload_nostatic">
                 <Original>Can't unload a static that's mounted.</Original>
                 <Russian>Невозможно выгрузить стационарное орудие, за которым кто-то сидит.</Russian>
                 <Chinesesimp>无法卸载有人的固定武器。</Chinesesimp>
                 <Korean>마운트된 고정화기는 내릴 수 없습니다.</Korean>
+                <French>Impossible de décharger un statique monté.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_unload_already">
                 <Original>Cargo is already being unloaded from the vehicle.</Original>
                 <Russian>Груз уже выгружается из транспортного средства.</Russian>
                 <Chinesesimp>货物已经从车上卸下了</Chinesesimp>
                 <Korean>화물을 이미 차량에서 내리고 있습니다.</Korean>
+                <French>La cargaison est déjà en train d'être déchargée du véhicule.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_novehclose">
                 <Original>No vehicle is close enough.</Original>
                 <Russian>Поблизости нет техники, которая была бы достаточно близка.</Russian>
                 <Chinesesimp>附近没有足够近的载具。</Chinesesimp>
                 <Korean>충분히 가까운 차량이 없습니다.</Korean>
+                <French>Aucun véhicule n'est assez proche.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_nodestroyedveh">
                 <Original>You can't load cargo into a destroyed vehicle.</Original>
                 <Russian>Вы не можете загрузить груз в уничтоженное транспортное средство.</Russian>
                 <Chinesesimp>你不能将货物装载到被摧毁的载具上。</Chinesesimp>
                 <Korean>파괴된 차량에는 화물을 적재할 수 없습니다.</Korean>
+                <French>Les véhicules détruits ne peuvent pas être chargés.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_nodestroyedcargo">
                 <Original>You can't load destroyed cargo into a vehicle.</Original>
                 <Russian>Вы не можете загрузить уничтоженный груз в транспортное средство.</Russian>
                 <Chinesesimp>您不能将损坏的货物装载到载具中。</Chinesesimp>
                 <Korean>파괴된 화물은 차량에 적재할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas charger une cargaison détruite dans un véhicule.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_itemcantbeloaded">
                 <Original>%1 cannot be loaded.</Original>
                 <Russian>%1 не может быть загружен.</Russian>
                 <Chinesesimp>无法装载%1。</Chinesesimp>
                 <Korean>%1을(를) 로드할 수 없습니다.</Korean>
+                <French>%1 ne peut pas être chargé.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_nomountedstatic">
                 <Original>Can't load a static that's mounted.</Original>
                 <Russian>Невозможно загрузить стационарное орудие, за которым кто-то сидит.</Russian>
                 <Chinesesimp>无法装载有人的固定武器。</Chinesesimp>
                 <Korean>마운트된 고정화기는 적재할 수 없습니다.</Korean>
+                <French>Impossible de charger une statique montée.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_incompat">
                 <Original>%1 can not be mounted on a %2.</Original>
                 <Russian>%1 не может быть установлен на %2.</Russian>
                 <Chinesesimp>%1 不能装进 %2 里。</Chinesesimp>
                 <Korean>%1을(를) %2에 마운트할 수 없습니다.</Korean>
+                <French>%1 ne peut pas être monté sur un %2.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_alreadyhelped">
                 <Original>%1 is being helped or no longer needs your help.</Original>
                 <Russian>%1'у  уже кто-то помогает или ему больше не требуется помощь.</Russian>
                 <Chinesesimp>%1 已经在帮助某人或不再需要帮助。</Chinesesimp>
                 <Korean>%1이(가) 도움을 받고 있거나 더 이상 필요하지 않습니다.</Korean>
+                <French>%1 est aidé ou n'a plus besoin de votre aide.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_unableToLoad">
                 <Original>%1 is unable to load any cargo.</Original>
                 <Russian>%1 не может принять какой-либо груз.</Russian>
                 <Chinesesimp>%1 无法装载任何货物。</Chinesesimp>
                 <Korean>%1은(는) 화물을 적재할 수 없습니다.</Korean>
+                <French>%1 n'est pas en mesure de charger une cargaison.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_not_enough_space">
                 <Original>%1 does not have enough space to load %2.</Original>
                 <Russian>У %1 недостаточно места для того чтобы загрузить %2.</Russian>
                 <Chinesesimp>%1 没有足够的空间来加载 %2。</Chinesesimp>
                 <Korean>%1에 공간이 부족하여 %2을(를) 적재할 수 없습니다.</Korean>
+                <French>%1 n'a pas assez d'espace pour charger %2.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_tryLoad_blocking_plane_cargo">
                 <Original>%1 can not load cargo while units are blocking the cargo plane.</Original>
                 <Russian>%1 не может принять груз пока соладты блокируют плоскости логистики в транспортном средстве.</Russian>
                 <Chinesesimp>有单位挡住货物时，%1无法装货。</Chinesesimp>
                 <Korean>%1은(는) 유닛이 막고 있는 동안에는 화물을 적재할 수 없습니다.</Korean>
+                <French>%1 ne peut pas charger de cargaison alors que des unités bloquent l'avion cargo.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_load_alreadyloading">
                 <Original>Cargo is already being loaded into the vehicle.</Original>
                 <Russian>Груз уже загружается в транспортное средство.</Russian>
                 <Chinesesimp>货物已经装上车了。</Chinesesimp>
                 <Korean>화물이 이미 차량에 적재되는 중입니다.</Korean>
+                <French>La cargaison est déjà en train d'être chargée dans le véhicule.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_addWeaponAction_staticoccupied">
                 <Original>Someone is already in the static.</Original>
                 <Russian>Кто-то уже сидит в стационарном орудии.</Russian>
                 <Chinesesimp>有人已经坐在固定武器里了。</Chinesesimp>
                 <Korean>누군가가 이미 고정화기에 있습니다.</Korean>
+                <French>Quelqu'un est déjà dans la statique.</French>
             </Key>
             <Key ID="STR_A3A_Logistics_addOrRemoveObjectMass_1">
                 <Original>&lt;t color='#00fff3'&gt;"%1" was loaded onto "%2". There is no more space.&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#00fff3'&gt;"%1" загружен в "%2". Места больше нет.&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#00fff3'&gt;”%1”被加载到“%2”上。 没有更多的空间了。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#00fff3'&gt;"%1"이(가) "%2"에 적재되었습니다. 더 이상 공간이 없습니다.&lt;/t&gt;</Korean>
+                <French>&lt;t color='#00fff3'&gt;"%1" a été chargé à partir de "%2". Il n'y a plus d'espace.&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_A3A_Logistics_addOrRemoveObjectMass_2">
                 <Original>&lt;t color='#00fff3'&gt;"%1" was loaded onto "%2". Free slots: "%3".&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#00fff3'&gt;"%1" загружен в "%2". Свободных слотов логистики: "%3".&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#00fff3'&gt;“%1”被加载到“%2”上。 空闲插槽：“%3”。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#00fff3'&gt;"%1"이(가) "%2"에 적재되었습니다. 가능한 슬롯은 "%3"입니다.&lt;/t&gt;</Korean>
+                <French>&lt;t color='#00fff3'&gt;"%1" a été chargé à partir de "%2". Emplacements libres: "%3".&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_A3A_Logistics_addOrRemoveObjectMass_3">
                 <Original>&lt;t color='#00fff3'&gt;"%1" was unloaded from "%2". Free slots: "%3".&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#00fff3'&gt;"%1" разгружен из "%2". Свободных слотов логистики: "%3".&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t color='#00fff3'&gt;“%1”已从“%2”卸载。 空闲插槽：“%3”。&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#00fff3'&gt;"%1"이(가) "%2"로부터 내려졌습니다. 가능한 슬롯은 "%3"입니다.&lt;/t&gt;</Korean>
+                <French>&lt;t color='#00fff3'&gt;"%1"a été déchargé de "%2". Emplacements libres: "%3".&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_A3A_Logistics_addOrRemoveObjectMass_additive_1">
                 <Original>Default Mass</Original>
                 <Russian>Стандартная масса</Russian>
                 <Chinesesimp>初始重量</Chinesesimp>
                 <Korean>기본 적재량</Korean>
+                <French>Chargement de la cargaison</French>
             </Key>
             <Key ID="STR_A3A_Logistics_addOrRemoveObjectMass_additive_2">
                 <Original>Cargo Mass</Original>
                 <Russian>Масса груза</Russian>
                 <Chinesesimp>货物重量</Chinesesimp>
                 <Korean>화물 적재량</Korean>
+                <French>Chargement de la cargaison</French>
             </Key>
             <Key ID="STR_A3A_Logistics_addOrRemoveObjectMass_additive_3">
                 <Original>Current Mass</Original>
                 <Russian>Текущая масса</Russian>
                 <Chinesesimp>当前重量</Chinesesimp>
                 <Korean>현재 적재량</Korean>
+                <French>Charge actuelle</French>
             </Key>
         </Container>
     </Package>
