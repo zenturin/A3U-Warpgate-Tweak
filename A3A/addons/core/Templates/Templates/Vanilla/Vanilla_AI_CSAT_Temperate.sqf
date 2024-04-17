@@ -91,7 +91,7 @@ if (_hasLawsOfWar) then {
 };
 
 ["staticMGs", ["O_HMG_01_high_F","I_HMG_02_high_F"]] call _fnc_saveToTemplate;
-["staticAT", ["O_static_AT_F"]] call _fnc_saveToTemplate;
+["staticAT", ["O_static_AT_F","O_GMG_01_high_F"]] call _fnc_saveToTemplate;
 ["staticAA", ["O_static_AA_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["O_Mortar_01_F"]] call _fnc_saveToTemplate;
 private _howitzers = [];

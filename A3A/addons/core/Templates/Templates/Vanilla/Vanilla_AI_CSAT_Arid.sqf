@@ -93,7 +93,7 @@ if (_hasLawsOfWar) then {
 };
 
 ["staticMGs", ["I_HMG_02_high_F","O_HMG_01_high_F"]] call _fnc_saveToTemplate;
-["staticAT", ["O_static_AT_F"]] call _fnc_saveToTemplate;
+["staticAT", ["O_static_AT_F","O_GMG_01_high_F"]] call _fnc_saveToTemplate;
 private _staticAA = ["O_static_AA_F"];
 ["staticMortars", ["O_Mortar_01_F"]] call _fnc_saveToTemplate;
 private _howitzers = [];
@@ -203,9 +203,9 @@ if (_hasWs) then {
     ["O_SFIA_Truck_02_aa_lxWS", ["Opfor",1]],
     ["O_SFIA_ZU23_lxWS", ["hex",1]],
     ["I_Truck_02_MRL_F", ["Opfor", 1]],
-    ["O_Heli_Transport_04_bench_F", ["Black", 0.4, "Opfor", 0.6]],
-    ["O_Heli_Transport_04_covered_F", ["Black", 0.4, "Opfor", 0.6]],
-    ["O_Heli_Attack_02_dynamicLoadout_F", ["Black", 0.4, "Opfor", 0.6]],
+    ["O_Heli_Transport_04_bench_F", ["Black", 0.3, "Opfor", 0.7]],
+    ["O_Heli_Transport_04_covered_F", ["Black", 0.3, "Opfor", 0.7]],
+    ["O_Heli_Attack_02_dynamicLoadout_F", ["Black", 0.3, "Opfor", 0.7]],
     ["O_LSV_02_armed_F", ["Black", 0.3, "Arid",0.7]],
     ["O_LSV_02_unarmed_F", ["Black", 0.3, "Arid",0.7]],
     ["O_LSV_02_AT_F", ["Black", 0.3, "Arid",0.7]],
