@@ -5005,11 +5005,13 @@
             </Key>
             <Key ID="STR_A3A_feedback_serverinfo_autostartwait">
                 <Original>Waiting for an admin to log in, or autostart timeout...</Original>
+                <Russian>Ждём пока зайдёт администратор, или произойдёт автостарт</Russian>
                 <Chinesesimp>等待管理员登录或自动启动超时…</Chinesesimp>
                 <Korean>관리자가 로그인하거나 자동 시작 시간 초과를 기다리는 중...</Korean>
             </Key>
             <Key ID="STR_A3A_feedback_serverinfo_adminsetup">
                 <Original>Admin is setting up the game.</Original>
+                <Russian>Администратор настраивает игру</Russian>
                 <Chinesesimp>管理员正在设置游戏。</Chinesesimp>
                 <Korean>관리자가 게임을 설정 중입니다.</Korean>
             </Key>
@@ -5042,21 +5044,25 @@
         <Container name="mission_check">
             <Key ID="STR_A3A_missioncheck_nonmodmission_title">
                 <Original>Deprecated Mission</Original>
+                <Russian>Неподдерживаемая миссия</Russian>
                 <Chinesesimp>已弃用的任务</Chinesesimp>
                 <Korean>사용되지 않는 임무</Korean>
             </Key>
             <Key ID="STR_A3A_missioncheck_nonmodmission">
                 <Original>An incompatible pre-mod Antistasi mission has been started. To play this mission, unload the Antistasi mod. If you intended to load a mission from the Antistasi mod, select the correct mission.</Original>
+                <Russian>Запущена несовместимая с предыдущим модом миссия Antistasi. Чтобы играть в эту миссию, выгрузите мод Antistasi. Если вы намеревались загрузить миссию из мода Antistasi, выберите правильную миссию.</Russian>
                 <Chinesesimp>一个不兼容的 pre-mod Antistasi 任务已经开始。 要执行此任务，请卸载 Antistasi 模组。 如果您打算从 Antistasi 模组加载任务，请选择正确的任务。</Chinesesimp>
                 <Korean>호환되지 않는 사전 모드로 안티스타시 임무가 시작되었습니다. 이 임무를 수행하려면 안티스타시 모드를 언로드하십시오. 안티스타시 모드에서 임무를 로드하려는 경우 올바른 임무를 선택하십시오.</Korean>
             </Key>
             <Key ID="STR_A3A_missioncheck_oldmission_title">
                 <Original>Outdated Mission</Original>
+                <Russian>Устаревшая миссия</Russian>
                 <Chinesesimp>过时的任务</Chinesesimp>
                 <Korean>구식 임무</Korean>
             </Key>
             <Key ID="STR_A3A_missioncheck_oldmission">
                 <Original>"This mission is outdated and could lack important map details that may break your game. Inform your mission maker or update the extension to the latest version."</Original>
+                <Russian>Эта миссия устарела, и в ней могут отсутствовать важные детали карты, что может нарушить работу вашей игры. Сообщите об этом создателю миссии или обновите расширение до последней версии.</Russian>
                 <Chinesesimp>“这个任务已经过时，可能缺少重要的地图细节，可能会破坏你的游戏。通知你的任务制定者或将扩展更新到最新版本。”</Chinesesimp>
                 <Korean>"이 임무는 구식이며 게임을 망칠 수 있는 중요한 지도의 세부 정보가 부족할 수 있습니다. 미션메이커에게 알리거나 확장 버전을 최신 버전으로 업데이트하십시오."</Korean>
             </Key>
@@ -5212,6 +5218,7 @@
         <Container name="A3A_selfRevive">
             <Key ID="STR_A3A_Params_selfReviveMethods_title">
                 <Original>Self-revive methods enabled</Original>
+                <Russian>Способы самовозрождения активированны</Russian>
                 <Italian>Metodi di auto-rianimazione abilitati</Italian>
                 <French>Méthodes d'auto-réanimation activées</French>
                 <Korean>자가소생 활성화</Korean>
@@ -5219,12 +5226,14 @@
             </Key>
             <Key ID="STR_A3A_Params_selfReviveMethods_withstand">
                 <Original>Withstand</Original>
+                <Russian>Выдержка</Russian>
                 <French>Résister</French>
                 <Korean>저항</Korean>
                 <Chinesesimp>抗</Chinesesimp>
             </Key>
             <Key ID="STR_A3A_selfRevive_noFAK">
                 <Original>You don't have a first aid kit for self-revive.</Original>
+                <Russian>У вас нет аптечки для востановления боеспособности.</Russian>
                 <Italian>Non hai un kit di primo soccorso per rianimarti.</Italian>
                 <Spanish>No tienes un kit de primeros auxilios para auto revivirte.</Spanish>
                 <French>Vous n'avez pas de kit de premiers secours pour vous réanimer.</French>
@@ -5234,6 +5243,7 @@
             </Key>
             <Key ID="STR_A3A_selfRevive_recent">
                 <Original>You have already revived yourself recently.</Original>
+                <Russian>Вы уже возрождали себя недавно.</Russian>
                 <Italian>Ti sei già rianimato di recente.</Italian>
                 <Spanish>Ya te has revivido recientemente.</Spanish>
                 <French>Vous vous êtes déjà réanimé vous-même récemment.</French>
@@ -5243,6 +5253,7 @@
             </Key>
             <Key ID="STR_A3A_selfRevive_success">
                 <Original>You shake off the injury, but you're not feeling great.</Original>
+                <Russian>Вы оправился от травмы, но чувствуете себя неважно.</Russian>
                 <Italian>Incassi la ferita ma comunque non ti senti bene.</Italian>
                 <Spanish>Te recuperas de la lesión, pero no te sientes muy bien.</Spanish>
                 <French>Vous vous remettez de la blessure, mais ne vous sentez pas très bien.</French>
@@ -5252,6 +5263,7 @@
             </Key>
             <Key ID="STR_A3A_selfRevive_timeout">
                 <Original>You are feeling much better.</Original>
+                <Russian>Вы чувствуете себя намного лучше.</Russian>
                 <Italian>Ti senti molto meglio.</Italian>
                 <Spanish>Te sientes mucho mejor.</Spanish>
                 <French>Vous vous sentez beaucoup mieux.</French>
@@ -5261,6 +5273,7 @@
             </Key>
             <Key ID="STR_A3A_selfRevive_title">
                 <Original>Self Revive</Original>
+                <Russian>Самовосстановление.</Russian>
                 <Italian>Auto Rianimazione</Italian>
                 <Spanish>Auto revivir</Spanish>
                 <French>Se Réanimer</French>
