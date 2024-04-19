@@ -54,7 +54,6 @@ class Templates
         file = "WS_Riv_ION";
         forceDLC[] = {"ws"};
         description = $STR_A3AP_setupFactionsTab_ion;
-
     }
 
     // ************************************** Vanilla *******************************************************

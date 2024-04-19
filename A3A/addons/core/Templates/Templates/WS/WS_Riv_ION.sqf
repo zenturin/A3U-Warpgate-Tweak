@@ -13,6 +13,7 @@ private _hasRF = "rf" in A3A_enabledDLC;
 ["name", "ION Services"] call _fnc_saveToTemplate;
 ["nameLeader", "Amos Gibson"] call _fnc_saveToTemplate;
 
+
 //////////////////////////////////////
 //       	Identities    			//
 //////////////////////////////////////
@@ -34,6 +35,7 @@ private _hasRF = "rf" in A3A_enabledDLC;
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
+
 ["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
 ["surrenderCrate", "Box_NATO_Wps_F"] call _fnc_saveToTemplate;
 
@@ -107,6 +109,7 @@ if (_hasContact) then {
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
+
 private _loadoutData = call _fnc_createLoadoutData;
 
 private _rifles = [
@@ -252,7 +255,6 @@ if (_hasRF) then {
 };
 
 
-
 _loadoutData set ["rifles", _rifles];
 _loadoutData set ["tunedRifles", _tunedRifles];
 _loadoutData set ["enforcerRifles", _enforcerRifles];
@@ -263,7 +265,6 @@ _loadoutData set ["smgs", _smgs];
 _loadoutData set ["machineGuns", _mgs];
 _loadoutData set ["marksmanRifles", _marksmanRifles];
 _loadoutData set ["sidearms", _pistols];
-
 
 
 _loadoutData set ["lightATLaunchers", [
@@ -376,7 +377,6 @@ private _uniforms = [
 	"U_I_L_Uniform_01_tshirt_black_F"
 ];
 
-
 private _pilotUniforms = [
 	"U_lxWS_ION_Casual2",
 	"U_lxWS_ION_Casual3",
@@ -394,7 +394,9 @@ if (_hasRF) then {
 	];
 };
 
+
 /////Vests
+
 private _vests = ["V_Chestrig_blk", "V_Chestrig_oli", "V_TacVest_blk", "V_TacVest_oli", "V_TacVestIR_blk", "V_lxWS_TacVestIR_oli"];
 
 if (_hasRF) then {
@@ -416,6 +418,7 @@ if (_hasContact) then {
 
 
 /////Backpacks
+
 private _backpacks = ["B_AssaultPack_blk", "B_AssaultPack_sgg", "B_Kitbag_sgg"];
 
 if (_hasRF) then {
@@ -425,6 +428,7 @@ if (_hasRF) then {
 
 
 /////Helmets
+
 private _helmets = ["lxWS_H_PASGT_goggles_black_F", "lxWS_H_PASGT_goggles_olive_F", "H_HelmetB_black"];
 
 if (_hasLawsOfWar) then {
@@ -447,7 +451,7 @@ if (_hasRF) then {
 };
 
 
-/////
+
 _loadoutData set ["facewear", _facewear];
 _loadoutData set ["headgear", _headgear];
 _loadoutData set ["uniforms", _uniforms];
@@ -457,7 +461,7 @@ _loadoutData set ["backpacks", _backpacks];
 _loadoutData set ["helmets", _helmets];
 _loadoutData set ["crewHelmets", _crewHelmets];
 
-//Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
+//Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
 _loadoutData set ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the standard medical loadout for vanilla
 _loadoutData set ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the medic medical loadout for vanilla
