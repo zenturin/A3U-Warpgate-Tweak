@@ -139,7 +139,7 @@ else            // ground vehicle
         if (_vehType in FactionGet(all,"vehiclesArtillery")) exitWith {localize "STR_qrf_marker_atillery"};
         if (_vehType in FactionGet(all,"vehiclesAirborne")) exitWith {localize "STR_qrf_marker_airborne"};
         if (_vehType in FactionGet(all,"vehiclesIFVs")) exitWith {localize "STR_qrf_marker_ifv"};
-        if (_vehType in FactionGet(all,"vehiclesArmor") && unitIsUAV == true)  exitWith {localize "STR_qrf_marker_apc"};
+        if (_vehType in FactionGet(all,"vehiclesArmor") && unitIsUAV _vehType) exitWith {localize "STR_qrf_marker_ugv"};
         if (_vehType in FactionGet(all,"vehiclesArmor"))  exitWith {localize "STR_qrf_marker_apc"};
         if (_vehType in FactionGet(all,"vehiclesTrucks")) exitWith {localize "STR_qrf_marker_truck"};
         localize "STR_qrf_marker_mrap";
