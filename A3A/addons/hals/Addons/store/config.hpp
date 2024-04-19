@@ -120,6 +120,7 @@ class cfgHALsStore
 				"mgCSLA",
 				"launchersCSLA",
 				"magazineslaunchersCSLA",
+				"handgunsCSLA",
 				"magazinesCSLA",
 				"navigationCSLA",
 				"attachmentsCSLA",
