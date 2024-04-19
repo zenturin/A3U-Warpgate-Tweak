@@ -265,7 +265,12 @@ else
 	{
 	private _wp2 = _groupX addWaypoint [_positionX, 0];
 	_wp2 setWaypointType "MOVE";
-	};
+};
+
+if (_helicopter in FactionGet(all,"vehiclesTransportAir") && _weapons > 2) exitWith {
+    _helicopter action ["LandGearUp", _helicopter];
+    [_helicopter, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
+};
 
 if (_veh in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) exitWith {
     [_veh, _heli, _positionX] spawn A3A_fnc_attackHeli;

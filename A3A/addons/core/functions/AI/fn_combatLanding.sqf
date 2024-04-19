@@ -234,6 +234,13 @@ if(canMove _helicopter || alive _driver) then {
     [_helicopter, "close"] spawn _fnc_HeliDoors;
 };
 
+private _weapons = count weapons _helicopter;
+
+if (_helicopter in FactionGet(all,"vehiclesTransportAir") && _weapons > 2) exitWith { //assuming first 2 are laserdesignator and flares
+    _helicopter action ["LandGearUp", _helicopter];
+    [_helicopter, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
+};
+
 if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) exitWith {
     _helicopter action ["LandGearUp", _helicopter];
     [_helicopter, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
