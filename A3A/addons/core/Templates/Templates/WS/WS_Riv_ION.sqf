@@ -58,11 +58,13 @@ if (_hasApex) then {
 
 if (_hasLawsOfWar) then {
 	_trucks append ["a3a_Van_02_black_transport_F", "a3a_Van_02_black_vehicle_F"];
-    _uav append ["B_UAV_06_F", "B_UAV_06_medical_F", "C_IDAP_UAV_06_antimine_F"];
+    _uav append ["C_IDAP_UAV_06_antimine_F"];
 };
 
 if (_hasRF) then {
 	_helis pushBack "B_ION_Heli_EC_01_RF";
+	_lightArmedVehicles pushBack "B_ION_Pickup_mmg_rf";
+	_lightUnarmedVehicles pushBack "B_ION_Pickup_rf";
 };
 
 if (_hasContact) then {
