@@ -178,6 +178,7 @@ while {_interval < 0.9999} do
     _dam = damage _helicopter;
     if ((getPos _helicopter select 2) < 0.25 ) exitwith{_helicopter setdamage 0; sleep 1; _helicopter setdamage _dam;};
 };
+sleep 0.1;
 _helicopter engineOn true; ///keep the engine running
 if(canMove _helicopter || alive _driver) then {
     [_helicopter, "open"] spawn _fnc_HeliDoors;
@@ -227,7 +228,7 @@ private _dismountTime = count units _cargoGroup - 4;
 
 _helicopter engineOn true;  ///still keeping the engine running
 
-sleep _dismountTime + 1;
+sleep _dismountTime + 1.5;
 
 _helicopter engineOn true;  ///we must keep the engine running
 if(canMove _helicopter || alive _driver) then {

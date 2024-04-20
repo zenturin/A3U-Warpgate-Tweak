@@ -244,7 +244,7 @@ waitUntil {sleep 1; (not alive _veh) or ((count assignedCargo _veh == 0) and (([
 
 
 sleep 3;
-_veh flyInHeight 150;
+_veh flyInHeight 175;
 
 if (canMove _veh) then {
     [_veh, "close"] spawn _fnc_HeliDoors;

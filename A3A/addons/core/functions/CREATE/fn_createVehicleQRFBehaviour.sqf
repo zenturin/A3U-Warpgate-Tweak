@@ -58,26 +58,46 @@ if (_vehicle isKindOf "Air") then
             if (_vtol != "") then {
                 _landPosVTOL set [2, 0];
                 _landPosBlacklist pushBack _landPosVTOL;
-                [_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPosVTOL] spawn A3A_fnc_combatLanding;
+                private _roll = random 100;
+					if(_roll >= 50) then {
+						[_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPosVTOL] spawn A3A_fnc_combatLanding;
+					} else {
+                        if(_roll <= 30) then{
+                            [_vehicle, _cargoGroup, _posDestination, _markerOrigin] spawn A3A_fnc_paradrop;
+                        } else {
+                            [_vehicle, _cargoGroup, _posDestination, _markerOrigin, _resPool] spawn SCRT_fnc_common_paradropVehicle;
+                        };
+					};
             } else {
                 _landPos set [2, 0];
                 _landPosBlacklist pushBack _landPos;
-                [_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPos] spawn A3A_fnc_combatLanding;
+                if(_roll >= 20) then {
+					[_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPosVTOL] spawn A3A_fnc_combatLanding;
+				} else {
+                    [_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
+				};
             };
         }
         else
         {
-            if ((typeOf _vehicle) in vehFastRope || _vtol != "") then {
-                [_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
+            if (_vtol != "") then {
+                private _roll = random 100;
+					if(_roll >= 40) then {
+						[_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
+					} else {
+                        if(_roll <= 30) then{
+                            [_vehicle, _cargoGroup, _posDestination, _markerOrigin] spawn A3A_fnc_paradrop;
+                        } else {
+                            [_vehicle, _cargoGroup, _posDestination, _markerOrigin, _resPool] spawn SCRT_fnc_common_paradropVehicle;
+                        };
+					};
             } else {
-                if (_vehType in FactionGet(all,"vehiclesTransportAir") && {!(_vehicle isKindOf "Helicopter") && {_isAirdrop}}) then 
-                    {
-                        //Dropship with para units and airdrop veh
-                        [_vehicle, _cargoGroup, _posDestination, _markerOrigin, _resPool] spawn SCRT_fnc_common_paradropVehicle;
-                    } else {
-                        //Dropship with para units
+                private _roll = random 100;
+					if(_roll >= 35) then {
+						[_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
+					} else {
                         [_vehicle, _cargoGroup, _posDestination, _markerOrigin] spawn A3A_fnc_paradrop;
-                    };
+					};
             };
         };
     };
@@ -100,11 +120,12 @@ if (_vehicle isKindOf "Air") then
             }
             else
             {
-                if ((typeOf _vehicle) in vehFastRope) then {
-                    [_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
-                } else {
+                private _roll = random 100;
+				if(_roll >= 20) then {
+					[_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
+				} else {
                     [_vehicle, _cargoGroup, _posDestination, _markerOrigin] spawn A3A_fnc_paradrop;
-                };
+				};
             };
         } else {
             [_vehicle, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
@@ -139,7 +160,7 @@ else            // ground vehicle
         if (_vehType in FactionGet(all,"vehiclesArtillery")) exitWith {localize "STR_qrf_marker_atillery"};
         if (_vehType in FactionGet(all,"vehiclesAirborne")) exitWith {localize "STR_qrf_marker_airborne"};
         if (_vehType in FactionGet(all,"vehiclesIFVs")) exitWith {localize "STR_qrf_marker_ifv"};
-        if (_vehType in FactionGet(all,"vehiclesArmor") && unitIsUAV _vehType) exitWith {localize "STR_qrf_marker_ugv"};
+        if (_vehType in FactionGet(all,"vehiclesArmor") && unitIsUAV _vehicle) exitWith {localize "STR_qrf_marker_ugv"};
         if (_vehType in FactionGet(all,"vehiclesArmor"))  exitWith {localize "STR_qrf_marker_apc"};
         if (_vehType in FactionGet(all,"vehiclesTrucks")) exitWith {localize "STR_qrf_marker_truck"};
         localize "STR_qrf_marker_mrap";
