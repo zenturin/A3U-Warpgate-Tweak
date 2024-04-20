@@ -2,6 +2,8 @@
 
 #include "..\script_component.hpp"
 
+#if __has_include("\lxws\data_f_lxws\config.bin")
+
 class CfgPatches 
 {
     class PATCHNAME(WS) 
@@ -22,3 +24,5 @@ class CfgPatches
 #include "CfgVehicles.hpp"
 #include "CfgMarkers.hpp"
 #include "CfgWeapons.hpp"
+
+#endif      // __has_include("\lxws\data_f_lxws\config.bin")
