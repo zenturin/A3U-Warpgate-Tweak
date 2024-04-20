@@ -10,8 +10,7 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"A3_Data_F_AoW_Loadorder", "Vehicles_F_lxWS"};
-        skipWhenMissingDependencies = 1; // makes this entire config not load if any requiredAddons are not present
+        requiredAddons[] = {"A3_Data_F_AoW_Loadorder","Vehicles_F_lxWS"};
         author = AUTHOR;
         authors[] = { AUTHORS };
         authorUrl = "";
@@ -19,4 +18,7 @@ class CfgPatches
     };
 };
 
+// Uncomment when needed
+#include "CfgVehicles.hpp"
+#include "CfgMarkers.hpp"
 #include "CfgWeapons.hpp"

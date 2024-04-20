@@ -48,7 +48,7 @@ private _Airborne = ["O_T_APC_Wheeled_02_rcws_v2_ghex_F"];
 private _tanks = ["O_T_MBT_02_cannon_ghex_F","O_T_MBT_02_railgun_ghex_F"];
 ["vehiclesAA", ["O_T_APC_Tracked_02_AA_ghex_F"]] call _fnc_saveToTemplate;
 
-private _trasportBoat = ["O_T_Boat_Transport_01_F"];
+private _transportBoat = ["O_T_Boat_Transport_01_F"];
 ["vehiclesGunBoats", ["O_T_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
 private _planesCAS = ["O_Plane_CAS_02_dynamicLoadout_F"];
@@ -117,7 +117,7 @@ if (_hasApex) then {
     _lightArmed append ["O_T_LSV_02_armed_F", "O_T_LSV_02_AT_F"];
     _militiaCars pushBack "I_C_Offroad_02_unarmed_F";
     _militiaLightArmed pushBack "a3a_Offroad_02_LMG_black_F";
-    _trasportBoat pushBack "I_C_Boat_Transport_02_F";
+    _transportBoat pushBack "I_C_Boat_Transport_02_F";
 };
 
 if (_hasRF) then {
@@ -139,7 +139,7 @@ if (_hasWs) then {
     _militiaAPCs = ["O_T_APC_Wheeled_02_hmg_lxWS", "O_T_APC_Wheeled_02_unarmed_lxWS"];
     _IFVs pushBack "O_T_APC_Tracked_02_30mm_lxWS";
     _lightHelicopters pushBack "B_ION_Heli_Light_02_unarmed_lxWS";
-    _lightAttackHelicopters pushBack "B_ION_Heli_Light_02_dynamicLoadout_lxWS";
+    _lightAttackHelicopters pushBack "a3a_ION_Heli_Light_02_dynamicLoadout_lxWS";
 };
 
 ["vehiclesTransportBoats", _transportBoat] call _fnc_saveToTemplate;
@@ -179,8 +179,8 @@ if (_hasWs) then {
     ["O_LSV_02_armed_F", ["Unarmed_Doors_Hide",0.3]],
     ["O_LSV_02_unarmed_F", ["Unarmed_Doors_Hide",0.3]],
     ["O_LSV_02_AT_F", ["Unarmed_Doors_Hide",0.3]],
-    ["I_C_Offroad_02_unarmed_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideBullbar",0.3,"hideFenders",0.3,"hideHeadSupportRear",0.3,"hideHeadSupportFront",0.3,"hideRollcage",0.3,"hideSeatsRear",0,"hideSpareWheel",0.3]];
-    ["a3a_Offroad_02_LMG_black_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideFenders",0.3,"hideHeadSupportFront",0.3,"hideSpareWheel",0.3]];
+    ["I_C_Offroad_02_unarmed_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideBullbar",0.3,"hideFenders",0.3,"hideHeadSupportRear",0.3,"hideHeadSupportFront",0.3,"hideRollcage",0.3,"hideSeatsRear",0,"hideSpareWheel",0.3]],
+    ["a3a_Offroad_02_LMG_black_F", ["hideLeftDoor",0.3,"hideRightDoor",0.3,"hideRearDoor",0.3,"hideFenders",0.3,"hideHeadSupportFront",0.3,"hideSpareWheel",0.3]],
     ["O_T_APC_Tracked_02_cannon_ghex_F", ["showTracks",0.3,"showCamonetHull",0.3,"showSLATHull",0.3]],
     ["O_T_APC_Tracked_02_30mm_lxWS", ["showTracks",0.3,"showCamonetHull",0.3,"showSLATHull",0.3]],
     ["O_T_APC_Tracked_02_AA_ghex_F", ["showTracks",0.3,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3]]
@@ -209,7 +209,7 @@ if (_hasWs) then {
     ["O_T_APC_Wheeled_02_hmg_lxWS", ["Hex", 0, "Black", 0.3, "GreenHex", 0.7]],
     ["O_T_APC_Wheeled_02_unarmed_lxWS", ["Hex", 0, "Black", 0.3, "GreenHex", 0.7]],
     ["B_ION_Heli_Light_02_unarmed_lxWS", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0 ,"ION_BLACK",0]],
-    ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0 ,"ION_BLACK",0]]
+    ["a3a_ION_Heli_Light_02_dynamicLoadout_lxWS", ["GreenHex",0.6, "Black", 0.2 , "Blackcustom", 0.2, "Opfor",0 ,"ION_BLACK",0]]
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
