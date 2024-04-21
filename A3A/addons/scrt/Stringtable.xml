@@ -3278,7 +3278,7 @@
             </Key>
             <Key ID="STR_notifiers_skill_cancelled">
                 <Original>Price was not confirmed.</Original>
-                <Russian>цена не была подтверждена.</Russian>
+                <Russian>Цена не была подтверждена.</Russian>
             </Key>
             <Key ID="STR_notifiers_disband_header">
                 <Original>Disband</Original>
