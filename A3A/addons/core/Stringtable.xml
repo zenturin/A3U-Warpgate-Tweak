@@ -5338,7 +5338,7 @@
             <Key ID="STR_A3AU_total_victory">
                 <Original>Enable Total Victory Conditions</Original>
                 <English>Enable Total Victory Conditions</English>
-                <Russian>Placeholder</Russian>
+                <Russian>Включить условия тотальной победы</Russian>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>
