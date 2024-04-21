@@ -3815,6 +3815,10 @@
                 <Korean>%2의 숙련도 레벨이 업그레이드되었습니다.&lt;br/&gt;현재 레벨은 %1입니다.</Korean>
                 <French>Le niveau de compétence %2 a été augmenté.&lt;br/&gt;Le niveau actuel est %1.</French>
             </Key>
+            <Key ID="STR_notifiers_skill_cancelled">
+                <Original>Price was not confirmed.</Original>
+                <Russian>Цена не была подтверждена.</Russian>
+            </Key>
             <Key ID="STR_notifiers_disband_header">
                 <Original>Disband</Original>
                 <Russian>Роспуск</Russian>
