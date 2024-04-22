@@ -1374,6 +1374,10 @@
                 <Chinesesimp>反地雷伏击车</Chinesesimp>
                 <Korean>MRAP</Korean>
             </Key>
+            <Key ID="STR_qrf_marker_heli">
+                <Original>HELI</Original>
+                <Russian>Вертолёт</Russian>
+            </Key>
             <Key ID="STR_qrf_marker_apc">
                 <Original>APC</Original>
                 <Russian>БТР</Russian>
@@ -1494,11 +1498,15 @@
                 <Chinesesimp>武装直升机</Chinesesimp>
                 <Korean>건쉽</Korean>
             </Key>
-            <Key ID="STR_marker_arty_target">
-                <Original>Artillery Target</Original>
-                <Russian>Цель артиллерии</Russian>
-                <Chinesesimp>炮兵目标</Chinesesimp>
-                <Korean>포병 표적</Korean>
+            <Key ID="STR_marker_gunship">
+                <Original>Gunship</Original>
+                <Russian>Летающая батарея поддержки</Russian>
+                <Chinesesimp>武装直升机</Chinesesimp>
+                <Korean>건쉽</Korean>
+            </Key>
+            <Key ID="STR_marker_logistics_heli">
+                <Original>Logistics helicopter</Original>
+                <Russian>Вертолёт логистики</Russian>
             </Key>
             <Key ID="STR_marker_qrf">
                 <Original>Quick Reaction Force</Original>
@@ -1565,6 +1573,10 @@
                 <Russian>Оружейный Торговец</Russian>
                 <Chinesesimp>军火商</Chinesesimp>
                 <Korean>암거래상</Korean>
+            </Key>
+            <Key ID="STR_marker_civ_convoy">
+                <Original>Civillian convoy</Original>
+                <Russian>Конвой гражданских</Russian>
             </Key>
             <Key ID="STR_marker_convoy_objective">
                 <Original>Convoy Objective</Original>
