@@ -1,10 +1,10 @@
 #include "..\defines.inc"
 FIX_LINE_NUMBERS()
 
-Info("Skirmish frontline event Init.");
+Info("Skirmish occupants vs rivals event Init.");
 
-private _difficult = random 10 < tierWar;
-private _difficult2 = random 10 < tierWar; ///maybe add a war level check, if high -> big battle
+private _difficult = random 10 < tierWar; ///maybe add a war level check, if high(7+) -> big battle(5 vs 5 squads)
+private _difficult2 = random 10 < tierWar;
 
 private _player = selectRandom (call SCRT_fnc_misc_getRebelPlayers);
 
@@ -17,42 +17,24 @@ if (isNil "_player") exitWith {
 private _originPosition = position _player;
 Info_2("%1 will be used as center of the event at %2 position.", name _player, str _originPosition);
 
-private _potentialOutposts = (outposts + milbases + airportsX + resourcesX + factories + citiesX) select {
-    sidesX getVariable [_x, sideUnknown] != teamPlayer && {(getMarkerPos _x) distance2D _player < distanceSPWN*5}
-};
-private _frontLine = (outposts + milbases + airportsX + resourcesX + factories + citiesX) select {([_x] call A3A_fnc_isFrontline && {sidesX getVariable [_x,sideUnknown] != teamPlayer}) && {(getMarkerPos _x) distance2D _player < distanceSPWN*2}};
-private _FrontlineOutpost = selectRandom _frontLine;
-/* private _fnc_actualFrontline = {
-	params ["_markerX"];
-
-	private _isFrontier = false;
-	private _sideX = sidesX getVariable [_markerX,sideUnknown];
-	//private _sideX2 = sidesX getVariable [_markerX,Invaders];
-	//private _mrksideX = (outposts + milbases + airportsX + resourcesX + factories + citiesX) select {sidesX getVariable [_x,sideUnknown] == _sideX};
-	private _mrksideX2 = (outposts + milbases + airportsX + resourcesX + factories + citiesX) select {sidesX getVariable [_x,sideUnknown] != _sideX};
-	//private _PosmrksideX = getMarkerPos _mrksideX;
-	private _PosmrksideX = getMarkerPos _markerX;
-	private _PosmrksideX2 = getMarkerPos _mrksideX2;
-
-	if (_PosmrksideX distance _PosmrksideX2 <= distanceSPWN*3) then {
-		_isFrontier = true;
-	};
-}; */
-private _frontierX = [_FrontlineOutpost] call _fnc_actualFrontline;
-if (/* _frontierX */ _FrontlineOutpost == objNull) exitWith {
-    Info("No outposts in proximity, aborting Skirmish fronline Event.");
-    isEventInProgress = false;
-    publicVariableServer "isEventInProgress";
+private _potentialOutposts = (outposts + resourcesX + factories + citiesX) select {
+    sidesX getVariable [_x, sideUnknown] = Occupants && {(getMarkerPos _x) distance2D _player < distanceSPWN*2}
 };
 
-private _side = Occupants;
-private _side2 = Invaders;
+private _FrontlineOutpost = selectRandom _potentialOutposts;
+
+private _side = Occupants; //?
+private _side2 = Rivals;
 private _faction = Faction(_side);
 private _faction2 = Faction(_side2);
 private _FrontlineOutpostPosition = getMarkerPos _FrontlineOutpost;
 
-private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupSpecOpsRandom")} else {selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)};     ///
-private _specOpsArray2 = if (_difficult2) then {selectRandom (_faction2 get "groupSpecOpsRandom")} else {selectRandom ([_faction2, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)}; ///maybe move this into fuction and roll every time?
+private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupSpecOpsRandom")} else {selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)}; ///maybe move this into fuction and roll every time?
+private _specOpsArray2 = if (_difficult2) then {selectRandom (A3A_faction_riv get "groupsSquad")} else {selectRandom ((A3A_faction_riv get "groupsFireteam") + (A3A_faction_riv get "groupsSentry") + (A3A_faction_riv get "groupsAA") + (A3A_faction_riv get "groupsAT"))};
+
+//(selectRandom ((A3A_faction_riv get "groupsSentry") + (A3A_faction_riv get "groupsAA") + (A3A_faction_riv get "groupsAT"))); //not very good
+//selectRandom ((A3A_faction_riv get "groupsFireteam") + (A3A_faction_riv get "groupsAA") + (A3A_faction_riv get "groupsAT")); //mid
+//(A3A_faction_riv get "groupsSquad") //good?
 
 _skirmishposition = [_FrontlineOutpostPosition, 1500, 2500, 10, 0, 10, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
 _skirmishposition2 = [_skirmishposition, 30, 125, 10, 0, 10, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
@@ -72,7 +54,11 @@ private _fnc_spawngroups = {
 	};
 	for "_i" from 1 to _amount2 do {
 		_skirmishpositionActuall2 = [_skirmishposition2, 75, 250, 10, 0, 10, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
+
+		private _spawnableGroup = _rivalsTacUnit select 0;
+		private _group = [_vehicleSpawnPosition, Rivals, _spawnableGroup] call A3A_fnc_spawnGroup;
 		_InfGroup2 = [_skirmishpositionActuall2, _side2, _specOpsArray2] call A3A_fnc_spawnGroup;
+		
 		{[_x] call A3A_fnc_NATOinit} forEach units _InfGroup2;
 		_InfGroup2 setBehaviourStrong "AWARE";
 		private _wp = _InfGroup2  addWaypoint [_skirmishposition, 0];
@@ -96,15 +82,14 @@ private _fnc_spawngroups = {
 		private _wp = _vehiclegroup addWaypoint [_skirmishposition, 0];
 		_wp setWaypointSpeed "NORMAL";
 		_wp setWaypointType "SAD";
-		{[_x] assignAsCargo _vehicle} forEach units _InfGroup;
-		units _vehiclegroup2 join _InfGroup;
 		_vehiclesArray pushBack _vehicle;
 	};
 	for "_i" from 1 to _vehiclesAmount2 do {
-		private _vehicles2 = if (_difficult2) then {selectRandom ((_faction2 get "vehiclesAirborne") + (_faction2 get "vehiclesLightTanks") + (_faction2 get "vehiclesTanks") + (_faction2 get "vehiclesAPCs") + (_faction2 get "vehiclesIFVs"))
-					} else {selectRandom
-					((_faction2 get "vehiclesLightUnarmed") + (_faction2 get "vehiclesLightArmed") + (_faction2 get "vehiclesAirborne") + (_faction2 get "vehiclesLightTanks") + (_faction2 get "vehiclesMilitiaAPCs") + 
-					(_faction2 get "vehiclesMilitiaLightArmed") + (_faction2 get "vehiclesMilitiaCars"))
+		private _vehRivalsArmor = ;
+
+		private _vehRivalsLight = ;
+		private _vehicles2 = if (_difficult2) then {selectRandom (Riv("vehiclesRivalsAPCs") + Riv("vehiclesRivalsTanks"))
+					} else {selectRandom (Riv("vehiclesRivalsCars") + Riv("vehiclesRivalsLightArmed") + Riv("vehiclesRivalsTrucks"))
 		};
 		diag_log _vehicles2;
 		_skirmishpositionActuall2 = [_skirmishposition2, 125, 350, 10, 0, 10, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
