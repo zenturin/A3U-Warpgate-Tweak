@@ -220,7 +220,6 @@ class CfgFunctions {
 			class encounter_fleeingCivConvoy {};
 			class encounter_HeliSlingloadCargo {};
 			class encounter_frontlineSkirmish {};
-			//class encounter_OccVsRivalsskirmish {};
 		};
 
 		class Support {
@@ -277,6 +276,7 @@ class CfgFunctions {
 			class rivals_encounter_uavFlyby {};
 			class rivals_encounter_rovingMortar {};
 			class rivals_encounter_heliRaid {};
+			class rivals_encounter_OccVsRivalsskirmish {};
 			
 			class rivals_addProgressToRivalsLocationReveal {};
 			class rivals_revealLocation {};
