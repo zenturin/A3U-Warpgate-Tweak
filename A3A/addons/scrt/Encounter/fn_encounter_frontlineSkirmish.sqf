@@ -91,10 +91,7 @@ private _fnc_spawngroups = {
 		_vehicledata = [_skirmishpositionActuall, 0, _vehicles, _side] call A3A_fnc_spawnVehicle;
 		_vehicle = _vehicledata select 0;
 		_vehiclegroup = _vehicledata select 2;
-		//_vehicle = [_vehicles, _skirmishpositionActuall, 50, 5, true] call A3A_fnc_safeVehicleSpawn;
 		[_vehicle, Occupants] call A3A_fnc_AIVEHinit;
-		//_unitType = [_side, _vehicle] call A3A_fnc_crewTypeForVehicle;
-		//_group = [_side, _vehicle, _unitType] call A3A_fnc_createVehicleCrew;
 		_vehiclegroup setBehaviourStrong "AWARE";
 		private _wp = _vehiclegroup addWaypoint [_skirmishposition, 0];
 		_wp setWaypointSpeed "NORMAL";
@@ -112,10 +109,7 @@ private _fnc_spawngroups = {
 		_vehicledata2 = [_skirmishpositionActuall2, 0,_vehicles2, _side2] call A3A_fnc_spawnVehicle;
 		_vehicle2 = _vehicledata2 select 0;
 		_vehiclegroup2 = _vehicledata2 select 2;
-		//_vehicle2 = [_vehicles2, _skirmishpositionActuall2, 50, 5, true] call A3A_fnc_safeVehicleSpawn;
 		[_vehicle2, Invaders] call A3A_fnc_AIVEHinit;
-		//_unitType = [_side2, _vehicle2] call A3A_fnc_crewTypeForVehicle;
-		//_group = [_side2, _vehicle2, _unitType] call A3A_fnc_createVehicleCrew;
 		_vehiclegroup2 setBehaviourStrong "AWARE";
 		private _wp = _vehiclegroup2 addWaypoint [_skirmishposition, 0];
 		_wp setWaypointSpeed "NORMAL";
@@ -139,12 +133,12 @@ private _vehiclesArray = [];
 private _vehiclesArray2 = [];
 
 [_amount, _amount2, _vehiclesAmount , _vehiclesAmount2 ,_difficult ,_difficult2] call _fnc_spawngroups;
-///dissable AI and wait untill players are nearby?
+///dissable AI and wait until players are nearby? or just wait until players are nearby and then spawn units
 
 private _timeOut = time + 3600;
 waitUntil {time > _timeOut && _player distance2D _skirmishposition > 2000};
 
-///If someone survide -> move to base from the check?
+///If someone survived -> move to base from the check above?
 ///some sort of check needed to delete groups and vehicles smart way
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _InfGroups;
