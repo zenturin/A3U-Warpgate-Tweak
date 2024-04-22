@@ -37,10 +37,11 @@ FIX_LINE_NUMBERS()
 #define OccAndInv(VAR) (FactionGet(occ, VAR) + FactionGet(inv, VAR))
 private _vehicle = _veh;
 private _crewgroup = crew _vehicle;
-private _crewdriver = _crewgroup select 0;
-private _crewdgunner = _crewgroup select 1;
 if (isNull _player) exitWith { Error("_player is null.") };
 if (isNull _vehicle) exitWith {
+    [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_reinf_airstrike_not_looking_at_veh"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
+};
+if (isNull _crewgroup) exitWith {
     [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_reinf_airstrike_not_looking_at_veh"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
 _owner = _vehicle getVariable ["ownerX",""];
