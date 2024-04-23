@@ -72,7 +72,7 @@ if (_vehicle isKindOf "Air") then
                 _landPos set [2, 0];
                 _landPosBlacklist pushBack _landPos;
                 if(_roll >= 20) then {
-					[_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPosVTOL] spawn A3A_fnc_combatLanding;
+					[_vehicle, _crewGroup, _cargoGroup, _posDestination, _posOrigin, _landPos] spawn A3A_fnc_combatLanding;
 				} else {
                     [_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
 				};
