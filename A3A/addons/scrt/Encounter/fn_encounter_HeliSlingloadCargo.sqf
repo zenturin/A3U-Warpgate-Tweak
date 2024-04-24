@@ -70,13 +70,13 @@ if (_HeliClass isKindOf "Heli_Transport_04_base_F") then {
 private _heliVehicleData = [_actualspawnPosition, 90, _HeliClass, _side] call A3A_fnc_spawnVehicle;
 
 private _heliVehicle = _heliVehicleData select 0;
-private _lootCratetest = [_ammoBoxType, _actualspawnPosition, 20, 5, true] call A3A_fnc_safeVehicleSpawn;
-if !(_heliVehicle canSlingLoad _lootCratetest) exitwith {
+private _lootCrateTest = [_ammoBoxType, _actualspawnPosition, 20, 5, true] call A3A_fnc_safeVehicleSpawn;
+if !(_heliVehicle canSlingLoad _lootCrateTest) exitwith {
     Error("Your heli can't do shit, aborting.");
     isEventInProgress = false;
     publicVariableServer "isEventInProgress";
 };
-deleteVehicle _lootCratetest;
+deleteVehicle _lootCrateTest;
 ///new
 private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupSpecOpsRandom")} else {selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)};
 
