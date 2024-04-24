@@ -1498,11 +1498,11 @@
                 <Chinesesimp>武装直升机</Chinesesimp>
                 <Korean>건쉽</Korean>
             </Key>
-            <Key ID="STR_marker_gunship">
-                <Original>Gunship</Original>
-                <Russian>Летающая батарея поддержки</Russian>
-                <Chinesesimp>武装直升机</Chinesesimp>
-                <Korean>건쉽</Korean>
+            <Key ID="STR_marker_arty_target">
+                <Original>Artillery Target</Original>
+                <Russian>Цель артиллерии</Russian>
+                <Chinesesimp>炮兵目标</Chinesesimp>
+                <Korean>포병 표적</Korean>
             </Key>
             <Key ID="STR_marker_logistics_heli">
                 <Original>Logistics helicopter</Original>
