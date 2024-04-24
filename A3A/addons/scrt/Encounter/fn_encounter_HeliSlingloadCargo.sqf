@@ -89,7 +89,7 @@ if (_HeliClass == "O_Heli_Transport_04_F") then {
 	(_faction get "vehiclesAA") + (_faction get "vehiclesLightTanks") + (_faction get "vehiclesMilitiaAPCs") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs") + 
 	["Land_Pod_Heli_Transport_04_covered_F"] + ["Land_Pod_Heli_Transport_04_bench_F"] + ["Land_Pod_Heli_Transport_04_medevac_F"] + ["Land_Pod_Heli_Transport_04_repair_F"] + ["Land_Pod_Heli_Transport_04_fuel_F"] + 
 	["Land_Pod_Heli_Transport_04_ammo_F"] + ["Land_Pod_Heli_Transport_04_box_F"]);
-	while {_attempts != 0 } do {
+	while {_attempts != 0} do {
 		_lootcrateType = selectRandom ((_faction get "vehiclesLightUnarmed") + (_faction get "vehiclesLightArmed") + (_faction get "vehiclesAirborne") + (_faction get "vehiclesAA") + (_faction get "vehiclesLightTanks") + 
 		(_faction get "vehiclesMilitiaAPCs") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs") + 
 		["Land_Pod_Heli_Transport_04_covered_F"] + ["Land_Pod_Heli_Transport_04_bench_F"] + ["Land_Pod_Heli_Transport_04_medevac_F"] + 
