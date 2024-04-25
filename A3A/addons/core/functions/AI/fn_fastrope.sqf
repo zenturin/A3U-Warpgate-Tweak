@@ -80,7 +80,7 @@ waitUntil {sleep 1; (not alive _veh) or (_veh distance _landpos < 550) or !(canM
 private _midHeight = [100, 150] select (A3A_climate isEqualTo "tropical");
 if (_vehType in FactionGet(all,"vehiclesPlanesTransport")) then {
 	_veh flyInHeight _midHeight;
-}else{};
+} else {};
 // Landing path setup for vtol
 private _endPos = _landpos;
 private _startPos = getPosASL _veh;
