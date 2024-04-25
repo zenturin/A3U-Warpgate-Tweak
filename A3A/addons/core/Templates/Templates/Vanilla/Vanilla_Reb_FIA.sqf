@@ -123,6 +123,7 @@ if (_hasCSLA) then {
     _CivBoat pushback "CSLA_lodka";
 };
 
+["staticMortars", _staticMortars] call _fnc_saveToTemplate;
 ["staticMGs", _staticMG] call _fnc_saveToTemplate;
 ["staticAT", _staticAT] call _fnc_saveToTemplate;
 ["vehiclesCivHeli", _civHelicopters] call _fnc_saveToTemplate;
