@@ -36,7 +36,7 @@ private _lightArmedVehicles = ["I_C_Offroad_02_AT_F", "I_C_Offroad_02_LMG_F"];
 private _lightUnarmedVehicles = ["I_C_Offroad_02_unarmed_F"];
 private _trucks = ["I_C_Van_01_transport_F"];
 private _helis = ["I_C_Heli_Light_01_civil_F"];
-private _uav = [];
+private _uav = ["O_UAV_01_F"];
 private _tanks = [];
 private _apc = [];
 
