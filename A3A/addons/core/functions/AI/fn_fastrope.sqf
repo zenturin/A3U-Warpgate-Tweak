@@ -9,48 +9,6 @@ if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehicles
     _veh setVehicleRadar 1;
 };
 
-private _fnc_HeliDoors = {
-    params ["_veh", "_state"];
-
-    private _veh = _this#0;
-    private _state = _this#1;
-
-    switch _state do
-    {
-       case "open": { _state = 1; };
-       case "close": { _state = 0; };
-    };
-
-   _veh animateDoor ["Door_Cargo", _state];        // Mi-24V (CSLA) cargo doors
-   _veh animateDoor ["door_2_2_source", _state];   // VBH 1 (GM) right door
-   _veh animateDoor ["door_2_1_source", _state];   // VBH 1 (GM) left door
-   _veh animateDoor ["Door_Back_L", _state];       // Mohawk back door Left
-   _veh animateDoor ["Door_Back_R", _state];       // Mohawk back door Right
-   _veh animateDoor ["door_cargo_left", _state];   // Cougar
-   _veh animateDoor ["Door_L", _state];            // Ghosthawk
-   _veh animateDoor ["Door_L_source", _state];     // Huron front door
-   _veh animateDoor ["Door_rear_source", _state];  // Huron rear door
-   _veh animateDoor ["door_1", _state];            // Wildcat
-   _veh animateDoor ["Door_4_source", _state];     // Taru right door
-   _veh animateDoor ["Door_5_source", _state];     // Taru left door
-   _veh animate ["dvere1_posunZ",_state];          // Orca
-   _veh animate ["side_door", _state];             // Mi-17 (CSLA) side door
-   sleep 0.5; 
-   _veh animateDoor ["Door_1_source", _state];     // Y-32 Xi'an/V-44X
-   _veh animateDoor ["cargoramp_source", _state];  // CH-53G (GM) ramp
-   _veh animateDoor ["CargoRamp_Open", _state];    // Cougar
-   _veh animateDoor ["door_cargo_right", _state];  // Cougar
-   _veh animateDoor ["Door_R", _state];            // Ghosthawk
-   _veh animateDoor ["Door_R_source", _state];     // Huron front door
-   _veh animateDoor ["door_2", _state];            // Wildcat
-   _veh animateDoor ["Door_6_source", _state];     // Taru ramp
-   _veh animate ['vrata_right_big', _state];       // Mi-17 (CSLA) rear door
-   _veh animate ['vrata_left_big', _state];        // Mi-17 (CSLA) still rear door
-   _veh animate ['vrata_right_small', _state];     // Mi-17 (CSLA) yep stil door
-   _veh animate ['vrata_left_small', _state];      // Mi-17 (CSLA) reeeeeaaar door
-   _veh animate ["dvere2_posunZ",_state];          // Orca
-};
-
 private _reinf = if (count _this > 5) then {_this select 5} else {false};
 
 private _xRef = 2;
@@ -167,7 +125,7 @@ if (_vehType in FactionGet(all,"vehiclesPlanesTransport")) then {
 
 _veh setVelocity [0,0,0];
 if (canMove _veh) then {
-    [_veh, "open"] spawn _fnc_HeliDoors;
+    [_veh, "open"] spawn A3A_fnc_HeliDoors;
 };
 if (_vehType in FactionGet(all,"vehiclesPlanesTransport")) then {
 	if (alive _veh && canMove _veh) then
@@ -247,7 +205,7 @@ sleep 3;
 _veh flyInHeight 175;
 
 if (canMove _veh) then {
-    [_veh, "close"] spawn _fnc_HeliDoors;
+    [_veh, "close"] spawn A3A_fnc_HeliDoors;
 };
 
 if !(_reinf) then

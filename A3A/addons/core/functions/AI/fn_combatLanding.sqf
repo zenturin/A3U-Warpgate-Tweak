@@ -21,47 +21,6 @@ if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehicles
     _helicopter setVehicleRadar 1;
 };
 
-private _fnc_HeliDoors = {
-    params ["_helicopter", "_state"];
-
-    private _helicopter = _this#0;
-    private _state = _this#1;
-
-    switch _state do
-    {
-       case "open": { _state = 1; };
-       case "close": { _state = 0; };
-    };
-   _helicopter animateDoor ["Door_Cargo", _state];        // Mi-24V (CSLA) cargo doors
-   _helicopter animateDoor ["door_2_2_source", _state];   // VBH 1 (GM) right door
-   _helicopter animateDoor ["door_2_1_source", _state];   // VBH 1 (GM) left door
-   _helicopter animateDoor ["Door_Back_L", _state];       // Mohawk back door Left
-   _helicopter animateDoor ["Door_Back_R", _state];       // Mohawk back door Right
-   _helicopter animateDoor ["door_cargo_left", _state];   // Cougar
-   _helicopter animateDoor ["Door_L", _state];            // Ghosthawk
-   _helicopter animateDoor ["Door_L_source", _state];     // Huron front door
-   _helicopter animateDoor ["Door_rear_source", _state];  // Huron rear door
-   _helicopter animateDoor ["door_1", _state];            // Wildcat
-   _helicopter animateDoor ["Door_4_source", _state];     // Taru right door
-   _helicopter animateDoor ["Door_5_source", _state];     // Taru left door
-   _helicopter animate ["dvere1_posunZ",_state];          // Orca
-   _helicopter animate ["side_door", _state];             // Mi-17 (CSLA) side door
-   sleep 0.3; 
-   _helicopter animateDoor ["Door_1_source", _state];     // Y-32 Xi'an/V-44X
-   _helicopter animateDoor ["cargoramp_source", _state];  // CH-53G (GM) ramp
-   _helicopter animateDoor ["CargoRamp_Open", _state];    // Cougar
-   _helicopter animateDoor ["door_cargo_right", _state];  // Cougar
-   _helicopter animateDoor ["Door_R", _state];            // Ghosthawk
-   _helicopter animateDoor ["Door_R_source", _state];     // Huron front door
-   _helicopter animateDoor ["door_2", _state];            // Wildcat
-   _helicopter animateDoor ["Door_6_source", _state];     // Taru ramp
-   _helicopter animate ['vrata_right_big', _state];       // Mi-17 (CSLA) rear door
-   _helicopter animate ['vrata_left_big', _state];        // Mi-17 (CSLA) still rear door
-   _helicopter animate ['vrata_right_small', _state];     // Mi-17 (CSLA) yep stil door
-   _helicopter animate ['vrata_left_small', _state];      // Mi-17 (CSLA) reeeeeaaar door
-   _helicopter animate ["dvere2_posunZ",_state];          // Orca
-};
-
 // avoid weird situations where they receive RTB instructions before they finish unloading
 _crewGroup setVariable ["A3A_AIScriptHandle", _thisScript];
 _cargoGroup setVariable ["A3A_AIScriptHandle", _thisScript];
@@ -181,7 +140,7 @@ while {_interval < 0.9999} do
 sleep 0.1;
 _helicopter engineOn true; ///keep the engine running
 if(canMove _helicopter || alive _driver) then {
-    [_helicopter, "open"] spawn _fnc_HeliDoors;
+    [_helicopter, "open"] spawn A3A_fnc_HeliDoors;
 };
 
 _cargoGroup leaveVehicle _helicopter;
@@ -212,11 +171,11 @@ _cargoGroup spawn A3A_fnc_attackDrillAI;
 if(!canMove _helicopter || !alive _driver) exitWith { deleteVehicle _landPad };
 
 // Dirty hack to stop the heli lurching around near the ground
-private _dismountTime = count units _cargoGroup - 4;
+private _dismountTime = count units _cargoGroup - 3;
 [_helicopter, time + _dismountTime, _midHeight, _landPad] spawn {
     params ["_heli", "_endTime", "_flyHeight", "_landPad"];
     while { time < _endTime } do {
-        _heli setVelocity [0,0,-0.5];
+        _heli setVelocity [0,0,-0.65];
         sleep 1;
     };
     if (!isEngineOn _heli) then { _heli engineOn true;};
@@ -225,14 +184,13 @@ private _dismountTime = count units _cargoGroup - 4;
 };
 [_helicopter] call A3A_fnc_smokeCoverAuto;          // Already done by GetOut handler in AIVehInit?
 
-
 _helicopter engineOn true;  ///still keeping the engine running
 
-sleep _dismountTime + 1.5;
+sleep _dismountTime;
 
 _helicopter engineOn true;  ///we must keep the engine running
 if(canMove _helicopter || alive _driver) then {
-    [_helicopter, "close"] spawn _fnc_HeliDoors;
+    [_helicopter, "close"] spawn A3A_fnc_HeliDoors;
 };
 
 private _weapons = count weapons _helicopter;

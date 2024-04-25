@@ -20,10 +20,10 @@ Example:
 
 params [["_object", objNull, [objNull]]];
 
-_object setVehicleRadar 0; ///not sure if all of that, will see
+_object setVehicleRadar 0;
 _object setVehicleReceiveRemoteTargets true;
 _object setVehicleReportRemoteTargets true;
-_object setVehicleReportOwnPosition true;
+//_object setVehicleReportOwnPosition true;
 
 if (isNull _object) exitWith { Error("Non-existent object passed") };
 if !(typeof _object in A3A_utilityItemHM) exitWith { Error_1("initObject used on object type %1", typeof _object) };

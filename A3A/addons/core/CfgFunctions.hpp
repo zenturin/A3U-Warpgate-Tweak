@@ -33,6 +33,7 @@ class CfgFunctions
             class fleeToSide {};
             class guardDog {};
             class hasRadio {};
+            class HeliDoors {};
             class help {};
             class hideInBuilding {};
             class inmuneConvoy {};
