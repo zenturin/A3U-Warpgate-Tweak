@@ -26,11 +26,7 @@ if (_city isEqualTo []) exitWith {
     publicVariableServer "isEventInProgress";
 };
 
-private _anothercity = selectRandom citiesX;
-while {true} do {
-	if (_anothercity != _city) exitwith{};
-	private _anothercity = selectRandom citiesX;
-};
+private _anotherCity = selectRandom (citiesX select {_x != _city});
 
 private _spawnPosition = [_originPosition, 600, distanceSPWN, 0, 0, 1] call BIS_fnc_findSafePos;
 private _side = civilian;
@@ -139,7 +135,7 @@ private _civGroups = [];
 {
 	[_x, _side] call A3A_fnc_civVEHinit;
 	_groups = group driver _x;
-	private _wp = _groups addWaypoint [_posDest, 0];
+	private _wp = _groups addWaypoint [_posDest, 10];
 	_wp setWaypointSpeed "NORMAL";
 	_wp setWaypointType "GETOUT";
 	_wp setWaypointBehaviour "SAFE";

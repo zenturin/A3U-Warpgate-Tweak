@@ -71,14 +71,14 @@ private _fnc_spawngroups = {
 		_wp setWaypointType "SAD"; */
 		//{_x assignAsCargo _vehicle} forEach units _InfGroup;
 		//units _vehiclegroup join _InfGroup;
-		/* if (_difficult) then {
+		if (_difficult) then {
 			_UAVtype = selectRandom (_faction get "uavsPortable");
 			_uav = createVehicle [_UAVtype, _skirmishpositionActuall, [], 0, "FLY"];
 			[_side, _uav] call A3A_fnc_createVehicleCrew;
 			_vehiclesArray pushBack _uav;
 			_groupUAV = group (crew _uav select 1);
 			{[_x] joinSilent _InfGroup} forEach units _groupUAV;
-		}; */
+		};
 		[_InfGroup, "Patrol_Attack", 0, 300, 1000, true, _skirmishposition, true] call A3A_fnc_patrolLoop;
 		[_vehiclegroup, "Patrol_Area", 0, 300, 1000, true, _skirmishposition, false] call A3A_fnc_patrolLoop;
 		_vehiclesArray pushBack _vehicle;
@@ -107,14 +107,14 @@ private _fnc_spawngroups = {
 		_wp2 setWaypointType "SAD"; */
 		//{_x assignAsCargo _vehicle2} forEach units _Rivalsgroup;
 		//units _vehiclegroup2 join _Rivalsgroup;
-		if (_difficult2) then {
+		/* if (_difficult2) then {
 			_UAV2type = selectRandom (A3A_faction_riv get "vehiclesRivalsUavs");
 			_uav2 = createVehicle [_UAV2type, _skirmishpositionActuall2, [], 0, "FLY"];
 			[_side2, _uav2] call A3A_fnc_createVehicleCrew;
 			_vehiclesArray2 pushBack _uav2;
 			_groupUAV2 = group (crew _uav2 select 1);
 			{[_x] joinSilent _Rivalsgroup} forEach units _groupUAV2;
-		};
+		}; */
 		[_Rivalsgroup, "Patrol_Attack", 0, 300, 1000, true, _skirmishposition, true] call A3A_fnc_patrolLoop;
 		[_vehiclegroup2, "Patrol_Area", 0, 300, 1000, true, _skirmishposition, true] call A3A_fnc_patrolLoop;
 		_vehiclesArray2 pushBack _vehicle2;
