@@ -1407,8 +1407,8 @@
                 <Russian>БМП</Russian>
             </Key>
             <Key ID="STR_qrf_marker_airborne">
-                <Original>airborne</Original>
-                <Russian>самоходный зенитный комплекс</Russian>
+                <Original>Airborne</Original>
+                <Russian>воздушно-десантная техника</Russian>
             </Key>
             <Key ID="STR_qrf_marker_ugv">
                 <Original>UGV</Original>
