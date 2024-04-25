@@ -100,10 +100,11 @@ private _fnc_fillcargo = {
 	private _vehdriver = driver _vehObj;
 	private _vehObjgroup = group _vehdriver;
 	_cargospace = [_civVehicles, true] call BIS_fnc_crewCount;
-	_vehObj setVehicleLock "LOCKED";
+	//_vehObj setVehicleLock "LOCKED";
 	while {_cargospace != 1} do { ///driver already exists
 		_cargo = [_vehObjgroup, FactionGet(civ,"unitMan"), getPos _vehObj, [], 10] call A3A_fnc_createUnit;
-		_cargo moveInAny _vehObj;
+		_cargo moveInAny _vehObj; 
+        _cargo disableAI "MOVE";
 		group _cargo deleteGroupWhenEmpty true;
 		_cargospace = _cargospace - 1; //round random [1,3,5]; 
 		if (_cargospace < 1) then{
@@ -147,11 +148,10 @@ private _civGroups = [];
 } forEach _convoyobj;
 
 private _timeOut = time + 1800;
-waitUntil {(_convoyobj select 0) distance2D _posDest < 20};
-
-{_x setVehicleLock "UNLOCKED"} forEach _convoyobj;
-
 waitUntil {sleep 5; time > _timeOut};
+
+//{_x setVehicleLock "UNLOCKED"} forEach _convoyobj;
+
 
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
 {[_x] spawn A3A_fnc_groupDespawner} forEach _civGroups;

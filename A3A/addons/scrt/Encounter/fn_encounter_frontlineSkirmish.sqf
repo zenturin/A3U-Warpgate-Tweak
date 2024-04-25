@@ -28,7 +28,7 @@ diag_log _frontLine;
 
 diag_log _frontLine; */
 private _frontLine = (outposts + milbases + airportsX + resourcesX + factories + citiesX) select {([_x] call A3A_fnc_isFrontline && {sidesX getVariable [_x,sideUnknown] != teamPlayer})};
-private _frontlineSitesNearPlayer = ((outposts + milbases + airportsX + resourcesX + factories + citiesX) select {(_x in _frontLine) && {((getMarkerPos _x) distance2D _player < distanceSPWN) && {sidesX getVariable [_x,sideUnknown] != teamPlayer}}}) call BIS_fnc_arrayShuffle;
+private _frontlineSitesNearPlayer = ((outposts + milbases + airportsX + resourcesX + factories + citiesX) select {(_x in _frontLine) && {((getMarkerPos _x) distance2D _player < distanceSPWN*2) && {sidesX getVariable [_x,sideUnknown] != teamPlayer}}}) call BIS_fnc_arrayShuffle;
 
 if (_frontlineSitesNearPlayer isEqualTo []) exitWith {
     Info("No outposts in proximity, aborting Skirmish fronline Event.");
@@ -59,12 +59,12 @@ private _side = Occupants;
 private _side2 = Invaders;
 private _faction = Faction(_side);
 private _faction2 = Faction(_side2);
-private _FrontlineOutpostPosition = getMarkerPos _FrontlineOutpost;
+private _FrontlineOutpostPosition = _originPosition ;//getMarkerPos _FrontlineOutpost;
 
 private _specOpsArray = if (_difficult) then {selectRandom (_faction get "groupSpecOpsRandom")} else {selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)};     ///
 private _specOpsArray2 = if (_difficult2) then {selectRandom (_faction2 get "groupSpecOpsRandom")} else {selectRandom ([_faction2, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier)}; ///maybe move this into fuction and roll every time?
 
-_skirmishposition = [_FrontlineOutpostPosition, 2000, 2250, 10, 0, 10, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos; ///pos player , distance distance spwn
+_skirmishposition = [_FrontlineOutpostPosition, distanceSPWN0, distanceSPWN*1.1, 10, 0, 10, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos; ///pos player , distance distance spwn
 _skirmishposition2 = [_skirmishposition, 50, 250, 10, 0, 10, 0, [], [[0,0,0],[0,0,0]]] call BIS_fnc_findSafePos;
 
 
@@ -92,11 +92,21 @@ private _fnc_spawngroups = {
 		_vehiclegroup = _vehicledata select 2;
 		[_vehicle, Occupants] call A3A_fnc_AIVEHinit;
 		_vehiclegroup setBehaviourStrong "AWARE";
-		private _wpveh = _vehiclegroup addWaypoint [_skirmishposition, 50];
+		/* private _wpveh = _vehiclegroup addWaypoint [_skirmishposition, 50];
 		_wpveh setWaypointSpeed "NORMAL";
-		_wpveh setWaypointType "SAD";
-		{_x assignAsCargo _vehicle} forEach units _InfGroup;
-		units _vehiclegroup join _InfGroup;
+		_wpveh setWaypointType "SAD"; */
+		//{_x assignAsCargo _vehicle} forEach units _InfGroup;
+		//units _vehiclegroup join _InfGroup;
+		if (_difficult) then {
+			_UAVtype = selectRandom (_faction get "uavsPortable");
+			_uav = createVehicle [_UAVtype, _skirmishpositionActuall, [], 0, "FLY"];
+			[_side, _uav] call A3A_fnc_createVehicleCrew;
+			_vehiclesArray pushBack _uav;
+			_groupUAV = group (crew _uav select 1);
+			{[_x] joinSilent _InfGroup} forEach units _groupUAV;
+		};
+		[_InfGroup, "Patrol_Attack", 0, 300, 1000, true, _skirmishposition, true] call A3A_fnc_patrolLoop;
+		[_vehiclegroup, "Patrol_Area", 0, 300, 1000, true, _skirmishposition, false] call A3A_fnc_patrolLoop;
 		_vehiclesArray pushBack _vehicle;
 	};
 	for "_i" from 1 to _amount2 do {
@@ -121,11 +131,21 @@ private _fnc_spawngroups = {
 		_vehiclegroup2 = _vehicledata2 select 2;
 		[_vehicle2, Invaders] call A3A_fnc_AIVEHinit;
 		_vehiclegroup2 setBehaviourStrong "AWARE";
-		private _wpveh2 = _vehiclegroup2 addWaypoint [_skirmishposition, 50];
+		/* private _wpveh2 = _vehiclegroup2 addWaypoint [_skirmishposition, 50];
 		_wpveh2 setWaypointSpeed "NORMAL";
-		_wpveh2 setWaypointType "SAD";
-		{_x assignAsCargo _vehicle2} forEach units _InfGroup2;
-		units _vehiclegroup2 join _InfGroup2;
+		_wpveh2 setWaypointType "SAD"; */
+		//{_x assignAsCargo _vehicle2} forEach units _InfGroup2;
+		//units _vehiclegroup2 join _InfGroup2;
+		if (_difficult2) then {
+			_UAV2type = selectRandom (_faction2 get "uavsPortable");
+			_uav2 = createVehicle [_UAV2type, _skirmishpositionActuall2, [], 0, "FLY"];
+			[_side2, _uav2] call A3A_fnc_createVehicleCrew;
+			_vehiclesArray2 pushBack _uav2;
+			_groupUAV2 = group (crew _uav2 select 1);
+			{[_x] joinSilent _InfGroup2} forEach units _groupUAV2;
+		};
+		[_InfGroup2, "Patrol_Attack", 0, 300, 1000, true, _skirmishposition, true] call A3A_fnc_patrolLoop;
+		[_vehiclegroup2, "Patrol_Area", 0, 300, 1000, true, _skirmishposition, true] call A3A_fnc_patrolLoop;
 		_vehiclesArray2 pushBack _vehicle2;
 	};
 	/* for "_i" from 1 to _vehiclesAmount do {
@@ -188,8 +208,8 @@ private _vehiclesArray2 = [];
 ///dissable AI and wait until players are nearby? or just wait until players are nearby and then spawn units
 
 private _timeOut = time + 3600;
-waitUntil {time > _timeOut && _player distance2D _skirmishposition > 2000};
-
+waitUntil {time > _timeOut && (call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_skirmishposition, distanceSPWN1, distanceSPWN1] isEqualTo []};
+/* _player distance2D _skirmishposition > 2000   */
 ///If someone survived -> move to base from the check above?
 ///some sort of check needed to delete groups and vehicles smart way
 {[_x] spawn A3A_fnc_vehDespawner} forEach _vehicles;
