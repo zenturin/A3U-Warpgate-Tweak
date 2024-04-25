@@ -92,7 +92,7 @@ if (_HeliClass == "O_Heli_Transport_04_F") then {
 	(_faction get "vehiclesAA") + (_faction get "vehiclesLightTanks") + (_faction get "vehiclesMilitiaAPCs") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs") + _csatPods);
 	while {_attempts != 0} do {
 		_lootcrateType = selectRandom ((_faction get "vehiclesLightUnarmed") + (_faction get "vehiclesLightArmed") + (_faction get "vehiclesAirborne") + (_faction get "vehiclesAA") + (_faction get "vehiclesLightTanks") + 
-		(_faction get "vehiclesMilitiaAPCs") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs") + + _csatPods);
+		(_faction get "vehiclesMilitiaAPCs") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs") + _csatPods);
 		_lootCrate = /* _lootcrateType createVehicle _actualspawnPosition */[_lootcrateType, _actualspawnPosition, [], 30, "NONE"];
 		deleteVehicle _lootCrate;
 		if (_heliVehicle canSlingLoad _lootCrate) exitwith {};
