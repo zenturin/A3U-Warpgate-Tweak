@@ -1187,7 +1187,7 @@ if (_hasCSLA) then {
         ["US85_M16A2CARGL","","","US85_sc2000_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],["US85_M406","US85_M406","US85_M406","US85_M583A1"],""],
         ["CSLA_VG70","","","",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],["CSLA_26_5vz70","CSLA_26_5vz70","CSLA_26_5sigZl1a","CSLA_26_5sigB1a","CSLA_26_5sigCrD"],""],
         ["CSLA_Sa58P","","","CSLA_ZD4x8",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],[],"CSLA_Sa58bpd"],
-        ["CSLA_Sa58V","","","",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],[],"CSLA_Sa58bpd"],
+        ["CSLA_Sa58V","","","",["CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62vz43","CSLA_Sa58_30rnd_7_62Sv43"],[],"CSLA_Sa58bpd"]
     ];
     (_militiaLoadoutData get "rifles") append [
         ["US85_M16A2","","","US85_sc2000_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],[],""],
