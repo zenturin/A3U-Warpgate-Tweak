@@ -276,7 +276,7 @@ private _shopGM = if (_hasGM) then {
 } else {
     []
 };
-private _shopCLSA = if (_hasCSLA) then {
+private _shopCSLA = if (_hasCSLA) then {
     [
     ["AFMC_M252_Stat", 5000, "STATICMORTAR", {tierWar > 3}],
     ["CSLA_M52_Stat", 4000, "STATICMORTAR", {tierWar > 3}],
@@ -315,7 +315,7 @@ private _shopCLSA = if (_hasCSLA) then {
     []
 };
 
-private _vehiclesBlackMarket = _shopTanks + _shopApex + _shopWs + _shopRF + _shopLawsOfWar + _shopContact + _shopJets + _shopMarksman + _shopGM + _shopCLSA + [
+private _vehiclesBlackMarket = _shopTanks + _shopApex + _shopWs + _shopRF + _shopLawsOfWar + _shopContact + _shopJets + _shopMarksman + _shopGM + _shopCSLA + [
     ["I_HMG_01_high_F", 1000, "STATICMG", {tierWar > 3}],
     ["I_HMG_01_F", 700, "STATICMG", {tierWar > 3}],
     ["I_GMG_01_high_F", 3000, "STATICMG", {tierWar > 3}],
