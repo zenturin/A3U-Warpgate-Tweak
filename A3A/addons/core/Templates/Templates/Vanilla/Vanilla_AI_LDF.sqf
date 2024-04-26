@@ -1220,7 +1220,7 @@ if (_hasGM) then {
     _marksmanRifles append [
         ["gm_svd_wud","","","gm_pso1_dovetail_blk",["gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk"],[],""]
     ];
-    _sniperRifles append append [
+    _sniperRifles append [
         ["gm_svd_wud","","","gm_pso6x36_1_dovetail_gry",["gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk"],[],""]
     ];
     (_militiaLoadoutData get "machineGuns") append [
