@@ -54,8 +54,8 @@ private _makeUnconscious =
 	_unit setUnconscious true;
 	if (leader _unit == player && _unit == player) then {
         {
-			_x leaveVehicle (assignedVehicle _x);
-			doGetOut _x; 
+	    _x leaveVehicle (assignedVehicle _x);
+	    doGetOut _x; 
             unassignVehicle _x;
         } forEach units player;
     };
