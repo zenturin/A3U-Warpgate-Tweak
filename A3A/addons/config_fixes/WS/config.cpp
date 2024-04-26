@@ -2,7 +2,6 @@
 
 #include "..\script_component.hpp"
 
-#if __has_include("\lxws\data_f_lxws\config.bin")
 
 class CfgPatches 
 {
