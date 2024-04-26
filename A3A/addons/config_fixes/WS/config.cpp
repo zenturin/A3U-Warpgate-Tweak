@@ -11,7 +11,8 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"A3_Data_F_AoW_Loadorder","Vehicles_F_lxWS"};
+        skipWhenMissingDependencies = 1;
+        requiredAddons[] = {"A3_Data_F_AoW_Loadorder", "Vehicles_F_lxWS"};
         author = AUTHOR;
         authors[] = { AUTHORS };
         authorUrl = "";
