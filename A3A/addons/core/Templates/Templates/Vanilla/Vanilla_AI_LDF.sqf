@@ -1176,7 +1176,7 @@ if (_hasCSLA) then {
     (_militiaLoadoutData get "machineGuns") append [
         ["US85_M60","","","",["US85_100Rnd_762x51","US85_100Rnd_762x51","US85_100Rnd_762x51"],[],""],
         ["US85_M249","","","US85_sc4x20M249",["US85_200Rnd_556x45","US85_200Rnd_556x45","US85_200Rnd_556x45"],[],""],
-        ["CSLA_UK59L","","","CSLA_UK59_ZD4x8",["CSLA_UK59_50rnd_7_62vz59","CSLA_UK59_50rnd_7_62PZ59","CSLA_UK59_50rnd_7_62Tz59","CSLA_UK59_50rnd_7_62TzSv59","CSLA_UK59_50rnd_7_62Sv59"],[],""],
+        ["CSLA_UK59L","","","CSLA_UK59_ZD4x8",["CSLA_UK59_50rnd_7_62vz59","CSLA_UK59_50rnd_7_62PZ59","CSLA_UK59_50rnd_7_62Tz59","CSLA_UK59_50rnd_7_62TzSv59","CSLA_UK59_50rnd_7_62Sv59"],[],""]
     ];
     (_militiaLoadoutData get "slRifles") append [
         ["US85_M16A2","","","US85_sc4x20_M16",["US85_30Rnd_556x45","US85_30Rnd_556x45","US85_30Rnd_556x45"],[],""],
