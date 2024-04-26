@@ -53,12 +53,12 @@ private _makeUnconscious =
 	_unit setVariable ["helpFailed", 0];
 	_unit setUnconscious true;
 	if (leader _unit == player && _unit == player) then {
-        {
-	    _x leaveVehicle (assignedVehicle _x);
-	    doGetOut _x; 
-            unassignVehicle _x;
-        } forEach units player;
-    };
+            {
+	        _x leaveVehicle (assignedVehicle _x);
+	        doGetOut _x; 
+                unassignVehicle _x;
+            } forEach units player;
+        };
 	if (vehicle _unit != _unit) then
 	{
 		moveOut _unit;
