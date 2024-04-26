@@ -88,24 +88,30 @@ private _fnc_spawnConvoyVehicle = {
 };
 
 private _convoyobj = [];
-private _cargospace = objNull;
+private _cargoSpace = objNull;
 private _cargospaceResized = objNull;
 private _cargo = objNull;
 private _fnc_fillcargo = {
 	params ["_vehObj","_civVehicles"];
 	private _vehdriver = driver _vehObj;
 	private _vehObjgroup = group _vehdriver;
-	_cargospace = [_civVehicles, true] call BIS_fnc_crewCount;
-	//_vehObj setVehicleLock "LOCKED";
-	while {_cargospace != 1} do { ///driver already exists
-		_cargo = [_vehObjgroup, FactionGet(civ,"unitMan"), getPos _vehObj, [], 10] call A3A_fnc_createUnit;
-		_cargo moveInAny _vehObj; 
-        _cargo disableAI "MOVE";
-		group _cargo deleteGroupWhenEmpty true;
-		_cargospace = _cargospace - 1; //round random [1,3,5]; 
-		if (_cargospace < 1) then{
-			_cargospace = 1;
-		};
+    if (civTraffic isEqualTo 2) then {
+	    _cargoSpace = [_civVehicles, true] call BIS_fnc_crewCount;
+        _cargoSpace = _cargoSpace - 1;
+	    //_vehObj setVehicleLock "LOCKED";
+	    /* while {_cargoSpace != 1} do { ///driver already exists
+            
+        }; */
+        for _i from 1 to _cargoSpace do {
+            _cargo = [_vehObjgroup, FactionGet(civ,"unitMan"), getPos _vehObj, [], 10] call A3A_fnc_createUnit;
+            _cargo moveInAny _vehObj; 
+            _cargo disableAI "MOVE";
+		    /* _cargoSpace = _cargoSpace - 1; //round random [1,3,5]; 
+		    if (_cargoSpace < 1) then{
+			    _cargospace = 1;
+		    }; */
+            group _cargo deleteGroupWhenEmpty true;
+        };
 	};
 };
 
@@ -143,7 +149,7 @@ private _civGroups = [];
 	_vehicles pushBack _x;
 } forEach _convoyobj;
 
-private _timeOut = time + 1800;
+private _timeOut = time + 1200;
 waitUntil {sleep 5; time > _timeOut};
 
 //{_x setVehicleLock "UNLOCKED"} forEach _convoyobj;
