@@ -119,7 +119,7 @@
     {
         name = "Empire (Arctic)";
         file = "WM_AI_EMP_Arctic";
-        climate[] = {"arctic"}
+        climate[] = {"arctic"};
     };
 	
     class WM_RCU : WEMP_Base
