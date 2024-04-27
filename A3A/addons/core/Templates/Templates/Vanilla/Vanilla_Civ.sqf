@@ -216,8 +216,13 @@ if (_hasWs) then {
         "lxWS_Said_Head",
         "lxWS_African_Head_Old",
         "lxWS_African_Head_Old_Bard",
-        "lxWS_African_Head_03"
+        "lxWS_African_Head_03",
+        "lxWS_Journalist_Head",
+        "lxWS_Givens_Head"
     ];
+};
+if (_hasRF) then {
+    _faces append ["Pilot1_Head_rf","Pilot2_Head_rf"];
 };
 ["faces", _faces] call _fnc_saveToTemplate;
 
