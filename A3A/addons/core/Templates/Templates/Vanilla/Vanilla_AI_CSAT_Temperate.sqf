@@ -369,9 +369,7 @@ _sfLoadoutData set ["glasses", ["G_Balaclava_TI_blk_F"]];
 _sfLoadoutData set ["goggles", ["G_Balaclava_TI_blk_F"]];
 
 if (_hasRF) then {
-    (_sfLoadoutData get "helmets") append [
-        ["H_HelmetHeavy_Black_RF","H_HelmetHeavy_Simple_Black_RF","H_HelmetHeavy_VisorUp_Black_RF","H_HelmetHeavy_GHex_RF","H_HelmetHeavy_Simple_GHex_RF","H_HelmetHeavy_VisorUp_GHex_RF","H_HelmetB_plain_sb_tna_RF"]
-    ];
+    (_sfLoadoutData get "helmets") append ["H_HelmetHeavy_Black_RF","H_HelmetHeavy_Simple_Black_RF","H_HelmetHeavy_VisorUp_Black_RF","H_HelmetHeavy_GHex_RF","H_HelmetHeavy_Simple_GHex_RF","H_HelmetHeavy_VisorUp_GHex_RF"];
     (_sfLoadoutData get "Hvests") append ["V_TacVest_rig_oli_RF","V_TacVest_rig_blk_RF"];
 };
 
@@ -493,7 +491,7 @@ if (_hasWs) then {
     (_sfLoadoutData get "rifles") append [
         ["arifle_Galat_lxWS","suppressor_h_lxWS","acc_pointer_IR_sand_lxWS","optic_Hamr",["30Rnd_762x39_Mag_F","30Rnd_762x39_Mag_F","30Rnd_762x39_Mag_F","30Rnd_762x39_Mag_F"], [], ""],
         ["arifle_SLR_V_lxWS","suppressor_h_lxWS","","optic_Hamr",["30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_tracer_green_lxWS"], [], ""],
-        ["arifle_Velko_lxWS","suppressor_l_lxWS","acc_pointer_IR_sand_lxWSR","optic_Hamr",["35Rnd_556x45_Velko_reload_tracer_red_lxWS","35Rnd_556x45_Velko_reload_tracer_red_lxWS","50Rnd_556x45_Velko_reload_tracer_red_lxWS"], [], ""]
+        ["arifle_Velko_lxWS","suppressor_l_lxWS","acc_pointer_IR_sand_lxWS","optic_Hamr",["35Rnd_556x45_Velko_reload_tracer_red_lxWS","35Rnd_556x45_Velko_reload_tracer_red_lxWS","50Rnd_556x45_Velko_reload_tracer_red_lxWS"], [], ""]
     ];
     (_sfLoadoutData get "grenadeLaunchers") append [
         ["arifle_SLR_V_GL_lxWS","","","optic_Hamr",["30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_tracer_green_lxWS"], ["1Rnd_40mm_HE_lxWS","1Rnd_58mm_AT_lxWS","1Rnd_50mm_Smoke_lxWS"], ""],
@@ -546,9 +544,7 @@ _eliteLoadoutData set ["backpacks", ["B_ViperLightHarness_ghex_F", "B_ViperHarne
 _eliteLoadoutData set ["binoculars", ["Laserdesignator_02_ghex_F"]];
 
 if (_hasRF) then {
-    (_eliteLoadoutData get "helmets") append [
-        ["H_HelmetHeavy_Black_RF","H_HelmetHeavy_Simple_Black_RF","H_HelmetHeavy_VisorUp_Black_RF","H_HelmetHeavy_GHex_RF","H_HelmetHeavy_Simple_GHex_RF","H_HelmetHeavy_VisorUp_GHex_RF","H_HelmetB_plain_sb_tna_RF"]
-    ];
+    (_eliteLoadoutData get "helmets") append ["H_HelmetHeavy_Black_RF","H_HelmetHeavy_Simple_Black_RF","H_HelmetHeavy_VisorUp_Black_RF","H_HelmetHeavy_GHex_RF","H_HelmetHeavy_Simple_GHex_RF","H_HelmetHeavy_VisorUp_GHex_RF","H_HelmetB_plain_sb_tna_RF"];
     (_eliteLoadoutData get "Hvests") append ["V_TacVest_rig_oli_RF","V_TacVest_rig_blk_RF"];
     (_eliteLoadoutData get "backpacks") append ["B_DuffleBag_Olive_NoLogo_RF","O_CommandoMortar_weapon_RF"];
 };
@@ -672,7 +668,7 @@ if (_hasWs) then {
     (_eliteLoadoutData get "rifles") append [
         ["arifle_Galat_lxWS","","acc_pointer_IR_sand_lxWS","optic_Hamr",["30Rnd_762x39_Mag_F","30Rnd_762x39_Mag_F","30Rnd_762x39_Mag_F","30Rnd_762x39_Mag_F"], [], ""],
         ["arifle_SLR_V_lxWS","","","optic_Hamr",["30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_tracer_green_lxWS"], [], ""],
-        ["arifle_Velko_lxWS","","acc_pointer_IR_sand_lxWSR","optic_Hamr",["35Rnd_556x45_Velko_reload_tracer_red_lxWS","35Rnd_556x45_Velko_reload_tracer_red_lxWS","50Rnd_556x45_Velko_reload_tracer_red_lxWS"], [], ""]
+        ["arifle_Velko_lxWS","","acc_pointer_IR_sand_lxWS","optic_Hamr",["35Rnd_556x45_Velko_reload_tracer_red_lxWS","35Rnd_556x45_Velko_reload_tracer_red_lxWS","50Rnd_556x45_Velko_reload_tracer_red_lxWS"], [], ""]
     ];
     (_eliteLoadoutData get "grenadeLaunchers") append [
         ["arifle_SLR_V_GL_lxWS","","","optic_Hamr",["30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_tracer_green_lxWS"], ["1Rnd_40mm_HE_lxWS","1Rnd_58mm_AT_lxWS","1Rnd_50mm_Smoke_lxWS"], ""],
@@ -724,9 +720,7 @@ _militaryLoadoutData set ["backpacks", ["B_Carryall_ghex_F", "B_FieldPack_ghex_F
 _militaryLoadoutData set ["helmets", ["H_HelmetO_ghex_F"]];
 
 if (_hasRF) then {
-    (_militaryLoadoutData get "helmets") append [
-        ["H_HelmetHeavy_Black_RF","H_HelmetHeavy_Simple_Black_RF","H_HelmetHeavy_VisorUp_Black_RF","H_HelmetHeavy_GHex_RF","H_HelmetHeavy_Simple_GHex_RF","H_HelmetHeavy_VisorUp_GHex_RF","H_HelmetB_plain_sb_tna_RF"]
-    ];
+    (_militaryLoadoutData get "helmets") append ["H_HelmetHeavy_Black_RF","H_HelmetHeavy_Simple_Black_RF","H_HelmetHeavy_VisorUp_Black_RF","H_HelmetHeavy_GHex_RF","H_HelmetHeavy_Simple_GHex_RF","H_HelmetHeavy_VisorUp_GHex_RF","H_HelmetB_plain_sb_tna_RF"];
     (_militaryLoadoutData get "Hvests") append ["V_TacVest_rig_oli_RF","V_TacVest_rig_blk_RF"];
 };
 

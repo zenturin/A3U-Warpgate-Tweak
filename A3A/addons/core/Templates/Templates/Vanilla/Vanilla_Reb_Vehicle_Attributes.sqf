@@ -11,6 +11,8 @@
     ["a3a_C_Heli_Light_02_blue_F", ["rebCost", 6500]]
 ]] call _fnc_saveToTemplate;
 
+////PLEASE SOMEONE HELP ME ADD PROPER PRICES TO DLC VEHICLES
+
 if (isClass (configFile >> "CfgPatches" >> "RF_Vehicles")) then {
     (["attributesVehicles"] call _fnc_getFromTemplate) append [
         ["C_Heli_EC_01A_civ_RF", ["rebCost", 8000]],

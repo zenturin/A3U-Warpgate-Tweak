@@ -143,7 +143,7 @@ if (_hasRF) then {
     _uavsPortable pushBack "B_UAV_RC40_SENSOR_RF";
     _howitzers pushBack "B_T_TwinMortar_RF";
     _policeVehs append ["a3a_police_Pickup_rf", "B_GEN_Pickup_covered_rf", "a3a_police_Pickup_comms_rf"];
-    _helisLight append ["B_Heli_light_03_unarmed_RF"];
+    _helisLight pushBack "B_Heli_light_03_unarmed_RF";
     _transportHelicopters append ["I_Heli_EC_01A_military_RF","B_Heli_EC_04_military_RF"];
     _helisLightAttack append ["a3a_Heli_light_03_dynamicLoadout_RF","a3a_black_Heli_light_03_dynamicLoadout_RF","B_Heli_EC_03_RF"];
     _helisAttack pushBack "a3a_black_Heli_EC_02_RF";
@@ -152,17 +152,17 @@ if (_hasRF) then {
 if (_hasGM) then {
     _lightTanks pushBack "gm_dk_army_Leopard1a3";
     _militiaAPCs append ["gm_dk_army_m113a1dk_apc","gm_dk_army_m113a1dk_command","gm_dk_army_m113a1dk_engineer","gm_dk_army_m113a2dk"];
-    _IFVs append ["gm_dk_army_m113a2dk"];
+    _IFVs pushBack "gm_dk_army_m113a2dk";
     _militiaTrucks append ["gm_pl_army_ural4320_cargo","gm_ge_army_u1300l_cargo"];
     _militiaCars append ["gm_ge_army_iltis_cargo","gm_pl_army_uaz469_cargo","gm_dk_army_typ253_cargo","gm_dk_army_typ247_cargo","gm_dk_army_typ1200_cargo"];
     _militiaLightArmed append ["gm_ge_army_iltis_milan","gm_ge_army_iltis_mg3"];
     _policeVehs append ["gm_gc_pol_p601","gm_ge_pol_typ1200","gm_ge_pol_typ253","gm_ge_pol_w123"];
-    _airborneVehicles append ["gm_dk_army_m113a2dk"];
+    _airborneVehicles pushBack "gm_dk_army_m113a2dk";
     _Trucks append ["gm_ge_army_u1300l_cargo","gm_ge_army_kat1_451_cargo"];
     _cargoTrucks append ["gm_dk_army_u1300l_container","gm_ge_army_kat1_454_cargo","gm_ge_army_kat1_451_container","gm_ge_army_kat1_452_container"];
     _ammoTrucks append ["gm_ge_army_kat1_451_reammo","gm_ge_army_kat1_454_reammo"];
     _repairTrucks append ["gm_ge_army_u1300l_repair","gm_dk_army_bpz2a0"];
-    _fuelTrucks append ["gm_ge_army_kat1_451_refuel"];
+    _fuelTrucks pushBack "gm_ge_army_kat1_451_refuel";
     _medicalTrucks append ["gm_dk_army_m113a1dk_medic","gm_ge_army_u1300l_medic"];
 };
 
@@ -358,7 +358,7 @@ if (_hasCSLA) then {
 
 ["voices", ["Male01ENG","Male02ENG","Male03ENG","Male04ENG","Male05ENG","Male06ENG","Male07ENG","Male08ENG","Male09ENG","Male10ENG","Male11ENG","Male12ENG","Male01ENGFRE","Male02ENGFRE"]] call _fnc_saveToTemplate;
 private _faces = ["AfricanHead_01","AfricanHead_02","AfricanHead_03","Barklem",
-"GreekHead_A3_05","GreekHead_A3_07","Sturrock","WhiteHead_01","WhiteHead_02",
+"GreekHead_A3_05","GreekHead_A3_07","WhiteHead_01","WhiteHead_02",
 "WhiteHead_03","WhiteHead_04","WhiteHead_05","WhiteHead_06","WhiteHead_07",
 "WhiteHead_08","WhiteHead_09","WhiteHead_11","WhiteHead_12","WhiteHead_14",
 "WhiteHead_15","WhiteHead_16","WhiteHead_18","WhiteHead_19","WhiteHead_20",

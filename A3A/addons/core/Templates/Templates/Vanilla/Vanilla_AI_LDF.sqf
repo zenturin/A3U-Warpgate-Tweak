@@ -59,7 +59,6 @@ private _transportHelicopters = ["B_Heli_Transport_01_camo_F"];
 private _helisLightAttack = ["I_E_Heli_light_03_dynamicLoadout_F", "B_Heli_Light_01_armed_F"];
 private _helisAttack = ["B_Heli_Attack_01_F"];
 
-
 private _artillery = ["B_T_MBT_01_arty_F", "I_E_Truck_02_MRL_F"];
 ["magazines", createHashMapFromArray [
     ["B_T_MBT_01_arty_F", ["32Rnd_155mm_Mo_shells", "2Rnd_155mm_Mo_Cluster", "6Rnd_155mm_Mo_mine"]],
@@ -119,7 +118,7 @@ if (_hasJets) then {
 };
 
 if (_hasWs) then {
-    _staticAA pushBack ["I_Tura_ZU23_lxWS"];
+    _staticAA pushBack "I_Tura_ZU23_lxWS";
     _aa pushBack "I_A_Truck_02_aa_lxWS";
     _cargoTrucks = ["I_E_Truck_02_cargo_lxWS", "I_E_Truck_02_flatbed_lxWS"];
 };
@@ -430,11 +429,11 @@ _loadoutData set ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["U_I_E_Uniform_01_F", "U_I_E_Uniform_01_tanktop_F", "U_I_E_Uniform_01_sweater_F","U_I_E_CBRN_Suit_01_EAF_F"]];
+_sfLoadoutData set ["uniforms", ["U_I_E_Uniform_01_F", "U_I_E_Uniform_01_tanktop_F", "U_I_E_Uniform_01_sweater_F","U_I_E_CBRN_Suit_01_EAF_F","U_O_R_Gorka_01_F","U_O_R_Gorka_01_camo_F"]];
 _sfLoadoutData set ["vests", ["V_CarrierRigKBT_01_light_EAF_F","V_SmershVest_01_F","V_SmershVest_01_radio_F","V_CarrierRigKBT_01_light_Olive_F","V_PlateCarrier1_blk","V_PlateCarrier2_blk"]];
 _sfLoadoutData set ["Hvests", ["V_CarrierRigKBT_01_heavy_EAF_F","V_CarrierRigKBT_01_heavy_Olive_F","V_PlateCarrierIAGL_oli"]];
 _sfLoadoutData set ["backpacks", ["B_AssaultPack_eaf_F", "B_Carryall_eaf_F", "B_Kitbag_rgr", "B_Kitbag_sgg"]];
-_sfLoadoutData set ["helmets", ["H_HelmetHBK_headset_F", "H_HelmetHBK_chops_F", "H_HelmetHBK_ear_F", "H_HelmetHBK_F","H_HelmetSpecB_wdl"]];
+_sfLoadoutData set ["helmets", ["H_HelmetHBK_headset_F", "H_HelmetHBK_chops_F", "H_HelmetHBK_ear_F", "H_HelmetHBK_F","H_HelmetSpecB_wdl","H_HelmetAggressor_F","H_HelmetAggressor_cover_F","H_HelmetAggressor_cover_taiga_F"]];
 if (_hasMarksman) then {
 	_sfLoadoutData set ["binoculars", ["Laserdesignator_03"]];
 } else {
@@ -455,9 +454,7 @@ if (_hasLawsOfWar) then {
 };
 
 if (_hasRF) then {
-   (_sfLoadoutData get "helmets") append [
-        ["H_HelmetHeavy_Olive_RF","H_HelmetHeavy_Simple_Olive_RF","H_HelmetHeavy_VisorUp_Olive_RF","H_HelmetB_plain_sb_geo_RF"]
-   ];
+   (_sfLoadoutData get "helmets") append ["H_HelmetHeavy_Olive_RF","H_HelmetHeavy_Simple_Olive_RF","H_HelmetHeavy_VisorUp_Olive_RF","H_HelmetB_plain_sb_geo_RF"];
    (_sfLoadoutData get "vests") append ["V_TacVest_rig_oli_RF","V_TacVest_rig_blk_RF"];
    (_sfLoadoutData get "Hvests") pushBack "V_PlateCarrierLite_black_noFlag_RF";
 };
@@ -673,12 +670,12 @@ if (_hasRF) then {
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_eliteLoadoutData set ["uniforms", ["U_I_E_Uniform_01_F", "U_I_E_Uniform_01_tanktop_F", "U_I_E_Uniform_01_sweater_F"]];
+_eliteLoadoutData set ["uniforms", ["U_I_E_Uniform_01_F", "U_I_E_Uniform_01_tanktop_F", "U_I_E_Uniform_01_sweater_F","U_O_R_Gorka_01_F","U_O_R_Gorka_01_camo_F"]];
 _eliteLoadoutData set ["slUniforms", ["U_I_E_Uniform_01_officer_F"]];
 _eliteLoadoutData set ["vests", ["V_CarrierRigKBT_01_light_EAF_F","V_SmershVest_01_F","V_SmershVest_01_radio_F","V_CarrierRigKBT_01_light_Olive_F","V_PlateCarrier1_blk","V_PlateCarrier2_blk"]];
 _eliteLoadoutData set ["Hvests", ["V_CarrierRigKBT_01_heavy_EAF_F","V_CarrierRigKBT_01_heavy_Olive_F","V_PlateCarrierIAGL_oli"]];
 _eliteLoadoutData set ["backpacks", ["B_AssaultPack_eaf_F", "B_Carryall_eaf_F", "B_AssaultPack_rgr", "B_AssaultPack_sgg", "B_Kitbag_rgr", "B_Kitbag_sgg"]];
-_eliteLoadoutData set ["helmets", ["H_HelmetHBK_headset_F", "H_HelmetHBK_chops_F", "H_HelmetHBK_ear_F", "H_HelmetHBK_F","H_HelmetSpecB_wdl"]];
+_eliteLoadoutData set ["helmets", ["H_HelmetHBK_headset_F", "H_HelmetHBK_chops_F", "H_HelmetHBK_ear_F", "H_HelmetHBK_F","H_HelmetSpecB_wdl","H_HelmetAggressor_F","H_HelmetAggressor_cover_F","H_HelmetAggressor_cover_taiga_F"]];
 if (_hasMarksman) then {
 	_eliteLoadoutData  set ["binoculars", ["Laserdesignator_03"]];
 } else {
@@ -700,9 +697,7 @@ if (_hasLawsOfWar) then {
 };
 
 if (_hasRF) then {
-   (_eliteLoadoutData get "helmets") append [
-        ["H_HelmetHeavy_Olive_RF","H_HelmetHeavy_Simple_Olive_RF","H_HelmetHeavy_VisorUp_Olive_RF","H_HelmetB_plain_sb_geo_RF"]
-   ];
+   (_eliteLoadoutData get "helmets") append ["H_HelmetHeavy_Olive_RF","H_HelmetHeavy_Simple_Olive_RF","H_HelmetHeavy_VisorUp_Olive_RF","H_HelmetB_plain_sb_geo_RF"];
    (_eliteLoadoutData get "vests") append ["V_TacVest_rig_oli_RF","V_TacVest_rig_blk_RF"];
    (_eliteLoadoutData get "Hvests") pushBack "V_PlateCarrierLite_black_noFlag_RF";
    (_eliteLoadoutData get "backpacks") append ["B_DuffleBag_Olive_NoLogo_RF","I_E_CommandoMortar_weapon_RF"];
@@ -1275,9 +1270,7 @@ _crewLoadoutData set ["vests", ["V_CarrierRigKBT_01_EAF_F"]];
 _crewLoadoutData set ["helmets", ["H_Tank_eaf_F", "H_HelmetCrew_I_E"]];
 
 if (_hasCSLA) then {
-    (_crewLoadoutData get "helmets") append [
-        ["US85_helmetDH132","US85_helmetDH132G","US85_helmetDH132G_on"]
-    ];
+    (_crewLoadoutData get "helmets") append ["US85_helmetDH132","US85_helmetDH132G","US85_helmetDH132G_on"];
 };
 if (_hasGM) then {
     (_crewLoadoutData get "helmets") pushBack "gm_ge_headgear_crewhat_80_blk";

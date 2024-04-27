@@ -23,8 +23,8 @@ private _hasRF = "rf" in A3A_enabledDLC;
 //       	Identities    			//
 //////////////////////////////////////
 
-["faces", ["TanoanHead_A3_01","TanoanHead_A3_02","TanoanHead_A3_03","TanoanHead_A3_04","TanoanHead_A3_05","TanoanHead_A3_06","TanoanHead_A3_07","TanoanHead_A3_08"]] call _fnc_saveToTemplate;
-["voices", ["Male01ENGFRE","Male02ENGFRE"]] call _fnc_saveToTemplate;
+["faces", ["AfricanHead_01","AfricanHead_02","AfricanHead_03","Barklem","TanoanHead_A3_01","TanoanHead_A3_02","TanoanHead_A3_03","TanoanHead_A3_04","TanoanHead_A3_05","TanoanHead_A3_06","TanoanHead_A3_07","TanoanHead_A3_08"]] call _fnc_saveToTemplate;
+["voices", ["Male01ENGFRE","Male02ENGFRE","male01fre","male02fre","male03fre"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
@@ -55,7 +55,6 @@ if (_hasLawsOfWar) then {
 if (_hasTanks) then {
 	_tanks pushBack "I_LT_01_cannon_F";
 };
-
 
 private _staticLowWeapons = ["O_G_HMG_02_F"];
 private _staticAT = ["O_static_AT_F"];
@@ -129,7 +128,7 @@ if (_hasCSLA) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["I_LT_01_cannon_F", ["Indep_Olive",1]]
+    ["I_LT_01_cannon_F", ["Indep_Olive", 1, "Indep_01", 0]]
 ]] call _fnc_saveToTemplate;
 
 //////////////////////////

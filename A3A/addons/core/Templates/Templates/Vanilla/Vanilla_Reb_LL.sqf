@@ -110,7 +110,7 @@ if (_hasGM) then {
 
 if (_hasCSLA) then {
     _staticMG append ["AFMC_M2h", "AFMC_M2l","CSLA_UK59L_Stat","CSLA_UK59T_Stat"];
-    _staticAT append ["AFMC_TOW_Stat", "CSLA_rT21","CSLA_9K113_Stat"];
+    _staticAT append ["AFMC_TOW_Stat", "CSLA_T21_Stat","CSLA_9K113_Stat"];
     _staticAA pushback "CSLA_PLdvK59_Stat";
     _vehiclePlane pushBack "CSLA_CIV_An2_1";
     _vehiclesCivCar append ["CSLA_CIV_Sarka1200","CSLA_CIV_ADA1600","CSLA_CIV_AZU","CSLA_civ_CATOR"];

@@ -39,9 +39,14 @@ private _hasRF = "rf" in A3A_enabledDLC;
     "GreekHead_A3_13",
     "GreekHead_A3_14",
     "Ioannou",
-    "Mavros"
+    "Mavros",
+	"RussianHead_1",
+	"RussianHead_2",
+	"RussianHead_3",
+	"RussianHead_4",
+	"RussianHead_5"
 ]] call _fnc_saveToTemplate; 
-["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE"]] call _fnc_saveToTemplate;
+["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE","Male01ENGFRE","Male02ENGFRE","male01rus","male02rus","male03rus"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
@@ -152,7 +157,7 @@ if (_hasCSLA) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["I_LT_01_cannon_F", ["Indep_Olive",1]]
+    ["I_LT_01_cannon_F", ["Indep_Olive", 1, "Indep_01", 0]]
 ]] call _fnc_saveToTemplate;
 
 //////////////////////////
@@ -196,7 +201,6 @@ private _rpgs = [
 ];
 
 private _pistols = ["hgun_Rook40_F"];
-
 
 _loadoutData set ["lightHELaunchers", [
 ["launch_RPG32_F", "", "", "", ["RPG32_HE_F", "RPG32_HE_F"], [], ""]
@@ -626,6 +630,35 @@ if (_hasCSLA) then {
     ];
 };
 
+if (_hasContact) then {
+	(_loadoutData get "headgear") append [
+		"H_Booniehat_mgrn",
+		"H_Booniehat_taiga", 
+		"H_Booniehat_wdl", 
+		"H_Booniehat_eaf", 
+		"H_MilCap_grn", 
+		"H_MilCap_taiga", 
+		"H_MilCap_wdl", 
+		"H_MilCap_eaf"
+	];
+};
+
+if (_hasWs) then {
+	(_loadoutData get "headgear") pushBack "lxWS_H_Headset";
+};
+
+if (_hasGM) then {
+	(_loadoutData get "headgear") append [        
+		"gm_ge_headgear_headset_crew_oli",
+        "gm_gc_headgear_fjh_model4_oli",
+        "gm_ge_headgear_m92_cover_glasses_oli",
+        "gm_ge_headgear_m92_cover_oli",
+        "gm_ge_headgear_psh77_oli",
+        "gm_ge_headgear_psh77_up_oli",
+        "gm_ge_headgear_psh77_down_oli"
+	];
+};
+
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
@@ -882,7 +915,6 @@ private _helmets = ["H_HelmetB"];
 
 if (_hasWs) then {
 	_helmets append [
-		"lxWS_H_Headset",
 		"lxWS_H_ssh40_black",
 		"lxWS_H_ssh40_green",
 		"lxWS_H_ssh40_sand",
@@ -897,7 +929,7 @@ if (_hasWs) then {
 		"lxWS_H_PASGT_goggles_black_F", 
 		"lxWS_H_PASGT_goggles_olive_F", 
 		"lxWS_H_HelmetCrew_I"
-		];
+	];
 };
 
 if (_hasRF) then {
@@ -916,27 +948,15 @@ if (_hasRF) then {
 		"H_HelmetHeavy_VisorUp_Black_RF",
 		"H_HelmetB_plain_sb_wdl_RF",
 		"H_HelmetB_plain_sb_tna_RF"
-		];
-};
-
-if (_hasContact) then {
-	_helmets append ["H_Booniehat_mgrn", "H_Booniehat_taiga", "H_Booniehat_wdl", "H_Booniehat_eaf", "H_MilCap_grn", "H_MilCap_taiga", "H_MilCap_wdl", "H_MilCap_eaf"];
+	];
 };
 
 if (_hasLawsOfWar) then {
 	_helmets append ["H_PASGT_basic_black_F", "H_PASGT_basic_blue_F", "H_PASGT_basic_olive_F", "H_PASGT_neckprot_blue_press_F", "H_PASGT_basic_blue_press_F","H_HeadBandage_clean_F", "H_HeadBandage_stained_F", "H_HeadBandage_bloody_F"];
 };
 
-if (_hasGM) then {
-	_helmets append [        
-		"gm_ge_headgear_headset_crew_oli",
-        "gm_gc_headgear_fjh_model4_oli",
-        "gm_ge_headgear_m92_cover_glasses_oli",
-        "gm_ge_headgear_m92_cover_oli",
-        "gm_ge_headgear_psh77_oli",
-        "gm_ge_headgear_psh77_up_oli",
-        "gm_ge_headgear_psh77_down_oli"
-		];
+if (_hasLawsOfWar) then {
+	_helmets append ["H_HelmetAggressor_F", "H_HelmetAggressor_cover_F", "H_HelmetAggressor_cover_taiga_F"];
 };
 
 if (_hasCSLA) then {
@@ -958,7 +978,7 @@ if (_hasCSLA) then {
 		"CSLA_helmet53m",
 		"CSLA_helmet53G",
 		"CSLA_helmet53G_on"
-		];
+	];
 };
 
 private _crewhelmets = ["H_Tank_black_F"];
@@ -984,10 +1004,10 @@ if (_hasCSLA) then {
 };
 
 /////
-_loadoutData set ["offuniforms", ["U_I_C_Soldier_Camo_F"]];
+_loadoutData set ["offuniforms", ["U_I_C_Soldier_Camo_F"]]; ///check offuniforms later
 _loadoutData set ["vests", _vests];
 _loadoutData set ["heavyVests", _heavyVests];
-_loadoutData set ["backpacks", ["B_TacticalPack_oli", "B_Carryall_oli"]];
+_loadoutData set ["backpacks", ["B_TacticalPack_oli", "B_Carryall_oli"]]; ///check for backpacks later
 _loadoutData set ["helmets", _helmets];
 _loadoutData set ["crewHelmets", _crewhelmets];
 

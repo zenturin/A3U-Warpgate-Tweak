@@ -142,7 +142,7 @@ if (_hasTanks) then {
 if (_hasWs) then {
     _cargoTrucks = ["I_Truck_02_flatbed_lxWS", "I_Truck_02_cargo_lxWS"];
     _aa pushBack "I_A_Truck_02_aa_lxWS";
-    _staticAA pushBack ["I_Tura_ZU23_lxWS"];
+    _staticAA pushBack "I_Tura_ZU23_lxWS";
 };
 
 //If GM cdlc + extra AAF mod
@@ -528,7 +528,7 @@ if (_hasMarksman) then {
 };
 
 if (_hasContact) then {
-    _sfLoadoutData set ["uniforms", ["U_I_CombatUniform", "U_I_CombatUniform_shortsleeve", "U_I_CBRN_Suit_01_AAF_F"]];
+    _sfLoadoutData set ["uniforms", ["U_I_CombatUniform", "U_I_CombatUniform_shortsleeve", "U_O_R_Gorka_01_F", "U_I_CBRN_Suit_01_AAF_F"]];
 } else {
     _sfLoadoutData set ["uniforms", ["U_I_CombatUniform", "U_I_CombatUniform_shortsleeve"]];
 };
@@ -536,7 +536,7 @@ if (_hasContact) then {
 if (_hasContact) then {
    (_sfLoadoutData get "vests") append ["V_CarrierRigKBT_01_light_Olive_F","V_CarrierRigKBT_01_Olive_F","V_SmershVest_01_F","V_SmershVest_01_radio_F"];
    (_sfLoadoutData get "Hvests") pushBack "V_CarrierRigKBT_01_heavy_Olive_F";
-   (_sfLoadoutData get "helmets") append ["H_HelmetHBK_F","H_HelmetHBK_ear_F","H_HelmetHBK_headset_F","H_HelmetHBK_chops_F"];
+   (_sfLoadoutData get "helmets") append ["H_HelmetHBK_F","H_HelmetHBK_ear_F","H_HelmetHBK_headset_F","H_HelmetHBK_chops_F","H_HelmetAggressor_F","H_HelmetAggressor_cover_F"];
 };
 
 if (_hasLawsOfWar) then {
@@ -744,9 +744,10 @@ if (_hasWs) then {
 };
 
 if (_hasContact) then {
+   (_eliteLoadoutData get "uniforms") pushBack "U_O_R_Gorka_01_F";
    (_eliteLoadoutData get "vests") append ["V_CarrierRigKBT_01_light_Olive_F","V_CarrierRigKBT_01_Olive_F"];
    (_eliteLoadoutData get "Hvests") pushBack "V_CarrierRigKBT_01_heavy_Olive_F";
-   (_eliteLoadoutData get "helmets") append ["H_HelmetHBK_F","H_HelmetHBK_ear_F","H_HelmetHBK_headset_F","H_HelmetHBK_chops_F"];
+   (_eliteLoadoutData get "helmets") append ["H_HelmetHBK_F","H_HelmetHBK_ear_F","H_HelmetHBK_headset_F","H_HelmetHBK_chops_F","H_HelmetAggressor_F","H_HelmetAggressor_cover_F"];
 };
 
 if (_hasLawsOfWar) then {
@@ -1340,9 +1341,7 @@ _crewLoadoutData set ["vests", ["V_BandollierB_oli"]];
 _crewLoadoutData set ["helmets", ["H_HelmetCrew_I"]];
 
 if (_hasCSLA) then {
-    (_crewLoadoutData get "helmets") append [
-        ["US85_helmetDH132","US85_helmetDH132G","US85_helmetDH132G_on"]
-    ];
+    (_crewLoadoutData get "helmets") append ["US85_helmetDH132","US85_helmetDH132G","US85_helmetDH132G_on"];
 };
 if (_hasGM) then {
     (_crewLoadoutData get "helmets") pushBack "gm_ge_headgear_crewhat_80_blk";

@@ -230,6 +230,7 @@ if (_hasWs) then {
 /////////////////////
 
 ["voices", ["Male01PER","Male02PER","Male03PER"]] call _fnc_saveToTemplate;
+["sfVoices", ["male01rus","male02rus","male03rus"]] call _fnc_saveToTemplate;
 
 private _faces = [
     "PersianHead_A3_01","PersianHead_A3_02","PersianHead_A3_03"
@@ -250,6 +251,7 @@ if (_hasWs) then {
     ];
 };
 ["faces", _faces] call _fnc_saveToTemplate;
+["sfFaces", ["RussianHead_1","RussianHead_2","RussianHead_3","RussianHead_4","RussianHead_5"]] call _fnc_saveToTemplate;
 
 ["insignia", ["GryffinRegiment", "", ""]] call _fnc_saveToTemplate;
 ["milInsignia", ["CSAT_ScimitarRegiment", "", ""]] call _fnc_saveToTemplate;
@@ -429,9 +431,7 @@ if (_hasApex) then {
 };
 
 if (_hasRF) then {
-    (_sfLoadoutData get "helmets") append [
-        ["H_HelmetO_ocamo_sb_hex_RF","H_HelmetHeavy_VisorUp_Hex_RF","H_HelmetHeavy_Simple_Hex_RF","H_HelmetHeavy_Hex_RF","H_HelmetB_plain_sb_hex_RF"]
-    ];
+    (_sfLoadoutData get "helmets") append ["H_HelmetO_ocamo_sb_hex_RF","H_HelmetHeavy_VisorUp_Hex_RF","H_HelmetHeavy_Simple_Hex_RF","H_HelmetHeavy_Hex_RF","H_HelmetB_plain_sb_hex_RF"];
     (_sfLoadoutData get "Hvests") pushBack "V_TacVest_rig_khk_RF";
 };
 
@@ -544,7 +544,7 @@ if (_hasWs) then {
     (_sfLoadoutData get "rifles") append [
         ["arifle_Galat_lxWS","suppressor_h_lxWS","acc_pointer_IR_sand_lxWS","optic_Hamr",["30Rnd_762x39_Mag_F","30Rnd_762x39_Mag_F","30Rnd_762x39_Mag_F","30Rnd_762x39_Mag_F"], [], ""],
         ["arifle_SLR_V_lxWS","suppressor_h_lxWS","","optic_Hamr",["30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_tracer_green_lxWS"], [], ""],
-        ["arifle_Velko_lxWS","suppressor_l_lxWS","acc_pointer_IR_sand_lxWSR","optic_Hamr",["35Rnd_556x45_Velko_reload_tracer_red_lxWS","35Rnd_556x45_Velko_reload_tracer_red_lxWS","50Rnd_556x45_Velko_reload_tracer_red_lxWS"], [], ""]
+        ["arifle_Velko_lxWS","suppressor_l_lxWS","acc_pointer_IR_sand_lxWS","optic_Hamr",["35Rnd_556x45_Velko_reload_tracer_red_lxWS","35Rnd_556x45_Velko_reload_tracer_red_lxWS","50Rnd_556x45_Velko_reload_tracer_red_lxWS"], [], ""]
     ];
     (_sfLoadoutData get "grenadeLaunchers") append [
         ["arifle_SLR_V_GL_lxWS","","","optic_Hamr",["30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_reload_tracer_green_lxWS","30Rnd_762x51_slr_tracer_green_lxWS"], ["1Rnd_40mm_HE_lxWS","1Rnd_58mm_AT_lxWS","1Rnd_50mm_Smoke_lxWS"], ""],
@@ -620,7 +620,8 @@ _sfLoadoutData set ["marksmanRifles", _marksmanRifles];
 //    Elite Loadout Data       //
 /////////////////////////////////
 
-private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
+private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
+_eliteLoadoutData set ["uniforms", ["U_O_CombatUniform_ocamo"]];
 _eliteLoadoutData set ["vests", ["V_Chestrig_khk","V_HarnessO_brn"]];
 _eliteLoadoutData set ["glVests", ["V_TacVest_brn","V_TacVest_khk","V_TacVestIR_blk"]];
 _eliteLoadoutData set ["Hvests", ["V_TacVest_brn"]];
@@ -633,7 +634,7 @@ if (_hasMarksman) then {
 };
 if (_hasApex) then {
     _eliteLoadoutData set ["NVGs", ["O_NVGoggles_hex_F","O_NVGoggles_urb_F"]];
-    (_eliteLoadoutData get "uniforms") append ["U_O_V_Soldier_Viper_hex_F"];
+    (_eliteLoadoutData get "uniforms") pushBack "U_O_V_Soldier_Viper_hex_F";
     (_eliteLoadoutData get "backpacks") append ["B_ViperHarness_hex_F","B_ViperLightHarness_hex_F"];
     (_eliteLoadoutData get "glasses") append ["G_Balaclava_TI_blk_F"];
     (_eliteLoadoutData get "goggles") append ["G_Balaclava_TI_blk_F"];
@@ -641,9 +642,7 @@ if (_hasApex) then {
 };
 
 if (_hasRF) then {
-    (_eliteLoadoutData get "helmets") append [
-        ["H_HelmetO_ocamo_sb_hex_RF","H_HelmetHeavy_VisorUp_Hex_RF","H_HelmetHeavy_Simple_Hex_RF","H_HelmetHeavy_Hex_RF","H_HelmetB_plain_sb_hex_RF"]
-    ];
+    (_eliteLoadoutData get "helmets") append ["H_HelmetO_ocamo_sb_hex_RF","H_HelmetHeavy_VisorUp_Hex_RF","H_HelmetHeavy_Simple_Hex_RF","H_HelmetHeavy_Hex_RF","H_HelmetB_plain_sb_hex_RF"];
     (_eliteLoadoutData get "Hvests") pushBack "V_TacVest_rig_khk_RF";
     (_eliteLoadoutData get "backpacks") append ["B_DuffleBag_Sand_NoLogo_RF","O_CommandoMortar_weapon_RF"];
 };
@@ -847,16 +846,12 @@ if (_hasMarksman) then {
 };
 
 if (_hasRF) then {
-    (_militaryLoadoutData get "helmets") append [
-        ["H_HelmetO_ocamo_sb_hex_RF","H_HelmetB_plain_sb_hex_RF"]
-    ];
+    (_militaryLoadoutData get "helmets") append ["H_HelmetO_ocamo_sb_hex_RF","H_HelmetB_plain_sb_hex_RF"];
     (_militaryLoadoutData get "Hvests") pushBack "V_TacVest_rig_khk_RF";
 };
 
 if (_hasWs) then {
-    (_militaryLoadoutData get "helmets") append [
-        ["lxWS_H_bmask_base","lxWS_H_bmask_hex","H_HelmetHeavy_Simple_Hex_RF","H_HelmetHeavy_Hex_RF"]
-    ];
+    (_militaryLoadoutData get "helmets") append ["lxWS_H_bmask_base","lxWS_H_bmask_hex","H_HelmetHeavy_Simple_Hex_RF","H_HelmetHeavy_Hex_RF"];
     (_militaryLoadoutData get "Hvests") pushBack "V_lxWS_TacVestIR_oli";
     (_militaryLoadoutData get "vests") pushBack "V_lxWS_HarnessO_oli";
 };
@@ -1090,9 +1085,7 @@ _militiaLoadoutData set ["backpacks", ["B_TacticalPack_ocamo", "B_Carryall_ocamo
 _militiaLoadoutData set ["helmets", ["H_Cap_brn_SPECOPS", "H_Bandanna_cbr", "H_ShemagOpen_tan", "H_PASGT_basic_olive_F"]];
 
 if (_hasRF) then {
-    (_militaryLoadoutData get "helmets") append [
-        ["H_HelmetB_plain_sb_hex_RF"]
-    ];
+    (_militaryLoadoutData get "helmets") pushBack "H_HelmetB_plain_sb_hex_RF";
     (_militaryLoadoutData get "Hvests") pushBack "V_TacVest_rig_khk_RF";
 };
 

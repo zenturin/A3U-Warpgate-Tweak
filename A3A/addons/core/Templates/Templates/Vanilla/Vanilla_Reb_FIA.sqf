@@ -56,7 +56,7 @@ if (_hasRF) then {
     _vehiclesCivCar append ["C_Pickup_rf", "C_Pickup_covered_rf"];
     _civHelicopters append ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF","C_Heli_EC_04_rescue_RF"];
     _vehiclesLightArmed append ["a3u_black_Pickup_mmg_alt_rf", "a3u_black_Pickup_mmg_frame_rf","I_G_Pickup_hmg_rf"];
-    _vehiclesLightUnarmed append ["I_G_Pickup_rf"];
+    _vehiclesLightUnarmed pushBack "I_G_Pickup_rf";
     _vehicleAA pushBack "B_Pickup_aat_rf";
     _staticMortars pushBack "I_G_CommandoMortar_RF";
 };
@@ -111,7 +111,7 @@ if (_hasGM) then {
 
 if (_hasCSLA) then {
     _staticMG append ["AFMC_M2h", "AFMC_M2l","CSLA_UK59L_Stat","CSLA_UK59T_Stat"];
-    _staticAT append ["AFMC_TOW_Stat", "CSLA_rT21","CSLA_9K113_Stat"];
+    _staticAT append ["AFMC_TOW_Stat", "CSLA_T21_Stat","CSLA_9K113_Stat"];
     _staticAA pushback "CSLA_PLdvK59_Stat";
     _vehiclePlane pushBack "CSLA_CIV_An2_1";
     _vehiclesCivCar append ["CSLA_CIV_Sarka1200","CSLA_CIV_ADA1600","CSLA_CIV_AZU","CSLA_civ_CATOR"];
@@ -598,7 +598,6 @@ if (_hasCSLA) then {
         "FIA_uniWld9"
       ];
 };
-
 if (_hasRF) then {
     _dlcUniforms append [
         "U_IG_Guerrilla_RF",
