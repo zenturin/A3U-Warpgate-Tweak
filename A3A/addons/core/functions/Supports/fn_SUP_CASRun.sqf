@@ -79,7 +79,7 @@ private _fnc_executeWeaponFire =
         private _weapCfg = configFile >> "cfgWeapons" >> _selectedWeapon;
         private _modes = ["close"] arrayIntersect getArray (_weapCfg >> "modes");           // can add preferred modes here in priority order
         if (_modes isEqualTo []) then { _modes = getArray (_weapCfg >> "modes") };
-        private _modeCfg = [_weapCfg >> (_modes#0), _weapCfg] select (_modes#0 == "this");
+        private _modeCfg = [_weapCfg >> (_modes#0), _weapCfg] select (_modes#0 == "this"); ///fix for turreted planes
 
         //Force weapon fire
         _plane setVariable ["mainGunShots", _mainGunShots];
