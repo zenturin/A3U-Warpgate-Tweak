@@ -20,6 +20,16 @@ class traderMods
         addons[] = {"JMSLLTE_empire_mod"};
         prefix = "emp";
     };
+    class eaw : base
+    {
+        addons[] = {"EAW_Air","WBK_MeleeMechanics"};
+        prefix = "ww2eaw";
+    };
+    class ww2fow : base
+    {
+        addons[] = {"fow_tanks"};
+        prefix = "fowstore";
+    };
     class unsung : base
     {
         addons[] = {"uns_weap_w"};
@@ -65,6 +75,11 @@ class traderMods
         addons[] = {"mas_chi_army"};
         prefix = "plastock";
     };
+    class rf : base
+    {
+        addons[] = {"RF_Weapons"};
+        prefix = "rf";
+    };
     class BWA3 : base
     {
         addons[] = {"bwa3_common"};
@@ -79,6 +94,11 @@ class traderMods
     {
         addons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core"};
         prefix = "cup";
+    };
+    class csla : base
+    {
+        addons[] = {"CSLA"};
+        prefix = "csla";
     };
     class 3CBBAF : base
     {
