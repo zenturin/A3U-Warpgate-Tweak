@@ -700,4 +700,8 @@ class Templates
 
     #include "Templates\EAW\templates.hpp"
 
+    // ***************************** Androids *****************************
+
+    #include "Templates\Android\templates.hpp"
+
 };
