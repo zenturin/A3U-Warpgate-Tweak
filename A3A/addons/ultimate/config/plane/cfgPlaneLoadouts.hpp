@@ -91,6 +91,7 @@ class planeLoadouts
         };
         class WM_TieBomber_Cluster
         {
+            loadout[] = {"PylonMissile_1Rnd_BombCluster_01_F", "PylonRack_2Rnd_BombCluster_01_F"};
             mainGun = "LS1_Cannon";
             missileLauncher[] = {"TS5_ProtonLauncher"};
             bombRacks[] = {"BombCluster_01_F"};
@@ -184,6 +185,7 @@ class planeLoadouts
         };
         class WM_TieBomber_Cluster
         {
+            loadout[] = {"PylonMissile_1Rnd_BombCluster_01_F", "PylonRack_2Rnd_BombCluster_01_F"};
             mainGun = "LS1_Cannon";
             missileLauncher[] = {"TS5_ProtonLauncher"};
             bombRacks[] = {"BombCluster_01_F"};
