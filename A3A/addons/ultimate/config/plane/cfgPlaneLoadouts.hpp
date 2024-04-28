@@ -82,6 +82,20 @@ class planeLoadouts
             bombRacks[] = {"EAW_A4N_Bomb_Pod1","EAW_A4N_Bomb_Pod2"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
+        class WM_TieBomber
+        {
+            mainGun = "LS1_Cannon";
+            missileLauncher[] = {"TS5_ProtonLauncher"};
+            bombRacks[] = {"VL61ProtonBomb"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+        class WM_TieBomber_Cluster
+        {
+            mainGun = "LS1_Cannon";
+            missileLauncher[] = {"TS5_ProtonLauncher"};
+            bombRacks[] = {"BombCluster_01_F"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
     };
 
     class CAS
@@ -161,6 +175,20 @@ class planeLoadouts
             bombRacks[] = {"EAW_A4N_Bomb_Pod1","EAW_A4N_Bomb_Pod2"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
+        class WM_TieBomber
+        {
+            mainGun = "LS1_Cannon";
+            missileLauncher[] = {"TS5_ProtonLauncher"};
+            bombRacks[] = {"VL61ProtonBomb"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+        class WM_TieBomber_Cluster
+        {
+            mainGun = "LS1_Cannon";
+            missileLauncher[] = {"TS5_ProtonLauncher"};
+            bombRacks[] = {"BombCluster_01_F"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
     };
    
     class AA
@@ -235,5 +263,11 @@ class planeLoadouts
         {
             mainGun = "fow_w_m2_cannon_2x";
         };
+        class WM_TieInterceptor
+        {
+            mainGun = "LS93_Cannon";
+			missileLauncher[] = {"TS5A_ProtonLauncher"};
+        };
+		class WM_TieAdvanced : WM_TieInterceptor {};
     };
 };

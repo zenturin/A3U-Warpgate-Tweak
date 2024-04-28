@@ -40,8 +40,8 @@
 ["vehiclesGunBoats", ["442_boat_armed"]] call _fnc_saveToTemplate; 
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["3AS_BTLB_Bomber"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["3as_Z95_Republic"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["WM_TieBomber","WM_TieBomber_Cluster"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["WM_TieInterceptor","WM_TieInterceptor","WM_TieInterceptor","WM_TieInterceptor","WM_TieAdvanced"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Imperial_Transport_01"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["3AS_Patrol_LAAT_Imperial"]] call _fnc_saveToTemplate;
