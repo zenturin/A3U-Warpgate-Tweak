@@ -84,7 +84,7 @@ if (_vehicle isKindOf "Air") then
             if (_vtol != "") then {
                 private _roll = random 100;
 				if(_roll >= 40) then {
-					[_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastrope;
+					[_vehicle, _cargoGroup, _posDestination, _posOrigin, _crewGroup] spawn A3A_fnc_fastropeVTOL;
 				} else {
                     if(_roll <= 30) then {
                         [_vehicle, _cargoGroup, _posDestination, _markerOrigin] spawn A3A_fnc_paradrop;
