@@ -60,6 +60,7 @@ if (alive _veh && canMove _veh) then
 		unassignVehicle _unit;
 		moveOut _unit;
 		if (!(alive _veh) or (getPos _veh)#2 < 5) exitWith {};			// Avoid placing dead units underground after vehicle crashes
+		_veh setVectorUp [0,0,1];
 		[_unit,"gunner_standup01"] remoteExec ["switchmove"];
 		_unit attachTo [_veh, [_xRef,_yRef,_d]];
 		while {((getposATL _unit select 2) > 1) and (alive _veh) and (alive _unit) and (speed _veh < 10) and (speed _veh > -10)} do
