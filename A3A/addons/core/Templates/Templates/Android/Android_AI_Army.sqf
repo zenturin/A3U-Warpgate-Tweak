@@ -198,7 +198,7 @@ _loadoutData set ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData set ["uniforms", ["G3Gorka_Black_CombatUniform_EPSM", "G3Gorka_CombatUniform_EPSM", "WAR_Combat_Uniform_Gloft_Black"]];
+_sfLoadoutData set ["uniforms", ["G3Gorka_Black_CombatUniform_EPSM", "WAR_Combat_Uniform_Gloft_Black"]];
 _sfLoadoutData set ["vests", ["WX_PlateCarrier_Light", "WX_PlateCarrier_Assault"]];
 _sfLoadoutData set ["mgVests", ["Hotoke_Do_Machinegunner_EPSM_Shoulders"]];
 _sfLoadoutData set ["medVests", ["Sunrise_Recon_GEC_Black"]];
@@ -396,8 +396,9 @@ _militiaLoadoutData set ["sniVests", ["WX_PlateCarrier_Assault"]];
 _militiaLoadoutData set ["backpacks", ["B_ViperHarness_blk_F"]];
 _militiaLoadoutData set ["slBackpacks", ["OPTRE_UNSC_Rucksack_Heavy"]];
 _militiaLoadoutData set ["atBackpacks", ["OPTRE_ILCS_Rucksack_Heavy"]];
-_militiaLoadoutData set ["helmets", ["SSV_Helmet_Android_Police"]];
-_militiaLoadoutData set ["sniHats", ["SSV_Helmet_Android_Army"]];
+_militiaLoadoutData set ["helmets", []];
+_militiaLoadoutData set ["slHat", []];
+_militiaLoadoutData set ["sniHats", []];
 
 _militiaLoadoutData set ["rifles", [
     ["SSV_Weapon_Android_MX_SW", "", "", "", ["30Rnd_65x39_caseless_black_mag"], [], ""]
