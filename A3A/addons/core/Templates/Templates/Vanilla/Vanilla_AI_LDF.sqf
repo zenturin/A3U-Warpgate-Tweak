@@ -48,8 +48,8 @@ private _aa = ["B_T_APC_Tracked_01_AA_F"];
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["I_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
-private _planesCAS = ["B_Plane_CAS_01_dynamicLoadout_F"];
-private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
+private _planesCAS = ["B_Plane_CAS_01_dynamicLoadout_F","B_UAV_02_dynamicLoadout_F"];
+private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F","B_UAV_02_dynamicLoadout_F"];
 ["vehiclesPlanesTransport", ["B_T_VTOL_01_infantry_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["I_E_Heli_light_03_unarmed_F", "B_Heli_Light_01_F"]] call _fnc_saveToTemplate;
@@ -63,7 +63,7 @@ private _vehiclesHelisAttack = ["B_Heli_Attack_01_F"];
     ["I_E_Truck_02_MRL_F", ["12Rnd_230mm_rockets"]]
 ]] call _fnc_saveToTemplate;
 
-["uavsAttack", ["B_UAV_02_F"]] call _fnc_saveToTemplate;
+["uavsAttack", ["B_UAV_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 private _uavsPortable = if (_hasWs) then {["I_UAV_02_lxWS", "I_E_UAV_01_F"]} else {["I_E_UAV_01_F"]};
 ["uavsPortable", _uavsPortable] call _fnc_saveToTemplate;
 
