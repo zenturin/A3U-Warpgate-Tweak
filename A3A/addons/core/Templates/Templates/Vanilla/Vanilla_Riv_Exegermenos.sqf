@@ -1191,7 +1191,7 @@ private _saboteurTemplate = {
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
 	};
 	[selectRandom ["vests", "heavyVests"]] call _fnc_setVest;
-	[["heavyUniforms", "uniforms"]] call _fnc_setUniform;
+	[["heavyUniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 	["backpacks"] call _fnc_setBackpack;
 
 	["grenadeLaunchers"] call _fnc_setPrimary;
@@ -1228,7 +1228,7 @@ private _explosivesExpertTemplate = {
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
 	};
 	["heavyVests"] call _fnc_setVest;
-	[["heavyUniforms", "uniforms"]] call _fnc_setUniform;
+	[["heavyUniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 	["backpacks"] call _fnc_setBackpack;
 
 	[selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
