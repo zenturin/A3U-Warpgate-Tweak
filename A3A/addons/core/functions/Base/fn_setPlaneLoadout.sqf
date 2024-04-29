@@ -190,7 +190,7 @@ if (_type == "CASDIVE") then
             _plane setVariable ["mainGun", "gatling_30mm_VTOL_02"];
             _plane setVariable ["bombRacks", ["Bomb_03_Plane_CAS_02_F","BombCluster_02_F"]];
             _plane setVariable ["diveParams", [800, 500, 180, 55, 20, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
-        }; //appears to be not working, sad
+        };
         //Aegis F-35
         case "Atlas_B_A_Plane_Fighter_05_ard_F";
         case "Atlas_B_A_Plane_Fighter_05_trp_F";
