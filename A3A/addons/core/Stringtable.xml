@@ -3382,7 +3382,7 @@
         </Key>
         <Key ID="STR_A3A_fn_undercover_canGoUn_no_lowciv">
             <Original>Undercover not allowed in current civ template.</Original>
-            <Russian>Placeholder</Russian>
+            <Russian>Вы не можете быть под прикрытием в текущем гражданском шаблоне</Russian>
         </Key>
         <Key ID="STR_A3A_fn_undercover_canGoUn_no_reason_helmet">
             <Original>%1&lt;br/&gt;Wearing a helmet.</Original>
