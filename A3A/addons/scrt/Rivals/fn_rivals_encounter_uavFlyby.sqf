@@ -199,12 +199,12 @@ for "_i" from 0 to _uavQuantity - 1 do {
 						_shell setVelocity [0,0,-50]; [_uav, _shell] remoteExecCall ['disableCollisionWith', 0, _shell];
 						_uav removeEventHandler ['Hit', (_uav getVariable ['ehId', 0])];
 					} else {
-						if ((driver _uav hasWeapon "BombDemine_01_F")) then{
+						if ("BombDemine_01_F" in (weapons _uav)) then{
 							[_uav, "BombDemine_01_F"] call BIS_fnc_fire;
 							Info_1("Grenade Ammo Class: %1", "BombDemine_01_F");
 							_uav removeEventHandler ['Hit', (_uav getVariable ['ehId', 0])];
 						} else {
-							if ((driver _uav hasWeapon "Bomb_40mm_HE_lxWS")) then {
+							if ("Bomb_40mm_HE_lxWS" in (weapons _uav)) then {
 								[_uav, "Bomb_40mm_HE_lxWS"] call BIS_fnc_fire;
 								Info_1("Grenade Ammo Class: %1", "Bomb_40mm_HE_lxWS");
 								_uav removeEventHandler ['Hit', (_uav getVariable ['ehId', 0])];
