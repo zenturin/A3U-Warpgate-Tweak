@@ -3512,7 +3512,7 @@
         </Key>
         <Key ID="STR_A3A_fn_undercover_goUn_detect_milb">
             <Original>An enemy military base has detected you!</Original>
-            <Russian>Placeholder</Russian>
+            <Russian>Вас обнаружила вражеская военная база</Russian>
         </Key>
         <Key ID="STR_A3A_fn_undercover_goUn_detect_roadb">
             <Original>An enemy roadblock has detected you!</Original>
