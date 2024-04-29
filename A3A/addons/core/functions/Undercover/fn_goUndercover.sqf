@@ -303,7 +303,7 @@ switch (_reason) do
             case "Airport": {localize "STR_A3A_fn_undercover_goUn_trespass"};
             case "Outpost": {localize "STR_A3A_fn_undercover_goUn_detect_outp"};
             case "Milbase": {localize"STR_A3A_fn_undercover_goUn_detect_milb"};
-            case "Seaport": {localize "STR_A3A_fn_undercover_goUn_detect_seap"};
+            case "Seaport": {localize "STR_A3A_fn_undercover_goUn_detect_outp"};
             case "Roadblock": {localize "STR_A3A_fn_undercover_goUn_detect_roadb"};
         };
         ["Undercover", _text] call A3A_fnc_customHint;

@@ -3510,6 +3510,10 @@
             <Czech>Nepřátelské stanoviště nebo přístav tě zpozoroval!</Czech>
             <Chinesesimp>敌人的哨站或港口已经察觉到你了！</Chinesesimp>
         </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_detect_milb">
+            <Original>An enemy military base has detected you!</Original>
+            <Russian>Placeholder</Russian>
+        </Key>
         <Key ID="STR_A3A_fn_undercover_goUn_detect_roadb">
             <Original>An enemy roadblock has detected you!</Original>
             <Italian>Un posto di blocco nemico ti ha avvistato!</Italian>
