@@ -339,9 +339,7 @@ private _vehiclesBlackMarket = _shopTanks + _shopApex + _shopWs + _shopRF + _sho
     ["I_LT_01_AA_F", ["Indep_Olive",1]],
     ["I_LT_01_scout_F", ["Indep_Olive",1]],
     ["I_LT_01_cannon_F", ["Indep_Olive",1]],
-    ["I_LT_01_AT_F", ["Indep_Olive",1]],
-    ["I_Heli_Transport_02_F", ["Dahoman", 1]],
-    ["O_Heli_Light_02_unarmed_F", ["Blue", 1]]
+    ["I_LT_01_AT_F", ["Indep_Olive",1]]
 ]] call _fnc_saveToTemplate;
 
 #include "Vanilla_Reb_Vehicle_Attributes.sqf"
@@ -813,7 +811,6 @@ if (_hasRF) then {
         "H_Cap_marshal_blue_RF"
     ];
 };
-
 
 ["headgear", _headgear + _dlcheadgear] call _fnc_saveToTemplate;
 

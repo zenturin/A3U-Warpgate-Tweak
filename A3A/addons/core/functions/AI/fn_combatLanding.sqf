@@ -11,34 +11,14 @@ Parameters:
     <POSATL> Position for heli to return to after offloading
     <POSATL> Landing position for heli
 */
-
+#include "..\..\script_component.hpp"
+FIX_LINE_NUMBERS()
 params ["_helicopter", "_crewGroup", "_cargoGroup", "_posDestination", "_originPos", "_landPos"];
 
+private _vehType = typeOf _helicopter;
 
-private _fnc_HeliDoors = {
-    params ["_helicopter", "_state"];
-
-    private _helicopter = _this#0;
-    private _state = _this#1;
-
-    switch _state do
-    {
-       case "open": { _state = 1; };
-       case "close": { _state = 0; };
-    };
-
-   _helicopter animateDoor ["door_cargo_left", _state];   // Cougar
-   _helicopter animateDoor ["Door_L", _state];            // Ghosthawk
-   _helicopter animateDoor ["Door_L_source", _state];     // Huron front door
-   _helicopter animateDoor ["Door_rear_source", _state];  // Huron rear door
-   _helicopter animateDoor ["door_1", _state];            // Wildcat
-   _helicopter animate ["dvere1_posunZ",_state];          // Orca
-   sleep 0.5;
-   _helicopter animateDoor ["door_cargo_right", _state];  // Cougar
-   _helicopter animateDoor ["Door_R", _state];            // Ghosthawk
-   _helicopter animateDoor ["Door_R_source", _state];     // Huron front door
-   _helicopter animateDoor ["door_2", _state];            // Wildcat
-   _helicopter animate ["dvere2_posunZ",_state];          // Orca
+if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack") + FactionGet(all,"vehiclesPlanesTransport")) then {
+    _helicopter setVehicleRadar 1;
 };
 
 // avoid weird situations where they receive RTB instructions before they finish unloading
@@ -62,7 +42,7 @@ _helicopter flyInHeight _midHeight;
 
 waitUntil {sleep 1; (_helicopter distance2D _landPos) < 800};
 
-while {_helicopter distance2D _landPos > 650} do {
+while {_helicopter distance2D _landPos > 675} do {
     [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
     [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
     [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
@@ -157,13 +137,13 @@ while {_interval < 0.9999} do
     _dam = damage _helicopter;
     if ((getPos _helicopter select 2) < 0.25 ) exitwith{_helicopter setdamage 0; sleep 1; _helicopter setdamage _dam;};
 };
+sleep 0.1;
 _helicopter engineOn true; ///keep the engine running
+if(canMove _helicopter || alive _driver) then {
+    [_helicopter, "open"] spawn A3A_fnc_HeliDoors;
+};
 
 _cargoGroup leaveVehicle _helicopter;
-
-if(canMove _helicopter || alive _driver) then {
-    [_helicopter, "open"] spawn _fnc_HeliDoors;
-};
 
 private _second = false;
 {
@@ -191,11 +171,11 @@ _cargoGroup spawn A3A_fnc_attackDrillAI;
 if(!canMove _helicopter || !alive _driver) exitWith { deleteVehicle _landPad };
 
 // Dirty hack to stop the heli lurching around near the ground
-private _dismountTime = count units _cargoGroup - 4;
+private _dismountTime = count units _cargoGroup - 3;
 [_helicopter, time + _dismountTime, _midHeight, _landPad] spawn {
     params ["_heli", "_endTime", "_flyHeight", "_landPad"];
     while { time < _endTime } do {
-        _heli setVelocity [0,0,-0.5];
+        _heli setVelocity [0,0,-0.65];
         sleep 1;
     };
     if (!isEngineOn _heli) then { _heli engineOn true;};
@@ -204,14 +184,28 @@ private _dismountTime = count units _cargoGroup - 4;
 };
 [_helicopter] call A3A_fnc_smokeCoverAuto;          // Already done by GetOut handler in AIVehInit?
 
-
 _helicopter engineOn true;  ///still keeping the engine running
 
-sleep _dismountTime + 1;
+sleep _dismountTime;
 
 _helicopter engineOn true;  ///we must keep the engine running
 if(canMove _helicopter || alive _driver) then {
-    [_helicopter, "close"] spawn _fnc_HeliDoors;
+    [_helicopter, "close"] spawn A3A_fnc_HeliDoors;
+};
+
+private _weapons = count weapons _helicopter;
+private _driverturret = _helicopter weaponsTurret [0];
+private _gunnerturret = _helicopter weaponsTurret [-1];
+private _weaponsturret = count _driverturret + count _gunnerturret;
+
+if (_vehType in FactionGet(all,"vehiclesTransportAir") && _weapons > 2 || _weaponsturret > 2) exitWith { //assuming first 2 are laserdesignator and flares
+    _helicopter action ["LandGearUp", _helicopter];
+    [_helicopter, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
+};
+
+if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) exitWith {
+    _helicopter action ["LandGearUp", _helicopter];
+    [_helicopter, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
 };
 // Heli RTB
 private _vehWP1 = _crewGroup addWaypoint [_originPos, 0];
@@ -223,10 +217,10 @@ _vehWP1 setWaypointBehaviour "CARELESS";
 _crewGroup setCurrentWaypoint _vehWP1;
 waitUntil {sleep 1; (_helicopter distance2D _landPos) > 165};
 for '_i' from 1 to (5 + (round random 2)) do
-    {
-        [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
-        [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
-        [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
-        sleep 1;
-    };
+{
+    [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
+    [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
+    [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
+    sleep 1;
+};
 _helicopter action ["LandGearUp", _helicopter];

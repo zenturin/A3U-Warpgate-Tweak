@@ -88,7 +88,7 @@ if (_hasCSLA) then {
     _civBoat append ["CSLA_lodka", 0.1];
 };
 
-private _civHelicopter = ["C_Heli_Light_01_civil_F" , "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"];
+private _civHelicopter = ["C_Heli_Light_01_civil_F", "a3a_C_Heli_Transport_02_F"];
 
 if (_hasGM) then {
     _civHelicopter append ["gm_gc_civ_mi2p", "gm_gc_civ_mi2r", "gm_gc_civ_mi2sr", "gm_ge_adak_bo105m_vbh"];
