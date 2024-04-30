@@ -26,11 +26,11 @@
 ["vehiclesRepairTrucks", ["442_argon_repair_cis"]] call _fnc_saveToTemplate; 	
 ["vehiclesFuelTrucks", ["442_argon_fuel_cis"]] call _fnc_saveToTemplate;		
 ["vehiclesMedical", ["442_argon_medical_cis"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["3AS_Advanced_DSD", "3AS_ISP"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["3AS_SAC_F"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["3AS_Advanced_DSD", "3AS_ISP", "3AS_PAC_F"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["3AS_PAC_F"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["3AS_AAT_CIS"]] call _fnc_saveToTemplate;
-["vehiclesLightTanks",  ["3AS_n99"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["3AS_n99","3AS_Advanced_DSD"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["3AS_AAT_CIS", "3AS_GAT", "3AS_n99"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["3AS_GAT_Light"]] call _fnc_saveToTemplate;
 
