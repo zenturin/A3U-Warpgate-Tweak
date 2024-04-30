@@ -16,6 +16,7 @@ params ["_plane", "_target", "_supportName", "_waypoint"];
 private _group = group driver _plane;
 private _gunner = gunner _plane;
 private _weaponState2 = [];
+private _weaponState3 = [];
 
 (_plane getVariable "diveParams") params ["_startAlt", "_endAlt", "_diveSpeed", "_diveAngle", "_turnRate", "_bombDrag"];
 
@@ -122,11 +123,13 @@ private _ehID = addMissionEventHandler ["EachFrame", {
             } forEach (_plane getVariable "loadout");
             private _weaponState = weaponState [_plane, [-1], _x];
             _weaponState2 = weaponState [_plane, [0], _x];
+            _weaponState3 = weaponState [_plane, [1], _x];
             /* if !(_gunner isEqualTo objNull) then {
             }; */
             for "_i" from 1 to _ammoCount do {
                 driver _plane forceWeaponFire [_weaponState#1, _weaponState#2];
                 gunner _plane forceWeaponFire [_weaponState2#1, _weaponState2#2];
+                commander _plane forceWeaponFire [_weaponState3#1, _weaponState3#2];
             };
         } forEach (_plane getVariable "bombRacks");
         _plane setVariable ["bombsDropped", true];

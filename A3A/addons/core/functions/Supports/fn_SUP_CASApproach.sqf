@@ -113,6 +113,7 @@ private _firedEH = _plane addEventHandler ["Fired", {
                 //Debug_2("Firing followup %1 burst with mode %2", _weapon, _mode); 
                 (driver _plane) forceWeaponFire [_weapon, _mode];
                 (gunner _plane) forceWeaponFire [_weapon, _mode];
+                (commander _plane) forceWeaponFire [_weapon, _mode];
             };
         };
     };
@@ -141,6 +142,7 @@ private _firedEH = _plane addEventHandler ["Fired", {
                 //Debug_2("Firing followup %1 burst with mode %2", _weapon, _mode); 
                 (driver _plane) forceWeaponFire [_weapon, _mode];
                 (gunner _plane) forceWeaponFire [_weapon, _mode];
+                (commander _plane) forceWeaponFire [_weapon, _mode];
             };
         };
     };
