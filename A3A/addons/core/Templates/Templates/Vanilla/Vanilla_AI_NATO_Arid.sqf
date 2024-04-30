@@ -139,7 +139,7 @@ if (_hasWs) then {
     _militiaAPCs pushBack "APC_Wheeled_01_command_base_lxWS";
     _artillery pushBack "APC_Wheeled_01_mortar_base_lxWS";
     _helisLight pushback "B_D_Heli_Light_01_lxWS";
-    _helisLightAttack pushback "B_D_Heli_Light_01_dynamicLoadout_lxWS";
+    _vehiclesHelisLightAttack pushback "B_D_Heli_Light_01_dynamicLoadout_lxWS";
     _helisAttack pushback "B_D_Heli_Attack_01_dynamicLoadout_lxWS";
     _transportHelicopters pushback "B_D_Heli_Transport_01_lxWS";
 };
