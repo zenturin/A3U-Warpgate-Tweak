@@ -62,6 +62,8 @@ private _planesAA = ["O_Plane_CAS_02_dynamicLoadout_F"];
 private _planesTransport = [];
 if (_hasApex) then {
 	_planesTransport pushback "O_T_VTOL_02_infantry_dynamicLoadout_F";
+    _planesCAS pushback "O_T_VTOL_02_infantry_dynamicLoadout_F";
+    _planesAA pushback "O_T_VTOL_02_infantry_dynamicLoadout_F";
 };
 
 private _lightHelicopters = ["O_Heli_Light_02_unarmed_F"];

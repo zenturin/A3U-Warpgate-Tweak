@@ -180,6 +180,17 @@ if (_type == "CASDIVE") then
             _plane setVariable ["bombRacks", ["BombCluster_01_F","weapon_GBU12Launcher"]];
             _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
         };
+        //Vanilla CSAT VTOL
+        case "O_T_VTOL_02_vehicle_dynamicLoadout_F";
+        case "O_T_VTOL_02_infantry_dynamicLoadout_F";
+        case "O_VTOL_02_vehicle_dynamicLoadout_F";
+        case "O_VTOL_02_infantry_dynamicLoadout_F":
+        {
+            _loadout = ["PylonMissile_1Rnd_BombCluster_02_cap_F","PylonMissile_1Rnd_Bomb_03_F","PylonMissile_1Rnd_Bomb_03_F","PylonMissile_1Rnd_BombCluster_02_cap_F"];
+            _plane setVariable ["mainGun", "gatling_30mm_VTOL_02"];
+            _plane setVariable ["bombRacks", ["Bomb_03_Plane_CAS_02_F","BombCluster_02_F"]];
+            _plane setVariable ["diveParams", [800, 500, 180, 55, 20, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
         //Aegis F-35
         case "Atlas_B_A_Plane_Fighter_05_ard_F";
         case "Atlas_B_A_Plane_Fighter_05_trp_F";
@@ -731,6 +742,18 @@ if (_type == "CAS") then
             _plane setVariable ["rocketLauncher", []];
             _plane setVariable ["missileLauncher", ["weapon_AGM_65Launcher"]];
         };
+        //Vanilla CSAT VTOL
+        case "O_T_VTOL_02_vehicle_dynamicLoadout_F";
+        case "O_T_VTOL_02_infantry_dynamicLoadout_F";
+        case "O_VTOL_02_vehicle_dynamicLoadout_F";
+        case "O_VTOL_02_infantry_dynamicLoadout_F":
+        {
+            _loadout = ["PylonRack_20Rnd_Rocket_03_HE_F","PylonRack_4Rnd_LG_scalpel","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_20Rnd_Rocket_03_AP_F"];
+            _plane setVariable ["mainGun", "gatling_30mm_VTOL_02"];
+            _plane setVariable ["rocketLauncher", ["rockets_Skyfire","Rocket_03_HE_Plane_CAS_02_F","Rocket_03_AP_Plane_CAS_02_F"]];
+            _plane setVariable ["missileLauncher", ["missiles_SCALPEL"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
         //Aegis experimental CAS plane without rocket launchers, let's see how this will play out
         case "Atlas_B_A_Plane_Fighter_05_ard_F";
         case "Atlas_B_A_Plane_Fighter_05_trp_F";
@@ -968,7 +991,7 @@ if (_type == "CAS") then
             _plane setVariable ["bombRacks", ["SPE_US_500lb_Bomb_Mount"]];
             _plane setVariable ["diveParams", [1200, 350, 110, 55, 15, [3, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
         };
-	// Clone Wars Planes (3AS)
+	    // Clone Wars Planes (3AS)
         case "3AS_ARC_170_Yellow";
         case "3AS_ARC_170_Orange";
         case "3AS_ARC_170_Green";
@@ -1296,7 +1319,18 @@ if (_type == "AA") then
             _plane setVariable ["mainGun", "weapon_Fighter_Gun20mm_AA"];
             _plane setVariable ["missileLauncher", ["weapon_BIM9xLauncher","weapon_AMRAAMLauncher"]];
         };
-	///Aegis/Atlas
+        //Vanilla CSAT VTOL
+        case "O_T_VTOL_02_vehicle_dynamicLoadout_F";
+        case "O_T_VTOL_02_infantry_dynamicLoadout_F";
+        case "O_VTOL_02_vehicle_dynamicLoadout_F";
+        case "O_VTOL_02_infantry_dynamicLoadout_F":
+        {
+            _loadout = ["PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F"];
+            _plane setVariable ["mainGun", "gatling_30mm_VTOL_02"];
+            _plane setVariable ["missileLauncher", ["Missile_AA_03_Plane_CAS_02_F"]];
+            _plane setVariable ["diveParams", [1000, 600, 180, 55, 15, [0, 0]]];        // start (m), end (m), diveSpeed (m/s), dive start angle (deg), turnRate (deg/s), bombOffset (m)
+        };
+	    ///Aegis/Atlas
         case "Atlas_B_A_Plane_Fighter_05_Stealth_F";
         case "Atlas_B_A_Plane_Fighter_05_Stealth_ard_F";
         case "Atlas_B_A_Plane_Fighter_05_Stealth_trp_F";
@@ -1449,7 +1483,7 @@ if (_type == "AA") then
             _loadout = ["Tornado_AWS_AIRCMpod_1rnd_M","FIR_AIM9L_P_1rnd_M","Tornado_AWS_fuelsmall_1rnd_M","FIR_Litening_std_P_1rnd_M","FIR_Brimstone_type1_P_3rnd_M","FIR_Brimstone_type1_P_3rnd_M","FIR_GBU12_P_1rnd_M","FIR_Brimstone_type2_P_3rnd_M","FIR_Brimstone_type2_P_3rnd_M","Tornado_AWS_fuelsmall_1rnd_M","FIR_AIM9L_P_1rnd_M","Tornado_AWS_ECMpod_1rnd_M","FIR_BK27_R_M","FIR_BK27_L_M"];
         };
         case "LIB_FW190F8";
-	case "LIB_DAK_FW190F8";
+	    case "LIB_DAK_FW190F8";
         case "LIB_FW190F8_w": 
         {
             _loadout = ["LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50"];
@@ -1462,7 +1496,7 @@ if (_type == "AA") then
         {
             _loadout = ["LIB_1Rnd_SC250"];
         };
-	// Clone Wars Planes (3AS)
+	    // Clone Wars Planes (3AS)
         case "3AS_ARC_170_Yellow";
         case "3AS_ARC_170_Orange";
         case "3AS_ARC_170_Green";
