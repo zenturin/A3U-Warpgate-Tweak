@@ -20,11 +20,12 @@ private _dist = if (_reinf) then {30} else {100 + random 100};
 	{_x disableAI "TARGET"; _x disableAI "AUTOTARGET"} foreach units _heli;
 }; */
 
-while {true} do
+/* while {true} do
 	{
  	_landpos = _positionX getPos [_dist,random 360];
  	if (!surfaceIsWater _landpos) exitWith {};
-	};
+	}; */
+_landpos = [_positionX, _dist, _dist, 2, 0, 5, 0] call BIS_fnc_findSafePos;
 _landpos set [2,0];
 {_x setBehaviour "CARELESS";} forEach units _heli;
 private _wp = _heli addWaypoint [_landpos, 0];
