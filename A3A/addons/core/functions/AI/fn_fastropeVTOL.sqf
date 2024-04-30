@@ -172,8 +172,7 @@ if (canMove _veh) then {
     [_veh, "close"] spawn A3A_fnc_HeliDoors;
 };
 
-if !(_reinf) then
-	{
+if !(_reinf) then {
 	private _wp2 = _groupX addWaypoint [(position (leader _groupX)), 0];
 	_wp2 setWaypointType "MOVE";
 	_wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; (group this) spawn A3A_fnc_attackDrillAI"];
@@ -182,9 +181,7 @@ if !(_reinf) then
 	_wp2 setWaypointStatements ["true","if !(local this) exitWith {}; {if (side _x != side this) then {this reveal [_x,4]}} forEach allUnits"];
 	_wp2 = _groupX addWaypoint [_positionX, 2];
 	_wp2 setWaypointType "SAD";
-	}
-else
-	{
+} else {
 	private _wp2 = _groupX addWaypoint [_positionX, 0];
 	_wp2 setWaypointType "MOVE";
 };
