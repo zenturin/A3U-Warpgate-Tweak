@@ -170,7 +170,7 @@ if(_plane getVariable ["dropPosReached", false] && {!(_plane getVariable ["plane
         {
             unassignVehicle _x;
             _x assignAsCargo _apc;
-        } forEach units _groupJumper;
+        } forEach units _groupJumper; //some sort of check is needed to stop apc waiting endlessly for jumper group and make it start moving immediately
 
         private _apcLeader = leader _apcGroup;
         (units _apcGroup) joinSilent _groupJumper;
