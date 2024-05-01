@@ -72,9 +72,6 @@ if (_hasApex) then {
 if (_hasLawsOfWar) then {
     _CivTruck append ["C_Van_02_vehicle_F", "C_Van_02_transport_F"];
     _VehTruck append ["I_G_Van_02_transport_F", "I_G_Van_02_vehicle_F"];
-    _vehiclesLightUnarmed pushBack "I_C_Offroad_02_unarmed_F";
-    _vehiclesLightArmed pushBack "I_C_Offroad_02_LMG_F";
-    _vehiclesAt pushBack "I_C_Offroad_02_AT_F";
 };
 
 if (_hasContact) then {
@@ -115,7 +112,7 @@ if (_hasCSLA) then {
     _staticAA pushback "CSLA_PLdvK59_Stat";
     _vehiclePlane pushBack "CSLA_CIV_An2_1";
     _vehiclesCivCar append ["CSLA_CIV_Sarka1200","CSLA_CIV_ADA1600","CSLA_CIV_AZU","CSLA_civ_CATOR"];
-    _CivTruck append ["CSLA_CIV_V3Sr", "CSLA_CIV_V3S"];
+    _CivTruck append ["CSLA_CIV_V3S"];
     _VehTruck append ["CSLA_F813o", "CSLA_F813"];
     _vehiclesLightUnarmed append ["US85_M1008c","US85_M1008","US85_M1025_ua","US85_M1043_ua","FIA_AZU_para","CSLA_AZU_R2","CSLA_AZU"];
     _vehiclesLightArmed append ["US85_M1025_M2","US85_M1025_M60","US85_M1043_M2","US85_M1043_M60","US85_M998SFGT","FIA_AZU_DSKM"];

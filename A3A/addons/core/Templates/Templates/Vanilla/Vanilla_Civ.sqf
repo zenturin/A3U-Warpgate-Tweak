@@ -88,26 +88,6 @@ if (_hasCSLA) then {
     _civBoat append ["CSLA_lodka", 0.1];
 };
 
-private _civHelicopter = ["C_Heli_Light_01_civil_F", "a3a_C_Heli_Transport_02_F"];
-
-if (_hasGM) then {
-    _civHelicopter append ["gm_gc_civ_mi2p", "gm_gc_civ_mi2r", "gm_gc_civ_mi2sr", "gm_ge_adak_bo105m_vbh"];
-    _civPlanes append ["gm_gc_civ_l410s_salon", "gm_gc_civ_l410s_passenger"];
-    _civMedical append ["gm_ge_ff_u1300l_medic", 0.3, "gm_pl_army_ural375d_medic", 0.2];
-    _civFuel append ["gm_pl_army_ural375d_refuel", 0.2];
-    _civRepair append ["gm_pl_army_ural4320_repair", 0.2];
-    _civIndustrial append ["gm_gc_civ_ural375d_cargo" , 0.2 , "gm_ge_civ_u1300l" , 0.2 , "gm_ge_civ_typ247", 0.3, "gm_ge_civ_typ251", 0.3];
-    _civCarsWithWeights append ["gm_ge_army_iltis_cargo", 0.2, "gm_pl_army_uaz469_cargo", 0.2, "gm_ge_civ_typ1200", 0.2, "gm_gc_civ_p601", 0.2, "gm_ge_civ_typ253", 0.3, "gm_ge_taxi_typ253", 0.1, "gm_ge_civ_w123", 0.4, "gm_ge_taxi_w123", 0.3, "gm_ge_army_k125", 0.1, "gm_xx_civ_bicycle_01", 0.05, "gm_ge_dbp_bicycle_01_ylw", 0.05];
-};
-
-if (_hasCSLA) then {
-    _civPlanes pushBack "CSLA_CIV_An2_1";
-    _civRepair append ["CSLA_CIV_V3Sr", 0.2];
-    _civIndustrial append ["CSLA_CIV_V3S" , 0.2];
-    _civCarsWithWeights append ["CSLA_CIV_AZU", 0.2, "CSLA_CIV_ADA1600", 0.2, "CSLA_CIV_Sarka1200", 0.2, "CSLA_civ_CATOR", 0.1, "CSLA_CIV_JARA250", 0.1, "US85_TT650", 0.1];
-    _civBoat append ["CSLA_lodka", 0.1];
-};
-
 if (_hasRF) then {
     _civHelicopter append ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF", "C_Heli_EC_04_rescue_RF"];
     _civCarsWithWeights append ["C_Pickup_rf", 0.6, "C_Pickup_covered_rf", 0.5, "C_Truck_03_water_rf", 0.1, "C_Truck_01_water_rf", 0.1];
