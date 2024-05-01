@@ -126,7 +126,7 @@ if (_hasRF) then {
 
 ["animations", [
     ["gm_pl_army_uaz469_cargo", ["RoadPrioritySign_01_unhide",0,"FrontLight_02_Cover_unhide",0,"windshield",0,"windows_unhide",0.3,"cover_hoops_unhide",0,"spare_wheel_unhide",0.3,"antenna_01_unhide",0,"antenna_02_unhide",0,"FogLights_01_unhide",0.3,"mirrors_01_unhide",0.3,"doors_unhide",0.3]],
-    ["gm_ge_army_iltis_cargo", ["radio_01_unhide",0,"radio_02_unhide",0,"cover_hoops_unhide",0.3,"cover_doors_unhide",0.3,"windshield",0.3,"doorBag_unhide",0.3,"beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"coldWeatherKit_unhide",0.3]]
+    ["gm_ge_army_iltis_cargo", ["radio_01_unhide",0,"radio_02_unhide",0,"cover_hoops_unhide",0.4,"cover_doors_unhide",0.4,"windshield",0.4,"doorBag_unhide",0.3,"beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"coldWeatherKit_unhide",0.4]]
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
@@ -135,7 +135,7 @@ if (_hasRF) then {
     ["gm_pl_army_ural375d_refuel", ["gm_oilochre",0.5, "gm_pkhv4",0.5]],
     ["gm_pl_army_ural4320_repair", ["gm_oilochre",0.5, "gm_pkhv4",0.5]],
     ["gm_pl_army_uaz469_cargo", ["gm_oilochre",0.5, "gm_pkhv4",0.5]],
-    ["gm_ge_army_iltis_cargo", ["gm_ge_civ_drk_01",1]]
+    ["gm_ge_army_iltis_cargo", ["gm_ge_civ_drk_01", 0.3, "gm_khs5146", 0.3, "gm_oilochre", 0.3, "gm_pkhv4", 0.3, "gm_xb518", 0.3, "gm_carc_tan", 0.3, "gm_drapolive", 0.3, "gm_merdc_grn", 0.3, "gm_merdc_wht", 0.3, "gm_ge_un", 0.3, "gm_ge_wdl",0]]
 ]] call _fnc_saveToTemplate;
 
 //////////////////////////

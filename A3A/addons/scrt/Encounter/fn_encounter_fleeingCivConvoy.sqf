@@ -95,17 +95,19 @@ private _fnc_fillcargo = {
 	params ["_vehObj","_civVehicles"];
 	private _vehdriver = driver _vehObj;
 	private _vehObjgroup = group _vehdriver;
-    if (civTraffic isEqualTo 2) then {
+    if (civTraffic isEqualTo 2 || civTraffic isEqualTo 4) then {
 	    _cargoSpace = [_civVehicles, true] call BIS_fnc_crewCount;
         _cargoSpace = _cargoSpace - 1;
 	    //_vehObj setVehicleLock "LOCKED";
 	    /* while {_cargoSpace != 1} do { ///driver already exists
             
         }; */
-        for _i from 1 to _cargoSpace do {
+        for "_i" from 1 to _cargoSpace do {
             _cargo = [_vehObjgroup, FactionGet(civ,"unitMan"), getPos _vehObj, [], 10] call A3A_fnc_createUnit;
-            _cargo moveInAny _vehObj; 
-            _cargo disableAI "MOVE";
+            _cargo moveInAny _vehObj; ///stupid fucks won't sit in a vehicle, it's not fixable IT'S NOT POSSIBLE, FUCK ARMA AI
+            _cargo disableAI "MOVE"; ///if you assign them to vehicle, it will only get worse
+            _cargo disableAI "PATH"; ///they will jump out immediately, CUNTS
+            _cargo disableAI "FSM";  /// :-.
 		    /* _cargoSpace = _cargoSpace - 1; //round random [1,3,5]; 
 		    if (_cargoSpace < 1) then{
 			    _cargospace = 1;
@@ -134,7 +136,7 @@ private _text = (localize "STR_marker_civ_convoy");
     sleep 2;
 } forEach _convoyobj;
 
-[_convoyobj select 0, localize "STR_marker_civ_convoy", false] spawn A3A_fnc_inmuneConvoy;			// Disabled the stuck-vehicle hacks
+[_convoyobj select 0, localize "STR_marker_civ_convoy", true] spawn A3A_fnc_inmuneConvoy;			// Disabled the stuck-vehicle hacks
 
 private _civGroups = [];
 

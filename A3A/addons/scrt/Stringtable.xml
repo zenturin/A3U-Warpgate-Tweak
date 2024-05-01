@@ -8477,7 +8477,8 @@
             </Key>
             <Key ID="STR_intel_attack">
                 <Original>%1 attack expected in %2 minutes</Original>
-                <Russian>%1-Angriff in %2 Minuten erwartet</Russian>
+                <German>%1-Angriff in %2 Minuten erwartet</German>
+                <Russian>%1-Атака ожидается в течении %2 минут</Russian>
                 <Chinesesimp>预计 %1 在 %2 分钟内发动攻击</Chinesesimp>
                 <Korean>%2분 후에 %1 공격이 예상됩니다</Korean>
                 <French>Attaque %1 attendue dans %2 minutes</French>

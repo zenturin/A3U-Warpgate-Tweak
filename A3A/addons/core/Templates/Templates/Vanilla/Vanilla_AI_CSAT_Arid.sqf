@@ -178,8 +178,8 @@ if (_hasWs) then {
 
 ["animations", [
     ["O_SFIA_Truck_02_aa_lxWS", ["shield_hide",0.3,"hideCrates",0.3,"hideSpareWheel",0.3,"hideRoofRack",1,"hideBeacon_1",0,"hideBumper",0.3,"hideWindowProtector",0.3]],
-    ["O_SFIA_ZU23_lxWS", ["shield_hide",1]],
-    ["O_Pickup_rf", ["hide_bullbar",0.3,"hide_fuel_tank",0.3,"hide_snorkel",0.3,"hide_antenna",0.3,"hide_trunk_cover",1,"hide_trunk_door",0.3,"trunk_door_open",0.3,"hide_armor_window_armor_top",1,"window_armor_hatch_L_rot",0.3,"window_armor_hatch_R_rot",0,"door_F_L_open",0,"door_F_R_open",0,"door_R_L_open",0,"door_R_R_open",0,"hide_rack",0.3,"hide_rack_spotlights",0.3,"hide_frame",0.3,"hide_sidesteps",0.3]],
+    ["O_SFIA_ZU23_lxWS", ["shield_hide", 0.5]],
+    ["O_Pickup_rf", ["hide_bullbar",0.3,"hide_fuel_tank",1,"hide_snorkel",0.3,"hide_antenna",0.3,"hide_trunk_cover",1,"hide_trunk_door",0.3,"trunk_door_open",0.3,"hide_armor_window_armor_top",1,"window_armor_hatch_L_rot",0.3,"window_armor_hatch_R_rot",0,"door_F_L_open",0,"door_F_R_open",0,"door_R_L_open",0,"door_R_R_open",0,"hide_rack",0.3,"hide_rack_spotlights",0.3,"hide_frame",0.3,"hide_sidesteps",0.3]],
     ["O_Pickup_Comms_rf", ["hide_rack",0.3,"hide_rack_antenna",0.3,"hide_frame",0.3,"hide_frame_full",0.3,"hide_frame_full_panel",0.3,"hide_box",0.3,"hide_box_door",0.3,"hide_trunk_door",0.3,"trunk_door_open",0,"box_door_open",0,"hide_police",1,"hide_Services",1,"BeaconsServicesStart",0,"hide_bullbar",0.3,"hide_snorkel",0.3,"hide_antenna",0.3,"hide_armor_window_armor_top",1,"window_armor_hatch_L_rot",0,"window_armor_hatch_R_rot",0,"door_F_L_open",0,"door_F_R_open",0,"door_R_L_open",0,"door_R_R_open",0,"hide_rack_spotlights",0.3,"hide_sidesteps",0.3]],
     ["O_TwinMortar_RF", ["hide_door_l",0.3,"hide_door_r",0.3]],
     ["O_MBT_02_railgun_F", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showLog",0.3]],
@@ -201,8 +201,8 @@ if (_hasWs) then {
 
 ["variants", [
     ["O_SFIA_Truck_02_aa_lxWS", ["Opfor",1]],
-    ["O_SFIA_ZU23_lxWS", ["hex",1]],
-    ["I_Truck_02_MRL_F", ["Opfor", 1]],
+    ["O_SFIA_ZU23_lxWS", ["hex",1, "SFIA",0]],
+    ["I_Truck_02_MRL_F", ["Opfor", 1, "Indep",0]],
     ["O_Heli_Transport_04_bench_F", ["Black", 0.3, "Opfor", 0.7]],
     ["O_Heli_Transport_04_covered_F", ["Black", 0.3, "Opfor", 0.7]],
     ["O_Heli_Attack_02_dynamicLoadout_F", ["Black", 0.3, "Opfor", 0.7]],
