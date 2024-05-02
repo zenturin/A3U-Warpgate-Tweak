@@ -48,14 +48,6 @@ if (getNumber (_config >> "hasDriver") > 0 && isNull driver _vehicle) then {
 	_driver moveInDriver _vehicle;
 };
 
-/* if ((driver _vehicle) == objNull) then {
-   private _driver = [_group, _unitType, getPos _vehicle, [], 10] call A3A_fnc_createUnit;
-    _driver assignAsDriver _vehicle;
-    //[_driver] orderGetIn true;
-    _driver moveInDriver _vehicle;
-    [_driver] join _group;
-}; */
-
 private _fnc_addCrewToTurrets = {
 	params ["_config", ["_path", []]];
 	private _turrets = "true" configClasses (_config >> "Turrets");
@@ -69,10 +61,6 @@ private _fnc_addCrewToTurrets = {
 		if (!_isHeli && {getNumber (_turretConfig >> "showAsCargo") > 0}) then { continue };
 		if (isNull (_vehicle turretUnit _turretPath)) then {
 			private _gunner = [_group, _unitType, getPos _vehicle, [], 10] call A3A_fnc_createUnit;
-			/* if (_gunner == objNull) then {
-				_gunner = [_group, _unitType, getPos _vehicle, [], 10] call A3A_fnc_createUnit;
-			};
-			FactionGetTiered(inv,"unitRifle"), */
 			_gunner assignAsTurret [_vehicle, _turretPath];
 			_gunner moveInTurret [_vehicle, _turretPath];
 		};

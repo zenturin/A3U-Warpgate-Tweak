@@ -23,8 +23,8 @@ params ["_vehicle", "_group", "_targPos"];
 // Set script handle so abort routines can remove it later
 _group setVariable ["A3A_AIScriptHandle", _thisScript];
 
-private _flyHeight = 250;
-_vehicle flyInHeight _flyHeight;
+private _midHeight = [100, 150] select (A3A_climate isEqualTo "tropical"); //150, 175 or 175, 200?
+_helicopter flyInHeightASL [_midHeight,_midHeight,_midHeight];
 
 while {count waypoints _group > 0} do { deleteWaypoint [_group, 0] };
 _group setBehaviourStrong "COMBAT";
