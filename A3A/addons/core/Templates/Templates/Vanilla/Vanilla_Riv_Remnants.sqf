@@ -249,26 +249,26 @@ if (_hasRF) then {
 private _loadoutData = call _fnc_createLoadoutData;
 private _rifles = [
 	["arifle_TRG21_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+	["arifle_Mk20_plain_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
 	["arifle_SDAR_F","","","", ["20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag"], [], ""]
 ];
 private _tunedRifles = [
 	["arifle_TRG21_F", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20_F", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+	["arifle_Mk20_plain_F", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
 	["arifle_TRG21_F", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20_F", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
+	["arifle_Mk20_plain_F", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ];
 private _enforcerRifles = [
 	["arifle_TRG21_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
+	["arifle_Mk20_plain_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ];
 private _carbines = [
 	["arifle_TRG20_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20C_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
+	["arifle_Mk20C_plain_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ];
 private _gls = [
 	["arifle_TRG21_GL_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "1Rnd_Smoke_Grenade_shell"], ""],
-	["arifle_Mk20_GL_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "1Rnd_Smoke_Grenade_shell"], ""]
+	["arifle_Mk20_GL_plain_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "1Rnd_Smoke_Grenade_shell"], ""]
 ];
 private _mgs = [
 	["LMG_Zafir_F", "", "", "", ["150Rnd_762x54_Box", "150Rnd_762x54_Box", "150Rnd_762x54_Box_Tracer"], [], ""],
@@ -898,26 +898,32 @@ if (_hasCSLA) then {
 
 /////Uniforms
 _loadoutData set ["uniforms", [
-	"U_I_C_Soldier_Para_4_F",
-	"U_I_C_Soldier_Para_2_F",
-	"U_I_C_Soldier_Para_3_F",
-	"U_I_C_Soldier_Para_1_F",
-	"U_I_C_Soldier_Camo_F",
-	"U_I_C_Soldier_Bandit_3_F",
-    "U_I_C_Soldier_Bandit_2_F"
+	"U_IG_Guerilla1_1",
+    "U_IG_Guerilla2_1",
+    "U_IG_Guerilla2_2",
+    "U_IG_Guerilla2_3",
+    "U_IG_Guerilla3_1",
+    "U_IG_leader",
+    "U_IG_Guerrilla_6_1",
+    "U_I_G_resistanceLeader_F",
+    "U_I_L_Uniform_01_deserter_F"
 ]];
 
 if (_hasWs) then {
 	(_loadoutData get "uniforms") append [
         "U_lxWS_SFIA_soldier_2_O",
         "U_lxWS_SFIA_soldier_1_O",
-        "U_lxWS_ION_Casual3",
-        "U_lxWS_ION_Casual6",
-		"U_lxWS_ION_Casual5",
 		"U_SFIA_deserter_lxWS",
 		"U_lxWS_SFIA_deserter",
 		"U_lxWS_SFIA_pilot_O",
 		"U_lxWS_SFIA_Tanker_O"
+    ];
+};
+
+if (_hasRF) then {
+	(_loadoutData get "uniforms") append [
+        "U_IG_Guerrilla_RF",
+        "U_IG_leader_RF"
     ];
 };
 
@@ -974,7 +980,7 @@ if (_hasContact) then {
 };
 
 /////Helmets
-private _helmets = ["H_HelmetB"];
+private _helmets = ["H_HelmetIA","H_Cap_blk_Raven","H_Cap_oli_hs","H_Cap_headphones","H_Booniehat_khk_hs","H_Booniehat_oli","H_Booniehat_dgtl","H_Watchcap_camo"];
 
 if (_hasWs) then {
 	_helmets append [
@@ -997,25 +1003,18 @@ if (_hasWs) then {
 
 if (_hasRF) then {
 	_helmets append [
-		"H_HelmetHeavy_White_RF",
-		"H_HelmetHeavy_Simple_White_RF",
-		"H_HelmetHeavy_VisorUp_White_RF",
 		"H_HelmetHeavy_Olive_RF",
 		"H_HelmetHeavy_Simple_Olive_RF",
 		"H_HelmetHeavy_VisorUp_Olive_RF",
-		"H_HelmetHeavy_Sand_RF",
-		"H_HelmetHeavy_Simple_Sand_RF",
-		"H_HelmetHeavy_VisorUp_Sand_RF",
 		"H_HelmetHeavy_Black_RF", 
 		"H_HelmetHeavy_Simple_Black_RF", 
 		"H_HelmetHeavy_VisorUp_Black_RF",
-		"H_HelmetB_plain_sb_wdl_RF",
-		"H_HelmetB_plain_sb_tna_RF"
+		"H_HelmetIA_sb_digital_RF"
 	];
 };
 
 if (_hasLawsOfWar) then {
-	_helmets append ["H_PASGT_basic_black_F", "H_PASGT_basic_blue_F", "H_PASGT_basic_olive_F", "H_PASGT_neckprot_blue_press_F", "H_PASGT_basic_blue_press_F","H_HeadBandage_clean_F", "H_HeadBandage_stained_F", "H_HeadBandage_bloody_F"];
+	_helmets append ["H_PASGT_basic_black_F", "H_PASGT_basic_olive_F", "H_PASGT_neckprot_blue_press_F","H_HeadBandage_clean_F", "H_HeadBandage_stained_F", "H_HeadBandage_bloody_F"];
 };
 
 if (_hasLawsOfWar) then {
@@ -1067,7 +1066,7 @@ if (_hasCSLA) then {
 };
 
 /////
-_loadoutData set ["offuniforms", ["U_I_C_Soldier_Camo_F"]]; ///check offuniforms later
+_loadoutData set ["offuniforms", ["U_I_OfficerUniform"]]; ///check offuniforms later
 _loadoutData set ["vests", _vests];
 _loadoutData set ["heavyVests", _heavyVests];
 _loadoutData set ["backpacks", ["B_TacticalPack_oli", "B_Carryall_oli"]]; ///check for backpacks later

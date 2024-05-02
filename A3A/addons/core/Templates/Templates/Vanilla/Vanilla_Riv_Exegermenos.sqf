@@ -890,7 +890,7 @@ if (_hasContact) then {
 };
 
 /////Helmets
-private _helmets = ["H_HelmetB"];
+private _helmets = ["H_HelmetB"]; ///look for more helmets
 
 if (_hasWs) then {
 	_helmets append [
@@ -983,10 +983,10 @@ if (_hasCSLA) then {
 };
 
 /////
-_loadoutData set ["offuniforms", ["U_I_C_Soldier_Camo_F"]]; ///check offuniforms later
+_loadoutData set ["offuniforms", ["U_I_C_Soldier_Camo_F"]]; ///check offuniforms later.
 _loadoutData set ["vests", _vests];
 _loadoutData set ["heavyVests", _heavyVests];
-_loadoutData set ["backpacks", ["B_TacticalPack_oli", "B_Carryall_oli"]]; ///check for backpacks later
+_loadoutData set ["backpacks", ["B_TacticalPack_oli", "B_Carryall_oli"]]; ///check for backpacks later.
 _loadoutData set ["helmets", _helmets];
 _loadoutData set ["crewHelmets", _crewhelmets];
 
