@@ -154,7 +154,7 @@ class Templates
     class Vanilla_Remnants : Vanilla_Base
     {
         side = "Riv";
-        flagTexture = "a3\data_f\flags\flag_aaf_co.paa";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\Vanilla\flag_aaf_torn_co.paa);
         name = "A3 Remnants";
         file = "Vanilla_Riv_Remnants";
         climate[] = {"arid", "temperate", "arctic"}; ///arctic?

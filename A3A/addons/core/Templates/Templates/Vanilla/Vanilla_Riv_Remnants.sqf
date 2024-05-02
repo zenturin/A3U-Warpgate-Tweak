@@ -16,8 +16,8 @@ private _hasRF = "rf" in A3A_enabledDLC;
 //   Rivals Information   //
 ///////////////////////////
 
-["name", "Exegerménos"] call _fnc_saveToTemplate;
-["nameLeader", "Alexander Akhanteros"] call _fnc_saveToTemplate;
+["name", "Remnants"] call _fnc_saveToTemplate;
+["nameLeader", "Alexander Akhanteros"] call _fnc_saveToTemplate; ///Proper name is needed
 
 //////////////////////////////////////
 //       	Identities    			//
@@ -41,7 +41,7 @@ private _hasRF = "rf" in A3A_enabledDLC;
     "Ioannou",
     "Mavros"
 ]] call _fnc_saveToTemplate; 
-["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE","Male01ENGFRE","Male02ENGFRE"]] call _fnc_saveToTemplate;
+["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
@@ -52,7 +52,7 @@ private _hasRF = "rf" in A3A_enabledDLC;
 private _lightArmedVehicles = ["I_MRAP_03_gmg_F","I_MRAP_03_hmg_F"];
 private _lightUnarmedVehicles = ["I_MRAP_03_F"];
 private _apc = ["I_APC_Wheeled_03_cannon_F","I_APC_tracked_03_cannon_F"];
-private _tanks = [/* "I_UGV_01_rcws_F", */"I_MBT_03_cannon_F"];
+private _tanks = ["I_UGV_01_rcws_F","I_MBT_03_cannon_F"];
 private _helis = ["I_Heli_Transport_02_F","I_Heli_light_03_dynamicLoadout_F","I_Heli_light_03_unarmed_F"];
 private _uav = ["I_UAV_01_F"];
 private _trucks = ["I_UGV_01_F","I_Truck_02_covered_F","I_Truck_02_transport_F"];
@@ -249,26 +249,26 @@ if (_hasRF) then {
 private _loadoutData = call _fnc_createLoadoutData;
 private _rifles = [
 	["arifle_TRG21_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20_plain_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+	["arifle_Mk20_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
 	["arifle_SDAR_F","","","", ["20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag"], [], ""]
 ];
 private _tunedRifles = [
 	["arifle_TRG21_F", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20_plain_F", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+	["arifle_Mk20_F", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
 	["arifle_TRG21_F", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20_plain_F", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
+	["arifle_Mk20_F", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ];
 private _enforcerRifles = [
 	["arifle_TRG21_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20_plain_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
+	["arifle_Mk20_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ];
 private _carbines = [
 	["arifle_TRG20_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-	["arifle_Mk20C_plain_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
+	["arifle_Mk20C_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ];
 private _gls = [
 	["arifle_TRG21_GL_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "1Rnd_Smoke_Grenade_shell"], ""],
-	["arifle_Mk20_GL_plain_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "1Rnd_Smoke_Grenade_shell"], ""]
+	["arifle_Mk20_GL_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Green"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "1Rnd_Smoke_Grenade_shell"], ""]
 ];
 private _mgs = [
 	["LMG_Zafir_F", "", "", "", ["150Rnd_762x54_Box", "150Rnd_762x54_Box", "150Rnd_762x54_Box_Tracer"], [], ""],
@@ -642,17 +642,17 @@ if (_hasRF) then {
         "G_Bandanna_yellow_RF",
         "G_Glasses_black_RF",
         "G_Glasses_white_RF"
-        ];
+    ];
 }; 
 
 _loadoutData set ["fullmask", [	"G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_blk"]];
 
 if (_hasGM) then {
-    (_loadoutData get "facewear") append [
+    (_loadoutData get "fullmask") append [
         "gm_ge_facewear_stormhood_blk",
         "gm_ge_facewear_stormhood_dustglasses_blk",
         "gm_ge_facewear_stormhood_brd"
-        ];
+    ];
 } ;
 
 _loadoutData set ["headgear", [
@@ -661,17 +661,23 @@ _loadoutData set ["headgear", [
     "H_Beret_blk",
     "H_Cap_oli",
     "H_Cap_headphones",
-	"H_Watchcap_camo"
+	"H_Watchcap_camo",
+	"H_Cap_blk_Raven",
+	"H_Cap_oli_hs",
+	"H_Booniehat_khk_hs",
+	"H_Booniehat_dgtl"
 ]];
 
 if (_hasGM) then {
 	(_loadoutData get "headgear") append [
-        "gm_ge_headgear_headset_crew_oli",
         "gm_ge_headgear_beret_crew_blk",
         "gm_xx_headgear_headwrap_crew_01_grn",
-        "gm_ge_headgear_hat_beanie_crew_blk"
+        "gm_ge_headgear_hat_beanie_crew_blk",
+        "gm_gc_headgear_fjh_model4_oli",
+        "gm_ge_headgear_m92_cover_glasses_oli",
+        "gm_ge_headgear_m92_cover_oli"
     ];
-};
+}; ///look at this later
 
 if (_hasCSLA) then {
 	(_loadoutData get "headgear") append [
@@ -691,7 +697,7 @@ if (_hasCSLA) then {
 		"CSLA_BudajkaGy",
 		"FIA_Budajka"
     ];
-};
+}; ///look at this later
 
 if (_hasContact) then {
 	(_loadoutData get "headgear") append [
@@ -704,22 +710,10 @@ if (_hasContact) then {
 		"H_MilCap_wdl", 
 		"H_MilCap_eaf"
 	];
-};
+}; ///look at this later
 
 if (_hasWs) then {
 	(_loadoutData get "headgear") pushBack "lxWS_H_Headset";
-};
-
-if (_hasGM) then {
-	(_loadoutData get "headgear") append [        
-		"gm_ge_headgear_headset_crew_oli",
-        "gm_gc_headgear_fjh_model4_oli",
-        "gm_ge_headgear_m92_cover_glasses_oli",
-        "gm_ge_headgear_m92_cover_oli",
-        "gm_ge_headgear_psh77_oli",
-        "gm_ge_headgear_psh77_up_oli",
-        "gm_ge_headgear_psh77_down_oli"
-	];
 };
 
 _loadoutData set ["maps", ["ItemMap"]];
@@ -820,7 +814,7 @@ if (_hasCSLA) then {
 	];
 };
 
-private _heavyVests = ["V_TacVestIR_blk", "V_Press_F", "V_PlateCarrierIAGL_oli", "V_I_G_resistanceLeader_F", "V_TacVest_blk_POLICE","V_PlateCarrier1_blk","V_PlateCarrier2_blk"];
+private _heavyVests = ["V_TacVestIR_blk", "V_Press_F", "V_PlateCarrierIAGL_oli", "V_PlateCarrierIAGL_dgtl","V_PlateCarrierIA2_dgtl","V_PlateCarrierIA1_dgtl", "V_I_G_resistanceLeader_F", "V_TacVest_blk_POLICE","V_PlateCarrier1_blk","V_PlateCarrier2_blk"];
 
 if (_hasApex) then {
 	_heavyVests append ["V_TacVest_gen_F","V_PlateCarrier1_rgr_noflag_F","V_PlateCarrier2_rgr_noflag_F"];
@@ -898,60 +892,54 @@ if (_hasCSLA) then {
 
 /////Uniforms
 _loadoutData set ["uniforms", [
-	"U_IG_Guerilla1_1",
-    "U_IG_Guerilla2_1",
-    "U_IG_Guerilla2_2",
-    "U_IG_Guerilla2_3",
-    "U_IG_Guerilla3_1",
-    "U_IG_leader",
-    "U_IG_Guerrilla_6_1",
-    "U_I_G_resistanceLeader_F",
-    "U_I_L_Uniform_01_deserter_F"
+	"U_BG_leader",
+    "U_BG_Guerilla1_1",
+	"U_BG_Guerrilla_6_1",
+	"U_I_CombatUniform_shortsleeve",
+	"U_I_CombatUniform",
+	"U_I_GhillieSuit"
 ]];
 
 if (_hasWs) then {
 	(_loadoutData get "uniforms") append [
-        "U_lxWS_SFIA_soldier_2_O",
-        "U_lxWS_SFIA_soldier_1_O",
 		"U_SFIA_deserter_lxWS",
-		"U_lxWS_SFIA_deserter",
 		"U_lxWS_SFIA_pilot_O",
 		"U_lxWS_SFIA_Tanker_O"
     ];
 };
 
+if (_hasLawsOfWar) then {
+	(_loadoutData get "uniforms") append [
+        "U_BG_Guerilla1_2_F"
+    ];
+};
+
+if (_hasTanks) then {
+	(_loadoutData get "uniforms") append [
+        "U_Tank_green_F"
+    ];
+};
+
 if (_hasRF) then {
 	(_loadoutData get "uniforms") append [
-        "U_IG_Guerrilla_RF",
-        "U_IG_leader_RF"
+        "U_BG_Guerrilla_RF",
+        "U_BG_leader_RF"
     ];
 };
 
 if (_hasContact) then {
 	(_loadoutData get "uniforms") append [
-        "U_I_E_Uniform_01_sweater_F",
-        "U_I_E_Uniform_01_tanktop_F",
-        "U_I_L_Uniform_01_camo_F",
-        "U_I_L_Uniform_01_deserter_F",
-		"U_C_E_LooterJacket_01_F",
-		"U_I_L_Uniform_01_tshirt_olive_F"
+		"U_I_CBRN_Suit_01_AAF_F"
     ];
 };
 
 if (_hasGM) then {
 	(_loadoutData get "uniforms") append [
-        "gm_ge_uniform_soldier_tshirt_90_oli",
-        "gm_ge_uniform_soldier_tshirt_90_flk",
         "gm_xx_uniform_soldier_bdu_80_oli",
         "gm_xx_uniform_soldier_bdu_nogloves_80_oli",
-		"gm_xx_uniform_soldier_bdu_rolled_80_oli",
-		"gm_pl_army_uniform_soldier_80_moro",
-		"gm_pl_army_uniform_soldier_autumn_80_moro",
-		"gm_pl_army_uniform_soldier_rolled_80_moro",
-		"gm_xx_army_uniform_fighter_04_grn",
-		"gm_xx_army_uniform_fighter_02_oli",
-		"gm_xx_army_uniform_fighter_02_wdl",
-		"gm_xx_army_uniform_fighter_04_wdl"
+        "gm_xx_uniform_soldier_bdu_rolled_80_oli",
+        "gm_dk_army_uniform_soldier_84_oli",
+		"gm_ge_uniform_soldier_tshirt_90_oli"
     ];
 };
 
@@ -979,19 +967,22 @@ if (_hasContact) then {
     ];
 };
 
+if (_hasGM) then {
+	(_loadoutData get "heavyUniforms") append [
+        "gm_dk_army_uniform_soldier_84_oli"
+    ];
+};
+
 /////Helmets
-private _helmets = ["H_HelmetIA","H_Cap_blk_Raven","H_Cap_oli_hs","H_Cap_headphones","H_Booniehat_khk_hs","H_Booniehat_oli","H_Booniehat_dgtl","H_Watchcap_camo"];
+private _helmets = ["H_HelmetIA"];
 
 if (_hasWs) then {
 	_helmets append [
 		"lxWS_H_ssh40_black",
 		"lxWS_H_ssh40_green",
-		"lxWS_H_ssh40_sand",
 		"lxWS_H_bmask_base",
-		"H_turban_02_mask_black_lxws",
 		"lxWS_H_bmask_camo01",
 		"H_bmask_snake_lxws",
-		"H_turban_02_mask_snake_lxws",
 		"lxWS_H_bmask_white", 
 		"lxWS_H_bmask_camo02", 
 		"lxWS_H_bmask_yellow", 
@@ -1009,7 +1000,8 @@ if (_hasRF) then {
 		"H_HelmetHeavy_Black_RF", 
 		"H_HelmetHeavy_Simple_Black_RF", 
 		"H_HelmetHeavy_VisorUp_Black_RF",
-		"H_HelmetIA_sb_digital_RF"
+		"H_HelmetIA_sb_digital_RF",
+		"H_HelmetAggressor_sb_taiga_RF"
 	];
 };
 
@@ -1017,33 +1009,30 @@ if (_hasLawsOfWar) then {
 	_helmets append ["H_PASGT_basic_black_F", "H_PASGT_basic_olive_F", "H_PASGT_neckprot_blue_press_F","H_HeadBandage_clean_F", "H_HeadBandage_stained_F", "H_HeadBandage_bloody_F"];
 };
 
-if (_hasLawsOfWar) then {
-	_helmets append ["H_HelmetAggressor_F", "H_HelmetAggressor_cover_F", "H_HelmetAggressor_cover_taiga_F"];
+if (_hasContact) then {
+	_helmets append ["H_HelmetAggressor_F", "H_HelmetAggressor_cover_F", "H_HelmetAggressor_cover_taiga_F","H_HelmetHBK_headset_F","H_HelmetHBK_chops_F","H_HelmetHBK_ear_F","H_HelmetHBK_F"];
 };
 
 if (_hasCSLA) then {
-	_helmets append [        
-		"US85_helmetM1g",
-        "AFMC_helmetM1c",
-        "US85_helmetM1c",
-        "AFMC_helmetMk6",
-        "AFMC_helmetMk6para",
-        "AFMC_helmetMk6r",
+	_helmets append [
         "US85_helmetPASGT",
 		"US85_helmetPASGTr",
 		"US85_helmetPASGTG",
 		"US85_helmetSFL",
 		"US85_helmetSFLG",
-		"US85_helmetSFLG_on",
-		"CSLA_helmet53",
-		"CSLA_helmet53j",
-		"CSLA_helmet53m",
-		"CSLA_helmet53G",
-		"CSLA_helmet53G_on"
+		"US85_helmetSFLG_on"
 	];
 };
 
-private _crewhelmets = ["H_Tank_black_F"];
+if (_hasGM) then {
+	_helmets append [
+        "gm_ge_headgear_psh77_oli",
+        "gm_ge_headgear_psh77_up_oli",
+        "gm_ge_headgear_psh77_down_oli"
+    ]; 
+};
+
+private _crewhelmets = ["H_HelmetCrew_I"];
 
 if (_hasWs) then {
 	_crewhelmets append ["lxWS_H_Tank_tan_F", "lxWS_H_HelmetCrew_I"];
@@ -1066,10 +1055,41 @@ if (_hasCSLA) then {
 };
 
 /////
-_loadoutData set ["offuniforms", ["U_I_OfficerUniform"]]; ///check offuniforms later
+private _offuniforms = ["U_I_OfficerUniform"];
+private _backpacks = ["B_AssaultPack_dgtl","B_TacticalPack_oli", "B_Carryall_oli","B_Kitbag_sgg","B_FieldPack_oli"];
+
+if (_hasApex) then {
+	_backpacks append ["B_ViperHarness_oli_F","B_ViperLightHarness_oli_F"];
+};
+
+if (_hasArtOfWar) then {
+	_backpacks append ["B_CivilianBackpack_01_Everyday_Black_F","B_CivilianBackpack_01_Everyday_Astra_F","B_CivilianBackpack_01_Everyday_Vrana_F","B_CivilianBackpack_01_Sport_Green_F","B_CivilianBackpack_01_Sport_Red_F","B_CivilianBackpack_01_Sport_Blue_F"];
+};
+
+if (_hasContact) then {
+	_backpacks append ["B_FieldPack_green_F","B_RadioBag_01_digi_F","B_RadioBag_01_black_F","B_Carryall_green_F"];
+};
+
+if (_hasRF) then {
+	_backpacks append ["B_DuffleBag_Olive_NoLogo_RF","B_DuffleBag_Black_NoLogo_RF","B_DuffleBag_Sand_RF","B_DuffleBag_Red_RF","B_DuffleBag_Olive_RF","B_DuffleBag_Blue_RF","B_DuffleBag_Black_RF","B_DuffleBag_VRANA_RF"];
+};
+
+if (_hasLawsOfWar) then {
+	_backpacks append ["B_Messenger_Olive_F","B_Messenger_Black_F","B_LegStrapBag_olive_F","B_LegStrapBag_black_F"];
+};
+
+if (_hasGM) then {
+	_backpacks append ["gm_dk_army_backpack_73_oli","gm_ge_army_backpack_90_blk","gm_ge_army_backpack_90_oli","gm_ge_army_backpack_80_oli","gm_ge_backpack_sem35_oli","gm_pl_army_backpack_at_80_gry"];
+};
+
+if (_hasCSLA) then {
+	_backpacks append ["US85_bpSf","FIA_bpPack US85_bpAlice"];
+};
+
+_loadoutData set ["offuniforms", _offuniforms]; ///check offuniforms later 
 _loadoutData set ["vests", _vests];
 _loadoutData set ["heavyVests", _heavyVests];
-_loadoutData set ["backpacks", ["B_TacticalPack_oli", "B_Carryall_oli"]]; ///check for backpacks later
+_loadoutData set ["backpacks", _backpacks]; ///check for backpacks later
 _loadoutData set ["helmets", _helmets];
 _loadoutData set ["crewHelmets", _crewhelmets];
 
@@ -1115,9 +1135,9 @@ _crewLoadoutData set ["vests", _vests];
 _crewLoadoutData set ["crewHelmets", _crewhelmets];
 
 private _pilotLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", ["U_Marshal","U_C_WorkerCoveralls","U_Rangemaster"]];
+_pilotLoadoutData set ["uniforms", ["U_I_HeliPilotCoveralls","U_I_pilotCoveralls"]];
 _pilotLoadoutData set ["vests", _vests];
-_pilotLoadoutData set ["helmets", ["H_PilotHelmetHeli_O", "H_CrewHelmetHeli_O", "H_PilotHelmetHeli_B", "H_CrewHelmetHeli_B"]];
+_pilotLoadoutData set ["helmets", ["H_PilotHelmetHeli_I", "H_CrewHelmetHeli_I"]];
 
 if (_hasRF) then {
 	(_pilotLoadoutData get "uniforms") append [
