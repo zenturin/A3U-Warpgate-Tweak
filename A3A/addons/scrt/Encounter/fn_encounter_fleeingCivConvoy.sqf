@@ -95,7 +95,7 @@ private _fnc_fillcargo = {
 	params ["_vehObj","_civVehicles"];
 	private _vehdriver = driver _vehObj;
 	private _vehObjgroup = group _vehdriver;
-    if (civTraffic isEqualTo 2 || civTraffic isEqualTo 4) then {
+    if (civTraffic >= 2) then {
 	    _cargoSpace = [_civVehicles, true] call BIS_fnc_crewCount;
         _cargoSpace = _cargoSpace - 1;
 	    //_vehObj setVehicleLock "LOCKED";
