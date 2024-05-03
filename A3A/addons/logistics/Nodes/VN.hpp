@@ -37,29 +37,6 @@ class vn_wheeled_f_vietnam_02_car_vn_wheeled_car_02_p3d : TRIPLES(ADDON,Nodes,Ba
     };
 };
 
-class vn_wheeled_f_vietnam_m151_vn_wheeled_m151_01_p3d : TRIPLES(ADDON,Nodes,Base)
-{
-    class Nodes
-    {
-        class Node1
-        {
-            offset[] = {0,-0.62,-0.78};
-        };
-    };
-};
-
-class vn_wheeled_f_vietnam_02_car_vn_wheeled_car_04_p3d : TRIPLES(ADDON,Nodes,Base)
-{
-        class Nodes
-    {
-        class Node1
-        {
-            offset[] = {0.05,0.18,-0.3};
-        };
-    };
-};
-
-
 class vn_wheeled_f_vietnam_bicycle_vn_bicycle_02_p3d : TRIPLES(ADDON,Nodes,Base)
 {
         class Nodes
@@ -70,7 +47,6 @@ class vn_wheeled_f_vietnam_bicycle_vn_bicycle_02_p3d : TRIPLES(ADDON,Nodes,Base)
         };
     };
 };
-
 
 class vn_wheeled_f_vietnam_bicycle_vn_bicycle_01_p3d : TRIPLES(ADDON,Nodes,Base)
 {
@@ -84,7 +60,6 @@ class vn_wheeled_f_vietnam_bicycle_vn_bicycle_01_p3d : TRIPLES(ADDON,Nodes,Base)
     };
 };
 
-//
 class vn_wheeled_f_vietnam_m151_vn_wheeled_m151_01_p3d : TRIPLES(ADDON,Nodes,Base)
 {
     class Nodes
