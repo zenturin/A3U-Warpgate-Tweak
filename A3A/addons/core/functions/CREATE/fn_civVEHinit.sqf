@@ -2,7 +2,7 @@
 FIX_LINE_NUMBERS()
 
 private _veh = _this select 0;
-private _vehCrew = crew (_this select 0);
+private _vehCrew = crew _veh;
 
 if (_veh isKindOf "Car") then {
 	_veh addEventHandler ["HandleDamage",{if (((_this select 1) find "wheel" != -1) and (_this select 4=="") and (!isPlayer driver (_this select 0))) then {0} else {(_this select 2)};}];
