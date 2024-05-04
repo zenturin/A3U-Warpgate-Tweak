@@ -386,7 +386,7 @@ class RscDisplayMain: RscStandardDisplay //main menu
 			onMouseButtonUp = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\GitB_Hov.paa""";
 			onMouseButtonDown = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\GitB.paa""";
 		};
-		class ServerButton3: SteamButton1
+		class ServerButton3: base_side_btn
         {
 			y = "safeZoneY + safeZoneH - 0.4";
 			text = QPATHTOFOLDER(data\ServerB.paa); // No text needed for an image button
