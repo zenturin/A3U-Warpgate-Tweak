@@ -17,7 +17,7 @@ private _hasRF = "rf" in A3A_enabledDLC;
 ///////////////////////////
 
 ["name", "Remnants"] call _fnc_saveToTemplate;
-["nameLeader", "Alexander Akhanteros"] call _fnc_saveToTemplate; ///Proper name is needed
+["nameLeader", "Georgious Akhanteros"] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
 //       	Identities    			//
@@ -634,7 +634,7 @@ if (_hasGM) then {
         "gm_xx_facewear_scarf_01_str",
         "gm_xx_facewear_scarf_01_wht",
         "gm_ge_facewear_sunglasses"
-        ];
+    ];
 };
 
 if (_hasRF) then {
@@ -945,15 +945,9 @@ if (_hasGM) then {
 
 if (_hasCSLA) then {
 	(_loadoutData get "uniforms") append [
-        "FIA_uniwld11",
-        "FIA_uniwld",
-        "FIA_uniwld1",
-        "FIA_uniwld10",
-		"FIA_uniwld3",
-		"FIA_uniwld4",
-		"FIA_uniwld6",
-		"FIA_uniwld7",
-		"FIA_uniwld9"
+        "US85_uniKHK",
+		"AFMC_uniSF",
+		"AFMC_uniWLD"
     ];
 };
 
