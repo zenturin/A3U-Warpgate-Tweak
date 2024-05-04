@@ -649,7 +649,7 @@ if (_hasWs) then {
 (_sfLoadoutData get "helmets") append ["lxWS_H_bmask_white","H_bmask_snake_lxws","H_turban_02_mask_snake_lxws","lxWS_H_bmask_base","H_turban_02_mask_black_lxws","lxWS_H_bmask_camo01","lxWS_H_Bandanna_blk_hs","lxWS_H_Headset"];
 (_sfLoadoutData get "goggles") append ["G_Balaclava_snd_lxWS","G_Balaclava_blk_lxWS","G_Combat_lxWS","G_Headset_lxWS"];
 (_sfLoadoutData get "glasses") append ["G_Balaclava_snd_lxWS","G_Balaclava_blk_lxWS","G_Combat_lxWS","G_Headset_lxWS"];
-(_sfLoadoutData get "uniforms") pushBack "U_lxWS_ION_Casual6";
+(_sfLoadoutData get "uniforms") append ["U_lxWS_ION_Casual6","U_B_CTRG_3_lxWS","U_B_CTRG_4_lxWS"];
 };
 
 if (_hasRF) then {
