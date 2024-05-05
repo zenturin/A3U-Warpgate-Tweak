@@ -1848,7 +1848,7 @@
                 <French>Marchand d'armes</French>
             </Key>
             <Key ID="STR_marker_civ_convoy">
-                <Original>Civillian convoy</Original>
+                <Original>Civilian convoy</Original>
                 <Russian>Конвой гражданских</Russian>
             </Key>
             <Key ID="STR_marker_convoy_objective">
@@ -1864,6 +1864,14 @@
                 <Chinesesimp> 车队目标</Chinesesimp>
                 <Korean> 호송대 목표</Korean>
                 <French> Objectif du convoi</French>
+            </Key>
+            <Key ID="STR_marker_convoy_escort_vehicle">
+                <Original> Convoy Escort</Original>
+                <Russian> Конвой (эскорт)</Russian>
+            </Key>
+            <Key ID="STR_marker_convoy_lead_vehicle">
+                <Original> Convoy Lead</Original>
+                <Russian> Конвой (ведущий)</Russian>
             </Key>
             <Key ID="STR_marker_mission_vehicle">
                 <Original>Mission Vehicle</Original>
