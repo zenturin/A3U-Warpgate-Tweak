@@ -2,84 +2,89 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "AFRF"] call _fnc_saveToTemplate;
-["spawnMarkerName", format [localize "STR_supportcorridor", "AFRF"]] call _fnc_saveToTemplate;
+["name", "CSAT"] call _fnc_saveToTemplate;
+["spawnMarkerName", format [localize "STR_supportcorridor", "CSAT"]] call _fnc_saveToTemplate;
 
-["flag", "rhs_Flag_Russia_F"] call _fnc_saveToTemplate;
-["flagTexture", "rhsafrf\addons\rhs_main\data\flag_rus_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_Russia"] call _fnc_saveToTemplate;
+["flag", "Flag_CSAT_F"] call _fnc_saveToTemplate;
+["flagTexture", "A3\Data_F\Flags\Flag_CSAT_CO.paa"] call _fnc_saveToTemplate;
+["flagMarkerType", "flag_CSAT"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
 
 ["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate;     //Don't touch or you die a sad and lonely death!
-["surrenderCrate", "rhs_7ya37_1_single"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
-["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
+["surrenderCrate", "Box_East_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
+["equipmentBox", "Box_CSAT_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["rhs_tigr_msv", "rhs_tigr_m_msv"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["rhs_tigr_sts_3camo_msv", "rhs_tigr_sts_3camo_msv", "RHS_Ural_Zu23_MSV_01", "UK3CB_O_G_MTLB_Zu23"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["rhs_kamaz5350_msv", "rhs_kamaz5350_open_msv", "RHS_Ural_Open_MSV_01", "RHS_Ural_MSV_01"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["rhs_kamaz5350_flatbed_cover_msv", "rhs_kamaz5350_flatbed_msv", "RHS_Ural_Flat_MSV_01", "RHS_Ural_Open_Flat_MSV_01"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["rhs_kamaz5350_ammo_msv", "RHS_Ural_Ammo_MSV_01"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["RHS_Ural_Repair_MSV_01"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["RHS_Ural_Fuel_MSV_01"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["rhs_gaz66_ap2_msv"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["UK3CB_O_G_MTLB_PKT", "rhs_btr80_msv", "rhs_btr80a_msv", "rhsgref_BRDM2_msv"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["rhs_bmd1", "rhs_bmd1p", "rhs_bmd1pk", "rhs_bmd2m", "rhs_bmd2", "rhs_bmp3_msv", "rhs_bmp3_late_msv", "rhs_bmp1k_msv", "rhs_bmp1p_msv", "rhs_brm1k_msv"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["rhsgref_BRDM2_ATGM_msv", "rhs_bmd4m_vdv", "rhs_bmd4ma_vdv", "rhs_bmp3m_msv", "rhs_bmp3mera_msv", "rhs_bmp2e_msv", "rhs_bmp2_msv", "rhs_bmp2d_msv", "rhs_bmp2k_msv", "rhs_Ob_681_2"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["UK3CB_CSAT_B_O_Quadbike", "UK3CB_CSAT_B_O_M1030"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["UK3CB_CSAT_B_O_Tigr", "UK3CB_CSAT_B_O_BRDM2_UM"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["UK3CB_CSAT_B_O_Tigr_STS", "UK3CB_CSAT_B_O_Tigr_FFV", "UK3CB_CSAT_B_O_GAZ_Vodnik_PKT"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["UK3CB_CSAT_B_O_MAZ_Transport_Open", "UK3CB_CSAT_B_O_Typhoon_transport"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["UK3CB_CSAT_B_O_MAZ_543_Recovery", "UK3CB_CSAT_B_O_Typhoon_transport_covered"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["UK3CB_CSAT_B_O_MAZ_543_Reammo", "UK3CB_CSAT_B_O_Typhoon_ammo"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["UK3CB_CSAT_B_O_MAZ_543_Repair", "UK3CB_CSAT_B_O_Typhoon_repair"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["UK3CB_CSAT_B_O_MAZ_543_Refuel", "UK3CB_CSAT_B_O_Typhoon_fuel"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["UK3CB_CSAT_B_O_GAZ_Vodnik_MedEvac", "UK3CB_CSAT_B_O_Typhoon_medical"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["UK3CB_CSAT_B_O_GAZ_Vodnik_PKT", "UK3CB_CSAT_B_O_BRDM2_HQ", "UK3CB_CSAT_B_O_GAZ_Vodnik_Cannon", "UK3CB_CSAT_B_O_GAZ_Vodnik_HMG", "UK3CB_CSAT_B_O_GAZ_Vodnik_KVPT", "UK3CB_CSAT_B_O_BTR40_MG"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["UK3CB_CSAT_B_O_BRDM2_ATGM", "UK3CB_CSAT_B_O_BRDM2", "UK3CB_CSAT_B_O_BMP3", "UK3CB_CSAT_B_O_BMP3MERA", "UK3CB_CSAT_B_O_BRM1K", "UK3CB_CSAT_B_O_BMD2", "UK3CB_CSAT_B_O_BMD1K"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["UK3CB_CSAT_B_O_BTR80a", "UK3CB_CSAT_B_O_BTR80", "UK3CB_CSAT_B_O_Marid_Cage", "UK3CB_CSAT_B_O_Marid_Cage_Camo"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["rhs_prp3_msv", "rhs_bmp1d_msv"]] call _fnc_saveToTemplate;
 
-["vehiclesLightTanks",  ["rhs_bmd1pk", "rhs_sprut_vdv", "UK3CB_KDF_O_T55", "rhs_t72ba_tv", "rhs_t72bc_tv", "rhs_t80", "rhs_t80u45m", "rhs_t80ue1"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["rhs_t80bk", "rhs_t72bd_tv", "rhs_t72be_tv", "rhs_t80a", "rhs_t80bv", "rhs_t80u", "rhs_t80um", "rhs_t72bb_tv", "rhs_t90sab_tv", "rhs_t90a_tv", "rhs_t90_tv", "rhs_t90am_tv", "rhs_t90saa_tv", "rhs_t90sm_tv"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["rhs_zsu234_aa", "rhs_zsu234_aa", "UK3CB_O_2S6M_Tunguska_VPV"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["UK3CB_CSAT_B_O_T55", "UK3CB_CSAT_B_O_T72A", "UK3CB_CSAT_B_O_T72B", "UK3CB_CSAT_B_O_T72BC"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["UK3CB_CSAT_B_O_T80UK", "UK3CB_CSAT_B_O_T80U", "UK3CB_CSAT_B_O_T80BVK", "UK3CB_CSAT_B_O_T80BV"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["UK3CB_CSAT_B_O_2S6M_Tunguska", "UK3CB_CSAT_B_O_ZsuTank", "UK3CB_CSAT_B_O_ZSU39_Cage_Camo"]] call _fnc_saveToTemplate;
 
-["vehiclesTransportBoats", ["rhsgref_hidf_assault_boat", "rhsgref_hidf_rhib"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["UK3CB_MDF_B_RHIB_Gunboat"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["UK3CB_CSAT_B_O_Skiff"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["UK3CB_CSAT_B_O_Armed_Boat_HMG_Minigun"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["RHS_Su25SM_vvs", "RHS_Su25SM_vvsc"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["rhs_mig29sm_vvs", "rhs_mig29s_vvs", "RHS_T50_vvs_generic_ext"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["UK3CB_CSAT_B_O_MIG21", "UK3CB_CSAT_B_O_MIG21_CAS", "UK3CB_CSAT_B_O_Su25SM_CAS"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["UK3CB_CSAT_B_O_MIG21_AA", "UK3CB_CSAT_B_O_MIG29S", "UK3CB_CSAT_B_O_MIG29SM"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["UK3CB_ADA_O_C130J"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisTransport", ["RHS_Mi8AMT_vvs", "RHS_Mi8mt_vvsc", "RHS_Mi8AMT_vvs", "RHS_Mi8mt_vvsc", "RHS_Mi8AMT_vvs", "RHS_Mi8mt_vvsc", "RHS_Mi24V_vvsc", "RHS_Mi24V_vvs"]] call _fnc_saveToTemplate;
-["vehiclesHelisLight", ["rhs_ka60_c", "RHS_Mi8T_vvsc", "RHS_Mi8T_vvs"]] call _fnc_saveToTemplate;
-["vehiclesHelisLightAttack", ["RHS_Mi8MTV3_vvs", "RHS_Mi8MTV3_vvsc", "RHS_Mi8MTV3_vvs", "RHS_Mi8MTV3_vvsc", "RHS_Mi24P_vvs", "RHS_Mi24P_vvsc"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["RHS_Ka52_vvsc", "rhs_mi28n_vvsc", "RHS_Ka52_vvs", "rhs_mi28n_vvs"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["UK3CB_CSAT_B_O_Taru_bench", "UK3CB_CSAT_B_O_Taru_covered", "UK3CB_CSAT_B_O_Mi_24V", "UK3CB_CSAT_B_O_Mi8"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["UK3CB_CSAT_B_O_Bell412_Utility", "UK3CB_CSAT_B_O_Orca"]] call _fnc_saveToTemplate;
+["vehiclesHelisLightAttack", ["UK3CB_CSAT_B_O_Bell412_Armed", "UK3CB_CSAT_B_O_Bell412_Armed_AT", "UK3CB_CSAT_B_O_Orca_Armed_MULTI", "UK3CB_CSAT_B_O_Orca_Armed_AT"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["UK3CB_CSAT_B_O_Mi_24G", "UK3CB_CSAT_B_O_Kajman_ClusterHE", "UK3CB_CSAT_B_O_Mi8AMTSh", "UK3CB_CSAT_B_O_Orca_Armed_CAS"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["rhs_2s1_tv", "rhs_2s3_tv", "RHS_BM21_VV_01"]] call _fnc_saveToTemplate;
+private _vehiclesArtillery = ["UK3CB_CSAT_B_O_2S1", "UK3CB_CSAT_B_O_BM21"];
+
+if (5 < (random 100)) then {
+    _vehiclesArtillery append ["UK3CB_CSAT_B_O_MAZ_543_SCUD"]; // hehehe
+};
+
+["vehiclesArtillery", _vehiclesArtillery] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [
-["rhs_2s1_tv", ["rhs_mag_3of56_10"]],
-["rhs_2s3_tv",["rhs_mag_HE_2a33", "rhs_mag_WP_2a33"]],
-["RHS_BM21_VV_01", ["rhs_mag_m21of_1"]]
+    ["UK3CB_CSAT_B_O_2S1", ["rhs_mag_3of56_35"]],
+    ["UK3CB_CSAT_B_O_BM21", ["rhs_mag_m21of_1"]],
+    ["UK3CB_CSAT_B_O_MAZ_543_SCUD", ["UK3CB_Factions_1Rnd_Scud"]]
 ]] call _fnc_saveToTemplate;
 
-["uavsAttack", ["O_T_UAV_04_CAS_F", "O_UAV_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["uavsPortable", ["rhs_pchela1t_vvsc"]] call _fnc_saveToTemplate;
+["uavsAttack", ["UK3CB_CSAT_B_O_Ababil_CAS", "UK3CB_CSAT_B_O_Ababil_AT", "UK3CB_CSAT_B_O_Fenghuang"]] call _fnc_saveToTemplate;
+["uavsPortable", ["UK3CB_CSAT_B_O_Darter"]] call _fnc_saveToTemplate;
 
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
-["vehiclesMilitiaLightArmed", ["rhsgref_BRDM2_msv", "rhs_tigr_sts_msv"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["rhs_gaz66o_msv", "rhs_gaz66_msv", "rhs_zil131_msv", "rhs_zil131_open_msv"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["RHS_UAZ_MSV_01", "rhs_uaz_open_MSV_01", "rhsgref_BRDM2UM_msv"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["UK3CB_O_G_MTLB_PKT", "rhsgref_BRDM2UM_msv", "rhsgref_BRDM2_HQ_msv", "rhs_btr60_msv", "rhs_btr70_msv", "rhs_bmp1_msv", "rhs_bmp1d_msv"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["UK3CB_CSAT_B_O_UAZ_MG", "UK3CB_CSAT_B_O_UAZ_SPG9"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["UK3CB_CSAT_B_O_Ural_Open", "UK3CB_CSAT_B_O_Ural"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["UK3CB_CSAT_B_O_UAZ_Open", "UK3CB_CSAT_B_O_UAZ_Closed"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["UK3CB_CSAT_B_O_MTLB_PKT", "UK3CB_CSAT_B_O_BTR60", "UK3CB_CSAT_B_O_BTR40_MG"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["rhs_uaz_open_vv", "rhs_uaz_vv"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["UK3CB_CSAT_B_O_Offroad_Unarmed", "UK3CB_CSAT_B_O_M1030"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["rhs_KORD_high_MSV", "UK3CB_CW_SOV_O_Early_PKM_High"]] call _fnc_saveToTemplate;
-["staticAT", ["rhs_Kornet_9M133_2_msv"]] call _fnc_saveToTemplate;
-["staticAA", ["rhs_Igla_AA_pod_msv", "RHS_ZU23_MSV"]] call _fnc_saveToTemplate;
+["staticMGs", ["UK3CB_CSAT_B_O_DSHKM", "UK3CB_CSAT_B_O_PKM_High", "UK3CB_CSAT_B_O_Searchlight"]] call _fnc_saveToTemplate;
+["staticAT", ["UK3CB_CSAT_B_O_SPG9", "UK3CB_CSAT_B_O_Kornet"]] call _fnc_saveToTemplate;
+["staticAA", ["UK3CB_CSAT_B_O_ZU23", "UK3CB_CSAT_B_O_Igla_AA_pod"]] call _fnc_saveToTemplate;
 ["staticMortars", ["rhs_2b14_82mm_msv"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["rhs_D30_msv"]] call _fnc_saveToTemplate;
 
-["vehicleRadar", ""] call _fnc_saveToTemplate;
-["vehicleSam", ""] call _fnc_saveToTemplate;
+["vehicleRadar", "UK3CB_CSAT_B_O_Radar_System"] call _fnc_saveToTemplate;
+["vehicleSam", "UK3CB_CSAT_B_O_SAMS_System"] call _fnc_saveToTemplate;
 
 ["howitzerMagazineHE", "rhs_mag_3of56_10"] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "rhs_mag_d832du_10"] call _fnc_saveToTemplate;
 ["mortarMagazineFlare", "rhs_mag_3vs25m_10"] call _fnc_saveToTemplate;
-
 
 ["minefieldAT", ["rhs_mine_tm62m"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["rhs_mine_pmn2"]] call _fnc_saveToTemplate;
@@ -90,14 +95,14 @@
 ///  Identities   ///
 /////////////////////
 
-["voices", ["Male01RUS","Male02RUS","Male03RUS","RHS_Male01RUS", "RHS_Male02RUS", "RHS_Male03RUS", "RHS_Male04RUS", "RHS_Male05RUS"]] call _fnc_saveToTemplate;
+["voices", ["Male01PER","Male02PER","Male03PER","RHS_Male01RUS", "RHS_Male02RUS", "RHS_Male03RUS", "RHS_Male04RUS", "RHS_Male05RUS"]] call _fnc_saveToTemplate;
 ["faces", [
-    "RussianHead_1", "RussianHead_2", "RussianHead_3", "RussianHead_4", "RussianHead_5", 
-    "WhiteHead_29", "WhiteHead_30", 
-	"LivonianHead_1", "LivonianHead_2","LivonianHead_3","LivonianHead_4","LivonianHead_5","LivonianHead_6","LivonianHead_7","LivonianHead_8","LivonianHead_9","LivonianHead_10",
-    "AsianHead_A3_03", "AsianHead_A3_06", "Mavros", "Smith_v2", "Mason_v2", "Oakes_v2",
-    "RHS_GreekHead_A3_08", "RHS_GreekHead_A3_09", "RHS_LivonianHead_1", "RHS_LivonianHead_10", "RHS_LivonianHead_2", "RHS_LivonianHead_3", "RHS_LivonianHead_4", "RHS_LivonianHead_5", "RHS_LivonianHead_6", "RHS_LivonianHead_7", "RHS_RussianHead_1", "RHS_WhiteHead_01", "RHS_WhiteHead_04", "RHS_WhiteHead_05", "RHS_WhiteHead_06", "RHS_WhiteHead_07", "RHS_WhiteHead_08", "RHS_WhiteHead_09", "RHS_WhiteHead_10", "RHS_WhiteHead_11", "RHS_WhiteHead_14", "RHS_WhiteHead_15", "RHS_WhiteHead_16", "RHS_WhiteHead_25", "RHS_WhiteHead_27", "RHS_WhiteHead_28", "RHS_WhiteHead_32"
-]] call _fnc_saveToTemplate; 
+    "PersianHead_A3_01",
+    "PersianHead_A3_02",
+    "PersianHead_A3_03",
+    "PersianHead_A3_04",
+    "PersianHead_A3_05"
+]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //

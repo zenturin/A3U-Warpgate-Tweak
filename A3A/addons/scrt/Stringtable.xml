@@ -1565,6 +1565,11 @@
                 <Russian>Оружейный Торговец</Russian>
                 <Chinesesimp>军火商</Chinesesimp>
                 <Korean>암거래상</Korean>
+                <French>Marchand d'armes</French>
+            </Key>
+            <Key ID="STR_marker_civ_convoy">
+                <Original>Civilian Convoy</Original>
+                <Russian>Конвой гражданских</Russian>
             </Key>
             <Key ID="STR_marker_convoy_objective">
                 <Original>Convoy Objective</Original>
