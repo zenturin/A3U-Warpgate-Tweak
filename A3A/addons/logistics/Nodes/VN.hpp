@@ -70,8 +70,8 @@ class vn_wheeled_f_vietnam_bicycle_vn_bicycle_01_p3d : TRIPLES(ADDON,Nodes,Base)
         };
     };
 };
-
 //
+
 class vn_wheeled_f_vietnam_btr40_vn_wheeled_btr40_02 : TRIPLES(ADDON,Nodes,Base)
 {
     class Nodes
