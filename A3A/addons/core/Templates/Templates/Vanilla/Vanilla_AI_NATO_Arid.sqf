@@ -39,7 +39,7 @@ private _ammoTrucks = ["B_Truck_01_ammo_F"];
 private _repairTrucks = ["B_Truck_01_Repair_F","B_APC_Tracked_01_CRV_F"];
 private _fuelTrucks = ["B_Truck_01_fuel_F"];
 private _medicalTrucks = ["B_Truck_01_medical_F"];
-private _lightAPCs = ["B_APC_Wheeled_01_cannon_F"];
+private _lightAPCs = [];
 private _APCs = ["B_APC_Wheeled_01_cannon_F","a3a_APC_Wheeled_03_cannon_blufor_F"];  // CRV has no cargo: "B_APC_Tracked_01_CRV_F"
 private _IFVs = ["B_APC_Tracked_01_rcws_F"];
 
@@ -138,9 +138,9 @@ if (_hasTanks) then {
 //If Western Sahara DLC
 if (_hasWs) then {
     _APCs pushBack "APC_Wheeled_01_atgm_base_lxWS";
-    _lightAPCs = ["APC_Wheeled_01_command_base_lxWS"];
-    _airborneVehicles pushBack "APC_Wheeled_01_command_base_lxWS";
-    _militiaAPCs pushBack "APC_Wheeled_01_command_base_lxWS";
+    _lightAPCs append ["APC_Wheeled_01_command_base_lxWS","O_APC_Wheeled_02_unarmed_lxWS","O_APC_Wheeled_02_hmg_lxWS"];
+    _airborneVehicles append ["APC_Wheeled_01_command_base_lxWS","O_APC_Wheeled_02_unarmed_lxWS","O_APC_Wheeled_02_hmg_lxWS"];
+    _militiaAPCs append ["APC_Wheeled_01_command_base_lxWS","O_APC_Wheeled_02_unarmed_lxWS","O_APC_Wheeled_02_hmg_lxWS"];
     _artillery pushBack "APC_Wheeled_01_mortar_base_lxWS";
     _helisLight pushback "B_D_Heli_Light_01_lxWS";
     _helisLightAttack pushback "B_D_Heli_Light_01_dynamicLoadout_lxWS";
@@ -268,6 +268,8 @@ if (_hasCSLA) then {
     ["B_LSV_01_unarmed_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
     ["B_LSV_01_AT_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
     ["B_CTRG_LSV_01_light_F", ["HideDoor1",0.5,"HideDoor2",0.5,"HideDoor3",0.5,"HideDoor4",0.5]],
+    ["O_APC_Wheeled_02_hmg_lxWS", ["mg_hide_armor_front",0.3,"mg_hide_armor_rear",0.3,"mg_Hide_Rail",0.3,"showCanisters",0.3,"showTools",0.3,"showCamonetHull",0.3,"showSLATHull",0.3]],
+    ["O_APC_Wheeled_02_unarmed_lxWS", ["showCanisters",0.3,"showTools",0.3,"showCamonetHull",0.3,"showSLATHull",0.3]],
     ["APC_Wheeled_01_command_base_lxWS", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["APC_Wheeled_01_atgm_base_lxWS", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["APC_Wheeled_01_mortar_base_lxWS",["showBags",0.3,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
@@ -309,6 +311,8 @@ if (_hasCSLA) then {
     ["I_MRAP_03_F", ["Blufor", 1]],
     ["I_MRAP_03_gmg_F", ["Blufor", 1]],
     ["I_MRAP_03_hmg_F", ["Blufor", 1]],
+    ["O_APC_Wheeled_02_hmg_lxWS", ["Hex", 0, "Black", 0.3, "Sand_Desert", 0.6, "Sand",0.6]],
+    ["O_APC_Wheeled_02_unarmed_lxWS", ["Hex", 0, "Black", 0.3, "Sand_Desert", 0.6, "Sand",0.6]],
     ["APC_Wheeled_01_command_base_lxWS", ["BLACK", 0.3, "Sand", 0.7]],
     ["APC_Wheeled_01_atgm_base_lxWS", ["BLACK", 0.3, "Sand", 0.7]],
     ["APC_Wheeled_01_mortar_base_lxWS", ["BLACK", 0.3, "Sand", 0.7]],
@@ -645,7 +649,7 @@ if (_hasWs) then {
 (_sfLoadoutData get "helmets") append ["lxWS_H_bmask_white","H_bmask_snake_lxws","H_turban_02_mask_snake_lxws","lxWS_H_bmask_base","H_turban_02_mask_black_lxws","lxWS_H_bmask_camo01","lxWS_H_Bandanna_blk_hs","lxWS_H_Headset"];
 (_sfLoadoutData get "goggles") append ["G_Balaclava_snd_lxWS","G_Balaclava_blk_lxWS","G_Combat_lxWS","G_Headset_lxWS"];
 (_sfLoadoutData get "glasses") append ["G_Balaclava_snd_lxWS","G_Balaclava_blk_lxWS","G_Combat_lxWS","G_Headset_lxWS"];
-(_sfLoadoutData get "uniforms") pushBack "U_lxWS_ION_Casual6";
+(_sfLoadoutData get "uniforms") append ["U_lxWS_ION_Casual6","U_B_CTRG_3_lxWS","U_B_CTRG_4_lxWS"];
 };
 
 if (_hasRF) then {
@@ -1810,8 +1814,8 @@ if (_hasRF) then {
 };
 
 if (_hasGM) then {
-    _militiaLoadoutData set ["AALaunchers",  ["gm_fim43_oli", "", "", "", ["gm_1Rnd_70mm_he_m585_fim43"], [], ""]];
-    _militaryLoadoutData set ["AALaunchers",  ["gm_fim43_oli", "", "", "", ["gm_1Rnd_70mm_he_m585_fim43"], [], ""]];
+    /* _militiaLoadoutData set ["AALaunchers",  ["gm_fim43_oli", "", "", "", ["gm_1Rnd_70mm_he_m585_fim43"], [], ""]];
+    _militaryLoadoutData set ["AALaunchers",  ["gm_fim43_oli", "", "", "", ["gm_1Rnd_70mm_he_m585_fim43"], [], ""]]; */
     (_militiaLoadoutData get "rifles") append [
         ["gm_c7a1_oli", "", "", "", ["gm_30Rnd_556x45mm_B_M855_stanag_gry","gm_30Rnd_556x45mm_B_T_M856_stanag_gry","gm_30Rnd_556x45mm_B_M193_stanag_gry","gm_30Rnd_556x45mm_B_T_M196_stanag_gry"], [], ""],
         ["gm_c7a1_blk","","","",["gm_30Rnd_556x45mm_B_M855_stanag_gry","gm_30Rnd_556x45mm_B_T_M856_stanag_gry","gm_30Rnd_556x45mm_B_M193_stanag_gry","gm_30Rnd_556x45mm_B_T_M196_stanag_gry"],[],""],
