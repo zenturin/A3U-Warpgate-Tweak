@@ -374,7 +374,8 @@
 			ITEM(G_AirPurifyingRespirator_02_black_F, 200, MISC_STOCK);
 
 			ITEM(G_Blindfold_01_black_F, 200, MISC_STOCK);
-			ITEM(G_Blindfold_01_whitw_F, 200, MISC_STOCK);
+			ITEM(G_Blindfold_01_white_F, 200, MISC_STOCK);
+
 
 			ITEM(ChemicalDetector_01_watch_F, 100, MISC_STOCK);
 			
