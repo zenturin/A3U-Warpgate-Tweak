@@ -38,8 +38,8 @@ if (_modsets isEqualTo []) then {_modsets append _vanillaModsets}; // If it stil
 if ("ws" in A3A_enabledDLC) then {_modsets pushBack "ws"}; // western sahara
 
 if ("coldWar" in A3A_factionEquipFlags) then { // 3cbf cold war
-    _modsets = ["3cbfcw"];
-}; // Not entirely sure if we should keep the above ^
+    _modsets pushBack "3cbfcw";
+};
 
 [_traderX, _modsets] call HALs_store_fnc_addTrader;
 
