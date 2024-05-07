@@ -5,46 +5,6 @@ class traderMods
         addons[] = {};
         prefix = "";
     };
-    class apex : base
-    {
-        addons[] = {"A3_Weapons_F_Exp"};
-        prefix = "apex";
-    };
-    class artofwar : base
-    {
-        addons[] = {"A3_Characters_F_AoW"};
-        prefix = "artofwar";
-    };
-    class contact : base
-    {
-        addons[] = {"A3_Weapons_F_Enoch"};
-        prefix = "contact";
-    };
-    class jets : base
-    {
-        addons[] = {"A3_Characters_F_Jets_Vests"};
-        prefix = "jets";
-    };
-    class kart : base
-    {
-        addons[] = {"A3_Weapons_F_Kart_Pistols_Pistol_Signal_F"};
-        prefix = "kart";
-    };
-    class lawsofwar : base
-    {
-        addons[] = {"A3_Characters_F_Orange_Vests"};
-        prefix = "lawsofwar";
-    };
-    class marksmen : base
-    {
-        addons[] = {"A3_Weapons_F_Mark"};
-        prefix = "marksmen";
-    };
-    class tanks : base
-    {
-        addons[] = {"A3_Weapons_F_Tank"};
-        prefix = "tanks";
-    };
     class kkiv2035 : base
     {
         addons[] = {"Kio_Kkiv_2035"};
