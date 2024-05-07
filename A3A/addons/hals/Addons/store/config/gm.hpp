@@ -454,7 +454,7 @@
 				stock = MAGAZINE_STOCK;
 			};
 			
-			class gm_20Rnd_762x51mm_B_T_DM151_g3_blk {
+			class gm_20Rnd_762x51mm_AP_DM151_g3_blk {
 				price = 250;
 				stock = MAGAZINE_STOCK;
 			};

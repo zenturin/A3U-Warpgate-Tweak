@@ -111,7 +111,6 @@ class cfgHALsStore
 				"opticsApex", 
 				"muzzlesApex", 
 				"underbarrelApex", 
-				"pointersApex", 
 				"navigationApex", 
 				"magazinesApex", 
 				"miscApex"
@@ -149,8 +148,7 @@ class cfgHALsStore
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
-				"riflesMarksmen", 
-				"sniperRiflesMarksmen", 
+				"sniperRiflesMarksmen",
 				"mgMarksmen", 
 				"opticsMarksmen", 
 				"muzzlesMarksmen", 

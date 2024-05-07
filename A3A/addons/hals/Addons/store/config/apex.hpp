@@ -153,7 +153,7 @@
 			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Apex", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
-			ITEM(bipod_02_F_arid, 100, 50);
+			ITEM(bipod_01_F_khk, 100, 50);
 
 		};
 
