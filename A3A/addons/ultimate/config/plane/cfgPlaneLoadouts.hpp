@@ -104,6 +104,18 @@ class planeLoadouts
             missileLauncher[] = {"rhs_weap_s8", "rhs_weap_s8df", "rhs_weap_r60_Launcher"};
             diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
         };
+        // Temperate
+        class UK3CB_CSAT_W_O_MIG21 : UK3CB_CSAT_B_O_MIG21 {};
+        class UK3CB_CSAT_W_O_MIG21_CAS : UK3CB_CSAT_B_O_MIG21_CAS {};
+        class UK3CB_CSAT_W_O_Su25SM_CAS : UK3CB_CSAT_B_O_Su25SM_CAS {};
+        // Tropical
+        class UK3CB_CSAT_G_O_MIG21 : UK3CB_CSAT_B_O_MIG21 {};
+        class UK3CB_CSAT_G_O_MIG21_CAS : UK3CB_CSAT_B_O_MIG21_CAS {};
+        class UK3CB_CSAT_G_O_Su25SM_CAS : UK3CB_CSAT_B_O_Su25SM_CAS {};
+        // Winter
+        class UK3CB_CSAT_S_O_MIG21 : UK3CB_CSAT_B_O_MIG21 {};
+        class UK3CB_CSAT_S_O_MIG21_CAS : UK3CB_CSAT_B_O_MIG21_CAS {};
+        class UK3CB_CSAT_S_O_Su25SM_CAS : UK3CB_CSAT_B_O_Su25SM_CAS {};
     };
 
     class CAS
@@ -205,6 +217,18 @@ class planeLoadouts
             missileLauncher[] = {"rhs_weap_s8", "rhs_weap_s8df", "rhs_weap_r60_Launcher"};
             diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
         };
+        // Temperate
+        class UK3CB_CSAT_W_O_MIG21 : UK3CB_CSAT_B_O_MIG21 {};
+        class UK3CB_CSAT_W_O_MIG21_CAS : UK3CB_CSAT_B_O_MIG21_CAS {};
+        class UK3CB_CSAT_W_O_Su25SM_CAS : UK3CB_CSAT_B_O_Su25SM_CAS {};
+        // Tropical
+        class UK3CB_CSAT_G_O_MIG21 : UK3CB_CSAT_B_O_MIG21 {};
+        class UK3CB_CSAT_G_O_MIG21_CAS : UK3CB_CSAT_B_O_MIG21_CAS {};
+        class UK3CB_CSAT_G_O_Su25SM_CAS : UK3CB_CSAT_B_O_Su25SM_CAS {};
+        // Winter
+        class UK3CB_CSAT_S_O_MIG21 : UK3CB_CSAT_B_O_MIG21 {};
+        class UK3CB_CSAT_S_O_MIG21_CAS : UK3CB_CSAT_B_O_MIG21_CAS {};
+        class UK3CB_CSAT_S_O_Su25SM_CAS : UK3CB_CSAT_B_O_Su25SM_CAS {};
     };
    
     class AA
@@ -293,5 +317,17 @@ class planeLoadouts
             missileLauncher[] = {"rhs_weap_r27r_Launcher","rhs_weap_r73m_Launcher"};
         };
         class UK3CB_CSAT_B_O_MIG29SM : UK3CB_CSAT_B_O_MIG29S {};
+        // Temperate
+        class UK3CB_CSAT_W_O_MIG21_AA : UK3CB_CSAT_B_O_MIG21_AA {};
+        class UK3CB_CSAT_W_O_MIG29S : UK3CB_CSAT_B_O_MIG29S {};
+        class UK3CB_CSAT_W_O_MIG29SM : UK3CB_CSAT_B_O_MIG29S {};
+        // Tropical
+        class UK3CB_CSAT_G_O_MIG21_AA : UK3CB_CSAT_B_O_MIG21_AA {};
+        class UK3CB_CSAT_G_O_MIG29S : UK3CB_CSAT_B_O_MIG29S {};
+        class UK3CB_CSAT_G_O_MIG29SM : UK3CB_CSAT_B_O_MIG29S {};
+        // Winter
+        class UK3CB_CSAT_S_O_MIG21_AA : UK3CB_CSAT_B_O_MIG21_AA {};
+        class UK3CB_CSAT_S_O_MIG29S : UK3CB_CSAT_B_O_MIG29S {};
+        class UK3CB_CSAT_S_O_MIG29SM : UK3CB_CSAT_B_O_MIG29S {};
     };
 };

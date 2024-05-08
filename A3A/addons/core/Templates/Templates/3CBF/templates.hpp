@@ -178,13 +178,31 @@
         description = $STR_A3AP_setupFactionsTab_aegis_afrf;
     };
 
-    class 3CBF_CSAT_Med : 3CBF_AFRF
+    class 3CBF_CSAT : 3CBF_AFRF
     {
         flagTexture = "A3\Data_F\Flags\Flag_CSAT_CO.paa";
         name = "3CBF CSAT";
         file = "3CBF_AI_CSAT";
-        climate[] = {"arid","temperate","tropical"}; // maybe change this if we include the other CSAT climates
+        climate[] = {"arid", "temperate"}; // This is the "classic" CSAT. While temperate has its own template I still think this should be an option by default
         description = $STR_A3AP_setupFactionsTab_csat;
+    };
+    class 3CBF_CSAT_Winter : 3CBF_CSAT
+    {
+        name = "3CBF CSAT Winter";
+        file = "3CBF_AI_CSAT_Winter";
+        climate[] = {"arctic"};
+    };
+    class 3CBF_CSAT_Temperate : 3CBF_CSAT
+    {
+        name = "3CBF CSAT Temperate";
+        file = "3CBF_AI_CSAT_Temperate";
+        climate[] = {"temperate"};
+    };
+    class 3CBF_CSAT_Tropical : 3CBF_CSAT
+    {
+        name = "3CBF CSAT Tropical";
+        file = "3CBF_AI_CSAT_Tropical";
+        climate[] = {"tropical"};
     };
 
     class 3CBF_US_Army_Arid : 3CBF_Base
