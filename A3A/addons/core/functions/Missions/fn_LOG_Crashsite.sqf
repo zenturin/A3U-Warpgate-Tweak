@@ -232,14 +232,13 @@ _pilot = "";
 _pilotPosition = "";
 _bloodSplatter = "";
 
-if (typeOf _reconvehicle in (_faction get "vehiclesPlanesTransport") ) then { 
+if (typeOf _reconvehicle in (_faction get "vehiclesPlanesTransport")) then { 
     _pilot = [_groupPilot, _pilotClass, _crashsiteactual, [], 0, "NONE"] call A3A_fnc_createUnit;
     _pilotPosition = position _pilot;
     _bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1,0/*  + 0.05 */], [], 0,  "CAN_COLLIDE"];
     _pilot setDamage 1;
+    _effectsAndProps append [_pilot, _bloodSplatter];
 };
-
-_effectsAndProps append [_pilot, _bloodSplatter];
 
 for "_i" from 0 to (random [3,5,6]) do {
     _firePosition = [
@@ -372,13 +371,12 @@ if (_searchHeliClass isNotEqualTo []) then {
     _totalSeats = [typeOf _cargoVehicle, false] call BIS_fnc_crewCount; 
     _heliInfGroupSize = count units _heliInfGroup;
     if(_searchHeliClass in (_faction get "vehiclesHelisLight")) then {
-
-        if ((typeOf _searchHeliVeh) in vehFastRope) then {
-            [_searchHeliVeh, _heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _searchHeliVeh] spawn A3A_fnc_fastrope;
+        private _roll = random 100;
+		if(_roll >= 50) then {
+            [_searchHeliVeh, _heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _heliVehicleGroup] spawn A3A_fnc_fastrope;
         } else {
             [_searchHeliVeh, _heliVehicleGroup,_heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _landPos] spawn A3A_fnc_combatLanding;    
         };
-
         if (_totalSeats - 2 < _heliInfGroupSize) then { /// -2 because cargo will take at most 2 seats
             sleep 8; /// just to make sure cargovehicles won't collide
             private _cargoVehicleData2 = [_cargoGroupSpawnpositon , 0, _cargoTruckClass, _sideX] call A3A_fnc_spawnVehicle; ///Just to make sure that everyone can RTB
@@ -426,7 +424,6 @@ if (!isNil "traderMarker") then { ///checking if trader is spawned
     ] call BIS_fnc_taskCreate;
     [_taskId2, "LOG", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 };
-
 
 if (!isNil "traderMarker") then { ///checking if trader is spawned
     if (!isNull _cargoVehicle2 || alive _cargoVehicle2) then {
@@ -482,6 +479,11 @@ if (!isNil "traderMarker") then { ///checking if trader is spawned
             {dateToNumber date > _dateLimitNum}
         };
     };
+};
+
+if ((getPosASL _box) select 2 < 0) then { ///in case box ends up underwater
+    _box setVariable ["SalvageCrate", true, true];
+    [_box] remoteExec ["SCRT_fnc_common_addActionMove", [teamPlayer, civilian], _box];
 };
 
 if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (alive _cargoVehicle || alive _cargoVehicle2) && (!isNull (driver _cargoVehicle) || !isNull (driver _cargoVehicle2))) then {
@@ -742,7 +744,7 @@ if (!isNil "traderMarker") then { ///checking if trader is spawned
         ||
 	_box distance (getMarkerPos respawnTeamPlayer) < 50
         ||
-        _box distance (getMarkerPos traderMarker) < 50
+    _box distance (getMarkerPos traderMarker) < 50
         ||
 	dateToNumber date > _dateLimitNum
     };

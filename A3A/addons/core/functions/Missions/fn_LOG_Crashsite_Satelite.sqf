@@ -376,8 +376,9 @@ _landPos = [_crashsiteactual, 30, 100, 10, 0, 0.25, 0, [], [[0,0,0],[0,0,0]]] ca
 private _totalSeats = [typeOf _cargoVehicle, false] call BIS_fnc_crewCount; 
 private _heliInfGroupSize = count units _heliInfGroup;
 if(_searchHeliClass in (_faction get "vehiclesHelisLight")) then {
-    if ((typeOf _searchHeliVeh) in vehFastRope) then {
-        [_searchHeliVeh, _heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _searchHeliVeh] spawn A3A_fnc_fastrope;
+    private _roll = random 100;
+	if(_roll >= 50) then {
+        [_searchHeliVeh, _heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _heliVehicleGroup] spawn A3A_fnc_fastrope;
     } else {
         [_searchHeliVeh, _heliVehicleGroup,_heliInfGroup, _crashsiteactual, _cargoGroupSpawnpositon, _landPos] spawn A3A_fnc_combatLanding;    
     };
@@ -481,6 +482,11 @@ if (!isNil "traderMarker") then { ///checking if trader is spawned
             {dateToNumber date > _dateLimitNum}
         };
     };
+};
+
+if ((getPosASL _box) select 2 < 0) then { ///in case box ends up underwater
+    _box setVariable ["SalvageCrate", true, true];
+    [_box] remoteExec ["SCRT_fnc_common_addActionMove", [teamPlayer, civilian], _box];
 };
 
 if (_cargoVehicle distance _box < 50 || _cargoVehicle2 distance _box < 50 && (alive _cargoVehicle || alive _cargoVehicle2) && (!isNull (driver _cargoVehicle) || !isNull (driver _cargoVehicle2))) then {
