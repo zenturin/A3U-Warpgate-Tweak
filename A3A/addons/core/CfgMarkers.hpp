@@ -4,7 +4,7 @@ class CfgMarkers
 
 	class a3a_flag_aaf_torn_co: flag_NATO 
 	{
-		name = "AAF remnants";
+		name = "AAF Remnants";
 		icon = QPATHTOFOLDER(Pictures\Markers\marker_aaf_torn_co.paa);
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_aaf_torn_co.paa);
 	};
