@@ -165,7 +165,7 @@ class Templates
     {
         side = "Riv";
         flagTexture = QPATHTOFOLDER(Templates\Templates\Vanilla\flag_aaf_torn_co.paa);
-        name = "A3 Remnants";
+        name = "A3 AAF Remnants";
         file = "Vanilla_Riv_Remnants";
         climate[] = {"arid", "temperate", "arctic"}; ///arctic?
         description = $STR_A3AP_setupFactionsTab_remnants;
