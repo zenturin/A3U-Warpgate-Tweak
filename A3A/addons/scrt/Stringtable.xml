@@ -388,11 +388,8 @@
                 <French>Force de défense des îles Horizon (HIDF).\nLes forces armées de la République des îles Horizon utilisent de nombreux équipements excédentaires de l'OTAN.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_remnants">
-                <Original>Remnants.\nRemnants of the AAF forces sponsored by CSAT, who want to regain control of the islands..</Original>
+                <Original>Remnants.\nRemnants of the AAF forces sponsored by CSAT, who want to regain control of the islands.</Original>
                 <Russian>Remnants.\nRemnants - остатки сил AAF спонсируемые CSAT, желающие вернуть контроль над островами.</Russian>
-                <Chinesesimp>Remnants.\nPLACEHOLDER。</Chinesesimp>
-                <Korean>엑세게르메노스.\nPLACEHOLDER.</Korean>
-                <French>Remnants.\nPLACEHOLDER.</French>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_exegermenos">
                 <Original>Exegerménos.\nStandard enemy guerilla faction.</Original>
