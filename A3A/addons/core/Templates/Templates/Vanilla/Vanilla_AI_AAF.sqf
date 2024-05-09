@@ -118,7 +118,7 @@ if (_hasApex) then {
 if (_hasRF) then {
     _unarmedVehicles append ["I_Pickup_rf","I_Pickup_Comms_rf"];
     _armedVehicles pushBack "I_Pickup_mmg_rf";
-    _militiaLightArmed pushBack "I_Pickup_hmg_rf";
+    _militiaLightArmed append ["I_Pickup_mmg_rf","I_Pickup_hmg_rf"];
     _militiaCars append ["I_Pickup_rf","I_Pickup_Comms_rf"];
     _aa pushBack "I_Pickup_aat_rf";
     _SAM pushback "I_Pickup_aat_rf";
