@@ -23,7 +23,7 @@ private _civCarsWithWeights = [
     "OPTRE_M914_RV_CMA", 0.3
 ]] call _fnc_saveToTemplate;
 
-["vehiclesCivMedical", ["SSV_Vehicle_Android_Strider_Ruined", 0.1]] call _fnc_saveToTemplate;
+["vehiclesCivMedical", ["OPTRE_m1015_mule_medical_cma", 0.1]] call _fnc_saveToTemplate;
 
 ["vehiclesCivFuel", [
     "OPTRE_m1015_mule_fuel_cma", 0.2

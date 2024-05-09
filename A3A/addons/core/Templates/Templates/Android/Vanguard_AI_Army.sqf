@@ -283,8 +283,7 @@ _eliteLoadoutData set ["grenadeLaunchers", [
     ["JMSJEFF_arx160GLRifle", "", "", "optic_Hamr", ["JMSJEFF_30Rnd_ARX160_mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _eliteLoadoutData set ["SMGs", [
-    ["JMSJEFF_bal27Rifle", "", "", "", ["JMSJEFF_30Rnd_BAL_mag"], [], ""],
-    ["SSV_Weapon_Vanguard_Raptor", "", "", "optic_ACO_grn", ["WRS_Ar2_Magazine"], [], ""]
+    ["JMSJEFF_bal27Rifle", "", "", "", ["JMSJEFF_30Rnd_BAL_mag"], [], ""]
 ]];
 _eliteLoadoutData set ["machineGuns", [
     ["OPTRE_M73", "", "", "", ["OPTRE_100Rnd_95x40_Box"], [], ""],
@@ -338,8 +337,7 @@ _militaryLoadoutData set ["grenadeLaunchers", [
     ["JMSJEFF_arx160GLRifle", "", "", "optic_Hamr", ["JMSJEFF_30Rnd_ARX160_mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militaryLoadoutData set ["SMGs", [
-    ["JMSJEFF_bal27Rifle", "", "", "", ["JMSJEFF_30Rnd_BAL_mag"], [], ""],
-    ["SSV_Weapon_Vanguard_Raptor", "", "", "optic_ACO_grn", ["WRS_Ar2_Magazine"], [], ""]
+    ["JMSJEFF_bal27Rifle", "", "", "", ["JMSJEFF_30Rnd_BAL_mag"], [], ""]
 ]];
 _militaryLoadoutData set ["machineGuns", [
     ["OPTRE_M73", "", "", "", ["OPTRE_100Rnd_95x40_Box"], [], ""],
@@ -412,8 +410,7 @@ _militiaLoadoutData set ["grenadeLaunchers", [
     ["JMSJEFF_arx160GLRifle", "", "", "optic_Hamr", ["JMSJEFF_30Rnd_ARX160_mag"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
-    ["JMSJEFF_bal27Rifle", "", "", "", ["JMSJEFF_30Rnd_BAL_mag"], [], ""],
-    ["SSV_Weapon_Vanguard_Raptor", "", "", "optic_ACO_grn", ["WRS_Ar2_Magazine"], [], ""]
+    ["JMSJEFF_bal27Rifle", "", "", "", ["JMSJEFF_30Rnd_BAL_mag"], [], ""]
 ]];
 _militiaLoadoutData set ["machineGuns", [
     ["OPTRE_M73", "", "", "", ["OPTRE_100Rnd_95x40_Box"], [], ""],
