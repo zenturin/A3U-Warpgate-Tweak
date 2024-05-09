@@ -569,7 +569,7 @@ if (_hasGM) then {
         "gm_ge_facewear_stormhood_dustglasses_blk",
         "gm_ge_facewear_stormhood_brd"
     ];
-} ;
+};
 
 _loadoutData set ["headgear", [
     "H_Shemag_olive",
