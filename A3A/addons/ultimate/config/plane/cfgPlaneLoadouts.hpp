@@ -116,6 +116,26 @@ class planeLoadouts
         class UK3CB_CSAT_S_O_MIG21 : UK3CB_CSAT_B_O_MIG21 {};
         class UK3CB_CSAT_S_O_MIG21_CAS : UK3CB_CSAT_B_O_MIG21_CAS {};
         class UK3CB_CSAT_S_O_Su25SM_CAS : UK3CB_CSAT_B_O_Su25SM_CAS {};
+
+        // ION
+        class UK3CB_ION_B_Woodland_T28Trojan_AT
+        {
+            loadout[] = {"rhs_mag_AGM114K_2_plane","rhs_mag_AGM114K_2_plane","rhs_mag_AGM114K_2_plane","rhs_mag_AGM114K_2_plane"};
+            missileLauncher[] = {"rhs_mag_AGM114K_2_plane"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+        class UK3CB_ION_B_Woodland_T28Trojan
+        {
+            loadout[] = {"rhs_mag_mk82","rhs_mag_mk82","rhs_mag_mk82","rhs_mag_mk82"};
+            bombRacks[] = {"rhs_mag_mk82"};
+            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+        };
+        class UK3CB_ION_B_Woodland_T28Trojan_CAS
+        {
+            loadout[] = {"rhs_mag_M151_7_USAF_LAU131","PylonWeapon_300Rnd_20mm_shells","PylonWeapon_300Rnd_20mm_shells","rhs_mag_M151_7_USAF_LAU131"};
+            missileLauncher[] = {"rhs_mag_M151_7_USAF_LAU131"};
+            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+        };
     };
 
     class CAS
@@ -229,6 +249,26 @@ class planeLoadouts
         class UK3CB_CSAT_S_O_MIG21 : UK3CB_CSAT_B_O_MIG21 {};
         class UK3CB_CSAT_S_O_MIG21_CAS : UK3CB_CSAT_B_O_MIG21_CAS {};
         class UK3CB_CSAT_S_O_Su25SM_CAS : UK3CB_CSAT_B_O_Su25SM_CAS {};
+
+        // ION
+        class UK3CB_ION_B_Woodland_T28Trojan_AT
+        {
+            loadout[] = {"rhs_mag_AGM114K_2_plane","rhs_mag_AGM114K_2_plane","rhs_mag_AGM114K_2_plane","rhs_mag_AGM114K_2_plane"};
+            missileLauncher[] = {"rhs_mag_AGM114K_2_plane"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+        class UK3CB_ION_B_Woodland_T28Trojan
+        {
+            loadout[] = {"rhs_mag_mk82","rhs_mag_mk82","rhs_mag_mk82","rhs_mag_mk82"};
+            bombRacks[] = {"rhs_mag_mk82"};
+            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+        };
+        class UK3CB_ION_B_Woodland_T28Trojan_CAS
+        {
+            loadout[] = {"rhs_mag_M151_7_USAF_LAU131","PylonWeapon_300Rnd_20mm_shells","PylonWeapon_300Rnd_20mm_shells","rhs_mag_M151_7_USAF_LAU131"};
+            missileLauncher[] = {"rhs_mag_M151_7_USAF_LAU131"};
+            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+        };
     };
    
     class AA
@@ -329,5 +369,7 @@ class planeLoadouts
         class UK3CB_CSAT_S_O_MIG21_AA : UK3CB_CSAT_B_O_MIG21_AA {};
         class UK3CB_CSAT_S_O_MIG29S : UK3CB_CSAT_B_O_MIG29S {};
         class UK3CB_CSAT_S_O_MIG29SM : UK3CB_CSAT_B_O_MIG29S {};
+        // ION
+        class UK3CB_ARD_B_MIG29S : UK3CB_CSAT_B_O_MIG29S {};
     };
 };

@@ -205,6 +205,27 @@
         climate[] = {"tropical"};
     };
 
+    class 3CBF_ION : 3CBF_AFRF
+    {
+        flagTexture = "uk3cb_factions\addons\uk3cb_factions_ion\flag\ion_flag_co.paa";
+        name = "3CB ION Temperate";
+        file = "3CBF_AI_ION";
+        climate[] = {"temperate", "tropical"};
+        description = "";
+    };
+    class 3CBF_ION_Arid : 3CBF_ION
+    {
+        name = "3CB ION Arid";
+        file = "3CBF_AI_ION_Arid";
+        climate[] = {"arid"};
+    };
+    class 3CBF_ION_Arctic : 3CBF_ION
+    {
+        name = "3CB ION Arctic";
+        file = "3CBF_AI_ION_Arctic";
+        climate[] = {"arctic"};
+    };
+
     class 3CBF_US_Army_Arid : 3CBF_Base
     {
         side = "Occ";
