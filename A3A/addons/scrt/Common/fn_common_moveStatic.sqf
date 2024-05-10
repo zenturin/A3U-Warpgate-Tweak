@@ -27,6 +27,15 @@ private _carryableBoxes = [
 	FactionGet(inv,"equipmentBox")
 ];
 
+private _blackboxClasses = [
+	"Land_PortableServer_01_black_F",
+	"Land_MetalCase_01_medium_F"
+];
+
+if ((typeOf _thingX) in _blackboxClasses) exitWith {
+	[_thingX] call SCRT_fnc_common_moveObject;
+};
+
 if((typeOf _thingX) in _carryableBoxes) exitWith {
 	[_thingX] call SCRT_fnc_common_moveObject;
 };
