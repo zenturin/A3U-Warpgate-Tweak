@@ -29,6 +29,7 @@ private _carryableBoxes = [
 
 private _blackboxClasses = [
 	"Land_PortableServer_01_black_F",
+	"SpaceshipCapsule_01_container_F",
 	"Land_MetalCase_01_medium_F"
 ];
 
