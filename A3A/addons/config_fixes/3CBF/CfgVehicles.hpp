@@ -8,6 +8,13 @@ class CfgVehicles
 
     class UK3CB_CW_US_B_EARLY_M60a1;
     class UK3CB_CW_US_B_EARLY_M60a3;
+    
+    class UK3CB_CHD_B_T34;
+
+    class a3u_olive_t34 : UK3CB_CHD_B_T34
+    {
+        hiddenSelectionsTextures[] = {"\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\armour\UK3CB_Factions_Vehicles_T-series\t34\data\t34_body01_co.paa","\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\armour\UK3CB_Factions_Vehicles_T-series\t34\data\t34_body02_co.paa","\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\armour\UK3CB_Factions_Vehicles_T-series\t34\data\t34_turret_co.paa","\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\armour\UK3CB_Factions_Vehicles_T-series\t34\data\t34_wheels_co.paa","\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\armour\UK3CB_Factions_Vehicles_T-series\t34\data\t34_body03_co.paa","\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\UK3CB_Factions_Vehicles_common\data\flag_co.paa"};
+    };
 
     class a3u_olive_fv4201_chieftain : UK3CB_AAF_B_FV4201
     {

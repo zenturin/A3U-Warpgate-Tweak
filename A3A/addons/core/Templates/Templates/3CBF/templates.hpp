@@ -157,6 +157,24 @@
         description = $STR_A3AP_setupFactionsTab_tka;
     };
 
+    class 3CBF_MDF : 3CBF_AAF
+    {
+        flagTexture = "uk3cb_factions\addons\uk3cb_factions_mdf\flag\mal_flag_co.paa";
+        name = "3CB Malden Defence Force";
+        file = "3CBF_AI_MDF";
+        maps[] = {"malden"};
+        climate[] = {"arid"};
+        description = "";
+    };
+
+    class 3CBF_KRG : 3CBF_MDF
+    {
+        flagTexture = "uk3cb_factions\addons\uk3cb_factions_krg\flag\krg_flag_co.paa";
+        name = "3CB Karzeghistan Guard";
+        file = "3CBF_AI_KRG";
+        climate[] = {"arid"};
+    };
+
     class 3CBF_ARD : 3CBF_Base
     {
         side = "Inv";

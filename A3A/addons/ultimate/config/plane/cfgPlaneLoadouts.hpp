@@ -117,7 +117,7 @@ class planeLoadouts
         class UK3CB_CSAT_S_O_MIG21_CAS : UK3CB_CSAT_B_O_MIG21_CAS {};
         class UK3CB_CSAT_S_O_Su25SM_CAS : UK3CB_CSAT_B_O_Su25SM_CAS {};
 
-        // ION
+        // 3CB ION
         class UK3CB_ION_B_Woodland_T28Trojan_AT
         {
             loadout[] = {"rhs_mag_AGM114K_2_plane","rhs_mag_AGM114K_2_plane","rhs_mag_AGM114K_2_plane","rhs_mag_AGM114K_2_plane"};
@@ -134,6 +134,31 @@ class planeLoadouts
         {
             loadout[] = {"rhs_mag_M151_7_USAF_LAU131","PylonWeapon_300Rnd_20mm_shells","PylonWeapon_300Rnd_20mm_shells","rhs_mag_M151_7_USAF_LAU131"};
             missileLauncher[] = {"rhs_mag_M151_7_USAF_LAU131"};
+            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+        };
+
+        // 3CB MDF
+        class UK3CB_MDF_B_Mystere_CAS1 
+        {
+            loadout[] = {"PylonRack_7Rnd_Rocket_04_AP_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_AP_F"};
+            mainGun = "uk3cb_mystere_cannon_30mm";
+            missileLauncher[] = {"Rocket_04_AP_Plane_CAS_01_F", "Rocket_04_HE_Plane_CAS_01_F"};
+            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+        };
+        class UK3CB_MDF_B_Mystere_AT1 
+        {
+            loadout[] = {"PylonRack_1Rnd_Missile_AGM_02_F", "PylonRack_1Rnd_Missile_AGM_02_F", "PylonRack_1Rnd_Missile_AGM_02_F", "PylonRack_1Rnd_Missile_AGM_02_F"};
+            mainGun = "uk3cb_mystere_cannon_30mm";
+            missileLauncher[] = {"Missile_AGM_02_Plane_CAS_01_F"};
+            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+        };
+
+        // 3CB KRG
+        class UK3CB_KRG_B_L39_PYLON
+        {
+            loadout[] = {"PylonRack_1Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_1Rnd_Missile_AGM_02_F","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_Missile_AGM_02_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_1Rnd_LG_scalpel"};
+            mainGun = "Twin_Cannon_20mm_gunpod";
+            missileLauncher[] = {"missiles_SCALPEL", "Rocket_04_HE_Plane_CAS_01_F", "Missile_AGM_02_Plane_CAS_01_F"};
             diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
         };
     };
@@ -269,6 +294,29 @@ class planeLoadouts
             missileLauncher[] = {"rhs_mag_M151_7_USAF_LAU131"};
             diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
         };
+
+        // MDF
+        class UK3CB_MDF_B_Mystere_CAS1 
+        {
+            loadout[] = {"PylonRack_7Rnd_Rocket_04_AP_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_AP_F"};
+            mainGun = "uk3cb_mystere_cannon_30mm";
+            missileLauncher[] = {"Rocket_04_AP_Plane_CAS_01_F", "Rocket_04_HE_Plane_CAS_01_F"};
+        };
+        class UK3CB_MDF_B_Mystere_AT1 
+        {
+            loadout[] = {"PylonRack_1Rnd_Missile_AGM_02_F", "PylonRack_1Rnd_Missile_AGM_02_F", "PylonRack_1Rnd_Missile_AGM_02_F", "PylonRack_1Rnd_Missile_AGM_02_F"};
+            mainGun = "uk3cb_mystere_cannon_30mm";
+            missileLauncher[] = {"Missile_AGM_02_Plane_CAS_01_F"};
+        };
+
+        // 3CB KRG
+        class UK3CB_KRG_B_L39_PYLON
+        {
+            loadout[] = {"PylonRack_1Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_1Rnd_Missile_AGM_02_F","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_Missile_AGM_02_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_1Rnd_LG_scalpel"};
+            mainGun = "Twin_Cannon_20mm_gunpod";
+            missileLauncher[] = {"missiles_SCALPEL", "Rocket_04_HE_Plane_CAS_01_F", "Missile_AGM_02_Plane_CAS_01_F"};
+            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+        };
     };
    
     class AA
@@ -374,7 +422,24 @@ class planeLoadouts
         class UK3CB_CSAT_S_O_MIG21_AA : UK3CB_CSAT_B_O_MIG21_AA {};
         class UK3CB_CSAT_S_O_MIG29S : UK3CB_CSAT_B_O_MIG29S {};
         class UK3CB_CSAT_S_O_MIG29SM : UK3CB_CSAT_B_O_MIG29S {};
+
         // ION
         class UK3CB_ARD_B_MIG29S : UK3CB_CSAT_B_O_MIG29S {};
+
+        // MDF
+        class UK3CB_MDF_B_Mystere_AA1 
+        {
+            loadout[] = {"PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_Missile_AA_04_F"};
+            mainGun = "uk3cb_mystere_cannon_30mm";
+            missileLauncher[] = {"Missile_AA_04_Plane_CAS_01_F"};
+        };
+
+        // 3CB KRG
+        class UK3CB_KRG_B_L39_PYLON
+        {
+            loadout[] = {"PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_Missile_AA_04_F"};
+            mainGun = "Twin_Cannon_20mm_gunpod";
+            missileLauncher[] = {"Missile_AA_04_Plane_CAS_01_F", "missiles_Zephyr"};
+        };
     };
 };
