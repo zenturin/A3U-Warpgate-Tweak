@@ -215,7 +215,7 @@ _loadoutData set ["goggles", ["rhs_ess_black"]];
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _sfLoadoutData set ["uniforms", ["UK3CB_ION_B_U_SF_Uniform_Short_Shirt_01_WDL", "UK3CB_ION_B_U_SF_Uniform_Short_Shirt_02_WDL", "UK3CB_ION_B_U_SF_Uniform_Short_Shirt_03_WDL", "UK3CB_ION_B_U_SF_Uniform_Short_Shirt_04_WDL", "UK3CB_ION_B_U_SF_Uniform_Short_Shirt_05_WDL", "UK3CB_ION_B_U_SF_Uniform_Short_Shirt_06_WDL", "UK3CB_ION_B_U_SF_Uniform_Short_Shirt_07_WDL", "UK3CB_ION_B_U_SF_Uniform_Short_Shirt_08_WDL"]];
-_sfLoadoutData set ["vests", ["UK3CB_V_MBAV_RIFLEMAN_DES"]];
+_sfLoadoutData set ["vests", ["UK3CB_ION_B_V_MBAV_MEDIC_DES_02"]];
 _sfLoadoutData set ["mgVests", ["UK3CB_ION_B_V_MBAV_MG_DES_02"]];
 _sfLoadoutData set ["medVests", ["UK3CB_ION_B_V_MBAV_MEDIC_DES_02"]];
 _sfLoadoutData set ["glVests", ["UK3CB_V_MBAV_GRENADIER_DES"]];
@@ -345,7 +345,7 @@ _sfLoadoutData set ["glSidearms", [
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 // _CAMO_ marker
-_eliteLoadoutData set ["uniforms", ["UK3CB_ION_B_U_CombatSmock_01_DES", "UK3CB_ION_B_U_CombatSmock_04_DES", "UK3CB_ION_B_U_CombatSmock_06_DES"]];
+_eliteLoadoutData set ["uniforms", ["UK3CB_ION_B_U_Uniform_07_DES", "UK3CB_ION_B_U_Uniform_05_DES", "UK3CB_ION_B_U_Uniform_03_DES", "UK3CB_ION_B_U_Uniform_01_DES"]];
 _eliteLoadoutData set ["vests", ["UK3CB_ION_B_V_PlateCarrier1_brn_01", "UK3CB_ION_B_V_PlateCarrier1_brn_02"]];
 _eliteLoadoutData set ["ATvests", ["UK3CB_ION_B_V_RIF_ALT_BRN_01", "UK3CB_ION_B_V_SL_BRN_01"]];
 _eliteLoadoutData set ["GLvests", ["UK3CB_V_Carrier_Rig_TACTICAL_DES", "UK3CB_V_Carrier_Rig_CQB_DES"]];
