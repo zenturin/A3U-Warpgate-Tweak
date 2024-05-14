@@ -44,6 +44,14 @@
         description = $STR_A3AP_setupFactionsTab_tkm_3cbf;
     };
 
+    class 3CBF_Reb_ION : 3CBF_CCM
+    {
+        flagTexture = "uk3cb_factions\addons\uk3cb_factions_ion\flag\ion_flag_co.paa";
+        name = "3CBF ION";
+        file = "3CBF_Reb_ION";
+        description = "";
+    };
+
     class 3CBF_CHDKZ : 3CBF_Base
     {
         side = "Riv";
