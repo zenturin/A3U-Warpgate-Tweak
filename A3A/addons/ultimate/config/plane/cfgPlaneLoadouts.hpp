@@ -161,6 +161,21 @@ class planeLoadouts
             missileLauncher[] = {"missiles_SCALPEL", "Rocket_04_HE_Plane_CAS_01_F", "Missile_AGM_02_Plane_CAS_01_F"};
             diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
         };
+        class WM_TieBomber
+        {
+            mainGun = "LS1_Cannon";
+            missileLauncher[] = {"TS5_ProtonLauncher"};
+            bombRacks[] = {"VL61ProtonBomb"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+        class WM_TieBomber_Cluster
+        {
+            loadout[] = {"PylonMissile_1Rnd_BombCluster_01_F", "PylonRack_2Rnd_BombCluster_01_F"};
+            mainGun = "LS1_Cannon";
+            missileLauncher[] = {"TS5_ProtonLauncher"};
+            bombRacks[] = {"BombCluster_01_F"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
     };
 
     class CAS
@@ -317,6 +332,21 @@ class planeLoadouts
             missileLauncher[] = {"missiles_SCALPEL", "Rocket_04_HE_Plane_CAS_01_F", "Missile_AGM_02_Plane_CAS_01_F"};
             diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
         };
+        class WM_TieBomber
+        {
+            mainGun = "LS1_Cannon";
+            missileLauncher[] = {"TS5_ProtonLauncher"};
+            bombRacks[] = {"VL61ProtonBomb"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+        class WM_TieBomber_Cluster
+        {
+            loadout[] = {"PylonMissile_1Rnd_BombCluster_01_F", "PylonRack_2Rnd_BombCluster_01_F"};
+            mainGun = "LS1_Cannon";
+            missileLauncher[] = {"TS5_ProtonLauncher"};
+            bombRacks[] = {"BombCluster_01_F"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
     };
    
     class AA
@@ -441,5 +471,11 @@ class planeLoadouts
             mainGun = "Twin_Cannon_20mm_gunpod";
             missileLauncher[] = {"Missile_AA_04_Plane_CAS_01_F", "missiles_Zephyr"};
         };
+        class WM_TieInterceptor
+        {
+            mainGun = "LS93_Cannon";
+			missileLauncher[] = {"TS5A_ProtonLauncher"};
+        };
+		class WM_TieAdvanced : WM_TieInterceptor {};
     };
 };
