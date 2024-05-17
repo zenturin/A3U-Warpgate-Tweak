@@ -91,7 +91,7 @@ class stozec {
 	antennasBlacklistIndex[] = {};
 	banks[] = {}; //no suitable building available
 	garrison[] = {
-		{},{},{},{}
+		{},{"resource_6", "outpost_1", "outpost_18", "factory_5", "milbase_3"},{},{}
 	};
 	fuelStationTypes[] = {"Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","Land_Fuelstation","Land_Fuelstation_army","Land_Benzina_schnell"};
 	milAdministrations[] = {
