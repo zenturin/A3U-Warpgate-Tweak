@@ -91,9 +91,9 @@ class stozec {
 	antennasBlacklistIndex[] = {};
 	banks[] = {}; //no suitable building available
 	garrison[] = {
-		{},{"resource_6", "outpost_1", "outpost_18", "factory_5", "milbase_3"},{},{}
+		{},{"resource", "resource_6", "outpost", "outpost_1", "outpost_18", "outpost_19", "factory_1", "factory_5", "milbase_2", "milbase_3", "airport", "control_11", "control_12", "control_15", "control_24"},{},{"control_11", "control_12", "control_15", "control_24"}
 	};
-	fuelStationTypes[] = {"Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","Land_Fuelstation","Land_Fuelstation_army","Land_Benzina_schnell"};
+	fuelStationTypes[] = {"Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","Land_Fuelstation","Land_Fuelstation_army","Land_Benzina_schnell","Land_FuelStation_Feed_F","Land_fs_feed_F","Land_FuelStation_01_pump_malevil_F","Land_FuelStation_01_pump_F","Land_FuelStation_02_pump_F","Land_FuelStation_03_pump_F"};
 	milAdministrations[] = {
 		{10452.162,11032.137,-0.174},{13169.095,5219.437,0},{4005.963,3351.224,0},{4899.735,15021.545,0}
 	};
