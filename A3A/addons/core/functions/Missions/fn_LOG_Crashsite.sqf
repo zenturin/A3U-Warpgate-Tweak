@@ -404,9 +404,11 @@ if (_searchHeliClass isNotEqualTo []) then {
     } else {
         _heliVehicleGroupWP2 = _heliVehicleGroup  addWaypoint [position _box, 1];
         _heliVehicleGroupWP2 setWaypointType "LOITER";
+        // _heliVehicleGroupWP2 setWaypointBehaviour "AWARE";
         _heliVehicleGroupWP2 setWaypointBehaviour "SAFE";
         [_heliVehicleGroup, 0] setWaypointLoiterRadius 400;
         [_heliVehicleGroup, 0] setWaypointLoiterType "CIRCLE_L";
+        // [_heliVehicleGroup, 0] setWaypointCombatMode "RED";
     };
 };
 
@@ -820,13 +822,16 @@ switch(true) do
         } forEach (call SCRT_fnc_misc_getRebelPlayers);
 
         [10*_bonus,theBoss] call A3A_fnc_addScorePlayer;
-        [250*_bonus,theBoss, true] call A3A_fnc_addMoneyPlayer;
+        [250*_bonus,theBoss,true] call A3A_fnc_addMoneyPlayer;
         ["Large", _sideX] remoteExec ["A3A_fnc_selectIntel", 2];
 
         for "_i" from 0 to 3 do {
             [(position _box), 6000, 1200, false] spawn SCRT_fnc_common_recon;
             if (hideEnemyMarkers) then {
-                [(selectRandom [2,3])] call A3U_fnc_revealRandomZones;
+                if (random 100 >= 70) then {
+                    private _zoneAmount = selectRandom [1,2];
+                    [_zoneAmount] call A3U_fnc_revealRandomZones;
+                };
             };
             uiSleep 60;
         };
