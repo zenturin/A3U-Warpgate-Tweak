@@ -608,9 +608,6 @@ class CfgFunctions
             class SUP_airstrikeRoutine {};
             class SUP_artillery {};
             class SUP_artilleryAvailable {};
-            class SUP_ASF {};
-            class SUP_ASFAvailable {};
-            class SUP_ASFRoutine {};
             class SUP_carpetBombs {};
             class SUP_carpetBombsAvailable {};
             class SUP_carpetBombsRoutine {};
@@ -651,9 +648,6 @@ class CfgFunctions
             class SUP_QRFLand {};
             class SUP_QRFLandAvailable {};
             class SUP_QRFRoutine {};
-            class SUP_SAM {};
-            class SUP_SAMAvailable {};
-            class SUP_SAMRoutine {};
             class SUP_UAV {};
             class SUP_UAVRoutine {};
             class SUP_QRFVehAirdrop {};

@@ -734,9 +734,7 @@ private _aaTemplate = {
     ["rifles"] call _fnc_setPrimary;
     ["primary", 4] call _fnc_addMagazines;
 
-    ["AALaunchers"] call _fnc_setLauncher;
-    //TODO - Add a check if it's disposable.
-    ["launcher", 2] call _fnc_addMagazines;
+
 
     ["sidearms"] call _fnc_setHandgun;
     ["handgun", 2] call _fnc_addMagazines;

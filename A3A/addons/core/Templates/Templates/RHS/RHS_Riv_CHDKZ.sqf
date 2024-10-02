@@ -645,9 +645,7 @@ private _aaTemplate = {
 	[selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
 	["primary", 6] call _fnc_addMagazines;
 
-	["AALaunchers"] call _fnc_setLauncher;
-	//TODO - Add a check if it's disposable.
-	["launcher", 3] call _fnc_addMagazines;
+
 
 	["sidearms"] call _fnc_setHandgun;
 	["handgun", 2] call _fnc_addMagazines;
