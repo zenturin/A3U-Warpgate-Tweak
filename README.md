@@ -1,6 +1,8 @@
 <div align="center">
   <img alt="Antistasi Ultimate" width="200" height="200" src="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/assets/78276788/10d6e9f2-66bc-47a7-9ff5-2054b65b0e26">
-  <h1>Antistasi Ultimate</h1>
+  <img alt="Warpate Server Icon" width="200" height="200" src="https://cdn.discordapp.com/attachments/761159355294810112/1036265844046561280/dbf6og0-b7264c7c-f91e-46a6-9a21-1deb47186c9b.gif?ex=66fdef06&is=66fc9d86&hm=3def940cd4b3b5c7ff56360e9bcbe4a3327a3b01f0f3c1d5e4db7160d6954f76&">
+
+  <h1>Antistasi Ultimate - Warpgate Tweak</h1>
   <p>
     <i>An Arma 3 persistent multiplayer scenario about guerilla warfare tactics.</i>
     <br/>
@@ -13,14 +15,21 @@
   </p> -->
 </div>
 
-## Latest Stable Release
+## Latest Stable Official Release (Original)
 **[Steam Workshop: Antistasi Ultimate](https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032)**
 
-### _Interested in Extender modding?_
-
-**[Extender Example (Ultimate)](https://github.com/Westalgie/A3UExtender)**
-
 ## [Features](https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Features)
+
+## Changes from Original
+> Removal of vanilla sound mods (Waste of resources as basically no items are stock)
+
+> Removal of Automatic view distance mod (Lack of control and functionality)~
+
+> Added Perceptive view distance (CH view distance with extra settings available)
+
+> Removed GCE: Core (dependancy)
+
+> Removed GCE: Weapon Canting (Unused as far as im aware)
 
 ## Credits
 - Original Mission by barbolani
